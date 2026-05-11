@@ -1,0 +1,171 @@
+{
+  "title": "Une histoire du soufisme",
+  "subtitle": "Des premiers ascètes aux grandes confréries — douze siècles de voie intérieure",
+  "sources": [
+    "Éric Geoffroy, Le soufisme : histoire, fondements, pratique (Eyrolles, 2013)",
+    "Martin Lings, Qu'est-ce que le soufisme ? (Seuil, 1977)",
+    "Annemarie Schimmel, Mystical Dimensions of Islam"
+  ],
+  "periods": [
+    {
+      "id": "ascese-primitive",
+      "slug": "ascese-primitive",
+      "date": "VIIIe siècle",
+      "dateRange": "700-800",
+      "title": "Les premiers ascètes",
+      "subtitle": "Naissance d'une intériorité musulmane",
+      "intro": "À l'aube de l'islam, en réaction au caractère mondain de la dynastie omeyyade, un mouvement ascétique (zuhd) éclôt dans la Syrie et l'Irak. Au contact des ermites chrétiens du Liban, les premiers spirituels cultivent la crainte de Dieu, le détachement, l'examen de conscience permanent.",
+      "body": "Hasan al-Basrî, sermonnaire réputé de l'Irak, illustre les vertus que de nombreux spirituels vivifieront : la peur de Dieu et du Jugement, l'examen de conscience, l'altruisme. Il préconise une ascèse tempérée. Les soufis voient en lui l'un des fondateurs de leur discipline. Les premiers ascètes ne se désintéressent pas de la communauté : ils pratiquent le ribât, le « grand jihâd » contre l'ego accompagnant le « petit jihâd » des frontières.",
+      "figures": ["Hasan al-Basrî (m. 728)", "Ibrâhîm ibn Adham", "Fudayl ibn ʿIyâd"],
+      "quote": {
+        "text": "Œuvre pour ce bas-monde comme si tu devais vivre toujours, et œuvre pour l'au-delà comme si tu devais mourir demain.",
+        "author": "ʿAbd Allâh Ibn ʿUmar, Compagnon du Prophète"
+      },
+      "keywords": ["zuhd", "ascèse", "Irak", "Syrie", "crainte de Dieu", "détachement"]
+    },
+    {
+      "id": "amour-pur",
+      "slug": "amour-pur",
+      "date": "VIIIe-IXe siècle",
+      "dateRange": "750-870",
+      "title": "L'amour pur de Dieu",
+      "subtitle": "De l'ascèse à la mystique",
+      "intro": "À Basra, une femme bouleverse l'horizon de la piété : Râbiʿa al-ʿAdawiyya. Avant tous les autres, elle invite à un amour désintéressé et exclusif de Dieu. Pour elle, le paradis et l'enfer ne sont que des voiles dans la quête du Bien-Aimé.",
+      "body": "Sa doctrine du « pur amour de Dieu » se fonde sur le verset coranique 5:59 : « Il les aime et ils L'aiment ». La figure mythifiée de Râbiʿa a nourri jusqu'au débat théologique sur l'amour de Dieu qui agita la France au XVIIe siècle, suscitant l'admiration des partisans du Pur Amour. Elle eut beaucoup de disciples hommes et reste la sainte musulmane la plus connue et vénérée.",
+      "figures": ["Râbiʿa al-ʿAdawiyya (m. 801)", "Maʿrûf al-Karkhî", "Bishr al-Hâfî"],
+      "quote": {
+        "text": "Je veux mettre le feu aux paradis et verser de l'eau en enfer pour que ces deux voiles disparaissent, et qu'on voie clairement qui adore Dieu par amour, et non par crainte de l'enfer ou par espoir du paradis.",
+        "author": "Râbiʿa al-ʿAdawiyya"
+      },
+      "keywords": ["mahabba", "pur amour", "Basra", "intériorité", "Râbiʿa"]
+    },
+    {
+      "id": "bagdad",
+      "slug": "bagdad",
+      "date": "IXe-Xe siècle",
+      "dateRange": "850-950",
+      "title": "L'école de Bagdad",
+      "subtitle": "Sobriété et ivresse, naissance du vocabulaire",
+      "intro": "Dans la capitale abbasside, ce qu'on appelle « l'école de Bagdad » donne au tasawwuf l'essentiel de sa doctrine. Junayd (m. 911), surnommé « le seigneur de l'Ordre des soufis », incarne l'équilibre entre l'ésotérique et l'exotérique. Il est perçu comme l'archétype du spirituel sobre, maîtrisant son extase.",
+      "body": "Junayd enseigne le premier la connaissance de l'Unicité divine (tawhîd), exigeante sur tous les plans. Il enrichit la doctrine du fanâʾ (extinction du soi humain dans le Soi divin) et du baqâʾ (retour parmi les hommes, investi de la présence pérenne de Dieu). À ses côtés, Bistâmî (m. 875) en Iran oriental connaît une expérience mystique fulgurante : la Présence divine investit son être jusqu'à le déposséder de sa conscience individuelle. Ses propos extatiques (shatahât) déconcertent ses contemporains : « Gloire à Moi ! Combien grande est Ma puissance ! »",
+      "figures": ["Junayd de Bagdad (m. 911)", "Bâyazîd Bastâmî (m. 875)", "Sahl al-Tustarî", "Hakîm al-Tirmidhî"],
+      "quote": {
+        "text": "Le soufisme consiste en ce qu'Il [Dieu] te fasse mourir à toi-même et te fasse revivre en Lui.",
+        "author": "Junayd de Bagdad"
+      },
+      "keywords": ["tasawwuf", "Bagdad", "tawhîd", "fanâʾ", "baqâʾ", "sobriété", "ivresse"]
+    },
+    {
+      "id": "hallaj",
+      "slug": "hallaj",
+      "date": "Xe siècle",
+      "dateRange": "900-922",
+      "title": "Hallâj : l'amour jusqu'au martyre",
+      "subtitle": "L'ivresse mystique et la parole extatique",
+      "intro": "Hallâj (m. 922) est le représentant le plus connu, surtout en Occident, de l'école de Bagdad. À l'inverse de Junayd, il typifie « l'ivresse spirituelle ». Sa quête paroxystique est apparue outrancière à la société musulmane ; il fut exécuté à Bagdad pour avoir proféré « Anâ l-Haqq » — « Je suis le Réel [Dieu] ».",
+      "body": "Comme l'explique Rûmî, ce cri signifie « je suis devenu anéanti, Dieu seul reste ». C'est là une extrême humilité, car ceci signifie : « Lui Seul est ». Hallâj nourrit un désir ardent de Dieu (ʿishq) plutôt que la mahabba coranique. Les docteurs de la Loi lui reprochent l'incarnation (hulûl) et l'union de substance (ittihâd). Son « martyre » sonne le glas d'une période d'exploration débridée et impose au soufisme ultérieur une plus grande discrétion.",
+      "figures": ["Al-Hallâj (m. 922)", "Nûrî de Bagdad", "Shiblî"],
+      "quote": {
+        "text": "Tuez-moi, ô mes amis ! Car c'est dans la mort que se trouve ma vie, et c'est dans la vie qu'est ma mort.",
+        "author": "Al-Hallâj"
+      },
+      "keywords": ["Anâ l-Haqq", "ʿishq", "martyre", "extase", "shath", "Bagdad"]
+    },
+    {
+      "id": "manuels",
+      "slug": "manuels",
+      "date": "Xe-XIe siècle",
+      "dateRange": "950-1100",
+      "title": "La systématisation classique",
+      "subtitle": "Les grands manuels de la voie",
+      "intro": "Les manuels de soufisme rédigés aux Xe et XIe siècles témoignent du souci d'intégrer le soufisme à la culture islamique globale. Ils notent par l'écrit l'enseignement oral des premiers maîtres et érigent le tasawwuf en discipline islamique authentifiée.",
+      "body": "Sarrâj (m. 988), avec le Kitâb al-Lumaʿ, démontre que le soufisme prend ses racines dans le Coran et la Sunna. Suivent le Kitâb al-Taʿarruf de Kalâbâdhî (m. 995), La Nourriture des cœurs (Qût al-qulûb) d'Abû Tâlib Makkî (m. 996), l'Épître (Risâla) de Qushayrî (m. 1072) — œuvre pédagogique majeure, alliance pleine d'avenir entre soufisme, théologie acharite et rite chaféite. Le premier manuel persan est le Dévoilement (Kashf al-mahjûb) de Hujwîrî (m. entre 1073 et 1077), dont le tombeau à Lahore fait encore l'objet d'un grand pèlerinage.",
+      "figures": ["Al-Sarrâj (m. 988)", "Al-Kalâbâdhî (m. 995)", "Abû Tâlib Makkî (m. 996)", "Al-Qushayrî (m. 1072)", "Al-Hujwîrî (m. ~1075)"],
+      "quote": {
+        "text": "Nous n'avons pas reçu le soufisme par le bavardage, mais par la faim, le détachement et le rejet du conformisme.",
+        "author": "Junayd de Bagdad, cité par les manualistes"
+      },
+      "keywords": ["manuels", "tasawwuf", "Risâla", "Khorassan", "transmission écrite", "Sunna"]
+    },
+    {
+      "id": "ghazali",
+      "slug": "ghazali",
+      "date": "XIe-XIIe siècle",
+      "dateRange": "1058-1111",
+      "title": "Ghazâlî : l'osmose avec le sunnisme",
+      "subtitle": "Quand le soufisme devient le cœur de l'islam",
+      "intro": "La maturation des Xe et XIe siècles trouve son aboutissement chez Abû Hâmid Ghazâlî (m. 1111). L'histoire lui attribue la réconciliation du sunnisme avec le soufisme. Son œuvre majeure, Revivification des sciences de la religion (Ihyâʾ ʿulûm al-dîn), opère une fusion entre théologie, droit et mystique.",
+      "body": "Penseur officiel du pouvoir seldjoukide à Bagdad, Ghazâlî traverse une grave crise intérieure, se démet de toutes ses fonctions, et mène durant dix ans une vie de pérégrination et de retraite spirituelle. Il revient enseigner, ayant affirmé la prééminence du dévoilement spirituel (mukâshafa) sur la raison. Surnommé post mortem « la preuve de l'islam », il a rappelé que cette religion avait avant tout une vocation spirituelle — des siècles avant l'apparition des fondamentalismes modernes.",
+      "figures": ["Al-Ghazâlî (m. 1111)", "ʿAbd al-Qâdir al-Jîlânî (m. 1166)", "Ahmad al-Rifâʿî"],
+      "quote": {
+        "text": "J'ai su alors avec certitude que les soufis sont sur la voie de Dieu, et que cette voie est la meilleure ; leurs mœurs sont les plus pures que l'on puisse trouver.",
+        "author": "Al-Ghazâlî, Al-Munqidh min al-dalâl"
+      },
+      "keywords": ["Ihyâʾ", "Ghazâlî", "dévoilement", "mukâshafa", "sunnisme", "madrasa"]
+    },
+    {
+      "id": "ibn-arabi",
+      "slug": "ibn-arabi",
+      "date": "XIIIe siècle",
+      "dateRange": "1165-1240",
+      "title": "Ibn ʿArabî, le Grand Maître",
+      "subtitle": "La métaphysique de l'unité de l'Être",
+      "intro": "Muhyî al-Dîn Ibn ʿArabî (1165-1240), né à Murcie en Andalousie, reçoit une mission spirituelle qui l'amène à émigrer au Proche-Orient. Surnommé al-Shaykh al-Akbar (« le Grand Maître »), son œuvre — plus de quatre cents ouvrages — n'a jamais cessé de susciter débats et commentaires.",
+      "body": "Toute son œuvre repose sur l'unité essentielle de l'Être (wahdat al-wujûd) : Dieu seul est, et les créatures Lui empruntent leur existence grâce à Sa théophanie sans cesse renouvelée. Ses deux œuvres majeures, les Illuminations de La Mecque (al-Futûhât al-makkiyya) et les Chatons de la sagesse (Fusûs al-hikam), composent une magistrale synthèse du patrimoine soufi. Sa doctrine féconde aussi la gnose chiite iranienne (ʿirfân). De nos jours, son enseignement universel en fait l'un des spirituels les plus traduits au monde.",
+      "figures": ["Ibn ʿArabî (m. 1240)", "Sadr al-Dîn al-Qûnawî", "Ibn al-Fâriḍ", "Ibn ʿAṭâʾ Allâh al-Iskandarî"],
+      "quote": {
+        "text": "Le réel est le Réel, le créaturel est le créaturel. Le monde est à la fois Lui et non Lui.",
+        "author": "Ibn ʿArabî"
+      },
+      "keywords": ["wahdat al-wujûd", "théophanie", "Andalousie", "Damas", "homme parfait", "ʿirfân"]
+    },
+    {
+      "id": "rumi",
+      "slug": "rumi",
+      "date": "XIIIe siècle",
+      "dateRange": "1207-1273",
+      "title": "Rûmî et la grande poésie persane",
+      "subtitle": "L'amour comme voie",
+      "intro": "Jalâl al-Dîn Rûmî (m. 1273), surnommé Mawlânâ (« notre maître », Mevlana en turc), reste le mystique musulman le plus connu en Occident. Il personnifie la voie de l'amour et de l'ivresse, tandis qu'Ibn ʿArabî incarne celle de la gnose métaphysique. Chassé de son Iran natal par l'invasion mongole, sa famille s'établit à Konya.",
+      "body": "Sa rencontre avec Shams de Tabrîz, son « soleil », transforme à jamais sa vie : « J'étais cru, j'ai été cuit, puis calciné », dira-t-il. Le Mathnawî, sommé « le Coran persan », chante la nostalgie du roseau arraché à sa roselière — l'âme exilée du divin. À ses côtés rayonnent ʿAttâr (m. 1190), auteur du Langage des oiseaux où trente oiseaux découvrent que le Simorgh qu'ils cherchaient n'est autre qu'eux-mêmes ; et Ibn al-Fâriḍ (m. 1235), « prince des amoureux ».",
+      "figures": ["Jalâl al-Dîn Rûmî (m. 1273)", "Shams de Tabrîz", "Farîd al-Dîn ʿAttâr (m. 1190)", "Ibn al-Fâriḍ (m. 1235)", "Sanâʾî"],
+      "quote": {
+        "text": "Viens, viens, viens... qui que tu sois, viens ! Que tu sois infidèle, idolâtre ou païen, notre couvent n'est pas un lieu de désespoir.",
+        "author": "Rûmî"
+      },
+      "keywords": ["amour", "Mathnawî", "Konya", "Mevleviyya", "samâʿ", "poésie persane", "Simorgh"]
+    },
+    {
+      "id": "confreries",
+      "slug": "confreries",
+      "date": "XIIIe-XVIe siècle",
+      "dateRange": "1200-1600",
+      "title": "L'âge des confréries",
+      "subtitle": "Structuration sociale et diffusion mondiale",
+      "intro": "À partir du XIIe siècle, apparaissent les voies initiatiques (tarîqa) — familles spirituelles regroupées autour du charisme d'un saint éponyme. C'est d'ailleurs à la même période que naissent la plupart des ordres monastiques chrétiens.",
+      "body": "Les confréries répondent au besoin de compenser la perte de spiritualité survenue avec le temps. Elles structurent l'enseignement, transmettent les chaînes initiatiques (silsila), enracinent le soufisme dans la société. Du Maghreb à l'Inde, de l'Afrique subsaharienne à l'Asie centrale, les grandes voies se déploient : Qâdiriyya, Châdhiliyya, Naqshbandiyya, Mevleviyya, Chishtiyya, Tijâniyya. Chacune transmet une couleur spirituelle propre tout en partageant le même cœur.",
+      "figures": ["ʿAbd al-Qâdir al-Jîlânî", "Abû l-Hasan al-Shâdhilî", "Bahâʾ al-Dîn Naqshband", "Muʿîn al-Dîn Chishtî"],
+      "quote": {
+        "text": "Il y a autant de voies menant à Dieu que de souffles des fils d'Adam.",
+        "author": "Adage soufi"
+      },
+      "keywords": ["tarîqa", "confréries", "silsila", "Qâdiriyya", "Châdhiliyya", "Naqshbandiyya", "transmission"]
+    },
+    {
+      "id": "modernite",
+      "slug": "modernite",
+      "date": "XIXe-XXIe siècle",
+      "dateRange": "1800-aujourd'hui",
+      "title": "Le soufisme dans la modernité",
+      "subtitle": "Critiques, renaissances, universalité",
+      "intro": "À l'époque moderne, le soufisme subit les attaques conjuguées du réformisme musulman (salafisme, wahhabisme) et de la sécularisation. Mais il connaît aussi des renaissances importantes au Maghreb, en Iran, en Afrique, et un rayonnement nouveau en Occident.",
+      "body": "Des figures comme l'Émir Abdelkader (m. 1883), Ahmad al-ʿAlawî (m. 1934), ou encore les penseurs pérennialistes (René Guénon, Frithjof Schuon, Martin Lings, Titus Burckhardt, Seyyed Hossein Nasr) renouvellent la lecture du soufisme et lui donnent une portée universelle. Aujourd'hui, à l'heure où le matérialisme consumériste dévoile son impasse, le soufisme apparaît comme une sagesse universelle, une voie spirituelle vivante en pays musulman comme en Occident.",
+      "figures": ["Émir Abdelkader (m. 1883)", "Ahmad al-ʿAlawî (m. 1934)", "René Guénon", "Martin Lings", "Frithjof Schuon", "Seyyed Hossein Nasr"],
+      "quote": {
+        "text": "Le soufisme apparaît comme une sagesse universelle, une voie spirituelle vivante, en pays musulman comme en Occident.",
+        "author": "Éric Geoffroy"
+      },
+      "keywords": ["modernité", "pérennialisme", "Occident", "renaissance", "universalité", "Émir Abdelkader"]
+    }
+  ]
+}

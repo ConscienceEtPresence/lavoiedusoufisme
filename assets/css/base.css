@@ -1,0 +1,173 @@
+/* ============================================================
+   BASE — Variables, reset, typographie globale
+   Palette lumineuse : parchemin, encre nuit, or, indigo
+   ============================================================ */
+
+:root {
+  /* Palette principale — claire et chaleureuse */
+  --paper:        #FBF7EF;   /* fond parchemin */
+  --paper-warm:   #F5EDDD;   /* parchemin légèrement plus chaud */
+  --paper-deep:   #EFE4CE;   /* encart, citation, carte */
+  --ink:          #1B2A4E;   /* encre bleu nuit */
+  --ink-soft:     #3E5C76;   /* indigo doux */
+  --ink-mute:     #6B7A99;   /* texte secondaire */
+  --gold:         #B8860B;   /* or sobre */
+  --gold-soft:    #D4A93A;   /* or clair, accents */
+  --rose:         #A65A4A;   /* terre de Sienne, accents chauds */
+  --turquoise:    #2E7D7A;   /* turquoise persan, liens */
+  --line:         #DCCFB5;   /* lignes, séparateurs */
+  --shadow:       0 4px 24px rgba(27, 42, 78, 0.08);
+  --shadow-soft:  0 2px 12px rgba(27, 42, 78, 0.05);
+
+  /* Typographie */
+  --font-serif:   'Cormorant Garamond', 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-display: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+  --font-arabic:  'Amiri', 'Scheherazade New', serif;
+  --font-sans:    -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', sans-serif;
+
+  /* Rythme */
+  --space-xs: 0.4rem;
+  --space-sm: 0.8rem;
+  --space-md: 1.4rem;
+  --space-lg: 2.4rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Mesures */
+  --measure: 65ch;
+  --radius: 4px;
+  --radius-lg: 12px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-serif);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+  font-weight: 400;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at top, rgba(212, 169, 58, 0.08) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom right, rgba(46, 125, 122, 0.05) 0%, transparent 50%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><g fill='none' stroke='%23B8860B' stroke-width='0.5' opacity='0.035'><circle cx='80' cy='80' r='60'/><circle cx='80' cy='80' r='40'/><circle cx='80' cy='80' r='20'/><path d='M80 20 L80 140 M20 80 L140 80 M37 37 L123 123 M37 123 L123 37'/></g></svg>");
+  background-attachment: fixed;
+  background-position: center top, bottom right, center;
+  background-repeat: no-repeat, no-repeat, repeat;
+}
+
+/* Texte arabe */
+[lang="ar"] {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  font-size: 1.15em;
+  line-height: 1.8;
+}
+
+/* Titres */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: 0.005em;
+}
+
+h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 400; }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: var(--space-md); }
+h3 { font-size: 1.4rem; color: var(--ink-soft); margin-bottom: var(--space-sm); }
+h4 { font-size: 1.15rem; color: var(--gold); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+
+p { margin-bottom: var(--space-md); max-width: var(--measure); }
+
+a {
+  color: var(--turquoise);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+a:hover { border-bottom-color: var(--gold); color: var(--ink); }
+
+em { font-style: italic; color: var(--rose); }
+strong { font-weight: 600; color: var(--ink); }
+
+/* Sélection */
+::selection {
+  background: var(--gold-soft);
+  color: var(--ink);
+}
+
+/* Conteneur */
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+.container--narrow { max-width: 780px; }
+.container--wide   { max-width: 1400px; }
+
+/* Utilitaires */
+.center      { text-align: center; }
+.gold        { color: var(--gold); }
+.muted       { color: var(--ink-mute); }
+.small       { font-size: 0.9rem; }
+.translit    { font-style: italic; color: var(--rose); font-weight: 500; }
+
+/* Séparateur orné */
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: var(--space-xl) auto;
+  color: var(--gold);
+  font-size: 1.5rem;
+}
+.ornament::before, .ornament::after {
+  content: "";
+  flex: 1;
+  max-width: 120px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--line), transparent);
+}
+
+/* Citation principale */
+blockquote {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--gold);
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-lg) 0;
+  background: var(--paper-warm);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  max-width: var(--measure);
+}
+blockquote cite {
+  display: block;
+  margin-top: var(--space-sm);
+  font-size: 0.95rem;
+  font-style: normal;
+  color: var(--gold);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+blockquote cite::before { content: "— "; }
+
+/* Responsive */
+@media (max-width: 720px) {
+  html { font-size: 16px; }
+  .container { padding: 0 var(--space-md); }
+  blockquote { font-size: 1.15rem; }
+}

@@ -9,6 +9,24 @@ if (navToggle && siteNav) {
   navToggle.addEventListener('click', () => siteNav.classList.toggle('open'));
 }
 
+// 1bis. Seuil contemplatif — révèle les 3 portes au clic
+const seuil = document.getElementById('seuil-button');
+const doorsReveal = document.getElementById('doors-reveal');
+if (seuil && doorsReveal) {
+  seuil.addEventListener('click', () => {
+    const isOpen = seuil.classList.toggle('is-open');
+    doorsReveal.classList.toggle('is-open', isOpen);
+    seuil.setAttribute('aria-expanded', isOpen);
+    doorsReveal.setAttribute('aria-hidden', !isOpen);
+    if (isOpen) {
+      seuil.querySelector('.seuil__label').textContent = 'Voici les trois chemins';
+      setTimeout(() => doorsReveal.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 700);
+    } else {
+      seuil.querySelector('.seuil__label').textContent = 'Franchir le seuil';
+    }
+  });
+}
+
 // 2. Citation tournante sur l'accueil
 async function rotateQuote() {
   const quoteBlock = document.getElementById('rotating-quote');

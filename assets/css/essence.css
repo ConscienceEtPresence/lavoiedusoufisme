@@ -1,0 +1,245 @@
+/* ============================================================
+   ESSENCE — Page longue de lecture (Qu'est-ce que le soufisme)
+   Mise en page contemplative, mots-clés surlignés cliquables
+   ============================================================ */
+
+.essence-article {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.essence-article h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  color: var(--ink-title);
+  margin: var(--space-2xl) 0 var(--space-md);
+  line-height: 1.2;
+}
+.essence-article h2:first-of-type { margin-top: var(--space-xl); }
+
+.essence-article h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--ink-soft);
+  margin: var(--space-lg) 0 var(--space-sm);
+}
+
+.essence-article p {
+  font-size: 1.05rem;
+  line-height: 1.78;
+  color: var(--ink);
+  margin-bottom: var(--space-md);
+  max-width: 100%;
+}
+
+.essence-article .lead {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin-bottom: var(--space-xl);
+  text-align: center;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.essence-article blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--ink);
+  border-left: 3px solid var(--gold);
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-lg) 0;
+  background: var(--paper-warm);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  max-width: 100%;
+}
+.essence-article blockquote cite {
+  display: block;
+  margin-top: var(--space-sm);
+  font-style: normal;
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  font-family: var(--font-sans);
+}
+.essence-article blockquote cite::before { content: "— "; }
+
+/* ---- Mots-clés surlignés (interactifs) ---- */
+.term {
+  position: relative;
+  color: var(--ink-title);
+  font-weight: 500;
+  background: linear-gradient(to top, rgba(184, 134, 11, 0.15) 0%, rgba(184, 134, 11, 0.15) 30%, transparent 30%);
+  padding: 0 0.15em;
+  cursor: help;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--gold-soft);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.term:hover {
+  background: linear-gradient(to top, rgba(184, 134, 11, 0.35) 0%, rgba(184, 134, 11, 0.35) 40%, transparent 40%);
+  color: var(--gold);
+}
+.term::after {
+  content: attr(data-def);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: var(--ink-title);
+  color: var(--paper);
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-family: var(--font-serif);
+  line-height: 1.4;
+  white-space: normal;
+  width: max-content;
+  max-width: 280px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 8px 24px rgba(27, 42, 78, 0.3);
+  z-index: 50;
+  letter-spacing: 0.005em;
+}
+.term::before {
+  content: "";
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--ink-title);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 51;
+}
+.term:hover::after, .term:focus::after,
+.term:hover::before, .term:focus::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ---- Nom d'auteur cliquable ---- */
+.author {
+  color: var(--turquoise);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+.author:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold-soft);
+}
+
+/* ---- Encadré "À retenir" / "Origine" ---- */
+.note {
+  background: var(--paper-deep);
+  border-left: 3px solid var(--turquoise);
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-lg) 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.note__label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--turquoise);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+.note p {
+  font-size: 0.98rem;
+  margin: 0;
+}
+.note p + p { margin-top: var(--space-sm); }
+
+/* ---- Liste à étoile dorée ---- */
+.essence-article ul.starred {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-md) 0 var(--space-lg);
+}
+.essence-article ul.starred li {
+  padding: var(--space-xs) 0 var(--space-xs) 2rem;
+  position: relative;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.essence-article ul.starred li::before {
+  content: "✦";
+  position: absolute;
+  left: 0.4rem;
+  top: 0.45rem;
+  color: var(--gold);
+  font-size: 0.85rem;
+}
+
+/* ---- Section "À explorer ensuite" ---- */
+.next-steps {
+  margin: var(--space-2xl) 0 var(--space-xl);
+  padding: var(--space-lg);
+  background: var(--paper-warm);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+.next-steps h3 {
+  font-family: var(--font-display);
+  margin-bottom: var(--space-md);
+  color: var(--gold);
+}
+.next-steps__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+.next-steps__links a {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  color: var(--gold);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.next-steps__links a:hover {
+  background: var(--gold);
+  color: var(--paper);
+  border-color: var(--gold);
+}
+
+/* ---- Calligraphie arabe inline ---- */
+.essence-article .ar {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  unicode-bidi: isolate;
+  color: var(--gold);
+  font-size: 1.15em;
+  padding: 0 0.15em;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 720px) {
+  .essence-article p { font-size: 1rem; line-height: 1.72; }
+  .term::after { font-size: 0.8rem; max-width: 220px; }
+}

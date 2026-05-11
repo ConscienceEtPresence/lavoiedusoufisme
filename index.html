@@ -45,7 +45,7 @@
   </header>
 
   <main>
-    <section class="hero hero--compact">
+    <section class="hero hero--contemplative">
       <div class="container container--narrow">
 
         <div class="hero__calligraphy" aria-label="Hû — Lui, en arabe">
@@ -64,39 +64,73 @@
           <cite class="quote-cite">Définition soufie classique</cite>
         </blockquote>
 
-        <div class="doors">
+        <p class="hero__library">
+          <em>Une bibliothèque vivante qui s'enrichit au fil des saisons —<br>
+          maîtres, Noms divins, poèmes, pratiques, résonances.</em>
+        </p>
 
-          <a href="pages/decouvrir.html" class="door">
-            <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
-              <!-- Porte ogivale : un seuil -->
-              <path d="M14 42 L14 22 Q14 10 24 10 Q34 10 34 22 L34 42" />
-              <line x1="10" y1="42" x2="38" y2="42" />
-              <circle cx="24" cy="24" r="2.5" />
-            </svg>
-            <h3 class="door__title">Découvrir</h3>
-            <p class="door__desc">Entrer par le seuil — comprendre la voie, son histoire, ses terres.</p>
-          </a>
+        <!-- LE SEUIL — bouton-mandala contemplatif -->
+        <button class="seuil" id="seuil-button" aria-label="Franchir le seuil et découvrir la voie" aria-expanded="false">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.8" aria-hidden="true">
+            <!-- Mandala soufi : 8 pétales, cercles concentriques, alif central -->
+            <circle cx="50" cy="50" r="46" opacity="0.4"/>
+            <circle cx="50" cy="50" r="36" opacity="0.6"/>
+            <circle cx="50" cy="50" r="26" opacity="0.85"/>
+            <!-- 8 pétales -->
+            <g class="seuil__petals" opacity="0.7">
+              <path d="M50 4 Q56 30 50 50 Q44 30 50 4 Z" />
+              <path d="M96 50 Q70 56 50 50 Q70 44 96 50 Z" />
+              <path d="M50 96 Q44 70 50 50 Q56 70 50 96 Z" />
+              <path d="M4 50 Q30 44 50 50 Q30 56 4 50 Z" />
+              <path d="M18 18 Q40 38 50 50 Q38 40 18 18 Z" />
+              <path d="M82 18 Q62 40 50 50 Q60 38 82 18 Z" />
+              <path d="M82 82 Q62 62 50 50 Q60 60 82 82 Z" />
+              <path d="M18 82 Q38 62 50 50 Q40 60 18 82 Z" />
+            </g>
+            <!-- Alif central -->
+            <line x1="50" y1="40" x2="50" y2="60" stroke-width="1.4" />
+            <circle cx="50" cy="50" r="1.8" fill="currentColor" stroke="none"/>
+          </svg>
+          <span class="seuil__label">Franchir le seuil</span>
+        </button>
 
-          <a href="pages/cheminer.html" class="door">
-            <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
-              <!-- Spirale du retour à l'Un -->
-              <path d="M24 24 m-2 0 a2 2 0 1 1 4 0 a4 4 0 1 1 -8 0 a6 6 0 1 1 12 0 a8 8 0 1 1 -16 0 a10 10 0 1 1 20 0 a12 12 0 1 1 -22 0" />
-            </svg>
-            <h3 class="door__title">Cheminer</h3>
-            <p class="door__desc">Le cœur, les Noms, l'amour, le souvenir — la pratique vive.</p>
-          </a>
+        <!-- LES TROIS PORTES — cachées par défaut, révélées au clic du seuil -->
+        <div class="doors-reveal" id="doors-reveal" aria-hidden="true">
+          <p class="doors-reveal__intro">
+            <em>Trois chemins, une même voie.</em>
+          </p>
 
-          <a href="pages/rencontrer.html" class="door">
-            <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
-              <!-- Deux cercles qui se touchent : la rencontre -->
-              <circle cx="18" cy="24" r="11" />
-              <circle cx="30" cy="24" r="11" />
-              <circle cx="24" cy="24" r="2" fill="currentColor" stroke="none" />
-            </svg>
-            <h3 class="door__title">Rencontrer</h3>
-            <p class="door__desc">Les maîtres, les textes, les résonances entre traditions.</p>
-          </a>
+          <div class="doors">
 
+            <a href="pages/decouvrir.html" class="door">
+              <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+                <path d="M14 42 L14 22 Q14 10 24 10 Q34 10 34 22 L34 42" />
+                <line x1="10" y1="42" x2="38" y2="42" />
+                <circle cx="24" cy="24" r="2.5" />
+              </svg>
+              <h3 class="door__title">Découvrir</h3>
+              <p class="door__desc">Entrer par le seuil — comprendre la voie, son histoire, ses terres.</p>
+            </a>
+
+            <a href="pages/cheminer.html" class="door">
+              <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+                <path d="M24 24 m-2 0 a2 2 0 1 1 4 0 a4 4 0 1 1 -8 0 a6 6 0 1 1 12 0 a8 8 0 1 1 -16 0 a10 10 0 1 1 20 0 a12 12 0 1 1 -22 0" />
+              </svg>
+              <h3 class="door__title">Cheminer</h3>
+              <p class="door__desc">Le cœur, les Noms, l'amour, le souvenir — la pratique vive.</p>
+            </a>
+
+            <a href="pages/rencontrer.html" class="door">
+              <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+                <circle cx="18" cy="24" r="11" />
+                <circle cx="30" cy="24" r="11" />
+                <circle cx="24" cy="24" r="2" fill="currentColor" stroke="none" />
+              </svg>
+              <h3 class="door__title">Rencontrer</h3>
+              <p class="door__desc">Les maîtres, les textes, les résonances entre traditions.</p>
+            </a>
+
+          </div>
         </div>
 
       </div>
@@ -107,8 +141,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="ornament">✦</div>
-      <p><em>Une bibliothèque vivante qui s'enrichit au fil des saisons.<br>
-      Auteurs, Noms divins, poèmes, pratiques, résonances.</em></p>
+      <p class="small"><em>« Il y a autant de voies menant à Dieu que de souffles des fils d'Adam. »</em></p>
     </div>
   </footer>
 

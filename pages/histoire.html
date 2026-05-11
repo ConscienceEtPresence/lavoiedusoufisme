@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Histoire du soufisme — Une voie millénaire</title>
-  <meta name="description" content="Une frise interactive de l'histoire du soufisme : des premiers ascètes du VIIIe siècle aux confréries contemporaines." />
+  <title>Histoire du soufisme — Douze siècles d'une voie intérieure</title>
+  <meta name="description" content="Dix périodes clés de l'histoire du soufisme : des premiers ascètes à l'époque contemporaine. Clique sur une période pour ouvrir la fiche." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Amiri:ital,wght@0,400;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="../assets/css/base.css" />
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/courants.css" />
+  <link rel="stylesheet" href="../assets/css/histoire-grid.css" />
 </head>
 <body>
 
@@ -39,7 +41,6 @@
           <li><a href="histoire.html" class="active">Histoire</a></li>
           <li><a href="courants.html">Courants</a></li>
           <li><a href="geographie.html">Géographie</a></li>
-          <li><a href="#" class="muted">Auteurs <small>(à venir)</small></a></li>
         </ul>
       </nav>
     </div>
@@ -51,49 +52,31 @@
       <div class="section-intro">
         <span class="section-intro__eyebrow">Une voie millénaire</span>
         <h1>Histoire du soufisme</h1>
-        <p>Des premiers ascètes de l'Irak du VIIIe siècle aux confréries d'aujourd'hui — douze siècles de transformation intérieure.</p>
+        <p>Dix périodes pour douze siècles. Clique sur une époque — elle s'ouvrira.</p>
       </div>
-
-      <blockquote>
-        Le soufisme était auparavant une réalité sans nom ; il est maintenant un nom sans réalité.
-        <cite>Cheikh anonyme du Xe siècle</cite>
-      </blockquote>
-
-      <p style="text-align: center; color: var(--ink-mute); font-style: italic; margin-top: var(--space-lg);">
-        Fais défiler. Chaque période s'éclaire à son passage.
-      </p>
     </section>
 
     <section class="container container--wide">
       <div class="ornament">✦</div>
-      <div class="timeline" id="timeline">
-        <!-- Périodes injectées par timeline.js -->
-      </div>
-    </section>
-
-    <section class="container container--narrow">
-      <div class="ornament">✦ ✦ ✦</div>
-
-      <h2 class="center">Une histoire qui continue</h2>
-      <p class="center" style="margin: 0 auto; color: var(--ink-soft); font-style: italic;">
-        Cette frise est une première porte. Chaque période ouvrira bientôt vers ses auteurs,
-        ses textes, ses notions essentielles, ses résonances avec les autres traditions.
-      </p>
-
-      <div class="aside-box" style="margin-top: var(--space-xl);">
-        <span class="aside-box__label">Sources</span>
-        Cette frise s'appuie principalement sur Éric Geoffroy, <em>Le soufisme : histoire, fondements, pratique</em> (Eyrolles, 2013) ;
-        Martin Lings, <em>Qu'est-ce que le soufisme ?</em> (Seuil, 1977) ; et Annemarie Schimmel, <em>Mystical Dimensions of Islam</em>.
-        Les citations sont reprises mot à mot de ces ouvrages.
+      <div class="periods-grid" id="periods-grid">
+        <!-- injecté par timeline.js -->
       </div>
     </section>
 
   </main>
 
+  <!-- Modal -->
+  <div class="modal" id="period-modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <article class="modal__content" id="modal-content">
+      <button class="modal__close" data-close aria-label="Fermer">✕</button>
+    </article>
+  </div>
+
   <footer class="site-footer">
     <div class="container">
       <div class="ornament">✦</div>
-      <p><em>« Il y a autant de voies menant à Dieu que de souffles des fils d'Adam. »</em></p>
+      <p><em>« Le soufisme était auparavant une réalité sans nom ; il est maintenant un nom sans réalité. »</em></p>
       <p class="small" style="margin-top: 1rem;"><a href="../index.html">← Retour à l'accueil</a></p>
     </div>
   </footer>

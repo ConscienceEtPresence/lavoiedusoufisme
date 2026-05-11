@@ -8,9 +8,10 @@
   --paper:        #FBF7EF;   /* fond parchemin */
   --paper-warm:   #F5EDDD;   /* parchemin légèrement plus chaud */
   --paper-deep:   #EFE4CE;   /* encart, citation, carte */
-  --ink:          #1B2A4E;   /* encre bleu nuit */
-  --ink-soft:     #3E5C76;   /* indigo doux */
-  --ink-mute:     #6B7A99;   /* texte secondaire */
+  --ink:          #0F1830;   /* encre profonde (corps de texte) */
+  --ink-title:    #1B2A4E;   /* encre bleu nuit (titres) */
+  --ink-soft:     #2E4762;   /* indigo doux (texte secondaire chaud) */
+  --ink-mute:     #5B6A85;   /* texte tertiaire */
   --gold:         #B8860B;   /* or sobre */
   --gold-soft:    #D4A93A;   /* or clair, accents */
   --rose:         #A65A4A;   /* terre de Sienne, accents chauds */
@@ -19,11 +20,11 @@
   --shadow:       0 4px 24px rgba(27, 42, 78, 0.08);
   --shadow-soft:  0 2px 12px rgba(27, 42, 78, 0.05);
 
-  /* Typographie */
-  --font-serif:   'Cormorant Garamond', 'EB Garamond', Georgia, 'Times New Roman', serif;
+  /* Typographie — système à deux serif : Spectral pour la lecture, Cormorant pour les titres */
+  --font-serif:   'Spectral', 'Georgia', 'Times New Roman', serif;
   --font-display: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
   --font-arabic:  'Amiri', 'Scheherazade New', serif;
-  --font-sans:    -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', sans-serif;
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
 
   /* Rythme */
   --space-xs: 0.4rem;
@@ -42,7 +43,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
-  font-size: 17px;
+  font-size: 18px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -52,8 +53,10 @@ body {
   font-family: var(--font-serif);
   color: var(--ink);
   background: var(--paper);
-  line-height: 1.65;
+  line-height: 1.72;
   font-weight: 400;
+  font-feature-settings: "kern", "liga", "calt";
+  text-rendering: optimizeLegibility;
   min-height: 100vh;
   background-image:
     radial-gradient(ellipse at top, rgba(212, 169, 58, 0.08) 0%, transparent 55%),
@@ -72,19 +75,19 @@ body {
   line-height: 1.8;
 }
 
-/* Titres */
-h1, h2, h3, h4 {
+/* Titres — Cormorant pour la calligraphie, Spectral pour le corps */
+h1, h2, h3 {
   font-family: var(--font-display);
   font-weight: 500;
-  color: var(--ink);
-  line-height: 1.2;
+  color: var(--ink-title);
+  line-height: 1.18;
   letter-spacing: 0.005em;
 }
 
 h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 400; }
 h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom: var(--space-md); }
 h3 { font-size: 1.4rem; color: var(--ink-soft); margin-bottom: var(--space-sm); }
-h4 { font-size: 1.15rem; color: var(--gold); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+h4 { font-size: 1.05rem; color: var(--gold); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-family: var(--font-sans); }
 
 p { margin-bottom: var(--space-md); max-width: var(--measure); }
 

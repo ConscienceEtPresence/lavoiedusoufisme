@@ -4,15 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Géographie spirituelle — Les terres du soufisme</title>
-  <meta name="description" content="Neuf terres, neuf saveurs du soufisme : Irak, Khorassan, Andalousie, Égypte, Anatolie, Iran, Inde, Afrique, Occident." />
+  <meta name="description" content="Neuf terres, neuf saveurs du soufisme. Clique sur une région pour ouvrir sa fiche." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="../assets/css/base.css" />
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/courants.css" />
   <link rel="stylesheet" href="../assets/css/geographie.css" />
 </head>
 <body>
@@ -40,7 +41,6 @@
           <li><a href="histoire.html">Histoire</a></li>
           <li><a href="courants.html">Courants</a></li>
           <li><a href="geographie.html" class="active">Géographie</a></li>
-          <li><a href="#" class="muted">Auteurs <small>(à venir)</small></a></li>
         </ul>
       </nav>
     </div>
@@ -52,56 +52,31 @@
       <div class="section-intro">
         <span class="section-intro__eyebrow">Géographie spirituelle</span>
         <h1>Les terres du soufisme</h1>
-        <p>Une même eau, neuf vases — neuf terres qui ont donné au soufisme ses couleurs particulières.</p>
+        <p>Neuf terres, neuf saveurs d'une même voie. Clique sur une région pour entrer dedans.</p>
       </div>
-
-      <blockquote>
-        À chaque vague, ses propres caractéristiques selon sa destination — selon les nécessités particulières de temps et de lieu auxquelles, providentiellement, elle s'écoule.
-        <cite>Martin Lings</cite>
-      </blockquote>
-
-      <p id="geo-intro" style="margin-top: var(--space-lg); color: var(--ink-soft);"></p>
     </section>
 
     <section class="container container--wide">
       <div class="ornament">✦</div>
-
-      <!-- Mini-carte stylisée navigation -->
-      <nav class="region-map" id="region-map" aria-label="Navigation des régions">
-        <!-- injecté par JS -->
-      </nav>
-
-      <!-- Cartes-fiches par région -->
-      <div class="regions-stack" id="regions-stack">
-        <!-- injecté par JS -->
-      </div>
-    </section>
-
-    <section class="container container--narrow">
-      <div class="ornament">✦ ✦ ✦</div>
-
-      <h2 class="center">Une voie, mille couleurs</h2>
-      <p class="center" style="color: var(--ink-soft); font-style: italic; max-width: 720px; margin: 0 auto var(--space-lg);">
-        Quand on parcourt cette géographie, on comprend que le soufisme n'a jamais été un système clos.
-        Il s'est constamment <em>traduit</em> — dans la langue persane, dans la calligraphie maghrébine,
-        dans le qawwâlî indien, dans le chant peul, dans la poésie de Yunus Emre, dans la pensée de Henry Corbin.
-        Chaque traduction est une nouvelle révélation de la même Source.
-      </p>
-
-      <div class="aside-box">
-        <span class="aside-box__label">Sources</span>
-        Cette géographie s'appuie sur Nile Green, <em>Sufism: A Global History</em> (Wiley-Blackwell, 2012) ;
-        J. Spencer Trimingham, <em>The Sufi Orders in Islam</em> (Oxford, 1971) ;
-        Éric Geoffroy, <em>Le soufisme</em> (Eyrolles, 2013).
+      <div class="regions-grid" id="regions-grid">
+        <!-- injecté par geographie.js -->
       </div>
     </section>
 
   </main>
 
+  <!-- Modal -->
+  <div class="modal" id="region-modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <article class="modal__content" id="modal-content">
+      <button class="modal__close" data-close aria-label="Fermer">✕</button>
+    </article>
+  </div>
+
   <footer class="site-footer">
     <div class="container">
       <div class="ornament">✦</div>
-      <p><em>« Le soufi accompli est conscient d'être prisonnier du monde des formes, mais, à leur différence, il a aussi conscience d'être libre. »</em><br><small>— Martin Lings</small></p>
+      <p><em>« À chaque vague, ses propres caractéristiques selon sa destination. »</em><br><small>— Martin Lings</small></p>
       <p class="small" style="margin-top: 1rem;"><a href="../index.html">← Retour à l'accueil</a></p>
     </div>
   </footer>

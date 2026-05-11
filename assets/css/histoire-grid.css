@@ -1,0 +1,84 @@
+/* ============================================================
+   HISTOIRE GRID — grille de périodes cliquables (style "tarot")
+   ============================================================ */
+
+.periods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.period-card {
+  background: var(--paper-warm);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-md);
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease, border-color 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+}
+.period-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--gold-soft), var(--turquoise));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.period-card:hover {
+  transform: translateY(-4px);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  border-color: var(--gold-soft);
+}
+.period-card:hover::before { opacity: 1; }
+
+.period-card__num {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--gold-soft);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.period-card__date {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--gold);
+  margin: var(--space-sm) 0 var(--space-xs);
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 50%, var(--turquoise) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.period-card__title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--ink);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.25;
+}
+.period-card__subtitle {
+  color: var(--ink-mute);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+.period-card__more {
+  margin-top: var(--space-md);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}

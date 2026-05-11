@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soufisme — La voie du cœur</title>
-  <meta name="description" content="Une porte d'entrée vivante dans la voie soufie : histoire, auteurs, pratiques, textes. Une bibliothèque spirituelle ouverte à tous." />
+  <meta name="description" content="Une porte d'entrée vivante dans la voie soufie : histoire, courants, géographie. Une bibliothèque spirituelle ouverte à tous." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
@@ -39,17 +39,15 @@
           <li><a href="pages/histoire.html">Histoire</a></li>
           <li><a href="pages/courants.html">Courants</a></li>
           <li><a href="pages/geographie.html">Géographie</a></li>
-          <li><a href="#" class="muted">Auteurs <small>(à venir)</small></a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero hero--compact">
       <div class="container container--narrow">
 
-        <!-- Calligraphie : Hû هو ("Lui") — Nom divin de la présence pure -->
         <div class="hero__calligraphy" aria-label="Hû — Lui, en arabe">
           <span lang="ar" dir="rtl">هو</span>
         </div>
@@ -57,22 +55,14 @@
         <h1 class="hero__title">La voie du <em>cœur</em></h1>
 
         <p class="hero__lede">
-          Une porte ouverte sur le soufisme — non un folklore, non une esthétique,
-          mais une intelligence de l'amour et une discipline de présence.
+          Non un folklore, non une esthétique —<br>
+          une intelligence de l'amour, une discipline de présence.
         </p>
-
-        <div class="hero__rule" aria-hidden="true"></div>
 
         <blockquote class="hero__quote" id="rotating-quote">
           <span class="quote-text">Le soufisme est une saveur — connaissance directe des vérités transcendantes.</span>
           <cite class="quote-cite">Définition soufie classique</cite>
         </blockquote>
-
-        <div class="hero__rule" aria-hidden="true"></div>
-
-        <div class="ornament">✦</div>
-
-        <h4 class="center" style="margin-bottom: 1.5rem;">Choisis ta porte</h4>
 
         <div class="doors">
 
@@ -81,45 +71,34 @@
               <circle cx="24" cy="24" r="20" />
               <path d="M24 8 L24 24 L34 30" />
             </svg>
-            <h3 class="door__title">Découvrir</h3>
-            <p class="door__desc">Entrer par l'histoire — douze siècles d'une voie intérieure.</p>
+            <h3 class="door__title">Histoire</h3>
+            <p class="door__desc">Douze siècles d'une voie intérieure.</p>
           </a>
 
-          <a href="#" class="door" onclick="alert('Section à venir : nous y travaillons ✦'); return false;">
+          <a href="pages/courants.html" class="door">
             <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
-              <path d="M8 12 L8 38 L24 34 L40 38 L40 12 L24 8 Z" />
-              <line x1="24" y1="8" x2="24" y2="34" />
+              <circle cx="24" cy="24" r="6" />
+              <circle cx="10" cy="12" r="3" /><circle cx="38" cy="12" r="3" />
+              <circle cx="10" cy="36" r="3" /><circle cx="38" cy="36" r="3" />
+              <line x1="24" y1="24" x2="10" y2="12"/><line x1="24" y1="24" x2="38" y2="12"/>
+              <line x1="24" y1="24" x2="10" y2="36"/><line x1="24" y1="24" x2="38" y2="36"/>
             </svg>
-            <h3 class="door__title">Comprendre</h3>
-            <p class="door__desc">Les notions, les pratiques, les textes — le vocabulaire vivant.</p>
+            <h3 class="door__title">Courants</h3>
+            <p class="door__desc">Quatorze voies, une même eau.</p>
           </a>
 
-          <a href="#" class="door" onclick="alert('Section à venir : nous y travaillons ✦'); return false;">
+          <a href="pages/geographie.html" class="door">
             <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
-              <circle cx="24" cy="24" r="8" />
-              <circle cx="24" cy="24" r="16" />
-              <circle cx="24" cy="24" r="22" opacity="0.5" />
+              <ellipse cx="24" cy="24" rx="20" ry="10"/>
+              <circle cx="24" cy="24" r="20"/>
+              <path d="M24 4 Q14 24 24 44 M24 4 Q34 24 24 44"/>
             </svg>
-            <h3 class="door__title">Approfondir</h3>
-            <p class="door__desc">Maîtres, métaphysique, résonances avec les autres traditions.</p>
+            <h3 class="door__title">Géographie</h3>
+            <p class="door__desc">Neuf terres, neuf saveurs.</p>
           </a>
 
         </div>
 
-      </div>
-    </section>
-
-    <section class="container container--narrow">
-      <div class="ornament">✦ ✦ ✦</div>
-
-      <div class="section-intro">
-        <span class="section-intro__eyebrow">Pourquoi ce site</span>
-        <h2>Une bibliothèque vivante</h2>
-        <p>
-          Ce lieu se veut une mine d'or à ciel ouvert : pour qui découvre, pour qui cherche,
-          pour qui chemine. Il se remplira au fil des saisons — auteurs, notions, pratiques,
-          poèmes, résonances entre les traditions. Une voie ne se déroule pas en un jour.
-        </p>
       </div>
     </section>
 
@@ -128,9 +107,8 @@
   <footer class="site-footer">
     <div class="container">
       <div class="ornament">✦</div>
-      <p><em>Le soufisme est une voie de transformation du cœur,<br />
-      une intelligence de l'amour, une discipline de présence.</em></p>
-      <p class="small" style="margin-top: 1rem;">Sources : Éric Geoffroy · Martin Lings · Annemarie Schimmel · Henry Corbin</p>
+      <p><em>Une bibliothèque vivante, qui s'enrichira au fil des saisons.<br>
+      Auteurs, notions, pratiques, poèmes, résonances — bientôt.</em></p>
     </div>
   </footer>
 

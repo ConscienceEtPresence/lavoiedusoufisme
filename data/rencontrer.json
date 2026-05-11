@@ -5,87 +5,104 @@
   "sections": [
     {
       "slug": "maitres",
-      "title": "Les grands maîtres",
+      "title": "Galerie des maîtres",
       "subtitle": "Râbiʿa, Hallâj, Rûmî, Ibn ʿArabî…",
-      "status": "soon",
-      "preview": "Galerie de fiches — vie, œuvre, idée centrale, citations. Chaque maître est une fenêtre sur l'univers."
+      "status": "ready",
+      "link": "maitres.html",
+      "preview": "Neuf figures essentielles, chacune une fenêtre sur un univers. Clique pour entrer."
     },
     {
       "slug": "rumi",
       "title": "Rûmî",
       "subtitle": "L'amour comme voie",
-      "status": "soon",
+      "status": "ready",
+      "link": "auteurs/rumi.html",
       "preview": "Le Mathnawî, Shams de Tabrîz, la flûte de roseau, les derviches tourneurs — l'amour qui consume l'ego."
     },
     {
       "slug": "ibn-arabi",
       "title": "Ibn ʿArabî",
       "subtitle": "Le Grand Maître",
-      "status": "soon",
+      "status": "ready",
+      "link": "auteurs/ibn-arabi.html",
       "preview": "L'unité de l'Être, les Illuminations de La Mecque, les Chatons de la sagesse, l'homme parfait."
+    },
+    {
+      "slug": "hallaj",
+      "title": "Al-Hallâj",
+      "subtitle": "Le martyr de l'amour",
+      "status": "ready",
+      "link": "auteurs/hallaj.html",
+      "preview": "Le cri Anâ l-Ḥaqq — « Je suis le Réel ». L'homme qui paya l'amour de sa vie."
+    },
+    {
+      "slug": "rabia",
+      "title": "Râbiʿa al-ʿAdawiyya",
+      "subtitle": "L'inventrice de l'amour pur",
+      "status": "ready",
+      "link": "auteurs/rabia.html",
+      "preview": "La première femme sainte du soufisme. « Brûler le paradis, noyer l'enfer — qu'on aime Dieu pour Lui seul. »"
+    },
+    {
+      "slug": "attar",
+      "title": "Farîd al-Dîn ʿAṭṭâr",
+      "subtitle": "Le conteur des oiseaux",
+      "status": "ready",
+      "link": "auteurs/attar.html",
+      "preview": "Le Mantiq al-Tayr, le Sīmurgh, le voyage des trente oiseaux qui se découvrent être ce qu'ils cherchaient."
+    },
+    {
+      "slug": "ghazali",
+      "title": "Al-Ghazâlî",
+      "subtitle": "La preuve de l'islam",
+      "status": "ready",
+      "link": "auteurs/ghazali.html",
+      "preview": "L'Ihyâʾ, la crise spirituelle, le retour. Celui qui réconcilia le sunnisme et le soufisme."
+    },
+    {
+      "slug": "junayd",
+      "title": "Junayd de Bagdad",
+      "subtitle": "Le seigneur de la confrérie",
+      "status": "ready",
+      "link": "auteurs/junayd.html",
+      "preview": "Le maître de la sobriété, fondateur de l'école de Bagdad. Presque toutes les voies remontent à lui."
+    },
+    {
+      "slug": "bistami",
+      "title": "Bāyazīd Bistāmī",
+      "subtitle": "L'ivresse fulgurante",
+      "status": "ready",
+      "link": "auteurs/bistami.html",
+      "preview": "« Je me suis dépouillé de mon moi comme un serpent de sa peau. » Le grand mystique du Khorassan."
+    },
+    {
+      "slug": "ibn-ata-allah",
+      "title": "Ibn ʿAṭâʾ Allâh al-Iskandarī",
+      "subtitle": "Le sage des Hikam",
+      "status": "ready",
+      "link": "auteurs/ibn-ata-allah.html",
+      "preview": "Maître châdhilite d'Alexandrie. Les Hikam — aphorismes denses qui condensent la sagesse soufie."
     },
     {
       "slug": "textes-fondamentaux",
       "title": "Les textes fondamentaux",
       "subtitle": "La bibliothèque essentielle",
       "status": "soon",
-      "preview": "Mathnawî, Hikam d'Ibn ʿAtâʾ Allâh, Fusûs, Risâla de Qushayrî, Ihyâ de Ghazâlî, Langage des oiseaux d'ʿAttâr."
-    },
-    {
-      "slug": "poesie",
-      "title": "La poésie soufie",
-      "subtitle": "Quand la parole devient feu",
-      "status": "soon",
-      "preview": "Sanâʾî, ʿAttâr, Rûmî, Hâfez, Saʿdî, Jâmî, Yunus Emre, Bulleh Shah — le langage par lequel l'invisible se dit."
+      "preview": "Mathnawî, Hikam d'Ibn ʿAṭâʾ Allâh, Fusûs, Risâla de Qushayrî, Ihyâ de Ghazâlî, Langage des oiseaux d'ʿAttâr."
     },
     {
       "slug": "noms-divins",
       "title": "Le secret des Noms divins",
       "subtitle": "La science des Asmâʾ",
       "status": "soon",
-      "preview": "Avec Ibn ʿArabî, al-Ghazâlî, Ibn al-ʿArabî sur les Noms — un fondement métaphysique majeur du soufisme."
+      "preview": "Avec Ibn ʿArabî, al-Ghazâlî sur les Noms — fondement métaphysique majeur du soufisme."
     },
     {
-      "slug": "passeurs",
-      "title": "Les passeurs occidentaux",
-      "subtitle": "Guénon, Schuon, Burckhardt, Lings, Nasr, Corbin",
+      "slug": "resonances",
+      "title": "Résonances entre traditions",
+      "subtitle": "Coran, Bible, Kabbale, Inde",
       "status": "soon",
-      "preview": "Ceux qui ont transmis le soufisme à l'Occident moderne, dans la lignée pérennialiste et académique."
-    },
-    {
-      "slug": "michon-vitray",
-      "title": "Les traducteurs francophones",
-      "subtitle": "Vitray-Meyerovitch, Michon, Gloton, Deladrière",
-      "status": "soon",
-      "preview": "Ceux qui ont rendu accessibles en français Rûmî, Ibn ʿArabî, les Hikam, le Coran spirituel."
-    },
-    {
-      "slug": "resonances-coran",
-      "title": "Le Coran intérieur",
-      "subtitle": "Lecture spirituelle du Livre",
-      "status": "soon",
-      "preview": "Les versets soufis essentiels, la lecture symbolique (taʾwîl), les sept sens du Coran selon les soufis."
-    },
-    {
-      "slug": "resonances-bible",
-      "title": "Échos du christianisme mystique",
-      "subtitle": "Maître Eckhart, Jean de la Croix, Thérèse d'Avila",
-      "status": "soon",
-      "preview": "Les grands mystiques chrétiens lus en regard du soufisme — l'amour, le dépouillement, l'union."
-    },
-    {
-      "slug": "resonances-kabbale",
-      "title": "Échos de la Kabbale",
-      "subtitle": "Les Noms divins, l'En-Sof, l'arbre de vie",
-      "status": "soon",
-      "preview": "Convergences entre la mystique juive et soufie — les Noms, l'Unité, l'Adam primordial."
-    },
-    {
-      "slug": "resonances-inde",
-      "title": "Échos de l'Inde",
-      "subtitle": "Vedanta, Bhakti, Bouddhisme",
-      "status": "soon",
-      "preview": "Dara Shikoh, les Upanishads en regard, le Soi, l'amour bhakti, l'extinction bouddhiste — passerelles."
+      "preview": "Le soufisme en regard des autres voies — sa source coranique, ses échos chrétiens, juifs, indiens."
     }
   ]
 }

@@ -1,0 +1,101 @@
+/* ============================================================
+   LEXIQUE — Grille des termes avec calligraphie arabe
+   ============================================================ */
+
+.lexique-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 auto var(--space-xl);
+  padding: var(--space-md);
+  background: var(--paper-warm);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  max-width: 1000px;
+}
+
+.lexique-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.lex {
+  background: var(--paper-warm);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+.lex::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--gold-soft), var(--turquoise));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.lex:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold-soft);
+  box-shadow: var(--shadow);
+}
+.lex:hover::before { opacity: 1; }
+.lex.hidden { display: none; }
+
+.lex__ar {
+  font-family: var(--font-arabic);
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  line-height: 1.1;
+  direction: rtl;
+  text-align: right;
+  margin-bottom: 0.4rem;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 50%, var(--turquoise) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lex__translit {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--rose);
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.02em;
+}
+
+.lex__name {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--ink-title);
+  font-weight: 500;
+  margin: 0 0 var(--space-sm);
+  line-height: 1.2;
+}
+
+.lex__def {
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 100%;
+  flex: 1;
+}
+.lex__def em {
+  color: var(--ink-soft);
+}
+
+@media (max-width: 720px) {
+  .lex { padding: var(--space-md); }
+  .lex__ar { font-size: 1.9rem; }
+  .lex__name { font-size: 1.2rem; }
+  .lex__def { font-size: 0.95rem; }
+}

@@ -1,0 +1,236 @@
+/* ============================================================
+   FICHE AUTEUR — Page contemplative dédiée à un maître
+   ============================================================ */
+
+.auteur-hero {
+  text-align: center;
+  padding: var(--space-xl) var(--space-md) var(--space-lg);
+  position: relative;
+}
+
+.auteur-hero__ar {
+  font-family: var(--font-arabic);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1;
+  margin: 0 auto var(--space-md);
+  direction: rtl;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 50%, var(--turquoise) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 12px rgba(184, 134, 11, 0.18));
+}
+
+.auteur-hero__name {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 400;
+  color: var(--ink-title);
+  margin: 0 0 0.4rem;
+  letter-spacing: -0.005em;
+  line-height: 1.1;
+}
+
+.auteur-hero__dates {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--gold);
+  margin-bottom: var(--space-sm);
+  letter-spacing: 0.04em;
+}
+
+.auteur-hero__tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+  max-width: 580px;
+  margin: 0 auto var(--space-lg);
+  line-height: 1.5;
+}
+
+.auteur-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm) var(--space-lg);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.auteur-hero__meta strong {
+  color: var(--gold);
+  font-weight: 600;
+  margin-right: 0.4rem;
+}
+
+.auteur-body {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.auteur-body h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.7rem, 3.6vw, 2.2rem);
+  color: var(--ink-title);
+  margin: var(--space-2xl) 0 var(--space-md);
+  line-height: 1.2;
+  position: relative;
+}
+.auteur-body h2::before {
+  content: "✦";
+  display: block;
+  color: var(--gold);
+  font-size: 0.85rem;
+  margin-bottom: var(--space-xs);
+  opacity: 0.7;
+}
+
+.auteur-body p {
+  font-size: 1.05rem;
+  line-height: 1.78;
+  color: var(--ink);
+  margin-bottom: var(--space-md);
+  max-width: 100%;
+}
+
+.auteur-body blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--ink);
+  border-left: 3px solid var(--gold);
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-lg) 0;
+  background: var(--paper-warm);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.auteur-body blockquote cite {
+  display: block;
+  margin-top: var(--space-sm);
+  font-style: normal;
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  font-family: var(--font-sans);
+}
+.auteur-body blockquote cite::before { content: "— "; }
+
+/* Citations centrées spéciales */
+.poeme {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--ink-soft);
+  margin: var(--space-lg) auto;
+  padding: var(--space-md) var(--space-lg);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  max-width: 620px;
+}
+.poeme cite {
+  display: block;
+  margin-top: var(--space-sm);
+  font-style: normal;
+  color: var(--gold);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+/* Encadré "œuvre majeure" */
+.oeuvre {
+  background: var(--paper-deep);
+  border-left: 3px solid var(--turquoise);
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-lg) 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.oeuvre__titre-ar {
+  font-family: var(--font-arabic);
+  font-size: 1.4rem;
+  color: var(--gold);
+  direction: rtl;
+  text-align: right;
+  margin-bottom: 0.2rem;
+}
+.oeuvre__titre {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--ink-title);
+  margin: 0 0 0.3rem;
+  font-style: italic;
+}
+.oeuvre__desc {
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Liens vers autres auteurs */
+.voir-aussi {
+  background: var(--paper-warm);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin: var(--space-2xl) 0 var(--space-xl);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+.voir-aussi h3 {
+  font-family: var(--font-display);
+  color: var(--gold);
+  margin-bottom: var(--space-md);
+  font-weight: 500;
+}
+.voir-aussi__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+.voir-aussi__links a {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  color: var(--gold);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.voir-aussi__links a:hover {
+  background: var(--gold);
+  color: var(--paper);
+}
+
+/* Retour galerie */
+.retour-galerie {
+  text-align: center;
+  margin: var(--space-xl) 0 var(--space-md);
+}
+.retour-galerie a {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--ink-mute);
+  letter-spacing: 0.06em;
+  border-bottom: 1px dotted var(--ink-mute);
+  text-decoration: none;
+}
+.retour-galerie a:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+@media (max-width: 720px) {
+  .auteur-body p { font-size: 1rem; }
+  .auteur-hero__meta { gap: 0.5rem var(--space-md); }
+}

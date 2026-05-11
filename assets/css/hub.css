@@ -1,0 +1,125 @@
+/* ============================================================
+   HUB — Pages d'entrée (Découvrir, Cheminer, Rencontrer)
+   Grille de sous-sections, chacune cliquable
+   ============================================================ */
+
+.hub-intro {
+  max-width: 720px;
+  margin: 0 auto var(--space-xl);
+  text-align: center;
+}
+.hub-intro__lead {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.hub-card {
+  background: var(--paper-warm);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease, border-color 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  text-decoration: none;
+  color: inherit;
+}
+.hub-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--gold-soft), var(--turquoise));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.hub-card:hover {
+  transform: translateY(-3px);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  border-color: var(--gold-soft);
+}
+.hub-card:hover::before { opacity: 1; }
+
+.hub-card.is-soon {
+  opacity: 0.85;
+}
+.hub-card.is-soon::after {
+  content: "À venir";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+.hub-card.is-ready::after {
+  content: "✦ Disponible";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: var(--paper);
+  border: 1px solid var(--gold-soft);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.hub-card__title {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  color: var(--ink-title);
+  font-weight: 500;
+  margin: 0 0 0.25rem;
+  line-height: 1.2;
+  padding-right: 5rem;
+}
+.hub-card__subtitle {
+  color: var(--ink-mute);
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: var(--space-md);
+}
+.hub-card__preview {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  flex: 1;
+  margin: 0;
+  max-width: 100%;
+}
+
+.hub-card__more {
+  margin-top: var(--space-md);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding-top: var(--space-sm);
+  border-top: 1px dashed var(--line);
+}

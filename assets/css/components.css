@@ -115,9 +115,10 @@
 /* ---- Trois portes ---- */
 .doors {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-md);
   margin-top: var(--space-md);
+  width: 100%;
 }
 .door {
   display: block;
@@ -164,6 +165,36 @@
   html { font-size: 19px; }
   .hero--compact { padding: var(--space-md) 0; }
   .hero__calligraphy::before, .hero__calligraphy::after { display: none; }
+  .doors { gap: var(--space-sm); }
+  .door { padding: var(--space-md) 0.4rem; }
+  .door__title { font-size: 1.1rem; }
+  .door__desc { font-size: 0.8rem; }
+  .door__icon { width: 36px; height: 36px; }
+}
+
+@media (max-width: 480px) {
+  .doors { grid-template-columns: 1fr; gap: var(--space-md); }
+  .door { padding: var(--space-md); }
+  .door__title { font-size: 1.35rem; }
+  .door__desc { font-size: 0.95rem; }
+  .door__icon { width: 48px; height: 48px; }
+}
+
+/* ---- Transition d'entrée de page (effet "franchir le seuil") ---- */
+.page-enter {
+  animation: pageEnter 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 /* ---- Frise historique ---- */

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Géographie spirituelle — Les terres du soufisme</title>
-  <meta name="description" content="Neuf terres, neuf saveurs du soufisme. Clique sur une région pour ouvrir sa fiche." />
+  <title>Rencontrer — La voie du soufisme</title>
+  <meta name="description" content="Les voix de la voie : maîtres, textes, résonances avec les autres traditions." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="../assets/css/base.css" />
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
-  <link rel="stylesheet" href="../assets/css/courants.css" />
-  <link rel="stylesheet" href="../assets/css/geographie.css" />
+  <link rel="stylesheet" href="../assets/css/hub.css" />
 </head>
 <body class="page-enter">
 
@@ -38,9 +37,9 @@
       <nav>
         <ul class="site-nav">
           <li><a href="../index.html">Accueil</a></li>
-          <li><a href="decouvrir.html" class="active">Découvrir</a></li>
+          <li><a href="decouvrir.html">Découvrir</a></li>
           <li><a href="cheminer.html">Cheminer</a></li>
-          <li><a href="rencontrer.html">Rencontrer</a></li>
+          <li><a href="rencontrer.html" class="active">Rencontrer</a></li>
         </ul>
       </nav>
     </div>
@@ -50,38 +49,33 @@
 
     <section class="container container--narrow">
       <div class="section-intro">
-        <span class="section-intro__eyebrow">Géographie spirituelle</span>
-        <h1>Les terres du soufisme</h1>
-        <p>Neuf terres, neuf saveurs d'une même voie. Clique sur une région pour entrer dedans.</p>
+        <span class="section-intro__eyebrow">Troisième porte</span>
+        <h1>Rencontrer</h1>
+        <p>Les maîtres, les textes, les résonances entre traditions.</p>
+      </div>
+
+      <div class="hub-intro">
+        <p class="hub-intro__lead" id="hub-intro-text"></p>
       </div>
     </section>
 
     <section class="container container--wide">
       <div class="ornament">✦</div>
-      <div class="regions-grid" id="regions-grid">
-        <!-- injecté par geographie.js -->
-      </div>
+      <div class="hub-grid" id="hub-grid"></div>
     </section>
 
   </main>
 
-  <!-- Modal -->
-  <div class="modal" id="region-modal" aria-hidden="true">
-    <div class="modal__backdrop" data-close></div>
-    <article class="modal__content" id="modal-content">
-      <button class="modal__close" data-close aria-label="Fermer">✕</button>
-    </article>
-  </div>
-
   <footer class="site-footer">
     <div class="container">
       <div class="ornament">✦</div>
-      <p><em>« À chaque vague, ses propres caractéristiques selon sa destination. »</em><br><small>— Martin Lings</small></p>
+      <p><em>« Il y a autant de voies menant à Dieu que de souffles des fils d'Adam. »</em></p>
       <p class="small" style="margin-top: 1rem;"><a href="../index.html">← Retour à l'accueil</a></p>
     </div>
   </footer>
 
+  <script>window.HUB_DATA_FILE = 'rencontrer.json';</script>
   <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/geographie.js"></script>
+  <script src="../assets/js/hub.js"></script>
 </body>
 </html>

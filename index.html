@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Soufisme — La voie du cœur</title>
-  <meta name="description" content="Une porte d'entrée vivante dans la voie soufie : histoire, courants, géographie. Une bibliothèque spirituelle ouverte à tous." />
+  <title>La voie du soufisme — Une bibliothèque vivante</title>
+  <meta name="description" content="Entrer dans la voie soufie par l'expérience, le cheminement et la rencontre. Une bibliothèque spirituelle ouverte à tous." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
 </head>
-<body>
+<body class="page-enter">
 
   <header class="site-header">
     <div class="container site-header__inner">
@@ -24,7 +24,7 @@
           <circle cx="16" cy="16" r="7" />
           <circle cx="16" cy="16" r="1.5" fill="currentColor" />
         </svg>
-        <span>Soufisme</span>
+        <span>La voie du soufisme</span>
       </a>
 
       <button class="nav-toggle" aria-label="Menu">
@@ -36,9 +36,9 @@
       <nav>
         <ul class="site-nav">
           <li><a href="index.html" class="active">Accueil</a></li>
-          <li><a href="pages/histoire.html">Histoire</a></li>
-          <li><a href="pages/courants.html">Courants</a></li>
-          <li><a href="pages/geographie.html">Géographie</a></li>
+          <li><a href="pages/decouvrir.html">Découvrir</a></li>
+          <li><a href="pages/cheminer.html">Cheminer</a></li>
+          <li><a href="pages/rencontrer.html">Rencontrer</a></li>
         </ul>
       </nav>
     </div>
@@ -66,35 +66,35 @@
 
         <div class="doors">
 
-          <a href="pages/histoire.html" class="door">
-            <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
-              <circle cx="24" cy="24" r="20" />
-              <path d="M24 8 L24 24 L34 30" />
+          <a href="pages/decouvrir.html" class="door">
+            <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+              <!-- Porte ogivale : un seuil -->
+              <path d="M14 42 L14 22 Q14 10 24 10 Q34 10 34 22 L34 42" />
+              <line x1="10" y1="42" x2="38" y2="42" />
+              <circle cx="24" cy="24" r="2.5" />
             </svg>
-            <h3 class="door__title">Histoire</h3>
-            <p class="door__desc">Douze siècles d'une voie intérieure.</p>
+            <h3 class="door__title">Découvrir</h3>
+            <p class="door__desc">Entrer par le seuil — comprendre la voie, son histoire, ses terres.</p>
           </a>
 
-          <a href="pages/courants.html" class="door">
-            <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
-              <circle cx="24" cy="24" r="6" />
-              <circle cx="10" cy="12" r="3" /><circle cx="38" cy="12" r="3" />
-              <circle cx="10" cy="36" r="3" /><circle cx="38" cy="36" r="3" />
-              <line x1="24" y1="24" x2="10" y2="12"/><line x1="24" y1="24" x2="38" y2="12"/>
-              <line x1="24" y1="24" x2="10" y2="36"/><line x1="24" y1="24" x2="38" y2="36"/>
+          <a href="pages/cheminer.html" class="door">
+            <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+              <!-- Spirale du retour à l'Un -->
+              <path d="M24 24 m-2 0 a2 2 0 1 1 4 0 a4 4 0 1 1 -8 0 a6 6 0 1 1 12 0 a8 8 0 1 1 -16 0 a10 10 0 1 1 20 0 a12 12 0 1 1 -22 0" />
             </svg>
-            <h3 class="door__title">Courants</h3>
-            <p class="door__desc">Quatorze voies, une même eau.</p>
+            <h3 class="door__title">Cheminer</h3>
+            <p class="door__desc">Le cœur, les Noms, l'amour, le souvenir — la pratique vive.</p>
           </a>
 
-          <a href="pages/geographie.html" class="door">
-            <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
-              <ellipse cx="24" cy="24" rx="20" ry="10"/>
-              <circle cx="24" cy="24" r="20"/>
-              <path d="M24 4 Q14 24 24 44 M24 4 Q34 24 24 44"/>
+          <a href="pages/rencontrer.html" class="door">
+            <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+              <!-- Deux cercles qui se touchent : la rencontre -->
+              <circle cx="18" cy="24" r="11" />
+              <circle cx="30" cy="24" r="11" />
+              <circle cx="24" cy="24" r="2" fill="currentColor" stroke="none" />
             </svg>
-            <h3 class="door__title">Géographie</h3>
-            <p class="door__desc">Neuf terres, neuf saveurs.</p>
+            <h3 class="door__title">Rencontrer</h3>
+            <p class="door__desc">Les maîtres, les textes, les résonances entre traditions.</p>
           </a>
 
         </div>
@@ -107,8 +107,8 @@
   <footer class="site-footer">
     <div class="container">
       <div class="ornament">✦</div>
-      <p><em>Une bibliothèque vivante, qui s'enrichira au fil des saisons.<br>
-      Auteurs, notions, pratiques, poèmes, résonances — bientôt.</em></p>
+      <p><em>Une bibliothèque vivante qui s'enrichit au fil des saisons.<br>
+      Auteurs, Noms divins, poèmes, pratiques, résonances.</em></p>
     </div>
   </footer>
 

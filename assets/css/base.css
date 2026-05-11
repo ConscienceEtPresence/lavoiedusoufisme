@@ -21,7 +21,7 @@
   --shadow-soft:  0 2px 12px rgba(27, 42, 78, 0.05);
 
   /* Typographie — système à deux serif : Spectral pour la lecture, Cormorant pour les titres */
-  --font-serif:   'Spectral', 'Georgia', 'Times New Roman', serif;
+  --font-serif:   'Source Serif 4', 'Source Serif Pro', 'Georgia', 'Times New Roman', serif;
   --font-display: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
   --font-arabic:  'Amiri', 'Scheherazade New', serif;
   --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;

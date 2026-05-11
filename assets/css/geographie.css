@@ -1,0 +1,257 @@
+/* ============================================================
+   GÉOGRAPHIE — Mini-carte navigation, fiches régionales en pile
+   ============================================================ */
+
+/* --- Mini-carte de navigation --- */
+.region-map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: var(--space-xl);
+  padding: var(--space-md);
+  background: var(--paper-warm);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  position: sticky;
+  top: 80px;
+  z-index: 5;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(245, 237, 221, 0.92);
+}
+.region-map a {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  transition: all 0.25s ease;
+}
+.region-map a:hover {
+  background: var(--gold);
+  color: var(--paper);
+  border-color: var(--gold);
+}
+
+/* --- Pile de fiches régionales --- */
+.regions-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-xl);
+}
+
+.region-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-xl);
+  background: var(--paper-warm);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: 160px;
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+.region-card:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--gold-soft);
+}
+.region-card::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, var(--gold), var(--turquoise));
+}
+
+/* --- Colonne gauche : titre, illustration --- */
+.region-card__side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.region-card__illus {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--paper);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-arabic);
+  font-size: 3.5rem;
+  color: var(--gold);
+  background: linear-gradient(135deg, var(--paper) 0%, var(--paper-deep) 100%);
+  position: relative;
+  overflow: hidden;
+  max-width: 260px;
+}
+.region-card__illus::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid var(--gold-soft);
+  border-radius: var(--radius);
+  opacity: 0.5;
+}
+.region-card__illus span {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 40%, var(--turquoise) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+.region-card__apogee {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.region-card__name {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  color: var(--ink);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.15;
+}
+.region-card__alt {
+  font-style: italic;
+  color: var(--rose);
+  font-size: 0.95rem;
+}
+
+/* --- Colonne droite : contenu --- */
+.region-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.region-card__intro {
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.65;
+  max-width: 100%;
+  margin: 0;
+}
+.region-card__body p {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.65;
+  max-width: 100%;
+  margin: 0;
+}
+
+.region-card__section {
+  margin-top: 0;
+}
+.region-card__section h4 {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+/* --- Pastilles villes / ordres / figures --- */
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.pill {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-family: var(--font-sans);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  transition: all 0.2s ease;
+}
+.pill--city {
+  border-color: var(--turquoise);
+  color: var(--turquoise);
+}
+.pill--order {
+  border-color: var(--gold-soft);
+  color: var(--gold);
+  background: rgba(184, 134, 11, 0.05);
+}
+.pill--figure {
+  font-style: italic;
+  color: var(--ink-soft);
+  background: var(--paper);
+}
+
+.region-card__spirit {
+  background: var(--paper);
+  border-left: 3px solid var(--gold);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-style: italic;
+  color: var(--ink);
+}
+.region-card__spirit::before {
+  content: "Esprit : ";
+  font-style: normal;
+  color: var(--gold);
+  font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.region-card__quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  border-left: 2px solid var(--gold);
+  padding-left: var(--space-md);
+  margin: 0;
+}
+.region-card__quote cite {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--gold);
+  font-style: normal;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  font-family: var(--font-sans);
+}
+.region-card__quote cite::before { content: "— "; }
+
+.region-card__keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding-top: var(--space-sm);
+  border-top: 1px dashed var(--line);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .region-card {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+  }
+  .region-card__illus { max-width: 180px; margin: 0 auto; font-size: 2.5rem; }
+  .region-card__name { font-size: 1.5rem; text-align: center; }
+  .region-card__apogee, .region-card__alt { text-align: center; }
+}

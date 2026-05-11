@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courants & confréries — Les voies du soufisme</title>
+  <meta name="description" content="Les grandes voies du soufisme (tarîqa) : Qâdiriyya, Châdhiliyya, Naqshbandiyya, Mevleviyya, Chishtiyya... Une cartographie des familles spirituelles." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/courants.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="16" cy="16" r="13" />
+          <circle cx="16" cy="16" r="7" />
+          <circle cx="16" cy="16" r="1.5" fill="currentColor" />
+        </svg>
+        <span>Soufisme</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="site-nav">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="courants.html" class="active">Courants</a></li>
+          <li><a href="geographie.html">Géographie</a></li>
+          <li><a href="#" class="muted">Auteurs <small>(à venir)</small></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="container container--narrow">
+      <div class="section-intro">
+        <span class="section-intro__eyebrow">Tarîqa · Les voies</span>
+        <h1>Courants & confréries</h1>
+        <p>Quatorze grandes familles spirituelles — du Maghreb à l'Inde, de Boukhara à Konya. Une même intelligence du cœur, traversée par des couleurs et des accents propres.</p>
+      </div>
+
+      <blockquote>
+        Il y a autant de voies menant à Dieu que de souffles des fils d'Adam.
+        <cite>Adage soufi</cite>
+      </blockquote>
+
+      <p id="intro-text" style="margin-top: var(--space-lg); color: var(--ink-soft);"></p>
+    </section>
+
+    <section class="container container--wide">
+      <div class="ornament">✦</div>
+
+      <!-- Filtres par région -->
+      <div class="region-filters" id="region-filters">
+        <button class="region-btn active" data-region="all">Toutes</button>
+        <!-- injecté par JS -->
+      </div>
+
+      <!-- Grille des ordres -->
+      <div class="orders-grid" id="orders-grid">
+        <!-- injecté par courants.js -->
+      </div>
+    </section>
+
+    <section class="container container--narrow">
+      <div class="ornament">✦ ✦ ✦</div>
+
+      <h2 class="center">Une géographie spirituelle</h2>
+      <p class="center" style="color: var(--ink-soft); font-style: italic; max-width: 720px; margin: 0 auto var(--space-lg);">
+        Ces voies ne sont pas des sectes ni des chapelles. Elles transmettent chacune une <em>saveur</em> du même cœur — la sobriété pour les Naqshbandis,
+        l'amour ivre pour les Mevlevis, le service pour les Chishtis, la pauvreté présente pour les Châdhilis.
+        Toutes mènent au même Océan.
+      </p>
+
+      <div class="aside-box">
+        <span class="aside-box__label">Sources</span>
+        Page fondée sur J. Spencer Trimingham, <em>The Sufi Orders in Islam</em> (Oxford, 1971) ;
+        Éric Geoffroy, <em>Le soufisme</em> (Eyrolles, 2013) ; Annemarie Schimmel, <em>Mystical Dimensions of Islam</em>.
+        Les citations sont issues directement des écrits de chaque tradition.
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal pour ouvrir une fiche détaillée -->
+  <div class="modal" id="order-modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <article class="modal__content" id="modal-content">
+      <button class="modal__close" data-close aria-label="Fermer">✕</button>
+      <!-- injecté par JS -->
+    </article>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p><em>« Les voies vers Dieu sont aussi nombreuses que les souffles des créatures. »</em></p>
+      <p class="small" style="margin-top: 1rem;"><a href="../index.html">← Retour à l'accueil</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/courants.js"></script>
+</body>
+</html>

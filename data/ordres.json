@@ -1,0 +1,316 @@
+{
+  "title": "Les voies du soufisme",
+  "subtitle": "Confréries, ordres, familles spirituelles — une cartographie des chemins",
+  "sources": [
+    "J. Spencer Trimingham, The Sufi Orders in Islam (Oxford, 1971)",
+    "Éric Geoffroy, Le soufisme : histoire, fondements, pratique (Eyrolles, 2013)",
+    "Annemarie Schimmel, Mystical Dimensions of Islam"
+  ],
+  "intro": "À partir du XIIe-XIIIe siècle, le soufisme se structure en familles spirituelles regroupées autour du charisme et de l'enseignement d'un saint éponyme — les tarîqa (« voies »). Ces ordres ne sont pas des sectes : ils transmettent une couleur spirituelle particulière, une méthode, une chaîne initiatique (silsila), tout en partageant le même cœur. Voici les principales voies qui ont traversé les siècles.",
+  "regions": [
+    { "id": "moyen-orient", "label": "Moyen-Orient" },
+    { "id": "maghreb",      "label": "Maghreb & Andalousie" },
+    { "id": "anatolie",     "label": "Anatolie & Balkans" },
+    { "id": "iran",         "label": "Iran & monde persan" },
+    { "id": "asie-centrale","label": "Asie centrale" },
+    { "id": "inde",         "label": "Inde & monde indo-persan" },
+    { "id": "afrique",      "label": "Afrique subsaharienne" },
+    { "id": "occident",     "label": "Occident contemporain" }
+  ],
+  "orders": [
+    {
+      "slug": "qadiriyya",
+      "name": "Qâdiriyya",
+      "nameAr": "القادرية",
+      "founder": "ʿAbd al-Qâdir al-Jîlânî",
+      "founderDates": "1077-1166",
+      "century": "XIIe siècle",
+      "originRegion": "Bagdad",
+      "diffusionRegions": ["moyen-orient", "maghreb", "afrique", "inde", "asie-centrale"],
+      "intro": "La plus ancienne et la plus répandue des grandes voies soufies. ʿAbd al-Qâdir al-Jîlânî, prédicateur hanbalite né en Iran, devient à Bagdad une figure de sainteté universelle — « réceptacle céleste de pétitions, dispensateur de bienfaits jusqu'à nos jours », écrit Trimingham.",
+      "body": "Bien que sa biographie historique soit difficile à dégager des mythes hagiographiques, ʿAbd al-Qâdir n'a jamais formellement fondé d'ordre : c'est après sa mort, à travers le rayonnement de sa baraka et de ses fils, que la voie s'est constituée. Elle s'est propagée d'Irak vers le monde entier — l'Inde au XVIe siècle, l'Afrique, le Maghreb, l'Asie centrale. Centrée sur la sincérité (sidq), l'abandon à Dieu (tawakkul), la rectitude intérieure et la pratique des litanies (awrâd).",
+      "practices": ["Dhikr collectif", "Awrâd (litanies quotidiennes)", "Hizb (prière prophylactique)"],
+      "themes": ["Guidance", "Discipline", "Sincérité", "Confiance en Dieu"],
+      "branches": ["Bûtchîchiyya (Maroc)", "Kasnazânî (Irak/Kurdistan)"],
+      "majorWorks": ["Futûh al-ghayb (Révélations de l'invisible)", "Al-Ghunya li-tâlibî tarîq al-Haqq"],
+      "quote": {
+        "text": "Quand tu rencontres un homme, place-toi à son service ; ne t'attends pas à ce qu'il te serve.",
+        "author": "ʿAbd al-Qâdir al-Jîlânî"
+      },
+      "keywords": ["Bagdad", "hanbalisme", "sainteté", "baraka", "première grande voie"]
+    },
+    {
+      "slug": "rifaiyya",
+      "name": "Rifâʿiyya",
+      "nameAr": "الرفاعية",
+      "founder": "Ahmad ibn ʿAlî ar-Rifâʿî",
+      "founderDates": "1106-1182",
+      "century": "XIIe siècle",
+      "originRegion": "Marais du sud de l'Irak (Bataʾih)",
+      "diffusionRegions": ["moyen-orient", "anatolie", "inde"],
+      "intro": "Voie issue des marais du sud de l'Irak (région des Bataʾih, entre Basra et Wâsit). Jusqu'au XVe siècle, elle fut la plus répandue de toutes les confréries — avant que la Qâdiriyya prenne le dessus.",
+      "body": "Ahmad ar-Rifâʿî, neveu et disciple de son oncle Mansûr al-Bataʾihî, vécut toute sa vie dans les marais sans jamais voyager au-delà du pèlerinage. Peu lettré, il n'a presque rien écrit. Sa voie se distingue par des pratiques spectaculaires — manger des serpents vivants, entrer dans des fours embrasés, percer son corps de broches sans saigner — qui « signifient la victoire de l'esprit sur la chair et son annihilation temporaire dans la Réalité absolue », explique Trimingham. Ces dervishes (les « Howling Dervishes » des sources occidentales) demeurent encore aujourd'hui réputés résistants au feu et charmeurs de serpents.",
+      "practices": ["Dhikr collectif intense", "Pratiques d'invulnérabilité (darb al-shîsh)", "Samâʿ avec tambours"],
+      "themes": ["Annihilation dans la Réalité", "Dépassement du corps", "Pauvreté spirituelle (faqr)"],
+      "branches": ["Badawiyya (via Ahmad al-Badawî)", "Dasûqiyya", "Saʿdiyya", "Harîriyya (Syrie)"],
+      "majorWorks": ["Al-Hikam al-Rifâʿiyya"],
+      "quote": {
+        "text": "Le chemin n'est rien d'autre que l'adab — la courtoisie du cœur envers Dieu.",
+        "author": "Ahmad ar-Rifâʿî"
+      },
+      "keywords": ["Irak", "marais", "darb al-shîsh", "extase corporelle", "première voie populaire"]
+    },
+    {
+      "slug": "suhrawardiyya",
+      "name": "Suhrawardiyya",
+      "nameAr": "السهروردية",
+      "founder": "Abû n-Najîb as-Suhrawardî, codifié par Shihâb al-Dîn ʿUmar as-Suhrawardî",
+      "founderDates": "1097-1168 / 1145-1234",
+      "century": "XIIe-XIIIe siècle",
+      "originRegion": "Bagdad",
+      "diffusionRegions": ["moyen-orient", "inde", "asie-centrale"],
+      "intro": "Voie de la haute culture urbaine de Bagdad, fondée par Abû n-Najîb et magistralement codifiée par son neveu Shihâb al-Dîn ʿUmar (m. 1234), auteur d'ʿAwârif al-maʿârif — l'un des plus influents manuels de soufisme jamais écrits.",
+      "body": "Shihâb al-Dîn fut envoyé comme ambassadeur du calife abbasside auprès des sultans seldjoukides et khwarazmiens : il associa l'orthodoxie shâfiʿite à une mystique exigeante. « Sa profondeur spirituelle était plus grande que celle des fondateurs de la Qâdiriyya et de la Rifâʿiyya », écrit Trimingham. Ses ʿAwârif circulèrent dans tout le monde musulman et formèrent des générations de cheikhs. La Suhrawardiyya s'enracina particulièrement en Inde du Nord, où elle reste vivante à Multan et Lahore.",
+      "practices": ["Khalwa (retraite spirituelle)", "Lecture des ʿAwârif", "Compagnonnage du cheikh (suhba)"],
+      "themes": ["Compagnonnage", "Discipline initiatique", "Adab", "Connaissance gustative"],
+      "branches": ["Suhrawardiyya indienne (Multan, Uch)"],
+      "majorWorks": ["ʿAwârif al-maʿârif (Les dons des connaissances) — Shihâb al-Dîn", "Âdâb al-murîdîn — Abû n-Najîb"],
+      "quote": {
+        "text": "La connaissance qui ne se réalise pas dans l'acte n'est qu'un argument contre celui qui la détient.",
+        "author": "Shihâb al-Dîn ʿUmar as-Suhrawardî"
+      },
+      "keywords": ["Bagdad", "ʿAwârif", "khanqâh", "shâfiʿite", "Inde du Nord"]
+    },
+    {
+      "slug": "shadhiliyya",
+      "name": "Châdhiliyya",
+      "nameAr": "الشاذلية",
+      "founder": "Abû l-Hasan al-Shâdhilî",
+      "founderDates": "1196-1258",
+      "century": "XIIIe siècle",
+      "originRegion": "Maghreb, puis Égypte",
+      "diffusionRegions": ["maghreb", "moyen-orient", "afrique", "occident"],
+      "intro": "Voie née au Maghreb et épanouie en Égypte. Abû l-Hasan al-Shâdhilî, formé par Ibn Mashîsh dans le Rif marocain, transmit l'héritage spirituel d'Abû Madyan vers l'Orient. La Châdhiliyya est la voie de la sobriété : pas de retrait du monde, pas de vêtement distinctif, pas d'exhibition.",
+      "body": "« Vivez parmi les hommes comme une feuille parmi les arbres : visible, mais sans qu'on remarque sa différence », enseigne-t-il. L'ordre se développe à travers ses grands transmetteurs : Abû l-ʿAbbâs al-Mursî, puis Ibn ʿAtâʾ Allâh al-Iskandarî (m. 1309), auteur des célèbres Hikam (Aphorismes), considérés comme l'un des sommets de la littérature spirituelle de l'islam. Voie de présence dans le monde, elle privilégie l'abandon, la confiance, la pauvreté intérieure (faqr) plutôt que matérielle.",
+      "practices": ["Hizb al-Bahr (litanie de la mer)", "Wird quotidien", "Dhikr discret", "Méditation des Hikam"],
+      "themes": ["Abandon (taslîm)", "Sobriété", "Présence dans le monde", "Pauvreté spirituelle"],
+      "branches": ["Darqâwiyya (Maroc)", "ʿAlâwiyya (Algérie)", "Yashrutiyya (Syrie, Liban)", "Bûzîdiyya"],
+      "majorWorks": ["Al-Hikam (Aphorismes) — Ibn ʿAtâʾ Allâh", "Hizb al-Bahr — al-Shâdhilî", "Latâʾif al-minan — Ibn ʿAtâʾ Allâh"],
+      "quote": {
+        "text": "Repose-toi de vouloir diriger les choses : ce qu'un Autre a pris en charge pour toi, ne t'en charge pas toi-même.",
+        "author": "Ibn ʿAtâʾ Allâh al-Iskandarî, Hikam"
+      },
+      "keywords": ["Maghreb", "Égypte", "Hikam", "sobriété", "abandon", "présence dans le monde"]
+    },
+    {
+      "slug": "badawiyya",
+      "name": "Badawiyya (Ahmadiyya)",
+      "nameAr": "البدوية",
+      "founder": "Ahmad al-Badawî",
+      "founderDates": "1199-1276",
+      "century": "XIIIe siècle",
+      "originRegion": "Tanta (Égypte)",
+      "diffusionRegions": ["moyen-orient", "afrique"],
+      "intro": "Voie populaire d'Égypte, fondée par Ahmad al-Badawî — Arabe né au Maroc, formé dans la tradition rifâʿî, qui s'installe à Tanta après avoir reçu une « autorité divine » de fonder sa propre voie. Son tombeau à Tanta devient le plus grand lieu de pèlerinage soufi d'Égypte.",
+      "body": "Ahmad al-Badawî vivait voilé sur la terrasse d'une maison, regard fixé vers le ciel, refusant la parole pendant de longues périodes — au point qu'on l'appela parfois al-Mulaththam (« le Voilé »). Sa baraka attira de vastes foules. La Badawiyya s'étendit hors d'Égypte vers le Hijaz, la Syrie, la Tunisie, Tripolitaine. Voie de fervor populaire, proche du peuple égyptien et de ses fêtes (mouled).",
+      "practices": ["Mouled de Tanta (festival annuel)", "Dhikr populaire", "Ziyâra (visite des tombeaux)"],
+      "themes": ["Sainteté visible", "Baraka", "Fervor populaire"],
+      "branches": ["Shinnâwiyya", "Sutûhiyya", "Halabiyya"],
+      "majorWorks": ["Awrâd al-Badawî"],
+      "quote": {
+        "text": "L'amour est silence ; mais quand il devient ivresse, alors les voiles se déchirent.",
+        "author": "Ahmad al-Badawî"
+      },
+      "keywords": ["Égypte", "Tanta", "mouled", "religion populaire", "al-Mulaththam"]
+    },
+    {
+      "slug": "mevleviyya",
+      "name": "Mevleviyya (Mawlawiyya)",
+      "nameAr": "المولوية",
+      "founder": "Jalâl al-Dîn Rûmî, organisée par son fils Sultan Walad",
+      "founderDates": "1207-1273 / 1226-1312",
+      "century": "XIIIe siècle",
+      "originRegion": "Konya (Anatolie seldjoukide)",
+      "diffusionRegions": ["anatolie", "moyen-orient", "occident"],
+      "intro": "L'ordre des « derviches tourneurs ». Né autour de la personne et de la mémoire de Rûmî à Konya, l'ordre fut structuré par son fils Sultan Walad. La danse circulaire (samâʿ) y est une prière en mouvement, codifiée bien après la mort de Rûmî.",
+      "body": "Chez Rûmî, le samâʿ était spontané : « Un jour, Mowlânâ passait près du bazar des batteurs d'or. Du bonheur de ce battement, une extase étonnante se fit en Mowlânâ et il se mit à tourner. » Ses disciples ritualisèrent cette extase en une danse hautement symbolique : la main droite tournée vers le ciel reçoit la grâce divine, la main gauche la transmet à la terre, le corps pivote autour du cœur — image cosmique des planètes autour du soleil, et de l'âme autour de Dieu. La Mevleviyya devint l'ordre lettré et raffiné de l'Empire ottoman, lié à la cour. Aboli par Atatürk en 1925, l'ordre survit aujourd'hui à Konya, à Istanbul, et en Occident.",
+      "practices": ["Samâʿ (danse rituelle des derviches tourneurs)", "Sikr collectif", "Récitation du Mathnawî", "Musique (ney, flûte de roseau)"],
+      "themes": ["Amour divin", "Ivresse", "Nostalgie de l'origine", "Mort initiatique"],
+      "branches": ["Mevlevi Order of America"],
+      "majorWorks": ["Mathnawî — Rûmî", "Dîvân-e Shams-e Tabrîzî — Rûmî", "Fîhi mâ fîhi — Rûmî"],
+      "quote": {
+        "text": "Notre mort, c'est nos noces avec l'éternité. Quel est son secret ? « Dieu est un ».",
+        "author": "Rûmî"
+      },
+      "keywords": ["Konya", "samâʿ", "derviches tourneurs", "Rûmî", "Mathnawî", "ney"]
+    },
+    {
+      "slug": "khalwatiyya",
+      "name": "Khalwatiyya",
+      "nameAr": "الخلوتية",
+      "founder": "ʿUmar al-Khalwatî",
+      "founderDates": "m. 1397",
+      "century": "XIVe siècle",
+      "originRegion": "Khorassan, puis Anatolie",
+      "diffusionRegions": ["anatolie", "moyen-orient", "afrique", "maghreb"],
+      "intro": "Voie de la khalwa — la retraite spirituelle prolongée dans l'isolement, souvent de quarante jours (arbaʿîn). Le nom même de l'ordre dit son essence : se retirer pour rencontrer Dieu dans le silence.",
+      "body": "Issue de la tradition khurassanienne et de la Suhrawardiyya, la Khalwatiyya fleurit dans l'Anatolie ottomane des XVe-XVIIe siècles, où elle devint l'un des ordres les plus influents auprès des élites comme du peuple. Elle se diffuse en Égypte (où elle joua un rôle majeur dans la renaissance soufie du XVIIIe siècle), au Maghreb, au Soudan. Ses branches sont innombrables : Halveti-Jerrahi (Istanbul), Rahmâniyya (Algérie), Sammâniyya (Soudan), Tijâniyya (qui en dérive).",
+      "practices": ["Khalwa des quarante jours (arbaʿîn)", "Récitation des sept Noms divins", "Dhikr nocturne", "Jeûnes prolongés"],
+      "themes": ["Retraite", "Silence", "Combat contre l'ego (nafs)", "Sept stations spirituelles"],
+      "branches": ["Halveti-Jerrahi (Istanbul)", "Rahmâniyya (Algérie)", "Sammâniyya (Soudan)", "Bayrâmiyya", "Gülşeniyya"],
+      "majorWorks": ["Sept litanies (Awrâd) attribués à al-Khalwatî"],
+      "quote": {
+        "text": "Quarante jours seul avec Lui valent mieux que mille discours avec les hommes.",
+        "author": "Adage khalwati"
+      },
+      "keywords": ["khalwa", "arbaʿîn", "Anatolie", "retraite", "sept Noms", "Empire ottoman"]
+    },
+    {
+      "slug": "naqshbandiyya",
+      "name": "Naqshbandiyya",
+      "nameAr": "النقشبندية",
+      "founder": "Bahâʾ al-Dîn Naqshband",
+      "founderDates": "1318-1389",
+      "century": "XIVe siècle",
+      "originRegion": "Boukhara (Asie centrale)",
+      "diffusionRegions": ["asie-centrale", "inde", "moyen-orient", "anatolie"],
+      "intro": "Voie de la sobriété par excellence. Née à Boukhara en Asie centrale, la Naqshbandiyya descend du courant des Khwâjagân (les « Maîtres » turkestanais) remontant à Yûsuf al-Hamadânî et ʿAbd al-Khâliq Ghijduwânî. Elle se distingue par le dhikr silencieux (khafî) — fait du cœur, non de la langue.",
+      "body": "« Le pied dans le monde, le cœur avec Dieu » : telle est la maxime naqshbandi. Voie hautement disciplinée, lettrée, sobre, fidèle à la Sharîʿa, elle joua un rôle politique majeur dans l'histoire islamique — soutenant les Timourides, les Moghols, les Ottomans, et jusqu'aux résistances anti-coloniales du XIXe siècle au Caucase (Shamil) et en Asie centrale. Sa branche réformatrice Mujaddidiyya, fondée par Ahmad Sirhindî (m. 1624) en Inde, contesta certaines interprétations d'Ibn ʿArabî pour proposer la doctrine de la wahdat al-shuhûd (« unité du témoignage ») contre la wahdat al-wujûd (« unité de l'être »).",
+      "practices": ["Dhikr silencieux (khafî) du cœur", "Râbita (lien intérieur au cheikh)", "Onze principes spirituels", "Murâqaba (veille intérieure)"],
+      "themes": ["Sobriété", "Silence intérieur", "Fidélité à la Loi", "Présence dans l'action"],
+      "branches": ["Mujaddidiyya (Sirhindî, Inde)", "Khâlidiyya (Mawlânâ Khâlid, Kurdistan)", "Haqqâniyya (cheikh Nazim, contemporaine)"],
+      "majorWorks": ["Maktûbât — Ahmad Sirhindî", "Rashahât ʿayn al-hayât — Kâshifî"],
+      "quote": {
+        "text": "Le cœur doit être avec Dieu, le pied dans le travail.",
+        "author": "Bahâʾ al-Dîn Naqshband"
+      },
+      "keywords": ["Boukhara", "dhikr silencieux", "Khwâjagân", "sobriété", "Sirhindî", "wahdat al-shuhûd"]
+    },
+    {
+      "slug": "kubrawiyya",
+      "name": "Kubrâwiyya",
+      "nameAr": "الكبروية",
+      "founder": "Najm al-Dîn Kubrâ",
+      "founderDates": "1145-1221",
+      "century": "XIIIe siècle",
+      "originRegion": "Khwârezm (Asie centrale)",
+      "diffusionRegions": ["asie-centrale", "iran"],
+      "intro": "Voie iranienne fondée par Najm al-Dîn Kubrâ — surnommé « le Très Grand » (al-Kubrâ) en raison de la force de son enseignement. Tué par les Mongols lors du sac de Khwârezm, il laissa une école dédiée à la phénoménologie de la lumière intérieure.",
+      "body": "Najm al-Dîn et ses disciples — ʿAlâʾ ad-Dawla Simnânî, Nûr al-Dîn Isfarâyinî — développèrent une véritable cartographie des couleurs et lumières qui apparaissent au cours du voyage intérieur, étudiée magistralement par Henry Corbin dans L'Homme de lumière dans le soufisme iranien. Chaque couleur correspond à une station de l'âme : le noir de l'ego non purifié, le bleu de l'imagination, le vert de la sainteté, la lumière blanche de l'esprit. La Kubrâwiyya féconda profondément la pensée mystique iranienne et donna naissance à la Niʿmatullâhiyya et à plusieurs branches chiites.",
+      "practices": ["Khalwa avec visualisation des lumières", "Dhikr et contemplation des couleurs", "Étude des stations spirituelles"],
+      "themes": ["Lumières intérieures", "Couleurs spirituelles", "Phénoménologie mystique", "Homme de lumière"],
+      "branches": ["Niʿmatullâhiyya", "Dhahabiyya", "Nûrbakhshiyya", "Hamadâniyya"],
+      "majorWorks": ["Fawâʾih al-jamâl wa fawâtih al-jalâl — Najm al-Dîn Kubrâ"],
+      "quote": {
+        "text": "Tu verras une lumière monter vers le ciel face à toi : c'est ton cœur qui se révèle à lui-même.",
+        "author": "Najm al-Dîn Kubrâ"
+      },
+      "keywords": ["Khwârezm", "lumières", "couleurs spirituelles", "Iran", "phénoménologie mystique"]
+    },
+    {
+      "slug": "chishtiyya",
+      "name": "Chishtiyya",
+      "nameAr": "الچشتية",
+      "founder": "Muʿîn al-Dîn Chishtî",
+      "founderDates": "1141-1236",
+      "century": "XIIe-XIIIe siècle",
+      "originRegion": "Afghanistan, puis Inde (Ajmer)",
+      "diffusionRegions": ["inde"],
+      "intro": "La voie soufie majeure du sous-continent indien. Muʿîn al-Dîn Chishtî s'établit à Ajmer en Inde du Nord et devint le « gharîb nawâz » — « bienfaiteur des pauvres ». Son sanctuaire à Ajmer reste l'un des plus visités au monde, par musulmans et hindous confondus.",
+      "body": "La Chishtiyya se distingue par sa proximité avec les pauvres, son refus radical de toute association avec le pouvoir politique, son ouverture spirituelle à la culture indienne — y compris hindoue —, et son usage central de la musique mystique (qawwâlî). Ses grands maîtres — Quṭb al-Dîn Bakhtiyâr Kâkî, Farîd al-Dîn Ganj-i Shakar, Nizâm al-Dîn Awliyâʾ — incarnent une mystique d'amour, de fraternité interreligieuse et de pauvreté volontaire. Le poète Amîr Khusrau (m. 1325), disciple de Nizâm al-Dîn, créa le qawwâlî tel qu'on l'entend aujourd'hui — chant ardent où vibrent les vers persans et hindavi.",
+      "practices": ["Samâʿ et qawwâlî (musique mystique)", "Service des pauvres (langar)", "Dhikr du nom Allâh", "Méditation sur le souffle"],
+      "themes": ["Amour universel", "Service", "Pauvreté volontaire", "Tolérance interreligieuse"],
+      "branches": ["Nizâmiyya", "Sâbiriyya"],
+      "majorWorks": ["Fawâʾid al-fuʾâd (paroles de Nizâm al-Dîn Awliyâʾ)", "Siyar al-awliyâʾ"],
+      "quote": {
+        "text": "Donne au cœur la générosité de la rivière, à l'âme la chaleur du soleil, et au corps l'humilité de la terre.",
+        "author": "Muʿîn al-Dîn Chishtî"
+      },
+      "keywords": ["Ajmer", "Inde", "qawwâlî", "pauvres", "Nizâm al-Dîn", "rencontre hindo-musulmane"]
+    },
+    {
+      "slug": "bektashiyya",
+      "name": "Bektâshiyya",
+      "nameAr": "البكتاشية",
+      "founder": "Hacı Bektaş Veli",
+      "founderDates": "1209-1271",
+      "century": "XIIIe siècle",
+      "originRegion": "Anatolie",
+      "diffusionRegions": ["anatolie"],
+      "intro": "Voie hétérodoxe et populaire d'Anatolie, à la croisée de l'islam soufi, de la culture turkmène, du chiisme et de traditions chamaniques d'Asie centrale. Hacı Bektaş Veli, originaire du Khorassan, transmit un enseignement plein de poésie et de bienveillance.",
+      "body": "Liée historiquement au corps des janissaires ottomans, la Bektâshiyya intégra une vénération particulière pour ʿAlî et les douze imams, des pratiques rituelles propres (consommation de vin lors de cérémonies, mixité hommes-femmes, suppression de certaines obligations rituelles externes). Cette ouverture lui valut tantôt la protection ottomane, tantôt sa persécution. Aujourd'hui vivante en Turquie, en Albanie (où elle a son centre mondial à Tirana depuis 1925) et chez les Alévis turcs, elle représente une lecture humaniste, poétique et tolérante de l'islam.",
+      "practices": ["Cem (cérémonie communautaire)", "Sémahs (danses rituelles mixtes)", "Lecture des poèmes de Yunus Emre", "Pèlerinage à Hacıbektaş"],
+      "themes": ["Humanisme", "Vénération de ʿAlî", "Tolérance", "Poésie", "Égalité homme-femme"],
+      "branches": ["Alévisme turc (rapprochement contemporain)"],
+      "majorWorks": ["Makâlât — Hacı Bektaş", "Poésie de Yunus Emre"],
+      "quote": {
+        "text": "Quiconque se connaît soi-même connaît Dieu. Ce que tu cherches est en toi — pourquoi t'épuiser au-dehors ?",
+        "author": "Yunus Emre"
+      },
+      "keywords": ["Anatolie", "janissaires", "alévis", "Yunus Emre", "humanisme", "ʿAlî"]
+    },
+    {
+      "slug": "tijaniyya",
+      "name": "Tijâniyya",
+      "nameAr": "التيجانية",
+      "founder": "Ahmad al-Tijânî",
+      "founderDates": "1737-1815",
+      "century": "XVIIIe-XIXe siècle",
+      "originRegion": "Algérie (Aïn Mâdî), puis Fès",
+      "diffusionRegions": ["maghreb", "afrique"],
+      "intro": "Voie « moderne » fondée à la fin du XVIIIe siècle, devenue la plus puissante confrérie soufie d'Afrique de l'Ouest. Ahmad al-Tijânî reçut, selon la tradition, l'investiture directement du Prophète Muhammad « en état de veille » — un événement spirituel qui fonde l'autorité particulière de l'ordre.",
+      "body": "La Tijâniyya se distingue par l'exclusivité : un Tijânî ne peut appartenir à aucune autre voie. Elle revendique une supériorité spirituelle (« le sceau de la sainteté muhammadienne »), ce qui suscite débats et oppositions. Mais c'est surtout son rayonnement africain qui frappe : à travers Al-Hâjj ʿUmar Tall, El Hadj Malick Sy, et plus tard la « Fayda » d'Ibrâhîm Niasse (m. 1975), elle compte aujourd'hui plus de cent millions d'adeptes en Afrique de l'Ouest (Sénégal, Mali, Mauritanie, Nigéria, Soudan). Voie urbaine, lettrée, structurée.",
+      "practices": ["Wazîfa quotidienne (litanie collective)", "Lâzim individuel", "Salât al-Fâtih (prière sur le Prophète)"],
+      "themes": ["Amour du Prophète", "Sceau de la sainteté", "Communauté forte", "Mission spirituelle africaine"],
+      "branches": ["Fayda Tijâniyya — Ibrâhîm Niasse (Sénégal)", "ʿUmariyya (Mali)"],
+      "majorWorks": ["Jawâhir al-maʿânî — ʿAlî Harâzim", "Kâshif al-ilbâs — Ibrâhîm Niasse"],
+      "quote": {
+        "text": "Ne regarde pas ton péché — regarde la grandeur de Celui contre qui tu pèches : tu te repentiras vraiment.",
+        "author": "Ahmad al-Tijânî"
+      },
+      "keywords": ["Fès", "Afrique de l'Ouest", "Sénégal", "exclusivité", "sceau de la sainteté", "Fayda"]
+    },
+    {
+      "slug": "alawiyya",
+      "name": "ʿAlâwiyya",
+      "nameAr": "العلاوية",
+      "founder": "Ahmad al-ʿAlawî",
+      "founderDates": "1869-1934",
+      "century": "XXe siècle",
+      "originRegion": "Mostaganem (Algérie)",
+      "diffusionRegions": ["maghreb", "occident", "moyen-orient"],
+      "intro": "Branche moderne de la Châdhiliyya-Darqâwiyya, fondée par Ahmad al-ʿAlawî à Mostaganem. Voie de la renaissance soufie au début du XXe siècle, profondément lettrée, ouverte au dialogue avec l'Occident.",
+      "body": "Ahmad al-ʿAlawî, autodidacte de génie, fonda à Mostaganem une zâwiya rayonnante. Sa pensée allia rigueur doctrinale (commentaires sur Ibn ʿArabî, Ibn Mashîsh), pratique intense du dhikr et ouverture remarquable. Il accueillit les premiers occidentaux convertis (René Guénon le rencontra par intermédiaire), inspira les pérennialistes (Frithjof Schuon, Titus Burckhardt, Martin Lings) et permit au soufisme de pénétrer en profondeur le monde occidental contemporain.",
+      "practices": ["Khalwa selon la méthode de la Sept Noms", "Dhikr collectif intense (hadra)", "Commentaire des textes classiques"],
+      "themes": ["Renaissance soufie", "Dialogue avec l'Occident", "Métaphysique d'Ibn ʿArabî", "Sept Noms divins"],
+      "branches": ["ʿAlâwiyya européenne", "Maryamiyya (Schuon)"],
+      "majorWorks": ["Al-Minah al-quddûsiyya — Ahmad al-ʿAlawî", "Le Diwân — poésie spirituelle"],
+      "quote": {
+        "text": "Si tu cherches Dieu hors de toi-même, tu Le perdras au moment même où tu Le trouveras.",
+        "author": "Ahmad al-ʿAlawî"
+      },
+      "keywords": ["Mostaganem", "XXe siècle", "Occident", "pérennialisme", "renaissance", "Ibn ʿArabî"]
+    },
+    {
+      "slug": "nimatullahiyya",
+      "name": "Niʿmatullâhiyya",
+      "nameAr": "النعمة اللهية",
+      "founder": "Shâh Niʿmatullâh Walî",
+      "founderDates": "1330-1431",
+      "century": "XVe siècle",
+      "originRegion": "Kerman (Iran)",
+      "diffusionRegions": ["iran", "inde", "occident"],
+      "intro": "Voie iranienne par excellence, fondée par Shâh Niʿmatullâh Walî, poète et maître mystique de Kerman. Combinaison d'une métaphysique inspirée d'Ibn ʿArabî et d'une poésie persane élevée.",
+      "body": "Shâh Niʿmatullâh, descendant du Prophète par sa mère, voyagea longuement avant de s'établir à Mâhân près de Kerman, où son tombeau reste un haut lieu de pèlerinage. L'ordre s'éclipse pendant les Safavides (qui le voient comme rival), puis renaît au XVIIIe siècle. Aujourd'hui, la Niʿmatullâhiyya est l'une des principales voies soufies iraniennes (avec la Dhahabiyya), et possède des branches en Europe et aux États-Unis (notamment celle de Javad Nurbakhsh, m. 2008).",
+      "practices": ["Dhikr collectif", "Récitation des Dîvân de Shâh Niʿmatullâh", "Sobriété chiite"],
+      "themes": ["Unité de l'Être", "Poésie", "Soufisme persan chiite", "Métaphysique"],
+      "branches": ["Niʿmatullâhî-Gunâbâdiyya (Iran)", "Khâniqâhî Niʿmatullâhî (Nurbakhsh, Occident)"],
+      "majorWorks": ["Dîvân — Shâh Niʿmatullâh Walî"],
+      "quote": {
+        "text": "Nous sommes le miroir, et nous sommes le visage qui s'y reflète : nous goûtons l'éternité à cet instant même.",
+        "author": "Shâh Niʿmatullâh Walî"
+      },
+      "keywords": ["Kerman", "Iran", "Mâhân", "soufisme chiite", "poésie persane"]
+    }
+  ]
+}

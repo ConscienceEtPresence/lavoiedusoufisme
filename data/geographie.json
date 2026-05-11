@@ -1,0 +1,165 @@
+{
+  "title": "Géographie spirituelle du soufisme",
+  "subtitle": "Neuf terres, neuf saveurs d'une même voie",
+  "sources": [
+    "Nile Green, Sufism: A Global History (Wiley-Blackwell, 2012)",
+    "J. Spencer Trimingham, The Sufi Orders in Islam (Oxford, 1971)",
+    "Éric Geoffroy, Le soufisme (Eyrolles, 2013)"
+  ],
+  "intro": "Le soufisme ne s'est pas développé d'une seule pièce. À chaque terre qu'il a traversée, il a pris une couleur particulière — la sobriété juridique de Bagdad, la métaphysique flamboyante d'Andalousie, le silence intérieur de Boukhara, la poésie persane de Chiraz, le qawwâlî d'Ajmer, la fraternité de l'Afrique de l'Ouest. Une même eau, neuf vases.",
+  "regions": [
+    {
+      "slug": "irak",
+      "name": "Irak — le berceau",
+      "nameAlt": "Mésopotamie",
+      "apogee": "VIIIe-XIIe siècle",
+      "intro": "Tout commence là. Les premiers ascètes, les premières paroles extatiques, le premier vocabulaire spirituel : Irak est le berceau de la voie. Bagdad — capitale du califat abbasside — devient au IXe siècle l'épicentre où Junayd codifie la mystique sobre, où Hallâj la pousse à l'extrême, où Ghazâlî réconciliera l'orthodoxie sunnite et l'expérience intérieure.",
+      "body": "Au sud, à Basra, Hasan al-Basrî donne le ton de l'ascèse, et Râbiʿa al-ʿAdawiyya invente l'amour pur. Plus au sud encore, dans les marais des Bataʾih, Ahmad ar-Rifâʿî fonde une voie populaire aux pratiques spectaculaires. Au nord, à Mossoul et Tikrit, vivent les premiers reclus chrétiens dont les ascètes musulmans s'inspirent. Du IXe au XIIe siècle, le centre spirituel du monde islamique est ici.",
+      "cities": ["Bagdad", "Basra", "Kufa", "Marais des Bataʾih"],
+      "majorFigures": ["Hasan al-Basrî (m. 728)", "Râbiʿa al-ʿAdawiyya (m. 801)", "Junayd (m. 911)", "Hallâj (m. 922)", "ʿAbd al-Qâdir al-Jîlânî (m. 1166)", "Ahmad ar-Rifâʿî (m. 1182)", "Shihâb al-Dîn ʿUmar as-Suhrawardî (m. 1234)"],
+      "orders": ["Qâdiriyya", "Rifâʿiyya", "Suhrawardiyya"],
+      "spirit": "Sobriété, codification, premier langage spirituel. C'est ici que le soufisme prend nom et forme.",
+      "quote": {
+        "text": "La connaissance de l'unité qui est propre aux soufis consiste à extraire l'éternité de la temporalité.",
+        "author": "Junayd de Bagdad"
+      },
+      "keywords": ["berceau", "Bagdad", "abbasside", "Junayd", "Hallâj", "sobriété originelle"]
+    },
+    {
+      "slug": "khorassan",
+      "name": "Khorassan & Asie centrale",
+      "nameAlt": "Khurâsân",
+      "apogee": "IXe-XVe siècle",
+      "intro": "Aux confins de l'Iran et de l'Asie centrale s'étend le Khorassan — terre d'oasis caravanières, de villes savantes et de spirituels visionnaires. C'est ici que naissent la « voie du blâme » (malâma), les premiers grands manuels du soufisme persan, et plus tard la voie de la sobriété parfaite : la Naqshbandiyya.",
+      "body": "À Bistâm, Abû Yazîd connaît son ivresse fulgurante. À Nichapour, la malâmatiyya cache l'intériorité sous le voile de l'anonymat. À Mayhana, Abû Saʿîd Abû l-Khayr fonde l'une des premières communautés soufies organisées. À Hérat, ʿAbdullâh Ansârî transmet une langue mystique persane d'une délicatesse inégalée. Plus à l'est, à Boukhara et Samarcande, la lignée des Khwâjagân — Ghijduwânî, Hamadânî — donne naissance à la Naqshbandiyya, qui rayonnera dans tout l'Islam.",
+      "cities": ["Boukhara", "Samarcande", "Nichapour", "Bistâm", "Mayhana", "Hérat", "Balkh", "Merv"],
+      "majorFigures": ["Abû Yazîd Bistâmî (m. 875)", "Abû Saʿîd Abû l-Khayr (m. 1049)", "ʿAbdullâh Ansârî (m. 1089)", "Yûsuf al-Hamadânî (m. 1140)", "Najm al-Dîn Kubrâ (m. 1221)", "Bahâʾ al-Dîn Naqshband (m. 1389)"],
+      "orders": ["Naqshbandiyya", "Kubrâwiyya", "Yasawiyya"],
+      "spirit": "Silence intérieur, sobriété, malâma (voie du blâme), spiritualité de l'oasis et de la caravane.",
+      "quote": {
+        "text": "Le cœur doit être avec Dieu, le pied dans le travail.",
+        "author": "Bahâʾ al-Dîn Naqshband"
+      },
+      "keywords": ["Khorassan", "Boukhara", "Khwâjagân", "malâma", "dhikr silencieux", "Naqshbandiyya"]
+    },
+    {
+      "slug": "andalousie-maghreb",
+      "name": "Andalousie & Maghreb",
+      "nameAlt": "al-Andalus & al-Maghrib",
+      "apogee": "XIIe-XXe siècle",
+      "intro": "À l'Occident de l'Islam, entre la péninsule ibérique et le Sahara, se déploie une tradition soufie d'une originalité éclatante. C'est ici que naît Ibn ʿArabî, le « Grand Maître » de la métaphysique mystique. C'est ici qu'Abû Madyan transmet l'héritage de Bagdad vers le Maghreb. C'est ici qu'al-Shâdhilî fonde la voie de la sobriété présente.",
+      "body": "Cordoue, Séville, Murcie : l'Andalousie médiévale est un foyer intellectuel intense où la mystique côtoie la philosophie, où les juifs, chrétiens et musulmans se lisent les uns les autres. Fès, Marrakech, Tlemcen : le Maghreb devient au XIIIe siècle un nouveau centre soufi. Au XXe siècle, à Mostaganem, Ahmad al-ʿAlawî inaugure la renaissance soufie occidentale moderne — c'est par lui que René Guénon, Schuon et Martin Lings rencontreront le soufisme.",
+      "cities": ["Cordoue", "Séville", "Murcie", "Fès", "Marrakech", "Tlemcen", "Mostaganem"],
+      "majorFigures": ["Ibn Mashîsh (m. 1228)", "Abû Madyan (m. 1197)", "Ibn ʿArabî (m. 1240)", "Abû l-Hasan al-Shâdhilî (m. 1258)", "Ibn ʿAbbâd de Ronda (m. 1390)", "Ahmad al-ʿAlawî (m. 1934)", "Émir Abdelkader (m. 1883)"],
+      "orders": ["Châdhiliyya", "Darqâwiyya", "ʿAlâwiyya", "Bûtchîchiyya"],
+      "spirit": "Métaphysique flamboyante (Ibn ʿArabî), sobriété de la présence (Shâdhilî), renaissance occidentale moderne.",
+      "quote": {
+        "text": "Le réel est le Réel, le créaturel est le créaturel. Le monde est à la fois Lui et non Lui.",
+        "author": "Ibn ʿArabî"
+      },
+      "keywords": ["al-Andalus", "Fès", "Ibn ʿArabî", "Shâdhilî", "métaphysique", "renaissance"]
+    },
+    {
+      "slug": "egypte-syrie",
+      "name": "Égypte & Syrie",
+      "nameAlt": "Misr & al-Shâm",
+      "apogee": "XIIIe-XVIIIe siècle",
+      "intro": "Carrefour du monde islamique, l'Égypte mamelouke et la Syrie ayyoubide accueillent les voies venues du Maghreb et de l'Irak, et leur donnent un nouvel élan. Le Caire et Damas deviennent des capitales spirituelles, des terres d'asile et de diffusion.",
+      "body": "Au Caire, Ibn ʿAtâʾ Allâh al-Iskandarî codifie la Châdhiliyya dans ses Hikam. Ibn al-Fâriḍ, « prince des amoureux », y chante le vin mystique. À Tanta, le tombeau d'Ahmad al-Badawî devient le plus grand sanctuaire soufi du pays. À Damas, Ibn ʿArabî s'éteint en 1240 — son tombeau y est toujours visité. Au XVIIIe siècle, Le Caire connaît une renaissance soufie majeure autour de Mustafa al-Bakrî et de la Khalwatiyya, qui essaime jusqu'au Soudan.",
+      "cities": ["Le Caire", "Alexandrie", "Tanta", "Damas", "Alep", "Jérusalem"],
+      "majorFigures": ["Dhû l-Nûn al-Misrî (m. 859)", "Ibn al-Fâriḍ (m. 1235)", "Ibn ʿArabî (m. 1240 à Damas)", "Ahmad al-Badawî (m. 1276)", "Ibn ʿAtâʾ Allâh al-Iskandarî (m. 1309)", "Mustafa al-Bakrî (m. 1749)"],
+      "orders": ["Châdhiliyya", "Badawiyya", "Khalwatiyya", "Rifâʿiyya"],
+      "spirit": "Carrefour, diffusion, codification doctrinale, sanctuaires populaires.",
+      "quote": {
+        "text": "Tes désirs t'ont gardé prisonnier ; ton renoncement à tes désirs te rendrait libre.",
+        "author": "Ibn ʿAtâʾ Allâh al-Iskandarî, Hikam"
+      },
+      "keywords": ["Le Caire", "Damas", "Hikam", "carrefour", "mamelouk", "sanctuaires"]
+    },
+    {
+      "slug": "anatolie",
+      "name": "Anatolie & Balkans",
+      "nameAlt": "Rûm",
+      "apogee": "XIIIe-XXe siècle",
+      "intro": "Quand les Mongols ravagent l'Iran au XIIIe siècle, les spirituels persans fuient vers l'ouest. Konya, capitale seldjoukide, devient leur refuge. C'est là que s'installe la famille de Rûmî, et c'est là que naît la Mevleviyya — l'ordre des derviches tourneurs. L'Anatolie ottomane sera ensuite, pendant six siècles, la terre la plus densément peuplée de tekkés et de confréries du monde islamique.",
+      "body": "À Konya, la danse circulaire (samâʿ) devient prière en mouvement. À Hacıbektaş, l'ordre Bektâshi développe une lecture humaniste, mystique et alévie de l'islam. À Istanbul, sous les Ottomans, des dizaines d'ordres coexistent : Khalwati, Jerrahi, Naqshbandi, Mevlevi, Rifâʿi. Aboli par Atatürk en 1925, le soufisme turc renaît aujourd'hui, à la fois en Turquie et chez les diasporas d'Europe et d'Amérique.",
+      "cities": ["Konya", "Istanbul", "Hacıbektaş", "Bursa", "Edirne"],
+      "majorFigures": ["Jalâl al-Dîn Rûmî (m. 1273)", "Shams de Tabrîz", "Hacı Bektaş Veli (m. 1271)", "Yunus Emre (m. 1321)", "Ismail Hakki Bursevi (m. 1725)"],
+      "orders": ["Mevleviyya", "Bektâshiyya", "Khalwatiyya", "Halveti-Jerrahi"],
+      "spirit": "Amour ivre, samâʿ, humanisme bektâshi, densité ottomane des tekkés.",
+      "quote": {
+        "text": "Notre couvent n'est pas un lieu de désespoir : viens, qui que tu sois, viens.",
+        "author": "Rûmî"
+      },
+      "keywords": ["Konya", "Mevleviyya", "Rûmî", "samâʿ", "ottoman", "tekké"]
+    },
+    {
+      "slug": "iran",
+      "name": "Iran",
+      "nameAlt": "Îrân-zamîn",
+      "apogee": "XIIe-XVIe siècle",
+      "intro": "L'Iran est la terre où le soufisme devient poésie. À Chiraz, Hâfez chante l'ivresse divine sous le voile de l'allégorie du vin. À Nichapour, ʿAttâr conte le voyage des oiseaux vers le Simorgh. À Kerman, Shâh Niʿmatullâh fonde une voie qui irrigue encore l'Iran contemporain. La langue persane devient le véhicule du soufisme jusqu'aux confins de l'Asie.",
+      "body": "Sous les Safavides (XVIe siècle), l'Iran bascule dans le chiisme officiel : les ordres soufis sunnites sont persécutés, mais le soufisme chiite (ʿirfân) se développe, intégrant la métaphysique d'Ibn ʿArabî à la gnose imamite. Mullâ Sadrâ en sera le grand penseur. Aujourd'hui, malgré les vicissitudes politiques, le soufisme reste profondément vivant en Iran — Niʿmatullâhî, Dhahabiyya, Khâksâriyya — et continue de nourrir la culture poétique d'un peuple entier.",
+      "cities": ["Chiraz", "Ispahan", "Kerman", "Mâhân", "Hamadân", "Tabriz", "Ardabil"],
+      "majorFigures": ["Farîd al-Dîn ʿAttâr (m. 1190)", "Sanâʾî (m. 1131)", "ʿAyn al-Qudât Hamadânî (m. 1131)", "Rûzbihân Baqlî (m. 1209)", "Saʿdî (m. 1292)", "Hâfez (m. 1390)", "Jâmî (m. 1492)", "Shâh Niʿmatullâh Walî (m. 1431)", "Mullâ Sadrâ (m. 1640)"],
+      "orders": ["Niʿmatullâhiyya", "Dhahabiyya", "Khâksâriyya", "Nûrbakhshiyya"],
+      "spirit": "Poésie persane, ivresse mystique, ʿirfân chiite, théosophie illuminative.",
+      "quote": {
+        "text": "Le langage des oiseaux est langage d'amour ; sans amour, qui comprendrait ce qu'ils disent ?",
+        "author": "Farîd al-Dîn ʿAttâr"
+      },
+      "keywords": ["Chiraz", "Hâfez", "ʿAttâr", "poésie", "ʿirfân chiite", "Mullâ Sadrâ"]
+    },
+    {
+      "slug": "inde",
+      "name": "Inde & monde indo-persan",
+      "nameAlt": "Hindûstân",
+      "apogee": "XIIIe-XIXe siècle",
+      "intro": "L'Inde a accueilli le soufisme depuis le XIIIe siècle, lorsque Muʿîn al-Dîn Chishtî s'établit à Ajmer. Au contact de l'hindouisme, du bhakti, des yogis et de la culture indo-persane, le soufisme indien développe une couleur unique — proximité des pauvres, rejet du pouvoir, musique mystique, ouverture aux autres traditions.",
+      "body": "À Ajmer, le sanctuaire de Muʿîn al-Dîn devient le plus grand pèlerinage soufi du sous-continent — hindous et musulmans s'y rendent ensemble. À Delhi, Nizâm al-Dîn Awliyâʾ enseigne la fraternité universelle. Le poète Amîr Khusrau crée le qawwâlî tel qu'on l'entend aujourd'hui. Au XVIIe siècle, le prince moghol Dara Shikoh traduit les Upanishads en persan, écrit La Confluence des Deux Océans pour montrer la convergence du soufisme et du vedânta. La Naqshbandiyya réformatrice (Sirhindî) viendra s'opposer à cette ouverture. Au Sindh et au Pendjab, les poètes mystiques Bulleh Shah, Sultan Bahu, Shah Abdul Latif Bhittai chantent dans les langues vernaculaires.",
+      "cities": ["Ajmer", "Delhi", "Multan", "Lahore", "Bidar", "Konia", "Sindh"],
+      "majorFigures": ["Muʿîn al-Dîn Chishtî (m. 1236)", "Quṭb al-Dîn Bakhtiyâr Kâkî (m. 1235)", "Farîd al-Dîn Ganj-i Shakar (m. 1265)", "Nizâm al-Dîn Awliyâʾ (m. 1325)", "Amîr Khusrau (m. 1325)", "Ahmad Sirhindî (m. 1624)", "Dara Shikoh (m. 1659)", "Bulleh Shah (m. 1757)", "Shah Walîullâh (m. 1762)"],
+      "orders": ["Chishtiyya", "Suhrawardiyya indienne", "Naqshbandiyya-Mujaddidiyya", "Qâdiriyya"],
+      "spirit": "Service des pauvres, qawwâlî, dialogue interreligieux, poésie vernaculaire, métaphysique réformée.",
+      "quote": {
+        "text": "Donne au cœur la générosité de la rivière, à l'âme la chaleur du soleil, et au corps l'humilité de la terre.",
+        "author": "Muʿîn al-Dîn Chishtî"
+      },
+      "keywords": ["Ajmer", "Chishtiyya", "qawwâlî", "Dara Shikoh", "Bulleh Shah", "bhakti"]
+    },
+    {
+      "slug": "afrique",
+      "name": "Afrique subsaharienne",
+      "nameAlt": "Bilâd al-Sûdân",
+      "apogee": "XVIIIe-XXIe siècle",
+      "intro": "Du Sénégal au Soudan, de la Mauritanie au Nigéria, le soufisme africain est aujourd'hui l'une des forces spirituelles les plus vivantes du monde musulman. Il a porté l'islamisation profonde du continent, structuré des sociétés entières, résisté à la colonisation, et continue de nourrir la vie quotidienne de dizaines de millions de personnes.",
+      "body": "La Qâdiriyya, transmise par les Kuntâ de Mauritanie, et la Tijâniyya, fondée à la fin du XVIIIe siècle, sont les deux grandes voies du Sahel. Au Sénégal, Ahmadou Bamba fonde la Murîdiyya à la fin du XIXe siècle : son tombeau à Touba est devenu le centre d'une cité spirituelle et économique unique. Au XXe siècle, Ibrâhîm Niasse répand la « Fayda Tijâniyya », communiquant l'expérience mystique à des centaines de milliers de disciples. Au Nigéria, Usman dan Fodio et Nana Asma'u — femme savante exceptionnelle — articulent soufisme, savoir et réforme sociale.",
+      "cities": ["Touba", "Tombouctou", "Kano", "Khartoum", "Kaolack", "Nouakchott", "Sokoto"],
+      "majorFigures": ["Sîdî al-Mukhtâr al-Kuntî (m. 1811)", "Ahmad al-Tijânî (m. 1815)", "Usman dan Fodio (m. 1817)", "Nana Asma'u (m. 1864)", "Al-Hâjj ʿUmar Tall (m. 1864)", "Ahmadou Bamba (m. 1927)", "El Hadj Malick Sy (m. 1922)", "Ibrâhîm Niasse (m. 1975)", "Amadou Hampâté Bâ (m. 1991)"],
+      "orders": ["Tijâniyya", "Qâdiriyya", "Murîdiyya", "Sanûsiyya", "Khatmiyya"],
+      "spirit": "Communauté forte, structuration sociale, résistance anti-coloniale, transmission orale et lettrée, fayda contemporaine.",
+      "quote": {
+        "text": "Le savoir, c'est la lumière ; et la lumière n'a pas de pays.",
+        "author": "Amadou Hampâté Bâ"
+      },
+      "keywords": ["Sénégal", "Tijâniyya", "Murîdiyya", "Touba", "Ahmadou Bamba", "Niasse", "Sahel"]
+    },
+    {
+      "slug": "occident",
+      "name": "Occident contemporain",
+      "nameAlt": "L'Ouest",
+      "apogee": "XXe-XXIe siècle",
+      "intro": "Depuis le XXe siècle, le soufisme s'enracine en Europe et en Amérique sous des formes plurielles. Il vient à la fois par l'immigration musulmane, par la traduction des grands textes, par l'œuvre des pérennialistes, et par des maîtres venus de Turquie, du Maroc, d'Iran, du Sénégal, de l'Inde.",
+      "body": "Inayat Khan introduit dès 1910 un soufisme universaliste aux États-Unis. René Guénon (m. 1951), Frithjof Schuon, Titus Burckhardt, Martin Lings, Seyyed Hossein Nasr inscrivent le soufisme dans la pensée pérennialiste. Eva de Vitray-Meyerovitch traduit Rûmî en français, Henry Corbin révèle au monde la gnose iranienne. Aujourd'hui, plusieurs voies sont implantées : ʿAlâwiyya, Bûtchîchiyya, Naqshbandi-Haqqani, Mevlevi, Halveti-Jerrahi. Le soufisme touche aussi un public non musulman cherchant une voie spirituelle vivante, par l'amour, la poésie, le silence — Rûmî est aujourd'hui le poète le plus lu aux États-Unis.",
+      "cities": ["Paris", "Londres", "New York", "Damas-Suisse (Maryamiyya)", "Istanbul-Istanbul-Europe"],
+      "majorFigures": ["Inayat Khan (m. 1927)", "René Guénon (m. 1951)", "Frithjof Schuon (m. 1998)", "Titus Burckhardt (m. 1984)", "Martin Lings (m. 2005)", "Henry Corbin (m. 1978)", "Eva de Vitray-Meyerovitch (m. 1999)", "Seyyed Hossein Nasr", "Faouzi Skali", "Éric Geoffroy"],
+      "orders": ["Maryamiyya (Schuon)", "Inayatiyya", "ʿAlâwiyya européenne", "Bûtchîchiyya en Europe", "Mevlevi Order of America"],
+      "spirit": "Pérennialisme, traduction, dialogue interspirituel, lecture universaliste, transmission diasporique.",
+      "quote": {
+        "text": "Le soufisme apparaît comme une sagesse universelle, une voie spirituelle vivante, en pays musulman comme en Occident.",
+        "author": "Éric Geoffroy"
+      },
+      "keywords": ["pérennialisme", "Rûmî en Occident", "Guénon", "Corbin", "universalité", "diaspora"]
+    }
+  ]
+}

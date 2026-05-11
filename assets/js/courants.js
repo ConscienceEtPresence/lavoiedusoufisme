@@ -1,0 +1,149 @@
+/* ============================================================
+   COURANTS — Charge les ordres, rend grille filtrable, modal détail
+   ============================================================ */
+
+let ORDERS_DATA = null;
+
+async function loadOrders() {
+  try {
+    const res = await fetch('../data/ordres.json');
+    ORDERS_DATA = await res.json();
+    renderIntro();
+    renderFilters();
+    renderGrid('all');
+  } catch (err) {
+    console.error('Erreur de chargement des ordres', err);
+    document.getElementById('orders-grid').innerHTML =
+      '<p class="center muted">Impossible de charger les courants. Vérifie que le site est servi par un serveur local.</p>';
+  }
+}
+
+function renderIntro() {
+  document.getElementById('intro-text').textContent = ORDERS_DATA.intro;
+}
+
+function renderFilters() {
+  const root = document.getElementById('region-filters');
+  ORDERS_DATA.regions.forEach(r => {
+    const btn = document.createElement('button');
+    btn.className = 'region-btn';
+    btn.dataset.region = r.id;
+    btn.textContent = r.label;
+    root.appendChild(btn);
+  });
+
+  // Click handler
+  root.addEventListener('click', (e) => {
+    const btn = e.target.closest('.region-btn');
+    if (!btn) return;
+    root.querySelectorAll('.region-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderGrid(btn.dataset.region);
+  });
+}
+
+function renderGrid(region) {
+  const root = document.getElementById('orders-grid');
+  const filtered = region === 'all'
+    ? ORDERS_DATA.orders
+    : ORDERS_DATA.orders.filter(o => o.diffusionRegions.includes(region));
+
+  root.innerHTML = filtered.map(o => `
+    <article class="order-card" data-slug="${o.slug}">
+      <div class="order-card__ar">${o.nameAr}</div>
+      <h3 class="order-card__name">${o.name}</h3>
+      <p class="order-card__founder">
+        <strong>${o.founder}</strong><br>
+        ${o.founderDates} · ${o.originRegion}
+      </p>
+      <p class="order-card__intro">${o.intro}</p>
+      <div class="order-card__footer">
+        ${o.keywords.slice(0, 4).map(k => `<span class="keyword">${k}</span>`).join('')}
+      </div>
+      <div class="order-card__more">Lire la fiche complète ✦</div>
+    </article>
+  `).join('');
+
+  // Click → open modal
+  root.querySelectorAll('.order-card').forEach(card => {
+    card.addEventListener('click', () => openModal(card.dataset.slug));
+  });
+}
+
+function openModal(slug) {
+  const o = ORDERS_DATA.orders.find(x => x.slug === slug);
+  if (!o) return;
+
+  const content = document.getElementById('modal-content');
+  content.querySelector('.modal__close')?.remove();
+
+  content.innerHTML = `
+    <button class="modal__close" data-close aria-label="Fermer">✕</button>
+    <div class="modal__ar">${o.nameAr}</div>
+    <h2 class="modal__name">${o.name}</h2>
+    <div class="modal__sub">${o.century} · ${o.originRegion}</div>
+
+    <div class="modal__section">
+      <h3>Fondateur</h3>
+      <p><strong style="color: var(--ink); font-weight: 500;">${o.founder}</strong> (${o.founderDates})</p>
+    </div>
+
+    <div class="modal__section">
+      <h3>Présentation</h3>
+      <p>${o.intro}</p>
+      <p>${o.body}</p>
+    </div>
+
+    <div class="modal__section">
+      <h3>Pratiques distinctives</h3>
+      <ul>${o.practices.map(p => `<li>${p}</li>`).join('')}</ul>
+    </div>
+
+    <div class="modal__section">
+      <h3>Thèmes spirituels</h3>
+      <ul>${o.themes.map(t => `<li>${t}</li>`).join('')}</ul>
+    </div>
+
+    ${o.branches && o.branches.length ? `
+    <div class="modal__section">
+      <h3>Branches et ramifications</h3>
+      <ul>${o.branches.map(b => `<li>${b}</li>`).join('')}</ul>
+    </div>` : ''}
+
+    ${o.majorWorks && o.majorWorks.length ? `
+    <div class="modal__section">
+      <h3>Œuvres majeures</h3>
+      <ul>${o.majorWorks.map(w => `<li><em>${w}</em></li>`).join('')}</ul>
+    </div>` : ''}
+
+    <blockquote style="margin-top: var(--space-lg); font-size: 1.15rem;">
+      ${o.quote.text}
+      <cite>${o.quote.author}</cite>
+    </blockquote>
+
+    <div class="modal__section" style="margin-top: var(--space-lg);">
+      <h3>Mots-clés</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+        ${o.keywords.map(k => `<span class="keyword">${k}</span>`).join('')}
+      </div>
+    </div>
+  `;
+
+  document.getElementById('order-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('order-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Close handlers
+document.addEventListener('click', (e) => {
+  if (e.target.closest('[data-close]')) closeModal();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+});
+
+loadOrders();

@@ -1,0 +1,259 @@
+/* ============================================================
+   COURANTS — Filtres, grille des ordres, modal détail
+   ============================================================ */
+
+/* --- Filtres par région --- */
+.region-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: var(--space-xl);
+  padding: var(--space-md);
+  background: var(--paper-warm);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+}
+.region-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.02em;
+}
+.region-btn:hover {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--gold-soft);
+}
+.region-btn.active {
+  background: var(--gold);
+  color: var(--paper);
+  border-color: var(--gold);
+}
+
+/* --- Grille des ordres --- */
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.order-card {
+  background: var(--paper-warm);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease, border-color 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.order-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--gold-soft), var(--turquoise));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.order-card:hover {
+  transform: translateY(-4px);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  border-color: var(--gold-soft);
+}
+.order-card:hover::before { opacity: 1; }
+.order-card.hidden { display: none; }
+
+.order-card__ar {
+  font-family: var(--font-arabic);
+  font-size: 2rem;
+  color: var(--gold);
+  margin-bottom: var(--space-xs);
+  line-height: 1;
+  direction: rtl;
+  text-align: right;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--turquoise) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.order-card__name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-bottom: var(--space-xs);
+  font-weight: 500;
+}
+.order-card__founder {
+  color: var(--ink-mute);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-sm);
+  font-style: italic;
+}
+.order-card__founder strong { color: var(--ink-soft); font-style: normal; font-weight: 500; }
+.order-card__intro {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  flex: 1;
+  margin-bottom: var(--space-md);
+  max-width: 100%;
+}
+.order-card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding-top: var(--space-sm);
+  border-top: 1px dashed var(--line);
+}
+.order-card__more {
+  margin-top: var(--space-sm);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* --- Modal détail --- */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+}
+.modal.open { display: flex; }
+.modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(27, 42, 78, 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.modal__content {
+  position: relative;
+  background: var(--paper);
+  border-radius: var(--radius-lg);
+  max-width: 760px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: var(--space-xl);
+  box-shadow: 0 20px 60px rgba(27, 42, 78, 0.25);
+  border: 1px solid var(--gold-soft);
+  animation: modalIn 0.4s ease;
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.96) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+.modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--paper-warm);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--ink-soft);
+  transition: all 0.2s ease;
+}
+.modal__close:hover {
+  background: var(--gold);
+  color: var(--paper);
+  border-color: var(--gold);
+}
+
+.modal__ar {
+  font-family: var(--font-arabic);
+  font-size: 3rem;
+  color: var(--gold);
+  direction: rtl;
+  text-align: center;
+  margin-bottom: var(--space-xs);
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 50%, var(--turquoise) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.modal__name {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: var(--space-xs);
+  font-weight: 500;
+}
+.modal__sub {
+  text-align: center;
+  color: var(--gold);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-lg);
+  font-family: var(--font-sans);
+}
+.modal__section {
+  margin-bottom: var(--space-md);
+}
+.modal__section h3 {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+.modal__section p,
+.modal__section ul {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 100%;
+}
+.modal__section ul {
+  list-style: none;
+  padding: 0;
+}
+.modal__section ul li {
+  padding: 0.25rem 0;
+  padding-left: 1.4rem;
+  position: relative;
+}
+.modal__section ul li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: var(--gold-soft);
+  font-size: 0.7rem;
+  top: 0.55rem;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .modal__content { padding: var(--space-md); }
+  .modal__ar { font-size: 2.4rem; }
+  .modal__name { font-size: 1.6rem; }
+  .orders-grid { grid-template-columns: 1fr; }
+}

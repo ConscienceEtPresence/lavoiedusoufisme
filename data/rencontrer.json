@@ -1,108 +1,16 @@
 {
   "title": "Rencontrer",
   "subtitle": "Les voix de la voie",
-  "intro": "Une voie ne se transmet pas par les livres seuls — elle passe par des visages, des paroles, des poèmes. Cette porte mène vers les maîtres, les textes fondamentaux, les passeurs contemporains, et les résonances avec les autres grandes traditions spirituelles.",
+  "intro": "Une voie ne se transmet pas par les livres seuls — elle passe par des visages, des paroles, des poèmes. Cette porte mène vers les maîtres, les textes fondamentaux, les résonances avec les autres grandes traditions spirituelles.",
   "sections": [
-    {
-      "slug": "maitres",
-      "title": "Galerie des maîtres",
-      "subtitle": "Râbiʿa, Hallâj, Rûmî, Ibn ʿArabî…",
-      "status": "ready",
-      "link": "maitres.html",
-      "preview": "Neuf figures essentielles, chacune une fenêtre sur un univers. Clique pour entrer."
-    },
-    {
-      "slug": "rumi",
-      "title": "Rûmî",
-      "subtitle": "L'amour comme voie",
-      "status": "ready",
-      "link": "auteurs/rumi.html",
-      "preview": "Le Mathnawî, Shams de Tabrîz, la flûte de roseau, les derviches tourneurs — l'amour qui consume l'ego."
-    },
-    {
-      "slug": "ibn-arabi",
-      "title": "Ibn ʿArabî",
-      "subtitle": "Le Grand Maître",
-      "status": "ready",
-      "link": "auteurs/ibn-arabi.html",
-      "preview": "L'unité de l'Être, les Illuminations de La Mecque, les Chatons de la sagesse, l'homme parfait."
-    },
-    {
-      "slug": "hallaj",
-      "title": "Al-Hallâj",
-      "subtitle": "Le martyr de l'amour",
-      "status": "ready",
-      "link": "auteurs/hallaj.html",
-      "preview": "Le cri Anâ l-Ḥaqq — « Je suis le Réel ». L'homme qui paya l'amour de sa vie."
-    },
-    {
-      "slug": "rabia",
-      "title": "Râbiʿa al-ʿAdawiyya",
-      "subtitle": "L'inventrice de l'amour pur",
-      "status": "ready",
-      "link": "auteurs/rabia.html",
-      "preview": "La première femme sainte du soufisme. « Brûler le paradis, noyer l'enfer — qu'on aime Dieu pour Lui seul. »"
-    },
-    {
-      "slug": "attar",
-      "title": "Farîd al-Dîn ʿAṭṭâr",
-      "subtitle": "Le conteur des oiseaux",
-      "status": "ready",
-      "link": "auteurs/attar.html",
-      "preview": "Le Mantiq al-Tayr, le Sīmurgh, le voyage des trente oiseaux qui se découvrent être ce qu'ils cherchaient."
-    },
-    {
-      "slug": "ghazali",
-      "title": "Al-Ghazâlî",
-      "subtitle": "La preuve de l'islam",
-      "status": "ready",
-      "link": "auteurs/ghazali.html",
-      "preview": "L'Ihyâʾ, la crise spirituelle, le retour. Celui qui réconcilia le sunnisme et le soufisme."
-    },
-    {
-      "slug": "junayd",
-      "title": "Junayd de Bagdad",
-      "subtitle": "Le seigneur de la confrérie",
-      "status": "ready",
-      "link": "auteurs/junayd.html",
-      "preview": "Le maître de la sobriété, fondateur de l'école de Bagdad. Presque toutes les voies remontent à lui."
-    },
-    {
-      "slug": "bistami",
-      "title": "Bāyazīd Bistāmī",
-      "subtitle": "L'ivresse fulgurante",
-      "status": "ready",
-      "link": "auteurs/bistami.html",
-      "preview": "« Je me suis dépouillé de mon moi comme un serpent de sa peau. » Le grand mystique du Khorassan."
-    },
-    {
-      "slug": "ibn-ata-allah",
-      "title": "Ibn ʿAṭâʾ Allâh al-Iskandarī",
-      "subtitle": "Le sage des Hikam",
-      "status": "ready",
-      "link": "auteurs/ibn-ata-allah.html",
-      "preview": "Maître châdhilite d'Alexandrie. Les Hikam — aphorismes denses qui condensent la sagesse soufie."
-    },
-    {
-      "slug": "textes-fondamentaux",
-      "title": "Les textes fondamentaux",
-      "subtitle": "La bibliothèque essentielle",
-      "status": "soon",
-      "preview": "Mathnawî, Hikam d'Ibn ʿAṭâʾ Allâh, Fusûs, Risâla de Qushayrî, Ihyâ de Ghazâlî, Langage des oiseaux d'ʿAttâr."
-    },
-    {
-      "slug": "noms-divins",
-      "title": "Le secret des Noms divins",
-      "subtitle": "La science des Asmâʾ",
-      "status": "soon",
-      "preview": "Avec Ibn ʿArabî, al-Ghazâlî sur les Noms — fondement métaphysique majeur du soufisme."
-    },
-    {
-      "slug": "resonances",
-      "title": "Résonances entre traditions",
-      "subtitle": "Coran, Bible, Kabbale, Inde",
-      "status": "soon",
-      "preview": "Le soufisme en regard des autres voies — sa source coranique, ses échos chrétiens, juifs, indiens."
-    }
+    { "slug": "maitres", "title": "Galerie des maîtres", "subtitle": "Quinze figures essentielles", "status": "ready", "link": "maitres.html", "preview": "De Râbiʿa à Ahmad al-ʿAlawî, quinze fenêtres sur l'univers soufi. Clique pour entrer." },
+    { "slug": "textes-fondamentaux", "title": "Les textes fondamentaux", "subtitle": "La bibliothèque essentielle", "status": "ready", "link": "textes-fondamentaux.html", "preview": "Douze œuvres qui forment la colonne vertébrale de la sagesse soufie — Mathnawî, Hikam, Fusûs, Risâla, Ihyâ, Conférence des oiseaux…" },
+    { "slug": "resonances", "title": "Résonances entre traditions", "subtitle": "Coran, Bible, Kabbale, Inde", "status": "ready", "link": "resonances.html", "preview": "Le soufisme en regard des autres voies — sa source coranique, ses échos chrétiens, juifs, indiens." },
+    { "slug": "rumi", "title": "Rûmî", "subtitle": "L'amour comme voie", "status": "ready", "link": "auteurs/rumi.html", "preview": "Le Mathnawî, Shams de Tabrîz, les derviches tourneurs — l'amour qui consume l'ego." },
+    { "slug": "ibn-arabi", "title": "Ibn ʿArabî", "subtitle": "Le Grand Maître", "status": "ready", "link": "auteurs/ibn-arabi.html", "preview": "L'unité de l'Être, les Illuminations de La Mecque, l'homme parfait." },
+    { "slug": "hafez", "title": "Hâfez de Chiraz", "subtitle": "Le ravisseur des cœurs", "status": "ready", "link": "auteurs/hafez.html", "preview": "L'ambiguïté divine du vin et de la rose. Le sommet de la lyrique persane." },
+    { "slug": "abdelkader", "title": "Émir Abdelkader", "subtitle": "Le chevalier mystique", "status": "ready", "link": "auteurs/abdelkader.html", "preview": "Résistant, métaphysicien, protecteur des chrétiens. La chevalerie spirituelle accomplie." },
+    { "slug": "alawi", "title": "Ahmad al-ʿAlawî", "subtitle": "Le renouveau soufi du XXe", "status": "ready", "link": "auteurs/alawi.html", "preview": "Le maître de Mostaganem. La porte par laquelle l'Occident a découvert le soufisme." },
+    { "slug": "noms-divins", "title": "Le secret des Noms divins", "subtitle": "La science des Asmâʾ", "status": "soon", "preview": "Avec Ibn ʿArabî, al-Ghazâlî sur les Noms — fondement métaphysique majeur du soufisme." }
   ]
 }

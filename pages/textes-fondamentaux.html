@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les textes fondamentaux — La bibliothèque du soufisme</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/essence.css" />
+  <link rel="stylesheet" href="../assets/css/auteur.css" />
+  <style>
+    .livre {
+      background: var(--paper-warm);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--line);
+      padding: var(--space-lg);
+      margin: var(--space-lg) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .livre::before {
+      content: "";
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 4px;
+      background: linear-gradient(to bottom, var(--gold), var(--turquoise));
+    }
+    .livre__ar {
+      font-family: var(--font-arabic);
+      font-size: 1.8rem;
+      color: var(--gold);
+      direction: rtl;
+      text-align: right;
+      margin-bottom: 0.3rem;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 50%, var(--turquoise) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .livre__titre {
+      font-family: var(--font-display);
+      font-size: 1.55rem;
+      color: var(--ink-title);
+      font-weight: 500;
+      margin: 0 0 0.2rem;
+      font-style: italic;
+    }
+    .livre__auteur {
+      color: var(--gold);
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      font-family: var(--font-sans);
+      text-transform: uppercase;
+      margin-bottom: var(--space-md);
+    }
+    .livre__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: var(--space-md);
+    }
+    .livre__meta span {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink-mute);
+    }
+    .livre__desc {
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 1rem;
+      margin: 0 0 var(--space-md);
+      max-width: 100%;
+    }
+    .livre__extrait {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.1rem;
+      padding: var(--space-sm) var(--space-md);
+      border-left: 2px solid var(--gold-soft);
+      color: var(--ink-soft);
+      margin: var(--space-md) 0;
+      line-height: 1.6;
+    }
+    .livre__extrait cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-style: normal;
+      color: var(--gold);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      font-family: var(--font-sans);
+    }
+  </style>
+</head>
+<body class="page-enter">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="brand"><svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="16" cy="16" r="13" /><circle cx="16" cy="16" r="7" /><circle cx="16" cy="16" r="1.5" fill="currentColor" /></svg><span>La voie du soufisme</span></a>
+      <button class="nav-toggle" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18" /></svg></button>
+      <nav><ul class="site-nav"><li><a href="../index.html">Accueil</a></li><li><a href="decouvrir.html">Découvrir</a></li><li><a href="cheminer.html">Cheminer</a></li><li><a href="rencontrer.html" class="active">Rencontrer</a></li></ul></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container container--narrow">
+      <div class="section-intro">
+        <span class="section-intro__eyebrow">La bibliothèque essentielle</span>
+        <h1>Les textes fondamentaux</h1>
+        <p>Douze œuvres qui forment la colonne vertébrale de la sagesse soufie. Chacune une porte sur l'expérience.</p>
+      </div>
+    </section>
+
+    <article class="essence-article">
+
+      <p class="lead">
+        Une voie spirituelle vit aussi par ses textes. Les soufis ont écrit, du IX<sup>e</sup> siècle à nos jours, une littérature immense — traités, poésie, hagiographies, manuels. Voici les douze œuvres qui forment le socle de toute lecture sérieuse. Pour chacune : son auteur, son contenu, son influence, un extrait qui dit son tempérament.
+      </p>
+
+      <div class="ornament">✦</div>
+
+      <h2>I — Les manuels classiques</h2>
+
+      <div class="livre">
+        <div class="livre__ar">الرِّسَالَة القُشَيْرِيَّة</div>
+        <h3 class="livre__titre">Al-Risâla — L'Épître sur le soufisme</h3>
+        <div class="livre__auteur">Al-Qushayrī · 1045</div>
+        <div class="livre__meta">
+          <span>Manuel</span><span>Arabe</span><span>X<sup>e</sup> siècle</span><span>Khorassan</span>
+        </div>
+        <p class="livre__desc">
+          Le premier grand manuel systématique du soufisme. Rédigé par al-Qushayrī, théologien ashʿarite de Nichapour, à destination des soufis de son temps qu'il sentait menacés par les attaques des juristes littéralistes. L'ouvrage présente la voie soufie comme entièrement compatible avec l'orthodoxie sunnite : il commence par exposer la doctrine théologique (foi, prophétie), puis détaille les états (<em>aḥwâl</em>) et les stations (<em>maqâmât</em>), et enfin présente les biographies des grands maîtres. C'est ce livre qui a posé les bases de la <em>codification</em> ultérieure du soufisme.
+        </p>
+        <p class="livre__extrait">
+          Le soufisme consiste à abandonner toute préoccupation égoïste et à conserver son cœur dans la limpidité avec Dieu.
+          <cite>Al-Qushayrī</cite>
+        </p>
+      </div>
+
+      <div class="livre">
+        <div class="livre__ar">كَشْف المَحْجُوب</div>
+        <h3 class="livre__titre">Kashf al-Maḥjūb — Le Dévoilement de ce qui est voilé</h3>
+        <div class="livre__auteur">Al-Hujwīrī · v. 1075</div>
+        <div class="livre__meta">
+          <span>Manuel</span><span>Persan</span><span>XI<sup>e</sup> siècle</span><span>Lahore</span>
+        </div>
+        <p class="livre__desc">
+          Le <strong>premier manuel de soufisme rédigé en persan</strong>, par un soufi d'origine afghane mort à Lahore (où son tombeau est toujours visité par des centaines de milliers de pèlerins). L'ouvrage offre un panorama complet — origine du mot soufi, biographies, doctrines des principales écoles, états mystiques, controverses du temps. Plus narratif et savoureux que la Risâla de Qushayrī, il a été pour des siècles le manuel de référence du soufisme dans l'aire indo-persane.
+        </p>
+        <p class="livre__extrait">
+          Aujourd'hui le soufisme est un nom sans réalité ;<br>
+          autrefois il était une réalité sans nom.
+          <cite>Al-Hujwīrī</cite>
+        </p>
+      </div>
+
+      <h2>II — L'œuvre magistrale de Ghazâlî</h2>
+
+      <div class="livre">
+        <div class="livre__ar">إِحْيَاء عُلُوم الدِّين</div>
+        <h3 class="livre__titre">Iḥyāʾ ʿulūm al-dīn — La Revivification des sciences de la religion</h3>
+        <div class="livre__auteur"><a href="auteurs/ghazali.html" class="author">Al-Ghazâlî</a> · 1106</div>
+        <div class="livre__meta">
+          <span>Synthèse</span><span>Arabe</span><span>XI<sup>e</sup>-XII<sup>e</sup></span><span>40 livres</span>
+        </div>
+        <p class="livre__desc">
+          L'ouvrage le plus influent de toute l'histoire intellectuelle de l'islam. Quarante livres, en quatre volumes, qui couvrent l'ensemble de la pratique religieuse — rituels, transactions, vices à combattre, vertus à acquérir, voie spirituelle — et la <em>refondent</em> à la lumière de l'intériorité soufie. Sans rejeter aucune obligation du droit, Ghazâlî montre comment chaque acte religieux peut devenir présence à Dieu plutôt que simple devoir. Aucun autre livre, peut-être, n'a fait davantage pour rendre la voie soufie acceptable à la majorité sunnite. Étudié encore aujourd'hui dans les madrasas du Maroc à l'Indonésie.
+        </p>
+        <p class="livre__extrait">
+          Sache que la prière, le jeûne et le pèlerinage sont les actions du corps ;<br>
+          mais l'âme de ces actions est l'intention pure, l'humilité et la présence du cœur.<br>
+          Une prière accomplie sans présence du cœur est comme un corps sans âme.
+          <cite>Al-Ghazâlî, Iḥyāʾ</cite>
+        </p>
+      </div>
+
+      <div class="livre">
+        <div class="livre__ar">المُنْقِذ مِن الضَّلَال</div>
+        <h3 class="livre__titre">Al-Munqidh min al-Ḍalāl — Le Secours contre l'errance</h3>
+        <div class="livre__auteur"><a href="auteurs/ghazali.html" class="author">Al-Ghazâlî</a> · v. 1108</div>
+        <div class="livre__meta">
+          <span>Autobiographie</span><span>Arabe</span><span>XII<sup>e</sup></span><span>Court</span>
+        </div>
+        <p class="livre__desc">
+          Brève autobiographie spirituelle où Ghazâlî, à la fin de sa vie, retrace son itinéraire : examen successif des quatre voies de la connaissance (théologie, philosophie, ésotérisme ismaélien, soufisme), crise existentielle de 1095, conversion intérieure, retour transformé. Texte unique dans la littérature islamique, qu'on a comparé aux <em>Confessions</em> d'Augustin. Court et bouleversant.
+        </p>
+      </div>
+
+      <h2>III — La métaphysique d'Ibn ʿArabî</h2>
+
+      <div class="livre">
+        <div class="livre__ar">الفُتُوحَات المَكِّيَّة</div>
+        <h3 class="livre__titre">Al-Futūḥāt al-Makkiyya — Les Illuminations de La Mecque</h3>
+        <div class="livre__auteur"><a href="auteurs/ibn-arabi.html" class="author">Ibn ʿArabî</a> · 1202-1238</div>
+        <div class="livre__meta">
+          <span>Encyclopédie</span><span>Arabe</span><span>XIII<sup>e</sup></span><span>560 chapitres</span>
+        </div>
+        <p class="livre__desc">
+          L'œuvre-cathédrale de la métaphysique soufie. 560 chapitres composés sur 36 ans — Ibn ʿArabî les commença à La Mecque en 1202, les acheva à Damas en 1238. Tous les sujets y sont traités : prière, Noms divins, sainteté, imagination spirituelle, stations mystiques, mondes intermédiaires, prophétie, eschatologie, gnose. L'ouvrage est considéré par beaucoup comme le sommet de la pensée mystique de l'islam. Sa traduction française intégrale, commencée par Michel Chodkiewicz et son équipe, est encore en cours.
+        </p>
+        <p class="livre__extrait">
+          Le réel est le Réel, le créaturel est le créaturel.<br>
+          Le monde est à la fois Lui et non Lui.
+          <cite>Ibn ʿArabî, Futūḥāt</cite>
+        </p>
+      </div>
+
+      <div class="livre">
+        <div class="livre__ar">فُصُوص الحِكَم</div>
+        <h3 class="livre__titre">Fuṣūṣ al-Ḥikam — Les Chatons de la sagesse</h3>
+        <div class="livre__auteur"><a href="auteurs/ibn-arabi.html" class="author">Ibn ʿArabî</a> · 1229</div>
+        <div class="livre__meta">
+          <span>Métaphysique</span><span>Arabe</span><span>XIII<sup>e</sup></span><span>27 chapitres</span>
+        </div>
+        <p class="livre__desc">
+          Œuvre tardive, brève en volume mais d'une densité métaphysique extrême. 27 chapitres consacrés à 27 prophètes — d'Adam à Muḥammad — chacun considéré comme le « chaton » d'une sagesse divine particulière. Pour la plupart des commentateurs, c'est l'œuvre la plus haute et la plus dangereuse d'Ibn ʿArabî. C'est aussi celle qui a suscité contre lui les attaques les plus violentes. Le texte appelle inévitablement le commentaire — et a engendré une tradition exégétique inépuisable.
+        </p>
+      </div>
+
+      <h2>IV — La poésie qui s'est faite voie</h2>
+
+      <div class="livre">
+        <div class="livre__ar">المَثْنَوِيّ المَعْنَوِيّ</div>
+        <h3 class="livre__titre">Al-Mathnawī Maʿnawī — Le Mathnawī spirituel</h3>
+        <div class="livre__auteur"><a href="auteurs/rumi.html" class="author">Rûmî</a> · 1258-1273</div>
+        <div class="livre__meta">
+          <span>Poésie didactique</span><span>Persan</span><span>XIII<sup>e</sup></span><span>25 000 vers</span>
+        </div>
+        <p class="livre__desc">
+          Le « Coran persan ». 25 000 distiques en 6 livres, dictés par Rûmî à son disciple Husâm al-Dîn pendant les dernières années de sa vie. Recueil de contes, allégories, méditations, commentaires de versets coraniques. Aucune autre œuvre poétique de l'islam n'a eu une telle influence — sur la culture turque, persane, indienne, ouïgoure, bosniaque. Sa traduction française intégrale par Eva de Vitray-Meyerovitch (1990) est l'une des plus belles entreprises de transmission spirituelle du XX<sup>e</sup> siècle.
+        </p>
+        <p class="livre__extrait">
+          Écoute la flûte de roseau, écoute sa plainte,<br>
+          Des séparations elle dit la complainte :<br>
+          « Depuis que de la roselière on m'a coupée,<br>
+          En écoutant mes cris, hommes et femmes ont pleuré… »
+          <cite>Rûmî, Mathnawī, prologue</cite>
+        </p>
+      </div>
+
+      <div class="livre">
+        <div class="livre__ar">مَنْطِق الطَّيْر</div>
+        <h3 class="livre__titre">Manṭiq al-Ṭayr — La Conférence des oiseaux</h3>
+        <div class="livre__auteur"><a href="auteurs/attar.html" class="author">ʿAṭṭâr</a> · v. 1177</div>
+        <div class="livre__meta">
+          <span>Poésie allégorique</span><span>Persan</span><span>XII<sup>e</sup></span><span>4500 vers</span>
+        </div>
+        <p class="livre__desc">
+          Allégorie poétique majeure : les oiseaux du monde se rassemblent pour chercher leur roi, le mystérieux Sīmurgh. Conduits par la huppe, ils traversent sept vallées initiatiques — Quête, Amour, Connaissance, Détachement, Unité, Stupeur, Anéantissement-Subsistance. Sur trente survivants (en persan, <em>sī murgh</em>), ils découvrent que le Sīmurgh n'est autre que leur propre reflet. Sommet de l'art narratif soufi, lu et imité depuis huit siècles.
+        </p>
+      </div>
+
+      <div class="livre">
+        <div class="livre__ar">دِيوَان حَافِظ</div>
+        <h3 class="livre__titre">Le Dîvân de Hâfez</h3>
+        <div class="livre__auteur"><a href="auteurs/hafez.html" class="author">Hâfez</a> · v. 1340-1389</div>
+        <div class="livre__meta">
+          <span>Poésie lyrique</span><span>Persan</span><span>XIV<sup>e</sup></span><span>~500 ghazals</span>
+        </div>
+        <p class="livre__desc">
+          Cinq cents ghazals — odes courtes, ciselées — qui forment le sommet de la lyrique persane. Hâfez y déploie une ambiguïté géniale : chaque poème peut être lu charnellement, mystiquement, satiriquement, philosophiquement. Aucun amateur de poésie sérieux ne peut ignorer cette œuvre. Le Dîvân est encore aujourd'hui, en Iran, le livre que tout foyer possède à côté du Coran.
+        </p>
+      </div>
+
+      <h2>V — Les aphorismes de la sagesse</h2>
+
+      <div class="livre">
+        <div class="livre__ar">الحِكَم العَطَائِيَّة</div>
+        <h3 class="livre__titre">Al-Ḥikam al-ʿAṭāʾiyya — Les Aphorismes</h3>
+        <div class="livre__auteur"><a href="auteurs/ibn-ata-allah.html" class="author">Ibn ʿAṭâʾ Allâh</a> · v. 1290</div>
+        <div class="livre__meta">
+          <span>Aphorismes</span><span>Arabe</span><span>XIII<sup>e</sup></span><span>264 sentences</span>
+        </div>
+        <p class="livre__desc">
+          Environ 264 sentences brèves — chacune une ligne ou deux —, condensant la sagesse de la <a href="courants.html">Châdhiliyya</a>. Comparées par certains aux <em>Pensées</em> de Pascal, les <em>Hikam</em> ont fait l'objet, depuis sept siècles, d'innombrables commentaires (par Ibn ʿAbbâd de Ronda, Ibn ʿAjîba, Ahmad al-ʿAlawî…). C'est, peut-être, l'œuvre la plus médité dans la spiritualité maghrébine.
+        </p>
+        <p class="livre__extrait">
+          Repose-toi de vouloir diriger les choses :<br>
+          ce qu'un Autre a pris en charge pour toi,<br>
+          ne t'en charge pas toi-même.
+          <cite>Ibn ʿAṭâʾ Allâh, Hikam n°2</cite>
+        </p>
+      </div>
+
+      <h2>VI — Les œuvres de l'Émir</h2>
+
+      <div class="livre">
+        <div class="livre__ar">المَوَاقِف</div>
+        <h3 class="livre__titre">Al-Mawâqif — Les Haltes spirituelles</h3>
+        <div class="livre__auteur"><a href="auteurs/abdelkader.html" class="author">Émir Abdelkader</a> · v. 1860-1880</div>
+        <div class="livre__meta">
+          <span>Méditations</span><span>Arabe</span><span>XIX<sup>e</sup></span><span>372 méditations</span>
+        </div>
+        <p class="livre__desc">
+          Recueil de 372 méditations spirituelles courtes, composées par l'Émir Abdelkader pendant ses années damascènes (1855-1883). Chaque <em>mawqif</em> (« halte ») commente un verset coranique ou un thème spirituel à la lumière de la métaphysique d'Ibn ʿArabî. C'est l'un des textes les plus profonds de la pensée soufie moderne — qui rappelle que la grande tradition akbarienne est restée vivante jusqu'au XX<sup>e</sup> siècle.
+        </p>
+      </div>
+
+      <h2>VII — Et au-delà</h2>
+
+      <p>
+        Cette bibliothèque ne prétend pas à l'exhaustivité. D'autres textes essentiels la complètent :
+      </p>
+
+      <ul class="starred">
+        <li><strong>ʿAwârif al-maʿârif</strong> de Shihâb al-Dîn al-Suhrawardî (m. 1234) — manuel pratique de soufisme, dérivé spirituel du <em>Kitâb al-Lumaʿ</em>.</li>
+        <li><strong>Tadhkirat al-awliyâʾ</strong> de ʿAṭṭâr — hagiographie de 72 saints soufis, source précieuse pour connaître les anciens.</li>
+        <li><strong>Le Jasmin des fidèles d'amour</strong> de Rûzbihân Baqlī — méditation sur l'amour mystique.</li>
+        <li><strong>Le Récit de l'exil occidental</strong> et autres récits visionnaires de <a href="auteurs/suhrawardi.html">Suhrawardî al-Maqtûl</a> — sommet de la prose mystique en persan.</li>
+        <li><strong>L'Insân al-Kâmil</strong> d'al-Jîlî — développement de la doctrine de l'Homme parfait après Ibn ʿArabî.</li>
+        <li><strong>Le Coran lui-même</strong> — qui reste, pour tout soufi, le texte premier et fondateur, dont tous les autres ne sont que des commentaires.</li>
+      </ul>
+
+      <div class="next-steps">
+        <h3>Approfondir</h3>
+        <div class="next-steps__links">
+          <a href="maitres.html">Galerie des maîtres</a>
+          <a href="rencontrer.html">Retour à Rencontrer</a>
+          <a href="lexique.html">Le lexique essentiel</a>
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p class="small"><em>« Lis dans le livre des saints — tu y trouveras Celui qui les a fait écrire. »</em></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/accueil.css?v=3" />
+  <link rel="stylesheet" href="assets/css/accueil.css?v=2" />
 </head>
 <body class="page-enter">
 
@@ -66,10 +66,52 @@
           <cite class="quote-cite">Définition soufie classique</cite>
         </blockquote>
 
-        <p class="seuil-quote">Frappe à la porte du cœur, elle s'ouvre du dedans.</p>
+        <!-- ============================================
+             LE SEUIL — Mandala calligraphique à 6 anneaux
+             ============================================ -->
+        <p class="seuil-quote">Frappe à la porte du cœur — elle s'ouvre du dedans.</p>
 
         <button class="seuil" id="seuil-button" aria-label="Franchir le seuil et découvrir la voie" aria-expanded="false">
-          <span class="seuil__label">Franchir le seuil</span>
+
+          <span class="seuil-stage" id="seuil-stage">
+            <!-- Anneau 1 — Noms divins (1) — sens horaire, lent -->
+            <svg class="cal-ring cal-ring--r1" viewBox="0 0 520 520" aria-hidden="true">
+              <defs><path id="home-r1" d="M 260,260 m -240,0 a 240,240 0 1,1 480,0 a 240,240 0 1,1 -480,0" /></defs>
+              <text><textPath href="#home-r1" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْمُتَكَبِّر ٱلْخَالِق ٱلْبَارِئ ٱلْمُصَوِّر ٱلْغَفَّار ٱلْقَهَّار ٱلْوَهَّاب ٱلرَّزَّاق ٱلْفَتَّاح ٱلْعَلِيم</textPath></text>
+            </svg>
+
+            <!-- Anneau 2 — Noms divins (2) — anti-horaire -->
+            <svg class="cal-ring cal-ring--r2" viewBox="0 0 520 520" aria-hidden="true">
+              <defs><path id="home-r2" d="M 260,260 m -202,0 a 202,202 0 1,1 404,0 a 202,202 0 1,1 -404,0" /></defs>
+              <text><textPath href="#home-r2" startOffset="0">ٱلْقَابِض ٱلْبَاسِط ٱلسَّمِيع ٱلْبَصِير ٱلْحَكَم ٱلْعَدْل ٱللَّطِيف ٱلْخَبِير ٱلْحَلِيم ٱلْعَظِيم ٱلْغَفُور ٱلشَّكُور ٱلْعَلِيّ ٱلْكَبِير ٱلْحَفِيظ ٱلْمُقِيت ٱلْحَسِيب ٱلْجَلِيل ٱلْكَرِيم</textPath></text>
+            </svg>
+
+            <!-- Anneau 3 — Bismillāh + Fātiḥa — sens horaire -->
+            <svg class="cal-ring cal-ring--r3" viewBox="0 0 520 520" aria-hidden="true">
+              <defs><path id="home-r3" d="M 260,260 m -168,0 a 168,168 0 1,1 336,0 a 168,168 0 1,1 -336,0" /></defs>
+              <text><textPath href="#home-r3" startOffset="0">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦ ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِين</textPath></text>
+            </svg>
+
+            <!-- Anneau 4 — Shahāda — anti-horaire -->
+            <svg class="cal-ring cal-ring--r4" viewBox="0 0 520 520" aria-hidden="true">
+              <defs><path id="home-r4" d="M 260,260 m -136,0 a 136,136 0 1,1 272,0 a 136,136 0 1,1 -272,0" /></defs>
+              <text><textPath href="#home-r4" startOffset="0">لَا إِلَٰهَ إِلَّا ٱللَّٰه ✦ مُحَمَّدٌ رَسُولُ ٱللَّٰه ✦ لَا إِلَٰهَ إِلَّا ٱللَّٰه ✦ مُحَمَّدٌ رَسُولُ ٱللَّٰه ✦ لَا إِلَٰهَ إِلَّا ٱللَّٰه</textPath></text>
+            </svg>
+
+            <!-- Anneau 5 — Tasbīḥ — sens horaire -->
+            <svg class="cal-ring cal-ring--r5" viewBox="0 0 520 520" aria-hidden="true">
+              <defs><path id="home-r5" d="M 260,260 m -104,0 a 104,104 0 1,1 208,0 a 104,104 0 1,1 -208,0" /></defs>
+              <text><textPath href="#home-r5" startOffset="0">سُبْحَانَ ٱللَّٰه ✦ ٱلْحَمْدُ لِلَّٰه ✦ ٱللَّٰهُ أَكْبَر ✦ سُبْحَانَ ٱللَّٰه ✦ ٱلْحَمْدُ لِلَّٰه ✦ ٱللَّٰهُ أَكْبَر ✦</textPath></text>
+            </svg>
+
+            <!-- Anneau 6 — dhikr Allāh seul — anti-horaire rapide -->
+            <svg class="cal-ring cal-ring--r6" viewBox="0 0 520 520" aria-hidden="true">
+              <defs><path id="home-r6" d="M 260,260 m -72,0 a 72,72 0 1,1 144,0 a 72,72 0 1,1 -144,0" /></defs>
+              <text><textPath href="#home-r6" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+            </svg>
+          </span>
+
+          <span class="seuil__label">Franchir le seuil<span class="seuil__dot" aria-hidden="true"></span></span>
         </button>
 
         <!-- ============================================
@@ -137,8 +179,13 @@
       <div class="ornament">✦</div>
       <p class="small"><em>« Il y a autant de voies menant à Dieu que de souffles des fils d'Adam. »</em></p>
     </div>
-  </footer>
+      <p class="site-footer__contact">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScLBwWZA-VZf4OaIEl11fnKasayyVrll7DZL5A3uZZBCwLdkQ/viewform?usp=header" target="_blank" rel="noopener" class="contact-link">
+          <span aria-hidden="true">✉</span> Écrire à Brahms
+        </a>
+      </p>
+</footer>
 
-  <script src="assets/js/main.js?v=4"></script>
+  <script src="assets/js/main.js?v=3"></script>
 </body>
 </html>

@@ -409,8 +409,219 @@
   </section>
 
   <div class="choice">
-    <h3>Laquelle te parle ?</h3>
-    <p>Dis-moi : <strong>A</strong> (sobre), <strong>B</strong> (triple, immersif), ou <strong>C</strong> (firmament étoilé). J'intègre celle que tu choisis à la page d'accueil — et on règle les vitesses/opacités si tu veux les ajuster.</p>
+    <h3>Tu as choisi l'Option B (triptyque)</h3>
+    <p>Maintenant, le centre. Le mandala actuel est correct mais générique. Compare ci-dessous quatre variantes du centre — avec les anneaux du triptyque B autour de chacune.</p>
+  </div>
+
+  <!-- ============================================
+       LES 4 CENTRES — variantes pour le triptyque B
+       ============================================ -->
+
+  <style>
+    .centers-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 2rem auto 4rem;
+    }
+    @media (max-width: 760px) { .centers-grid { grid-template-columns: 1fr; } }
+    .center-variant {
+      background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1.5rem 1rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .center-variant::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(184, 134, 11, 0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .center-variant > * { position: relative; z-index: 1; }
+    .center-variant h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      margin-bottom: .25rem;
+    }
+    .center-variant .caption {
+      font-style: italic;
+      color: var(--ink-mute);
+      font-size: .9rem;
+      margin-bottom: 1rem;
+    }
+    .mini-stage {
+      position: relative;
+      width: 360px;
+      height: 360px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    @media (max-width: 760px) { .mini-stage { width: 320px; height: 320px; } }
+
+    .ring-mini { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+    .ring-mini text { font-family: 'Amiri', serif; fill: var(--gold); }
+    .ring-mini--outer  { opacity: .55; animation: spin-cw 80s linear infinite; }
+    .ring-mini--medium { opacity: .42; animation: spin-ccw 60s linear infinite; }
+    .ring-mini--inner  { opacity: .55; animation: spin-cw 35s linear infinite; }
+    .ring-mini--outer text  { font-size: 12px; letter-spacing: .14em; }
+    .ring-mini--medium text { font-size: 11px; letter-spacing: .12em; }
+    .ring-mini--inner text  { font-size: 10px; letter-spacing: .14em; }
+
+    .center-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--gold);
+      animation: breath 5s ease-in-out infinite;
+      filter: drop-shadow(0 0 22px rgba(184, 134, 11, 0.4));
+    }
+
+    /* Variante A : Allāh */
+    .center-allah {
+      font-family: 'Amiri', serif;
+      font-size: 5.2rem;
+      line-height: 1;
+      direction: rtl;
+      font-weight: 700;
+    }
+    /* Variante B : Hû */
+    .center-hu {
+      font-family: 'Amiri', serif;
+      font-size: 6rem;
+      line-height: 1;
+      direction: rtl;
+      font-weight: 700;
+    }
+    /* Variante C : étoile 8 branches */
+    .center-star svg { width: 130px; height: 130px; }
+    /* Variante D : shamsa */
+    .center-shamsa svg { width: 140px; height: 140px; }
+  </style>
+
+  <div class="centers-grid">
+
+    <!-- Centre A : Allāh -->
+    <div class="center-variant">
+      <h3>A — الله</h3>
+      <p class="caption">Le Nom suprême, en calligraphie</p>
+      <div class="mini-stage">
+        <svg class="ring-mini ring-mini--outer" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="va-outer" d="M 180,180 m -165,0 a 165,165 0 1,1 330,0 a 165,165 0 1,1 -330,0" /></defs>
+          <text><textPath href="#va-outer" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود</textPath></text>
+        </svg>
+        <svg class="ring-mini ring-mini--medium" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="va-med" d="M 180,180 m -130,0 a 130,130 0 1,1 260,0 a 130,130 0 1,1 -260,0" /></defs>
+          <text><textPath href="#va-med" startOffset="0">ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين</textPath></text>
+        </svg>
+        <svg class="ring-mini ring-mini--inner" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="va-in" d="M 180,180 m -95,0 a 95,95 0 1,1 190,0 a 95,95 0 1,1 -190,0" /></defs>
+          <text><textPath href="#va-in" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+        </svg>
+        <div class="center-content center-allah">ﷲ</div>
+      </div>
+    </div>
+
+    <!-- Centre B : Hû -->
+    <div class="center-variant">
+      <h3>B — هو · Hû</h3>
+      <p class="caption">« Lui » — l'invocation soufie essentielle</p>
+      <div class="mini-stage">
+        <svg class="ring-mini ring-mini--outer" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="vb-outer" d="M 180,180 m -165,0 a 165,165 0 1,1 330,0 a 165,165 0 1,1 -330,0" /></defs>
+          <text><textPath href="#vb-outer" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود</textPath></text>
+        </svg>
+        <svg class="ring-mini ring-mini--medium" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="vb-med" d="M 180,180 m -130,0 a 130,130 0 1,1 260,0 a 130,130 0 1,1 -260,0" /></defs>
+          <text><textPath href="#vb-med" startOffset="0">ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين</textPath></text>
+        </svg>
+        <svg class="ring-mini ring-mini--inner" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="vb-in" d="M 180,180 m -95,0 a 95,95 0 1,1 190,0 a 95,95 0 1,1 -190,0" /></defs>
+          <text><textPath href="#vb-in" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+        </svg>
+        <div class="center-content center-hu">هو</div>
+      </div>
+    </div>
+
+    <!-- Centre C : étoile à 8 branches -->
+    <div class="center-variant">
+      <h3>C — étoile à 8 branches</h3>
+      <p class="caption">Géométrie islamique pure — sans mot</p>
+      <div class="mini-stage">
+        <svg class="ring-mini ring-mini--outer" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="vc-outer" d="M 180,180 m -165,0 a 165,165 0 1,1 330,0 a 165,165 0 1,1 -330,0" /></defs>
+          <text><textPath href="#vc-outer" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود</textPath></text>
+        </svg>
+        <svg class="ring-mini ring-mini--medium" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="vc-med" d="M 180,180 m -130,0 a 130,130 0 1,1 260,0 a 130,130 0 1,1 -260,0" /></defs>
+          <text><textPath href="#vc-med" startOffset="0">ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين</textPath></text>
+        </svg>
+        <svg class="ring-mini ring-mini--inner" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="vc-in" d="M 180,180 m -95,0 a 95,95 0 1,1 190,0 a 95,95 0 1,1 -190,0" /></defs>
+          <text><textPath href="#vc-in" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+        </svg>
+        <div class="center-content center-star">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.8">
+            <!-- 2 carrés superposés à 45° = étoile à 8 branches -->
+            <circle cx="50" cy="50" r="46" opacity="0.3"/>
+            <circle cx="50" cy="50" r="34" opacity="0.5"/>
+            <polygon points="50,8 60,40 92,50 60,60 50,92 40,60 8,50 40,40" fill="currentColor" opacity="0.85"/>
+            <polygon points="50,18 56,42 80,50 56,58 50,82 44,58 20,50 44,42" fill="none" stroke="currentColor" stroke-width="1"/>
+            <circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Centre D : shamsa -->
+    <div class="center-variant">
+      <h3>D — shamsa</h3>
+      <p class="caption">La rosette persane des manuscrits</p>
+      <div class="mini-stage">
+        <svg class="ring-mini ring-mini--outer" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="vd-outer" d="M 180,180 m -165,0 a 165,165 0 1,1 330,0 a 165,165 0 1,1 -330,0" /></defs>
+          <text><textPath href="#vd-outer" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود</textPath></text>
+        </svg>
+        <svg class="ring-mini ring-mini--medium" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="vd-med" d="M 180,180 m -130,0 a 130,130 0 1,1 260,0 a 130,130 0 1,1 -260,0" /></defs>
+          <text><textPath href="#vd-med" startOffset="0">ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين</textPath></text>
+        </svg>
+        <svg class="ring-mini ring-mini--inner" viewBox="0 0 360 360" aria-hidden="true">
+          <defs><path id="vd-in" d="M 180,180 m -95,0 a 95,95 0 1,1 190,0 a 95,95 0 1,1 -190,0" /></defs>
+          <text><textPath href="#vd-in" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+        </svg>
+        <div class="center-content center-shamsa">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.7">
+            <circle cx="50" cy="50" r="48" opacity="0.25"/>
+            <circle cx="50" cy="50" r="40" opacity="0.4"/>
+            <!-- 16 pétales de shamsa -->
+            <g opacity="0.8">
+              <path d="M50 6 Q53 25 50 40 Q47 25 50 6 Z" fill="currentColor"/>
+              <path d="M81 19 Q70 35 60 42 Q70 28 81 19 Z" fill="currentColor" opacity="0.7"/>
+              <path d="M94 50 Q75 53 60 50 Q75 47 94 50 Z" fill="currentColor"/>
+              <path d="M81 81 Q70 65 60 58 Q70 72 81 81 Z" fill="currentColor" opacity="0.7"/>
+              <path d="M50 94 Q47 75 50 60 Q53 75 50 94 Z" fill="currentColor"/>
+              <path d="M19 81 Q30 65 40 58 Q30 72 19 81 Z" fill="currentColor" opacity="0.7"/>
+              <path d="M6 50 Q25 47 40 50 Q25 53 6 50 Z" fill="currentColor"/>
+              <path d="M19 19 Q30 35 40 42 Q30 28 19 19 Z" fill="currentColor" opacity="0.7"/>
+            </g>
+            <circle cx="50" cy="50" r="18" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+            <circle cx="50" cy="50" r="10" fill="currentColor" opacity="0.4"/>
+            <circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="choice">
+    <h3>Et le centre ?</h3>
+    <p>Dis-moi : <strong>A</strong> (Allāh), <strong>B</strong> (Hû), <strong>C</strong> (étoile 8 branches), ou <strong>D</strong> (shamsa). Ma recommandation : <strong>B (Hû)</strong> — il fait écho au هو déjà calligraphié plus haut sur la home, et reste universel.</p>
   </div>
 
 </body>

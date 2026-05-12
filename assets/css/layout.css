@@ -91,6 +91,36 @@
 .site-footer p { max-width: 100%; margin: 0.3rem auto; }
 .site-footer .ornament { margin: 0 auto var(--space-md); }
 
+/* Lien Contact (Google Form) — discret, en bas de chaque page */
+.site-footer__contact {
+  margin-top: var(--space-md) !important;
+  padding-top: var(--space-md);
+  border-top: 1px dotted rgba(184, 134, 11, 0.25);
+}
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.contact-link:hover {
+  background: rgba(184, 134, 11, 0.08);
+  transform: translateY(-1px);
+}
+.contact-link span[aria-hidden] {
+  font-style: normal;
+  font-size: 0.95em;
+  opacity: 0.85;
+}
+
 /* SECTIONS */
 section { padding: var(--space-xl) 0; }
 section.hero { padding: var(--space-2xl) 0; }

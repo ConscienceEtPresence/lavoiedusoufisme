@@ -67,17 +67,21 @@
   display: block;
 }
 
-/* === Les 6 anneaux concentriques === */
-.cal-ring {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+/* === Les 6 anneaux concentriques ===
+   Sélecteur volontairement spécifique pour neutraliser .seuil svg de components.css */
+.seuil .cal-ring {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
   pointer-events: none;
   overflow: visible;
-  transition: opacity 0.6s ease;
+  filter: none;
+  color: var(--gold);
 }
-.cal-ring text {
+.seuil .cal-ring text {
   font-family: 'Amiri', serif;
   font-weight: 400;
   fill: var(--gold);

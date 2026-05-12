@@ -281,20 +281,21 @@
 }
 
 /* ---- Transition d'entrée de page (effet "franchir le seuil") ---- */
-.page-enter {
-  animation: pageEnter 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+/* IMPORTANT : on n'applique PAS transform/filter à <body> car ils
+   créent un stacking context qui casse position:fixed des modals.
+   On anime un overlay détaché. */
+.page-enter::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: var(--paper);
+  z-index: 9999;
+  pointer-events: none;
+  animation: pageFadeOut 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
-@keyframes pageEnter {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-    filter: blur(3px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
-  }
+@keyframes pageFadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
 }
 
 /* ---- Frise historique ---- */

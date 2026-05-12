@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les 99 Noms divins — al-Asmāʾ al-Ḥusnā</title>
+  <meta name="description" content="Les 99 Beaux Noms de Dieu (al-Asmāʾ al-Ḥusnā) — commentaires d'al-Kāfījī, savant ottoman du XVe siècle. Une méditation pédagogique sur chaque Nom." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../assets/css/base.css" />
+  <link rel="stylesheet" href="../../assets/css/layout.css" />
+  <link rel="stylesheet" href="../../assets/css/components.css" />
+  <link rel="stylesheet" href="../../assets/css/bilingue.css" />
+  <link rel="stylesheet" href="../../assets/css/noms-divins.css" />
+</head>
+<body class="page-enter">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="../../index.html" class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="16" cy="16" r="13" />
+          <circle cx="16" cy="16" r="7" />
+          <circle cx="16" cy="16" r="1.5" fill="currentColor" />
+        </svg>
+        <span>La voie du soufisme</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="site-nav">
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="../decouvrir.html">Découvrir</a></li>
+          <li><a href="../cheminer.html" class="active">Cheminer</a></li>
+          <li><a href="../rencontrer.html">Rencontrer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <header class="bi-header">
+      <div class="bi-header__ar">اَلْأَسْمَاءُ الْحُسْنَى</div>
+      <h1 class="bi-header__name">Les 99 Beaux Noms</h1>
+      <div class="bi-header__dates">al-Asmāʾ al-Ḥusnā · les Noms les plus beaux</div>
+      <div class="bi-header__rule"></div>
+      <p class="bi-header__tag">Une école contemplative en quatre-vingt-dix-neuf portes — chaque Nom est un visage du Réel, et un appel intérieur.</p>
+    </header>
+
+    <section class="container container--narrow">
+      <div class="noms-intro">
+        <p>
+          Les <em>Asmāʾ al-Ḥusnā</em> sont, pour la tradition soufie, autant de fenêtres ouvertes sur l'<em>insaisissable</em>.
+          Aucun Nom n'épuise Dieu ; chacun L'évoque sous une saveur particulière — Miséricorde, Justice, Beauté, Patience, Lumière, Silence.
+          Les contempler, c'est apprendre à voir le monde et soi-même à travers ces clartés successives.
+        </p>
+        <p style="margin-top:1rem;">
+          Ce module suit pas à pas le commentaire d'un seul maître : <strong>al-Kāfījī</strong>, savant ottoman du XV<sup>e</sup> siècle.
+          Sa méthode tresse trois fils — la langue, la raison, le cœur — et termine chaque Nom par cette question juste :
+          <em>quelle est la part du serviteur ?</em>
+        </p>
+      </div>
+
+      <div class="noms-source" id="noms-source">
+        <!-- injecté par JS -->
+      </div>
+
+      <p style="text-align:center;color:var(--ink-soft);font-style:italic;margin-top:var(--space-lg);">
+        Filtrez par famille, ou laissez-vous tirer un Nom au hasard pour méditer aujourd'hui.
+      </p>
+    </section>
+
+    <section class="container container--wide">
+      <div class="ornament">✦</div>
+
+      <div class="noms-filters" id="noms-filters"></div>
+
+      <div class="noms-actions">
+        <button class="noms-random" id="noms-random">
+          ⚘&nbsp;&nbsp;Un Nom pour aujourd'hui
+        </button>
+      </div>
+
+      <div class="noms-grid" id="noms-grid"></div>
+    </section>
+
+    <section class="container container--narrow">
+      <div class="ornament">✦ ✦ ✦</div>
+      <h2 class="center">Trois familles, un seul Visage</h2>
+      <p class="center" style="color:var(--ink-soft);max-width:720px;margin:0 auto var(--space-md);font-style:italic;">
+        La tradition distingue les Noms de <strong>Jamāl</strong> (Beauté, douceur, miséricorde),
+        les Noms de <strong>Jalāl</strong> (Majesté, puissance, justice),
+        et les Noms de <strong>Kamāl</strong> (Perfection, Essence — là où Beauté et Majesté coïncident).
+        Ce ne sont pas des cases : un même cœur traverse ces trois saveurs, comme une journée traverse l'aube, midi et le crépuscule.
+      </p>
+
+      <div class="aside-box">
+        <span class="aside-box__label">Une seule source</span>
+        Tout le contenu de ce module est tiré d'un unique ouvrage : <em>Sharḥ al-Asmāʾ al-Ḥusnā</em> de Muḥyī al-Dīn Muḥammad ibn Sulaymān
+        al-Kāfījī (788–879 H / 1386–1474), savant ottoman né en Crimée, chef des Hanafites au Caire, maître d'al-Suyūṭī.
+        Les rubriques <em>luġawī</em> / <em>ʿaqlī</em> / <em>ṣūfī</em> et <em>la part du serviteur</em> reproduisent fidèlement sa structure.
+        D'autres maîtres (al-Ghazālī, Ibn ʿArabī, Ibn ʿAṭāʾ Allāh) viendront en dialogue dans une future étape.
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal -->
+  <div class="nom-modal" id="nom-modal" aria-hidden="true">
+    <div class="nom-modal__backdrop"></div>
+    <article class="nom-modal__content" id="nom-modal-content">
+      <!-- injecté par JS -->
+    </article>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p><em>« À Dieu appartiennent les Noms les plus beaux : invoquez-Le par eux. »</em> — Coran 7, 180</p>
+      <p class="small" style="margin-top:1rem;"><a href="../cheminer.html">← Retour à <em>Cheminer</em></a></p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js?v=2"></script>
+  <script src="../../assets/js/noms-divins.js?v=2"></script>
+</body>
+</html>

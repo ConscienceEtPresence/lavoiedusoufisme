@@ -11,13 +11,18 @@ async function loadHub() {
     const res = await fetch(`../data/${file}`);
     const data = await res.json();
 
-    document.getElementById('hub-intro-text').textContent = data.intro;
+    const intro = document.getElementById('hub-intro-text');
+    if (intro && data.intro) {
+      intro.textContent = data.intro;
+    }
 
     const grid = document.getElementById('hub-grid');
+    if (!grid) return;
+
     grid.innerHTML = data.sections.map(s => {
       const cls = s.status === 'ready' ? 'is-ready' : 'is-soon';
       const tag = s.link ? 'a' : 'div';
-      const hrefAttr = s.link ? `href="${s.link}"` : '';
+      const hrefAttr = s.link ? `href="${s.link}"` : 'role="status"';
       const more = s.status === 'ready' ? 'Entrer ✦' : 'Bientôt ouvert';
       return `
         <${tag} class="hub-card ${cls}" ${hrefAttr}>
@@ -31,8 +36,10 @@ async function loadHub() {
 
   } catch (err) {
     console.error('Erreur chargement hub', err);
-    document.getElementById('hub-grid').innerHTML =
-      '<p class="center muted">Impossible de charger la section.</p>';
+    const grid = document.getElementById('hub-grid');
+    if (grid) {
+      grid.innerHTML = '<p class="center muted">Impossible de charger la section.</p>';
+    }
   }
 }
 

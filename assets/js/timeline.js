@@ -19,7 +19,7 @@ async function loadPeriods() {
 function renderGrid() {
   const root = document.getElementById('periods-grid');
   root.innerHTML = PERIODS_DATA.periods.map((p, i) => `
-    <article class="period-card" data-slug="${p.slug}">
+    <article class="period-card" data-slug="${p.slug}" role="button" tabindex="0">
       <div>
         <div class="period-card__num">${String(i + 1).padStart(2, '0')}</div>
         <div class="period-card__date">${p.date}</div>
@@ -32,6 +32,12 @@ function renderGrid() {
 
   root.querySelectorAll('.period-card').forEach(c => {
     c.addEventListener('click', () => openPeriod(c.dataset.slug));
+    c.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openPeriod(c.dataset.slug);
+      }
+    });
   });
 }
 
@@ -69,12 +75,17 @@ function openPeriod(slug) {
     </div>
   `;
 
-  document.getElementById('period-modal').classList.add('open');
+  const modal = document.getElementById('period-modal');
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
-  document.querySelectorAll('.modal').forEach(m => m.classList.remove('open'));
+  document.querySelectorAll('.modal').forEach(m => {
+    m.classList.remove('open');
+    m.setAttribute('aria-hidden', 'true');
+  });
   document.body.style.overflow = '';
 }
 

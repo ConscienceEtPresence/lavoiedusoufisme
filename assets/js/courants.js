@@ -49,7 +49,7 @@ function renderGrid(region) {
     : ORDERS_DATA.orders.filter(o => o.diffusionRegions.includes(region));
 
   root.innerHTML = filtered.map(o => `
-    <article class="order-card" data-slug="${o.slug}">
+    <article class="order-card" data-slug="${o.slug}" role="button" tabindex="0">
       <div class="order-card__ar">${o.nameAr}</div>
       <h3 class="order-card__name">${o.name}</h3>
       <p class="order-card__founder">
@@ -67,6 +67,12 @@ function renderGrid(region) {
   // Click → open modal
   root.querySelectorAll('.order-card').forEach(card => {
     card.addEventListener('click', () => openModal(card.dataset.slug));
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openModal(card.dataset.slug);
+      }
+    });
   });
 }
 
@@ -129,12 +135,16 @@ function openModal(slug) {
     </div>
   `;
 
-  document.getElementById('order-modal').classList.add('open');
+  const modal = document.getElementById('order-modal');
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
-  document.getElementById('order-modal').classList.remove('open');
+  const modal = document.getElementById('order-modal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
   document.body.style.overflow = '';
 }
 

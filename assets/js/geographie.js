@@ -31,7 +31,7 @@ async function loadGeo() {
 function renderGrid() {
   const root = document.getElementById('regions-grid');
   root.innerHTML = GEO_DATA.regions.map(r => `
-    <article class="region-tile" data-slug="${r.slug}">
+    <article class="region-tile" data-slug="${r.slug}" role="button" tabindex="0">
       <div class="region-tile__ar" aria-hidden="true">${REGION_SYMBOLS[r.slug] || 'هو'}</div>
       <div class="region-tile__apogee">${r.apogee}</div>
       <h2 class="region-tile__name">${r.name.replace(/—.*/, '').trim()}</h2>
@@ -42,6 +42,12 @@ function renderGrid() {
 
   root.querySelectorAll('.region-tile').forEach(t => {
     t.addEventListener('click', () => openRegion(t.dataset.slug));
+    t.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openRegion(t.dataset.slug);
+      }
+    });
   });
 }
 
@@ -94,12 +100,17 @@ function openRegion(slug) {
     </div>
   `;
 
-  document.getElementById('region-modal').classList.add('open');
+  const modal = document.getElementById('region-modal');
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
-  document.querySelectorAll('.modal').forEach(m => m.classList.remove('open'));
+  document.querySelectorAll('.modal').forEach(m => {
+    m.classList.remove('open');
+    m.setAttribute('aria-hidden', 'true');
+  });
   document.body.style.overflow = '';
 }
 

@@ -450,7 +450,306 @@ blockquote.meta-quote cite {
 }
 .fiche-nav a:hover { color: var(--meta-gold); }
 
+/* === ENTRÉES THÉMATIQUES === */
+
+.theme-hero {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+  border-bottom: 1px solid var(--meta-rule);
+  margin-bottom: var(--space-xl);
+}
+.theme-hero__eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: .75rem;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--meta-gold);
+  margin-bottom: 1rem;
+}
+.theme-hero__ar {
+  font-family: 'Amiri', serif;
+  font-size: 2.6rem;
+  color: var(--meta-gold);
+  direction: rtl;
+  margin: .8rem 0;
+  line-height: 1.4;
+}
+.theme-hero__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.2rem;
+  color: var(--meta-ink-deep);
+  line-height: 1.1;
+  font-weight: 500;
+  margin: .4rem 0 .6rem;
+  letter-spacing: -.01em;
+}
+.theme-hero__sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--ink-soft);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.theme-hero__source {
+  margin-top: 1.4rem;
+  font-family: 'Inter', sans-serif;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  color: var(--ink-soft);
+}
+.theme-hero__source a { color: var(--meta-gold); text-decoration: none; }
+
+/* Sections narratives */
+.theme-section {
+  margin-bottom: var(--space-xl);
+}
+.theme-section__num {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--meta-gold);
+  font-size: 1rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  margin-bottom: .3rem;
+}
+.theme-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.1rem;
+  color: var(--meta-ink-deep);
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+.theme-section h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  color: var(--meta-ink-deep);
+  font-style: italic;
+  margin: 1.6rem 0 .7rem;
+  font-weight: 500;
+}
+.theme-section p {
+  font-family: 'Source Serif 4', serif;
+  color: var(--ink);
+  line-height: 1.95;
+  font-size: 1.05rem;
+  margin-bottom: 1.1rem;
+}
+.theme-section p:first-of-type::first-letter {
+  display: none;
+}
+
+/* Diptyque pédagogique */
+.diptyque {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.8rem 0;
+}
+.diptyque__col {
+  background: #fff;
+  border: 1px solid var(--meta-rule);
+  border-radius: 8px;
+  padding: 1.6rem 1.4rem;
+  position: relative;
+}
+.diptyque__col--left { border-top: 4px solid #8a96b5; }
+.diptyque__col--right { border-top: 4px solid var(--meta-gold); }
+
+.diptyque__label {
+  font-family: 'Inter', sans-serif;
+  font-size: .7rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: .4rem;
+}
+.diptyque__ar {
+  font-family: 'Amiri', serif;
+  font-size: 2rem;
+  color: var(--meta-ink-deep);
+  direction: rtl;
+  line-height: 1.4;
+  margin-bottom: .15rem;
+}
+.diptyque__tr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--meta-gold);
+  margin-bottom: .3rem;
+}
+.diptyque__fr {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.7;
+}
+.diptyque__fr strong {
+  color: var(--meta-ink-deep);
+}
+
+/* Encart "À retenir" */
+.retenir {
+  background: rgba(184, 134, 11, 0.07);
+  border-left: 3px solid var(--meta-gold);
+  padding: 1.2rem 1.5rem;
+  margin: 1.6rem 0;
+  border-radius: 0 4px 4px 0;
+}
+.retenir__label {
+  font-family: 'Inter', sans-serif;
+  font-size: .72rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--meta-gold);
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+.retenir p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--meta-ink-deep);
+  margin: 0;
+}
+
+/* Lexique inline */
+.lex {
+  display: inline-block;
+  border-bottom: 1px dotted var(--meta-gold);
+  cursor: help;
+  position: relative;
+}
+.lex em {
+  font-style: italic;
+  color: var(--meta-gold);
+}
+
+/* Liste glossaire */
+.glossaire {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: .9rem;
+  margin: 1.5rem 0;
+}
+.glossaire__item {
+  background: #fff;
+  border: 1px solid var(--meta-rule);
+  border-radius: 6px;
+  padding: .9rem 1.1rem;
+}
+.glossaire__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.4rem;
+  color: var(--meta-ink-deep);
+  direction: rtl;
+  line-height: 1.4;
+}
+.glossaire__tr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--meta-gold);
+  font-size: 1rem;
+}
+.glossaire__fr {
+  font-family: 'Source Serif 4', serif;
+  font-size: .88rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin-top: .3rem;
+}
+
+/* Citation forte */
+.theme-section blockquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--meta-ink-deep);
+  border: none;
+  padding: 1.3rem 1.8rem;
+  margin: 1.5rem 0;
+  background: rgba(184, 134, 11, .04);
+  border-radius: 4px;
+  border-left: 3px solid var(--meta-gold);
+}
+.theme-section blockquote cite {
+  display: block;
+  font-style: normal;
+  font-family: 'Inter', sans-serif;
+  font-size: .76rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: .8rem;
+}
+
+/* Quatre domaines (utile pour la section sur les 4 domaines du taḥqīq) */
+.quatre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.quatre-card {
+  background: #fff;
+  border: 1px solid var(--meta-rule);
+  border-radius: 6px;
+  padding: 1.2rem 1.2rem;
+  text-align: center;
+}
+.quatre-card__num {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--meta-gold);
+  font-size: 2.2rem;
+  line-height: 1;
+}
+.quatre-card__name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  color: var(--meta-ink-deep);
+  margin-top: .4rem;
+  font-weight: 500;
+}
+.quatre-card__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.1rem;
+  color: var(--meta-gold);
+  direction: rtl;
+  margin-top: .2rem;
+}
+.quatre-card__desc {
+  font-family: 'Source Serif 4', serif;
+  font-size: .9rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin-top: .6rem;
+}
+
+/* Conclusion encadrée */
+.conclusion-box {
+  background: linear-gradient(180deg, #fff 0%, #faf6ec 100%);
+  border: 1px solid var(--meta-rule);
+  border-radius: 10px;
+  padding: 2rem 2rem;
+  margin: var(--space-xl) 0;
+}
+.conclusion-box h2 {
+  margin-top: 0;
+}
+
 /* Responsive */
+@media (max-width: 820px) {
+  .theme-hero__title { font-size: 2.2rem; }
+  .theme-hero__ar { font-size: 1.9rem; }
+  .theme-section h2 { font-size: 1.6rem; }
+  .diptyque { grid-template-columns: 1fr; gap: 1rem; }
+  .conclusion-box { padding: 1.5rem 1.2rem; }
+}
 @media (max-width: 820px) {
   .familles-grid { gap: 1rem; }
   .famille-card { padding: 1.4rem 1.2rem; }

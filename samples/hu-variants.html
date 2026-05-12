@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Échantillons — variantes du هو</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Amiri:wght@400;700&family=Reem+Kufi:wght@400;500;600&family=Aref+Ruqaa:wght@400;700&family=Scheherazade+New:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --paper: #FBF7EF;
+      --paper-warm: #F5EFE3;
+      --ink: #0F1830;
+      --ink-mute: #6b6a65;
+      --gold: #B8860B;
+      --gold-soft: #d4a04b;
+      --line: #e6dfd0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 17px; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      padding: 2rem 1rem 4rem;
+    }
+    .page-header { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 500;
+      margin-bottom: .5rem;
+    }
+    .page-header p { font-style: italic; color: var(--ink-mute); font-size: 1.1rem; }
+    .nav-back { display: block; text-align: center; margin-bottom: 1.5rem; }
+    .nav-back a {
+      font-family: 'Inter', sans-serif;
+      font-size: .85rem;
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: .04em;
+      margin: 0 .8rem;
+    }
+
+    .sample {
+      max-width: 720px;
+      margin: 0 auto 4rem;
+      text-align: center;
+      padding: 2.5rem 1rem 3rem;
+      background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .sample::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(184, 134, 11, 0.10) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .sample > * { position: relative; z-index: 1; }
+    .sample h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-bottom: .3rem;
+    }
+    .sample .caption {
+      font-style: italic;
+      color: var(--ink-mute);
+      font-size: .95rem;
+      max-width: 520px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .ring-stage {
+      position: relative;
+      width: 460px;
+      height: 460px;
+      max-width: 100%;
+      margin: 1rem auto;
+    }
+    @media (max-width: 540px) {
+      .ring-stage { width: 320px; height: 320px; }
+    }
+
+    .ring { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+    .ring text { font-family: 'Amiri', serif; fill: var(--gold); }
+    .ring--outer  { opacity: .55; animation: spin-cw 80s linear infinite; }
+    .ring--medium { opacity: .42; animation: spin-ccw 60s linear infinite; }
+    .ring--inner  { opacity: .55; animation: spin-cw 35s linear infinite; }
+    .ring--outer text  { font-size: 14px; letter-spacing: .15em; }
+    .ring--medium text { font-size: 12px; letter-spacing: .12em; }
+    .ring--inner text  { font-size: 11px; letter-spacing: .14em; }
+    @media (max-width: 540px) {
+      .ring--outer text  { font-size: 11px; }
+      .ring--medium text { font-size: 10px; }
+      .ring--inner text  { font-size: 9px; }
+    }
+    @keyframes spin-cw { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes spin-ccw { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+
+    /* === Centre — base commune === */
+    .center-hu {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: var(--gold);
+      direction: rtl;
+      line-height: 1;
+      animation: breath 5s ease-in-out infinite;
+      filter: drop-shadow(0 0 22px rgba(184, 134, 11, 0.35));
+    }
+    @keyframes breath {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50%      { transform: translate(-50%, -50%) scale(1.03); }
+    }
+
+    /* Variantes typographiques avec léger décalage pour centrage optique */
+    .hu-amiri-light {
+      font-family: 'Amiri', serif;
+      font-weight: 400;
+      font-size: 5.2rem;
+      /* compensation centrage optique : un peu vers la gauche */
+      animation: breath-amiri 5s ease-in-out infinite;
+    }
+    @keyframes breath-amiri {
+      0%, 100% { transform: translate(calc(-50% + 8px), -50%) scale(1); }
+      50%      { transform: translate(calc(-50% + 8px), -50%) scale(1.03); }
+    }
+
+    .hu-reem {
+      font-family: 'Reem Kufi', sans-serif;
+      font-weight: 400;
+      font-size: 5.6rem;
+      animation: breath-reem 5s ease-in-out infinite;
+    }
+    @keyframes breath-reem {
+      0%, 100% { transform: translate(calc(-50% + 4px), -50%) scale(1); }
+      50%      { transform: translate(calc(-50% + 4px), -50%) scale(1.03); }
+    }
+
+    .hu-aref {
+      font-family: 'Aref Ruqaa', serif;
+      font-weight: 400;
+      font-size: 5.6rem;
+      animation: breath-aref 5s ease-in-out infinite;
+    }
+    @keyframes breath-aref {
+      0%, 100% { transform: translate(calc(-50% + 6px), -50%) scale(1); }
+      50%      { transform: translate(calc(-50% + 6px), -50%) scale(1.03); }
+    }
+
+    .hu-scheh {
+      font-family: 'Scheherazade New', serif;
+      font-weight: 400;
+      font-size: 5.4rem;
+      animation: breath-scheh 5s ease-in-out infinite;
+    }
+    @keyframes breath-scheh {
+      0%, 100% { transform: translate(calc(-50% + 7px), -50%) scale(1); }
+      50%      { transform: translate(calc(-50% + 7px), -50%) scale(1.03); }
+    }
+
+    @media (max-width: 540px) {
+      .hu-amiri-light, .hu-reem, .hu-aref, .hu-scheh { font-size: 3.8rem; }
+    }
+
+    .choice {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 2rem;
+      background: var(--paper-warm);
+      border-radius: 12px;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .choice h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .choice p {
+      color: var(--ink-mute);
+      font-size: .95rem;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: .68rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(184, 134, 11, 0.08);
+      padding: .25rem .7rem;
+      border-radius: 999px;
+      margin-top: .4rem;
+    }
+
+    /* Petit cadre de comparaison sans anneaux */
+    .pure-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      max-width: 760px;
+      margin: 0 auto 4rem;
+      padding: 2rem 1rem;
+      background: var(--paper-warm);
+      border-radius: 12px;
+    }
+    @media (max-width: 640px) { .pure-grid { grid-template-columns: repeat(2, 1fr); } }
+    .pure-cell {
+      text-align: center;
+      padding: 1.5rem .5rem;
+      background: var(--paper);
+      border-radius: 8px;
+      border: 1px solid var(--line);
+    }
+    .pure-cell h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      color: var(--ink-mute);
+      margin-bottom: 1rem;
+      font-weight: 400;
+      font-style: italic;
+    }
+    .pure-cell .pure-hu {
+      color: var(--gold);
+      direction: rtl;
+      line-height: 1;
+      font-size: 3.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-back">
+    <a href="../index.html">← Accueil</a>
+    <a href="centres.html">← Page centres</a>
+    <a href="anneaux.html">← Page anneaux</a>
+  </div>
+
+  <div class="page-header">
+    <h1>Variantes du هو</h1>
+    <p>Quatre typographies, plus fines, mieux centrées.<br>
+    Pour que la calligraphie respire au lieu d'écraser.</p>
+  </div>
+
+  <!-- Grille pure (sans anneaux) pour comparer juste la typo -->
+  <div class="pure-grid">
+    <div class="pure-cell">
+      <h4>1 · Amiri light</h4>
+      <div class="pure-hu" style="font-family: 'Amiri', serif; font-weight: 400;">هو</div>
+    </div>
+    <div class="pure-cell">
+      <h4>2 · Reem Kufi</h4>
+      <div class="pure-hu" style="font-family: 'Reem Kufi', sans-serif; font-weight: 400;">هو</div>
+    </div>
+    <div class="pure-cell">
+      <h4>3 · Aref Ruqaa</h4>
+      <div class="pure-hu" style="font-family: 'Aref Ruqaa', serif; font-weight: 400;">هو</div>
+    </div>
+    <div class="pure-cell">
+      <h4>4 · Scheherazade</h4>
+      <div class="pure-hu" style="font-family: 'Scheherazade New', serif; font-weight: 400;">هو</div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       1 — AMIRI LIGHT (la même police, mais fine et bien centrée)
+       ============================================ -->
+  <section class="sample">
+    <h2>1 — Amiri light</h2>
+    <p class="caption">Même police que le site, mais en <em>weight 400</em> et plus petite.<br>Centrage optique compensé.</p>
+    <span class="badge">Cohérent avec le site</span>
+
+    <div class="ring-stage">
+      <svg class="ring ring--outer" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu1-o" d="M 230,230 m -212,0 a 212,212 0 1,1 424,0 a 212,212 0 1,1 -424,0" /></defs>
+        <text><textPath href="#hu1-o" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود ٱلْحَيّ ٱلْقَيُّوم ٱلنُّور</textPath></text>
+      </svg>
+      <svg class="ring ring--medium" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu1-m" d="M 230,230 m -168,0 a 168,168 0 1,1 336,0 a 168,168 0 1,1 -336,0" /></defs>
+        <text><textPath href="#hu1-m" startOffset="0">ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين</textPath></text>
+      </svg>
+      <svg class="ring ring--inner" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu1-i" d="M 230,230 m -122,0 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0" /></defs>
+        <text><textPath href="#hu1-i" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+      </svg>
+      <div class="center-hu hu-amiri-light">هو</div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       2 — REEM KUFI
+       ============================================ -->
+  <section class="sample">
+    <h2>2 — Reem Kufi</h2>
+    <p class="caption">Coufique géométrique moderne. <em>Très épuré, lettres harmonieuses et bien équilibrées.</em></p>
+
+    <div class="ring-stage">
+      <svg class="ring ring--outer" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu2-o" d="M 230,230 m -212,0 a 212,212 0 1,1 424,0 a 212,212 0 1,1 -424,0" /></defs>
+        <text><textPath href="#hu2-o" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود ٱلْحَيّ ٱلْقَيُّوم ٱلنُّور</textPath></text>
+      </svg>
+      <svg class="ring ring--medium" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu2-m" d="M 230,230 m -168,0 a 168,168 0 1,1 336,0 a 168,168 0 1,1 -336,0" /></defs>
+        <text><textPath href="#hu2-m" startOffset="0">ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين</textPath></text>
+      </svg>
+      <svg class="ring ring--inner" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu2-i" d="M 230,230 m -122,0 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0" /></defs>
+        <text><textPath href="#hu2-i" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+      </svg>
+      <div class="center-hu hu-reem">هو</div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       3 — AREF RUQAA
+       ============================================ -->
+  <section class="sample">
+    <h2>3 — Aref Ruqaa</h2>
+    <p class="caption">Style <em>ruqaa</em>, plus calligraphique, comme tracé à la main. Lettres expressives.</p>
+
+    <div class="ring-stage">
+      <svg class="ring ring--outer" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu3-o" d="M 230,230 m -212,0 a 212,212 0 1,1 424,0 a 212,212 0 1,1 -424,0" /></defs>
+        <text><textPath href="#hu3-o" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود ٱلْحَيّ ٱلْقَيُّوم ٱلنُّور</textPath></text>
+      </svg>
+      <svg class="ring ring--medium" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu3-m" d="M 230,230 m -168,0 a 168,168 0 1,1 336,0 a 168,168 0 1,1 -336,0" /></defs>
+        <text><textPath href="#hu3-m" startOffset="0">ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين</textPath></text>
+      </svg>
+      <svg class="ring ring--inner" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu3-i" d="M 230,230 m -122,0 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0" /></defs>
+        <text><textPath href="#hu3-i" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+      </svg>
+      <div class="center-hu hu-aref">هو</div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       4 — SCHEHERAZADE
+       ============================================ -->
+  <section class="sample">
+    <h2>4 — Scheherazade New</h2>
+    <p class="caption">Naskh classique. <em>Lettres traditionnelles de manuscrit, sobres et lisibles.</em></p>
+
+    <div class="ring-stage">
+      <svg class="ring ring--outer" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu4-o" d="M 230,230 m -212,0 a 212,212 0 1,1 424,0 a 212,212 0 1,1 -424,0" /></defs>
+        <text><textPath href="#hu4-o" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود ٱلْحَيّ ٱلْقَيُّوم ٱلنُّور</textPath></text>
+      </svg>
+      <svg class="ring ring--medium" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu4-m" d="M 230,230 m -168,0 a 168,168 0 1,1 336,0 a 168,168 0 1,1 -336,0" /></defs>
+        <text><textPath href="#hu4-m" startOffset="0">ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين</textPath></text>
+      </svg>
+      <svg class="ring ring--inner" viewBox="0 0 460 460" aria-hidden="true">
+        <defs><path id="hu4-i" d="M 230,230 m -122,0 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0" /></defs>
+        <text><textPath href="#hu4-i" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+      </svg>
+      <div class="center-hu hu-scheh">هو</div>
+    </div>
+  </section>
+
+  <div class="choice">
+    <h3>Laquelle des quatre ?</h3>
+    <p>Réponds-moi par le numéro : <strong>1</strong> (Amiri light), <strong>2</strong> (Reem Kufi), <strong>3</strong> (Aref Ruqaa) ou <strong>4</strong> (Scheherazade). Je règle ensuite la taille et le centrage exact avec toi si besoin.</p>
+  </div>
+
+</body>
+</html>

@@ -41,101 +41,125 @@
   z-index: 1;
 }
 
-/* === L'anneau calligraphique tournant ===
-   Un cercle de mots arabes qui tourne très lentement, derrière le mandala. */
-.seuil-stage {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: var(--space-md) auto var(--space-sm);
-  width: clamp(280px, 50vw, 420px);
-  height: clamp(280px, 50vw, 420px);
-}
-.seuil-stage__ring {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  animation: ringTurn 80s linear infinite;
-  opacity: 0.32;
-  transition: opacity 0.8s ease;
-}
-.seuil-stage:hover .seuil-stage__ring { opacity: 0.55; }
-.seuil-stage__ring text {
-  font-family: 'Amiri', serif;
-  font-size: 13px;
-  fill: var(--gold);
-  letter-spacing: 0.3em;
-}
-@keyframes ringTurn {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-
-/* === Ondes pulsantes ===
-   Trois cercles d'or qui pulsent en décalé autour du mandala. */
-.seuil-stage__pulse {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 170px;
-  height: 170px;
-  margin: -85px 0 0 -85px;
-  border-radius: 50%;
-  border: 1px solid var(--gold);
-  opacity: 0;
-  animation: pulseOut 4s ease-out infinite;
-  pointer-events: none;
-}
-.seuil-stage__pulse--2 { animation-delay: 1.3s; }
-.seuil-stage__pulse--3 { animation-delay: 2.6s; }
-@keyframes pulseOut {
-  0%   { transform: scale(0.6); opacity: 0; }
-  20%  { opacity: 0.7; }
-  100% { transform: scale(1.7); opacity: 0; }
-}
-
-/* État ouvert : on calme tout */
-.seuil-stage.is-open .seuil-stage__pulse,
-.seuil-stage.is-open .seuil-stage__ring {
-  opacity: 0;
-  animation-play-state: paused;
-}
-
-/* === Le mandala — respiration et glow renforcé === */
+/* === Le seuil — mandala calligraphique à 6 anneaux === */
 .seuil {
   position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-sm) 0 0;
+  margin: var(--space-md) auto var(--space-sm);
+  -webkit-tap-highlight-color: transparent;
   z-index: 2;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.seuil svg {
-  width: clamp(140px, 22vw, 200px) !important;
-  filter: drop-shadow(0 0 24px rgba(184, 134, 11, 0.35)) drop-shadow(0 4px 14px rgba(184, 134, 11, 0.20));
-  animation: mandalaBreath 5s ease-in-out infinite;
+
+/* La zone des anneaux — c'est la scène calligraphique */
+.seuil-stage {
+  position: relative;
+  width: clamp(300px, 60vw, 520px);
+  height: clamp(300px, 60vw, 520px);
+  display: block;
 }
-.seuil:hover svg {
-  filter: drop-shadow(0 0 36px rgba(184, 134, 11, 0.55)) drop-shadow(0 6px 18px rgba(184, 134, 11, 0.3));
+
+/* === Les 6 anneaux concentriques === */
+.cal-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+  transition: opacity 0.6s ease;
 }
-@keyframes mandalaBreath {
-  0%, 100% { transform: scale(1); }
-  50%      { transform: scale(1.035); }
+.cal-ring text {
+  font-family: 'Amiri', serif;
+  font-weight: 400;
+  fill: var(--gold);
 }
-.seuil.is-open svg { animation: none; }
+
+/* Sens et vitesses alternés, opacités graduées */
+.cal-ring--r1 { animation: spin-cw  100s linear infinite; opacity: .50; }
+.cal-ring--r2 { animation: spin-ccw  80s linear infinite; opacity: .45; }
+.cal-ring--r3 { animation: spin-cw   65s linear infinite; opacity: .42; }
+.cal-ring--r4 { animation: spin-ccw  50s linear infinite; opacity: .50; }
+.cal-ring--r5 { animation: spin-cw   38s linear infinite; opacity: .55; }
+.cal-ring--r6 { animation: spin-ccw  28s linear infinite; opacity: .65; }
+
+.cal-ring--r1 text { font-size: 14px; letter-spacing: .15em; }
+.cal-ring--r2 text { font-size: 13px; letter-spacing: .14em; }
+.cal-ring--r3 text { font-size: 12px; letter-spacing: .13em; }
+.cal-ring--r4 text { font-size: 11px; letter-spacing: .14em; }
+.cal-ring--r5 text { font-size: 10px; letter-spacing: .14em; }
+.cal-ring--r6 text { font-size: 9px;  letter-spacing: .16em; }
+
+@keyframes spin-cw  { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes spin-ccw { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+
+/* Hover : tout s'éveille un peu */
+.seuil:hover .cal-ring { opacity: 0.85; }
+
+/* Tailles sur mobile */
+@media (max-width: 760px) {
+  .cal-ring--r1 text { font-size: 10px; }
+  .cal-ring--r2 text { font-size: 9px; }
+  .cal-ring--r3 text { font-size: 9px; }
+  .cal-ring--r4 text { font-size: 8px; }
+  .cal-ring--r5 text { font-size: 8px; }
+  .cal-ring--r6 text { font-size: 7px; }
+}
+@media (max-width: 480px) {
+  .seuil-stage { width: 300px; height: 300px; }
+  .cal-ring--r1 text { font-size: 8px; }
+  .cal-ring--r2 text { font-size: 8px; }
+  .cal-ring--r3 text { font-size: 7px; }
+  .cal-ring--r4 text { font-size: 7px; }
+  .cal-ring--r5 text { font-size: 6px; }
+  .cal-ring--r6 text { font-size: 6px; }
+}
+
+/* État ouvert : on réduit le seuil et on ralentit les anneaux */
+.seuil.is-open {
+  transform: scale(0.55);
+  opacity: 0.7;
+  margin-bottom: var(--space-md);
+}
+.seuil.is-open .cal-ring {
+  animation-play-state: paused;
+  opacity: 0.3;
+}
 
 /* === Label + invitation === */
 .seuil__label {
-  font-size: 1.25rem !important;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-style: italic !important;
+  font-size: 1.4rem !important;
   letter-spacing: 0.14em !important;
+  color: var(--gold) !important;
   opacity: 1 !important;
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+  padding: .4rem 1.2rem;
+  transition: letter-spacing 0.5s ease;
 }
+.seuil:hover .seuil__label { letter-spacing: 0.18em !important; }
 .seuil__label::before,
 .seuil__label::after {
   content: '';
-  width: 24px;
+  width: 36px;
   height: 1px;
   background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+.seuil.is-open .seuil__label {
+  font-size: 1rem !important;
+  letter-spacing: 0.16em !important;
 }
 
 .seuil__invite {
@@ -268,25 +292,15 @@
 
 /* === Responsive === */
 @media (max-width: 760px) {
-  .seuil-stage { width: 280px; height: 280px; }
-  .seuil-stage__pulse { width: 140px; height: 140px; margin: -70px 0 0 -70px; }
-  .seuil-stage__ring text { font-size: 11px; }
-  .seuil__label { font-size: 1.1rem !important; }
+  .seuil__label { font-size: 1.18rem !important; }
   .seuil-quote { font-size: 1.02rem; }
   .door__ar { font-size: 2.2rem; }
   .door__title { font-size: 1.3rem !important; }
-}
-@media (max-width: 480px) {
-  .seuil-stage { width: 240px; height: 240px; }
-  .seuil-stage__pulse { width: 120px; height: 120px; margin: -60px 0 0 -60px; }
-  .seuil-stage__ring { display: none; } /* On retire l'anneau sur très petit écran */
 }
 
 /* Respect du prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce) {
   .hero--contemplative::before,
-  .seuil svg,
-  .seuil-stage__ring,
-  .seuil-stage__pulse,
+  .cal-ring,
   .seuil__dot { animation: none !important; }
 }

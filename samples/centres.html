@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Échantillons — A · B · D au centre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Amiri:ital,wght@0,400;0,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --paper: #FBF7EF;
+      --paper-warm: #F5EFE3;
+      --ink: #0F1830;
+      --ink-mute: #6b6a65;
+      --gold: #B8860B;
+      --gold-soft: #d4a04b;
+      --line: #e6dfd0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 17px; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      padding: 2rem 1rem 4rem;
+    }
+    .page-header { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 500;
+      margin-bottom: .5rem;
+    }
+    .page-header p { font-style: italic; color: var(--ink-mute); font-size: 1.1rem; }
+    .nav-back { display: block; text-align: center; margin-bottom: 1.5rem; }
+    .nav-back a {
+      font-family: 'Inter', sans-serif;
+      font-size: .85rem;
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: .04em;
+      margin: 0 .8rem;
+    }
+
+    .sample {
+      max-width: 720px;
+      margin: 0 auto 5rem;
+      text-align: center;
+      padding: 3rem 1rem 3.5rem;
+      background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .sample::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(184, 134, 11, 0.10) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .sample > * { position: relative; z-index: 1; }
+    .sample h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.1rem;
+      font-weight: 500;
+      margin-bottom: .3rem;
+    }
+    .sample .caption {
+      font-style: italic;
+      color: var(--ink-mute);
+      font-size: 1.05rem;
+      max-width: 520px;
+      margin: 0 auto 2rem;
+    }
+
+    /* === STAGE — grand format === */
+    .ring-stage {
+      position: relative;
+      width: 480px;
+      height: 480px;
+      max-width: 100%;
+      margin: 1rem auto;
+    }
+    @media (max-width: 540px) {
+      .ring-stage { width: 340px; height: 340px; }
+    }
+
+    .ring { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+    .ring text { font-family: 'Amiri', serif; fill: var(--gold); }
+    .ring--outer  { opacity: .58; animation: spin-cw 80s linear infinite; }
+    .ring--medium { opacity: .45; animation: spin-ccw 60s linear infinite; }
+    .ring--inner  { opacity: .58; animation: spin-cw 35s linear infinite; }
+    .ring--outer text  { font-size: 15px; letter-spacing: .15em; }
+    .ring--medium text { font-size: 13px; letter-spacing: .13em; }
+    .ring--inner text  { font-size: 12px; letter-spacing: .15em; }
+    @media (max-width: 540px) {
+      .ring--outer text  { font-size: 11px; }
+      .ring--medium text { font-size: 10px; }
+      .ring--inner text  { font-size: 9px; }
+    }
+    @keyframes spin-cw { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes spin-ccw { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+
+    .center-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--gold);
+      animation: breath 5s ease-in-out infinite;
+      filter: drop-shadow(0 0 28px rgba(184, 134, 11, 0.45));
+    }
+    @keyframes breath {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50%      { transform: translate(-50%, -50%) scale(1.04); }
+    }
+
+    /* Centre A — Allāh */
+    .center-allah {
+      font-family: 'Amiri', serif;
+      font-size: 7rem;
+      line-height: 1;
+      direction: rtl;
+      font-weight: 700;
+    }
+    @media (max-width: 540px) { .center-allah { font-size: 4.8rem; } }
+
+    /* Centre B — Hû */
+    .center-hu {
+      font-family: 'Amiri', serif;
+      font-size: 8rem;
+      line-height: 1;
+      direction: rtl;
+      font-weight: 700;
+    }
+    @media (max-width: 540px) { .center-hu { font-size: 5.6rem; } }
+
+    /* Centre D — shamsa */
+    .center-shamsa svg {
+      width: 180px;
+      height: 180px;
+      display: block;
+    }
+    @media (max-width: 540px) { .center-shamsa svg { width: 130px; height: 130px; } }
+
+    .choice {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem;
+      background: var(--paper-warm);
+      border-radius: 12px;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .choice h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .choice p {
+      color: var(--ink-mute);
+      font-size: 1rem;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: .68rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(184, 134, 11, 0.08);
+      padding: .25rem .7rem;
+      border-radius: 999px;
+      margin-top: .5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-back">
+    <a href="../index.html">← Accueil</a>
+    <a href="anneaux.html">← Page de comparaison complète</a>
+  </div>
+
+  <div class="page-header">
+    <h1>Trois centres en grand format</h1>
+    <p>A, B, D — chacun avec les anneaux du triptyque (option B) autour.<br>
+    Compare en direct, choisis celui qui te parle.</p>
+  </div>
+
+  <!-- ============================================
+       A — ALLĀH
+       ============================================ -->
+  <section class="sample">
+    <h2>A — ﷲ</h2>
+    <p class="caption">Le Nom suprême, en calligraphie. <em>Direct, central, sans détour.</em></p>
+
+    <div class="ring-stage">
+      <svg class="ring ring--outer" viewBox="0 0 480 480" aria-hidden="true">
+        <defs><path id="A-o" d="M 240,240 m -222,0 a 222,222 0 1,1 444,0 a 222,222 0 1,1 -444,0" /></defs>
+        <text><textPath href="#A-o" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْمُتَكَبِّر ٱلْخَالِق ٱلْبَارِئ ٱلْمُصَوِّر ٱلْغَفَّار ٱلْقَهَّار ٱلْوَهَّاب ٱلرَّزَّاق ٱلْفَتَّاح ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود ٱلْحَيّ ٱلْقَيُّوم ٱلنُّور ٱلْهَادِي</textPath></text>
+      </svg>
+      <svg class="ring ring--medium" viewBox="0 0 480 480" aria-hidden="true">
+        <defs><path id="A-m" d="M 240,240 m -175,0 a 175,175 0 1,1 350,0 a 175,175 0 1,1 -350,0" /></defs>
+        <text><textPath href="#A-m" startOffset="0">ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِين ٱهْدِنَا ٱلصِّرَاطَ ٱلْمُسْتَقِيم</textPath></text>
+      </svg>
+      <svg class="ring ring--inner" viewBox="0 0 480 480" aria-hidden="true">
+        <defs><path id="A-i" d="M 240,240 m -128,0 a 128,128 0 1,1 256,0 a 128,128 0 1,1 -256,0" /></defs>
+        <text><textPath href="#A-i" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+      </svg>
+
+      <div class="center-content center-allah">ﷲ</div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       B — HÛ
+       ============================================ -->
+  <section class="sample">
+    <h2>B — هو</h2>
+    <p class="caption">« Hû » — Lui. L'invocation soufie essentielle.<br><em>Fait écho au هو déjà présent en haut de l'accueil.</em></p>
+    <span class="badge">Recommandé</span>
+
+    <div class="ring-stage">
+      <svg class="ring ring--outer" viewBox="0 0 480 480" aria-hidden="true">
+        <defs><path id="B-o" d="M 240,240 m -222,0 a 222,222 0 1,1 444,0 a 222,222 0 1,1 -444,0" /></defs>
+        <text><textPath href="#B-o" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْمُتَكَبِّر ٱلْخَالِق ٱلْبَارِئ ٱلْمُصَوِّر ٱلْغَفَّار ٱلْقَهَّار ٱلْوَهَّاب ٱلرَّزَّاق ٱلْفَتَّاح ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود ٱلْحَيّ ٱلْقَيُّوم ٱلنُّور ٱلْهَادِي</textPath></text>
+      </svg>
+      <svg class="ring ring--medium" viewBox="0 0 480 480" aria-hidden="true">
+        <defs><path id="B-m" d="M 240,240 m -175,0 a 175,175 0 1,1 350,0 a 175,175 0 1,1 -350,0" /></defs>
+        <text><textPath href="#B-m" startOffset="0">ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِين ٱهْدِنَا ٱلصِّرَاطَ ٱلْمُسْتَقِيم</textPath></text>
+      </svg>
+      <svg class="ring ring--inner" viewBox="0 0 480 480" aria-hidden="true">
+        <defs><path id="B-i" d="M 240,240 m -128,0 a 128,128 0 1,1 256,0 a 128,128 0 1,1 -256,0" /></defs>
+        <text><textPath href="#B-i" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+      </svg>
+
+      <div class="center-content center-hu">هو</div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       D — SHAMSA
+       ============================================ -->
+  <section class="sample">
+    <h2>D — shamsa</h2>
+    <p class="caption">La rosette persane des manuscrits coraniques. <em>Sans mot, purement géométrique et ornemental.</em></p>
+
+    <div class="ring-stage">
+      <svg class="ring ring--outer" viewBox="0 0 480 480" aria-hidden="true">
+        <defs><path id="D-o" d="M 240,240 m -222,0 a 222,222 0 1,1 444,0 a 222,222 0 1,1 -444,0" /></defs>
+        <text><textPath href="#D-o" startOffset="0">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْمُتَكَبِّر ٱلْخَالِق ٱلْبَارِئ ٱلْمُصَوِّر ٱلْغَفَّار ٱلْقَهَّار ٱلْوَهَّاب ٱلرَّزَّاق ٱلْفَتَّاح ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود ٱلْحَيّ ٱلْقَيُّوم ٱلنُّور ٱلْهَادِي</textPath></text>
+      </svg>
+      <svg class="ring ring--medium" viewBox="0 0 480 480" aria-hidden="true">
+        <defs><path id="D-m" d="M 240,240 m -175,0 a 175,175 0 1,1 350,0 a 175,175 0 1,1 -350,0" /></defs>
+        <text><textPath href="#D-m" startOffset="0">ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِين ٱهْدِنَا ٱلصِّرَاطَ ٱلْمُسْتَقِيم</textPath></text>
+      </svg>
+      <svg class="ring ring--inner" viewBox="0 0 480 480" aria-hidden="true">
+        <defs><path id="D-i" d="M 240,240 m -128,0 a 128,128 0 1,1 256,0 a 128,128 0 1,1 -256,0" /></defs>
+        <text><textPath href="#D-i" startOffset="0">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text>
+      </svg>
+
+      <div class="center-content center-shamsa">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.6">
+          <circle cx="50" cy="50" r="48" opacity="0.25"/>
+          <circle cx="50" cy="50" r="42" opacity="0.35"/>
+          <circle cx="50" cy="50" r="34" opacity="0.5"/>
+          <!-- 8 grands pétales -->
+          <g opacity="0.85">
+            <path d="M50 4 Q54 28 50 42 Q46 28 50 4 Z" fill="currentColor"/>
+            <path d="M81 19 Q66 33 56 43 Q70 30 81 19 Z" fill="currentColor"/>
+            <path d="M96 50 Q72 54 58 50 Q72 46 96 50 Z" fill="currentColor"/>
+            <path d="M81 81 Q66 67 56 57 Q70 70 81 81 Z" fill="currentColor"/>
+            <path d="M50 96 Q46 72 50 58 Q54 72 50 96 Z" fill="currentColor"/>
+            <path d="M19 81 Q34 67 44 57 Q30 70 19 81 Z" fill="currentColor"/>
+            <path d="M4 50 Q28 46 42 50 Q28 54 4 50 Z" fill="currentColor"/>
+            <path d="M19 19 Q34 33 44 43 Q30 30 19 19 Z" fill="currentColor"/>
+          </g>
+          <!-- 8 petits pétales intercalés -->
+          <g opacity="0.55">
+            <path d="M65 8 Q60 25 53 38 Q62 22 65 8 Z" fill="currentColor"/>
+            <path d="M92 35 Q75 38 60 47 Q78 38 92 35 Z" fill="currentColor"/>
+            <path d="M92 65 Q75 62 60 53 Q78 62 92 65 Z" fill="currentColor"/>
+            <path d="M65 92 Q60 75 53 62 Q62 78 65 92 Z" fill="currentColor"/>
+            <path d="M35 92 Q40 75 47 62 Q38 78 35 92 Z" fill="currentColor"/>
+            <path d="M8 65 Q25 62 40 53 Q22 62 8 65 Z" fill="currentColor"/>
+            <path d="M8 35 Q25 38 40 47 Q22 38 8 35 Z" fill="currentColor"/>
+            <path d="M35 8 Q40 25 47 38 Q38 22 35 8 Z" fill="currentColor"/>
+          </g>
+          <!-- Cœur de la shamsa -->
+          <circle cx="50" cy="50" r="22" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.6"/>
+          <circle cx="50" cy="50" r="14" fill="currentColor" opacity="0.25"/>
+          <circle cx="50" cy="50" r="8" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.7"/>
+          <circle cx="50" cy="50" r="2.5" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="choice">
+    <h3>Lequel choisis-tu ?</h3>
+    <p>Réponds-moi simplement <strong>A</strong>, <strong>B</strong>, ou <strong>D</strong> — j'intègre ton choix à la page d'accueil avec les anneaux du triptyque B autour.</p>
+  </div>
+
+</body>
+</html>

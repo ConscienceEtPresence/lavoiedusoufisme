@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Échantillons — Anneaux calligraphiques</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Amiri:ital,wght@0,400;0,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --paper: #FBF7EF;
+      --paper-warm: #F5EFE3;
+      --ink: #0F1830;
+      --ink-mute: #6b6a65;
+      --gold: #B8860B;
+      --gold-soft: #d4a04b;
+      --line: #e6dfd0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 17px; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      padding: 2rem 1rem 4rem;
+    }
+    .page-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 3rem;
+    }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: .5rem;
+    }
+    .page-header p {
+      font-style: italic;
+      color: var(--ink-mute);
+      font-size: 1.1rem;
+    }
+    .nav-back {
+      display: block;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .nav-back a {
+      font-family: 'Inter', sans-serif;
+      font-size: .85rem;
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: .04em;
+    }
+
+    .sample {
+      max-width: 720px;
+      margin: 0 auto 5rem;
+      text-align: center;
+      padding: 2.5rem 1rem 3rem;
+      background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .sample::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(184, 134, 11, 0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .sample > * { position: relative; z-index: 1; }
+    .sample h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: .3rem;
+    }
+    .sample .caption {
+      font-style: italic;
+      color: var(--ink-mute);
+      font-size: .95rem;
+      max-width: 520px;
+      margin: 0 auto 2rem;
+    }
+
+    /* === Le STAGE — la zone des anneaux === */
+    .ring-stage {
+      position: relative;
+      width: 420px;
+      height: 420px;
+      max-width: 100%;
+      margin: 1rem auto;
+    }
+    .ring {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: visible;
+    }
+    .ring text {
+      font-family: 'Amiri', serif;
+      fill: var(--gold);
+    }
+    /* Rotations */
+    .ring--cw  { animation: spin-cw 80s linear infinite; }
+    .ring--ccw { animation: spin-ccw 60s linear infinite; }
+    .ring--cw-fast  { animation: spin-cw 35s linear infinite; }
+    .ring--ccw-fast { animation: spin-ccw 25s linear infinite; }
+    @keyframes spin-cw { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes spin-ccw { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+
+    /* Tailles de texte par anneau */
+    .ring--outer text  { font-size: 14px; letter-spacing: .15em; }
+    .ring--medium text { font-size: 12px; letter-spacing: .12em; }
+    .ring--inner text  { font-size: 11px; letter-spacing: .14em; }
+
+    /* Opacité différenciée pour profondeur */
+    .ring--outer  { opacity: .55; }
+    .ring--medium { opacity: .42; }
+    .ring--inner  { opacity: .55; }
+
+    /* === Le mandala central === */
+    .center-mandala {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--gold);
+      animation: breath 5s ease-in-out infinite;
+      filter: drop-shadow(0 0 20px rgba(184, 134, 11, 0.35));
+    }
+    .center-mandala svg {
+      width: 130px;
+      height: 130px;
+      display: block;
+    }
+    @keyframes breath {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50%      { transform: translate(-50%, -50%) scale(1.04); }
+    }
+
+    /* === Caractères flottants (Option C) === */
+    .floating-char {
+      position: absolute;
+      font-family: 'Amiri', serif;
+      color: var(--gold);
+      opacity: .35;
+      font-size: 24px;
+      animation: twinkle 4s ease-in-out infinite;
+    }
+    .floating-char.c1 { top: 12%; left: 22%; animation-delay: 0s; }
+    .floating-char.c2 { top: 18%; right: 18%; animation-delay: 1.2s; }
+    .floating-char.c3 { top: 50%; left: 8%;   animation-delay: 2s; font-size: 30px; }
+    .floating-char.c4 { top: 50%; right: 6%;  animation-delay: .8s; font-size: 28px; }
+    .floating-char.c5 { bottom: 16%; left: 28%; animation-delay: 1.5s; }
+    .floating-char.c6 { bottom: 12%; right: 24%; animation-delay: .4s; }
+    @keyframes twinkle {
+      0%, 100% { opacity: .25; transform: scale(1); }
+      50%      { opacity: .55; transform: scale(1.15); }
+    }
+
+    /* === Boutons de choix === */
+    .choice {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem;
+      background: var(--paper-warm);
+      border-radius: 12px;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .choice h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .choice p {
+      color: var(--ink-mute);
+      font-size: .95rem;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    /* === Responsive === */
+    @media (max-width: 520px) {
+      .ring-stage { width: 320px; height: 320px; }
+      .center-mandala svg { width: 100px; height: 100px; }
+      .ring--outer text  { font-size: 11px; }
+      .ring--medium text { font-size: 10px; }
+      .ring--inner text  { font-size: 9px; }
+      .floating-char { font-size: 18px; }
+      .floating-char.c3, .floating-char.c4 { font-size: 22px; }
+      .sample { padding: 2rem .5rem; }
+      .sample h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-back">
+    <a href="../index.html">← Retour à l'accueil</a>
+  </div>
+
+  <div class="page-header">
+    <h1>Échantillons — Anneaux calligraphiques</h1>
+    <p>Trois propositions pour entourer le seuil. Compare-les côte à côte, dis-moi laquelle te parle.</p>
+  </div>
+
+  <!-- ============================================
+       OPTION A — LE DIPTYQUE
+       ============================================ -->
+  <section class="sample">
+    <h2>Option A — Le diptyque</h2>
+    <p class="caption">Deux anneaux concentriques.<br>
+    Extérieur : les 99 Noms · Intérieur : la <em>Bismillāh</em> répétée.<br>
+    Sens et vitesses opposés.</p>
+
+    <div class="ring-stage">
+      <!-- Anneau extérieur : 99 Noms, sens horaire, 80s -->
+      <svg class="ring ring--outer ring--cw" viewBox="0 0 420 420" aria-hidden="true">
+        <defs>
+          <path id="a-outer" d="M 210,210 m -190,0 a 190,190 0 1,1 380,0 a 190,190 0 1,1 -380,0" />
+        </defs>
+        <text>
+          <textPath href="#a-outer" startOffset="0">
+            ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْمُتَكَبِّر ٱلْخَالِق ٱلْبَارِئ ٱلْمُصَوِّر ٱلْغَفَّار ٱلْقَهَّار ٱلْوَهَّاب ٱلرَّزَّاق ٱلْفَتَّاح ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود ٱلْحَيّ ٱلْقَيُّوم ٱلنُّور ٱلْهَادِي
+          </textPath>
+        </text>
+      </svg>
+
+      <!-- Anneau intérieur : Bismillah, anti-horaire, 60s -->
+      <svg class="ring ring--inner ring--ccw" viewBox="0 0 420 420" aria-hidden="true">
+        <defs>
+          <path id="a-inner" d="M 210,210 m -135,0 a 135,135 0 1,1 270,0 a 135,135 0 1,1 -270,0" />
+        </defs>
+        <text>
+          <textPath href="#a-inner" startOffset="0">
+            بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦ بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦ بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦ بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦
+          </textPath>
+        </text>
+      </svg>
+
+      <!-- Mandala central -->
+      <div class="center-mandala">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.8">
+          <circle cx="50" cy="50" r="46" opacity="0.4"/>
+          <circle cx="50" cy="50" r="36" opacity="0.6"/>
+          <circle cx="50" cy="50" r="26" opacity="0.85"/>
+          <g opacity="0.7">
+            <path d="M50 4 Q56 30 50 50 Q44 30 50 4 Z" />
+            <path d="M96 50 Q70 56 50 50 Q70 44 96 50 Z" />
+            <path d="M50 96 Q44 70 50 50 Q56 70 50 96 Z" />
+            <path d="M4 50 Q30 44 50 50 Q30 56 4 50 Z" />
+            <path d="M18 18 Q40 38 50 50 Q38 40 18 18 Z" />
+            <path d="M82 18 Q62 40 50 50 Q60 38 82 18 Z" />
+            <path d="M82 82 Q62 62 50 50 Q60 60 82 82 Z" />
+            <path d="M18 82 Q38 62 50 50 Q40 60 18 82 Z" />
+          </g>
+          <line x1="50" y1="40" x2="50" y2="60" stroke-width="1.4" />
+          <circle cx="50" cy="50" r="1.8" fill="currentColor" stroke="none"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       OPTION B — LE TRIPTYQUE
+       ============================================ -->
+  <section class="sample">
+    <h2>Option B — Le triptyque</h2>
+    <p class="caption">Trois anneaux concentriques.<br>
+    Extérieur : les 99 Noms · Médian : la Fātiḥa · Intérieur : le dhikr <em>Allāh Allāh</em>.<br>
+    Trois vitesses, trois sens alternés.</p>
+
+    <div class="ring-stage">
+      <!-- Anneau extérieur : 99 Noms, sens horaire, lent -->
+      <svg class="ring ring--outer ring--cw" viewBox="0 0 420 420" aria-hidden="true">
+        <defs>
+          <path id="b-outer" d="M 210,210 m -195,0 a 195,195 0 1,1 390,0 a 195,195 0 1,1 -390,0" />
+        </defs>
+        <text>
+          <textPath href="#b-outer" startOffset="0">
+            ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْبَارِئ ٱلْمُصَوِّر ٱلْغَفَّار ٱلْقَهَّار ٱلْوَهَّاب ٱلرَّزَّاق ٱلْفَتَّاح ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود
+          </textPath>
+        </text>
+      </svg>
+
+      <!-- Anneau médian : Fatiha, anti-horaire, moyen -->
+      <svg class="ring ring--medium ring--ccw" viewBox="0 0 420 420" aria-hidden="true">
+        <defs>
+          <path id="b-medium" d="M 210,210 m -155,0 a 155,155 0 1,1 310,0 a 155,155 0 1,1 -310,0" />
+        </defs>
+        <text>
+          <textPath href="#b-medium" startOffset="0">
+            ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين ٱلرَّحْمَٰنِ ٱلرَّحِيم مَالِكِ يَوْمِ ٱلدِّين إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِين ٱهْدِنَا ٱلصِّرَاطَ ٱلْمُسْتَقِيم
+          </textPath>
+        </text>
+      </svg>
+
+      <!-- Anneau intérieur : dhikr, sens horaire, plus rapide -->
+      <svg class="ring ring--inner ring--cw-fast" viewBox="0 0 420 420" aria-hidden="true">
+        <defs>
+          <path id="b-inner" d="M 210,210 m -115,0 a 115,115 0 1,1 230,0 a 115,115 0 1,1 -230,0" />
+        </defs>
+        <text>
+          <textPath href="#b-inner" startOffset="0">
+            ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه
+          </textPath>
+        </text>
+      </svg>
+
+      <!-- Mandala central -->
+      <div class="center-mandala">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.8">
+          <circle cx="50" cy="50" r="46" opacity="0.4"/>
+          <circle cx="50" cy="50" r="36" opacity="0.6"/>
+          <circle cx="50" cy="50" r="26" opacity="0.85"/>
+          <g opacity="0.7">
+            <path d="M50 4 Q56 30 50 50 Q44 30 50 4 Z" />
+            <path d="M96 50 Q70 56 50 50 Q70 44 96 50 Z" />
+            <path d="M50 96 Q44 70 50 50 Q56 70 50 96 Z" />
+            <path d="M4 50 Q30 44 50 50 Q30 56 4 50 Z" />
+            <path d="M18 18 Q40 38 50 50 Q38 40 18 18 Z" />
+            <path d="M82 18 Q62 40 50 50 Q60 38 82 18 Z" />
+            <path d="M82 82 Q62 62 50 50 Q60 60 82 82 Z" />
+            <path d="M18 82 Q38 62 50 50 Q40 60 18 82 Z" />
+          </g>
+          <line x1="50" y1="40" x2="50" y2="60" stroke-width="1.4" />
+          <circle cx="50" cy="50" r="1.8" fill="currentColor" stroke="none"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       OPTION C — LE FIRMAMENT
+       ============================================ -->
+  <section class="sample">
+    <h2>Option C — Le firmament</h2>
+    <p class="caption">Deux anneaux + caractères flottants comme des étoiles.<br>
+    Extérieur : les 99 Noms · Intérieur : la <em>Bismillāh</em>.<br>
+    + 6 lettres isolées qui scintillent autour.</p>
+
+    <div class="ring-stage">
+      <!-- Caractères flottants -->
+      <span class="floating-char c1">هو</span>
+      <span class="floating-char c2">الله</span>
+      <span class="floating-char c3">ا</span>
+      <span class="floating-char c4">ي</span>
+      <span class="floating-char c5">حق</span>
+      <span class="floating-char c6">نور</span>
+
+      <!-- Anneau extérieur -->
+      <svg class="ring ring--outer ring--cw" viewBox="0 0 420 420" aria-hidden="true">
+        <defs>
+          <path id="c-outer" d="M 210,210 m -190,0 a 190,190 0 1,1 380,0 a 190,190 0 1,1 -380,0" />
+        </defs>
+        <text>
+          <textPath href="#c-outer" startOffset="0">
+            ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْمُهَيْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود ٱلْحَيّ ٱلْقَيُّوم ٱلنُّور ٱلْهَادِي
+          </textPath>
+        </text>
+      </svg>
+
+      <!-- Anneau intérieur -->
+      <svg class="ring ring--inner ring--ccw" viewBox="0 0 420 420" aria-hidden="true">
+        <defs>
+          <path id="c-inner" d="M 210,210 m -135,0 a 135,135 0 1,1 270,0 a 135,135 0 1,1 -270,0" />
+        </defs>
+        <text>
+          <textPath href="#c-inner" startOffset="0">
+            بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦ بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦ بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦
+          </textPath>
+        </text>
+      </svg>
+
+      <!-- Mandala central -->
+      <div class="center-mandala">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.8">
+          <circle cx="50" cy="50" r="46" opacity="0.4"/>
+          <circle cx="50" cy="50" r="36" opacity="0.6"/>
+          <circle cx="50" cy="50" r="26" opacity="0.85"/>
+          <g opacity="0.7">
+            <path d="M50 4 Q56 30 50 50 Q44 30 50 4 Z" />
+            <path d="M96 50 Q70 56 50 50 Q70 44 96 50 Z" />
+            <path d="M50 96 Q44 70 50 50 Q56 70 50 96 Z" />
+            <path d="M4 50 Q30 44 50 50 Q30 56 4 50 Z" />
+            <path d="M18 18 Q40 38 50 50 Q38 40 18 18 Z" />
+            <path d="M82 18 Q62 40 50 50 Q60 38 82 18 Z" />
+            <path d="M82 82 Q62 62 50 50 Q60 60 82 82 Z" />
+            <path d="M18 82 Q38 62 50 50 Q40 60 18 82 Z" />
+          </g>
+          <line x1="50" y1="40" x2="50" y2="60" stroke-width="1.4" />
+          <circle cx="50" cy="50" r="1.8" fill="currentColor" stroke="none"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="choice">
+    <h3>Laquelle te parle ?</h3>
+    <p>Dis-moi : <strong>A</strong> (sobre), <strong>B</strong> (triple, immersif), ou <strong>C</strong> (firmament étoilé). J'intègre celle que tu choisis à la page d'accueil — et on règle les vitesses/opacités si tu veux les ajuster.</p>
+  </div>
+
+</body>
+</html>

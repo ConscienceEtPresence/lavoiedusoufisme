@@ -2,6 +2,19 @@
    ACCUEIL — Le seuil-portail et les trois portes
    ================================================================== */
 
+/* === Correction de l'espace en bas du hero === */
+.hero--contemplative {
+  padding-bottom: var(--space-md) !important;
+}
+.hero__library {
+  margin-top: var(--space-md) !important;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 760px) {
+  .hero--contemplative { padding-bottom: var(--space-sm) !important; }
+  .hero__library { margin-top: var(--space-sm) !important; font-size: .92rem; }
+}
+
 /* === Le portail ambiant ===
    Une lumière chaude qui irradie depuis le centre, derrière tout le hero. */
 .hero--contemplative {

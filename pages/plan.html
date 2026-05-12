@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan du site — La voie du soufisme</title>
+  <meta name="description" content="Plan complet du site : toutes les pages organisées par section. Une vue d'ensemble pour s'orienter dans la bibliothèque." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/bilingue.css" />
+
+  <style>
+    .plan-search {
+      max-width: 480px;
+      margin: 0 auto var(--space-xl);
+      position: relative;
+    }
+    .plan-search input {
+      width: 100%;
+      padding: .9rem 1.2rem .9rem 2.8rem;
+      font-family: 'Source Serif 4', serif;
+      font-size: 1rem;
+      border: 1px solid rgba(15, 24, 48, 0.15);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--ink);
+      transition: border-color .25s ease, box-shadow .25s ease;
+    }
+    .plan-search input:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.12);
+    }
+    .plan-search::before {
+      content: '✦';
+      position: absolute;
+      left: 1.1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gold);
+      font-size: 1rem;
+      opacity: .7;
+    }
+
+    .plan-section {
+      max-width: 760px;
+      margin: 0 auto var(--space-xl);
+    }
+    .plan-section__head {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+      padding-bottom: .7rem;
+      border-bottom: 1px solid rgba(184, 134, 11, .3);
+    }
+    .plan-section__num {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.8rem;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .plan-section__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      color: var(--ink-title, #1B2A4E);
+      font-weight: 500;
+      margin: 0;
+    }
+    .plan-section__ar {
+      font-family: 'Amiri', serif;
+      font-size: 1.4rem;
+      color: var(--gold);
+      direction: rtl;
+      margin-right: auto;
+    }
+    .plan-section__intro {
+      font-style: italic;
+      color: var(--ink-soft);
+      font-size: .98rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .plan-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: .7rem 1.4rem;
+    }
+    .plan-list li {
+      padding: .35rem 0;
+    }
+    .plan-list a {
+      display: block;
+      color: var(--ink);
+      text-decoration: none;
+      padding: .25rem 0;
+      border-bottom: 1px dotted transparent;
+      transition: border-color .2s ease, color .2s ease, padding-left .2s ease;
+      font-family: 'Source Serif 4', serif;
+    }
+    .plan-list a:hover {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+      padding-left: .3rem;
+    }
+    .plan-list a .item-sub {
+      display: block;
+      font-size: .82rem;
+      color: var(--ink-soft);
+      font-style: italic;
+      margin-top: .12rem;
+    }
+    .plan-list .new {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: .65rem;
+      color: var(--gold);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-left: .4rem;
+      vertical-align: middle;
+    }
+
+    .plan-list--hub a {
+      font-weight: 500;
+      color: var(--ink-title, #1B2A4E);
+    }
+    .plan-hidden { display: none !important; }
+
+    .plan-empty {
+      text-align: center;
+      color: var(--ink-soft);
+      font-style: italic;
+      padding: 2rem;
+      display: none;
+    }
+    .plan-empty.is-visible { display: block; }
+  </style>
+</head>
+<body class="page-enter">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="16" cy="16" r="13" />
+          <circle cx="16" cy="16" r="7" />
+          <circle cx="16" cy="16" r="1.5" fill="currentColor" />
+        </svg>
+        <span>La voie du soufisme</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="decouvrir.html">Découvrir</a></li>
+          <li><a href="cheminer.html">Cheminer</a></li>
+          <li><a href="rencontrer.html">Rencontrer</a></li>
+          <li><a href="plan.html" class="active" title="Plan du site">✦ Plan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <header class="bi-header">
+      <div class="bi-header__ar">فِهْرِسْت</div>
+      <h1 class="bi-header__name">Plan du site</h1>
+      <div class="bi-header__dates">Fihrist · Toutes les pages, organisées</div>
+      <div class="bi-header__rule"></div>
+      <p class="bi-header__tag">Vue d'ensemble de la bibliothèque — pour s'orienter, retrouver, explorer.</p>
+    </header>
+
+    <section class="container container--narrow">
+      <div class="plan-search">
+        <input type="search" id="plan-filter" placeholder="Filtrer les pages…" autocomplete="off" />
+      </div>
+
+      <!-- ============================================
+           I — DÉCOUVRIR
+           ============================================ -->
+      <div class="plan-section" data-section>
+        <div class="plan-section__head">
+          <span class="plan-section__num">I</span>
+          <h2 class="plan-section__title">Découvrir</h2>
+          <span class="plan-section__ar">مَعْرِفَة</span>
+        </div>
+        <p class="plan-section__intro">Comprendre la voie — son essence, son histoire, ses terres, ses confusions.</p>
+
+        <ul class="plan-list plan-list--hub" data-list>
+          <li><a href="decouvrir.html">Hub Découvrir<span class="item-sub">le point de départ de la section</span></a></li>
+        </ul>
+
+        <ul class="plan-list" data-list>
+          <li><a href="essence.html">Qu'est-ce que le soufisme ?<span class="item-sub">L'essence — taṣawwuf, iḥsān</span></a></li>
+          <li><a href="origine-mot.html">L'origine du mot<span class="item-sub">Les hypothèses étymologiques</span></a></li>
+          <li><a href="hadith-gabriel.html">Le hadith de Gabriel<span class="item-sub">Islam, īmān, iḥsān</span></a></li>
+          <li><a href="malentendus.html">Les malentendus<span class="item-sub">Ce que le soufisme n'est pas</span></a></li>
+          <li><a href="histoire.html">Histoire de la voie<span class="item-sub">Chronologie : des Compagnons à aujourd'hui</span></a></li>
+          <li><a href="courants.html">Courants &amp; confréries<span class="item-sub">14 grandes ṭuruq</span></a></li>
+          <li><a href="geographie.html">Géographie<span class="item-sub">Carte des terres soufies</span></a></li>
+          <li><a href="lexique.html">Lexique<span class="item-sub">Les termes de la voie</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">Confréries</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="confreries/mevleviyya.html">Mevleviyya<span class="item-sub">Konya · Rūmī · les derviches tourneurs</span></a></li>
+          <li><a href="confreries/shadhiliyya.html">Shādhiliyya<span class="item-sub">Maghreb · pauvreté présente</span></a></li>
+          <li><a href="confreries/naqshbandiyya.html">Naqshbandiyya<span class="item-sub">Asie centrale · dhikr du cœur</span></a></li>
+          <li><a href="confreries/chishtiyya.html">Chishtiyya<span class="item-sub">Inde · samāʿ et service</span></a></li>
+        </ul>
+      </div>
+
+      <!-- ============================================
+           II — CHEMINER
+           ============================================ -->
+      <div class="plan-section" data-section>
+        <div class="plan-section__head">
+          <span class="plan-section__num">II</span>
+          <h2 class="plan-section__title">Cheminer</h2>
+          <span class="plan-section__ar">سُلُوك</span>
+        </div>
+        <p class="plan-section__intro">La pratique vive — cœur, amour, souvenir, Noms divins, métaphysique.</p>
+
+        <ul class="plan-list plan-list--hub" data-list>
+          <li><a href="cheminer.html">Hub Cheminer<span class="item-sub">la pratique vive</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">Les notions vives</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="cheminer-pages/qalb.html">Le cœur (qalb)<span class="item-sub">L'organe spirituel</span></a></li>
+          <li><a href="cheminer-pages/amour.html">L'amour (maḥabbah, ʿishq)<span class="item-sub">De Râbiʿa à Rūmī</span></a></li>
+          <li><a href="cheminer-pages/dhikr.html">Le souvenir (dhikr)<span class="item-sub">Invocation et présence</span></a></li>
+          <li><a href="cheminer-pages/nafs.html">L'ego (nafs)<span class="item-sub">L'âme charnelle et ses voiles</span></a></li>
+          <li><a href="cheminer-pages/sama.html">L'écoute (samāʿ)<span class="item-sub">Musique, chant, danse</span></a></li>
+          <li><a href="cheminer-pages/khalwa.html">La retraite (khalwa)<span class="item-sub">Les 40 jours de silence</span></a></li>
+          <li><a href="cheminer-pages/stations.html">États &amp; stations<span class="item-sub">Aḥwāl et maqāmāt</span></a></li>
+          <li><a href="cheminer-pages/faqr.html">La pauvreté (faqr)<span class="item-sub">Dépouillement intérieur</span></a></li>
+          <li><a href="cheminer-pages/fana-baqa.html">Fanāʾ et baqāʾ<span class="item-sub">Extinction et subsistance</span></a></li>
+          <li><a href="cheminer-pages/tawakkul.html">L'abandon (tawakkul)<span class="item-sub">Confiance active</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">Modules dédiés</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="noms-divins/index.html">Les 99 Noms divins<span class="item-sub">Al-Asmāʾ al-Ḥusnā — d'après al-Kāfījī</span><span class="new">Nouveau</span></a></li>
+          <li><a href="metaphysique/index.html">Métaphysique<span class="item-sub">Cinq familles, scientia sacra</span><span class="new">Nouveau</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">Métaphysique — entrées thématiques</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="metaphysique/themes/le-chant-du-roseau.html">Le chant du roseau<span class="item-sub">Rūmī : l'amour, la séparation, le retour</span></a></li>
+          <li><a href="metaphysique/themes/imiter-ou-realiser.html">Imiter ou réaliser<span class="item-sub">Chittick : taqlīd, taḥqīq</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">Métaphysique — auteurs</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="metaphysique/auteurs/seyyed-hossein-nasr.html">Seyyed Hossein Nasr<span class="item-sub">What Is Metaphysics? (2025)</span></a></li>
+        </ul>
+      </div>
+
+      <!-- ============================================
+           III — RENCONTRER
+           ============================================ -->
+      <div class="plan-section" data-section>
+        <div class="plan-section__head">
+          <span class="plan-section__num">III</span>
+          <h2 class="plan-section__title">Rencontrer</h2>
+          <span class="plan-section__ar">لِقَاء</span>
+        </div>
+        <p class="plan-section__intro">Maîtres, textes et résonances entre traditions.</p>
+
+        <ul class="plan-list plan-list--hub" data-list>
+          <li><a href="rencontrer.html">Hub Rencontrer<span class="item-sub">l'horizon partagé</span></a></li>
+        </ul>
+
+        <ul class="plan-list" data-list>
+          <li><a href="maitres.html">Galerie des maîtres<span class="item-sub">De Hasan al-Baṣrī à Schuon</span></a></li>
+          <li><a href="textes-fondamentaux.html">Textes fondamentaux<span class="item-sub">Coran, hadith, classiques soufis</span></a></li>
+          <li><a href="resonances.html">Résonances<span class="item-sub">Ponts vers les autres traditions</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">Fiches d'auteurs</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="auteurs/rumi.html">Rūmī<span class="item-sub">Mawlānā · Konya · 1207-1273</span></a></li>
+        </ul>
+      </div>
+
+      <!-- ============================================
+           IV — TRANSVERSAL
+           ============================================ -->
+      <div class="plan-section" data-section>
+        <div class="plan-section__head">
+          <span class="plan-section__num">✦</span>
+          <h2 class="plan-section__title">Transversal</h2>
+          <span class="plan-section__ar">جَامِع</span>
+        </div>
+        <p class="plan-section__intro">Pages d'orientation et de service.</p>
+
+        <ul class="plan-list" data-list>
+          <li><a href="../index.html">Accueil<span class="item-sub">Le seuil, les trois portes</span></a></li>
+          <li><a href="plan.html">Plan du site<span class="item-sub">Cette page</span></a></li>
+        </ul>
+      </div>
+
+      <p class="plan-empty" id="plan-empty">
+        Rien ne correspond à votre recherche.
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p><em>« Il y a autant de voies menant à Dieu que de souffles des fils d'Adam. »</em></p>
+      <p class="small" style="margin-top:1rem;"><a href="../index.html">← Retour à l'accueil</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Filtrage léger de la liste des pages
+    (function() {
+      const input = document.getElementById('plan-filter');
+      const sections = document.querySelectorAll('[data-section]');
+      const empty = document.getElementById('plan-empty');
+      if (!input) return;
+
+      input.addEventListener('input', () => {
+        const q = input.value.trim().toLowerCase();
+        let totalVisible = 0;
+
+        sections.forEach(section => {
+          let visibleInSection = 0;
+          section.querySelectorAll('[data-list] li').forEach(li => {
+            const text = li.textContent.toLowerCase();
+            const matches = !q || text.includes(q);
+            li.classList.toggle('plan-hidden', !matches);
+            if (matches) visibleInSection++;
+          });
+          section.classList.toggle('plan-hidden', visibleInSection === 0);
+          totalVisible += visibleInSection;
+        });
+
+        empty.classList.toggle('is-visible', totalVisible === 0);
+      });
+    })();
+  </script>
+</body>
+</html>

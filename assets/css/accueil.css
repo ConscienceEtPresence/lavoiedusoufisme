@@ -1,0 +1,279 @@
+/* ==================================================================
+   ACCUEIL — Le seuil-portail et les trois portes
+   ================================================================== */
+
+/* === Le portail ambiant ===
+   Une lumière chaude qui irradie depuis le centre, derrière tout le hero. */
+.hero--contemplative {
+  position: relative;
+  overflow: hidden;
+}
+.hero--contemplative::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 45%, rgba(184, 134, 11, 0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(166, 90, 74, 0.04) 0%, transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+  animation: ambientBreath 8s ease-in-out infinite;
+}
+@keyframes ambientBreath {
+  0%, 100% { opacity: 0.85; }
+  50%      { opacity: 1; }
+}
+.hero--contemplative > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* === L'anneau calligraphique tournant ===
+   Un cercle de mots arabes qui tourne très lentement, derrière le mandala. */
+.seuil-stage {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--space-md) auto var(--space-sm);
+  width: clamp(280px, 50vw, 420px);
+  height: clamp(280px, 50vw, 420px);
+}
+.seuil-stage__ring {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  animation: ringTurn 80s linear infinite;
+  opacity: 0.32;
+  transition: opacity 0.8s ease;
+}
+.seuil-stage:hover .seuil-stage__ring { opacity: 0.55; }
+.seuil-stage__ring text {
+  font-family: 'Amiri', serif;
+  font-size: 13px;
+  fill: var(--gold);
+  letter-spacing: 0.3em;
+}
+@keyframes ringTurn {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* === Ondes pulsantes ===
+   Trois cercles d'or qui pulsent en décalé autour du mandala. */
+.seuil-stage__pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 170px;
+  height: 170px;
+  margin: -85px 0 0 -85px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  opacity: 0;
+  animation: pulseOut 4s ease-out infinite;
+  pointer-events: none;
+}
+.seuil-stage__pulse--2 { animation-delay: 1.3s; }
+.seuil-stage__pulse--3 { animation-delay: 2.6s; }
+@keyframes pulseOut {
+  0%   { transform: scale(0.6); opacity: 0; }
+  20%  { opacity: 0.7; }
+  100% { transform: scale(1.7); opacity: 0; }
+}
+
+/* État ouvert : on calme tout */
+.seuil-stage.is-open .seuil-stage__pulse,
+.seuil-stage.is-open .seuil-stage__ring {
+  opacity: 0;
+  animation-play-state: paused;
+}
+
+/* === Le mandala — respiration et glow renforcé === */
+.seuil {
+  position: relative;
+  z-index: 2;
+}
+.seuil svg {
+  width: clamp(140px, 22vw, 200px) !important;
+  filter: drop-shadow(0 0 24px rgba(184, 134, 11, 0.35)) drop-shadow(0 4px 14px rgba(184, 134, 11, 0.20));
+  animation: mandalaBreath 5s ease-in-out infinite;
+}
+.seuil:hover svg {
+  filter: drop-shadow(0 0 36px rgba(184, 134, 11, 0.55)) drop-shadow(0 6px 18px rgba(184, 134, 11, 0.3));
+}
+@keyframes mandalaBreath {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.035); }
+}
+.seuil.is-open svg { animation: none; }
+
+/* === Label + invitation === */
+.seuil__label {
+  font-size: 1.25rem !important;
+  letter-spacing: 0.14em !important;
+  opacity: 1 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.seuil__label::before,
+.seuil__label::after {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+
+.seuil__invite {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink-mute);
+  margin-top: 0.4rem;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  animation: inviteFadeIn 1.5s ease-out 1.2s forwards;
+}
+.seuil.is-open .seuil__invite { display: none; }
+@keyframes inviteFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 0.85; transform: translateY(0); }
+}
+
+/* Point doré pulsant — signal interactif universel */
+.seuil__dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.5);
+  animation: dotPulse 1.8s ease-out infinite;
+}
+@keyframes dotPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.6); }
+  70%  { box-shadow: 0 0 0 14px rgba(184, 134, 11, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0); }
+}
+
+/* === Citation au-dessus du portail === */
+.seuil-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--ink-mute);
+  text-align: center;
+  margin: 0 auto var(--space-md);
+  max-width: 520px;
+  line-height: 1.6;
+}
+.seuil-quote::before, .seuil-quote::after {
+  content: '✦';
+  display: inline-block;
+  color: var(--gold);
+  font-size: 0.85em;
+  margin: 0 0.7rem;
+  opacity: 0.6;
+}
+
+/* ==================================================================
+   LES TROIS PORTES — chacune avec sa calligraphie arabe
+   ================================================================== */
+
+.door {
+  position: relative;
+  padding: var(--space-lg) var(--space-md) var(--space-md) !important;
+  overflow: hidden;
+}
+.door::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.door:hover::before { width: 80%; }
+.door:hover { transform: translateY(-6px) !important; box-shadow: 0 14px 30px rgba(15, 24, 48, 0.10) !important; }
+
+.door__ar {
+  font-family: 'Amiri', serif;
+  font-size: clamp(2.4rem, 5vw, 3.2rem);
+  color: var(--gold);
+  line-height: 1.3;
+  direction: rtl;
+  margin-bottom: 0.5rem;
+  transition: filter 0.5s ease, transform 0.5s ease;
+  text-shadow: 0 2px 12px rgba(184, 134, 11, 0.15);
+}
+.door:hover .door__ar {
+  filter: drop-shadow(0 0 12px rgba(184, 134, 11, 0.4));
+  transform: scale(1.04);
+}
+.door__tr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink-mute);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.7rem;
+}
+.door__separator {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.5;
+  margin: 0 auto 0.8rem;
+  transition: width 0.5s ease, opacity 0.5s ease;
+}
+.door:hover .door__separator { width: 80px; opacity: 1; }
+
+.door__title {
+  font-size: 1.55rem !important;
+  margin-bottom: 0.4rem !important;
+  letter-spacing: 0.01em;
+}
+.door__desc { font-size: 0.92rem !important; }
+
+.door__icon {
+  margin-top: var(--space-md) !important;
+  width: 28px !important;
+  height: 28px !important;
+  opacity: 0.45;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.door:hover .door__icon {
+  opacity: 0.85;
+  transform: scale(1.1);
+}
+
+/* === Responsive === */
+@media (max-width: 760px) {
+  .seuil-stage { width: 280px; height: 280px; }
+  .seuil-stage__pulse { width: 140px; height: 140px; margin: -70px 0 0 -70px; }
+  .seuil-stage__ring text { font-size: 11px; }
+  .seuil__label { font-size: 1.1rem !important; }
+  .seuil-quote { font-size: 1.02rem; }
+  .door__ar { font-size: 2.2rem; }
+  .door__title { font-size: 1.3rem !important; }
+}
+@media (max-width: 480px) {
+  .seuil-stage { width: 240px; height: 240px; }
+  .seuil-stage__pulse { width: 120px; height: 120px; margin: -60px 0 0 -60px; }
+  .seuil-stage__ring { display: none; } /* On retire l'anneau sur très petit écran */
+}
+
+/* Respect du prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero--contemplative::before,
+  .seuil svg,
+  .seuil-stage__ring,
+  .seuil-stage__pulse,
+  .seuil__dot { animation: none !important; }
+}

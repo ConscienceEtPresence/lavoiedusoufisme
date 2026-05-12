@@ -114,7 +114,6 @@
         <p>Ce Nom vous a touché ?</p>
         <button data-lyket-type="like-button"
                 data-lyket-id="nom-${String(n.n).padStart(2,'0')}-${n.tr.toLowerCase().replace(/[^a-z]/g,'')}"
-                data-lyket-component="hearts"
                 data-lyket-namespace="lavoiedusoufisme-noms">
           ♥
         </button>

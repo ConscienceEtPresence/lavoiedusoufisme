@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Échantillons de templates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Source+Serif+4:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #FBF7EF;
+      color: #1B2A4E;
+      font-family: 'Source Serif 4', Georgia, serif;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+    .subtitle {
+      text-align: center;
+      color: #B8860B;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .intro {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 3rem;
+      font-style: italic;
+      color: #3E5C76;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .card {
+      display: block;
+      padding: 2rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-height: 280px;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(27,42,78,0.15); }
+    .card h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .card .letter {
+      position: absolute;
+      top: 1rem; right: 1.5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-style: italic;
+      opacity: 0.4;
+    }
+    .a { background: linear-gradient(135deg, #F5EDDD, #EFE4CE); border: 1px solid #DCCFB5; color: #1B2A4E; }
+    .a .letter { color: #B8860B; }
+    .b { background: linear-gradient(135deg, #0F1830, #1B2A4E); color: #F5EDD9; }
+    .b .letter { color: #D4A93A; }
+    .b h2 { color: #F5EDD9; }
+    .c { background: linear-gradient(135deg, #FFF, #F5EDDD); border: 1px solid #DCCFB5; color: #1B2A4E; }
+    .c .letter { color: #A65A4A; }
+    .d { background: linear-gradient(135deg, #F5EDDD, #FBF7EF); border: 1px solid #B8860B; color: #1B2A4E; }
+    .d .letter { color: #2E7D7A; }
+    .footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-style: italic;
+      color: #6B7A99;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="subtitle">Quatre directions à comparer</div>
+  <h1>Échantillons de templates</h1>
+  <p class="intro">
+    Même contenu — un portrait court de Rûmî — décliné en quatre atmosphères radicalement différentes. Clique sur chacune pour la voir en entier.
+  </p>
+
+  <div class="grid">
+
+    <a href="a-manuscrit.html" class="card a">
+      <span class="letter">A</span>
+      <h2>Manuscrit enluminé</h2>
+      <p>Initiales décorées, motifs géométriques, calligraphie majestueuse. Le sentiment d'ouvrir un livre rare et ancien.</p>
+    </a>
+
+    <a href="b-veillee.html" class="card b">
+      <span class="letter">B</span>
+      <h2>Veillée nocturne</h2>
+      <p>Fond sombre, or véritable, contemplatif. L'atmosphère d'un soufi qui lit à la bougie.</p>
+    </a>
+
+    <a href="c-magazine.html" class="card c">
+      <span class="letter">C</span>
+      <h2>Magazine éditorial</h2>
+      <p>Layout asymétrique, grands titres, photos, surprise visuelle. L'esprit d'une revue de haute exigence.</p>
+    </a>
+
+    <a href="d-bilingue.html" class="card d">
+      <span class="letter">D</span>
+      <h2>Bilingue manuscrit</h2>
+      <p>Arabe et français en parallèle, citations vers à vers. L'érudition d'une édition critique.</p>
+    </a>
+
+  </div>
+
+  <p class="footer">Pour revenir au site : <a href="../index.html" style="color: #B8860B;">retour à l'accueil</a></p>
+</body>
+</html>

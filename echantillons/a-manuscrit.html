@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Échantillon A — Manuscrit enluminé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,wght@0,400;0,500;1,400&family=Amiri:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #F8F1E3;
+      --paper-deep: #EEE3CB;
+      --ink: #1B2A4E;
+      --ink-soft: #3E5C76;
+      --gold: #B8860B;
+      --gold-light: #D4A93A;
+      --rose: #A65A4A;
+      --turquoise: #2E7D7A;
+      --line: #C9B584;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      min-height: 100vh;
+      background-image:
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><g fill='none' stroke='%23B8860B' stroke-width='0.6' opacity='0.06'><path d='M40 5 L75 40 L40 75 L5 40 Z'/><circle cx='40' cy='40' r='15'/></g></svg>");
+    }
+    .top-banner {
+      text-align: center;
+      padding: 0.6rem;
+      background: var(--ink);
+      color: var(--paper);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .top-banner a { color: var(--gold-light); text-decoration: none; }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      position: relative;
+    }
+    /* CADRE DOUBLE ORNÉ */
+    .frame {
+      position: relative;
+      padding: 4rem 3rem;
+      border: 2px solid var(--gold);
+      background: var(--paper);
+      box-shadow: 0 8px 32px rgba(27,42,78,0.08);
+    }
+    .frame::before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border: 1px solid var(--gold);
+      pointer-events: none;
+    }
+    /* COIN DE CADRE */
+    .corner {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      pointer-events: none;
+    }
+    .corner svg { width: 100%; height: 100%; }
+    .corner.tl { top: 12px; left: 12px; }
+    .corner.tr { top: 12px; right: 12px; transform: scaleX(-1); }
+    .corner.bl { bottom: 12px; left: 12px; transform: scaleY(-1); }
+    .corner.br { bottom: 12px; right: 12px; transform: scale(-1, -1); }
+
+    /* CARTOUCHE TITRE */
+    .cartouche {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    .cartouche__ar {
+      font-family: 'Amiri', serif;
+      font-size: 5rem;
+      line-height: 1;
+      color: var(--gold);
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--turquoise) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 3px 8px rgba(184,134,11,0.25));
+      margin-bottom: 1rem;
+      direction: rtl;
+    }
+    .cartouche__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 0.4rem;
+    }
+    .cartouche__dates {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+    }
+    .cartouche__ornament {
+      display: block;
+      width: 120px;
+      height: 12px;
+      margin: 1.5rem auto;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12'><path d='M0 6 L40 6' stroke='%23B8860B' stroke-width='1'/><path d='M60 6 m-6 0 a6 6 0 1 0 12 0 a6 6 0 1 0 -12 0' fill='%23B8860B'/><path d='M60 2 L60 0 M60 10 L60 12 M56 6 L54 6 M64 6 L66 6' stroke='%23B8860B' stroke-width='1'/><path d='M80 6 L120 6' stroke='%23B8860B' stroke-width='1'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* LETTRINE */
+    .lettrine::first-letter {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 5.5rem;
+      float: left;
+      line-height: 0.85;
+      margin: 0.4rem 0.7rem 0 0;
+      color: var(--rose);
+      padding: 0.3rem 0.5rem;
+      background: var(--paper-deep);
+      border: 1px solid var(--gold);
+      box-shadow: 2px 3px 0 rgba(184,134,11,0.2);
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 1.3rem;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    /* CITATION ENCADRÉE OR */
+    .citation {
+      margin: 2.5rem 0;
+      padding: 1.6rem 2rem;
+      background: var(--paper-deep);
+      border-top: 1px solid var(--gold);
+      border-bottom: 1px solid var(--gold);
+      position: relative;
+    }
+    .citation::before {
+      content: "✦";
+      position: absolute;
+      top: -10px; left: 50%;
+      transform: translateX(-50%);
+      background: var(--paper);
+      padding: 0 0.6rem;
+      color: var(--gold);
+      font-size: 0.9rem;
+    }
+    .citation p {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 0.6rem;
+      color: var(--ink);
+    }
+    .citation cite {
+      display: block;
+      text-align: center;
+      color: var(--gold);
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    /* MOT-CLÉ ROUGE */
+    .key {
+      color: var(--rose);
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    /* CALLIGRAPHIE INLINE */
+    .ar {
+      font-family: 'Amiri', serif;
+      color: var(--gold);
+      font-size: 1.15em;
+      padding: 0 0.2em;
+      direction: rtl;
+      unicode-bidi: isolate;
+    }
+
+    .nav-bottom {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px dashed var(--line);
+    }
+    .nav-bottom a {
+      color: var(--gold);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin: 0 1rem;
+    }
+
+    @media (max-width: 720px) {
+      .frame { padding: 3rem 1.4rem; }
+      .cartouche__title { font-size: 2.2rem; }
+      .cartouche__ar { font-size: 3.5rem; }
+      .lettrine::first-letter { font-size: 4rem; }
+      .citation p { font-size: 1.15rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner">Échantillon A — Manuscrit enluminé · <a href="index.html">retour aux échantillons</a></div>
+
+  <div class="container">
+    <div class="frame">
+      <!-- Coins décorés -->
+      <div class="corner tl"><svg viewBox="0 0 60 60" fill="none" stroke="#B8860B" stroke-width="1"><path d="M0 30 Q0 0 30 0"/><path d="M8 30 Q8 8 30 8"/><circle cx="30" cy="30" r="3" fill="#B8860B"/><path d="M14 14 L26 26 M14 26 L26 14" stroke="#B8860B" stroke-width="0.6"/></svg></div>
+      <div class="corner tr"><svg viewBox="0 0 60 60" fill="none" stroke="#B8860B" stroke-width="1"><path d="M0 30 Q0 0 30 0"/><path d="M8 30 Q8 8 30 8"/><circle cx="30" cy="30" r="3" fill="#B8860B"/><path d="M14 14 L26 26 M14 26 L26 14" stroke="#B8860B" stroke-width="0.6"/></svg></div>
+      <div class="corner bl"><svg viewBox="0 0 60 60" fill="none" stroke="#B8860B" stroke-width="1"><path d="M0 30 Q0 0 30 0"/><path d="M8 30 Q8 8 30 8"/><circle cx="30" cy="30" r="3" fill="#B8860B"/><path d="M14 14 L26 26 M14 26 L26 14" stroke="#B8860B" stroke-width="0.6"/></svg></div>
+      <div class="corner br"><svg viewBox="0 0 60 60" fill="none" stroke="#B8860B" stroke-width="1"><path d="M0 30 Q0 0 30 0"/><path d="M8 30 Q8 8 30 8"/><circle cx="30" cy="30" r="3" fill="#B8860B"/><path d="M14 14 L26 26 M14 26 L26 14" stroke="#B8860B" stroke-width="0.6"/></svg></div>
+
+      <div class="cartouche">
+        <div class="cartouche__ar">جَلَال الدِّين</div>
+        <h1 class="cartouche__title">Jalâl al-Dîn Rûmî</h1>
+        <div class="cartouche__dates">1207 — 1273 · Konya</div>
+        <span class="cartouche__ornament"></span>
+      </div>
+
+      <p class="lettrine">
+        Jalâl al-Dîn Muhammad — connu de ses disciples comme <span class="key">Mawlānā</span> <span class="ar">مَوْلَانَا</span>, « notre maître », devenu Mevlana en turc — est le plus grand poète mystique de langue persane, et probablement le plus lu de tous les soufis dans le monde contemporain. Sa vie est traversée par une rencontre dont il ne s'est jamais remis.
+      </p>
+
+      <p>
+        Il naît à Balkh, dans le Khorassan oriental, en 1207, au sein d'une famille de savants. Fuyant l'avancée des Mongols, sa famille prend la route de l'exil vers l'Anatolie. À Konya, son père s'établit comme enseignant ; à sa mort, le jeune Rûmî lui succède : à vingt-quatre ans, il est déjà juriste, prédicateur respecté, à la tête d'une école religieuse florissante.
+      </p>
+
+      <p>
+        Tout change en 1244. Un derviche errant, <span class="key">Shams al-Dīn al-Tabrīzī</span>, arrive à Konya. La rencontre est foudroyante. Les deux hommes se retirent ensemble plusieurs mois — Rûmî délaisse ses cours, ses livres, sa famille. Quelque chose, en lui, est en train de mourir.
+      </p>
+
+      <div class="citation">
+        <p>J'étais cru, j'ai été cuit, puis calciné.</p>
+        <cite>Rûmî, après sa rencontre avec Shams</cite>
+      </div>
+
+      <p>
+        De cette perte naîtra la poésie. Le savant devient un torrent de paroles. Les vers jaillissent par milliers. C'est à cette période qu'éclôt l'œuvre-océan : le <span class="key">Mathnawī Maʿnawī</span> <span class="ar">المَثْنَوِيّ</span> — 25 000 distiques qu'on a surnommés « le Coran persan » — et le <span class="key">Dîvân-i Shams-i Tabrīzī</span>, plus de 40 000 vers signés du nom de l'ami perdu.
+      </p>
+
+      <div class="citation">
+        <p>Notre mort, c'est nos noces avec l'éternité.<br>Quel est son secret ? « Dieu est un. »</p>
+        <cite>Rûmî, Dîvân</cite>
+      </div>
+
+      <p>
+        Rûmî meurt à Konya le 17 décembre 1273. Il appelle cette nuit <span class="key">shab-i ʿarūs</span>, « la nuit des noces ». Chaque 17 décembre depuis presque huit siècles, les disciples mevlevî célèbrent cet anniversaire à Konya — non par le deuil, mais par la joie.
+      </p>
+
+      <div class="nav-bottom">
+        <a href="index.html">← Autres échantillons</a>
+        <a href="../pages/auteurs/rumi.html">Fiche complète →</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

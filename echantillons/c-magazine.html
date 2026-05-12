@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Échantillon C — Magazine éditorial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,wght@0,400;0,500;1,400&family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #FBF8F2;
+      --paper-warm: #F0E8D8;
+      --ink: #14192C;
+      --ink-soft: #3E4868;
+      --ink-mute: #6B7488;
+      --accent: #C44536;
+      --gold: #B8860B;
+      --turquoise: #2E7D7A;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    .top-banner {
+      text-align: center;
+      padding: 0.6rem;
+      background: var(--ink);
+      color: var(--paper);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .top-banner a { color: #E8B547; text-decoration: none; }
+
+    /* COUVERTURE */
+    .cover {
+      min-height: 88vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      position: relative;
+      overflow: hidden;
+    }
+    .cover__image {
+      background: linear-gradient(135deg, #14192C 0%, #2E4762 60%, #C44536 130%);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .cover__image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 30% 40%, rgba(232,181,71,0.25), transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(46,125,122,0.3), transparent 50%);
+    }
+    .cover__ar {
+      font-family: 'Amiri', serif;
+      font-size: clamp(8rem, 18vw, 16rem);
+      line-height: 0.9;
+      color: rgba(255,255,255,0.95);
+      direction: rtl;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 4px 40px rgba(0,0,0,0.3);
+      font-weight: 700;
+    }
+    .cover__text {
+      padding: 6vh 8vw 6vh 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .cover__category {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .cover__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 400;
+      line-height: 1.05;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+    .cover__title em { font-style: italic; color: var(--accent); }
+    .cover__lede {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.3rem;
+      color: var(--ink-soft);
+      line-height: 1.5;
+      max-width: 480px;
+      margin-bottom: 2rem;
+    }
+    .cover__meta {
+      display: flex;
+      gap: 2rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+    .cover__meta strong { color: var(--accent); }
+
+    /* CORPS DE TEXTE */
+    .article {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+    }
+    .article__intro {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.6rem;
+      line-height: 1.55;
+      color: var(--ink-soft);
+      max-width: 720px;
+      margin: 0 auto 4rem;
+      text-align: center;
+    }
+
+    .columns {
+      column-count: 2;
+      column-gap: 3rem;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .columns p {
+      font-size: 1.05rem;
+      margin-bottom: 1.3rem;
+      break-inside: avoid;
+    }
+    .columns p:first-child::first-letter {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 4.5rem;
+      float: left;
+      line-height: 0.85;
+      margin: 0.2rem 0.5rem 0 0;
+      color: var(--accent);
+    }
+    .key {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .ar {
+      font-family: 'Amiri', serif;
+      color: var(--gold);
+      font-size: 1.15em;
+      padding: 0 0.15em;
+    }
+
+    /* GROSSE CITATION ÉDITORIALE */
+    .pull-quote {
+      max-width: 920px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      column-span: all;
+    }
+    .pull-quote__text {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.15;
+      color: var(--ink);
+      text-align: left;
+      letter-spacing: -0.01em;
+    }
+    .pull-quote__text em { font-style: italic; color: var(--accent); }
+    .pull-quote::before {
+      content: "“";
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 8rem;
+      line-height: 0.5;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .pull-quote cite {
+      display: block;
+      margin-top: 1.5rem;
+      font-style: normal;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+
+    /* DEUX COLONNES INFO */
+    .factbox {
+      max-width: 920px;
+      margin: 4rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      background: var(--paper-warm);
+      border-left: 4px solid var(--accent);
+    }
+    .factbox__item h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .factbox__item p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      color: var(--ink);
+    }
+
+    .nav-bottom {
+      text-align: center;
+      padding: 3rem 2rem;
+      border-top: 2px solid var(--ink);
+      max-width: 1100px;
+      margin: 4rem auto 0;
+    }
+    .nav-bottom a {
+      color: var(--accent);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      text-decoration: none;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin: 0 1.2rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 760px) {
+      .cover { grid-template-columns: 1fr; }
+      .cover__image { min-height: 40vh; }
+      .columns { column-count: 1; }
+      .pull-quote::before { font-size: 5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-banner">Échantillon C — Magazine éditorial · <a href="index.html">retour aux échantillons</a></div>
+
+  <section class="cover">
+    <div class="cover__image">
+      <div class="cover__ar">جَلَال</div>
+    </div>
+    <div class="cover__text">
+      <div class="cover__category">Galerie des maîtres · N°7</div>
+      <h1 class="cover__title">Rûmî, le poète <em>brûlé</em></h1>
+      <p class="cover__lede">L'amour comme voie. Le savant juriste qui devint, par l'épreuve de la perte, une bouche pour l'invisible.</p>
+      <div class="cover__meta">
+        <span><strong>1207 — 1273</strong> · Konya</span>
+        <span><strong>Persan</strong></span>
+        <span><strong>Mevleviyya</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <article class="article">
+    <p class="article__intro">
+      Aucun poète mystique n'a touché autant de lecteurs à travers les siècles. Aujourd'hui, plus de huit cents ans après sa mort, Jalâl al-Dîn Muhammad reste le poète vivant ou mort le plus vendu aux États-Unis. Son secret ? Une rencontre dont il n'a jamais guéri.
+    </p>
+
+    <div class="columns">
+      <p>
+        Jalâl al-Dîn Muhammad — connu de ses disciples comme <span class="key">Mawlānā</span>, « notre maître », devenu Mevlana en turc — naît à Balkh, dans le Khorassan oriental, en 1207. Sa famille fuit l'avancée des Mongols et s'établit à Konya, en Anatolie seldjoukide.
+      </p>
+
+      <p>
+        À la mort de son père en 1231, le jeune Rûmî lui succède comme enseignant religieux : à vingt-quatre ans, il est juriste accompli, prédicateur respecté, à la tête d'une école religieuse florissante. Sa vie aurait pu se dérouler ainsi — celle d'un grand savant parmi d'autres.
+      </p>
+
+      <p>
+        Tout change en 1244. Un derviche errant, <span class="key">Shams al-Dīn al-Tabrīzī</span>, arrive à Konya. Vieil homme rude, sans école, sans diplôme, sans confrérie. La rencontre est foudroyante. Les deux hommes se retirent ensemble plusieurs mois — Rûmî délaisse ses cours, ses livres, sa famille.
+      </p>
+
+      <p>
+        Shams disparaîtra deux fois — la deuxième définitivement, vers 1247-1248. Rûmî le cherchera, partira jusqu'en Syrie pour le retrouver. Et il comprendra, peu à peu, que Shams n'était pas extérieur — qu'il s'était fondu en lui.
+      </p>
+    </div>
+
+    <div class="pull-quote">
+      <p class="pull-quote__text">J'étais cru, j'ai été cuit, <em>puis calciné</em>.</p>
+      <cite>Rûmî — après sa rencontre avec Shams</cite>
+    </div>
+
+    <div class="columns">
+      <p>
+        De cette perte naîtra la poésie. Le savant juriste devient un torrent de paroles. Il dicte à son disciple Husām al-Dīn, parfois en marchant, parfois en tournant sur lui-même dans une transe spontanée. Les vers jaillissent par milliers.
+      </p>
+
+      <p>
+        Le <span class="key">Mathnawī Maʿnawī</span> — 25 000 distiques composés sur les dernières années de sa vie — sera surnommé « le Coran persan ». Le <span class="key">Dîvân-i Shams</span>, lui, contient plus de 40 000 vers, tous signés du nom de l'ami perdu : comme si Rûmî, en s'effaçant, redonnait à l'autre l'œuvre qui jaillissait de leur union.
+      </p>
+
+      <p>
+        Rûmî n'a pas fondé d'ordre. La Mevleviyya — la voie des derviches tourneurs — sera structurée après sa mort par son fils Sultan Walad. Mais la danse rituelle descend directement de Rûmî, saisi un jour par le rythme des batteurs d'or au marché de Konya et tournant en extase jusqu'à l'après-midi.
+      </p>
+    </div>
+
+    <div class="factbox">
+      <div class="factbox__item">
+        <h4>Œuvre maîtresse</h4>
+        <p>Mathnawī · 25 000 distiques · « le Coran persan »</p>
+      </div>
+      <div class="factbox__item">
+        <h4>Œuvre amoureuse</h4>
+        <p>Dîvân-i Shams · 40 000 vers en mémoire de l'ami perdu</p>
+      </div>
+      <div class="factbox__item">
+        <h4>Successeur</h4>
+        <p>Sultan Walad, son fils — qui codifie la Mevleviyya</p>
+      </div>
+    </div>
+
+    <div class="pull-quote">
+      <p class="pull-quote__text">Notre mort, c'est nos <em>noces</em> avec l'éternité.</p>
+      <cite>Rûmî · Dîvân</cite>
+    </div>
+
+  </article>
+
+  <div class="nav-bottom">
+    <a href="index.html">← Autres échantillons</a>
+    <a href="../pages/auteurs/rumi.html">Fiche complète →</a>
+  </div>
+</body>
+</html>

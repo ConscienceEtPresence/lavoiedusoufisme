@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Échantillons — variantes du label « Franchir le seuil »</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Amiri:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --paper: #FBF7EF;
+      --paper-warm: #F5EFE3;
+      --ink: #0F1830;
+      --ink-mute: #6b6a65;
+      --gold: #B8860B;
+      --gold-soft: #d4a04b;
+      --line: #e6dfd0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 17px; }
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      padding: 2rem 1rem 4rem;
+    }
+    .page-header { text-align: center; max-width: 720px; margin: 0 auto 2rem; }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 500;
+      margin-bottom: .5rem;
+    }
+    .page-header p { font-style: italic; color: var(--ink-mute); font-size: 1.05rem; }
+    .nav-back { display: block; text-align: center; margin-bottom: 1.5rem; }
+    .nav-back a {
+      font-family: 'Inter', sans-serif;
+      font-size: .85rem;
+      color: var(--gold);
+      text-decoration: none;
+      margin: 0 .8rem;
+    }
+
+    .sample {
+      max-width: 720px;
+      margin: 0 auto 4rem;
+      text-align: center;
+      padding: 2.5rem 1rem 2.5rem;
+      background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .sample::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(184, 134, 11, 0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .sample > * { position: relative; z-index: 1; }
+    .sample h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: .25rem;
+    }
+    .sample .caption {
+      font-style: italic;
+      color: var(--ink-mute);
+      font-size: .95rem;
+      max-width: 540px;
+      margin: 0 auto 1.2rem;
+    }
+    .badge {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: .65rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(184, 134, 11, 0.08);
+      padding: .25rem .7rem;
+      border-radius: 999px;
+      margin-bottom: .8rem;
+    }
+
+    /* === STAGE (mandala réduit pour les samples) === */
+    .ring-stage {
+      position: relative;
+      width: 380px;
+      height: 380px;
+      max-width: 100%;
+      margin: 1rem auto .5rem;
+      pointer-events: none;
+    }
+    @media (max-width: 480px) { .ring-stage { width: 300px; height: 300px; } }
+
+    .ring { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+    .ring text { font-family: 'Amiri', serif; font-weight: 400; fill: var(--gold); }
+
+    .ring--r1 { animation: spin-cw 100s linear infinite; opacity: .48; }
+    .ring--r2 { animation: spin-ccw 80s linear infinite; opacity: .42; }
+    .ring--r3 { animation: spin-cw 65s linear infinite; opacity: .40; }
+    .ring--r4 { animation: spin-ccw 50s linear infinite; opacity: .48; }
+    .ring--r5 { animation: spin-cw 38s linear infinite; opacity: .55; }
+    .ring--r6 { animation: spin-ccw 28s linear infinite; opacity: .65; }
+
+    .ring--r1 text { font-size: 12px; letter-spacing: .14em; }
+    .ring--r2 text { font-size: 11px; letter-spacing: .13em; }
+    .ring--r3 text { font-size: 10px; letter-spacing: .13em; }
+    .ring--r4 text { font-size: 9px; letter-spacing: .14em; }
+    .ring--r5 text { font-size: 9px; letter-spacing: .14em; }
+    .ring--r6 text { font-size: 8px; letter-spacing: .16em; }
+
+    @keyframes spin-cw { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes spin-ccw { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+
+    /* === LABEL DE BASE (référence) === */
+    .label-base {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-top: 1rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.35rem;
+      color: var(--gold);
+      letter-spacing: .14em;
+      padding: .4rem 1rem;
+    }
+    .label-base::before, .label-base::after {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+
+    /* Point doré pulsant */
+    .dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.5);
+      animation: pulse 1.8s ease-out infinite;
+    }
+    @keyframes pulse {
+      0%   { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.6); }
+      70%  { box-shadow: 0 0 0 14px rgba(184, 134, 11, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0); }
+    }
+
+    /* =================================================================
+       PROPOSITION 1 — Cartouche bouton
+       ================================================================= */
+    .label-1 {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-top: 1rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.35rem;
+      color: var(--gold);
+      letter-spacing: .14em;
+      padding: .65rem 1.8rem;
+      background: rgba(184, 134, 11, 0.06);
+      border: 1px solid rgba(184, 134, 11, 0.4);
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all .35s ease;
+    }
+    .label-1:hover {
+      background: rgba(184, 134, 11, 0.12);
+      border-color: var(--gold);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(184, 134, 11, 0.18);
+      letter-spacing: .18em;
+    }
+
+    /* =================================================================
+       PROPOSITION 2 — Phrase qui appelle
+       ================================================================= */
+    .label-2-wrap { display: inline-flex; flex-direction: column; align-items: center; margin-top: 1rem; }
+    .label-2 {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.35rem;
+      color: var(--gold);
+      letter-spacing: .14em;
+      padding: .4rem 1rem;
+      cursor: pointer;
+    }
+    .label-2::before, .label-2::after {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+    .label-2-invite {
+      margin-top: .5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 0.92rem;
+      color: var(--ink-mute);
+      letter-spacing: .04em;
+    }
+    .label-2-arrow {
+      display: inline-block;
+      color: var(--gold);
+      margin-left: .3rem;
+      animation: bounce-up 1.8s ease-in-out infinite;
+    }
+    @keyframes bounce-up {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-6px); }
+    }
+
+    /* =================================================================
+       PROPOSITION 3 — Shimmer + filets vivants
+       ================================================================= */
+    .label-3 {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-top: 1rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.35rem;
+      letter-spacing: .14em;
+      padding: .4rem 1rem;
+      cursor: pointer;
+      background: linear-gradient(90deg, var(--gold) 0%, var(--gold) 40%, #fff5d6 50%, var(--gold) 60%, var(--gold) 100%);
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 4s ease-in-out infinite;
+    }
+    .label-3::before, .label-3::after {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+      -webkit-text-fill-color: initial;
+      animation: stretch-line 3s ease-in-out infinite;
+    }
+    @keyframes shimmer {
+      0%, 100% { background-position: 0% 0; }
+      50%      { background-position: -100% 0; }
+    }
+    @keyframes stretch-line {
+      0%, 100% { width: 32px; opacity: 0.6; }
+      50%      { width: 56px; opacity: 1; }
+    }
+    .label-3 .dot-3 {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gold);
+      -webkit-text-fill-color: var(--gold);
+      box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.6), 0 0 12px rgba(184, 134, 11, 0.5);
+      animation: pulse-big 1.8s ease-out infinite;
+    }
+    @keyframes pulse-big {
+      0%   { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.7), 0 0 12px rgba(184, 134, 11, 0.6); }
+      70%  { box-shadow: 0 0 0 20px rgba(184, 134, 11, 0), 0 0 18px rgba(184, 134, 11, 0.3); }
+      100% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0), 0 0 12px rgba(184, 134, 11, 0.6); }
+    }
+
+    /* =================================================================
+       COMBINAISON 1+3 — Cartouche + shimmer
+       ================================================================= */
+    .label-13 {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-top: 1rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.4rem;
+      letter-spacing: .14em;
+      padding: .7rem 2rem;
+      background: rgba(184, 134, 11, 0.06);
+      border: 1px solid rgba(184, 134, 11, 0.4);
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all .35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .label-13 .label-13-text {
+      background: linear-gradient(90deg, var(--gold) 0%, var(--gold) 40%, #fff5d6 50%, var(--gold) 60%, var(--gold) 100%);
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 4s ease-in-out infinite;
+    }
+    .label-13:hover {
+      background: rgba(184, 134, 11, 0.13);
+      border-color: var(--gold);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(184, 134, 11, 0.22);
+      letter-spacing: .18em;
+    }
+    .label-13 .dot {
+      box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.6), 0 0 10px rgba(184, 134, 11, 0.4);
+    }
+
+    .choice {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 2rem;
+      background: var(--paper-warm);
+      border-radius: 12px;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .choice h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 1rem; }
+    .choice p { color: var(--ink-mute); font-size: 1rem; max-width: 580px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+
+  <div class="nav-back">
+    <a href="../index.html">← Accueil</a>
+    <a href="six-anneaux.html">← Anneaux</a>
+  </div>
+
+  <div class="page-header">
+    <h1>Variantes du label « Franchir le seuil »</h1>
+    <p>Quatre approches pour rendre clair qu'on doit cliquer.</p>
+  </div>
+
+  <!-- ============================================
+       RÉFÉRENCE — version actuelle
+       ============================================ -->
+  <section class="sample">
+    <span class="badge">Version actuelle</span>
+    <h2>0 — Tel quel</h2>
+    <p class="caption">Le label simple en italique avec filets latéraux et point pulsant.</p>
+
+    <div class="ring-stage">
+      <svg class="ring ring--r1" viewBox="0 0 380 380"><defs><path id="r0-1" d="M 190,190 m -175,0 a 175,175 0 1,1 350,0 a 175,175 0 1,1 -350,0" /></defs><text><textPath href="#r0-1">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود</textPath></text></svg>
+      <svg class="ring ring--r2" viewBox="0 0 380 380"><defs><path id="r0-2" d="M 190,190 m -148,0 a 148,148 0 1,1 296,0 a 148,148 0 1,1 -296,0" /></defs><text><textPath href="#r0-2">ٱلْقَابِض ٱلْبَاسِط ٱلسَّمِيع ٱلْبَصِير ٱلْحَكَم ٱلْعَدْل ٱللَّطِيف ٱلْخَبِير ٱلْحَلِيم</textPath></text></svg>
+      <svg class="ring ring--r3" viewBox="0 0 380 380"><defs><path id="r0-3" d="M 190,190 m -122,0 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0" /></defs><text><textPath href="#r0-3">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦ ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين</textPath></text></svg>
+      <svg class="ring ring--r4" viewBox="0 0 380 380"><defs><path id="r0-4" d="M 190,190 m -98,0 a 98,98 0 1,1 196,0 a 98,98 0 1,1 -196,0" /></defs><text><textPath href="#r0-4">لَا إِلَٰهَ إِلَّا ٱللَّٰه ✦ مُحَمَّدٌ رَسُولُ ٱللَّٰه ✦</textPath></text></svg>
+      <svg class="ring ring--r5" viewBox="0 0 380 380"><defs><path id="r0-5" d="M 190,190 m -76,0 a 76,76 0 1,1 152,0 a 76,76 0 1,1 -152,0" /></defs><text><textPath href="#r0-5">سُبْحَانَ ٱللَّٰه ٱلْحَمْدُ لِلَّٰه ٱللَّٰهُ أَكْبَر</textPath></text></svg>
+      <svg class="ring ring--r6" viewBox="0 0 380 380"><defs><path id="r0-6" d="M 190,190 m -54,0 a 54,54 0 1,1 108,0 a 54,54 0 1,1 -108,0" /></defs><text><textPath href="#r0-6">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text></svg>
+    </div>
+    <button class="label-base">Franchir le seuil <span class="dot"></span></button>
+  </section>
+
+  <!-- ============================================
+       PROPOSITION 1 — Cartouche
+       ============================================ -->
+  <section class="sample">
+    <h2>1 — Cartouche</h2>
+    <p class="caption">Le label devient un vrai bouton-pilule avec fond et bordure dorés. <em>Convention web universelle, indiscutable.</em></p>
+
+    <div class="ring-stage">
+      <svg class="ring ring--r1" viewBox="0 0 380 380"><defs><path id="r1-1" d="M 190,190 m -175,0 a 175,175 0 1,1 350,0 a 175,175 0 1,1 -350,0" /></defs><text><textPath href="#r1-1">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود</textPath></text></svg>
+      <svg class="ring ring--r2" viewBox="0 0 380 380"><defs><path id="r1-2" d="M 190,190 m -148,0 a 148,148 0 1,1 296,0 a 148,148 0 1,1 -296,0" /></defs><text><textPath href="#r1-2">ٱلْقَابِض ٱلْبَاسِط ٱلسَّمِيع ٱلْبَصِير ٱلْحَكَم ٱلْعَدْل ٱللَّطِيف ٱلْخَبِير ٱلْحَلِيم</textPath></text></svg>
+      <svg class="ring ring--r3" viewBox="0 0 380 380"><defs><path id="r1-3" d="M 190,190 m -122,0 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0" /></defs><text><textPath href="#r1-3">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦ ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين</textPath></text></svg>
+      <svg class="ring ring--r4" viewBox="0 0 380 380"><defs><path id="r1-4" d="M 190,190 m -98,0 a 98,98 0 1,1 196,0 a 98,98 0 1,1 -196,0" /></defs><text><textPath href="#r1-4">لَا إِلَٰهَ إِلَّا ٱللَّٰه ✦ مُحَمَّدٌ رَسُولُ ٱللَّٰه ✦</textPath></text></svg>
+      <svg class="ring ring--r5" viewBox="0 0 380 380"><defs><path id="r1-5" d="M 190,190 m -76,0 a 76,76 0 1,1 152,0 a 76,76 0 1,1 -152,0" /></defs><text><textPath href="#r1-5">سُبْحَانَ ٱللَّٰه ٱلْحَمْدُ لِلَّٰه ٱللَّٰهُ أَكْبَر</textPath></text></svg>
+      <svg class="ring ring--r6" viewBox="0 0 380 380"><defs><path id="r1-6" d="M 190,190 m -54,0 a 54,54 0 1,1 108,0 a 54,54 0 1,1 -108,0" /></defs><text><textPath href="#r1-6">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text></svg>
+    </div>
+    <button class="label-1">Franchir le seuil <span class="dot"></span></button>
+  </section>
+
+  <!-- ============================================
+       PROPOSITION 2 — Phrase invitante + flèche
+       ============================================ -->
+  <section class="sample">
+    <h2>2 — Phrase invitante</h2>
+    <p class="caption">Le label reste épuré, mais on ajoute en-dessous une petite invitation explicite avec flèche qui rebondit doucement.</p>
+
+    <div class="ring-stage">
+      <svg class="ring ring--r1" viewBox="0 0 380 380"><defs><path id="r2-1" d="M 190,190 m -175,0 a 175,175 0 1,1 350,0 a 175,175 0 1,1 -350,0" /></defs><text><textPath href="#r2-1">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود</textPath></text></svg>
+      <svg class="ring ring--r2" viewBox="0 0 380 380"><defs><path id="r2-2" d="M 190,190 m -148,0 a 148,148 0 1,1 296,0 a 148,148 0 1,1 -296,0" /></defs><text><textPath href="#r2-2">ٱلْقَابِض ٱلْبَاسِط ٱلسَّمِيع ٱلْبَصِير ٱلْحَكَم ٱلْعَدْل ٱللَّطِيف ٱلْخَبِير ٱلْحَلِيم</textPath></text></svg>
+      <svg class="ring ring--r3" viewBox="0 0 380 380"><defs><path id="r2-3" d="M 190,190 m -122,0 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0" /></defs><text><textPath href="#r2-3">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦ ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين</textPath></text></svg>
+      <svg class="ring ring--r4" viewBox="0 0 380 380"><defs><path id="r2-4" d="M 190,190 m -98,0 a 98,98 0 1,1 196,0 a 98,98 0 1,1 -196,0" /></defs><text><textPath href="#r2-4">لَا إِلَٰهَ إِلَّا ٱللَّٰه ✦ مُحَمَّدٌ رَسُولُ ٱللَّٰه ✦</textPath></text></svg>
+      <svg class="ring ring--r5" viewBox="0 0 380 380"><defs><path id="r2-5" d="M 190,190 m -76,0 a 76,76 0 1,1 152,0 a 76,76 0 1,1 -152,0" /></defs><text><textPath href="#r2-5">سُبْحَانَ ٱللَّٰه ٱلْحَمْدُ لِلَّٰه ٱللَّٰهُ أَكْبَر</textPath></text></svg>
+      <svg class="ring ring--r6" viewBox="0 0 380 380"><defs><path id="r2-6" d="M 190,190 m -54,0 a 54,54 0 1,1 108,0 a 54,54 0 1,1 -108,0" /></defs><text><textPath href="#r2-6">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text></svg>
+    </div>
+    <div class="label-2-wrap">
+      <button class="label-2">Franchir le seuil <span class="dot"></span></button>
+      <span class="label-2-invite">— cliquez ici, la voie s'ouvre <span class="label-2-arrow">↓</span></span>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROPOSITION 3 — Shimmer + filets vivants
+       ============================================ -->
+  <section class="sample">
+    <h2>3 — Shimmer (lumière qui passe)</h2>
+    <p class="caption">Une vague de lumière dorée traverse le texte toutes les 4 secondes. Les filets latéraux respirent. Aucun texte ajouté.</p>
+
+    <div class="ring-stage">
+      <svg class="ring ring--r1" viewBox="0 0 380 380"><defs><path id="r3-1" d="M 190,190 m -175,0 a 175,175 0 1,1 350,0 a 175,175 0 1,1 -350,0" /></defs><text><textPath href="#r3-1">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود</textPath></text></svg>
+      <svg class="ring ring--r2" viewBox="0 0 380 380"><defs><path id="r3-2" d="M 190,190 m -148,0 a 148,148 0 1,1 296,0 a 148,148 0 1,1 -296,0" /></defs><text><textPath href="#r3-2">ٱلْقَابِض ٱلْبَاسِط ٱلسَّمِيع ٱلْبَصِير ٱلْحَكَم ٱلْعَدْل ٱللَّطِيف ٱلْخَبِير ٱلْحَلِيم</textPath></text></svg>
+      <svg class="ring ring--r3" viewBox="0 0 380 380"><defs><path id="r3-3" d="M 190,190 m -122,0 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0" /></defs><text><textPath href="#r3-3">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦ ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين</textPath></text></svg>
+      <svg class="ring ring--r4" viewBox="0 0 380 380"><defs><path id="r3-4" d="M 190,190 m -98,0 a 98,98 0 1,1 196,0 a 98,98 0 1,1 -196,0" /></defs><text><textPath href="#r3-4">لَا إِلَٰهَ إِلَّا ٱللَّٰه ✦ مُحَمَّدٌ رَسُولُ ٱللَّٰه ✦</textPath></text></svg>
+      <svg class="ring ring--r5" viewBox="0 0 380 380"><defs><path id="r3-5" d="M 190,190 m -76,0 a 76,76 0 1,1 152,0 a 76,76 0 1,1 -152,0" /></defs><text><textPath href="#r3-5">سُبْحَانَ ٱللَّٰه ٱلْحَمْدُ لِلَّٰه ٱللَّٰهُ أَكْبَر</textPath></text></svg>
+      <svg class="ring ring--r6" viewBox="0 0 380 380"><defs><path id="r3-6" d="M 190,190 m -54,0 a 54,54 0 1,1 108,0 a 54,54 0 1,1 -108,0" /></defs><text><textPath href="#r3-6">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text></svg>
+    </div>
+    <button class="label-3">Franchir le seuil <span class="dot-3"></span></button>
+  </section>
+
+  <!-- ============================================
+       COMBINAISON 1 + 3 — Ma recommandation
+       ============================================ -->
+  <section class="sample">
+    <span class="badge">Recommandé</span>
+    <h2>1 + 3 — Cartouche + shimmer</h2>
+    <p class="caption">Le bouton-cartouche (pour la clarté) <em>+</em> la vague de lumière qui parcourt le texte (pour la vie).<br>Évident <em>et</em> poétique.</p>
+
+    <div class="ring-stage">
+      <svg class="ring ring--r1" viewBox="0 0 380 380"><defs><path id="r13-1" d="M 190,190 m -175,0 a 175,175 0 1,1 350,0 a 175,175 0 1,1 -350,0" /></defs><text><textPath href="#r13-1">ٱلرَّحْمَٰن ٱلرَّحِيم ٱلْمَلِك ٱلْقُدُّوس ٱلسَّلَام ٱلْمُؤْمِن ٱلْعَزِيز ٱلْجَبَّار ٱلْخَالِق ٱلْعَلِيم ٱلْحَكِيم ٱلْوَدُود</textPath></text></svg>
+      <svg class="ring ring--r2" viewBox="0 0 380 380"><defs><path id="r13-2" d="M 190,190 m -148,0 a 148,148 0 1,1 296,0 a 148,148 0 1,1 -296,0" /></defs><text><textPath href="#r13-2">ٱلْقَابِض ٱلْبَاسِط ٱلسَّمِيع ٱلْبَصِير ٱلْحَكَم ٱلْعَدْل ٱللَّطِيف ٱلْخَبِير ٱلْحَلِيم</textPath></text></svg>
+      <svg class="ring ring--r3" viewBox="0 0 380 380"><defs><path id="r13-3" d="M 190,190 m -122,0 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0" /></defs><text><textPath href="#r13-3">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم ✦ ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَالَمِين</textPath></text></svg>
+      <svg class="ring ring--r4" viewBox="0 0 380 380"><defs><path id="r13-4" d="M 190,190 m -98,0 a 98,98 0 1,1 196,0 a 98,98 0 1,1 -196,0" /></defs><text><textPath href="#r13-4">لَا إِلَٰهَ إِلَّا ٱللَّٰه ✦ مُحَمَّدٌ رَسُولُ ٱللَّٰه ✦</textPath></text></svg>
+      <svg class="ring ring--r5" viewBox="0 0 380 380"><defs><path id="r13-5" d="M 190,190 m -76,0 a 76,76 0 1,1 152,0 a 76,76 0 1,1 -152,0" /></defs><text><textPath href="#r13-5">سُبْحَانَ ٱللَّٰه ٱلْحَمْدُ لِلَّٰه ٱللَّٰهُ أَكْبَر</textPath></text></svg>
+      <svg class="ring ring--r6" viewBox="0 0 380 380"><defs><path id="r13-6" d="M 190,190 m -54,0 a 54,54 0 1,1 108,0 a 54,54 0 1,1 -108,0" /></defs><text><textPath href="#r13-6">ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه ٱللَّٰه</textPath></text></svg>
+    </div>
+    <button class="label-13">
+      <span class="label-13-text">Franchir le seuil</span>
+      <span class="dot"></span>
+    </button>
+  </section>
+
+  <div class="choice">
+    <h3>Lequel adopter ?</h3>
+    <p>Réponds-moi : <strong>1</strong>, <strong>2</strong>, <strong>3</strong>, ou <strong>1+3</strong> (ma reco). J'intègre à la page d'accueil.</p>
+  </div>
+
+</body>
+</html>

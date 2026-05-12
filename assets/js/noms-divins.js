@@ -110,12 +110,25 @@
           <h3>La part du serviteur <span>حَظُّ العَبْد</span></h3>
           <div class="nom-fiche__part"><p>${n.part}</p></div>
         </div>` : ''}
+      <div class="nom-fiche__like">
+        <p>Ce Nom vous a touché ?</p>
+        <button data-lyket-type="like-button"
+                data-lyket-id="nom-${String(n.n).padStart(2,'0')}-${n.tr.toLowerCase().replace(/[^a-z]/g,'')}"
+                data-lyket-component="hearts"
+                data-lyket-namespace="lavoiedusoufisme-noms">
+          ♥
+        </button>
+      </div>
       <div class="nom-fiche__nav">
         <button data-nav="prev">← Précédent</button>
         <button data-nav="random">⚘ Aléatoire</button>
         <button data-nav="next">Suivant →</button>
       </div>
     `;
+    // Demander à Lyket de rescanner le DOM pour activer le nouveau bouton
+    if (window.Lyket && typeof window.Lyket.mount === 'function') {
+      setTimeout(() => window.Lyket.mount(), 50);
+    }
     modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';

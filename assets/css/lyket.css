@@ -1,0 +1,65 @@
+/* === Bouton cœur Lyket — discret, soufi === */
+
+.like-block {
+  text-align: center;
+  max-width: 480px;
+  margin: var(--space-xl) auto var(--space-md);
+  padding: 1.8rem 1.5rem 1.5rem;
+  border-top: 1px solid rgba(184, 134, 11, 0.18);
+  border-bottom: 1px solid rgba(184, 134, 11, 0.18);
+}
+.like-block__text {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-mute, #6b6a65);
+  margin-bottom: .9rem;
+  letter-spacing: .02em;
+}
+
+/* On stylise le wrapper du bouton Lyket — Lyket génère un bouton interne qu'on cible */
+.like-block button[data-lyket-type] {
+  background: transparent !important;
+  border: 1px solid rgba(184, 134, 11, 0.4) !important;
+  border-radius: 999px !important;
+  padding: .5rem 1.3rem !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: .85rem !important;
+  letter-spacing: .08em !important;
+  color: var(--gold, #B8860B) !important;
+  cursor: pointer !important;
+  transition: all .3s ease !important;
+}
+.like-block button[data-lyket-type]:hover {
+  background: rgba(184, 134, 11, 0.06) !important;
+  border-color: var(--gold, #B8860B) !important;
+  transform: translateY(-1px);
+}
+
+/* Le widget Lyket utilise ses propres styles ; on respecte mais on adoucit */
+.lyket-button-container,
+.lyket-button {
+  display: inline-flex !important;
+  align-items: center;
+  gap: .4rem;
+}
+
+/* Pour la modale des 99 Noms — version plus compacte */
+.nom-fiche__like {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px dashed rgba(184, 134, 11, 0.2);
+}
+.nom-fiche__like p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: .9rem;
+  color: var(--ink-mute, #6b6a65);
+  margin-bottom: .6rem;
+}
+
+@media (max-width: 600px) {
+  .like-block { padding: 1.4rem 1rem 1.2rem; margin-top: var(--space-lg); }
+  .like-block__text { font-size: .98rem; }
+}

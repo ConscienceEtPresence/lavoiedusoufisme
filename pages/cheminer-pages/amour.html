@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../assets/css/essence.css" />
   <link rel="stylesheet" href="../../assets/css/auteur.css" />
   <link rel="stylesheet" href="../../assets/css/bilingue.css" />
+  <link rel="stylesheet" href="../../assets/css/lyket.css" />
 </head>
 <body class="page-enter">
 
@@ -214,6 +215,19 @@
 
   </main>
 
+  
+    <section class="container container--narrow">
+      <div class="like-block">
+        <p class="like-block__text">Cette page vous a touché ?</p>
+        <button data-lyket-type="like-button"
+                data-lyket-id="cheminer-amour"
+                data-lyket-component="hearts"
+                data-lyket-namespace="lavoiedusoufisme">
+          ♥
+        </button>
+      </div>
+    </section>
+
   <footer class="site-footer">
     <div class="container">
       <div class="ornament">✦</div>
@@ -222,5 +236,6 @@
   </footer>
 
   <script src="../../assets/js/main.js?v=2"></script>
+  <script defer src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_734384da42759ce0d52cd9ed29e070"></script>
 </body>
 </html>

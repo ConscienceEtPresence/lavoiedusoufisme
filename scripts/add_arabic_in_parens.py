@@ -51,9 +51,15 @@ def build_lookup():
         if not tr or not ar:
             continue
         lookup.setdefault(tr, ar)
-        # variante sans "al-" (al-Raḥmān → Raḥmān)
         if tr.startswith("al-"):
             lookup.setdefault(tr[3:], ar)
+
+    # Lexique supplémentaire (termes techniques qui ne sont pas entrées)
+    supp_path = ROOT / "data" / "lexique_supplementaire.json"
+    if supp_path.exists():
+        supp = json.loads(supp_path.read_text(encoding="utf-8"))
+        for tr, ar in supp.get("termes", {}).items():
+            lookup.setdefault(tr, ar)
 
     return lookup, dico, noms
 

@@ -203,57 +203,59 @@
     return audioCtx;
   }
 
-  // Petit tic discret — bois clair
+  function playSoftPartial(ctx, {
+    freq,
+    endFreq = freq,
+    delay = 0,
+    duration = 0.18,
+    gainValue = 0.035,
+    type = 'sine'
+  }) {
+    const now = ctx.currentTime + delay;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = type;
+    osc.frequency.setValueAtTime(freq, now);
+    if (endFreq !== freq) {
+      osc.frequency.exponentialRampToValueAtTime(endFreq, now + duration);
+    }
+    gain.gain.setValueAtTime(0.0001, now);
+    gain.gain.exponentialRampToValueAtTime(gainValue, now + 0.018);
+    gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start(now);
+    osc.stop(now + duration + 0.03);
+  }
+
+  // Petit son doux, plus bois que bip électronique.
   function playTick() {
     if (!soundOn) return;
     const ctx = getAudioCtx();
     if (!ctx) return;
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(880, ctx.currentTime);
-    osc.frequency.exponentialRampToValueAtTime(330, ctx.currentTime + 0.08);
-    gain.gain.setValueAtTime(0, ctx.currentTime);
-    gain.gain.linearRampToValueAtTime(0.28, ctx.currentTime + 0.005);
-    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.13);
-    osc.connect(gain); gain.connect(ctx.destination);
-    osc.start(); osc.stop(ctx.currentTime + 0.15);
+    playSoftPartial(ctx, { freq: 540, endFreq: 410, duration: 0.12, gainValue: 0.028, type: 'triangle' });
+    playSoftPartial(ctx, { freq: 810, endFreq: 720, delay: 0.012, duration: 0.11, gainValue: 0.012 });
   }
 
-  // Carillon intermédiaire — pour les paliers (33, 66)
+  // Carillon intermédiaire — pour les paliers (33, 66), discret et court.
   function playChime() {
     if (!soundOn) return;
     const ctx = getAudioCtx();
     if (!ctx) return;
-    [1320, 1980].forEach((freq, i) => {
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.type = 'sine';
-      osc.frequency.value = freq;
-      gain.gain.setValueAtTime(0, ctx.currentTime);
-      gain.gain.linearRampToValueAtTime(0.20 / (i + 1), ctx.currentTime + 0.01);
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.7);
-      osc.connect(gain); gain.connect(ctx.destination);
-      osc.start(); osc.stop(ctx.currentTime + 0.7);
-    });
+    playSoftPartial(ctx, { freq: 660, duration: 0.62, gainValue: 0.045 });
+    playSoftPartial(ctx, { freq: 990, delay: 0.035, duration: 0.58, gainValue: 0.025 });
+    playSoftPartial(ctx, { freq: 1320, delay: 0.075, duration: 0.42, gainValue: 0.012 });
   }
 
-  // Cloche pleine — fin de cycle (99, 100, 1000)
+  // Cloche pleine — fin de cycle (99, 100, 1000), ample mais peu agressive.
   function playBell() {
     if (!soundOn) return;
     const ctx = getAudioCtx();
     if (!ctx) return;
-    [660, 990, 1320, 1980].forEach((freq, i) => {
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.frequency.value = freq;
-      osc.type = 'sine';
-      gain.gain.setValueAtTime(0, ctx.currentTime);
-      gain.gain.linearRampToValueAtTime(0.22 / (i + 1), ctx.currentTime + 0.02);
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 2.2);
-      osc.connect(gain); gain.connect(ctx.destination);
-      osc.start(); osc.stop(ctx.currentTime + 2.2);
-    });
+    playSoftPartial(ctx, { freq: 440, duration: 1.7, gainValue: 0.055 });
+    playSoftPartial(ctx, { freq: 660, delay: 0.025, duration: 1.5, gainValue: 0.04 });
+    playSoftPartial(ctx, { freq: 990, delay: 0.06, duration: 1.2, gainValue: 0.023 });
+    playSoftPartial(ctx, { freq: 1320, delay: 0.11, duration: 0.9, gainValue: 0.012 });
   }
 
   function vibrate(ms) {
@@ -427,8 +429,8 @@
           <button class="nom-med-mode__toggle ${soundOn ? 'is-on' : 'is-off'}" data-action="toggle-sound">
             🔊 Son
           </button>
-          <button class="nom-med-mode__toggle ${vibrationOn ? 'is-on' : 'is-off'}" data-action="toggle-vibration" title="${hasVibrationSupport ? 'Vibration' : 'Vibration non supportée sur ce navigateur'}">
-            📳 Vibration${!hasVibrationSupport ? ' <span style="opacity:0.5;font-size:0.75em;">(indispo.)</span>' : ''}
+          <button class="nom-med-mode__toggle ${vibrationOn ? 'is-on' : 'is-off'}" data-action="toggle-vibration" title="${hasVibrationSupport ? 'Vibration' : 'Vibration non supportée sur ce téléphone ou navigateur'}"${hasVibrationSupport ? '' : ' disabled aria-disabled="true"'}>
+            📳 ${hasVibrationSupport ? 'Vibration' : 'Vibration indisponible'}
           </button>
           <button class="nom-med-mode__toggle ${counterOn ? 'is-on' : 'is-off'}" data-action="toggle-counter">
             📿 Compteur

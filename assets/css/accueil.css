@@ -97,8 +97,12 @@
   margin-bottom: 0.6rem !important;  /* citation rapprochée du bouton Entrer */
 }
 .hero__library {
+  max-width: 460px;
   margin-top: var(--space-2xl) !important;  /* bibliothèque poussée plus bas */
   margin-bottom: 0 !important;
+  font-size: 0.86rem !important;
+  line-height: 1.55;
+  opacity: 0.82;
 }
 @media (max-width: 760px) {
   .hero--contemplative {
@@ -114,7 +118,9 @@
   }
   .hero__library {
     margin-top: var(--space-xl) !important;  /* écart aéré sur mobile aussi */
-    font-size: .92rem;
+    max-width: 330px;
+    font-size: .82rem !important;
+    line-height: 1.5;
   }
 }
 

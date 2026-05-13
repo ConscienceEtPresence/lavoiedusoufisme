@@ -186,37 +186,63 @@
       try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
       catch (e) { audioCtx = null; }
     }
+    // Forcer la reprise si le contexte est suspendu (politique iOS/Safari)
+    if (audioCtx && audioCtx.state === 'suspended') {
+      audioCtx.resume().catch(() => {});
+    }
     return audioCtx;
   }
 
+  // Petit tic discret — bois clair
   function playTick() {
     if (!soundOn) return;
     const ctx = getAudioCtx();
     if (!ctx) return;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
-    osc.frequency.setValueAtTime(800, ctx.currentTime);
-    osc.frequency.exponentialRampToValueAtTime(400, ctx.currentTime + 0.05);
-    gain.gain.setValueAtTime(0.15, ctx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.1);
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(880, ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(330, ctx.currentTime + 0.08);
+    gain.gain.setValueAtTime(0, ctx.currentTime);
+    gain.gain.linearRampToValueAtTime(0.28, ctx.currentTime + 0.005);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.13);
     osc.connect(gain); gain.connect(ctx.destination);
-    osc.start(); osc.stop(ctx.currentTime + 0.1);
+    osc.start(); osc.stop(ctx.currentTime + 0.15);
   }
 
+  // Carillon intermédiaire — pour les paliers (33, 66)
+  function playChime() {
+    if (!soundOn) return;
+    const ctx = getAudioCtx();
+    if (!ctx) return;
+    [1320, 1980].forEach((freq, i) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.20 / (i + 1), ctx.currentTime + 0.01);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.7);
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.start(); osc.stop(ctx.currentTime + 0.7);
+    });
+  }
+
+  // Cloche pleine — fin de cycle (99, 100, 1000)
   function playBell() {
     if (!soundOn) return;
     const ctx = getAudioCtx();
     if (!ctx) return;
-    [880, 1320, 1760].forEach((freq, i) => {
+    [660, 990, 1320, 1980].forEach((freq, i) => {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.frequency.value = freq;
       osc.type = 'sine';
       gain.gain.setValueAtTime(0, ctx.currentTime);
-      gain.gain.linearRampToValueAtTime(0.12 / (i + 1), ctx.currentTime + 0.02);
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.5);
+      gain.gain.linearRampToValueAtTime(0.22 / (i + 1), ctx.currentTime + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 2.2);
       osc.connect(gain); gain.connect(ctx.destination);
-      osc.start(); osc.stop(ctx.currentTime + 1.5);
+      osc.start(); osc.stop(ctx.currentTime + 2.2);
     });
   }
 
@@ -301,10 +327,38 @@
     const isMilestone = tasbihTarget !== Infinity && (tasbihCount % tasbihTarget === 0);
     const isThird = tasbihTarget === 99 && (tasbihCount % 33 === 0) && !isMilestone;
     if (isMilestone) { playBell(); vibrate([60, 80, 60]); }
-    else if (isThird) { playTick(); vibrate([40, 50, 40]); }
+    else if (isThird) { playChime(); vibrate([40, 50, 40]); }
     else { playTick(); vibrate(30); }
     updateTasbihVisual();
     if (x !== undefined && y !== undefined) showTapFeedback(x, y);
+  }
+
+  // === Mode automatique : décompte à un rythme choisi ===
+  let autoTimer = null;
+  let autoIntervalMs = 1500; // 1.5s par défaut
+
+  function startAuto() {
+    if (autoTimer) return;
+    autoTimer = setInterval(() => tasbihTap(), autoIntervalMs);
+    updateAutoUI(true);
+  }
+  function stopAuto() {
+    if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+    updateAutoUI(false);
+  }
+  function setAutoSpeed(ms) {
+    autoIntervalMs = ms;
+    if (autoTimer) { stopAuto(); startAuto(); }
+    const label = medModeEl && medModeEl.querySelector('.nom-med-mode__speed-value');
+    if (label) label.textContent = (ms / 1000).toFixed(1) + 's';
+  }
+  function updateAutoUI(running) {
+    const btn = medModeEl && medModeEl.querySelector('[data-action="toggle-auto"]');
+    if (btn) {
+      btn.classList.toggle('is-on', running);
+      btn.classList.toggle('is-off', !running);
+      btn.innerHTML = running ? '⏸ Auto' : '▶ Auto';
+    }
   }
 
   function openNomMeditation(n) {
@@ -342,6 +396,17 @@
         <div class="nom-med-mode__tasbih"></div>
         <div class="nom-med-mode__tap-hint">Touchez n'importe où pour avancer le chapelet</div>
 
+        <div class="nom-med-mode__auto-wrap">
+          <button class="nom-med-mode__toggle is-off" data-action="toggle-auto" aria-label="Activer le mode automatique">
+            ▶ Auto
+          </button>
+          <div class="nom-med-mode__speed">
+            <span class="nom-med-mode__speed-label">Rythme</span>
+            <input type="range" class="nom-med-mode__speed-range" min="500" max="4000" step="100" value="${autoIntervalMs}" data-action="speed-range" />
+            <span class="nom-med-mode__speed-value">${(autoIntervalMs / 1000).toFixed(1)}s</span>
+          </div>
+        </div>
+
         <div class="nom-med-mode__toggles">
           <button class="nom-med-mode__toggle ${soundOn ? 'is-on' : 'is-off'}" data-action="toggle-sound">
             🔊 Son
@@ -361,6 +426,7 @@
 
   function closeNomMeditation() {
     if (!medModeEl) return;
+    stopAuto();
     medModeEl.classList.remove('open');
     document.body.style.overflow = '';
     if ('speechSynthesis' in window) speechSynthesis.cancel();
@@ -368,8 +434,17 @@
   }
 
   if (medModeEl) {
+    // Slider de vitesse — événement input (séparé du click)
+    medModeEl.addEventListener('input', e => {
+      if (e.target.dataset.action === 'speed-range') {
+        setAutoSpeed(parseInt(e.target.value));
+      }
+    });
+
     // Tap global sur la fenêtre méditation = compteur
     medModeEl.addEventListener('click', e => {
+      // Le slider ne déclenche pas le tap
+      if (e.target.matches('input[type="range"], .nom-med-mode__speed, .nom-med-mode__speed *')) return;
       // Si on clique sur un contrôle, on ne compte pas
       if (e.target.closest('button')) {
         const btn = e.target.closest('button');
@@ -398,6 +473,10 @@
           const hint = medModeEl.querySelector('.nom-med-mode__tap-hint');
           if (tasbih) tasbih.classList.toggle('hidden', !counterOn);
           if (hint) hint.style.display = counterOn ? '' : 'none';
+          return;
+        }
+        if (btn.dataset.action === 'toggle-auto') {
+          if (autoTimer) stopAuto(); else startAuto();
           return;
         }
         if (btn.dataset.target) {

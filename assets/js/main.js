@@ -15,19 +15,17 @@ if (navToggle && siteNav) {
 
 // 1bis. Seuil contemplatif — révèle les 3 portes au clic
 const seuil = document.getElementById('seuil-button');
+const seuilStage = document.getElementById('seuil-stage');
 const doorsReveal = document.getElementById('doors-reveal');
 if (seuil && doorsReveal) {
   const doorLinks = doorsReveal.querySelectorAll('a');
   doorLinks.forEach(link => link.setAttribute('tabindex', '-1'));
 
   const labelEl = seuil.querySelector('.seuil__label');
-  const setLabelText = (txt) => {
-    if (!labelEl) return;
-    labelEl.textContent = txt;
-  };
 
   seuil.addEventListener('click', () => {
     const isOpen = seuil.classList.toggle('is-open');
+    if (seuilStage) seuilStage.classList.toggle('is-open', isOpen);
     doorsReveal.classList.toggle('is-open', isOpen);
     seuil.setAttribute('aria-expanded', isOpen);
     doorsReveal.setAttribute('aria-hidden', !isOpen);
@@ -38,11 +36,9 @@ if (seuil && doorsReveal) {
         link.setAttribute('tabindex', '-1');
       }
     });
+    if (labelEl) labelEl.textContent = isOpen ? 'Voici les trois chemins' : 'Entrer';
     if (isOpen) {
-      setLabelText('Voici les trois chemins');
       setTimeout(() => doorsReveal.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 700);
-    } else {
-      setLabelText('Franchir le seuil');
     }
   });
 }

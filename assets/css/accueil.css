@@ -2,8 +2,9 @@
    ACCUEIL — Le seuil-portail et les trois portes
    ================================================================== */
 
-/* === Correction de l'espace en bas du hero === */
+/* === Espacements du hero === */
 .hero--contemplative {
+  padding-top: var(--space-lg) !important;
   padding-bottom: var(--space-md) !important;
 }
 .hero__library {
@@ -11,7 +12,13 @@
   margin-bottom: 0 !important;
 }
 @media (max-width: 760px) {
-  .hero--contemplative { padding-bottom: var(--space-sm) !important; }
+  .hero--contemplative {
+    padding-top: var(--space-md) !important;
+    padding-bottom: var(--space-sm) !important;
+  }
+  .hero__title { font-size: clamp(2rem, 8vw, 2.6rem) !important; margin-bottom: 0.4rem !important; }
+  .hero__lede { font-size: 0.95rem !important; margin-bottom: 1rem !important; }
+  .hero__quote { font-size: 1rem !important; margin: 1rem auto !important; }
   .hero__library { margin-top: var(--space-sm) !important; font-size: .92rem; }
 }
 

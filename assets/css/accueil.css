@@ -7,8 +7,11 @@
   padding-top: var(--space-lg) !important;
   padding-bottom: var(--space-md) !important;
 }
+.hero__quote {
+  margin-bottom: 0.6rem !important;  /* citation rapprochée du bouton Entrer */
+}
 .hero__library {
-  margin-top: var(--space-md) !important;
+  margin-top: var(--space-2xl) !important;  /* bibliothèque poussée plus bas */
   margin-bottom: 0 !important;
 }
 @media (max-width: 760px) {
@@ -18,8 +21,15 @@
   }
   .hero__title { font-size: clamp(2rem, 8vw, 2.6rem) !important; margin-bottom: 0.4rem !important; }
   .hero__lede { font-size: 0.95rem !important; margin-bottom: 1rem !important; }
-  .hero__quote { font-size: 1rem !important; margin: 1rem auto !important; }
-  .hero__library { margin-top: var(--space-sm) !important; font-size: .92rem; }
+  .hero__quote {
+    font-size: 1rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0.4rem !important;  /* encore plus proche du bouton sur mobile */
+  }
+  .hero__library {
+    margin-top: var(--space-xl) !important;  /* écart aéré sur mobile aussi */
+    font-size: .92rem;
+  }
 }
 
 /* === Le portail ambiant ===
@@ -59,8 +69,8 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: var(--space-sm) 0 0;
-  margin: var(--space-md) auto var(--space-sm);
+  padding: 0;
+  margin: 0 auto;
   -webkit-tap-highlight-color: transparent;
   z-index: 2;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
@@ -154,8 +164,8 @@
   opacity: 1 !important;
   display: inline-flex;
   align-items: center;
-  gap: 0.9rem;
-  margin-top: 1.2rem;
+  gap: 1rem;
+  margin-top: 0;
   padding: .5rem 1.4rem;
   transition: letter-spacing 0.5s ease;
   /* Shimmer : dégradé qui défile sur le texte */
@@ -175,15 +185,21 @@
 }
 .seuil:hover .seuil__label { letter-spacing: 0.26em !important; }
 
-/* Filets dorés latéraux — gardent leur couleur (background-clip:text n'affecte que le texte) */
+/* Ornements orientaux à gauche et droite — losange à 4 branches */
 .seuil__label::before,
 .seuil__label::after {
-  content: '';
-  width: 40px;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold), transparent);
-  -webkit-text-fill-color: initial;
+  content: '❖';
+  color: var(--gold);
+  font-size: 1rem;
+  opacity: 0.7;
+  font-style: normal;
+  background: none;
+  -webkit-text-fill-color: var(--gold);
+  letter-spacing: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+.seuil:hover .seuil__label::before { transform: rotate(-45deg); opacity: 1; }
+.seuil:hover .seuil__label::after { transform: rotate(45deg); opacity: 1; }
 
 .seuil.is-open .seuil__label {
   font-size: 1.1rem !important;

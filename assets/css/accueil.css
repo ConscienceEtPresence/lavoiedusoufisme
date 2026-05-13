@@ -126,7 +126,11 @@
   -webkit-tap-highlight-color: transparent;
   z-index: 2;
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  text-decoration: none;
+  border-bottom: none;
+  color: var(--gold);
 }
+.seuil:hover { border-bottom: none; }
 
 /* La zone des anneaux — c'est la scène calligraphique */
 .seuil-stage {
@@ -327,6 +331,42 @@
   font-size: 0.85em;
   margin: 0 0.7rem;
   opacity: 0.6;
+}
+
+/* ==================================================================
+   PAGE PORTAIL — trois portes sur leur propre écran
+   ================================================================== */
+
+.portal-page .bi-header {
+  padding-bottom: var(--space-md);
+}
+.portal-intro {
+  max-width: 640px;
+  margin: 0 auto var(--space-lg);
+  text-align: center;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.portal-page .doors {
+  margin-top: 0;
+}
+.portal-page .site-footer {
+  margin-top: var(--space-xl) !important;
+}
+@media (max-width: 760px) {
+  .portal-page .bi-header {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-sm);
+  }
+  .portal-intro {
+    margin-bottom: var(--space-md);
+    font-size: 0.95rem;
+  }
+  .portal-page .doors {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin-inline: auto;
+  }
 }
 
 /* ==================================================================

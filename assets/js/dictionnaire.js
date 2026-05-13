@@ -91,6 +91,21 @@
   });
 
   // === Modale
+  function speakArabic(text) {
+    if (!('speechSynthesis' in window)) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'ar-SA';
+    u.rate = 0.7;
+    u.pitch = 1.0;
+    const voices = speechSynthesis.getVoices();
+    const arVoice = voices.find(v => v.lang.startsWith('ar'));
+    if (arVoice) u.voice = arVoice;
+    speechSynthesis.speak(u);
+  }
+  // Précharger les voix (Safari les charge en différé)
+  if ('speechSynthesis' in window) { speechSynthesis.getVoices(); }
+
   function openModal(entry) {
     currentEntry = entry;
     const cat = DATA.categories[entry.category];
@@ -99,7 +114,7 @@
 
       <div class="entry-head">
         <div class="entry-head__ar">${entry.ar}</div>
-        <div class="entry-head__tr">${entry.tr}</div>
+        <div class="entry-head__tr">${entry.tr} <button class="entry-head__audio" data-action="speak" aria-label="Prononcer le mot en arabe">♪</button></div>
         <div class="entry-head__fr">${entry.fr}</div>
         <div class="entry-head__meta">${cat ? cat.label : ''}</div>
         ${entry.racine ? `<div class="entry-head__racine">${entry.racine}${entry.racine_sens ? ` — <span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:.85rem;color:var(--dict-soft);">${entry.racine_sens}</span>` : ''}</div>` : ''}
@@ -174,6 +189,10 @@
 
   modal.addEventListener('click', e => {
     if (e.target.matches('.dict-modal__backdrop, .dict-modal__close')) return closeModal();
+    if (e.target.closest('[data-action="speak"]') && currentEntry) {
+      speakArabic(currentEntry.ar);
+      return;
+    }
     const pastille = e.target.closest('.pastille');
     if (pastille && pastille.dataset.goto) {
       const next = DATA.entries.find(en => en.id === pastille.dataset.goto);
@@ -196,12 +215,14 @@
   let medTimer = null;
   let medDuration = 300; // 5 min par défaut
   let medRemaining = 0;
+  let medEntry = null;
 
   function openMeditation(entry) {
+    medEntry = entry;
     medMode.innerHTML = `
       <button class="med-mode__close" aria-label="Quitter">✕</button>
       <div class="med-mode__ar">${entry.ar}</div>
-      <div class="med-mode__tr">${entry.tr} — ${entry.fr}</div>
+      <div class="med-mode__tr">${entry.tr} <button class="med-mode__audio" data-action="speak" aria-label="Prononcer le mot en arabe">♪</button> — ${entry.fr}</div>
       <div class="med-mode__question">${entry.meditation || ''}</div>
 
       <div class="med-mode__circle" id="med-circle">
@@ -270,6 +291,11 @@
 
   medMode.addEventListener('click', e => {
     if (e.target.matches('.med-mode__close')) return closeMeditation();
+
+    if (e.target.closest('[data-action="speak"]') && medEntry) {
+      speakArabic(medEntry.ar);
+      return;
+    }
 
     if (e.target.matches('[data-action="custom-duration"]')) {
       const sec = askCustomDuration();

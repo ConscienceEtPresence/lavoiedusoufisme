@@ -716,3 +716,30 @@
 @media (max-width: 380px) {
   .dict-grid { grid-template-columns: 1fr; }
 }
+
+/* Bouton audio — prononcer le mot en arabe */
+.entry-head__audio,
+.med-mode__audio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: 1px solid rgba(184, 134, 11, 0.35);
+  border-radius: 50%;
+  color: var(--dict-gold);
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: all 0.25s ease;
+  padding: 0;
+  line-height: 1;
+}
+.entry-head__audio:hover,
+.med-mode__audio:hover {
+  background: rgba(184, 134, 11, 0.15);
+  border-color: var(--dict-gold);
+  color: #fff;
+}

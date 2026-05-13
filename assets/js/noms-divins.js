@@ -117,7 +117,7 @@
       </div>
       <div class="nom-fiche__like">
         <p>Ce Nom vous a touché ?</p>
-        <button data-lyket-type="like-button"
+        <button data-lyket-type="like"
                 data-lyket-id="nom-${String(n.n).padStart(2,'0')}-${n.tr.toLowerCase().replace(/[^a-z]/g,'')}"
                 data-lyket-namespace="lavoiedusoufisme-noms">
           ♥
@@ -177,11 +177,19 @@
   let currentNom = null;
   let tasbihCount = 0;
   let tasbihTarget = 99;
-  let soundOn = (localStorage.getItem('nom-med-sound') !== 'off');
-  let vibrationOn = (localStorage.getItem('nom-med-vibration') !== 'off');
-  let counterOn = (localStorage.getItem('nom-med-counter') !== 'off');
   let audioCtx = null;
   const hasVibrationSupport = ('vibrate' in navigator);
+  const storageGet = key => {
+    try { return localStorage.getItem(key); }
+    catch (e) { return null; }
+  };
+  const storageSet = (key, value) => {
+    try { localStorage.setItem(key, value); }
+    catch (e) {}
+  };
+  let soundOn = (storageGet('nom-med-sound') !== 'off');
+  let vibrationOn = hasVibrationSupport && (storageGet('nom-med-vibration') !== 'off');
+  let counterOn = (storageGet('nom-med-counter') !== 'off');
 
   function getAudioCtx() {
     if (!audioCtx) {
@@ -342,6 +350,7 @@
 
   function startAuto() {
     if (autoTimer) return;
+    getAudioCtx(); // Prépare l'audio pendant le geste utilisateur, utile sur iOS/Safari.
     autoTimer = setInterval(() => tasbihTap(), autoIntervalMs);
     updateAutoUI(true);
   }
@@ -428,6 +437,7 @@
       </div>
     `;
     medModeEl.classList.add('open');
+    medModeEl.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 
     placeBeads(99);
@@ -438,6 +448,7 @@
     if (!medModeEl) return;
     stopAuto();
     medModeEl.classList.remove('open');
+    medModeEl.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
     if ('speechSynthesis' in window) speechSynthesis.cancel();
     currentNom = null;
@@ -469,14 +480,15 @@
         }
         if (btn.dataset.action === 'toggle-sound') {
           soundOn = !soundOn;
-          localStorage.setItem('nom-med-sound', soundOn ? 'on' : 'off');
+          storageSet('nom-med-sound', soundOn ? 'on' : 'off');
           btn.classList.toggle('is-on', soundOn);
           btn.classList.toggle('is-off', !soundOn);
           return;
         }
         if (btn.dataset.action === 'toggle-vibration') {
+          if (!hasVibrationSupport) return;
           vibrationOn = !vibrationOn;
-          localStorage.setItem('nom-med-vibration', vibrationOn ? 'on' : 'off');
+          storageSet('nom-med-vibration', vibrationOn ? 'on' : 'off');
           btn.classList.toggle('is-on', vibrationOn);
           btn.classList.toggle('is-off', !vibrationOn);
           if (vibrationOn) vibrate(50); // petit feedback à l'activation
@@ -484,7 +496,7 @@
         }
         if (btn.dataset.action === 'toggle-counter') {
           counterOn = !counterOn;
-          localStorage.setItem('nom-med-counter', counterOn ? 'on' : 'off');
+          storageSet('nom-med-counter', counterOn ? 'on' : 'off');
           btn.classList.toggle('is-on', counterOn);
           btn.classList.toggle('is-off', !counterOn);
           const tasbih = medModeEl.querySelector('.nom-med-mode__tasbih');

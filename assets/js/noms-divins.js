@@ -178,8 +178,10 @@
   let tasbihCount = 0;
   let tasbihTarget = 99;
   let soundOn = (localStorage.getItem('nom-med-sound') !== 'off');
+  let vibrationOn = (localStorage.getItem('nom-med-vibration') !== 'off');
   let counterOn = (localStorage.getItem('nom-med-counter') !== 'off');
   let audioCtx = null;
+  const hasVibrationSupport = ('vibrate' in navigator);
 
   function getAudioCtx() {
     if (!audioCtx) {
@@ -247,6 +249,7 @@
   }
 
   function vibrate(ms) {
+    if (!vibrationOn) return;
     if (navigator.vibrate) navigator.vibrate(ms);
   }
 
@@ -394,6 +397,10 @@
         </div>
 
         <div class="nom-med-mode__tasbih"></div>
+        <div class="nom-med-mode__echo" aria-hidden="true">
+          <div class="nom-med-mode__echo-ar" lang="ar" dir="rtl">${n.ar}</div>
+          <div class="nom-med-mode__echo-tr">${n.tr}</div>
+        </div>
         <div class="nom-med-mode__tap-hint">Touchez n'importe où pour avancer le chapelet</div>
 
         <div class="nom-med-mode__auto-wrap">
@@ -410,6 +417,9 @@
         <div class="nom-med-mode__toggles">
           <button class="nom-med-mode__toggle ${soundOn ? 'is-on' : 'is-off'}" data-action="toggle-sound">
             🔊 Son
+          </button>
+          <button class="nom-med-mode__toggle ${vibrationOn ? 'is-on' : 'is-off'}" data-action="toggle-vibration" title="${hasVibrationSupport ? 'Vibration' : 'Vibration non supportée sur ce navigateur'}">
+            📳 Vibration${!hasVibrationSupport ? ' <span style="opacity:0.5;font-size:0.75em;">(indispo.)</span>' : ''}
           </button>
           <button class="nom-med-mode__toggle ${counterOn ? 'is-on' : 'is-off'}" data-action="toggle-counter">
             📿 Compteur
@@ -464,6 +474,14 @@
           btn.classList.toggle('is-off', !soundOn);
           return;
         }
+        if (btn.dataset.action === 'toggle-vibration') {
+          vibrationOn = !vibrationOn;
+          localStorage.setItem('nom-med-vibration', vibrationOn ? 'on' : 'off');
+          btn.classList.toggle('is-on', vibrationOn);
+          btn.classList.toggle('is-off', !vibrationOn);
+          if (vibrationOn) vibrate(50); // petit feedback à l'activation
+          return;
+        }
         if (btn.dataset.action === 'toggle-counter') {
           counterOn = !counterOn;
           localStorage.setItem('nom-med-counter', counterOn ? 'on' : 'off');
@@ -471,8 +489,10 @@
           btn.classList.toggle('is-off', !counterOn);
           const tasbih = medModeEl.querySelector('.nom-med-mode__tasbih');
           const hint = medModeEl.querySelector('.nom-med-mode__tap-hint');
+          const echo = medModeEl.querySelector('.nom-med-mode__echo');
           if (tasbih) tasbih.classList.toggle('hidden', !counterOn);
           if (hint) hint.style.display = counterOn ? '' : 'none';
+          if (echo) echo.style.display = counterOn ? '' : 'none';
           return;
         }
         if (btn.dataset.action === 'toggle-auto') {

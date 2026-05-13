@@ -11,10 +11,35 @@
   margin-bottom: 0.6rem !important;  /* citation rapprochée du bouton Entrer */
 }
 .hero__library {
-  margin-top: var(--space-2xl) !important;  /* bibliothèque poussée plus bas */
+  margin-top: var(--space-xl) !important;
   margin-bottom: 0 !important;
+  max-width: 480px;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--ink-mute);
+}
+.hero__library em {
+  color: rgba(91, 106, 133, 0.86);
 }
 @media (max-width: 760px) {
+  .site-header {
+    padding: 0.55rem 0 !important;
+  }
+  .brand {
+    font-size: 1.35rem !important;
+    gap: 0.5rem !important;
+  }
+  .brand__mark {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .nav-toggle {
+    padding: 0.3rem !important;
+  }
+  .nav-toggle svg {
+    width: 22px;
+    height: 22px;
+  }
   .hero--contemplative {
     padding-top: var(--space-md) !important;
     padding-bottom: var(--space-sm) !important;
@@ -27,8 +52,11 @@
     margin-bottom: 0.4rem !important;  /* encore plus proche du bouton sur mobile */
   }
   .hero__library {
-    margin-top: var(--space-xl) !important;  /* écart aéré sur mobile aussi */
-    font-size: .92rem;
+    margin-top: var(--space-lg) !important;
+    max-width: 320px;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -166,7 +194,8 @@
   align-items: center;
   gap: 1rem;
   margin-top: 0;
-  padding: .5rem 1.4rem;
+  min-height: 44px;
+  padding: .45rem 1.35rem;
   transition: letter-spacing 0.5s ease;
   /* Shimmer : dégradé qui défile sur le texte */
   background: linear-gradient(90deg,
@@ -178,6 +207,12 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer 4s ease-in-out infinite;
+}
+@media (max-width: 760px) {
+  .seuil__label {
+    font-size: 1.42rem !important;
+    letter-spacing: 0.17em !important;
+  }
 }
 @keyframes shimmer {
   0%, 100% { background-position: 0% 0; }
@@ -345,7 +380,10 @@
 
 /* === Responsive === */
 @media (max-width: 760px) {
-  .seuil__label { font-size: 1.18rem !important; }
+  .seuil__label {
+    font-size: 1.42rem !important;
+    letter-spacing: 0.17em !important;
+  }
   .seuil-quote { font-size: 1.02rem; }
   .door__ar { font-size: 2.2rem; }
   .door__title { font-size: 1.3rem !important; }

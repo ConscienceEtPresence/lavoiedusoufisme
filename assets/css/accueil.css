@@ -21,6 +21,17 @@
 .hero__library em {
   color: rgba(91, 106, 133, 0.86);
 }
+.site-footer {
+  margin-top: var(--space-lg) !important;
+  padding-top: var(--space-lg) !important;
+}
+.site-footer .ornament {
+  margin-bottom: var(--space-sm) !important;
+}
+.site-footer__contact {
+  margin-top: var(--space-sm) !important;
+  padding-top: var(--space-sm) !important;
+}
 @media (max-width: 760px) {
   .site-header {
     padding: 0.55rem 0 !important;
@@ -42,7 +53,7 @@
   }
   .hero--contemplative {
     padding-top: var(--space-md) !important;
-    padding-bottom: var(--space-sm) !important;
+    padding-bottom: 0 !important;
   }
   .hero__title { font-size: clamp(2rem, 8vw, 2.6rem) !important; margin-bottom: 0.4rem !important; }
   .hero__lede { font-size: 0.95rem !important; margin-bottom: 1rem !important; }
@@ -53,10 +64,23 @@
   }
   .hero__library {
     margin-top: var(--space-lg) !important;
+    margin-bottom: var(--space-md) !important;
     max-width: 320px;
     font-size: 0.78rem;
     line-height: 1.5;
     letter-spacing: 0.01em;
+  }
+  .site-footer {
+    margin-top: var(--space-sm) !important;
+    padding-top: var(--space-md) !important;
+    padding-bottom: var(--space-md) !important;
+  }
+  .site-footer .ornament {
+    margin-bottom: var(--space-xs) !important;
+  }
+  .site-footer__contact {
+    margin-top: var(--space-xs) !important;
+    padding-top: var(--space-sm) !important;
   }
 }
 

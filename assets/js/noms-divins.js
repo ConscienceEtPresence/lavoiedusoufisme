@@ -174,89 +174,241 @@
   // Mode méditation plein écran pour un Nom divin
   // ====================================================
   const medModeEl = document.getElementById('nom-med-mode');
-  let medTimer = null;
-  let medDuration = 300;
-  let medRemaining = 0;
+  let currentNom = null;
+  let tasbihCount = 0;
+  let tasbihTarget = 99;
+  let soundOn = (localStorage.getItem('nom-med-sound') !== 'off');
+  let counterOn = (localStorage.getItem('nom-med-counter') !== 'off');
+  let audioCtx = null;
+
+  function getAudioCtx() {
+    if (!audioCtx) {
+      try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
+      catch (e) { audioCtx = null; }
+    }
+    return audioCtx;
+  }
+
+  function playTick() {
+    if (!soundOn) return;
+    const ctx = getAudioCtx();
+    if (!ctx) return;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.frequency.setValueAtTime(800, ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(400, ctx.currentTime + 0.05);
+    gain.gain.setValueAtTime(0.15, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.1);
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(); osc.stop(ctx.currentTime + 0.1);
+  }
+
+  function playBell() {
+    if (!soundOn) return;
+    const ctx = getAudioCtx();
+    if (!ctx) return;
+    [880, 1320, 1760].forEach((freq, i) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.frequency.value = freq;
+      osc.type = 'sine';
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.12 / (i + 1), ctx.currentTime + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 1.5);
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.start(); osc.stop(ctx.currentTime + 1.5);
+    });
+  }
+
+  function vibrate(ms) {
+    if (navigator.vibrate) navigator.vibrate(ms);
+  }
+
+  function speakArabic(text) {
+    if (!('speechSynthesis' in window)) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'ar-SA';
+    u.rate = 0.7;
+    u.pitch = 1.0;
+    // Trouver une voix arabe si possible
+    const voices = speechSynthesis.getVoices();
+    const arVoice = voices.find(v => v.lang.startsWith('ar'));
+    if (arVoice) u.voice = arVoice;
+    speechSynthesis.speak(u);
+    return u;
+  }
+
+  function placeBeads(target) {
+    const tasbih = medModeEl.querySelector('.nom-med-mode__tasbih');
+    if (!tasbih) return;
+    const beadsHTML = [];
+    const showBeads = target <= 99;
+    if (showBeads) {
+      const radius = 130;
+      for (let i = 0; i < target; i++) {
+        const angle = (i / target) * 2 * Math.PI - Math.PI / 2;
+        const x = 50 + (radius / 320) * 50 * Math.cos(angle);
+        const y = 50 + (radius / 320) * 50 * Math.sin(angle);
+        beadsHTML.push(`<div class="tasbih-bead" data-i="${i}" style="left:calc(${x}% - 4px); top:calc(${y}% - 4px);"></div>`);
+      }
+    }
+    tasbih.innerHTML = beadsHTML.join('') + `
+      <div class="tasbih-counter">
+        <div class="tasbih-counter__num" id="tasbih-num">${tasbihCount}</div>
+        <div class="tasbih-counter__target">${target === Infinity ? '∞' : '/ ' + target}</div>
+      </div>
+    `;
+    tasbih.classList.toggle('hidden', !counterOn);
+  }
+
+  function updateTasbihVisual() {
+    const num = medModeEl.querySelector('#tasbih-num');
+    if (num) {
+      num.textContent = tasbihCount;
+      num.classList.add('beat');
+      setTimeout(() => num.classList.remove('beat'), 200);
+    }
+    const beads = medModeEl.querySelectorAll('.tasbih-bead');
+    beads.forEach((b, i) => {
+      const filled = i < (tasbihCount % tasbihTarget || (tasbihCount > 0 && tasbihCount % tasbihTarget === 0 ? tasbihTarget : 0));
+      b.classList.toggle('filled', filled);
+      b.classList.toggle('last', filled && i === ((tasbihCount - 1) % tasbihTarget));
+    });
+  }
+
+  function setTarget(t) {
+    tasbihTarget = t;
+    tasbihCount = 0;
+    placeBeads(t);
+    medModeEl.querySelectorAll('[data-target]').forEach(b => {
+      b.classList.toggle('active', parseInt(b.dataset.target) === t || (t === Infinity && b.dataset.target === 'inf'));
+    });
+  }
+
+  function showTapFeedback(x, y) {
+    const f = document.createElement('div');
+    f.className = 'nom-med-mode__tap-feedback';
+    f.style.left = (x - 40) + 'px';
+    f.style.top = (y - 40) + 'px';
+    medModeEl.appendChild(f);
+    setTimeout(() => f.remove(), 700);
+  }
+
+  function tasbihTap(x, y) {
+    if (!counterOn) return;
+    tasbihCount++;
+    const isMilestone = tasbihTarget !== Infinity && (tasbihCount % tasbihTarget === 0);
+    const isThird = tasbihTarget === 99 && (tasbihCount % 33 === 0) && !isMilestone;
+    if (isMilestone) { playBell(); vibrate([60, 80, 60]); }
+    else if (isThird) { playTick(); vibrate([40, 50, 40]); }
+    else { playTick(); vibrate(30); }
+    updateTasbihVisual();
+    if (x !== undefined && y !== undefined) showTapFeedback(x, y);
+  }
 
   function openNomMeditation(n) {
     if (!medModeEl) return;
+    currentNom = n;
+    tasbihCount = 0;
     const theme = DATA.themes[n.theme];
+
+    // Composer le texte de méditation profond à partir des champs disponibles
+    let meditationText = '';
+    if (n.sufi) meditationText += n.sufi + ' ';
+    if (n.part) meditationText += `<em>La part du serviteur :</em> ${n.part}`;
+    if (!meditationText && n.aqli) meditationText = n.aqli;
+    if (!meditationText) meditationText = n.sens_court;
+
     medModeEl.innerHTML = `
       <button class="nom-med-mode__close" aria-label="Quitter">✕</button>
-      <div class="nom-med-mode__num">Nom n°${n.n} · ${theme.label_ar}</div>
-      <div class="nom-med-mode__ar">${n.ar}</div>
-      <div class="nom-med-mode__tr">${n.tr}</div>
-      <div class="nom-med-mode__fr">${n.fr}</div>
-      <div class="nom-med-mode__sens">« ${n.sens_court} »</div>
-      <div class="nom-med-mode__timer" id="nom-med-timer">05:00</div>
-      <div class="nom-med-mode__controls">
-        <button class="nom-med-mode__btn" data-dur="180">3 min</button>
-        <button class="nom-med-mode__btn active" data-dur="300">5 min</button>
-        <button class="nom-med-mode__btn" data-dur="600">10 min</button>
-        <button class="nom-med-mode__btn" data-dur="1200">20 min</button>
+      <div class="nom-med-mode__inner">
+        <div class="nom-med-mode__num">Nom n°${n.n} · ${theme.label} · ${theme.label_ar}</div>
+        <div class="nom-med-mode__ar">${n.ar}</div>
+        <div class="nom-med-mode__tr">${n.tr} <button class="nom-med-mode__audio" data-action="speak" aria-label="Prononcer le nom">♪</button></div>
+        <div class="nom-med-mode__fr">${n.fr}</div>
+
+        <div class="nom-med-mode__sens">« ${n.sens_court} »</div>
+        <div class="nom-med-mode__meditation">${meditationText}</div>
+
+        <div class="nom-med-mode__targets" role="group" aria-label="Choisir le nombre de répétitions">
+          <button class="nom-med-mode__target" data-target="33">33</button>
+          <button class="nom-med-mode__target active" data-target="99">99</button>
+          <button class="nom-med-mode__target" data-target="100">100</button>
+          <button class="nom-med-mode__target" data-target="1000">1000</button>
+          <button class="nom-med-mode__target" data-target="inf">∞</button>
+        </div>
+
+        <div class="nom-med-mode__tasbih"></div>
+        <div class="nom-med-mode__tap-hint">Touchez n'importe où pour avancer le chapelet</div>
+
+        <div class="nom-med-mode__toggles">
+          <button class="nom-med-mode__toggle ${soundOn ? 'is-on' : 'is-off'}" data-action="toggle-sound">
+            🔊 Son
+          </button>
+          <button class="nom-med-mode__toggle ${counterOn ? 'is-on' : 'is-off'}" data-action="toggle-counter">
+            📿 Compteur
+          </button>
+        </div>
       </div>
-      <button class="nom-med-mode__btn nom-med-mode__btn--start" id="nom-med-start">Commencer</button>
-      <div class="nom-med-mode__notes-label">Une intuition née pendant cette méditation ? (privé, sur votre appareil)</div>
-      <textarea class="nom-med-mode__notes" id="nom-med-notes" placeholder="Notez vos impressions…"></textarea>
     `;
     medModeEl.classList.add('open');
     document.body.style.overflow = 'hidden';
-    medDuration = 300;
-    medRemaining = medDuration;
-    updateMedTimer();
 
-    const noteKey = `nom-med-note-${n.n}`;
-    const saved = localStorage.getItem(noteKey);
-    const notes = medModeEl.querySelector('#nom-med-notes');
-    if (saved) notes.value = saved;
-    notes.addEventListener('input', () => localStorage.setItem(noteKey, notes.value));
+    placeBeads(99);
+    updateTasbihVisual();
   }
 
   function closeNomMeditation() {
     if (!medModeEl) return;
     medModeEl.classList.remove('open');
     document.body.style.overflow = '';
-    if (medTimer) { clearInterval(medTimer); medTimer = null; }
-  }
-
-  function updateMedTimer() {
-    const m = Math.floor(medRemaining / 60).toString().padStart(2, '0');
-    const s = (medRemaining % 60).toString().padStart(2, '0');
-    const el = document.getElementById('nom-med-timer');
-    if (el) el.textContent = `${m}:${s}`;
+    if ('speechSynthesis' in window) speechSynthesis.cancel();
+    currentNom = null;
   }
 
   if (medModeEl) {
+    // Tap global sur la fenêtre méditation = compteur
     medModeEl.addEventListener('click', e => {
-      if (e.target.matches('.nom-med-mode__close')) return closeNomMeditation();
-      const durBtn = e.target.closest('[data-dur]');
-      if (durBtn) {
-        medModeEl.querySelectorAll('[data-dur]').forEach(b => b.classList.remove('active'));
-        durBtn.classList.add('active');
-        medDuration = parseInt(durBtn.dataset.dur);
-        medRemaining = medDuration;
-        updateMedTimer();
-        return;
-      }
-      if (e.target.matches('#nom-med-start')) {
-        const btn = e.target;
-        if (medTimer) {
-          clearInterval(medTimer); medTimer = null;
-          btn.textContent = 'Commencer';
+      // Si on clique sur un contrôle, on ne compte pas
+      if (e.target.closest('button')) {
+        const btn = e.target.closest('button');
+        if (btn.matches('.nom-med-mode__close')) return closeNomMeditation();
+        if (btn.dataset.action === 'speak') {
+          if (currentNom) {
+            speakArabic(currentNom.ar);
+            btn.classList.add('is-playing');
+            setTimeout(() => btn.classList.remove('is-playing'), 2500);
+          }
           return;
         }
-        btn.textContent = 'Pause';
-        medTimer = setInterval(() => {
-          medRemaining--;
-          updateMedTimer();
-          if (medRemaining <= 0) {
-            clearInterval(medTimer); medTimer = null;
-            btn.textContent = 'Terminé ✓';
-            medModeEl.querySelector('.nom-med-mode__notes-label').classList.add('visible');
-            medModeEl.querySelector('.nom-med-mode__notes').classList.add('visible');
-          }
-        }, 1000);
+        if (btn.dataset.action === 'toggle-sound') {
+          soundOn = !soundOn;
+          localStorage.setItem('nom-med-sound', soundOn ? 'on' : 'off');
+          btn.classList.toggle('is-on', soundOn);
+          btn.classList.toggle('is-off', !soundOn);
+          return;
+        }
+        if (btn.dataset.action === 'toggle-counter') {
+          counterOn = !counterOn;
+          localStorage.setItem('nom-med-counter', counterOn ? 'on' : 'off');
+          btn.classList.toggle('is-on', counterOn);
+          btn.classList.toggle('is-off', !counterOn);
+          const tasbih = medModeEl.querySelector('.nom-med-mode__tasbih');
+          const hint = medModeEl.querySelector('.nom-med-mode__tap-hint');
+          if (tasbih) tasbih.classList.toggle('hidden', !counterOn);
+          if (hint) hint.style.display = counterOn ? '' : 'none';
+          return;
+        }
+        if (btn.dataset.target) {
+          const t = btn.dataset.target === 'inf' ? Infinity : parseInt(btn.dataset.target);
+          setTarget(t);
+          return;
+        }
+        return; // Tout autre bouton : pas de tap
       }
+      // Sinon : c'est un tap pour le compteur
+      tasbihTap(e.clientX, e.clientY);
     });
   }
 

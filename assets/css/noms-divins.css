@@ -355,13 +355,39 @@
   inset: 0;
   display: none;
   z-index: 2500;
-  background: linear-gradient(180deg, #1a1f3a 0%, #0a0c1f 100%);
+  background: radial-gradient(ellipse at center, #1a1f3a 0%, #0a0c1f 75%);
   color: #FBF7EF;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 1rem;
   overflow-y: auto;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.nom-med-mode__inner {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 4rem;
+  pointer-events: none; /* Les enfants à pointer-events:auto pour la zone de tap globale */
+}
+.nom-med-mode__inner > * { pointer-events: auto; }
+.nom-med-mode__tap-feedback {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(184, 134, 11, 0.7);
+  pointer-events: none;
+  opacity: 0;
+  animation: tapPulse 0.6s ease-out forwards;
+}
+@keyframes tapPulse {
+  0% { transform: scale(0.4); opacity: 0.9; }
+  100% { transform: scale(1.6); opacity: 0; }
 }
 .nom-med-mode.open { display: flex; }
 .nom-med-mode__close {
@@ -412,15 +438,180 @@
   margin-bottom: 1.8rem;
   text-align: center;
 }
+.nom-med-mode__audio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: 1px solid rgba(184, 134, 11, 0.35);
+  border-radius: 50%;
+  color: #d4a04b;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: all 0.25s ease;
+}
+.nom-med-mode__audio:hover {
+  background: rgba(184, 134, 11, 0.15);
+  border-color: var(--gold);
+  color: #fff;
+}
+.nom-med-mode__audio.is-playing {
+  background: rgba(184, 134, 11, 0.25);
+  border-color: var(--gold);
+}
+
 .nom-med-mode__sens {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
   color: #FBF7EF;
-  max-width: 700px;
+  max-width: 640px;
   text-align: center;
-  line-height: 1.65;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.nom-med-mode__meditation {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  color: rgba(251, 247, 239, 0.78);
+  max-width: 640px;
+  text-align: center;
+  line-height: 1.85;
   margin-bottom: 2.5rem;
+  padding: 0 1rem;
+}
+.nom-med-mode__meditation em {
+  color: var(--gold);
+  font-style: italic;
+}
+
+/* === Chapelet (tasbīḥ) === */
+.nom-med-mode__tasbih {
+  position: relative;
+  width: clamp(220px, 50vw, 320px);
+  height: clamp(220px, 50vw, 320px);
+  margin: 1.5rem 0 1.8rem;
+}
+.nom-med-mode__tasbih.hidden { display: none; }
+.tasbih-bead {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(184, 134, 11, 0.18);
+  border: 1px solid rgba(184, 134, 11, 0.25);
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+}
+.tasbih-bead.filled {
+  background: var(--gold);
+  border-color: var(--gold);
+  box-shadow: 0 0 8px rgba(184, 134, 11, 0.6);
+}
+.tasbih-bead.last {
+  transform: scale(1.4);
+  box-shadow: 0 0 16px rgba(212, 160, 75, 0.9);
+}
+.tasbih-counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+.tasbih-counter__num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  color: var(--gold);
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+.tasbih-counter__num.beat {
+  transform: scale(1.08);
+}
+.tasbih-counter__target {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: rgba(251, 247, 239, 0.45);
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+}
+
+.nom-med-mode__tap-hint {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: rgba(251, 247, 239, 0.4);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Choix de la cible */
+.nom-med-mode__targets {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.nom-med-mode__target {
+  background: transparent;
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  color: rgba(251, 247, 239, 0.65);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.nom-med-mode__target:hover {
+  border-color: var(--gold);
+  color: #fff;
+}
+.nom-med-mode__target.active {
+  background: rgba(184, 134, 11, 0.2);
+  border-color: var(--gold);
+  color: #fff;
+}
+
+/* Toggles bas de page */
+.nom-med-mode__toggles {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+.nom-med-mode__toggle {
+  background: transparent;
+  border: 1px solid rgba(184, 134, 11, 0.25);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  color: rgba(251, 247, 239, 0.55);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.nom-med-mode__toggle.is-on {
+  background: rgba(184, 134, 11, 0.15);
+  border-color: rgba(184, 134, 11, 0.6);
+  color: #d4a04b;
+}
+.nom-med-mode__toggle.is-off {
+  opacity: 0.5;
 }
 .nom-med-mode__timer {
   font-family: 'Cormorant Garamond', serif;

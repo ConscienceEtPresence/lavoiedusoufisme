@@ -212,8 +212,7 @@
                   stroke-dasharray="578"
                   stroke-dashoffset="0"></circle>
         </svg>
-        <div class="med-mode__circle-dot" aria-hidden="true"></div>
-        <div class="med-mode__timer" id="med-timer">05:00</div>
+        <div class="med-mode__circle-glyph" aria-hidden="true">✦</div>
       </div>
 
       <div class="med-mode__controls">
@@ -251,27 +250,11 @@
   const CIRCLE_CIRCUMFERENCE = 578;
 
   function updateTimer() {
-    const m = Math.floor(medRemaining / 60).toString().padStart(2, '0');
-    const s = (medRemaining % 60).toString().padStart(2, '0');
-    const el = document.getElementById('med-timer');
-    if (el) el.textContent = `${m}:${s}`;
-    // Cercle de progression : se vide de droite à gauche
+    // Cercle de progression : se vide doucement
     const progress = medDuration > 0 ? medRemaining / medDuration : 0;
     const offset = CIRCLE_CIRCUMFERENCE * (1 - progress);
     const circle = document.getElementById('med-circle-progress');
     if (circle) circle.style.strokeDashoffset = offset;
-    // Point qui tourne sur le contour
-    const dot = medMode.querySelector('.med-mode__circle-dot');
-    if (dot) {
-      const angle = 360 * (1 - progress);
-      dot.style.transform = `translate(-50%, -50%) rotate(${angle}deg) translateY(0)`;
-      // On positionne le dot via une approche plus simple : rotation autour du centre
-      const r = medMode.querySelector('.med-mode__circle').offsetWidth / 2 - 2;
-      const rad = (angle - 90) * Math.PI / 180;
-      const x = Math.cos(rad) * r;
-      const y = Math.sin(rad) * r;
-      dot.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
-    }
   }
 
   function askCustomDuration() {

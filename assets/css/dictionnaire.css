@@ -629,30 +629,21 @@
   stroke: #d4a04b;
   filter: drop-shadow(0 0 16px rgba(212, 160, 75, 0.8));
 }
-.med-mode__timer {
+/* Glyphe contemplatif au centre — respire doucement */
+.med-mode__circle-glyph {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.2rem, 6vw, 3rem);
+  font-size: clamp(2.6rem, 7vw, 3.4rem);
   color: var(--dict-gold);
   z-index: 1;
   line-height: 1;
-  font-variant-numeric: tabular-nums;
+  opacity: 0.55;
+  letter-spacing: 0;
+  text-shadow: 0 0 18px rgba(184, 134, 11, 0.35);
+  animation: med-glyph-breathe 6s ease-in-out infinite;
 }
-/* Indicateur tournant subtil au sommet du cercle quand actif */
-.med-mode__circle-dot {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--dict-gold);
-  box-shadow: 0 0 10px rgba(184, 134, 11, 0.7);
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-.med-mode__circle.running .med-mode__circle-dot {
-  opacity: 1;
+@keyframes med-glyph-breathe {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50%      { opacity: 0.85; transform: scale(1.06); }
 }
 .med-mode__controls {
   display: flex;

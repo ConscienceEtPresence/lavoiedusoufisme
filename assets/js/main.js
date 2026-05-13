@@ -36,9 +36,10 @@ if (seuil && doorsReveal) {
         link.setAttribute('tabindex', '-1');
       }
     });
-    if (labelEl) labelEl.textContent = isOpen ? 'Voici les trois chemins' : 'Entrer';
     if (isOpen) {
-      setTimeout(() => doorsReveal.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 700);
+      // Le seuil disparaît complètement après le clic (on est déjà entré)
+      seuil.style.display = 'none';
+      setTimeout(() => doorsReveal.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 400);
     }
   });
 }

@@ -110,9 +110,14 @@
           <h3>La part du serviteur <span>حَظُّ العَبْد</span></h3>
           <div class="nom-fiche__part"><p>${n.part}</p></div>
         </div>` : ''}
+      <div class="nom-fiche__meditate">
+        <button class="nom-fiche__meditate-btn" data-action="meditate-nom">
+          🕯️ Méditer ce Nom
+        </button>
+      </div>
       <div class="nom-fiche__like">
         <p>Ce Nom vous a touché ?</p>
-        <button data-lyket-type="like"
+        <button data-lyket-type="like-button"
                 data-lyket-id="nom-${String(n.n).padStart(2,'0')}-${n.tr.toLowerCase().replace(/[^a-z]/g,'')}"
                 data-lyket-namespace="lavoiedusoufisme-noms">
           ♥
@@ -142,6 +147,11 @@
 
   modal.addEventListener('click', e => {
     if (e.target.matches('.nom-modal__backdrop, .nom-modal__close')) return closeModal();
+    if (e.target.closest('[data-action="meditate-nom"]')) {
+      const n = DATA.noms[currentIndex];
+      if (n) openNomMeditation(n);
+      return;
+    }
     const nav = e.target.closest('[data-nav]');
     if (!nav) return;
     if (nav.dataset.nav === 'prev') openModal((currentIndex - 1 + DATA.noms.length) % DATA.noms.length);
@@ -150,11 +160,105 @@
   });
 
   document.addEventListener('keydown', e => {
+    if (medModeEl && medModeEl.classList.contains('open')) {
+      if (e.key === 'Escape') closeNomMeditation();
+      return;
+    }
     if (!modal.classList.contains('open')) return;
     if (e.key === 'Escape') closeModal();
     else if (e.key === 'ArrowLeft') openModal((currentIndex - 1 + DATA.noms.length) % DATA.noms.length);
     else if (e.key === 'ArrowRight') openModal((currentIndex + 1) % DATA.noms.length);
   });
+
+  // ====================================================
+  // Mode méditation plein écran pour un Nom divin
+  // ====================================================
+  const medModeEl = document.getElementById('nom-med-mode');
+  let medTimer = null;
+  let medDuration = 300;
+  let medRemaining = 0;
+
+  function openNomMeditation(n) {
+    if (!medModeEl) return;
+    const theme = DATA.themes[n.theme];
+    medModeEl.innerHTML = `
+      <button class="nom-med-mode__close" aria-label="Quitter">✕</button>
+      <div class="nom-med-mode__num">Nom n°${n.n} · ${theme.label_ar}</div>
+      <div class="nom-med-mode__ar">${n.ar}</div>
+      <div class="nom-med-mode__tr">${n.tr}</div>
+      <div class="nom-med-mode__fr">${n.fr}</div>
+      <div class="nom-med-mode__sens">« ${n.sens_court} »</div>
+      <div class="nom-med-mode__timer" id="nom-med-timer">05:00</div>
+      <div class="nom-med-mode__controls">
+        <button class="nom-med-mode__btn" data-dur="180">3 min</button>
+        <button class="nom-med-mode__btn active" data-dur="300">5 min</button>
+        <button class="nom-med-mode__btn" data-dur="600">10 min</button>
+        <button class="nom-med-mode__btn" data-dur="1200">20 min</button>
+      </div>
+      <button class="nom-med-mode__btn nom-med-mode__btn--start" id="nom-med-start">Commencer</button>
+      <div class="nom-med-mode__notes-label">Une intuition née pendant cette méditation ? (privé, sur votre appareil)</div>
+      <textarea class="nom-med-mode__notes" id="nom-med-notes" placeholder="Notez vos impressions…"></textarea>
+    `;
+    medModeEl.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    medDuration = 300;
+    medRemaining = medDuration;
+    updateMedTimer();
+
+    const noteKey = `nom-med-note-${n.n}`;
+    const saved = localStorage.getItem(noteKey);
+    const notes = medModeEl.querySelector('#nom-med-notes');
+    if (saved) notes.value = saved;
+    notes.addEventListener('input', () => localStorage.setItem(noteKey, notes.value));
+  }
+
+  function closeNomMeditation() {
+    if (!medModeEl) return;
+    medModeEl.classList.remove('open');
+    document.body.style.overflow = '';
+    if (medTimer) { clearInterval(medTimer); medTimer = null; }
+  }
+
+  function updateMedTimer() {
+    const m = Math.floor(medRemaining / 60).toString().padStart(2, '0');
+    const s = (medRemaining % 60).toString().padStart(2, '0');
+    const el = document.getElementById('nom-med-timer');
+    if (el) el.textContent = `${m}:${s}`;
+  }
+
+  if (medModeEl) {
+    medModeEl.addEventListener('click', e => {
+      if (e.target.matches('.nom-med-mode__close')) return closeNomMeditation();
+      const durBtn = e.target.closest('[data-dur]');
+      if (durBtn) {
+        medModeEl.querySelectorAll('[data-dur]').forEach(b => b.classList.remove('active'));
+        durBtn.classList.add('active');
+        medDuration = parseInt(durBtn.dataset.dur);
+        medRemaining = medDuration;
+        updateMedTimer();
+        return;
+      }
+      if (e.target.matches('#nom-med-start')) {
+        const btn = e.target;
+        if (medTimer) {
+          clearInterval(medTimer); medTimer = null;
+          btn.textContent = 'Commencer';
+          return;
+        }
+        btn.textContent = 'Pause';
+        medTimer = setInterval(() => {
+          medRemaining--;
+          updateMedTimer();
+          if (medRemaining <= 0) {
+            clearInterval(medTimer); medTimer = null;
+            btn.textContent = 'Terminé ✓';
+            medModeEl.querySelector('.nom-med-mode__notes-label').classList.add('visible');
+            medModeEl.querySelector('.nom-med-mode__notes').classList.add('visible');
+          }
+        }, 1000);
+      }
+    });
+  }
 
   // Inject source notice if placeholder present
   const srcEl = document.getElementById('noms-source');

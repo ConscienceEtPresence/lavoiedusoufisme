@@ -63,9 +63,83 @@
           <cite class="quote-cite">Définition soufie classique</cite>
         </blockquote>
 
-        <a class="seuil" href="pages/portail.html" aria-label="Entrer dans la voie">
+        <!-- ============================================
+             LE SEUIL — invitation à entrer
+             ============================================ -->
+        <button class="seuil" id="seuil-button" aria-label="Entrer dans la voie" aria-expanded="false">
           <span class="seuil__label">Entrer</span>
-        </a>
+        </button>
+
+        <!-- ============================================
+             LES TROIS PORTES — révélées au clic
+             ============================================ -->
+        <div class="doors-reveal" id="doors-reveal" aria-hidden="true">
+          <p class="doors-reveal__intro">
+            <em>Trois chemins, une même voie.</em><br>
+            <span class="doors-reveal__hint">Choisissez la porte par laquelle commencer.</span>
+          </p>
+
+          <div class="doors">
+
+            <a href="pages/decouvrir.html" class="door">
+              <div class="door__ar" lang="ar" dir="rtl">مَعْرِفَة</div>
+              <div class="door__tr">maʿrifah</div>
+              <div class="door__separator"></div>
+              <h3 class="door__title">Découvrir</h3>
+              <p class="door__desc">Entrer par le seuil — comprendre la voie, son histoire, ses terres.</p>
+              <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+                <path d="M14 42 L14 22 Q14 10 24 10 Q34 10 34 22 L34 42" />
+                <line x1="10" y1="42" x2="38" y2="42" />
+                <circle cx="24" cy="24" r="2.5" />
+              </svg>
+            </a>
+
+            <a href="pages/cheminer.html" class="door">
+              <div class="door__ar" lang="ar" dir="rtl">سُلُوك</div>
+              <div class="door__tr">sulūk</div>
+              <div class="door__separator"></div>
+              <h3 class="door__title">Cheminer</h3>
+              <p class="door__desc">Le cœur, les Noms, l'amour, le souvenir — la pratique vive.</p>
+              <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+                <path d="M24 24 m-2 0 a2 2 0 1 1 4 0 a4 4 0 1 1 -8 0 a6 6 0 1 1 12 0 a8 8 0 1 1 -16 0 a10 10 0 1 1 20 0 a12 12 0 1 1 -22 0" />
+              </svg>
+            </a>
+
+            <a href="pages/rencontrer.html" class="door">
+              <div class="door__ar" lang="ar" dir="rtl">لِقَاء</div>
+              <div class="door__tr">liqāʾ</div>
+              <div class="door__separator"></div>
+              <h3 class="door__title">Rencontrer</h3>
+              <p class="door__desc">Les maîtres, les textes, les résonances entre traditions.</p>
+              <svg class="door__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+                <circle cx="18" cy="24" r="11" />
+                <circle cx="30" cy="24" r="11" />
+                <circle cx="24" cy="24" r="2" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+
+          </div>
+
+          <!-- ====== Pour méditer — section distincte ====== -->
+          <div class="meditate-section">
+            <div class="meditate-divider" aria-hidden="true">✦ ✦ ✦</div>
+            <p class="meditate-intro"><em>Pour méditer</em></p>
+
+            <div class="meditate-cards">
+              <a href="pages/noms-divins/index.html" class="meditate-card">
+                <div class="meditate-card__ar" lang="ar" dir="rtl">الأَسْمَاءُ الحُسْنَى</div>
+                <h3 class="meditate-card__title">Les 99 Noms divins</h3>
+                <p class="meditate-card__desc">Méditer Ses Noms — un par un, au hasard, ou tous ensemble.</p>
+              </a>
+
+              <a href="pages/dictionnaire/index.html" class="meditate-card">
+                <div class="meditate-card__ar" lang="ar" dir="rtl">المُعْجَم</div>
+                <h3 class="meditate-card__title">Mots à méditer</h3>
+                <p class="meditate-card__desc">Les termes du soufisme — pour comprendre, pour ralentir.</p>
+              </a>
+            </div>
+          </div>
+        </div>
 
         <p class="hero__library">
           <em>Une bibliothèque vivante qui s'enrichit au fil des saisons —<br>

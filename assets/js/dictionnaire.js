@@ -203,12 +203,25 @@
       <div class="med-mode__ar">${entry.ar}</div>
       <div class="med-mode__tr">${entry.tr} — ${entry.fr}</div>
       <div class="med-mode__question">${entry.meditation || ''}</div>
-      <div class="med-mode__timer" id="med-timer">05:00</div>
+
+      <div class="med-mode__circle" id="med-circle">
+        <svg viewBox="0 0 200 200" aria-hidden="true">
+          <circle class="med-mode__circle-bg" cx="100" cy="100" r="92"></circle>
+          <circle class="med-mode__circle-progress" id="med-circle-progress"
+                  cx="100" cy="100" r="92"
+                  stroke-dasharray="578"
+                  stroke-dashoffset="0"></circle>
+        </svg>
+        <div class="med-mode__circle-dot" aria-hidden="true"></div>
+        <div class="med-mode__timer" id="med-timer">05:00</div>
+      </div>
+
       <div class="med-mode__controls">
         <button class="med-mode__btn" data-dur="180">3 min</button>
         <button class="med-mode__btn active" data-dur="300">5 min</button>
         <button class="med-mode__btn" data-dur="600">10 min</button>
         <button class="med-mode__btn" data-dur="1200">20 min</button>
+        <button class="med-mode__btn" data-action="custom-duration">⋯ libre</button>
       </div>
       <button class="med-mode__btn med-mode__btn--start" id="med-start">Commencer</button>
       <div class="med-mode__notes-label">Une intuition née pendant cette méditation ? (privé, sur ton appareil)</div>
@@ -234,39 +247,99 @@
     if (medTimer) { clearInterval(medTimer); medTimer = null; }
   }
 
+  // Circonférence du cercle SVG (r=92) : 2 * π * 92 ≈ 578
+  const CIRCLE_CIRCUMFERENCE = 578;
+
   function updateTimer() {
     const m = Math.floor(medRemaining / 60).toString().padStart(2, '0');
     const s = (medRemaining % 60).toString().padStart(2, '0');
     const el = document.getElementById('med-timer');
     if (el) el.textContent = `${m}:${s}`;
+    // Cercle de progression : se vide de droite à gauche
+    const progress = medDuration > 0 ? medRemaining / medDuration : 0;
+    const offset = CIRCLE_CIRCUMFERENCE * (1 - progress);
+    const circle = document.getElementById('med-circle-progress');
+    if (circle) circle.style.strokeDashoffset = offset;
+    // Point qui tourne sur le contour
+    const dot = medMode.querySelector('.med-mode__circle-dot');
+    if (dot) {
+      const angle = 360 * (1 - progress);
+      dot.style.transform = `translate(-50%, -50%) rotate(${angle}deg) translateY(0)`;
+      // On positionne le dot via une approche plus simple : rotation autour du centre
+      const r = medMode.querySelector('.med-mode__circle').offsetWidth / 2 - 2;
+      const rad = (angle - 90) * Math.PI / 180;
+      const x = Math.cos(rad) * r;
+      const y = Math.sin(rad) * r;
+      dot.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+    }
+  }
+
+  function askCustomDuration() {
+    const raw = prompt('Durée libre — combien de minutes ? (entier entre 1 et 120)', '15');
+    if (!raw) return null;
+    const n = parseInt(raw.replace(',', '.'));
+    if (isNaN(n) || n < 1 || n > 120) {
+      alert('Saisis un nombre entre 1 et 120.');
+      return null;
+    }
+    return n * 60;
   }
 
   medMode.addEventListener('click', e => {
     if (e.target.matches('.med-mode__close')) return closeMeditation();
-    const durBtn = e.target.closest('[data-dur]');
-    if (durBtn) {
+
+    if (e.target.matches('[data-action="custom-duration"]')) {
+      const sec = askCustomDuration();
+      if (sec === null) return;
       medMode.querySelectorAll('[data-dur]').forEach(b => b.classList.remove('active'));
-      durBtn.classList.add('active');
-      medDuration = parseInt(durBtn.dataset.dur);
+      e.target.classList.add('active');
+      const mins = Math.round(sec / 60);
+      e.target.textContent = `⋯ ${mins} min`;
+      medDuration = sec;
       medRemaining = medDuration;
+      if (medTimer) { clearInterval(medTimer); medTimer = null; }
+      const circle = medMode.querySelector('.med-mode__circle');
+      if (circle) { circle.classList.remove('running', 'done'); }
+      const startBtn = medMode.querySelector('#med-start');
+      if (startBtn) startBtn.textContent = 'Commencer';
       updateTimer();
       return;
     }
+
+    const durBtn = e.target.closest('[data-dur]');
+    if (durBtn) {
+      medMode.querySelectorAll('[data-dur], [data-action="custom-duration"]').forEach(b => b.classList.remove('active'));
+      durBtn.classList.add('active');
+      medDuration = parseInt(durBtn.dataset.dur);
+      medRemaining = medDuration;
+      if (medTimer) { clearInterval(medTimer); medTimer = null; }
+      const circle = medMode.querySelector('.med-mode__circle');
+      if (circle) { circle.classList.remove('running', 'done'); }
+      const startBtn = medMode.querySelector('#med-start');
+      if (startBtn) startBtn.textContent = 'Commencer';
+      updateTimer();
+      return;
+    }
+
     if (e.target.matches('#med-start')) {
       const startBtn = e.target;
+      const circle = medMode.querySelector('.med-mode__circle');
       if (medTimer) {
         clearInterval(medTimer);
         medTimer = null;
-        startBtn.textContent = 'Commencer';
+        startBtn.textContent = 'Reprendre';
+        if (circle) circle.classList.remove('running');
         return;
       }
       startBtn.textContent = 'Pause';
+      if (circle) { circle.classList.add('running'); circle.classList.remove('done'); }
       medTimer = setInterval(() => {
         medRemaining--;
         updateTimer();
         if (medRemaining <= 0) {
           clearInterval(medTimer); medTimer = null;
           startBtn.textContent = 'Terminé ✓';
+          if (circle) { circle.classList.remove('running'); circle.classList.add('done'); }
           medMode.querySelector('.med-mode__notes-label').classList.add('visible');
           medMode.querySelector('.med-mode__notes').classList.add('visible');
         }

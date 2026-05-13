@@ -4,7 +4,7 @@
     "sous_titre": "Termes techniques de la voie — pour comprendre, pour méditer",
     "source_principale": "Rafīq al-ʿAjam, Mawsūʿat muṣṭalaḥāt at-taṣawwuf al-islāmī (Beyrouth, Maktabat Lubnān Nāshirūn, 1999, 1204 p.)",
     "version": "1.0",
-    "termes_totaux": 101,
+    "termes_totaux": 151,
     "termes_prevus": 1500
   },
   "categories": {
@@ -62,6 +62,11 @@
       "label": "Bénédiction",
       "fr": "Le don gratuit",
       "couleur": "vert"
+    },
+    "cosmologie": {
+      "label": "Cosmologie & eschatologie",
+      "fr": "Les mondes, leur structure, leur fin",
+      "couleur": "indigo-deep"
     }
   },
   "entries": [
@@ -4043,6 +4048,1850 @@
         "ghafla"
       ],
       "lectures_site": []
+    },
+    {
+      "id": "arsh",
+      "ar": "العَرْش",
+      "tr": "al-ʿarsh",
+      "tr_simple": "arsh",
+      "fr": "Le Trône divin",
+      "racine": "ع ر ش",
+      "racine_sens": "élever, dresser un toit, un trône",
+      "category": "cosmologie",
+      "tags": [
+        "Trône",
+        "cosmologie",
+        "symbole"
+      ],
+      "definition_concise": "Le <em>Trône</em> divin — la plus haute des réalités créées, au-dessus de laquelle siège la Présence. Pour les soufis, il n'est ni un objet ni un lieu, mais le symbole de la souveraineté absolue de Dieu sur les mondes.",
+      "sens_profond": "Le Coran évoque souvent le ʿarsh : <em>« Le Tout-Miséricordieux S'est établi sur le Trône »</em> (20, 5). Les littéralistes l'imaginent comme un siège cosmique ; les théologiens stricts y voient une expression métaphorique de la souveraineté ; les soufis (Ibn ʿArabī notamment) en font une réalité cosmologique précise : le ʿarsh est la limite extérieure du monde créé, le Trône qui contient tous les mondes. Plus profondément encore, le hadith Qudsī dit : <em>« Le cœur du croyant est le Trône du Miséricordieux. »</em> Ce qui est au-dessus des cieux trouve donc son écho dans la poitrine humaine — la cosmologie est intériorisée. Cette correspondance entre macrocosme et microcosme est la clé de toute la métaphysique soufie : ce qu'on cherche au-dehors est déjà au-dedans.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 20, 5",
+          "texte": "Le Tout-Miséricordieux S'est établi sur le Trône."
+        },
+        {
+          "auteur": "Hadith Qudsī",
+          "texte": "Le cœur du croyant est le Trône du Miséricordieux."
+        }
+      ],
+      "meditation": "Si mon cœur est destiné à être Son Trône — qu'est-ce qui l'encombre, à l'instant ?",
+      "resonance": [
+        "kursi",
+        "qalb",
+        "alam",
+        "tajalli"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "kursi",
+      "ar": "الكُرْسِيّ",
+      "tr": "al-kursī",
+      "tr_simple": "kursi",
+      "fr": "L'Escabeau divin",
+      "racine": "ك ر س",
+      "racine_sens": "siège, base — d'où kursī, l'escabeau ou trône intermédiaire",
+      "category": "cosmologie",
+      "tags": [
+        "Escabeau",
+        "cosmologie",
+        "verset"
+      ],
+      "definition_concise": "L'<em>Escabeau</em> divin — sous le ʿarsh dans la cosmologie soufie. Mentionné dans le célèbre <em>Āyat al-Kursī</em> (Coran 2, 255), le verset le plus puissant de la prière soufie quotidienne.",
+      "sens_profond": "Le verset 2, 255 (<em>« Son Escabeau s'étend sur les cieux et la terre »</em>) est l'un des plus médités de l'Islam. Pour les soufis, le kursī désigne un niveau cosmologique précis : il est <em>contenu</em> par le ʿarsh, mais il <em>contient</em> les cieux et la terre. Cosmologie à plusieurs étages : Dieu → ʿarsh → kursī → mondes sensibles. Sur le plan de la connaissance, certains commentateurs (al-Tabarī) ont identifié le kursī à la <em>science</em> divine, qui contient tout sans être contenue. La récitation du <em>Āyat al-Kursī</em> est l'une des pratiques quotidiennes les plus universelles du monde musulman — particulièrement le soir avant le sommeil, comme protection contre les ténèbres invisibles.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 2, 255",
+          "texte": "Son Escabeau s'étend sur les cieux et la terre, et leur garde ne Lui coûte aucune peine."
+        },
+        {
+          "auteur": "Hadith",
+          "texte": "Quiconque récite le Āyat al-Kursī avant de dormir, Dieu lui envoie un gardien jusqu'au matin."
+        }
+      ],
+      "meditation": "Si Son Escabeau couvre les cieux — quelle bordure de moi-même n'est pas couverte ?",
+      "resonance": [
+        "arsh",
+        "ilm",
+        "alam"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "qalam",
+      "ar": "القَلَم",
+      "tr": "al-qalam",
+      "tr_simple": "qalam",
+      "fr": "La Plume cosmique",
+      "racine": "ق ل م",
+      "racine_sens": "tailler — d'où qalam, le calame, l'instrument du tracé",
+      "category": "cosmologie",
+      "tags": [
+        "Plume",
+        "cosmologie",
+        "destin"
+      ],
+      "definition_concise": "La <em>Plume</em> cosmique — première création de Dieu selon le hadith : <em>« La première chose que Dieu créa fut la Plume. »</em> C'est par elle que sont tracés tous les destins sur la <em>Tablette préservée</em>.",
+      "sens_profond": "Le hadith dit : <em>« La première chose que Dieu créa fut la Plume. Il lui dit : Écris. Elle dit : Qu'écrirai-je ? Il dit : Écris ce qui est, ce qui sera, jusqu'au Jour de la Résurrection. »</em> La Plume est donc l'instrument cosmique du décret divin. Elle écrit sur la Tablette préservée (<em>al-lawḥ al-maḥfūẓ</em>) tout ce qui arrive. Pour les soufis, cette Plume est aussi le <em>Premier Intellect</em> (<em>al-ʿaql al-awwal</em>) — la première hypostase, la première lumière émanée de la Source. Elle est aussi le <em>Logos</em> islamique : la Parole créatrice. Sa puissance est telle qu'Ibn ʿArabī l'appelle <em>nūr Muḥammad</em> (la Lumière muhammadienne) — la même qui se manifeste plus tard en chair dans le Prophète. Tout ce qui arrive a déjà été écrit ; ce que tu vis maintenant est lu, non improvisé.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "La première chose que Dieu créa fut la Plume. Il lui dit : Écris. Elle dit : Qu'écrirai-je ? Il dit : Écris ce qui est, ce qui sera, jusqu'au Jour."
+        },
+        {
+          "auteur": "Coran 68, 1",
+          "texte": "Nūn. Par la Plume et ce qu'ils écrivent !"
+        }
+      ],
+      "meditation": "Si tout ce qui m'arrive a été écrit — qu'est-ce qu'il me reste à faire ?",
+      "resonance": [
+        "lawh",
+        "qadar",
+        "alam"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "lawh",
+      "ar": "اللَّوْحُ المَحْفُوظ",
+      "tr": "al-lawḥ al-maḥfūẓ",
+      "tr_simple": "lawh",
+      "fr": "La Tablette préservée",
+      "racine": "ل و ح",
+      "racine_sens": "planche, tablette, surface plane",
+      "category": "cosmologie",
+      "tags": [
+        "Tablette",
+        "destin",
+        "préservation"
+      ],
+      "definition_concise": "La <em>Tablette préservée</em> — la <em>matrice</em> cosmique sur laquelle tout ce qui arrive est inscrit. Évoquée au Coran 85, 22 : <em>« C'est un Coran glorieux sur une Tablette préservée. »</em>",
+      "sens_profond": "Le couple Plume / Tablette est l'une des images les plus profondes de la cosmologie soufie. La Plume écrit, la Tablette reçoit l'écriture. Tout ce qui sera dans le temps — chaque souffle, chaque rencontre, chaque feuille qui tombe — est déjà inscrit là, hors du temps, dans cette mémoire éternelle de Dieu. La Tablette ne se trompe pas, ne s'efface pas — elle est <em>maḥfūẓa</em>, gardée. Mais attention : connaître l'existence de la Tablette ne dispense pas du libre arbitre ; les soufis tiennent le paradoxe avec finesse : <em>« Tout est écrit, et tu choisis. »</em> L'écriture précède le temps ; ton choix se déroule dans le temps. Les deux sont vrais. Pour Ibn ʿArabī, la Tablette est l'<em>Âme universelle</em>, qui reçoit les déterminations de l'Intellect-Plume. Ce sont les deux principes complémentaires de toute la création.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 85, 21-22",
+          "texte": "C'est un Coran glorieux, sur une Tablette préservée."
+        },
+        {
+          "auteur": "Hadith",
+          "texte": "L'encre des savants est plus précieuse que le sang des martyrs — car ils déchiffrent ce qui est sur la Tablette."
+        }
+      ],
+      "meditation": "Si tout est déjà inscrit sur la Tablette — quel choix m'est-il néanmoins demandé ce matin ?",
+      "resonance": [
+        "qalam",
+        "qadar",
+        "ghayb",
+        "ilm"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "barzakh",
+      "ar": "البَرْزَخ",
+      "tr": "al-barzakh",
+      "tr_simple": "barzakh",
+      "fr": "L'entre-deux, le monde intermédiaire",
+      "racine": "ب ر ز خ",
+      "racine_sens": "barrière, isthme, ce qui sépare deux choses tout en les reliant",
+      "category": "cosmologie",
+      "tags": [
+        "intermédiaire",
+        "monde imaginal",
+        "passage"
+      ],
+      "definition_concise": "L'<em>isthme</em> — réalité intermédiaire qui sépare et relie deux ordres. Coraniquement, l'état des âmes entre la mort et la résurrection. Métaphysiquement, l'image elle-même : entre l'esprit pur et le corps, le rêve, l'imaginal, le symbole.",
+      "sens_profond": "Le Coran évoque plusieurs barzakhs : entre les deux mers (25, 53), et entre la mort et la résurrection (23, 100 — « il y a derrière eux un barzakh jusqu'au jour où ils seront ressuscités »). Mais c'est Ibn ʿArabī qui a élevé ce mot au rang de concept métaphysique central : le barzakh est <em>l'ordre du milieu</em>, ni pur esprit ni pure matière, où se forment les images, les songes véridiques, les visions, les manifestations subtiles. Le monde imaginal (<em>ʿālam al-mithāl</em>) est essentiellement un grand barzakh. Henry Corbin a fait connaître cette dimension à l'Occident — il rend par <em>mundus imaginalis</em>. C'est dans le barzakh que se déroulent les visions des prophètes, les rêves véridiques, les apparitions des saints après leur mort. Le barzakh n'est pas une <em>fiction</em> ; il est une <em>réalité</em> — mais d'un autre ordre que les objets sensibles. Pour qui sait y entrer, c'est un monde aussi vaste que celui des étoiles.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 23, 100",
+          "texte": "Et il y a derrière eux un barzakh jusqu'au Jour où ils seront ressuscités."
+        },
+        {
+          "auteur": "Ibn ʿArabī",
+          "texte": "Le barzakh est ni l'un ni l'autre — et c'est en cela qu'il est le plus réel : il porte les deux."
+        }
+      ],
+      "meditation": "Y a-t-il en moi un <em>entre-deux</em> qui ne soit ni mon corps ni ma pensée pure ?",
+      "resonance": [
+        "alam",
+        "ghayb",
+        "rooyaa",
+        "akhira"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "alam-mithal",
+      "ar": "عَالَمُ المِثَال",
+      "tr": "ʿālam al-mithāl",
+      "tr_simple": "alam mithal",
+      "fr": "Le monde imaginal",
+      "racine": "ع ل م + م ث ل",
+      "racine_sens": "ʿālam (monde) + mithāl (image, similitude)",
+      "category": "cosmologie",
+      "tags": [
+        "monde imaginal",
+        "imagination active",
+        "visions"
+      ],
+      "definition_concise": "Le <em>monde imaginal</em> — niveau ontologique propre, intermédiaire entre le sensible et le purement intelligible. C'est là que résident les anges, les âmes après la mort, les visions, les figures symboliques.",
+      "sens_profond": "À la différence de l'imaginaire (qui est subjectif, fantaisiste, individuel), l'<em>imaginal</em> est objectif : un monde habité par des réalités propres, qu'on ne fabrique pas mais qu'on <em>visite</em>. Henry Corbin a forgé ce terme en français (à partir d'Ibn ʿArabī et Suhrawardī) pour distinguer cet ordre du simple imaginaire : c'est ce qui rend les songes véridiques <em>vrais</em>, les visions des prophètes <em>réelles</em>, les apparitions des saints après leur mort <em>existantes</em>. Le monde imaginal a sa géographie, ses lois, ses villes (Hūrqalyā, la cité d'émeraude des shiites), ses habitants. Le saint accompli peut y entrer consciemment. Le rêveur ordinaire y passe sans s'en rendre compte. Comprendre l'existence de ce monde change toute lecture du Coran, des récits prophétiques, des expériences spirituelles — beaucoup de ce qui semble incompréhensible (Mohammad voyage de nuit à Jérusalem puis aux cieux, Joseph voit en rêve onze étoiles se prosterner) prend sens si l'on admet ce niveau de réalité.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Ibn ʿArabī",
+          "texte": "L'imagination est plus vaste que le monde sensible — elle contient ce que les sens ne sauraient atteindre."
+        },
+        {
+          "auteur": "Henry Corbin",
+          "texte": "Ce monde n'est pas moins réel que celui des choses — il est même <em>plus</em> réel, parce qu'il est plus essentiel."
+        }
+      ],
+      "meditation": "Mes rêves véridiques — où se déroulent-ils, si ce n'est pas dans ma seule tête ?",
+      "resonance": [
+        "barzakh",
+        "rooyaa",
+        "ghayb",
+        "kashf",
+        "alam"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "akhira",
+      "ar": "الآخِرَة",
+      "tr": "al-ākhira",
+      "tr_simple": "akhira",
+      "fr": "L'au-delà",
+      "racine": "أ خ ر",
+      "racine_sens": "être en arrière, en dernier — l'âkhira est la <em>dernière</em>, opposée à dunyā, la <em>plus proche</em>",
+      "category": "cosmologie",
+      "tags": [
+        "au-delà",
+        "vie future",
+        "but"
+      ],
+      "definition_concise": "L'<em>au-delà</em> — la vie future, opposée à <em>dunyā</em> (ce monde-ci). Pour les soufis, l'ākhira commence en réalité dès maintenant : ce que tu sèmes ici, tu le récoltes là — et le saint la <em>goûte</em> déjà.",
+      "sens_profond": "Le couple dunyā / ākhira structure toute l'éthique musulmane. La vie d'ici est <em>passagère</em>, la vie là-bas est <em>éternelle</em>. Mais les soufis nuancent : l'ākhira n'est pas <em>après</em> la dunyā au sens temporel — c'est <em>dessous</em>, plus réelle, plus durable. Le hadith dit : <em>« Les gens sont endormis ; quand ils meurent, ils s'éveillent. »</em> L'ākhira est cet éveil. Pour le saint qui a réalisé la fanāʾ, l'ākhira a déjà commencé : il vit dans une présence qui ne dépend plus de la durée matérielle. Sa joie ne sera pas <em>changée</em> à la mort — elle sera <em>confirmée</em>. Inversement, celui qui a vécu dans la ghafla connaîtra à la mort le <em>réveil</em> brutal : il verra ce qu'il a réellement été, et ce qu'il a réellement fait. La connaissance de l'ākhira transforme l'éthique : on choisit ses actes en fonction de ce qu'ils <em>plantent</em>, non de l'effet immédiat.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 87, 17",
+          "texte": "Et l'au-delà est meilleur et plus durable."
+        },
+        {
+          "auteur": "Hadith",
+          "texte": "Sois en ce monde comme un étranger ou un voyageur."
+        }
+      ],
+      "meditation": "Si l'ākhira commence dès maintenant — quelle graine ai-je plantée aujourd'hui ?",
+      "resonance": [
+        "dunya",
+        "barzakh",
+        "jannah",
+        "jahannam",
+        "tawakkul"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "jannah",
+      "ar": "الجَنَّة",
+      "tr": "al-jannah",
+      "tr_simple": "jannah",
+      "fr": "Le Paradis",
+      "racine": "ج ن ن",
+      "racine_sens": "couvrir, cacher — d'où jannah, le jardin clos, et janīn, l'enfant à naître caché",
+      "category": "cosmologie",
+      "tags": [
+        "Paradis",
+        "jardin",
+        "récompense"
+      ],
+      "definition_concise": "Le <em>Jardin</em> — destination des âmes agréées. Évoqué dans le Coran sous des images sensorielles (fleuves, fruits, ombre, compagnes pures) que les soufis lisent comme des symboles d'états spirituels.",
+      "sens_profond": "Le mot jannah signifie littéralement <em>jardin</em>, mais avec l'idée de <em>couvert</em>, de protégé. Le Paradis est un jardin clos, où l'on est à l'abri du dehors. Les descriptions coraniques sont vives : fleuves d'eau, de lait, de miel et de vin (47, 15), arbres dont les fruits ne s'épuisent jamais, compagnes pures. Mais les soufis insistent : ces images sont à lire au sens littéral <em>et</em> au sens symbolique. Au sens symbolique, le Paradis est la <em>contemplation</em> de Dieu — la vraie félicité, dont les jardins sensibles ne sont qu'un reflet. Le Coran le confirme : <em>« Pour ceux qui auront fait le bien, le plus beau, et plus encore (ziyāda) »</em> (10, 26) — ce <em>plus</em>, selon le hadith, est la vision de la Face divine. Au sens littéral, le Paradis est un lieu réel — mais d'un autre ordre, dans le monde imaginal corporifié, où les corps eux-mêmes sont subtils, lumineux, immortels. Les deux lectures vont ensemble : le saint qui aime Dieu pour Lui-même reçoit en plus tous les délices ; celui qui veut seulement les délices se ferme à la Présence qui les fonde.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith Qudsī",
+          "texte": "J'ai préparé pour Mes serviteurs justes ce que nul œil n'a vu, ce que nulle oreille n'a entendu, ce que nul cœur d'homme n'a conçu."
+        },
+        {
+          "auteur": "Rābiʿa al-ʿAdawiyya",
+          "texte": "Mon Dieu, si je T'adore par espoir du Paradis, exclus-m'en — je ne veux que Toi."
+        }
+      ],
+      "meditation": "Si la plus haute félicité du Paradis est de Le voir — qu'est-ce qui en moi désire déjà cette vision ?",
+      "resonance": [
+        "akhira",
+        "rida",
+        "wasl",
+        "fanaa"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "jahannam",
+      "ar": "جَهَنَّم",
+      "tr": "jahannam",
+      "tr_simple": "jahannam",
+      "fr": "La Géhenne",
+      "racine": "non-arabe, mot probablement emprunté à l'hébreu (ge-hinnom)",
+      "racine_sens": "vallée de Hinnom — lieu près de Jérusalem où l'on brûlait les ordures",
+      "category": "cosmologie",
+      "tags": [
+        "enfer",
+        "séparation",
+        "purification"
+      ],
+      "definition_concise": "L'<em>Enfer</em> — destination des âmes qui ont rejeté la lumière. Pour les soufis, plus que le feu littéral : la conséquence de la <em>séparation</em> volontaire d'avec la Source — la torture intérieure de l'âme qui se voit privée du Bien-aimé.",
+      "sens_profond": "Le Coran décrit Jahannam avec des images terribles : feu, métal fondu, fruits amers, vêtements de feu. Les littéralistes prennent au sens propre ; les soufis ouvrent à un autre niveau. Pour Dante (qui a beaucoup lu les soufis), <em>« l'enfer, c'est l'absence de Dieu »</em> — et c'est cela, au fond, que disent aussi les soufis. Le feu n'est que l'expression sensible d'une réalité plus profonde : la <em>séparation</em> volontaire d'avec ce qui est le Bien suprême. L'âme qui a refusé d'aimer Dieu se trouve, à la mort, devant elle-même comme dans un miroir — et voit qu'elle n'a aimé que des ombres, qui s'évanouissent. Ce vide est l'enfer. Plus profondément encore, certains maîtres parlent d'une miséricorde finale qui purifierait toute âme : <em>« Ma miséricorde l'emporte sur Ma colère. »</em> La doctrine de la fin éternelle ou non du châtiment a fait débat ; les soufis sobres restent prudents — Dieu sait mieux. Mais l'expérience spirituelle est claire : tout éloignement d'avec Dieu, dès cette vie, est déjà un avant-goût.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith Qudsī",
+          "texte": "Ma miséricorde l'emporte sur Ma colère."
+        },
+        {
+          "auteur": "Ibn ʿArabī",
+          "texte": "Le feu de l'enfer n'est que la lumière de Dieu vue à travers le voile de la séparation."
+        }
+      ],
+      "meditation": "Si l'enfer est la séparation — où, dans ma vie, ai-je déjà connu un avant-goût de cela ?",
+      "resonance": [
+        "akhira",
+        "hijab",
+        "ghafla",
+        "rahma"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "mizan",
+      "ar": "المِيزَان",
+      "tr": "al-mīzān",
+      "tr_simple": "mizan",
+      "fr": "La Balance",
+      "racine": "و ز ن",
+      "racine_sens": "peser, équilibrer",
+      "category": "cosmologie",
+      "tags": [
+        "Balance",
+        "Jugement",
+        "justice"
+      ],
+      "definition_concise": "La <em>Balance</em> divine du Jugement — où seront pesés les actes des hommes. Pour les soufis, plus qu'un instrument physique, c'est le symbole de la <em>justice</em> divine qui ne laisse rien échapper.",
+      "sens_profond": "Le Coran dit : <em>« Nous placerons les balances justes pour le Jour de la Résurrection ; nulle âme ne sera lésée en rien — fût-ce du poids d'un grain de moutarde, Nous le ferons venir »</em> (21, 47). Cette image saisit tout le monde : rien de ce que tu as fait, en bien ou en mal, ne se perd. Tout est <em>compté</em> avec une précision absolue. Les soufis ajoutent : <em>« Faites-vous des comptes avant qu'on ne vous en demande »</em> (ʿUmar). La muḥāsaba (examen de soi) est l'exercice qui anticipe le mīzān. Mais aussi : le mīzān divin n'est pas le calcul humain. Une bonne action peut peser <em>infiniment</em> si elle a été faite dans la sincérité parfaite ; mille actes faits avec ostentation peuvent peser <em>zéro</em>. La balance pèse ce qui est en arrière des actes, non leur volume. Cette intuition libère du quantitativisme religieux — Dieu ne compte pas le nombre de prosternations, Il compte le cœur qui s'incline.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 21, 47",
+          "texte": "Nous placerons les balances justes pour le Jour de la Résurrection ; nulle âme ne sera lésée."
+        },
+        {
+          "auteur": "Hadith",
+          "texte": "Combien de prières ne pèsent rien — combien de fragments de prière pèsent tout."
+        }
+      ],
+      "meditation": "Si tous mes actes étaient pesés, à l'instant, lequel pèserait le plus lourd — et lequel le moins ?",
+      "resonance": [
+        "akhira",
+        "muhasaba",
+        "ikhlas",
+        "niyya"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "sirat",
+      "ar": "الصِّرَاط",
+      "tr": "aṣ-ṣirāṭ",
+      "tr_simple": "sirat",
+      "fr": "Le Pont",
+      "racine": "ص ر ط",
+      "racine_sens": "voie large, route, et plus précisément le pont à traverser",
+      "category": "cosmologie",
+      "tags": [
+        "pont",
+        "passage",
+        "chemin droit"
+      ],
+      "definition_concise": "Le <em>Pont</em> tendu au-dessus de l'enfer, que toute âme doit traverser au Jour du Jugement. <em>Aussi mince qu'un cheveu, aussi tranchant qu'un sabre</em>, selon le hadith. Mais aussi : le <em>ṣirāṭ mustaqīm</em>, le chemin droit, qu'on demande dans la Fātiḥa.",
+      "sens_profond": "Le hadith célèbre dit que le ṣirāṭ est <em>« plus mince qu'un cheveu, plus tranchant qu'un sabre »</em> — image saisissante : tout pèche d'un côté ou de l'autre est une chute. Pour les rapides, on traverse comme l'éclair ; pour les lents, on rampe ; pour ceux qui n'ont pas marché droit dans la vie, on tombe. Mais ce pont eschatologique a son décalque ici-bas : le <em>ṣirāṭ mustaqīm</em>, le <em>chemin droit</em>, que tout musulman demande dix-sept fois par jour dans la Fātiḥa : <em>« Ihdinā aṣ-ṣirāṭa-l-mustaqīm »</em> — guide-nous sur le chemin droit. Ce chemin est la voie même qui mène au pont sans tomber : la pratique juste, l'intention droite, la fidélité au modèle prophétique. Marcher droit ici-bas, c'est s'entraîner à traverser le ṣirāṭ là-bas. Et plus profondément : <em>« Mon Seigneur est sur un ṣirāṭ mustaqīm »</em> (Coran 11, 56) — la voie droite n'est pas seulement une route, c'est <em>Lui-même</em>, qui maintient toute chose en équilibre.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 1, 6",
+          "texte": "Guide-nous sur le chemin droit."
+        },
+        {
+          "auteur": "Hadith",
+          "texte": "Le ṣirāṭ est plus mince qu'un cheveu, plus tranchant qu'un sabre — qui sera assez droit pour le traverser ?"
+        }
+      ],
+      "meditation": "Là, maintenant — suis-je sur le ṣirāṭ, ou ai-je dévié de quelques degrés ?",
+      "resonance": [
+        "istiqama",
+        "akhira",
+        "shariʿa",
+        "taqwa"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "qadar",
+      "ar": "القَدَر",
+      "tr": "al-qadar",
+      "tr_simple": "qadar",
+      "fr": "Le décret divin",
+      "racine": "ق د ر",
+      "racine_sens": "mesurer, déterminer une quantité, fixer la portée",
+      "category": "doctrine",
+      "tags": [
+        "décret",
+        "destin",
+        "puissance"
+      ],
+      "definition_concise": "Le <em>décret</em> divin — la science éternelle qu'a Dieu de tout ce qui sera, et Son acte de le <em>mesurer</em>. Avec son corollaire <em>al-qaḍāʾ</em> (l'accomplissement), forme l'un des six piliers de la foi.",
+      "sens_profond": "Le hadith de Gabriel mentionne, comme sixième pilier de la foi, <em>« croire au décret, en son bien et en son mal »</em>. C'est sans doute le plus difficile à comprendre. Comment concilier la liberté de l'homme et l'omniscience de Dieu qui sait tout d'avance ? Les soufis tiennent le paradoxe sans le résoudre : Dieu <em>sait</em> ; tu <em>choisis</em>. Sa science ne te <em>contraint</em> pas, elle <em>connaît</em>. Trois écoles s'opposent dans le kalām : les <em>jabariyya</em> (déterministes — l'homme est forcé), les <em>qadariyya</em> (libristes — l'homme crée ses actes), et la voie médiane (ahl al-sunna) qui dit : <em>« L'homme acquiert (kasb) ses actes ; Dieu les crée. »</em> Les soufis vont plus loin : pour eux, le qadar n'est pas une chaîne à supporter, c'est une <em>économie</em> à comprendre. Tout ce qui t'arrive est <em>juste</em> pour ton chemin — fût-ce ce qui te semble injuste. Le saint reçoit le qadar avec riḍā (agrément), non comme imposition, mais comme cadeau caché. <em>« Pas une feuille ne tombe sans qu'Il ne le sache »</em> (Coran 6, 59) — donc pas une feuille ne tombe sans amour.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith de Gabriel",
+          "texte": "L'īmān, c'est croire en Dieu, en Ses anges, en Ses Livres, en Ses Messagers, au Jour Dernier, et au décret bon et mauvais."
+        },
+        {
+          "auteur": "ʿAlī ibn Abī Ṭālib",
+          "texte": "Le décret est une mer profonde — n'y plonge pas la tête, tu te noierais."
+        }
+      ],
+      "meditation": "Ce qui m'est arrivé d'imprévu cette semaine — comment Le verrais-je à l'œuvre ?",
+      "resonance": [
+        "qadaa",
+        "tawakkul",
+        "rida",
+        "qalam",
+        "tawfiq"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "qadaa",
+      "ar": "القَضَاء",
+      "tr": "al-qaḍāʾ",
+      "tr_simple": "qadaa",
+      "fr": "Le décret accompli",
+      "racine": "ق ض ي",
+      "racine_sens": "trancher, accomplir, exécuter",
+      "category": "doctrine",
+      "tags": [
+        "décret",
+        "accomplissement",
+        "destin"
+      ],
+      "definition_concise": "L'<em>accomplissement</em> dans le temps de ce qui était <em>décrété</em> de toute éternité (qadar). Distinction subtile : le qadar est la science divine du futur ; le qaḍāʾ est sa réalisation effective dans l'histoire.",
+      "sens_profond": "La distinction qadar / qaḍāʾ est l'une des plus fines de la théologie classique. Image : le qadar est ce qui est écrit sur la Tablette ; le qaḍāʾ est ce qui descend dans le temps. La Plume a écrit ; maintenant, dans le temps, l'événement <em>arrive</em>. Cette distinction permet de comprendre des phénomènes énigmatiques : la <em>duʿāʾ</em> (l'invocation) peut <em>modifier</em> le qaḍāʾ (ce qui descend) sans changer le qadar (ce qui est écrit). Hadith : <em>« Rien ne repousse le qadar sauf la duʿāʾ. »</em> Comment ? La science divine inclut, depuis toujours, la duʿāʾ que tu fais maintenant. Donc ce qui semble être un changement n'est, à l'échelle divine, qu'un détail prévu. Mais pour toi, dans le temps, c'est <em>réellement</em> ta prière qui a changé l'issue. Le saint vit cette tension sans angoisse : il prie comme si tout dépendait de sa prière, et accepte comme si rien ne dépendait de lui. La duʿāʾ ne <em>force</em> pas Dieu — elle s'inscrit dans Son économie cachée.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "Rien ne repousse le qadar sauf la duʿāʾ ; et rien n'allonge la vie sinon la piété filiale."
+        },
+        {
+          "auteur": "ʿUmar",
+          "texte": "Nous fuyons le qaḍāʾ de Dieu vers le qaḍāʾ de Dieu."
+        }
+      ],
+      "meditation": "Si rien ne change le qadar sauf la prière — pour quoi est-ce que je prie en ce moment ?",
+      "resonance": [
+        "qadar",
+        "tawakkul",
+        "duaa",
+        "rida"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "tawfiq",
+      "ar": "التَّوْفِيق",
+      "tr": "at-tawfīq",
+      "tr_simple": "tawfiq",
+      "fr": "La grâce d'agir bien",
+      "racine": "و ف ق",
+      "racine_sens": "concorder, s'accorder — d'où la grâce qui accorde l'acte à la volonté divine",
+      "category": "doctrine",
+      "tags": [
+        "grâce",
+        "accord divin",
+        "réussite spirituelle"
+      ],
+      "definition_concise": "La <em>grâce</em> particulière de Dieu qui <em>accorde</em> l'acte humain à Sa volonté — fait qu'on parvient à faire ce qu'il faut, au moment où il faut, dans l'esprit qu'il faut. Sans tawfīq, même la meilleure intention échoue.",
+      "sens_profond": "L'homme veut faire le bien. Il fait ses prières, ses jeûnes, ses pratiques. Mais quelque chose en lui résiste — il oublie, il s'égare, il fait <em>juste à côté</em>. Le tawfīq est cette grâce subtile par laquelle, soudain, tout s'accorde : tu te lèves à l'heure pour la prière, tu trouves les mots justes, tu choisis le geste exact. Tu n'as pas <em>fait</em> mieux — quelque chose <em>en toi</em> a coïncidé avec ce qu'il fallait. Pour les soufis, on ne <em>mérite</em> pas le tawfīq — il est <em>donné</em>. Sa contrepartie négative est le <em>khidhlān</em> (l'abandon) : quand Dieu retire Sa grâce et te laisse à toi-même, tout se met de travers, même tes bonnes intentions. Cela peut être une épreuve, mais aussi une suite de la négligence (ghafla). Le saint demande sans cesse le tawfīq : <em>« Ô Dieu, sois mon associé dans cet acte ; sans Toi, je ferai mal même en voulant le bien. »</em>",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 11, 88",
+          "texte": "Mon succès (tawfīqī) ne dépend que de Dieu."
+        },
+        {
+          "auteur": "Ibn ʿAṭāʾ Allāh",
+          "texte": "Le serviteur ne progresse pas par son effort — il progresse par le tawfīq que Dieu lui accorde."
+        }
+      ],
+      "meditation": "Quand quelque chose s'accorde parfaitement dans ma vie — est-ce mon mérite, ou un don ?",
+      "resonance": [
+        "qadar",
+        "fadl",
+        "rahma",
+        "tawakkul"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "nubuwwa",
+      "ar": "النُّبُوَّة",
+      "tr": "an-nubuwwa",
+      "tr_simple": "nubuwwa",
+      "fr": "La prophétie",
+      "racine": "ن ب أ",
+      "racine_sens": "annoncer une nouvelle, communiquer un message — d'où nabī, le prophète",
+      "category": "doctrine",
+      "tags": [
+        "prophétie",
+        "transmission",
+        "vocation"
+      ],
+      "definition_concise": "La <em>prophétie</em> — fonction par laquelle Dieu fait connaître Sa Parole à un homme choisi, pour qu'il la transmette aux autres. 124 000 prophètes selon le hadith ; Muḥammad est le <em>sceau</em>, le dernier.",
+      "sens_profond": "La prophétie est un don de Dieu, non un mérite humain. Le prophète est <em>choisi</em>, jamais auto-désigné. Il reçoit la révélation (waḥy), la transmet à son peuple, et porte la charge d'incarner Lui-même son message. Distinction classique : <em>nabī</em> (prophète recevant la révélation) et <em>rasūl</em> (messager, qui en plus a la mission de fonder une communauté ou d'apporter une Loi nouvelle). Tout rasūl est nabī, mais l'inverse n'est pas vrai. Les soufis distinguent encore : la <em>nubuwwa</em> et la <em>walāya</em> (la sainteté). Pour Ibn ʿArabī, la sainteté est en réalité plus haute que la prophétie dans l'ordre essentiel — le prophète est saint <em>plus</em> messager ; sa sainteté est l'âme de sa prophétie. Mais avec une nuance : la prophétie a une fonction <em>publique</em> qui s'achève (le Sceau a été posé) ; la sainteté <em>continue</em>, par les awliyāʾ, jusqu'à la fin des temps. La sainteté est donc l'<em>héritage</em> vivant de la prophétie chez les amis de Dieu.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "Dieu a envoyé cent vingt-quatre mille prophètes — trois cent treize ou trois cent quinze sont messagers."
+        },
+        {
+          "auteur": "Ibn ʿArabī",
+          "texte": "La prophétie est achevée ; la walāya continue jusqu'à la fin."
+        }
+      ],
+      "meditation": "Si un prophète m'avait parlé en personne, l'aurais-je écouté différemment de ce que je lis de ses paroles ?",
+      "resonance": [
+        "wahy",
+        "risala",
+        "wali",
+        "insan-kamil",
+        "muhammad"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "wahy",
+      "ar": "الوَحْي",
+      "tr": "al-waḥy",
+      "tr_simple": "wahy",
+      "fr": "La révélation",
+      "racine": "و ح ي",
+      "racine_sens": "communiquer rapidement, d'une manière subtile",
+      "category": "doctrine",
+      "tags": [
+        "révélation",
+        "parole divine",
+        "transmission"
+      ],
+      "definition_concise": "La <em>révélation</em> — communication directe et immédiate de Dieu à Son prophète. Réservée aux prophètes (à distinguer de l'<em>ilhām</em>, inspiration possible chez les saints). Le Coran est waḥy.",
+      "sens_profond": "Le Coran (42, 51) distingue trois modes de communication divine à l'homme : (1) par révélation directe (waḥy au sens strict) — Dieu inspire en l'âme du prophète, sans intermédiaire ; (2) <em>derrière un voile</em> — c'est ce qui arrive à Moïse au Sinaï ; (3) par envoi d'un messager — généralement l'ange Gabriel. La waḥy au sens technique désigne ces trois modes, réservés aux prophètes. Pour les soufis, l'ouverture est plus large : Dieu ne <em>cesse</em> pas de parler à Ses serviteurs, mais sous des formes plus discrètes — l'ilhām (inspiration claire), le khāṭir (pensée passagère juste), le rêve véridique. Aucune de ces formes n'égale la waḥy prophétique, qui est <em>littérale</em> : ses paroles sont les paroles mêmes de Dieu. La distinction est cruciale pour ne pas tomber dans l'illuminisme : les saints reçoivent, mais ne prétendent jamais ajouter à la révélation. <em>« La prophétie est scellée »</em>, dit la tradition. Ce qui demeure ouvert, c'est la <em>réception</em>, le <em>commentaire</em>, l'<em>application</em>.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 42, 51",
+          "texte": "Il n'a pas été donné à un homme que Dieu lui parle, sauf par révélation, ou de derrière un voile, ou en envoyant un messager."
+        },
+        {
+          "auteur": "Hadith",
+          "texte": "La prophétie a été interrompue, mais ses prémices demeurent — le rêve véridique du croyant."
+        }
+      ],
+      "meditation": "Y a-t-il une parole, dans le Coran, qui me parle <em>directement</em> — comme si elle s'adressait à moi ?",
+      "resonance": [
+        "nubuwwa",
+        "ilham",
+        "kashf",
+        "rooyaa",
+        "quran"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "risala",
+      "ar": "الرِّسَالَة",
+      "tr": "ar-risāla",
+      "tr_simple": "risala",
+      "fr": "La mission prophétique",
+      "racine": "ر س ل",
+      "racine_sens": "envoyer — d'où rasūl, l'envoyé",
+      "category": "doctrine",
+      "tags": [
+        "mission",
+        "message",
+        "envoi"
+      ],
+      "definition_concise": "La <em>mission</em> du Messager — fonction supplémentaire à la prophétie, par laquelle le prophète est <em>envoyé</em> avec un message à transmettre. Tout rasūl est nabī, mais tout nabī n'est pas rasūl.",
+      "sens_profond": "La distinction nabī / rasūl est subtile. Tout prophète (nabī) reçoit la révélation. Mais seul le rasūl est <em>envoyé</em> avec une mission publique : apporter une Loi nouvelle, fonder une communauté, transformer un peuple. Les rasūl sont moins nombreux que les nabī : selon le hadith, 124 000 prophètes pour environ 313 messagers. Les principaux rasūl : Adam, Idrīs (Hénoch), Nūḥ (Noé), Ibrāhīm (Abraham), Mūsā (Moïse), Dāwūd (David), Sulaymān (Salomon), ʿĪsā (Jésus), Muḥammad. Chaque rasūl apporte un visage particulier de la même Vérité — adapté à son temps et à son peuple. Pour les soufis, particulièrement Ibn ʿArabī (qui consacre son <em>Fuṣūṣ al-Ḥikam</em> aux vingt-sept prophètes), chaque rasūl manifeste un <em>Nom</em> divin particulier : Abraham le Khalīl (l'intime ami), Moïse le porteur de la Loi, Jésus le Souffle de Dieu et l'Esprit, Muḥammad la perfection unifiante. Tous se complètent ; aucun ne contredit. La <em>khātim</em> (le Sceau) ne ferme pas — il <em>accomplit</em>.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 4, 165",
+          "texte": "Des messagers, annonciateurs et avertisseurs, afin qu'après les messagers, les hommes n'aient plus d'argument devant Dieu."
+        },
+        {
+          "auteur": "Ibn ʿArabī",
+          "texte": "Chaque prophète est un visage de la Vérité — tous ensemble en font une étoile sans pareille."
+        }
+      ],
+      "meditation": "Si chaque prophète manifeste un Nom — lequel me parle le plus, au plus profond de moi ?",
+      "resonance": [
+        "nubuwwa",
+        "wahy",
+        "muhammad",
+        "asmaa",
+        "insan-kamil"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "muʿjiza",
+      "ar": "المُعْجِزَة",
+      "tr": "al-muʿjiza",
+      "tr_simple": "muʿjiza",
+      "fr": "Le miracle prophétique",
+      "racine": "ع ج ز",
+      "racine_sens": "être incapable — d'où muʿjiza, ce qui rend les autres incapables d'imiter",
+      "category": "doctrine",
+      "tags": [
+        "miracle",
+        "preuve",
+        "prophétie"
+      ],
+      "definition_concise": "Le <em>miracle</em> propre au prophète — phénomène extraordinaire qui rend les contradicteurs <em>incapables</em> d'imitation, et qui authentifie sa mission divine. À distinguer du <em>karāma</em> (charisme du saint).",
+      "sens_profond": "Chaque prophète est accompagné de signes (āyāt) qui confirment sa mission. Pour Moïse : le bâton qui devient serpent, la main blanche, les dix plaies d'Égypte. Pour Jésus : la résurrection des morts, la guérison des aveugles et des lépreux, la création d'un oiseau d'argile par son souffle. Pour Muḥammad : le Coran lui-même est <em>la</em> muʿjiza par excellence — la <em>iʿjāz al-Qurʾān</em>, son inimitabilité linguistique et spirituelle. Le défi coranique est posé à plusieurs reprises (10, 38 ; 11, 13 ; 17, 88) : <em>« Apportez une sourate semblable, ou même un seul verset semblable. »</em> Personne, en quatorze siècles, n'a réussi. Pour les soufis, la muʿjiza la plus grande de Muḥammad n'est cependant pas tant le Coran extérieur que sa <em>transformation</em> de ceux qui l'approchaient : des bédouins illettrés et brutaux sont devenus, à son contact, des sages, des saints, des civilisateurs. Toute civilisation islamique en a découlé. La muʿjiza n'est pas une preuve magique — c'est une preuve <em>par les fruits</em>.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 17, 88",
+          "texte": "Dis : Si les hommes et les djinns s'unissaient pour produire quelque chose de semblable à ce Coran, ils ne sauraient produire rien de semblable, même s'ils s'épaulaient les uns les autres."
+        },
+        {
+          "auteur": "al-Bāqillānī",
+          "texte": "Le Coran est le miracle qui ne vieillit pas : chaque génération y trouve ce qu'aucune avant n'avait vu."
+        }
+      ],
+      "meditation": "Quel signe m'a déjà été donné — que je n'ai pas su lire comme tel ?",
+      "resonance": [
+        "nubuwwa",
+        "karamat",
+        "quran",
+        "wahy"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "insan-kamil",
+      "ar": "الإِنْسَانُ الكَامِل",
+      "tr": "al-insān al-kāmil",
+      "tr_simple": "insan kamil",
+      "fr": "L'Homme universel",
+      "racine": "أ ن س + ك م ل",
+      "racine_sens": "insān (homme) + kāmil (parfait, complet)",
+      "category": "doctrine",
+      "tags": [
+        "Homme parfait",
+        "Ibn ʿArabī",
+        "synthèse"
+      ],
+      "definition_concise": "L'<em>Homme universel</em> ou <em>Parfait</em> — concept central d'Ibn ʿArabī. L'homme qui a réalisé en lui-même toutes les perfections divines, miroir intégral de la Présence. Le Prophète Muḥammad est son archétype.",
+      "sens_profond": "La doctrine de l'<em>insān kāmil</em> est l'une des plus profondes du soufisme — Ibn ʿArabī la développe dans les <em>Fuṣūṣ al-Ḥikam</em> et la <em>Futūḥāt al-Makkiyya</em>. ʿAbd al-Karīm al-Jīlī (m. v. 1424) y a consacré un ouvrage célèbre. Idée centrale : la création tout entière manifeste les Noms divins, mais de manière dispersée — les Noms de majesté dans le tonnerre, les Noms de beauté dans la fleur, les Noms de science dans le savant. Aucun être créé, sauf l'<em>insān kāmil</em>, ne les manifeste <em>tous</em> ensemble. L'Homme universel est le <em>miroir</em> où Dieu Se contemple intégralement. Le Prophète Muḥammad est l'<em>archétype</em> de cette réalité (la <em>ḥaqīqa muḥammadiyya</em>, Réalité muhammadienne). Mais après lui, chaque saint accompli, à sa mesure, participe de cette plénitude. La doctrine fait écho à des intuitions universelles : l'Adam Kadmon de la Kabbale, l'Anthropos cosmique des gnoses tardives, le Christ-cosmique de certains Pères chrétiens. Tous disent : l'homme n'est pas simplement une créature parmi les créatures — il est le <em>but</em> de la création, le lieu où l'univers se reconnaît lui-même.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith Qudsī (cité par Ibn ʿArabī)",
+          "texte": "J'étais un trésor caché, et J'ai aimé être connu — alors J'ai créé la création pour Me connaître par elle."
+        },
+        {
+          "auteur": "Ibn ʿArabī",
+          "texte": "L'Homme universel est l'œil par lequel Dieu Se voit Lui-même dans le monde."
+        }
+      ],
+      "meditation": "Si je suis appelé à être un miroir intégral — quel Nom divin manque encore en moi ?",
+      "resonance": [
+        "nubuwwa",
+        "asmaa",
+        "tajalli",
+        "wali",
+        "muhammad"
+      ],
+      "lectures_site": [
+        {
+          "titre": "Métaphysique",
+          "url": "../metaphysique/index.html"
+        }
+      ]
+    },
+    {
+      "id": "jihad",
+      "ar": "الجِهَاد",
+      "tr": "al-jihād",
+      "tr_simple": "jihad",
+      "fr": "Le combat",
+      "racine": "ج ه د",
+      "racine_sens": "fournir un effort soutenu",
+      "category": "stations",
+      "tags": [
+        "effort",
+        "combat",
+        "lutte intérieure"
+      ],
+      "definition_concise": "L'<em>effort</em> soutenu — au sens premier, le combat sur le chemin de Dieu. Le Prophète a distingué le <em>petit</em> jihād (le combat extérieur, défensif) et le <em>grand</em> jihād (la lutte contre la nafs), qui est de loin le plus important.",
+      "sens_profond": "Le mot jihād a été en grande partie déformé dans le discours médiatique contemporain. Sa racine signifie d'abord <em>effort</em>, sans connotation guerrière. L'effort le plus haut, selon le Prophète, est <em>al-jihād al-akbar</em>, le grand combat — celui contre l'âme charnelle (nafs). Au retour d'une bataille, le Prophète aurait dit : <em>« Nous revenons du petit combat vers le grand combat. — Quel est le grand combat ? — Le combat contre l'âme. »</em> Toute la voie soufie est donc, en un sens, ce grand jihād continu. Quatre dimensions du jihād selon les classiques : le jihād <em>du cœur</em> (contre la nafs), le jihād <em>de la langue</em> (parole juste et conseil), le jihād <em>de la main</em> (corriger l'injustice à la mesure du possible), le jihād <em>de l'épée</em> (uniquement défensif et strictement encadré — guerre juste). Les trois premiers concernent tous les croyants en permanence ; le quatrième est exceptionnel, soumis à des conditions rigoureuses. Confondre le sens extérieur et le sens intérieur du jihād, c'est manquer toute la profondeur de la tradition.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "Nous revenons du petit combat vers le grand combat — le combat contre l'âme."
+        },
+        {
+          "auteur": "al-Ghazālī",
+          "texte": "Le moudjahid véritable est celui qui combat sa nafs ; les batailles extérieures sont enfantines à côté."
+        }
+      ],
+      "meditation": "Quel combat livré aujourd'hui contre moi-même — et quel terrain reste à conquérir ?",
+      "resonance": [
+        "nafs",
+        "mujahada",
+        "tawba",
+        "muraqaba",
+        "sabr"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "mujahada",
+      "ar": "المُجَاهَدَة",
+      "tr": "al-mujāhada",
+      "tr_simple": "mujahada",
+      "fr": "L'effort intérieur",
+      "racine": "ج ه د",
+      "racine_sens": "même racine que jihād — fournir un effort",
+      "category": "stations",
+      "tags": [
+        "effort",
+        "discipline",
+        "pratique"
+      ],
+      "definition_concise": "L'<em>effort</em> intérieur — discipline rigoureuse appliquée à soi-même pour purifier la nafs et progresser sur la voie. Pratique fondamentale des premières étapes : sans mujāhada, pas de muʿāmala, pas de mushāhada.",
+      "sens_profond": "Les soufis ont une triade célèbre : <em>mujāhada</em> (effort), <em>muʿāmala</em> (commerce avec Dieu, fidélité aux pratiques), <em>mushāhada</em> (vision, contemplation). On commence par l'effort, on passe à la pratique fidèle, on aboutit à la vision. Sauter une étape est impossible. La mujāhada est la phase de <em>résistance</em> : la nafs ne veut pas se transformer, elle se défend. Tu te lèves pour la prière de l'aube — elle veut dormir. Tu jeûnes — elle a faim. Tu fais le dhikr — elle pense à autre chose. La mujāhada, c'est <em>persister</em> malgré ses objections, jusqu'à ce qu'elle cède. Le hadith dit : <em>« Quiconque s'efforce pour Nous, Nous le guidons sur Nos chemins »</em> (Coran 29, 69). Ce <em>« pour Nous »</em> est crucial — l'effort doit être <em>pour Lui</em>, non pour s'admirer d'avoir fait effort. Aussi : la mujāhada doit être <em>mesurée</em>, jamais excessive — l'ascèse extrême (rahbāniyya) est rejetée par la sunna. Le Prophète a dit : <em>« Cette religion est facile ; nul ne la rend dure sans qu'elle ne le brise. »</em>",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 29, 69",
+          "texte": "Et ceux qui s'efforcent pour Nous, Nous les guiderons sur Nos chemins."
+        },
+        {
+          "auteur": "al-Junayd",
+          "texte": "Trente ans de mujāhada me valurent une heure de muʿāmala ; trente ans de muʿāmala me valurent un instant de mushāhada."
+        }
+      ],
+      "meditation": "Quelle résistance en moi, à l'instant, demande à être doucement contrariée ?",
+      "resonance": [
+        "jihad",
+        "nafs",
+        "riyada",
+        "sabr",
+        "istiqama"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "riyada",
+      "ar": "الرِّيَاضَة",
+      "tr": "ar-riyāḍa",
+      "tr_simple": "riyada",
+      "fr": "L'entraînement de l'âme",
+      "racine": "ر و ض",
+      "racine_sens": "dresser, dompter (un cheval) — d'où riyāḍa, l'entraînement",
+      "category": "stations",
+      "tags": [
+        "entraînement",
+        "discipline",
+        "dressage de l'âme"
+      ],
+      "definition_concise": "L'<em>entraînement</em> méthodique de l'âme — comme on dresse un cheval. Pratiques répétées de la mujāhada qui éduquent progressivement la nafs à l'obéissance. Plus systématique que la mujāhada (qui est plus combative).",
+      "sens_profond": "La métaphore du dressage est ancienne : la nafs est comme un cheval fougueux. Si on la laisse aller, elle se précipite dans les passions. Si on la brise trop fort, elle se cabre, se brise elle-même. La riyāḍa est la <em>bonne mesure</em> : on l'amène progressivement à reconnaître son cavalier (le cœur), à accepter le mors (la sharīʿa), à suivre la direction (la ṭarīqa). Concrètement, la riyāḍa inclut : le contrôle de la nourriture (sans excès dans un sens ou l'autre), la régulation du sommeil (assez pour vivre, peu pour ne pas s'engourdir), la pratique du silence (parler peu, à propos), la discipline du regard (ne pas chercher ce qui distrait), la fidélité aux pratiques (wird, ṣalāt, dhikr). L'erreur du débutant : croire que plus c'est dur, plus c'est saint. Erreur double : on se brise (et on abandonne), ou on s'enorgueillit d'avoir tenu (et on perd toute la valeur). La riyāḍa juste est <em>persistante</em>, pas extrême. Comme un chemin qu'on suit chaque jour pendant des années — sans précipitation, sans relâchement.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Sahl al-Tustarī",
+          "texte": "Mange le tiers, bois le tiers, garde le tiers vide — c'est la riyāḍa du ventre."
+        },
+        {
+          "auteur": "Ibn ʿAṭāʾ Allāh",
+          "texte": "L'âme est comme la mer — on ne la franchit pas d'un saut, mais à coups de rames patientes."
+        }
+      ],
+      "meditation": "Y a-t-il en moi un cheval encore non dressé — que dois-je apprendre à manier ?",
+      "resonance": [
+        "mujahada",
+        "nafs",
+        "zuhd",
+        "sabr",
+        "istiqama"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "istiqama",
+      "ar": "الاسْتِقَامَة",
+      "tr": "al-istiqāma",
+      "tr_simple": "istiqama",
+      "fr": "La rectitude persévérante",
+      "racine": "ق و م",
+      "racine_sens": "se tenir debout, droit — d'où istiqāma, la rectitude",
+      "category": "stations",
+      "tags": [
+        "rectitude",
+        "persévérance",
+        "fidélité"
+      ],
+      "definition_concise": "La <em>rectitude persévérante</em> — fidélité tenue dans le temps à la voie droite, sans flottement ni rebroussement. Considérée par les classiques comme l'une des plus hautes karāmāt (charismes) : être droit dans la durée.",
+      "sens_profond": "Le Coran ordonne au Prophète : <em>« Sois droit (istaqim) comme il t'a été ordonné, ainsi que ceux qui se sont repentis avec toi »</em> (11, 112). Sufyān al-Thawrī demanda au Prophète : <em>« Ô Messager de Dieu, dis-moi une parole de l'islam après laquelle je n'aurai à interroger personne. »</em> Le Prophète répondit : <em>« Dis : Je crois en Dieu — puis tiens-toi droit. »</em> Toute la voie tient dans ces deux mots. Et la grande maxime soufie : <em>« La meilleure karāma, c'est l'istiqāma. »</em> Pourquoi ? Parce que beaucoup peuvent s'élancer dans un éclair de ferveur. Peu peuvent tenir dix, vingt, cinquante ans, sans relâche. Pour les anciens, un saint qui marche sur l'eau pendant un instant est moins admirable qu'un homme ordinaire qui prie ses cinq prières sans manquer pendant cinquante ans. L'istiqāma est rare parce qu'elle exige de l'<em>endurance</em> sans plus l'aiguillon de la nouveauté. Tout le monde aime commencer ; peu aiment <em>continuer</em>. C'est dans le continu que la sainteté se prouve.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "Dis : 'Je crois en Dieu' — puis tiens-toi droit."
+        },
+        {
+          "auteur": "Adage soufi",
+          "texte": "La meilleure karāma, c'est l'istiqāma."
+        }
+      ],
+      "meditation": "Y a-t-il une pratique que j'ai abandonnée par lassitude — et que je pourrais reprendre, simplement, ce soir ?",
+      "resonance": [
+        "sabr",
+        "sidq",
+        "ihsan",
+        "wird",
+        "karamat"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "azima",
+      "ar": "العَزِيمَة",
+      "tr": "al-ʿazīma",
+      "tr_simple": "azima",
+      "fr": "La résolution ferme",
+      "racine": "ع ز م",
+      "racine_sens": "se résoudre fermement",
+      "category": "stations",
+      "tags": [
+        "résolution",
+        "détermination",
+        "fermeté"
+      ],
+      "definition_concise": "La <em>résolution</em> ferme — décision prise dans le cœur de tenir un acte ou un engagement, malgré les difficultés. Distincte de l'<em>irāda</em> (volonté courante) par sa fermeté inébranlable.",
+      "sens_profond": "Le Coran évoque les <em>ūlū-l-ʿazm</em> — les prophètes <em>doués de résolution</em> : Noé, Abraham, Moïse, Jésus, Muḥammad. Cinq grands envoyés dont la fermeté a dépassé celle des autres prophètes ; ils ont traversé des épreuves majeures sans plier. L'ʿazīma est donc cette <em>tenue</em> face à l'adversité. Pour le voyageur soufi, elle est essentielle : sans ʿazīma, toute pratique se relâche au premier obstacle. La nuit froide où il faut se lever pour la prière, la fatigue qui tente d'écourter le wird, la maladie qui suggère qu'on a une excuse pour relâcher — tout cela ne cède que devant l'ʿazīma. Hadith : <em>« Que l'un de vous décide fermement dans son invocation : qu'il ne dise pas 'si Tu veux', car Dieu ne peut être contraint. »</em> L'ʿazīma s'oppose à la <em>rukhṣa</em> (la dispense) : il y a toujours des raisons de relâcher ; la voie demande de choisir la voie haute, celle qui n'a pas d'excuse. Mais sans crispation — l'ʿazīma authentique est tendue mais paisible.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 46, 35",
+          "texte": "Endure comme ont enduré les prophètes doués de résolution (ūlū-l-ʿazm)."
+        },
+        {
+          "auteur": "ʿAlī",
+          "texte": "L'ʿazīma fait l'homme ; les hésitants n'arrivent nulle part."
+        }
+      ],
+      "meditation": "Y a-t-il une décision que je remets sans cesse à demain — et qui demande une vraie ʿazīma maintenant ?",
+      "resonance": [
+        "istiqama",
+        "sidq",
+        "irada",
+        "sabr",
+        "tawba"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "adab",
+      "ar": "الأَدَب",
+      "tr": "al-adab",
+      "tr_simple": "adab",
+      "fr": "L'étiquette intérieure",
+      "racine": "أ د ب",
+      "racine_sens": "éduquer, façonner — d'où adab : politesse, courtoisie, culture",
+      "category": "stations",
+      "tags": [
+        "étiquette",
+        "courtoisie",
+        "façon"
+      ],
+      "definition_concise": "L'<em>étiquette intérieure</em> et extérieure — non politesse de surface, mais <em>juste mesure</em> dans tout : avec Dieu, avec le maître, avec les frères, avec soi-même. Pour les soufis, <em>« la voie est tout entière dans l'adab. »</em>",
+      "sens_profond": "Le mot adab est large : il signifie à la fois courtoisie, étiquette, culture, formation. Pour les soufis, l'adab est l'ensemble des <em>justes manières</em> qui font qu'on agit comme il convient à chaque situation. Adab envers Dieu : ne jamais Le tutoyer avec familiarité grossière, mais Le servir avec révérence et amour. Adab envers le shaykh : ne pas le précéder, ne pas hausser la voix devant lui, ne pas s'asseoir avant qu'il ne t'invite. Adab envers les frères : ne pas blesser, ne pas couper la parole, ne pas envier. Adab envers soi-même : ne pas se mépriser, mais aussi ne pas se flatter. Adab envers le temps : ne pas le tuer. Adab envers la nourriture : commencer par le nom de Dieu, manger sans gloutonnerie. Adab envers la parole : ne dire que ce qu'il faut, au moment où il faut. L'adab est donc une <em>écologie</em> spirituelle complète. Les classiques disent : <em>« L'adab vaut la moitié de la religion ; certains disent : il est toute la religion. »</em>",
+      "voix_des_maitres": [
+        {
+          "auteur": "Sahl al-Tustarī",
+          "texte": "Toute la voie tient dans l'adab — l'oublier, c'est tout oublier."
+        },
+        {
+          "auteur": "Ibn al-Mubārak",
+          "texte": "L'adab est la moitié du ʿilm ; sans lui, le savoir devient dangereux."
+        }
+      ],
+      "meditation": "Y a-t-il une situation où j'ai manqué d'adab aujourd'hui — sans même m'en rendre compte ?",
+      "resonance": [
+        "akhlaq",
+        "ihsan",
+        "khidma",
+        "futuwwa",
+        "suhba"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "akhlaq",
+      "ar": "الأَخْلَاق",
+      "tr": "al-akhlāq",
+      "tr_simple": "akhlaq",
+      "fr": "Le caractère, les vertus",
+      "racine": "خ ل ق",
+      "racine_sens": "même racine que khalq (création) — le caractère comme création seconde de soi",
+      "category": "stations",
+      "tags": [
+        "caractère",
+        "vertus",
+        "transformation"
+      ],
+      "definition_concise": "Le <em>caractère</em> ou les <em>vertus</em> — l'ensemble des dispositions intérieures façonnées par la pratique. Le Prophète a dit : <em>« J'ai été envoyé pour parfaire les akhlāq. »</em> Toute la mission prophétique tient dans la transformation du caractère.",
+      "sens_profond": "La racine de akhlāq est la même que celle de khalq (création) — le caractère est une <em>seconde création</em> de soi-même, façonnée par l'effort et la grâce. Le hadith fameux : <em>« J'ai été envoyé pour parfaire les nobles akhlāq »</em> — le but de toute la mission prophétique tient en ces mots. Et : <em>« Le meilleur d'entre vous est celui qui a le meilleur caractère. »</em> Le caractère est plus important que les pratiques rituelles : on peut faire mille prières avec un caractère vil ; mille prières ne valent rien si on est avare, jaloux, mesquin. Inversement, un homme au beau caractère, même peu pratiquant, est aimé de Dieu. Les vertus prophétiques sont nombreuses : sincérité, fiabilité, générosité, patience, douceur, humilité, justice. Pour les soufis, le travail sur le caractère est la véritable mesure du progrès. Tu peux mesurer où tu en es à ta réaction quand quelqu'un te contrarie : si tu t'emportes, tu n'as rien réalisé ; si tu restes paisible, quelque chose a mûri. Hadith Qudsī : <em>« Mon serviteur ne cesse de se rapprocher de Moi par les œuvres surérogatoires jusqu'à ce que Je l'aime. »</em> Le signe d'être aimé de Dieu est la transformation de l'âme — visible dans le caractère.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "J'ai été envoyé pour parfaire les nobles caractères."
+        },
+        {
+          "auteur": "Hadith",
+          "texte": "Le meilleur d'entre vous est celui qui a le meilleur caractère."
+        },
+        {
+          "auteur": "al-Ghazālī",
+          "texte": "Si tu veux savoir où tu en es spirituellement, regarde comment tu réagis quand on te contrarie."
+        }
+      ],
+      "meditation": "Quelle vertu est-ce que je suis en train de cultiver — et laquelle ai-je oubliée ?",
+      "resonance": [
+        "adab",
+        "ihsan",
+        "futuwwa",
+        "sidq",
+        "khidma"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "futuwwa",
+      "ar": "الفُتُوَّة",
+      "tr": "al-futuwwa",
+      "tr_simple": "futuwwa",
+      "fr": "La chevalerie spirituelle",
+      "racine": "ف ت ي",
+      "racine_sens": "être jeune, vaillant — d'où fatā (le jeune brave), futuwwa (la qualité du fatā)",
+      "category": "stations",
+      "tags": [
+        "chevalerie",
+        "générosité",
+        "noblesse"
+      ],
+      "definition_concise": "La <em>chevalerie</em> spirituelle — vertu de la générosité radicale, du don de soi, de la noblesse intérieure qui préfère toujours autrui. Tradition très développée au Moyen Âge : les <em>futuwwa-clubs</em> étaient l'équivalent musulman des confréries de chevaliers.",
+      "sens_profond": "Le mot vient de <em>fatā</em>, le jeune brave — celui qui agit avec générosité, courage, désintéressement. Le Coran emploie le mot pour Abraham brisant les idoles (21, 60 : <em>« Nous avons entendu un jeune (fatan) parler d'elles ; on l'appelle Abraham »</em>) et pour les Compagnons de la Caverne (18, 13 : <em>« C'étaient des jeunes »</em>). La futuwwa, comme vertu sociale et spirituelle, fleurit particulièrement à partir du IX<sup>e</sup> siècle, en parallèle avec le soufisme. Ses principes : <em>donner sans rappeler</em>, <em>préférer l'autre à soi</em>, <em>excuser celui qui t'a offensé</em>, <em>ne jamais humilier</em>. ʿAlī ibn Abī Ṭālib en est le modèle archétypal : on disait que <em>lā fatā illā ʿAlī</em> — il n'y a de fatā qu'ʿAlī. Une futuwwa très belle s'est développée dans les corporations urbaines : artisans, soldats, soufis, qui se regroupaient en confréries chevaleresques. Cette tradition a survécu jusqu'à nos jours dans certains aspects de la culture iranienne et anatolienne. Elle est l'expression la plus haute de la fraternité humaine : préférer autrui non par calcul, mais par <em>noblesse</em>.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Adage",
+          "texte": "Lā fatā illā ʿAlī (Il n'y a de fatā qu'ʿAlī)."
+        },
+        {
+          "auteur": "al-Sulamī",
+          "texte": "La futuwwa est de voir l'excellence chez autrui et la faute chez soi."
+        },
+        {
+          "auteur": "Ibn ʿArabī",
+          "texte": "La futuwwa, c'est que tu serves quand on attend que tu sois servi."
+        }
+      ],
+      "meditation": "Aujourd'hui, ai-je préféré <em>moi</em> ou ai-je préféré <em>l'autre</em> — dans une situation où j'avais le choix ?",
+      "resonance": [
+        "adab",
+        "akhlaq",
+        "khidma",
+        "ihsan",
+        "chishtiyya"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "khilafa",
+      "ar": "الخِلَافَة",
+      "tr": "al-khilāfa",
+      "tr_simple": "khilafa",
+      "fr": "La vicariance",
+      "racine": "خ ل ف",
+      "racine_sens": "succéder, remplacer — d'où khalīfa, le successeur, le lieutenant",
+      "category": "stations",
+      "tags": [
+        "vicariance",
+        "successeur",
+        "Adam"
+      ],
+      "definition_concise": "La <em>vicariance</em> — fonction par laquelle Dieu fait de l'homme Son <em>lieutenant</em> sur la terre (Coran 2, 30). À la fois condition humaine universelle (Adam) et fonction politico-spirituelle (le calife).",
+      "sens_profond": "Le Coran ouvre par l'extraordinaire annonce : <em>« Je vais créer sur la terre un khalīfa »</em> (2, 30). Adam — donc l'humanité — est constitué <em>vicaire</em> de Dieu sur la terre. Quelle responsabilité : représenter Dieu, prolonger Son action, manifester Ses Noms. Pour les soufis, la khilāfa adamique est la <em>vocation ontologique</em> de l'humain : il n'est pas une créature parmi les créatures, il est l'<em>image</em> du Créateur dans la création — chargé de la maintenir, l'embellir, la réconcilier avec sa Source. Cette doctrine donne à l'homme une dignité considérable, et corollairement une responsabilité écrasante : la dégradation écologique, par exemple, est une <em>trahison</em> de cette khilāfa. Sur le plan politico-historique, la khilāfa fut aussi l'institution successorale au Prophète : Abū Bakr, ʿUmar, ʿUthmān, ʿAlī furent les quatre <em>califes bien-guidés</em>. Cette dimension politique a connu mille évolutions à travers l'histoire — mais l'essence reste : un khalīfa juste représente Dieu en justice. Tout pouvoir humain qui s'écarte de cela perd sa légitimité de khilāfa.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 2, 30",
+          "texte": "Je vais établir sur la terre un vicaire."
+        },
+        {
+          "auteur": "Ibn ʿArabī",
+          "texte": "Adam est le khalīfa parce qu'il porte tous les Noms — il est le seul à pouvoir les manifester ensemble."
+        }
+      ],
+      "meditation": "Si je suis le lieutenant de Dieu sur la terre — qu'est-ce que je tiens de Lui qui demande à être bien tenu ?",
+      "resonance": [
+        "insan-kamil",
+        "adam",
+        "asmaa",
+        "akhlaq"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "huduur",
+      "ar": "الحُضُور",
+      "tr": "al-ḥuḍūr",
+      "tr_simple": "huduur",
+      "fr": "La présence",
+      "racine": "ح ض ر",
+      "racine_sens": "être présent, assister",
+      "category": "etats",
+      "tags": [
+        "présence",
+        "attention",
+        "intériorité"
+      ],
+      "definition_concise": "La <em>présence</em> du cœur devant Dieu — état où l'on est totalement <em>là</em>, sans dispersion. Opposé de la ghafla (l'oubli, la distraction). C'est l'âme du dhikr et de toute pratique authentique.",
+      "sens_profond": "Le ḥuḍūr n'est pas un effort de concentration mentale — c'est un <em>basculement</em> du cœur. Dans la ghafla, on est <em>dispersé</em>, traîné par les pensées, distrait par les sollicitations. Dans le ḥuḍūr, on est <em>recueilli</em> : tout est rassemblé en un point, ici et maintenant. Le hadith dit : <em>« Une prière n'est jamais complète sans ḥuḍūr. »</em> Tu peux faire mille prières sans présence — elles valent peu. Tu peux faire une seule prière avec ḥuḍūr — elle vaut tout. Les degrés du ḥuḍūr : présence du corps (être physiquement là), présence de la langue (réciter consciemment), présence du cœur (avoir le cœur posé sur ce qu'on fait), présence devant Dieu (savoir qu'on est sous Son regard), présence <em>en</em> Dieu (le saint qui n'a plus que Lui devant les yeux). Cette dernière est rare. Mais déjà la troisième transforme radicalement la prière : un quart d'heure de prière vraiment présente change l'âme plus que des heures de récitation distraite. Le ḥuḍūr, c'est l'iḥsān en acte.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "Combien de priants n'ont de leur prière que la fatigue — pour avoir manqué le ḥuḍūr."
+        },
+        {
+          "auteur": "al-Junayd",
+          "texte": "Le ḥuḍūr est le secret de l'invocation : sans lui, tu parles seul ; avec lui, tu parles à Lui."
+        }
+      ],
+      "meditation": "À l'instant — suis-je vraiment <em>là</em>, ou bien dispersé entre dix endroits ?",
+      "resonance": [
+        "ghafla",
+        "ihsan",
+        "muraqaba",
+        "dhikr",
+        "qalb"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "sukr",
+      "ar": "السُّكْر",
+      "tr": "as-sukr",
+      "tr_simple": "sukr",
+      "fr": "L'ivresse spirituelle",
+      "racine": "س ك ر",
+      "racine_sens": "s'enivrer, perdre la raison",
+      "category": "etats",
+      "tags": [
+        "ivresse",
+        "extase",
+        "perte de soi"
+      ],
+      "definition_concise": "L'<em>ivresse</em> spirituelle — état où le serviteur, saisi par l'amour ou la vision divine, perd la conscience de soi et du monde. État puissant mais transitoire, qui doit céder la place à la <em>ṣaḥw</em> (sobriété) pour être pleinement intégré.",
+      "sens_profond": "Le sukr est l'expérience saisissante où Dieu Se manifeste avec une telle force que l'âme ne peut plus se contenir : elle déborde, perd ses repères, parle parfois de manière incohérente. Bisṭāmī et Ḥallāj sont les figures classiques de l'ivresse soufie : <em>« Subḥānī ! Que ma propre gloire est grande ! »</em> dit Bisṭāmī en ivresse — comprenez : ce n'est pas <em>lui</em> qui parle, c'est Dieu en lui. <em>« Anā-l-Ḥaqq — Je suis le Vrai »</em>, dit Ḥallāj : ce n'est pas <em>lui</em> qui s'attribue la divinité, c'est la disparition de son moi qui ne laisse plus que Lui parlant par sa bouche. Mais voilà : ces paroles, prononcées en ivresse, ne sont pas compréhensibles par le commun. Elles ont coûté la vie à Ḥallāj. C'est pourquoi al-Junayd, son maître, l'a corrigé : <em>« Il a parlé de ce qu'il a vu — mais il n'aurait pas dû le dire. »</em> La voie sobre tient que le sukr est précieux comme expérience, mais qu'on doit en revenir à la ṣaḥw (la sobriété) pour pouvoir <em>servir</em>, <em>enseigner</em>, <em>vivre avec les autres</em>. Le sukr est une grâce passagère ; la ṣaḥw est la station durable.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Bisṭāmī",
+          "texte": "Subḥānī ! Que ma propre gloire est grande !"
+        },
+        {
+          "auteur": "Ḥallāj",
+          "texte": "Anā-l-Ḥaqq — Je suis le Vrai."
+        },
+        {
+          "auteur": "al-Junayd",
+          "texte": "Ils ont parlé de ce qu'ils ont vu ; ils n'auraient pas dû le dire."
+        }
+      ],
+      "meditation": "Y a-t-il eu un moment où j'ai été saisi au-delà de moi-même — et qu'en ai-je fait ?",
+      "resonance": [
+        "sahw",
+        "shath",
+        "fanaa",
+        "ishq",
+        "hallaj"
+      ],
+      "lectures_site": [
+        {
+          "titre": "Hallāj",
+          "url": "../auteurs/hallaj.html"
+        }
+      ]
+    },
+    {
+      "id": "sahw",
+      "ar": "الصَّحْو",
+      "tr": "aṣ-ṣaḥw",
+      "tr_simple": "sahw",
+      "fr": "La sobriété spirituelle",
+      "racine": "ص ح و",
+      "racine_sens": "être éveillé, sain d'esprit (après un évanouissement, après l'ivresse)",
+      "category": "etats",
+      "tags": [
+        "sobriété",
+        "retour",
+        "intégration"
+      ],
+      "definition_concise": "La <em>sobriété</em> spirituelle — état de retour à soi après l'ivresse (sukr), sans avoir perdu ce qu'on y avait reçu. Pour la grande tradition (al-Junayd), la ṣaḥw est plus haute que le sukr : elle est l'intégration de la grâce dans la vie ordinaire.",
+      "sens_profond": "Deux écoles s'opposent dans le soufisme classique : les <em>sukārā</em> (les ivres — Bisṭāmī, Ḥallāj, ʿAṭṭār) et les <em>ṣāḥūn</em> (les sobres — al-Junayd, al-Qushayrī, Ibn ʿArabī en grande partie). Les ivres mettent l'accent sur l'expérience extatique, débordante, parfois imprudente dans ses paroles. Les sobres mettent l'accent sur l'intégration, la mesure, la fidélité aux apparences du droit chemin. Al-Junayd a tranché : <em>« La sobriété après l'ivresse est plus haute que l'ivresse — car l'ivresse n'est qu'une étape, la sobriété est la demeure. »</em> Pourquoi ? Parce que dans l'ivresse, le saint est <em>séparé</em> de la communauté humaine — il ne peut plus enseigner, ni servir, ni assumer ses devoirs. Dans la ṣaḥw, il a tout ce que l'ivresse lui a donné, <em>et</em> il est rendu au monde — il peut donc transmettre. La voie ne s'arrête pas à l'ivresse ; elle traverse l'ivresse pour aller plus loin, à une ṣaḥw qui n'est pas la sobriété d'avant l'ivresse, mais une sobriété <em>après</em>, irriguée par ce que l'ivresse a apporté.",
+      "voix_des_maitres": [
+        {
+          "auteur": "al-Junayd",
+          "texte": "La sobriété après l'ivresse est plus haute que l'ivresse — car l'ivresse passe, la sobriété demeure."
+        },
+        {
+          "auteur": "Ibn ʿArabī",
+          "texte": "Le ṣāḥūn vit dans le monde en restant ailleurs ; le sukārā quitte le monde sans pouvoir y revenir."
+        }
+      ],
+      "meditation": "Est-ce que je préfère les moments d'éclair — ou la lumière calme et continue ?",
+      "resonance": [
+        "sukr",
+        "baqaa",
+        "fanaa",
+        "muraqaba"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "shath",
+      "ar": "الشَّطْح",
+      "tr": "ash-shaṭḥ",
+      "tr_simple": "shath",
+      "fr": "La parole extatique",
+      "racine": "ش ط ح",
+      "racine_sens": "se mouvoir vigoureusement, déborder",
+      "category": "etats",
+      "tags": [
+        "parole extatique",
+        "audace",
+        "controverse"
+      ],
+      "definition_concise": "La <em>parole extatique</em> — déclaration apparemment scandaleuse prononcée dans l'ivresse spirituelle (sukr). Genre littéraire entier du soufisme classique. Pris au pied de la lettre, beaucoup sont hérétiques ; lus dans leur contexte, ils témoignent de la fanāʾ.",
+      "sens_profond": "Le shaṭḥ est ce <em>débordement</em> de paroles qui jaillit chez le soufi en ivresse, et qui paraît, à l'extérieur, transgresser les limites de l'orthodoxie. Le plus célèbre est celui de Bisṭāmī : <em>« Subḥānī mā aʿẓama shaʾnī — Gloire à Moi, que Ma majesté est grande ! »</em> En arabe, <em>subḥān</em> est ce qu'on dit de Dieu — Bisṭāmī l'applique à lui-même. Hérésie ? Non, disent les soufis : c'est qu'à ce moment-là, son moi a disparu, et c'est Dieu qui parle par sa bouche. Le shaṭḥ le plus terrible est celui de Ḥallāj : <em>« Anā-l-Ḥaqq — Je suis le Vrai »</em>, qui lui a coûté la vie. Ibn ʿArabī, plus tard, dans ses <em>Mawāqif</em>, dans les <em>Munājāt</em>, est rempli de shaṭaḥāt. Le genre fut codifié par Rūzbihān Baqlī au XII<sup>e</sup> siècle dans son <em>Sharḥ-i shaṭḥiyāt</em>. Les sobres comme al-Junayd ne nient pas la véracité des shaṭaḥāt — mais blâment leur expression publique : <em>« Ils ont parlé de ce qu'ils ont vu ; ils n'auraient pas dû le dire. »</em> Pour le lecteur ordinaire, le shaṭḥ peut paraître blasphématoire — c'est ce qui le rend si difficile à transmettre.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Bisṭāmī",
+          "texte": "Sous mon vêtement, il n'y a que Dieu."
+        },
+        {
+          "auteur": "Ḥallāj",
+          "texte": "Anā-l-Ḥaqq."
+        },
+        {
+          "auteur": "Rūzbihān Baqlī",
+          "texte": "Les shaṭaḥāt sont les éclairs des amants — ils brûlent celui qui les approche sans préparation."
+        }
+      ],
+      "meditation": "Y a-t-il eu un moment où je n'aurais pas dû dire ce que je voyais — par souci pour ceux qui ne pouvaient pas l'entendre ?",
+      "resonance": [
+        "sukr",
+        "ittihad",
+        "fanaa",
+        "hallaj",
+        "ishq"
+      ],
+      "lectures_site": [
+        {
+          "titre": "Hallāj",
+          "url": "../auteurs/hallaj.html"
+        }
+      ]
+    },
+    {
+      "id": "khatir",
+      "ar": "الخَاطِر",
+      "tr": "al-khāṭir",
+      "tr_simple": "khatir",
+      "fr": "La pensée passagère",
+      "racine": "خ ط ر",
+      "racine_sens": "passer dans l'esprit, traverser",
+      "category": "connaissance",
+      "tags": [
+        "pensée",
+        "inspiration",
+        "discernement"
+      ],
+      "definition_concise": "La <em>pensée passagère</em> qui traverse le cœur — peut venir de Dieu, de l'ange, de la nafs, ou du démon. L'art du discernement spirituel consiste précisément à reconnaître leur source.",
+      "sens_profond": "Les soufis ont développé une science fine des <em>khawāṭir</em> (pluriel de khāṭir) : les pensées qui passent dans le cœur. Quatre sources possibles : (1) <em>khāṭir raḥmānī</em> — pensée venant de Dieu, paisible, juste, qui pointe vers le bien ; (2) <em>khāṭir malakī</em> — pensée venant d'un ange, ferme, claire, qui appelle à la sunna ; (3) <em>khāṭir nafsānī</em> — pensée venant de la nafs, charnelle, intéressée, qui veut le plaisir ou la reconnaissance ; (4) <em>khāṭir shayṭānī</em> — pensée venant du démon, rusée, qui pousse au mal en le déguisant en bien. Discerner entre les quatre est l'<em>art</em> majeur du voyageur — c'est ce que la tradition chrétienne appelle le discernement des esprits. Critères : la pensée pousse-t-elle vers Dieu ou loin de Lui ? Apporte-t-elle la paix ou l'agitation ? Est-elle conforme à la sharīʿa ou la contredit ? Augmente-t-elle l'humilité ou l'orgueil ? Sans ce discernement, on prend pour inspiration ce qui n'est qu'égoïsme déguisé, et on rejette pour scrupule ce qui était la voix juste. Le maître soufi est celui qui a affiné ce discernement par des années d'observation de son propre cœur.",
+      "voix_des_maitres": [
+        {
+          "auteur": "al-Muḥāsibī",
+          "texte": "Surveille les khawāṭir : chacun d'eux est un message, mais tous ne viennent pas du même expéditeur."
+        },
+        {
+          "auteur": "Hadith",
+          "texte": "Demande conseil à ton cœur — fût-ce après cent demandes aux hommes."
+        }
+      ],
+      "meditation": "Quelle pensée traverse mon cœur en ce moment — d'où vient-elle ?",
+      "resonance": [
+        "ilham",
+        "muhasaba",
+        "muraqaba",
+        "warid",
+        "nafs"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "warid",
+      "ar": "الوَارِد",
+      "tr": "al-wārid",
+      "tr_simple": "warid",
+      "fr": "L'inspiration soudaine",
+      "racine": "و ر د",
+      "racine_sens": "arriver, descendre — d'où wārid, ce qui vient à toi",
+      "category": "connaissance",
+      "tags": [
+        "inspiration",
+        "descente",
+        "grâce"
+      ],
+      "definition_concise": "Une <em>arrivée</em> soudaine dans le cœur — état, lumière, ou pensée qui descend du Très-Haut sans qu'on l'ait préparée. Plus puissante que le khāṭir : le wārid <em>secoue</em>, transforme, souvent durablement.",
+      "sens_profond": "Le wārid est plus intense que le khāṭir : ce n'est pas une simple pensée qui passe — c'est un <em>débarquement</em> de la grâce, qui peut renverser le cours d'une vie. Il peut prendre des formes variées : un éclair de compréhension qui résout une difficulté longue ; une vague d'amour qui te met aux larmes ; une décision soudaine et claire (quitter quelque chose, commencer autre chose) ; une <em>sensation</em> de présence divine si forte qu'elle bouleverse la journée. Le wārid n'est pas provoqué — il est <em>donné</em>. Mais on peut y être <em>préparé</em> : un cœur poli par les pratiques est mieux disposé à recevoir le wārid qu'un cœur encombré. Comme la pluie : elle tombe sur les justes et les injustes, mais seul le sol cultivé en tire du fruit. Pour les soufis avancés, les <em>wāridāt</em> se succèdent : la voie n'est pas une ligne droite mais une suite de descentes successives, qui élèvent à chaque fois d'un degré. Important : ne pas <em>réclamer</em> les wāridāt ; cela serait spirituellement vicieux. On les reçoit, on en remercie, on les laisse partir.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Ibn ʿAṭāʾ Allāh",
+          "texte": "Si tu attendais les wāridāt comme tu attends les vivres, tu mourrais de leur attente — mais ils descendent quand tu ne demandes pas."
+        },
+        {
+          "auteur": "al-Qushayrī",
+          "texte": "Le wārid déchire ce qui était lié et lie ce qui était déchiré — il refait l'homme en silence."
+        }
+      ],
+      "meditation": "Y a-t-il eu dans ma vie une <em>descente</em> qui a tout changé — et l'ai-je remerciée ?",
+      "resonance": [
+        "ilham",
+        "kashf",
+        "hal",
+        "fadl",
+        "khatir"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "fath",
+      "ar": "الفَتْح",
+      "tr": "al-fatḥ",
+      "tr_simple": "fath",
+      "fr": "L'ouverture spirituelle",
+      "racine": "ف ت ح",
+      "racine_sens": "ouvrir",
+      "category": "connaissance",
+      "tags": [
+        "ouverture",
+        "dévoilement",
+        "grâce"
+      ],
+      "definition_concise": "L'<em>ouverture</em> — moment où Dieu ouvre soudain au serviteur une porte spirituelle qui était jusque-là fermée. Plus fort que le simple kashf (dévoilement d'une vérité particulière) : le fatḥ ouvre <em>un horizon</em>, une nouvelle phase de la voie.",
+      "sens_profond": "Le fatḥ est l'événement spirituel majeur — celui qu'on attend parfois pendant des années, et qui vient soudain. Sa caractéristique : il <em>ouvre</em> ce qui était fermé. Tu lisais le Coran sans le comprendre — un jour, fatḥ : il s'éclaire. Tu pratiquais le dhikr sans aucun goût — un jour, fatḥ : tu commences à le sentir. Tu essayais de quitter un attachement — un jour, fatḥ : il tombe de lui-même. Le fatḥ ne se <em>force</em> pas. Il vient quand l'âme est prête — et cette préparation, c'est l'œuvre des années de pratique fidèle même quand on ne sent rien. C'est l'œuvre principale d'Ibn ʿArabī qui s'appelle <em>al-Futūḥāt al-Makkiyya</em> — Les Ouvertures Mekkoises, parce qu'écrites pendant un séjour à la Mecque où il reçut une cascade de fatḥs. Toute sa cosmologie complexe est l'<em>écriture</em> de ce qui lui a été ouvert. Pour le voyageur ordinaire, les fatḥs sont rares mais cruciaux : ils marquent les seuils. La sourate 110 du Coran s'intitule <em>an-Naṣr</em> (le Secours) mais s'ouvre par : <em>« Quand vient le secours de Dieu et l'ouverture (fatḥ)… »</em> Le fatḥ extérieur (les victoires du Prophète) est aussi le fatḥ intérieur (l'ouverture du cœur).",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 48, 1",
+          "texte": "Nous t'avons certes accordé une ouverture (fatḥ) éclatante."
+        },
+        {
+          "auteur": "Ibn ʿArabī",
+          "texte": "Le fatḥ vient quand on a cessé d'attendre — quand l'âme a renoncé à son propre effort."
+        }
+      ],
+      "meditation": "Y a-t-il une porte que je sens fermée — dont je devrais cesser de pousser, et laisser ouvrir ?",
+      "resonance": [
+        "kashf",
+        "warid",
+        "ilham",
+        "hal",
+        "fanaa"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "abd",
+      "ar": "العَبْد",
+      "tr": "al-ʿabd",
+      "tr_simple": "abd",
+      "fr": "Le serviteur",
+      "racine": "ع ب د",
+      "racine_sens": "servir — racine que partagent ʿibāda (adoration), ʿabd (serviteur), ʿubūdiyya (servitude)",
+      "category": "anthropologie",
+      "tags": [
+        "serviteur",
+        "dignité",
+        "Prophète"
+      ],
+      "definition_concise": "Le <em>serviteur</em> de Dieu — le titre le plus haut donné à l'homme. Le Prophète Muḥammad lui-même est appelé <em>ʿabdihi wa rasūluh</em> (Son serviteur et Son messager) — <em>serviteur</em> avant <em>messager</em>.",
+      "sens_profond": "Pour les soufis, devenir vraiment <em>ʿabd</em> (serviteur) est le sommet de la voie — plus haut encore que devenir <em>walī</em> (saint). Pourquoi ? Parce que le walī peut encore avoir des charismes, des manifestations, une renommée — autant de choses où l'ego peut se glisser. Le ʿabd pur n'a <em>plus rien à lui</em> : ni volonté propre, ni gain attendu, ni renommée recherchée. Il est <em>transparent</em> à son Seigneur. Le Prophète, le plus parfait des hommes, choisit cette désignation : <em>« Je ne suis qu'un serviteur. »</em> Et au début de la sourate al-Isrāʾ (17, 1), Dieu Le désigne pour le Voyage nocturne : <em>« Gloire à Celui qui a fait voyager Son serviteur. »</em> Pas <em>Son prophète</em>, pas <em>Son ami</em>, pas <em>Son messager</em> — <em>Son serviteur</em>. C'est en tant que ʿabd qu'il monte aux cieux. Cette intuition est cruciale : la servitude pure est plus haute que la sainteté apparente. Le sommet n'est pas <em>devenir quelqu'un</em> — c'est <em>n'être plus rien</em> sinon Lui à travers soi. Voilà pourquoi les vrais saints insistent toujours : <em>« Je ne suis rien. »</em> Cette parole, dans leur bouche, n'est pas modestie — c'est diagnostic exact.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 17, 1",
+          "texte": "Gloire à Celui qui a fait voyager Son serviteur de la Mosquée sacrée à la Mosquée très-éloignée."
+        },
+        {
+          "auteur": "Hadith du Prophète",
+          "texte": "Je ne suis qu'un serviteur ; je mange comme mange le serviteur, et je m'assois comme s'assoit le serviteur."
+        },
+        {
+          "auteur": "al-Junayd",
+          "texte": "La servitude pure (ʿubūdiyya) est plus haute que la sainteté — car le saint a encore quelque chose ; le serviteur n'a plus que Lui."
+        }
+      ],
+      "meditation": "Si on me demandait demain ce que je suis — répondrais-je d'abord 'serviteur', ou autre chose ?",
+      "resonance": [
+        "uboodiyya",
+        "wali",
+        "ibada",
+        "fanaa",
+        "ihsan"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "uboodiyya",
+      "ar": "العُبُودِيَّة",
+      "tr": "al-ʿubūdiyya",
+      "tr_simple": "uboodiyya",
+      "fr": "La pure servitude",
+      "racine": "ع ب د",
+      "racine_sens": "même racine que ʿabd, ʿibāda — la <em>condition</em> de serviteur",
+      "category": "anthropologie",
+      "tags": [
+        "servitude",
+        "transparence",
+        "sommet"
+      ],
+      "definition_concise": "La <em>servitude</em> pure — état de l'âme qui s'est dépouillée de toute volonté propre, de toute revendication, de toute interférence. Distinct de la <em>ʿibāda</em> (l'acte d'adoration) : la ʿubūdiyya est l'<em>état</em> d'où coule l'adoration.",
+      "sens_profond": "Pour les soufis, il y a une hiérarchie subtile : la <em>ʿibāda</em> est l'<em>acte</em> d'adorer (prier, jeûner, dhikr) ; la <em>ʿubūdiyya</em> est l'<em>être</em> du serviteur, qui rend tous les actes naturels. Tu peux faire la ʿibāda sans avoir la ʿubūdiyya — tu pratiques par discipline, sans que ton être en soit imprégné. Tu peux avoir la ʿubūdiyya sans afficher beaucoup de ʿibāda — toute ta vie est devenue adoration, qu'elle prenne la forme de la prière ou d'un repas pris en présence. Al-Qushayrī, dans sa <em>Risāla</em>, dit : <em>« La ʿubūdiyya est plus haute que la ʿibāda. »</em> Pourquoi ? Parce que la ʿibāda est encore <em>quelque chose</em> que <em>tu fais</em> — donc encore une trace de toi. La ʿubūdiyya, c'est que tu n'es <em>plus</em> — il ne reste que Lui agissant à travers toi. C'est la condition même de Muḥammad : <em>« Ce n'est pas toi qui as lancé, quand tu as lancé, mais c'est Dieu qui a lancé »</em> (Coran 8, 17). Cette parole, adressée au Prophète, est la définition même de la ʿubūdiyya : ton acte est <em>Son</em> acte ; tu n'es plus que la main par laquelle Il agit.",
+      "voix_des_maitres": [
+        {
+          "auteur": "al-Qushayrī",
+          "texte": "La ʿubūdiyya est plus haute que la ʿibāda — l'une est l'acte, l'autre est l'être."
+        },
+        {
+          "auteur": "Coran 8, 17",
+          "texte": "Ce n'est pas toi qui as lancé, quand tu as lancé — c'est Dieu qui a lancé."
+        }
+      ],
+      "meditation": "Y a-t-il en moi un <em>acte</em> qui est devenu un <em>être</em> — où je n'ai même plus à 'faire' ?",
+      "resonance": [
+        "abd",
+        "ibada",
+        "fanaa",
+        "baqaa",
+        "tawakkul"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "riyaa",
+      "ar": "الرِّيَاء",
+      "tr": "ar-riyāʾ",
+      "tr_simple": "riyaa",
+      "fr": "L'ostentation",
+      "racine": "ر أ ي",
+      "racine_sens": "voir, être vu — d'où riyāʾ : se faire voir, agir <em>pour être vu</em>",
+      "category": "anthropologie",
+      "tags": [
+        "ostentation",
+        "hypocrisie",
+        "vice"
+      ],
+      "definition_concise": "L'<em>ostentation</em> spirituelle — agir piensemement non pour Dieu, mais pour être <em>vu</em> par les hommes. Vice subtil et ravageur : appelé par le Prophète <em>« le petit shirk »</em> (associationnisme caché).",
+      "sens_profond": "Le hadith dit : <em>« Ce que je crains le plus pour ma communauté, c'est le petit shirk. — Qu'est-ce que le petit shirk ? — Le riyāʾ. »</em> Pourquoi est-il si redouté ? Parce qu'il <em>dévore</em> les œuvres : tu peux faire des actes en apparence parfaits — prière, charité, jeûne — mais si une fraction de toi voulait être <em>vu</em> ou <em>admiré</em>, l'acte est gâché. Le mīzān (la Balance) ne pèse que ce qui est <em>pour Lui</em>. Le riyāʾ est insidieux car il se mêle imperceptiblement à l'intention : tu pries dans la nuit, sincèrement, mais le matin tu te surprends à le mentionner à un ami pour qu'il sache. Tout est perdu. La parade : examen constant de l'intention (muḥāsaba), pratique cachée (cacher ses actes plus que cacher ses fautes — selon le conseil des anciens), refuser la flatterie. Hadith : <em>« Quand vous voyez ceux qui sont déclarés saints, jetez de la terre dans leur barbe »</em> (pour casser la flatterie excessive qui les perdrait). Et le critère ultime : l'acte que tu pourrais faire <em>de la même manière</em>, qu'il soit vu ou non, est sincère. L'acte que tu modifies selon que tu es regardé ou non est entaché de riyāʾ.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "Ce que je crains le plus pour ma communauté, c'est le petit shirk — le riyāʾ."
+        },
+        {
+          "auteur": "Bishr al-Ḥāfī",
+          "texte": "Trouve la sincérité, tu trouveras la vie. Trouve le riyāʾ, tu trouveras la mort déguisée."
+        }
+      ],
+      "meditation": "Cet acte que je viens de faire — l'aurais-je fait exactement de la même manière si personne ne le savait ?",
+      "resonance": [
+        "ikhlas",
+        "niyya",
+        "ujb",
+        "muhasaba",
+        "sidq"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "ujb",
+      "ar": "العُجْب",
+      "tr": "al-ʿujb",
+      "tr_simple": "ujb",
+      "fr": "La suffisance",
+      "racine": "ع ج ب",
+      "racine_sens": "s'étonner, s'admirer",
+      "category": "anthropologie",
+      "tags": [
+        "suffisance",
+        "auto-admiration",
+        "vice"
+      ],
+      "definition_concise": "La <em>suffisance</em> — auto-admiration de ses propres œuvres ou qualités. Vice subtilement différent du riyāʾ : le riyāʾ veut être vu par les autres ; l'ʿujb se voit lui-même avec plaisir. Souvent plus difficile à détecter.",
+      "sens_profond": "Si le riyāʾ est l'ostentation tournée vers l'extérieur, l'ʿujb est l'ostentation tournée vers <em>soi-même</em>. On se regarde soi-même et on se trouve bien. <em>« Comme je suis sincère ! Comme je suis humble ! Comme je suis détaché ! »</em> — sitôt qu'on se félicite, on est perdu. L'ʿujb est plus subtil que le riyāʾ : on peut être seul, dans le secret, et tomber dans l'ʿujb. Beaucoup d'aspirants tombent dans ce piège après quelques années de pratique : ils voient leurs progrès et s'en admirent. Tout est alors perdu d'un coup. Antidote : se rappeler que ce que tu as, tu l'as <em>reçu</em>. Si tu pries la nuit, c'est <em>Lui</em> qui t'a réveillé. Si tu jeûnes, c'est <em>Lui</em> qui t'a donné la santé. Si tu es patient, c'est <em>Lui</em> qui t'a donné la patience. Tout mérite que tu t'attribues est un vol : ce n'était pas à toi. Le hadith de Yūnus est saisissant : tombé dans le ventre de la baleine, il dit : <em>« Lā ilāha illā Anta, subḥānaka, innī kuntu min aẓ-ẓālimīn »</em> — « Pas de dieu sinon Toi, gloire à Toi, j'ai été certes parmi les injustes. » Yūnus est un prophète. Et il dit « j'ai été injuste ». C'est ce regard sur soi qui sauve, pas l'inverse.",
+      "voix_des_maitres": [
+        {
+          "auteur": "ʿAlī",
+          "texte": "L'ʿujb détruit cinquante ans d'œuvres en un instant."
+        },
+        {
+          "auteur": "Sahl al-Tustarī",
+          "texte": "Si tu vois en toi du bien, sache qu'il vient de Lui ; et s'Il te l'enlève, il ne te restera rien."
+        }
+      ],
+      "meditation": "Lorsque je m'admire moi-même — sur quoi exactement ? Et qui me l'avait donné ?",
+      "resonance": [
+        "riyaa",
+        "ikhlas",
+        "tawba",
+        "faqr",
+        "kibr"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "nafs-mulhama",
+      "ar": "النَّفْسُ المُلْهَمَة",
+      "tr": "an-nafs al-mulhama",
+      "tr_simple": "nafs mulhama",
+      "fr": "L'âme inspirée",
+      "racine": "ن ف س + ل ه م",
+      "racine_sens": "nafs (âme) + mulhama (inspirée)",
+      "category": "anthropologie",
+      "tags": [
+        "nafs",
+        "inspiration",
+        "degré intermédiaire"
+      ],
+      "definition_concise": "Quatrième degré de la nafs dans la cartographie soufie élargie — entre la <em>lawwāma</em> (qui se reproche) et la <em>muṭmaʾinna</em> (apaisée). L'âme à laquelle Dieu commence à <em>inspirer</em> directement le discernement entre bien et mal.",
+      "sens_profond": "Le Coran (91, 7-8) dit : <em>« Et l'âme, et Celui qui l'a façonnée ; et Il lui a inspiré (alhamahā) sa perversion et sa piété. »</em> Tout être humain reçoit, à un degré, cette inspiration — mais chez la <em>nafs mulhama</em>, elle devient claire, fiable, distincte. Ce degré est intermédiaire : l'âme n'est pas encore totalement apaisée (muṭmaʾinna), mais elle est sortie de la simple auto-critique (lawwāma). Elle <em>perçoit</em> directement ce qu'il faut faire, par une lumière intérieure qui guide. Beaucoup de classiques élargissent la triade coranique (ammāra, lawwāma, muṭmaʾinna) en sept degrés : (1) ammāra, (2) lawwāma, (3) mulhama, (4) muṭmaʾinna, (5) rāḍiya (contentée), (6) marḍiyya (agréée), (7) kāmila (parfaite, comme celle des saints majeurs). Cette cartographie en sept correspond aussi à sept couleurs intérieures vues en khalwa (retraite), selon Najm al-Dīn al-Kubrā. À chaque degré, la pratique change : l'aspirant ammāra a besoin de discipline ferme ; le mulhama a besoin d'attention fine aux inspirations qui descendent. La voie n'est jamais la même selon où l'on est.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Coran 91, 7-8",
+          "texte": "Et l'âme, et Celui qui l'a façonnée — et Il lui a inspiré sa perversion et sa piété."
+        },
+        {
+          "auteur": "Najm al-Dīn al-Kubrā",
+          "texte": "Quand la nafs devient mulhama, elle entend Dieu lui parler sans paroles."
+        }
+      ],
+      "meditation": "Y a-t-il en moi une voix qui sait, sans avoir appris ?",
+      "resonance": [
+        "nafs",
+        "nafs-lawwama",
+        "nafs-mutmainna",
+        "ilham",
+        "khatir"
+      ],
+      "lectures_site": [
+        {
+          "titre": "L'ego (nafs)",
+          "url": "../cheminer-pages/nafs.html"
+        }
+      ]
+    },
+    {
+      "id": "sayr",
+      "ar": "السَّيْر",
+      "tr": "as-sayr",
+      "tr_simple": "sayr",
+      "fr": "Le voyage spirituel",
+      "racine": "س ي ر",
+      "racine_sens": "marcher, voyager",
+      "category": "poles",
+      "tags": [
+        "voyage",
+        "marche",
+        "périple intérieur"
+      ],
+      "definition_concise": "Le <em>voyage</em> spirituel. Distinction classique d'Ibn ʿArabī : <em>sayr ilā Llāh</em> (voyage vers Dieu — du serviteur à son Seigneur) ; <em>sayr fī Llāh</em> (voyage <em>en</em> Dieu — où l'on parcourt Ses Noms et Ses Attributs).",
+      "sens_profond": "Pour Ibn ʿArabī et la tradition akbarienne, le voyage spirituel a plusieurs étapes : (1) le <em>voyage <em>vers</em> Dieu</em> (sayr ilā Llāh) — phase ascendante, où le serviteur s'éloigne de la dunyā et s'approche du divin ; (2) le <em>voyage <em>en</em> Dieu</em> (sayr fī Llāh) — phase intérieure, où, ayant trouvé, on explore les profondeurs : les Noms, les Attributs, les théophanies infinies ; (3) le <em>voyage <em>depuis</em> Dieu vers les créatures</em> (sayr min Allāh ilā-l-khalq) — phase descendante, où le saint accompli redescend dans le monde pour servir, enseigner, transmettre. Ce dernier voyage est essentiel : le walī n'est pas celui qui reste perdu en Dieu — c'est celui qui <em>revient</em> de Lui pour aider les autres à venir. C'est le mouvement qu'on retrouve dans le mythe de la caverne de Platon : le philosophe sort vers la lumière, mais doit redescendre pour libérer les autres. Le Prophète est l'archétype de ces trois mouvements complets : ascension lors du Miʿrāj, voyage en Dieu lors de la révélation, retour pour fonder la communauté.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Ibn ʿArabī",
+          "texte": "Trois voyages : vers Lui, en Lui, depuis Lui. Tant que tu n'as pas fait les trois, tu n'es pas accompli."
+        },
+        {
+          "auteur": "Adage soufi",
+          "texte": "Le voyageur ne s'arrête nulle part — ni en la dunyā, ni même dans l'ākhira ; il marche jusqu'à Lui."
+        }
+      ],
+      "meditation": "Où en suis-je de mon voyage — au début, en route, ou commençant à revenir pour aider d'autres ?",
+      "resonance": [
+        "suluk",
+        "tariqa",
+        "fanaa",
+        "baqaa"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "tajrid",
+      "ar": "التَّجْرِيد",
+      "tr": "at-tajrīd",
+      "tr_simple": "tajrid",
+      "fr": "Le dépouillement",
+      "racine": "ج ر د",
+      "racine_sens": "dénuder, dépouiller — d'où mujarrad : nu, pur",
+      "category": "poles",
+      "tags": [
+        "dépouillement",
+        "détachement",
+        "purification"
+      ],
+      "definition_concise": "Le <em>dépouillement</em> — détacher l'âme de toute chose autre que Dieu. Plus radical que le zuhd : on se dépouille non seulement des biens, mais des attaches subtiles — opinions, identifications, autosatisfaction.",
+      "sens_profond": "Le tajrīd est l'œuvre du voyageur avancé. Au début, le zuhd suffit : se détacher des biens matériels. Mais ensuite il faut aller plus loin — se dépouiller des dépendances subtiles : son identité sociale, son statut, sa réputation, ses opinions politiques, ses jugements moraux sur autrui, et même ses états spirituels (les wāridāt qu'on voudrait conserver). Tout ce à quoi on s'attache devient un voile. Le tajrīd, c'est l'opération continue de <em>desserrer</em> ces attaches. Mais attention : le tajrīd véritable n'est pas une fuite. On peut être <em>marié et père de famille</em> tout en étant en tajrīd : tu vis avec ce qui t'est donné, tu en remercies, mais tu sais qu'aucune de ces choses n'est <em>à toi</em>. Quand elles te quittent, tu ne t'effondres pas. Critère : ce qui te <em>fait souffrir</em> de perdre est ce à quoi tu es encore attaché. Hadith : <em>« Aime ce que tu veux, mais tu en seras séparé ; vis aussi longtemps que tu veux, mais tu mourras ; fais ce que tu veux, mais tu en seras rétribué. »</em>",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "Aime ce que tu veux, mais tu en seras séparé ; vis aussi longtemps que tu veux, mais tu mourras."
+        },
+        {
+          "auteur": "Ibn ʿAṭāʾ Allāh",
+          "texte": "Tu ne dépouilleras vraiment ton âme qu'à proportion de ce que tu connais de Dieu — l'amour pour Lui chasse les amours moindres."
+        }
+      ],
+      "meditation": "Ce qui me ferait le plus souffrir de perdre — qu'est-ce que cela me dit de mon tajrīd ?",
+      "resonance": [
+        "zuhd",
+        "faqr",
+        "tafrid",
+        "fanaa",
+        "tawakkul"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "tafrid",
+      "ar": "التَّفْرِيد",
+      "tr": "at-tafrīd",
+      "tr_simple": "tafrid",
+      "fr": "La séparation pure",
+      "racine": "ف ر د",
+      "racine_sens": "être seul, unique, isolé",
+      "category": "poles",
+      "tags": [
+        "séparation",
+        "unicité",
+        "complément du tajrīd"
+      ],
+      "definition_concise": "La <em>singularisation</em> — corollaire intérieur du tajrīd. Si le tajrīd dépouille de l'extérieur, le tafrīd <em>singularise</em> le cœur en n'y laissant que Dieu seul. Couple constant : <em>tajrīd zāhir, tafrīd bāṭin</em>.",
+      "sens_profond": "Le tafrīd est le mouvement complémentaire et intérieur du tajrīd. Pendant que tu te dépouilles à l'extérieur (tajrīd : moins de possessions, moins de dépendances, moins d'attachements), tu te <em>singularises</em> à l'intérieur — tu ne mets <em>plus</em> Dieu en concurrence avec quoi que ce soit. Ton cœur, qui jadis abritait mille préoccupations, devient un <em>singulier</em> : Lui, et rien d'autre. Cela ne signifie pas que tu cesses d'aimer, de te soucier, d'agir dans le monde — au contraire, tu fais tout cela mieux, parce que tout passe désormais par Lui. Tu aimes ton enfant <em>en Lui</em>, tu travailles <em>pour Lui</em>, tu te reposes <em>à cause de Lui</em>. Plus rien n'est concurrent. C'est ce que le hadith Qudsī dit : <em>« Mon serviteur ne cesse de se rapprocher de Moi par les œuvres surérogatoires, jusqu'à ce que Je l'aime. Et quand Je l'aime, Je deviens son ouïe par laquelle il entend, sa vue par laquelle il voit. »</em> Le tafrīd est ce moment où Dieu devient le <em>centre</em> unifiant — non un objet supplémentaire dans la conscience, mais le <em>sujet</em> de la conscience même.",
+      "voix_des_maitres": [
+        {
+          "auteur": "al-Junayd",
+          "texte": "Le tajrīd est l'œuvre de la main ; le tafrīd est l'œuvre du cœur."
+        },
+        {
+          "auteur": "Ibn ʿAṭāʾ Allāh",
+          "texte": "Tafrīd : que ton cœur n'ait plus à choisir entre Lui et autre chose."
+        }
+      ],
+      "meditation": "Si je ne pouvais garder qu'<em>une seule</em> chose dans mon cœur — qu'est-ce que ce serait ?",
+      "resonance": [
+        "tajrid",
+        "tawhid",
+        "ikhlas",
+        "fanaa",
+        "ishq"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "murshid",
+      "ar": "المُرْشِد",
+      "tr": "al-murshid",
+      "tr_simple": "murshid",
+      "fr": "Le guide spirituel",
+      "racine": "ر ش د",
+      "racine_sens": "diriger vers la droiture — d'où rushd, le bon chemin",
+      "category": "poles",
+      "tags": [
+        "guide",
+        "direction",
+        "synonyme de shaykh"
+      ],
+      "definition_concise": "Le <em>guide</em> spirituel — quasi-synonyme de shaykh, avec une nuance : le murshid met l'accent sur la fonction de <em>diriger</em>, de <em>conduire</em>. Le mot est très utilisé dans la tradition persane et turque.",
+      "sens_profond": "Si <em>shaykh</em> est le titre honorifique du maître (l'ancien), <em>murshid</em> insiste sur sa <em>fonction</em> : il <em>dirige</em> le disciple sur le chemin droit (rushd). Les deux mots sont quasiment interchangeables, mais murshid évoque davantage la <em>direction active</em> — celle d'un guide en montagne, qui connaît les passages, anticipe les difficultés, ouvre la voie. Dans la tradition turque (Mevleviyya, Bektashiyya), <em>mürşid</em> est le titre courant. En Iran : <em>morshed</em>. Le murshid véritable a trois qualités selon Najm al-Dīn al-Kubrā : (1) avoir lui-même parcouru le chemin (ne dirige bien que celui qui sait par expérience) ; (2) avoir été <em>autorisé</em> par son propre maître à enseigner (la silsila) ; (3) avoir le <em>discernement</em> nécessaire pour adapter son enseignement à chaque disciple (la voie n'est pas la même pour tous). Le faux murshid se reconnaît à plusieurs signes : il flatte, il demande de l'argent, il prétend posséder des secrets cachés moyennant paiement, il dénigre les autres maîtres, il s'attache à son disciple plutôt que de l'orienter vers Dieu. À fuir.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "Quiconque Dieu veut guider, Il lui ouvre la poitrine à l'islam — et lui envoie un guide."
+        },
+        {
+          "auteur": "Najm al-Dīn al-Kubrā",
+          "texte": "Trois conditions pour le murshid : avoir parcouru le chemin, avoir été autorisé, savoir adapter."
+        }
+      ],
+      "meditation": "Qui m'a réellement <em>guidé</em> dans ma vie — au sens où il a corrigé mes pas ?",
+      "resonance": [
+        "shaykh",
+        "pir",
+        "silsila",
+        "murid",
+        "tariqa"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "pir",
+      "ar": "پِير",
+      "tr": "pīr",
+      "tr_simple": "pir",
+      "fr": "Le maître (tradition persane)",
+      "racine": "persan, non arabe",
+      "racine_sens": "littéralement <em>ancien, vieux</em> — d'où le maître spirituel comme l'ancien sage",
+      "category": "poles",
+      "tags": [
+        "maître",
+        "tradition persane",
+        "synonyme de shaykh"
+      ],
+      "definition_concise": "Le <em>pīr</em> — équivalent persan du <em>shaykh</em> arabe. Mot très utilisé dans les confréries persanes, turques et indiennes. Le <em>pīr</em> est l'<em>ancien</em>, le sage qui guide.",
+      "sens_profond": "Le pīr est, dans la tradition persane et indienne, ce qu'est le shaykh dans la tradition arabe : le maître spirituel, l'autorité initiatique. Le mot vient du persan <em>pīr</em> qui signifie littéralement <em>vieux, ancien</em>. Cette étymologie n'est pas anodine : elle dit que la sagesse vient avec l'expérience et le temps. Un pīr n'est pas seulement quelqu'un qui sait — c'est quelqu'un qui a <em>vécu</em>, qui a <em>tenu</em> dans la durée, qui a usé ses semelles sur le chemin. Cette idée est commune aux deux traditions : on appelle le maître <em>shaykh</em> (l'ancien) en arabe ou <em>pīr</em> (l'ancien) en persan — toujours, c'est l'âge initiatique qui compte, non l'âge biologique. On peut être <em>shaykh</em> à 30 ans (Rūmī l'était) ou ne jamais l'être à 80 ans (la plupart d'entre nous). Dans la poésie persane (Ḥāfiẓ, Saʿdī, Rūmī), le <em>pīr-i mughān</em> (le maître mage, le maître des Mages) désigne souvent le maître soufi déguisé en figure pré-islamique — pour échapper aux censures religieuses tout en disant la vérité spirituelle universelle. Le pīr est ainsi à la fois ancré dans l'islam et ouvert à l'<em>antique sagesse</em>.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Ḥāfiẓ",
+          "texte": "Sans le pīr, n'entre pas dans la vinerie ; sans lui, tu te perdrais avant le premier verre."
+        },
+        {
+          "auteur": "Rūmī",
+          "texte": "Le pīr est l'écho de la Voix première — qui ne reconnaît pas sa voix s'est perdu dans le bruit."
+        }
+      ],
+      "meditation": "Si je devais nommer un <em>ancien</em> dans ma vie — qui correspondrait à cette image ?",
+      "resonance": [
+        "shaykh",
+        "murshid",
+        "silsila",
+        "tariqa",
+        "rumi"
+      ],
+      "lectures_site": [
+        {
+          "titre": "Rūmī",
+          "url": "../auteurs/rumi.html"
+        }
+      ]
+    },
+    {
+      "id": "tarbiya",
+      "ar": "التَّرْبِيَة",
+      "tr": "at-tarbiya",
+      "tr_simple": "tarbiya",
+      "fr": "L'éducation spirituelle",
+      "racine": "ر ب و",
+      "racine_sens": "faire grandir, élever — racine commune avec rabb (Seigneur, celui qui fait grandir)",
+      "category": "poles",
+      "tags": [
+        "éducation",
+        "formation",
+        "élevage de l'âme"
+      ],
+      "definition_concise": "L'<em>éducation</em> spirituelle — œuvre patiente du shaykh sur son disciple, qui le <em>fait grandir</em> à la manière d'un jardinier avec une jeune pousse. Distincte de la simple transmission d'informations : la tarbiya transforme.",
+      "sens_profond": "La racine r-b-w est riche : elle donne <em>rabb</em> (Seigneur, celui qui fait grandir), <em>tarbiya</em> (éducation), <em>ribā</em> (intérêt usuraire — ce qui croît sans travail légitime). La tarbiya, c'est donc <em>faire grandir</em> — patiemment, comme le jardinier fait grandir l'arbre. Cinq voies distingués dans le shaykh-disciple : (1) <em>shaykh at-taʿlīm</em> — le maître d'enseignement, qui transmet le savoir doctrinal ; (2) <em>shaykh at-tarbiya</em> — le maître d'éducation, qui forme le caractère ; (3) <em>shaykh as-suluk</em> — le maître du cheminement, qui guide la voie spirituelle ; (4) <em>shaykh at-tarqiya</em> — le maître d'élévation, qui élève au-dessus de soi ; (5) <em>shaykh as-suḥba</em> — le maître de la compagnie, qui forme par sa simple présence. La tarbiya, deuxième de ces voies, est celle qui forme le caractère (akhlāq). Elle se fait par mille petits gestes : une correction au moment juste, un silence qui en dit long, un service demandé qui révèle un travers, un compliment qui désamorce un orgueil. Le maître <em>regarde</em> son disciple comme on regarde une plante : il sait quelle lumière il lui faut, quel arrosage, quel élagage. Et il sait surtout <em>quand attendre</em>.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Ibn ʿAṭāʾ Allāh",
+          "texte": "Le shaykh ne te corrige pas par paroles seules ; il te corrige par les épreuves que sa présence attire."
+        },
+        {
+          "auteur": "Bahā' al-Dīn Naqshband",
+          "texte": "Notre tarbiya est silencieuse — elle se transmet par les cœurs, non par les bouches."
+        }
+      ],
+      "meditation": "Qui m'a déjà <em>fait grandir</em> dans ma vie, par sa seule présence ?",
+      "resonance": [
+        "shaykh",
+        "murshid",
+        "suhba",
+        "silsila",
+        "akhlaq"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "hadra",
+      "ar": "الحَضْرَة",
+      "tr": "al-ḥaḍra",
+      "tr_simple": "hadra",
+      "fr": "La présence partagée",
+      "racine": "ح ض ر",
+      "racine_sens": "même racine que ḥuḍūr — être présent, assister",
+      "category": "pratique",
+      "tags": [
+        "réunion",
+        "dhikr collectif",
+        "présence"
+      ],
+      "definition_concise": "La <em>réunion</em> rituelle de dhikr — séance collective où les frères de la ṭarīqa se réunissent pour invoquer Dieu ensemble, souvent avec chant et mouvement. Moment central de la vie soufie.",
+      "sens_profond": "La ḥaḍra est l'expérience de la <em>présence partagée</em>. Seul, on prie. Ensemble, on entre dans un autre champ — un cœur en feu en allume un autre, et la chaleur monte. Chaque ṭarīqa a sa ḥaḍra propre : certaines sont silencieuses (Naqshbandiyya — dhikr du cœur), d'autres bruyantes (Châdhiliyya, Qādiriyya — dhikr de la langue avec mouvement), d'autres dansées (Mevleviyya — le samāʿ tourbillonnant). Le déroulement type : ouverture par la Fātiḥa et des invocations sur le Prophète ; récitation collective de formules (lā ilāha illā Llāh, Allāh, Hū) selon des rythmes établis ; parfois élévation graduelle vers la transe ; clôture par dhikr silencieux et duʿāʾ. La ḥaḍra n'est pas un concert ni un spectacle : c'est une <em>discipline</em> de présence partagée, où chacun s'efface dans le groupe et le groupe entier s'efface devant Dieu. Quand elle est bien menée, la ḥaḍra produit des transformations en quelques heures qui auraient pris des mois en pratique solitaire. C'est pourquoi tous les maîtres ont tenu cette pratique pour irremplaçable.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "Dieu a des troupes d'anges qui parcourent la terre, cherchant les cercles de dhikr ; quand ils en trouvent un, ils s'y assoient avec les invocateurs et étendent sur eux leurs ailes."
+        },
+        {
+          "auteur": "Ibn ʿAṭāʾ Allāh",
+          "texte": "La ḥaḍra fait du dhikr individuel un dhikr cosmique — soudain, les anges récitent avec toi."
+        }
+      ],
+      "meditation": "Ai-je déjà ressenti, dans une réunion, qu'un <em>champ</em> se créait au-delà de la somme des présents ?",
+      "resonance": [
+        "dhikr",
+        "suhba",
+        "halqa",
+        "samaa",
+        "tariqa"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "halqa",
+      "ar": "الحَلْقَة",
+      "tr": "al-ḥalqa",
+      "tr_simple": "halqa",
+      "fr": "Le cercle",
+      "racine": "ح ل ق",
+      "racine_sens": "former un cercle, un anneau",
+      "category": "pratique",
+      "tags": [
+        "cercle",
+        "dhikr",
+        "disposition"
+      ],
+      "definition_concise": "Le <em>cercle</em> — disposition rituelle dans laquelle les soufis se réunissent pour le dhikr. Symbolique : pas de hiérarchie horizontale dans le cercle, tous équidistants du centre invisible (Dieu).",
+      "sens_profond": "La ḥalqa est la <em>forme</em> géométrique de la ḥaḍra. Le cercle a une signification profonde : tous les points du cercle sont à égale distance du centre. Quand les soufis se réunissent en cercle, c'est pour signifier visuellement leur égalité devant Dieu — pas de premier, pas de dernier, pas de plus proche du shaykh sur le plan spirituel. Le shaykh, s'il est présent, se place dans le cercle (et non au-dessus) ; certains ordres font tourner la position du shaykh à chaque ḥaḍra pour éviter toute fixation. Plus profondément, le cercle est aussi <em>cosmique</em> : il dit que toute chose tourne autour d'un Centre qui ne se voit pas — comme les planètes autour du soleil, comme les électrons autour du noyau. Et au centre de la ḥalqa : non un objet, mais l'invisible — Allāh. Les invocations partent du cercle et reviennent au centre, comme les rayons qui partent du soleil et y reviennent. Cette géométrie sacrée se retrouve partout : la Kaʿba autour de laquelle on tourne, les derviches Mevlevis qui tournent autour de leur cœur, les anges autour du Trône. Le cercle est l'image du retour à l'Un.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Hadith",
+          "texte": "Dieu a des anges qui parcourent la terre cherchant les ḥalqas de dhikr."
+        },
+        {
+          "auteur": "Rūmī",
+          "texte": "Nous tournons en cercle autour d'un centre qui ne tourne pas — et c'est ce centre qui nous fait tourner."
+        }
+      ],
+      "meditation": "Qu'est-ce qui, à l'instant, est au <em>centre</em> de ma vie — et tout le reste tourne-t-il autour de cela ?",
+      "resonance": [
+        "hadra",
+        "dhikr",
+        "samaa",
+        "tawhid",
+        "mevleviyya"
+      ],
+      "lectures_site": []
+    },
+    {
+      "id": "zawiya",
+      "ar": "الزَّاوِيَة",
+      "tr": "az-zāwiya",
+      "tr_simple": "zawiya",
+      "fr": "L'oratoire soufi (Maghreb)",
+      "racine": "ز و ي",
+      "racine_sens": "coin, retrait — d'où zāwiya, l'angle, le lieu retiré",
+      "category": "pratique",
+      "tags": [
+        "oratoire",
+        "loge",
+        "Maghreb"
+      ],
+      "definition_concise": "L'<em>oratoire</em> soufi — terme principalement maghrébin. Lieu retiré où une communauté soufie se réunit autour d'un shaykh pour la pratique, l'enseignement et le service. Souvent organisée autour du tombeau d'un saint fondateur.",
+      "sens_profond": "La zāwiya est le poumon institutionnel du soufisme maghrébin. Le mot signifie littéralement <em>l'angle</em>, <em>le coin retiré</em> — et désigne par extension l'ensemble : un bâtiment qui comprend la mosquée pour la prière, la salle pour la ḥaḍra, le tombeau du saint fondateur, parfois une école coranique, des chambres pour les pèlerins, un jardin, des cuisines. Au Maroc, en Algérie, en Tunisie, en Mauritanie, les zāwiyas ont structuré pendant des siècles la vie spirituelle, sociale, éducative — souvent plus efficacement que les institutions étatiques. Beaucoup de figures historiques majeures du Maghreb sont sorties de zāwiyas : éducation des élites, formation des juges, accueil des pauvres et des voyageurs, médiation des conflits tribaux. La zāwiya a aussi une dimension <em>écologique</em> : elle gère parfois des terres agricoles, distribue de l'eau, protège des forêts. Aujourd'hui, beaucoup de zāwiyas survivent — la Châdhiliyya, la Darqāwiyya, la Tijāniyya, la Qādiriyya sont actives. L'<em>équivalent</em> dans d'autres régions : <em>khānaqāh</em> (Iran, Asie centrale, Inde), <em>tekke</em> (Turquie ottomane), <em>ribāṭ</em> (médiéval, plus militaire à l'origine).",
+      "voix_des_maitres": [
+        {
+          "auteur": "Ibn ʿAṭāʾ Allāh al-Iskandarī",
+          "texte": "La zāwiya est le ventre où l'âme renaît — n'y entre pas si tu ne veux pas mourir à toi-même."
+        },
+        {
+          "auteur": "Mūlay al-ʿArabī ad-Darqāwī",
+          "texte": "Notre zāwiya n'a pas de murs visibles — elle est partout où deux frères se rappellent Dieu ensemble."
+        }
+      ],
+      "meditation": "Ai-je un <em>lieu</em> où j'entre pour me rappeler de Lui — fût-il un coin de chambre ?",
+      "resonance": [
+        "khanaqah",
+        "hadra",
+        "halqa",
+        "shaykh",
+        "shadhiliyya"
+      ],
+      "lectures_site": [
+        {
+          "titre": "Châdhiliyya",
+          "url": "../confreries/shadhiliyya.html"
+        }
+      ]
+    },
+    {
+      "id": "khanaqah",
+      "ar": "الخَانَقَاه",
+      "tr": "al-khānaqāh",
+      "tr_simple": "khanaqah",
+      "fr": "Le couvent soufi (Iran, Inde)",
+      "racine": "persan, non arabe",
+      "racine_sens": "littéralement <em>maison de l'hospitalité</em>",
+      "category": "pratique",
+      "tags": [
+        "couvent",
+        "loge soufie",
+        "Iran",
+        "Inde"
+      ],
+      "definition_concise": "Le <em>couvent</em> soufi dans le monde persan, indien et turcophone. Équivalent oriental de la <em>zāwiya</em> maghrébine. Centre de pratique, d'enseignement et d'accueil. La Chishtiyya en Inde et la Naqshbandiyya en Asie centrale ont fait des khānaqāhs leur poumon.",
+      "sens_profond": "Le mot khānaqāh vient du persan : <em>khāna</em> (maison) + <em>qāh</em> (lieu) — la maison-lieu, la maison ouverte. C'est le contraire d'une maison privée : la khānaqāh est une <em>maison de l'hospitalité</em>, qui accueille les pèlerins, les pauvres, les voyageurs, sans condition. La Chishtiyya en Inde a porté cette pratique à un sommet : les grandes khānaqāhs de Niẓām al-Dīn Awliyāʾ à Delhi nourrissaient des milliers de pauvres chaque jour, ouvertes sept jours sur sept, sans distinction de religion. Quiconque entrait recevait à manger, écoutait la musique sacrée (qawwālī), pouvait demander conseil. Pour la Chishtiyya, c'est la <em>khidma</em> (le service) qui prouve la sincérité de la voie : tu peux faire mille pratiques, si tu ne nourris pas le voisin affamé, tu n'as rien compris. La Naqshbandiyya en Asie centrale a fait évoluer la khānaqāh vers un modèle plus discret : moins de service public, plus de méditation silencieuse, mais toujours un <em>lieu</em> où se retrouvent les frères en voie. Les grandes khānaqāhs de Bukhara, Boukhara, Samarcande, ont formé des générations d'érudits et de saints. Aujourd'hui, beaucoup ont été détruites (régimes soviétique, chinois) ou transformées en musées — mais le modèle continue, parfois discrètement, dans des maisons privées.",
+      "voix_des_maitres": [
+        {
+          "auteur": "Niẓām al-Dīn Awliyāʾ",
+          "texte": "Notre khānaqāh est ouverte à tous — celui qui frappe à la porte reçoit ce qu'il y a, fût-ce le dernier morceau de pain."
+        },
+        {
+          "auteur": "Bahā' al-Dīn Naqshband",
+          "texte": "La khānaqāh n'est pas un mur — elle est l'invitation qui rayonne depuis un cœur silencieux."
+        }
+      ],
+      "meditation": "Y a-t-il, dans ma vie, un lieu où l'on entre sans demander — et que reçoit-on ?",
+      "resonance": [
+        "zawiya",
+        "hadra",
+        "khidma",
+        "suhba",
+        "chishtiyya",
+        "naqshbandiyya"
+      ],
+      "lectures_site": [
+        {
+          "titre": "Chishtiyya",
+          "url": "../confreries/chishtiyya.html"
+        },
+        {
+          "titre": "Naqshbandiyya",
+          "url": "../confreries/naqshbandiyya.html"
+        }
+      ]
     }
   ]
 }

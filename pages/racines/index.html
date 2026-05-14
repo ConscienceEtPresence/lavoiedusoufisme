@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À la racine — l'arabe par sa structure</title>
+  <meta name="description" content="Explorer l'arabe coranique par ses racines trilitères. D'après Maurice Gloton, Approche du Coran par la grammaire et le lexique." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../assets/css/base.css" />
+  <link rel="stylesheet" href="../../assets/css/layout.css" />
+  <link rel="stylesheet" href="../../assets/css/components.css" />
+  <link rel="stylesheet" href="../../assets/css/racines.css" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B7WRGPZMT3');
+  </script>
+</head>
+<body class="page-enter">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="../../index.html" class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="16" cy="16" r="13" />
+          <circle cx="16" cy="16" r="7" />
+          <circle cx="16" cy="16" r="1.5" fill="currentColor" />
+        </svg>
+        <span>La voie du soufisme</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="../decouvrir.html">Découvrir</a></li>
+          <li><a href="../cheminer.html">Cheminer</a></li>
+          <li><a href="../rencontrer.html">Rencontrer</a></li>
+          <li><a href="../dictionnaire/index.html">م Dictionnaire</a></li>
+          <li><a href="../racines/index.html" class="active">جذر Racines</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <header class="rac-hero">
+      <div class="rac-hero__ar">الجَذْر</div>
+      <h1 class="rac-hero__title">À la racine</h1>
+      <p class="rac-hero__sub">
+        Entrer dans l'arabe par sa structure intime — trois lettres, un monde.<br>
+        D'après <em>Maurice Gloton</em>, <em>Approche du Coran par la grammaire et le lexique</em>.
+      </p>
+    </header>
+
+    <section class="container container--narrow">
+      <div class="rac-intro">
+        <p>
+          Toute langue arabe se déploie à partir d'un nombre limité de <em>racines</em> — généralement trois lettres consonantiques
+          qui portent un sens fondamental. À partir de cette matrice triplette, des dizaines de mots se forment, chacun déclinant
+          une nuance du sens-source : verbes, noms d'action, participes, noms de lieu, intensifs…
+        </p>
+        <p style="margin-top:1rem;">
+          Connaître la racine, c'est <em>voir</em> ce qui relie des mots qui semblent éloignés. <em>Raḥma</em> (la miséricorde) et
+          <em>raḥim</em> (l'utérus) partagent la racine ر ح م — Dieu porte le monde comme un utérus porte l'enfant. Ce module est
+          une porte vers cette intelligence concrète.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Clavier arabe visuel ===== -->
+    <section class="container">
+      <div class="rac-search">
+        <div class="rac-search__display" id="rac-display">
+          <span class="rac-search__slot" data-slot="0">·</span>
+          <span class="rac-search__slot" data-slot="1">·</span>
+          <span class="rac-search__slot" data-slot="2">·</span>
+        </div>
+
+        <div class="rac-search__hint" id="rac-hint">
+          Touchez les lettres pour composer une racine
+        </div>
+
+        <div class="rac-keyboard" id="rac-keyboard">
+          <!-- injecté par JS -->
+        </div>
+
+        <div class="rac-search__controls">
+          <button class="rac-search__btn" id="rac-back" aria-label="Effacer la dernière lettre">⌫</button>
+          <button class="rac-search__btn" id="rac-clear">✕ tout effacer</button>
+        </div>
+
+        <div class="rac-search__french">
+          <label for="rac-fr">ou par mot français :</label>
+          <input type="search" id="rac-fr" placeholder="miséricorde, cœur, lumière…" autocomplete="off" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Grille des racines filtrée ===== -->
+    <section class="container">
+      <div class="rac-grid" id="rac-grid">
+        <!-- injecté par JS -->
+      </div>
+      <p class="rac-empty" id="rac-empty">
+        Aucune racine ne correspond.<br>
+        <em>Le module s'enrichira au fil des saisons — d'autres racines viendront.</em>
+      </p>
+    </section>
+
+    <!-- ===== À propos ===== -->
+    <section class="container container--narrow" style="margin-top: 4rem;">
+      <div class="aside-box">
+        <span class="aside-box__label">Source principale</span>
+        Ce module s'appuie sur l'ouvrage de référence de <strong>Maurice Gloton</strong> (1928–2017), <em>Approche du Coran par la grammaire
+        et le lexique</em> (Albouraq, 2002, 873 pages). Gloton — l'un des grands traducteurs français du soufisme classique
+        (Ibn ʿArabī, al-Rāzī, al-Junayd, al-Qāshānī…) — y propose une analyse racine par racine du Coran, en restituant pour chaque mot
+        sa portée sémantique et spirituelle. <strong>15 racines actuellement</strong> — le module s'enrichira progressivement pour
+        couvrir l'essentiel du vocabulaire coranique central.
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modale fiche d'une racine -->
+  <div class="rac-modal" id="rac-modal" aria-hidden="true">
+    <div class="rac-modal__backdrop"></div>
+    <article class="rac-modal__content" id="rac-modal-content">
+      <!-- injecté par JS -->
+    </article>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p class="site-footer__contact">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScLBwWZA-VZf4OaIEl11fnKasayyVrll7DZL5A3uZZBCwLdkQ/viewform?usp=header" target="_blank" rel="noopener" class="contact-link">
+          <span aria-hidden="true">✉</span> Écrire à Brahms
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/racines.js"></script>
+</body>
+</html>

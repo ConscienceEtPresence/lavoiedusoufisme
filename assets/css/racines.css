@@ -1,0 +1,536 @@
+/* === À la racine — module de l'arabe par sa structure === */
+
+:root {
+  --rac-paper: #FBF7EF;
+  --rac-warm: #F5EFE3;
+  --rac-ink: #0F1830;
+  --rac-ink-deep: #1B2A4E;
+  --rac-soft: #6b6a65;
+  --rac-gold: #B8860B;
+  --rac-gold-soft: #d4a04b;
+  --rac-line: rgba(184, 134, 11, 0.18);
+}
+
+/* === HEADER === */
+.rac-hero {
+  text-align: center;
+  padding: var(--space-xl) 1rem var(--space-lg);
+  background: linear-gradient(180deg, var(--rac-warm) 0%, transparent 100%);
+  border-bottom: 1px solid var(--rac-line);
+  margin-bottom: var(--space-lg);
+}
+.rac-hero__ar {
+  font-family: 'Amiri', serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  color: var(--rac-gold);
+  margin-bottom: .4rem;
+}
+.rac-hero__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--rac-ink-deep);
+  font-weight: 500;
+  margin: 0 0 .5rem;
+}
+.rac-hero__sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--rac-soft);
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* === INTRO === */
+.rac-intro {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--rac-ink);
+  margin-bottom: var(--space-lg);
+}
+.rac-intro em { color: var(--rac-gold); font-style: italic; }
+
+/* === CLAVIER + RECHERCHE === */
+.rac-search {
+  max-width: 720px;
+  margin: 0 auto var(--space-xl);
+  text-align: center;
+}
+
+.rac-search__display {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+  direction: rtl;
+}
+.rac-search__slot {
+  font-family: 'Amiri', serif;
+  font-size: clamp(2rem, 6vw, 2.8rem);
+  width: clamp(2.6rem, 8vw, 3.4rem);
+  height: clamp(2.6rem, 8vw, 3.4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid rgba(184, 134, 11, 0.35);
+  color: var(--rac-gold);
+  line-height: 1;
+  transition: all 0.25s ease;
+}
+.rac-search__slot:not(:empty):not([data-empty]) {
+  color: var(--rac-ink-deep);
+  border-bottom-color: var(--rac-gold);
+}
+
+.rac-search__hint {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--rac-soft);
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Pavé des 28 lettres — grille 7×4 */
+.rac-keyboard {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.45rem;
+  max-width: 560px;
+  margin: 0 auto 1rem;
+  direction: rtl;
+}
+.rac-key {
+  font-family: 'Amiri', serif;
+  font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+  aspect-ratio: 1 / 1;
+  background: #fff;
+  border: 1px solid var(--rac-line);
+  border-radius: 10px;
+  color: var(--rac-ink);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.rac-key:hover {
+  border-color: var(--rac-gold);
+  color: var(--rac-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.15);
+}
+.rac-key:active {
+  transform: translateY(0);
+  background: rgba(184, 134, 11, 0.1);
+}
+.rac-key.is-pressed {
+  background: var(--rac-gold);
+  color: #fff;
+  border-color: var(--rac-gold);
+}
+.rac-key.is-available {
+  border-color: rgba(184, 134, 11, 0.5);
+}
+.rac-key.is-disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.rac-search__controls {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+.rac-search__btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid var(--rac-line);
+  border-radius: 999px;
+  color: var(--rac-ink);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.rac-search__btn:hover {
+  border-color: var(--rac-gold);
+  color: var(--rac-gold);
+}
+
+.rac-search__french {
+  margin-top: 1.5rem;
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.95rem;
+  color: var(--rac-soft);
+}
+.rac-search__french label {
+  font-style: italic;
+  margin-right: 0.5rem;
+}
+.rac-search__french input {
+  padding: 0.5rem 1rem;
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.95rem;
+  background: #fff;
+  border: 1px solid var(--rac-line);
+  border-radius: 999px;
+  color: var(--rac-ink);
+  outline: none;
+  width: clamp(180px, 50vw, 320px);
+  transition: border-color 0.25s ease;
+}
+.rac-search__french input:focus {
+  border-color: var(--rac-gold);
+}
+
+/* === GRILLE DES RACINES === */
+.rac-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.rac-card {
+  background: #fff;
+  border: 1px solid var(--rac-line);
+  border-radius: 12px;
+  padding: 1.4rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.2,.7,.3,1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.rac-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--rac-gold);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.rac-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.08);
+  border-color: rgba(184,134,11,0.4);
+}
+.rac-card:hover::before { opacity: 1; }
+
+.rac-card__ar {
+  font-family: 'Amiri', serif;
+  font-size: 2.2rem;
+  color: var(--rac-ink-deep);
+  letter-spacing: 0.6rem;
+  margin-bottom: 0.3rem;
+  direction: rtl;
+}
+.rac-card__tr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--rac-gold);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+.rac-card__fr {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.95rem;
+  color: var(--rac-ink);
+  line-height: 1.5;
+  margin-bottom: 0.6rem;
+}
+.rac-card__meta {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  color: var(--rac-soft);
+  letter-spacing: 0.04em;
+}
+
+.rac-empty {
+  display: none;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--rac-soft);
+  margin: var(--space-xl) auto;
+  max-width: 480px;
+}
+.rac-empty.show { display: block; }
+
+/* === MODALE === */
+.rac-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+}
+.rac-modal.open { display: flex; }
+.rac-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 24, 48, 0.65);
+  backdrop-filter: blur(4px);
+}
+.rac-modal__content {
+  position: relative;
+  background: var(--rac-paper);
+  border-radius: 16px;
+  max-width: 760px;
+  width: 100%;
+  padding: 2rem 1.8rem 2.5rem;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+  z-index: 1;
+  margin: auto;
+}
+.rac-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: 1px solid var(--rac-line);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  color: var(--rac-ink);
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+.rac-modal__close:hover {
+  border-color: var(--rac-gold);
+  color: var(--rac-gold);
+}
+
+.rac-fiche__head {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rac-line);
+}
+.rac-fiche__letters {
+  font-family: 'Amiri', serif;
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  color: var(--rac-ink-deep);
+  letter-spacing: 1rem;
+  margin-bottom: 0.4rem;
+  direction: rtl;
+}
+.rac-fiche__tr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--rac-gold);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.6rem;
+}
+.rac-fiche__fr {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.15rem;
+  color: var(--rac-ink-deep);
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+.rac-fiche__audio {
+  margin-top: 0.4rem;
+  background: transparent;
+  border: 1px solid rgba(184, 134, 11, 0.4);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  color: var(--rac-gold);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.rac-fiche__audio:hover {
+  background: rgba(184, 134, 11, 0.1);
+  border-color: var(--rac-gold);
+}
+
+.rac-fiche__section {
+  margin-bottom: 1.6rem;
+}
+.rac-fiche__section h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--rac-gold);
+  margin: 0 0 0.7rem;
+  font-weight: 600;
+}
+.rac-fiche__section p {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--rac-ink);
+  margin: 0;
+}
+.rac-fiche__section em { color: var(--rac-gold); font-style: italic; }
+
+.rac-fiche__forms {
+  display: grid;
+  gap: 0.5rem;
+}
+.rac-form-row {
+  display: grid;
+  grid-template-columns: minmax(80px, auto) 1fr auto;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.6rem 0.8rem;
+  background: #fff;
+  border: 1px solid var(--rac-line);
+  border-radius: 8px;
+  transition: border-color 0.2s ease;
+}
+.rac-form-row:hover { border-color: rgba(184, 134, 11, 0.4); }
+.rac-form-row__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.3rem;
+  color: var(--rac-ink-deep);
+  direction: rtl;
+  text-align: right;
+}
+.rac-form-row__mid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.rac-form-row__tr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--rac-gold);
+  font-size: 1rem;
+}
+.rac-form-row__fr {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.92rem;
+  color: var(--rac-ink);
+  line-height: 1.4;
+}
+.rac-form-row__tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--rac-soft);
+  white-space: nowrap;
+  align-self: center;
+}
+.rac-form-row__audio {
+  background: transparent;
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  color: var(--rac-gold);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+  align-self: center;
+  transition: all 0.2s ease;
+}
+.rac-form-row__audio:hover {
+  background: rgba(184, 134, 11, 0.1);
+  border-color: var(--rac-gold);
+}
+
+.rac-fiche__quran {
+  display: grid;
+  gap: 0.8rem;
+}
+.rac-quran-row {
+  background: #fff;
+  border-left: 3px solid var(--rac-gold);
+  padding: 0.8rem 1rem;
+  border-radius: 0 8px 8px 0;
+}
+.rac-quran-row__ref {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--rac-gold);
+  margin-bottom: 0.3rem;
+}
+.rac-quran-row__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.2rem;
+  color: var(--rac-ink-deep);
+  line-height: 1.7;
+  margin-bottom: 0.3rem;
+  direction: rtl;
+  text-align: right;
+}
+.rac-quran-row__fr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--rac-ink);
+  line-height: 1.5;
+}
+
+.rac-fiche__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.rac-link-pill {
+  background: rgba(184, 134, 11, 0.08);
+  border: 1px solid var(--rac-line);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.88rem;
+  color: var(--rac-ink);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.rac-link-pill:hover {
+  background: rgba(184, 134, 11, 0.18);
+  border-color: var(--rac-gold);
+}
+.rac-link-pill__ar {
+  font-family: 'Amiri', serif;
+  margin-right: 0.4rem;
+}
+
+.rac-fiche__meditation {
+  margin-top: 1.8rem;
+  padding: 1.6rem 1.4rem;
+  background: linear-gradient(135deg, rgba(184,134,11,0.06), rgba(166,90,74,0.04));
+  border: 1px solid var(--rac-line);
+  border-radius: 12px;
+  text-align: center;
+}
+.rac-fiche__meditation-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rac-gold);
+  margin-bottom: 0.6rem;
+}
+.rac-fiche__meditation-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--rac-ink-deep);
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .rac-keyboard { gap: 0.35rem; }
+  .rac-form-row { grid-template-columns: 1fr; }
+  .rac-form-row__ar { text-align: center; }
+  .rac-form-row__tag { display: none; }
+}

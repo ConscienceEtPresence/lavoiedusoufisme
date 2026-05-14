@@ -85,7 +85,10 @@
   margin-top: 0;
 }
 .doors-reveal.is-open {
-  max-height: 2000px;
+  /* 6000px : large marge pour mobile où tout s'empile en 1 colonne.
+     2000px était trop court — la 3e carte méditer (« À la racine »)
+     se retrouvait coupée par l'overflow:hidden. */
+  max-height: 6000px;
   opacity: 1;
   margin-top: var(--space-lg);
 }

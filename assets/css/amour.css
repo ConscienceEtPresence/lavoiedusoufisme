@@ -1,0 +1,835 @@
+/* === Module Les noms de l'amour === */
+
+:root {
+  --am-paper: #FBF5F4;
+  --am-ink: #1A0F12;
+  --am-ink-deep: #2C1419;
+  --am-soft: #6B5159;
+  --am-grenat: #8E2A3D;
+  --am-grenat-deep: #6F2638;
+  --am-grenat-pale: #C57788;
+  --am-line: rgba(142, 42, 61, 0.20);
+}
+
+/* === Intro === */
+.amour-intro {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--am-ink);
+  margin: 0 auto var(--space-xl);
+  max-width: 680px;
+}
+.amour-intro p { margin-bottom: 1.1rem; }
+.amour-intro strong { color: var(--am-grenat-deep); font-weight: 500; }
+.amour-intro em { color: var(--am-grenat); font-style: italic; }
+
+.amour-epigraph {
+  margin: 2rem auto;
+  padding: 1.2rem 1.5rem;
+  border-left: 3px solid var(--am-grenat);
+  background: linear-gradient(180deg, rgba(142,42,61,0.05), transparent);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--am-ink-deep);
+  text-align: center;
+  font-style: italic;
+  max-width: 620px;
+}
+.amour-epigraph__source {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  font-style: normal;
+  color: var(--am-soft);
+  letter-spacing: 0.04em;
+}
+
+/* === Pourquoi méditer === */
+.amour-meditation {
+  margin: var(--space-xl) auto;
+  padding: 1.8rem 1.7rem;
+  max-width: 720px;
+  background: linear-gradient(135deg, rgba(142,42,61,0.07), rgba(197,119,136,0.04));
+  border: 1px solid var(--am-line);
+  border-radius: 14px;
+}
+.amour-meditation__label {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--am-grenat);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.amour-meditation p {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--am-ink);
+  margin: 0 0 0.9rem;
+}
+.amour-meditation p:last-child { margin-bottom: 0; }
+.amour-meditation strong { color: var(--am-grenat-deep); font-weight: 500; }
+.amour-meditation em { color: var(--am-grenat); }
+
+/* === Les portes d'entrée (stations + thèmes + hasard) === */
+.amour-portes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.3rem;
+  max-width: 1100px;
+  margin: var(--space-xl) auto;
+  padding: 0 1rem;
+}
+.amour-porte {
+  position: relative;
+  display: block;
+  background: #fff;
+  border: 1px solid var(--am-line);
+  border-radius: 16px;
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--am-ink);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.6);
+}
+.amour-porte:hover {
+  transform: translateY(-3px);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.7), 0 14px 32px rgba(142,42,61,0.15);
+  border-color: rgba(142,42,61,0.45);
+}
+.amour-porte--hasard {
+  background: linear-gradient(180deg, rgba(142,42,61,0.10), rgba(197,119,136,0.04));
+  border-color: rgba(142,42,61,0.38);
+}
+.amour-porte__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.8rem;
+  color: var(--am-grenat-deep);
+  margin-bottom: 0.4rem;
+  direction: rtl;
+}
+.amour-porte__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.45rem;
+  color: var(--am-ink-deep);
+  margin: 0 0 0.7rem;
+}
+.amour-porte__desc {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: var(--am-ink);
+  margin: 0 0 1rem;
+  min-height: 5rem;
+}
+.amour-porte__cta {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  color: var(--am-grenat);
+  font-weight: 500;
+}
+
+/* === Les stations (6 cartes en grille) === */
+.amour-section {
+  max-width: 1200px;
+  margin: var(--space-xl) auto;
+  padding: 0 1rem;
+}
+.amour-section__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 3vw, 1.75rem);
+  color: var(--am-grenat-deep);
+  text-align: center;
+  margin: 0 0 0.3rem;
+}
+.amour-section__sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--am-grenat);
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.amour-stations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+.amour-station {
+  position: relative;
+  display: block;
+  background: #fff;
+  border: 1px solid var(--am-line);
+  border-radius: 14px;
+  padding: 1.5rem 1.4rem 1.4rem;
+  text-decoration: none;
+  color: var(--am-ink);
+  transition: all 0.3s cubic-bezier(.2,.7,.3,1);
+  overflow: hidden;
+}
+.amour-station::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--am-grenat), rgba(142,42,61,0.3));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.amour-station:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.07);
+  border-color: rgba(142,42,61,0.45);
+}
+.amour-station:hover::before { opacity: 1; }
+.amour-station__num {
+  position: absolute;
+  top: 0.85rem;
+  right: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: rgba(142,42,61,0.5);
+}
+.amour-station__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.7rem;
+  color: var(--am-grenat-deep);
+  margin-bottom: 0.3rem;
+  direction: rtl;
+}
+.amour-station__translit {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--am-grenat);
+  margin-bottom: 0.4rem;
+}
+.amour-station__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--am-ink-deep);
+  margin: 0 0 0.6rem;
+  line-height: 1.3;
+}
+.amour-station__desc {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.92rem;
+  color: var(--am-soft);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* === Les thèmes (9 vignettes plus compactes) === */
+.amour-themes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.9rem;
+}
+.amour-theme {
+  display: block;
+  padding: 1.1rem 1.1rem;
+  background: linear-gradient(180deg, rgba(142,42,61,0.04), transparent 90%);
+  border: 1px solid var(--am-line);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--am-ink);
+  transition: all 0.25s ease;
+}
+.amour-theme:hover {
+  border-color: rgba(142,42,61,0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(142,42,61,0.10);
+}
+.amour-theme__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.3rem;
+  color: var(--am-grenat-deep);
+  margin-bottom: 0.2rem;
+  direction: rtl;
+}
+.amour-theme__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--am-ink-deep);
+  margin: 0 0 0.4rem;
+}
+.amour-theme__desc {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.82rem;
+  color: var(--am-soft);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* === FICHE-MOT (mot.html) === */
+.mot-breadcrumb {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--am-soft);
+  margin: 1.5rem auto 0;
+  max-width: 760px;
+}
+.mot-breadcrumb a { color: var(--am-grenat); text-decoration: none; }
+.mot-breadcrumb a:hover { text-decoration: underline; }
+.mot-breadcrumb span { margin: 0 0.4rem; opacity: 0.6; }
+
+.mot-fiche {
+  max-width: 760px;
+  margin: 1.5rem auto;
+  padding: 0 1rem var(--space-2xl);
+}
+.mot-fiche__station {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--am-grenat);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.mot-fiche__ar {
+  font-family: 'Amiri', serif;
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  font-weight: 400;
+  text-align: center;
+  color: var(--am-grenat-deep);
+  margin: 0;
+  line-height: 1.4;
+  direction: rtl;
+}
+.mot-fiche__translit {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  text-align: center;
+  color: var(--am-grenat);
+  margin: 0.3rem 0 0.6rem;
+  letter-spacing: 0.04em;
+}
+.mot-fiche__rule {
+  width: 60px;
+  height: 1px;
+  background: var(--am-line);
+  margin: 0 auto 1rem;
+}
+.mot-fiche__def {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+  text-align: center;
+  color: var(--am-ink-deep);
+  margin: 0 0 1.8rem;
+  line-height: 1.4;
+}
+
+.mot-meta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.mot-meta__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+}
+.mot-meta__tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  padding: 0.28rem 0.85rem;
+  background: #fff;
+  border: 1px solid var(--am-line);
+  border-radius: 999px;
+  color: var(--am-ink);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.mot-meta__tag:hover {
+  background: var(--am-grenat);
+  color: #fff;
+  border-color: var(--am-grenat);
+}
+
+.mot-description {
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(1.02rem, 2vw, 1.1rem);
+  line-height: 1.8;
+  color: var(--am-ink);
+  margin: 0 0 2rem;
+}
+.mot-description p { margin: 0 0 1.2rem; }
+.mot-description p:last-child { margin-bottom: 0; }
+.mot-description em {
+  color: var(--am-grenat-deep);
+  font-style: italic;
+}
+
+/* Témoin (citation) */
+.mot-temoin {
+  margin: 2rem auto;
+  padding: 1.8rem 1.7rem;
+  max-width: 620px;
+  background: linear-gradient(180deg, rgba(142,42,61,0.05), transparent);
+  border-left: 3px solid var(--am-grenat);
+  border-radius: 0 12px 12px 0;
+}
+.mot-temoin__label {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--am-grenat);
+  margin-bottom: 0.9rem;
+}
+.mot-temoin__ar {
+  font-family: 'Amiri', serif;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  color: var(--am-ink-deep);
+  text-align: right;
+  direction: rtl;
+  margin: 0 0 0.5rem;
+  line-height: 1.8;
+}
+.mot-temoin__translit {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--am-grenat);
+  text-align: center;
+  margin: 0 0 0.7rem;
+}
+.mot-temoin__fr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+  color: var(--am-ink-deep);
+  text-align: center;
+  line-height: 1.6;
+  margin: 0 0 0.7rem;
+}
+.mot-temoin__source {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  color: var(--am-soft);
+  text-align: center;
+  font-style: italic;
+  margin: 0;
+}
+
+.mot-divider {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--am-grenat);
+  letter-spacing: 0.5em;
+  margin: 2.5rem 0;
+  opacity: 0.6;
+}
+
+/* Méditation (la question) */
+.mot-meditation {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, rgba(142,42,61,0.10), rgba(197,119,136,0.04));
+  border: 1px solid var(--am-line);
+  border-radius: 14px;
+  max-width: 620px;
+}
+.mot-meditation__label {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--am-grenat);
+  margin-bottom: 1rem;
+}
+.mot-meditation__text {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  line-height: 1.55;
+  color: var(--am-ink-deep);
+  margin: 0;
+}
+
+/* Ouverture métaphysique */
+.mot-ouverture {
+  margin: 1.6rem auto 2.5rem;
+  padding: 1.6rem 1.6rem;
+  max-width: 620px;
+  background: linear-gradient(180deg, rgba(142,42,61,0.03), transparent 90%);
+  border-top: 1px solid var(--am-line);
+  border-bottom: 1px solid var(--am-line);
+}
+.mot-ouverture__label {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--am-grenat);
+  margin-bottom: 0.9rem;
+  text-align: center;
+}
+.mot-ouverture__text {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--am-ink);
+  margin: 0;
+  text-align: center;
+}
+.mot-ouverture__text em {
+  color: var(--am-grenat-deep);
+  font-style: italic;
+}
+
+/* Racine et famille */
+.mot-racine {
+  margin: 2rem auto;
+  padding: 1.2rem 1.4rem;
+  max-width: 620px;
+  background: #fff;
+  border: 1px solid var(--am-line);
+  border-radius: 10px;
+}
+.mot-racine__row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+.mot-racine__row:last-child { margin-bottom: 0; }
+.mot-racine__label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--am-grenat);
+  min-width: 140px;
+  flex-shrink: 0;
+}
+.mot-racine__value {
+  font-family: 'Amiri', serif;
+  font-size: 1.2rem;
+  color: var(--am-ink-deep);
+  letter-spacing: 0.4em;
+}
+.mot-famille {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+}
+.mot-famille__lien {
+  color: var(--am-grenat);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--am-grenat);
+  transition: all 0.2s ease;
+}
+.mot-famille__lien:hover {
+  color: var(--am-grenat-deep);
+  border-bottom-style: solid;
+}
+
+/* Mots-frères (autres de la station) */
+.mot-freres {
+  margin: 2.5rem auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--am-line);
+}
+.mot-freres__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--am-grenat-deep);
+  margin: 0 0 1.2rem;
+  text-align: center;
+}
+.mot-freres__grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.7rem;
+}
+.mot-frere {
+  display: block;
+  padding: 0.9rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--am-line);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--am-ink);
+  transition: all 0.2s ease;
+}
+.mot-frere:hover {
+  border-color: var(--am-grenat);
+  background: rgba(142,42,61,0.03);
+}
+.mot-frere__ar {
+  display: block;
+  font-family: 'Amiri', serif;
+  font-size: 1.2rem;
+  color: var(--am-grenat-deep);
+  direction: rtl;
+  text-align: right;
+  margin-bottom: 0.15rem;
+}
+.mot-frere__translit {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--am-grenat);
+  margin-bottom: 0.15rem;
+}
+.mot-frere__def {
+  display: block;
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.85rem;
+  color: var(--am-soft);
+  line-height: 1.4;
+}
+
+.mot-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--am-line);
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.mot-nav__link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  color: var(--am-ink);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+.mot-nav__link:hover { background: rgba(142,42,61,0.06); }
+.mot-nav__link--accent {
+  background: var(--am-grenat);
+  color: #fff;
+}
+.mot-nav__link--accent:hover { background: var(--am-grenat-deep); }
+
+.mot-error {
+  text-align: center;
+  font-family: 'Source Serif 4', serif;
+  color: var(--am-soft);
+  padding: 3rem 1rem;
+}
+.mot-error a { color: var(--am-grenat); }
+
+/* === PARCOURS (liste filtrée) === */
+.parcours-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  margin: 0 auto var(--space-lg);
+  flex-wrap: wrap;
+}
+.parcours-action {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  padding: 0.55rem 1.3rem;
+  background: var(--am-grenat);
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.parcours-action:hover { background: var(--am-grenat-deep); }
+
+.parcours-filtres {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 1100px;
+  margin: 0 auto var(--space-xl);
+  padding: 1.1rem;
+  background: rgba(142,42,61,0.04);
+  border-radius: 12px;
+  border: 1px solid var(--am-line);
+}
+.parcours-filtre-groupe {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+.parcours-filtre-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--am-grenat);
+  font-weight: 600;
+  min-width: 80px;
+  padding-top: 0.4rem;
+  flex-shrink: 0;
+}
+.parcours-filtre-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  flex: 1;
+}
+.parcours-pill {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  padding: 0.3rem 0.85rem;
+  background: #fff;
+  border: 1px solid var(--am-line);
+  border-radius: 999px;
+  color: var(--am-ink);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.parcours-pill:hover { border-color: var(--am-grenat); color: var(--am-grenat); }
+.parcours-pill.active {
+  background: var(--am-grenat);
+  color: #fff;
+  border-color: var(--am-grenat);
+}
+
+.parcours-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto var(--space-2xl);
+  padding: 0 1rem;
+}
+.mot-carte {
+  position: relative;
+  display: block;
+  background: #fff;
+  border: 1px solid var(--am-line);
+  border-radius: 12px;
+  padding: 1.4rem 1.3rem 1.3rem;
+  text-decoration: none;
+  color: var(--am-ink);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+}
+.mot-carte::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--am-grenat), rgba(142,42,61,0.3));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.mot-carte:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.07);
+  border-color: rgba(142,42,61,0.45);
+}
+.mot-carte:hover::before { opacity: 1; }
+.mot-carte__station {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--am-grenat);
+  margin-bottom: 0.6rem;
+}
+.mot-carte__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.9rem;
+  color: var(--am-grenat-deep);
+  margin-bottom: 0.2rem;
+  line-height: 1.4;
+  direction: rtl;
+}
+.mot-carte__translit {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--am-grenat);
+  margin-bottom: 0.5rem;
+}
+.mot-carte__def {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--am-ink-deep);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.parcours-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--am-soft);
+  padding: 3rem 1rem;
+}
+
+/* === Promesse === */
+.amour-promesse {
+  margin: var(--space-xl) auto;
+  padding: 1.8rem 1.7rem;
+  background: rgba(142,42,61,0.04);
+  border: 1px dashed rgba(142,42,61,0.35);
+  border-radius: 12px;
+  max-width: 720px;
+}
+.amour-promesse__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--am-grenat-deep);
+  margin: 0 0 0.8rem;
+}
+.amour-promesse p {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--am-ink);
+  margin: 0;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .amour-portes { grid-template-columns: 1fr; }
+  .parcours-filtre-groupe { flex-direction: column; align-items: flex-start; }
+  .parcours-filtre-label { min-width: 0; padding-top: 0; }
+}
+@media (max-width: 480px) {
+  .parcours-grille { grid-template-columns: 1fr; }
+  .mot-nav { flex-direction: column; }
+  .mot-nav__link { text-align: center; }
+}

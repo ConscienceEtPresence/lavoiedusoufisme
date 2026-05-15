@@ -1,0 +1,105 @@
+{
+  "module": {
+    "titre": "Les noms de l'amour",
+    "ar": "أَسْمَاءُ الحُبّ",
+    "translit": "asmāʾ al-ḥubb",
+    "sous_titre": "Quatre-vingts manières d'aimer dans la langue arabe"
+  },
+  "stations": [
+    { "id": "eveil",         "num": "I",   "ar": "الإِيقَاظ",        "translit": "al-īqāẓ",         "label": "L'amour qui s'éveille",   "desc": "Le premier mouvement de l'âme vers l'autre — l'inclination, la rencontre, l'intimité naissante." },
+    { "id": "chant",         "num": "II",  "ar": "الغَزَل",          "translit": "al-ghazal",       "label": "L'amour qui chante",      "desc": "Quand l'amour cherche les mots, les vers, la voix — la tendresse qui se dit." },
+    { "id": "brulure",       "num": "III", "ar": "اللَّهَب",          "translit": "al-lahab",        "label": "L'amour qui brûle",       "desc": "La passion qui consume, qui ronge, qui amincit comme un liseron son hôte." },
+    { "id": "perte",         "num": "IV",  "ar": "الفُقْدَان",        "translit": "al-fuqdān",       "label": "L'amour qui perd",        "desc": "La folie, la mélancolie, l'errance — quand l'amant ne se reconnaît plus." },
+    { "id": "retrouvailles", "num": "V",   "ar": "الوَصْل",          "translit": "al-waṣl",         "label": "L'amour qui retrouve",    "desc": "L'union, le lien, la fusion — l'apaisement de l'amant dans la présence." },
+    { "id": "divin",         "num": "VI",  "ar": "الحُبّ الإِلٰهِي",   "translit": "al-ḥubb al-ilāhī","label": "L'amour divin",           "desc": "Quand l'amour humain reconnaît son archétype — la station ultime du voyage." }
+  ],
+  "themes": [
+    { "id": "feu",        "ar": "النَّار",   "translit": "al-nār",      "label": "Le feu",            "desc": "Brûlure, flamme, incendie — l'amour comme combustion." },
+    { "id": "eau",        "ar": "المَاء",    "translit": "al-māʾ",      "label": "L'eau",             "desc": "Soif, noyade, fleuve — l'amour comme abîme liquide." },
+    { "id": "corps",      "ar": "الجَسَد",   "translit": "al-jasad",    "label": "Le corps malade",   "desc": "La maladie d'amour, la langueur, l'amincissement physique." },
+    { "id": "folie",      "ar": "الجُنُون",  "translit": "al-junūn",    "label": "La folie",          "desc": "Perte de raison, errance, obnubilation — Majnûn et ses descendants." },
+    { "id": "lien",       "ar": "الرَّبْط",   "translit": "al-rabṭ",     "label": "Le lien",           "desc": "Union, attache, fusion — ce qui réunit les amants." },
+    { "id": "separation", "ar": "الفِرَاق",  "translit": "al-firāq",    "label": "La séparation",     "desc": "Éloignement, exil, absence — ce qui les écarte." },
+    { "id": "douceur",    "ar": "اللُّطْف",   "translit": "al-luṭf",     "label": "La douceur",        "desc": "Tendresse, paix, intimité — l'amour sans violence." },
+    { "id": "eclat",      "ar": "الفُتُون",  "translit": "al-futūn",    "label": "L'éclat et le piège","desc": "Beauté, séduction, charme, envoûtement — la fascination amoureuse." },
+    { "id": "ivresse",    "ar": "السُّكْر",   "translit": "al-sukr",     "label": "L'ivresse",         "desc": "Vertige, extase, transport — l'amant grisé par la présence." }
+  ],
+  "mots": [
+    {
+      "id": "hubb",
+      "ar": "الْحُبّ",
+      "translit": "al-ḥubb",
+      "definition": "L'amour-roi, l'amour souverain",
+      "station": "eveil",
+      "themes": ["douceur","feu"],
+      "racine": "ح ب ب",
+      "famille": ["mouhibb","mahbub","mahabba","houbb-ilahi"],
+      "description": "Le mot ḥubb est le mot-souche, la matrice de toute la famille amoureuse en arabe. Son étymologie est l'objet d'innombrables hypothèses : les uns y voient la graine d'une plante du désert, qui contient en germe la plante entière ; les autres, la blancheur immaculée des dents — éclat de la beauté qui appelle l'amour ; d'autres encore, l'image du récipient, qui se laisse remplir. Trois pistes, un même mystère.\n\nḤubb est l'amour que chante Oum Kalthoum — l'amour des poètes errants, des princesses esseulées, des moines dans le désert. Sentiment noble et classique, paradigme de la passion charnelle et des tourments de la jeunesse, il est aussi le motif renouvelé de la tendre contrition, le support sans cesse repris du désir.\n\nDans le Coran, ḥubb fonde la relation entre Dieu et la créature : <em>yuḥibbuhum wa yuḥibbūnahu</em> — « Il les aime et ils L'aiment » (V, 54). C'est ce verset que toute la mystique soufie a médité comme la clef de la réciprocité divine.",
+      "temoin": {
+        "ar": "يُحِبُّهُمْ وَيُحِبُّونَهُ",
+        "translit": "yuḥibbuhum wa yuḥibbūnahu",
+        "fr": "Il les aime et ils L'aiment",
+        "source": "Coran, V, 54"
+      },
+      "meditation": "Quel est le mot le plus simple que tu n'oses plus dire ?",
+      "ouverture": "La tradition soufie tient ce verset pour la clef du <em>tawḥīd</em> de l'amour : Dieu ne reçoit pas l'amour, Il le donne en premier, et c'est de Son amour préalable que notre amour pour Lui peut surgir. Aimer, dit Ibn ʿArabī, c'est toujours répondre à un appel déjà lancé."
+    },
+    {
+      "id": "hawa",
+      "ar": "الْهَوى",
+      "translit": "al-hawā",
+      "definition": "L'inclination soudaine, l'attirance qui emporte",
+      "station": "eveil",
+      "themes": ["eau","eclat"],
+      "racine": "ه و ي",
+      "famille": ["ahwa","hawiya"],
+      "description": "Hawā nomme cet instant précis où l'âme bascule. Avant le mot, il n'y avait rien — ou plutôt, il y avait la vie ordinaire, le cours des heures. Et puis quelque chose s'incline, brutalement, vers un visage, une voix, une silhouette aperçue. C'est cela hawā : l'attirance soudaine, violente, passionnée de l'âme vers son objet — une chute, plus qu'une décision.\n\nDans la racine même du mot, on entend <em>hawā</em>, le verbe <em>tomber</em>. L'amour comme chute. On ne monte pas vers ce que l'on aime — on y tombe.\n\nLe poète Abbās ibn al-Aḥnaf (VIIIe siècle) en a fait le grand vocabulaire de sa cour : <em>sulṭān al-hawā</em>, la puissance de l'amour ; <em>ḥukm al-hawā</em>, sa loi ; <em>sirr al-hawā</em>, son secret. Son contemporain Soulaïmane al-Mustaʿīn a écrit ce vers que toute la tradition a retenu :\n\n<em>« Ne blâmez pas un roi de s'abaisser devant l'amour, car l'humiliation de l'amour est une seconde royauté. »</em>",
+      "temoin": {
+        "ar": "سُلْطَانُ الْهَوى",
+        "translit": "sulṭān al-hawā",
+        "fr": "La puissance de l'amour",
+        "source": "Abbās ibn al-Aḥnaf, VIIIe s."
+      },
+      "meditation": "Vers quoi inclines-tu, sans l'avoir choisi ?",
+      "ouverture": "Le soufisme retourne ce mot avec une finesse : ce qui te fait tomber est exactement ce qui peut te relever. Le <em>hawā</em> que la morale ordinaire blâme — l'inclination irrationnelle, la passion qui défait — est aussi, dit Ibn ʿArabī, l'organe par lequel l'âme reconnaît son origine. On tombe toujours vers le bas. Mais le bas, parfois, est en haut."
+    },
+    {
+      "id": "ilf",
+      "ar": "الإِلْف",
+      "translit": "al-ilf",
+      "definition": "L'intimité amoureuse, le compagnonnage des amants",
+      "station": "eveil",
+      "themes": ["lien","douceur"],
+      "racine": "أ ل ف",
+      "famille": ["ulf","ta'allufa","mu'allaf","ilāf"],
+      "description": "Ilf nomme cette douceur particulière qui s'installe entre deux êtres lorsque l'attirance première s'est apaisée et que le compagnonnage commence. Ce n'est plus l'incendie du <em>hawā</em>, ni l'extase du <em>waṣl</em> — c'est l'art de vivre côte à côte, de s'habituer l'un à l'autre sans s'éroder, de tisser une intimité quotidienne qui n'éteint pas la flamme mais la garde au foyer.\n\nLe mot vient de la racine <em>ʾ-l-f</em>, qui signifie <em>associer, assembler, rassembler</em>. La même racine donne <em>alif</em> — la première lettre de l'alphabet arabe, celle qui tient debout, droite, et qui inaugure tous les noms. Dans la symbolique mystique de Daylamī (Xe siècle), <em>alif</em> se subdivise en trois mouvements : <em>alifa</em> (aimer), <em>ilf</em> (l'amant), <em>allafa</em> (l'amour qui unit). Une seule lettre, trois manières d'être ensemble.\n\nC'est sous ce mot que Ibn Ḥazm d'Andalousie (993-1064) a placé son chef-d'œuvre, <em>Ṭawq al-ḥamāma fī l-ulfa wa-l-ullāf</em> — <em>Le Collier de la colombe sur l'amour et les amants</em> — l'une des plus belles psychologies amoureuses de tous les temps.",
+      "temoin": {
+        "ar": "طَوْقُ الْحَمَامَة فِي الأُلْفَة وَالأُلَّاف",
+        "translit": "Ṭawq al-ḥamāma fī l-ulfa wa-l-ullāf",
+        "fr": "Le Collier de la colombe, sur l'amour et les amants",
+        "source": "Ibn Ḥazm, Cordoue, XIe s."
+      },
+      "meditation": "Avec qui n'as-tu plus à montrer ?",
+      "ouverture": "La voie soufie reconnaît dans le <em>ilf</em> une station très haute, plus difficile que l'incendie. Brûler est facile — durer ensemble sans se trahir, l'est moins. Les compagnons du Prophète sont nommés <em>al-ulfāʾ</em>, ceux qui se sont rassemblés autour de lui dans l'intimité quotidienne — non pas dans l'extase, mais dans la table partagée."
+    },
+    {
+      "id": "mouanassa",
+      "ar": "المُؤانَسَة",
+      "translit": "al-muʾānasa",
+      "definition": "L'intimité dans la présence de l'aimé",
+      "station": "eveil",
+      "themes": ["lien","douceur"],
+      "racine": "أ ن س",
+      "famille": ["uns","insān","anīs","muʾanis"],
+      "description": "Si le <em>ilf</em> est l'habitude amoureuse, la <em>muʾānasa</em> est sa qualité intérieure : être dans l'intimité de l'être aimé, rechercher activement sa compagnie, trouver dans sa présence le repos qui manque à l'âme solitaire.\n\nLe mot vient de la racine <em>uns</em>, qui signifie la familiarité, l'apaisement, le contraire de l'étrangeté inquiète. C'est la même racine qui donne <em>insān</em>, l'être humain — comme si l'humanité elle-même se définissait par sa capacité d'être <em>en présence</em>, par cette qualité d'être qu'aucune solitude pure ne saurait combler.\n\nLe penseur Ibn Ḥayyān at-Tawḥīdī (Xe siècle) a consacré au mot un livre entier, <em>al-Imtāʿ wa-l-muʾānasa</em> — <em>de la délectation et de la belle compagnie</em>. Le titre dit déjà tout : l'amour, à cette station, n'est plus une fièvre, c'est une saveur partagée.",
+      "temoin": {
+        "ar": "الإِمْتَاع وَالمُؤانَسَة",
+        "translit": "al-Imtāʿ wa-l-Muʾānasa",
+        "fr": "De la délectation et de la belle compagnie",
+        "source": "Abū Ḥayyān at-Tawḥīdī, Xe s."
+      },
+      "meditation": "À qui peux-tu te taire, sans que le silence pèse ?",
+      "ouverture": "Dans le lexique soufi, <em>uns</em> est le nom de la station où le serviteur a cessé de fuir la présence de Dieu — où Il n'est plus une instance redoutée, mais une compagnie cherchée. C'est l'inverse exact de <em>wahsha</em>, la peur sauvage. La <em>muʾānasa</em> humaine est donc une école : aimer apaise — ou révèle l'inquiétude qu'il fallait nommer."
+    }
+  ]
+}

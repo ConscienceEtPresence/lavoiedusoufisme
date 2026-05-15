@@ -138,6 +138,25 @@
   border-color: rgba(166, 90, 74, 0.6);
 }
 
+/* Variante Amour — grenat profond, la couleur du cœur et du henné */
+.meditate-card--amour {
+  background: linear-gradient(180deg, rgba(142, 42, 61, 0.10), rgba(142, 42, 61, 0.03));
+  border-color: rgba(142, 42, 61, 0.32);
+}
+.meditate-card--amour::after {
+  color: rgba(142, 42, 61, 0.55);
+}
+.meditate-card--amour .meditate-card__ar {
+  color: rgba(115, 32, 48, 0.95);
+}
+.meditate-card--amour .meditate-card__title {
+  color: #6F2638;
+}
+.meditate-card--amour:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 10px 26px rgba(142, 42, 61, 0.22);
+  border-color: rgba(142, 42, 61, 0.6);
+}
+
 /* Variante Contes — ocre miel, la sagesse du récit */
 .meditate-card--contes {
   background: linear-gradient(180deg, rgba(184, 118, 47, 0.11), rgba(184, 118, 47, 0.03));

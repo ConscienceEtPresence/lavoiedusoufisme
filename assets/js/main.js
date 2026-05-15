@@ -97,16 +97,25 @@ document.querySelectorAll('.period').forEach(el => observer.observe(el));
 
 // 4. Mode nuit — bouton flottant + persistance + préférence OS
 (function() {
-  // a) Injecter le CSS du mode nuit (un seul include partout)
+  // base href pour les ressources globales (depuis n'importe quelle profondeur)
+  const scripts = document.querySelectorAll('script[src*="main.js"]');
+  const baseHref = scripts.length ? scripts[scripts.length-1].src.replace(/assets\/js\/main\.js.*$/, '') : '/';
+
+  // a) Injecter le CSS du mode nuit + palette (un seul include partout)
   if (!document.querySelector('link[data-darkmode]')) {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.dataset.darkmode = '1';
-    // chemin absolu depuis le root — fonctionne depuis n'importe quelle profondeur
-    const scripts = document.querySelectorAll('script[src*="main.js"]');
-    const baseHref = scripts.length ? scripts[scripts.length-1].src.replace(/assets\/js\/main\.js.*$/, '') : '/';
-    link.href = baseHref + 'assets/css/dark-mode.css?v=1';
+    link.href = baseHref + 'assets/css/dark-mode.css?v=2';
     document.head.appendChild(link);
+  }
+
+  // a-bis) Injecter search.js (palette globale, Cmd+K)
+  if (!document.querySelector('script[data-search]')) {
+    const s = document.createElement('script');
+    s.src = baseHref + 'assets/js/search.js?v=1';
+    s.dataset.search = '1';
+    document.head.appendChild(s);
   }
 
   // b) Déterminer le thème initial : localStorage > OS > clair

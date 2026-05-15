@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png" />
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" />
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <meta name="theme-color" content="#0F1830" />
+  <title>Index général arabe — La voie du dedans</title>
+  <meta name="description" content="Tout le vocabulaire arabe du site — racines, noms divins, noms de l'amour, contes, mots-clefs — en un seul index alphabétique." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/bilingue.css" />
+
+  <style>
+    .index-intro {
+      max-width: 720px;
+      margin: 0 auto var(--space-xl);
+      text-align: center;
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+      line-height: 1.75;
+      color: var(--ink);
+    }
+    .index-intro em { color: var(--gold); }
+    .index-stats {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin: var(--space-lg) auto;
+      max-width: 720px;
+    }
+    .index-stat {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+    .index-stat__count {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.8rem;
+      color: var(--gold);
+      letter-spacing: 0;
+      text-transform: none;
+      margin-bottom: 0.2rem;
+    }
+
+    /* Filtres par type */
+    .index-filters {
+      display: flex;
+      justify-content: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      margin: 0 auto var(--space-lg);
+      max-width: 900px;
+    }
+    .index-pill {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      padding: 0.35rem 1rem;
+      background: rgba(184, 134, 11, 0.04);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .index-pill:hover { border-color: var(--gold); color: var(--gold); }
+    .index-pill.active { background: var(--gold); color: #fff; border-color: var(--gold); }
+
+    /* Barre de recherche */
+    .index-search {
+      max-width: 480px;
+      margin: 0 auto var(--space-xl);
+    }
+    .index-search input {
+      width: 100%;
+      padding: 0.7rem 1.2rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      background: rgba(255,255,255,0.6);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      outline: none;
+      transition: border 0.2s ease;
+    }
+    .index-search input:focus { border-color: var(--gold); }
+    [data-theme="dark"] .index-search input { background: var(--paper-deep); }
+
+    /* Index alphabétique */
+    .alpha-jump {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.25rem;
+      margin: 0 auto var(--space-lg);
+      max-width: 900px;
+    }
+    .alpha-letter {
+      font-family: 'Amiri', serif;
+      font-size: 1.1rem;
+      padding: 0.35rem 0.55rem;
+      min-width: 32px;
+      text-align: center;
+      color: var(--gold);
+      border: 1px solid transparent;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .alpha-letter:hover { border-color: var(--gold); }
+    .alpha-letter.is-empty { color: var(--ink-mute); opacity: 0.4; pointer-events: none; }
+
+    /* Sections par lettre */
+    .alpha-section {
+      max-width: 1100px;
+      margin: 0 auto var(--space-xl);
+      padding: 0 1rem;
+    }
+    .alpha-section__header {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .alpha-section__letter {
+      font-family: 'Amiri', serif;
+      font-size: 2.5rem;
+      color: var(--gold);
+      direction: rtl;
+    }
+    .alpha-section__count {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+    .alpha-section__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 0.7rem;
+    }
+    .alpha-entry {
+      display: block;
+      padding: 0.8rem 1rem;
+      background: rgba(255,255,255,0.5);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--ink);
+      transition: all 0.2s ease;
+    }
+    [data-theme="dark"] .alpha-entry { background: var(--paper-deep); }
+    .alpha-entry:hover {
+      border-color: var(--gold);
+      transform: translateX(2px);
+      box-shadow: 0 4px 12px rgba(184, 134, 11, 0.08);
+    }
+    .alpha-entry__type {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.2rem;
+    }
+    .alpha-entry__ar {
+      font-family: 'Amiri', serif;
+      font-size: 1.3rem;
+      color: var(--ink-title);
+      margin-right: 0.5rem;
+      direction: rtl;
+      display: inline-block;
+    }
+    .alpha-entry__tr {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--ink-soft);
+    }
+    .alpha-entry__def {
+      display: block;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.85rem;
+      color: var(--ink-mute);
+      margin-top: 0.2rem;
+      line-height: 1.4;
+    }
+
+    .index-loading {
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      color: var(--ink-mute);
+      padding: 3rem 1rem;
+    }
+    .index-empty {
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      color: var(--ink-mute);
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body class="page-enter">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="16" cy="16" r="13" /><circle cx="16" cy="16" r="7" /><circle cx="16" cy="16" r="1.5" fill="currentColor" />
+        </svg>
+        <span>La voie du dedans</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="decouvrir.html">Découvrir</a></li>
+          <li><a href="cheminer.html">Cheminer</a></li>
+          <li><a href="rencontrer.html">Rencontrer</a></li>
+          <li><a href="metaphysique/index.html">Métaphysique</a></li>
+          <li><a href="poesie/index.html">Poésie</a></li>
+          <li><a href="dictionnaire/index.html">م Dictionnaire</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="bi-header">
+      <div class="bi-header__ar">الفِهْرِس</div>
+      <h1 class="bi-header__name">Index général arabe</h1>
+      <div class="bi-header__rule"></div>
+      <p class="bi-header__tag">Tout le vocabulaire arabe du site — en un seul lieu.</p>
+    </header>
+
+    <section class="container container--narrow">
+      <p class="index-intro">
+        Cette page rassemble <em>tout l'arabe</em> du site — les noms de l'amour, les Noms divins,
+        les racines coraniques, les noms des contes, les concepts soufis. Cherche un mot, parcours
+        par lettre, ou laisse l'œil s'y promener.
+      </p>
+      <div class="index-stats" id="index-stats"></div>
+    </section>
+
+    <section class="container">
+      <div class="index-search">
+        <input type="search" id="index-search" placeholder="Chercher un mot, une racine, un Nom…" autocomplete="off" />
+      </div>
+      <div class="index-filters" id="index-filters"></div>
+      <div class="alpha-jump" id="alpha-jump"></div>
+    </section>
+
+    <section id="alpha-sections">
+      <p class="index-loading">Chargement de l'index…</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p class="small"><a href="../index.html">← Retour à l'accueil</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js?v=6"></script>
+  <script>
+  (async function() {
+    // Charge tous les JSONs
+    async function loadJSON(file) {
+      try { const r = await fetch('../data/' + file); return await r.json(); }
+      catch(e) { return null; }
+    }
+    const [amour, hodja, racines, noms, dictionnaire] = await Promise.all([
+      loadJSON('amour.json'),
+      loadJSON('nasr-eddin.json'),
+      loadJSON('racines.json'),
+      loadJSON('noms-divins.json'),
+      loadJSON('dictionnaire.json'),
+    ]);
+
+    // Construit l'index unifié
+    const index = [];
+    if (amour && amour.mots) amour.mots.forEach(m => index.push({
+      ar: m.ar, tr: m.translit, def: m.definition,
+      type: 'Amour', typeShort: 'amour',
+      url: 'amour/mot.html?id=' + m.id,
+      sortKey: stripDiacritics(m.translit || m.ar)
+    }));
+    if (hodja && hodja.contes) hodja.contes.forEach(c => index.push({
+      ar: '', tr: c.titre, def: c.question || '',
+      type: 'Conte', typeShort: 'conte',
+      url: 'contes/nasr-eddin/conte.html?id=' + c.id,
+      sortKey: stripDiacritics(c.titre)
+    }));
+    if (racines && racines.racines) racines.racines.forEach(r => index.push({
+      ar: r.root_ar || r.letters, tr: r.root_tr || r.letters, def: r.core_fr || '',
+      type: 'Racine', typeShort: 'racine',
+      url: 'racines/index.html#' + r.id,
+      sortKey: stripDiacritics(r.root_tr || r.letters || '')
+    }));
+    if (noms && noms.noms) noms.noms.forEach(n => index.push({
+      ar: n.ar, tr: 'al-' + n.tr, def: n.fr,
+      type: 'Nom divin', typeShort: 'nom',
+      url: 'noms-divins/index.html#' + n.n,
+      sortKey: stripDiacritics(n.tr)
+    }));
+    if (dictionnaire && dictionnaire.entrees) dictionnaire.entrees.forEach(d => index.push({
+      ar: d.ar || '', tr: d.translit || d.term, def: d.definition_courte || d.def || '',
+      type: 'Dictionnaire', typeShort: 'dico',
+      url: 'dictionnaire/index.html#' + (d.id || d.slug || ''),
+      sortKey: stripDiacritics(d.translit || d.term || '')
+    }));
+
+    function stripDiacritics(s) {
+      return (s || '').toLowerCase()
+        .normalize('NFD').replace(/[̀-ͯ]/g, '')
+        .replace(/[ʿʾḥṣḍṭẓṣīāūṅñ]/g, c => ({'ʿ':"'",'ʾ':"'",'ḥ':'h','ṣ':'s','ḍ':'d','ṭ':'t','ẓ':'z','ī':'i','ā':'a','ū':'u'})[c] || c)
+        .replace(/^al-/, '');
+    }
+    index.sort((a, b) => a.sortKey.localeCompare(b.sortKey));
+
+    // Stats
+    const stats = {};
+    index.forEach(e => stats[e.type] = (stats[e.type] || 0) + 1);
+    const statsEl = document.getElementById('index-stats');
+    statsEl.innerHTML = `
+      <div class="index-stat"><span class="index-stat__count">${index.length}</span>mots</div>
+      ${Object.entries(stats).map(([t, c]) => `<div class="index-stat"><span class="index-stat__count">${c}</span>${t}</div>`).join('')}
+    `;
+
+    // Filtres
+    const types = Array.from(new Set(index.map(e => e.type))).sort();
+    const filtersEl = document.getElementById('index-filters');
+    filtersEl.innerHTML = `
+      <button class="index-pill active" data-filter="all">Tous</button>
+      ${types.map(t => `<button class="index-pill" data-filter="${t}">${t}</button>`).join('')}
+    `;
+
+    // État et rendu
+    let currentFilter = 'all';
+    let currentSearch = '';
+
+    function getLetter(entry) {
+      const k = entry.sortKey || '';
+      const c = k.charAt(0).toUpperCase();
+      return /[A-Z]/.test(c) ? c : '#';
+    }
+
+    function render() {
+      let filtered = index;
+      if (currentFilter !== 'all') filtered = filtered.filter(e => e.type === currentFilter);
+      if (currentSearch) {
+        const q = stripDiacritics(currentSearch);
+        filtered = filtered.filter(e =>
+          stripDiacritics(e.tr).includes(q) ||
+          stripDiacritics(e.def).includes(q) ||
+          (e.ar && e.ar.includes(currentSearch))
+        );
+      }
+
+      // Groupe par lettre
+      const groups = {};
+      filtered.forEach(e => {
+        const L = getLetter(e);
+        if (!groups[L]) groups[L] = [];
+        groups[L].push(e);
+      });
+
+      const sectionsEl = document.getElementById('alpha-sections');
+      const jumpEl = document.getElementById('alpha-jump');
+
+      if (filtered.length === 0) {
+        sectionsEl.innerHTML = '<p class="index-empty">Aucun mot ne correspond.</p>';
+        jumpEl.innerHTML = '';
+        return;
+      }
+
+      const letters = Object.keys(groups).sort((a, b) => {
+        if (a === '#') return 1;
+        if (b === '#') return -1;
+        return a.localeCompare(b);
+      });
+
+      jumpEl.innerHTML = letters.map(L =>
+        `<a class="alpha-letter" href="#letter-${L}">${L}</a>`
+      ).join('');
+
+      sectionsEl.innerHTML = letters.map(L => `
+        <section class="alpha-section" id="letter-${L}">
+          <header class="alpha-section__header">
+            <div class="alpha-section__letter">${L}</div>
+            <div class="alpha-section__count">${groups[L].length} ${groups[L].length === 1 ? 'entrée' : 'entrées'}</div>
+          </header>
+          <div class="alpha-section__grid">
+            ${groups[L].map(e => `
+              <a class="alpha-entry" href="${e.url}">
+                <div class="alpha-entry__type">${e.type}</div>
+                ${e.ar ? `<span class="alpha-entry__ar" lang="ar" dir="rtl">${e.ar}</span>` : ''}
+                <span class="alpha-entry__tr">${e.tr}</span>
+                ${e.def ? `<span class="alpha-entry__def">${e.def}</span>` : ''}
+              </a>
+            `).join('')}
+          </div>
+        </section>
+      `).join('');
+    }
+
+    // Events
+    filtersEl.addEventListener('click', e => {
+      const btn = e.target.closest('.index-pill');
+      if (!btn) return;
+      filtersEl.querySelectorAll('.index-pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      render();
+    });
+    document.getElementById('index-search').addEventListener('input', e => {
+      currentSearch = e.target.value.trim();
+      render();
+    });
+
+    render();
+  })();
+  </script>
+</body>
+</html>

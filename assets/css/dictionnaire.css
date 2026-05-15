@@ -119,6 +119,7 @@
 .dict-filter[data-cat="poles"].active      { background: #d4a04b; border-color: #d4a04b; }
 .dict-filter[data-cat="benediction"].active{ background: #5a8c5a; border-color: #5a8c5a; }
 .dict-filter[data-cat="cosmologie"].active { background: #2a3a5f; border-color: #2a3a5f; }
+.dict-filter[data-cat="confreries"].active { background: #7a3a5f; border-color: #7a3a5f; }
 
 /* === Mot du jour === */
 .mot-du-jour {
@@ -236,6 +237,7 @@
 .dict-card[data-cat="poles"]::before { background: #d4a04b; }
 .dict-card[data-cat="benediction"]::before { background: #5a8c5a; }
 .dict-card[data-cat="cosmologie"]::before { background: #2a3a5f; }
+.dict-card[data-cat="confreries"]::before { background: #7a3a5f; }
 
 .dict-card__ar {
   font-family: 'Amiri', serif;

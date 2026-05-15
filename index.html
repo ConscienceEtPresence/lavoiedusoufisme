@@ -175,6 +175,32 @@
       </div>
     </section>
 
+    <!-- ============================================
+         Newsletter — recevoir un mot quand le site s'enrichit
+         ============================================ -->
+    <section class="newsletter">
+      <div class="container container--narrow">
+        <div class="newsletter__ornament" aria-hidden="true">✦</div>
+        <p class="newsletter__intro">
+          Quand le site s'enrichit,<br>
+          je préviens parfois.
+        </p>
+        <form
+          action="https://buttondown.email/api/emails/embed-subscribe/lavoiedudedans"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.email/lavoiedudedans', 'popupwindow')"
+          class="newsletter__form"
+        >
+          <input type="email" name="email" placeholder="votre.email@exemple.fr" required aria-label="Votre adresse email" />
+          <button type="submit">M'inscrire</button>
+        </form>
+        <p class="newsletter__hint">
+          <em>Pas de spam, pas de revente. Un mot, parfois. Rien d'autre.</em>
+        </p>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">

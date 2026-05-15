@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "Poésie",
+    "subtitle": "Le chemin par le poème",
+    "intro": "La poésie n'est pas un ornement du soufisme — elle en est la voix la plus libre. Là où le traité figerait, le poème suggère. Là où la prose explique, le vers enchante. Cette anthologie se construit lentement, poème après poème — chacun donné dans sa langue d'origine, sa transcription, sa traduction française, son contexte, et une question pour méditer."
+  },
+  "filtres": {
+    "auteur": [
+      { "id": "rumi",         "label": "Rūmī" },
+      { "id": "hafez",        "label": "Ḥāfiẓ" },
+      { "id": "attar",        "label": "ʿAṭṭār" },
+      { "id": "saadi",        "label": "Saadi" },
+      { "id": "yunus-emre",   "label": "Yunus Emre" },
+      { "id": "ibn-arabi",    "label": "Ibn ʿArabī" },
+      { "id": "ibn-al-farid", "label": "Ibn al-Fāriḍ" },
+      { "id": "hallaj",       "label": "Al-Ḥallāj" },
+      { "id": "rabia",        "label": "Rābiʿa" },
+      { "id": "busiri",       "label": "Al-Būṣīrī" }
+    ],
+    "langue": [
+      { "id": "arabe",   "label": "Arabe" },
+      { "id": "persane", "label": "Persane" },
+      { "id": "turque",  "label": "Turque" }
+    ],
+    "theme": [
+      { "id": "amour",       "label": "Amour" },
+      { "id": "extase",      "label": "Extase" },
+      { "id": "separation",  "label": "Exil et retour" },
+      { "id": "nuit",        "label": "La nuit, l'Invité" },
+      { "id": "vin",         "label": "Vin spirituel" },
+      { "id": "alast",       "label": "Le jour d'alast" },
+      { "id": "humilite",    "label": "Pauvreté, humilité" },
+      { "id": "louange",     "label": "Louange du Prophète" }
+    ]
+  },
+  "poemes": [
+
+    {
+      "id": "le-chant-du-roseau",
+      "auteur": "rumi",
+      "auteur_nom": "Rūmī",
+      "titre_fr": "Le chant du roseau",
+      "titre_orig": "نَی‌نامه",
+      "titre_tr": "Ney-nāmeh",
+      "corpus": "Mathnawī I, vers 1-18",
+      "date": "v. 1259",
+      "langue": "persane",
+      "themes": ["separation", "amour", "alast"],
+      "type": "mathnawi",
+      "tagline": "L'âme exilée se souvient.",
+      "extrait_fr": "Écoute ce roseau, comme il se lamente — c'est la nostalgie d'alast.",
+      "href": "../auteurs/rumi/mathnawi.html",
+      "status": "ready"
+    },
+
+    {
+      "id": "viens-qui-que-tu-sois",
+      "auteur": "rumi",
+      "auteur_nom": "Rūmī",
+      "titre_fr": "Viens, viens, qui que tu sois",
+      "titre_orig": "بیا، بیا، هر آنچه هستی بیا",
+      "titre_tr": "Biā, biā, har ānche hasti biā",
+      "corpus": "Rubāʿiyāt (attribué)",
+      "date": "XIIIᵉ s.",
+      "langue": "persane",
+      "themes": ["amour", "humilite"],
+      "type": "rubai",
+      "tagline": "La porte n'est jamais celle du désespoir.",
+      "extrait_fr": "Viens, viens, qui que tu sois — notre porte n'est pas porte du désespoir.",
+      "href": "rumi/viens-qui-que-tu-sois.html",
+      "status": "soon"
+    },
+
+    {
+      "id": "ghazal-alast",
+      "auteur": "hafez",
+      "auteur_nom": "Ḥāfiẓ",
+      "titre_fr": "Depuis le jour d'alast",
+      "titre_orig": "از روز ازل",
+      "titre_tr": "Az rūz-e azal",
+      "corpus": "Dīwān, ghazal",
+      "date": "XIVᵉ s.",
+      "langue": "persane",
+      "themes": ["alast", "amour", "vin"],
+      "type": "ghazal",
+      "tagline": "Le contrat éternel avec l'Aimé.",
+      "extrait_fr": "Depuis le jour d'alast jusqu'au Jour du Jugement, mon contrat avec l'Aimé n'a pas changé d'une lettre.",
+      "href": "hafez/ghazal-alast.html",
+      "status": "soon"
+    },
+
+    {
+      "id": "sevelim-sevilelim",
+      "auteur": "yunus-emre",
+      "auteur_nom": "Yunus Emre",
+      "titre_fr": "Aimons et soyons aimés",
+      "titre_orig": "Sevelim sevilelim",
+      "titre_tr": "Sevelim sevilelim",
+      "corpus": "Divan",
+      "date": "XIIIᵉ–XIVᵉ s.",
+      "langue": "turque",
+      "themes": ["amour", "humilite"],
+      "type": "hymne",
+      "tagline": "Le monde ne demeure à personne — alors aimons.",
+      "extrait_fr": "Aimons et soyons aimés — ce monde ne reste à personne.",
+      "href": "yunus-emre/sevelim-sevilelim.html",
+      "status": "soon"
+    },
+
+    {
+      "id": "mon-coeur-toutes-formes",
+      "auteur": "ibn-arabi",
+      "auteur_nom": "Ibn ʿArabī",
+      "titre_fr": "Mon cœur est devenu capable de toutes les formes",
+      "titre_orig": "لَقَدْ صَارَ قَلْبِي قَابِلًا كُلَّ صُورَةٍ",
+      "titre_tr": "Laqad ṣāra qalbī qābilan kulla ṣūratin",
+      "corpus": "Tarjumān al-Ashwāq, ghazal XI",
+      "date": "v. 1215",
+      "langue": "arabe",
+      "themes": ["amour", "extase"],
+      "type": "ghazal",
+      "tagline": "La religion de l'amour — partout présente.",
+      "extrait_fr": "Mon cœur est devenu capable de toutes les formes : pâturage pour les gazelles, couvent pour les moines chrétiens…",
+      "href": "ibn-arabi/mon-coeur-toutes-formes.html",
+      "status": "soon"
+    },
+
+    {
+      "id": "ana-l-haqq",
+      "auteur": "hallaj",
+      "auteur_nom": "Al-Ḥallāj",
+      "titre_fr": "Je suis le Vrai",
+      "titre_orig": "أَنَا الْحَقّ",
+      "titre_tr": "Anā-l-Ḥaqq",
+      "corpus": "Dīwān (fragments)",
+      "date": "v. 910",
+      "langue": "arabe",
+      "themes": ["extase", "amour"],
+      "type": "ode",
+      "tagline": "La parole qui le mena au gibet.",
+      "extrait_fr": "Je suis Celui que j'aime, et Celui que j'aime est moi — nous sommes deux esprits en un seul corps.",
+      "href": "hallaj/ana-l-haqq.html",
+      "status": "soon"
+    }
+
+  ]
+}

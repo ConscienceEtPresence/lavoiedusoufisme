@@ -1,0 +1,5151 @@
+{
+  "meta": {
+    "titre": "À la racine — l'arabe par sa structure",
+    "source_principale": "Maurice Gloton, Approche du Coran par la grammaire et le lexique (Albouraq, 2002)",
+    "alphabet": [
+      "ا",
+      "ب",
+      "ت",
+      "ث",
+      "ج",
+      "ح",
+      "خ",
+      "د",
+      "ذ",
+      "ر",
+      "ز",
+      "س",
+      "ش",
+      "ص",
+      "ض",
+      "ط",
+      "ظ",
+      "ع",
+      "غ",
+      "ف",
+      "ق",
+      "ك",
+      "ل",
+      "م",
+      "ن",
+      "ه",
+      "و",
+      "ي"
+    ]
+  },
+  "racines": [
+    {
+      "id": "r-h-m",
+      "letters": [
+        "ر",
+        "ح",
+        "م"
+      ],
+      "root_ar": "ر ح م",
+      "root_tr": "r-ḥ-m",
+      "core_ar": "الرَّحْمَة",
+      "core_fr": "La miséricorde matricielle",
+      "field": "Lien organique, douceur enveloppante, indulgence, protection. La racine désigne d'abord l'utérus (al-raḥim) — prototype absolu du lien : ce qui contient, nourrit, abrite avant toute parole.",
+      "glose_gloton": "Pour Gloton, cette racine évoque le \"lien de parenté\" au sens le plus profond — non pas la filiation biologique seule, mais la qualité d'être <em>tenu</em>, porté par un milieu nourricier. Tout Nom dérivé décline cette matrice : Dieu est Celui qui porte le monde comme un utérus porte l'enfant.",
+      "forms": [
+        {
+          "ar": "رَحِمَ",
+          "tr": "raḥima",
+          "fr": "avoir miséricorde, prendre en compassion",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "رَحَّمَ",
+          "tr": "raḥḥama",
+          "fr": "couvrir de miséricorde, prier pour la miséricorde de quelqu'un",
+          "form": "II",
+          "type": "verbe intensif"
+        },
+        {
+          "ar": "تَرَاحَمَ",
+          "tr": "tarāḥama",
+          "fr": "se montrer mutuellement miséricordieux",
+          "form": "VI",
+          "type": "verbe réciproque"
+        },
+        {
+          "ar": "اِسْتَرْحَمَ",
+          "tr": "istarḥama",
+          "fr": "implorer la miséricorde",
+          "form": "X",
+          "type": "verbe demandeur"
+        },
+        {
+          "ar": "الرَّحْمَة",
+          "tr": "ar-raḥma",
+          "fr": "la miséricorde",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الرَّحْمَٰن",
+          "tr": "ar-Raḥmān",
+          "fr": "le Tout-Miséricordieux (intensif absolu)",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "الرَّحِيم",
+          "tr": "ar-Raḥīm",
+          "fr": "le Très-Miséricordieux (intensif permanent)",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "الرَّحِم",
+          "tr": "ar-raḥim",
+          "fr": "l'utérus, le lien matriciel, le lien de parenté",
+          "type": "nom concret"
+        },
+        {
+          "ar": "مَرْحَمَة",
+          "tr": "marḥama",
+          "fr": "compassion, indulgence",
+          "type": "nom de lieu/manière"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "1, 1",
+          "ar": "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+          "fr": "Au nom de Dieu, le Tout-Miséricordieux, le Très-Miséricordieux."
+        },
+        {
+          "ref": "7, 156",
+          "ar": "وَرَحْمَتِي وَسِعَتْ كُلَّ شَيْءٍ",
+          "fr": "Et Ma miséricorde embrasse toute chose."
+        },
+        {
+          "ref": "21, 107",
+          "ar": "وَمَآ أَرْسَلْنَٰكَ إِلَّا رَحْمَةً لِّلْعَٰلَمِينَ",
+          "fr": "Et Nous ne t'avons envoyé que comme une miséricorde pour les mondes."
+        }
+      ],
+      "dict_links": [
+        "rahma"
+      ],
+      "nom_links": [
+        1,
+        2,
+        3
+      ],
+      "meditation": "Quelle miséricorde matricielle me porte en cet instant, sans que je le sache ?"
+    },
+    {
+      "id": "ʿ-l-m",
+      "letters": [
+        "ع",
+        "ل",
+        "م"
+      ],
+      "root_ar": "ع ل م",
+      "root_tr": "ʿ-l-m",
+      "core_ar": "العِلْم",
+      "core_fr": "Le savoir, la marque qui distingue",
+      "field": "Connaître par signe. La racine partage avec <em>ʿalāma</em> (le repère, la borne) et <em>ʿalam</em> (la bannière, le drapeau) la même intuition : <em>connaître</em>, c'est apercevoir une marque qui distingue une chose d'une autre. Connaître Dieu, c'est apercevoir Ses signes (āyāt) dans le monde.",
+      "glose_gloton": "Gloton insiste : la connaissance arabe n'est pas spéculative au sens grec — elle est <em>signalétique</em>. Connaître, c'est apprendre à <em>lire des signes</em>. D'où la solidarité profonde entre savoir (ʿilm), signe (āya, ʿalāma) et univers (ʿālam — le \"signifiant\").",
+      "forms": [
+        {
+          "ar": "عَلِمَ",
+          "tr": "ʿalima",
+          "fr": "savoir, connaître",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "عَلَّمَ",
+          "tr": "ʿallama",
+          "fr": "enseigner, faire connaître",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "أَعْلَمَ",
+          "tr": "aʿlama",
+          "fr": "informer, signaler",
+          "form": "IV",
+          "type": "verbe"
+        },
+        {
+          "ar": "تَعَلَّمَ",
+          "tr": "taʿallama",
+          "fr": "apprendre",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "العِلْم",
+          "tr": "al-ʿilm",
+          "fr": "le savoir, la science",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "العَالِم",
+          "tr": "al-ʿālim",
+          "fr": "le savant, le connaissant",
+          "type": "participe actif"
+        },
+        {
+          "ar": "العَلِيم",
+          "tr": "al-ʿAlīm",
+          "fr": "le Très-Savant, l'Omniscient",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "العَلَّام",
+          "tr": "al-ʿAllām",
+          "fr": "Celui qui sait absolument tout",
+          "type": "nom hyperbolique"
+        },
+        {
+          "ar": "العَلَامَة",
+          "tr": "al-ʿalāma",
+          "fr": "la marque, le signe, le repère",
+          "type": "nom concret"
+        },
+        {
+          "ar": "العَالَم",
+          "tr": "al-ʿālam",
+          "fr": "le monde, l'univers (litt. \"le signifiant\")",
+          "type": "nom concret"
+        },
+        {
+          "ar": "المُعَلِّم",
+          "tr": "al-muʿallim",
+          "fr": "le maître, celui qui enseigne",
+          "type": "participe actif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "96, 4-5",
+          "ar": "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ ۝ عَلَّمَ ٱلْإِنسَٰنَ مَا لَمْ يَعْلَمْ",
+          "fr": "Celui qui a enseigné par le calame, a enseigné à l'homme ce qu'il ne savait pas."
+        },
+        {
+          "ref": "2, 31",
+          "ar": "وَعَلَّمَ ءَادَمَ ٱلْأَسْمَآءَ كُلَّهَا",
+          "fr": "Et Il enseigna à Adam tous les noms."
+        }
+      ],
+      "dict_links": [
+        "ilm",
+        "marifa",
+        "irfan"
+      ],
+      "nom_links": [
+        19
+      ],
+      "meditation": "Quels sont les signes que je traverse sans les voir — alors qu'ils me font signe ?"
+    },
+    {
+      "id": "q-r-b",
+      "letters": [
+        "ق",
+        "ر",
+        "ب"
+      ],
+      "root_ar": "ق ر ب",
+      "root_tr": "q-r-b",
+      "core_ar": "القُرْب",
+      "core_fr": "La proximité",
+      "field": "Être proche, s'approcher. La racine décrit à la fois la distance qui se réduit et la qualité d'intimité. Le mot <em>qurbān</em> (sacrifice) en vient : ce qui rapproche du divin.",
+      "glose_gloton": "Pour Gloton, la racine q-r-b est l'une des plus chargées spirituellement : elle décrit non un état mais un <em>mouvement</em>. Dieu est plus proche de l'homme que sa veine jugulaire (50, 16) — la proximité est donnée d'avance ; reste à <em>s'</em>en approcher.",
+      "forms": [
+        {
+          "ar": "قَرُبَ",
+          "tr": "qaruba",
+          "fr": "être proche",
+          "form": "I",
+          "type": "verbe d'état"
+        },
+        {
+          "ar": "قَرَّبَ",
+          "tr": "qarraba",
+          "fr": "rapprocher, faire approcher",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "اِقْتَرَبَ",
+          "tr": "iqtaraba",
+          "fr": "s'approcher activement",
+          "form": "VIII",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "تَقَرَّبَ",
+          "tr": "taqarraba",
+          "fr": "chercher à se rapprocher (de Dieu)",
+          "form": "V",
+          "type": "verbe d'effort"
+        },
+        {
+          "ar": "القُرْب",
+          "tr": "al-qurb",
+          "fr": "la proximité",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "القَرِيب",
+          "tr": "al-Qarīb",
+          "fr": "le Proche",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "القُرْبَى",
+          "tr": "al-qurbā",
+          "fr": "la parenté proche, la consanguinité",
+          "type": "nom féminin"
+        },
+        {
+          "ar": "القُرْبَان",
+          "tr": "al-qurbān",
+          "fr": "l'offrande sacrificielle (ce qui rapproche)",
+          "type": "nom concret"
+        },
+        {
+          "ar": "المُقَرَّب",
+          "tr": "al-muqarrab",
+          "fr": "le rapproché, l'intime",
+          "type": "participe passif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "50, 16",
+          "ar": "وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ ٱلْوَرِيدِ",
+          "fr": "Et Nous sommes plus proche de lui que sa veine jugulaire."
+        },
+        {
+          "ref": "2, 186",
+          "ar": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ",
+          "fr": "Et lorsque Mes serviteurs t'interrogent sur Moi — Je suis proche."
+        }
+      ],
+      "dict_links": [
+        "qurb",
+        "wasl"
+      ],
+      "nom_links": [],
+      "meditation": "Il est plus proche de moi que ma veine jugulaire — où me tiens-je de Lui en cet instant ?"
+    },
+    {
+      "id": "dh-k-r",
+      "letters": [
+        "ذ",
+        "ك",
+        "ر"
+      ],
+      "root_ar": "ذ ك ر",
+      "root_tr": "dh-k-r",
+      "core_ar": "الذِّكْر",
+      "core_fr": "Le rappel, la mémoire active",
+      "field": "Mentionner, se souvenir, faire mémoire. La racine porte ensemble trois actes inséparables : <em>se rappeler</em> intérieurement, <em>nommer</em> avec la langue, et <em>rendre présent</em> ce dont on se souvient. Le ذِكْر soufi est cette trinité.",
+      "glose_gloton": "Gloton souligne que la racine dh-k-r n'oppose pas mémoire et parole — elle les unit. <em>Dhakara</em>, c'est se souvenir <em>en disant</em>. Le contraire (<em>nasiya</em>, oublier) n'est pas l'absence de pensée mais l'absence de mention.",
+      "forms": [
+        {
+          "ar": "ذَكَرَ",
+          "tr": "dhakara",
+          "fr": "mentionner, se rappeler",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "ذَكَّرَ",
+          "tr": "dhakkara",
+          "fr": "rappeler à quelqu'un",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَذَكَّرَ",
+          "tr": "tadhakkara",
+          "fr": "se rappeler, se ressouvenir",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "اِذَّكَرَ",
+          "tr": "iddhakara",
+          "fr": "prendre garde, se souvenir profondément",
+          "form": "VIII",
+          "type": "verbe"
+        },
+        {
+          "ar": "الذِّكْر",
+          "tr": "adh-dhikr",
+          "fr": "le rappel, l'invocation, le Coran lui-même",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الذِّكْرَى",
+          "tr": "adh-dhikrā",
+          "fr": "le souvenir, le rappel mémoriel",
+          "type": "nom féminin"
+        },
+        {
+          "ar": "التَّذْكِرَة",
+          "tr": "at-tadhkira",
+          "fr": "ce qui sert à rappeler, le rappel pédagogique",
+          "type": "nom de manière"
+        },
+        {
+          "ar": "الذَّاكِر",
+          "tr": "adh-dhākir",
+          "fr": "celui qui se souvient et invoque",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المَذْكُور",
+          "tr": "al-madhkūr",
+          "fr": "le mentionné",
+          "type": "participe passif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "2, 152",
+          "ar": "فَٱذْكُرُونِىٓ أَذْكُرْكُمْ",
+          "fr": "Souvenez-vous de Moi, Je Me souviendrai de vous."
+        },
+        {
+          "ref": "13, 28",
+          "ar": "أَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ",
+          "fr": "N'est-ce pas par le rappel de Dieu que les cœurs s'apaisent ?"
+        }
+      ],
+      "dict_links": [
+        "dhikr",
+        "ghafla"
+      ],
+      "nom_links": [],
+      "meditation": "Quand je dis Son Nom — est-ce que je <em>parle</em>, ou est-ce que je <em>me souviens</em> ?"
+    },
+    {
+      "id": "ʿ-b-d",
+      "letters": [
+        "ع",
+        "ب",
+        "د"
+      ],
+      "root_ar": "ع ب د",
+      "root_tr": "ʿ-b-d",
+      "core_ar": "العُبُودِيَّة",
+      "core_fr": "Le service, l'adoration",
+      "field": "Servir, adorer. La racine désigne à la fois la condition (être serviteur) et l'acte (adorer). En arabe, <em>ʿabd</em> ne porte pas la connotation d'humiliation : c'est le titre le plus noble — Muḥammad est appelé d'abord <em>ʿabd</em>, serviteur, avant d'être appelé <em>rasūl</em>, messager.",
+      "glose_gloton": "Gloton note l'écart culturel : le mot français \"esclave\" trahit l'arabe <em>ʿabd</em>. Mieux vaut <em>serviteur</em> — celui qui sert librement, par reconnaissance, et qui trouve dans le service sa dignité. La <em>ʿubūdiyya</em> est le sommet de la création.",
+      "forms": [
+        {
+          "ar": "عَبَدَ",
+          "tr": "ʿabada",
+          "fr": "servir, adorer",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "تَعَبَّدَ",
+          "tr": "taʿabbada",
+          "fr": "se vouer au service, faire des œuvres dévotionnelles",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "اِسْتَعْبَدَ",
+          "tr": "istaʿbada",
+          "fr": "asservir, prendre comme serviteur",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "العَبْد",
+          "tr": "al-ʿabd",
+          "fr": "le serviteur (titre noble en arabe)",
+          "type": "nom concret"
+        },
+        {
+          "ar": "العِبَادَة",
+          "tr": "al-ʿibāda",
+          "fr": "le service, le culte, l'adoration",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "العُبُودِيَّة",
+          "tr": "al-ʿubūdiyya",
+          "fr": "la qualité de serviteur, la condition servicielle",
+          "type": "nom abstrait"
+        },
+        {
+          "ar": "المَعْبُود",
+          "tr": "al-maʿbūd",
+          "fr": "Celui qui est adoré, l'Adoré",
+          "type": "participe passif"
+        },
+        {
+          "ar": "العَابِد",
+          "tr": "al-ʿābid",
+          "fr": "l'adorateur, le dévot",
+          "type": "participe actif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "51, 56",
+          "ar": "وَمَا خَلَقْتُ ٱلْجِنَّ وَٱلْإِنسَ إِلَّا لِيَعْبُدُونِ",
+          "fr": "Je n'ai créé les djinns et les hommes que pour qu'ils Me servent."
+        },
+        {
+          "ref": "1, 5",
+          "ar": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+          "fr": "C'est Toi que nous servons, c'est Toi dont nous implorons le secours."
+        }
+      ],
+      "dict_links": [
+        "abd",
+        "uboodiyya",
+        "ibada"
+      ],
+      "nom_links": [],
+      "meditation": "Suis-je le serviteur de ce que je crois servir — ou de ce que je sers en secret ?"
+    },
+    {
+      "id": "q-l-b",
+      "letters": [
+        "ق",
+        "ل",
+        "ب"
+      ],
+      "root_ar": "ق ل ب",
+      "root_tr": "q-l-b",
+      "core_ar": "القَلْب",
+      "core_fr": "Le cœur, ce qui se retourne",
+      "field": "Retourner, renverser, changer. Le cœur (al-qalb) est nommé ainsi parce qu'il se <em>retourne</em> sans cesse — d'un état à l'autre, d'une affection à l'autre. La racine partage avec <em>inqilāb</em> (renversement) et <em>taqallub</em> (oscillation) la même intuition : ce qui <em>tourne</em>.",
+      "glose_gloton": "Gloton souligne le paradoxe central : en arabe, le cœur n'est pas le siège stable de l'identité — il est l'organe <em>mobile</em> par excellence. Le hadith dit : <em>« Le cœur du croyant est entre deux doigts du Miséricordieux, Il le retourne comme Il veut. »</em>",
+      "forms": [
+        {
+          "ar": "قَلَبَ",
+          "tr": "qalaba",
+          "fr": "retourner, renverser",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "قَلَّبَ",
+          "tr": "qallaba",
+          "fr": "retourner sans cesse, examiner sous tous les angles",
+          "form": "II",
+          "type": "verbe intensif"
+        },
+        {
+          "ar": "تَقَلَّبَ",
+          "tr": "taqallaba",
+          "fr": "osciller, varier, changer d'état",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "اِنْقَلَبَ",
+          "tr": "inqalaba",
+          "fr": "être retourné, se renverser",
+          "form": "VII",
+          "type": "verbe passif"
+        },
+        {
+          "ar": "القَلْب",
+          "tr": "al-qalb",
+          "fr": "le cœur, ce qui se retourne",
+          "type": "nom concret"
+        },
+        {
+          "ar": "التَّقَلُّب",
+          "tr": "at-taqallub",
+          "fr": "l'oscillation, le changement d'état",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الإِنْقِلَاب",
+          "tr": "al-inqilāb",
+          "fr": "le renversement, le retournement",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المُنْقَلِب",
+          "tr": "al-munqalib",
+          "fr": "celui qui retourne, qui revient",
+          "type": "participe actif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "8, 24",
+          "ar": "وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ يَحُولُ بَيْنَ ٱلْمَرْءِ وَقَلْبِهِۦ",
+          "fr": "Et sachez que Dieu s'interpose entre l'homme et son cœur."
+        },
+        {
+          "ref": "26, 89",
+          "ar": "إِلَّا مَنْ أَتَى ٱللَّهَ بِقَلْبٍ سَلِيمٍ",
+          "fr": "Sauf celui qui viendra à Dieu avec un cœur sain."
+        }
+      ],
+      "dict_links": [
+        "qalb",
+        "ayn-al-qalb"
+      ],
+      "nom_links": [],
+      "meditation": "Mon cœur, en cet instant — vers quel côté est-il retourné ?"
+    },
+    {
+      "id": "n-f-s",
+      "letters": [
+        "ن",
+        "ف",
+        "س"
+      ],
+      "root_ar": "ن ف س",
+      "root_tr": "n-f-s",
+      "core_ar": "النَّفْس",
+      "core_fr": "L'âme, le souffle, la personne",
+      "field": "Souffler, respirer, exhaler. La même racine donne <em>nafs</em> (l'âme, la personne) et <em>nafas</em> (le souffle). En arabe, ce qui anime un être, c'est ce qui le <em>respire</em>. La nafs n'est donc pas un \"moi\" abstrait — c'est un être qui souffle.",
+      "glose_gloton": "Gloton remarque que la solidarité nafs / nafas dit toute une anthropologie : l'âme est précaire, elle dépend d'un souffle reçu. Le hadith célèbre : <em>« nafas al-Raḥmān »</em> — le Souffle du Miséricordieux — fait de l'existence elle-même une expiration divine.",
+      "forms": [
+        {
+          "ar": "نَفَسَ",
+          "tr": "nafasa",
+          "fr": "souffler",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "نَفَّسَ",
+          "tr": "naffasa",
+          "fr": "soulager, faire respirer, défaire l'étouffement",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَنَفَّسَ",
+          "tr": "tanaffasa",
+          "fr": "respirer",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "النَّفْس",
+          "tr": "an-nafs",
+          "fr": "l'âme, la personne, le soi",
+          "type": "nom concret"
+        },
+        {
+          "ar": "النَّفَس",
+          "tr": "an-nafas",
+          "fr": "le souffle, la respiration",
+          "type": "nom concret"
+        },
+        {
+          "ar": "الأَنْفُس",
+          "tr": "al-anfus",
+          "fr": "les âmes (pluriel)",
+          "type": "pluriel"
+        },
+        {
+          "ar": "النَّفِيس",
+          "tr": "an-nafīs",
+          "fr": "le précieux, ce qui vaut une âme",
+          "type": "adjectif"
+        },
+        {
+          "ar": "التَّنَفُّس",
+          "tr": "at-tanaffus",
+          "fr": "la respiration",
+          "type": "nom d'action"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "91, 7-9",
+          "ar": "وَنَفْسٍ وَمَا سَوَّىٰهَا ۝ فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَىٰهَا ۝ قَدْ أَفْلَحَ مَن زَكَّىٰهَا",
+          "fr": "Par une âme et Celui qui l'a façonnée — Il lui a inspiré son péché et sa piété ; bienheureux qui la purifie."
+        },
+        {
+          "ref": "50, 16",
+          "ar": "وَلَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ وَنَعْلَمُ مَا تُوَسْوِسُ بِهِۦ نَفْسُهُۥ",
+          "fr": "Nous avons créé l'homme et Nous savons ce que lui susurre son âme."
+        }
+      ],
+      "dict_links": [
+        "nafs",
+        "nafs-ammara",
+        "nafs-lawwama",
+        "nafs-mutmainna",
+        "nafas"
+      ],
+      "nom_links": [],
+      "meditation": "Ce souffle que je viens de prendre — l'ai-je vraiment senti, ou est-il déjà passé sans moi ?"
+    },
+    {
+      "id": "r-w-h",
+      "letters": [
+        "ر",
+        "و",
+        "ح"
+      ],
+      "root_ar": "ر و ح",
+      "root_tr": "r-w-ḥ",
+      "core_ar": "الرُّوح",
+      "core_fr": "L'esprit, le souffle vivifiant",
+      "field": "Souffler, vivifier, donner du repos. La racine r-w-ḥ unit trois champs : <em>rīḥ</em> (le vent), <em>rūḥ</em> (l'esprit), <em>rāḥa</em> (le repos). Tous trois disent un même mouvement aérien — ce qui circule, vivifie, apaise.",
+      "glose_gloton": "Gloton note que là où l'occident sépare radicalement \"esprit\" et \"vent\", l'arabe garde la racine commune. Le souffle (rīḥ) du monde et l'esprit (rūḥ) de l'homme sont parents — comme dans l'hébreu <em>ruaḥ</em> et le grec <em>pneuma</em>.",
+      "forms": [
+        {
+          "ar": "رَاحَ",
+          "tr": "rāḥa",
+          "fr": "aller, partir le soir ; trouver le repos",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَرَاحَ",
+          "tr": "arāḥa",
+          "fr": "donner du repos, soulager",
+          "form": "IV",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "اِسْتَرَاحَ",
+          "tr": "istarāḥa",
+          "fr": "chercher le repos, se reposer",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "الرُّوح",
+          "tr": "ar-rūḥ",
+          "fr": "l'esprit, le souffle vital",
+          "type": "nom concret"
+        },
+        {
+          "ar": "الرِّيح",
+          "tr": "ar-rīḥ",
+          "fr": "le vent, le souffle",
+          "type": "nom concret"
+        },
+        {
+          "ar": "الرَّاحَة",
+          "tr": "ar-rāḥa",
+          "fr": "le repos, la quiétude",
+          "type": "nom d'état"
+        },
+        {
+          "ar": "الرَّيْحَان",
+          "tr": "ar-rayḥān",
+          "fr": "la plante aromatique, le basilic du paradis",
+          "type": "nom concret"
+        },
+        {
+          "ar": "الرَّوْح",
+          "tr": "ar-rawḥ",
+          "fr": "la brise, le souffle léger, la miséricorde",
+          "type": "nom concret"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "17, 85",
+          "ar": "وَيَسْـَٔلُونَكَ عَنِ ٱلرُّوحِ ۖ قُلِ ٱلرُّوحُ مِنْ أَمْرِ رَبِّى",
+          "fr": "Ils t'interrogent sur l'Esprit. Dis : l'Esprit relève de l'ordre de mon Seigneur."
+        },
+        {
+          "ref": "15, 29",
+          "ar": "فَإِذَا سَوَّيْتُهُۥ وَنَفَخْتُ فِيهِ مِن رُّوحِى",
+          "fr": "Quand Je l'aurai harmonieusement formé et que J'aurai insufflé en lui de Mon Esprit."
+        }
+      ],
+      "dict_links": [
+        "ruh",
+        "nafas"
+      ],
+      "nom_links": [],
+      "meditation": "Cette respiration qui me traverse — vient-elle de moi, ou suis-je en elle ?"
+    },
+    {
+      "id": "h-b-b",
+      "letters": [
+        "ح",
+        "ب",
+        "ب"
+      ],
+      "root_ar": "ح ب ب",
+      "root_tr": "ḥ-b-b",
+      "core_ar": "المَحَبَّة",
+      "core_fr": "L'amour, la graine du cœur",
+      "field": "Aimer, prendre racine, germer. La racine ḥ-b-b unit l'amour (<em>ḥubb</em>) et la graine (<em>ḥabba</em>) : aimer, en arabe, c'est laisser une graine s'implanter et croître. L'amour n'est pas une émotion — c'est une plante qui prend.",
+      "glose_gloton": "Gloton souligne ce que la racine ḥ-b-b dit de l'amour selon le Coran : un acte qui germe, qui s'enracine dans la durée. Très différent du <em>passion</em> grec — qui est, étymologiquement, ce qu'on <em>subit</em>.",
+      "forms": [
+        {
+          "ar": "حَبَّ",
+          "tr": "ḥabba",
+          "fr": "aimer",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَحَبَّ",
+          "tr": "aḥabba",
+          "fr": "aimer (forme courante)",
+          "form": "IV",
+          "type": "verbe"
+        },
+        {
+          "ar": "حَبَّبَ",
+          "tr": "ḥabbaba",
+          "fr": "rendre cher, faire aimer",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَحَابَّ",
+          "tr": "taḥābba",
+          "fr": "s'aimer mutuellement",
+          "form": "VI",
+          "type": "verbe réciproque"
+        },
+        {
+          "ar": "اِسْتَحَبَّ",
+          "tr": "istaḥabba",
+          "fr": "considérer comme aimé, recommander",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "الحُبّ",
+          "tr": "al-ḥubb",
+          "fr": "l'amour",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المَحَبَّة",
+          "tr": "al-maḥabba",
+          "fr": "l'amour, l'affection profonde",
+          "type": "nom de lieu/manière"
+        },
+        {
+          "ar": "الحَبِيب",
+          "tr": "al-ḥabīb",
+          "fr": "le bien-aimé",
+          "type": "nom"
+        },
+        {
+          "ar": "المَحْبُوب",
+          "tr": "al-maḥbūb",
+          "fr": "celui qui est aimé",
+          "type": "participe passif"
+        },
+        {
+          "ar": "الحَبَّة",
+          "tr": "al-ḥabba",
+          "fr": "la graine, le grain",
+          "type": "nom concret"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "5, 54",
+          "ar": "يُحِبُّهُمْ وَيُحِبُّونَهُۥ",
+          "fr": "Il les aime et ils L'aiment."
+        },
+        {
+          "ref": "3, 31",
+          "ar": "قُلْ إِن كُنتُمْ تُحِبُّونَ ٱللَّهَ فَٱتَّبِعُونِى يُحْبِبْكُمُ ٱللَّهُ",
+          "fr": "Dis : si vous aimez Dieu, suivez-moi — Dieu vous aimera."
+        }
+      ],
+      "dict_links": [
+        "mahabba",
+        "ishq"
+      ],
+      "nom_links": [
+        47
+      ],
+      "meditation": "L'amour que je porte — est-il une graine qui pousse, ou un feu qui me brûle sans durer ?"
+    },
+    {
+      "id": "s-b-r",
+      "letters": [
+        "ص",
+        "ب",
+        "ر"
+      ],
+      "root_ar": "ص ب ر",
+      "root_tr": "ṣ-b-r",
+      "core_ar": "الصَّبْر",
+      "core_fr": "La patience, l'endurance ferme",
+      "field": "Lier solidement, retenir, supporter. La racine ṣ-b-r est concrète : <em>ṣabbara</em>, c'est saler une chose pour la conserver, la <em>tenir</em>. La patience arabe n'est pas passivité — c'est une <em>tenue</em> ferme dans la durée, contre ce qui dispersait.",
+      "glose_gloton": "Gloton insiste : <em>ṣabr</em> ne se traduit pas par patience au sens chrétien (longue souffrance acceptée), mais par une <em>fermeté</em> active. Le ṣabr a les pieds plantés.",
+      "forms": [
+        {
+          "ar": "صَبَرَ",
+          "tr": "ṣabara",
+          "fr": "tenir bon, endurer",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "صَبَّرَ",
+          "tr": "ṣabbara",
+          "fr": "rendre patient, consoler",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَصَبَّرَ",
+          "tr": "taṣabbara",
+          "fr": "se forcer à la patience",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "اِصْطَبَرَ",
+          "tr": "iṣṭabara",
+          "fr": "endurer activement, persévérer",
+          "form": "VIII",
+          "type": "verbe"
+        },
+        {
+          "ar": "الصَّبْر",
+          "tr": "aṣ-ṣabr",
+          "fr": "la patience, l'endurance ferme",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الصَّابِر",
+          "tr": "aṣ-ṣābir",
+          "fr": "le patient",
+          "type": "participe actif"
+        },
+        {
+          "ar": "الصَّبَّار",
+          "tr": "aṣ-ṣabbār",
+          "fr": "le très patient (intensif)",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "الصَّبُور",
+          "tr": "aṣ-Ṣabūr",
+          "fr": "Celui dont la patience ne se lasse pas (Nom divin)",
+          "type": "nom hyperbolique"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "2, 153",
+          "ar": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّٰبِرِينَ",
+          "fr": "Ô vous qui croyez, cherchez secours dans la patience et la prière — Dieu est avec les patients."
+        },
+        {
+          "ref": "39, 10",
+          "ar": "إِنَّمَا يُوَفَّى ٱلصَّٰبِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍ",
+          "fr": "Les patients seront récompensés sans compte."
+        }
+      ],
+      "dict_links": [
+        "sabr"
+      ],
+      "nom_links": [
+        99
+      ],
+      "meditation": "Quand je crois patienter — est-ce que je <em>tiens</em>, ou est-ce que je <em>subis</em> ?"
+    },
+    {
+      "id": "sh-k-r",
+      "letters": [
+        "ش",
+        "ك",
+        "ر"
+      ],
+      "root_ar": "ش ك ر",
+      "root_tr": "sh-k-r",
+      "core_ar": "الشُّكْر",
+      "core_fr": "La gratitude, la reconnaissance qui rend",
+      "field": "Reconnaître, rendre grâce, faire fructifier. La racine décrit à l'origine la <em>croissance</em> d'une bête bien nourrie : <em>shakara</em>, c'est <em>faire fructifier</em> ce qu'on a reçu. La gratitude arabe n'est pas un sentiment intérieur — c'est l'acte de faire <em>croître</em> le don.",
+      "glose_gloton": "Gloton remarque la connexion essentielle : <em>shukr</em> et <em>shukūr</em> partagent leur racine avec <em>shakira</em> (être en pleine forme, après nourriture). Remercier, c'est laisser le don nous nourrir vraiment.",
+      "forms": [
+        {
+          "ar": "شَكَرَ",
+          "tr": "shakara",
+          "fr": "remercier, être reconnaissant",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "تَشَكَّرَ",
+          "tr": "tashakkara",
+          "fr": "exprimer sa gratitude",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "الشُّكْر",
+          "tr": "ash-shukr",
+          "fr": "la gratitude active",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الشَّاكِر",
+          "tr": "ash-shākir",
+          "fr": "le reconnaissant",
+          "type": "participe actif"
+        },
+        {
+          "ar": "الشَّكُور",
+          "tr": "ash-Shakūr",
+          "fr": "Celui qui reconnaît et rétribue généreusement (Nom divin)",
+          "type": "nom hyperbolique"
+        },
+        {
+          "ar": "المَشْكُور",
+          "tr": "al-mashkūr",
+          "fr": "ce dont on remercie, ce qui est récompensé",
+          "type": "participe passif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "14, 7",
+          "ar": "لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ",
+          "fr": "Si vous êtes reconnaissants, J'augmenterai pour vous."
+        },
+        {
+          "ref": "2, 152",
+          "ar": "وَٱشْكُرُوا۟ لِى وَلَا تَكْفُرُونِ",
+          "fr": "Soyez-Moi reconnaissants, et ne soyez pas ingrats envers Moi."
+        }
+      ],
+      "dict_links": [
+        "shukr",
+        "hamd"
+      ],
+      "nom_links": [
+        35
+      ],
+      "meditation": "Le don que j'ai reçu hier — l'ai-je <em>fait fructifier</em>, ou l'ai-je laissé se faner ?"
+    },
+    {
+      "id": "n-w-r",
+      "letters": [
+        "ن",
+        "و",
+        "ر"
+      ],
+      "root_ar": "ن و ر",
+      "root_tr": "n-w-r",
+      "core_ar": "النُّور",
+      "core_fr": "La lumière, ce qui rend manifeste",
+      "field": "Briller, éclairer, fleurir. La racine n-w-r unit la lumière (<em>nūr</em>), le feu (<em>nār</em>) et la fleur (<em>nawr</em>) : trois manifestations d'un même phénomène — ce qui <em>sort de soi</em> pour devenir visible.",
+      "glose_gloton": "Gloton souligne le paradoxe central : <em>nūr</em> (lumière) et <em>nār</em> (feu) sont jumelles — mais la première illumine et révèle, tandis que la seconde consume. Toute la spiritualité musulmane médite cette parenté.",
+      "forms": [
+        {
+          "ar": "نَارَ",
+          "tr": "nāra",
+          "fr": "briller, luire",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "نَوَّرَ",
+          "tr": "nawwara",
+          "fr": "éclairer, illuminer abondamment",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "أَنَارَ",
+          "tr": "anāra",
+          "fr": "donner la lumière",
+          "form": "IV",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "اِسْتَنَارَ",
+          "tr": "istanāra",
+          "fr": "chercher la lumière, s'éclairer",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "النُّور",
+          "tr": "an-nūr",
+          "fr": "la lumière",
+          "type": "nom concret"
+        },
+        {
+          "ar": "النَّار",
+          "tr": "an-nār",
+          "fr": "le feu",
+          "type": "nom concret"
+        },
+        {
+          "ar": "النَّوْر",
+          "tr": "an-nawr",
+          "fr": "la fleur (qui s'épanouit)",
+          "type": "nom concret"
+        },
+        {
+          "ar": "المُنِير",
+          "tr": "al-Munīr",
+          "fr": "le Lumineux, celui qui éclaire",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المَنَار",
+          "tr": "al-manār",
+          "fr": "le phare, le repère lumineux",
+          "type": "nom de lieu"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "24, 35",
+          "ar": "ٱللَّهُ نُورُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ",
+          "fr": "Dieu est la Lumière des cieux et de la terre."
+        },
+        {
+          "ref": "5, 15",
+          "ar": "قَدْ جَآءَكُم مِّنَ ٱللَّهِ نُورٌ وَكِتَٰبٌ مُّبِينٌ",
+          "fr": "Une lumière vous est venue de Dieu, et un Livre explicite."
+        }
+      ],
+      "dict_links": [
+        "nur"
+      ],
+      "nom_links": [
+        93
+      ],
+      "meditation": "La lumière qui me touche en ce moment — d'où vient-elle ? Et qu'éclaire-t-elle en moi ?"
+    },
+    {
+      "id": "h-q-q",
+      "letters": [
+        "ح",
+        "ق",
+        "ق"
+      ],
+      "root_ar": "ح ق ق",
+      "root_tr": "ḥ-q-q",
+      "core_ar": "الحَقّ",
+      "core_fr": "Le réel, le vrai, le dû",
+      "field": "Être avéré, fondé, juste. La racine ḥ-q-q unit trois sens : <em>ce qui est</em> (le réel), <em>ce qui doit être</em> (le juste, le droit), et <em>ce qui est dû</em> (l'obligation). Le Vrai est Dieu — <em>al-Ḥaqq</em>.",
+      "glose_gloton": "Gloton note que la racine ḥ-q-q est ontologique et éthique en même temps. Distinct du <em>ṣidq</em> (la véracité de la parole), le <em>ḥaqq</em> est la vérité <em>de ce qui est</em>. Dire que Dieu est <em>al-Ḥaqq</em>, c'est dire qu'Il est le seul vraiment réel.",
+      "forms": [
+        {
+          "ar": "حَقَّ",
+          "tr": "ḥaqqa",
+          "fr": "être vrai, être avéré",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "حَقَّقَ",
+          "tr": "ḥaqqaqa",
+          "fr": "réaliser, faire advenir réellement",
+          "form": "II",
+          "type": "verbe intensif"
+        },
+        {
+          "ar": "تَحَقَّقَ",
+          "tr": "taḥaqqaqa",
+          "fr": "se réaliser, se vérifier",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "اِسْتَحَقَّ",
+          "tr": "istaḥaqqa",
+          "fr": "mériter, avoir droit à",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "الحَقّ",
+          "tr": "al-Ḥaqq",
+          "fr": "le Vrai, le Réel (Nom divin)",
+          "type": "nom"
+        },
+        {
+          "ar": "الحَقِيقَة",
+          "tr": "al-ḥaqīqa",
+          "fr": "la réalité essentielle",
+          "type": "nom abstrait"
+        },
+        {
+          "ar": "الحُقُوق",
+          "tr": "al-ḥuqūq",
+          "fr": "les droits, les dus",
+          "type": "pluriel"
+        },
+        {
+          "ar": "المُحِقّ",
+          "tr": "al-muḥiqq",
+          "fr": "celui qui est dans son droit",
+          "type": "participe actif"
+        },
+        {
+          "ar": "التَّحْقِيق",
+          "tr": "at-taḥqīq",
+          "fr": "la vérification, la réalisation",
+          "type": "nom d'action"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "22, 6",
+          "ar": "ذَٰلِكَ بِأَنَّ ٱللَّهَ هُوَ ٱلْحَقُّ",
+          "fr": "Cela parce que Dieu est, Lui, le Vrai."
+        },
+        {
+          "ref": "41, 53",
+          "ar": "حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ ٱلْحَقُّ",
+          "fr": "Jusqu'à ce qu'il leur soit clair qu'Il est le Vrai."
+        }
+      ],
+      "dict_links": [
+        "haqiqa",
+        "haqq-al-yaqin"
+      ],
+      "nom_links": [
+        51
+      ],
+      "meditation": "Ce que je tiens pour réel — est-ce vraiment <em>réel</em>, ou ne fait-il que durer un peu plus longtemps que le reste ?"
+    },
+    {
+      "id": "f-q-r",
+      "letters": [
+        "ف",
+        "ق",
+        "ر"
+      ],
+      "root_ar": "ف ق ر",
+      "root_tr": "f-q-r",
+      "core_ar": "الفَقْر",
+      "core_fr": "La pauvreté, le besoin essentiel",
+      "field": "Avoir le dos brisé, être dans le besoin. La racine f-q-r évoque concrètement la <em>vertèbre cassée</em> — celui qui ne tient plus debout par lui-même. La pauvreté soufie n'est pas privation matérielle : c'est la conscience d'être tenu.",
+      "glose_gloton": "Pour Gloton, la racine f-q-r est saisissante : elle dit, dans son corps même (la colonne brisée), la vérité spirituelle de la créature — qui ne se tient pas debout par soi. Le faqīr est celui qui sait qu'il dépend.",
+      "forms": [
+        {
+          "ar": "فَقَرَ",
+          "tr": "faqara",
+          "fr": "briser la colonne, appauvrir",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَفْقَرَ",
+          "tr": "afqara",
+          "fr": "rendre pauvre, mettre dans le besoin",
+          "form": "IV",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "اِفْتَقَرَ",
+          "tr": "iftaqara",
+          "fr": "avoir besoin, manquer essentiellement",
+          "form": "VIII",
+          "type": "verbe"
+        },
+        {
+          "ar": "الفَقْر",
+          "tr": "al-faqr",
+          "fr": "la pauvreté essentielle, le besoin de Dieu",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الفَقِير",
+          "tr": "al-faqīr",
+          "fr": "le pauvre, celui qui a besoin",
+          "type": "nom"
+        },
+        {
+          "ar": "الفُقَرَاء",
+          "tr": "al-fuqarāʾ",
+          "fr": "les pauvres (pluriel)",
+          "type": "pluriel"
+        },
+        {
+          "ar": "الاِفْتِقَار",
+          "tr": "al-iftiqār",
+          "fr": "le sentiment du besoin essentiel",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الفَقَار",
+          "tr": "al-faqār",
+          "fr": "les vertèbres, la colonne",
+          "type": "nom concret"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "35, 15",
+          "ar": "يَٰٓأَيُّهَا ٱلنَّاسُ أَنتُمُ ٱلْفُقَرَآءُ إِلَى ٱللَّهِ ۖ وَٱللَّهُ هُوَ ٱلْغَنِىُّ ٱلْحَمِيدُ",
+          "fr": "Ô hommes, c'est vous les pauvres en besoin de Dieu — et Dieu est le Riche, le Digne de louange."
+        },
+        {
+          "ref": "47, 38",
+          "ar": "وَٱللَّهُ ٱلْغَنِىُّ وَأَنتُمُ ٱلْفُقَرَآءُ",
+          "fr": "Dieu est le Riche, et c'est vous les pauvres."
+        }
+      ],
+      "dict_links": [
+        "faqr",
+        "iftiqar"
+      ],
+      "nom_links": [],
+      "meditation": "Suis-je conscient, à cet instant, que je ne tiens pas debout par moi-même ?"
+    },
+    {
+      "id": "t-w-b",
+      "letters": [
+        "ت",
+        "و",
+        "ب"
+      ],
+      "root_ar": "ت و ب",
+      "root_tr": "t-w-b",
+      "core_ar": "التَّوْبَة",
+      "core_fr": "Le retour, le retournement",
+      "field": "Revenir, se retourner. La racine t-w-b décrit un <em>retour</em> — celui de l'homme qui s'était éloigné, mais aussi celui de Dieu qui se retourne vers Sa créature. Le mouvement va dans les deux sens : <em>tāba</em> peut avoir Dieu pour sujet (Il se tourne vers nous) ou l'homme (il revient à Dieu).",
+      "glose_gloton": "Gloton souligne ce double mouvement remarquable : Dieu est <em>at-Tawwāb</em>, Celui qui revient sans cesse — non pour pardonner après coup, mais pour <em>précéder</em> le repentir, comme Père qui court vers l'enfant prodigue avant même qu'il ne parle.",
+      "forms": [
+        {
+          "ar": "تَابَ",
+          "tr": "tāba",
+          "fr": "revenir (de la part de l'homme) ; agréer le repentir (de la part de Dieu)",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِسْتَتَابَ",
+          "tr": "istatāba",
+          "fr": "demander de revenir, exhorter au repentir",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "التَّوْبَة",
+          "tr": "at-tawba",
+          "fr": "le retour, le repentir",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "التَّائِب",
+          "tr": "at-tāʾib",
+          "fr": "celui qui revient, le repenti",
+          "type": "participe actif"
+        },
+        {
+          "ar": "التَّوَّاب",
+          "tr": "at-Tawwāb",
+          "fr": "Celui qui revient toujours, qui agrée toujours le retour (Nom divin)",
+          "type": "nom hyperbolique"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "9, 118",
+          "ar": "ثُمَّ تَابَ عَلَيْهِمْ لِيَتُوبُوٓا۟",
+          "fr": "Puis Il s'est retourné vers eux pour qu'ils se retournent."
+        },
+        {
+          "ref": "2, 222",
+          "ar": "إِنَّ ٱللَّهَ يُحِبُّ ٱلتَّوَّٰبِينَ",
+          "fr": "Dieu aime ceux qui reviennent sans cesse."
+        }
+      ],
+      "dict_links": [
+        "tawba",
+        "inaba",
+        "istighfar"
+      ],
+      "nom_links": [
+        80
+      ],
+      "meditation": "Dieu est déjà retourné vers moi — vais-je, à mon tour, faire un pas vers Lui ?"
+    },
+    {
+      "id": "ʾ-l-h",
+      "letters": [
+        "ا",
+        "ل",
+        "ه"
+      ],
+      "root_ar": "ء ل ه",
+      "root_tr": "ʾ-l-h",
+      "core_ar": "الإِلَٰه",
+      "core_fr": "Le Dieu adoré, ce vers quoi le cœur se tourne",
+      "field": "Ce qui est <em>adoré</em>, ce vers quoi un être se tourne pour s'en remettre. <em>Allāh</em> est la contraction de <em>al-ilāh</em> — <em>le</em> Dieu, l'Adoré par excellence. La racine partage avec <em>walaha</em> (être perdu d'amour) la nappe de l'éperdu.",
+      "glose_gloton": "Pour Gloton, <em>ilāh</em> n'est jamais une abstraction : c'est ce qui m'arrache à moi-même. La <em>shahāda</em> ne profère pas une thèse, elle débusque les faux <em>ilāh</em> du cœur — ego, désir, opinion — pour ne plus se tourner que vers Lui.",
+      "forms": [
+        {
+          "ar": "أَلِهَ",
+          "tr": "aliha",
+          "fr": "adorer, vouer un culte",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "تَأَلَّهَ",
+          "tr": "taʾallaha",
+          "fr": "se faire dieu, prétendre à la divinité",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "اللَّه",
+          "tr": "Allāh",
+          "fr": "Dieu (al-ilāh contracté)",
+          "type": "nom propre"
+        },
+        {
+          "ar": "الإِلَٰه",
+          "tr": "al-ilāh",
+          "fr": "le Dieu adoré",
+          "type": "nom"
+        },
+        {
+          "ar": "الأُلُوهِيَّة",
+          "tr": "al-ulūhiyya",
+          "fr": "la divinité (comme rapport d'adoration)",
+          "type": "nom abstrait"
+        },
+        {
+          "ar": "آلِهَة",
+          "tr": "āliha",
+          "fr": "des dieux, des idoles",
+          "type": "pluriel"
+        },
+        {
+          "ar": "اللَّهُمَّ",
+          "tr": "Allāhumma",
+          "fr": "Ô mon Dieu (vocatif intensif)",
+          "type": "vocatif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "2, 163",
+          "ar": "وَإِلَٰهُكُمْ إِلَٰهٌ وَٰحِدٌ ۖ لَّآ إِلَٰهَ إِلَّا هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ",
+          "fr": "Et votre Dieu est un Dieu unique — il n'y a de dieu que Lui, le Tout-Miséricordieux, le Très-Miséricordieux."
+        },
+        {
+          "ref": "37, 35",
+          "ar": "إِنَّهُمْ كَانُوٓا۟ إِذَا قِيلَ لَهُمْ لَآ إِلَٰهَ إِلَّا ٱللَّهُ يَسْتَكْبِرُونَ",
+          "fr": "Lorsqu'on leur disait : Il n'y a de dieu que Dieu, ils s'enflaient d'orgueil."
+        },
+        {
+          "ref": "112, 1",
+          "ar": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+          "fr": "Dis : Lui, Dieu, est Un (Aḥad)."
+        }
+      ],
+      "dict_links": [
+        "tawhid"
+      ],
+      "nom_links": [
+        1
+      ],
+      "meditation": "Vers quoi mon cœur se tourne-t-il vraiment, quand je crois prier ?"
+    },
+    {
+      "id": "ʾ-ḥ-d",
+      "letters": [
+        "ا",
+        "ح",
+        "د"
+      ],
+      "root_ar": "ء ح د",
+      "root_tr": "ʾ-ḥ-d",
+      "core_ar": "الأَحَد",
+      "core_fr": "L'Un indivisible, le Seul",
+      "field": "<em>Aḥad</em> n'est pas l'unité qu'on pourrait compter, c'est l'<em>unicité absolue</em>, sans seconde possible. <em>Wāḥid</em> peut ouvrir une série, <em>aḥad</em> exclut toute série. Il s'emploie négativement (« personne ») et positivement (« le Seul »).",
+      "glose_gloton": "Gloton souligne le choix de la sourate 112 : <em>Allāhu Aḥad</em>, non <em>Wāḥid</em>. Dieu n'est pas le premier d'une suite, Il est <em>Celui hors duquel rien ne peut être compté</em>. C'est la pointe du <em>tawḥīd</em>.",
+      "forms": [
+        {
+          "ar": "الأَحَد",
+          "tr": "al-Aḥad",
+          "fr": "l'Un indivisible, le Seul",
+          "type": "nom"
+        },
+        {
+          "ar": "أَحَدٌ",
+          "tr": "aḥadun",
+          "fr": "quelqu'un, personne (selon contexte)",
+          "type": "pronom"
+        },
+        {
+          "ar": "إِحْدَى",
+          "tr": "iḥdā",
+          "fr": "l'une (féminin)",
+          "type": "ordinal"
+        },
+        {
+          "ar": "الأَحَدِيَّة",
+          "tr": "al-aḥadiyya",
+          "fr": "l'unicité essentielle (terme soufi : Dieu en Soi)",
+          "type": "nom abstrait"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "112, 1-4",
+          "ar": "قُلْ هُوَ ٱللَّهُ أَحَدٌ ۝ ٱللَّهُ ٱلصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ",
+          "fr": "Dis : Lui, Dieu, est Un. Dieu, le Recours absolu. Il n'a pas engendré, n'a pas été engendré, et nul n'est égal à Lui."
+        },
+        {
+          "ref": "72, 18",
+          "ar": "وَأَنَّ ٱلْمَسَٰجِدَ لِلَّهِ فَلَا تَدْعُوا۟ مَعَ ٱللَّهِ أَحَدًا",
+          "fr": "Les lieux de prosternation appartiennent à Dieu : n'invoquez personne aux côtés de Dieu."
+        }
+      ],
+      "dict_links": [
+        "tawhid"
+      ],
+      "nom_links": [
+        68
+      ],
+      "meditation": "Y a-t-il en moi un \"second\" silencieux à qui j'accorde de la place — à côté de Lui ?"
+    },
+    {
+      "id": "w-ḥ-d",
+      "letters": [
+        "و",
+        "ح",
+        "د"
+      ],
+      "root_ar": "و ح د",
+      "root_tr": "w-ḥ-d",
+      "core_ar": "التَّوْحِيد",
+      "core_fr": "Faire un, reconnaître l'Un",
+      "field": "Être un, isoler, faire un. La racine décrit aussi bien l'état (<em>wāḥid</em>) que l'acte (<em>tawḥīd</em>). Reconnaître l'unité n'est pas formuler une thèse — c'est unifier son regard, son intention, son cœur, jusqu'à ne plus voir que Lui en tout.",
+      "glose_gloton": "Pour Gloton, le <em>tawḥīd</em> se déploie sur trois plans : « il n'y a de dieu que Lui » (théologique), « il n'agit qu'un » (Lui seul agit), « il n'est de réalité que Lui » (extinction). La racine porte ces trois lectures.",
+      "forms": [
+        {
+          "ar": "وَحَدَ",
+          "tr": "waḥada",
+          "fr": "être unique, être isolé",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "وَحَّدَ",
+          "tr": "waḥḥada",
+          "fr": "unifier, reconnaître l'unité de Dieu",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَوَحَّدَ",
+          "tr": "tawaḥḥada",
+          "fr": "s'unifier, devenir un en soi",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "اِتَّحَدَ",
+          "tr": "ittaḥada",
+          "fr": "s'unir à, faire un avec",
+          "form": "VIII",
+          "type": "verbe"
+        },
+        {
+          "ar": "التَّوْحِيد",
+          "tr": "at-tawḥīd",
+          "fr": "l'attestation/réalisation de l'unicité divine",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الوَاحِد",
+          "tr": "al-Wāḥid",
+          "fr": "l'Un (qui n'a pas de pareil)",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "الوَحْدَة",
+          "tr": "al-waḥda",
+          "fr": "l'unité, la solitude habitée",
+          "type": "nom abstrait"
+        },
+        {
+          "ar": "وَحْدَهُ",
+          "tr": "waḥdahu",
+          "fr": "Lui seul, à Lui seul",
+          "type": "adverbe"
+        },
+        {
+          "ar": "الوَحْدَانِيَّة",
+          "tr": "al-waḥdāniyya",
+          "fr": "l'unicité comme attribut divin",
+          "type": "nom abstrait"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "39, 45",
+          "ar": "وَإِذَا ذُكِرَ ٱللَّهُ وَحْدَهُ ٱشْمَأَزَّتْ قُلُوبُ ٱلَّذِينَ لَا يُؤْمِنُونَ بِٱلْءَاخِرَةِ",
+          "fr": "Et lorsque Dieu est mentionné, Lui seul, les cœurs de ceux qui ne croient pas à l'au-delà se rétractent."
+        },
+        {
+          "ref": "2, 163",
+          "ar": "وَإِلَٰهُكُمْ إِلَٰهٌ وَٰحِدٌ",
+          "fr": "Et votre Dieu est un Dieu unique."
+        }
+      ],
+      "dict_links": [
+        "tawhid"
+      ],
+      "nom_links": [
+        67
+      ],
+      "meditation": "Où, en moi, l'unité s'est-elle fendue aujourd'hui — et que faudrait-il pour la recoudre ?"
+    },
+    {
+      "id": "ṣ-m-d",
+      "letters": [
+        "ص",
+        "م",
+        "د"
+      ],
+      "root_ar": "ص م د",
+      "root_tr": "ṣ-m-d",
+      "core_ar": "الصَّمَد",
+      "core_fr": "Le Recours absolu, le Plein sans creux",
+      "field": "Ce qui est plein, massif, sans interstice — et ce vers quoi <em>on se tourne</em> pour s'appuyer. Les deux sens se tiennent : seul ce qui est plein peut être un appui sans faille. <em>Aṣ-Ṣamad</em> n'a besoin de rien, et tout dépend de Lui.",
+      "glose_gloton": "Gloton souligne la séquence de la sourate 112 : Dieu est Un (<em>aḥad</em>), et cet Un est <em>plein</em> (<em>ṣamad</em>) — sans manque, sans cavité par où le besoin pourrait s'engouffrer. Ce qui est Un n'a personne à qui demander.",
+      "forms": [
+        {
+          "ar": "صَمَدَ",
+          "tr": "ṣamada",
+          "fr": "se tourner vers, viser, recourir à",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "الصَّمَد",
+          "tr": "aṣ-Ṣamad",
+          "fr": "le Recours absolu, le Plein",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "الصَّمَدِيَّة",
+          "tr": "aṣ-ṣamadiyya",
+          "fr": "l'autosuffisance absolue (terme soufi)",
+          "type": "nom abstrait"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "112, 2",
+          "ar": "ٱللَّهُ ٱلصَّمَدُ",
+          "fr": "Dieu, le Recours absolu."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        69
+      ],
+      "meditation": "Vers quoi est-ce que je me tourne quand je manque — et est-ce assez plein pour me porter ?"
+    },
+    {
+      "id": "q-d-s",
+      "letters": [
+        "ق",
+        "د",
+        "س"
+      ],
+      "root_ar": "ق د س",
+      "root_tr": "q-d-s",
+      "core_ar": "القُدْس",
+      "core_fr": "La sainteté — la mise à part qui purifie",
+      "field": "Sanctifier, purifier, mettre à part. Le saint est ce qui est <em>séparé</em>, non par mépris mais par transcendance. <em>Al-Quds</em> = Jérusalem, la ville sainte ; <em>Rūḥ al-Qudus</em> = le Souffle saint qui sanctifie.",
+      "glose_gloton": "Pour Gloton, la sainteté coranique n'est pas morale (être bon) mais ontologique : être inatteignable par la souillure, hors de portée du défaut. <em>Al-Quddūs</em> est Celui que toute imperfection lâche en s'approchant.",
+      "forms": [
+        {
+          "ar": "قَدَّسَ",
+          "tr": "qaddasa",
+          "fr": "sanctifier, purifier",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَقَدَّسَ",
+          "tr": "taqaddasa",
+          "fr": "être sanctifié, se purifier",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "القُدْس",
+          "tr": "al-Quds",
+          "fr": "la sainteté ; Jérusalem",
+          "type": "nom"
+        },
+        {
+          "ar": "القُدُّوس",
+          "tr": "al-Quddūs",
+          "fr": "le Très-Saint",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "المُقَدَّس",
+          "tr": "al-muqaddas",
+          "fr": "le sanctifié, le sacré",
+          "type": "participe passif"
+        },
+        {
+          "ar": "رُوحُ القُدُس",
+          "tr": "Rūḥ al-Qudus",
+          "fr": "le Souffle saint, l'Esprit de sainteté",
+          "type": "expression"
+        },
+        {
+          "ar": "التَّقْدِيس",
+          "tr": "at-taqdīs",
+          "fr": "la sanctification, l'acte de proclamer la sainteté",
+          "type": "nom d'action"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "59, 23",
+          "ar": "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ",
+          "fr": "Il est Dieu — il n'y a de dieu que Lui — le Roi, le Très-Saint."
+        },
+        {
+          "ref": "2, 30",
+          "ar": "وَنَحْنُ نُسَبِّحُ بِحَمْدِكَ وَنُقَدِّسُ لَكَ",
+          "fr": "Et nous Te glorifions par Ta louange et Te sanctifions."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        5
+      ],
+      "meditation": "Qu'est-ce qui, en moi, demande à être <em>mis à part</em> — non par mépris du reste, mais pour Lui faire place ?"
+    },
+    {
+      "id": "s-b-ḥ",
+      "letters": [
+        "س",
+        "ب",
+        "ح"
+      ],
+      "root_ar": "س ب ح",
+      "root_tr": "s-b-ḥ",
+      "core_ar": "التَّسْبِيح",
+      "core_fr": "Glorifier en transcendant — \"il nage loin de toute imperfection\"",
+      "field": "Le verbe premier <em>sabaḥa</em> = nager, parcourir un grand espace. De là, <em>sabbaḥa</em> : glorifier en éloignant Dieu de toute imperfection — comme un nageur s'éloigne du rivage. <em>Subḥān Allāh</em> est ce mouvement, non un cri pieux.",
+      "glose_gloton": "Gloton insiste sur l'image : <em>tasbīḥ</em> est un mouvement, pas un état. Glorifier, c'est se déplacer, éloigner toute représentation qui ramènerait Dieu à notre mesure. Les astres aussi <em>nagent</em> dans leur orbite (36,40) — leur cours est <em>tasbīḥ</em>.",
+      "forms": [
+        {
+          "ar": "سَبَحَ",
+          "tr": "sabaḥa",
+          "fr": "nager, flotter, parcourir",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "سَبَّحَ",
+          "tr": "sabbaḥa",
+          "fr": "glorifier, déclarer transcendant",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "التَّسْبِيح",
+          "tr": "at-tasbīḥ",
+          "fr": "la glorification (Subḥān Allāh)",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "السُّبْحَة",
+          "tr": "as-subḥa",
+          "fr": "le chapelet (objet de la glorification)",
+          "type": "nom concret"
+        },
+        {
+          "ar": "سُبْحَانَ",
+          "tr": "subḥān",
+          "fr": "gloire à, transcendance de",
+          "type": "nom verbal"
+        },
+        {
+          "ar": "المُسَبِّح",
+          "tr": "al-musabbiḥ",
+          "fr": "celui qui glorifie",
+          "type": "participe actif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "17, 44",
+          "ar": "تُسَبِّحُ لَهُ ٱلسَّمَٰوَٰتُ ٱلسَّبْعُ وَٱلْأَرْضُ وَمَن فِيهِنَّ ۚ وَإِن مِّن شَىْءٍ إِلَّا يُسَبِّحُ بِحَمْدِهِۦ",
+          "fr": "Les sept cieux Le glorifient, et la terre, et ceux qui y sont — il n'est de chose qui ne Le glorifie par Sa louange."
+        },
+        {
+          "ref": "36, 40",
+          "ar": "وَكُلٌّ فِى فَلَكٍ يَسْبَحُونَ",
+          "fr": "Et chacun nage dans une orbite."
+        }
+      ],
+      "dict_links": [
+        "tanzih-tashbih"
+      ],
+      "nom_links": [],
+      "meditation": "Quelle image de Lui ai-je laissée s'installer, qu'il faudrait <em>éloigner</em> à nouveau ?"
+    },
+    {
+      "id": "ʾ-m-n",
+      "letters": [
+        "ا",
+        "م",
+        "ن"
+      ],
+      "root_ar": "ء م ن",
+      "root_tr": "ʾ-m-n",
+      "core_ar": "الإِيمَان",
+      "core_fr": "La foi — être en sécurité, se confier",
+      "field": "Être en sécurité, faire confiance, être digne de confiance. La foi (<em>īmān</em>) n'est pas d'abord adhésion à des dogmes — c'est l'état d'un cœur en sécurité parce qu'il s'est remis. L'<em>amāna</em> est ce qu'on confie à qui en est digne.",
+      "glose_gloton": "Pour Gloton, <em>āmana</em> est un verbe d'accueil autant que de croyance : croire, c'est laisser entrer. Et la sécurité (<em>amn</em>) n'est pas l'absence de danger mais la présence d'un Garant. <em>Al-Muʾmin</em> est Dieu comme source de cette sécurité.",
+      "forms": [
+        {
+          "ar": "أَمِنَ",
+          "tr": "amina",
+          "fr": "être en sécurité, être à l'abri",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "آمَنَ",
+          "tr": "āmana",
+          "fr": "croire, faire confiance",
+          "form": "IV",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِسْتَأْمَنَ",
+          "tr": "istaʾmana",
+          "fr": "demander la protection, se mettre sous la garde de",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "الإِيمَان",
+          "tr": "al-īmān",
+          "fr": "la foi, la confiance remise",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الأَمْن",
+          "tr": "al-amn",
+          "fr": "la sécurité",
+          "type": "nom"
+        },
+        {
+          "ar": "الأَمَانَة",
+          "tr": "al-amāna",
+          "fr": "le dépôt, ce qui m'est confié",
+          "type": "nom concret"
+        },
+        {
+          "ar": "المُؤْمِن",
+          "tr": "al-muʾmin",
+          "fr": "le croyant, le confiant ; al-Muʾmin = Dieu, source de la sécurité",
+          "type": "participe actif"
+        },
+        {
+          "ar": "أَمِين",
+          "tr": "amīn",
+          "fr": "digne de confiance, fidèle",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "آمِين",
+          "tr": "āmīn",
+          "fr": "amen — qu'il en soit ainsi, en confiance",
+          "type": "interjection"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "13, 28",
+          "ar": "ٱلَّذِينَ ءَامَنُوا۟ وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ ٱللَّهِ ۗ أَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ",
+          "fr": "Ceux qui ont cru et dont les cœurs s'apaisent par le rappel de Dieu — n'est-ce pas par le rappel de Dieu que les cœurs s'apaisent ?"
+        },
+        {
+          "ref": "33, 72",
+          "ar": "إِنَّا عَرَضْنَا ٱلْأَمَانَةَ عَلَى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱلْجِبَالِ فَأَبَيْنَ أَن يَحْمِلْنَهَا وَأَشْفَقْنَ مِنْهَا وَحَمَلَهَا ٱلْإِنسَٰنُ",
+          "fr": "Nous avons proposé le dépôt aux cieux, à la terre et aux montagnes — ils ont refusé de le porter, en ont eu peur ; et l'homme l'a porté."
+        }
+      ],
+      "dict_links": [
+        "iman"
+      ],
+      "nom_links": [
+        7
+      ],
+      "meditation": "Mon cœur est-il en sécurité parce qu'il sait — ou parce qu'il s'est remis ?"
+    },
+    {
+      "id": "s-l-m",
+      "letters": [
+        "س",
+        "ل",
+        "م"
+      ],
+      "root_ar": "س ل م",
+      "root_tr": "s-l-m",
+      "core_ar": "السَّلَام",
+      "core_fr": "La paix — l'intégrité de ce qui se remet entier",
+      "field": "Une seule racine pour paix, salut, intégrité, remise. <em>Salima</em> : être entier. <em>Aslama</em> : remettre. <em>Salām</em> : la paix qui en résulte. Lien profond : seul ce qui se remet entier reste entier.",
+      "glose_gloton": "Gloton récuse \"soumission\" comme traduction d'<em>islām</em>. <em>Aslama</em> est de la famille de <em>salām</em> et <em>salīm</em> (le cœur intègre, 26,89) : c'est l'acte par lequel je me remets entier — et donc <em>je redeviens</em> entier.",
+      "forms": [
+        {
+          "ar": "سَلِمَ",
+          "tr": "salima",
+          "fr": "être sain, être indemne, être en paix",
+          "form": "I",
+          "type": "verbe d'état"
+        },
+        {
+          "ar": "سَلَّمَ",
+          "tr": "sallama",
+          "fr": "saluer, livrer, remettre en bon état",
+          "form": "II",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَسْلَمَ",
+          "tr": "aslama",
+          "fr": "se remettre, s'en remettre à Dieu",
+          "form": "IV",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِسْتَسْلَمَ",
+          "tr": "istaslama",
+          "fr": "se rendre, capituler en confiance",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "السَّلَام",
+          "tr": "as-Salām",
+          "fr": "la Paix ; le Salut (Nom divin)",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "الإِسْلَام",
+          "tr": "al-islām",
+          "fr": "la remise de soi à Dieu",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المُسْلِم",
+          "tr": "al-muslim",
+          "fr": "celui qui s'est remis",
+          "type": "participe actif"
+        },
+        {
+          "ar": "سَلِيم",
+          "tr": "salīm",
+          "fr": "intègre, indemne (le cœur intègre, qalb salīm)",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "تَسْلِيم",
+          "tr": "taslīm",
+          "fr": "remise, salutation, consentement intérieur",
+          "type": "nom d'action"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "26, 89",
+          "ar": "إِلَّا مَنْ أَتَى ٱللَّهَ بِقَلْبٍ سَلِيمٍ",
+          "fr": "Sinon celui qui vient à Dieu avec un cœur intègre."
+        },
+        {
+          "ref": "2, 208",
+          "ar": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱدْخُلُوا۟ فِى ٱلسِّلْمِ كَآفَّةً",
+          "fr": "Ô vous qui avez cru, entrez dans la paix tous ensemble."
+        },
+        {
+          "ref": "59, 23",
+          "ar": "ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَامُ ٱلْمُؤْمِنُ",
+          "fr": "Le Roi, le Très-Saint, la Paix, le Confiant."
+        }
+      ],
+      "dict_links": [
+        "islam"
+      ],
+      "nom_links": [
+        6
+      ],
+      "meditation": "Qu'est-ce que je retiens encore, que je pourrais <em>remettre</em> pour redevenir entier ?"
+    },
+    {
+      "id": "sh-h-d",
+      "letters": [
+        "ش",
+        "ه",
+        "د"
+      ],
+      "root_ar": "ش ه د",
+      "root_tr": "sh-h-d",
+      "core_ar": "الشَّهَادَة",
+      "core_fr": "Témoigner — voir, et attester de ce qu'on a vu",
+      "field": "Voir de ses yeux <em>et</em> attester de ce qu'on a vu : les deux gestes sont noués. Le <em>shāhid</em> n'est pas un croyant sur ouï-dire — c'est celui qui était là. D'où <em>shuhūd</em> (contemplation) et <em>shahīd</em> (martyr, dont le sang atteste).",
+      "glose_gloton": "Pour Gloton, la <em>shahāda</em> est une certification de vue. \"J'atteste qu'il n'y a de dieu que Dieu\" ne vaut que si quelque chose en moi <em>a vu</em>. La voie passe de l'ouï-dire (<em>ʿilm al-yaqīn</em>) à la vision (<em>ʿayn al-yaqīn</em>).",
+      "forms": [
+        {
+          "ar": "شَهِدَ",
+          "tr": "shahida",
+          "fr": "être présent, témoigner, voir",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "شَاهَدَ",
+          "tr": "shāhada",
+          "fr": "contempler, observer",
+          "form": "III",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَشْهَدَ",
+          "tr": "ashhada",
+          "fr": "prendre à témoin",
+          "form": "IV",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِسْتَشْهَدَ",
+          "tr": "istashhada",
+          "fr": "appeler à témoigner ; être pris comme martyr",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "الشَّهَادَة",
+          "tr": "ash-shahāda",
+          "fr": "l'attestation ; le témoignage",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الشَّاهِد",
+          "tr": "ash-shāhid",
+          "fr": "le témoin",
+          "type": "participe actif"
+        },
+        {
+          "ar": "الشَّهِيد",
+          "tr": "ash-Shahīd",
+          "fr": "le Témoin (Nom divin) ; le martyr",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "المَشْهُود",
+          "tr": "al-mashhūd",
+          "fr": "ce qui est vu, ce dont on témoigne",
+          "type": "participe passif"
+        },
+        {
+          "ar": "الشُّهُود",
+          "tr": "ash-shuhūd",
+          "fr": "la contemplation (terme soufi)",
+          "type": "nom d'action"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "3, 18",
+          "ar": "شَهِدَ ٱللَّهُ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا هُوَ",
+          "fr": "Dieu atteste qu'il n'y a de dieu que Lui."
+        },
+        {
+          "ref": "41, 53",
+          "ar": "أَوَلَمْ يَكْفِ بِرَبِّكَ أَنَّهُۥ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ",
+          "fr": "Ne suffit-il pas que ton Seigneur soit Témoin de toute chose ?"
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        51
+      ],
+      "meditation": "Ma <em>shahāda</em> tient-elle de ce que j'ai entendu, ou de ce que quelque chose en moi a déjà vu ?"
+    },
+    {
+      "id": "ḥ-m-d",
+      "letters": [
+        "ح",
+        "م",
+        "د"
+      ],
+      "root_ar": "ح م د",
+      "root_tr": "ḥ-m-d",
+      "core_ar": "الحَمْد",
+      "core_fr": "La louange — reconnaître le bien et le dire",
+      "field": "Louer, rendre grâce. Distincte du remerciement (<em>shukr</em>, pour un bienfait reçu), la louange (<em>ḥamd</em>) s'adresse à ce qui est <em>bien en soi</em>. Le Coran ouvre par <em>al-ḥamdu li-Llāh</em> : la louange précède le don, due à la beauté même de Celui qui est.",
+      "glose_gloton": "Gloton souligne le réseau : <em>Muḥammad</em> = le très-loué, <em>Aḥmad</em> = le plus louangeur. La louange est circulaire : elle part de Lui (<em>al-ḥamdu li-Llāh</em> est <em>Sa</em> parole), traverse l'homme, revient à Lui.",
+      "forms": [
+        {
+          "ar": "حَمِدَ",
+          "tr": "ḥamida",
+          "fr": "louer, faire l'éloge",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "الحَمْد",
+          "tr": "al-ḥamd",
+          "fr": "la louange",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الحَمِيد",
+          "tr": "al-Ḥamīd",
+          "fr": "le Très-Digne-de-louange (Nom divin)",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "مُحَمَّد",
+          "tr": "Muḥammad",
+          "fr": "le très-loué (prénom du Prophète)",
+          "type": "participe passif intensif"
+        },
+        {
+          "ar": "أَحْمَد",
+          "tr": "Aḥmad",
+          "fr": "le plus louangeur / le plus loué",
+          "type": "comparatif/superlatif"
+        },
+        {
+          "ar": "مَحْمُود",
+          "tr": "maḥmūd",
+          "fr": "digne de louange",
+          "type": "participe passif"
+        },
+        {
+          "ar": "المَقَامُ المَحْمُود",
+          "tr": "al-maqām al-maḥmūd",
+          "fr": "la station louée (promise au Prophète, 17,79)",
+          "type": "expression"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "1, 2",
+          "ar": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+          "fr": "La louange est à Dieu, Seigneur des mondes."
+        },
+        {
+          "ref": "17, 79",
+          "ar": "عَسَىٰٓ أَن يَبْعَثَكَ رَبُّكَ مَقَامًا مَّحْمُودًا",
+          "fr": "Il se peut que ton Seigneur t'élève à une station louée."
+        }
+      ],
+      "dict_links": [
+        "hamd"
+      ],
+      "nom_links": [
+        57
+      ],
+      "meditation": "Qu'est-ce que je peux louer en cet instant, qui ne demande rien en retour ?"
+    },
+    {
+      "id": "ṣ-l-w",
+      "letters": [
+        "ص",
+        "ل",
+        "و"
+      ],
+      "root_ar": "ص ل و",
+      "root_tr": "ṣ-l-w",
+      "core_ar": "الصَّلَاة",
+      "core_fr": "La prière — le lien rituel qui tient la verticale",
+      "field": "Racine du lien rituel. Étymologie discutée : <em>ṣilā</em> (le lien) ou <em>ṣalan</em> (l'os qui fléchit dans la prosternation) — les deux convergent. Dieu Lui-même \"fait <em>ṣalāt</em>\" sur le Prophète (33,43) : ce n'est pas prier, c'est tourner Sa face avec amour.",
+      "glose_gloton": "Pour Gloton, la racine porte le lien <em>des deux côtés</em> : prière de l'homme, bénédiction de Dieu — comme un fil tendu entre les deux extrémités d'un arc. La <em>ṣalāt</em> rituelle est l'inscription corporelle de ce fil dans le temps.",
+      "forms": [
+        {
+          "ar": "صَلَّى",
+          "tr": "ṣallā",
+          "fr": "prier ; (Dieu :) bénir, orienter Sa face avec amour",
+          "form": "II",
+          "type": "verbe"
+        },
+        {
+          "ar": "الصَّلَاة",
+          "tr": "aṣ-ṣalāt",
+          "fr": "la prière rituelle ; la bénédiction divine",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المُصَلِّي",
+          "tr": "al-muṣallī",
+          "fr": "le priant",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المُصَلَّى",
+          "tr": "al-muṣallā",
+          "fr": "le lieu de prière",
+          "type": "nom de lieu"
+        },
+        {
+          "ar": "الصَّلَوَات",
+          "tr": "aṣ-ṣalawāt",
+          "fr": "les prières (rituelles ; ou : les synagogues/lieux de culte)",
+          "type": "pluriel"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "33, 43",
+          "ar": "هُوَ ٱلَّذِى يُصَلِّى عَلَيْكُمْ وَمَلَٰٓئِكَتُهُۥ لِيُخْرِجَكُم مِّنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِ",
+          "fr": "C'est Lui qui prie sur vous (vous bénit, tourne Sa face vers vous), avec Ses anges, pour vous faire sortir des ténèbres vers la lumière."
+        },
+        {
+          "ref": "29, 45",
+          "ar": "إِنَّ ٱلصَّلَوٰةَ تَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ",
+          "fr": "Certes la prière préserve de l'indécence et du blâmable."
+        }
+      ],
+      "dict_links": [
+        "salat"
+      ],
+      "nom_links": [],
+      "meditation": "Quand je prie, est-ce que je tends un fil — ou est-ce que je m'aperçois qu'il était déjà tendu vers moi ?"
+    },
+    {
+      "id": "kh-l-ṣ",
+      "letters": [
+        "خ",
+        "ل",
+        "ص"
+      ],
+      "root_ar": "خ ل ص",
+      "root_tr": "kh-l-ṣ",
+      "core_ar": "الإِخْلَاص",
+      "core_fr": "La sincérité — ce qui ne se mélange à rien",
+      "field": "Être pur, sans mélange, dégagé. <em>Ikhlāṣ</em> n'est pas \"être sincère\" au sens moral — c'est <em>dépurer</em> son intention de tout ce qui n'est pas Lui. Le métal pur (<em>khāliṣ</em>) ne contient plus de scories : tel doit être le cœur.",
+      "glose_gloton": "Gloton souligne la parenté avec <em>khalāṣ</em> (le salut, le dégagement) : être sincère, c'est se dégager. Tant que l'adoration est mélangée — un peu pour Lui, un peu pour moi — elle reste enchaînée. L'<em>ikhlāṣ</em> est libération par épuration.",
+      "forms": [
+        {
+          "ar": "خَلَصَ",
+          "tr": "khalaṣa",
+          "fr": "être pur, être dégagé, parvenir indemne",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "خَلَّصَ",
+          "tr": "khallaṣa",
+          "fr": "purifier, sauver, dégager",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "أَخْلَصَ",
+          "tr": "akhlaṣa",
+          "fr": "rendre exclusivement sincère (envers Dieu)",
+          "form": "IV",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِسْتَخْلَصَ",
+          "tr": "istakhlaṣa",
+          "fr": "élire, se choisir exclusivement",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "الإِخْلَاص",
+          "tr": "al-ikhlāṣ",
+          "fr": "la sincérité exclusive, l'épuration de l'intention",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المُخْلِص",
+          "tr": "al-mukhliṣ",
+          "fr": "celui qui rend sincère son adoration",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المُخْلَص",
+          "tr": "al-mukhlaṣ",
+          "fr": "celui que Dieu a rendu pur, l'élu",
+          "type": "participe passif"
+        },
+        {
+          "ar": "خَالِص",
+          "tr": "khāliṣ",
+          "fr": "pur, sans mélange",
+          "type": "nom de qualité"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "39, 3",
+          "ar": "أَلَا لِلَّهِ ٱلدِّينُ ٱلْخَالِصُ",
+          "fr": "N'est-ce pas à Dieu qu'appartient la religion pure ?"
+        },
+        {
+          "ref": "98, 5",
+          "ar": "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ",
+          "fr": "Et il ne leur a été ordonné que d'adorer Dieu, Lui rendant la religion exclusivement pure."
+        }
+      ],
+      "dict_links": [
+        "ikhlas"
+      ],
+      "nom_links": [],
+      "meditation": "À quoi d'autre, en cet instant, est mélangée mon intention de Le chercher ?"
+    },
+    {
+      "id": "ʿ-q-l",
+      "letters": [
+        "ع",
+        "ق",
+        "ل"
+      ],
+      "root_ar": "ع ق ل",
+      "root_tr": "ʿ-q-l",
+      "core_ar": "العَقْل",
+      "core_fr": "L'intelligence qui lie",
+      "field": "<em>ʿAqala</em> signifie d'abord <em>entraver</em> : la corde qui lie le chameau est <em>ʿiqāl</em>. L'intelligence retient l'âme de se disperser, <em>noue</em> les phénomènes pour en faire un sens. Comprendre, c'est nouer — non regarder.",
+      "glose_gloton": "Pour Gloton, le <em>ʿaql</em> coranique n'est pas la raison spéculative mais la faculté de retenir le sens. D'où le refrain <em>la-ʿallakum taʿqilūn</em> : qu'on ne laisse pas s'échapper le signe. L'opposé n'est pas l'irrationalité, mais la dispersion.",
+      "forms": [
+        {
+          "ar": "عَقَلَ",
+          "tr": "ʿaqala",
+          "fr": "entraver, retenir, comprendre",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "تَعَقَّلَ",
+          "tr": "taʿaqqala",
+          "fr": "user de raison, raisonner",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "العَقْل",
+          "tr": "al-ʿaql",
+          "fr": "l'intelligence, la raison liante",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "العَاقِل",
+          "tr": "al-ʿāqil",
+          "fr": "l'intelligent, le doué de raison",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المَعْقُول",
+          "tr": "al-maʿqūl",
+          "fr": "l'intelligible, ce qui peut être saisi",
+          "type": "participe passif"
+        },
+        {
+          "ar": "العِقَال",
+          "tr": "al-ʿiqāl",
+          "fr": "l'entrave, la corde qui lie le chameau",
+          "type": "nom concret"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "2, 164",
+          "ar": "لَءَايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ",
+          "fr": "Des signes pour des gens qui comprennent (qui lient le sens)."
+        },
+        {
+          "ref": "67, 10",
+          "ar": "لَوْ كُنَّا نَسْمَعُ أَوْ نَعْقِلُ مَا كُنَّا فِىٓ أَصْحَٰبِ ٱلسَّعِيرِ",
+          "fr": "Si seulement nous avions entendu ou compris, nous ne serions pas parmi les habitants du Brasier."
+        }
+      ],
+      "dict_links": [
+        "aql"
+      ],
+      "nom_links": [],
+      "meditation": "Qu'est-ce que je laisse s'échapper aujourd'hui, faute d'avoir <em>noué</em> le sens ?"
+    },
+    {
+      "id": "f-h-m",
+      "letters": [
+        "ف",
+        "ه",
+        "م"
+      ],
+      "root_ar": "ف ه م",
+      "root_tr": "f-h-m",
+      "core_ar": "الفَهْم",
+      "core_fr": "Comprendre — saisir le sens en profondeur",
+      "field": "Comprendre, saisir intérieurement. À la différence de <em>ʿaql</em> (lier) et de <em>fikr</em> (peser), <em>fahm</em> est <em>pénétration</em> du sens : ce moment où le voile tombe, où l'on voit ce qu'on entendait sans entendre. Salomon est rendu <em>fahīm</em> (21,79).",
+      "glose_gloton": "Gloton souligne que le <em>fahm</em> a, dans la tradition spirituelle, une coloration propre : compréhension <em>donnée</em>, non simplement gagnée. Le sage demande <em>al-fahm fī kitābik</em> comme on demande la lumière — non comme on programme un raisonnement.",
+      "forms": [
+        {
+          "ar": "فَهِمَ",
+          "tr": "fahima",
+          "fr": "comprendre",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "فَهَّمَ",
+          "tr": "fahhama",
+          "fr": "faire comprendre",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَفَهَّمَ",
+          "tr": "tafahhama",
+          "fr": "chercher à comprendre, étudier",
+          "form": "V",
+          "type": "verbe d'effort"
+        },
+        {
+          "ar": "الفَهْم",
+          "tr": "al-fahm",
+          "fr": "la compréhension",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الفَهَامَة",
+          "tr": "al-fahāma",
+          "fr": "la pénétration d'esprit, la perspicacité",
+          "type": "nom abstrait"
+        },
+        {
+          "ar": "الفَهِيم",
+          "tr": "al-fahīm",
+          "fr": "celui qui comprend en profondeur",
+          "type": "nom intensif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "21, 79",
+          "ar": "فَفَهَّمْنَٰهَا سُلَيْمَٰنَ ۚ وَكُلًّا ءَاتَيْنَا حُكْمًا وَعِلْمًا",
+          "fr": "Nous fîmes comprendre [le jugement] à Salomon. À chacun Nous avons donné sagesse et savoir."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Qu'est-ce qui, lu cent fois, demande encore à m'être <em>donné</em> à comprendre ?"
+    },
+    {
+      "id": "f-k-r",
+      "letters": [
+        "ف",
+        "ك",
+        "ر"
+      ],
+      "root_ar": "ف ك ر",
+      "root_tr": "f-k-r",
+      "core_ar": "الفِكْر",
+      "core_fr": "La pensée — peser, retourner, méditer",
+      "field": "<em>Fakara</em>, <em>tafakkara</em> : retourner la chose dans son esprit, peser, considérer sous plusieurs angles. Le <em>fikr</em> n'est pas la pensée logique — c'est l'acte de méditer, de tourner autour d'un signe comme on tourne autour d'un mystère.",
+      "glose_gloton": "Pour Gloton, le <em>tafakkur</em> est une discipline spirituelle entière. Le <em>dhikr</em> rappelle, le <em>fikr</em> creuse. On médite sur la création, le verset, l'événement — non pour expliquer, mais pour éprouver l'épaisseur.",
+      "forms": [
+        {
+          "ar": "فَكَرَ",
+          "tr": "fakara",
+          "fr": "penser à, considérer",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "فَكَّرَ",
+          "tr": "fakkara",
+          "fr": "réfléchir, méditer attentivement",
+          "form": "II",
+          "type": "verbe intensif"
+        },
+        {
+          "ar": "تَفَكَّرَ",
+          "tr": "tafakkara",
+          "fr": "se livrer à la méditation, retourner dans son esprit",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "الفِكْر",
+          "tr": "al-fikr",
+          "fr": "la pensée, la méditation",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "التَّفَكُّر",
+          "tr": "at-tafakkur",
+          "fr": "la méditation, l'examen prolongé",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الفِكْرَة",
+          "tr": "al-fikra",
+          "fr": "l'idée, la pensée particulière",
+          "type": "nom"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "3, 191",
+          "ar": "وَيَتَفَكَّرُونَ فِى خَلْقِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ",
+          "fr": "Et ils méditent sur la création des cieux et de la terre."
+        },
+        {
+          "ref": "59, 21",
+          "ar": "وَتِلْكَ ٱلْأَمْثَٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ",
+          "fr": "Telles sont les paraboles que Nous proposons aux hommes, afin qu'ils méditent."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Quel signe d'aujourd'hui mérite que j'en fasse plusieurs fois le tour ?"
+    },
+    {
+      "id": "ʿ-r-f",
+      "letters": [
+        "ع",
+        "ر",
+        "ف"
+      ],
+      "root_ar": "ع ر ف",
+      "root_tr": "ʿ-r-f",
+      "core_ar": "المَعْرِفَة",
+      "core_fr": "Connaître par familiarité, par goût",
+      "field": "Connaître par <em>reconnaissance</em>, par familiarité — non par savoir appris. On <em>connaît</em> un visage parce qu'on l'a déjà vu. La <em>maʿrifa</em> de Dieu est de cet ordre : non savoir des choses sur Lui, mais Le re-connaître quand Il se montre.",
+      "glose_gloton": "Gloton insiste : la <em>maʿrifa</em> est l'aboutissement de la voie soufie. Junayd disait \"je n'ai connu Dieu que par Dieu\" — connaître comme <em>retour</em> à ce qu'on avait toujours su, depuis l'alliance primordiale (<em>alastu bi-rabbikum</em>, 7,172).",
+      "forms": [
+        {
+          "ar": "عَرَفَ",
+          "tr": "ʿarafa",
+          "fr": "connaître, reconnaître",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "عَرَّفَ",
+          "tr": "ʿarrafa",
+          "fr": "faire connaître, présenter",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَعَارَفَ",
+          "tr": "taʿārafa",
+          "fr": "se connaître mutuellement",
+          "form": "VI",
+          "type": "verbe réciproque"
+        },
+        {
+          "ar": "اِعْتَرَفَ",
+          "tr": "iʿtarafa",
+          "fr": "reconnaître, avouer",
+          "form": "VIII",
+          "type": "verbe"
+        },
+        {
+          "ar": "المَعْرِفَة",
+          "tr": "al-maʿrifa",
+          "fr": "la connaissance par familiarité (gnose)",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "العَارِف",
+          "tr": "al-ʿārif",
+          "fr": "le connaissant (terme soufi pour le gnostique)",
+          "type": "participe actif"
+        },
+        {
+          "ar": "العِرْفَان",
+          "tr": "al-ʿirfān",
+          "fr": "la gnose, la connaissance ésotérique",
+          "type": "nom abstrait"
+        },
+        {
+          "ar": "المَعْرُوف",
+          "tr": "al-maʿrūf",
+          "fr": "le connu (et donc : le bien connu, le convenable)",
+          "type": "participe passif"
+        },
+        {
+          "ar": "العُرْف",
+          "tr": "al-ʿurf",
+          "fr": "la coutume, ce qui est reconnu socialement",
+          "type": "nom"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "49, 13",
+          "ar": "وَجَعَلْنَٰكُمْ شُعُوبًا وَقَبَآئِلَ لِتَعَارَفُوٓا۟",
+          "fr": "Et Nous vous avons faits peuples et tribus pour que vous vous connaissiez les uns les autres."
+        },
+        {
+          "ref": "47, 6",
+          "ar": "وَيُدْخِلُهُمُ ٱلْجَنَّةَ عَرَّفَهَا لَهُمْ",
+          "fr": "Et Il les fera entrer au Jardin qu'Il leur aura fait connaître."
+        }
+      ],
+      "dict_links": [
+        "marifa",
+        "irfan"
+      ],
+      "nom_links": [],
+      "meditation": "Ce que je crois découvrir aujourd'hui — n'est-ce pas plutôt quelque chose que je <em>re</em>connais ?"
+    },
+    {
+      "id": "ḥ-k-m",
+      "letters": [
+        "ح",
+        "ك",
+        "م"
+      ],
+      "root_ar": "ح ك م",
+      "root_tr": "ḥ-k-m",
+      "core_ar": "الحِكْمَة",
+      "core_fr": "La sagesse — juger juste, mettre chaque chose à sa place",
+      "field": "Le sens premier : <em>mettre un frein</em>. Le mors du cheval est <em>ḥakama</em>. La sagesse est la maîtrise qui met chaque chose à sa juste place. Juger, gouverner, être sage : trois modalités d'un seul art de la mesure.",
+      "glose_gloton": "Pour Gloton, la <em>ḥikma</em> n'est pas la <em>sophia</em> grecque mais une sagesse opératoire : <em>donner à chacun ce qui lui convient</em>. C'est pourquoi Dieu est <em>al-Ḥakam</em> (le Juge) et <em>al-Ḥakīm</em> (le Sage) — une seule maîtrise sous deux noms.",
+      "forms": [
+        {
+          "ar": "حَكَمَ",
+          "tr": "ḥakama",
+          "fr": "juger, gouverner, décider",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَحْكَمَ",
+          "tr": "aḥkama",
+          "fr": "rendre solide, bien faire, perfectionner",
+          "form": "IV",
+          "type": "verbe"
+        },
+        {
+          "ar": "تَحَاكَمَ",
+          "tr": "taḥākama",
+          "fr": "porter un litige devant un juge",
+          "form": "VI",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِسْتَحْكَمَ",
+          "tr": "istaḥkama",
+          "fr": "se consolider, devenir ferme",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "الحُكْم",
+          "tr": "al-ḥukm",
+          "fr": "le jugement, le gouvernement, la sentence",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الحِكْمَة",
+          "tr": "al-ḥikma",
+          "fr": "la sagesse",
+          "type": "nom"
+        },
+        {
+          "ar": "الحَكِيم",
+          "tr": "al-Ḥakīm",
+          "fr": "le Très-Sage",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "الحَكَم",
+          "tr": "al-Ḥakam",
+          "fr": "l'Arbitre, le Juge",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "المُحْكَم",
+          "tr": "al-muḥkam",
+          "fr": "le ferme, le clair (verset à sens univoque)",
+          "type": "participe passif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "2, 269",
+          "ar": "يُؤْتِى ٱلْحِكْمَةَ مَن يَشَآءُ ۚ وَمَن يُؤْتَ ٱلْحِكْمَةَ فَقَدْ أُوتِىَ خَيْرًا كَثِيرًا",
+          "fr": "Il donne la sagesse à qui Il veut, et celui à qui la sagesse est donnée a reçu un grand bien."
+        },
+        {
+          "ref": "31, 12",
+          "ar": "وَلَقَدْ ءَاتَيْنَا لُقْمَٰنَ ٱلْحِكْمَةَ أَنِ ٱشْكُرْ لِلَّهِ",
+          "fr": "Nous avons donné à Luqmān la sagesse : Sois reconnaissant envers Dieu."
+        }
+      ],
+      "dict_links": [
+        "hikma"
+      ],
+      "nom_links": [
+        29,
+        47
+      ],
+      "meditation": "Quelle chose, en cet instant, n'est pas à sa juste place — et que faudrait-il déplacer ?"
+    },
+    {
+      "id": "ʿ-d-l",
+      "letters": [
+        "ع",
+        "د",
+        "ل"
+      ],
+      "root_ar": "ع د ل",
+      "root_tr": "ʿ-d-l",
+      "core_ar": "العَدْل",
+      "core_fr": "La justice — l'équilibre, le poids égal",
+      "field": "Être équitable, équilibré, droit. La racine évoque la <em>balance</em> aux plateaux à niveau (<em>iʿtidāl</em>). Le ciel \"a été dressé selon une balance\" (55,7) : la justice coranique est cosmologique avant d'être juridique.",
+      "glose_gloton": "Gloton souligne que l'<em>iʿtidāl</em> est un concept-clef de l'anthropologie coranique : l'homme est créé <em>fī aḥsani taqwīm</em> (95,4). Toute la voie est retour à cet équilibre originel. La justice avec autrui découle de la justice avec soi.",
+      "forms": [
+        {
+          "ar": "عَدَلَ",
+          "tr": "ʿadala",
+          "fr": "être juste, équilibrer",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "عَادَلَ",
+          "tr": "ʿādala",
+          "fr": "égaler, mettre en balance",
+          "form": "III",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِعْتَدَلَ",
+          "tr": "iʿtadala",
+          "fr": "se tenir droit, atteindre l'équilibre",
+          "form": "VIII",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "العَدْل",
+          "tr": "al-ʿadl",
+          "fr": "la justice, l'équité, l'équilibre",
+          "type": "nom"
+        },
+        {
+          "ar": "العَادِل",
+          "tr": "al-ʿādil",
+          "fr": "le juste",
+          "type": "participe actif"
+        },
+        {
+          "ar": "العَدْل",
+          "tr": "al-ʿAdl",
+          "fr": "le Juste (Nom divin)",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "الِاعْتِدَال",
+          "tr": "al-iʿtidāl",
+          "fr": "l'équilibre, la position médiane",
+          "type": "nom d'action"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "16, 90",
+          "ar": "إِنَّ ٱللَّهَ يَأْمُرُ بِٱلْعَدْلِ وَٱلْإِحْسَٰنِ",
+          "fr": "Certes Dieu commande la justice et l'excellence."
+        },
+        {
+          "ref": "55, 7-9",
+          "ar": "وَٱلسَّمَآءَ رَفَعَهَا وَوَضَعَ ٱلْمِيزَانَ ۝ أَلَّا تَطْغَوْا۟ فِى ٱلْمِيزَانِ",
+          "fr": "Et le ciel, Il l'a élevé, et Il a posé la balance : afin que vous ne transgressiez pas dans la balance."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        30
+      ],
+      "meditation": "Où est-ce que je penche aujourd'hui — et que faudrait-il pour revenir au milieu ?"
+    },
+    {
+      "id": "z-k-y",
+      "letters": [
+        "ز",
+        "ك",
+        "و"
+      ],
+      "root_ar": "ز ك و",
+      "root_tr": "z-k-y",
+      "core_ar": "التَّزْكِيَة",
+      "core_fr": "Purifier en faisant croître",
+      "field": "<em>Zakā</em> noue deux sens : <em>croître, prospérer</em> et <em>se purifier</em>. La beauté est dans l'unité : <em>purifier, c'est faire croître</em>. La <em>zakāt</em> prélève sur le bien non pour le diminuer, mais pour le faire prospérer.",
+      "glose_gloton": "Pour Gloton, l'inversion est éclairante : nous croyons que purifier diminue. La racine dit l'inverse — ce qui n'est pas purifié n'est pas vivant. <em>Tazkiyat an-nafs</em> est ainsi condition même de la vie de l'âme.",
+      "forms": [
+        {
+          "ar": "زَكَا",
+          "tr": "zakā",
+          "fr": "croître, prospérer, être pur",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "زَكَّى",
+          "tr": "zakkā",
+          "fr": "purifier, faire croître",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَزَكَّى",
+          "tr": "tazakkā",
+          "fr": "se purifier",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "الزَّكَاة",
+          "tr": "az-zakāt",
+          "fr": "l'aumône légale (litt. : ce qui fait croître)",
+          "type": "nom"
+        },
+        {
+          "ar": "التَّزْكِيَة",
+          "tr": "at-tazkiya",
+          "fr": "la purification (de l'âme)",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الزَّكِيّ",
+          "tr": "az-zakiyy",
+          "fr": "le pur, le prospère",
+          "type": "nom de qualité"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "91, 9-10",
+          "ar": "قَدْ أَفْلَحَ مَن زَكَّىٰهَا ۝ وَقَدْ خَابَ مَن دَسَّىٰهَا",
+          "fr": "Réussit celui qui la purifie (l'âme), perd celui qui l'enfouit."
+        },
+        {
+          "ref": "62, 2",
+          "ar": "وَيُزَكِّيهِمْ وَيُعَلِّمُهُمُ ٱلْكِتَٰبَ وَٱلْحِكْمَةَ",
+          "fr": "Il les purifie et leur enseigne le Livre et la sagesse."
+        }
+      ],
+      "dict_links": [
+        "tazkiyat-an-nafs"
+      ],
+      "nom_links": [],
+      "meditation": "Qu'est-ce que je crois perdre en retranchant — alors que c'est ce qui ferait croître ?"
+    },
+    {
+      "id": "t-q-y",
+      "letters": [
+        "و",
+        "ق",
+        "ي"
+      ],
+      "root_ar": "و ق ي",
+      "root_tr": "w-q-y → t-q-y",
+      "core_ar": "التَّقْوَى",
+      "core_fr": "Se préserver — la crainte qui protège",
+      "field": "Racine première <em>w-q-y</em> : préserver. <em>Ittaqā</em> : se mettre à l'abri, prendre garde. <em>Taqwā</em>, mal traduite par \"crainte de Dieu\", est plus exactement <em>la conscience vigilante qui préserve</em>. Précaution amoureuse, non peur servile.",
+      "glose_gloton": "Gloton récuse \"crainte\" comme traduction unique : la <em>taqwā</em> est une intelligence du danger de se perdre. \"Le plus noble est le plus muttaqī\" (49,13) — non le plus craintif, mais le plus en garde, le plus conscient.",
+      "forms": [
+        {
+          "ar": "وَقَى",
+          "tr": "waqā",
+          "fr": "préserver, protéger",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِتَّقَى",
+          "tr": "ittaqā",
+          "fr": "se prémunir, prendre garde, craindre",
+          "form": "VIII",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "التَّقْوَى",
+          "tr": "at-taqwā",
+          "fr": "la conscience protectrice, la \"crainte\" de Dieu",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المُتَّقِي",
+          "tr": "al-muttaqī",
+          "fr": "celui qui se prémunit, le pieux vigilant",
+          "type": "participe actif"
+        },
+        {
+          "ar": "الوِقَايَة",
+          "tr": "al-wiqāya",
+          "fr": "la protection, le bouclier",
+          "type": "nom"
+        },
+        {
+          "ar": "تَقِيّ",
+          "tr": "taqiyy",
+          "fr": "celui qui est dans la taqwā",
+          "type": "nom de qualité"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "49, 13",
+          "ar": "إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ",
+          "fr": "Certes, le plus noble d'entre vous auprès de Dieu est le plus muttaqī (le plus vigilant)."
+        },
+        {
+          "ref": "2, 197",
+          "ar": "وَتَزَوَّدُوا۟ فَإِنَّ خَيْرَ ٱلزَّادِ ٱلتَّقْوَىٰ",
+          "fr": "Faites provision : la meilleure provision est la taqwā."
+        }
+      ],
+      "dict_links": [
+        "taqwa"
+      ],
+      "nom_links": [],
+      "meditation": "De quoi ai-je vraiment besoin de me préserver aujourd'hui — pas par peur, mais par soin de l'essentiel ?"
+    },
+    {
+      "id": "kh-sh-y",
+      "letters": [
+        "خ",
+        "ش",
+        "ي"
+      ],
+      "root_ar": "خ ش ي",
+      "root_tr": "kh-sh-y",
+      "core_ar": "الخَشْيَة",
+      "core_fr": "La crainte révérencielle — trembler de proximité",
+      "field": "Crainte qui n'est pas peur, mais tremblement de qui se sait devant plus grand que soi. À la différence de <em>khawf</em> (peur du mal possible) et de <em>taqwā</em> (vigilance), la <em>khashya</em> est purement révérencielle — elle naît de la connaissance.",
+      "glose_gloton": "Pour Gloton, la <em>khashya</em> est la signature de la connaissance vraie. \"Seuls craignent Dieu, parmi Ses serviteurs, les savants\" (35,28). Plus on connaît, plus on tremble — non par peur, mais par perception de la disproportion.",
+      "forms": [
+        {
+          "ar": "خَشِيَ",
+          "tr": "khashiya",
+          "fr": "craindre avec révérence, redouter",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "الخَشْيَة",
+          "tr": "al-khashya",
+          "fr": "la crainte révérencielle",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الخَاشِي",
+          "tr": "al-khāshī",
+          "fr": "celui qui craint avec révérence",
+          "type": "participe actif"
+        },
+        {
+          "ar": "خَاشِع",
+          "tr": "khāshiʿ",
+          "fr": "humble (proche, dérivé de la même nappe sémantique)",
+          "type": "nom de qualité"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "35, 28",
+          "ar": "إِنَّمَا يَخْشَى ٱللَّهَ مِنْ عِبَادِهِ ٱلْعُلَمَٰٓؤُا۟",
+          "fr": "Seuls craignent Dieu, parmi Ses serviteurs, les savants."
+        },
+        {
+          "ref": "59, 21",
+          "ar": "لَوْ أَنزَلْنَا هَٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍ لَّرَأَيْتَهُۥ خَٰشِعًا مُّتَصَدِّعًا مِّنْ خَشْيَةِ ٱللَّهِ",
+          "fr": "Si Nous avions fait descendre ce Coran sur une montagne, tu l'aurais vue humble, se fendre par crainte de Dieu."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Y a-t-il en moi un savoir qui ne <em>tremble</em> plus — et que vaut-il alors ?"
+    },
+    {
+      "id": "ṣ-d-q",
+      "letters": [
+        "ص",
+        "د",
+        "ق"
+      ],
+      "root_ar": "ص د ق",
+      "root_tr": "ṣ-d-q",
+      "core_ar": "الصِّدْق",
+      "core_fr": "La véracité — l'accord du dit, du fait et de l'être",
+      "field": "Dire vrai. Mais la racine exige plus : <em>conformité de la parole, de l'acte et de l'être</em>. Est <em>ṣiddīq</em> (titre suprême après prophète) celui dont la vie atteste ce que dit sa bouche. <em>Ṣadaqa</em> = aumône : le don aussi atteste.",
+      "glose_gloton": "Gloton souligne le lien <em>ṣidq</em> / <em>ṣadaqa</em> : donner prouve la sincérité, là où les mots sont gratuits. La vérité coranique n'est pas une thèse — c'est une incarnation. <em>Ṣiddīqūn</em> et <em>ṣadaqāt</em> partagent la racine pour cette raison.",
+      "forms": [
+        {
+          "ar": "صَدَقَ",
+          "tr": "ṣadaqa",
+          "fr": "dire vrai, être véridique",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "صَدَّقَ",
+          "tr": "ṣaddaqa",
+          "fr": "ajouter foi à, confirmer",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَصَدَّقَ",
+          "tr": "taṣaddaqa",
+          "fr": "faire l'aumône",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "الصِّدْق",
+          "tr": "aṣ-ṣidq",
+          "fr": "la véracité, la vérité incarnée",
+          "type": "nom"
+        },
+        {
+          "ar": "الصَّادِق",
+          "tr": "aṣ-ṣādiq",
+          "fr": "le véridique",
+          "type": "participe actif"
+        },
+        {
+          "ar": "الصِّدِّيق",
+          "tr": "aṣ-ṣiddīq",
+          "fr": "le très-véridique (rang spirituel)",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "الصَّدَقَة",
+          "tr": "aṣ-ṣadaqa",
+          "fr": "l'aumône volontaire (preuve de sincérité)",
+          "type": "nom concret"
+        },
+        {
+          "ar": "الصَّدَاقَة",
+          "tr": "aṣ-ṣadāqa",
+          "fr": "l'amitié (fondée sur la véracité réciproque)",
+          "type": "nom"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "19, 41",
+          "ar": "وَٱذْكُرْ فِى ٱلْكِتَٰبِ إِبْرَٰهِيمَ ۚ إِنَّهُۥ كَانَ صِدِّيقًا نَّبِيًّا",
+          "fr": "Et mentionne dans le Livre Abraham — il était très-véridique, prophète."
+        },
+        {
+          "ref": "33, 23",
+          "ar": "مِّنَ ٱلْمُؤْمِنِينَ رِجَالٌ صَدَقُوا۟ مَا عَٰهَدُوا۟ ٱللَّهَ عَلَيْهِ",
+          "fr": "Parmi les croyants, il est des hommes qui ont rendu vrai (par leurs actes) ce qu'ils avaient promis à Dieu."
+        }
+      ],
+      "dict_links": [
+        "sidq"
+      ],
+      "nom_links": [],
+      "meditation": "Ce que je viens de dire — mon corps et mes actes le rendent-ils vrai ?"
+    },
+    {
+      "id": "ʾ-d-b",
+      "letters": [
+        "ا",
+        "د",
+        "ب"
+      ],
+      "root_ar": "ء د ب",
+      "root_tr": "ʾ-d-b",
+      "core_ar": "الأَدَب",
+      "core_fr": "La courtoisie spirituelle — l'ajustement du geste au sacré",
+      "field": "<em>Adab</em> n'a pas d'équivalent : ni politesse, ni morale, ni culture. C'est <em>l'ajustement intérieur et extérieur</em> à la situation, à la personne, au moment. Adab du disciple, adab de la prière, adab envers Dieu : chaque registre a le sien.",
+      "glose_gloton": "Pour Gloton, l'<em>adab</em> est l'accomplissement humain de la <em>taqwā</em> : la vigilance devient grâce du geste. Le Prophète disait : <em>addabanī rabbī fa-aḥsana taʾdībī</em> — \"mon Seigneur m'a éduqué, et a parfait mon éducation\".",
+      "forms": [
+        {
+          "ar": "أَدُبَ",
+          "tr": "aduba",
+          "fr": "être bien éduqué, courtois",
+          "form": "I",
+          "type": "verbe d'état"
+        },
+        {
+          "ar": "أَدَّبَ",
+          "tr": "addaba",
+          "fr": "éduquer, former à l'adab",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَأَدَّبَ",
+          "tr": "taʾaddaba",
+          "fr": "se former, acquérir l'adab",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "الأَدَب",
+          "tr": "al-adab",
+          "fr": "l'ajustement spirituel, la courtoisie sacrée",
+          "type": "nom"
+        },
+        {
+          "ar": "الأَدِيب",
+          "tr": "al-adīb",
+          "fr": "l'homme cultivé, l'homme d'adab",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "التَّأْدِيب",
+          "tr": "at-taʾdīb",
+          "fr": "l'éducation, la formation à l'adab",
+          "type": "nom d'action"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "Hadith",
+          "ar": "أَدَّبَنِي رَبِّي فَأَحْسَنَ تَأْدِيبِي",
+          "fr": "Mon Seigneur m'a éduqué et a parfait mon éducation. (parole prophétique)"
+        }
+      ],
+      "dict_links": [
+        "adab"
+      ],
+      "nom_links": [],
+      "meditation": "Quel geste, ce matin, demande à être ajusté — non par règle, mais par égard ?"
+    },
+    {
+      "id": "kh-l-q",
+      "letters": [
+        "خ",
+        "ل",
+        "ق"
+      ],
+      "root_ar": "خ ل ق",
+      "root_tr": "kh-l-q",
+      "core_ar": "الخَلْق",
+      "core_fr": "Créer — et : le caractère, ce qui est créé en l'homme",
+      "field": "Splendeur de la racine : un seul mot, <em>khalq</em>, désigne à la fois <em>la création</em> et <em>le caractère</em>. Mon caractère est ma part de création — ce que Dieu a façonné en moi et que je dois à mon tour façonner. \"Un caractère immense\" (68,4) loue le Prophète.",
+      "glose_gloton": "Gloton souligne cette unité : pour la pensée coranique, l'éthique n'est pas surajoutée à la nature — elle <em>est</em> la nature accomplie. Parfaire le <em>khuluq</em>, c'est parfaire le <em>khalq</em>. Une seule racine, deux faces d'une même œuvre.",
+      "forms": [
+        {
+          "ar": "خَلَقَ",
+          "tr": "khalaqa",
+          "fr": "créer, façonner",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "الخَلْق",
+          "tr": "al-khalq",
+          "fr": "la création, les créatures",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الخُلُق",
+          "tr": "al-khuluq",
+          "fr": "le caractère, le naturel moral",
+          "type": "nom"
+        },
+        {
+          "ar": "الأَخْلَاق",
+          "tr": "al-akhlāq",
+          "fr": "les caractères, la morale",
+          "type": "pluriel"
+        },
+        {
+          "ar": "الخَالِق",
+          "tr": "al-Khāliq",
+          "fr": "le Créateur",
+          "type": "participe actif"
+        },
+        {
+          "ar": "الخَلَّاق",
+          "tr": "al-Khallāq",
+          "fr": "le Créateur intense, le Façonneur sans cesse",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "المَخْلُوق",
+          "tr": "al-makhlūq",
+          "fr": "la créature",
+          "type": "participe passif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "68, 4",
+          "ar": "وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٍ",
+          "fr": "Et certes, tu es d'un caractère immense."
+        },
+        {
+          "ref": "23, 14",
+          "ar": "فَتَبَارَكَ ٱللَّهُ أَحْسَنُ ٱلْخَٰلِقِينَ",
+          "fr": "Béni soit Dieu, le meilleur des créateurs."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        12
+      ],
+      "meditation": "Mon caractère est une part de la création — qu'est-ce que je peux y <em>poursuivre</em> de ce que Dieu y a commencé ?"
+    },
+    {
+      "id": "g-f-r",
+      "letters": [
+        "غ",
+        "ف",
+        "ر"
+      ],
+      "root_ar": "غ ف ر",
+      "root_tr": "gh-f-r",
+      "core_ar": "المَغْفِرَة",
+      "core_fr": "Le pardon — couvrir d'un voile protecteur",
+      "field": "<em>Ghafara</em> = couvrir, voiler. Le casque du guerrier est <em>mighfar</em>. Le pardon n'est pas effacement : c'est <em>recouvrement</em>. Dieu pose un voile sur la faute, qui ne disparaît pas mais cesse d'agir.",
+      "glose_gloton": "Pour Gloton, trois modalités : <em>ʿafw</em> efface, <em>ṣafḥ</em> tourne la page, <em>maghfira</em> couvre. La <em>maghfira</em> est la plus mystérieuse : la trace demeure dans le réel, tenue par la miséricorde. <em>Al-Ghaffār</em> ne cesse de couvrir.",
+      "forms": [
+        {
+          "ar": "غَفَرَ",
+          "tr": "ghafara",
+          "fr": "pardonner, couvrir d'un voile",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِسْتَغْفَرَ",
+          "tr": "istaghfara",
+          "fr": "demander pardon, demander la couverture",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "المَغْفِرَة",
+          "tr": "al-maghfira",
+          "fr": "le pardon, la couverture",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الغَفُور",
+          "tr": "al-Ghafūr",
+          "fr": "le Très-Pardonnant",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "الغَفَّار",
+          "tr": "al-Ghaffār",
+          "fr": "Celui qui ne cesse de pardonner",
+          "type": "nom hyperbolique"
+        },
+        {
+          "ar": "اِسْتِغْفَار",
+          "tr": "istighfār",
+          "fr": "la demande de pardon",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المِغْفَر",
+          "tr": "al-mighfar",
+          "fr": "le casque (ce qui couvre la tête)",
+          "type": "nom concret"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "39, 53",
+          "ar": "إِنَّ ٱللَّهَ يَغْفِرُ ٱلذُّنُوبَ جَمِيعًا ۚ إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ",
+          "fr": "Certes, Dieu pardonne tous les péchés. Il est, Lui, le Très-Pardonnant, le Très-Miséricordieux."
+        },
+        {
+          "ref": "71, 10",
+          "ar": "ٱسْتَغْفِرُوا۟ رَبَّكُمْ إِنَّهُۥ كَانَ غَفَّارًا",
+          "fr": "Demandez pardon à votre Seigneur — Il a toujours été Celui qui ne cesse de pardonner."
+        }
+      ],
+      "dict_links": [
+        "istighfar"
+      ],
+      "nom_links": [
+        15,
+        35
+      ],
+      "meditation": "Qu'est-ce qui, en moi, demande non pas à être effacé, mais simplement <em>couvert</em> ?"
+    },
+    {
+      "id": "h-d-y",
+      "letters": [
+        "ه",
+        "د",
+        "ي"
+      ],
+      "root_ar": "ه د ي",
+      "root_tr": "h-d-y",
+      "core_ar": "الهُدَى",
+      "core_fr": "La guidance — le don du chemin",
+      "field": "Guider, conduire. La racine porte le chemin (<em>hudā</em>) <em>et</em> le présent qu'on offre (<em>hadiyya</em>) : guider est faire le plus précieux des cadeaux. Nul ne se guide soi-même — c'est Dieu qui guide qui Il veut (28,56).",
+      "glose_gloton": "Gloton souligne le verset 1,6 (<em>ihdinā ṣ-ṣirāṭa l-mustaqīm</em>) : nous demandons la guidance plusieurs fois par jour, parce que la guidance n'est pas un acquis mais un renouvellement. La voie droite n'est jamais conquise — elle est offerte.",
+      "forms": [
+        {
+          "ar": "هَدَى",
+          "tr": "hadā",
+          "fr": "guider, conduire",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِهْتَدَى",
+          "tr": "ihtadā",
+          "fr": "se laisser guider, trouver la voie",
+          "form": "VIII",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "الهُدَى",
+          "tr": "al-hudā",
+          "fr": "la guidance, la voie droite",
+          "type": "nom"
+        },
+        {
+          "ar": "الهِدَايَة",
+          "tr": "al-hidāya",
+          "fr": "la guidance, l'acte de guider",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الهَادِي",
+          "tr": "al-Hādī",
+          "fr": "le Guide",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المُهْتَدِي",
+          "tr": "al-muhtadī",
+          "fr": "le bien-guidé",
+          "type": "participe actif"
+        },
+        {
+          "ar": "الهَدِيَّة",
+          "tr": "al-hadiyya",
+          "fr": "le cadeau, le présent",
+          "type": "nom"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "1, 6",
+          "ar": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+          "fr": "Guide-nous sur la voie droite."
+        },
+        {
+          "ref": "28, 56",
+          "ar": "إِنَّكَ لَا تَهْدِى مَنْ أَحْبَبْتَ وَلَٰكِنَّ ٱللَّهَ يَهْدِى مَن يَشَآءُ",
+          "fr": "Tu ne guides pas ceux que tu aimes — c'est Dieu qui guide qui Il veut."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        95
+      ],
+      "meditation": "Si la guidance est un cadeau, ai-je tendu les mains pour la recevoir aujourd'hui ?"
+    },
+    {
+      "id": "ḍ-l-l",
+      "letters": [
+        "ض",
+        "ل",
+        "ل"
+      ],
+      "root_ar": "ض ل ل",
+      "root_tr": "ḍ-l-l",
+      "core_ar": "الضَّلَال",
+      "core_fr": "L'errance — perdre la trace",
+      "field": "S'égarer, perdre son chemin. La racine évoque celui qui <em>marche encore</em> mais ne sait plus où. Non pas l'arrêt, mais la marche désorientée. Opposé exact de <em>hudā</em>. Le Coran : \"Il t'a trouvé errant, et Il t'a guidé\" (93,7).",
+      "glose_gloton": "Pour Gloton, <em>ḍalāl</em> n'est pas le mal moral mais la perte de repère. La Fātiḥa oppose <em>al-mustaqīm</em> à <em>al-ḍāllīn</em> — non aux méchants : les égarés sont ceux qui marchent sincèrement, mais dans le brouillard.",
+      "forms": [
+        {
+          "ar": "ضَلَّ",
+          "tr": "ḍalla",
+          "fr": "s'égarer, perdre la trace",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَضَلَّ",
+          "tr": "aḍalla",
+          "fr": "égarer, faire perdre la voie",
+          "form": "IV",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "الضَّلَال",
+          "tr": "aḍ-ḍalāl",
+          "fr": "l'errance, l'égarement",
+          "type": "nom"
+        },
+        {
+          "ar": "الضَّلَالَة",
+          "tr": "aḍ-ḍalāla",
+          "fr": "l'errance (état)",
+          "type": "nom abstrait"
+        },
+        {
+          "ar": "الضَّالّ",
+          "tr": "aḍ-ḍāll",
+          "fr": "l'égaré",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المُضِلّ",
+          "tr": "al-muḍill",
+          "fr": "celui qui égare",
+          "type": "participe actif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "1, 7",
+          "ar": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+          "fr": "La voie de ceux que Tu as comblés — non celle des objets de colère, ni des égarés."
+        },
+        {
+          "ref": "93, 7",
+          "ar": "وَوَجَدَكَ ضَآلًّا فَهَدَىٰ",
+          "fr": "Il t'a trouvé errant, et Il t'a guidé."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Dans quel endroit de moi suis-je en train de marcher encore — mais sans savoir vers quoi ?"
+    },
+    {
+      "id": "j-h-d",
+      "letters": [
+        "ج",
+        "ه",
+        "د"
+      ],
+      "root_ar": "ج ه د",
+      "root_tr": "j-h-d",
+      "core_ar": "الجِهَاد",
+      "core_fr": "L'effort — déployer toute sa capacité",
+      "field": "<em>Jahada</em> : peiner, déployer sa <em>juhd</em> (capacité maximale). Engagement total de soi dans une direction. <em>Jihād</em>, mal traduit par \"guerre sainte\", est avant tout l'effort soutenu — intérieur d'abord (<em>al-jihād al-akbar</em>).",
+      "glose_gloton": "Gloton récuse la réduction au combat : la racine est centrée sur l'effort. <em>Jāhada fī sabīli Llāh</em> désigne toute la vie spirituelle. Hadith fameux : \"nous sommes revenus du petit combat (la bataille) vers le grand combat (contre nous-mêmes)\".",
+      "forms": [
+        {
+          "ar": "جَهَدَ",
+          "tr": "jahada",
+          "fr": "peiner, faire effort",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "جَاهَدَ",
+          "tr": "jāhada",
+          "fr": "déployer un effort soutenu, combattre",
+          "form": "III",
+          "type": "verbe d'effort"
+        },
+        {
+          "ar": "اِجْتَهَدَ",
+          "tr": "ijtahada",
+          "fr": "faire effort personnel (notamment intellectuel)",
+          "form": "VIII",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "الجِهَاد",
+          "tr": "al-jihād",
+          "fr": "l'effort soutenu sur la voie de Dieu",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المُجَاهِد",
+          "tr": "al-mujāhid",
+          "fr": "celui qui se dépense, le combattant intérieur",
+          "type": "participe actif"
+        },
+        {
+          "ar": "الِاجْتِهَاد",
+          "tr": "al-ijtihād",
+          "fr": "l'effort personnel (notamment de raisonnement)",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المُجْتَهِد",
+          "tr": "al-mujtahid",
+          "fr": "celui qui exerce son effort propre",
+          "type": "participe actif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "29, 69",
+          "ar": "وَٱلَّذِينَ جَٰهَدُوا۟ فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+          "fr": "Et ceux qui font effort pour Nous, Nous les guiderons sur Nos voies."
+        },
+        {
+          "ref": "22, 78",
+          "ar": "وَجَٰهِدُوا۟ فِى ٱللَّهِ حَقَّ جِهَادِهِۦ",
+          "fr": "Et faites effort en Dieu, du véritable effort qui Lui est dû."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Où, en moi, est-ce que je n'ai pas encore <em>déployé toute ma capacité</em> ?"
+    },
+    {
+      "id": "n-ṣ-r",
+      "letters": [
+        "ن",
+        "ص",
+        "ر"
+      ],
+      "root_ar": "ن ص ر",
+      "root_tr": "n-ṣ-r",
+      "core_ar": "النَّصْر",
+      "core_fr": "Le secours — venir en aide",
+      "field": "Secourir, venir en aide. Le <em>naṣr</em> coranique n'est pas la victoire seule — c'est tout secours qui arrive à temps. Les <em>Anṣār</em> sont les compagnons médinois ; <em>naṣrāniyy</em> (chrétien) vient de la même racine : ceux qui ont secouru Jésus.",
+      "glose_gloton": "Pour Gloton, la racine décrit une réciprocité asymétrique : \"si vous secourez Dieu, Il vous secourra\" (47,7). Non que Dieu ait besoin d'aide — mais se mettre à Son service ouvre Son secours. <em>Naṣr</em> est l'inverse de l'isolement.",
+      "forms": [
+        {
+          "ar": "نَصَرَ",
+          "tr": "naṣara",
+          "fr": "secourir, aider",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِنْتَصَرَ",
+          "tr": "intaṣara",
+          "fr": "vaincre, se faire prêter secours",
+          "form": "VIII",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "اِسْتَنْصَرَ",
+          "tr": "istanṣara",
+          "fr": "demander secours",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "النَّصْر",
+          "tr": "an-naṣr",
+          "fr": "le secours, la victoire",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "النَّاصِر",
+          "tr": "an-nāṣir",
+          "fr": "le secourant",
+          "type": "participe actif"
+        },
+        {
+          "ar": "النَّصِير",
+          "tr": "an-Naṣīr",
+          "fr": "le Secourant (Nom divin)",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "الأَنْصَار",
+          "tr": "al-Anṣār",
+          "fr": "les Auxiliaires (compagnons médinois)",
+          "type": "pluriel"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "47, 7",
+          "ar": "إِن تَنصُرُوا۟ ٱللَّهَ يَنصُرْكُمْ وَيُثَبِّتْ أَقْدَامَكُمْ",
+          "fr": "Si vous secourez Dieu, Il vous secourra et raffermira vos pas."
+        },
+        {
+          "ref": "110, 1",
+          "ar": "إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+          "fr": "Lorsque viennent le secours de Dieu et l'ouverture."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Où ai-je besoin d'être secouru aujourd'hui — et où suis-je appelé à secourir ?"
+    },
+    {
+      "id": "gh-y-b",
+      "letters": [
+        "غ",
+        "ي",
+        "ب"
+      ],
+      "root_ar": "غ ي ب",
+      "root_tr": "gh-y-b",
+      "core_ar": "الغَيْب",
+      "core_fr": "Le mystère — ce qui est absent à la vue",
+      "field": "Être absent, caché. Le <em>ghayb</em> n'est ni néant ni mensonge — c'est <em>ce qui est, mais n'apparaît pas</em>. Le couple <em>al-ghayb wa-sh-shahāda</em> couvre la totalité du réel : ce que je vois, et ce qui est sans m'apparaître.",
+      "glose_gloton": "Gloton souligne : <em>ghayb</em> n'est pas \"surnaturel\". C'est la part du réel que les sens ne saisissent pas — le passé, l'avenir, les anges, le cœur d'autrui, Dieu Lui-même. Croire au <em>ghayb</em> (2,3), c'est apprendre à fréquenter cela.",
+      "forms": [
+        {
+          "ar": "غَابَ",
+          "tr": "ghāba",
+          "fr": "être absent, disparaître",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِغْتَابَ",
+          "tr": "ightāba",
+          "fr": "médire (parler de quelqu'un en son absence)",
+          "form": "VIII",
+          "type": "verbe"
+        },
+        {
+          "ar": "الغَيْب",
+          "tr": "al-ghayb",
+          "fr": "l'invisible, le mystère",
+          "type": "nom"
+        },
+        {
+          "ar": "الغَائِب",
+          "tr": "al-ghāʾib",
+          "fr": "l'absent",
+          "type": "participe actif"
+        },
+        {
+          "ar": "الغِيبَة",
+          "tr": "al-ghība",
+          "fr": "l'absence ; la médisance",
+          "type": "nom"
+        },
+        {
+          "ar": "غَيُوب",
+          "tr": "ghayūb",
+          "fr": "intensif : Celui qui connaît parfaitement l'invisible",
+          "type": "nom intensif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "2, 3",
+          "ar": "ٱلَّذِينَ يُؤْمِنُونَ بِٱلْغَيْبِ",
+          "fr": "Ceux qui croient au mystère (au ghayb)."
+        },
+        {
+          "ref": "6, 73",
+          "ar": "عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ",
+          "fr": "Le Connaissant de l'invisible et du visible."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Quelle part de réel est en cet instant <em>là</em>, sans m'apparaître — et que je pourrais simplement saluer ?"
+    },
+    {
+      "id": "ḥ-y-y",
+      "letters": [
+        "ح",
+        "ي",
+        "ي"
+      ],
+      "root_ar": "ح ي ي",
+      "root_tr": "ḥ-y-y",
+      "core_ar": "الحَيَاة",
+      "core_fr": "La vie — ce qui se tient debout",
+      "field": "Être vivant. Étrangement, la même racine donne <em>ḥayāʾ</em> (la pudeur) — comme si être vivant et avoir de la pudeur étaient liés : ce qui est vivant <em>se réserve</em>. <em>Al-Ḥayy</em> est Celui qui se tient, et fait tenir tout ce qui vit.",
+      "glose_gloton": "Pour Gloton, <em>al-Ḥayy</em> est souvent couplé à <em>al-Qayyūm</em> (2,255) : la vie n'est pas un processus, c'est <em>la qualité de se tenir</em>. <em>Aḥyā</em> et <em>amāta</em> reviennent toujours ensemble, comme les deux mains d'une seule œuvre.",
+      "forms": [
+        {
+          "ar": "حَيِيَ",
+          "tr": "ḥayiya",
+          "fr": "vivre, être vivant",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَحْيَا",
+          "tr": "aḥyā",
+          "fr": "faire vivre, ressusciter",
+          "form": "IV",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "اِسْتَحْيَا",
+          "tr": "istaḥyā",
+          "fr": "épargner ; éprouver de la pudeur",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "الحَيَاة",
+          "tr": "al-ḥayāt",
+          "fr": "la vie",
+          "type": "nom"
+        },
+        {
+          "ar": "الحَيّ",
+          "tr": "al-Ḥayy",
+          "fr": "le Vivant",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "المُحْيِي",
+          "tr": "al-Muḥyī",
+          "fr": "Celui qui donne la vie",
+          "type": "participe actif"
+        },
+        {
+          "ar": "الحَيَاء",
+          "tr": "al-ḥayāʾ",
+          "fr": "la pudeur, la retenue vitale",
+          "type": "nom"
+        },
+        {
+          "ar": "التَّحِيَّة",
+          "tr": "at-taḥiyya",
+          "fr": "la salutation (vœu de vie)",
+          "type": "nom d'action"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "2, 255",
+          "ar": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ",
+          "fr": "Dieu — il n'y a de dieu que Lui — le Vivant, Celui qui subsiste par Lui-même."
+        },
+        {
+          "ref": "30, 50",
+          "ar": "إِنَّ ذَٰلِكَ لَمُحْيِى ٱلْمَوْتَىٰ ۖ وَهُوَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ",
+          "fr": "Certes, Celui-là est Celui qui fait vivre les morts — Il est puissant sur toute chose."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        61,
+        63
+      ],
+      "meditation": "En cet instant, qu'est-ce qui en moi se <em>tient</em> vraiment — et qu'est-ce qui s'affaisse ?"
+    },
+    {
+      "id": "m-w-t",
+      "letters": [
+        "م",
+        "و",
+        "ت"
+      ],
+      "root_ar": "م و ت",
+      "root_tr": "m-w-t",
+      "core_ar": "المَوْت",
+      "core_fr": "La mort — la rétraction de la présence",
+      "field": "Mourir. Pôle contraire et complémentaire de la vie. Le Coran évite la dualité tragique : \"Celui qui a créé la mort et la vie\" (67,2) — la mort est <em>créée</em>, donc voulue, donc bonne. La voie parle d'une <em>mort avant la mort</em>.",
+      "glose_gloton": "Gloton souligne le caractère non-négatif : la mort n'est pas l'antithèse de la vie, c'est son corollaire. <em>Aḥyā</em> et <em>amāta</em> reviennent ensemble. Et la <em>fanāʾ</em> soufie prolonge l'intuition : il y a une mort qui fait vivre.",
+      "forms": [
+        {
+          "ar": "مَاتَ",
+          "tr": "māta",
+          "fr": "mourir",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَمَاتَ",
+          "tr": "amāta",
+          "fr": "faire mourir, donner la mort",
+          "form": "IV",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "المَوْت",
+          "tr": "al-mawt",
+          "fr": "la mort",
+          "type": "nom"
+        },
+        {
+          "ar": "المَيِّت",
+          "tr": "al-mayyit",
+          "fr": "le mort, le défunt",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المَوْتَى",
+          "tr": "al-mawtā",
+          "fr": "les morts (collectif)",
+          "type": "pluriel"
+        },
+        {
+          "ar": "المُمِيت",
+          "tr": "al-Mumīt",
+          "fr": "Celui qui fait mourir",
+          "type": "participe actif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "67, 2",
+          "ar": "ٱلَّذِى خَلَقَ ٱلْمَوْتَ وَٱلْحَيَوٰةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا",
+          "fr": "Celui qui a créé la mort et la vie pour vous éprouver — lequel d'entre vous serait le meilleur en œuvre."
+        },
+        {
+          "ref": "3, 185",
+          "ar": "كُلُّ نَفْسٍ ذَآئِقَةُ ٱلْمَوْتِ",
+          "fr": "Toute âme goûtera à la mort."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        62
+      ],
+      "meditation": "À quoi en moi est-ce que je suis appelé à <em>mourir</em> pour qu'autre chose puisse vivre ?"
+    },
+    {
+      "id": "b-ṣ-r",
+      "letters": [
+        "ب",
+        "ص",
+        "ر"
+      ],
+      "root_ar": "ب ص ر",
+      "root_tr": "b-ṣ-r",
+      "core_ar": "البَصِيرَة",
+      "core_fr": "La vision — voir avec l'œil intérieur",
+      "field": "Voir, percevoir. La racine distingue deux modes : <em>baṣar</em> (vue physique) et <em>baṣīra</em> (vision intérieure). Le Coran insiste sur la cécité possible de la <em>baṣīra</em> alors que les yeux fonctionnent : \"ce sont les cœurs qui sont aveugles\" (22,46).",
+      "glose_gloton": "Pour Gloton, <em>baṣīra</em> est l'œil du cœur — c'est elle qu'on cultive sur la voie. <em>Al-Baṣīr</em>, couplé à <em>as-Samīʿ</em>, est Celui qui voit tout : non pas la vue surveillante, mais l'attention sans manque, le regard qui prend acte.",
+      "forms": [
+        {
+          "ar": "بَصُرَ",
+          "tr": "baṣura",
+          "fr": "voir, percevoir",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَبْصَرَ",
+          "tr": "abṣara",
+          "fr": "voir, apercevoir",
+          "form": "IV",
+          "type": "verbe"
+        },
+        {
+          "ar": "تَبَصَّرَ",
+          "tr": "tabaṣṣara",
+          "fr": "regarder avec discernement",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "البَصَر",
+          "tr": "al-baṣar",
+          "fr": "la vue (sens physique)",
+          "type": "nom"
+        },
+        {
+          "ar": "البَصِيرَة",
+          "tr": "al-baṣīra",
+          "fr": "la vision intérieure, la clairvoyance",
+          "type": "nom"
+        },
+        {
+          "ar": "البَصِير",
+          "tr": "al-Baṣīr",
+          "fr": "le Très-Voyant (Nom divin)",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "الأَبْصَار",
+          "tr": "al-abṣār",
+          "fr": "les regards, les vues",
+          "type": "pluriel"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "22, 46",
+          "ar": "فَإِنَّهَا لَا تَعْمَى ٱلْأَبْصَٰرُ وَلَٰكِن تَعْمَى ٱلْقُلُوبُ ٱلَّتِى فِى ٱلصُّدُورِ",
+          "fr": "Ce ne sont pas les yeux qui sont aveugles, mais les cœurs qui sont dans les poitrines."
+        },
+        {
+          "ref": "12, 108",
+          "ar": "قُلْ هَٰذِهِۦ سَبِيلِىٓ أَدْعُوٓا۟ إِلَى ٱللَّهِ ۚ عَلَىٰ بَصِيرَةٍ أَنَا۠ وَمَنِ ٱتَّبَعَنِى",
+          "fr": "Dis : Voici ma voie — j'appelle à Dieu en pleine clairvoyance, moi et ceux qui me suivent."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        28
+      ],
+      "meditation": "Mes yeux voient — mais qu'est-ce que mon cœur, lui, regarde vraiment en cet instant ?"
+    },
+    {
+      "id": "s-m-ʿ",
+      "letters": [
+        "س",
+        "م",
+        "ع"
+      ],
+      "root_ar": "س م ع",
+      "root_tr": "s-m-ʿ",
+      "core_ar": "السَّمْع",
+      "core_fr": "L'audition — entendre, écouter, obéir",
+      "field": "Trois actes noués : entendre, écouter, obéir. Dans la racine sémitique, écouter vraiment <em>c'est</em> répondre. <em>Samiʿnā wa aṭaʿnā</em> (\"nous avons entendu et obéi\", 2,285) condense la foi en deux mots. <em>Samāʿ</em> = audition spirituelle soufie.",
+      "glose_gloton": "Gloton souligne la priorité de l'audition : la révélation est <em>entendue</em> avant d'être lue. <em>As-Samīʿ</em> est Celui qui entend tout, y compris le murmure intérieur. Et la <em>samāʿ</em> mystique : entendre <em>au-delà</em> du son qui est dit.",
+      "forms": [
+        {
+          "ar": "سَمِعَ",
+          "tr": "samiʿa",
+          "fr": "entendre, écouter",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَسْمَعَ",
+          "tr": "asmaʿa",
+          "fr": "faire entendre",
+          "form": "IV",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "اِسْتَمَعَ",
+          "tr": "istamaʿa",
+          "fr": "écouter attentivement",
+          "form": "VIII",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "السَّمْع",
+          "tr": "as-samʿ",
+          "fr": "l'audition, l'ouïe",
+          "type": "nom"
+        },
+        {
+          "ar": "السَّمِيع",
+          "tr": "as-Samīʿ",
+          "fr": "le Très-Entendant (Nom divin)",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "السَّامِع",
+          "tr": "as-sāmiʿ",
+          "fr": "celui qui entend",
+          "type": "participe actif"
+        },
+        {
+          "ar": "السَّمَاع",
+          "tr": "as-samāʿ",
+          "fr": "l'audition spirituelle (musique soufie)",
+          "type": "nom d'action"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "2, 285",
+          "ar": "وَقَالُوا۟ سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا",
+          "fr": "Et ils ont dit : Nous avons entendu et nous avons obéi — Ton pardon, notre Seigneur."
+        },
+        {
+          "ref": "20, 46",
+          "ar": "إِنَّنِى مَعَكُمَآ أَسْمَعُ وَأَرَىٰ",
+          "fr": "Je suis avec vous deux — J'entends et Je vois."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        27
+      ],
+      "meditation": "Si entendre, c'est répondre — qu'est-ce que j'ai entendu aujourd'hui auquel je n'ai pas encore répondu ?"
+    },
+    {
+      "id": "w-j-h",
+      "letters": [
+        "و",
+        "ج",
+        "ه"
+      ],
+      "root_ar": "و ج ه",
+      "root_tr": "w-j-h",
+      "core_ar": "الوَجْه",
+      "core_fr": "La face — l'orientation, ce qui se tourne vers",
+      "field": "<em>Wajh</em> désigne la face, la direction qu'on prend, l'aspect sous lequel une chose se présente. La \"face de Dieu\" est ce qui en Lui se tourne vers nous — non un anthropomorphisme, mais l'orientation divine elle-même. \"Tout périt sauf Sa face\" (28,88).",
+      "glose_gloton": "Pour Gloton, le verset 2,115 est central : <em>où que vous vous tourniez, là est la face de Dieu</em>. Aucune direction n'est privée du Visage. Et le <em>tawajjuh</em> soufi est l'acte de tourner sa face vers Lui.",
+      "forms": [
+        {
+          "ar": "وَجَّهَ",
+          "tr": "wajjaha",
+          "fr": "diriger, orienter",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَوَجَّهَ",
+          "tr": "tawajjaha",
+          "fr": "se tourner vers, s'orienter",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "وَاجَهَ",
+          "tr": "wājaha",
+          "fr": "faire face à",
+          "form": "III",
+          "type": "verbe"
+        },
+        {
+          "ar": "الوَجْه",
+          "tr": "al-wajh",
+          "fr": "la face, la direction, l'aspect",
+          "type": "nom"
+        },
+        {
+          "ar": "الجِهَة",
+          "tr": "al-jiha",
+          "fr": "le côté, la direction",
+          "type": "nom"
+        },
+        {
+          "ar": "الوَجَاهَة",
+          "tr": "al-wajāha",
+          "fr": "la dignité, le rang (litt. : la qualité de la face)",
+          "type": "nom abstrait"
+        },
+        {
+          "ar": "التَّوَجُّه",
+          "tr": "at-tawajjuh",
+          "fr": "l'orientation spirituelle vers Dieu",
+          "type": "nom d'action"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "2, 115",
+          "ar": "فَأَيْنَمَا تُوَلُّوا۟ فَثَمَّ وَجْهُ ٱللَّهِ",
+          "fr": "Où que vous vous tourniez, là est la face de Dieu."
+        },
+        {
+          "ref": "28, 88",
+          "ar": "كُلُّ شَىْءٍ هَالِكٌ إِلَّا وَجْهَهُۥ",
+          "fr": "Toute chose périt, sauf Sa face."
+        }
+      ],
+      "dict_links": [
+        "tawajjuh"
+      ],
+      "nom_links": [],
+      "meditation": "Vers quoi est tournée ma face en cet instant — et où voudrais-je qu'elle se retourne ?"
+    },
+    {
+      "id": "k-b-r",
+      "letters": [
+        "ك",
+        "ب",
+        "ر"
+      ],
+      "root_ar": "ك ب ر",
+      "root_tr": "k-b-r",
+      "core_ar": "التَّكْبِير",
+      "core_fr": "La grandeur — proclamer la transcendance",
+      "field": "<em>Kabura</em> : être grand. Racine double : appliquée à Dieu, elle dit Sa transcendance (<em>Allāhu akbar</em>) ; appliquée à l'homme, elle dit l'orgueil (<em>takabbur</em>) — la prétention illégitime à la grandeur. Iblīs tombe par <em>istikbār</em>.",
+      "glose_gloton": "Gloton souligne : <em>Allāhu akbar</em> n'est pas \"Dieu est le plus grand\" (clos) mais <em>plus grand</em> — élatif ouvert. Plus grand que toute mesure, plus grand que l'instant précédent où l'on a déjà dit qu'Il l'était.",
+      "forms": [
+        {
+          "ar": "كَبُرَ",
+          "tr": "kabura",
+          "fr": "être grand",
+          "form": "I",
+          "type": "verbe d'état"
+        },
+        {
+          "ar": "كَبَّرَ",
+          "tr": "kabbara",
+          "fr": "proclamer la grandeur (de Dieu)",
+          "form": "II",
+          "type": "verbe intensif"
+        },
+        {
+          "ar": "تَكَبَّرَ",
+          "tr": "takabbara",
+          "fr": "s'enorgueillir, se faire grand",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "اِسْتَكْبَرَ",
+          "tr": "istakbara",
+          "fr": "s'enfler d'orgueil, prétendre à la grandeur",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "الكِبْر",
+          "tr": "al-kibr",
+          "fr": "l'orgueil",
+          "type": "nom"
+        },
+        {
+          "ar": "الكَبِير",
+          "tr": "al-Kabīr",
+          "fr": "le Grand (Nom divin)",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "أَكْبَر",
+          "tr": "akbar",
+          "fr": "plus grand (élatif)",
+          "type": "comparatif"
+        },
+        {
+          "ar": "التَّكْبِير",
+          "tr": "at-takbīr",
+          "fr": "la proclamation de la grandeur divine (Allāhu akbar)",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المُتَكَبِّر",
+          "tr": "al-Mutakabbir",
+          "fr": "Celui qui possède en propre la grandeur (Nom divin) ; ou : l'orgueilleux (pour l'homme)",
+          "type": "participe actif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "17, 111",
+          "ar": "وَكَبِّرْهُ تَكْبِيرًۢا",
+          "fr": "Et proclame Sa grandeur d'une véritable proclamation."
+        },
+        {
+          "ref": "2, 34",
+          "ar": "أَبَىٰ وَٱسْتَكْبَرَ وَكَانَ مِنَ ٱلْكَٰفِرِينَ",
+          "fr": "Il refusa, s'enfla d'orgueil, et fut du nombre des ingrats."
+        }
+      ],
+      "dict_links": [
+        "kibr"
+      ],
+      "nom_links": [
+        38
+      ],
+      "meditation": "Lorsque je dis <em>Allāhu akbar</em>, qu'est-ce qui en moi consent vraiment à <em>n'être pas</em> grand ?"
+    },
+    {
+      "id": "k-t-b",
+      "letters": [
+        "ك",
+        "ت",
+        "ب"
+      ],
+      "root_ar": "ك ت ب",
+      "root_tr": "k-t-b",
+      "core_ar": "الكِتَاب",
+      "core_fr": "L'écriture — ce qui est tracé, ordonné, prescrit",
+      "field": "Écrire, tracer, prescrire. Trois nappes : l'acte (<em>kitāba</em>), le livre (<em>kitāb</em>), la prescription (<em>kutiba ʿalaykum</em>). Écrire n'est pas seulement consigner — c'est inscrire dans le réel, fixer un destin. Tout est <em>déjà écrit</em>.",
+      "glose_gloton": "Pour Gloton, <em>kitāb</em> désigne le Coran, mais aussi le destin et les Écritures antérieures (<em>ahl al-kitāb</em>). La racine pose une métaphysique : <em>écrire, c'est faire être</em>. La révélation est l'inscription du divin dans la langue humaine.",
+      "forms": [
+        {
+          "ar": "كَتَبَ",
+          "tr": "kataba",
+          "fr": "écrire, prescrire",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "اِكْتَتَبَ",
+          "tr": "iktataba",
+          "fr": "se faire écrire, transcrire",
+          "form": "VIII",
+          "type": "verbe"
+        },
+        {
+          "ar": "الكِتَاب",
+          "tr": "al-Kitāb",
+          "fr": "le Livre (le Coran ; l'écriture)",
+          "type": "nom"
+        },
+        {
+          "ar": "الكَاتِب",
+          "tr": "al-kātib",
+          "fr": "le scribe",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المَكْتُوب",
+          "tr": "al-maktūb",
+          "fr": "ce qui est écrit, le destin",
+          "type": "participe passif"
+        },
+        {
+          "ar": "الكِتَابَة",
+          "tr": "al-kitāba",
+          "fr": "l'écriture (acte)",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الكُتُب",
+          "tr": "al-kutub",
+          "fr": "les Livres (révélations antérieures)",
+          "type": "pluriel"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "2, 2",
+          "ar": "ذَٰلِكَ ٱلْكِتَٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ",
+          "fr": "Voici le Livre — nul doute en lui — guidance pour les vigilants."
+        },
+        {
+          "ref": "2, 183",
+          "ar": "كُتِبَ عَلَيْكُمُ ٱلصِّيَامُ",
+          "fr": "Il vous a été prescrit (écrit) de jeûner."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Quelle ligne, en moi, est en train d'être <em>écrite</em> aujourd'hui — par mes choix ?"
+    },
+    {
+      "id": "m-l-k",
+      "letters": [
+        "م",
+        "ل",
+        "ك"
+      ],
+      "root_ar": "م ل ك",
+      "root_tr": "m-l-k",
+      "core_ar": "المُلْك",
+      "core_fr": "La royauté — la maîtrise possessive",
+      "field": "Posséder, régner. Trois mots-clés : <em>malik</em> (roi qui règne), <em>mālik</em> (maître qui possède), <em>mulk</em> (royauté). Le Coran utilise les deux pour Dieu : <em>al-Malik</em> et <em>Mālik al-Mulk</em>. La fātiḥa dit <em>Mālik yawm ad-dīn</em>.",
+      "glose_gloton": "Gloton souligne la nuance : <em>malik</em> est qualité dynamique (qui gouverne en acte), <em>mālik</em> qualité statique (qui détient le titre). Dieu n'est pas seulement Celui qui a le droit — Il est Celui qui exerce. Les anges (<em>malāʾika</em>) sont au Roi.",
+      "forms": [
+        {
+          "ar": "مَلَكَ",
+          "tr": "malaka",
+          "fr": "posséder, dominer",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "مَلَّكَ",
+          "tr": "mallaka",
+          "fr": "donner en possession",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَمَلَّكَ",
+          "tr": "tamallaka",
+          "fr": "s'approprier",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "المُلْك",
+          "tr": "al-mulk",
+          "fr": "la royauté, la souveraineté",
+          "type": "nom"
+        },
+        {
+          "ar": "المَلِك",
+          "tr": "al-Malik",
+          "fr": "le Roi (Nom divin)",
+          "type": "nom"
+        },
+        {
+          "ar": "المَالِك",
+          "tr": "al-Mālik",
+          "fr": "le Maître, le Possesseur",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المَلَكُوت",
+          "tr": "al-malakūt",
+          "fr": "le royaume, la dimension royale du réel",
+          "type": "nom abstrait"
+        },
+        {
+          "ar": "المَلَك",
+          "tr": "al-malak",
+          "fr": "l'ange (le messager du Roi)",
+          "type": "nom"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "1, 4",
+          "ar": "مَٰلِكِ يَوْمِ ٱلدِّينِ",
+          "fr": "Maître du jour du jugement."
+        },
+        {
+          "ref": "67, 1",
+          "ar": "تَبَارَكَ ٱلَّذِى بِيَدِهِ ٱلْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ",
+          "fr": "Béni soit Celui dans la main de qui est la royauté — Il est puissant sur toute chose."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        4,
+        85
+      ],
+      "meditation": "Sur quoi est-ce que je crois <em>régner</em> dans ma vie — qui ne m'appartient pourtant pas ?"
+    },
+    {
+      "id": "r-b-b",
+      "letters": [
+        "ر",
+        "ب",
+        "ب"
+      ],
+      "root_ar": "ر ب ب",
+      "root_tr": "r-b-b",
+      "core_ar": "الرَّبّ",
+      "core_fr": "Le Seigneur qui éduque et fait croître",
+      "field": "<em>Rabb</em> n'est pas \"seigneur\" abstrait. La racine évoque <em>celui qui éduque, qui fait croître</em> — d'où <em>rabba</em> (élever un enfant), <em>tarbiya</em> (éducation). Dieu est <em>Rabb</em> : Celui qui fait croître chaque être vers son achèvement.",
+      "glose_gloton": "Pour Gloton, <em>Rabb</em> est le nom le plus relationnel de Dieu. Là où <em>Allāh</em> dit Sa réalité absolue, <em>Rabb</em> dit Sa relation pédagogique avec chacun. \"Mon Rabb\" est l'expression intime — comme un dialogue.",
+      "forms": [
+        {
+          "ar": "رَبَّ",
+          "tr": "rabba",
+          "fr": "élever, éduquer, faire grandir",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "رَبَّى",
+          "tr": "rabbā",
+          "fr": "éduquer (forme moderne)",
+          "form": "II",
+          "type": "verbe"
+        },
+        {
+          "ar": "تَرَبَّى",
+          "tr": "tarabbā",
+          "fr": "être éduqué, grandir",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "الرَّبّ",
+          "tr": "ar-Rabb",
+          "fr": "le Seigneur qui éduque",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "التَّرْبِيَة",
+          "tr": "at-tarbiya",
+          "fr": "l'éducation, la formation",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "الرَّبَّانِيّ",
+          "tr": "ar-rabbāniyy",
+          "fr": "le maître spirituel (qui éduque par Dieu)",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "الرُّبُوبِيَّة",
+          "tr": "ar-rubūbiyya",
+          "fr": "la Seigneurie (Dieu comme Rabb)",
+          "type": "nom abstrait"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "1, 2",
+          "ar": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+          "fr": "Louange à Dieu, Seigneur (éducateur) des mondes."
+        },
+        {
+          "ref": "17, 24",
+          "ar": "وَقُل رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا",
+          "fr": "Et dis : Mon Seigneur, fais-leur miséricorde, comme ils m'ont élevé tout petit."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "En quoi suis-je éduqué, en ce moment même, par Celui qui me fait grandir sans que je le voie ?"
+    },
+    {
+      "id": "w-l-y",
+      "letters": [
+        "و",
+        "ل",
+        "ي"
+      ],
+      "root_ar": "و ل ي",
+      "root_tr": "w-l-y",
+      "core_ar": "الوَلَايَة",
+      "core_fr": "La proximité-protection — sainteté et alliance",
+      "field": "Être proche, allié, protecteur. <em>Walī</em> = ami intime, allié, et chez les soufis le <em>saint</em> (proche de Dieu). <em>Walāya</em> est la qualité du <em>walī</em>. Dieu est <em>al-Walī</em> : le Très-Proche-protecteur des croyants.",
+      "glose_gloton": "Gloton souligne la réciprocité : \"Dieu est le Walī de ceux qui croient\" (2,257) — Il l'est parce qu'eux le sont devenus. La <em>walāya</em> soufie n'est pas un état acquis : elle est <em>l'effet</em> de la <em>walāya</em> divine sur l'homme.",
+      "forms": [
+        {
+          "ar": "وَلِيَ",
+          "tr": "waliya",
+          "fr": "être proche, gouverner, prendre soin",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "وَالَى",
+          "tr": "wālā",
+          "fr": "s'allier, se faire proche",
+          "form": "III",
+          "type": "verbe"
+        },
+        {
+          "ar": "تَوَلَّى",
+          "tr": "tawallā",
+          "fr": "se charger de ; se détourner (selon contexte)",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "الوَلِيّ",
+          "tr": "al-Walī",
+          "fr": "le Proche, l'Allié, le Saint",
+          "type": "nom de qualité"
+        },
+        {
+          "ar": "الأَوْلِيَاء",
+          "tr": "al-awliyāʾ",
+          "fr": "les saints, les proches de Dieu",
+          "type": "pluriel"
+        },
+        {
+          "ar": "الوَلَايَة",
+          "tr": "al-walāya",
+          "fr": "la sainteté, la proximité (avec Dieu)",
+          "type": "nom abstrait"
+        },
+        {
+          "ar": "المَوْلَى",
+          "tr": "al-Mawlā",
+          "fr": "le Maître, le Protecteur, l'Ami suprême",
+          "type": "nom"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "2, 257",
+          "ar": "ٱللَّهُ وَلِىُّ ٱلَّذِينَ ءَامَنُوا۟ يُخْرِجُهُم مِّنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِ",
+          "fr": "Dieu est le Walī (Proche-protecteur) de ceux qui croient — Il les fait sortir des ténèbres vers la lumière."
+        },
+        {
+          "ref": "10, 62",
+          "ar": "أَلَآ إِنَّ أَوْلِيَآءَ ٱللَّهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
+          "fr": "Les awliyāʾ (proches) de Dieu — nulle crainte sur eux, ni tristesse."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        56
+      ],
+      "meditation": "Est-ce que je laisse Celui qui veut être proche <em>se faire proche</em> de moi aujourd'hui ?"
+    },
+    {
+      "id": "b-y-n",
+      "letters": [
+        "ب",
+        "ي",
+        "ن"
+      ],
+      "root_ar": "ب ي ن",
+      "root_tr": "b-y-n",
+      "core_ar": "البَيَان",
+      "core_fr": "L'exposition claire — ce qui sépare et fait voir",
+      "field": "Apparaître clairement. Double tension : <em>bayna</em> (entre, l'espace qui sépare) et <em>bayān</em> (l'exposition qui rend clair). Pour qu'une chose apparaisse, il faut qu'un écart se creuse. Le Coran <em>al-mubīn</em> sépare le vrai du faux.",
+      "glose_gloton": "Pour Gloton, la <em>bayān</em> est catégorie esthétique et théologique. Le verset 55,4 (\"Il lui a enseigné l'exposition claire\") fait de la <em>bayān</em> un don divin à l'homme : nous sommes l'animal capable de <em>rendre clair</em>.",
+      "forms": [
+        {
+          "ar": "بَانَ",
+          "tr": "bāna",
+          "fr": "apparaître clairement",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "بَيَّنَ",
+          "tr": "bayyana",
+          "fr": "rendre clair, exposer",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَبَيَّنَ",
+          "tr": "tabayyana",
+          "fr": "devenir clair, se manifester",
+          "form": "V",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "اِسْتَبَانَ",
+          "tr": "istabāna",
+          "fr": "s'éclaircir, devenir évident",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "البَيَان",
+          "tr": "al-bayān",
+          "fr": "l'exposition claire, l'éloquence",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المُبِين",
+          "tr": "al-mubīn",
+          "fr": "ce qui est clair, manifeste",
+          "type": "participe actif"
+        },
+        {
+          "ar": "البَيِّنَة",
+          "tr": "al-bayyina",
+          "fr": "la preuve évidente",
+          "type": "nom"
+        },
+        {
+          "ar": "بَيْن",
+          "tr": "bayna",
+          "fr": "entre (préposition de séparation)",
+          "type": "préposition"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "55, 3-4",
+          "ar": "خَلَقَ ٱلْإِنسَٰنَ ۝ عَلَّمَهُ ٱلْبَيَانَ",
+          "fr": "Il a créé l'homme — Il lui a enseigné l'exposition claire."
+        },
+        {
+          "ref": "2, 256",
+          "ar": "قَد تَّبَيَّنَ ٱلرُّشْدُ مِنَ ٱلْغَىِّ",
+          "fr": "La droiture s'est distinguée clairement de l'égarement."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Qu'est-ce qui demande, en moi, à devenir <em>clair</em> aujourd'hui — fût-ce au prix d'une séparation ?"
+    },
+    {
+      "id": "q-d-r",
+      "letters": [
+        "ق",
+        "د",
+        "ر"
+      ],
+      "root_ar": "ق د ر",
+      "root_tr": "q-d-r",
+      "core_ar": "القَدَر",
+      "core_fr": "La mesure — le décret, la juste portion",
+      "field": "Mesurer, fixer, décréter. Deux nappes liées : <em>qudra</em> (puissance, capacité) et <em>qadar</em> (mesure, décret). Tout ce qui est, est mesuré : \"Nous avons créé toute chose selon une mesure\" (54,49). Le \"destin\" n'est pas fatalité — c'est juste portion.",
+      "glose_gloton": "Gloton dissipe le malentendu fataliste : <em>qadar</em> n'est pas \"ce qui doit arriver\", c'est <em>la mesure</em> selon laquelle chaque être est créé. <em>Al-Qādir</em> est Celui qui sait exactement ce qu'il faut, ni plus ni moins.",
+      "forms": [
+        {
+          "ar": "قَدَرَ",
+          "tr": "qadara",
+          "fr": "mesurer, fixer, pouvoir",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "قَدَّرَ",
+          "tr": "qaddara",
+          "fr": "décréter, prédéterminer",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "اِقْتَدَرَ",
+          "tr": "iqtadara",
+          "fr": "être puissant, avoir capacité",
+          "form": "VIII",
+          "type": "verbe"
+        },
+        {
+          "ar": "القَدَر",
+          "tr": "al-qadar",
+          "fr": "le décret, la mesure divine",
+          "type": "nom"
+        },
+        {
+          "ar": "القُدْرَة",
+          "tr": "al-qudra",
+          "fr": "la puissance, la capacité",
+          "type": "nom abstrait"
+        },
+        {
+          "ar": "القَدِير",
+          "tr": "al-Qadīr",
+          "fr": "le Tout-Puissant (intensif)",
+          "type": "nom intensif"
+        },
+        {
+          "ar": "القَادِر",
+          "tr": "al-Qādir",
+          "fr": "le Puissant (capable)",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المِقْدَار",
+          "tr": "al-miqdār",
+          "fr": "la mesure, la quantité",
+          "type": "nom concret"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "54, 49",
+          "ar": "إِنَّا كُلَّ شَىْءٍ خَلَقْنَٰهُ بِقَدَرٍ",
+          "fr": "Nous avons créé toute chose selon une mesure."
+        },
+        {
+          "ref": "97, 1",
+          "ar": "إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+          "fr": "Nous l'avons fait descendre dans la Nuit du Décret."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [
+        70
+      ],
+      "meditation": "Et si ce qui m'arrive aujourd'hui n'était ni hasard ni punition — mais la <em>juste mesure</em> de cet instant ?"
+    },
+    {
+      "id": "kh-y-r",
+      "letters": [
+        "خ",
+        "ي",
+        "ر"
+      ],
+      "root_ar": "خ ي ر",
+      "root_tr": "kh-y-r",
+      "core_ar": "الخَيْر",
+      "core_fr": "Le bien — et l'acte de choisir",
+      "field": "<em>Khāra</em> : être bon ; <em>ikhtāra</em> : choisir. Une seule racine pour <em>le bien</em> et <em>le choix</em> — comme si choisir, c'était aller au bon. La <em>istikhāra</em> est l'acte par lequel le croyant demande à Dieu le bon choix.",
+      "glose_gloton": "Pour Gloton, choisir n'est pas préférer : c'est <em>aller chercher le bien</em>. Le verbe contient l'orientation morale du choix. Mal choisir, ce n'est pas se tromper de préférence — c'est manquer le bien.",
+      "forms": [
+        {
+          "ar": "خَارَ",
+          "tr": "khāra",
+          "fr": "être bon",
+          "form": "I",
+          "type": "verbe d'état"
+        },
+        {
+          "ar": "اِخْتَارَ",
+          "tr": "ikhtāra",
+          "fr": "choisir, élire",
+          "form": "VIII",
+          "type": "verbe réflexif"
+        },
+        {
+          "ar": "اِسْتَخَارَ",
+          "tr": "istakhāra",
+          "fr": "demander à Dieu le meilleur choix",
+          "form": "X",
+          "type": "verbe"
+        },
+        {
+          "ar": "الخَيْر",
+          "tr": "al-khayr",
+          "fr": "le bien, ce qui vaut",
+          "type": "nom"
+        },
+        {
+          "ar": "الخِيرَة",
+          "tr": "al-khīra",
+          "fr": "l'élection, le choix divin",
+          "type": "nom"
+        },
+        {
+          "ar": "الِاسْتِخَارَة",
+          "tr": "al-istikhāra",
+          "fr": "la prière de discernement",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "خَيْرٌ مِّن",
+          "tr": "khayrun min",
+          "fr": "meilleur que",
+          "type": "comparatif"
+        },
+        {
+          "ar": "الأَخْيَار",
+          "tr": "al-akhyār",
+          "fr": "les meilleurs, les élus",
+          "type": "pluriel"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "28, 68",
+          "ar": "وَرَبُّكَ يَخْلُقُ مَا يَشَآءُ وَيَخْتَارُ ۗ مَا كَانَ لَهُمُ ٱلْخِيَرَةُ",
+          "fr": "Et ton Seigneur crée ce qu'Il veut et choisit. Le choix ne leur appartient pas."
+        },
+        {
+          "ref": "2, 216",
+          "ar": "وَعَسَىٰٓ أَن تَكْرَهُوا۟ شَيْـًٔا وَهُوَ خَيْرٌ لَّكُمْ",
+          "fr": "Il se peut que vous détestiez une chose qui est un bien pour vous."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Ce que je préfère — est-ce vraiment le <em>bien</em>, ou seulement ce qui me plaît ?"
+    },
+    {
+      "id": "kh-l-d",
+      "letters": [
+        "خ",
+        "ل",
+        "د"
+      ],
+      "root_ar": "خ ل د",
+      "root_tr": "kh-l-d",
+      "core_ar": "الخُلُود",
+      "core_fr": "L'éternité — durer sans terme",
+      "field": "Durer, demeurer sans fin. <em>Khulūd</em> est la durée éternelle — celle promise au Jardin (<em>jannāt al-khuld</em>, 25,15), redoutable pour qui s'attache au Feu. Ce qui est éternel l'est <em>parce que Dieu le veut tel</em> : suspendu à Sa permanence.",
+      "glose_gloton": "Gloton souligne : <em>khulūd</em> n'est pas la même éternité que celle de Dieu. Dieu est <em>al-Bāqī</em> (permanent par soi). Le créé devient <em>khālid</em> par décret. Éternité essentielle et éternité donnée — toute la vie apprend cette différence.",
+      "forms": [
+        {
+          "ar": "خَلَدَ",
+          "tr": "khalada",
+          "fr": "durer, demeurer",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَخْلَدَ",
+          "tr": "akhlada",
+          "fr": "rendre éternel ; s'attacher (à la terre)",
+          "form": "IV",
+          "type": "verbe"
+        },
+        {
+          "ar": "الخُلُود",
+          "tr": "al-khulūd",
+          "fr": "l'éternité, la durée perpétuelle",
+          "type": "nom"
+        },
+        {
+          "ar": "الخَالِد",
+          "tr": "al-khālid",
+          "fr": "l'éternel (créé)",
+          "type": "participe actif"
+        },
+        {
+          "ar": "خَالِدِينَ فِيهَا",
+          "tr": "khālidīna fīhā",
+          "fr": "y demeurant éternellement (formule coranique)",
+          "type": "expression"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "25, 15",
+          "ar": "قُلْ أَذَٰلِكَ خَيْرٌ أَمْ جَنَّةُ ٱلْخُلْدِ ٱلَّتِى وُعِدَ ٱلْمُتَّقُونَ",
+          "fr": "Dis : Cela est-il meilleur, ou le Jardin de l'éternité promis aux vigilants ?"
+        },
+        {
+          "ref": "11, 108",
+          "ar": "خَٰلِدِينَ فِيهَا مَا دَامَتِ ٱلسَّمَٰوَٰتُ وَٱلْأَرْضُ",
+          "fr": "Y demeurant éternellement, tant que durent les cieux et la terre."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Qu'est-ce qui, en moi, voudrait <em>durer toujours</em> — et qu'est-ce qui consent à passer ?"
+    },
+    {
+      "id": "j-n-n",
+      "letters": [
+        "ج",
+        "ن",
+        "ن"
+      ],
+      "root_ar": "ج ن ن",
+      "root_tr": "j-n-n",
+      "core_ar": "الجَنَّة",
+      "core_fr": "Le jardin caché — couvrir, abriter, voiler",
+      "field": "<em>Janna</em> = couvrir, voiler, abriter. En cascade : <em>jannā</em> (jardin, frondaisons qui couvrent), <em>janīn</em> (embryon caché), <em>jinn</em> (invisibles), <em>junūn</em> (folie, esprit voilé). Tous disent <em>ce qui est tenu caché</em>.",
+      "glose_gloton": "Pour Gloton, le paradis n'est pas un \"au-delà\" abstrait : c'est <em>une autre épaisseur du même réel</em>, voilée seulement. \"Précipitez-vous vers un jardin large comme les cieux et la terre\" (3,133) — il est déjà là, simplement couvert.",
+      "forms": [
+        {
+          "ar": "جَنَّ",
+          "tr": "janna",
+          "fr": "couvrir, voiler, abriter",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "أَجَنَّ",
+          "tr": "ajanna",
+          "fr": "rendre fou ; cacher",
+          "form": "IV",
+          "type": "verbe"
+        },
+        {
+          "ar": "الجَنَّة",
+          "tr": "al-janna",
+          "fr": "le jardin, le paradis",
+          "type": "nom"
+        },
+        {
+          "ar": "الجَنَّات",
+          "tr": "al-jannāt",
+          "fr": "les jardins (souvent au pluriel pour le paradis)",
+          "type": "pluriel"
+        },
+        {
+          "ar": "الجَنِين",
+          "tr": "al-janīn",
+          "fr": "l'embryon, le fœtus",
+          "type": "nom"
+        },
+        {
+          "ar": "الجِنّ",
+          "tr": "al-jinn",
+          "fr": "les djinns, les êtres invisibles",
+          "type": "nom collectif"
+        },
+        {
+          "ar": "الجُنُون",
+          "tr": "al-junūn",
+          "fr": "la folie (l'esprit voilé)",
+          "type": "nom"
+        },
+        {
+          "ar": "المَجْنُون",
+          "tr": "al-majnūn",
+          "fr": "le fou (le \"djinné\")",
+          "type": "participe passif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "3, 133",
+          "ar": "وَسَارِعُوٓا۟ إِلَىٰ مَغْفِرَةٍ مِّن رَّبِّكُمْ وَجَنَّةٍ عَرْضُهَا ٱلسَّمَٰوَٰتُ وَٱلْأَرْضُ",
+          "fr": "Et hâtez-vous vers le pardon de votre Seigneur et un jardin large comme les cieux et la terre."
+        },
+        {
+          "ref": "55, 46",
+          "ar": "وَلِمَنْ خَافَ مَقَامَ رَبِّهِۦ جَنَّتَانِ",
+          "fr": "Et pour qui a craint la station de son Seigneur, deux jardins."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Le Jardin est <em>couvert</em>, non absent — où, ici-bas, en perçois-je l'épaisseur cachée ?"
+    },
+    {
+      "id": "n-z-l",
+      "letters": [
+        "ن",
+        "ز",
+        "ل"
+      ],
+      "root_ar": "ن ز ل",
+      "root_tr": "n-z-l",
+      "core_ar": "النُّزُول",
+      "core_fr": "La descente — venue d'en haut",
+      "field": "Descendre. La révélation est <em>tanzīl</em> ou <em>nuzūl</em> : la Parole descend du Très-Haut. <em>Manzil</em> = lieu où l'on descend, étape. La pluie aussi descend. Tout don véritable vient d'en haut.",
+      "glose_gloton": "Gloton insiste : le <em>tanzīl</em> est <em>processus continu</em>, non événement passé. Le Coran continue de \"descendre\" sur qui le lit avec foi — il s'adapte au <em>manzil</em> (station) du lecteur. À chaque palier, une parole peut descendre.",
+      "forms": [
+        {
+          "ar": "نَزَلَ",
+          "tr": "nazala",
+          "fr": "descendre",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "نَزَّلَ",
+          "tr": "nazzala",
+          "fr": "faire descendre par étapes",
+          "form": "II",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "أَنْزَلَ",
+          "tr": "anzala",
+          "fr": "faire descendre (en bloc)",
+          "form": "IV",
+          "type": "verbe causatif"
+        },
+        {
+          "ar": "تَنَزَّلَ",
+          "tr": "tanazzala",
+          "fr": "descendre progressivement",
+          "form": "V",
+          "type": "verbe"
+        },
+        {
+          "ar": "النُّزُول",
+          "tr": "an-nuzūl",
+          "fr": "la descente",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "التَّنْزِيل",
+          "tr": "at-tanzīl",
+          "fr": "la révélation (descente progressive)",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "المَنْزِل",
+          "tr": "al-manzil",
+          "fr": "le lieu où l'on descend, l'étape, la maison",
+          "type": "nom de lieu"
+        },
+        {
+          "ar": "المُنَزَّل",
+          "tr": "al-munazzal",
+          "fr": "ce qui est fait descendre (la révélation)",
+          "type": "participe passif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "17, 105",
+          "ar": "وَبِٱلْحَقِّ أَنزَلْنَٰهُ وَبِٱلْحَقِّ نَزَلَ",
+          "fr": "C'est par le Vrai que Nous l'avons fait descendre, et par le Vrai qu'il est descendu."
+        },
+        {
+          "ref": "97, 4",
+          "ar": "تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا",
+          "fr": "Les anges et le Souffle y descendent."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Qu'est-ce qui voudrait <em>descendre</em> sur moi en cet instant, si je faisais silence ?"
+    },
+    {
+      "id": "ʿ-r-j",
+      "letters": [
+        "ع",
+        "ر",
+        "ج"
+      ],
+      "root_ar": "ع ر ج",
+      "root_tr": "ʿ-r-j",
+      "core_ar": "المِعْرَاج",
+      "core_fr": "L'ascension — monter par degrés",
+      "field": "Monter, gravir. <em>Miʿrāj</em> = échelle, degré, voie ascensionnelle — et par excellence l'ascension nocturne du Prophète. Le couple <em>nuzūl / ʿurūj</em> structure la cosmologie : la révélation descend, l'âme monte.",
+      "glose_gloton": "Pour Gloton, <em>ʿaraja</em> évoque une montée <em>par paliers</em>, non un envol direct. Sept cieux à traverser, sept stations à franchir. Le <em>miʿrāj</em> du Prophète est le modèle ; chaque acte sincère est une marche de l'échelle.",
+      "forms": [
+        {
+          "ar": "عَرَجَ",
+          "tr": "ʿaraja",
+          "fr": "monter, gravir",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "عَرَّجَ",
+          "tr": "ʿarrajа",
+          "fr": "faire monter, faire une halte",
+          "form": "II",
+          "type": "verbe"
+        },
+        {
+          "ar": "المِعْرَاج",
+          "tr": "al-Miʿrāj",
+          "fr": "l'échelle d'ascension, l'ascension nocturne",
+          "type": "nom"
+        },
+        {
+          "ar": "المَعَارِج",
+          "tr": "al-Maʿārij",
+          "fr": "les degrés (titre de la sourate 70)",
+          "type": "pluriel"
+        },
+        {
+          "ar": "العُرُوج",
+          "tr": "al-ʿurūj",
+          "fr": "l'ascension",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "العَارِج",
+          "tr": "al-ʿārij",
+          "fr": "celui qui monte",
+          "type": "participe actif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "70, 3-4",
+          "ar": "مِّنَ ٱللَّهِ ذِى ٱلْمَعَارِجِ ۝ تَعْرُجُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ إِلَيْهِ",
+          "fr": "De Dieu, Maître des degrés. Les anges et le Souffle montent vers Lui."
+        },
+        {
+          "ref": "17, 1",
+          "ar": "سُبْحَٰنَ ٱلَّذِىٓ أَسْرَىٰ بِعَبْدِهِۦ لَيْلًا",
+          "fr": "Gloire à Celui qui fit voyager Son serviteur de nuit. (verset du voyage nocturne / miʿrāj)"
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Quelle marche puis-je gravir aujourd'hui — petite, mais réelle ?"
+    },
+    {
+      "id": "q-w-l",
+      "letters": [
+        "ق",
+        "و",
+        "ل"
+      ],
+      "root_ar": "ق و ل",
+      "root_tr": "q-w-l",
+      "core_ar": "القَوْل",
+      "core_fr": "La parole — dire, déclarer, faire être par la voix",
+      "field": "Dire. La cosmologie coranique : Dieu crée en disant <em>kun</em> (Sois) et <em>fa-yakūn</em> (cela est). Le <em>qawl</em> divin est performatif — il ne décrit pas, il fait être. Le <em>qawl</em> humain est appelé à imiter, à sa mesure, cette dignité.",
+      "glose_gloton": "Gloton souligne la responsabilité immense : 33,70 enjoint <em>qulū qawlan sadīdan</em> (\"dites une parole droite\"). Le <em>qawl</em> n'est jamais innocent — c'est un acte créateur à petite échelle. Silence, véracité, invocation : trois modulations d'un même <em>qawl</em> ajusté.",
+      "forms": [
+        {
+          "ar": "قَالَ",
+          "tr": "qāla",
+          "fr": "dire",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "تَقَوَّلَ",
+          "tr": "taqawwala",
+          "fr": "inventer des paroles, calomnier",
+          "form": "V",
+          "type": "verbe"
+        },
+        {
+          "ar": "القَوْل",
+          "tr": "al-qawl",
+          "fr": "la parole, le dire",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "القَائِل",
+          "tr": "al-qāʾil",
+          "fr": "celui qui dit, le locuteur",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المَقُول",
+          "tr": "al-maqūl",
+          "fr": "ce qui est dit",
+          "type": "participe passif"
+        },
+        {
+          "ar": "المَقَال",
+          "tr": "al-maqāl",
+          "fr": "le propos, le discours",
+          "type": "nom"
+        },
+        {
+          "ar": "قُلْ",
+          "tr": "qul",
+          "fr": "Dis ! (impératif fréquent en ouverture de sourate)",
+          "type": "impératif"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "33, 70",
+          "ar": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ وَقُولُوا۟ قَوْلًا سَدِيدًا",
+          "fr": "Ô vous qui croyez, soyez vigilants envers Dieu, et dites une parole juste."
+        },
+        {
+          "ref": "2, 117",
+          "ar": "وَإِذَا قَضَىٰٓ أَمْرًا فَإِنَّمَا يَقُولُ لَهُۥ كُن فَيَكُونُ",
+          "fr": "Lorsqu'Il décide une chose, Il lui dit simplement : Sois — et elle est."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Ma parole, ce matin, est-elle <em>sadīda</em> — droite, juste, efficace pour le bien ?"
+    },
+    {
+      "id": "s-ʾ-l",
+      "letters": [
+        "س",
+        "ا",
+        "ل"
+      ],
+      "root_ar": "س ء ل",
+      "root_tr": "s-ʾ-l",
+      "core_ar": "السُّؤَال",
+      "core_fr": "La question — demander, mendier, interroger",
+      "field": "Demander : poser une question, solliciter, mendier. Au Jour, chacun sera <em>masʾūl</em> (interrogé). La prière est un <em>suʾāl</em> — dont le Prophète disait : <em>la prière est la moelle de l'adoration</em>. Demander n'est pas faible : c'est la posture juste du créé.",
+      "glose_gloton": "Pour Gloton, la pauvreté ontologique du créé se traduit en posture par la <em>demande</em>. Le sage soufi <em>demande</em> sans cesse — non par avidité, mais par conscience d'être radicalement dépendant.",
+      "forms": [
+        {
+          "ar": "سَأَلَ",
+          "tr": "saʾala",
+          "fr": "demander, interroger",
+          "form": "I",
+          "type": "verbe"
+        },
+        {
+          "ar": "تَسَاءَلَ",
+          "tr": "tasāʾala",
+          "fr": "s'interroger mutuellement, se questionner",
+          "form": "VI",
+          "type": "verbe"
+        },
+        {
+          "ar": "السُّؤَال",
+          "tr": "as-suʾāl",
+          "fr": "la question, la demande",
+          "type": "nom d'action"
+        },
+        {
+          "ar": "السَّائِل",
+          "tr": "as-sāʾil",
+          "fr": "celui qui demande, le mendiant",
+          "type": "participe actif"
+        },
+        {
+          "ar": "المَسْؤُول",
+          "tr": "al-masʾūl",
+          "fr": "celui à qui on demande compte, le responsable",
+          "type": "participe passif"
+        },
+        {
+          "ar": "المَسْأَلَة",
+          "tr": "al-masʾala",
+          "fr": "la question (de fiqh ou de doctrine)",
+          "type": "nom"
+        },
+        {
+          "ar": "المَسْؤُولِيَّة",
+          "tr": "al-masʾūliyya",
+          "fr": "la responsabilité (terme moderne)",
+          "type": "nom abstrait"
+        }
+      ],
+      "quran": [
+        {
+          "ref": "16, 93",
+          "ar": "وَلَتُسْـَٔلُنَّ عَمَّا كُنتُمْ تَعْمَلُونَ",
+          "fr": "Et vous serez assurément interrogés sur ce que vous faisiez."
+        },
+        {
+          "ref": "2, 186",
+          "ar": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ",
+          "fr": "Et lorsque Mes serviteurs t'interrogent sur Moi — Je suis proche, Je réponds à l'appel de qui M'appelle."
+        }
+      ],
+      "dict_links": [],
+      "nom_links": [],
+      "meditation": "Quelle question, en moi, demande à être posée — non à un autre, mais à Lui ?"
+    }
+  ]
+}

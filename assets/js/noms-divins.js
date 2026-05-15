@@ -115,24 +115,12 @@
           🕯️ Méditer ce Nom
         </button>
       </div>
-      <div class="nom-fiche__like">
-        <p>Ce Nom vous a touché ?</p>
-        <button data-lyket-type="like"
-                data-lyket-id="nom-${String(n.n).padStart(2,'0')}-${n.tr.toLowerCase().replace(/[^a-z]/g,'')}"
-                data-lyket-namespace="lavoiedusoufisme-noms">
-          ♥
-        </button>
-      </div>
       <div class="nom-fiche__nav">
         <button data-nav="prev">← Précédent</button>
         <button data-nav="random">⚘ Aléatoire</button>
         <button data-nav="next">Suivant →</button>
       </div>
     `;
-    // Demander à Lyket de rescanner le DOM pour activer le nouveau bouton
-    if (window.Lyket && typeof window.Lyket.mount === 'function') {
-      setTimeout(() => window.Lyket.mount(), 50);
-    }
     modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
@@ -177,19 +165,11 @@
   let currentNom = null;
   let tasbihCount = 0;
   let tasbihTarget = 99;
+  let soundOn = (localStorage.getItem('nom-med-sound') !== 'off');
+  let vibrationOn = (localStorage.getItem('nom-med-vibration') !== 'off');
+  let counterOn = (localStorage.getItem('nom-med-counter') !== 'off');
   let audioCtx = null;
   const hasVibrationSupport = ('vibrate' in navigator);
-  const storageGet = key => {
-    try { return localStorage.getItem(key); }
-    catch (e) { return null; }
-  };
-  const storageSet = (key, value) => {
-    try { localStorage.setItem(key, value); }
-    catch (e) {}
-  };
-  let soundOn = (storageGet('nom-med-sound') !== 'off');
-  let vibrationOn = hasVibrationSupport && (storageGet('nom-med-vibration') !== 'off');
-  let counterOn = (storageGet('nom-med-counter') !== 'off');
 
   function getAudioCtx() {
     if (!audioCtx) {
@@ -203,59 +183,57 @@
     return audioCtx;
   }
 
-  function playSoftPartial(ctx, {
-    freq,
-    endFreq = freq,
-    delay = 0,
-    duration = 0.18,
-    gainValue = 0.035,
-    type = 'sine'
-  }) {
-    const now = ctx.currentTime + delay;
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-    osc.type = type;
-    osc.frequency.setValueAtTime(freq, now);
-    if (endFreq !== freq) {
-      osc.frequency.exponentialRampToValueAtTime(endFreq, now + duration);
-    }
-    gain.gain.setValueAtTime(0.0001, now);
-    gain.gain.exponentialRampToValueAtTime(gainValue, now + 0.018);
-    gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-    osc.start(now);
-    osc.stop(now + duration + 0.03);
-  }
-
-  // Petit son doux, plus bois que bip électronique.
+  // Petit tic discret — bois clair
   function playTick() {
     if (!soundOn) return;
     const ctx = getAudioCtx();
     if (!ctx) return;
-    playSoftPartial(ctx, { freq: 540, endFreq: 410, duration: 0.12, gainValue: 0.028, type: 'triangle' });
-    playSoftPartial(ctx, { freq: 810, endFreq: 720, delay: 0.012, duration: 0.11, gainValue: 0.012 });
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(880, ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(330, ctx.currentTime + 0.08);
+    gain.gain.setValueAtTime(0, ctx.currentTime);
+    gain.gain.linearRampToValueAtTime(0.28, ctx.currentTime + 0.005);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.13);
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.start(); osc.stop(ctx.currentTime + 0.15);
   }
 
-  // Carillon intermédiaire — pour les paliers (33, 66), discret et court.
+  // Carillon intermédiaire — pour les paliers (33, 66)
   function playChime() {
     if (!soundOn) return;
     const ctx = getAudioCtx();
     if (!ctx) return;
-    playSoftPartial(ctx, { freq: 660, duration: 0.62, gainValue: 0.045 });
-    playSoftPartial(ctx, { freq: 990, delay: 0.035, duration: 0.58, gainValue: 0.025 });
-    playSoftPartial(ctx, { freq: 1320, delay: 0.075, duration: 0.42, gainValue: 0.012 });
+    [1320, 1980].forEach((freq, i) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.20 / (i + 1), ctx.currentTime + 0.01);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.7);
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.start(); osc.stop(ctx.currentTime + 0.7);
+    });
   }
 
-  // Cloche pleine — fin de cycle (99, 100, 1000), ample mais peu agressive.
+  // Cloche pleine — fin de cycle (99, 100, 1000)
   function playBell() {
     if (!soundOn) return;
     const ctx = getAudioCtx();
     if (!ctx) return;
-    playSoftPartial(ctx, { freq: 440, duration: 1.7, gainValue: 0.055 });
-    playSoftPartial(ctx, { freq: 660, delay: 0.025, duration: 1.5, gainValue: 0.04 });
-    playSoftPartial(ctx, { freq: 990, delay: 0.06, duration: 1.2, gainValue: 0.023 });
-    playSoftPartial(ctx, { freq: 1320, delay: 0.11, duration: 0.9, gainValue: 0.012 });
+    [660, 990, 1320, 1980].forEach((freq, i) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.frequency.value = freq;
+      osc.type = 'sine';
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.22 / (i + 1), ctx.currentTime + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 2.2);
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.start(); osc.stop(ctx.currentTime + 2.2);
+    });
   }
 
   function vibrate(ms) {
@@ -352,7 +330,6 @@
 
   function startAuto() {
     if (autoTimer) return;
-    getAudioCtx(); // Prépare l'audio pendant le geste utilisateur, utile sur iOS/Safari.
     autoTimer = setInterval(() => tasbihTap(), autoIntervalMs);
     updateAutoUI(true);
   }
@@ -429,8 +406,8 @@
           <button class="nom-med-mode__toggle ${soundOn ? 'is-on' : 'is-off'}" data-action="toggle-sound">
             🔊 Son
           </button>
-          <button class="nom-med-mode__toggle ${vibrationOn ? 'is-on' : 'is-off'}" data-action="toggle-vibration" title="${hasVibrationSupport ? 'Vibration' : 'Vibration non supportée sur ce téléphone ou navigateur'}"${hasVibrationSupport ? '' : ' disabled aria-disabled="true"'}>
-            📳 ${hasVibrationSupport ? 'Vibration' : 'Vibration indisponible'}
+          <button class="nom-med-mode__toggle ${vibrationOn ? 'is-on' : 'is-off'}" data-action="toggle-vibration" title="${hasVibrationSupport ? 'Vibration' : 'Vibration non supportée sur ce navigateur'}">
+            📳 Vibration${!hasVibrationSupport ? ' <span style="opacity:0.5;font-size:0.75em;">(indispo.)</span>' : ''}
           </button>
           <button class="nom-med-mode__toggle ${counterOn ? 'is-on' : 'is-off'}" data-action="toggle-counter">
             📿 Compteur
@@ -439,7 +416,6 @@
       </div>
     `;
     medModeEl.classList.add('open');
-    medModeEl.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 
     placeBeads(99);
@@ -450,7 +426,6 @@
     if (!medModeEl) return;
     stopAuto();
     medModeEl.classList.remove('open');
-    medModeEl.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
     if ('speechSynthesis' in window) speechSynthesis.cancel();
     currentNom = null;
@@ -482,15 +457,14 @@
         }
         if (btn.dataset.action === 'toggle-sound') {
           soundOn = !soundOn;
-          storageSet('nom-med-sound', soundOn ? 'on' : 'off');
+          localStorage.setItem('nom-med-sound', soundOn ? 'on' : 'off');
           btn.classList.toggle('is-on', soundOn);
           btn.classList.toggle('is-off', !soundOn);
           return;
         }
         if (btn.dataset.action === 'toggle-vibration') {
-          if (!hasVibrationSupport) return;
           vibrationOn = !vibrationOn;
-          storageSet('nom-med-vibration', vibrationOn ? 'on' : 'off');
+          localStorage.setItem('nom-med-vibration', vibrationOn ? 'on' : 'off');
           btn.classList.toggle('is-on', vibrationOn);
           btn.classList.toggle('is-off', !vibrationOn);
           if (vibrationOn) vibrate(50); // petit feedback à l'activation
@@ -498,7 +472,7 @@
         }
         if (btn.dataset.action === 'toggle-counter') {
           counterOn = !counterOn;
-          storageSet('nom-med-counter', counterOn ? 'on' : 'off');
+          localStorage.setItem('nom-med-counter', counterOn ? 'on' : 'off');
           btn.classList.toggle('is-on', counterOn);
           btn.classList.toggle('is-off', !counterOn);
           const tasbih = medModeEl.querySelector('.nom-med-mode__tasbih');

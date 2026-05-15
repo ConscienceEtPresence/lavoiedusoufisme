@@ -471,3 +471,10 @@
 @media (max-width: 600px) {
   .hero__title-ar { font-size: 1.4rem; margin-bottom: 0.3rem; }
 }
+
+/* Les noms dorés dans la lede : Secret et Invité */
+.hero__lede em {
+  color: var(--gold, #B8860B);
+  font-style: italic;
+  font-weight: 500;
+}

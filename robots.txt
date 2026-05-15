@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Pages techniques exclues
+Disallow: /sw.js
+Disallow: /scripts/
+
+Sitemap: https://lavoiedudedans.fr/sitemap.xml

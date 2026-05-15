@@ -1,29 +1,53 @@
 {
-  "name": "La voie du soufisme",
-  "short_name": "Soufisme",
-  "description": "Bibliothèque vivante du soufisme — en français, arabe vocalisé.",
-  "start_url": "/lavoiedusoufisme/",
-  "scope": "/lavoiedusoufisme/",
+  "name": "La voie du dedans",
+  "short_name": "La voie",
+  "description": "Bibliothèque contemplative — soufisme, poésie, noms de l'amour, contes, racines arabes du Coran.",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#0F1830",
+  "orientation": "portrait-primary",
+  "background_color": "#FBF7EF",
   "theme_color": "#0F1830",
+  "categories": ["education", "books", "lifestyle"],
+  "lang": "fr",
   "icons": [
     {
-      "src": "assets/img/icon-192.png",
+      "src": "/assets/img/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "assets/img/icon-512.png",
+      "src": "/assets/img/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "assets/img/icon-512.png",
+      "src": "/assets/img/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Les noms de l'amour",
+      "short_name": "Amour",
+      "description": "Cent manières d'aimer en arabe",
+      "url": "/pages/amour/"
+    },
+    {
+      "name": "Tirer un signe",
+      "short_name": "Tirage",
+      "description": "Un signe au hasard parmi tout le site",
+      "url": "/?tirage=1"
+    },
+    {
+      "name": "Contes de Hodja",
+      "short_name": "Contes",
+      "description": "Les contes de Nasr Eddin Hodja",
+      "url": "/pages/contes/nasr-eddin/"
     }
   ]
 }

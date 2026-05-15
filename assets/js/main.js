@@ -152,3 +152,18 @@ document.querySelectorAll('.period').forEach(el => observer.observe(el));
   if (document.body) buildToggle();
   else document.addEventListener('DOMContentLoaded', buildToggle);
 })();
+
+// 5. Service Worker — mode offline + PWA installable
+(function() {
+  if (!('serviceWorker' in navigator)) return;
+  // Enregistre uniquement en production (lavoiedudedans.fr ou GitHub Pages), pas en local dev
+  const isProd = location.hostname.endsWith('lavoiedudedans.fr')
+              || location.hostname.endsWith('lavoiedudedans.com')
+              || location.hostname.endsWith('github.io');
+  if (!isProd) return;
+
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .catch(err => console.warn('SW registration failed:', err));
+  });
+})();

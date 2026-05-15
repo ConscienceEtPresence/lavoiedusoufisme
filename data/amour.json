@@ -100,6 +100,158 @@
       },
       "meditation": "À qui peux-tu te taire, sans que le silence pèse ?",
       "ouverture": "Dans le lexique soufi, <em>uns</em> est le nom de la station où le serviteur a cessé de fuir la présence de Dieu — où Il n'est plus une instance redoutée, mais une compagnie cherchée. C'est l'inverse exact de <em>wahsha</em>, la peur sauvage. La <em>muʾānasa</em> humaine est donc une école : aimer apaise — ou révèle l'inquiétude qu'il fallait nommer."
+    },
+    {
+      "id": "ghazal",
+      "ar": "الْغَزَل",
+      "translit": "al-ghazal",
+      "definition": "Le chant amoureux, la poésie galante",
+      "station": "chant",
+      "themes": ["eclat","douceur"],
+      "racine": "غ ز ل",
+      "famille": ["taghazzala","mughazil"],
+      "description": "Avant d'être un genre poétique, <em>ghazal</em> est un geste : l'art de filer la parole comme on file la laine — d'où le sens premier de la racine <em>gh-z-l</em>, <em>filer, tisser</em>. Le poète amoureux tisse ses vers comme on tisse un voile, et c'est sous ce voile que l'aimée apparaîtra mieux que dans sa nudité.\n\nCelui qui pratique le <em>taghazzul</em> est fortement attiré par une personne et l'exprime par la beauté du langage. De là, le ghazal devient le grand genre lyrique arabe et persan : le poème d'amour bref, ciselé, où chaque distique se suffit à lui-même tout en s'enchaînant aux suivants. Hâfiz de Chiraz (XIVe siècle) en est le maître absolu, et chez lui le ghazal humain devient le voile transparent d'un ghazal divin.\n\nQuand la flatterie passe les bornes de la sincérité, l'arabe la nomme <em>khitāl</em> — pour distinguer le chant qui révèle de la séduction qui ment.",
+      "temoin": {
+        "ar": "كُلُّ غَزَلٍ مَا لَمْ يَكُنْ صِدْقًا فَهْوَ خِتَال",
+        "translit": "kullu ghazalin mā lam yakun ṣidqan fa-huwa khitāl",
+        "fr": "Tout chant d'amour qui n'est pas vrai n'est que tromperie",
+        "source": "Adage arabe classique"
+      },
+      "meditation": "Quand tu parles d'amour — tisses-tu un voile qui révèle, ou un voile qui ment ?",
+      "ouverture": "Le soufisme a fait du ghazal son langage par excellence. Quand Ibn al-Fāriḍ ou Ibn ʿArabī chantent une bien-aimée, ils chantent toujours, sous l'image, le visage divin. Le voile poétique n'est pas un déguisement : c'est la seule manière de regarder une Lumière qui aveuglerait, vue de face. La beauté humaine est, dit Ibn ʿArabī, <em>la fenêtre du Réel</em>."
+    },
+    {
+      "id": "hubb-oudri",
+      "ar": "الْحُبُّ الْعُذْرِيّ",
+      "translit": "al-ḥubb al-ʿudhrī",
+      "definition": "L'amour courtois, l'amour pur des Banū ʿUdhrah",
+      "station": "chant",
+      "themes": ["separation","douceur"],
+      "racine": "ع ذ ر",
+      "famille": ["udhra","ʿudhri"],
+      "description": "On nomme <em>ḥubb ʿudhrī</em> l'amour qui se fonde, paradoxalement, sur le refus de l'union. Son inventeur théorique est Ibn Dāwūd al-Iṣbahānī (868-910), juriste et poète que la tradition surnomme « le Boileau des Arabes », dans son <em>Kitāb az-Zahra</em> — <em>Le Livre de la fleur</em>. Selon lui, l'amour véritable repose sur trois piliers : la distance (<em>ʿazl</em>), la continence pieuse (<em>warāʿ, ʿiffa</em>), et la séparation acceptée.\n\nLe mot vient des <em>Banū ʿUdhrah</em>, tribu yéménite légendaire où l'on disait : <em>nous mourons quand nous aimons</em>. C'est dans cette tradition que naît la figure de Majnûn — Qays ibn al-Mulawwaḥ, devenu fou de Laylā au point que la séparation ne l'éloigne pas d'elle, mais la grave en lui à jamais. L'union, dans cet amour, n'est pas refusée par accident : elle est <em>évitée comme contamination</em>. Aimer, c'est garder vivant le manque.\n\nOn appelle aussi cet amour <em>al-hawā al-ʿudhrī</em>. Le troubadour occitan, plus tard, en sera l'héritier direct, par les voies arabo-andalouses.",
+      "temoin": {
+        "ar": "أَمُرُّ عَلَى الدِّيَارِ دِيَارِ لَيْلَى",
+        "translit": "amurru ʿalā d-diyāri diyāri Laylā",
+        "fr": "Je passe devant la maison, la maison de Laylā,\nje baise ce mur-ci, j'embrasse celui-là.\nEst-ce d'aimer les murs que je perds la raison ?\n— Non, mon cœur. C'est d'aimer les gens qui habitent dedans.",
+        "source": "Majnûn Laylā, VIIe siècle"
+      },
+      "meditation": "Qu'est-ce que tu aimerais — si tu acceptais de ne jamais l'avoir ?",
+      "ouverture": "La voie soufie reprend exactement cette intuition : l'Aimé véritable n'est pas saisissable. Toute saisie est un voile posé sur la Présence. Et le voile, dit Ibn ʿArabī, est aussi l'apparition. Le ʿudhrī apprend dans l'amour humain ce que le soufi apprend dans l'amour divin — que la séparation n'est pas l'absence, mais l'autre nom de la rencontre."
+    },
+    {
+      "id": "mahabba",
+      "ar": "الْمَحَبَّة",
+      "translit": "al-maḥabba",
+      "definition": "L'amour-amitié, l'amour qui se remémore",
+      "station": "chant",
+      "themes": ["douceur","lien"],
+      "racine": "ح ب ب",
+      "famille": ["hubb","mouhibb","mahbub"],
+      "description": "<em>Maḥabba</em> partage sa racine avec <em>ḥubb</em>, mais désigne quelque chose de plus net, de plus blanc, de plus durable. Une étymologie ancienne rattache le mot à <em>ṣafāʾ</em> — la <em>pureté</em>, la <em>blancheur</em> — comme si la maḥabba était l'amour <em>décanté</em>, débarrassé de ses orages.\n\nDans le vocabulaire de la mystique, <em>al-maḥabba</em> s'adresse essentiellement à Dieu. C'est la passion de l'orant qui psalmodie le Coran sans pouvoir s'arrêter ; c'est la flamme du mystique qui, par le <em>dhikr</em>, se remémore Dieu jusqu'à ce que la remémoration et le remémoré se confondent. Ce qui semble une amitié paisible cache en réalité, dit Junayd, <em>la houle démesurée du cœur</em> en direction de l'Aimé — et le tourment qui l'accompagne.\n\nLes premiers grands maîtres soufis — Rābiʿa, Ḥallāj, Junayd — ont fait de la maḥabba la première station du chemin spirituel : avant le savoir, avant la pratique, l'amour.",
+      "temoin": {
+        "ar": "حَبَّبَ إِلَيْكُمُ الإِيمَانَ وَزَيَّنَهُ فِي قُلُوبِكُمْ",
+        "translit": "ḥabbaba ilaykumu l-īmāna wa zayyanahu fī qulūbikum",
+        "fr": "Il vous a rendu cher la foi et l'a parée dans vos cœurs",
+        "source": "Coran, XLIX, 7"
+      },
+      "meditation": "Qu'est-ce qui, en toi, a été <em>rendu cher</em> sans que tu l'aies choisi ?",
+      "ouverture": "Rābiʿa al-ʿAdawiyya (VIIIe siècle), la première grande mystique de l'islam, disait : <em>« Mon Dieu, si je T'adore par crainte de l'enfer, brûle-moi en enfer ; si je T'adore par espoir du paradis, exclus-m'en. Mais si je T'adore pour Toi-même, ne me prive pas de Ta beauté. »</em> Voilà la maḥabba dans son état pur : un amour qui ne calcule plus."
+    },
+    {
+      "id": "hanane",
+      "ar": "الْحَنَان",
+      "translit": "al-ḥanān",
+      "definition": "La tendresse, l'affection sereine",
+      "station": "chant",
+      "themes": ["douceur","lien"],
+      "racine": "ح ن ن",
+      "famille": ["hanan","hanin","hannan"],
+      "description": "<em>Ḥanān</em> nomme la tendresse au sens le plus précis du mot — la qualité de ce qui penche vers l'autre avec douceur, sans violence, sans demande. C'est l'affection d'une mère pour son enfant, mais aussi celle de l'amante, de l'épouse, de l'amie. <em>Al-ḥanīna</em> désigne la personne qui éprouve cette tendresse, <em>al-ḥannān</em> celle qui en irradie.\n\nLa racine <em>ḥ-n-n</em> a une portée vaste : c'est aussi le <em>geignement nostalgique</em> du chameau qui cherche sa harde, le soupir de l'âme qui se souvient. Ainsi <em>ḥanīn</em> nomme à la fois la tendresse et la nostalgie — comme si les deux n'étaient qu'un seul mouvement du cœur, vers ce qui est cher, vers ce qui manque.\n\nDans le Coran, <em>al-Ḥannān</em> est l'un des Noms divins : Celui qui penche tendrement vers Sa créature. C'est l'attribut qui répond à <em>al-Mannān</em>, le Bienfaiteur. La tendresse n'est pas, en Islam, un sentiment féminin ou faible — c'est un Nom de Dieu.",
+      "temoin": {
+        "ar": "وَحَنَانًا مِنْ لَدُنَّا",
+        "translit": "wa-ḥanānan min ladunnā",
+        "fr": "Et tendresse de Notre part",
+        "source": "Coran, XIX, 13 (à propos de Jean-Baptiste)"
+      },
+      "meditation": "Vers qui penches-tu, sans même le décider ?",
+      "ouverture": "Les soufis distinguent trois mouvements d'inclination du cœur : <em>ḥawā</em>, la chute passionnée ; <em>ʿishq</em>, l'amour brûlant ; <em>ḥanān</em>, la tendresse stable. Seule la troisième dure. C'est elle qui, après les tempêtes du chemin, demeure quand tout le reste s'est consumé — la qualité même de l'âme parvenue."
+    },
+    {
+      "id": "sabbaba",
+      "ar": "الصَّبَابَة",
+      "translit": "aṣ-ṣabāba",
+      "definition": "L'amour tendre, l'amour qui s'épanche en mots",
+      "station": "chant",
+      "themes": ["douceur","eau"],
+      "racine": "ص ب ب",
+      "famille": ["sabb","saboub"],
+      "description": "<em>Ṣabāba</em> vient de la racine <em>ṣ-b-b</em>, qui signifie <em>verser, faire couler</em>. C'est l'amour qui s'épanche — non en cris ni en élans, mais en mots tendres, en lettres patientes, en confidences murmurées. L'amant qui éprouve ce sentiment <em>verse</em> son cœur dans la langue, mot après mot, sans déborder.\n\nLe mot s'applique au désir lorsque celui-ci cumule deux qualités souvent opposées : la <em>finesse</em> et la <em>force</em>. Un homme qui éprouve une passion brûlante pour une femme, mais qui ne l'exprime qu'à travers des lettres soignées, des missives ciselées, est appelé <em>rajul sabbūn</em> — <em>homme délicat, bien que profondément amoureux</em>. La tradition arabe lit cette retenue non comme une faiblesse mais comme la marque d'un amour mûr, qui sait qu'il y a plus dans le mot lent que dans le geste rapide.\n\nLa <em>ṣabāba</em> est cousine du <em>ḥanān</em> et du <em>ḥubb al-ʿafīf</em> — toutes trois forment la famille des amours chastes et longuement parlés.",
+      "temoin": {
+        "ar": "إِنَّمَا الصَّبَابَةُ إِيقَادٌ فِي الْأَحْشَاء",
+        "translit": "innamā ṣ-ṣabābatu īqādun fī l-aḥshāʾ",
+        "fr": "La ṣabāba n'est rien d'autre qu'un feu allumé dans les entrailles",
+        "source": "Adage de la poésie classique"
+      },
+      "meditation": "Quelle parole as-tu retenue, qui aurait mieux dit l'amour qu'un geste ?",
+      "ouverture": "Dans la voie soufie, l'écriture amoureuse est une discipline. Ibn ʿArabī rédigeait à son aimée Niẓām des poèmes que ses détracteurs ont voulu interdire, jusqu'à ce qu'il en compose lui-même le commentaire mystique — pour montrer que sous chaque image humaine se cachait un mouvement de l'âme vers le Réel. La langue écrite ralentit le cœur, et le cœur ralenti voit mieux."
+    },
+    {
+      "id": "mawadda",
+      "ar": "الْمَوَدَّة",
+      "translit": "al-mawadda",
+      "definition": "L'amour-affection qui dure, l'amour devenu spirituel",
+      "station": "chant",
+      "themes": ["lien","douceur"],
+      "racine": "و د د",
+      "famille": ["wadd","wadoud","widad"],
+      "description": "<em>Mawadda</em> est le <em>wadd</em> (l'amour-affection) lorsqu'il prend un caractère d'éternité et de spiritualité. Ce n'est plus la simple inclination de cœur, mais l'amour-amitié authentique, le lien stable qui a traversé les saisons et qui s'est posé. Le mot recouvre, dans le lexique soufi, sensiblement le même champ que la <em>maḥabba</em> — avec cette nuance qu'il insiste davantage sur la <em>réciprocité</em> et sur le <em>visible</em> du sentiment.\n\nLe Coran l'utilise pour décrire ce qui doit régner entre époux : <em>« Et parmi Ses signes, Il a créé pour vous, à partir de vous-mêmes, des épouses pour que vous trouviez en elles le repos, et Il a mis entre vous mawadda et raḥma. »</em> (XXX, 21). Ces trois mots — <em>sukūn</em> (repos), <em>mawadda</em> (affection durable), <em>raḥma</em> (miséricorde) — dessinent l'idéal coranique du couple.\n\nOn dit aussi <em>miwadd, al-miwadd</em>. La famille du mot rassemble : <em>wadd</em>, l'amour pur ; <em>widād</em>, sa définition lexicale ; <em>wadūd</em>, l'aptitude à aimer sans compter — l'un des 99 Noms divins.",
+      "temoin": {
+        "ar": "وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَة",
+        "translit": "wa jaʿala baynakum mawaddatan wa raḥma",
+        "fr": "Il a placé entre vous affection et miséricorde",
+        "source": "Coran, XXX, 21"
+      },
+      "meditation": "Quel amour, en toi, est devenu spirituel — sans que tu l'aies décidé ?",
+      "ouverture": "Le passage du <em>ḥubb</em> à la <em>mawadda</em> est l'une des transformations alchimiques que décrivent les soufis. L'amour qui brûle se calme en lumière douce ; l'amour qui réclame devient l'amour qui demeure. Ce n'est pas une diminution — c'est une élévation. Le feu n'est pas mort : il est devenu chaleur."
+    },
+    {
+      "id": "widad",
+      "ar": "الْوِدَاد",
+      "translit": "al-widād",
+      "definition": "L'amour, selon la définition classique",
+      "station": "chant",
+      "themes": ["douceur","lien"],
+      "racine": "و د د",
+      "famille": ["wadd","wadoud","mawadda"],
+      "description": "<em>Widād</em> est, dans la tradition lexicographique arabe, la définition même de l'amour. C'est par ce mot que le grand dictionnaire <em>Qāmūs al-muḥīṭ</em> d'al-Fayrūzābādī (XVe siècle) — l'un des monuments de la langue, à la réputation considérable parmi les amoureux de l'arabe — choisit de définir le sentiment amoureux. Comme s'il fallait, pour expliquer ḥubb à un lecteur cultivé, recourir à un mot encore plus ancien, encore plus simple : <em>widād</em>.\n\nLe mot partage sa racine avec <em>wadd</em> et <em>mawadda</em>, et nomme l'amour dans ce qu'il a de plus essentiel : l'inclination affectueuse, le penchant qui unit deux êtres sans bruit. Là où <em>ḥubb</em> peut être tumultueux, <em>widād</em> est apaisé ; là où <em>ʿishq</em> brûle, <em>widād</em> rayonne tranquillement.\n\nDans la poésie andalouse, <em>al-widād</em> est souvent le mot qui clôt un poème — comme si, après l'avoir cherché à travers tous les visages de la passion, on revenait à lui pour conclure : <em>voilà ce que c'était.</em>",
+      "temoin": {
+        "ar": "الْوِدَادُ صَفَاءُ الْقَلْب",
+        "translit": "al-widādu ṣafāʾu l-qalb",
+        "fr": "Le widād est la limpidité du cœur",
+        "source": "Adage soufi classique"
+      },
+      "meditation": "Quelle limpidité, en toi, ne se laisse plus troubler par les saisons ?",
+      "ouverture": "Quand un mystique parle de son lien avec Dieu en termes de <em>widād</em>, il indique une station où la passion s'est apaisée sans rien perdre de son intensité. Le cœur ne désire plus violemment — il <em>est</em> ce qu'il désirait. C'est ce que la voie nomme <em>maqām al-qurb</em>, la station de la proximité : on n'aime plus de loin, on est entré dans ce qu'on aimait."
+    },
+    {
+      "id": "wadd",
+      "ar": "الْوُدّ",
+      "translit": "al-wudd",
+      "definition": "L'amour-affection pur, empreint de grandeur",
+      "station": "chant",
+      "themes": ["douceur","lien"],
+      "racine": "و د د",
+      "famille": ["wadoud","mawadda","widad"],
+      "description": "<em>Wudd</em> nomme l'amour pur — élevé, empreint de grandeur, débarrassé de l'inquiétude. Ce n'est pas une passion fébrile ; c'est une affection noble, presque chevaleresque, qui assimile l'amour humain à la <em>générosité divine</em>. C'est pourquoi, dans le lexique mystique, le mot occupe une place de choix : il fait le pont entre la tendresse des créatures et la bienveillance souveraine de Dieu.\n\nLe Coran l'emploie aux côtés de son intensif <em>wadūd</em> (XI, 90 ; LXXXV, 14) — l'<em>Aimant</em>, l'un des 99 Noms divins. Cette racine <em>w-d-d</em> traverse ainsi tout le lexique de l'amour, depuis l'inclination simple jusqu'à l'attribut suprême de la Divinité. Aimer avec <em>wudd</em>, c'est aimer comme Dieu aime : sans calcul, sans peur de manquer, en surabondance.\n\nLe mot est en vogue dans tout le lexique mystique, et plusieurs maîtres l'ont employé pour décrire l'état du cœur qui a dépassé les épreuves de la passion et qui rayonne désormais d'un amour stable.",
+      "temoin": {
+        "ar": "إِنَّ رَبِّي رَحِيمٌ وَدُود",
+        "translit": "inna rabbī raḥīmun wadūd",
+        "fr": "Mon Seigneur est très-Miséricordieux, très-Aimant",
+        "source": "Coran, XI, 90"
+      },
+      "meditation": "Quelle générosité en toi reste intacte — même quand on ne te la rend pas ?",
+      "ouverture": "La voie soufie distingue deux mouvements : <em>recevoir</em> l'amour de Dieu, et <em>devenir</em> Son aimer dans le monde. <em>Wudd</em> appartient au second mouvement : c'est l'amour qui n'attend plus rien, parce qu'il a compris qu'il était lui-même la réponse à l'appel qui le précédait. Aimer ainsi, dit Ḥallāj, c'est cesser d'être l'amant pour devenir l'amour."
     }
   ]
 }

@@ -20,13 +20,13 @@
     { "id": "enfance",    "ar": "الطِّفْل",   "label": "L'enfance",         "desc": "Les enfants comme miroir des adultes." }
   ],
   "esprits": [
-    { "id": "koan",                "symbol": "🌑", "label": "Le koan",                "desc": "Une énigme insoluble qui ouvre. Hodja ne répond pas — il met le sol sous tes pieds en mouvement." },
-    { "id": "retournement",        "symbol": "🔄", "label": "Le retournement",        "desc": "L'absurde fait surgir le vrai. La logique inversée révèle ce que la logique droite cachait." },
-    { "id": "miroir-spirituel",    "symbol": "🪞", "label": "Le miroir",              "desc": "Hodja = toi, sans détour possible. Tu ris, puis tu te tais, puis tu te reconnais." },
-    { "id": "insolence",           "symbol": "⚡", "label": "L'insolence sacrée",     "desc": "Parler vrai au puissant. L'art soufi du malāmatī — celui qui ne ménage personne." },
-    { "id": "idiotie",             "symbol": "🎭", "label": "L'idiotie qui voit",     "desc": "Le bouffon-sage. Faire l'idiot pour que la vérité passe. La folie en Dieu." },
-    { "id": "porte-fermee",        "symbol": "🚪", "label": "La porte fermée",        "desc": "La réponse qui n'en est pas une. Hodja referme la question — et cela ouvre autrement." },
-    { "id": "enseignement-inverse","symbol": "🌀", "label": "L'enseignement inversé", "desc": "Le maître apprend de l'élève, l'imam de l'âne, le sage de l'enfant." }
+    { "id": "koan",                "label": "Le koan",                "desc": "Une énigme insoluble qui ouvre. Hodja ne répond pas — il met le sol sous tes pieds en mouvement." },
+    { "id": "retournement",        "label": "Le retournement",        "desc": "L'absurde fait surgir le vrai. La logique inversée révèle ce que la logique droite cachait." },
+    { "id": "miroir-spirituel",    "label": "Le miroir",              "desc": "Hodja, c'est toi. Tu ris, puis tu te tais, puis tu te reconnais." },
+    { "id": "insolence",           "label": "L'insolence sacrée",     "desc": "Parler vrai au puissant. L'art soufi du malāmatī — celui qui ne ménage personne." },
+    { "id": "idiotie",             "label": "L'idiotie qui voit",     "desc": "Le bouffon-sage. Faire l'idiot pour que la vérité passe. La folie en Dieu." },
+    { "id": "porte-fermee",        "label": "La porte fermée",        "desc": "La réponse qui n'en est pas une. Hodja referme la question — et cela ouvre autrement." },
+    { "id": "enseignement-inverse","label": "L'enseignement inversé", "desc": "Le maître apprend de l'élève, l'imam de l'âne, le sage de l'enfant." }
   ],
   "humeurs": [
     { "id": "rire-de-soi",   "label": "Rire de moi",                       "desc": "Aujourd'hui j'ai besoin de me regarder en souriant — sans m'épargner." },
@@ -45,7 +45,8 @@
       "humeurs": ["lacher-prise","savoir-rien"],
       "texte": "Hodja perd un anneau, un soir, sur le seuil de sa porte. La pénombre est épaisse. Un ami s'accroupit aussitôt et tâtonne dans la poussière.\n\nMais Hodja, lui, s'éloigne. Il va se planter au milieu de la rue, là où la pleine lune tombe en pluie de clarté, et se met à fouiller le pavé.\n\n— Hodja, qu'est-ce que tu fais là-bas ? L'anneau est tombé ici.\n— Fais comme tu veux. Moi, je préfère chercher là où il y a de la lumière.",
       "question": "Où cherches-tu ce que tu as perdu — là où tu l'as perdu, ou là où il y a de la lumière ?",
-      "source": "Tradition orale universelle. Récit cité par Idries Shah, Rūmī, et la plupart des recueils nasréddiniens"
+      "meditation": "La lumière où nous cherchons n'éclaire pas toujours là où nous avons perdu. Et l'ombre où nous avons perdu n'est pas l'ombre dans laquelle nous voulons retourner. Ibn ʿArabī enseigne : <em>celui qui se connaît connaît son Seigneur</em> — mais d'abord, il faut accepter de retourner à la nuit du seuil.",
+      "source": "Tradition orale universelle. Récit cité par Idries Shah, repris dans le Mathnawī de Rūmī, attesté dans la plupart des recueils nasréddiniens"
     },
     {
       "id": "la-marmite-qui-meurt",
@@ -55,6 +56,7 @@
       "humeurs": ["absurde","rire-de-soi"],
       "texte": "Hodja emprunte une grande marmite à sa voisine. Plusieurs jours passent. Elle vient s'inquiéter.\n\n— Tu l'as cassée ?\n— Au contraire, dit Hodja, j'ai une bonne nouvelle : ta marmite a eu un petit. Tiens, regarde.\n\nIl soulève le couvercle. À l'intérieur, une petite marmite.\n\n— Emporte-les toutes les deux, on ne sépare pas une mère de son enfant.\n\nLa voisine rentre chez elle ravie, le pas léger : à ce rythme, elle aura bientôt une batterie de cuisine entière. Quelques jours plus tard, Hodja frappe à sa porte, l'air sombre.\n\n— Voisine, une triste nouvelle. Maman marmite est morte cette nuit.\n— Mais Hodja, c'est absurde ! Une marmite, ça ne meurt pas !\n— Eh quoi ? Tu as bien accepté qu'elle ait un enfant.",
       "question": "Quelles « merveilles » acceptes-tu, pour ne pas voir ce qui se prépare ?",
+      "meditation": "Toute illusion qu'on prend pour un don finit par réclamer son dû. Le miracle qu'on accepte sans surprise est un acompte qu'on paiera plus tard, en monnaie d'absence.",
       "source": "Tradition orale universelle. L'un des contes nasréddiniens les plus diffusés au monde"
     },
     {
@@ -65,6 +67,7 @@
       "humeurs": ["savoir-rien","absurde"],
       "texte": "Dans un village étranger, on demande à Hodja de prêcher le vendredi. Il monte en chaire, regarde l'assemblée, et demande :\n\n— Frères, savez-vous ce que je vais vous dire ?\n— Non, répondent-ils.\n— Alors je n'ai rien à faire ici, parmi des ignorants pareils.\n\nIl s'en va.\n\nLe vendredi suivant, on le rappelle. Il remonte en chaire.\n— Frères, savez-vous ce que je vais vous dire ?\n— Oui ! crient les fidèles, instruits.\n— Alors à quoi bon que je parle, si vous savez déjà ?\n\nIl s'en va.\n\nLe troisième vendredi, on a tout préparé : la moitié dira oui, l'autre non. Hodja remonte en chaire.\n— Frères, savez-vous ce que je vais vous dire ?\n— Oui ! — Non !\n— Très bien. Que ceux qui savent l'expliquent à ceux qui ne savent pas.\n\nEt il quitte la mosquée pour la troisième fois.",
       "question": "Quand on te demande ce que tu sais — sais-tu vraiment de quoi tu parles ?",
+      "meditation": "Le maître véritable ne transmet pas un contenu : il met l'auditeur en présence de ce qu'il sait sans le savoir. Junayd disait : <em>le soufi est celui qui n'a pas d'attribut</em>. Le sermon parfait est celui qu'on n'a pas eu besoin de prononcer.",
       "source": "Tradition orale universelle"
     },
     {
@@ -75,6 +78,7 @@
       "humeurs": ["lacher-prise","absurde"],
       "texte": "Hodja revient du marché. En arrivant devant chez lui, il s'arrête net : son âne, qu'il avait attaché devant la porte, a disparu. Volé.\n\nLes voisins accourent, scandalisés, prêts à le plaindre.\n\nMais Hodja lève les yeux au ciel, le visage rayonnant :\n— Loué soit Dieu, le Très-Bienveillant !\n— Hodja, qu'est-ce qui te prend ? On vient de te voler ton âne !\n— Oui, mais si j'avais été dessus, j'aurais été emmené avec lui.",
       "question": "Quelle perte refuses-tu de bénir — alors qu'elle t'a peut-être épargné ?",
+      "meditation": "Toute privation porte une grâce que la possession aurait étouffée. La gratitude qui suit la perte est l'une des stations cachées du tasawwuf — celle où l'on découvre que ce qui nous est repris ne nous appartenait pas, et que ce qui nous est laissé n'est pas non plus à nous.",
       "source": "Tradition orale, attestée dans les recueils turcs du XVIIe siècle"
     },
     {
@@ -85,6 +89,7 @@
       "humeurs": ["rire-de-soi","savoir-rien"],
       "texte": "Une nuit, Hodja s'arrête à une auberge. Il partage une chambre avec un dormeur déjà profondément endormi.\n\n— Aubergiste, demain je pars avant l'aube. Réveille-moi.\n— Entendu.\n— Mais attention, ne te trompe pas. Regarde — je pose mon turban là, à côté de moi. L'autre n'en a pas. Rappelle-toi : l'homme au turban.\n\nAvant l'aube, on le secoue. Il s'habille à la hâte, monte en selle, part au galop. Mais dans la précipitation, il a oublié son turban sur la table.\n\nÀ midi, il s'arrête à une fontaine pour boire. Il se penche sur le bassin — et ne reconnaît pas, dans le reflet, cette tête chauve, nue, étrangère.\n\n— Quel imbécile, cet aubergiste ! Il s'est trompé de dormeur. Je le lui avais pourtant bien dit.",
       "question": "Te reconnais-tu — sans ton turban ?",
+      "meditation": "Ce que tu prends pour ton identité peut t'être enlevé en une nuit. Quand la mort viendra, elle ne défera pas le turban : elle défera la tête qui le portait. Avant ce moment, quel reflet rencontres-tu, quand tu te penches sur l'eau ?",
       "source": "Tradition orale universelle"
     },
     {
@@ -95,6 +100,7 @@
       "humeurs": ["savoir-rien","lacher-prise"],
       "texte": "Passant devant une maison de thé, Hodja aperçoit à travers la fenêtre un homme habillé exactement comme lui — même caftan, même turban, même barbe. Intrigué, il entre, s'assoit à la table de l'étranger, engage la conversation.\n\nIls parlent du temps qu'il fait, des récoltes, des nouvelles de la ville. Au bout d'un long moment, Hodja se lève pour partir.\n\nL'autre lui dit :\n— Excuse-moi, ami — qui es-tu, au fait ?\n— Qui je suis ? Aucune idée. Tout ce que je peux te dire, c'est que je voulais avoir une petite conversation avec moi-même.",
       "question": "Quand tu parles à quelqu'un — à qui parles-tu, vraiment ?",
+      "meditation": "Toute rencontre est une rencontre avec soi — déguisée. Ibn ʿArabī : <em>Tu es Ses oreilles avec lesquelles Il entend, Ses yeux avec lesquels Il voit, Sa langue avec laquelle Il parle</em>. Quand tu parles à un autre, qui parle en toi ? Et qui répond, en lui ?",
       "source": "Tradition orale universelle"
     },
     {
@@ -105,6 +111,7 @@
       "humeurs": ["insolent","rire-de-soi"],
       "texte": "Hodja, revenant des champs, arrive en haillons à un grand banquet où il a été invité. À l'entrée, on le toise — pour un peu, on le prendrait pour un mendiant. On le repousse loin, au bout de la table, là où on n'apporte presque rien à manger.\n\nIl s'éclipse, court chez lui, revêt son plus beau caftan, son turban brodé, et revient.\n\nCette fois, on le salue jusqu'à terre. On l'installe à la place d'honneur. On lui présente les meilleurs plats.\n\nIl trempe alors les manches de son caftan dans la soupe, dans le riz, dans la sauce des viandes, et leur souffle doucement :\n— Mangez, mes manches ! Régalez-vous ! C'est vous qu'on a invitées.",
       "question": "Quand on t'honore — qui honore-t-on, vraiment ?",
+      "meditation": "Le monde ne nourrit pas les êtres, il nourrit les apparences. La table d'honneur sert à manger l'apparence ; la pauvreté du seuil, elle, sert à manger le réel. C'est pourquoi les soufis appellent <em>al-faqr</em>, la pauvreté, la voie royale : on n'y est invité que sans habit.",
       "source": "Tradition orale universelle. Récit également attesté dans les Mille et Une Nuits sous d'autres noms"
     },
     {
@@ -115,6 +122,7 @@
       "humeurs": ["absurde","rire-de-soi"],
       "texte": "Un voisin frappe à la porte de Hodja :\n— Peux-tu me prêter ta corde à linge ? Ma femme veut faire la lessive.\n— Aïe, pas de chance, dit Hodja sans se retourner. Je viens à l'instant de m'en servir.\n— Pour quoi faire ?\n— Pour étendre de la farine.\n— De la farine, sur une corde à linge ?\n— Eh bien quoi ? Quand on n'a pas envie de prêter sa corde, on est capable d'y étendre n'importe quoi.",
       "question": "Quelle excuse fais-tu sécher sur ta corde, quand tu n'as pas envie de donner ?",
+      "meditation": "Toute excuse est vraie — c'est sa vérité qui ment. Le mensonge le plus efficace n'est pas celui qui falsifie le fait : c'est celui qui déplace la question. Tant que tu débats l'excuse, tu ne regardes pas le refus.",
       "source": "Tradition orale universelle"
     },
     {
@@ -125,6 +133,7 @@
       "humeurs": ["insolent","absurde"],
       "texte": "On aime tendre des pièges à Hodja, lui poser des questions sans réponse. Un jour, à la maison de thé, quelqu'un lance :\n\n— Hodja, toi qui sais tant de choses — dis-nous : du soleil ou de la lune, lequel est le plus utile ?\n\nHodja réfléchit un instant, puis :\n— La lune, sans aucun doute. Elle, au moins, éclaire la nuit, quand il fait noir. Tandis que ce stupide soleil ne brille qu'en plein jour — quand on n'en a aucun besoin.",
       "question": "Que crois-tu utile, qui n'arrive qu'à son heure — quand il n'en a plus besoin ?",
+      "meditation": "Le sage répond toujours à côté de la question — parce que la vraie question n'a pas été posée. Refuser de répondre dans la langue qui veut nous piéger n'est pas une fuite : c'est l'acte le plus exact de présence à ce qui est, au-delà du faux dilemme.",
       "source": "Tradition orale universelle"
     },
     {
@@ -135,7 +144,8 @@
       "humeurs": ["insolent","absurde"],
       "texte": "Hodja vend sa maison à un riche marchand. Au moment de signer le contrat, il pose une condition étrange :\n\n— J'accepte le prix, mais je veux garder, dans le mur du salon, un seul clou. Celui-là, là, près de la fenêtre. Il reste à moi. Et je dois pouvoir venir à toute heure pour y accrocher ce que je veux.\n\nLe marchand, étonné, finit par accepter. C'est si peu, un clou.\n\nLes mois passent. Hodja revient un matin, accroche au clou un vieux manteau. Personne ne dit rien. La semaine suivante, il y suspend un sac qui sent fort. Puis un poisson séché. Puis, un jour, la carcasse entière d'un mouton, encore sanglante.\n\nLe marchand, suffoquant, finit par lui rendre la maison — au tiers du prix.",
       "question": "Quel petit clou laisses-tu à un autre dans ta vie — et que finit-il par y accrocher ?",
-      "source": "Tradition orale universelle. Récit également attesté dans le folklore arabe (Djoha)"
+      "meditation": "Toute petite concession devient un jour le clou auquel on suspend la carcasse. Le démon, dans la tradition soufie, n'entre jamais par la grande porte : il entre par les détails qu'on a cru sans importance, et il finit toujours par revenir réclamer la maison entière.",
+      "source": "Tradition orale universelle. Récit également attesté dans le folklore arabe sous le nom de Djoha"
     },
     {
       "id": "le-vent-du-jardin",
@@ -145,6 +155,7 @@
       "humeurs": ["insolent","absurde"],
       "texte": "Une nuit, Hodja se glisse dans le jardin du voisin pour y dérober quelques légumes. Mais le voisin, rentrant à l'improviste, le surprend la main dans la terre.\n\n— Hodja ! Cette fois tu ne pourras pas te défendre !\n— Tu ne sens pas le vent qu'il fait ? souffle Hodja. C'est lui qui m'a soulevé, et qui m'a déposé ici, malgré moi.\n— Mais tu déterrais un poireau, à deux mains !\n— Évidemment ! Je me cramponne à tout ce que je trouve, pour ne pas être emporté !\n— Et ces légumes dans ta musette, alors ?\n— Ah, c'est précisément ce à quoi je réfléchissais quand tu m'as interrompu. Laisse-moi un peu de temps.",
       "question": "De quel vent te crois-tu emporté — et quels poireaux tiens-tu, à deux mains, pendant que tu cherches l'excuse ?",
+      "meditation": "Nous appelons <em>vent</em> ce qui nous a fait faire ce que nous ne voulons pas avoir voulu. Le <em>nafs al-ammāra</em> — l'âme qui pousse au mal — souffle toujours en notre faveur dans les comptes-rendus que nous nous faisons à nous-mêmes. La voie commence quand on cesse d'inventer l'orage.",
       "source": "Tradition orale universelle"
     },
     {
@@ -155,7 +166,8 @@
       "humeurs": ["absurde","rire-de-soi"],
       "texte": "Une nuit, Hodja s'approche du puits pour boire. Il se penche au-dessus de l'eau, et là — il sursaute. La pleine lune est tombée au fond.\n\nIl court chercher une corde, un grand crochet de fer. Il les jette dans le puits, ferraille longtemps, sent enfin que quelque chose s'accroche. Il tire de toutes ses forces.\n\nLa corde casse net. Hodja tombe sur le dos.\n\nIl reste un instant étendu, le souffle coupé, à regarder le ciel. Et voilà qu'il aperçoit là-haut, douce et ronde, la lune.\n\n— Loué soit Dieu ! La lune est retournée à sa place. Et c'est grâce à moi.",
       "question": "Quelle « lune » tires-tu d'un puits où elle n'est jamais tombée ?",
-      "source": "Tradition orale universelle. Récit également célèbre dans le folklore persan"
+      "meditation": "Combien de tes prières remercient Dieu pour ce que tu lui as fait, à toi-même ? Beaucoup de victoires spirituelles sont des chutes que la chance a rattrapées — mais nous préférons appeler cela <em>karāma</em>, faveur du Ciel.",
+      "source": "Tradition orale universelle. Récit également célèbre dans le folklore persan et arabe"
     },
     {
       "id": "parfum-et-piece",
@@ -165,6 +177,7 @@
       "humeurs": ["insolent","rire-de-soi"],
       "texte": "Un homme pauvre passe devant l'étal d'un rôtisseur. La viande grésille, l'air est plein de fumée parfumée. Le pauvre sort un quignon de pain sec, le tient un instant au-dessus de la grille pour qu'il s'imprègne du goût, et s'en va le manger un peu plus loin.\n\nLe rôtisseur le rattrape, l'attrape par la manche :\n— Tu as profité de la fumée de mes viandes. Tu dois me payer !\n\nIls vont au tribunal. Hodja est juge ce jour-là.\n\n— Combien réclames-tu ? demande-t-il au rôtisseur.\n— Deux pièces d'argent.\n\nHodja sort deux pièces de sa propre bourse. Il les fait tinter longuement dans le creux de sa main, près de l'oreille du rôtisseur.\n\n— Tu as bien entendu ?\n— Oui.\n— Voilà ton paiement. Le son d'une pièce, pour le parfum d'une viande. Affaire jugée.",
       "question": "Que paies-tu en sons creux — et que paies-tu en pièces pleines ?",
+      "meditation": "Toute justice véritable est une justice de la juste mesure. Ce que l'on a reçu en figure se paie en figure ; ce que l'on a reçu en substance se paie en substance. Confondre les ordres, c'est le commencement de toute oppression.",
       "source": "Tradition orale internationale. Récit également attesté en Chine et en Inde sous d'autres noms"
     },
     {
@@ -175,6 +188,7 @@
       "humeurs": ["savoir-rien","insolent"],
       "texte": "Hodja traverse un fleuve en barque. Pour passer le temps, il interroge le passeur :\n\n— As-tu étudié la grammaire ?\n— Non.\n— Alors la moitié de ta vie est perdue.\n\nLe passeur ne répond pas. Il rame.\n\nMais soudain, le ciel s'assombrit, le vent se lève, des vagues énormes frappent la barque. Elle commence à prendre l'eau. Le passeur se tourne calmement vers Hodja :\n\n— Maître, as-tu appris à nager ?\n— Non !\n— Alors toute ta vie est perdue.",
       "question": "De quels savoirs t'enorgueillis-tu, qui ne te porteront pas quand l'eau montera ?",
+      "meditation": "Le savoir qui ne sauve pas n'était pas un savoir : c'était une parure. Rūmī : <em>L'érudit est celui qui a beaucoup lu ; le sage est celui qui a beaucoup vécu — et seul le sage traversera le fleuve.</em>",
       "source": "Tradition orale universelle. Récit emblématique de la critique soufie du savoir purement formel"
     },
     {
@@ -185,6 +199,7 @@
       "humeurs": ["insolent","rire-de-soi"],
       "texte": "Hodja parie avec ses amis qu'il peut rester dehors toute la nuit, en plein hiver, sans feu ni couverture. S'il y arrive, ils l'inviteront tous à un grand festin.\n\nIl y arrive. Au matin, il vient réclamer son repas.\n\n— Hodja, dit l'un des amis, ne fais pas ton fier. La nuit, on a bien vu la lueur d'une chandelle au palais sur la colline. C'est elle qui t'a réchauffé.\n— Une chandelle ? À un kilomètre ?\n— Une chandelle. Tu as perdu le pari.\n\nHodja n'insiste pas. Quelques jours plus tard, c'est lui qui invite ses amis chez lui pour un festin. Ils arrivent, affamés. Hodja les fait attendre. Une heure. Deux heures. Trois.\n\n— Mais où est cette soupe ?\n— Elle cuit, elle cuit. Venez voir.\n\nIl les emmène à la cuisine. Au-dessus d'un immense chaudron pendu très haut, une seule petite chandelle vacille.\n\n— Une chandelle pour faire bouillir tout ce chaudron ?!\n— Si une chandelle peut me réchauffer toute la nuit à un kilomètre, elle peut bien faire cuire une soupe à un mètre.",
       "question": "Quelles « chandelles lointaines » te demande-t-on de croire suffisantes pour te nourrir ?",
+      "meditation": "Le pouvoir impose sa logique, et te demande d'y croire. La seule réponse libre n'est pas de la combattre — c'est de la retourner contre elle-même, jusqu'à ce qu'elle s'écroule de son propre poids absurde.",
       "source": "Tradition orale universelle. Récit particulièrement célèbre dans les recueils turcs"
     },
     {
@@ -195,6 +210,7 @@
       "humeurs": ["savoir-rien","absurde"],
       "texte": "Hodja est juge ce jour-là. Deux hommes viennent porter plainte l'un contre l'autre. Le premier expose son cas, longuement, plein d'indignation.\n\nHodja hoche la tête :\n— Tu as raison.\n\nLe second répond, point par point, démontrant exactement le contraire.\n\nHodja hoche la tête :\n— Tu as raison aussi.\n\nLe greffier, scandalisé, s'avance :\n— Mais Hodja, ils ne peuvent pas avoir raison tous les deux ! C'est logiquement impossible !\n\nHodja lève les yeux, sourit :\n— Tu as raison toi aussi.",
       "question": "Et si plusieurs choses opposées étaient vraies en même temps — que ferais-tu de tes certitudes ?",
+      "meditation": "La non-dualité (<em>tawḥīd</em>) n'est pas une opinion à défendre : c'est une station à habiter. Là où la logique ordinaire voit contradiction, le cœur unifié voit deux faces d'un seul Visage. Ibn ʿArabī : <em>Toute chose, sauf Dieu, est à la fois elle-même et son contraire.</em>",
       "source": "Tradition orale universelle. L'un des contes les plus cités dans les commentaires soufis sur la non-dualité"
     },
     {
@@ -205,6 +221,7 @@
       "humeurs": ["rire-de-soi","absurde"],
       "texte": "Hodja veut apprendre la médecine. Il accompagne un ami médecin chez un patient qui se plaint du ventre.\n\nÀ peine entré, le médecin déclare :\n— Tu as trop mangé de cerises. Repos, diète, dans deux jours il n'y paraîtra plus.\n\nHodja est ébloui. En sortant, il demande :\n— Comment as-tu deviné ?\n— Très simple. Sous le lit, il y avait un tas de noyaux de cerises.\n\nHodja se dit que la médecine est à sa portée. Le lendemain, il visite seul son premier patient. Il regarde sous le lit. Rien.\n\nIl réfléchit gravement, puis se tourne vers le malade :\n— Tu as une colique. Mais à l'avenir — évite de manger tes babouches.",
       "question": "Quelles conclusions tires-tu d'indices qui n'existent pas ?",
+      "meditation": "La méthode sans la présence devient caricature. Le maître véritable n'est pas celui qui sait — c'est celui qui <em>regarde</em>. Le diagnostic du soufi commence là où s'arrête le calcul : à l'instant où, ne sachant plus, il consent à voir.",
       "source": "Tradition orale universelle"
     },
     {
@@ -215,6 +232,7 @@
       "humeurs": ["insolent","absurde"],
       "texte": "Hodja, ce jour-là, a huit ans.\n\nIl passe au pied d'un minaret. Tout en haut, le muezzin lance l'appel à la prière — une longue mélopée plaintive, vibrante.\n\nHodja s'arrête. Lève la tête. Et crie de toutes ses forces, en mettant les mains autour de sa bouche :\n\n— Cesse de te lamenter ! Tu as bien réussi à grimper tout seul sur cet arbre sans branche — eh bien pour redescendre, débrouille-toi aussi tout seul !",
       "question": "À quoi es-tu monté, sans savoir comment redescendre ?",
+      "meditation": "Tout enfant comprend ce que les adultes ont oublié : qu'on est monté sans qu'on sache pourquoi, et qu'on devra redescendre seul. La sagesse n'habite pas la mélopée du muezzin — elle habite la question de l'enfant qui l'écoute.",
       "source": "Tradition orale universelle"
     }
   ]

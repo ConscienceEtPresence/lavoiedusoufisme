@@ -663,7 +663,39 @@
   margin: 0;
 }
 
-/* === Carnet (espace privé pour écrire) === */
+/* === Suggestion méditative (après la question) === */
+.conte-suggestion {
+  margin: 1.6rem auto 2.5rem;
+  padding: 1.6rem 1.6rem;
+  max-width: 620px;
+  background: linear-gradient(180deg, rgba(184,118,47,0.03), transparent 90%);
+  border-top: 1px solid var(--co-line);
+  border-bottom: 1px solid var(--co-line);
+}
+.conte-suggestion__label {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--co-ochre);
+  margin-bottom: 0.9rem;
+  text-align: center;
+}
+.conte-suggestion__text {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--co-ink);
+  margin: 0;
+  text-align: center;
+}
+.conte-suggestion__text em {
+  color: var(--co-ochre-deep);
+  font-style: italic;
+}
+
+/* === Carnet (vestige, plus utilisé — gardé pour compatibilité) === */
 .conte-carnet {
   margin: 2.5rem auto;
   padding: 1.8rem 1.6rem;

@@ -258,15 +258,15 @@
 .seuil__label {
   font-family: 'Cormorant Garamond', serif !important;
   font-style: italic !important;
-  font-size: 1.7rem !important;
-  letter-spacing: 0.2em !important;
+  font-size: 2.1rem !important;
+  letter-spacing: 0.22em !important;
   opacity: 1 !important;
   display: inline-flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.1rem;
   margin-top: 0;
-  padding: .5rem 1.4rem;
-  transition: letter-spacing 0.5s ease;
+  padding: .55rem 1.6rem;
+  transition: letter-spacing 0.5s ease, font-size 0.5s ease;
   /* Shimmer : dégradé qui défile sur le texte */
   background: linear-gradient(90deg,
     var(--gold) 0%, var(--gold) 40%,

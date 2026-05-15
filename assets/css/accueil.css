@@ -96,6 +96,29 @@
   margin: 0;
 }
 
+/* Triple nuance de sage — ciel · mot · terre (très subtile) */
+.meditate-card--ciel {
+  background: linear-gradient(180deg, rgba(110, 135, 150, 0.10), rgba(110, 135, 150, 0.03));
+  border-color: rgba(110, 135, 150, 0.30);
+}
+.meditate-card--ciel::after { color: rgba(110, 135, 150, 0.50); }
+.meditate-card--ciel .meditate-card__ar { color: rgba(85, 110, 130, 0.95); }
+.meditate-card--ciel:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 8px 22px rgba(110, 135, 150, 0.20);
+  border-color: rgba(110, 135, 150, 0.55);
+}
+
+.meditate-card--terre {
+  background: linear-gradient(180deg, rgba(135, 138, 110, 0.10), rgba(135, 138, 110, 0.03));
+  border-color: rgba(135, 138, 110, 0.32);
+}
+.meditate-card--terre::after { color: rgba(135, 138, 110, 0.50); }
+.meditate-card--terre .meditate-card__ar { color: rgba(105, 108, 80, 0.95); }
+.meditate-card--terre:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 8px 22px rgba(135, 138, 110, 0.20);
+  border-color: rgba(135, 138, 110, 0.55);
+}
+
 /* Variante Poésie — ton rose chaud, dans la même famille contemplative */
 .meditate-card--poesie {
   background: linear-gradient(180deg, rgba(166, 90, 74, 0.10), rgba(184, 134, 11, 0.04));

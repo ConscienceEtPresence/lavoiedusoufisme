@@ -534,3 +534,12 @@
   .rac-form-row__ar { text-align: center; }
   .rac-form-row__tag { display: none; }
 }
+
+/* Référence à Gloton (entrée + page) */
+.rac-fiche__ref {
+  margin-top: 0.6rem !important;
+  font-size: 0.78rem !important;
+  font-style: italic;
+  color: var(--rac-soft) !important;
+  letter-spacing: 0.04em;
+}

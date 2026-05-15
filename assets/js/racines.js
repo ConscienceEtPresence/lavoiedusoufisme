@@ -225,6 +225,7 @@
       <div class="rac-fiche__section">
         <h3>Glose de Gloton</h3>
         <p>${r.glose_gloton}</p>
+        ${r.gloton_ref ? `<p class="rac-fiche__ref">${r.gloton_ref}</p>` : ''}
       </div>` : ''}
 
       ${formsHTML ? `

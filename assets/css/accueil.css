@@ -30,9 +30,9 @@
 .meditate-intro {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 1.1rem;
-  color: var(--ink-mute);
-  letter-spacing: .04em;
+  font-size: clamp(1.5rem, 3.4vw, 1.85rem);
+  color: var(--ink-title, #1B2A4E);
+  letter-spacing: .03em;
   margin-bottom: var(--space-lg);
 }
 .meditate-cards {

@@ -107,9 +107,13 @@
   font-size: 1.45rem;
   color: var(--co-ochre-deep);
   line-height: 1.5;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.45rem;
+  margin-top: 1.6rem;
   font-weight: 400;
   direction: rtl;
+}
+.contes-badge {
+  top: 0.7rem;
 }
 .contes-carte__nom {
   font-family: 'Cormorant Garamond', serif;
@@ -515,12 +519,592 @@
   font-weight: 500;
 }
 
+/* ============================================================
+   FICHE-CONTE (page individuelle d'un conte)
+   ============================================================ */
+.conte-breadcrumb {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--co-soft);
+  margin: 1.5rem auto 0;
+  max-width: 760px;
+}
+.conte-breadcrumb a {
+  color: var(--co-ochre);
+  text-decoration: none;
+}
+.conte-breadcrumb a:hover { text-decoration: underline; }
+.conte-breadcrumb span { margin: 0 0.4rem; opacity: 0.6; }
+
+.conte-fiche {
+  max-width: 760px;
+  margin: 1.5rem auto;
+  padding: 0 1rem var(--space-2xl);
+}
+.conte-fiche__corpus {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--co-ochre);
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+.conte-fiche__titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  color: var(--co-ink-deep);
+  text-align: center;
+  margin: 0 0 1.5rem;
+  line-height: 1.2;
+}
+
+.conte-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem 1.2rem;
+  background: rgba(184,118,47,0.04);
+  border-radius: 10px;
+  border: 1px solid var(--co-line);
+  margin-bottom: 2rem;
+}
+.conte-meta__row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+.conte-meta__label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--co-ochre);
+  font-weight: 600;
+  min-width: 60px;
+}
+.conte-meta__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.conte-meta__tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  background: #fff;
+  border: 1px solid var(--co-line);
+  border-radius: 999px;
+  color: var(--co-ink);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.conte-meta__tag:hover {
+  background: var(--co-ochre);
+  color: #fff;
+  border-color: var(--co-ochre);
+}
+.conte-meta__tag--esprit {
+  background: linear-gradient(180deg, rgba(184,118,47,0.10), transparent);
+}
+
+.conte-texte {
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(1.04rem, 2.2vw, 1.15rem);
+  line-height: 1.8;
+  color: var(--co-ink);
+  padding: 1.8rem 1.5rem;
+  background: linear-gradient(180deg, rgba(184,118,47,0.04), transparent 80%);
+  border-left: 3px solid var(--co-ochre);
+  border-radius: 0 12px 12px 0;
+  margin-bottom: 2.2rem;
+}
+.conte-texte p { margin: 0 0 1.1rem; }
+.conte-texte p:last-child { margin-bottom: 0; }
+
+.conte-divider {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--co-ochre);
+  letter-spacing: 0.5em;
+  margin: 2rem 0;
+  opacity: 0.6;
+}
+
+.conte-question {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, rgba(184,118,47,0.10), rgba(184,134,11,0.04));
+  border: 1px solid var(--co-line);
+  border-radius: 14px;
+  max-width: 620px;
+}
+.conte-question__label {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--co-ochre);
+  margin-bottom: 1rem;
+}
+.conte-question__text {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  line-height: 1.55;
+  color: var(--co-ink-deep);
+  margin: 0;
+}
+
+/* === Carnet (espace privé pour écrire) === */
+.conte-carnet {
+  margin: 2.5rem auto;
+  padding: 1.8rem 1.6rem;
+  background: #FBF7EF;
+  border: 1px dashed rgba(184,118,47,0.45);
+  border-radius: 14px;
+}
+.conte-carnet__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.15rem, 2.6vw, 1.35rem);
+  color: var(--co-ochre-deep);
+  margin: 0 0 0.6rem;
+  line-height: 1.4;
+}
+.conte-carnet__hint {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.88rem;
+  color: var(--co-soft);
+  font-style: italic;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+.conte-carnet__textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 1rem;
+  font-family: 'Source Serif 4', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--co-ink);
+  background: #fff;
+  border: 1px solid var(--co-line);
+  border-radius: 8px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+.conte-carnet__textarea:focus {
+  outline: none;
+  border-color: var(--co-ochre);
+  box-shadow: 0 0 0 3px rgba(184,118,47,0.12);
+}
+.conte-carnet__actions {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.9rem;
+  flex-wrap: wrap;
+}
+.conte-carnet__btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.2rem;
+  background: var(--co-ochre);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.conte-carnet__btn:hover { background: var(--co-ochre-deep); }
+.conte-carnet__btn--ghost {
+  background: transparent;
+  color: var(--co-soft);
+  border: 1px solid var(--co-line);
+}
+.conte-carnet__btn--ghost:hover {
+  background: rgba(0,0,0,0.04);
+  color: var(--co-ink);
+}
+.conte-carnet__status {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: var(--co-ochre);
+  font-style: italic;
+}
+
+/* === Résonances (contes-frères) === */
+.conte-resonances {
+  margin: 2.5rem auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--co-line);
+}
+.conte-resonances__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--co-ochre-deep);
+  margin: 0 0 0.4rem;
+  text-align: center;
+}
+.conte-resonances__hint {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.9rem;
+  color: var(--co-soft);
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 1.2rem;
+}
+.conte-soeurs {
+  display: grid;
+  gap: 0.7rem;
+}
+.conte-soeur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--co-line);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--co-ink);
+  transition: all 0.2s ease;
+}
+.conte-soeur:hover {
+  border-color: var(--co-ochre);
+  background: rgba(184,118,47,0.03);
+}
+.conte-soeur__titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--co-ink-deep);
+}
+.conte-soeur__esprits {
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  opacity: 0.7;
+}
+
+.conte-source {
+  margin: 2rem auto 0;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  color: var(--co-soft);
+  font-style: italic;
+}
+
+.conte-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--co-line);
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.conte-nav__link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  color: var(--co-ink);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+.conte-nav__link:hover { background: rgba(184,118,47,0.06); }
+.conte-nav__link--accent {
+  background: var(--co-ochre);
+  color: #fff;
+}
+.conte-nav__link--accent:hover { background: var(--co-ochre-deep); }
+
+.conte-error {
+  text-align: center;
+  font-family: 'Source Serif 4', serif;
+  color: var(--co-soft);
+  padding: 3rem 1rem;
+}
+.conte-error a { color: var(--co-ochre); }
+
+/* ============================================================
+   PARCOURS (liste filtrée)
+   ============================================================ */
+.parcours-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  margin: 0 auto var(--space-lg);
+  flex-wrap: wrap;
+}
+.parcours-action {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  padding: 0.55rem 1.3rem;
+  background: var(--co-ochre);
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.parcours-action:hover { background: var(--co-ochre-deep); }
+.parcours-action--ghost {
+  background: transparent;
+  color: var(--co-ochre);
+  border: 1px solid var(--co-ochre);
+}
+.parcours-action--ghost:hover {
+  background: rgba(184,118,47,0.08);
+  color: var(--co-ochre-deep);
+}
+
+.parcours-filtres {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 1100px;
+  margin: 0 auto var(--space-xl);
+  padding: 1.1rem;
+  background: rgba(184,118,47,0.04);
+  border-radius: 12px;
+  border: 1px solid var(--co-line);
+}
+.parcours-filtre-groupe {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+.parcours-filtre-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--co-ochre);
+  font-weight: 600;
+  min-width: 90px;
+  padding-top: 0.4rem;
+  flex-shrink: 0;
+}
+.parcours-filtre-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  flex: 1;
+}
+.parcours-pill {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  padding: 0.3rem 0.85rem;
+  background: #fff;
+  border: 1px solid var(--co-line);
+  border-radius: 999px;
+  color: var(--co-ink);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.parcours-pill:hover {
+  border-color: var(--co-ochre);
+  color: var(--co-ochre);
+}
+.parcours-pill.active {
+  background: var(--co-ochre);
+  color: #fff;
+  border-color: var(--co-ochre);
+}
+
+.parcours-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto var(--space-2xl);
+  padding: 0 1rem;
+}
+
+.conte-carte-mini {
+  position: relative;
+  display: block;
+  background: #fff;
+  border: 1px solid var(--co-line);
+  border-radius: 12px;
+  padding: 1.3rem 1.3rem 1.2rem;
+  text-decoration: none;
+  color: var(--co-ink);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.conte-carte-mini::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--co-ochre), rgba(184,118,47,0.3));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.conte-carte-mini:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.07);
+  border-color: rgba(184,118,47,0.4);
+}
+.conte-carte-mini:hover::before { opacity: 1; }
+.conte-carte-mini__esprits {
+  font-size: 1.1rem;
+  letter-spacing: 0.25em;
+  margin-bottom: 0.4rem;
+  opacity: 0.8;
+}
+.conte-carte-mini__titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--co-ink-deep);
+  margin: 0 0 0.6rem;
+  line-height: 1.25;
+}
+.conte-carte-mini__extrait {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.92rem;
+  color: var(--co-ink);
+  line-height: 1.55;
+  margin: 0 0 0.8rem;
+}
+.conte-carte-mini__question {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--co-ochre);
+  margin: 0;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--co-line);
+  line-height: 1.4;
+}
+
+.parcours-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--co-soft);
+  padding: 3rem 1rem;
+}
+
+/* ============================================================
+   CARNET (page mon-carnet)
+   ============================================================ */
+.carnet-intro {
+  text-align: center;
+  font-family: 'Source Serif 4', serif;
+  font-size: 1rem;
+  color: var(--co-ink);
+  margin: 0 auto var(--space-xl);
+  padding: 1.2rem 1.4rem;
+  background: rgba(184,118,47,0.04);
+  border-radius: 10px;
+  max-width: 620px;
+}
+.carnet-intro strong { color: var(--co-ochre-deep); }
+
+.carnet-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-family: 'Source Serif 4', serif;
+  color: var(--co-soft);
+}
+.carnet-empty p { margin: 0 0 1rem; }
+.carnet-empty__hint {
+  font-style: italic;
+  font-size: 0.95rem;
+  max-width: 480px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+.carnet-empty__cta {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.4rem;
+  background: var(--co-ochre);
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.carnet-entree {
+  margin: 0 auto 1.4rem;
+  padding: 1.4rem 1.5rem;
+  background: #fff;
+  border: 1px solid var(--co-line);
+  border-radius: 12px;
+  border-left: 3px solid var(--co-ochre);
+}
+.carnet-entree__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+.carnet-entree__titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--co-ink-deep);
+  text-decoration: none;
+}
+.carnet-entree__titre:hover { color: var(--co-ochre-deep); text-decoration: underline; }
+.carnet-entree__date {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  color: var(--co-soft);
+  letter-spacing: 0.04em;
+}
+.carnet-entree__question {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  color: var(--co-ochre);
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--co-line);
+  line-height: 1.5;
+}
+.carnet-entree__texte {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--co-ink);
+  margin: 0;
+  white-space: pre-wrap;
+}
+
 /* === Responsive === */
 @media (max-width: 768px) {
   .hodja-portes { grid-template-columns: 1fr; }
   .hodja-grille { grid-template-columns: repeat(2, 1fr); }
   .hodja-esprits { grid-template-columns: 1fr; }
+  .parcours-filtre-groupe { flex-direction: column; align-items: flex-start; }
+  .parcours-filtre-label { min-width: 0; padding-top: 0; }
 }
 @media (max-width: 480px) {
   .hodja-grille { grid-template-columns: 1fr; }
+  .parcours-grille { grid-template-columns: 1fr; }
+  .conte-nav { flex-direction: column; }
+  .conte-nav__link { text-align: center; }
 }

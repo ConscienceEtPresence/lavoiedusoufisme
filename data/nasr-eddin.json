@@ -1,0 +1,351 @@
+{
+  "auteur": {
+    "nom": "Nasr Eddin Hodja",
+    "ar": "نَصْرُ الدِّين خوجَه",
+    "epoque": "v. 1208 — 1284",
+    "lieu": "Sivrihisar → Akşehir, Anatolie"
+  },
+  "themes": [
+    { "id": "miroir",     "ar": "المِرْآة",   "label": "Le miroir",         "desc": "Hodja face à lui-même — le cœur de l'œuvre." },
+    { "id": "femme",      "ar": "الزَّوْجَة", "label": "La femme et le couple", "desc": "Khadidja, les disputes, la tendresse cachée." },
+    { "id": "ane",        "ar": "الحِمَار",   "label": "L'âne",             "desc": "Son compagnon, son alter ego, le corps qu'il monte." },
+    { "id": "puissants",  "ar": "السُّلْطَان", "label": "Les puissants",     "desc": "Tamerlan, l'imam, le cadi — l'art de parler vrai au roi." },
+    { "id": "argent",     "ar": "المَال",     "label": "L'argent et le marché", "desc": "L'avidité, le prêt, le commerce, la pièce qui manque." },
+    { "id": "justice",    "ar": "العَدْل",    "label": "La justice et la loi", "desc": "Hodja juge, Hodja jugé — le tribunal retourné." },
+    { "id": "foi",        "ar": "الإِيمَان",  "label": "La foi et le religieux", "desc": "Le sermon, la prière, l'imam absent." },
+    { "id": "savoir",     "ar": "العِلْم",    "label": "Savoir et ignorance", "desc": "L'école, le maître, l'élève — qui apprend à qui ?" },
+    { "id": "mort",       "ar": "المَوْت",    "label": "La mort",           "desc": "Le tombeau, la veuve — et Hodja qui rit encore." },
+    { "id": "ruse",       "ar": "الحِيلَة",   "label": "La ruse et le voleur", "desc": "L'art de retourner le piège — qui prend qui ?" },
+    { "id": "quotidien",  "ar": "البَيْت",    "label": "Le quotidien",      "desc": "La maison, le repas, le voisin, la tasse de thé." },
+    { "id": "enfance",    "ar": "الطِّفْل",   "label": "L'enfance",         "desc": "Les enfants comme miroir des adultes." }
+  ],
+  "esprits": [
+    { "id": "koan",                "symbol": "🌑", "label": "Le koan",                "desc": "Une énigme insoluble qui ouvre. Hodja ne répond pas — il met le sol sous tes pieds en mouvement." },
+    { "id": "retournement",        "symbol": "🔄", "label": "Le retournement",        "desc": "L'absurde fait surgir le vrai. La logique inversée révèle ce que la logique droite cachait." },
+    { "id": "miroir-spirituel",    "symbol": "🪞", "label": "Le miroir",              "desc": "Hodja = toi, sans détour possible. Tu ris, puis tu te tais, puis tu te reconnais." },
+    { "id": "insolence",           "symbol": "⚡", "label": "L'insolence sacrée",     "desc": "Parler vrai au puissant. L'art soufi du malāmatī — celui qui ne ménage personne." },
+    { "id": "idiotie",             "symbol": "🎭", "label": "L'idiotie qui voit",     "desc": "Le bouffon-sage. Faire l'idiot pour que la vérité passe. La folie en Dieu." },
+    { "id": "porte-fermee",        "symbol": "🚪", "label": "La porte fermée",        "desc": "La réponse qui n'en est pas une. Hodja referme la question — et cela ouvre autrement." },
+    { "id": "enseignement-inverse","symbol": "🌀", "label": "L'enseignement inversé", "desc": "Le maître apprend de l'élève, l'imam de l'âne, le sage de l'enfant." }
+  ],
+  "humeurs": [
+    { "id": "rire-de-soi",   "label": "Rire de moi",                       "desc": "Aujourd'hui j'ai besoin de me regarder en souriant — sans m'épargner." },
+    { "id": "lacher-prise",  "label": "Lâcher prise",                      "desc": "Aujourd'hui j'ai besoin de poser quelque chose que je serre trop fort." },
+    { "id": "savoir-rien",   "label": "Me souvenir que je ne sais rien",   "desc": "Aujourd'hui j'ai besoin que ma certitude se fissure un peu." },
+    { "id": "insolent",      "label": "Être un peu insolent",              "desc": "Aujourd'hui j'ai besoin de dire ce que je n'ose pas dire — au pouvoir, à moi-même." },
+    { "id": "ane-interieur", "label": "Retrouver mon âne intérieur",       "desc": "Aujourd'hui j'ai besoin de me réconcilier avec mon corps, ma lenteur, mon entêtement." },
+    { "id": "absurde",       "label": "Laisser tomber le sérieux",         "desc": "Aujourd'hui j'ai besoin que rien ne tienne debout, et que ce soit très bien comme ça." }
+  ],
+  "contes": [
+    {
+      "id": "le-sermon",
+      "titre": "Le sermon",
+      "themes": ["foi","savoir"],
+      "esprits": ["idiotie","porte-fermee"],
+      "humeurs": ["savoir-rien","absurde"],
+      "texte": "Hodja arrive dans un village dont l'imam vient de mourir. Les habitants, croyant qu'un saint homme leur est envoyé, le prient de monter en chaire pour le sermon du vendredi.\n\nIl s'installe, regarde l'assemblée, et demande :\n— Frères, savez-vous ce que je vais vous dire ?\n— Non, répondent-ils, nous ne savons pas.\n— Quoi ? Vous ne savez pas ? Alors je n'ai rien à faire ici, parmi des ignorants pareils.\n\nEt il s'en va.\n\nOn le rattrape, on le supplie de revenir. Il remonte en chaire et pose la même question. Cette fois, instruits par l'expérience, les fidèles répondent en chœur :\n— Oui ! Nous le savons !\n— Alors à quoi bon que je parle, si vous savez déjà ?\n\nEt il s'en va.\n\nUne troisième fois, on vient le chercher. Cette fois, l'assemblée s'est partagée : la moitié dira oui, l'autre non. Hodja monte en chaire.\n— Frères, savez-vous ce que je vais vous dire ?\n— Oui ! crient les uns. — Non ! crient les autres.\n— Très bien, conclut Hodja. Que ceux qui savent l'expliquent à ceux qui ne savent pas.\n\nEt il quitte la mosquée pour la troisième et dernière fois.",
+      "question": "Quand on te demande ce que tu sais — sais-tu vraiment de quoi tu parles ?",
+      "source": "Tradition. Cf. Maunoury (Phébus, 2002), vol. I"
+    },
+    {
+      "id": "comment-chercher",
+      "titre": "Comment chercher",
+      "themes": ["miroir","savoir"],
+      "esprits": ["koan","miroir-spirituel"],
+      "humeurs": ["lacher-prise","savoir-rien"],
+      "texte": "Une nuit, Hodja rentre tard de la maison de thé. Devant le seuil de sa porte, l'anneau qu'il portait au doigt glisse et tombe dans la poussière.\n\nUn ami qui l'accompagne s'accroupit aussitôt et cherche à tâtons, dans l'ombre du porche. Mais Hodja, lui, s'éloigne de quelques pas et se met à fouiller la rue, là où la lune tombe à pleins rayons.\n\n— Hodja, qu'est-ce que tu fais là-bas ? La bague est tombée ici !\n— Fais comme tu veux, répond-il sans lever la tête. Moi, je préfère chercher où il y a de la lumière.",
+      "question": "Où cherches-tu ce que tu as perdu — là où tu l'as perdu, ou là où il y a de la lumière ?",
+      "source": "Tradition orale internationale. Variantes attestées dès le XVe siècle"
+    },
+    {
+      "id": "la-lettre",
+      "titre": "La lettre",
+      "themes": ["savoir","quotidien"],
+      "esprits": ["retournement","miroir-spirituel"],
+      "humeurs": ["rire-de-soi","savoir-rien"],
+      "texte": "Une vieille femme du village vient trouver Hodja, une lettre à la main. Elle ne sait pas lire ; lui, dit-on, est savant.\n\n— Hodja, lis-la-moi, je t'en prie. Pourvu qu'elle n'apporte pas de mauvaise nouvelle.\n\nHodja prend la lettre, l'approche des yeux, fronce les sourcils. Son visage s'assombrit. Il se met à pleurer.\n\n— Aïe ! gémit la vieille. C'est ma sœur ? Elle est morte, c'est ça ?\n\nMais Hodja, sans répondre, continue de parcourir le papier. Peu à peu, ses pleurs s'apaisent, ses traits se détendent — et bientôt il éclate de rire, d'un rire si franc que son turban en tremble.\n\n— Hodja, par pitié ! D'abord tu pleures, ensuite tu ris. Qu'est-ce qui se passe ?\n— Ne t'inquiète pas, ma bonne. Si j'ai pleuré, c'est parce que tu ne sais pas lire.\n— Et pourquoi as-tu ri, alors ?\n— Parce que moi non plus.",
+      "question": "Sur quoi pleures-tu et ris-tu — alors que tu ne sais même pas ce qui est écrit ?",
+      "source": "Tradition. Présent dans tous les recueils nasréddiniens"
+    },
+    {
+      "id": "qui-cela-concerne",
+      "titre": "Qui cela concerne-t-il ?",
+      "themes": ["quotidien","miroir"],
+      "esprits": ["retournement"],
+      "humeurs": ["lacher-prise","absurde"],
+      "texte": "C'est l'heure douce du soir. Hodja et son voisin sont assis chacun devant sa porte, à quelques pas l'un de l'autre.\n\nSoudain, le voisin se redresse :\n— Hodja, regarde ! Là-bas, sur la place — un homme qui marche avec un plat fumant. Une oie, peut-être. Ou bien une dinde.\n— En quoi cela me regarde-t-il ? murmure Hodja, les yeux mi-clos.\n— Mais Hodja, il vient par ici ! Il va droit vers ta maison !\n— En quoi cela te regarde-t-il ? répond Hodja en ouvrant les yeux d'un coup.",
+      "question": "De quoi te crois-tu concerné, qui ne te regarde pas ? De quoi te crois-tu indifférent, qui te concerne en plein ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "oiseau-merveilleux",
+      "titre": "Un oiseau merveilleux",
+      "themes": ["argent","savoir"],
+      "esprits": ["retournement"],
+      "humeurs": ["insolent","rire-de-soi"],
+      "texte": "Au marché, un camelot exhibe un oiseau aux plumes éclatantes — rouge, vert, bleu, jaune. Il en demande deux pièces d'argent.\n— Et surtout, crie-t-il, il parle ! Il répète tout ce qu'on lui dit !\n\nLes gens s'attroupent, s'émerveillent, mais nul ne sort sa bourse. Le prix est jugé trop élevé.\n\nLe lendemain, Hodja vient au marché avec un dindon noir, qu'il a installé sur un perchoir. Il en demande trois pièces.\n\nLa foule se moque :\n— Hodja, tu plaisantes ? Pour le même prix on a tout un troupeau !\n— L'oiseau d'hier valait deux pièces, dit-il. Le mien en vaut trois.\n— Mais Hodja, l'oiseau d'hier était une merveille. Il parlait !\n— Justement. Le mien fait mieux.\n— Ah oui ? Et quoi ?\n— Il pense.",
+      "question": "Combien achètes-tu ce qui parle — et combien ce qui pense ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "force-du-vieillard",
+      "titre": "La force du vieillard",
+      "themes": ["quotidien","savoir"],
+      "esprits": ["porte-fermee","retournement"],
+      "humeurs": ["rire-de-soi"],
+      "texte": "Hodja, vieillissant, s'attable un soir avec ses amis à la maison de thé.\n— Vous n'allez pas me croire, dit-il. Avec l'âge, j'ai gardé la même force qu'à vingt ans. Moi-même j'en suis étonné.\n\nLes amis sourient.\n— Hodja, tu te vantes. Personne n'est aussi fort vieux qu'il l'était jeune.\n— Pourtant si.\n— Prouve-le.\n— Tenez : vous connaissez l'énorme meule de pierre derrière ma maison ? À vingt ans, je ne pouvais pas la soulever.\n— Et alors ?\n— Eh bien aujourd'hui non plus.",
+      "question": "À quoi mesures-tu ta force réelle — à ce que tu fais, ou à ce que tu ne fais toujours pas ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "habit",
+      "titre": "L'habit",
+      "themes": ["quotidien","ruse"],
+      "esprits": ["enseignement-inverse","idiotie"],
+      "humeurs": ["rire-de-soi","absurde"],
+      "texte": "Un marchand de passage demande à Hodja de le présenter aux notables. Comme il porte un habit fatigué par la route, Hodja lui prête son plus beau caftan.\n\nChez le cadi :\n— Honorable juge, voici mon ami Tarik. L'habit qu'il porte, soit dit en passant, est le mien.\n\nLe marchand bout en sortant. Hodja promet : « À la prochaine, je répare. »\n\nChez l'imam :\n— Vénéré imam, voici Tarik, homme de grande piété. Quant à son habit, c'est le sien.\n\nLe marchand bout encore plus.\n— Hodja, à la prochaine maison, pas un mot sur l'habit !\n\nChez le gouverneur, Hodja entre, salue, et déclare gravement :\n— Voici mon ami Tarik. Quant à l'habit qu'il porte, je n'en dirai rien — il m'a lui-même prié de me taire à ce sujet.",
+      "question": "Que dit ton habit sur toi — quand tu le revendiques, quand tu le tais, quand tu le cèdes ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "quel-vent",
+      "titre": "Quel vent !",
+      "themes": ["ruse","quotidien"],
+      "esprits": ["porte-fermee","idiotie"],
+      "humeurs": ["insolent","absurde"],
+      "texte": "Une nuit, Hodja saute dans le jardin du voisin pour y dérober quelques légumes. Le voisin, qui rentre à l'improviste, le surprend la main dans la terre.\n\n— Hodja ! Cette fois tu ne pourras pas te défendre !\n— Tu ne sens pas le vent qu'il fait ? souffle Hodja. C'est lui qui m'a soulevé et déposé ici, malgré moi.\n— Mais tu déterrais un poireau, à deux mains !\n— Évidemment ! Je me tenais à tout ce que je trouvais, pour ne pas être emporté !\n— Et les légumes dans ta musette, comment y sont-ils venus ?\n— Ah… C'est précisément la question à laquelle je réfléchissais quand tu m'as interrompu. Laisse-moi un peu de temps pour y répondre.",
+      "question": "De quel vent te crois-tu emporté — et quels poireaux tiens-tu, à deux mains, pendant que tu cherches l'excuse ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "corde-a-linge",
+      "titre": "La corde à linge",
+      "themes": ["quotidien","ruse"],
+      "esprits": ["retournement"],
+      "humeurs": ["absurde","rire-de-soi"],
+      "texte": "Un voisin frappe à la porte de Hodja :\n— Hodja, peux-tu me prêter ta corde à linge ? Ma femme veut faire une grande lessive.\n— Aïe, mon ami, pas de chance. Je viens à l'instant de l'utiliser — pour étendre de la farine.\n— De la farine ? Sur une corde à linge ? Tu te moques de moi !\n— Tu n'as donc rien compris. Quand on n'a pas envie de prêter sa corde à linge, on est capable d'y faire sécher n'importe quoi.",
+      "question": "Quelle excuse fais-tu sécher sur ta corde, quand tu n'as pas envie de donner ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "idiot",
+      "titre": "L'idiot",
+      "themes": ["savoir","miroir"],
+      "esprits": ["miroir-spirituel","idiotie"],
+      "humeurs": ["rire-de-soi","insolent"],
+      "texte": "Avec d'autres paysans, Hodja apporte son blé au moulin. Pendant que les voisins discutent, il prélève discrètement quelques poignées dans leurs sacs pour grossir le sien. Mais il est surpris en plein geste.\n\n— Hodja, tu n'as pas honte ?\n— De quoi ?\n— Mais enfin, tu mets dans ton sac du blé qui ne t'appartient pas !\n— Ah, tu crois ? C'est possible. Tu sais, on dit que je suis un peu idiot — je ne fais pas toujours attention à ce que je fais.\n— Si tu étais idiot, rien ne t'empêcherait de faire le contraire — de mettre du tien dans le leur.\n— Écoute, et que ta seconde oreille retienne ce qu'entend la première : je suis idiot, c'est vrai. Mais pas au point de ne pas reconnaître mon propre sac.",
+      "question": "Quelle part de toi feint d'être idiote — et reconnaît parfaitement son sac à elle ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "evenement",
+      "titre": "L'événement",
+      "themes": ["quotidien","miroir"],
+      "esprits": ["koan"],
+      "humeurs": ["lacher-prise","savoir-rien"],
+      "texte": "À midi, quand chacun fait sa sieste à l'abri du soleil, Hodja est assis tout seul au milieu de la place, en plein cagnard.\n\nDe sa fenêtre, un voisin lui crie :\n— Hodja, qu'est-ce que tu fais par cette chaleur ? Tu ne te reposes donc jamais ?\n\nHodja ne répond pas. Le voisin insiste :\n— Rentre chez toi, voyons ! Il n'y a rien à voir.\n— En ce moment, non. Mais s'il se passe quelque chose, je veux être le premier au courant.",
+      "question": "Qu'attends-tu, en plein soleil, que rien encore n'annonce ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "troc",
+      "titre": "Le troc",
+      "themes": ["argent","ruse"],
+      "esprits": ["retournement"],
+      "humeurs": ["absurde","insolent"],
+      "texte": "Hodja entre chez un tailleur. Il essaie une culotte large, hésite, finit par dire :\n— Non, je préfère cette robe jaune, là-bas.\n\nIl ôte la culotte, enfile la robe, et se dirige tranquillement vers la porte.\n\n— Hé ! Tu pars sans payer ?\n— Sans payer quoi ?\n— La robe !\n— Mais j'ai rendu la culotte, qui coûtait exactement le même prix.\n— La culotte non plus, tu ne l'avais pas payée !\n— Quoi ? Tu prétends me faire payer une chose que je ne t'achète pas ?",
+      "question": "Quels échanges fais-tu, en croyant ne rien devoir ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "soleil-et-lune",
+      "titre": "Le soleil et la lune",
+      "themes": ["savoir","miroir"],
+      "esprits": ["retournement","koan"],
+      "humeurs": ["insolent","absurde"],
+      "texte": "On aime tendre des pièges à Hodja, lui poser de ces questions qui n'ont pas de réponse. Un jour :\n\n— Hodja, toi qui sais tant — dis-nous : du soleil ou de la lune, lequel est le plus utile ?\n— La lune, sans hésiter. Elle, au moins, éclaire la nuit, quand il fait noir. Tandis que ce stupide soleil ne brille qu'en plein jour — quand on n'en a aucun besoin.",
+      "question": "Que crois-tu utile — qui n'arrive qu'à son heure, quand il n'en a plus besoin ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "riches-et-pauvres",
+      "titre": "Les riches et les pauvres",
+      "themes": ["argent","puissants"],
+      "esprits": ["insolence"],
+      "humeurs": ["insolent"],
+      "texte": "Après des mois de sécheresse, la famine s'installe. Mais tous ne meurent pas de faim : les riches ont stocké, eux.\n\nKhadidja, sa femme, dit à Hodja :\n— Tu es respecté dans la ville. Va sur la place, parle aux gens, demande aux riches de partager avec les pauvres.\n\nIl trouve l'idée bonne. Deux heures plus tard, il rentre, l'air content.\n\n— Femme, louons Dieu !\n— Tu as réussi ?\n— À moitié, oui.\n— Comment ça, à moitié ?\n— J'ai réussi à convaincre les pauvres.",
+      "question": "Qui as-tu vraiment convaincu — et de quoi ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "conversation",
+      "titre": "Conversation",
+      "themes": ["miroir"],
+      "esprits": ["miroir-spirituel","koan"],
+      "humeurs": ["savoir-rien","lacher-prise"],
+      "texte": "Passant devant une maison de thé, Hodja remarque à l'intérieur un homme habillé exactement comme lui, et portant le même turban. Intrigué, il entre, s'installe à sa table, engage la conversation.\n\nIls parlent du temps, des récoltes, des nouvelles du jour. Au bout d'un moment, Hodja se lève pour partir. L'autre lui demande :\n\n— Excuse-moi, l'ami — qui es-tu, au juste ?\n— Qui je suis ? répond Hodja. Aucune idée. Tout ce que je peux te dire, c'est que je voulais avoir une petite conversation avec moi-même.",
+      "question": "Quand tu parles à quelqu'un — à qui parles-tu, vraiment ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "marmite",
+      "titre": "La marmite",
+      "themes": ["ruse","quotidien"],
+      "esprits": ["retournement","idiotie"],
+      "humeurs": ["absurde","rire-de-soi"],
+      "texte": "Hodja emprunte à sa voisine une grande marmite pour cuisiner. Cinq jours passent. La voisine s'inquiète, vient frapper :\n— Hodja, tu l'as cassée ?\n— Pas du tout ! J'ai même une heureuse nouvelle : ta marmite a eu un petit.\n\nIl ouvre le couvercle — une petite marmite à l'intérieur.\n\n— Emporte-les, lui dit-il, généreux. On ne sépare pas une mère de son enfant.\n\nLa voisine repart, ravie. Elle se dit qu'à ce rythme, elle aura bientôt toute une batterie neuve. Quelques jours plus tard, Hodja frappe à sa porte, le visage grave :\n\n— Voisine, j'ai une triste nouvelle.\n— Quoi donc ?\n— Maman Marmite est morte ce matin.",
+      "question": "Quelles « merveilles » acceptes-tu, pour ne pas voir ce qui se prépare ?",
+      "source": "Tradition. L'un des contes nasréddiniens les plus universellement attestés"
+    },
+    {
+      "id": "homme-au-turban",
+      "titre": "L'homme au turban",
+      "themes": ["miroir","savoir"],
+      "esprits": ["miroir-spirituel","idiotie"],
+      "humeurs": ["rire-de-soi","savoir-rien"],
+      "texte": "Hodja voyage à cheval. Le soir, il s'arrête dans une auberge. On lui donne un lit dans une chambre déjà occupée par un autre dormeur.\n\n— Aubergiste, demain je dois partir avant l'aube. Réveille-moi.\n— Entendu.\n— Mais attention, ne te trompe pas de personne. Regarde : j'enlève mon turban et je le pose là, à côté de moi. L'autre n'en a pas. Rappelle-toi bien : l'homme au turban.\n— Compris.\n\nAvant l'aube, l'aubergiste vient le secouer. Hodja se lève, s'habille à la hâte, monte en selle. Mais dans la précipitation, il a oublié son turban sur la table.\n\nÀ midi, il s'arrête près d'une fontaine pour boire. Il se penche au-dessus de l'eau — et ne reconnaît pas, dans le reflet, cette tête chauve à découvert.\n\n— Quel imbécile, cet aubergiste ! Il s'est trompé de dormeur. Je le lui avais pourtant dit : l'homme au turban !",
+      "question": "Te reconnais-tu — sans ton turban ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "diagnostic",
+      "titre": "Le diagnostic",
+      "themes": ["savoir","quotidien"],
+      "esprits": ["idiotie","retournement"],
+      "humeurs": ["rire-de-soi","absurde"],
+      "texte": "Hodja décide d'apprendre la médecine. Il suit un ami médecin lors d'une visite. Le patient se plaint du ventre.\n\nÀ peine entré, le médecin déclare :\n— Tu as trop mangé de cerises. Repos, diète : dans deux jours, c'est fini.\n\nHodja, impressionné :\n— Mais comment as-tu su ?\n— Très simple. En entrant, j'ai vu sous le lit un tas de noyaux de cerises.\n\nHodja se dit que la médecine est à sa portée.\n\nLe lendemain, il se rend chez son premier patient. Il regarde sous le lit. Rien. Aucun indice.\n\n— Bon, dit-il après réflexion. Tu as une colique. Mais à l'avenir — évite de manger tes babouches.",
+      "question": "Quelles conclusions tires-tu d'indices qui n'existent pas ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "grande-ville",
+      "titre": "Une grande ville",
+      "themes": ["quotidien","savoir"],
+      "esprits": ["retournement","porte-fermee"],
+      "humeurs": ["absurde","rire-de-soi"],
+      "texte": "Hodja arrive à Konya, qu'il visite pour la première fois. Émerveillé par les monuments, il arrête un passant :\n\n— Que la paix soit sur toi, ami. Peux-tu me dire ce qu'est ce splendide édifice ?\n\nLe passant, prenant Hodja pour un paysan, lui répond sèchement :\n— C'est un urinoir, voyons.\n— Un urinoir ! Quelle ville magnifique ! Et peux-tu me montrer, je te prie, le bâtiment où l'on fait les pâtisseries ?",
+      "question": "Quelle « magnificence » construis-tu à partir d'une insulte qu'on te jette ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "changement-climat",
+      "titre": "Changement de climat",
+      "themes": ["femme","quotidien"],
+      "esprits": ["retournement"],
+      "humeurs": ["rire-de-soi","lacher-prise"],
+      "texte": "Un matin glacial d'hiver, Hodja se réfugie au hammam. Il décide d'y rester jusqu'à midi, plutôt que d'aller geler aux champs.\n\nQuand il en sort, encore tout suant, un voisin le croise sur la place :\n— Hodja, rentre vite chez toi. Ta femme est furieuse que tu l'aies laissée seule par ce froid.\n\nHodja, qui ressent encore la chaleur du bain :\n— Mais enfin, comment peux-tu parler de froid par une canicule pareille ?",
+      "question": "Quel climat portes-tu au-dehors — au lieu de regarder celui qu'il fait dehors ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "rapace",
+      "titre": "Le rapace",
+      "themes": ["ruse","miroir"],
+      "esprits": ["miroir-spirituel","retournement"],
+      "humeurs": ["rire-de-soi","insolent"],
+      "texte": "Hodja rentre du boucher avec un morceau de foie soigneusement emballé. Soudain, une buse plonge du ciel, lui arrache la viande, et s'envole se poser sur un toit. Hodja, dépité, doit la regarder festoyer.\n\nLe lendemain, il revient à l'étal, aux aguets. Un autre client sort, son foie à la main. Hodja se jette sur lui, lui arrache son achat, et s'enfuit en courant.\n\n— Au voleur ! crie le client.\n— Mais pourquoi cries-tu ? lui lance Hodja par-dessus son épaule. Je voulais juste sentir ce qu'on ressent quand on est un rapace.",
+      "question": "Qu'éprouverais-tu, vraiment, à être ce que tu accuses ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "arreter-massacre",
+      "titre": "Comment arrêter le massacre",
+      "themes": ["puissants","ruse"],
+      "esprits": ["insolence","retournement"],
+      "humeurs": ["insolent"],
+      "texte": "Akşehir n'en peut plus. Les troupes de Tamerlan pillent, brûlent, terrorisent. Hodja juge qu'il est temps d'agir radicalement.\n\nIl obtient une audience au palais. Il entre, l'air furieux, dans la salle du trône :\n\n— Timour, ta présence ici est devenue intolérable. Pars sur-le-champ. Sinon, je commets un acte si terrible que ton nom sera couvert de honte à jamais.\n\nTamerlan, le « pied-de-fer », éclate de rire :\n— Ô bouffon ! Vas-y, dis-moi vite — qu'est-ce que tu comptes faire ? Sache que je n'ai aucune intention de partir.\n\n— Tu ne pars pas ? Alors tant pis pour toi. C'est moi qui m'en vais.",
+      "question": "Devant un pouvoir qui ne plie pas — quel est ton vrai pouvoir ?",
+      "source": "Tradition. Cycle de Hodja & Tamerlan"
+    },
+    {
+      "id": "quiproquo",
+      "titre": "Quiproquo",
+      "themes": ["puissants","ane"],
+      "esprits": ["insolence","retournement"],
+      "humeurs": ["insolent"],
+      "texte": "Tamerlan est à la chasse. Un sanglier énorme surgit d'un fourré à quelques pas. Le conquérant arme son arc, vise, tire — et manque.\n\n— Bravo ! s'écrie Hodja, derrière lui.\n\n— Pourquoi me dis-tu bravo ? grogne Tamerlan, soupçonneux.\n\n— Mais ce n'est pas à toi que je parlais, seigneur. C'était au sanglier.",
+      "question": "À qui tes compliments s'adressent-ils, vraiment ?",
+      "source": "Tradition. Cycle de Hodja & Tamerlan"
+    },
+    {
+      "id": "la-honte",
+      "titre": "La honte",
+      "themes": ["miroir","quotidien"],
+      "esprits": ["insolence","miroir-spirituel"],
+      "humeurs": ["insolent","rire-de-soi"],
+      "texte": "Hodja est attablé seul à l'auberge. Il a commandé les meilleurs plats de la maison et s'empiffre sans retenue. Une connaissance entre, le voit, s'indigne :\n\n— Hodja, quel glouton tu fais ! Tu pourrais au moins avoir honte et te goinfrer en cachette !\n\n— Mon ami, lui répond Hodja la bouche pleine, même en cachette, j'aurais honte. Alors autant me goinfrer carrément en public.",
+      "question": "De quoi as-tu honte, en public — comme en secret ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "mort-saisit-vif",
+      "titre": "Le mort saisit le vif",
+      "themes": ["puissants","mort"],
+      "esprits": ["insolence","idiotie"],
+      "humeurs": ["insolent"],
+      "texte": "Tamerlan convoque Hodja un matin :\n— Toi qui passes pour savant, dis-moi : devrai-je payer mes crimes de mon vivant ?\n\nHodja sent le piège. Il réfléchit, prudent.\n\n— Eh bien, seigneur, puisque tu insistes — non. Tu ne seras pas puni de ton vivant. Ce sont tes descendants qui paieront pour toi, après ta mort.\n\nRavi de cette réponse, Tamerlan l'emmène à la chasse pour le récompenser. Mais à peine arrivé dans la forêt, son cheval fait un écart et le souverain chute lourdement — il se brise la jambe.\n\n— Bouffon, traître ! rugit Tamerlan. Tu m'avais juré qu'il ne m'arriverait rien !\n\n— Et je le maintiens, seigneur. Cette jambe que tu viens de te briser — c'est pour ton père, le sinistre Taragaï, que tu paies.",
+      "question": "Pour qui paies-tu, sans le savoir ?",
+      "source": "Tradition. Cycle de Hodja & Tamerlan"
+    },
+    {
+      "id": "repos-trepasses",
+      "titre": "Le repos des trépassés",
+      "themes": ["mort","puissants"],
+      "esprits": ["insolence"],
+      "humeurs": ["insolent","absurde"],
+      "texte": "En passant devant la maison du fossoyeur, Hodja aperçoit son fils, assis sur le seuil.\n\n— Présente à ton père tous mes vœux de prompt rétablissement, lui dit-il, très grave.\n\n— Mais Hodja, mon père va parfaitement bien.\n— Ah bon ? Je le croyais gravement malade.\n— Pas du tout. Qu'est-ce qui t'a fait croire cela ?\n— C'est que, ces derniers temps, j'ai beau tendre l'oreille — je n'entends plus, comme d'habitude, les cris et les sanglots des morts qu'on enterre.",
+      "question": "Quels sanglots tes vivants étouffent-ils, que seuls les morts disent encore ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "monde-triste-etat",
+      "titre": "Un monde en triste état",
+      "themes": ["ane","mort"],
+      "esprits": ["idiotie","koan"],
+      "humeurs": ["ane-interieur","lacher-prise"],
+      "texte": "Hodja se rend à Sivrihisar à dos d'âne. Mais l'animal traîne, broute, se couche presque. À ce rythme, ils n'arriveront pas avant la nuit.\n\nExcédé, Hodja le sermonne :\n— Âne stupide ! Bon à rien ! Continue comme ça, et des bandits surgiront pour t'emmener. Ça t'apprendra !\n\nÀ cet instant précis, deux hommes armés sortent des rochers et s'emparent de l'animal. Hodja les regarde s'éloigner, son cher compagnon entre leurs mains, et lève les yeux au ciel :\n\n— Ô Allah ! Ton monde est tombé bien bas. On ne peut même plus plaisanter avec son âne.",
+      "question": "Avec quel « âne » intérieur ne plaisantes-tu plus ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "aboiements",
+      "titre": "Aboiements",
+      "themes": ["quotidien"],
+      "esprits": ["porte-fermee","idiotie"],
+      "humeurs": ["rire-de-soi","absurde"],
+      "texte": "Le voisin de Hodja vient se plaindre, exaspéré : le chien du Hodja aboie toute la nuit et empêche tout le quartier de dormir.\n\n— Je te comprends parfaitement, lui répond Hodja avec sympathie. Mais que veux-tu que j'y fasse ? Moi aussi, figure-toi, j'ai besoin de dormir. Je ne vais quand même pas me lever pour aboyer à sa place jusqu'au matin.",
+      "question": "Qui aboie à ta place, quand tu refuses de répondre ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "remede-intelligence",
+      "titre": "Un remède pour l'intelligence",
+      "themes": ["savoir","enfance"],
+      "esprits": ["enseignement-inverse","retournement"],
+      "humeurs": ["rire-de-soi","absurde"],
+      "texte": "Dans un village voisin, un garçon est si sot qu'il reconnaît à peine ses parents. Désespérés, ceux-ci viennent consulter Hodja.\n\n— Hodja, sais-tu quelque chose qui pourrait rendre un peu de jugement à notre fils ?\n— Vous tombez bien. Je connais la recette de pilules miraculeuses. Revenez demain.\n\nSeul dans son arrière-cour, Hodja ramasse quelques crottes de chèvre, les enrobe soigneusement dans du sucre, une par une.\n\nLe lendemain, il les présente au garçon :\n— Tiens, goûte-moi ça. Tu vas voir, ta cervelle va se remettre en marche.\n\nLe garçon en met une dans la bouche, recrache aussitôt :\n— Mais c'est de la crotte !\n\nHodja se tourne, triomphant, vers les parents :\n— Vous voyez ! Ça vient ! Ça vient !",
+      "question": "Quelles « pilules » avales-tu, en croyant guérir ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "opium",
+      "titre": "L'effet de l'opium",
+      "themes": ["miroir","savoir"],
+      "esprits": ["miroir-spirituel","idiotie"],
+      "humeurs": ["rire-de-soi","savoir-rien"],
+      "texte": "Hodja a entendu dire que l'opium met dans des états merveilleux et fait voir le monde tout autrement. Curieux, il achète chèrement de quoi remplir quelques pipes.\n\nIl entre au hammam, se déshabille, allume son narguilé, fume. Une heure passe. Rien. Aucune sensation. Tout est ordinaire. La colère monte : on l'a roulé.\n\nFurieux, il sort du bain pour réclamer son argent. Il traverse toute la ville, nu comme un ver, sans même remarquer les rires et les cris sur son passage. Il arrive enfin à la boutique :\n\n— Escroc ! Rends-moi mon argent ! Ton opium ne m'a fait aucun effet !\n\n— En es-tu vraiment sûr ? demande tranquillement le marchand.",
+      "question": "Quel effet te crois-tu épargné, que tout le monde voit ?",
+      "source": "Tradition"
+    },
+    {
+      "id": "monter-descendre",
+      "titre": "Monter et descendre",
+      "themes": ["enfance","foi"],
+      "esprits": ["enseignement-inverse","retournement"],
+      "humeurs": ["insolent","absurde"],
+      "texte": "Un jour, Hodja passe au pied d'un minaret. En haut, le muezzin lance son appel à la prière, longue mélopée plaintive.\n\nHodja, vexé par cette plainte, crie vers le sommet :\n— Cesse de te lamenter ! Tu as bien réussi à grimper tout seul à cet arbre sans branche — eh bien, pour redescendre, débrouille-toi tout seul aussi !\n\nIl faut préciser que Hodja, ce jour-là, avait huit ans.",
+      "question": "À quoi es-tu monté, sans savoir comment redescendre ?",
+      "source": "Tradition"
+    }
+  ]
+}

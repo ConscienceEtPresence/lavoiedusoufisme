@@ -14,8 +14,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <!-- icons:end -->
-  <title>Rencontrer — La voie du soufisme</title>
-  <meta name="description" content="Les voix de la voie : maîtres, textes, résonances avec les autres traditions." />
+  <title>Rencontrer — La voie du dedans</title>
+  <meta name="description" content="Galerie des maîtres soufis — du IXᵉ siècle à nos jours. Mystiques, métaphysiciens, poètes, penseurs modernes." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,8 +24,8 @@
   <link rel="stylesheet" href="../assets/css/base.css" />
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
-  <link rel="stylesheet" href="../assets/css/hub.css" />
   <link rel="stylesheet" href="../assets/css/bilingue.css" />
+  <link rel="stylesheet" href="../assets/css/rencontrer.css?v=1" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
   <script>
@@ -47,20 +47,19 @@
         </svg>
         <span>La voie du dedans</span>
       </a>
-
       <button class="nav-toggle" aria-label="Menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M3 6h18M3 12h18M3 18h18" />
         </svg>
       </button>
-
       <nav>
         <ul class="site-nav">
           <li><a href="../index.html">Accueil</a></li>
           <li><a href="decouvrir.html">Découvrir</a></li>
           <li><a href="cheminer.html">Cheminer</a></li>
           <li><a href="rencontrer.html" class="active">Rencontrer</a></li>
-          <li><a href="dictionnaire/index.html" title="Dictionnaire du soufisme">م Dictionnaire</a></li>
+          <li><a href="dictionnaire/index.html">م Dictionnaire</a></li>
+          <li><a href="racines/index.html">جذر Racines</a></li>
         </ul>
       </nav>
     </div>
@@ -71,14 +70,58 @@
     <header class="bi-header">
       <div class="bi-header__ar">اَللِّقَاء</div>
       <h1 class="bi-header__name">Rencontrer</h1>
-      <div class="bi-header__dates">Troisième porte</div>
+      <div class="bi-header__dates">Galerie des maîtres</div>
       <div class="bi-header__rule"></div>
-      <p class="bi-header__tag">Les maîtres, les textes, les résonances entre traditions.</p>
+      <p class="bi-header__tag">
+        Du IX<sup>e</sup> siècle à nos jours — les voix qui ont porté, pensé, transmis le soufisme.<br>
+        Chaque maître peut être abordé par sa vie, sa parole, ses œuvres.
+      </p>
     </header>
 
-    <section class="container container--wide">
-      <div class="ornament">✦</div>
-      <div class="hub-grid" id="hub-grid"></div>
+    <section class="container container--narrow">
+      <p class="auteurs-intro">
+        <em>Cette galerie s'enrichit au fil du temps. Certaines fiches sont déjà complètes ; d'autres
+        attendent leur développement — bibliographie, citations, commentaire d'œuvres. Cliquez sur celles
+        qui vous appellent.</em>
+      </p>
+    </section>
+
+    <!-- Filtres -->
+    <section class="container">
+      <div class="auteurs-filtres" id="filtres-container">
+        <!-- injecté par JS -->
+      </div>
+    </section>
+
+    <!-- Grille des auteurs -->
+    <section class="container">
+      <div class="auteurs-grille" id="auteurs-grille">
+        <!-- injecté par JS -->
+      </div>
+      <p class="auteurs-empty" id="auteurs-empty">
+        Aucun maître ne correspond à ces critères.<br>
+        <em>Essayez d'autres filtres.</em>
+      </p>
+    </section>
+
+    <!-- Section : Confréries & autres modules -->
+    <section class="container container--narrow autres-modules">
+      <div class="ornament">✦ ✦ ✦</div>
+      <h2 class="modules-titre">Pour aller plus loin</h2>
+
+      <div class="modules-cards">
+        <a href="confreries/index.html" class="module-card">
+          <div class="module-card__ar" lang="ar" dir="rtl">الطُّرُق</div>
+          <h3 class="module-card__title">Les confréries</h3>
+          <p class="module-card__desc">Les grandes <em>ṭuruq</em> — Naqshbandiyya, Qādiriyya, Shādhiliyya, Tijāniyya, Mevleviyya…</p>
+        </a>
+
+        <a href="resonances.html" class="module-card">
+          <div class="module-card__ar" lang="ar" dir="rtl">الصَّدَى</div>
+          <h3 class="module-card__title">Résonances</h3>
+          <p class="module-card__desc">Le soufisme en miroir des autres traditions — Eckhart, Vedânta, kabbale, hésychasme…</p>
+        </a>
+      </div>
     </section>
 
   </main>
@@ -88,16 +131,15 @@
       <div class="ornament">✦</div>
       <p><em>« Il y a autant de voies menant à Dieu que de souffles des fils d'Adam. »</em></p>
       <p class="small" style="margin-top: 1rem;"><a href="../index.html">← Retour à l'accueil</a></p>
-    </div>
       <p class="site-footer__contact">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScLBwWZA-VZf4OaIEl11fnKasayyVrll7DZL5A3uZZBCwLdkQ/viewform?usp=header" target="_blank" rel="noopener" class="contact-link">
           <span aria-hidden="true">✉</span> M'écrire
         </a>
       </p>
-</footer>
+    </div>
+  </footer>
 
-  <script>window.HUB_DATA_FILE = 'rencontrer.json';</script>
-  <script src="../assets/js/main.js?v=2"></script>
-  <script src="../assets/js/hub.js?v=2"></script>
+  <script src="../assets/js/main.js?v=3"></script>
+  <script src="../assets/js/rencontrer.js?v=1"></script>
 </body>
 </html>

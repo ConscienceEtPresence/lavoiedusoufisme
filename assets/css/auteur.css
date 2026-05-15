@@ -234,3 +234,128 @@
   .auteur-body p { font-size: 1rem; }
   .auteur-hero__meta { gap: 0.5rem var(--space-md); }
 }
+
+/* === Squelette : bannière "à venir" === */
+.auteur-skeleton-banner {
+  background: linear-gradient(135deg, rgba(184,134,11,0.07), rgba(166,90,74,0.04));
+  border: 1px solid rgba(184, 134, 11, 0.18);
+  border-radius: 12px;
+  padding: 1rem 1.4rem;
+  margin: 0 auto var(--space-lg);
+  max-width: 760px;
+  text-align: center;
+}
+.auteur-skeleton-banner p {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.92rem;
+  color: var(--ink-mute, #6b6a65);
+  line-height: 1.6;
+  margin: 0;
+}
+.auteur-skeleton-banner a {
+  color: var(--gold, #B8860B);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(184, 134, 11, 0.4);
+}
+.auteur-skeleton-banner a:hover {
+  border-bottom-color: var(--gold, #B8860B);
+}
+
+/* === Sections du squelette === */
+.auteur-section {
+  max-width: 760px;
+  margin: 0 auto var(--space-xl);
+  padding: 0 1rem;
+}
+.auteur-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 2.8vw, 1.7rem);
+  color: var(--ink-title, #1B2A4E);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(184, 134, 11, 0.18);
+}
+.auteur-section > p {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--ink, #0F1830);
+}
+
+/* Placeholder italique pour les contenus à venir */
+.placeholder {
+  font-style: italic;
+  color: var(--ink-mute, #6b6a65) !important;
+  background: rgba(184, 134, 11, 0.03);
+  border-left: 3px solid rgba(184, 134, 11, 0.25);
+  padding: 0.8rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.95rem !important;
+}
+
+/* Citation iconique en exergue */
+.citation-iconique {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.15rem, 2.6vw, 1.35rem);
+  color: var(--ink-title, #1B2A4E);
+  line-height: 1.55;
+  margin: 1.5rem auto;
+  max-width: 640px;
+  padding: 1.2rem 1.6rem;
+  border-left: 3px solid var(--gold, #B8860B);
+  background: rgba(184, 134, 11, 0.04);
+  border-radius: 0 10px 10px 0;
+}
+
+/* Grille des œuvres */
+.oeuvres-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.oeuvre-carte {
+  display: block;
+  background: #fff;
+  border: 1px solid rgba(184, 134, 11, 0.18);
+  border-radius: 10px;
+  padding: 1.2rem 1.1rem;
+  text-decoration: none;
+  color: var(--ink, #0F1830);
+  transition: all 0.3s ease;
+}
+.oeuvre-carte:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  border-color: rgba(184,134,11,0.4);
+}
+.oeuvre-carte__titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--ink-title, #1B2A4E);
+  margin-bottom: 0.2rem;
+}
+.oeuvre-carte__date {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--gold, #B8860B);
+  margin-bottom: 0.5rem;
+}
+.oeuvre-carte__desc {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.88rem;
+  color: var(--ink-mute, #6b6a65);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .auteur-section { padding: 0 0.5rem; }
+  .citation-iconique { padding: 1rem 1.2rem; font-size: 1.1rem; }
+}

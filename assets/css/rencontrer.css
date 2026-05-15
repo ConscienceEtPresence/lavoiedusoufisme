@@ -1,0 +1,328 @@
+/* === Rencontrer — Galerie des maîtres === */
+
+:root {
+  --rc-paper: #FBF7EF;
+  --rc-warm: #F5EFE3;
+  --rc-ink: #0F1830;
+  --rc-ink-deep: #1B2A4E;
+  --rc-soft: #6b6a65;
+  --rc-gold: #B8860B;
+  --rc-gold-soft: #d4a04b;
+  --rc-line: rgba(184, 134, 11, 0.18);
+}
+
+/* === Intro === */
+.auteurs-intro {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--rc-soft);
+  margin: 0 auto var(--space-lg);
+  max-width: 640px;
+  text-align: center;
+}
+
+/* === Filtres === */
+.auteurs-filtres {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 1100px;
+  margin: 0 auto var(--space-lg);
+  padding: 1rem;
+  background: rgba(184, 134, 11, 0.03);
+  border-radius: 12px;
+  border: 1px solid var(--rc-line);
+}
+
+.filtre-groupe {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.filtre-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rc-gold);
+  font-weight: 600;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.filtre-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.filtre-pill {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.85rem;
+  background: transparent;
+  border: 1px solid var(--rc-line);
+  border-radius: 999px;
+  color: var(--rc-ink);
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+.filtre-pill:hover {
+  border-color: var(--rc-gold);
+  color: var(--rc-gold);
+}
+.filtre-pill.active {
+  background: var(--rc-ink-deep);
+  color: var(--rc-paper);
+  border-color: var(--rc-ink-deep);
+}
+.filtre-periode {
+  font-size: 0.7rem;
+  opacity: 0.65;
+  margin-left: 0.25rem;
+}
+
+/* === Sections par époque === */
+.epoque-section {
+  max-width: 1200px;
+  margin: 0 auto var(--space-xl);
+  padding: 0 1rem;
+}
+
+.epoque-titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  color: var(--rc-ink-deep);
+  text-align: center;
+  margin: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+.epoque-titre__txt {
+  position: relative;
+  padding: 0 1.5rem;
+}
+.epoque-titre__txt::before,
+.epoque-titre__txt::after {
+  content: '✦';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--rc-gold);
+  font-size: 0.7rem;
+  opacity: 0.5;
+}
+.epoque-titre__txt::before { left: 0; }
+.epoque-titre__txt::after { right: 0; }
+.epoque-titre__periode {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rc-soft);
+  opacity: 0.85;
+}
+
+/* === Grille de cartes auteurs === */
+.epoque-cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+.auteur-carte {
+  position: relative;
+  display: block;
+  background: #fff;
+  border: 1px solid var(--rc-line);
+  border-radius: 14px;
+  padding: 1.5rem 1.4rem 1.4rem;
+  text-decoration: none;
+  color: var(--rc-ink);
+  transition: all 0.32s cubic-bezier(.2,.7,.3,1);
+  overflow: hidden;
+  text-align: center;
+}
+.auteur-carte::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--rc-gold);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.auteur-carte:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.08);
+  border-color: rgba(184,134,11,0.4);
+}
+.auteur-carte:hover::before { opacity: 1; }
+
+.auteur-carte.is-soon {
+  background: linear-gradient(180deg, rgba(184,134,11,0.025), transparent 60%);
+  opacity: 0.92;
+}
+.auteur-carte.is-soon:hover { opacity: 1; }
+
+.auteur-badge {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rc-gold);
+  background: rgba(184, 134, 11, 0.1);
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+}
+
+.auteur-carte__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.7rem;
+  color: var(--rc-ink-deep);
+  line-height: 1.4;
+  margin-bottom: 0.35rem;
+  direction: rtl;
+}
+.auteur-carte__tr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--rc-gold);
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.02em;
+}
+.auteur-carte__fr {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  color: var(--rc-ink-deep);
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+.auteur-carte__dates {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--rc-soft);
+  margin-bottom: 0.1rem;
+}
+.auteur-carte__lieu {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--rc-soft);
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--rc-line);
+}
+.auteur-carte__tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--rc-ink);
+  line-height: 1.5;
+  margin-bottom: 0.7rem;
+}
+.auteur-carte__citation {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.82rem;
+  color: var(--rc-soft);
+  line-height: 1.55;
+  font-style: italic;
+  border-left: 2px solid rgba(184, 134, 11, 0.3);
+  padding-left: 0.8rem;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+/* === Empty state === */
+.auteurs-empty {
+  display: none;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--rc-soft);
+  margin: var(--space-xl) auto;
+  max-width: 480px;
+}
+.auteurs-empty.show { display: block; }
+
+/* === Section autres modules === */
+.autres-modules {
+  margin-top: var(--space-2xl);
+  text-align: center;
+}
+.modules-titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 3vw, 1.7rem);
+  color: var(--rc-ink-deep);
+  margin-bottom: var(--space-md);
+}
+.modules-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  max-width: 720px;
+  margin: 0 auto;
+}
+.module-card {
+  display: block;
+  background: linear-gradient(180deg, rgba(120, 140, 130, 0.09), rgba(120, 140, 130, 0.04));
+  border: 1px solid rgba(120, 140, 130, 0.28);
+  border-radius: var(--radius-lg, 12px);
+  padding: 1.6rem 1.4rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--rc-ink);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.55);
+}
+.module-card:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 8px 22px rgba(120, 140, 130, 0.18);
+  border-color: rgba(120, 140, 130, 0.55);
+}
+.module-card__ar {
+  font-family: 'Amiri', serif;
+  font-size: clamp(1.8rem, 4.5vw, 2.3rem);
+  color: rgba(90, 110, 100, 0.95);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  direction: rtl;
+}
+.module-card__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--rc-ink-deep);
+  margin: 0 0 0.4rem;
+  font-weight: 500;
+}
+.module-card__desc {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.92rem;
+  color: var(--rc-soft);
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .filtre-groupe { flex-direction: column; align-items: flex-start; }
+  .filtre-label { min-width: 0; }
+  .epoque-cartes { grid-template-columns: 1fr; }
+  .auteur-carte { padding: 1.3rem 1.2rem 1.2rem; }
+}

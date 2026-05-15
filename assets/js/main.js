@@ -94,3 +94,52 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2, rootMargin: '-80px 0px -80px 0px' });
 
 document.querySelectorAll('.period').forEach(el => observer.observe(el));
+
+// 4. Mode nuit — bouton flottant + persistance + préférence OS
+(function() {
+  // a) Injecter le CSS du mode nuit (un seul include partout)
+  if (!document.querySelector('link[data-darkmode]')) {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.dataset.darkmode = '1';
+    // chemin absolu depuis le root — fonctionne depuis n'importe quelle profondeur
+    const scripts = document.querySelectorAll('script[src*="main.js"]');
+    const baseHref = scripts.length ? scripts[scripts.length-1].src.replace(/assets\/js\/main\.js.*$/, '') : '/';
+    link.href = baseHref + 'assets/css/dark-mode.css?v=1';
+    document.head.appendChild(link);
+  }
+
+  // b) Déterminer le thème initial : localStorage > OS > clair
+  const stored = (() => { try { return localStorage.getItem('lvdd-theme'); } catch(e) { return null; } })();
+  const osDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initialTheme = stored || (osDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', initialTheme);
+
+  // c) Bouton flottant
+  function buildToggle() {
+    if (document.querySelector('.theme-toggle')) return;
+    const btn = document.createElement('button');
+    btn.className = 'theme-toggle';
+    btn.setAttribute('aria-label', 'Basculer mode jour / mode nuit');
+    btn.setAttribute('title', 'Mode jour / nuit');
+    btn.innerHTML = '<span class="theme-toggle__icon"></span>';
+    document.body.appendChild(btn);
+
+    function syncIcon() {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      btn.querySelector('.theme-toggle__icon').textContent = isDark ? '☀' : '☾';
+    }
+    syncIcon();
+
+    btn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('lvdd-theme', next); } catch(e) {}
+      syncIcon();
+    });
+  }
+
+  if (document.body) buildToggle();
+  else document.addEventListener('DOMContentLoaded', buildToggle);
+})();

@@ -1,0 +1,188 @@
+/* ============================================================
+   MODE NUIT — pour la lecture du soir
+   Palette : nuit d'encre, parchemin clair, or dimmé
+   ============================================================ */
+
+[data-theme="dark"] {
+  --paper:        #11161F;   /* nuit profonde, bleu-noir */
+  --paper-warm:   #1A2030;   /* veille tamisée */
+  --paper-deep:   #232A3D;   /* encart, citation */
+  --ink:          #E8DFC9;   /* parchemin clair */
+  --ink-title:    #F5EFE0;   /* lumière sur titre */
+  --ink-soft:     #C9C0AA;   /* texte secondaire */
+  --ink-mute:     #8A8472;   /* texte tertiaire */
+  --gold:         #D4A93A;   /* or — gardé vibrant */
+  --gold-soft:    #E8C76B;   /* or clair */
+  --rose:         #D08899;   /* rose adouci pour fond sombre */
+  --turquoise:    #7DC7C4;   /* turquoise plus lumineux */
+  --line:         #2D3548;   /* lignes très douces */
+  --shadow:       0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-soft:  0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] body {
+  /* Le motif géométrique de fond doit aussi changer de teinte */
+  background-image:
+    radial-gradient(ellipse at top, rgba(212, 169, 58, 0.05) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom right, rgba(125, 199, 196, 0.04) 0%, transparent 50%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><g fill='none' stroke='%23D4A93A' stroke-width='0.5' opacity='0.04'><circle cx='80' cy='80' r='60'/><circle cx='80' cy='80' r='40'/><circle cx='80' cy='80' r='20'/><path d='M80 20 L80 140 M20 80 L140 80 M37 37 L123 123 M37 123 L123 37'/></g></svg>");
+}
+
+/* === Overrides pour les fonds blancs durs des cartes === */
+[data-theme="dark"] .meditate-card,
+[data-theme="dark"] .conte-carte,
+[data-theme="dark"] .conte-carte-mini,
+[data-theme="dark"] .mot-carte,
+[data-theme="dark"] .poesie-carte,
+[data-theme="dark"] .oeuvre-carte,
+[data-theme="dark"] .auteur-carte,
+[data-theme="dark"] .hodja-vignette,
+[data-theme="dark"] .hodja-esprit,
+[data-theme="dark"] .hodja-porte,
+[data-theme="dark"] .hodja-source,
+[data-theme="dark"] .amour-station,
+[data-theme="dark"] .amour-porte,
+[data-theme="dark"] .amour-theme,
+[data-theme="dark"] .conte-meta,
+[data-theme="dark"] .conte-meta__tag,
+[data-theme="dark"] .mot-meta__tag,
+[data-theme="dark"] .conte-soeur,
+[data-theme="dark"] .mot-frere,
+[data-theme="dark"] .mot-racine,
+[data-theme="dark"] .parcours-pill,
+[data-theme="dark"] .poesie-pill,
+[data-theme="dark"] .carnet-entree {
+  background: var(--paper-deep) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
+
+/* === Cartes "soon" === */
+[data-theme="dark"] .is-soon { opacity: 0.7; }
+
+/* === Header & footer === */
+[data-theme="dark"] .site-header {
+  background: rgba(17, 22, 31, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+[data-theme="dark"] .site-nav a { color: var(--ink-soft); }
+[data-theme="dark"] .site-nav a:hover,
+[data-theme="dark"] .site-nav a.active { color: var(--gold); }
+
+/* === Hero === */
+[data-theme="dark"] .hero { background: transparent; }
+[data-theme="dark"] .hero__lede { color: var(--ink-soft); }
+
+/* === Seuil button === */
+[data-theme="dark"] .seuil {
+  background: linear-gradient(135deg, rgba(212,169,58,0.18), rgba(125,199,196,0.10));
+  border-color: var(--gold);
+  color: var(--gold-soft);
+}
+
+/* === Doors === */
+[data-theme="dark"] .door {
+  background: var(--paper-deep);
+  border-color: var(--line);
+}
+[data-theme="dark"] .door:hover {
+  border-color: var(--gold);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.5);
+}
+
+/* === Newsletter === */
+[data-theme="dark"] .newsletter { background: transparent; }
+[data-theme="dark"] .newsletter__form input {
+  background: var(--paper-deep);
+  color: var(--ink);
+  border-color: var(--line);
+}
+[data-theme="dark"] .newsletter__form input::placeholder { color: var(--ink-mute); }
+
+/* === Forms & textareas === */
+[data-theme="dark"] textarea,
+[data-theme="dark"] input[type="email"],
+[data-theme="dark"] input[type="text"] {
+  background: var(--paper-deep);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+/* === Footer === */
+[data-theme="dark"] .site-footer {
+  background: rgba(17, 22, 31, 0.6);
+  border-top: 1px solid var(--line);
+}
+[data-theme="dark"] .site-footer p { color: var(--ink-soft); }
+
+/* === Cards filled with linear gradients (variantes colorées) === */
+/* Ces variants gardent leur teinte mais adoucie pour fond sombre */
+[data-theme="dark"] .meditate-card--ciel,
+[data-theme="dark"] .meditate-card--terre,
+[data-theme="dark"] .meditate-card--poesie,
+[data-theme="dark"] .meditate-card--contes,
+[data-theme="dark"] .meditate-card--amour {
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)) !important;
+}
+
+/* === Blockquotes en mode nuit === */
+[data-theme="dark"] blockquote {
+  background: var(--paper-warm);
+  color: var(--ink-soft);
+}
+
+/* === Selection === */
+[data-theme="dark"] ::selection {
+  background: rgba(212, 169, 58, 0.4);
+  color: var(--ink-title);
+}
+
+/* === Bouton flottant de bascule === */
+.theme-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--paper-warm);
+  color: var(--gold);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  font-family: var(--font-sans);
+}
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--gold);
+}
+[data-theme="dark"] .theme-toggle {
+  background: var(--paper-deep);
+  color: var(--gold-soft);
+}
+.theme-toggle__icon {
+  display: inline-block;
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  .theme-toggle {
+    bottom: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* === Respect prefers-reduced-motion === */
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle { transition: none; }
+}

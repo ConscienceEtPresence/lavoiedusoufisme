@@ -115,6 +115,25 @@
   border-color: rgba(166, 90, 74, 0.6);
 }
 
+/* Variante Contes — ocre miel, la sagesse du récit */
+.meditate-card--contes {
+  background: linear-gradient(180deg, rgba(184, 118, 47, 0.11), rgba(184, 118, 47, 0.03));
+  border-color: rgba(184, 118, 47, 0.32);
+}
+.meditate-card--contes::after {
+  color: rgba(184, 118, 47, 0.55);
+}
+.meditate-card--contes .meditate-card__ar {
+  color: rgba(150, 95, 35, 0.95);
+}
+.meditate-card--contes .meditate-card__title {
+  color: #8A5A20;
+}
+.meditate-card--contes:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 10px 26px rgba(184, 118, 47, 0.22);
+  border-color: rgba(184, 118, 47, 0.6);
+}
+
 @media (max-width: 600px) {
   .meditate-cards { grid-template-columns: 1fr; }
   .meditate-section { margin-top: var(--space-xl); }

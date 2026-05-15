@@ -96,6 +96,25 @@
   margin: 0;
 }
 
+/* Variante Poésie — ton rose chaud, dans la même famille contemplative */
+.meditate-card--poesie {
+  background: linear-gradient(180deg, rgba(166, 90, 74, 0.10), rgba(184, 134, 11, 0.04));
+  border-color: rgba(166, 90, 74, 0.32);
+}
+.meditate-card--poesie::after {
+  color: rgba(166, 90, 74, 0.55);
+}
+.meditate-card--poesie .meditate-card__ar {
+  color: rgba(140, 70, 58, 0.95);
+}
+.meditate-card--poesie .meditate-card__title {
+  color: #8C463A;
+}
+.meditate-card--poesie:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 10px 26px rgba(166, 90, 74, 0.22);
+  border-color: rgba(166, 90, 74, 0.6);
+}
+
 @media (max-width: 600px) {
   .meditate-cards { grid-template-columns: 1fr; }
   .meditate-section { margin-top: var(--space-xl); }

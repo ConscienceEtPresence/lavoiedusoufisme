@@ -75,6 +75,21 @@
 .site-nav a:hover::after,
 .site-nav a.active::after { transform: scaleX(1); }
 
+/* Sélecteur de langue FR / EN */
+.lang-switch { display: flex; align-items: center; }
+.lang-switch a {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  padding: 0.18rem 0.65rem;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.lang-switch a::after { display: none; }
+.lang-switch a:hover { background: rgba(184, 134, 11, 0.1); color: var(--gold); }
+
 .nav-toggle {
   display: none;
   background: none;

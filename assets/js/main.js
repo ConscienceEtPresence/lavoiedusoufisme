@@ -153,6 +153,55 @@ document.querySelectorAll('.period').forEach(el => observer.observe(el));
   else document.addEventListener('DOMContentLoaded', buildToggle);
 })();
 
+// 6. Sélecteur de langue FR / EN
+(function() {
+  const nav = document.querySelector('.site-nav');
+  if (!nav || nav.querySelector('.lang-switch')) return;
+
+  const scripts = document.querySelectorAll('script[src*="main.js"]');
+  const baseHref = scripts.length
+    ? scripts[scripts.length-1].src.replace(/assets\/js\/main\.js.*$/, '')
+    : location.origin + '/';
+  const rootPath = new URL(baseHref).pathname; // "/" ou "/depot/"
+
+  const isEN = document.documentElement.lang === 'en';
+  const rel = location.pathname.startsWith(rootPath)
+    ? location.pathname.slice(rootPath.length)
+    : location.pathname.replace(/^\//, '');
+
+  let target, label, fallback;
+  if (isEN) {
+    target = rootPath + rel.replace(/^en\/?/, '');
+    label = 'FR';
+    fallback = null; // les pages françaises existent toujours
+  } else {
+    target = rootPath + 'en/' + rel;
+    label = 'EN';
+    fallback = rootPath + 'en/';
+  }
+
+  const li = document.createElement('li');
+  li.className = 'lang-switch';
+  const a = document.createElement('a');
+  a.href = target;
+  a.textContent = label;
+  a.setAttribute('aria-label', isEN ? 'Voir cette page en français' : 'View this page in English');
+  a.setAttribute('hreflang', isEN ? 'fr' : 'en');
+  li.appendChild(a);
+  nav.appendChild(li);
+
+  a.addEventListener('click', (e) => {
+    try { localStorage.setItem('lvdd-lang', isEN ? 'fr' : 'en'); } catch(err) {}
+    // Si la page traduite n'existe pas encore, repli sur l'accueil de l'autre langue
+    if (fallback) {
+      e.preventDefault();
+      fetch(target, { method: 'HEAD' })
+        .then(r => { location.href = r.ok ? target : fallback; })
+        .catch(() => { location.href = fallback; });
+    }
+  });
+})();
+
 // 5. Service Worker — mode offline + PWA installable
 (function() {
   if (!('serviceWorker' in navigator)) return;

@@ -4,6 +4,10 @@
 (() => {
   let DATA = null;
   let filtre = { auteur: 'all', langue: 'all', theme: 'all' };
+  const isEN = document.documentElement.lang === 'en';
+  const T = isEN
+    ? { auteur: 'Author', langue: 'Language', theme: 'Theme', tous: 'All', soon: 'coming soon' }
+    : { auteur: 'Auteur', langue: 'Langue', theme: 'Thème', tous: 'Tous', soon: 'à venir' };
 
   const filtresEl = document.getElementById('poesie-filtres');
   const grilleEl  = document.getElementById('poesie-grille');
@@ -19,16 +23,16 @@
 
   function buildFiltres() {
     const groupes = [
-      { key: 'auteur',    label: 'Auteur',    items: DATA.filtres.auteur },
-      { key: 'langue',    label: 'Langue',    items: DATA.filtres.langue },
-      { key: 'theme',     label: 'Thème',     items: DATA.filtres.theme  }
+      { key: 'auteur',    label: T.auteur,    items: DATA.filtres.auteur },
+      { key: 'langue',    label: T.langue,    items: DATA.filtres.langue },
+      { key: 'theme',     label: T.theme,     items: DATA.filtres.theme  }
     ];
 
     filtresEl.innerHTML = groupes.map(g => `
       <div class="poesie-filtre-groupe">
         <div class="poesie-filtre-label">${g.label}</div>
         <div class="poesie-filtre-pills">
-          <button class="poesie-pill active" data-key="${g.key}" data-val="all">Tous</button>
+          <button class="poesie-pill active" data-key="${g.key}" data-val="all">${T.tous}</button>
           ${g.items.map(it => `
             <button class="poesie-pill" data-key="${g.key}" data-val="${it.id}">${it.label}</button>
           `).join('')}
@@ -66,7 +70,7 @@
 
     grilleEl.innerHTML = filtres.map(p => {
       const readyClass = p.status === 'ready' ? 'is-ready' : 'is-soon';
-      const readyBadge = p.status === 'soon' ? '<span class="poesie-badge">à venir</span>' : '';
+      const readyBadge = p.status === 'soon' ? `<span class="poesie-badge">${T.soon}</span>` : '';
       const dir = p.langue === 'turque' ? 'ltr' : 'rtl';
       return `
         <a class="poesie-carte ${readyClass}" href="${p.href}">
@@ -76,7 +80,7 @@
           <div class="poesie-carte__titre-tr">${p.titre_tr}</div>
           <h2 class="poesie-carte__titre-fr">${p.titre_fr}</h2>
           <div class="poesie-carte__auteur">${p.auteur_nom}</div>
-          <p class="poesie-carte__extrait">« ${p.extrait_fr} »</p>
+          <p class="poesie-carte__extrait">${isEN ? `&ldquo;${p.extrait_fr}&rdquo;` : `« ${p.extrait_fr} »`}</p>
           <p class="poesie-carte__tagline"><em>${p.tagline}</em></p>
         </a>
       `;

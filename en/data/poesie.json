@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "Poetry",
+    "subtitle": "The path through the poem",
+    "intro": "Poetry is not an ornament of Sufism — it is its freest voice. Where the treatise would freeze, the poem suggests. Where prose explains, the verse enchants. This anthology is built slowly, poem after poem — each given in its original language, its transliteration, its English translation, its context, and a question for meditation."
+  },
+  "filtres": {
+    "auteur": [
+      { "id": "rumi",         "label": "Rūmī" },
+      { "id": "hafez",        "label": "Ḥāfiẓ" },
+      { "id": "attar",        "label": "ʿAṭṭār" },
+      { "id": "saadi",        "label": "Saadi" },
+      { "id": "yunus-emre",   "label": "Yunus Emre" },
+      { "id": "ibn-arabi",    "label": "Ibn ʿArabī" },
+      { "id": "ibn-al-farid", "label": "Ibn al-Fāriḍ" },
+      { "id": "hallaj",       "label": "Al-Ḥallāj" },
+      { "id": "rabia",        "label": "Rābiʿa" },
+      { "id": "busiri",       "label": "Al-Būṣīrī" }
+    ],
+    "langue": [
+      { "id": "arabe",   "label": "Arabic" },
+      { "id": "persane", "label": "Persian" },
+      { "id": "turque",  "label": "Turkish" }
+    ],
+    "theme": [
+      { "id": "amour",       "label": "Love" },
+      { "id": "extase",      "label": "Ecstasy" },
+      { "id": "separation",  "label": "Exile and return" },
+      { "id": "nuit",        "label": "Night, the Guest" },
+      { "id": "vin",         "label": "Spiritual wine" },
+      { "id": "alast",       "label": "The day of alast" },
+      { "id": "humilite",    "label": "Poverty, humility" },
+      { "id": "louange",     "label": "Praise of the Prophet" }
+    ]
+  },
+  "poemes": [
+
+    {
+      "id": "le-chant-du-roseau",
+      "auteur": "rumi",
+      "auteur_nom": "Rūmī",
+      "titre_fr": "The song of the reed",
+      "titre_orig": "نَی‌نامه",
+      "titre_tr": "Ney-nāmeh",
+      "corpus": "Mathnawī I, verses 1-18",
+      "date": "c. 1259",
+      "langue": "persane",
+      "themes": ["separation", "amour", "alast"],
+      "type": "mathnawi",
+      "tagline": "The exiled soul remembers.",
+      "extrait_fr": "Listen to this reed, how it laments — it is the longing for alast.",
+      "href": "../auteurs/rumi/mathnawi.html",
+      "status": "ready"
+    },
+
+    {
+      "id": "viens-qui-que-tu-sois",
+      "auteur": "rumi",
+      "auteur_nom": "Rūmī",
+      "titre_fr": "Come, come, whoever you are",
+      "titre_orig": "بیا، بیا، هر آنچه هستی بیا",
+      "titre_tr": "Biā, biā, har ānche hasti biā",
+      "corpus": "Rubāʿiyāt (attributed)",
+      "date": "13th c.",
+      "langue": "persane",
+      "themes": ["amour", "humilite"],
+      "type": "rubai",
+      "tagline": "The door is never the door of despair.",
+      "extrait_fr": "Come, come, whoever you are — our door is not the door of despair.",
+      "href": "rumi/viens-qui-que-tu-sois.html",
+      "status": "soon"
+    },
+
+    {
+      "id": "ghazal-alast",
+      "auteur": "hafez",
+      "auteur_nom": "Ḥāfiẓ",
+      "titre_fr": "Since the day of alast",
+      "titre_orig": "از روز ازل",
+      "titre_tr": "Az rūz-e azal",
+      "corpus": "Dīwān, ghazal",
+      "date": "14th c.",
+      "langue": "persane",
+      "themes": ["alast", "amour", "vin"],
+      "type": "ghazal",
+      "tagline": "The eternal covenant with the Beloved.",
+      "extrait_fr": "From the day of alast to the Day of Judgement, my covenant with the Beloved has not changed by a single letter.",
+      "href": "hafez/ghazal-alast.html",
+      "status": "soon"
+    },
+
+    {
+      "id": "sevelim-sevilelim",
+      "auteur": "yunus-emre",
+      "auteur_nom": "Yunus Emre",
+      "titre_fr": "Let us love and be loved",
+      "titre_orig": "Sevelim sevilelim",
+      "titre_tr": "Sevelim sevilelim",
+      "corpus": "Divan",
+      "date": "13th–14th c.",
+      "langue": "turque",
+      "themes": ["amour", "humilite"],
+      "type": "hymne",
+      "tagline": "The world remains to no one — so let us love.",
+      "extrait_fr": "Let us love and be loved — this world remains to no one.",
+      "href": "yunus-emre/sevelim-sevilelim.html",
+      "status": "soon"
+    },
+
+    {
+      "id": "mon-coeur-toutes-formes",
+      "auteur": "ibn-arabi",
+      "auteur_nom": "Ibn ʿArabī",
+      "titre_fr": "My heart has become capable of every form",
+      "titre_orig": "لَقَدْ صَارَ قَلْبِي قَابِلًا كُلَّ صُورَةٍ",
+      "titre_tr": "Laqad ṣāra qalbī qābilan kulla ṣūratin",
+      "corpus": "Tarjumān al-Ashwāq, ghazal XI",
+      "date": "c. 1215",
+      "langue": "arabe",
+      "themes": ["amour", "extase"],
+      "type": "ghazal",
+      "tagline": "The religion of love — present everywhere.",
+      "extrait_fr": "My heart has become capable of every form: a pasture for gazelles, a cloister for Christian monks…",
+      "href": "ibn-arabi/mon-coeur-toutes-formes.html",
+      "status": "soon"
+    },
+
+    {
+      "id": "ana-l-haqq",
+      "auteur": "hallaj",
+      "auteur_nom": "Al-Ḥallāj",
+      "titre_fr": "I am the Real",
+      "titre_orig": "أَنَا الْحَقّ",
+      "titre_tr": "Anā-l-Ḥaqq",
+      "corpus": "Dīwān (fragments)",
+      "date": "c. 910",
+      "langue": "arabe",
+      "themes": ["extase", "amour"],
+      "type": "ode",
+      "tagline": "The word that led him to the gallows.",
+      "extrait_fr": "I am the One I love, and the One I love is I — we are two spirits dwelling in one body.",
+      "href": "hallaj/ana-l-haqq.html",
+      "status": "soon"
+    }
+
+  ]
+}

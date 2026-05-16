@@ -7,6 +7,8 @@ async function loadHub() {
   const file = window.HUB_DATA_FILE;
   if (!file) return;
 
+  const isEN = document.documentElement.lang === 'en';
+
   try {
     const res = await fetch(`../data/${file}`);
     const data = await res.json();
@@ -23,7 +25,9 @@ async function loadHub() {
       const cls = s.status === 'ready' ? 'is-ready' : 'is-soon';
       const tag = s.link ? 'a' : 'div';
       const hrefAttr = s.link ? `href="${s.link}"` : 'role="status"';
-      const more = s.status === 'ready' ? 'Entrer ✦' : 'Bientôt ouvert';
+      const more = s.status === 'ready'
+        ? (isEN ? 'Enter ✦' : 'Entrer ✦')
+        : (isEN ? 'Coming soon' : 'Bientôt ouvert');
       return `
         <${tag} class="hub-card ${cls}" ${hrefAttr}>
           <h2 class="hub-card__title">${s.title}</h2>
@@ -38,7 +42,7 @@ async function loadHub() {
     console.error('Erreur chargement hub', err);
     const grid = document.getElementById('hub-grid');
     if (grid) {
-      grid.innerHTML = '<p class="center muted">Impossible de charger la section.</p>';
+      grid.innerHTML = `<p class="center muted">${isEN ? 'Unable to load this section.' : 'Impossible de charger la section.'}</p>`;
     }
   }
 }

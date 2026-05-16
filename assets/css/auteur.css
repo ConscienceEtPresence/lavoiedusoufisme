@@ -352,7 +352,34 @@
   font-size: 0.88rem;
   color: var(--ink-mute, #6b6a65);
   line-height: 1.5;
-  margin: 0;
+  margin: 0 0 0.9rem;
+}
+.oeuvre-carte__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold, #B8860B);
+  padding: 0.4rem 0.9rem;
+  border: 1px solid rgba(184, 134, 11, 0.35);
+  border-radius: 999px;
+  transition: all 0.25s ease;
+}
+.oeuvre-carte__cta::after {
+  content: "→";
+  transition: transform 0.25s ease;
+}
+.oeuvre-carte:hover .oeuvre-carte__cta {
+  background: var(--gold, #B8860B);
+  color: #fff;
+  border-color: var(--gold, #B8860B);
+}
+.oeuvre-carte:hover .oeuvre-carte__cta::after {
+  transform: translateX(3px);
 }
 
 @media (max-width: 600px) {

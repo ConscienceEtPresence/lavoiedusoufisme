@@ -77,12 +77,14 @@
       }));
     }
     if (auteurs && auteurs.auteurs) {
-      auteurs.auteurs.forEach(a => idx.push({
-        type: 'Auteur', label: a.nom_fr || a.nom,
-        sub: a.dates || a.epoque || '', ar: a.nom_ar || '',
-        url: ROOT + (a.href || ('pages/auteurs/' + a.id + '.html')),
-        search: [a.nom_fr, a.nom, a.nom_ar, a.epoque, a.tradition, (a.tagline || '')].join(' ').toLowerCase()
-      }));
+      auteurs.auteurs.forEach(a => {
+        idx.push({
+          type: 'Auteur', label: a.name_fr || a.name_tr || a.id,
+          sub: a.dates || a.epoque || '', ar: a.name_ar || '',
+          url: ROOT + 'pages/auteurs/' + a.id + '.html',
+          search: [a.name_fr, a.name_tr, a.name_ar, a.epoque, a.tradition, a.approche, (a.tagline || '')].join(' ').toLowerCase()
+        });
+      });
     }
 
     INDEX = idx;

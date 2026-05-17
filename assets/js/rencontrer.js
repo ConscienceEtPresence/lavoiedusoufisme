@@ -5,6 +5,15 @@
   let DATA = null;
   let filtre = { epoque: 'all', tradition: 'all', approche: 'all' };
 
+  const RC_EN = document.documentElement.lang === 'en';
+  const RC_T = RC_EN ? {
+    epoque: 'Era', tradition: 'Tradition', approche: 'Approach',
+    all: 'All', soon: 'coming soon'
+  } : {
+    epoque: 'Époque', tradition: 'Tradition', approche: 'Approche',
+    all: 'Tous', soon: 'à venir'
+  };
+
   const filtresEl = document.getElementById('filtres-container');
   const grilleEl  = document.getElementById('auteurs-grille');
   const emptyEl   = document.getElementById('auteurs-empty');
@@ -19,16 +28,16 @@
 
   function buildFiltres() {
     const groupes = [
-      { key: 'epoque',    label: 'Époque',    items: DATA.filtres.epoque },
-      { key: 'tradition', label: 'Tradition', items: DATA.filtres.tradition },
-      { key: 'approche',  label: 'Approche',  items: DATA.filtres.approche }
+      { key: 'epoque',    label: RC_T.epoque,    items: DATA.filtres.epoque },
+      { key: 'tradition', label: RC_T.tradition, items: DATA.filtres.tradition },
+      { key: 'approche',  label: RC_T.approche,  items: DATA.filtres.approche }
     ];
 
     filtresEl.innerHTML = groupes.map(g => `
       <div class="filtre-groupe" data-groupe="${g.key}">
         <div class="filtre-label">${g.label}</div>
         <div class="filtre-pills">
-          <button class="filtre-pill active" data-key="${g.key}" data-val="all">Tous</button>
+          <button class="filtre-pill active" data-key="${g.key}" data-val="all">${RC_T.all}</button>
           ${g.items.map(it => `
             <button class="filtre-pill" data-key="${g.key}" data-val="${it.id}">
               ${it.label}${it.periode ? ` <span class="filtre-periode">${it.periode}</span>` : ''}
@@ -87,7 +96,7 @@
 
       auteurs.forEach(a => {
         const readyClass = a.status === 'ready' ? 'is-ready' : 'is-soon';
-        const readyBadge = a.status === 'soon' ? '<span class="auteur-badge">à venir</span>' : '';
+        const readyBadge = a.status === 'soon' ? `<span class="auteur-badge">${RC_T.soon}</span>` : '';
         html += `
           <a class="auteur-carte ${readyClass}" href="${a.href}">
             ${readyBadge}

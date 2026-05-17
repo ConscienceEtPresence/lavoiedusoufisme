@@ -15,17 +15,68 @@
   let currentEntry = null;
   let currentCat = 'all';
 
+  const DC_EN = document.documentElement.lang === 'en';
+  const DC_T = DC_EN ? {
+    loadError: 'Error loading the dictionary.',
+    allFilter: n => `All (${n})`,
+    close: 'Close',
+    speakWord: 'Pronounce the word in Arabic',
+    defConcise: 'Concise definition',
+    deepSense: 'Deeper meaning',
+    voicesOfMasters: 'Voices of the masters',
+    toMeditate: '✦ To meditate ✦',
+    enterMeditation: '🕯️ Enter meditation',
+    termsInResonance: 'Terms in resonance',
+    readingsOnSite: 'Readings on the site',
+    source: 'After',
+    quit: 'Leave',
+    free: '⋯ free',
+    customMin: m => `⋯ ${m} min`,
+    begin: 'Begin', resume: 'Resume', pause: 'Pause', done: 'Done ✓',
+    intuitionLabel: 'An intuition born during this meditation? (private, on your device)',
+    notesPlaceholder: 'Note your impressions…',
+    customPrompt: 'Free duration — how many minutes? (a whole number between 1 and 120)',
+    customAlert: 'Enter a number between 1 and 120.',
+    wordOfDay: '✦ Word of the day ✦',
+    discover: 'Discover →',
+    oq: '“', cq: '”'
+  } : {
+    loadError: 'Erreur de chargement du dictionnaire.',
+    allFilter: n => `Toutes (${n})`,
+    close: 'Fermer',
+    speakWord: 'Prononcer le mot en arabe',
+    defConcise: 'Définition concise',
+    deepSense: 'Sens profond',
+    voicesOfMasters: 'Voix des maîtres',
+    toMeditate: '✦ Pour méditer ✦',
+    enterMeditation: '🕯️ Entrer en méditation',
+    termsInResonance: 'Termes en résonance',
+    readingsOnSite: 'Lectures sur le site',
+    source: 'D’après',
+    quit: 'Quitter',
+    free: '⋯ libre',
+    customMin: m => `⋯ ${m} min`,
+    begin: 'Commencer', resume: 'Reprendre', pause: 'Pause', done: 'Terminé ✓',
+    intuitionLabel: 'Une intuition née pendant cette méditation ? (privé, sur ton appareil)',
+    notesPlaceholder: 'Note tes impressions…',
+    customPrompt: 'Durée libre — combien de minutes ? (entier entre 1 et 120)',
+    customAlert: 'Saisis un nombre entre 1 et 120.',
+    wordOfDay: '✦ Mot du jour ✦',
+    discover: 'Découvrir →',
+    oq: '« ', cq: ' »'
+  };
+
   // === Chargement
   try {
     const res = await fetch(DATA_URL);
     DATA = await res.json();
   } catch (e) {
-    grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--dict-soft);">Erreur de chargement du dictionnaire.</p>';
+    grid.innerHTML = `<p style="grid-column:1/-1;text-align:center;color:var(--dict-soft);">${DC_T.loadError}</p>`;
     return;
   }
 
   // === Filtres
-  filtersEl.innerHTML = `<button class="dict-filter active" data-cat="all">Toutes (${DATA.entries.length})</button>` +
+  filtersEl.innerHTML = `<button class="dict-filter active" data-cat="all">${DC_T.allFilter(DATA.entries.length)}</button>` +
     Object.entries(DATA.categories).map(([key, cat]) => {
       const count = DATA.entries.filter(e => e.category === key).length;
       return `<button class="dict-filter" data-cat="${key}">${cat.label} (${count})</button>`;
@@ -110,11 +161,11 @@
     currentEntry = entry;
     const cat = DATA.categories[entry.category];
     modalEl.innerHTML = `
-      <button class="dict-modal__close" aria-label="Fermer">✕</button>
+      <button class="dict-modal__close" aria-label="${DC_T.close}">✕</button>
 
       <div class="entry-head">
         <div class="entry-head__ar">${entry.ar}</div>
-        <div class="entry-head__tr">${entry.tr} <button class="entry-head__audio" data-action="speak" aria-label="Prononcer le mot en arabe">♪</button></div>
+        <div class="entry-head__tr">${entry.tr} <button class="entry-head__audio" data-action="speak" aria-label="${DC_T.speakWord}">♪</button></div>
         <div class="entry-head__fr">${entry.fr}</div>
         <div class="entry-head__meta">${cat ? cat.label : ''}</div>
         ${entry.racine ? `<div class="entry-head__racine">${entry.racine}${entry.racine_sens ? ` — <span style="font-family:'Source Serif 4',serif;font-style:italic;font-size:.85rem;color:var(--dict-soft);">${entry.racine_sens}</span>` : ''}</div>` : ''}
@@ -122,19 +173,19 @@
 
       ${entry.definition_concise ? `
         <div class="entry-section">
-          <h3>Définition concise</h3>
+          <h3>${DC_T.defConcise}</h3>
           <div class="entry-concise">${entry.definition_concise}</div>
         </div>` : ''}
 
       ${entry.sens_profond ? `
         <div class="entry-section">
-          <h3>Sens profond</h3>
+          <h3>${DC_T.deepSense}</h3>
           <div class="entry-profond">${entry.sens_profond}</div>
         </div>` : ''}
 
       ${entry.voix_des_maitres && entry.voix_des_maitres.length ? `
         <div class="entry-section">
-          <h3>Voix des maîtres</h3>
+          <h3>${DC_T.voicesOfMasters}</h3>
           <div class="entry-voix">
             ${entry.voix_des_maitres.map(v => `
               <div class="entry-voix__item">
@@ -147,14 +198,14 @@
 
       ${entry.meditation ? `
         <div class="entry-meditation">
-          <div class="entry-meditation__label">✦ Pour méditer ✦</div>
-          <div class="entry-meditation__question">« ${entry.meditation} »</div>
-          <button class="entry-meditation__btn" data-action="meditate">🕯️ Entrer en méditation</button>
+          <div class="entry-meditation__label">${DC_T.toMeditate}</div>
+          <div class="entry-meditation__question">${DC_T.oq}${entry.meditation}${DC_T.cq}</div>
+          <button class="entry-meditation__btn" data-action="meditate">${DC_T.enterMeditation}</button>
         </div>` : ''}
 
       ${entry.resonance && entry.resonance.length ? `
         <div class="entry-section">
-          <h3>Termes en résonance</h3>
+          <h3>${DC_T.termsInResonance}</h3>
           <div class="entry-pastilles">
             ${entry.resonance.map(rid => {
               const r = DATA.entries.find(e => e.id === rid);
@@ -166,14 +217,14 @@
 
       ${entry.lectures_site && entry.lectures_site.length ? `
         <div class="entry-section">
-          <h3>Lectures sur le site</h3>
+          <h3>${DC_T.readingsOnSite}</h3>
           <ul class="entry-lectures">
             ${entry.lectures_site.map(l => `<li><a href="${l.url}">${l.titre}</a></li>`).join('')}
           </ul>
         </div>` : ''}
 
       <div class="entry-source">
-        D'après <em>${DATA.meta.source_principale}</em>${entry.source_page ? ' — ' + entry.source_page : ''}.
+        ${DC_T.source} <em>${DATA.meta.source_principale}</em>${entry.source_page ? ' — ' + entry.source_page : ''}.
       </div>
     `;
 
@@ -220,9 +271,9 @@
   function openMeditation(entry) {
     medEntry = entry;
     medMode.innerHTML = `
-      <button class="med-mode__close" aria-label="Quitter">✕</button>
+      <button class="med-mode__close" aria-label="${DC_T.quit}">✕</button>
       <div class="med-mode__ar">${entry.ar}</div>
-      <div class="med-mode__tr">${entry.tr} <button class="med-mode__audio" data-action="speak" aria-label="Prononcer le mot en arabe">♪</button> — ${entry.fr}</div>
+      <div class="med-mode__tr">${entry.tr} <button class="med-mode__audio" data-action="speak" aria-label="${DC_T.speakWord}">♪</button> — ${entry.fr}</div>
       <div class="med-mode__question">${entry.meditation || ''}</div>
 
       <div class="med-mode__circle" id="med-circle">
@@ -241,11 +292,11 @@
         <button class="med-mode__btn active" data-dur="300">5 min</button>
         <button class="med-mode__btn" data-dur="600">10 min</button>
         <button class="med-mode__btn" data-dur="1200">20 min</button>
-        <button class="med-mode__btn" data-action="custom-duration">⋯ libre</button>
+        <button class="med-mode__btn" data-action="custom-duration">${DC_T.free}</button>
       </div>
-      <button class="med-mode__btn med-mode__btn--start" id="med-start">Commencer</button>
-      <div class="med-mode__notes-label">Une intuition née pendant cette méditation ? (privé, sur ton appareil)</div>
-      <textarea class="med-mode__notes" id="med-notes" placeholder="Note tes impressions…"></textarea>
+      <button class="med-mode__btn med-mode__btn--start" id="med-start">${DC_T.begin}</button>
+      <div class="med-mode__notes-label">${DC_T.intuitionLabel}</div>
+      <textarea class="med-mode__notes" id="med-notes" placeholder="${DC_T.notesPlaceholder}"></textarea>
     `;
     medMode.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -279,11 +330,11 @@
   }
 
   function askCustomDuration() {
-    const raw = prompt('Durée libre — combien de minutes ? (entier entre 1 et 120)', '15');
+    const raw = prompt(DC_T.customPrompt, '15');
     if (!raw) return null;
     const n = parseInt(raw.replace(',', '.'));
     if (isNaN(n) || n < 1 || n > 120) {
-      alert('Saisis un nombre entre 1 et 120.');
+      alert(DC_T.customAlert);
       return null;
     }
     return n * 60;
@@ -303,14 +354,14 @@
       medMode.querySelectorAll('[data-dur]').forEach(b => b.classList.remove('active'));
       e.target.classList.add('active');
       const mins = Math.round(sec / 60);
-      e.target.textContent = `⋯ ${mins} min`;
+      e.target.textContent = DC_T.customMin(mins);
       medDuration = sec;
       medRemaining = medDuration;
       if (medTimer) { clearInterval(medTimer); medTimer = null; }
       const circle = medMode.querySelector('.med-mode__circle');
       if (circle) { circle.classList.remove('running', 'done'); }
       const startBtn = medMode.querySelector('#med-start');
-      if (startBtn) startBtn.textContent = 'Commencer';
+      if (startBtn) startBtn.textContent = DC_T.begin;
       updateTimer();
       return;
     }
@@ -325,7 +376,7 @@
       const circle = medMode.querySelector('.med-mode__circle');
       if (circle) { circle.classList.remove('running', 'done'); }
       const startBtn = medMode.querySelector('#med-start');
-      if (startBtn) startBtn.textContent = 'Commencer';
+      if (startBtn) startBtn.textContent = DC_T.begin;
       updateTimer();
       return;
     }
@@ -336,18 +387,18 @@
       if (medTimer) {
         clearInterval(medTimer);
         medTimer = null;
-        startBtn.textContent = 'Reprendre';
+        startBtn.textContent = DC_T.resume;
         if (circle) circle.classList.remove('running');
         return;
       }
-      startBtn.textContent = 'Pause';
+      startBtn.textContent = DC_T.pause;
       if (circle) { circle.classList.add('running'); circle.classList.remove('done'); }
       medTimer = setInterval(() => {
         medRemaining--;
         updateTimer();
         if (medRemaining <= 0) {
           clearInterval(medTimer); medTimer = null;
-          startBtn.textContent = 'Terminé ✓';
+          startBtn.textContent = DC_T.done;
           if (circle) { circle.classList.remove('running'); circle.classList.add('done'); }
           medMode.querySelector('.med-mode__notes-label').classList.add('visible');
           medMode.querySelector('.med-mode__notes').classList.add('visible');
@@ -363,12 +414,12 @@
     const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
     const entry = DATA.entries[dayOfYear % DATA.entries.length];
     motJourEl.innerHTML = `
-      <div class="mot-du-jour__label">✦ Mot du jour ✦</div>
+      <div class="mot-du-jour__label">${DC_T.wordOfDay}</div>
       <div class="mot-du-jour__ar">${entry.ar}</div>
       <div class="mot-du-jour__tr">${entry.tr}</div>
       <div class="mot-du-jour__fr">${entry.fr}</div>
-      <div class="mot-du-jour__quote">« ${entry.definition_concise || ''} »</div>
-      <button class="mot-du-jour__btn" data-id="${entry.id}">Découvrir →</button>
+      <div class="mot-du-jour__quote">${DC_T.oq}${entry.definition_concise || ''}${DC_T.cq}</div>
+      <button class="mot-du-jour__btn" data-id="${entry.id}">${DC_T.discover}</button>
     `;
     motJourEl.querySelector('button').addEventListener('click', () => openModal(entry));
   }

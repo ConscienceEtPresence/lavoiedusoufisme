@@ -3,6 +3,10 @@
    ============================================================ */
 
 let PERIODS_DATA = null;
+const TL_EN = document.documentElement.lang === 'en';
+const TL_T = TL_EN
+  ? { more: 'Read the entry ✦', figures: 'Major figures', keywords: 'Keywords', close: 'Close', err: 'Unable to load the periods.' }
+  : { more: 'Lire la fiche ✦', figures: 'Grandes figures', keywords: 'Mots-clés', close: 'Fermer', err: 'Impossible de charger les périodes.' };
 
 async function loadPeriods() {
   try {
@@ -12,7 +16,7 @@ async function loadPeriods() {
   } catch (err) {
     console.error('Erreur de chargement de la chronologie', err);
     document.getElementById('periods-grid').innerHTML =
-      '<p class="center muted">Impossible de charger les périodes.</p>';
+      `<p class="center muted">${TL_T.err}</p>`;
   }
 }
 
@@ -26,7 +30,7 @@ function renderGrid() {
         <h2 class="period-card__title">${p.title}</h2>
         <div class="period-card__subtitle">${p.subtitle}</div>
       </div>
-      <div class="period-card__more">Lire la fiche ✦</div>
+      <div class="period-card__more">${TL_T.more}</div>
     </article>
   `).join('');
 
@@ -47,7 +51,7 @@ function openPeriod(slug) {
 
   const content = document.getElementById('modal-content');
   content.innerHTML = `
-    <button class="modal__close" data-close aria-label="Fermer">✕</button>
+    <button class="modal__close" data-close aria-label="${TL_T.close}">✕</button>
     <div class="modal__sub">${p.date}</div>
     <h2 class="modal__name">${p.title}</h2>
     <div style="text-align:center;color:var(--ink-mute);font-style:italic;margin-bottom:var(--space-lg);">${p.subtitle}</div>
@@ -58,7 +62,7 @@ function openPeriod(slug) {
     </div>
 
     <div class="modal__section">
-      <h3>Grandes figures</h3>
+      <h3>${TL_T.figures}</h3>
       <ul>${p.figures.map(f => `<li>${f}</li>`).join('')}</ul>
     </div>
 
@@ -68,7 +72,7 @@ function openPeriod(slug) {
     </blockquote>
 
     <div class="modal__section" style="margin-top: var(--space-lg);">
-      <h3>Mots-clés</h3>
+      <h3>${TL_T.keywords}</h3>
       <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
         ${p.keywords.map(k => `<span class="keyword">${k}</span>`).join('')}
       </div>

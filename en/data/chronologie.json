@@ -1,0 +1,171 @@
+{
+  "title": "A history of Sufism",
+  "subtitle": "From the first ascetics to the great orders — twelve centuries of an inner path",
+  "sources": [
+    "Éric Geoffroy, Le soufisme : histoire, fondements, pratique (Eyrolles, 2013)",
+    "Martin Lings, What is Sufism? (1975)",
+    "Annemarie Schimmel, Mystical Dimensions of Islam"
+  ],
+  "periods": [
+    {
+      "id": "ascese-primitive",
+      "slug": "ascese-primitive",
+      "date": "8th century",
+      "dateRange": "700-800",
+      "title": "The first ascetics",
+      "subtitle": "The birth of a Muslim inwardness",
+      "intro": "At the dawn of Islam, in reaction to the worldly character of the Umayyad dynasty, an ascetic movement (zuhd) blossoms in Syria and Iraq. In contact with the Christian hermits of Lebanon, the first spirituals cultivate the fear of God, detachment, the constant examination of conscience.",
+      "body": "Hasan al-Basrī, a renowned preacher of Iraq, illustrates the virtues that many spirituals would bring to life: the fear of God and of the Judgement, the examination of conscience, altruism. He advocates a tempered asceticism. The Sufis see in him one of the founders of their discipline. The first ascetics did not lose interest in the community: they practised the ribāt, the “greater jihād” against the ego accompanying the “lesser jihād” of the frontiers.",
+      "figures": ["Hasan al-Basrī (d. 728)", "Ibrāhīm ibn Adham", "Fudayl ibn ʿIyād"],
+      "quote": {
+        "text": "Work for this lower world as if you were to live forever, and work for the hereafter as if you were to die tomorrow.",
+        "author": "ʿAbd Allāh Ibn ʿUmar, Companion of the Prophet"
+      },
+      "keywords": ["zuhd", "asceticism", "Iraq", "Syria", "fear of God", "detachment"]
+    },
+    {
+      "id": "amour-pur",
+      "slug": "amour-pur",
+      "date": "8th-9th century",
+      "dateRange": "750-870",
+      "title": "The pure love of God",
+      "subtitle": "From asceticism to mysticism",
+      "intro": "At Basra, a woman overturns the horizon of piety: Rābiʿa al-ʿAdawiyya. Before all others, she calls to a disinterested and exclusive love of God. For her, paradise and hell are but veils in the quest for the Beloved.",
+      "body": "Her doctrine of the “pure love of God” rests on the Quranic verse 5:59: “He loves them and they love Him.” The mythified figure of Rābiʿa nourished even the theological debate on the love of God that stirred France in the 17th century, drawing the admiration of the partisans of Pure Love. She had many male disciples and remains the best-known and most venerated Muslim woman saint.",
+      "figures": ["Rābiʿa al-ʿAdawiyya (d. 801)", "Maʿrūf al-Karkhī", "Bishr al-Hāfī"],
+      "quote": {
+        "text": "I wish to set fire to paradise and to pour water on hell, so that these two veils may vanish, and it may be seen clearly who worships God out of love, and not out of fear of hell or hope of paradise.",
+        "author": "Rābiʿa al-ʿAdawiyya"
+      },
+      "keywords": ["mahabba", "pure love", "Basra", "inwardness", "Rābiʿa"]
+    },
+    {
+      "id": "bagdad",
+      "slug": "bagdad",
+      "date": "9th-10th century",
+      "dateRange": "850-950",
+      "title": "The school of Baghdad",
+      "subtitle": "Sobriety and intoxication, the birth of a vocabulary",
+      "intro": "In the Abbasid capital, what is called “the school of Baghdad” gives tasawwuf the essentials of its doctrine. Junayd (d. 911), surnamed “the lord of the Order of Sufis”, embodies the balance between the esoteric and the exoteric. He is seen as the archetype of the sober spiritual, master of his ecstasy.",
+      "body": "Junayd is the first to teach the knowledge of the divine Oneness (tawhīd), demanding on every plane. He enriches the doctrine of fanāʾ (the extinction of the human self in the divine Self) and of baqāʾ (the return among men, invested with the abiding presence of God). At his side, Bistāmī (d. 875) in eastern Iran undergoes a dazzling mystical experience: the divine Presence invests his being to the point of dispossessing him of his individual consciousness. His ecstatic utterances (shatahāt) disconcert his contemporaries: “Glory be to Me! How great is My power!”",
+      "figures": ["Junayd of Baghdad (d. 911)", "Bāyazīd Bastāmī (d. 875)", "Sahl al-Tustarī", "Hakīm al-Tirmidhī"],
+      "quote": {
+        "text": "Sufism is that He [God] make you die to yourself and make you live again in Him.",
+        "author": "Junayd of Baghdad"
+      },
+      "keywords": ["tasawwuf", "Baghdad", "tawhīd", "fanāʾ", "baqāʾ", "sobriety", "intoxication"]
+    },
+    {
+      "id": "hallaj",
+      "slug": "hallaj",
+      "date": "10th century",
+      "dateRange": "900-922",
+      "title": "Hallāj: love unto martyrdom",
+      "subtitle": "Mystical intoxication and the ecstatic word",
+      "intro": "Hallāj (d. 922) is the best-known representative, especially in the West, of the school of Baghdad. Unlike Junayd, he typifies “spiritual intoxication”. His paroxysmal quest appeared excessive to Muslim society; he was executed in Baghdad for having uttered “Anā l-Haqq” — “I am the Real [God]”.",
+      "body": "As Rūmī explains, this cry means “I have become annihilated, God alone remains”. This is an extreme humility, for it means: “He alone is.” Hallāj nourished an ardent desire for God (ʿishq) rather than the Quranic mahabba. The doctors of the Law reproached him with incarnation (hulūl) and the union of substance (ittihād). His “martyrdom” sounds the knell of a period of unbridled exploration and imposes upon later Sufism a greater discretion.",
+      "figures": ["Al-Hallāj (d. 922)", "Nūrī of Baghdad", "Shiblī"],
+      "quote": {
+        "text": "Kill me, O my friends! For it is in death that my life is found, and it is in life that my death lies.",
+        "author": "Al-Hallāj"
+      },
+      "keywords": ["Anā l-Haqq", "ʿishq", "martyrdom", "ecstasy", "shath", "Baghdad"]
+    },
+    {
+      "id": "manuels",
+      "slug": "manuels",
+      "date": "10th-11th century",
+      "dateRange": "950-1100",
+      "title": "The classical systematisation",
+      "subtitle": "The great manuals of the path",
+      "intro": "The manuals of Sufism written in the 10th and 11th centuries bear witness to the concern to integrate Sufism into the global Islamic culture. They set down in writing the oral teaching of the first masters and establish tasawwuf as an authenticated Islamic discipline.",
+      "body": "Sarrāj (d. 988), with the Kitāb al-Lumaʿ, demonstrates that Sufism takes its roots in the Quran and the Sunna. There follow the Kitāb al-Taʿarruf of Kalābādhī (d. 995), The Nourishment of Hearts (Qūt al-qulūb) of Abū Tālib Makkī (d. 996), the Epistle (Risāla) of Qushayrī (d. 1072) — a major pedagogical work, a fruitful alliance between Sufism, Ashʿarī theology and the Shāfiʿī rite. The first Persian manual is the Unveiling (Kashf al-mahjūb) of Hujwīrī (d. between 1073 and 1077), whose tomb at Lahore is still the object of a great pilgrimage.",
+      "figures": ["Al-Sarrāj (d. 988)", "Al-Kalābādhī (d. 995)", "Abū Tālib Makkī (d. 996)", "Al-Qushayrī (d. 1072)", "Al-Hujwīrī (d. ~1075)"],
+      "quote": {
+        "text": "We did not receive Sufism through chatter, but through hunger, detachment and the rejection of conformism.",
+        "author": "Junayd of Baghdad, quoted by the manualists"
+      },
+      "keywords": ["manuals", "tasawwuf", "Risāla", "Khorasan", "written transmission", "Sunna"]
+    },
+    {
+      "id": "ghazali",
+      "slug": "ghazali",
+      "date": "11th-12th century",
+      "dateRange": "1058-1111",
+      "title": "Ghazālī: the osmosis with Sunnism",
+      "subtitle": "When Sufism becomes the heart of Islam",
+      "intro": "The maturation of the 10th and 11th centuries finds its culmination in Abū Hāmid Ghazālī (d. 1111). History attributes to him the reconciliation of Sunnism with Sufism. His major work, the Revival of the Religious Sciences (Ihyāʾ ʿulūm al-dīn), brings about a fusion between theology, law and mysticism.",
+      "body": "The official thinker of the Seljuk power in Baghdad, Ghazālī passes through a grave inner crisis, resigns from all his functions, and for ten years leads a life of wandering and spiritual retreat. He returns to teach, having affirmed the pre-eminence of spiritual unveiling (mukāshafa) over reason. Surnamed posthumously “the proof of Islam”, he recalled that this religion had above all a spiritual vocation — centuries before the appearance of modern fundamentalisms.",
+      "figures": ["Al-Ghazālī (d. 1111)", "ʿAbd al-Qādir al-Jīlānī (d. 1166)", "Ahmad al-Rifāʿī"],
+      "quote": {
+        "text": "I then knew with certainty that the Sufis are on the way of God, and that this way is the best; their conduct is the purest that can be found.",
+        "author": "Al-Ghazālī, Al-Munqidh min al-dalāl"
+      },
+      "keywords": ["Ihyāʾ", "Ghazālī", "unveiling", "mukāshafa", "Sunnism", "madrasa"]
+    },
+    {
+      "id": "ibn-arabi",
+      "slug": "ibn-arabi",
+      "date": "13th century",
+      "dateRange": "1165-1240",
+      "title": "Ibn ʿArabī, the Great Master",
+      "subtitle": "The metaphysics of the unity of Being",
+      "intro": "Muhyī al-Dīn Ibn ʿArabī (1165-1240), born at Murcia in Andalusia, receives a spiritual mission that leads him to emigrate to the Near East. Surnamed al-Shaykh al-Akbar (“the Great Master”), his work — more than four hundred writings — has never ceased to provoke debate and commentary.",
+      "body": "His whole work rests on the essential unity of Being (wahdat al-wujūd): God alone is, and creatures borrow their existence from Him through His ceaselessly renewed theophany. His two major works, the Meccan Illuminations (al-Futūhāt al-makkiyya) and the Bezels of Wisdom (Fusūs al-hikam), compose a masterly synthesis of the Sufi heritage. His doctrine also fertilises the Iranian Shīʿī gnosis (ʿirfān). In our day, his universal teaching makes him one of the most translated spirituals in the world.",
+      "figures": ["Ibn ʿArabī (d. 1240)", "Sadr al-Dīn al-Qūnawī", "Ibn al-Fāriḍ", "Ibn ʿAṭāʾ Allāh al-Iskandarī"],
+      "quote": {
+        "text": "The real is the Real, the creaturely is the creaturely. The world is at once He and not-He.",
+        "author": "Ibn ʿArabī"
+      },
+      "keywords": ["wahdat al-wujūd", "theophany", "Andalusia", "Damascus", "the perfect man", "ʿirfān"]
+    },
+    {
+      "id": "rumi",
+      "slug": "rumi",
+      "date": "13th century",
+      "dateRange": "1207-1273",
+      "title": "Rūmī and the great Persian poetry",
+      "subtitle": "Love as a path",
+      "intro": "Jalāl al-Dīn Rūmī (d. 1273), surnamed Mawlānā (“our master”, Mevlana in Turkish), remains the best-known Muslim mystic in the West. He personifies the path of love and intoxication, while Ibn ʿArabī embodies that of metaphysical gnosis. Driven from his native Iran by the Mongol invasion, his family settles at Konya.",
+      "body": "His encounter with Shams of Tabriz, his “sun”, transforms his life forever: “I was raw, I was cooked, then burnt to ash,” he would say. The Mathnawī, called “the Persian Quran”, sings the longing of the reed torn from its reed-bed — the soul exiled from the divine. At his side shine ʿAttār (d. 1190), author of the Conference of the Birds in which thirty birds discover that the Simorgh they sought is none other than themselves; and Ibn al-Fāriḍ (d. 1235), “prince of lovers”.",
+      "figures": ["Jalāl al-Dīn Rūmī (d. 1273)", "Shams of Tabriz", "Farīd al-Dīn ʿAttār (d. 1190)", "Ibn al-Fāriḍ (d. 1235)", "Sanāʾī"],
+      "quote": {
+        "text": "Come, come, come... whoever you are, come! Whether you are an unbeliever, an idolater or a pagan, our convent is not a place of despair.",
+        "author": "Rūmī"
+      },
+      "keywords": ["love", "Mathnawī", "Konya", "Mevleviyya", "samāʿ", "Persian poetry", "Simorgh"]
+    },
+    {
+      "id": "confreries",
+      "slug": "confreries",
+      "date": "13th-16th century",
+      "dateRange": "1200-1600",
+      "title": "The age of the orders",
+      "subtitle": "Social structuring and worldwide diffusion",
+      "intro": "From the 12th century onwards, the initiatic paths (tarīqa) appear — spiritual families gathered around the charisma of an eponymous saint. It is, moreover, in the same period that most of the Christian monastic orders are born.",
+      "body": "The orders answer the need to compensate for the loss of spirituality that came with time. They structure the teaching, transmit the initiatic chains (silsila), root Sufism in society. From the Maghreb to India, from sub-Saharan Africa to Central Asia, the great paths unfold: Qādiriyya, Shādhiliyya, Naqshbandiyya, Mevleviyya, Chishtiyya, Tijāniyya. Each transmits a spiritual colour of its own while sharing the same heart.",
+      "figures": ["ʿAbd al-Qādir al-Jīlānī", "Abū l-Hasan al-Shādhilī", "Bahāʾ al-Dīn Naqshband", "Muʿīn al-Dīn Chishtī"],
+      "quote": {
+        "text": "There are as many paths to God as there are breaths of the children of Adam.",
+        "author": "Sufi adage"
+      },
+      "keywords": ["tarīqa", "orders", "silsila", "Qādiriyya", "Shādhiliyya", "Naqshbandiyya", "transmission"]
+    },
+    {
+      "id": "modernite",
+      "slug": "modernite",
+      "date": "19th-21st century",
+      "dateRange": "1800-today",
+      "title": "Sufism in modernity",
+      "subtitle": "Criticism, renaissances, universality",
+      "intro": "In the modern era, Sufism undergoes the combined attacks of Muslim reformism (Salafism, Wahhabism) and of secularisation. But it also experiences important renaissances in the Maghreb, in Iran, in Africa, and a new radiance in the West.",
+      "body": "Figures such as the Emir Abdelkader (d. 1883), Ahmad al-ʿAlawī (d. 1934), or again the perennialist thinkers (René Guénon, Frithjof Schuon, Martin Lings, Titus Burckhardt, Seyyed Hossein Nasr) renew the reading of Sufism and give it a universal scope. Today, at a time when consumerist materialism reveals its dead end, Sufism appears as a universal wisdom, a living spiritual path in Muslim lands as in the West.",
+      "figures": ["Emir Abdelkader (d. 1883)", "Ahmad al-ʿAlawī (d. 1934)", "René Guénon", "Martin Lings", "Frithjof Schuon", "Seyyed Hossein Nasr"],
+      "quote": {
+        "text": "Sufism appears as a universal wisdom, a living spiritual path, in Muslim lands as in the West.",
+        "author": "Éric Geoffroy"
+      },
+      "keywords": ["modernity", "perennialism", "the West", "renaissance", "universality", "Emir Abdelkader"]
+    }
+  ]
+}

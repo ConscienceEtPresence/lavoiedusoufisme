@@ -11,18 +11,73 @@
   let currentFilter = 'all';
   let currentIndex = 0;
 
+  const ND_EN = document.documentElement.lang === 'en';
+  const ND_T = ND_EN ? {
+    loadError: 'Unable to load the data.',
+    allFilter: n => `All (${n})`,
+    close: 'Close',
+    nomLabel: (n, themeAr) => `Name no.${n} · ${themeAr}`,
+    senseLinguistic: 'Linguistic sense',
+    senseRational: 'Rational sense',
+    senseSpiritual: 'Spiritual sense',
+    emptyCommentary: 'Al-Kāfījī’s detailed commentary on this Name will be added soon.',
+    servantPart: 'The servant’s share',
+    meditate: '🕯️ Meditate this Name',
+    prev: '← Previous', random: '⚘ Random', next: 'Next →',
+    servantPartInline: 'The servant’s share:',
+    quit: 'Leave',
+    pronounce: 'Pronounce the name',
+    chooseReps: 'Choose the number of repetitions',
+    tapHint: 'Tap anywhere to advance the prayer-beads',
+    enableAuto: 'Enable automatic mode',
+    rhythm: 'Rhythm',
+    vibration: 'Vibration',
+    vibrationUnsupported: 'Vibration not supported on this browser',
+    unavailable: ' <span style="opacity:0.5;font-size:0.75em;">(unavail.)</span>',
+    sound: '🔊 Sound',
+    counter: '📿 Counter',
+    sourceAfter: 'After', sourceBy: 'by',
+    oq: '“', cq: '”'
+  } : {
+    loadError: 'Impossible de charger les données.',
+    allFilter: n => `Tous (${n})`,
+    close: 'Fermer',
+    nomLabel: (n, themeAr) => `Nom n°${n} · ${themeAr}`,
+    senseLinguistic: 'Sens linguistique',
+    senseRational: 'Sens rationnel',
+    senseSpiritual: 'Sens spirituel',
+    emptyCommentary: 'Le commentaire détaillé d’al-Kāfījī sur ce Nom sera ajouté prochainement.',
+    servantPart: 'La part du serviteur',
+    meditate: '🕯️ Méditer ce Nom',
+    prev: '← Précédent', random: '⚘ Aléatoire', next: 'Suivant →',
+    servantPartInline: 'La part du serviteur :',
+    quit: 'Quitter',
+    pronounce: 'Prononcer le nom',
+    chooseReps: 'Choisir le nombre de répétitions',
+    tapHint: 'Touchez n’importe où pour avancer le chapelet',
+    enableAuto: 'Activer le mode automatique',
+    rhythm: 'Rythme',
+    vibration: 'Vibration',
+    vibrationUnsupported: 'Vibration non supportée sur ce navigateur',
+    unavailable: ' <span style="opacity:0.5;font-size:0.75em;">(indispo.)</span>',
+    sound: '🔊 Son',
+    counter: '📿 Compteur',
+    sourceAfter: 'D’après', sourceBy: 'de',
+    oq: '« ', cq: ' »'
+  };
+
   try {
     const r = await fetch(DATA_URL);
     DATA = await r.json();
   } catch (e) {
-    gridEl.innerHTML = '<p style="color:var(--ink-soft);text-align:center;">Impossible de charger les données.</p>';
+    gridEl.innerHTML = `<p style="color:var(--ink-soft);text-align:center;">${ND_T.loadError}</p>`;
     return;
   }
 
   // Render filters
   const themes = DATA.themes;
   filtersEl.innerHTML = `
-    <button class="noms-filter active" data-theme="all">Tous (${DATA.noms.length})</button>
+    <button class="noms-filter active" data-theme="all">${ND_T.allFilter(DATA.noms.length)}</button>
     ${Object.entries(themes).map(([key, t]) => {
       const count = DATA.noms.filter(n => n.theme === key).length;
       return `<button class="noms-filter" data-theme="${key}">${t.label} — ${t.fr} (${count})</button>`;
@@ -85,40 +140,40 @@
     const n = DATA.noms[index];
     const theme = DATA.themes[n.theme];
     const sections = [];
-    if (n.lugha) sections.push({ titre: 'Sens linguistique', ar: 'لُغَوِيّ', txt: n.lugha });
-    if (n.aqli) sections.push({ titre: 'Sens rationnel', ar: 'عَقْلِيّ', txt: n.aqli });
-    if (n.sufi) sections.push({ titre: 'Sens spirituel', ar: 'صُوفِيّ', txt: n.sufi });
+    if (n.lugha) sections.push({ titre: ND_T.senseLinguistic, ar: 'لُغَوِيّ', txt: n.lugha });
+    if (n.aqli) sections.push({ titre: ND_T.senseRational, ar: 'عَقْلِيّ', txt: n.aqli });
+    if (n.sufi) sections.push({ titre: ND_T.senseSpiritual, ar: 'صُوفِيّ', txt: n.sufi });
 
     modalContent.innerHTML = `
-      <button class="nom-modal__close" aria-label="Fermer">✕</button>
+      <button class="nom-modal__close" aria-label="${ND_T.close}">✕</button>
       <div class="nom-fiche__head">
-        <div class="nom-fiche__num">Nom n°${n.n} · ${theme.label_ar}</div>
+        <div class="nom-fiche__num">${ND_T.nomLabel(n.n, theme.label_ar)}</div>
         <div class="nom-fiche__ar">${n.ar}</div>
         <div class="nom-fiche__tr">${n.tr}</div>
         <div class="nom-fiche__fr">${n.fr}</div>
         <span class="nom-fiche__badge" data-theme="${n.theme}">${theme.label} · ${theme.fr}</span>
       </div>
-      <div class="nom-fiche__sens">« ${n.sens_court} »</div>
+      <div class="nom-fiche__sens">${ND_T.oq}${n.sens_court}${ND_T.cq}</div>
       ${sections.length ? sections.map(s => `
         <div class="nom-fiche__section">
           <h3>${s.titre} <span>${s.ar}</span></h3>
           <p>${s.txt}</p>
         </div>
-      `).join('') : `<div class="nom-fiche__empty">Le commentaire détaillé d'al-Kāfījī sur ce Nom sera ajouté prochainement.</div>`}
+      `).join('') : `<div class="nom-fiche__empty">${ND_T.emptyCommentary}</div>`}
       ${n.part ? `
         <div class="nom-fiche__section">
-          <h3>La part du serviteur <span>حَظُّ العَبْد</span></h3>
+          <h3>${ND_T.servantPart} <span>حَظُّ العَبْد</span></h3>
           <div class="nom-fiche__part"><p>${n.part}</p></div>
         </div>` : ''}
       <div class="nom-fiche__meditate">
         <button class="nom-fiche__meditate-btn" data-action="meditate-nom">
-          🕯️ Méditer ce Nom
+          ${ND_T.meditate}
         </button>
       </div>
       <div class="nom-fiche__nav">
-        <button data-nav="prev">← Précédent</button>
-        <button data-nav="random">⚘ Aléatoire</button>
-        <button data-nav="next">Suivant →</button>
+        <button data-nav="prev">${ND_T.prev}</button>
+        <button data-nav="random">${ND_T.random}</button>
+        <button data-nav="next">${ND_T.next}</button>
       </div>
     `;
     modal.classList.add('open');
@@ -361,22 +416,22 @@
     // Composer le texte de méditation profond à partir des champs disponibles
     let meditationText = '';
     if (n.sufi) meditationText += n.sufi + ' ';
-    if (n.part) meditationText += `<em>La part du serviteur :</em> ${n.part}`;
+    if (n.part) meditationText += `<em>${ND_T.servantPartInline}</em> ${n.part}`;
     if (!meditationText && n.aqli) meditationText = n.aqli;
     if (!meditationText) meditationText = n.sens_court;
 
     medModeEl.innerHTML = `
-      <button class="nom-med-mode__close" aria-label="Quitter">✕</button>
+      <button class="nom-med-mode__close" aria-label="${ND_T.quit}">✕</button>
       <div class="nom-med-mode__inner">
-        <div class="nom-med-mode__num">Nom n°${n.n} · ${theme.label} · ${theme.label_ar}</div>
+        <div class="nom-med-mode__num">${ND_T.nomLabel(n.n, theme.label_ar)} · ${theme.label}</div>
         <div class="nom-med-mode__ar">${n.ar}</div>
-        <div class="nom-med-mode__tr">${n.tr} <button class="nom-med-mode__audio" data-action="speak" aria-label="Prononcer le nom">♪</button></div>
+        <div class="nom-med-mode__tr">${n.tr} <button class="nom-med-mode__audio" data-action="speak" aria-label="${ND_T.pronounce}">♪</button></div>
         <div class="nom-med-mode__fr">${n.fr}</div>
 
-        <div class="nom-med-mode__sens">« ${n.sens_court} »</div>
+        <div class="nom-med-mode__sens">${ND_T.oq}${n.sens_court}${ND_T.cq}</div>
         <div class="nom-med-mode__meditation">${meditationText}</div>
 
-        <div class="nom-med-mode__targets" role="group" aria-label="Choisir le nombre de répétitions">
+        <div class="nom-med-mode__targets" role="group" aria-label="${ND_T.chooseReps}">
           <button class="nom-med-mode__target" data-target="33">33</button>
           <button class="nom-med-mode__target active" data-target="99">99</button>
           <button class="nom-med-mode__target" data-target="100">100</button>
@@ -389,14 +444,14 @@
           <div class="nom-med-mode__echo-ar" lang="ar" dir="rtl">${n.ar}</div>
           <div class="nom-med-mode__echo-tr">${n.tr}</div>
         </div>
-        <div class="nom-med-mode__tap-hint">Touchez n'importe où pour avancer le chapelet</div>
+        <div class="nom-med-mode__tap-hint">${ND_T.tapHint}</div>
 
         <div class="nom-med-mode__auto-wrap">
-          <button class="nom-med-mode__toggle is-off" data-action="toggle-auto" aria-label="Activer le mode automatique">
+          <button class="nom-med-mode__toggle is-off" data-action="toggle-auto" aria-label="${ND_T.enableAuto}">
             ▶ Auto
           </button>
           <div class="nom-med-mode__speed">
-            <span class="nom-med-mode__speed-label">Rythme</span>
+            <span class="nom-med-mode__speed-label">${ND_T.rhythm}</span>
             <input type="range" class="nom-med-mode__speed-range" min="500" max="4000" step="100" value="${autoIntervalMs}" data-action="speed-range" />
             <span class="nom-med-mode__speed-value">${(autoIntervalMs / 1000).toFixed(1)}s</span>
           </div>
@@ -404,13 +459,13 @@
 
         <div class="nom-med-mode__toggles">
           <button class="nom-med-mode__toggle ${soundOn ? 'is-on' : 'is-off'}" data-action="toggle-sound">
-            🔊 Son
+            ${ND_T.sound}
           </button>
-          <button class="nom-med-mode__toggle ${vibrationOn ? 'is-on' : 'is-off'}" data-action="toggle-vibration" title="${hasVibrationSupport ? 'Vibration' : 'Vibration non supportée sur ce navigateur'}">
-            📳 Vibration${!hasVibrationSupport ? ' <span style="opacity:0.5;font-size:0.75em;">(indispo.)</span>' : ''}
+          <button class="nom-med-mode__toggle ${vibrationOn ? 'is-on' : 'is-off'}" data-action="toggle-vibration" title="${hasVibrationSupport ? ND_T.vibration : ND_T.vibrationUnsupported}">
+            📳 ${ND_T.vibration}${!hasVibrationSupport ? ND_T.unavailable : ''}
           </button>
           <button class="nom-med-mode__toggle ${counterOn ? 'is-on' : 'is-off'}" data-action="toggle-counter">
-            📿 Compteur
+            ${ND_T.counter}
           </button>
         </div>
       </div>
@@ -504,7 +559,7 @@
   if (srcEl && DATA.source) {
     srcEl.innerHTML = `
       <div class="noms-source__title">
-        D'après <em>${DATA.source.ouvrage}</em> de ${DATA.source.auteur} (${DATA.source.dates})
+        ${ND_T.sourceAfter} <em>${DATA.source.ouvrage}</em> ${ND_T.sourceBy} ${DATA.source.auteur} (${DATA.source.dates})
         <span class="noms-source__title-ar">${DATA.source.ouvrage_ar} — ${DATA.source.auteur_ar}</span>
       </div>
       <p>${DATA.source.notice}</p>

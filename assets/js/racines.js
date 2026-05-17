@@ -3,6 +3,33 @@
   let selected = [];           // lettres choisies, ex. ["ر","ح"]
   let currentRoot = null;
 
+  const RC_EN = document.documentElement.lang === 'en';
+  const RC = RC_EN ? {
+    hintEmpty: 'Touch the letters to compose a root',
+    hintPartial: (n) => `${n} letter${n>1?'s':''} — ${3-n} more possible…`,
+    hintComplete: 'Complete root',
+    derives: (n) => `${n} derived form${n>1?'s':''}`,
+    dictEntries: (n) => `${n} dictionary entr${n>1?'ies':'y'}`,
+    divineNames: (n) => `${n} Divine Name${n>1?'s':''}`,
+    quran: 'Quran', divineName: (n) => `Name no.${n}`,
+    resonances: 'Resonances', close: 'Close',
+    semanticField: 'Semantic field', glotonGloss: 'Gloton’s gloss',
+    derivedForms: 'Derived forms', quranOccurrences: 'Quranic occurrences',
+    form: 'Form', meditate: '✦ To meditate ✦'
+  } : {
+    hintEmpty: 'Touchez les lettres pour composer une racine',
+    hintPartial: (n) => `${n} lettre${n>1?'s':''} — encore ${3-n} possible${3-n>1?'s':''}…`,
+    hintComplete: 'Racine complète',
+    derives: (n) => `${n} dérivés`,
+    dictEntries: (n) => `${n} entrée${n>1?'s':''} du dictionnaire`,
+    divineNames: (n) => `${n} Nom${n>1?'s':''} divin${n>1?'s':''}`,
+    quran: 'Coran', divineName: (n) => `Nom n°${n}`,
+    resonances: 'Résonances', close: 'Fermer',
+    semanticField: 'Champ sémantique', glotonGloss: 'Glose de Gloton',
+    derivedForms: 'Formes dérivées', quranOccurrences: 'Occurrences coraniques',
+    form: 'Forme', meditate: '✦ Pour méditer ✦'
+  };
+
   const $ = id => document.getElementById(id);
   const keyboardEl = $('rac-keyboard');
   const gridEl     = $('rac-grid');
@@ -76,11 +103,11 @@
     // hint
     const h = $('rac-hint');
     if (selected.length === 0)
-      h.textContent = 'Touchez les lettres pour composer une racine';
+      h.textContent = RC.hintEmpty;
     else if (selected.length < 3)
-      h.textContent = `${selected.length} lettre${selected.length>1?'s':''} — encore ${3 - selected.length} possible${3-selected.length>1?'s':''}…`;
+      h.textContent = RC.hintPartial(selected.length);
     else
-      h.textContent = 'Racine complète';
+      h.textContent = RC.hintComplete;
   }
 
   function updateKeyboardState() {
@@ -151,9 +178,9 @@
       const nDict  = (r.dict_links || []).length;
       const nNoms  = (r.nom_links || []).length;
       const parts = [];
-      if (nForms) parts.push(`${nForms} dérivés`);
-      if (nDict)  parts.push(`${nDict} entrée${nDict>1?'s':''} du dictionnaire`);
-      if (nNoms)  parts.push(`${nNoms} Nom${nNoms>1?'s':''} divin${nNoms>1?'s':''}`);
+      if (nForms) parts.push(RC.derives(nForms));
+      if (nDict)  parts.push(RC.dictEntries(nDict));
+      if (nNoms)  parts.push(RC.divineNames(nNoms));
       return `
         <div class="rac-card" data-id="${r.id}">
           <div class="rac-card__ar">${r.root_ar}</div>
@@ -181,33 +208,33 @@
           <div class="rac-form-row__tr">${f.tr}</div>
           <div class="rac-form-row__fr">${f.fr}</div>
         </div>
-        <div class="rac-form-row__tag">${f.form ? 'Forme ' + f.form + ' · ' : ''}${f.type || ''}</div>
+        <div class="rac-form-row__tag">${f.form ? RC.form + ' ' + f.form + ' · ' : ''}${f.type || ''}</div>
         <button class="rac-form-row__audio" data-speak="${f.ar.replace(/"/g, '&quot;')}" aria-label="Prononcer">♪</button>
       </div>`).join('');
 
     const quranHTML = (r.quran || []).map(q => `
       <div class="rac-quran-row">
-        <div class="rac-quran-row__ref">Coran ${q.ref}</div>
+        <div class="rac-quran-row__ref">${RC.quran} ${q.ref}</div>
         <div class="rac-quran-row__ar">${q.ar}
           <button class="rac-form-row__audio" data-speak="${q.ar.replace(/"/g, '&quot;')}" aria-label="Prononcer" style="margin-right:0.5rem;">♪</button>
         </div>
-        <div class="rac-quran-row__fr">« ${q.fr} »</div>
+        <div class="rac-quran-row__fr">${RC_EN ? `&ldquo;${q.fr}&rdquo;` : `« ${q.fr} »`}</div>
       </div>`).join('');
 
     const dictLinks = (r.dict_links || []).map(id =>
       `<a class="rac-link-pill" href="../dictionnaire/index.html#${id}">${id}</a>`
     ).join('');
     const nomLinks = (r.nom_links || []).map(n =>
-      `<a class="rac-link-pill" href="../noms-divins/index.html#nom-${n}">Nom n°${n}</a>`
+      `<a class="rac-link-pill" href="../noms-divins/index.html#nom-${n}">${RC.divineName(n)}</a>`
     ).join('');
     const linksHTML = (dictLinks || nomLinks) ? `
       <div class="rac-fiche__section">
-        <h3>Résonances</h3>
+        <h3>${RC.resonances}</h3>
         <div class="rac-fiche__links">${dictLinks}${nomLinks}</div>
       </div>` : '';
 
     modalEl.innerHTML = `
-      <button class="rac-modal__close" aria-label="Fermer">✕</button>
+      <button class="rac-modal__close" aria-label="${RC.close}">✕</button>
 
       <div class="rac-fiche__head">
         <div class="rac-fiche__letters">${r.root_ar}</div>
@@ -217,26 +244,26 @@
       </div>
 
       <div class="rac-fiche__section">
-        <h3>Champ sémantique</h3>
+        <h3>${RC.semanticField}</h3>
         <p>${r.field}</p>
       </div>
 
       ${r.glose_gloton ? `
       <div class="rac-fiche__section">
-        <h3>Glose de Gloton</h3>
+        <h3>${RC.glotonGloss}</h3>
         <p>${r.glose_gloton}</p>
         ${r.gloton_ref ? `<p class="rac-fiche__ref">${r.gloton_ref}</p>` : ''}
       </div>` : ''}
 
       ${formsHTML ? `
       <div class="rac-fiche__section">
-        <h3>Formes dérivées</h3>
+        <h3>${RC.derivedForms}</h3>
         <div class="rac-fiche__forms">${formsHTML}</div>
       </div>` : ''}
 
       ${quranHTML ? `
       <div class="rac-fiche__section">
-        <h3>Occurrences coraniques</h3>
+        <h3>${RC.quranOccurrences}</h3>
         <div class="rac-fiche__quran">${quranHTML}</div>
       </div>` : ''}
 
@@ -244,8 +271,8 @@
 
       ${r.meditation ? `
       <div class="rac-fiche__meditation">
-        <div class="rac-fiche__meditation-label">✦ Pour méditer ✦</div>
-        <div class="rac-fiche__meditation-text">« ${r.meditation} »</div>
+        <div class="rac-fiche__meditation-label">${RC.meditate}</div>
+        <div class="rac-fiche__meditation-text">${RC_EN ? `&ldquo;${r.meditation}&rdquo;` : `« ${r.meditation} »`}</div>
       </div>` : ''}
     `;
 

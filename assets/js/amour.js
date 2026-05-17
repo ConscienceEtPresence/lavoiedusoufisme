@@ -5,6 +5,51 @@
   const DATA_URL = '../../data/amour.json';
   let DATA = null;
 
+  const AM_EN = document.documentElement.lang === 'en';
+  const AM_T = AM_EN ? {
+    motNotFound: 'Word not found. <a href="parcours.html">← See all the words</a>',
+    siteName: "The names of love — The Inner Path",
+    defaultTitle: "The names of love",
+    stationLabel: (num, label) => `Station ${num} · ${label}`,
+    stationNum: n => `Station ${n}`,
+    witness: 'Witness',
+    toMeditate: 'To meditate',
+    toOpenFurther: 'To open further',
+    root: 'Root',
+    sameFamily: 'Of the same family',
+    otherWords: 'Other words from this station',
+    allWords: '← All the words',
+    drawRandom: 'Draw a word at random',
+    subAll: n => `${n} words — the Arabic language as a cartography of the heart`,
+    emptyCat: 'No word published in this category for now — the harvest continues.',
+    stations: 'Stations',
+    all: 'All',
+    themes: 'Themes',
+    loadError: 'Error loading the lexicon.',
+    oq: '“', cq: '”'
+  } : {
+    motNotFound: 'Mot introuvable. <a href="parcours.html">← Voir tous les mots</a>',
+    siteName: "Les noms de l'amour — La voie du dedans",
+    defaultTitle: "Les noms de l'amour",
+    stationLabel: (num, label) => `Station ${num} · ${label}`,
+    stationNum: n => `Station ${n}`,
+    witness: 'Témoin',
+    toMeditate: 'Pour méditer',
+    toOpenFurther: 'Pour ouvrir encore',
+    root: 'Racine',
+    sameFamily: 'De la même famille',
+    otherWords: "D'autres mots de cette station",
+    allWords: '← Tous les mots',
+    drawRandom: 'Tirer un mot au hasard',
+    subAll: n => `${n} mots — la langue arabe comme cartographie du cœur`,
+    emptyCat: "Aucun mot publié dans cette catégorie pour l'instant — la moisson continue.",
+    stations: 'Stations',
+    all: 'Tous',
+    themes: 'Thèmes',
+    loadError: 'Erreur de chargement du lexique.',
+    oq: '« ', cq: ' »'
+  };
+
   function load() {
     return fetch(DATA_URL).then(r => r.json()).then(d => { DATA = d; return d; });
   }
@@ -33,11 +78,11 @@
     const mot = id ? findMot(id) : null;
     const el = document.getElementById('mot-view');
     if (!mot) {
-      el.innerHTML = '<p class="mot-error">Mot introuvable. <a href="parcours.html">← Voir tous les mots</a></p>';
+      el.innerHTML = `<p class="mot-error">${AM_T.motNotFound}</p>`;
       return;
     }
 
-    document.title = `${mot.translit} — ${mot.definition} — Les noms de l'amour — La voie du dedans`;
+    document.title = `${mot.translit} — ${mot.definition} — ${AM_T.siteName}`;
 
     const station = findStation(mot.station);
     const themesHtml = (mot.themes || []).map(tid => {
@@ -65,7 +110,7 @@
     el.innerHTML = `
       <article class="mot-fiche">
         <div class="mot-fiche__station">
-          ${station ? `Station ${station.num} · ${station.label}` : ''}
+          ${station ? AM_T.stationLabel(station.num, station.label) : ''}
         </div>
 
         <h1 class="mot-fiche__ar" lang="ar" dir="rtl">${mot.ar}</h1>
@@ -83,10 +128,10 @@
 
         ${mot.temoin ? `
         <section class="mot-temoin">
-          <span class="mot-temoin__label">Témoin</span>
+          <span class="mot-temoin__label">${AM_T.witness}</span>
           ${mot.temoin.ar ? `<p class="mot-temoin__ar" lang="ar" dir="rtl">${mot.temoin.ar}</p>` : ''}
           ${mot.temoin.translit ? `<p class="mot-temoin__translit"><em>${mot.temoin.translit}</em></p>` : ''}
-          ${mot.temoin.fr ? `<p class="mot-temoin__fr">« ${escapeHtml(mot.temoin.fr)} »</p>` : ''}
+          ${mot.temoin.fr ? `<p class="mot-temoin__fr">${AM_T.oq}${escapeHtml(mot.temoin.fr)}${AM_T.cq}</p>` : ''}
           ${mot.temoin.source ? `<p class="mot-temoin__source">— ${escapeHtml(mot.temoin.source)}</p>` : ''}
         </section>
         ` : ''}
@@ -95,35 +140,35 @@
 
         ${mot.meditation ? `
         <section class="mot-meditation">
-          <span class="mot-meditation__label">Pour méditer</span>
+          <span class="mot-meditation__label">${AM_T.toMeditate}</span>
           <p class="mot-meditation__text">${escapeHtml(mot.meditation)}</p>
         </section>
         ` : ''}
 
         ${mot.ouverture ? `
         <section class="mot-ouverture">
-          <span class="mot-ouverture__label">Pour ouvrir encore</span>
+          <span class="mot-ouverture__label">${AM_T.toOpenFurther}</span>
           <p class="mot-ouverture__text">${mot.ouverture}</p>
         </section>
         ` : ''}
 
         ${mot.racine || famille ? `
         <section class="mot-racine">
-          ${mot.racine ? `<div class="mot-racine__row"><span class="mot-racine__label">Racine</span><span class="mot-racine__value" lang="ar" dir="rtl">${mot.racine}</span></div>` : ''}
-          ${famille ? `<div class="mot-racine__row"><span class="mot-racine__label">De la même famille</span><span class="mot-famille">${famille}</span></div>` : ''}
+          ${mot.racine ? `<div class="mot-racine__row"><span class="mot-racine__label">${AM_T.root}</span><span class="mot-racine__value" lang="ar" dir="rtl">${mot.racine}</span></div>` : ''}
+          ${famille ? `<div class="mot-racine__row"><span class="mot-racine__label">${AM_T.sameFamily}</span><span class="mot-famille">${famille}</span></div>` : ''}
         </section>
         ` : ''}
 
         ${freresHtml ? `
         <section class="mot-freres">
-          <h2 class="mot-freres__title">D'autres mots de cette station</h2>
+          <h2 class="mot-freres__title">${AM_T.otherWords}</h2>
           <div class="mot-freres__grille">${freresHtml}</div>
         </section>
         ` : ''}
 
         <nav class="mot-nav">
-          <a href="parcours.html" class="mot-nav__link">← Tous les mots</a>
-          <a href="hasard.html" class="mot-nav__link mot-nav__link--accent">Tirer un mot au hasard</a>
+          <a href="parcours.html" class="mot-nav__link">${AM_T.allWords}</a>
+          <a href="hasard.html" class="mot-nav__link mot-nav__link--accent">${AM_T.drawRandom}</a>
         </nav>
       </article>
     `;
@@ -135,8 +180,8 @@
     const themeId = qs('theme');
 
     let filtered = DATA.mots.slice();
-    let title = 'Les noms de l\'amour';
-    let sub = `${DATA.mots.length} mots — la langue arabe comme cartographie du cœur`;
+    let title = AM_T.defaultTitle;
+    let sub = AM_T.subAll(DATA.mots.length);
     let ar = DATA.module.ar;
 
     if (stationId) {
@@ -144,7 +189,7 @@
       filtered = filtered.filter(m => m.station === stationId);
       if (s) {
         title = `${s.label}`;
-        sub = `Station ${s.num} · ${s.desc}`;
+        sub = `${AM_T.stationNum(s.num)} · ${s.desc}`;
         ar = s.ar;
       }
     } else if (themeId) {
@@ -157,7 +202,7 @@
       }
     }
 
-    document.title = `${title} — Les noms de l'amour — La voie du dedans`;
+    document.title = `${title} — ${AM_T.siteName}`;
 
     const headerEl = document.getElementById('parcours-header');
     headerEl.innerHTML = `
@@ -169,13 +214,13 @@
 
     const grilleEl = document.getElementById('parcours-grille');
     if (filtered.length === 0) {
-      grilleEl.innerHTML = '<p class="parcours-empty">Aucun mot publié dans cette catégorie pour l\'instant — la moisson continue.</p>';
+      grilleEl.innerHTML = `<p class="parcours-empty">${AM_T.emptyCat}</p>`;
     } else {
       grilleEl.innerHTML = filtered.map(m => {
         const s = findStation(m.station);
         return `
           <a class="mot-carte" href="mot.html?id=${m.id}">
-            <div class="mot-carte__station">${s ? `Station ${s.num}` : ''}</div>
+            <div class="mot-carte__station">${s ? AM_T.stationNum(s.num) : ''}</div>
             <div class="mot-carte__ar" lang="ar" dir="rtl">${m.ar}</div>
             <div class="mot-carte__translit">${m.translit}</div>
             <p class="mot-carte__def">${escapeHtml(m.definition)}</p>
@@ -197,14 +242,14 @@
       const tousActive = (!stationId && !themeId) ? ' active' : '';
       filtresEl.innerHTML = `
         <div class="parcours-filtre-groupe">
-          <span class="parcours-filtre-label">Stations</span>
+          <span class="parcours-filtre-label">${AM_T.stations}</span>
           <div class="parcours-filtre-pills">
-            <a class="parcours-pill${tousActive}" href="parcours.html">Tous</a>
+            <a class="parcours-pill${tousActive}" href="parcours.html">${AM_T.all}</a>
             ${stationsHtml}
           </div>
         </div>
         <div class="parcours-filtre-groupe">
-          <span class="parcours-filtre-label">Thèmes</span>
+          <span class="parcours-filtre-label">${AM_T.themes}</span>
           <div class="parcours-filtre-pills">${themesHtml}</div>
         </div>
       `;
@@ -227,7 +272,7 @@
     }).catch(err => {
       console.error('Erreur Amour:', err);
       const main = document.querySelector('main');
-      if (main) main.insertAdjacentHTML('beforeend', '<p style="text-align:center;color:#a00;padding:2rem;">Erreur de chargement du lexique.</p>');
+      if (main) main.insertAdjacentHTML('beforeend', `<p style="text-align:center;color:#a00;padding:2rem;">${AM_T.loadError}</p>`);
     });
   });
 })();

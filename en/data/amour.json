@@ -1,0 +1,2673 @@
+{
+ "module": {
+  "titre": "The names of love",
+  "ar": "أَسْمَاءُ الحُبّ",
+  "translit": "asmāʾ al-ḥubb",
+  "sous_titre": "A hundred ways of loving in the Arabic language"
+ },
+ "stations": [
+  {
+   "id": "eveil",
+   "num": "I",
+   "ar": "الإِيقَاظ",
+   "translit": "al-īqāẓ",
+   "label": "Love that awakens",
+   "desc": "The first movement of the soul toward the other — inclination, the meeting, nascent intimacy."
+  },
+  {
+   "id": "chant",
+   "num": "II",
+   "ar": "الغَزَل",
+   "translit": "al-ghazal",
+   "label": "Love that sings",
+   "desc": "When love seeks the words, the verses, the voice — tenderness that says itself."
+  },
+  {
+   "id": "brulure",
+   "num": "III",
+   "ar": "اللَّهَب",
+   "translit": "al-lahab",
+   "label": "Love that burns",
+   "desc": "The passion that consumes, that gnaws, that thins as a bindweed its host."
+  },
+  {
+   "id": "perte",
+   "num": "IV",
+   "ar": "الفُقْدَان",
+   "translit": "al-fuqdān",
+   "label": "Love that loses itself",
+   "desc": "Madness, melancholy, wandering — when the lover no longer recognises himself."
+  },
+  {
+   "id": "retrouvailles",
+   "num": "V",
+   "ar": "الوَصْل",
+   "translit": "al-waṣl",
+   "label": "Love that finds again",
+   "desc": "Union, the bond, fusion — the soothing of the lover in the presence."
+  },
+  {
+   "id": "divin",
+   "num": "VI",
+   "ar": "الحُبّ الإِلٰهِي",
+   "translit": "al-ḥubb al-ilāhī",
+   "label": "Divine love",
+   "desc": "When human love recognises its archetype — the ultimate station of the journey."
+  }
+ ],
+ "themes": [
+  {
+   "id": "feu",
+   "ar": "النَّار",
+   "translit": "al-nār",
+   "label": "Fire",
+   "desc": "Burning, flame, blaze — love as combustion."
+  },
+  {
+   "id": "eau",
+   "ar": "المَاء",
+   "translit": "al-māʾ",
+   "label": "Water",
+   "desc": "Thirst, drowning, river — love as a liquid abyss."
+  },
+  {
+   "id": "corps",
+   "ar": "الجَسَد",
+   "translit": "al-jasad",
+   "label": "The sick body",
+   "desc": "The illness of love, languor, physical wasting."
+  },
+  {
+   "id": "folie",
+   "ar": "الجُنُون",
+   "translit": "al-junūn",
+   "label": "Madness",
+   "desc": "Loss of reason, wandering, obsession — Majnūn and his descendants."
+  },
+  {
+   "id": "lien",
+   "ar": "الرَّبْط",
+   "translit": "al-rabṭ",
+   "label": "The bond",
+   "desc": "Union, attachment, fusion — what reunites the lovers."
+  },
+  {
+   "id": "separation",
+   "ar": "الفِرَاق",
+   "translit": "al-firāq",
+   "label": "Separation",
+   "desc": "Estrangement, exile, absence — what sets them apart."
+  },
+  {
+   "id": "douceur",
+   "ar": "اللُّطْف",
+   "translit": "al-luṭf",
+   "label": "Gentleness",
+   "desc": "Tenderness, peace, intimacy — love without violence."
+  },
+  {
+   "id": "eclat",
+   "ar": "الفُتُون",
+   "translit": "al-futūn",
+   "label": "Radiance and the snare",
+   "desc": "Beauty, seduction, charm, bewitchment — amorous fascination."
+  },
+  {
+   "id": "ivresse",
+   "ar": "السُّكْر",
+   "translit": "al-sukr",
+   "label": "Intoxication",
+   "desc": "Vertigo, ecstasy, transport — the lover made giddy by the presence."
+  }
+ ],
+ "mots": [
+  {
+   "id": "hubb",
+   "ar": "الْحُبّ",
+   "translit": "al-ḥubb",
+   "definition": "Love the king, sovereign love",
+   "station": "eveil",
+   "themes": [
+    "douceur",
+    "feu"
+   ],
+   "racine": "ح ب ب",
+   "famille": [
+    "mouhibb",
+    "mahbub",
+    "mahabba",
+    "houbb-ilahi"
+   ],
+   "description": "The word ḥubb is the root-word, the matrix of the whole amorous family in Arabic. Its etymology is the object of countless hypotheses: some see in it the seed of a desert plant, which contains the whole plant in germ; others, the immaculate whiteness of teeth — the gleam of beauty that calls for love; others again, the image of the vessel, which lets itself be filled. Three trails, one and the same mystery.\n\nḤubb is the love sung by Umm Kulthūm — the love of the wandering poets, of the solitary princesses, of the monks in the desert. A noble and classical feeling, the paradigm of carnal passion and of the torments of youth, it is also the ever-renewed motif of tender contrition, the constantly resumed support of desire.\n\nIn the Quran, ḥubb founds the relationship between God and the creature: <em>yuḥibbuhum wa yuḥibbūnahu</em> — “He loves them and they love Him” (V, 54). It is this verse that the whole of Sufi mysticism has meditated upon as the key to divine reciprocity.",
+   "temoin": {
+    "ar": "يُحِبُّهُمْ وَيُحِبُّونَهُ",
+    "translit": "yuḥibbuhum wa yuḥibbūnahu",
+    "fr": "He loves them and they love Him",
+    "source": "Quran, V, 54"
+   },
+   "meditation": "What is the simplest word that you no longer dare to say?",
+   "ouverture": "The Sufi tradition holds this verse to be the key to the <em>tawḥīd</em> of love: God does not receive love, He gives it first, and it is from His prior love that our love for Him can spring up. To love, says Ibn ʿArabī, is always to answer a call already sent out."
+  },
+  {
+   "id": "hawa",
+   "ar": "الْهَوى",
+   "translit": "al-hawā",
+   "definition": "The sudden inclination, the attraction that carries one away",
+   "station": "eveil",
+   "themes": [
+    "eau",
+    "eclat"
+   ],
+   "racine": "ه و ي",
+   "famille": [
+    "ahwa",
+    "hawiya"
+   ],
+   "description": "Hawā names that precise instant when the soul tips over. Before the word, there was nothing — or rather, there was ordinary life, the course of the hours. And then something inclines, abruptly, toward a face, a voice, a silhouette glimpsed. That is hawā: the sudden, violent, passionate attraction of the soul toward its object — a fall, more than a decision.\n\nIn the very root of the word, one hears <em>hawā</em>, the verb <em>to fall</em>. Love as a fall. One does not rise toward what one loves — one falls into it.\n\nThe poet ʿAbbās ibn al-Aḥnaf (8th century) made of it the great vocabulary of his court: <em>sulṭān al-hawā</em>, the power of love; <em>ḥukm al-hawā</em>, its law; <em>sirr al-hawā</em>, its secret. His contemporary Sulaymān al-Mustaʿīn wrote this verse that the whole tradition has kept:\n\n<em>“Do not blame a king for lowering himself before love, for the humiliation of love is a second royalty.”</em>",
+   "temoin": {
+    "ar": "سُلْطَانُ الْهَوى",
+    "translit": "sulṭān al-hawā",
+    "fr": "The power of love",
+    "source": "ʿAbbās ibn al-Aḥnaf, 8th c."
+   },
+   "meditation": "Toward what do you incline, without having chosen it?",
+   "ouverture": "Sufism turns this word over with a fine subtlety: what makes you fall is exactly what can raise you. The <em>hawā</em> that ordinary morality blames — the irrational inclination, the passion that undoes — is also, says Ibn ʿArabī, the organ by which the soul recognises its origin. One always falls downward. But the low, sometimes, is on high."
+  },
+  {
+   "id": "ilf",
+   "ar": "الإِلْف",
+   "translit": "al-ilf",
+   "definition": "Amorous intimacy, the companionship of lovers",
+   "station": "eveil",
+   "themes": [
+    "lien",
+    "douceur"
+   ],
+   "racine": "أ ل ف",
+   "famille": [
+    "ulf",
+    "ta'allufa",
+    "mu'allaf",
+    "ilāf"
+   ],
+   "description": "Ilf names that particular gentleness which settles between two beings when the first attraction has subsided and the companionship begins. It is no longer the blaze of <em>hawā</em>, nor the ecstasy of <em>waṣl</em> — it is the art of living side by side, of growing accustomed to one another without eroding one another, of weaving a daily intimacy that does not extinguish the flame but keeps it at the hearth.\n\nThe word comes from the root <em>ʾ-l-f</em>, which means <em>to associate, to assemble, to gather</em>. The same root yields <em>alif</em> — the first letter of the Arabic alphabet, the one that stands upright, straight, and that inaugurates all the nouns. In the mystical symbolism of Daylamī (10th century), <em>alif</em> subdivides into three movements: <em>alifa</em> (to love), <em>ilf</em> (the lover), <em>allafa</em> (the love that unites). A single letter, three ways of being together.\n\nIt is under this word that Ibn Ḥazm of Andalusia (993-1064) placed his masterpiece, <em>Ṭawq al-ḥamāma fī l-ulfa wa-l-ullāf</em> — <em>The Ring of the Dove, on love and lovers</em> — one of the most beautiful psychologies of love of all time.",
+   "temoin": {
+    "ar": "طَوْقُ الْحَمَامَة فِي الأُلْفَة وَالأُلَّاف",
+    "translit": "Ṭawq al-ḥamāma fī l-ulfa wa-l-ullāf",
+    "fr": "The Ring of the Dove, on love and lovers",
+    "source": "Ibn Ḥazm, Cordoba, 11th c."
+   },
+   "meditation": "With whom do you no longer have to put on a show?",
+   "ouverture": "The Sufi way recognises in <em>ilf</em> a very high station, more difficult than the blaze. To burn is easy — to last together without betraying one another is less so. The Companions of the Prophet are named <em>al-ulfāʾ</em>, those who gathered around him in daily intimacy — not in ecstasy, but at the shared table."
+  },
+  {
+   "id": "mouanassa",
+   "ar": "المُؤانَسَة",
+   "translit": "al-muʾānasa",
+   "definition": "Intimacy in the presence of the beloved",
+   "station": "eveil",
+   "themes": [
+    "lien",
+    "douceur"
+   ],
+   "racine": "أ ن س",
+   "famille": [
+    "uns",
+    "insān",
+    "anīs",
+    "muʾanis"
+   ],
+   "description": "If <em>ilf</em> is amorous habit, <em>muʾānasa</em> is its inner quality: to be in the intimacy of the beloved being, to seek actively his company, to find in his presence the rest that the solitary soul lacks.\n\nThe word comes from the root <em>uns</em>, which means familiarity, soothing, the contrary of anxious strangeness. It is the same root that yields <em>insān</em>, the human being — as if humanity itself were defined by its capacity to be <em>in presence</em>, by that quality of being which no pure solitude could fill.\n\nThe thinker Abū Ḥayyān at-Tawḥīdī (10th century) devoted an entire book to the word, <em>al-Imtāʿ wa-l-muʾānasa</em> — <em>On delectation and fair company</em>. The title says it all already: love, at this station, is no longer a fever, it is a shared savour.",
+   "temoin": {
+    "ar": "الإِمْتَاع وَالمُؤانَسَة",
+    "translit": "al-Imtāʿ wa-l-Muʾānasa",
+    "fr": "On delectation and fair company",
+    "source": "Abū Ḥayyān at-Tawḥīdī, 10th c."
+   },
+   "meditation": "With whom can you fall silent, without the silence weighing?",
+   "ouverture": "In the Sufi lexicon, <em>uns</em> is the name of the station in which the servant has ceased to flee the presence of God — in which He is no longer a dreaded instance, but a sought company. It is the exact inverse of <em>waḥsha</em>, the wild fear. Human <em>muʾānasa</em> is therefore a school: to love soothes — or reveals the anxiety that had to be named."
+  },
+  {
+   "id": "ghazal",
+   "ar": "الْغَزَل",
+   "translit": "al-ghazal",
+   "definition": "The amorous song, gallant poetry",
+   "station": "chant",
+   "themes": [
+    "eclat",
+    "douceur"
+   ],
+   "racine": "غ ز ل",
+   "famille": [
+    "taghazzala",
+    "mughazil"
+   ],
+   "description": "Before being a poetic genre, <em>ghazal</em> is a gesture: the art of spinning speech as one spins wool — whence the primary sense of the root <em>gh-z-l</em>, <em>to spin, to weave</em>. The amorous poet weaves his verses as one weaves a veil, and it is beneath this veil that the beloved will appear better than in her nakedness.\n\nThe one who practises <em>taghazzul</em> is strongly drawn to a person and expresses it through the beauty of language. From there, the ghazal becomes the great Arabic and Persian lyric genre: the brief, chiselled love poem, in which each distich is self-sufficient while linking to the following ones. Ḥāfiẓ of Shiraz (14th century) is its absolute master, and in him the human ghazal becomes the transparent veil of a divine ghazal.\n\nWhen flattery passes the bounds of sincerity, Arabic names it <em>khitāl</em> — to distinguish the song that reveals from the seduction that lies.",
+   "temoin": {
+    "ar": "كُلُّ غَزَلٍ مَا لَمْ يَكُنْ صِدْقًا فَهْوَ خِتَال",
+    "translit": "kullu ghazalin mā lam yakun ṣidqan fa-huwa khitāl",
+    "fr": "Every song of love that is not true is but a deception",
+    "source": "Classical Arabic adage"
+   },
+   "meditation": "When you speak of love — do you weave a veil that reveals, or a veil that lies?",
+   "ouverture": "Sufism made of the ghazal its language par excellence. When Ibn al-Fāriḍ or Ibn ʿArabī sing a beloved, they always sing, beneath the image, the divine face. The poetic veil is not a disguise: it is the only way to look at a Light that would blind, seen face on. Human beauty is, says Ibn ʿArabī, <em>the window of the Real</em>."
+  },
+  {
+   "id": "hubb-oudri",
+   "ar": "الْحُبُّ الْعُذْرِيّ",
+   "translit": "al-ḥubb al-ʿudhrī",
+   "definition": "Courtly love, the pure love of the Banū ʿUdhrah",
+   "station": "chant",
+   "themes": [
+    "separation",
+    "douceur"
+   ],
+   "racine": "ع ذ ر",
+   "famille": [
+    "udhra",
+    "ʿudhri"
+   ],
+   "description": "One names <em>ḥubb ʿudhrī</em> the love that is founded, paradoxically, on the refusal of union. Its theoretical inventor is Ibn Dāwūd al-Iṣbahānī (868-910), a jurist and poet whom the tradition nicknames “the Boileau of the Arabs,” in his <em>Kitāb az-Zahra</em> — <em>The Book of the Flower</em>. According to him, true love rests on three pillars: distance (<em>ʿazl</em>), pious continence (<em>warāʿ, ʿiffa</em>), and accepted separation.\n\nThe word comes from the <em>Banū ʿUdhrah</em>, a legendary Yemeni tribe where it was said: <em>we die when we love</em>. It is in this tradition that the figure of Majnūn is born — Qays ibn al-Mulawwaḥ, become mad for Laylā to the point that separation does not distance him from her, but engraves her in him forever. Union, in this love, is not refused by accident: it is <em>avoided as a contamination</em>. To love is to keep the lack alive.\n\nThis love is also called <em>al-hawā al-ʿudhrī</em>. The Occitan troubadour, later, would be its direct heir, by the Arab-Andalusian ways.",
+   "temoin": {
+    "ar": "أَمُرُّ عَلَى الدِّيَارِ دِيَارِ لَيْلَى",
+    "translit": "amurru ʿalā d-diyāri diyāri Laylā",
+    "fr": "I pass before the house, the house of Laylā,\nI kiss this wall, I embrace that one.\nIs it from loving the walls that I lose my reason?\n— No, my heart. It is from loving the people who dwell within.",
+    "source": "Majnūn Laylā, 7th century"
+   },
+   "meditation": "What would you love — if you accepted never to have it?",
+   "ouverture": "The Sufi way takes up exactly this intuition: the true Beloved is not graspable. Every grasp is a veil laid over the Presence. And the veil, says Ibn ʿArabī, is also the appearing. The ʿudhrī learns in human love what the Sufi learns in divine love — that separation is not absence, but the other name of the meeting."
+  },
+  {
+   "id": "mahabba",
+   "ar": "الْمَحَبَّة",
+   "translit": "al-maḥabba",
+   "definition": "Love-friendship, the love that remembers",
+   "station": "chant",
+   "themes": [
+    "douceur",
+    "lien"
+   ],
+   "racine": "ح ب ب",
+   "famille": [
+    "hubb",
+    "mouhibb",
+    "mahbub"
+   ],
+   "description": "<em>Maḥabba</em> shares its root with <em>ḥubb</em>, but denotes something more clear-cut, more white, more lasting. An ancient etymology links the word to <em>ṣafāʾ</em> — <em>purity</em>, <em>whiteness</em> — as if maḥabba were love <em>decanted</em>, rid of its storms.\n\nIn the vocabulary of mysticism, <em>al-maḥabba</em> is addressed essentially to God. It is the passion of the one who chants the Quran without being able to stop; it is the flame of the mystic who, through the <em>dhikr</em>, remembers God until the remembering and the remembered merge. What seems a peaceful friendship in reality conceals, says Junayd, <em>the boundless swell of the heart</em> toward the Beloved — and the torment that accompanies it.\n\nThe first great Sufi masters — Rābiʿa, Ḥallāj, Junayd — made of maḥabba the first station of the spiritual path: before knowledge, before practice, love.",
+   "temoin": {
+    "ar": "حَبَّبَ إِلَيْكُمُ الإِيمَانَ وَزَيَّنَهُ فِي قُلُوبِكُمْ",
+    "translit": "ḥabbaba ilaykumu l-īmāna wa zayyanahu fī qulūbikum",
+    "fr": "He has made faith dear to you and adorned it in your hearts",
+    "source": "Quran, XLIX, 7"
+   },
+   "meditation": "What, within you, has been <em>made dear</em> without your having chosen it?",
+   "ouverture": "Rābiʿa al-ʿAdawiyya (8th century), the first great mystic of Islam, said: <em>“My God, if I worship You out of fear of hell, burn me in hell; if I worship You out of hope of paradise, exclude me from it. But if I worship You for Your own sake, do not deprive me of Your beauty.”</em> There is maḥabba in its pure state: a love that no longer calculates."
+  },
+  {
+   "id": "hanane",
+   "ar": "الْحَنَان",
+   "translit": "al-ḥanān",
+   "definition": "Tenderness, serene affection",
+   "station": "chant",
+   "themes": [
+    "douceur",
+    "lien"
+   ],
+   "racine": "ح ن ن",
+   "famille": [
+    "hanan",
+    "hanin",
+    "hannan"
+   ],
+   "description": "<em>Ḥanān</em> names tenderness in the most precise sense of the word — the quality of what inclines toward the other with gentleness, without violence, without demand. It is the affection of a mother for her child, but also that of the beloved, of the wife, of the friend. <em>Al-ḥanīna</em> denotes the person who feels this tenderness, <em>al-ḥannān</em> the one who radiates it.\n\nThe root <em>ḥ-n-n</em> has a vast reach: it is also the <em>nostalgic groaning</em> of the camel that seeks its herd, the sigh of the soul that remembers. Thus <em>ḥanīn</em> names at once tenderness and nostalgia — as if the two were but a single movement of the heart, toward what is dear, toward what is lacking.\n\nIn the Quran, <em>al-Ḥannān</em> is one of the divine Names: the One who inclines tenderly toward His creature. It is the attribute that answers <em>al-Mannān</em>, the Benefactor. Tenderness is not, in Islam, a feminine or weak feeling — it is a Name of God.",
+   "temoin": {
+    "ar": "وَحَنَانًا مِنْ لَدُنَّا",
+    "translit": "wa-ḥanānan min ladunnā",
+    "fr": "And tenderness from Us",
+    "source": "Quran, XIX, 13 (concerning John the Baptist)"
+   },
+   "meditation": "Toward whom do you incline, without even deciding it?",
+   "ouverture": "The Sufis distinguish three movements of the heart's inclination: <em>hawā</em>, the passionate fall; <em>ʿishq</em>, burning love; <em>ḥanān</em>, stable tenderness. Only the third lasts. It is the one that, after the storms of the path, remains when all the rest has been consumed — the very quality of the soul that has arrived."
+  },
+  {
+   "id": "sabbaba",
+   "ar": "الصَّبَابَة",
+   "translit": "aṣ-ṣabāba",
+   "definition": "Tender love, the love that pours itself out in words",
+   "station": "chant",
+   "themes": [
+    "douceur",
+    "eau"
+   ],
+   "racine": "ص ب ب",
+   "famille": [
+    "sabb",
+    "saboub"
+   ],
+   "description": "<em>Ṣabāba</em> comes from the root <em>ṣ-b-b</em>, which means <em>to pour, to make flow</em>. It is the love that pours itself out — not in cries nor in impulses, but in tender words, in patient letters, in murmured confidences. The lover who feels this sentiment <em>pours</em> his heart into language, word after word, without overflowing.\n\nThe word applies to desire when it combines two qualities often opposed: <em>fineness</em> and <em>strength</em>. A man who feels a burning passion for a woman, but who expresses it only through careful letters, chiselled missives, is called <em>rajul ṣabbūn</em> — <em>a delicate man, though deeply in love</em>. The Arabic tradition reads this restraint not as a weakness but as the mark of a mature love, which knows that there is more in the slow word than in the rapid gesture.\n\nThe <em>ṣabāba</em> is cousin to <em>ḥanān</em> and to <em>ḥubb al-ʿafīf</em> — all three form the family of the chaste and long-spoken loves.",
+   "temoin": {
+    "ar": "إِنَّمَا الصَّبَابَةُ إِيقَادٌ فِي الْأَحْشَاء",
+    "translit": "innamā ṣ-ṣabābatu īqādun fī l-aḥshāʾ",
+    "fr": "The ṣabāba is nothing other than a fire kindled in the entrails",
+    "source": "Adage of classical poetry"
+   },
+   "meditation": "What word have you held back, that would have said love better than a gesture?",
+   "ouverture": "In the Sufi way, amorous writing is a discipline. Ibn ʿArabī wrote to his beloved Niẓām poems that his detractors wanted to forbid, until he composed the mystical commentary upon them himself — to show that beneath each human image was hidden a movement of the soul toward the Real. The written tongue slows the heart, and the slowed heart sees better."
+  },
+  {
+   "id": "mawadda",
+   "ar": "الْمَوَدَّة",
+   "translit": "al-mawadda",
+   "definition": "Love-affection that endures, love become spiritual",
+   "station": "chant",
+   "themes": [
+    "lien",
+    "douceur"
+   ],
+   "racine": "و د د",
+   "famille": [
+    "wadd",
+    "wadoud",
+    "widad"
+   ],
+   "description": "<em>Mawadda</em> is <em>wadd</em> (love-affection) when it takes on a character of eternity and of spirituality. It is no longer the simple inclination of the heart, but authentic love-friendship, the stable bond that has crossed the seasons and that has settled. The word covers, in the Sufi lexicon, sensibly the same field as <em>maḥabba</em> — with this nuance, that it insists more on <em>reciprocity</em> and on the <em>visible</em> of the feeling.\n\nThe Quran uses it to describe what must reign between spouses: <em>“And among His signs, He has created for you, from yourselves, spouses that you may find rest in them, and He has placed between you mawadda and raḥma”</em> (XXX, 21). These three words — <em>sukūn</em> (rest), <em>mawadda</em> (lasting affection), <em>raḥma</em> (mercy) — draw the Quranic ideal of the couple.\n\nOne also says <em>miwadd, al-miwadd</em>. The family of the word gathers: <em>wadd</em>, pure love; <em>widād</em>, its lexical definition; <em>wadūd</em>, the aptitude to love without counting — one of the 99 divine Names.",
+   "temoin": {
+    "ar": "وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَة",
+    "translit": "wa jaʿala baynakum mawaddatan wa raḥma",
+    "fr": "He has placed between you affection and mercy",
+    "source": "Quran, XXX, 21"
+   },
+   "meditation": "What love, within you, has become spiritual — without your having decided it?",
+   "ouverture": "The passage from <em>ḥubb</em> to <em>mawadda</em> is one of the alchemical transformations that the Sufis describe. The love that burns calms into a gentle light; the love that demands becomes the love that remains. It is not a diminishment — it is an elevation. The fire is not dead: it has become warmth."
+  },
+  {
+   "id": "widad",
+   "ar": "الْوِدَاد",
+   "translit": "al-widād",
+   "definition": "Love, according to the classical definition",
+   "station": "chant",
+   "themes": [
+    "douceur",
+    "lien"
+   ],
+   "racine": "و د د",
+   "famille": [
+    "wadd",
+    "wadoud",
+    "mawadda"
+   ],
+   "description": "<em>Widād</em> is, in the Arabic lexicographical tradition, the very definition of love. It is by this word that the great dictionary <em>Qāmūs al-muḥīṭ</em> of al-Fayrūzābādī (15th century) — one of the monuments of the language, of considerable reputation among the lovers of Arabic — chooses to define the amorous feeling. As if, to explain ḥubb to a cultivated reader, one had to resort to a word still more ancient, still more simple: <em>widād</em>.\n\nThe word shares its root with <em>wadd</em> and <em>mawadda</em>, and names love in what it has of the most essential: the affectionate inclination, the leaning that unites two beings without noise. Where <em>ḥubb</em> can be tumultuous, <em>widād</em> is soothed; where <em>ʿishq</em> burns, <em>widād</em> radiates quietly.\n\nIn Andalusian poetry, <em>al-widād</em> is often the word that closes a poem — as if, after having sought it through all the faces of passion, one returned to it to conclude: <em>this is what it was.</em>",
+   "temoin": {
+    "ar": "الْوِدَادُ صَفَاءُ الْقَلْب",
+    "translit": "al-widādu ṣafāʾu l-qalb",
+    "fr": "Widād is the limpidity of the heart",
+    "source": "Classical Sufi adage"
+   },
+   "meditation": "What limpidity, within you, no longer lets itself be troubled by the seasons?",
+   "ouverture": "When a mystic speaks of his bond with God in terms of <em>widād</em>, he indicates a station in which passion has calmed without losing anything of its intensity. The heart no longer desires violently — it <em>is</em> what it desired. It is what the way names <em>maqām al-qurb</em>, the station of nearness: one no longer loves from afar, one has entered into what one loved."
+  },
+  {
+   "id": "wadd",
+   "ar": "الْوُدّ",
+   "translit": "al-wudd",
+   "definition": "Pure love-affection, marked with grandeur",
+   "station": "chant",
+   "themes": [
+    "douceur",
+    "lien"
+   ],
+   "racine": "و د د",
+   "famille": [
+    "wadoud",
+    "mawadda",
+    "widad"
+   ],
+   "description": "<em>Wudd</em> names pure love — elevated, marked with grandeur, rid of anxiety. It is not a feverish passion; it is a noble affection, almost chivalric, which likens human love to <em>divine generosity</em>. This is why, in the mystical lexicon, the word holds a place of choice: it makes the bridge between the tenderness of the creatures and the sovereign benevolence of God.\n\nThe Quran employs it alongside its intensive <em>wadūd</em> (XI, 90; LXXXV, 14) — the <em>Loving</em>, one of the 99 divine Names. This root <em>w-d-d</em> thus runs through the whole lexicon of love, from the simple inclination to the supreme attribute of the Divinity. To love with <em>wudd</em> is to love as God loves: without calculation, without fear of lacking, in overabundance.\n\nThe word is in favour throughout the mystical lexicon, and several masters have employed it to describe the state of the heart that has surpassed the trials of passion and that henceforth radiates a stable love.",
+   "temoin": {
+    "ar": "إِنَّ رَبِّي رَحِيمٌ وَدُود",
+    "translit": "inna rabbī raḥīmun wadūd",
+    "fr": "My Lord is most Merciful, most Loving",
+    "source": "Quran, XI, 90"
+   },
+   "meditation": "What generosity within you remains intact — even when it is not returned to you?",
+   "ouverture": "The Sufi way distinguishes two movements: to <em>receive</em> the love of God, and to <em>become</em> His loving in the world. <em>Wudd</em> belongs to the second movement: it is the love that no longer expects anything, because it has understood that it was itself the answer to the call that preceded it. To love thus, says Ḥallāj, is to cease being the lover in order to become love."
+  },
+  {
+   "id": "ichq",
+   "ar": "الْعِشْق",
+   "translit": "al-ʿishq",
+   "definition": "Desire-passion, the love that thins",
+   "station": "brulure",
+   "themes": [
+    "feu",
+    "corps"
+   ],
+   "racine": "ع ش ق",
+   "famille": [
+    "ta'achchaqa",
+    "ashiq",
+    "ma'chouq"
+   ],
+   "description": "<em>ʿIshq</em> is the densest, the most charged word of the Arabic amorous lexicon. Its etymology is revealing: it derives from <em>ʿashaqa</em>, the <em>bindweed</em> — that herbaceous plant with a twining stem, of the family of the convolvulaceae, which wraps itself around the tree and can no longer detach itself from it. The lover is called <em>ʿāshiq</em>; his passion wraps him, thins him, exhausts him as the bindweed its host.\n\n<em>ʿIshq shadīd</em>: violent desire. The domain of the word oscillates between the simple aspiration to find the beloved person again and a lasciviousness that can stray into excess. The concept is so central that an entire dīwān of the great Ḥāfiẓ of Shiraz (14th century) bears the title <em>Love, the lover, the beloved</em> — that is, in Persian, <em>ʿishq-o ʿāsheq-o maʿshūq</em>: three words, a single root, a single movement.\n\nIn Sufism, <em>ʿishq</em> becomes the name of the burning mystical desire — the one that consumes Majnūn for Laylā, that consumes Rūmī for Shams, and that, at a certain degree, always overflows the language one lends it.",
+   "temoin": {
+    "ar": "اَلَا یَا اَیُّهَا السّاقی اَدِرْ کَأْساً وَ ناوِلْها",
+    "translit": "alā yā ayyuhā s-sāqī adir kaʾsan wa-nāwilhā",
+    "fr": "Come, cupbearer, send round the cup and hand it to me —\nlove appeared easy at first, but what torments it has been necessary to traverse",
+    "source": "Ḥāfiẓ, first ghazal of the Dīwān"
+   },
+   "meditation": "What bindweed of desire wraps you — and thins you, until you no longer know what of you still stands upright?",
+   "ouverture": "The orthodox theologians long refused to apply <em>ʿishq</em> to the relationship between God and the human being — too carnal, too intense, too dangerous. But Ḥallāj then Aḥmad Ghazālī (the mystical brother of the great al-Ghazālī) forced this door: <em>ʿishq</em> became the name of divine love par excellence, the one in which the lover wraps himself around the Real and accepts to be consumed by it. What gnaws you can become what lightens you."
+  },
+  {
+   "id": "taachchaqa",
+   "ar": "تَعَشَّقَ",
+   "translit": "taʿashshaqa",
+   "definition": "To fall into the snares of love, to become infatuated",
+   "station": "brulure",
+   "themes": [
+    "feu",
+    "eclat"
+   ],
+   "racine": "ع ش ق",
+   "famille": [
+    "ichq",
+    "ashiq",
+    "ma'chouq"
+   ],
+   "description": "<em>Taʿashshaqa</em> is the verb that says <em>to fall in love</em> — but with that sense proper to <em>ʿishq</em>: to let oneself be caught, like a bird in a net or a traveller in a climbing plant. The word evokes the rapidity, the ease with which the soul yields to attraction. <em>Al-ʿashshāq</em> is the one who loves <em>very quickly</em> and <em>easily</em>; in the feminine, <em>ʿashshāqa</em>.\n\nMutanabbī (915-965), perhaps the greatest Arab poet, made of it one of his famous verses: he marvelled, it is said, to see <em>how well the one who desires nothing knows how to die</em>. The casualness of <em>taʿashshaqa</em> covers, for him, a grave question: where does the soul go that gives itself so easily? And the soul that does not give itself, is it alive?\n\nThe word is in close kinship with <em>futūn</em>, bewitchment, and with <em>ladgh</em>, the bite. But where these two words insist on the wound, <em>taʿashshaqa</em> keeps something light — it is the love that does not yet take itself seriously.",
+   "temoin": {
+    "ar": "وَا عَجَبًا كَيْفَ يُتَّقَنُ المَوْتُ وَلَا أُحِبُّ",
+    "translit": "wā ʿajaban kayfa yuttaqanu l-mawtu wa-lā uḥibbu",
+    "fr": "I wonder, astonished, how the one who desires nothing\nknows how to die",
+    "source": "Al-Mutanabbī, 10th century"
+   },
+   "meditation": "What does the ease with which you yield — or with which you refuse — teach you?",
+   "ouverture": "The Sufi way does not condemn <em>taʿashshaqa</em>: it educates it. The soul that becomes infatuated quickly is also the one that can, quickly, recognise God behind the face that has captured it. Spiritual education then consists in <em>letting the inclination go to its term</em>: to rise from the beloved to the sign, from the sign to the Presence."
+  },
+  {
+   "id": "chaaf",
+   "ar": "الشَّعَف",
+   "translit": "ash-shaʿaf",
+   "definition": "The burning of love, the ardour of feeling",
+   "station": "brulure",
+   "themes": [
+    "feu",
+    "corps"
+   ],
+   "racine": "ش ع ف",
+   "famille": [
+    "mashʿuf",
+    "shaghaf"
+   ],
+   "description": "<em>Shaʿaf</em> is the precise <em>burning</em> of amorous feeling — the instant when love reaches the heart and disturbs it. When one says of someone <em>shaʿafahu l-ḥubb</em>, one says that he has made himself ill by reason of the fire of love that devours him. The idea is that of a powerlessness before the trial of affection: one lets oneself be <em>consumed</em> by it.\n\nThe root <em>sh-ʿ-f</em> evokes the <em>summit</em>, the <em>highest</em> — as if the burning of love reached precisely the culminating point of the heart, its most sensitive organ. The word is not to be confused with its cousin <em>shaghaf</em> (love-overflowing), although the two are sometimes used one for the other. The <em>shaʿaf</em> is more precise: it is <em>the heat that touches</em>, whereas <em>shaghaf</em> is <em>the flood that submerges</em>.\n\nIn Persian, the equivalent exists: <em>del-sukhté</em>, “burned heart” — whose echo runs through all classical Iranian poetry, from ʿAṭṭār to Saʿdī.",
+   "temoin": {
+    "ar": "قَدْ شَعَفَهَا حُبًّا",
+    "translit": "qad shaʿafahā ḥubban",
+    "fr": "He has burned his heart with love",
+    "source": "Quran, XII, 30 (concerning Zulaykhā)"
+   },
+   "meditation": "To what summit of yourself has the burning arrived — and what has it changed there?",
+   "ouverture": "The Sufis read the <em>shaʿaf</em> as a spiritual warning: all that burns you is the trial of your attachment. One single thing deserves to burn you entirely — the Presence. All the other flames are trials that the soul inflicts upon itself in order to recognise, by contrast, the one it was awaiting without knowing it."
+  },
+  {
+   "id": "chaghaf",
+   "ar": "الشَّغَف",
+   "translit": "ash-shaghaf",
+   "definition": "Love-overflowing, the passion that submerges",
+   "station": "brulure",
+   "themes": [
+    "eau",
+    "feu"
+   ],
+   "racine": "ش غ ف",
+   "famille": [
+    "chaaf",
+    "chaghafa"
+   ],
+   "description": "<em>Shaghaf</em> names the passionate love that overflows the prescribed limits to become violent. Like a spirited river whose waters break their bed, this feeling no longer contains itself, no longer listens to reason, no longer respects the customs. It is the love of Zulaykhā, the wife of Potiphar, for Joseph, her young servant — the precise Quranic example of out-of-the-norm feeling.\n\nThe Quran uses it thus: <em>“She became enamoured of him — qad shaghafahā ḥubban — she shut the doors of the palace and said to him: Here I am, yours!”</em> (XII, 23). To make someone mad with love to the point of seeing them drown — that is indeed ash-<em>shaghaf</em>. Before this violent love, feminine modesty and social restraint are abolished.\n\nBut the word, according to Ibn Qayyim al-Jawziyya (1272-1350), keeps a proper sense — the <em>envelope of the heart</em>, that which girds the most vulnerable flesh. <em>Shaghafahā ḥubban</em> does not mean “he filled her with love” but, more exactly, “he reached the very envelope of her heart.” Not to be confused with <em>shaʿaf</em>, of a lesser intensity.",
+   "temoin": {
+    "ar": "قَدْ شَغَفَهَا حُبًّا",
+    "translit": "qad shaghafahā ḥubban",
+    "fr": "He has touched even the envelope of her heart",
+    "source": "Quran, XII, 23"
+   },
+   "meditation": "What love, within you, has touched the most intimate envelope — the one you were protecting without knowing it?",
+   "ouverture": "The Sufis read the episode of Zulaykhā as a veil placed over their own history with God. Rūmī defends her explicitly: <em>when one knows Joseph, one ceases to blame Zulaykhā</em>. To love too much, says the way, is not a flaw; to love falsely, yes. And the only way to know that one truly loves is to see whether love, in us, breaks its bed."
+  },
+  {
+   "id": "houbb-saiq",
+   "ar": "الحُبّ الصَّاعِق",
+   "translit": "al-ḥubb aṣ-ṣāʿiq",
+   "definition": "Thunderstruck love, the lightning-bolt of love",
+   "station": "brulure",
+   "themes": [
+    "feu",
+    "eclat"
+   ],
+   "racine": "ص ع ق",
+   "famille": [
+    "saʿqa",
+    "saqatu"
+   ],
+   "description": "<em>Al-ḥubb aṣ-ṣāʿiq</em> is, literally, <em>thunderstruck, violent love, in a whirlwind</em>. It is the precise Arabic equivalent of what English calls <em>love at first sight</em> — but with, in the root <em>ṣ-ʿ-q</em>, something more apocalyptic: the <em>divine lightning</em>, the one that strikes Mount Sinai in the Quran, the one that strikes down the soul and leaves it for dead before it rises transfigured.\n\nOne also speaks of <em>ṣaʿqatu al-ḥubb</em> — <em>the lightning of love</em> — to denote that unique instant when, with no preparation whatever, the soul tips over. Before: ordinary life. After: another world, from which one will never again come out.\n\nThe word says two things at once: the <em>suddenness</em> (the lightning does not announce itself) and the <em>sacred violence</em> (the lightning comes from heaven, and the one it strikes no longer belongs quite to himself). Hence its kinship with the mystical experience of <em>ṣaʿaq</em> — the ecstatic swoon of the one who has glimpsed the Presence and cannot bear it.",
+   "temoin": {
+    "ar": "وَخَرَّ مُوسَىٰ صَعِقًا",
+    "translit": "wa kharra Mūsā ṣaʿiqan",
+    "fr": "And Moses fell thunderstruck",
+    "source": "Quran, VII, 143"
+   },
+   "meditation": "What lightning have you received — and from whom have you never come back?",
+   "ouverture": "The Sufi way distinguishes the human <em>ṣaʿaq</em> — the lightning of love — from the divine <em>ṣaʿaq</em>, the theophanic lightning that strikes Moses on the mount. But the two are kin: they name the instant when the <em>ego</em> no longer suffices, when one must fall in order to be able to rise again other. Love at first sight, says Ibn ʿArabī, is a <em>white death</em> — the first."
+  },
+  {
+   "id": "houraq",
+   "ar": "الحُرَاق",
+   "translit": "al-ḥurāq",
+   "definition": "The burning, the blaze of love",
+   "station": "brulure",
+   "themes": [
+    "feu",
+    "corps"
+   ],
+   "racine": "ح ر ق",
+   "famille": [
+    "nirān",
+    "ḥarīq",
+    "muḥriq"
+   ],
+   "description": "<em>Ḥurāq</em> names the <em>pure burning</em> — the one that does not stop. One also speaks of <em>nīrān al-ḥubb</em>, <em>the fires of love</em>, an expression become a topos of the whole of Arabic poetry. This love, says the tradition, partakes of the <em>brazier of the left hand</em> that the lover feeds with a firebrand held in the right hand: it is he himself who keeps up the fire that consumes him, and he cannot help it.\n\n<em>Al-ḥarīq</em> derives from the same word and denotes <em>a matter in combustion</em>. <em>Muḥriq</em> is <em>what burns</em>, but also <em>what purifies</em> — for fire, in Arabic as in many traditions, is the ambiguous agent par excellence: it destroys, but it is in it that one bakes the bread and forges the sword.\n\nThe link with mysticism is immediate: the Sufi way often speaks of the <em>ḥaraq al-rūḥ</em> — the <em>combustion of the spirit</em> — as the very process of spiritual purification. To burn with desire for God is not to be far from Him: it is to be already in His workshop.",
+   "temoin": {
+    "ar": "أَحْرِقْنِي بِنَارِكَ يَا حَبِيب",
+    "translit": "aḥriqnī bi-nārika yā ḥabīb",
+    "fr": "Burn me with Your fire, O Beloved",
+    "source": "Manṣūr al-Ḥallāj (858-922)"
+   },
+   "meditation": "What fire do you feed with one hand, while it burns you with the other?",
+   "ouverture": "For Ḥallāj, who ended literally burned on the pyre of Baghdad in 922, the mystical <em>ḥurāq</em> is not a metaphor: it is the very experience of union. <em>You called me, he says to God, and I came. You willed me, and I became You</em>. The fire that consumes the lover is also the one that reveals that there had never been two."
+  },
+  {
+   "id": "lada",
+   "ar": "اللَّذْع",
+   "translit": "al-ladhʿ",
+   "definition": "Love-flame, the sonorous combustion",
+   "station": "brulure",
+   "themes": [
+    "feu"
+   ],
+   "racine": "ل ذ ع",
+   "famille": [
+    "ladhgh"
+   ],
+   "description": "<em>Ladhʿ</em> names a very particular quality of burning love: the <em>climbing flame</em> that surrounds a piece of wood or a branch, and that consumes them in a <em>sonorous crackling</em> of fibres and dry leaves. It is not a silent brazier, it is not an ember. It is the fire that <em>sings as it burns</em> — that makes noise as it eats what it loves.\n\nThe word has a very close kinship with <em>ladhgh</em>, <em>love-bite</em> — the one that leaves no respite at any moment. The two are almost homophones, and the Arabic tradition gladly plays on this near-identity: to love thus is to burn and to be bitten at once.\n\nClassical poetry loves this word precisely because it <em>makes heard</em> what it says. When one pronounces <em>ladhʿ</em>, one already hears the crackling of the fibres in the flame.",
+   "temoin": {
+    "ar": "ذَا اللَّذْعُ يَتَأَكَّلُ كَالنَّار",
+    "translit": "dhā l-ladhʿu yataʾakkalu ka-n-nār",
+    "fr": "This ladhʿ gnaws like the flame",
+    "source": "Adage of the classical nasīb"
+   },
+   "meditation": "What fire, within you, burns while making noise — and what does it say as it consumes?",
+   "ouverture": "The Sufis distinguish the <em>silent</em> fires and the <em>sonorous</em> fires: the first is that of the advanced soul, which burns without saying anything; the second, that of the soul young on the way, which still cries out. <em>Ladhʿ</em> belongs to this second category — it is not bad, it is young. Spiritual maturity consists in letting the crackling subside, without extinguishing the fire itself."
+  },
+  {
+   "id": "awar",
+   "ar": "أُوَارُ الحُبّ",
+   "translit": "uwār al-ḥubb",
+   "definition": "The amorous flame, incandescence",
+   "station": "brulure",
+   "themes": [
+    "feu",
+    "ivresse"
+   ],
+   "racine": "أ و ر",
+   "famille": [
+    "nār",
+    "ḥurāq"
+   ],
+   "description": "<em>Uwār al-ḥubb</em> names the <em>amorous flame</em> in its <em>incendiary character</em> — love as a demanding and passionate prince, who suffers neither lukewarmness nor half-measure. For the Arabs, a love worthy of the name must not be lukewarm, in half-tints, without madness. The Arabic language very gladly grants it the title of <em>emir</em> — the one who commands without sharing.\n\nThis emir, says the tradition, is made of precious matter: <em>ebony wood and all sorts of fragrances</em>. As if the blaze of love, in consuming the lover, also released a perfume — like the incense that yields its scent only by letting itself be burned. The <em>uwār</em> is not only destruction: it is the <em>liberation</em> of what was imprisoned in matter.\n\nThe word belongs to the high poetic register. One meets it among the great Arab elegists — from the pre-Islamic <em>muʿallaqāt</em> to the Abbasid dīwāns — as an almost ritual formula to say love-fire.",
+   "temoin": {
+    "ar": "أَلْقَتْ يَدَيْهَا فِي الحُبِّ فَأَوْرَتْ نَارَه",
+    "translit": "alqat yadayhā fī l-ḥubbi fa-awrat nārah",
+    "fr": "She cast her hands into love, and kindled its fire",
+    "source": "Abbasid poetic tradition"
+   },
+   "meditation": "What perfume, within you, is released only by the flame?",
+   "ouverture": "Ibn ʿArabī taught that the human heart is <em>capable of all forms</em>; it is also capable, says the tradition, of all temperatures. The lukewarm is not a station, it is an absence. True love chooses its extreme — the blaze above, silence below. Between the two, there is nothing one could truly call loving."
+  },
+  {
+   "id": "gharam",
+   "ar": "الْغَرَام",
+   "translit": "al-gharām",
+   "definition": "The love that makes one weep, sentimental love",
+   "station": "brulure",
+   "themes": [
+    "eau",
+    "feu"
+   ],
+   "racine": "غ ر م",
+   "famille": [
+    "maghrum",
+    "ghuram"
+   ],
+   "description": "<em>Gharām</em> is the love that makes one weep like the sea, sentimental love such as one no longer finds except in old love songs. But the etymology conceals something harder: the root <em>gh-r-m</em> also means <em>debt</em>, <em>fine</em>, <em>obligation</em>. <em>Gharām</em> is therefore love as a <em>debt</em> that one can no longer repay — the love that holds us because we owe it something we cannot give back.\n\nIn popular poetry, in song, in the epics, the term recurs almost as much as <em>ḥubb</em>. Egyptian song in particular has developed this notion of <em>gharām</em>, to the point of making of it a genre in its own right. Umm Kulthūm, Abdel-Halim Hafez, Farīd al-Aṭrash made of it the material of their most heart-rending lamentations — and the word <em>maghrūm</em> (“I am in love”) recurs there like a refrain.\n\nThe Quran uses the word in the sense of <em>chastisement</em>, of <em>lasting punishment</em> (XXV, 65). This ambiguity is precious: <em>gharām</em> says, in a single sound, love and its punishment, the feeling and its price.",
+   "temoin": {
+    "ar": "إِنَّ عَذَابَهَا كَانَ غَرَامًا",
+    "translit": "inna ʿadhābahā kāna gharāman",
+    "fr": "Its chastisement is, truly, perpetual",
+    "source": "Quran, XXV, 65"
+   },
+   "meditation": "What debt of love do you carry — and what do you pay, without being able to settle it?",
+   "ouverture": "The Sufis have magnificently turned this word over: what the Quran names <em>perpetual chastisement</em> becomes, in their reading, <em>love that does not end</em>. The perpetuity of <em>gharām</em> is terrible for the one who refuses it, but glorious for the one who accepts it. Ḥallāj, on the pyre, would not have repaid his debt for all the gold in the world — he loved it."
+  },
+  {
+   "id": "junun",
+   "ar": "الْجُنُون",
+   "translit": "al-junūn",
+   "definition": "The madness of love, love-unreason",
+   "station": "perte",
+   "themes": [
+    "folie",
+    "corps"
+   ],
+   "racine": "ج ن ن",
+   "famille": [
+    "majnun",
+    "janna",
+    "jinn"
+   ],
+   "description": "<em>Junūn</em> is the Arabic word for <em>madness</em> — but its etymology conceals a profound intuition. The root <em>j-n-n</em> means <em>to cover, to veil, to hide</em>. From it come also <em>janna</em> (the garden, a protected place) and <em>jinn</em> (the invisible beings that people the other world). The madman is therefore not, in Arabic, simply the one who has lost reason: he is the one whom <em>a veil has covered</em>, whom another world henceforth inhabits.\n\nIn the amorous lexicon, <em>junūn</em> names the very principle on which Majnūn — Qays ibn al-Mulawwaḥ — loved Laylā unto death. <em>Majnūn</em> literally means <em>the one who has been covered</em>, the one possessed by a jinn — but the tradition at once turns the word over: if one is possessed by love, which is the envoy of the Real, then madness is <em>the highest of lucidities</em>.\n\nThe boundary between happy love and unhappy love is, in <em>junūn</em>, infinitely narrow: before being erotic, the Arabs are first <em>sentimental</em>, who attach to love the various attributes of their states of soul. <em>Junūn</em> is one of these attributes — the one that makes the one struck by it lose reason.",
+   "temoin": {
+    "ar": "أَلَمْ تَرَ أَنَّ الْحُبَّ يَجْذِبُ أَهْلَهُ",
+    "translit": "alam tara anna l-ḥubba yajdhibu ahlahu",
+    "fr": "Have you not seen how love draws its own to itself,\nas one draws the madman by the arm of his chain?",
+    "source": "Abbasid poetic tradition"
+   },
+   "meditation": "From what madness do you believe yourself protected — and what does this protection cover, within you?",
+   "ouverture": "The Sufi way takes up the whole literature of Majnūn to make of it a parable of the path: to enter into the Presence, one must accept that a veil be laid over ordinary reason. <em>To become mad in God</em> is, for the <em>uqalāʾ al-majānīn</em> (the “sane madmen” of Islam), the station in which one ceases to be a prisoner of one's own judgement. The madness of love is, sometimes, the only reason left intact."
+  },
+  {
+   "id": "houyam",
+   "ar": "الْهُيَام",
+   "translit": "al-huyām",
+   "definition": "Love-perdition, the inextinguishable thirst",
+   "station": "perte",
+   "themes": [
+    "folie",
+    "eau"
+   ],
+   "racine": "ه ي م",
+   "famille": [
+    "hiyam",
+    "mustaham",
+    "istahama",
+    "hayman"
+   ],
+   "description": "<em>Huyām</em> is love-perdition, the one that makes of the lover a wandering dervish — in the primary, etymological sense: <em>the fact of driving someone mad</em>. The delight of this feeling is such that the lover can exile himself to the other end of the world, lose the sense of realities, forget who he was.\n\nThe word comes from the technical vocabulary that the Bedouins reserved for the <em>camelids</em>. <em>Hayman</em> was said of a camel struck by a terrible thirst, which wanders in the desert unable to quench itself, and which nothing calms. Majnūn, the most famous lover of the tradition, made it his own: <em>“Like the camel struck with huyām, no water quenches my thirst, and my thirst is slow to make me perish.”</em>\n\nThere is here a decisive image: the lover is not only thirsty — he is <em>thirsty with a thirst that nothing slakes</em>. To drink would not help. Nor would to die, for death would be too quick. <em>Huyām</em> is the station in which one learns that certain thirsts are their own answer.",
+   "temoin": {
+    "ar": "كَهُيَامِ بَعِيرٍ لَمْ يَرْوِهِ السَّقَا",
+    "translit": "ka-huyāmi baʿīrin lam yarwihi s-saqā",
+    "fr": "Like the huyām of the camel that no watering-place quenches",
+    "source": "Majnūn Laylā, 7th century"
+   },
+   "meditation": "What thirst do you carry, that you now know to be unquenchable?",
+   "ouverture": "For the Sufis, the <em>huyām</em> is precisely the station in which one understands that the soul was not created to be quenched by the creatures. Saint Augustine said the same thing in Latin (<em>Inquietum est cor nostrum</em>). Thirst itself is the sign — the <em>ontological proof</em> — that there is something beyond, of which the thirst is the trace in hollow."
+  },
+  {
+   "id": "hiyam",
+   "ar": "الْهِيَام",
+   "translit": "al-hiyām",
+   "definition": "Distraught love, the heart in collapse",
+   "station": "perte",
+   "themes": [
+    "folie",
+    "eau"
+   ],
+   "racine": "ه ي م",
+   "famille": [
+    "houyam",
+    "hayman",
+    "hama"
+   ],
+   "description": "<em>Hiyām</em> is the direct cousin of <em>huyām</em>, formed of the same root, and one says <em>hāʾim al-qalb</em> to signify <em>a heart smitten with love, obsessed, in collapse</em>. The nuance is subtle: <em>huyām</em> insists on the wandering, <em>hiyām</em> on the <em>obsession</em> — the state of the heart that can no longer think of anything else, that turns around the beloved as the dervish around his axis.\n\nThe same root yields <em>hāmā, yahīmu</em> — <em>to lose the north, to ramble, to wander aimlessly</em>. The <em>hāʾim</em> lover no longer has a direction: what the pilgrims seek by the <em>qibla</em>, he has lost. But this loss is not a lack: it is, for the poets, the sign that one has entered the dimension of love in which the ordinary directions no longer count.\n\nThe Quran uses the root in a contemptuous sense — to describe the poets: <em>“Do you not see that in every valley they wander (yahīmūn)?”</em> (XXVI, 225). But the Sufis have turned the verse over: yes, says Ibn ʿArabī, the true poets wander in every valley, because one must traverse all the valleys of love to arrive at the One who hollowed them out.",
+   "temoin": {
+    "ar": "أَلَمْ تَرَ أَنَّهُمْ فِي كُلِّ وَادٍ يَهِيمُون",
+    "translit": "alam tara annahum fī kulli wādin yahīmūn",
+    "fr": "Do you not see that, in every valley, they wander?",
+    "source": "Quran, XXVI, 225"
+   },
+   "meditation": "In which valley do you wander, no longer knowing whether you are lost there or at last at home?",
+   "ouverture": "ʿAṭṭār, in his <em>Conference of the Birds</em>, makes his birds traverse precisely <em>seven valleys</em> — quest, love, knowledge, independence, oneness, stupefaction, annihilation. The <em>hiyām</em> belongs to the sixth: <em>stupor</em>, there where one no longer knows anything, and where this not-knowing is exactly the knowledge that remained to be acquired."
+  },
+  {
+   "id": "mustaham",
+   "ar": "الْمُسْتَهَام",
+   "translit": "al-mustahām",
+   "definition": "The one whom love has made distraught",
+   "station": "perte",
+   "themes": [
+    "folie",
+    "ivresse"
+   ],
+   "racine": "ه ي م",
+   "famille": [
+    "houyam",
+    "hiyam",
+    "istahama"
+   ],
+   "description": "<em>Mustahām</em> and <em>istahāma</em> are other declensions of the words <em>huyām</em> and <em>hiyām</em> — always the same root <em>h-y-m</em>, always the same image: the thirsty soul of the camel in the desert. The prefix <em>musta-</em> adds a precious nuance: it is no longer only the state, it is <em>the person entirely defined by this state</em>. <em>Al-mustahām</em> is the one who <em>has become</em> the huyām, who no longer has any other identity.\n\nIn mysticism, <em>haymān</em> is said of the psychological state, and <em>muhayman</em> of the being subjected to mad love. And here is an extraordinary reversal of the language: <em>Al-Muhaymin</em> — formed on the same root — is one of the 99 Names of Allāh, usually translated as <em>“the Watchful, the Preserver.”</em> A Sufi etymology reads in it also: <em>the One who makes souls distraught</em>, the God whose love makes those who approach Him lose reason.\n\nThus, what denotes the mad lover also denotes God Himself. The language itself indicates that love, at its highest, no longer distinguishes the lover from his Beloved.",
+   "temoin": {
+    "ar": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ ... الْمُهَيْمِن",
+    "translit": "huwa Llāhu lladhī lā ilāha illā huwa ... al-muhayminu",
+    "fr": "He is God, beside whom there is no divinity — the Muhaymin",
+    "source": "Quran, LIX, 23"
+   },
+   "meditation": "What, within you, has made you so distraught that it has become your identity?",
+   "ouverture": "When a word of the human lexicon and a divine Name share the same root, says Ibn ʿArabī, it is a sign: the language itself has perceived that there was something to understand. <em>Mustahām</em> and <em>Muhaymin</em> are not confused — but they illumine each other. To love unto losing oneself is to meet within oneself the Name that was losing you."
+  },
+  {
+   "id": "walah",
+   "ar": "الْوَلَه",
+   "translit": "al-walah",
+   "definition": "Amorous madness, the intoxication of absence",
+   "station": "perte",
+   "themes": [
+    "folie",
+    "ivresse"
+   ],
+   "racine": "و ل ه",
+   "famille": [
+    "walihun",
+    "tawallaha",
+    "walhane",
+    "muwallah"
+   ],
+   "description": "<em>Walah</em> says love-madness in a particular way: it is the state of the one who <em>loses his mind</em> and who <em>becomes drunk on the absence</em> of the beloved. Love is still there — but it is love inhabited by lack, the love that lives only on what is lacking.\n\nThe derivatives of the root are expressive: <em>walihūn</em> (in the plural) are the lovers become mad with absence; <em>tawallaha</em> is the verb that says <em>to stray from oneself</em>; <em>walhāne</em> qualifies the state of amorous straying; <em>muwallah</em> is <em>the one who is consumed by grief, gone astray</em>.\n\nThe lexicographical tradition specifies the degrees: <em>walah</em> is a state <em>less ravaging than khabl</em> (pure dementia) but <em>stronger than kalāf</em> (demanding love). It is, in a way, the <em>middle madness</em> — the one in which one is still aware of being mad, which only aggravates the torment.",
+   "temoin": {
+    "ar": "وَلِهَ القَلْبُ مِنْ بَعْدِكَ",
+    "translit": "waliha l-qalbu min baʿdika",
+    "fr": "The heart has gone astray, since you",
+    "source": "Anonymous verse, Andalusian tradition"
+   },
+   "meditation": "Of what are you drunk, that is no longer there?",
+   "ouverture": "The Sufis have seen in <em>walah</em> the exact analogue of the mystical desire for God in His apparent absence: one knows Him to be there, one feels Him absent, and it is this absence itself that becomes the <em>nourishment</em> of love. <em>“His nearness is His distance, says an anonymous adage, and His distance is His nearness.”</em> The <em>walah</em> is the state in which one accepts this paradox."
+  },
+  {
+   "id": "tadlih",
+   "ar": "التَّدْلِيه",
+   "translit": "at-tadlīh",
+   "definition": "The love that turns life upside down",
+   "station": "perte",
+   "themes": [
+    "folie"
+   ],
+   "racine": "د ل ه",
+   "famille": [
+    "dalaha",
+    "mudallah"
+   ],
+   "description": "<em>Tadlīh</em> names love-madness from a very precise angle: the one in which love <em>seizes the life</em> of the lover and <em>turns it upside down</em>. Before, one had projects, habits, a schedule, a sketched-out future. And then love comes — and all that one believed founded reveals itself suspended, negotiable, with no more weight.\n\nThe root <em>d-l-h</em> means precisely <em>to overturn, to shake, to make one lose one's head</em>. The <em>mudallah</em> is the one who no longer knows where he lives, who forgets his way, who no longer recognises his face in the mirror. But unlike <em>khabl</em>, which is radical dementia, <em>tadlīh</em> keeps something juvenile, almost spring-like — it is the madness that comes from <em>the excess of life</em>, not from lack.\n\nThe word appears often in adab prose to describe the states of the very young lovers — those whom love discovers alive for the first time.",
+   "temoin": {
+    "ar": "دَلَّهَهُ الحُبُّ فَخَرَجَ عَنْ نَفْسِه",
+    "translit": "dallahahu l-ḥubbu fa-kharaja ʿan nafsihi",
+    "fr": "Love overturned him, and he went out of himself",
+    "source": "Adage of courtly prose"
+   },
+   "meditation": "What, in your life, awaits being turned upside down?",
+   "ouverture": "The Sufi way distinguishes the <em>fatal</em> overturnings and the <em>fruitful</em> overturnings. The <em>tadlīh</em> is, by nature, fruitful: something in it wants life, even at the price of disorder. It is, says Rūmī, <em>the gentle revolution</em> — the one that does not destroy in order to destroy, but that undoes in order to make better."
+  },
+  {
+   "id": "khabl",
+   "ar": "الْخَبْل",
+   "translit": "al-khabl",
+   "definition": "The dementia of having lost the object of love",
+   "station": "perte",
+   "themes": [
+    "folie",
+    "corps"
+   ],
+   "racine": "خ ب ل",
+   "famille": [
+    "mukhabbal",
+    "majnun"
+   ],
+   "description": "<em>Khabl</em> names the <em>loss of all bearings</em> in the one who <em>suffers in his flesh and in his soul</em>. It is pure dementia — radical dementia — of the lover who has <em>lost the object of his love</em>. The madman, <em>al-majnūn</em>, is also called <em>al-mukhabbal</em>. And the tradition makes no great difference between the madness that comes from the jinn (<em>junūn</em>) and the one that comes from lost love (<em>khabl</em>): in both cases, the soul has entered a world from which it does not come back as it came into it.\n\nUnlike <em>tadlīh</em>, which can be joyful, <em>khabl</em> is always grave. The <em>mukhabbal</em> lover is not in the fruitful disorder of young love; he is in <em>collapse</em>, in <em>disaster</em>. He no longer speaks to the living; when he speaks, he speaks to the dead. When he walks, he no longer knows where he is going. When he eats, he no longer feels the taste.\n\nIt is the state that Qays knew, says the tradition, after the definitive estrangement of Laylā. Later, it is the state into which Rūmī would be plunged after the disappearance of Shams. But it is also from this state that Rūmī would draw, on coming out, the six volumes of the <em>Mathnawī</em>.",
+   "temoin": {
+    "ar": "خَبَلَنِي الْحُبُّ فَلَا أَنَا أَنَا",
+    "translit": "khabalanī l-ḥubbu fa-lā anā anā",
+    "fr": "Love has dismantled me: I am no longer I",
+    "source": "Anonymous tradition, elegiac register"
+   },
+   "meditation": "What have you lost that has driven you mad — and what have you built, since, from the dismantling?",
+   "ouverture": "The <em>khabl</em> is, for the Sufis, the antechamber of the <em>fanāʾ</em> — mystical annihilation. Not every disintegration is a death: some are the <em>paring-down</em> necessary so that something else may come to be. Rūmī, after Shams, no longer wrote anything as before. The dismantling had made room for the <em>Mathnawī</em>."
+  },
+  {
+   "id": "iktiyab",
+   "ar": "الِاكْتِئَاب",
+   "translit": "al-iktiʾāb",
+   "definition": "Love-sorrow, the melancholy of love",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "separation"
+   ],
+   "racine": "ك أ ب",
+   "famille": [
+    "kaʾib",
+    "mukta'ib",
+    "imtihan"
+   ],
+   "description": "<em>Iktiyāb</em> is love-sorrow, <em>melancholy</em> in the ancient medical sense — the one that colours the face with black, that slows the blood, that veils the eyes. <em>Muktaʾiba</em> is said, in classical Arabic, of an <em>ash that turns black</em>; by analogy, the face of the <em>muktaʾib</em> lover is sombre, as if darkened from within — not by smoke but by the pain he feels at the loss of his love, or at the impossibility of rejoining it.\n\nThe Persian language knows the same state: <em>dard</em>, <em>gham</em> — pain, grief. Arabic also has its expression: <em>imtiḥān al-ḥubb</em>, the <em>trial of love</em>. As if true love comprised, by nature, a part of trial without which it would not reveal itself for what it is.\n\nThe Arabic tradition does not flee melancholy: it posits it as one of the legitimate stations of love, sometimes necessary to the maturation of the feeling. Constant gaiety would be suspect; the pain traversed, on the contrary, is a proof.",
+   "temoin": {
+    "ar": "الحُبُّ مَا اكْتَأَبَتْ بِهِ النَّفْسُ هُوَ الْحَقّ",
+    "translit": "al-ḥubbu mā ktaʾabat bihi n-nafsu huwa l-ḥaqq",
+    "fr": "True love is the one whose soul is melancholy",
+    "source": "Adage of classical mysticism"
+   },
+   "meditation": "What pain, within you, proves a love that nothing else could attest?",
+   "ouverture": "The ancient Arab physicians — al-Rāzī, Ibn Sīnā — described the melancholy of love as a true illness, with its course, its symptoms, its prognosis. But they added that its cure did not depend on the physician: it depended on the <em>return of the beloved</em>, or on a higher grace. The Sufis understood: the higher grace is always there, ready. One had only to have been ill in the right place to recognise it."
+  },
+  {
+   "id": "houzn",
+   "ar": "الْحُزْن",
+   "translit": "al-ḥuzn",
+   "definition": "Sadness, the grave state of love",
+   "station": "perte",
+   "themes": [
+    "separation",
+    "corps"
+   ],
+   "racine": "ح ز ن",
+   "famille": [
+    "hazin",
+    "yahzanu"
+   ],
+   "description": "<em>Ḥuzn</em> means <em>sadness</em>. The word is used — improperly, say the purists — to denote love, whereas it applies perfectly to <em>one of its states</em>, notably in the <em>shajw</em> or the <em>lahf</em>. But this slipped usage is not an impoverishment: it says something precise about Arabic love, which considers that <em>gravity</em> is one of the constitutive qualities of true feeling.\n\nThe root <em>ḥ-z-n</em> has a biblical reach: Jacob, in the Quran, is the archetype of the <em>ḥazīn</em> — the one who weeps until he loses his sight, because of the disappearance of Joseph (XII, 84). The sadness of love is therefore not a weakness, in Arabic culture: it is a <em>prophetic posture</em>, the sign that the heart has not forgotten.\n\nMuhammad himself, says the tradition, lived a <em>ʿām al-ḥuzn</em> — a <em>year of sadness</em> — after the death of his wife Khadīja and of his uncle Abū Ṭālib. The word entered Islamic historiography without anyone ever seeking to attenuate it: sadness is part of the path.",
+   "temoin": {
+    "ar": "وَابْيَضَّتْ عَيْنَاهُ مِنَ الْحُزْن",
+    "translit": "wa-byaḍḍat ʿaynāhu mina l-ḥuzni",
+    "fr": "And his eyes whitened with sadness",
+    "source": "Quran, XII, 84 (concerning Jacob)"
+   },
+   "meditation": "What sadness within you attests that your heart has not forgotten?",
+   "ouverture": "The Sufis distinguish two sadnesses: the one that <em>dries up</em> — one must beware of it; and the one that <em>hollows out</em>, that makes the heart deeper, more capable of receiving. The second is a <em>maqām</em>, a station of the path. Rūmī said: <em>“The wound is the place by which the light enters.”</em>"
+  },
+  {
+   "id": "kamad",
+   "ar": "الْكَمَد",
+   "translit": "al-kamad",
+   "definition": "Interiorised and repressed pain",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "separation"
+   ],
+   "racine": "ك م د",
+   "famille": [
+    "kamada",
+    "kama"
+   ],
+   "description": "<em>Kamad</em> names a very precise state: an <em>interiorised and repressed pain</em>, whose action is to <em>make the lover livid</em> — to give him a colour that is not his own, to disturb him so much that his face, formerly limpid, turns blue, transforms.\n\nWhere <em>ḥuzn</em> is seen in tears, where <em>iktiʾāb</em> is seen in the general darkening, <em>kamad</em>, for its part, is seen only in <em>the pallor of the skin</em>. It is the pain of the one who does not complain, who does not weep, who says nothing — and who, nonetheless, is dying slowly inside.\n\nThe state is also called <em>al-kamāʾ</em>. It is one of the most common, paradoxically, in the Arabic conception of love: for modesty often prevents one from speaking; but what one does not say, the body manifests. The face that decomposes is the involuntary confession of what the mouth refuses to formulate.",
+   "temoin": {
+    "ar": "اِنْكَتَمَ الْحُزْنُ فَأَلْوَنَ الْوَجْه",
+    "translit": "inkatama l-ḥuznu fa-alwana l-wajh",
+    "fr": "The pain fell silent, and the face took on its colour",
+    "source": "Adage of courtly prose"
+   },
+   "meditation": "What pain, within you, does not allow itself to speak — but leaves you, in the mirror, unrecognisable?",
+   "ouverture": "The Sufis work precisely on this mute part: <em>what one keeps silent, one carries twice</em>. The practice of <em>dhikr</em> is not only the remembrance of God — it is also the <em>loosening of the tongue</em>, the permission to say what one no longer dared. To love heals, provided one accepts to name the pain one has repressed."
+  },
+  {
+   "id": "lahf",
+   "ar": "اللَّهْف",
+   "translit": "al-lahf",
+   "definition": "Sadness-reminiscence, the obsession with what haunts",
+   "station": "perte",
+   "themes": [
+    "separation",
+    "corps"
+   ],
+   "racine": "ل ه ف",
+   "famille": [
+    "lahfa",
+    "talahhafa"
+   ],
+   "description": "<em>Lahf</em> is one of the painful states of love, marked by <em>sadness</em> and <em>reminiscence</em>. Sometimes it is the <em>obsession with what haunts, what inhabits and consumes</em> — the thought that returns ceaselessly to the vanished beloved, to the lost gesture, to the word unsaid.\n\nThe root <em>l-h-f</em> evokes the <em>impulse of regret</em>, the <em>sigh</em> that escapes without one's having decided it. <em>Talahhafa</em> is the verb that says <em>to sigh with regret</em>, <em>to lament over what one has lost</em>. But lahf is not only nostalgia: it is <em>active nostalgia</em>, the one that consumes in the present.\n\nThe Arabic tradition has long noted that <em>lahf</em> is cousin to <em>ḥuzn</em>, but with this nuance: <em>lahf</em> insists on the <em>whirling of thought</em>. It is the love that returns in a loop. It is the mind that cannot extinguish itself, because a single name keeps it awake.",
+   "temoin": {
+    "ar": "يَا لَهْفَ نَفْسِي عَلَى أَيَّامٍ مَضَتْ",
+    "translit": "yā lahfa nafsī ʿalā ayyāmin maḍat",
+    "fr": "O regret of my soul, over days gone by",
+    "source": "Topos of classical poetry"
+   },
+   "meditation": "What name returns within you, like a beat that nothing stops?",
+   "ouverture": "The Sufi practice of <em>dhikr</em> turns the <em>lahf</em> over: if a thought must inhabit ceaselessly, then let it be the divine Name — not as a distraction from the pain, but as its <em>recapitulation</em>. What you name obsessively, says the way, tells you who you are."
+  },
+  {
+   "id": "lam",
+   "ar": "الْأَلَم",
+   "translit": "al-lam",
+   "definition": "Love-unreason that haunts thought",
+   "station": "perte",
+   "themes": [
+    "folie",
+    "separation"
+   ],
+   "racine": "ل م م",
+   "famille": [
+    "lamam",
+    "alimu",
+    "lamama"
+   ],
+   "description": "<em>Al-lam</em> is one of the variants of love-unreason, since it is a <em>love that haunts the thought</em> of the one who feels it — <em>al-lamām</em>. The beloved being is said to be <em>alimu</em> of the one who loves him, that is, <em>very near to his heart and to his thoughts</em>, to the point of invading the whole mental space.\n\nThe root <em>l-m-m</em> is rich: <em>al-lamāma</em> also means, in the Quran, <em>the light faults</em>, the <em>trifles</em> (sūra LIII, 32). A precious ambiguity: what haunts the thought — and seems so grave to us — sometimes amounts, seen from elsewhere, to trifles. The lover does not know how to measure rightly: the slightest absence becomes a drama, the slightest gesture a treasure.\n\nThe word also says something of <em>contiguity</em>: the beloved is <em>glued</em> to the thoughts of the one who loves him, as one says of a thing that it is <em>limāmiyya</em>, contiguous. To love thus is to be no longer able to separate one's own thoughts from the silhouette of the other.",
+   "temoin": {
+    "ar": "إِلَّا اللَّمَم",
+    "translit": "illā l-lamam",
+    "fr": "Save the light faults",
+    "source": "Quran, LIII, 32"
+   },
+   "meditation": "What clings to your thoughts, to the point of preventing you from thinking alone?",
+   "ouverture": "The Sufis teach that there exist two modes of presence to thoughts: the <em>glued</em> presence (al-lam) that obsesses, and the <em>traversing</em> presence that illumines. The way consists in passing from the first to the second — not by driving away the beloved presence, but by letting it be what it is: a trace of the unique Presence."
+  },
+  {
+   "id": "istihtar",
+   "ar": "اِسْتِهْطَار",
+   "translit": "istihtār",
+   "definition": "Distraught love, the ravage of care",
+   "station": "perte",
+   "themes": [
+    "folie",
+    "ivresse"
+   ],
+   "racine": "ه ت ر",
+   "famille": [
+    "mustahtir",
+    "hatara"
+   ],
+   "description": "In the mystical vocabulary of al-Daylamī (10th century), a great Sufi theoretician of love, <em>istihtār</em> refers to a very precise state of <em>distraught love</em>: the one in which <em>“unreason and remembrance multiply, and in which the excess of care and of stupor turns you away from every being other than the Beloved.”</em>\n\nThe root <em>h-t-r</em> is interesting: it evokes the <em>fact of exhausting</em>, of <em>uttering ceaselessly</em>. The <em>mustahtir</em> lover is the one who no longer has enough words to say what he lives, and who repeats them to no end — as the dervish repeats the Name until the Name repeats him.\n\nIt is a very high state in the Sufi classification of love: it is the state in which the lover <em>can no longer think of anything</em> that is not the Beloved. Every other attention has become impossible. The world is reduced to a single name — and this name, henceforth, occupies all the room.",
+   "temoin": {
+    "ar": "تَكَاثَرَ السَّهَرُ وَالذِّكْرَى",
+    "translit": "takāthara s-saharu wa-dh-dhikrā",
+    "fr": "Vigil and remembrance have multiplied within me —\ncare and stupor have turned me away from every other",
+    "source": "al-Daylamī, Treatise of mystical love"
+   },
+   "meditation": "What memory has so multiplied within you that it leaves you nothing else to see?",
+   "ouverture": "The <em>istihtār</em> is, in Daylamī's lexicon, the immediate threshold before the <em>fanāʾ</em> — mystical annihilation. Before disappearing entirely into the Beloved, the soul passes through this state in which the Beloved already occupies all the room. The passage from one to the other is now but an infinitesimal movement: it suffices to cease knowing oneself as <em>distinct</em>."
+  },
+  {
+   "id": "souhd",
+   "ar": "السُّهْد",
+   "translit": "as-suhd",
+   "definition": "The insomnia caused by love",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "separation"
+   ],
+   "racine": "س ه د",
+   "famille": [
+    "sahira",
+    "saharan"
+   ],
+   "description": "<em>Suhd</em> names the <em>insomnia of love</em> — that particular category of nocturnal wakefulness which is neither anxiety, nor work, nor chosen meditation. It is the heart that prevents the eyelids from closing because it is <em>on the watch</em>. For what? An absence, a sign, the possible return — or simply <em>the night itself</em>, because it is the only moment when one can be alone with one's pain.\n\nThe Hijazi poet al-ʿArjī (694-740) left this verse that the whole tradition has kept: <em>“I do not taste sleep until dawn — which I watch for as the guard keeping vigil over the breach.”</em> The word says this <em>watch</em>, this <em>armed vigil</em> that the insomnia of love is.\n\nIn Persian, a heart afflicted and careworn by love is said to be <em>del-dard-mand</em> — <em>heart bearing pain</em>. The night it traverses does not have the same weight as the other nights.",
+   "temoin": {
+    "ar": "لَا أَذُوقُ النَّوْمَ إِلَى السَّحَر",
+    "translit": "lā adhūqu n-nawma ilā s-saḥar",
+    "fr": "I do not taste sleep until dawn —\nI watch for it as the guard keeping vigil over the breach",
+    "source": "Al-ʿArjī (694-740)"
+   },
+   "meditation": "What vigil do you keep, that no day relieves?",
+   "ouverture": "The <em>suhd</em> is also the mystical name of the spiritual <em>vigil</em>. The Sufi too keeps his vigil — not for a human love but for a Beloved who may arrive at any hour. The kinship is not accidental: the insomniac lover and the awakened mystic practise the <em>same attention</em>, simply directed differently. And sometimes, in the same night, the one becomes the other."
+  },
+  {
+   "id": "wasl",
+   "ar": "الْوَصْل",
+   "translit": "al-waṣl",
+   "definition": "Union, the reunion, fusion",
+   "station": "retrouvailles",
+   "themes": [
+    "lien",
+    "ivresse"
+   ],
+   "racine": "و ص ل",
+   "famille": [
+    "wasala",
+    "wisal",
+    "mawsul"
+   ],
+   "description": "<em>Waṣl</em> names <em>union</em> properly speaking — the moment when the two lovers rejoin each other at last, when the separation ceases. But the word also carries something denser: it says the <em>powerful bond</em>, the <em>joyful reunion</em>, the <em>romantic fusion</em>. The whole experience of the amorous meeting — from the instant of the crossing of gazes to the marriage of souls — can be named by this single word.\n\nThe root <em>w-ṣ-l</em> is one of the most generous in Arabic: it yields the verb <em>waṣala</em> (to link, to join, to reach), the noun <em>ṣilat al-raḥim</em> (the maintaining of family bonds, an essential religious duty), the grammatical concept of <em>mawṣūl</em> (the relative pronoun that links two clauses). To love is to perform the same operation as the one by which grammar itself unites its sentences: <em>to link what was separated</em>.\n\nIn mysticism, <em>al-waṣl</em> is the very name of the ultimate station of the spiritual path: <em>union with God</em>. It is the exact opposite of <em>hijr</em>, separation. The whole Sufi journey can be described as a movement between these two poles: <em>hijr</em> and <em>waṣl</em>, exile and return.",
+   "temoin": {
+    "ar": "مَنْ ذَاقَ الْوَصْلَ فَقَدْ ذَاقَ الحَيَاة",
+    "translit": "man dhāqa l-waṣla fa-qad dhāqa l-ḥayāh",
+    "fr": "Whoever has tasted union has tasted life",
+    "source": "Classical Sufi adage"
+   },
+   "meditation": "With what, or with whom, are you linked — to the point that your life depends on it?",
+   "ouverture": "For Ibn ʿArabī, the <em>waṣl</em> is not a <em>conquest</em> but a <em>recognition</em>. We were never separated from the Real; we were separated from the <em>awareness</em> of not being so. The <em>waṣl</em> does not create a new bond: it reveals to us a bond that was there forever, covered by the veil of our inattention."
+  },
+  {
+   "id": "habl",
+   "ar": "الْحَبْل",
+   "translit": "al-ḥabl",
+   "definition": "The bond, the indissoluble rope",
+   "station": "retrouvailles",
+   "themes": [
+    "lien"
+   ],
+   "racine": "ح ب ل",
+   "famille": [
+    "tahabbala",
+    "habil"
+   ],
+   "description": "<em>Ḥabl</em> first names the <em>rope</em> in the concrete sense — the one that one knots, the one that holds, the one that one undoes only with great difficulty. But the word was very early taken up in a metaphorical sense to denote the <em>amorous bond</em>: the <em>fetter</em>, the <em>ring</em>, the <em>indissoluble bond</em> that unites two beings to the point that one can no longer separate them without breaking what holds them to themselves.\n\nIn Algeria, one says <em>taḥabbala</em> to signify <em>to bind oneself for life</em>. And the Arab matrimonial tradition gladly speaks of the <em>ḥabl</em> of marriage — the rope that is not a chain, because it has been chosen, and because it is the very instrument of security.\n\nThe notion gains in abstraction in the <em>waṣl</em>: the latter keeps the connotation of dynamic union, whereas <em>ḥabl</em> insists on the attachment, the <em>materiality of the bond</em>. One rejoins someone through the <em>waṣl</em>; one remains bound to him through the <em>ḥabl</em>.",
+   "temoin": {
+    "ar": "وَاعْتَصِمُوا بِحَبْلِ اللَّهِ جَمِيعًا",
+    "translit": "wa-ʿtaṣimū bi-ḥabli Llāhi jamīʿan",
+    "fr": "Hold fast, all of you, to the rope of God",
+    "source": "Quran, III, 103"
+   },
+   "meditation": "What bond, within you, has become impossible to undo — and you no longer wish to undo?",
+   "ouverture": "The Quranic verse transposes the amorous <em>ḥabl</em> to the divine plane: <em>the rope of God</em> to which the believer holds fast is precisely that <em>ḥabl</em> — not an external obligation, but the intimate bond to which one holds because one has felt that it holds us. To love God is to cease wanting to undo what was holding us upright."
+  },
+  {
+   "id": "khoulla",
+   "ar": "الْخُلَّة",
+   "translit": "al-khulla",
+   "definition": "Amorous fusion, intimate love-friendship",
+   "station": "retrouvailles",
+   "themes": [
+    "lien",
+    "ivresse"
+   ],
+   "racine": "خ ل ل",
+   "famille": [
+    "khalil",
+    "takhallala",
+    "khallil"
+   ],
+   "description": "<em>Khulla</em> derives from <em>takhallala</em>, which means <em>amorous interpenetration</em> — the interpenetration of two beings to the point that one can no longer separate what is the one from what is the other. It is <em>love and friendship intermingled</em>, in a measure so perfect that no English word renders it precisely.\n\nThe word is in use above all in the poetico-mystical universe. It is a <em>love-fusion with God</em> whose model is <em>al-Khalīl</em> — the Arabic surname of the patriarch <em>Abraham</em>, the <em>Friend</em> par excellence, the one whose love has entirely fused with its object. The Quran says it explicitly: <em>“God took Abraham for an intimate friend”</em> (IV, 125).\n\nThe khulla is therefore, in the mystical hierarchy, superior even to <em>ḥubb</em> and to <em>maḥabba</em>: it is <em>friendship-fusion</em>, the state in which the lover no longer loves the Beloved — he <em>is</em> His friend to the point that the contours of each have been effaced. The khulla, says the tradition, is not given to all: it is the grace reserved for the <em>khulafāʾ</em>, the <em>elect</em> of love.",
+   "temoin": {
+    "ar": "وَاتَّخَذَ اللَّهُ إِبْرَاهِيمَ خَلِيلًا",
+    "translit": "wa-ttakhadha Llāhu Ibrāhīma khalīlan",
+    "fr": "And God took Abraham for an intimate friend",
+    "source": "Quran, IV, 125"
+   },
+   "meditation": "What interpenetration have you lived, in which you no longer knew what of you came from you?",
+   "ouverture": "The Sufis say that there are two modes of divine nearness: <em>maḥabba</em>, in which love makes God present, and <em>khulla</em>, in which the presence is so total that there is no longer any need to make it present. The first mode is that of Moses (<em>al-Kalīm</em>, the one to whom one speaks); the second is that of Abraham (<em>al-Khalīl</em>, the intimate friend). All the Abrahamic spirituality of Islam, Judaism and Christianity is held in this word."
+  },
+  {
+   "id": "khilm",
+   "ar": "الْخِلْم",
+   "translit": "al-khilm",
+   "definition": "Friendship-tenderness, the good affection of companions",
+   "station": "retrouvailles",
+   "themes": [
+    "lien",
+    "douceur"
+   ],
+   "racine": "خ ل م",
+   "famille": [
+    "mukhalama",
+    "akhlam",
+    "khilmou"
+   ],
+   "description": "<em>Khilm</em> derives from <em>mukhālama</em>, which means the <em>good affection of two companions</em>, the <em>friendly tenderness</em>, their mutual <em>longanimity</em>. A friend is called <em>al-khilmu</em>; the gathered companions, <em>al-akhlām</em>.\n\nWhere <em>khulla</em> says fusion, <em>khilm</em> says <em>tender fidelity</em>. It is no longer the incandescence of <em>ʿishq</em>, nor the ecstasy of <em>waṣl</em> — it is a more discreet quality: love become a lasting companionship, the love that no longer burns but still warms, for a long time.\n\nThe Arabic tradition has placed under this word the ideal of <em>marital friendship</em> — the one that survives passion and nourishes it with patience. Like <em>ilf</em>, the <em>khilm</em> belongs to the family of the soothed loves, but with this nuance: <em>ilf</em> is the art of living beside, <em>khilm</em> is the art of living <em>with</em>. The nuance is minute but essential.",
+   "temoin": {
+    "ar": "خِلْمُكَ مَنْ يَصْدُقُكَ فِي السَّرَّاءِ وَالضَّرَّاء",
+    "translit": "khilmuka man yaṣduquka fī s-sarrāʾi wa-ḍ-ḍarrāʾ",
+    "fr": "Your khilm is the one who tells you the truth in joy as in pain",
+    "source": "Adage of classical Arabic prose"
+   },
+   "meditation": "With whom have you ceased to play a role — and who, in return, no longer plays his own?",
+   "ouverture": "The <em>khilm</em> has, in the Sufi way, its equivalent: the <em>ṣuḥba</em>, the spiritual companionship between the master and the disciple, or between two disciples committed to the same way. To love someone — or God — thus is to cease seeking the radiance, and to find the <em>stable presence</em> that no longer burns but that remains."
+  },
+  {
+   "id": "istikana",
+   "ar": "الِاسْتِكَانَة",
+   "translit": "al-istikāna",
+   "definition": "Soothing, the consent to submit to the beloved",
+   "station": "retrouvailles",
+   "themes": [
+    "lien",
+    "ivresse"
+   ],
+   "racine": "ك و ن",
+   "famille": [
+    "sakana",
+    "sakina",
+    "sakinou"
+   ],
+   "description": "<em>Istikāna</em> names the <em>desire to be conjoined with the beloved</em>, in <em>soothing oneself at his contact</em> and in <em>accepting to submit oneself to him</em>. It is not the submission of the slave before the master — it is the <em>consented relaxing</em> of the one who has so awaited this meeting that he <em>yields</em> at the moment it arrives, when emotion makes the heart and the legs go soft.\n\nThe root <em>k-w-n</em> is the root of <em>being</em> itself (<em>kāna</em>, to be); and <em>sakana</em> means <em>to rest, to dwell in peace</em>. The istikāna is therefore that very particular state in which one <em>becomes at last</em> by ceasing to resist — in which one <em>is</em> by settling. As in the Quranic verse: <em>“It is He who made the sakīna descend into the hearts of the believers.”</em>\n\nThere also exists a near word, <em>saqīma</em>, which evokes the <em>physical suffering</em> of the lover. The boundary is narrow: the soothing of the heart in union and the exhaustion of the body after the waiting are, in Arabic, immediate cousins.",
+   "temoin": {
+    "ar": "هُوَ الَّذِي أَنْزَلَ السَّكِينَةَ فِي قُلُوبِ الْمُؤْمِنِين",
+    "translit": "huwa lladhī anzala s-sakīnata fī qulūbi l-muʾminīn",
+    "fr": "It is He who made the sakīna descend into the hearts of the believers",
+    "source": "Quran, XLVIII, 4"
+   },
+   "meditation": "Before what, within you, has the combat at last given way — not through defeat, but through soothing?",
+   "ouverture": "The Sufis see in the <em>sakīna</em> — the etymological sister of istikāna — the very quality of the soul that has arrived at rest in God. It is not the end of the path: it is the path <em>become rest</em>. To love thus is to cease combating the beloved, to cease combating oneself — and to find, in this twofold abandon, the peace one was seeking through effort."
+  },
+  {
+   "id": "alaqa",
+   "ar": "الْعَلَاقَة",
+   "translit": "al-ʿalāqa",
+   "definition": "Irresistible attachment, the indelible trace",
+   "station": "retrouvailles",
+   "themes": [
+    "lien"
+   ],
+   "racine": "ع ل ق",
+   "famille": [
+    "ta'allaqa",
+    "iltassaqa",
+    "mu'allaq"
+   ],
+   "description": "<em>ʿAlāqa</em> names the <em>irresistible attraction</em> of the beloved, particularly at the <em>moment of the conquest</em>. But the word, for the poet, goes further: <em>there is no conquest that does not leave its indelible trace</em>. The <em>attachment</em> that results from it is one of the arcana of love.\n\nThe root <em>ʿ-l-q</em> is expressive: it means <em>to cling, to hang, to remain attached to</em>. It is the same root that yields <em>ʿalaq</em>, the <em>clot of blood</em> or the <em>hanging thing</em> of which the Quran speaks concerning the creation of the embryo (XCVI, 2). The amorous <em>ʿalāqa</em> is therefore, etymologically, what attaches itself to the heart as the embryo attaches itself to the uterine wall: by vital adherence.\n\n<em>Taʿallaqa</em> is the verb that says this attachment, <em>iltaṣaqa</em> reinforces still further the idea of indissociable adherence. The word has, in modern Arabic, kept all its nuances: one speaks of an <em>ʿalāqa</em> between two people to denote a <em>relationship</em> in the strong sense — something that lasts, that clings, that marks.",
+   "temoin": {
+    "ar": "خَلَقَ الْإِنْسَانَ مِنْ عَلَق",
+    "translit": "khalaqa l-insāna min ʿalaq",
+    "fr": "He created the human being from an adherence",
+    "source": "Quran, XCVI, 2"
+   },
+   "meditation": "What trace have you received, that does not efface itself — and that you no longer wish to see effaced?",
+   "ouverture": "The kinship between the amorous <em>ʿalāqa</em> and the Quranic <em>ʿalaq</em> (the clot from which the human comes) is, for the Sufis, highly significant. Creation itself is made by <em>adherence</em>; human love is, at another level, its faithful repetition. Every amorous conquest remakes, in miniature, the creation of the world."
+  },
+  {
+   "id": "moulaaba",
+   "ar": "الْمُلَاعَبَة",
+   "translit": "al-mulāʿaba",
+   "definition": "Amorous teasing, the play of complicity",
+   "station": "retrouvailles",
+   "themes": [
+    "douceur",
+    "eclat"
+   ],
+   "racine": "ل ع ب",
+   "famille": [
+    "laʿiba",
+    "laʿub",
+    "mulʿabu"
+   ],
+   "description": "<em>Mulāʿaba</em> names those <em>amorous teasings</em> which, often, lead to <em>istimtāʿ</em> — the <em>pleasure linked to amorous company</em>, the <em>contentment of the senses</em>, <em>voluptuousness</em>. It is the play of lovers who know each other enough to be able to tease one another without wounding one another, to bicker without losing one another, to vex one another knowing that it will end in laughter.\n\nA laughing woman, in the tradition, is said to be <em>laʿūb</em> — the playful, the player. The word has the same root as <em>laʿiba</em>, to play, and as <em>luʿba</em>, the game itself. To love in the mulāʿaba is to <em>play</em> together — not as one plays a game one seeks to win, but as one plays an instrument one loves: for the pleasure of the sound.\n\nThe station of the reunion would be incomplete without this word. For union is not only the grave fusion (<em>khulla</em>), nor the stable bond (<em>ḥabl</em>) — it is also that <em>regained lightness</em> which makes it so that two beings, after all the journey, can still <em>laugh together</em>.",
+   "temoin": {
+    "ar": "خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ",
+    "translit": "khayrukum khayrukum li-ahlihi",
+    "fr": "The best of you is the one who is best to his own",
+    "source": "Prophetic ḥadīth"
+   },
+   "meditation": "With whom can you still laugh without watchfulness, without calculation, without a shield?",
+   "ouverture": "The Sufi way does not forget laughter. The Prophet laughed with his wives, joked with his companions, played with his grandchildren. The grave spirituality that excludes play, says the tradition, is not the spirituality of the Prophet. To love God is also to be able to laugh <em>in</em> His presence — as one laughs with a friend one no longer needs to impress."
+  },
+  {
+   "id": "houbb-ilahi",
+   "ar": "الْحُبُّ الإِلَٰهِيّ",
+   "translit": "al-ḥubb al-ilāhī",
+   "definition": "Divine love, the reciprocity of Creator and creature",
+   "station": "divin",
+   "themes": [
+    "lien",
+    "ivresse"
+   ],
+   "racine": "ح ب ب",
+   "famille": [
+    "hubb",
+    "wadoud",
+    "mahabba"
+   ],
+   "description": "<em>Al-ḥubb al-ilāhī</em> is <em>divine love</em> in the technical sense: the love that passes between God and His creature, in both directions. It is entirely founded upon the <em>reciprocity</em> stated by one of the Quranic verses most meditated upon in the mystical tradition: <em>“He loves them, and they love Him”</em> — <em>yuḥibbuhum wa yuḥibbūnahu</em> (V, 54).\n\nThe miracle of this verse, says Rūmī, lies in the order of the words. It is not the creature that loves first and God who responds. It is <em>God who loves first</em>, and the creature does no more than answer this prior call. All human love for God is, in reality, the echo of a divine love already cast forth. <em>“You would not have sought Me,” said Pascal, “had you not already found Me”</em> — and the thought is exactly Quranic.\n\n<em>Al-ḥubb al-ilāhī</em> is the technical equivalent of the <em>wadd</em> and the <em>wudd</em> of which we have spoken: it is the same root, but carried to its maximal intensity. All the paths of the amorous lexicon lead back to this word — as all the rivers lead back to the sea.",
+   "temoin": {
+    "ar": "يُحِبُّهُمْ وَيُحِبُّونَهُ",
+    "translit": "yuḥibbuhum wa yuḥibbūnahu",
+    "fr": "He loves them, and they love Him",
+    "source": "Quran, V, 54"
+   },
+   "meditation": "What, within you, is first the answer to a call — and not the initiative?",
+   "ouverture": "The whole Sufi way is held in this reversal: we are not the lovers of God; we are the <em>beloved who respond</em>. To love Him amounts to <em>consenting</em> to a love that preceded us. This is why, says Ibn ʿArabī, one does not <em>conquer</em> God: one <em>lets Him be</em> what He already was within us."
+  },
+  {
+   "id": "houbb-al-houbb",
+   "ar": "حُبُّ الْحُبّ",
+   "translit": "ḥubb al-ḥubb",
+   "definition": "The love of love, love at its purest power",
+   "station": "divin",
+   "themes": [
+    "lien",
+    "ivresse"
+   ],
+   "racine": "ح ب ب",
+   "famille": [
+    "hubb",
+    "houbb-ilahi",
+    "mahabba"
+   ],
+   "description": "<em>Ḥubb al-ḥubb</em> — <em>the love of love</em> — is an expression borrowed from Muslim mysticism and particularly dear to <em>Ibn ʿArabī</em> (1165-1240), the <em>Sheikh al-Akbar</em>, the greatest master. The concept says this: there exists a degree of love where one no longer loves this or that particular object — one loves <em>love itself</em>, as principle, as energy, as a name of God.\n\nIbn ʿArabī inscribed it in this quatrain that has become emblematic:\n\n<em>When I knew that love was beyond price,</em>\n<em>yet that I had no hold upon it</em>\n<em>until the term of my life,</em>\n<em>I fell forever in love with the love of love!</em>\n\nIt is, in the Sufi hierarchy, an advanced station: one has loved such a face, such a voice, such a beauty; and then, in a transformative intuition, one understands that all these objects were only windows opened upon one <em>same</em> reality — Love itself. From that point on, one no longer falls in love with a being: one is in love with the <em>capacity to love</em>, which passes through all beings without stopping at any.",
+   "temoin": {
+    "ar": "عَشِقْتُ عِشْقَ الْعِشْق",
+    "translit": "ʿashiqtu ʿishqa l-ʿishq",
+    "fr": "I have fallen in love with the love of love",
+    "source": "Ibn ʿArabī, Tarjumān al-ashwāq"
+   },
+   "meditation": "Have you ever loved the loving more than what you loved?",
+   "ouverture": "This formula is, for the way of Ibn ʿArabī, the antechamber of the <em>tawḥīd</em> of love: to recognise that all loves point toward one same Love, which has no limited object because it is the Origin of every object. It is also the experience that Rābiʿa al-ʿAdawiyya described, but formulated philosophically by Ibn ʿArabī: to love God is to love that by which all loves are possible."
+  },
+  {
+   "id": "houbb-al-llah",
+   "ar": "حُبُّ الله",
+   "translit": "ḥubb Allāh",
+   "definition": "The love of the pious person for God",
+   "station": "divin",
+   "themes": [
+    "lien",
+    "douceur"
+   ],
+   "racine": "ح ب ب",
+   "famille": [
+    "mahabba",
+    "hubb-ilahi",
+    "'abd"
+   ],
+   "description": "<em>Ḥubb Allāh</em> is <em>the love of the pious person for Allah</em> — the <em>active</em> version of divine love, the one in which the servant takes the initiative of answering the call he has recognised. It is the love-cause-of-piety and the love-effect-of-piety both together.\n\nA famous ḥadīth of the Prophet indicates the way: <em>“Withdraw from this world, and Allah will love you; detach yourself from what people possess, and people will love you.”</em> The piety described is not a flight — it is a <em>detachment</em>. Divine love is not refused to the one who also loves the world, but it reveals itself fully only to the one who asks nothing further of it, who loves the world <em>in God</em> and not <em>against</em> Him.\n\nIt is also the love that Rābiʿa al-ʿAdawiyya — the great woman saint of Basra in the eighth century — definitively reformulated against mercantile motives. <em>If I love You out of fear of hell, burn me in hell. If I love You in hope of paradise, exclude me from it. But if I love You for Yourself, do not deprive me of Your beauty.</em> With her, <em>ḥubb Allāh</em> becomes pure love — without calculation, without counterpart.",
+   "temoin": {
+    "ar": "اِزْهَدْ فِي الدُّنْيَا يُحِبَّكَ الله",
+    "translit": "izhad fī d-dunyā yuḥibbaka Llāh",
+    "fr": "Withdraw from this world, and Allah will love you",
+    "source": "Ḥadīth, reported by Ibn Mājah"
+   },
+   "meditation": "For what do you love — truly? For the pain avoided? For the reward hoped for? Or for that which loves, within itself?",
+   "ouverture": "The love of Rābiʿa — <em>to love God for God</em>, without self-interest — displaced the spirituality of Islam as a whole. Before her, one spoke of <em>obedience</em>. After her, one could speak of <em>love</em> without blushing. It is one of the silent revolutions of Sufism, and it is the work of a woman."
+  },
+  {
+   "id": "wadoud",
+   "ar": "الْوَدُود",
+   "translit": "al-wadūd",
+   "definition": "The Loving — the divine aptitude to love without counting",
+   "station": "divin",
+   "themes": [
+    "lien",
+    "douceur"
+   ],
+   "racine": "و د د",
+   "famille": [
+    "wadd",
+    "mawadda",
+    "widad"
+   ],
+   "description": "<em>Wadūd</em> is the <em>aptitude to love without counting</em>. The word is, above all, one of the 99 <em>Most Beautiful Names</em> of God — <em>al-Asmāʾ al-Ḥusnā</em>. The Quran uses it twice: <em>“My Lord is Most Merciful, Most Loving”</em> (XI, 90) and <em>“He is the All-Forgiving, the Loving”</em> (LXXXV, 14).\n\nThe Name says this: God is <em>Wadūd</em> in His very being — not only by the effect of a decision, not at times, not toward some. He <em>is</em> Loving. It is His intrinsic attribute. And since all that exists proceeds from Him, the ontological conclusion imposes itself: love is not a thing that exists <em>in</em> the world — it is that <em>by which</em> the world exists.\n\nThe tradition also sees in <em>wadūd</em> a trait of the Arab personality itself — as if the language had recognised, in the divine Loving One, the archetype of a quality it wished to cultivate in the human. To love like <em>al-Wadūd</em> is to love in superabundance, without keeping the accounts.",
+   "temoin": {
+    "ar": "وَهُوَ الْغَفُورُ الْوَدُود",
+    "translit": "wa huwa l-Ghafūru l-Wadūd",
+    "fr": "And He is the All-Forgiving, the Loving",
+    "source": "Quran, LXXXV, 14"
+   },
+   "meditation": "How do you love — by measuring, or in superabundance?",
+   "ouverture": "Ibn ʿArabī teaches that the divine Names are not external qualifiers attributed to God — they are the <em>modes of action</em> of the Real in the world. When the human loves without counting, it is not <em>he</em> who loves: it is <em>al-Wadūd</em> who acts through him. To love, at this level, no longer separates the human from the divine — it <em>binds</em> them to the point of identification."
+  },
+  {
+   "id": "tatayoum",
+   "ar": "التَّتَيُّم",
+   "translit": "at-tatayyum",
+   "definition": "Love-adoration, the enthralment to the beloved",
+   "station": "divin",
+   "themes": [
+    "ivresse",
+    "separation"
+   ],
+   "racine": "ت ي م",
+   "famille": [
+    "taym",
+    "mutayyam",
+    "yatm"
+   ],
+   "description": "<em>Tatayyum</em> names <em>love-adoration</em> — the state in which the lover no longer possesses himself, in which he is <em>enthralled</em> to the point that everything he does, he does <em>in reference to the beloved</em>. The root <em>t-y-m</em> yields <em>taymū Allāh</em>, an expression that means <em>“enthralled to God,” “who adores God.”</em> It is exactly the sense of the proper name <em>Taym Allāh</em>, frequent in Arabic onomastics.\n\nThe kinship of <em>tatayyum</em> with <em>al-yatm</em> — <em>to become an orphan</em> — is no accident: the root is the same. The <em>mutayyam</em> lover is in the position of the orphan: he has lost what gave him his own place, and henceforth he <em>depends</em> on the beloved in order to exist.\n\nThe word therefore carries a rich ambiguity: it says at once <em>enthralment</em> and <em>devotion</em>, <em>servitude</em> and <em>adoration</em>. In the Sufi lexicon, this ambiguity is cultivated: it is precisely when the human renounces his own sovereignty that he becomes <em>free</em> in the spiritual sense — free of what is not the Beloved.",
+   "temoin": {
+    "ar": "تَيَّمَنِي حُبُّكَ فَلَا مَفَرّ",
+    "translit": "tayyamanī ḥubbuka fa-lā mafarr",
+    "fr": "Your love has enthralled me: there is no flight possible now",
+    "source": "Tradition of mystical prose"
+   },
+   "meditation": "To whom do you still believe you belong — once you have understood to whom you truly belong?",
+   "ouverture": "The Sufi way radicalises this intuition: <em>the free human is the one who has accepted to be the slave of God</em>. All the other enthralments — to money, to fear, to the image of oneself — are servitudes. Only the enthralment to the Beloved is, paradoxically, <em>liberation</em>. The names <em>ʿabd Allāh</em> (“servant of God”), <em>ʿabd al-Wadūd</em>, <em>Taymullāh</em> all carry this inversion."
+  },
+  {
+   "id": "taabboud",
+   "ar": "التَّعَبُّد",
+   "translit": "at-taʿabbud",
+   "definition": "Love-adoration, the freely consented service",
+   "station": "divin",
+   "themes": [
+    "lien",
+    "douceur"
+   ],
+   "racine": "ع ب د",
+   "famille": [
+    "abada",
+    "ʿabd",
+    "ʿibada"
+   ],
+   "description": "<em>Taʿabbud</em> is <em>love-adoration</em> in the specifically religious context. The word applies to human relations in the strong sense — there is something of <em>adoration</em> in certain loves — but above all to the love of God. It derives from the same root as <em>ʿabd</em> (the servant), <em>ʿibāda</em> (faith, prayer, veneration) and <em>maʿbūd</em> (the adored one).\n\nThe word therefore says precisely this: love for God is not a private emotion — it is a <em>service</em> freely consented to, a <em>worship</em> that structures the lover's whole life. Not a fluctuating feeling; a <em>stable posture</em>. Not intoxication alone, but <em>intoxication organised into rite</em>, into daily prayer, into fasting, into pilgrimage, into generosity to the poor, into remembrance.\n\nThe Arabic language does not have the European fold that opposes <em>love</em> and <em>duty</em>: for it, duty is the <em>form</em> that love takes when it inscribes itself in time. <em>Taʿabbud</em> is this marriage of feeling and act — love as a manner of being <em>every day</em>.",
+   "temoin": {
+    "ar": "وَمَا خَلَقْتُ الْجِنَّ وَالْإِنْسَ إِلَّا لِيَعْبُدُون",
+    "translit": "wa-mā khalaqtu l-jinna wa-l-insa illā li-yaʿbudūn",
+    "fr": "I created jinn and humankind only that they might worship Me",
+    "source": "Quran, LI, 56"
+   },
+   "meditation": "What love inscribes itself, within you, in daily gestures — not through constraint, but because it must somehow be made visible?",
+   "ouverture": "For the Sufis, verse 56 of sura LI is read through a gloss attributed to Ibn ʿAbbās, the Prophet's cousin: <em>“... that they might know Me.”</em> To adore, in the spiritual language, is to <em>recognise</em>. And to recognise is to love. The trilogy service-knowledge-love is one in true <em>taʿabbud</em>."
+  },
+  {
+   "id": "fana",
+   "ar": "الْفَنَاء",
+   "translit": "al-fanāʾ",
+   "definition": "Amorous annihilation, abyssal love",
+   "station": "divin",
+   "themes": [
+    "ivresse",
+    "feu"
+   ],
+   "racine": "ف ن ي",
+   "famille": [
+    "faniya",
+    "baqa"
+   ],
+   "description": "<em>Fanāʾ</em> is <em>annihilation</em> in the technical sense: the disappearance of individual consciousness into the consciousness of the Beloved. It is, in the Sufi hierarchy, the <em>ultimate station</em> or its <em>immediate threshold</em>. The lover no longer knows himself as distinct from the Beloved; the two are no longer but one — not by physical fusion, but by <em>exhaustion of difference</em>.\n\nThe word covers two movements: either the <em>wasting away</em> (<em>nuḥūl</em>) and the <em>evanescence</em> of the lover (<em>saqam</em>) — love as the progressive erosion of the self —, or the <em>elation</em> and the mystico-religious <em>intoxication</em> (<em>sukr</em>) — love as submersion by the Presence. The two do not exclude one another; they are the two faces of the same movement.\n\nThe <em>fanāʾ</em> is not a goal to be reached by effort. It is what <em>happens</em> when love has done its work — when all the other attachments have given way, and there remains only the Beloved. After the fanāʾ comes, in the tradition, the <em>baqāʾ</em> — the <em>permanence</em> in God: life that resumes, but transfigured.",
+   "temoin": {
+    "ar": "كُلُّ مَنْ عَلَيْهَا فَانٍ ۝ وَيَبْقَىٰ وَجْهُ رَبِّكَ",
+    "translit": "kullu man ʿalayhā fānin · wa-yabqā wajhu rabbika",
+    "fr": "Every being upon the earth is bound to vanish;\nonly the face of your Lord subsists",
+    "source": "Quran, LV, 26-27"
+   },
+   "meditation": "What part of you has already passed — without your having mourned it?",
+   "ouverture": "It is upon this verse that the whole mysticism of <em>fanāʾ</em> takes root. If all passes save the Face, then to love truly is to love what does not pass — and to accept, in mirror, to let pass within oneself all that must pass. The fanāʾ is not a death: it is the <em>purification</em>. What dies is what had to die; what remains is what had to remain."
+  },
+  {
+   "id": "sukr",
+   "ar": "السُّكْر",
+   "translit": "as-sukr",
+   "definition": "Mystical intoxication, the vertigo of the Presence",
+   "station": "divin",
+   "themes": [
+    "ivresse",
+    "eau"
+   ],
+   "racine": "س ك ر",
+   "famille": [
+    "sakir",
+    "sakran",
+    "sukara"
+   ],
+   "description": "<em>Sukr</em> is <em>intoxication</em> — in the literal sense first (the intoxication of wine), then transposed to the mystical sense. It is the term used in the mystico-religious domain to describe the <em>distraught desire for God</em> and the <em>longing to meet Him</em>, the state of <em>the lover elated by the divine call</em>.\n\nA controversy runs through the whole of Muslim mysticism: should one prefer <em>sukr</em> (ecstatic intoxication) or <em>ṣaḥw</em> (sobriety, awakened lucidity)? The disciples of <em>Abū Yazīd al-Bisṭāmī</em> (ninth century) chose <em>sukr</em> — intense intoxication, paradoxical sayings (<em>shaṭaḥāt</em>), radiance. Those of <em>al-Junayd</em> of Baghdad preferred <em>ṣaḥw</em> — measure, the return to consciousness, the mastery of effects.\n\nBoth schools are true. The <em>sukr</em> is the moment of the meeting, where love makes one lose one's senses. The <em>ṣaḥw</em> is the moment of duration, where one must know how to <em>return</em> without losing anything of what one has tasted. The Sufi sage traverses, in his life, both states in alternation — like the wave that rises and that falls.",
+   "temoin": {
+    "ar": "اِسْقِنِي خَمْرَةَ الْحُبّ يَا حَبِيبِي",
+    "translit": "isqinī khamrata l-ḥubbi yā ḥabībī",
+    "fr": "Pour me the wine of Your love, O Beloved",
+    "source": "Topos of Persian and Arabic mystical poetry"
+   },
+   "meditation": "Of what wine are you intoxicated, that comes from no vineyard?",
+   "ouverture": "The wine sung by Ḥāfiẓ, Rūmī, Ibn al-Fāriḍ — the mystical <em>khamr</em> — is not a metaphor of true wine: it is the reverse. Ordinary wine is itself an <em>imperfect</em> metaphor of spiritual intoxication. Divine love intoxicates <em>in reality</em>; all the rest only tries to imitate this effect — without ever fully attaining it."
+  },
+  {
+   "id": "houbb-afif",
+   "ar": "الْحُبُّ الْعَفِيف",
+   "translit": "al-ḥubb al-ʿafīf",
+   "definition": "Chaste love, love that rises through continence",
+   "station": "divin",
+   "themes": [
+    "separation",
+    "douceur"
+   ],
+   "racine": "ع ف ف",
+   "famille": [
+    "ʿiffa",
+    "ʿafīf",
+    "istaʿaffa"
+   ],
+   "description": "<em>Al-ḥubb al-ʿafīf</em> is <em>chaste love</em> — the love whose <em>restraint</em> is its mark, and which chooses <em>continence</em> not out of coldness but out of <em>high esteem</em> for what it loves. The word derives from <em>ʿiffa</em>, one of the essential components of <em>courtly love</em> (<em>al-ḥubb al-ʿudhrī</em>), for the latter implies precisely <em>continence and chastity</em>.\n\nThe deep argument, classical in the Arab tradition and then transmitted to the troubadours of Occitania, is the following: what is loved must be <em>held at a distance</em> in order to remain truly loved. Seizure corrupts; respect elevates. The <em>ʿafīf</em> does not renounce out of scruple — he <em>makes room</em>, within his love, for what exceeds the beloved object.\n\nBut the word has a still higher reach: in the Sufi lexicon, <em>ʿiffa</em> names the <em>restraint of the soul</em> before God — the capacity not to claim His Presence as a right, not to want to seize Him like a prey. To love God chastely is to let Him be God — and not to reduce Him to the idea one forms of Him.",
+   "temoin": {
+    "ar": "وَلْيَسْتَعْفِفِ الَّذِينَ لَا يَجِدُونَ نِكَاحًا",
+    "translit": "wa-l-yastaʿfifi lladhīna lā yajidūna nikāḥan",
+    "fr": "Let those who do not find the means to marry keep themselves in chastity",
+    "source": "Quran, XXIV, 33"
+   },
+   "meditation": "Before what, within you, does true love ask to wait — without renouncing?",
+   "ouverture": "Sufi <em>ʿiffa</em> is the exact attitude of the one who has not yet reached the meeting, and who does not wish to <em>force</em> it. The mystic waits. He loves, he watches, he fasts — but he does not claim. <em>“If you wait,” says a Sufi adage, “He comes. If you claim, you push Him away.”</em> All the nobility of the way is held in this loving patience."
+  },
+  {
+   "id": "haboub",
+   "ar": "حَبُوب",
+   "translit": "ḥabūb",
+   "definition": "The one who loves too much, the tender outpourer",
+   "station": "eveil",
+   "themes": [
+    "douceur"
+   ],
+   "racine": "ح ب ب",
+   "famille": [
+    "hubb",
+    "mouhibb",
+    "mahboub"
+   ],
+   "description": "<em>Ḥabūb</em> is said of someone who loves too much and who pours out his states of soul easily. It is the intensive form of the lover — the one who does not know how to hold back what he feels, and who speaks of his heart as one speaks of the weather.\n\nFrom the same family comes the most common expression of the Arabic language: <em>yā ḥabībī</em> — <em>my tender friend</em>, <em>my sweet love</em> — which one hears sung throughout the Arab world, from the Maghreb to the Levant. A word of daily use that carries, in its very familiarity, the echo of the whole Arab amorous tradition.",
+   "temoin": {
+    "ar": "يَا حَبِيبِي",
+    "translit": "yā ḥabībī",
+    "fr": "My tender friend, my sweet love",
+    "source": "Expression of the living language"
+   },
+   "meditation": "To whom can you say <em>my tender one</em> — without lowering your voice?",
+   "ouverture": "The everyday Arabic language addresses beloved beings by the very words it reserves for God in prayer. The proximity of the registers is not a confusion: it is the deep intuition that to love anyone is to train oneself to love the Source of all love."
+  },
+  {
+   "id": "mouhibb",
+   "ar": "مُحِبّ",
+   "translit": "muḥibb",
+   "definition": "The lover, the one who loves — and who loves to love",
+   "station": "eveil",
+   "themes": [
+    "douceur",
+    "lien"
+   ],
+   "racine": "ح ب ب",
+   "famille": [
+    "hubb",
+    "habuba",
+    "mahboub"
+   ],
+   "description": "<em>Muḥibb</em> is, simply, <em>the lover</em> — the one who loves. The feminine form, <em>muḥibba</em>, and the variant <em>ḥabūba</em>, designate the woman who feels a great tenderness for the man. The word is neutral, common, classical: it is the word grammar chooses when it wishes to designate the lover without particular colouring.\n\nBut in Turkish, <em>muḥibbī</em> took on an additional sense: it is said of <em>the one who loves to love</em>. It is thus that Suleiman the Magnificent (1494-1566), the sultan-poet, chose this word as his <em>takhalluṣ</em> — pen name. He published all his ghazals under the name of <em>Muhibbî</em>, as if to sign: <em>the one whose love is the principal art</em>.",
+   "temoin": {
+    "ar": "أَنَا الْمُحِبُّ الَّذِي لَا يَزَالُ يُحِبّ",
+    "translit": "anā l-muḥibbu lladhī lā yazālu yuḥibb",
+    "fr": "I am the lover who never ceases to love",
+    "source": "Suleiman the Magnificent (Muhibbî), 16th c."
+   },
+   "meditation": "Do you love only beings — or do you also love the <em>loving</em> itself?",
+   "ouverture": "The <em>muḥibb</em> in the strong sense is cousin to the <em>ḥubb al-ḥubb</em> of Ibn ʿArabī: it is the one who has made of loving his soul's craft. To love someone is circumstantial; to love loving is a vocation."
+  },
+  {
+   "id": "mahboub",
+   "ar": "مَحْبُوب",
+   "translit": "maḥbūb",
+   "definition": "The beloved, the one who is loved",
+   "station": "eveil",
+   "themes": [
+    "douceur",
+    "eclat"
+   ],
+   "racine": "ح ب ب",
+   "famille": [
+    "hubb",
+    "tahabboub",
+    "mahabba"
+   ],
+   "description": "<em>Maḥbūb</em> is <em>the beloved</em>. In the feminine, <em>maḥbūba</em> — which is also commonly used as a first name in the Arab world, and which says, from the very giving of the name to a child, the wish that it be loved all its life. One also says <em>maʿshūqa</em> with the nuance of <em>ʿishq</em>, a more intense desire.\n\nThe mystical language also knows the words <em>taḥabbub</em> — the <em>act of making oneself dear</em> — and <em>maḥabba</em>, the Sufi station of love. All three are kin: they name the passage between the one who loves and the one who is loved, the <em>reversible exchange</em> that constitutes every true amorous relation.",
+   "temoin": {
+    "ar": "يَا حَبِيبَ الْقَلْب",
+    "translit": "yā ḥabība l-qalb",
+    "fr": "O beloved of the heart",
+    "source": "Classical vocative of amorous poetry"
+   },
+   "meditation": "Who are you, and for whom — when that person thinks of you in silence?",
+   "ouverture": "The Sufi way shifts the question: the true identity of the believer is not <em>what he does</em>, nor <em>what he knows</em>, but <em>who loves him</em>. When God names someone <em>My Maḥbūb</em> — as the tradition says of the Prophet, designated as <em>Ḥabīb Allāh</em> — it is, at once, the name and the nature of that person that are revealed."
+  },
+  {
+   "id": "machouq",
+   "ar": "مَعْشُوق",
+   "translit": "maʿshūq",
+   "definition": "The strongly coveted beloved, the object of passion",
+   "station": "eveil",
+   "themes": [
+    "eclat",
+    "feu"
+   ],
+   "racine": "ع ش ق",
+   "famille": [
+    "ichq",
+    "ashiq",
+    "ta'achchaqa"
+   ],
+   "description": "<em>Maʿshūq</em> designates the one who is strongly coveted — the object of <em>ʿishq</em>, of violent desire. In the feminine, <em>maʿshūqa</em>. Where <em>maḥbūb</em> names the beloved in the tender register, <em>maʿshūq</em> names him in the burning register: one does not love a <em>maʿshūq</em> peacefully, one desires him to the point of losing one's reason.\n\nIt is this word that constitutes the second term of the famous trilogy formed by Ḥāfiẓ and taken up by the whole Persian tradition: <em>ʿishq, ʿāshiq, maʿshūq</em> — love, the lover, the beloved. Three words, one single root, one single movement of the soul. In Persian mysticism, these three terms designate at once the human relation and the divine relation — and end, in high spirituality, by revealing themselves as one single Real under three faces.",
+   "temoin": {
+    "ar": "عِشْقٌ وَعَاشِقٌ وَمَعْشُوق",
+    "translit": "ʿishq, ʿāshiq, maʿshūq",
+    "fr": "Love, the lover, the beloved",
+    "source": "Topos of Persian mysticism (Ḥāfiẓ, Rūmī)"
+   },
+   "meditation": "When you intensely desire someone — is it him you want, or what he reveals within you?",
+   "ouverture": "For Aḥmad Ghazālī (twelfth century), the mystic brother of the great al-Ghazālī, these three words designate but a single movement: <em>love loving itself through all its objects</em>. The distinction between lover, beloved and love is an effect of perspective; at a certain level of the way, it effaces itself."
+  },
+  {
+   "id": "foutoun",
+   "ar": "الْفُتُون",
+   "translit": "al-futūn",
+   "definition": "Enchantment, amorous capture",
+   "station": "eveil",
+   "themes": [
+    "eclat"
+   ],
+   "racine": "ف ت ن",
+   "famille": [
+    "fitna",
+    "fattan",
+    "fatin",
+    "iftitan"
+   ],
+   "description": "<em>Futūn</em> names the <em>enchantment</em>, the <em>capture</em>, the <em>diversion</em> wrought by the beauty of the beloved. The seducer is called <em>fattān</em> or <em>fātin</em> — as well as the one who toys with a woman. To give more relief to their verses, the Arab poets dispose of several synonyms: <em>iftitān</em>, <em>siḥr</em> (magic, sorcery), <em>saḥḥār</em> (charmer), <em>mūnīq</em> (agreeable, pleasing), <em>jaddāb al-qulūb</em> (slayer of hearts).\n\nThe word has a fearsome theological cousin: <em>fitna</em>, which in the Quran designates at once <em>temptation</em>, <em>discord</em>, and <em>trial</em> — as if amorous seduction, in the Arab imagination, were always brushing against something spiritually dangerous. The beloved woman herself can be named <em>fitna</em> by the theologians. But this same root also yields what God does to the soul in order to <em>purify</em> it.",
+   "temoin": {
+    "ar": "إِنَّمَا أَمْوَالُكُمْ وَأَوْلَادُكُمْ فِتْنَة",
+    "translit": "innamā amwālukum wa awlādukum fitna",
+    "fr": "Your wealth and your children are only a trial",
+    "source": "Quran, LXIV, 15"
+   },
+   "meditation": "What captivates you — and what does this captive wish to teach you, about what you do not know of yourself?",
+   "ouverture": "The double meaning of the root <em>f-t-n</em> is read by the Sufis as a teaching: every amorous capture <em>can</em> become a spiritual trial, if one accepts to read in it what it says of oneself. The <em>fitna</em> is not the opposite of the way: it is, at times, its beginning."
+  },
+  {
+   "id": "taatouf-djinsi",
+   "ar": "التَّعَاطُف الْجِنْسِيّ",
+   "translit": "at-taʿāṭuf al-jinsī",
+   "definition": "The exchange of amorous courtesies, gentle complicity",
+   "station": "retrouvailles",
+   "themes": [
+    "douceur",
+    "eclat"
+   ],
+   "racine": "ع ط ف",
+   "famille": [
+    "ʿataf",
+    "mu'taf",
+    "ʿataf"
+   ],
+   "description": "<em>Taʿāṭuf jinsī</em> names, in the strict sense, an <em>exchange of amorous courtesies</em> — playful banter, sexual complicity in the light sense, but apprehended from the side of <em>finesse</em> and <em>gentleness</em>. This grace partakes of one of the amorous states gathered under the notion of <em>mulāṭafa</em> — shared tenderness.\n\nNot to be confused with <em>ḥubb al-jinsī</em> or <em>ʿishq jinsī</em>, which designate sexual <em>intercourse</em> properly speaking. The <em>taʿāṭuf</em>, for its part, is not the thing itself — it is the atmosphere that surrounds it, the quality of presence of the lovers to one another in their shared intimacy. More than an act, it is a <em>manner</em>: to love the other in all his gestures, and to let him love in all of one's own.",
+   "temoin": {
+    "ar": "تَعَاطَفَا فِي الْحُبِّ كَالشَّقِيقَيْن",
+    "translit": "taʿāṭafā fī l-ḥubbi ka-sh-shaqīqayn",
+    "fr": "They exchanged their courtesies in love like two brothers",
+    "source": "Topos of courtly poetry"
+   },
+   "meditation": "In your loves, what is played out in the <em>manner</em> — that the acts alone do not say?",
+   "ouverture": "The Sufis cultivate a similar attention in their relation to God: it is not so much <em>what one does</em> (to pray, to fast, to give) that counts, it is <em>the quality with which one does it</em>. <em>Iḥsān</em>, says the Prophet, is <em>“to worship God as if you saw Him.”</em> Human <em>taʿāṭuf</em> is the school of this manner."
+  },
+  {
+   "id": "tachbib",
+   "ar": "التَّشْبِيب",
+   "translit": "at-tashbīb",
+   "definition": "The pleasure of singing of women in verse",
+   "station": "chant",
+   "themes": [
+    "eclat",
+    "douceur"
+   ],
+   "racine": "ش ب ب",
+   "famille": [
+    "shabab",
+    "shabba"
+   ],
+   "description": "<em>Tashbīb</em> names the pleasure of finding oneself in the company of women, of <em>making it known</em> through <em>amorous poetry</em> (the <em>nasīb</em>), and of drawing from it a certain prestige. Several examples are reported to us by the literary annals, in particular by <em>The Book of Songs</em> of Abū l-Faraj al-Iṣfahānī (897-967), a monument of classical Arab culture.\n\nIn the seventh century, in Medina, the poet <em>Kuthayyir</em> knew glory through the poems he wrote for ʿAzza. In the eleventh, in Andalusia, <em>Ibn Zaydūn</em> (1003-1071) would perhaps not have attained his notoriety without the poetic-erotic correspondence he maintained with the Cordoban princess <em>Wallāda</em> — one of the rare women-poets of her time, and the great lover of the Andalusian evening.",
+   "temoin": {
+    "ar": "مَنْ هَامَ بِالْحَسْنَاءِ فَلْيَنْشُرْ هَوَاهُ شِعْرًا",
+    "translit": "man hāma bi-l-ḥasnāʾi fa-l-yanshur hawāhu shiʿran",
+    "fr": "Whoever falls for the fair one, let him publish his love in verse",
+    "source": "Adage of the Arab nasīb"
+   },
+   "meditation": "What you love — do you know how to give it a form, or do you content yourself with feeling it?",
+   "ouverture": "The great Arabo-Andalusian tradition made of amorous song not only an art but a <em>spiritual discipline</em>: <em>to give form to what one feels</em> is, for the Sufis too, a way of elevating it. To love in silence is noble; to love in forms — poems, letters, dhikr — is more so still."
+  },
+  {
+   "id": "houbb-sarid",
+   "ar": "الْحُبُّ الصَّارِيد",
+   "translit": "al-ḥubb aṣ-ṣārīd",
+   "definition": "Sincere love, true commitment",
+   "station": "chant",
+   "themes": [
+    "douceur",
+    "lien"
+   ],
+   "racine": "ص ر د",
+   "famille": [
+    "sidq",
+    "khaliss",
+    "kalima"
+   ],
+   "description": "<em>Al-ḥubb aṣ-ṣārīd</em> is <em>sincere love</em>. In a social context where the mixing of men and women was traditionally restricted, the <em>treachery of a meeting without a morrow</em> constantly haunted amorous relations. Hence the importance accorded, in classical Arab culture, to the <em>word of honour</em> — <em>kalima</em> — and to the <em>sincerity of commitment</em> — <em>ṣidq</em>.\n\nThis love is also called <em>al-ḥubb al-khāliṣ</em> — <em>pure love</em>, rid of every ulterior thought. It is the love that says what it will be, and that will be what it says. Unlike the other forms of love that concentrate on the intensity of feeling, the <em>ḥubb aṣ-ṣārīd</em> insists on the <em>word kept</em>: it is not only the heart, it is <em>commitment</em>.",
+   "temoin": {
+    "ar": "صِدْقُ الْحُبِّ يُعْرَفُ بِالْوَفَاء",
+    "translit": "ṣidqu l-ḥubbi yuʿrafu bi-l-wafāʾ",
+    "fr": "The sincerity of love is known by fidelity",
+    "source": "Adage of Arab amorous prose"
+   },
+   "meditation": "Are your loves <em>true</em> — that is to say: do they keep what they promised without saying it?",
+   "ouverture": "<em>Ṣidq</em> is one of the great words of Sufism — the <em>inner veracity</em> that makes one be what one says. For Junayd, the accomplished Sufi is the one who says the truth of the heart, and whose heart says the truth of God. To love someone sincerely is therefore a school: one trains oneself there to <em>coincide</em> with what one loves."
+  },
+  {
+   "id": "houbb-ama",
+   "ar": "الْحُبُّ الْأَعْمَى",
+   "translit": "al-ḥubb al-aʿmā",
+   "definition": "Blind love, passion without gaze",
+   "station": "brulure",
+   "themes": [
+    "folie",
+    "feu"
+   ],
+   "racine": "ع م ي",
+   "famille": [
+    "aʿma",
+    "ʿumi",
+    "aʿmaq"
+   ],
+   "description": "<em>Ḥubb aʿmā</em> is <em>blind love</em> — a passion of which you are the <em>vassal</em>. The Arab adage says it with the concise precision of the tradition: <em>“Love makes one blind and mute.”</em> The formula is attributed to Jāḥiẓ (780-869), the great Abbasid prose-writer, a fine observer of human passions.\n\nAnd indeed: to love thus is to <em>cease to see</em> what one loves as it is, and to <em>no longer be able to say</em> what one sees. Blindness and muteness are the two twin symptoms. The <em>aʿmā</em> lover no longer makes the difference between the beloved person and the idea he forms of her, between his desires and reality. In this state, says the tradition, one is rarely a good judge — but perhaps this is what love serves for: that one cease, for a time, to be a judge.",
+   "temoin": {
+    "ar": "الْحُبُّ يُعْمِي وَيُصِمّ",
+    "translit": "al-ḥubbu yuʿmī wa yuṣimm",
+    "fr": "Love makes one blind and mute",
+    "source": "Al-Jāḥiẓ (780-869)"
+   },
+   "meditation": "What do you no longer see, since you have loved? And why does this blindness, secretly, suit you?",
+   "ouverture": "The Sufis distinguish two blindnesses: that of <em>passion</em>, which closes the eyes upon reality; and that of <em>contemplation</em>, which closes the <em>outer</em> eyes in order to open the <em>inner</em> ones. The second is no longer blindness — it is another sight. The first, for its part, is to be <em>traversed</em> without enclosing oneself in it."
+  },
+  {
+   "id": "houbb-moutrib",
+   "ar": "الْحُبُّ الْمُطْرِب",
+   "translit": "al-ḥubb al-muṭrib",
+   "definition": "Joyful love, love that delights",
+   "station": "retrouvailles",
+   "themes": [
+    "douceur",
+    "ivresse"
+   ],
+   "racine": "ط ر ب",
+   "famille": [
+    "tarab",
+    "atraba"
+   ],
+   "description": "<em>Ḥubb muṭrib</em> is <em>joyful love</em>. The word is formed on <em>ṭarab</em>, which designates precisely <em>joy</em>, <em>enchantment</em>, the <em>ravishment of the senses</em> — notably in the musical domain. The duality of amorous feeling allows it to be expressed, even among the Arabs (reputed for their melancholic sentimentalism), in a <em>playful and fulfilling</em> manner.\n\nThis register tends to <em>channel</em> the melancholy of absence and the difficulty of the meeting. The whole tradition of Arabo-Andalusian song, later that of Egyptian music, bears witness to this amorous joy — the one that laughs, that sings, that dances, that makes life possible even when love torments. <em>Ṭarab</em> is the musical antidote to <em>ḥuzn</em>.",
+   "temoin": {
+    "ar": "الطَّرَبُ غِذَاءُ الرُّوح",
+    "translit": "aṭ-ṭarabu ghidhāʾu r-rūḥ",
+    "fr": "Ṭarab is the nourishment of the soul",
+    "source": "Adage of Arab musical culture"
+   },
+   "meditation": "When were you last <em>ravished</em> with joy — not pleased, ravished?",
+   "ouverture": "Sufi <em>samāʿ</em> — ritualised musical listening — aims precisely to provoke the <em>ṭarab</em> of the soul toward God. It is what the dervishes of Konya practised around Rūmī: to dance, to listen, to sing, until joy becomes stronger than separation. <em>Ṭarab</em>, at this level, is the other name of joyful <em>fanāʾ</em>."
+  },
+  {
+   "id": "houbb-lothi",
+   "ar": "الْحُبُّ اللُّوطِيّ",
+   "translit": "al-ḥubb al-lūṭī",
+   "definition": "Love for boys (a historical category)",
+   "station": "brulure",
+   "themes": [
+    "feu",
+    "eclat"
+   ],
+   "racine": "ل و ط",
+   "famille": [
+    "lut",
+    "liwat"
+   ],
+   "description": "<em>Ḥubb lūṭī</em> is, in the classical Arabic lexicon, the name given to <em>male homosexual love</em>, or <em>pederasty</em> (<em>liwāṭ</em>). The word comes from the name of the prophet <em>Lūṭ</em> — Lot in the Bible (Genesis XI-XIX), also cited several times in the Quran (VII, XI, XV, XXVI). The people of Lūṭ having given themselves over to practices that the tradition condemns, the expression ended by entering the language as designating this type of attachment.\n\nOne also says <em>ḥubb khurāsānī</em>. In the eyes of the classical Arabs, indeed, the amorous inclination for boys (<em>liwāṭ</em>) was considered a Khurasani invention, named after the eastern province of Iran situated at the border of Turkmenistan and Afghanistan. Hence the toponym. For love between women, the classical term is <em>siḥāqiyya</em>. These categorisations belong to a precise historical lexicon; they evidently do not exhaust human complexity.",
+   "temoin": {
+    "ar": "وَلُوطًا إِذْ قَالَ لِقَوْمِهِ",
+    "translit": "wa-Lūṭan idh qāla li-qawmihi",
+    "fr": "And Lot, when he said to his people…",
+    "source": "Quran, VII, 80"
+   },
+   "meditation": "What is, in your loves, the part that conforms to no name — and that asks to be thought anew?",
+   "ouverture": "Classical Sufism long debated <em>shāhid-bāzī</em> — the <em>amorous contemplation of beauty</em> incarnate in a human face (often young). Certain masters (Awḥad al-Dīn Kirmānī) made of it a discipline of the way; others (Najm al-Dīn Kubrā) judged it a trap. The debate remains open: <em>can one love the Creator through the face of the creature, without stopping at her?</em> It is one of the live questions of mysticism."
+  },
+  {
+   "id": "houbb-ibahi",
+   "ar": "الْحُبُّ الْإِبَاحِيّ",
+   "translit": "al-ḥubb al-ibāḥī",
+   "definition": "Carnal love, assumed sensual passion",
+   "station": "brulure",
+   "themes": [
+    "feu",
+    "corps"
+   ],
+   "racine": "ب ي ح",
+   "famille": [
+    "ibaha",
+    "mubih"
+   ],
+   "description": "<em>Ḥubb ibāḥī</em> names <em>concupiscent love</em> — <em>carnal passion</em>, which is one of the most recurrent themes of Arab erotic literature. The root <em>b-y-ḥ</em> signifies what is <em>licit, permitted</em> — hence <em>ibāḥa</em>, permission. The <em>ibāḥī</em> is the one who permits himself — who assumes his sensuality instead of concealing it.\n\nThe tales of the <em>Thousand and One Nights</em>, <em>Ibn Falaita</em> (fourteenth century), <em>Shaykh Nefzāwī</em> (fifteenth, author of the <em>Perfumed Meadow</em>) gave colourful illustrations of it. The collective <em>ibāḥiyyūn</em> — <em>the licentious</em> — designates precisely a class of Hijazi poets who, in the sixth and seventh centuries, moved away from the aristocratic norm of courtly love (<em>ʿudhrī</em>) in order to assume the carnal dimension. The great Arab tradition knew how to welcome both faces — modesty and audacity.",
+   "temoin": {
+    "ar": "أُحِلَّتْ لَكُمْ لَيْلَةَ الصِّيَامِ الرَّفَثُ إِلَىٰ نِسَائِكُمْ",
+    "translit": "uḥillat lakum laylata ṣ-ṣiyāmi r-rafathu ilā nisāʾikum",
+    "fr": "Permitted to you, on the night of the fast, is intimacy with your wives",
+    "source": "Quran, II, 187"
+   },
+   "meditation": "What part of your sensuality have you ceased to listen to — to the point that it now expresses itself in noise, not in word?",
+   "ouverture": "The Quranic verse that permits conjugal intimacy names it by a very direct word (<em>rafath</em>). Classical Islam did not refuse the body: it <em>framed</em> it. Sufism, in its wake, does not combat sensuality — it <em>orients</em> it. To love in the body, and that this body be itself a prayer: such is the way."
+  },
+  {
+   "id": "ladgh",
+   "ar": "اللَّذْغ",
+   "translit": "al-ladhgh",
+   "definition": "Love-bite, the feeling without respite",
+   "station": "brulure",
+   "themes": [
+    "feu",
+    "corps"
+   ],
+   "racine": "ل ذ غ",
+   "famille": [
+    "ladha",
+    "lad"
+   ],
+   "description": "<em>Ladhgh</em> names <em>love-bite</em>, the one that leaves you no respite, at no moment. It is at the edge of carnal love, while being in itself particularly violent. The word has a very close kinship with <em>ladhʿ</em> — the climbing flame — but with this nuance: the bite is what penetrates, whereas the flame is what surrounds.\n\n<em>Ladhgh</em> and <em>ladhʿ</em> evoke together the <em>solitude</em> of the lover, the continuous ordeal that grants him no moment of calm. It is no longer only the flame that consumes, it is the <em>animal</em> that bites, that comes back to bite, that does not let go. The preferred poetic expression, for this love, is that of the <em>open wound</em>.",
+   "temoin": {
+    "ar": "لَذَغَنِي الحُبُّ كَالأَفْعَى",
+    "translit": "ladhaghanī l-ḥubbu ka-l-afʿā",
+    "fr": "Love has bitten me like a serpent",
+    "source": "Topos of elegiac poetry"
+   },
+   "meditation": "What bite does not let go of you — and that, henceforth, is part of you?",
+   "ouverture": "For the Sufis, certain bites are marks of election. All the saints of Islam bore their scar — the one that recalled to them at every instant the Beloved. The <em>ladhgh</em>, in the divine register, is not an ill to heal: it is a sign to honour."
+  },
+  {
+   "id": "wahl",
+   "ar": "الْوَهْل",
+   "translit": "al-wahl",
+   "definition": "Sublime love, that petrifies with fear",
+   "station": "brulure",
+   "themes": [
+    "folie",
+    "eclat"
+   ],
+   "racine": "و ه ل",
+   "famille": [
+    "wahila",
+    "wahla"
+   ],
+   "description": "<em>Al-wahl</em> is <em>sublime, terrifying, transfiguring love</em>. It applies to the beloved one whom one wishes to conquer but of whom one wants <em>him and him alone</em>. It follows that when one sees him, one is <em>paralysed with fear</em>, panicked at the idea of failing, <em>as if petrified</em> by a superior beauty. The same holds for a woman who desires a man, but who is transfixed by his beauty, his power or his charisma.\n\nThe word says an experience that few modern psychologies still know how to name: the <em>religious</em> feeling of human love, the one in which the other appears to us as a presence so strong that it exceeds our ordinary categories. It is the beauty that <em>makes one tremble</em>, that recalls, in human love, what the theologians name the <em>tremendum</em> of the sacred.",
+   "temoin": {
+    "ar": "وَهَلَ الْقَلْبُ لَمَّا رَأَيْتُهَا",
+    "translit": "wahala l-qalbu lammā raʾaytuhā",
+    "fr": "The heart froze when I saw her",
+    "source": "Anonymous verse of the nasīb"
+   },
+   "meditation": "Before whom have you been paralysed — and what did this paralysis teach you?",
+   "ouverture": "The Sufis recognise in the <em>wahl</em> the human experience closest to the divine <em>hayba</em> — the <em>reverential awe</em> before the Presence. When one glimpses the Real, it is not joy that comes first: it is dread. The way consists in letting this fear blossom into love, without fleeing it."
+  },
+  {
+   "id": "wajd",
+   "ar": "الْوَجْد",
+   "translit": "al-wajd",
+   "definition": "Ecstatic love, divine emotion",
+   "station": "brulure",
+   "themes": [
+    "ivresse",
+    "feu"
+   ],
+   "racine": "و ج د",
+   "famille": [
+    "wajada",
+    "mawjud",
+    "wijdan"
+   ],
+   "description": "<em>Wajd</em> is a precious word of the Sufi lexicon, which carries three senses at once. <em>First sense</em>: ardent love, passionate emotion, ecstatic love reserved for the divine Entity. <em>Second sense</em>: love-sorrow, somewhat ecstatic and in certain cases rather metaphysical. <em>Third sense</em>: physical emotion of the most intense kind.\n\nThe richness of the word lies in an etymological paradox: <em>wajd</em> derives from <em>wajada</em>, <em>to find</em>. <em>Wajdān</em> is nothing less than <em>Existence</em>, the consciousness of being. Yet, says the Sufi tradition, the <em>wajd</em> properly speaking is a <em>lack of love</em> — a state in which the lover does not <em>find</em> the Beloved. <em>And it is precisely this lack that is called “finding.”</em> The apparent contradiction is the teaching: what one seeks, one feels first as absence; and this burning absence is, in reality, the <em>felt presence</em>.",
+   "temoin": {
+    "ar": "وَجَدْتُهُ فِي فَقْدِي إِيَّاه",
+    "translit": "wajadtuhu fī faqdī iyyāhu",
+    "fr": "I found Him in the very ordeal of His absence",
+    "source": "Anonymous Sufi tradition"
+   },
+   "meditation": "Have you ever <em>found</em> someone in the very absence you felt?",
+   "ouverture": "Ibn ʿArabī made of <em>wajd</em> one of the three key words of his metaphysics of love, alongside <em>mawjūd</em> (the existent) and <em>wujūd</em> (Existence). To love truly is to <em>find the Existent in the very experience of lack</em> — as the night reveals the stars that the day was hiding."
+  },
+  {
+   "id": "moutbal",
+   "ar": "مُطَبَّل",
+   "translit": "muṭabbal",
+   "definition": "Sick with love, stricken in his four modes",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "folie"
+   ],
+   "racine": "ط ب ل",
+   "famille": [
+    "tabal",
+    "tatabbul"
+   ],
+   "description": "<em>Muṭabbal</em> is <em>sick with love</em>. According to Ibn ʿArabī (1165-1241), the great Muslim mystic and author of the <em>Treatise on Divine Love</em>, such a sickness expresses itself in <em>four distinct modes</em>: amorous <em>melancholy</em> (<em>kamad</em>), <em>sighs</em> (<em>zafarāt</em>), <em>wandering</em> (<em>hiyām</em>) and <em>wasting away</em> (<em>nuḥūl</em>).\n\nOne also says <em>ṭabāl</em> or <em>taṭabbul</em> to designate the <em>loss of habitual bearings</em>, <em>diversion</em>, <em>rambling</em>. The word therefore says this particular sickness in which the lover is no longer capable of fulfilling his habitual functions — not through idleness, but because a part of himself no longer dwells in the same reality. A sickness that is not, for the old Arab physicians, a simple metaphor: it is diagnosed by the pulse (irregular at the name of the beloved) and treated by the return to the beloved, failing which, at times, death follows.",
+   "temoin": {
+    "ar": "أَرْبَعَةٌ تَكْشِفُ المُحِبَّ المُطَبَّل",
+    "translit": "arbaʿatun takshifu l-muḥibba l-muṭabbal",
+    "fr": "Four signs reveal the sick lover: melancholy, sighs, wandering and wasting away",
+    "source": "Ibn ʿArabī, Treatise on Divine Love"
+   },
+   "meditation": "Which of the four signs — melancholy, sigh, wandering, wasting away — do you recognise within yourself now?",
+   "ouverture": "Ibn ʿArabī adds: <em>“the sickness of love for God is recognised by the same four signs.”</em> There is, in his eyes, but one single love, which passes through creatures and which culminates in the Real. Sickness is not the opposite of spiritual health: it is, at times, its beginning."
+  },
+  {
+   "id": "maghroum",
+   "ar": "مَغْرُوم",
+   "translit": "maghrūm",
+   "definition": "The captive lover, overcome by his passion",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "folie"
+   ],
+   "racine": "غ ر م",
+   "famille": [
+    "gharam",
+    "ghurama"
+   ],
+   "description": "<em>Maghrūm</em> is said of someone who, smitten by his passion, is a <em>captive lover</em> — the lover dominated by an incurable ill, or else the beloved overcome by the memory of the lover. The word is the passive participle of the root <em>gh-r-m</em>, already encountered in <em>gharām</em>. It is the lover <em>become</em> his debt, who identifies himself with the bond that holds him.\n\nArab popular song — Egyptian in particular — made of this word one of its most poignant refrains. <em>Abdel-Halim Ḥāfeẓ</em>, <em>Farīd al-Aṭrash</em>, beloved singers of the 1940s to the 1970s, could thus cry out <em>“Maghrūm, maghrūm”</em>, literally: <em>“I am in love, I am in love”</em> — but with this precious nuance of <em>accepted captivity</em> that no English equivalent renders.",
+   "temoin": {
+    "ar": "أَنَا مَغْرُومٌ مَغْرُومٌ بِك",
+    "translit": "anā maghrūmun maghrūmun bika",
+    "fr": "I am captive, captive of you",
+    "source": "Refrain of Arab popular song"
+   },
+   "meditation": "What debt of love do you accept — not by resigning yourself to it, but by embracing it?",
+   "ouverture": "For the Sufis, the passage from suffered <em>gharām</em> to consented <em>maghrūm</em> is one of the thresholds of the path. One can suffer an amorous captivity as a curse; one can also recognise it as a gift. The difference is inward — and it changes everything."
+  },
+  {
+   "id": "wasb",
+   "ar": "الْوَصْب",
+   "translit": "al-waṣb",
+   "definition": "The perpetual pain of love",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "feu"
+   ],
+   "racine": "و ص ب",
+   "famille": [
+    "wasaba",
+    "wasib"
+   ],
+   "description": "<em>Al-waṣb</em> has the same definition as other words of amorous consumption, but with this nuance: it says <em>perpetual pain</em>, the one that does not let go. <em>Al-waṣīb</em> is the one who <em>complains greatly</em> of this pain — not out of weakness, but because it leaves him no truce to say anything else.\n\nThe Quran uses the word twice (XVI, 52 and XXXVII, 9), notably to evoke the <em>perpetual chastisement</em> that strikes the unbelievers. This kinship with eschatological vocabulary is not insignificant: it says that the pain of love, in the Arab consciousness, can attain such an intensity that it resembles hell. But it also says its reverse: what can be hell can, in true love, be the <em>antechamber</em> of paradise.",
+   "temoin": {
+    "ar": "وَلَهُمُ الدِّينُ وَاصِبًا",
+    "translit": "wa lahumu d-dīnu wāṣiban",
+    "fr": "And to Him is worship due perpetually",
+    "source": "Quran, XVI, 52"
+   },
+   "meditation": "What perpetual pain do you bear — and what have you learned to make of it?",
+   "ouverture": "The Sufi way does not promise the end of pain — it promises its <em>transmutation</em>. The same <em>waṣb</em> that consumes the one who suffers it as a victim, illumines the one who bears it as a servant of the Beloved. The difference is held by a single thread: to whom one addresses, inwardly, the pain one traverses."
+  },
+  {
+   "id": "jawa",
+   "ar": "الْجَوَى",
+   "translit": "al-jawā",
+   "definition": "Sovereign emotion, alternation of strength and weakness",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "ivresse"
+   ],
+   "racine": "ج و ي",
+   "famille": [
+    "jawiya",
+    "jawan"
+   ],
+   "description": "<em>Al-jawā</em> is <em>extreme, sovereign emotion</em>, as much in <em>desire</em> and <em>passion</em> as in the <em>sorrow of love</em>. It is the <em>alternation of strength and weakness</em> in the woman or man who loves: one day standing in their passion, the next on the ground in their grief, and always the same intensity that circulates without one knowing any longer whether it is joy or pain.\n\nIn the perspective of a philosophy of love placed under the control of <em>pain</em>, <em>al-jawā</em> would be the state of <em>inner power</em> the subject feels — but equally <em>the sadness and dejection</em> that are its shadow side. The two are not separable: the same fire can warm or consume, according to the moment, according to the disposition of the one who bears it.",
+   "temoin": {
+    "ar": "الجَوَى نَارٌ تَحْتَ الرَّمَاد",
+    "translit": "al-jawā nārun taḥta r-ramād",
+    "fr": "The jawā is a fire beneath the ash",
+    "source": "Adage of the classical nasīb"
+   },
+   "meditation": "What emotion within you overcomes you one day, and carries you the next — without changing its nature?",
+   "ouverture": "The Sufis know that states (<em>aḥwāl</em>) are mobile by nature. One does not establish oneself in the joy of love forever; nor does one remain forever in grief. The sage <em>traverses</em> the states without identifying with any. What remains is not the state — it is <em>the One</em> who experiences them."
+  },
+  {
+   "id": "la-j",
+   "ar": "الْأَعْج",
+   "translit": "al-laʿj",
+   "definition": "The strong contrition of love, the necessary ill",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "separation"
+   ],
+   "racine": "ل ع ج",
+   "famille": [
+    "lā'aj",
+    "ilaja"
+   ],
+   "description": "<em>Al-laʿj</em> names a <em>state of strong contrition</em>, a <em>necessary ill</em>. The word carries a dimension difficult to translate: it is at once the <em>burning of regret</em> and the <em>conviction that this regret is just</em>. It is probable that, by way of the root <em>l-ʿ-j</em>, the word maintains a relation with <em>al-iktiʾāb</em> — love-sorrow.\n\nThe word also says something of the <em>acute consciousness</em> of what one has done, or of what one has not done. It is not simple grief: it is the grief that knows why it is there, that has looked the past in the face, that does not flee responsibility. In this respect, the <em>laʿj</em> is a moral feeling as much as an amorous one — that of the lover who deems himself, in his own conscience, accountable for what has come undone.",
+   "temoin": {
+    "ar": "اللَّاعِجُ يَأْكُلُ الْقَلْبَ أَكْلًا",
+    "translit": "al-lāʿiju yaʾkulu l-qalba akl",
+    "fr": "The laʿj devours the heart, truly",
+    "source": "Topos of elegiac prose"
+   },
+   "meditation": "What regret do you bear, of which you know it is <em>just</em>, even if it is unbearable?",
+   "ouverture": "The Sufis name <em>tawba</em> the conversion through regret. The <em>laʿj</em> is the antechamber of <em>tawba</em>: one turns toward the Light only when one has truly looked at the shadow. True contrition is not a depression — it is a lucidity that prepares a movement."
+  },
+  {
+   "id": "danf",
+   "ar": "الدَّنَف",
+   "translit": "ad-danaf",
+   "definition": "The incurable ill, love as dependency",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "folie"
+   ],
+   "racine": "د ن ف",
+   "famille": [
+    "danifa",
+    "dayf"
+   ],
+   "description": "<em>Danaf</em> applies to a person stricken by an <em>incurable ill</em> (<em>maraḍ</em>). In the case of the lover, such a sickness evokes the <em>habituation</em> of the one who is subjected to a drug, prevented from emancipating himself, or even from combating. Love, at this stage, is no longer a feeling one chooses or undergoes — it is an <em>organic dependency</em> from which one no longer emerges.\n\nIbn Qayyim al-Jawziyya (1272-1350), the great theologian and author of the <em>Garden of Lovers</em>, seems to hesitate to define this term. He remarks that it was abandoned by the Ancients, at least in the amorous domain, but that it is much in favour among his contemporaries. In <em>Chronicles on Women</em>, the modern scholar Omar Ridha Kaḥḥāla uses rather the word <em>aḍ-ḍayf</em>. The lexicon evolves; the thing itself remains.",
+   "temoin": {
+    "ar": "دَنِفٌ مِنَ الحُبِّ لَا يَرْجُو الشِّفَاء",
+    "translit": "danifun mina l-ḥubbi lā yarjū sh-shifāʾ",
+    "fr": "Stricken by love with no hope of healing",
+    "source": "Topos of Arab elegiac poetry"
+   },
+   "meditation": "What amorous dependency do you accept — no longer seeking to heal?",
+   "ouverture": "The Sufis distinguish the <em>dependencies that enslave</em> (to the creature) and the <em>dependencies that liberate</em> (to the Creator). Human <em>danaf</em> is generally the first; mystical <em>danaf</em>, the second. Yet one must have experienced the first in order to recognise the second."
+  },
+  {
+   "id": "chajw",
+   "ar": "الشَّجْو",
+   "translit": "ash-shajw",
+   "definition": "Difficult love, alternation of tears and sadness",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "separation"
+   ],
+   "racine": "ش ج و",
+   "famille": [
+    "shajin",
+    "shajiya"
+   ],
+   "description": "<em>Shajw</em> names a <em>difficult love</em> in which <em>tears</em> (<em>bukāʾ</em>) and <em>sadness</em> (<em>ḥuzn</em>) alternate. Such a state is characterised by a <em>tightened throat</em> and a <em>welling of tears</em>. A sad lover is called <em>shajīn</em>; the woman in love who does not have what she desires is said to be <em>shajiyatun</em>. In Persian, one says of a <em>tightened heart</em> that it is <em>del-tang</em> — literally, <em>the narrow heart</em>.\n\nThe <em>shajw</em> is cousin to <em>ḥuzn</em> and to <em>lahf</em>, with this nuance: it insists on the <em>oscillation</em>, on the fact that the pain comes and goes in waves — not a flat sea, but a sea agitated from which one never knows what the next wave will bring. This instability is precisely what makes the <em>difficulty</em> of this love: one cannot settle into it, one must traverse it at each new instant.",
+   "temoin": {
+    "ar": "شَجَانِي الحُبُّ شَجْوًا لَا يَنْقَطِع",
+    "translit": "shajānī l-ḥubbu shajwan lā yanqaṭiʿ",
+    "fr": "Love has tightened my heart with a pain that does not cease",
+    "source": "Anonymous verse of Arab elegy"
+   },
+   "meditation": "What oscillation do you bear, without being able to rest on either side?",
+   "ouverture": "The Sufis name <em>ḥāl</em> the passing states of the soul, and <em>maqām</em> the stable stations. The <em>shajw</em> is a <em>ḥāl</em>: it comes, it goes. All wisdom consists in not confusing it with a station — in not dwelling where one is only passing through."
+  },
+  {
+   "id": "dhouboul",
+   "ar": "الذُّبُول",
+   "translit": "adh-dhubūl",
+   "definition": "Consumption, amorous decay",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "folie"
+   ],
+   "racine": "ذ ب ل",
+   "famille": [
+    "dhabala",
+    "dhabil"
+   ],
+   "description": "<em>Dhubūl</em> names <em>consumption</em>, the physical <em>decay</em> of the lover who no longer eats, no longer sleeps, who melts away little by little. Ibn ʿArabī, in his <em>Treatise on Divine Love</em>, includes <em>dhubūl</em> in the list of amorous states: <em>“the ardent desire of love (shawq), amorous domination (gharām), distraught love (hiyām), the pain of love (kalāf), tears (bakāʾ), sadness (ḥuzn), the wound of love (kabd), consumption (dhubūl), languor (inkisār) — and other similar states.”</em>\n\nThe image is that of the flower that withers on its stem — that does not die violently, but that <em>comes undone slowly</em>, losing its colour, its firmness, its beauty. <em>Dhabala</em> is precisely the verb that says this progressive withering. The <em>dhābil</em> lover is not dead: he is in the process of effacing himself, like a drawing one has not re-fixed.",
+   "temoin": {
+    "ar": "ذَبَلَ الْجِسْمُ كَمَا يَذْبُلُ الزَّهْر",
+    "translit": "dhabala l-jismu kamā yadhbulu z-zahr",
+    "fr": "The body has withered as the flower withers",
+    "source": "Verse of the Arab nasīb"
+   },
+   "meditation": "What, within you, is in the process of withering — and that you have not yet decided to water?",
+   "ouverture": "The <em>dhubūl</em> is, for the Sufis, one of the signs that human love has reached its limit: what no longer nourishes you is precisely what reveals to you your true hunger. One cannot indefinitely nourish a flower with what dries it out. To recognise the <em>dhubūl</em> is the first act of the return to the Source."
+  },
+  {
+   "id": "amid",
+   "ar": "الْعَمِيد",
+   "translit": "al-ʿamīd",
+   "definition": "The one whom love has made so weak he can no longer rise",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "folie"
+   ],
+   "racine": "ع م د",
+   "famille": [
+    "ʿamada",
+    "mu'mad"
+   ],
+   "description": "<em>ʿAmīd</em> is <em>weakened by love</em>. The word applies to someone who is <em>too sick</em> — <em>dāʾ</em>, <em>maraḍ</em> — to be able to <em>rise by himself</em>. It is the image of the column that leans, of the pillar that no longer stands: <em>ʿamūd</em>, in the root, is precisely the <em>column</em>.\n\n<em>Ibn al-Fāriḍ</em> (1181-1235), the great mystical poet of Cairo, is said to have stated: <em>“Love — its rest is a fatigue, its beginning a sickness, and its end death. But for me, death by love is a life.”</em> The whole secret of the <em>ʿamīd</em> is in this last sentence: <em>death by love is a life</em>. The one who can no longer rise by himself is precisely the one who discovers that he had no need to hold himself up alone.",
+   "temoin": {
+    "ar": "الْحُبُّ ... وَفَنَاهُ بِحُبِّكَ بَقَاء",
+    "translit": "al-ḥubbu ... wa-fanāhu bi-ḥubbika baqāʾ",
+    "fr": "Love — its death through Your love is eternity",
+    "source": "Ibn al-Fāriḍ (1181-1235)"
+   },
+   "meditation": "What weakness within you accepts to no longer rise alone — and has discovered, in this abandonment, something other than a defeat?",
+   "ouverture": "The Sufi way knows this station: the mystical <em>ʿamīd</em> is the one who has renounced holding himself up by himself, and who discovers that the Presence holds him — otherwise, more durably than his own strength did. What resembles a fall is, at times, the beginning of a flight."
+  },
+  {
+   "id": "inkisar",
+   "ar": "الِانْكِسَار",
+   "translit": "al-inkisār",
+   "definition": "Languor, the breaking of the amorous heart",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "separation"
+   ],
+   "racine": "ك س ر",
+   "famille": [
+    "kasara",
+    "maksur"
+   ],
+   "description": "<em>Inkisār</em> applies to the <em>languor</em> that accompanies amorous feeling — to its <em>breaking</em>, to its <em>shattering</em>. The root <em>k-s-r</em> is very precise: <em>kasara</em> is <em>to break</em>. <em>Inkisār</em>, in the passive voice: <em>to be broken</em>. The lover's heart is <em>maksūr</em>, broken — not in the sense that it would have ceased to function, but in the sense that what held it in one single piece has come undone.\n\nIbn ʿArabī includes <em>inkisār</em> in his canonical list of amorous states, alongside <em>dhubūl</em> and <em>kabd</em> (the wound of the liver, the organ that is the seat of the emotions in ancient Arabic). But the Sufi way does not depreciate the broken heart: <em>“a broken heart,” says a Sufi adage, “is an open heart.”</em> It is through its breaks that the light enters.",
+   "temoin": {
+    "ar": "قَلْبٌ مُنْكَسِرٌ خَيْرٌ مِنْ قَلْبٍ مَغْرُور",
+    "translit": "qalbun munkasirun khayrun min qalbin maghrūr",
+    "fr": "A broken heart is worth more than a proud heart",
+    "source": "Classical Sufi adage"
+   },
+   "meditation": "Through what break within you does the light now enter?",
+   "ouverture": "Rūmī said it in a verse become universal: <em>“The wound is the place through which the light enters.”</em> The Sufis do not seek to avoid <em>inkisār</em> — they <em>welcome</em> it, because they know that no Presence enters an intact heart. The whole heart has not yet loved."
+  },
+  {
+   "id": "yatm",
+   "ar": "الْيَتْم",
+   "translit": "al-yatm",
+   "definition": "Love-abandonment, to become an orphan",
+   "station": "perte",
+   "themes": [
+    "separation",
+    "folie"
+   ],
+   "racine": "ي ت م",
+   "famille": [
+    "yatim",
+    "tatayoum"
+   ],
+   "description": "<em>Al-yatm</em> signifies literally <em>the fact of being abandoned, of becoming an orphan</em>. Applied to love, it evokes the <em>violent separation</em>, the <em>rending</em>, the <em>obsession</em> with <em>the absent other</em> who envelops, stuns and enthralls without restraint.\n\nThe kinship with <em>tatayyum</em> — love-adoration — is no etymological accident: it is the same root. The abandoned lover <em>becomes</em> an orphan of the beloved; and it is precisely this condition of orphan that pushes him to <em>adore</em>, that is to say to depend absolutely on what he has lost. The word says this continuity: separation creates adoration; adoration is the mode of presence of the absent beloved. When someone dies within us, one learns, by counter-blow, what they were for us.",
+   "temoin": {
+    "ar": "أَلَمْ يَجِدْكَ يَتِيمًا فَآوَى",
+    "translit": "alam yajidka yatīman fa-āwā",
+    "fr": "Did He not find you an orphan, and shelter you?",
+    "source": "Quran, XCIII, 6 (to the Prophet)"
+   },
+   "meditation": "Of whom have you become an orphan — and what did you adore, from that point on, in their place?",
+   "ouverture": "The Quranic verse addressed to the Prophet reveals a deep dialectic: <em>to become an orphan is, at times, the invitation to be sheltered elsewhere</em>. Every grave human loss hollows within us a space that only the Real can inhabit. The <em>yatm</em> is not a terminus — it is a threshold."
+  },
+  {
+   "id": "chawq",
+   "ar": "الشَّوْق",
+   "translit": "ash-shawq",
+   "definition": "Intense desire, the transport toward the beloved",
+   "station": "retrouvailles",
+   "themes": [
+    "eau",
+    "ivresse"
+   ],
+   "racine": "ش و ق",
+   "famille": [
+    "mushtaq",
+    "tashawwaqa",
+    "ishtiyaq"
+   ],
+   "description": "<em>Shawq</em> names the <em>amorous transport</em>, whether by thought or by heart (<em>qalb</em>) — the <em>“love of covetousness,”</em> as Massignon translated it. <em>Lahīb ash-shawq</em> designates the <em>devouring passion</em> and the <em>nostalgia for the absent love</em>. <em>Mushtāq</em> — literally <em>the desiring one</em> — designates the person who feels an <em>impulse toward the meeting</em>.\n\nIn mysticism, <em>shawq</em> is one of the key words: it is the active desire for the divine meeting, the surge that pushes the soul upward, the movement by which the lover can no longer bear the distance. A letter attributed to Junayd says: <em>“The shawq is the brazier that God lights in the hearts of His friends so that they may return to Him.”</em>",
+   "temoin": {
+    "ar": "اِشْتَقْتُ إِلَيْكَ شَوْقًا لَا تَطْفِئُهُ المِيَاه",
+    "translit": "ishtaqtu ilayka shawqan lā tuṭfiʾuhu l-miyāh",
+    "fr": "I have had for You a shawq that no water extinguishes",
+    "source": "Anonymous mystical tradition"
+   },
+   "meditation": "What desire, within you, is extinguished by no water?",
+   "ouverture": "Ibn ʿArabī distinguishes the <em>shawq</em> (which can be extinguished in the meeting) and the <em>ishtiyāq</em> (which remains even in the meeting). The most advanced souls of the path know a <em>shawq</em> that does not subside: the more they find, the more they desire. To love God, at this level, is to have a desire <em>perpetually renewed</em>."
+  },
+  {
+   "id": "ichtiyaq",
+   "ar": "الِاشْتِيَاق",
+   "translit": "al-ishtiyāq",
+   "definition": "The nostalgia for the distant love, the desire that remains",
+   "station": "retrouvailles",
+   "themes": [
+    "separation",
+    "ivresse"
+   ],
+   "racine": "ش و ق",
+   "famille": [
+    "shawq",
+    "mushtaq",
+    "tashawwaqa"
+   ],
+   "description": "According to certain grammarians, the <em>ishtiyāq</em> is more <em>dense</em> than the <em>shawq</em>, but the traditional school thinks the contrary. It is also said that the <em>ishtiyāq</em> concerns the <em>absent</em> beloved, whereas the <em>shawq</em> addresses itself as much to the absent as to the present person. <em>Tashāwaqa</em>: <em>to desire someone strongly, to think of him, to await him</em>.\n\nIn Sufi lexicography, this word designates precisely the <em>nostalgia for a distant, exiled, inaccessible love</em>. It belongs to the rare family of feelings in which the lack <em>is part of the enjoyment</em>: one loves, in part, because the beloved is not there. This ambiguity is central in mysticism: the apparent absence of God is not a lack to be filled — it is a mode of His presence.",
+   "temoin": {
+    "ar": "اِشْتِيَاقِي إِلَيْكَ هُوَ وُجُودِي",
+    "translit": "ishtiyāqī ilayka huwa wujūdī",
+    "fr": "My ishtiyāq toward You is my very existence",
+    "source": "Anonymous mystical tradition"
+   },
+   "meditation": "What lack, within you, does not ask to be filled — but to be inhabited?",
+   "ouverture": "For the Sufis, the <em>ishtiyāq</em> is, paradoxically, the <em>proof</em> of the meeting, not its contrary. One feels a lack only of what one has known. The more the soul has tasted the Presence, the more its absence hollows. The saint, at a certain level, lives in a perpetual <em>ishtiyāq</em> — not as a suffering but as the normal breathing of his love."
+  },
+  {
+   "id": "law-a",
+   "ar": "اللَّوْعَة",
+   "translit": "al-lawʿa",
+   "definition": "The consumption of love, the fever of the torn heart",
+   "station": "perte",
+   "themes": [
+    "feu",
+    "corps"
+   ],
+   "racine": "ل و ع",
+   "famille": [
+    "wala'",
+    "wala'a",
+    "mawlu'"
+   ],
+   "description": "<em>Lawʿa</em> is the <em>consumption of love</em>, the <em>fever of a heart torn by passion</em>. One also says <em>al-walāʾ</em> and <em>al-wulūʾ</em> — <em>amorous enthusiasm</em>. The impassioned one is called <em>mawlūʾ</em> (in the feminine: <em>mawlūʾa</em>).\n\nA verse of the poet ʿUmar (seventh century) says it with a striking precision: he sings of a beloved whose adorned beauty, blended perfume and gazelle-like neck have ravished his soul utterly. The <em>lawʿa</em> is the fever lit by this precise beauty, this particular detail — the gazelle's neck that consumes the poet's heart.",
+   "temoin": {
+    "ar": "بِخَدٍّ مُتَرَّفٍ بِالعِطْرِ مَخْلُوط",
+    "translit": "bi-khaddin mutarrafin bi-l-ʿiṭri makhlūṭ",
+    "fr": "By a face adorned with a blended perfume…\nshe has ravished my soul",
+    "source": "ʿUmar, Umayyad poet, 7th c."
+   },
+   "meditation": "What detail consumed you — a perfume, a neck, a light upon the skin?",
+   "ouverture": "The Sufis hold that every detail of beauty is a <em>window</em> upon the Real. When the poet <em>burns</em> for the neck of a gazelle, it is not the neck alone that burns him — it is what that neck lets pass through. To love thus is to learn to <em>traverse</em> what one loves in order to reach what loves through us."
+  },
+  {
+   "id": "qalb",
+   "ar": "الْقَلْب",
+   "translit": "al-qalb",
+   "definition": "The heart — metaphor and organ of love",
+   "station": "divin",
+   "themes": [
+    "lien",
+    "douceur"
+   ],
+   "racine": "ق ل ب",
+   "famille": [
+    "qaliba",
+    "taqallub",
+    "muqallib"
+   ],
+   "description": "<em>Qalb</em> — <em>My Heart</em> — is used as a metaphor to designate love. <em>Yā qalbī</em> — <em>O my heart!</em> — whose seat is, in Arab culture, situated in the heart itself. The word is above all in use in the sentimental song, with at times a shifted equivalence toward <em>fuʾād</em> (liver) and <em>kabidah, kabdatī</em> — the latter reserved rather for maternal love.\n\nMoreover, one also says <em>yā ʿaynī</em> — <em>“O the pupil of my eyes.”</em> Al-Jāḥiẓ (780-869) signals an Arab expression: <em>“The eye of love — hawā — is not sincere.”</em> The expression <em>muqlat ʿaynī</em>, the <em>“pupil of my eyes,”</em> recurs in numerous literary texts. The heart, the eye, the liver: three metaphorical organs by which the Arabic language locates precisely where, in the body, one <em>loves</em>.",
+   "temoin": {
+    "ar": "إِنَّ فِي ذَٰلِكَ لَذِكْرَىٰ لِمَنْ كَانَ لَهُ قَلْب",
+    "translit": "inna fī dhālika la-dhikrā li-man kāna lahu qalb",
+    "fr": "Therein is a reminder for whoever possesses a heart",
+    "source": "Quran, L, 37"
+   },
+   "meditation": "Do you love with your heart — or with what you take to be your heart?",
+   "ouverture": "For the Sufis, the <em>qalb</em> is not the physical organ: it is the <em>subtle centre</em> of the being, the place where the human meets the divine. The root <em>q-l-b</em> signifies <em>turning over</em> — the heart is precisely <em>what turns over</em>, what changes, what can be turned toward or away. <em>Muqallib al-qulūb</em> — <em>the One who turns the hearts over</em> — is one of the names of God in the tradition."
+  },
+  {
+   "id": "khilaba",
+   "ar": "الْخِلَابَة",
+   "translit": "al-khilāba",
+   "definition": "Deceitful love, mendacious coquetry",
+   "station": "perte",
+   "themes": [
+    "eclat",
+    "separation"
+   ],
+   "racine": "خ ل ب",
+   "famille": [
+    "khallab",
+    "takhallub"
+   ],
+   "description": "<em>Khilāba</em> names <em>deceitful love</em>. The word is so named because it is situated <em>between the heart and the abdominal cavity</em>: the heart acquiesces and says <em>yes</em>, but, deceitful, the dark abdominal cavity refuses and says <em>no</em>. It is the love that speaks in two opposed voices within the same body.\n\nThe <em>khullāb</em> is the name given to the <em>cloud</em> that promises a few drops of rain, but that suddenly thinks better of it and disappears into the haze. An admirable image of false love: it announces, it makes one hope, and it gives nothing. <em>Takhallub</em> is a word of the ancient <em>nasīb</em> that designates the attitude of <em>coquetry</em>, of <em>mocking ostentation</em> and of <em>false promise</em> in the woman. Not to be confused with <em>khabl</em>, which is dementia and not deception.",
+   "temoin": {
+    "ar": "أَمَّا الْخِلَابَةُ فَهِيَ سَحَابَةٌ بِغَيْرِ مَطَر",
+    "translit": "ammā l-khilābatu fa-hiya saḥābatun bi-ghayri maṭar",
+    "fr": "The khilāba is a cloud without rain",
+    "source": "Adage of the Arab nasīb"
+   },
+   "meditation": "What rainless clouds do you still await — when you know they will give nothing?",
+   "ouverture": "The Sufis distinguish the promises of the <em>nafs</em> (the ordinary soul, which lies) and the promises of the <em>rūḥ</em> (the spirit, which does not lie). The <em>khilāba</em> is typical of the <em>nafs</em>: it makes glimmer what it does not have. To learn to recognise the false rains is one of the first acts of spiritual discernment."
+  },
+  {
+   "id": "balabil",
+   "ar": "الْبَلَابِيل",
+   "translit": "al-balābīl",
+   "definition": "The thoughts of love, the obsessions, the reveries",
+   "station": "perte",
+   "themes": [
+    "folie",
+    "separation"
+   ],
+   "racine": "ب ل ب ل",
+   "famille": [
+    "balbala",
+    "bulbul"
+   ],
+   "description": "<em>Balābīl</em> — in the singular <em>balbala</em> — names <em>every thought linked to love</em>, its <em>reminiscences</em>, its <em>obsessions</em> and its <em>phantasmagorias</em>. It is the cloud of thoughts that whirl in the lover's heart and that never leave him — not as an ordered procession, but as an agitated swarm.\n\nThe kinship with <em>bulbul</em> — the <em>nightingale</em>, the emblematic bird of Persian and Arabic poetry — is doubtless no etymological accident. As the nightingale sings distractedly to the rose that does not answer it, the <em>balābīl</em> thoughts turn around the absent beloved, without being able to fall silent. The word itself evokes oscillation: it is a word that <em>stammers</em>, that repeats itself, that does not know how to be a single one.",
+   "temoin": {
+    "ar": "بَلَابِلُ الْحُبِّ لَا تَهْدَأ",
+    "translit": "balābilu l-ḥubbi lā tahdaʾ",
+    "fr": "The thoughts of love do not subside",
+    "source": "Anonymous verse of classical poetry"
+   },
+   "meditation": "What swarm of thoughts keeps you awake — and what, conversely, does the inability to chase them away teach you?",
+   "ouverture": "The practice of <em>dhikr</em> is not a combat against the <em>balābīl</em>: it is their <em>reorientation</em>. Rather than chasing away the thoughts (impossible), the Sufi <em>aligns</em> them upon the divine Name. All the thoughts then become, without ceasing to be numerous, a single thought multiplied."
+  },
+  {
+   "id": "sadamou",
+   "ar": "السَّدَم",
+   "translit": "as-sadamū",
+   "definition": "Love sanctioned by regret",
+   "station": "perte",
+   "themes": [
+    "separation",
+    "corps"
+   ],
+   "racine": "س د م",
+   "famille": [
+    "nadam",
+    "nadim",
+    "sadim"
+   ],
+   "description": "<em>As-sadam</em> names a <em>love sanctioned by regret</em> (<em>nadām</em>) and by sorrow (<em>ḥuzn</em>). The term is built on a triliteral base: <em>sā-di-mūn</em>, like <em>nā-di-mūn</em> (those who regret). The formal kinship says the kinship of meaning: <em>al-sadam</em> is love lived under the sign of regret, of which each memory is tainted by the consciousness of having missed something.\n\nIt is the love that gazes upon itself in the past, that replays the scenes to seek there the instant when everything tipped over. This <em>replaying</em> is not innocent: it gnaws. <em>Sadim</em> is therefore said of the one who is no longer wholly in the present, because a part of himself turns endlessly around a point already passed.",
+   "temoin": {
+    "ar": "نَدَامَةٌ لَا تُحْيِي مَا قَدْ مَضَى",
+    "translit": "nadāmatun lā tuḥyī mā qad maḍā",
+    "fr": "A regret does not resurrect what is past",
+    "source": "Classical Arab wisdom"
+   },
+   "meditation": "What do you still replay — when you know that no return backward is possible?",
+   "ouverture": "Sufi <em>tawba</em> — the conversion through regret — is the antidote to <em>sadam</em>. Instead of turning endlessly around the past, one uses it as a <em>pivot</em> to turn toward the Presence. True regret does not resurrect the past: it serves the present."
+  },
+  {
+   "id": "ghamarat",
+   "ar": "الْغَمَرَات",
+   "translit": "al-ghamarāt",
+   "definition": "Love as abyss, drowning, annihilation",
+   "station": "brulure",
+   "themes": [
+    "eau",
+    "ivresse"
+   ],
+   "racine": "غ م ر",
+   "famille": [
+    "ghamara",
+    "ghamrah"
+   ],
+   "description": "<em>Ghamarāt</em> is the <em>intensive plural</em> of <em>ghamrah</em>, and designates <em>love seen as an abyss</em>, a <em>drowning</em>, an <em>annihilation</em> (<em>maḥw</em>, <em>fanāʾ</em>). The Quran employs the word with a singular force: <em>“Leave them, for a time, in their drowning — fī ghamratihim — until a certain moment”</em> (XXIII, 54).\n\nThe word says that love can be a water so deep that one no longer rises from it. But unlike ordinary drowning — fatal — the amorous <em>ghamrah</em> is, in mysticism, the threshold of <em>another</em> mode of life. <em>Ghamara</em>, in Arabic, also signifies <em>to cover entirely</em> — and it is from this total covering that a new birth can be born. The lover who has let himself be covered is no longer the one who was struggling at the surface.",
+   "temoin": {
+    "ar": "فَذَرْهُمْ فِي غَمْرَتِهِمْ حَتَّىٰ حِين",
+    "translit": "fa-dharhum fī ghamratihim ḥattā ḥīn",
+    "fr": "Leave them in their drowning until a certain time",
+    "source": "Quran, XXIII, 54"
+   },
+   "meditation": "In what water are you letting yourself be covered — and what do you await, beneath the surface?",
+   "ouverture": "The Sufis made of the <em>ghamrah</em> the very image of <em>fanāʾ</em>: one does not annihilate oneself through effort, one <em>lets oneself be covered</em>. The spiritual gesture is not the relentless swim — it is the <em>abandonment to the depth</em>. And it is in this abandonment, paradoxically, that one emerges at a level one would never have reached by struggling."
+  },
+  {
+   "id": "rassis",
+   "ar": "الرَّسِيس",
+   "translit": "ar-rassīs",
+   "definition": "Eternal love, durable love",
+   "station": "divin",
+   "themes": [
+    "lien",
+    "douceur"
+   ],
+   "racine": "ر س س",
+   "famille": [
+    "rasasa",
+    "rassasa"
+   ],
+   "description": "<em>Rassīs</em> names <em>eternal love, durable love</em>. Certain poets established a comparison they nevertheless knew to be inexact between the <em>strength</em> of this love, solid and stable, and the <em>fever</em> with its devastating effect: the one is durable, the other is momentary. The <em>rassīs</em> is precisely what <em>remains</em> when all the fevers have passed.\n\nThe root <em>r-s-s</em> is interesting: <em>rassa</em> signifies <em>to dig, to bury, to plant deeply</em>. <em>Ar-rassīs</em> is what is <em>rooted</em> — what is not found at the surface, what resists the seasons. It is the love of long fidelities, of companionships that last, of the great maḥabba that have traversed the ordeals without breaking.\n\nIn mysticism, it is the name of the love of God rooted in the soul — the one that no longer depends on passing states, that remains even when spiritual dryness strikes.",
+   "temoin": {
+    "ar": "حُبٌّ رَسِيسٌ لَا يَتَغَيَّر",
+    "translit": "ḥubbun rassīsun lā yataghayyar",
+    "fr": "A rooted love that does not change",
+    "source": "Adage of Arab amorous prose"
+   },
+   "meditation": "What love, within you, has become rooted — to the point that no season can any longer uproot it?",
+   "ouverture": "For the Sufis, the <em>rassīs</em> is the sign that love has reached the station of stable <em>maḥabba</em>. It is no longer an emotion that comes and goes — it is a trait of character, a quality of being, what the ancients called a <em>virtue</em>. To love thus is to <em>be</em> loving."
+  },
+  {
+   "id": "kalaf",
+   "ar": "الْكَلَف",
+   "translit": "al-kalaf",
+   "definition": "Intense and demanding love",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "feu"
+   ],
+   "racine": "ك ل ف",
+   "famille": [
+    "kalifa",
+    "kilfan"
+   ],
+   "description": "<em>Kalaf</em> is an <em>intense and demanding love</em>. <em>Al-kalif</em> is the one who is <em>smitten with love</em> — <em>kalifa, kilfān</em>. The root <em>k-l-f</em> has a double sense: on one side, the love that <em>imposes itself</em> (<em>kalifa</em> = to be taken by love); on the other, <em>obligation</em>, <em>task</em> (<em>taklīf</em> = religious obligation).\n\nThis double sense is rich: to love thus is to impose upon oneself a burden one had not chosen. The <em>kalif</em> lover did not will this love — he <em>received</em> it as a charge, and he must now bear it. It is love as <em>duty</em>, but a duty that comes from within, that has not been decreed by an external law. Ibn ʿArabī classes the <em>kalaf</em> among the true states of love, alongside <em>shawq</em>, <em>gharām</em>, <em>hiyām</em>.",
+   "temoin": {
+    "ar": "كَلِفْتُ بِهِ كَلَفًا لَا يُطَاق",
+    "translit": "kaliftu bihi kalafan lā yuṭāq",
+    "fr": "I became smitten with him with an unbearable love",
+    "source": "Anonymous verse of the nasīb"
+   },
+   "meditation": "What love has been imposed upon you — not by a decision but as a charge to bear?",
+   "ouverture": "The Sufis read the <em>kalaf</em> through the notion of <em>taklīf</em>: religious <em>obligation</em>. To love God is, in the highest perspective, at once the grace received (gratuitous gift) and the <em>taklīf</em> assumed (consented charge). One does not go without the other: grace is tasted only in proportion as one accepts the charge."
+  },
+  {
+   "id": "hayajan",
+   "ar": "هَيَجَان الْحُبّ",
+   "translit": "hayajān al-ḥubb",
+   "definition": "Love-passion, the great river",
+   "station": "brulure",
+   "themes": [
+    "eau",
+    "ivresse"
+   ],
+   "racine": "ه ي ج",
+   "famille": [
+    "haja",
+    "hayyaja"
+   ],
+   "description": "<em>Hayajān al-ḥubb</em> is <em>love-passion</em> — <em>al-ḥubb al-hāʾij</em>. It is like a <em>great river</em> into which all the impetuous torrents pour their power. The river contains them all, without leaving its bed — unless the emotion is at its height. Hence this <em>love-overflowing</em> (<em>hayajān</em>) that nothing resists, neither the distance from the beloved (<em>buʿd, infiṣāl</em>), nor the serene inclination (<em>mayl</em>), nor even the most ardent desires (<em>ashwāq, malaḏḏāt</em>).\n\nThe <em>hayajān</em> is love at its <em>tipping point</em>: one has long held on, then something gives way, and everything pours out. The river overflows. And what has poured out can no longer return to the bed that contained it.",
+   "temoin": {
+    "ar": "هَاجَ بِيَ الْحُبُّ فَأَخَذَ مَجْرَاهُ",
+    "translit": "hāja biya l-ḥubbu fa-akhadha majrāhu",
+    "fr": "Love has unleashed within me its course",
+    "source": "Anonymous verse of the nasīb"
+   },
+   "meditation": "What inner torrent are you waiting to let out — and what do you fear of this overflowing?",
+   "ouverture": "The Sufis know that the way encounters, at certain stations, necessary overflowings. One cannot indefinitely contain what wishes to come out. Wisdom consists in <em>discerning</em> the fruitful overflowings (which reveal) from the destructive ones (which ravage). The criterion, says Junayd, is simple: <em>“if it draws nearer to God, let it go; if it draws away, hold it back.”</em>"
+  },
+  {
+   "id": "mihnah",
+   "ar": "الْمِحْنَة",
+   "translit": "al-miḥna",
+   "definition": "The ordeal of love, the tribulation",
+   "station": "perte",
+   "themes": [
+    "separation",
+    "corps"
+   ],
+   "racine": "م ح ن",
+   "famille": [
+    "mahana",
+    "mumtahin"
+   ],
+   "description": "<em>Miḥna</em> signifies <em>ordeal</em>. The word is said in general of all that <em>obsesses and saddens</em>, and concerns particularly amorous feeling, which is often an <em>additional torment</em> for the human being. The root <em>m-ḥ-n</em> has a judicial reach: it is also the word for <em>interrogation</em>, <em>examination</em>, <em>putting to the test</em>. Love as <em>trial</em>, the beloved as <em>judge</em>.\n\nIn the history of Islam, the <em>Miḥna</em> with a capital letter designates the great theological inquisition of the ninth century, in which the Abbasid caliph compelled the scholars to recognise certain doctrines. Several refused, even under torture. The kinship with the amorous ordeal is less strange than it appears: to love truly is also to be <em>interrogated</em> to the very depths, and to have to answer for it with one's life.",
+   "temoin": {
+    "ar": "إِنَّ الْمُحِبَّ مُمْتَحَنٌ بِحُبِّه",
+    "translit": "inna l-muḥibba mumtaḥanun bi-ḥubbihi",
+    "fr": "The lover is put to the test by his very love",
+    "source": "Classical Sufi adage"
+   },
+   "meditation": "What amorous ordeal are you traversing, that is also an interrogation about who you are?",
+   "ouverture": "For the Sufis, the ordeal of love is an <em>obligatory passage</em> of the way. Rābiʿa said: <em>“Whom Allah loves, He tries.”</em> The logic is rigorous: one does not know what one loves until one has been tried upon that love. The <em>miḥna</em> is not a punishment — it is a <em>revealer</em>."
+  },
+  {
+   "id": "chajan",
+   "ar": "الشَّجَن",
+   "translit": "ash-shajan",
+   "definition": "The object of love, in its ambivalence",
+   "station": "perte",
+   "themes": [
+    "separation",
+    "douceur"
+   ],
+   "racine": "ش ج ن",
+   "famille": [
+    "shajwa",
+    "shajiya",
+    "shujun"
+   ],
+   "description": "<em>Shajan</em> names the <em>object of love in itself</em>, with its <em>happy and unhappy ambivalence</em>. It is the beloved considered not as a person, but as the <em>source of the feeling</em> — what, in him, makes at once the joy and the pain of the one who loves him. Not to be confused with <em>shajw</em> (the difficult love alternating tears and sadness), although their neuralgic point remains identical.\n\nThe plural, <em>shujūn</em>, designates the <em>ramifications</em> of love — the numerous thoughts, the returns of the heart, the associations that make a single beloved become, in the lover's mind, a whole forest of memories, desires and griefs. <em>Al-ḥadīth dhū shujūn</em> is an adage: <em>“conversation has its ramifications”</em> — one begins by speaking of one thing, one ends by speaking of another, one no longer knows how one arrived there.",
+   "temoin": {
+    "ar": "الْحَدِيثُ ذُو شُجُون",
+    "translit": "al-ḥadīthu dhū shujūn",
+    "fr": "Speech has its ramifications",
+    "source": "Classical Arab adage"
+   },
+   "meditation": "What beloved has, within you, become a <em>forest</em> — where every path leads back to him?",
+   "ouverture": "For Ibn ʿArabī, every true beloved has this quality of <em>shajan</em>: he is no longer a face, he has become a <em>matrix</em> of associations. When one has loved deeply, the slightest street, the slightest perfume, the slightest word leads back to the beloved. The whole world becomes his echo. It is, at a higher level, what the mystic lives with God: <em>everything</em> recalls Him."
+  },
+  {
+   "id": "ghalilah",
+   "ar": "الْغَلِيلَة",
+   "translit": "al-ghalīla",
+   "definition": "Intense thirst, love-hatred",
+   "station": "brulure",
+   "themes": [
+    "eau",
+    "feu"
+   ],
+   "racine": "غ ل ل",
+   "famille": [
+    "ighlal",
+    "ghulla"
+   ],
+   "description": "<em>Ghalīla</em> derives from <em>ighlāl</em> and <em>ghulla</em>, which signify <em>intense thirst, to be parched with</em>. One of the acceptations of the term is used to qualify the one who undergoes a powerful <em>desire</em> or an <em>inextinguishable hatred</em>. Hatred and desire are very near to one another, says Arab wisdom, when lovers cross a critical threshold in their relation.\n\nThis kinship is not a paradox: it is a <em>law</em> of passion. The most opposed feelings — desire and hatred, attraction and repulsion, devotion and resentment — share the same <em>intensity</em>. The opposite of love is not hatred: it is indifference. As long as there is <em>ghalīla</em>, in one direction or the other, there is a <em>bond</em>. Love-hatred is, paradoxically, still a love.",
+   "temoin": {
+    "ar": "حُبٌّ وَبُغْضٌ عَلَى وَجْهِ التَّقَارُب",
+    "translit": "ḥubbun wa-bughḍun ʿalā wajhi t-taqārub",
+    "fr": "Love and hatred are on the side of the near",
+    "source": "Classical Arab wisdom"
+   },
+   "meditation": "What <em>intensity</em> do you bear — that could tip in one direction or the other, without changing its strength?",
+   "ouverture": "The Sufis hold that the <em>nafs</em> does not distinguish love and hatred — it distinguishes only <em>what concerns me</em> and <em>what is indifferent to me</em>. It is in spiritual work that one learns to transmute hatred into compassion without losing anything of the intensity. <em>“Love your enemies,”</em> says the Gospel: it is not a moral, it is an alchemy."
+  },
+  {
+   "id": "miqa",
+   "ar": "الْمِقَة",
+   "translit": "al-miqa",
+   "definition": "The love of full enjoyment",
+   "station": "retrouvailles",
+   "themes": [
+    "douceur",
+    "lien"
+   ],
+   "racine": "و م ق",
+   "famille": [
+    "wamiqa",
+    "yamiqu"
+   ],
+   "description": "<em>Al-miqa</em> is formed on <em>wāmiqa, yamiqu</em> and designates the <em>love of full enjoyment</em>. Ad-Daylamī (950-1030), the great Sufi theoretician of love, left this precious word: <em>“To a tender heart, a delicate suffering.”</em>\n\nThe word says this love that is at once <em>full</em> (enjoyment is not a detour, it is the very reality of the experience) and <em>tender</em> (it is not a matter of violent ecstasy). It is the love of long happy fidelities, where pain and joy are no longer contradictory: the pain is delicate, the joy is tranquil. Daylamī, who wrote the <em>Treatise of Mystical Love</em>, knew how to class this state among the most precious of the spiritual path — the one in which one has ceased to oppose pleasure and suffering, because one has accepted them both.",
+   "temoin": {
+    "ar": "لِلْقُلُوبِ الرَّقِيقَةِ آلَامٌ رَقِيقَة",
+    "translit": "li-l-qulūbi r-raqīqati ālāmun raqīqa",
+    "fr": "To a tender heart, a delicate suffering",
+    "source": "Ad-Daylamī (950-1030)"
+   },
+   "meditation": "Do you know a love in which pain and joy have the same fineness — without contradiction?",
+   "ouverture": "For Daylamī, the <em>al-miqa</em> is the goal of the amorous path: a quality of presence in which nothing is any longer rough, in which all the savours have become subtle. It is the love of the great spiritual ages — the one that no longer cries out, that no longer bursts forth, but that remains and that radiates."
+  },
+  {
+   "id": "da-moukhamir",
+   "ar": "الدَّاءُ الْمُخَامِر",
+   "translit": "ad-dāʾ al-mukhāmir",
+   "definition": "The intoxicated pain, the love that swells the sails",
+   "station": "brulure",
+   "themes": [
+    "ivresse",
+    "feu"
+   ],
+   "racine": "خ م ر",
+   "famille": [
+    "khamr",
+    "ikhtimar"
+   ],
+   "description": "<em>Ad-dāʾ al-mukhāmir</em> signifies literally <em>“the intoxicated pain.”</em> The expression applies to the love that <em>swells</em> and that <em>fills the sails of passion</em>. The root <em>kh-m-r</em> is that of <em>khamr</em>, wine; <em>mukhāmir</em> evokes <em>fermentation</em>, what <em>rises</em> by itself — like the dough that leavens, like the must that becomes wine.\n\nMajnūn left this verse that the whole tradition has retained:\n\n<em>Passing by the house, the house of Laylā,</em>\n<em>I kiss this wall, that other, and that one there.</em>\n<em>Is it from loving the walls that you lose your reason?</em>\n<em>— Not the walls, my heart: the people of the house.</em>",
+   "temoin": {
+    "ar": "أَمُرُّ عَلَى الدِّيَارِ دِيَارَ لَيْلَى",
+    "translit": "amurru ʿalā d-diyāri diyāra Laylā",
+    "fr": "I pass before the house, the house of Laylā —\nI kiss this wall, that other, and that one there.\nIs it from loving the walls that you lose your reason?\n— Not the walls: the people of the house.",
+    "source": "Majnūn, 7th century"
+   },
+   "meditation": "What pain is fermenting within you, becoming little by little an intoxication?",
+   "ouverture": "The image is central in mysticism: true love <em>ferments</em>. It does not arrive ready-made — it needs time, heat, darkness. Amorous pain is not a stable state: it is a <em>process</em> that transforms sugar into wine, grief into wisdom. Yet one must let time do its work."
+  },
+  {
+   "id": "tabarih",
+   "ar": "التَّبَارِيح",
+   "translit": "at-tabārīh",
+   "definition": "The dry halt of love, the clean rupture",
+   "station": "perte",
+   "themes": [
+    "separation"
+   ],
+   "racine": "ب ر ح",
+   "famille": [
+    "taburih",
+    "tabarij"
+   ],
+   "description": "According to Ibn Qayyim al-Jawziyya (fourteenth century), author of the <em>Garden of Lovers</em> (<em>Rawḍat al-muḥibbīn</em>), <em>tabārīh</em> signifies the <em>dry halt of love</em>. Other authors write <em>tabārīj</em>, with the same signification.\n\nThe root <em>b-r-ḥ</em> evokes the <em>leaving</em>, the <em>abandoning</em>; but also the <em>torment</em>, the <em>pain</em>. The dry halt is therefore not an appeasement — it is a rupture that leaves the lover in suspense, without transition, without preparation. Love has not <em>diminished</em>; it has been <em>cut off</em>. The intensive form (<em>ta-fāʿīl</em>) says the <em>multiplicity</em> of these ruptures: love does not stop once, it re-stops at each attempt at return. And each halt is a death in miniature.",
+   "temoin": {
+    "ar": "بَرَحَ الْحُبُّ فَجْأَةً وَلَمْ يَنْبَسِ",
+    "translit": "baraḥa l-ḥubbu fajʾatan wa-lam yanbas",
+    "fr": "Love departed all at once and said nothing",
+    "source": "Topos of Arab elegy"
+   },
+   "meditation": "What love stopped within you without transition — and what did you do with the silence that followed?",
+   "ouverture": "The Sufis distinguish the <em>endings</em> that destroy and the <em>endings</em> that liberate. Not all ruptures resemble one another. Some are, in spiritual time, acts of grace: they remove what the soul could no longer free itself from. The <em>tabārīh</em> can be so: not a drama, but a deliverance — yet one must have the patience to wait for it to reveal itself as such."
+  },
+  {
+   "id": "araq",
+   "ar": "الْأَرَق",
+   "translit": "al-araq",
+   "definition": "The sickness of love, the insomnia of passion",
+   "station": "perte",
+   "themes": [
+    "corps",
+    "feu"
+   ],
+   "racine": "أ ر ق",
+   "famille": [
+    "tarqiq",
+    "raqiq"
+   ],
+   "description": "<em>Araq</em> names the <em>sickness of love</em> — the <em>state of the one who keeps watch through entire nights thinking of his love</em>. The derived word <em>tarqīq</em> — <em>delicacy, refinement</em> — could correspond, says Massignon, to <em>the love of ephebes</em> and would therefore have a homosexual vocation. Certain poems of <em>Abū Nuwās</em> (762-813), the great bacchic and libertine poet of Baghdad, belong to the genre of <em>tarqīq</em>. Another synonym: <em>raqīq</em>.\n\nThe word is cousin to <em>suhd</em> — the insomnia of love — but with this nuance: the <em>araq</em> insists on the <em>sickness</em>, on the fact that the lover does not sleep <em>because he suffers</em>. The <em>suhd</em> is an active watch (one keeps watch); the <em>araq</em> is a suffered watch (one cannot fall asleep). The one is intentional, the other is involuntary.",
+   "temoin": {
+    "ar": "أَرِقْتُ مِنْ الْحُبِّ فَلَا أَنَامُ",
+    "translit": "ariqtu mina l-ḥubbi fa-lā anāmu",
+    "fr": "Love has given me insomnia: I no longer sleep",
+    "source": "Topos of Arab amorous poetry"
+   },
+   "meditation": "What thought prevents you from sleeping, without your having invited it to keep watch with you?",
+   "ouverture": "The Sufis know that insomnia can be a badly wrapped <em>gift</em>: God at times wakes His friends in the night so that they may meet Him in the silence that sleep was hiding from them. If the watch is suffered, says the way, transform it into a consented watch. Instead of turning in bed thinking of the beloved, rise and invoke the Name."
+  },
+  {
+   "id": "halak",
+   "ar": "الْهَلَاك",
+   "translit": "al-halāk",
+   "definition": "Love-perdition, fatal love",
+   "station": "perte",
+   "themes": [
+    "folie",
+    "feu"
+   ],
+   "racine": "ه ل ك",
+   "famille": [
+    "halaka",
+    "muhlika"
+   ],
+   "description": "<em>Halāk</em> names <em>love-perdition</em>, love as <em>finitude</em>, <em>destruction</em>. It happens that, through his immoderate desire (<em>muhlika</em>, <em>“fatal love”</em>), the lover <em>puts his life in peril</em>, <em>loves until the extinction of his voice</em>, <em>dries up</em> and <em>renders his last breath</em>.\n\nThe Arab tradition long commented on the death of lovers: the <em>Banū ʿUdhrah</em> (the legendary Yemeni tribe) <em>died when they loved</em>, and the tradition often understood this literally. Ibn Ḥazm recounts in the <em>Ring of the Dove</em> several attested cases of lovers dead of grief. For the Arab physicians — al-Rāzī, Ibn Sīnā — this <em>halāk</em> was not a metaphor: it was a <em>cause of mortality</em> in the same way as fever.",
+   "temoin": {
+    "ar": "نَحْنُ قَوْمٌ إِذَا أَحْبَبْنَا مُتْنَا",
+    "translit": "naḥnu qawmun idhā aḥbabnā mutnā",
+    "fr": "We are a people who die when we love",
+    "source": "Adage attributed to the Banū ʿUdhrah, 7th century"
+   },
+   "meditation": "Is there, within you, a love for which you would be ready to <em>die</em> — or only to survive?",
+   "ouverture": "For the Sufis, to die of human love is a stage still <em>interior</em> to the path. The ultimate <em>halāk</em> is to <em>die of love for God</em>, and it is precisely this that Ibn al-Fāriḍ celebrates: <em>“Love — its beginning is a sickness, its rest a fatigue, its end death. But for me, death by love is a life.”</em>"
+  },
+  {
+   "id": "houbb-hajir",
+   "ar": "الْحُبُّ الْهَاجِر",
+   "translit": "al-ḥubb al-hājir",
+   "definition": "The love of separation, love founded upon exile",
+   "station": "divin",
+   "themes": [
+    "separation",
+    "douceur"
+   ],
+   "racine": "ه ج ر",
+   "famille": [
+    "hijr",
+    "hajara",
+    "mahjur"
+   ],
+   "description": "<em>Al-ḥubb al-hājir</em> derives from <em>hijr</em> — <em>distancing, amorous separation, absence</em>. It is a <em>love founded upon the exile</em> of one of the partners, sometimes of both. It is opposed to <em>waṣl</em> and to <em>ḥabl</em>, which evoke union with the beloved or the meeting with the lover.\n\nBut the root <em>h-j-r</em> has a central historical resonance for Islam: it is the same root that yields <em>hijra</em>, the <em>Hegira</em> — the emigration of the Prophet from Mecca to Medina in 622, which founds the Muslim calendar. Every Muslim therefore understands, in <em>hijr</em>, the double dimension: the separation from a beloved place is also, at times, the <em>founding act</em> of a new life. Amorous separation is not only the end of a love — it can be the beginning of something else.",
+   "temoin": {
+    "ar": "وَالَّذِينَ هَاجَرُوا فِي اللَّهِ مِنْ بَعْدِ مَا ظُلِمُوا",
+    "translit": "wa-lladhīna hājarū fī Llāhi min baʿdi mā ẓulimū",
+    "fr": "Those who emigrated for God after having suffered injustice…",
+    "source": "Quran, XVI, 41"
+   },
+   "meditation": "Of what separation have you made — without knowing it — the beginning of something else?",
+   "ouverture": "For the Sufis, every <em>hijra</em> is at once <em>exterior</em> (to leave a place) and <em>interior</em> (to leave a part of oneself). Amorous separation, lived spiritually, is no longer only a loss — it is a <em>passage</em>. <em>“Do not weep for the one who has departed,” says a ḥadīth, “be grateful for what this departure reveals.”</em> The pain of absence is, at a certain level, already the first glimmer of the coming meeting."
+  },
+  {
+   "id": "sabwa",
+   "ar": "الصَّبْوَة",
+   "translit": "aṣ-ṣabwa",
+   "definition": "The strong inclination, the attraction for what refuses itself",
+   "station": "eveil",
+   "themes": [
+    "eclat",
+    "feu"
+   ],
+   "racine": "ص ب و",
+   "famille": [
+    "saba",
+    "sabiya",
+    "asbou"
+   ],
+   "description": "<em>Ṣabwa</em> names a <em>strong inclination for something</em>, and constitutes, in many regards, a synonym of <em>shawq</em>. But in one of its acceptations, this notion describes with precision the lover who is attracted either by a person younger than himself — a <em>ṣabiyya</em>, a young girl — or by a person <em>who refuses herself</em>. In both cases, the word says this attraction for what remains inaccessible, through youth or through evasion.\n\nIn the Quranic sura that bears this name, Joseph the chaste speaks to God: <em>“My Lord! Prison seems preferable to me than the sin to which they incite me. But if You do not turn their ruses away from me, I will yield (asbū) and I will be among the ignorant.”</em> (XII, 33). <em>Asbū</em>, <em>I will incline</em>, is of the root <em>ṣabā</em> — the same as <em>ṣabwa</em>.\n\nIn the eleventh century, in Andalusia, the poets Abū ʿĀmir ibn Maslama and Ibn Khafāja used two expressions become famous: <em>malik aṣ-ṣibā</em>, <em>the king of love</em>, and <em>dāʿī aṣ-ṣibā</em>, <em>the angel who calls to love</em>.",
+   "temoin": {
+    "ar": "وَإِلَّا تَصْرِفْ عَنِّي كَيْدَهُنَّ أَصْبُ إِلَيْهِنَّ",
+    "translit": "wa-illā taṣrif ʿannī kaydahunna aṣbu ilayhinna",
+    "fr": "If You do not turn their ruses away from me, I will incline toward them",
+    "source": "Quran, XII, 33 (Joseph)"
+   },
+   "meditation": "Toward what do you incline, because it refuses itself — and that you take this refusal for a call?",
+   "ouverture": "The Sufis see in the Quranic <em>ṣabwa</em> of Joseph a precious parable: to recognise the inclination before it becomes an act, and to <em>name</em> it — that is already half of the way. What refuses itself to you can be what <em>protects</em> you — yet one must accept not to seize."
+  },
+  {
+   "id": "houbb-ghayour",
+   "ar": "الْحُبُّ الْغَيُور",
+   "translit": "al-ḥubb al-ghayūr",
+   "definition": "Jealous love, the possessiveness of passion",
+   "station": "perte",
+   "themes": [
+    "feu",
+    "folie"
+   ],
+   "racine": "غ ي ر",
+   "famille": [
+    "ghira",
+    "ihtiyaz",
+    "hiyaza"
+   ],
+   "description": "<em>Al-ḥubb al-ghayūr</em> is <em>jealous, possessive love</em>. The ardour of the lover is seen at times in his possessiveness (<em>ḥiyāza</em>, <em>iḥtiyāẓ</em>) — but jealousy (<em>ghīra</em>) cannot be substituted for the freedom of the beloved. This contradiction is at the heart of passion: to love, to tame one's jealousy, and to accept the freedom of the other.\n\nIn Islam and in the classical Arab world, jealousy is a <em>positive</em> feeling, an advanced <em>“station”</em> in asceticism, which only a few Sufis have attained. Among them, <em>Shiblī</em> (861-945), the mystic of Baghdad, but before him, the <em>Prophet himself</em> had declared that he was jealous. The <em>ḥadīth</em> reports these words: <em>“Allah is jealous, and the believer is jealous. The jealousy of Allah is that a believer should do what He has forbidden.”</em>\n\nThe divine <em>ghīra</em> is what makes it so that God does not accept that the soul share His love with another master. To love truly is to <em>want the other wholly</em> — but without possessing him, because one has understood that the freedom of the other is inseparable from his love.",
+   "temoin": {
+    "ar": "إِنَّ اللَّهَ يَغَار",
+    "translit": "inna Llāha yaghār",
+    "fr": "God is jealous",
+    "source": "Prophetic ḥadīth"
+   },
+   "meditation": "How do you bear the freedom of those you love — the freedom that exceeds you, the freedom that could leave you?",
+   "ouverture": "The Sufi <em>ghīra</em> is the attribute of the soul that has understood that the Beloved is <em>the Unique</em> and that no longer bears any veil. Not the jealousy that possesses the creature; the jealousy that wishes that nothing interpose itself between the soul and the Presence. <em>“Be jealous of My love,” says the divine voice to the mystic. “Let no one enter between us, not even yourself.”</em>"
+  },
+  {
+   "id": "la-aj",
+   "ar": "اللَّاعِج",
+   "translit": "al-lāʿij",
+   "definition": "The overcome lover, abandoned by the beloved",
+   "station": "perte",
+   "themes": [
+    "separation",
+    "feu"
+   ],
+   "racine": "ل ع ج",
+   "famille": [
+    "la'j",
+    "la'aja"
+   ],
+   "description": "<em>Al-lāʿij</em> is said of someone who feels very strongly <em>amorous emotion</em> and <em>the contrition that accompanies it</em>, above all in the case of <em>abandonment by the beloved person</em>. The word derives from the same root as <em>al-laʿj</em> (the state of strong contrition, the necessary ill), but it insists on the <em>person</em> of the overcome lover more than on the state itself.\n\nWhere the <em>laʿj</em> names the burning of regret as an experience, the <em>lāʿij</em> names <em>the one who bears it</em> — the one whose whole silhouette says the abandonment, whose every gesture recalls what he has lost. It is the abandoned lover as a <em>figure</em> of Arab passion: Majnūn after the definitive departure of Laylā, Ibn Zaydūn after the rupture with Wallāda, and with them all those whom the tradition counts among the <em>shuhadāʾ al-ḥubb</em>, the <em>martyrs of love</em>.\n\nThe Arabic language thus constructs, by the simple play of derivation, a whole <em>typology</em> of amorous suffering: one has not only a state (<em>laʿj</em>), one has also the one who incarnates it (<em>lāʿij</em>) and the movement that engenders it (<em>laʿaja</em>). Each suffering has its complete name — its verb, its state, its subject.",
+   "temoin": {
+    "ar": "اللَّاعِجُ مِنَ الحُبِّ كَمَنْ يَحْتَرِقُ بِنَارٍ بَطِيئَة",
+    "translit": "al-lāʿiju mina l-ḥubbi ka-man yaḥtariqu bi-nārin baṭīʾa",
+    "fr": "The lāʿij of love is like the one who burns with a slow fire",
+    "source": "Adage of classical elegiac prose"
+   },
+   "meditation": "Of whom are you, at this precise moment, the <em>lāʿij</em> — the overcome one who bears the mark of absence?",
+   "ouverture": "The Sufis made of the figure of the divine <em>lāʿij</em> the archetype of the mystic tried by the apparent absence of God. <em>Yaḥyā ibn Muʿādh al-Rāzī</em> (ninth century) said: <em>“The servant abandoned by God is more loved by God than the one He caresses. For the former knows, and the other believes he knows.”</em> Abandonment is, at a certain level of the way, a <em>disguised visitation</em>."
+  }
+ ]
+}

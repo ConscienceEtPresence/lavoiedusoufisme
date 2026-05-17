@@ -98,11 +98,12 @@ puis on remplace chaque chaîne d'UI codée en dur par `XX_T.cle`.
 | `courants.js` | `?v=3` | courants |
 | `geographie.js` | `?v=3` | geographie |
 | `nasr-eddin.js` | `?v=3` | contes/nasr-eddin/* |
-| `racines.js` | (pas encore bumpé) | racines/index — **voir §6** |
+| `racines.js` | `?v=2` | racines/index (FR + EN) |
+| `noms-divins.js` | `?v=3` | noms-divins/index (FR + EN) |
 
-**JS PAS ENCORE bilingues** : `amour.js`, `noms-divins.js`, `dictionnaire.js`,
-`metaphysique.js`, `rencontrer.js`, `courants.js`(fait), `search.js`, `tirage-global.js`,
-`timeline.js`(fait). `lexique.js` n'a aucune chaîne FR → rien à faire.
+**JS PAS ENCORE bilingues** : `amour.js`, `dictionnaire.js`, `metaphysique.js`,
+`rencontrer.js`, `search.js`, `tirage-global.js`. `lexique.js` n'a aucune chaîne FR
+→ rien à faire.
 
 ### 4.3 Données JSON par langue
 Les JS chargent leur JSON en chemin relatif (ex. `../data/x.json`, `../../data/x.json`).
@@ -173,6 +174,23 @@ Branche `main`, du commit `1c8a795` au commit `ac83e93`.
 - `en/pages/contes/index.html` (hub Contes), + les 4 pages du module :
   `en/pages/contes/nasr-eddin/{index,parcours,conte,hasard}.html`.
 
+### SÉQUENCE 3b — Module Racines (commit 707aab9)
+- `racines.js` bilingue déployé, `?v=2` sur les pages FR et EN.
+- `en/data/racines.json` : 64 racines traduites à la main (gloses Gloton
+  reformulées en prose anglaise originale sans guillemets verbatim).
+- `en/pages/racines/index.html` créée.
+- Outils de build laissés en local dans `site/` (non déployés) :
+  `build_racines_en.py` + `en/racines_translations.json` (source des
+  traductions, à réutiliser pour toute correction du JSON EN).
+
+### SÉQUENCE 3c — Module 99 Noms divins (commit 3ee12ad)
+- `noms-divins.js` bilingue (bloc `ND_T`/`ND_EN`), `?v=3` sur FR et EN.
+- `en/data/noms-divins.json` : 100 Noms traduits à la main (commentaires
+  d'al-Kāfījī, domaine public — traduits normalement).
+- `en/pages/noms-divins/index.html` créée.
+- Outils de build laissés en local : `build_noms_en.py` +
+  `en/noms_translations.json`.
+
 ### Fichiers EN existants (à ce jour)
 ```
 site/en/index.html
@@ -185,10 +203,6 @@ site/en/pages/contes/index.html
 site/en/pages/contes/nasr-eddin/{index,parcours,conte,hasard}.html
 ```
 
-### Modification locale NON déployée
-`site/assets/js/racines.js` a été rendu bilingue (bloc `RC_EN` / `RC`) mais **n'est pas
-copié dans le dépôt ni commité**. Il est rétro-compatible (le FR marche). Voir §6.
-
 ---
 
 ## 6. CE QUI RESTE À FAIRE (par ordre conseillé)
@@ -198,25 +212,9 @@ copié dans le dépôt ni commité**. Il est rétro-compatible (le FR marche). V
 Chaque module = rendre le JS bilingue (si pas fait) + traduire le JSON dans `en/data/` +
 créer la/les page(s) EN. Pattern identique à ce qui a été fait pour Poésie et Contes.
 
-**3b — Module Racines** (`pages/racines/index.html`) — LE PLUS GROS.
-- `assets/js/racines.js` : **déjà rendu bilingue** en local (bloc `RC`). Reste à :
-  bumper sa version `?v=` sur `racines/index.html` (FR et EN), copier, commiter.
-- `data/racines.json` : **5260 lignes, 64 racines** — à traduire dans `en/data/racines.json`.
-  Champs à traduire : `core_fr`, `field`, `glose_gloton`, `meditation`, `core_fr_original`,
-  `forms[].fr`, `quran[].fr`. Champs INCHANGÉS : `id`, `letters`, `root_ar`, `root_tr`,
-  `core_ar`, `forms[].ar/tr/form/type`, `quran[].ar/ref`, `dict_links`, `nom_links`,
-  `gloton_ref`. Méthode conseillée : script Python qui charge le JSON FR et remplace
-  champ par champ via un dict de traductions (préserve la structure exactement).
-- **RÈGLE COPYRIGHT (décidée par Brahms le 2026-05-17)** : le champ `glose_gloton`
-  contient des citations directes de Maurice Gloton (œuvre sous droits). **Ne PAS les
-  traduire verbatim entre guillemets.** Les **reformuler en prose anglaise originale,
-  attribuée à Gloton, sans guillemets** — une synthèse interprétative. Les versets
-  coraniques (domaine public) peuvent eux être traduits normalement.
-- Créer `en/pages/racines/index.html`.
+**3b — Module Racines : FAIT (commit 707aab9).** Voir §5.
 
-**3c — Module 99 Noms divins** (`pages/noms-divins/index.html`, `data/noms-divins.json`,
-`assets/js/noms-divins.js`) — ~99 noms. Rendre `noms-divins.js` bilingue, traduire le JSON,
-créer la page EN.
+**3c — Module 99 Noms divins : FAIT (commit 3ee12ad).** Voir §5.
 
 **3d — Module Dictionnaire** (`pages/dictionnaire/index.html`, `data/dictionnaire.json` —
 ~227 entrées, `assets/js/dictionnaire.js`). Gros fichier. Même méthode.
@@ -264,16 +262,35 @@ créer la page EN.
 
 ---
 
-## 8. POUR REPRENDRE — INSTRUCTION À LA NOUVELLE SESSION
+## 8. ÉTAT AU 2026-05-18 (session autonome de nuit)
 
-> Lis ce rapport + `RAPPORT-PROJET.md`. Le site EN est en ligne jusqu'au module Contes
-> inclus (11 commits). **Reprends à la séquence 3b : le module Racines.**
-> `racines.js` est déjà bilingue en local — il faut traduire `data/racines.json` (64
-> racines) vers `en/data/racines.json` en reformulant les gloses Gloton en prose anglaise
-> originale sans guillemets, créer `en/pages/racines/index.html`, bumper la version de
-> `racines.js`, puis déployer (copier vers le dépôt, commit, push). Puis enchaîne sur les
-> modules 99 Noms, Dictionnaire, Amour, puis les séquences 4, 5, 6.
-> Applique exactement les conventions du §4. Déploie séquence par séquence.
+Séquences déployées depuis le commit 3ee12ad :
+
+- **3d Dictionnaire** — FAIT (commit 78c86a2). `dictionnaire.js` bilingue, 208 entrées
+  traduites, `en/data/dictionnaire.json`, `en/pages/dictionnaire/index.html`.
+- **3e Amour** — FAIT (commit 07afe21). `amour.js` bilingue, 100 mots traduits,
+  4 pages EN (`en/pages/amour/{index,parcours,mot,hasard}.html`).
+- **Séquence 4 Rencontrer + auteurs** — FAIT en grande partie :
+  - `rencontrer.js` bilingue, `en/data/auteurs.json`, `en/pages/rencontrer.html`.
+  - **28 fiches auteurs EN** créées dans `en/pages/auteurs/` : les 16 fiches « ready »
+    traduites intégralement à la main (rabia, bistami, junayd, hallaj, ghazali,
+    suhrawardi, ibn-arabi, ibn-ata-allah, rumi, attar, saadi, yunus-emre, hafez,
+    abdelkader, alawi, nasr) + 10 squelettes « à venir » générés
+    (`gen_auteurs_stubs_en.py`) + guenon et schuon (fiches complètes).
+- **Séquence 6 (partielle)** — FAIT : balises hreflang fr/en/x-default ajoutées aux
+  53 pages FR disposant d'une version EN ; `sitemap.xml` enrichi des 53 URLs EN.
+
+### CE QUI RESTE À FAIRE
+
+- **11 sous-pages d'œuvres auteurs** non traduites (liens 404 depuis guenon/schuon/rumi
+  EN) : `pages/auteurs/guenon/` (5), `pages/auteurs/schuon/` (5), `pages/auteurs/rumi/mathnawi.html`.
+- **Séquence 5** : module `metaphysique/` (index + 11 thèmes, `metaphysique.js` bilingue) ;
+  `cheminer-pages/` (10 pages) ; `confreries/` (5 pages) ; pages racine `index-arabe`,
+  `maitres`, `plan`, `resonances`, `textes-fondamentaux`.
+- `tirage-global.js` et `search.js` à rendre bilingues.
+- Une fois ces pages EN créées : relancer le script hreflang (il ne traite que les pages
+  FR ayant déjà une contrepartie EN) et régénérer le bloc EN de `sitemap.xml`.
+- Audit final des liens cassés (doit renvoyer 0).
 
 ---
 

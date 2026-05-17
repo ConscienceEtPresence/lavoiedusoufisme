@@ -3,6 +3,10 @@
    ============================================================ */
 
 let ORDERS_DATA = null;
+const CO_EN = document.documentElement.lang === 'en';
+const CO_T = CO_EN
+  ? { err: 'Unable to load the orders. Check that the site is served by a local server.', more: 'Read the full entry ✦', close: 'Close', founder: 'Founder', presentation: 'Presentation', practices: 'Distinctive practices', themes: 'Spiritual themes', branches: 'Branches and ramifications', works: 'Major works', keywords: 'Keywords' }
+  : { err: 'Impossible de charger les courants. Vérifie que le site est servi par un serveur local.', more: 'Lire la fiche complète ✦', close: 'Fermer', founder: 'Fondateur', presentation: 'Présentation', practices: 'Pratiques distinctives', themes: 'Thèmes spirituels', branches: 'Branches et ramifications', works: 'Œuvres majeures', keywords: 'Mots-clés' };
 
 async function loadOrders() {
   try {
@@ -14,7 +18,7 @@ async function loadOrders() {
   } catch (err) {
     console.error('Erreur de chargement des ordres', err);
     document.getElementById('orders-grid').innerHTML =
-      '<p class="center muted">Impossible de charger les courants. Vérifie que le site est servi par un serveur local.</p>';
+      `<p class="center muted">${CO_T.err}</p>`;
   }
 }
 
@@ -60,7 +64,7 @@ function renderGrid(region) {
       <div class="order-card__footer">
         ${o.keywords.slice(0, 4).map(k => `<span class="keyword">${k}</span>`).join('')}
       </div>
-      <div class="order-card__more">Lire la fiche complète ✦</div>
+      <div class="order-card__more">${CO_T.more}</div>
     </article>
   `).join('');
 
@@ -84,41 +88,41 @@ function openModal(slug) {
   content.querySelector('.modal__close')?.remove();
 
   content.innerHTML = `
-    <button class="modal__close" data-close aria-label="Fermer">✕</button>
+    <button class="modal__close" data-close aria-label="${CO_T.close}">✕</button>
     <div class="modal__ar">${o.nameAr}</div>
     <h2 class="modal__name">${o.name}</h2>
     <div class="modal__sub">${o.century} · ${o.originRegion}</div>
 
     <div class="modal__section">
-      <h3>Fondateur</h3>
+      <h3>${CO_T.founder}</h3>
       <p><strong style="color: var(--ink); font-weight: 500;">${o.founder}</strong> (${o.founderDates})</p>
     </div>
 
     <div class="modal__section">
-      <h3>Présentation</h3>
+      <h3>${CO_T.presentation}</h3>
       <p>${o.intro}</p>
       <p>${o.body}</p>
     </div>
 
     <div class="modal__section">
-      <h3>Pratiques distinctives</h3>
+      <h3>${CO_T.practices}</h3>
       <ul>${o.practices.map(p => `<li>${p}</li>`).join('')}</ul>
     </div>
 
     <div class="modal__section">
-      <h3>Thèmes spirituels</h3>
+      <h3>${CO_T.themes}</h3>
       <ul>${o.themes.map(t => `<li>${t}</li>`).join('')}</ul>
     </div>
 
     ${o.branches && o.branches.length ? `
     <div class="modal__section">
-      <h3>Branches et ramifications</h3>
+      <h3>${CO_T.branches}</h3>
       <ul>${o.branches.map(b => `<li>${b}</li>`).join('')}</ul>
     </div>` : ''}
 
     ${o.majorWorks && o.majorWorks.length ? `
     <div class="modal__section">
-      <h3>Œuvres majeures</h3>
+      <h3>${CO_T.works}</h3>
       <ul>${o.majorWorks.map(w => `<li><em>${w}</em></li>`).join('')}</ul>
     </div>` : ''}
 
@@ -128,7 +132,7 @@ function openModal(slug) {
     </blockquote>
 
     <div class="modal__section" style="margin-top: var(--space-lg);">
-      <h3>Mots-clés</h3>
+      <h3>${CO_T.keywords}</h3>
       <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
         ${o.keywords.map(k => `<span class="keyword">${k}</span>`).join('')}
       </div>

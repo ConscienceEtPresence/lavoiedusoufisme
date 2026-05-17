@@ -1,0 +1,239 @@
+{
+  "auteur": {
+    "nom": "Nasr Eddin Hodja",
+    "ar": "نَصْرُ الدِّين خوجَه",
+    "epoque": "c. 1208 — 1284",
+    "lieu": "Sivrihisar → Akşehir, Anatolia"
+  },
+  "themes": [
+    { "id": "miroir",     "ar": "المِرْآة",   "label": "The mirror",         "desc": "Hodja facing himself — the heart of the work." },
+    { "id": "femme",      "ar": "الزَّوْجَة", "label": "Woman and the couple", "desc": "Khadija, the quarrels, the hidden tenderness." },
+    { "id": "ane",        "ar": "الحِمَار",   "label": "The donkey",         "desc": "His companion, his alter ego, the body he rides." },
+    { "id": "puissants",  "ar": "السُّلْطَان", "label": "The powerful",       "desc": "Tamerlane, the imam, the qadi — the art of speaking true to the king." },
+    { "id": "argent",     "ar": "المَال",     "label": "Money and the market", "desc": "Greed, lending, trade, the missing coin." },
+    { "id": "justice",    "ar": "العَدْل",    "label": "Justice and the law", "desc": "Hodja the judge, Hodja the judged — the court turned over." },
+    { "id": "foi",        "ar": "الإِيمَان",  "label": "Faith and religion", "desc": "The sermon, the prayer, the absent imam." },
+    { "id": "savoir",     "ar": "العِلْم",    "label": "Knowledge and ignorance", "desc": "The school, the master, the pupil — who learns from whom?" },
+    { "id": "mort",       "ar": "المَوْت",    "label": "Death",              "desc": "The tomb, the widow — and Hodja still laughing." },
+    { "id": "ruse",       "ar": "الحِيلَة",   "label": "Cunning and the thief", "desc": "The art of turning the trap — who catches whom?" },
+    { "id": "quotidien",  "ar": "البَيْت",    "label": "Everyday life",      "desc": "The house, the meal, the neighbour, the cup of tea." },
+    { "id": "enfance",    "ar": "الطِّفْل",   "label": "Childhood",          "desc": "Children as a mirror of adults." }
+  ],
+  "esprits": [
+    { "id": "koan",                "label": "The koan",               "desc": "An insoluble riddle that opens. Hodja does not answer — he sets the ground moving beneath your feet." },
+    { "id": "retournement",        "label": "The reversal",           "desc": "The absurd brings forth the true. Inverted logic reveals what straight logic concealed." },
+    { "id": "miroir-spirituel",    "label": "The mirror",             "desc": "Hodja is you. You laugh, then you fall silent, then you recognise yourself." },
+    { "id": "insolence",           "label": "Sacred insolence",       "desc": "To speak true to the powerful. The Sufi art of the malāmatī — the one who spares no one." },
+    { "id": "idiotie",             "label": "The idiocy that sees",   "desc": "The wise fool. To play the idiot so that the truth may pass. Madness in God." },
+    { "id": "porte-fermee",        "label": "The closed door",        "desc": "The answer that is not one. Hodja closes the question again — and that opens it otherwise." },
+    { "id": "enseignement-inverse","label": "Inverted teaching",      "desc": "The master learns from the pupil, the imam from the donkey, the sage from the child." }
+  ],
+  "humeurs": [
+    { "id": "rire-de-soi",   "label": "To laugh at myself",                "desc": "Today I need to look at myself with a smile — without sparing myself." },
+    { "id": "lacher-prise",  "label": "To let go",                         "desc": "Today I need to set down something I am gripping too tightly." },
+    { "id": "savoir-rien",   "label": "To remember that I know nothing",   "desc": "Today I need my certainty to crack a little." },
+    { "id": "insolent",      "label": "To be a little insolent",           "desc": "Today I need to say what I do not dare to say — to power, to myself." },
+    { "id": "ane-interieur", "label": "To find my inner donkey again",     "desc": "Today I need to be reconciled with my body, my slowness, my stubbornness." },
+    { "id": "absurde",       "label": "To drop the seriousness",           "desc": "Today I need nothing to stand up, and for that to be quite all right." }
+  ],
+  "contes": [
+    {
+      "id": "anneau-et-lune",
+      "titre": "The ring and the moon",
+      "themes": ["miroir","savoir"],
+      "esprits": ["koan","miroir-spirituel"],
+      "humeurs": ["lacher-prise","savoir-rien"],
+      "texte": "One evening Hodja loses a ring on the threshold of his door. The dusk is thick. A friend at once crouches down and gropes about in the dust.\n\nBut Hodja walks away. He goes and plants himself in the middle of the street, there where the full moon falls in a rain of brightness, and begins to search the cobblestones.\n\n— Hodja, what are you doing over there? The ring fell here.\n— Do as you like. As for me, I prefer to search where there is light.",
+      "question": "Where do you search for what you have lost — where you lost it, or where there is light?",
+      "meditation": "The light where we search does not always shine where we have lost. And the shadow where we have lost is not the shadow we wish to return to. Ibn ʿArabī teaches: <em>he who knows himself knows his Lord</em> — but first, one must consent to return to the night of the threshold.",
+      "source": "Universal oral tradition. A tale cited by Idries Shah, taken up in Rūmī's Mathnawī, attested in most of the Nasreddin collections"
+    },
+    {
+      "id": "la-marmite-qui-meurt",
+      "titre": "The pot that dies",
+      "themes": ["ruse","quotidien"],
+      "esprits": ["retournement","idiotie"],
+      "humeurs": ["absurde","rire-de-soi"],
+      "texte": "Hodja borrows a large pot from his neighbour. Several days pass. She comes to enquire after it.\n\n— Have you broken it?\n— On the contrary, says Hodja, I have good news: your pot has had a little one. Here, look.\n\nHe lifts the lid. Inside, a small pot.\n\n— Take them both away — one does not separate a mother from her child.\n\nThe neighbour goes home delighted, light of step: at this rate she will soon have a whole set of cookware. A few days later, Hodja knocks at her door, looking grave.\n\n— Neighbour, sad news. Mother pot died last night.\n— But Hodja, that is absurd! A pot does not die!\n— Why not? You readily accepted that it had a child.",
+      "question": "What “marvels” do you accept, so as not to see what is being prepared?",
+      "meditation": "Every illusion taken for a gift ends by claiming its due. The miracle one accepts without surprise is an instalment that will be paid later, in the coin of absence.",
+      "source": "Universal oral tradition. One of the most widely diffused Nasreddin tales in the world"
+    },
+    {
+      "id": "le-sermon",
+      "titre": "The sermon",
+      "themes": ["foi","savoir"],
+      "esprits": ["idiotie","porte-fermee"],
+      "humeurs": ["savoir-rien","absurde"],
+      "texte": "In a foreign village, Hodja is asked to preach on Friday. He climbs into the pulpit, looks at the assembly, and asks:\n\n— Brothers, do you know what I am going to tell you?\n— No, they reply.\n— Then I have nothing to do here, among such ignorant people.\n\nHe leaves.\n\nThe following Friday, he is called back. He climbs again into the pulpit.\n— Brothers, do you know what I am going to tell you?\n— Yes! cry the faithful, now informed.\n— Then what use is it for me to speak, if you already know?\n\nHe leaves.\n\nThe third Friday, everything has been prepared: half will say yes, the other half no. Hodja climbs again into the pulpit.\n— Brothers, do you know what I am going to tell you?\n— Yes! — No!\n— Very well. Let those who know explain it to those who do not.\n\nAnd he leaves the mosque for the third time.",
+      "question": "When you are asked what you know — do you truly know what you are speaking of?",
+      "meditation": "The true master does not transmit a content: he brings the listener into the presence of what he knows without knowing it. Junayd said: <em>the Sufi is the one who has no attribute</em>. The perfect sermon is the one there was no need to deliver.",
+      "source": "Universal oral tradition"
+    },
+    {
+      "id": "ane-vole-gratitude",
+      "titre": "The stolen donkey",
+      "themes": ["ane","quotidien"],
+      "esprits": ["retournement","enseignement-inverse"],
+      "humeurs": ["lacher-prise","absurde"],
+      "texte": "Hodja comes back from the market. Arriving in front of his house, he stops dead: his donkey, which he had tied before the door, has vanished. Stolen.\n\nThe neighbours rush up, scandalised, ready to pity him.\n\nBut Hodja raises his eyes to heaven, his face radiant:\n— Praised be God, the Most Benevolent!\n— Hodja, what has come over you? Your donkey has just been stolen!\n— Yes, but if I had been on it, I would have been carried off with it.",
+      "question": "What loss do you refuse to bless — when it has perhaps spared you?",
+      "meditation": "Every privation carries a grace that possession would have stifled. The gratitude that follows loss is one of the hidden stations of tasawwuf — the one in which one discovers that what is taken back from us did not belong to us, and that what is left to us is no more ours either.",
+      "source": "Oral tradition, attested in the Turkish collections of the 17th century"
+    },
+    {
+      "id": "homme-au-turban",
+      "titre": "The man with the turban",
+      "themes": ["miroir","savoir"],
+      "esprits": ["miroir-spirituel","idiotie"],
+      "humeurs": ["rire-de-soi","savoir-rien"],
+      "texte": "One night, Hodja stops at an inn. He shares a room with a sleeper already deep in slumber.\n\n— Innkeeper, tomorrow I leave before dawn. Wake me.\n— Agreed.\n— But take care, do not make a mistake. Look — I set my turban here, beside me. The other man has none. Remember: the man with the turban.\n\nBefore dawn, he is shaken awake. He dresses in haste, mounts, and rides off at a gallop. But in his hurry he has left his turban behind on the table.\n\nAt noon, he stops at a fountain to drink. He leans over the basin — and does not recognise, in the reflection, that bald, bare, foreign head.\n\n— What a fool, that innkeeper! He woke the wrong sleeper. And yet I told him so clearly.",
+      "question": "Do you recognise yourself — without your turban?",
+      "meditation": "What you take for your identity can be taken from you in a single night. When death comes, it will not undo the turban: it will undo the head that wore it. Before that moment, what reflection do you meet, when you lean over the water?",
+      "source": "Universal oral tradition"
+    },
+    {
+      "id": "conversation-avec-soi-meme",
+      "titre": "A conversation with myself",
+      "themes": ["miroir"],
+      "esprits": ["miroir-spirituel","koan"],
+      "humeurs": ["savoir-rien","lacher-prise"],
+      "texte": "Passing before a tea house, Hodja catches sight, through the window, of a man dressed exactly like himself — the same caftan, the same turban, the same beard. Intrigued, he goes in, sits down at the stranger's table, strikes up a conversation.\n\nThey speak of the weather, of the harvests, of the news of the town. After a long while, Hodja rises to leave.\n\nThe other says to him:\n— Forgive me, friend — who are you, by the way?\n— Who am I? No idea. All I can tell you is that I wanted to have a little conversation with myself.",
+      "question": "When you speak to someone — to whom are you really speaking?",
+      "meditation": "Every encounter is an encounter with oneself — in disguise. Ibn ʿArabī: <em>You are His hearing with which He hears, His eyes with which He sees, His tongue with which He speaks</em>. When you speak to another, who speaks in you? And who answers, in him?",
+      "source": "Universal oral tradition"
+    },
+    {
+      "id": "habit-mange-la-soupe",
+      "titre": "The robe eats the soup",
+      "themes": ["quotidien","miroir"],
+      "esprits": ["retournement","insolence"],
+      "humeurs": ["insolent","rire-de-soi"],
+      "texte": "Hodja, coming back from the fields, arrives in rags at a great banquet to which he had been invited. At the entrance, he is looked up and down — one might almost take him for a beggar. He is pushed far away, to the end of the table, where almost nothing is brought to eat.\n\nHe slips away, runs home, puts on his finest caftan, his embroidered turban, and returns.\n\nThis time, he is greeted to the ground. He is seated in the place of honour. The best dishes are set before him.\n\nHe then dips the sleeves of his caftan into the soup, into the rice, into the sauce of the meats, and gently whispers to them:\n— Eat, my sleeves! Feast yourselves! It is you who were invited.",
+      "question": "When you are honoured — who, truly, is being honoured?",
+      "meditation": "The world does not feed beings, it feeds appearances. The table of honour serves to eat the appearance; the poverty of the threshold, for its part, serves to eat the real. This is why the Sufis call <em>al-faqr</em>, poverty, the royal way: one is invited to it only without a robe.",
+      "source": "Universal oral tradition. A tale also attested in the Thousand and One Nights under other names"
+    },
+    {
+      "id": "corde-a-linge",
+      "titre": "The clothes line",
+      "themes": ["quotidien","ruse"],
+      "esprits": ["retournement"],
+      "humeurs": ["absurde","rire-de-soi"],
+      "texte": "A neighbour knocks at Hodja's door:\n— Can you lend me your clothes line? My wife wants to do the washing.\n— Alas, no luck, says Hodja without turning round. I have just this moment used it.\n— Used it for what?\n— For spreading out flour.\n— Flour, on a clothes line?\n— Well, why not? When one does not feel like lending one's line, one is capable of spreading anything at all on it.",
+      "question": "What excuse do you set out to dry on your line, when you do not feel like giving?",
+      "meditation": "Every excuse is true — it is its truth that lies. The most effective lie is not the one that falsifies the fact: it is the one that displaces the question. As long as you argue with the excuse, you do not look at the refusal.",
+      "source": "Universal oral tradition"
+    },
+    {
+      "id": "soleil-et-lune",
+      "titre": "The sun and the moon",
+      "themes": ["savoir","miroir"],
+      "esprits": ["retournement","koan"],
+      "humeurs": ["insolent","absurde"],
+      "texte": "People love to lay traps for Hodja, to put to him questions without answers. One day, at the tea house, someone calls out:\n\n— Hodja, you who know so many things — tell us: of the sun and the moon, which is the more useful?\n\nHodja thinks for a moment, then:\n— The moon, without a doubt. It, at least, lights up the night, when it is dark. Whereas that stupid sun shines only in broad daylight — when there is no need of it at all.",
+      "question": "What do you believe useful, which comes only at its hour — when it is no longer needed?",
+      "meditation": "The sage always answers beside the question — because the true question has not been asked. To refuse to answer in the language that means to trap us is not a flight: it is the most exact act of presence to what is, beyond the false dilemma.",
+      "source": "Universal oral tradition"
+    },
+    {
+      "id": "clou-dans-le-mur",
+      "titre": "The nail in the wall",
+      "themes": ["ruse","argent","quotidien"],
+      "esprits": ["retournement","porte-fermee"],
+      "humeurs": ["insolent","absurde"],
+      "texte": "Hodja sells his house to a rich merchant. At the moment of signing the contract, he sets a strange condition:\n\n— I accept the price, but I want to keep, in the wall of the sitting room, a single nail. That one, there, near the window. It remains mine. And I must be able to come at any hour to hang on it whatever I wish.\n\nThe merchant, astonished, ends by agreeing. It is so little, a nail.\n\nThe months pass. Hodja comes back one morning, hangs an old coat on the nail. No one says anything. The following week, he hangs a sack that smells strong. Then a dried fish. Then, one day, the whole carcass of a sheep, still bloody.\n\nThe merchant, choking, ends by giving him back the house — at a third of the price.",
+      "question": "What small nail do you leave to another in your life — and what does he end by hanging on it?",
+      "meditation": "Every small concession becomes one day the nail on which the carcass is hung. The devil, in the Sufi tradition, never enters by the great door: he enters through the details one believed to be of no importance, and he always ends by coming back to claim the whole house.",
+      "source": "Universal oral tradition. A tale also attested in Arab folklore under the name of Djoha"
+    },
+    {
+      "id": "le-vent-du-jardin",
+      "titre": "The wind of the garden",
+      "themes": ["ruse","quotidien"],
+      "esprits": ["porte-fermee","idiotie"],
+      "humeurs": ["insolent","absurde"],
+      "texte": "One night, Hodja slips into the neighbour's garden to steal a few vegetables. But the neighbour, coming home unexpectedly, surprises him with his hand in the earth.\n\n— Hodja! This time you will not be able to defend yourself!\n— Do you not feel what a wind there is? whispers Hodja. It is the wind that lifted me up, and that set me down here, against my will.\n— But you were digging up a leek, with both hands!\n— Of course! I cling to everything I find, so as not to be carried off!\n— And these vegetables in your bag, then?\n— Ah, that is precisely what I was pondering when you interrupted me. Give me a little time.",
+      "question": "By what wind do you believe yourself carried off — and what leeks do you hold, with both hands, while you search for the excuse?",
+      "meditation": "We call <em>wind</em> that which made us do what we do not want to have wanted. The <em>nafs al-ammāra</em> — the soul that drives towards evil — always blows in our favour in the accounts we give ourselves. The path begins when one stops inventing the storm.",
+      "source": "Universal oral tradition"
+    },
+    {
+      "id": "lune-dans-le-puits",
+      "titre": "The moon in the well",
+      "themes": ["quotidien","savoir"],
+      "esprits": ["koan","idiotie"],
+      "humeurs": ["absurde","rire-de-soi"],
+      "texte": "One night, Hodja approaches the well to drink. He leans over the water, and there — he gives a start. The full moon has fallen to the bottom.\n\nHe runs to fetch a rope, a great iron hook. He throws them into the well, rattles about for a long time, feels at last that something has caught. He pulls with all his strength.\n\nThe rope snaps clean. Hodja falls flat on his back.\n\nHe stays a moment stretched out, the breath knocked out of him, gazing at the sky. And there he catches sight, up above, soft and round, of the moon.\n\n— Praised be God! The moon has returned to its place. And it is thanks to me.",
+      "question": "What “moon” do you pull out of a well it never fell into?",
+      "meditation": "How many of your prayers thank God for what you did to yourself? Many spiritual victories are falls that luck caught — but we prefer to call that <em>karāma</em>, a favour of Heaven.",
+      "source": "Universal oral tradition. A tale also famous in Persian and Arab folklore"
+    },
+    {
+      "id": "parfum-et-piece",
+      "titre": "The fragrance and the coin",
+      "themes": ["argent","justice"],
+      "esprits": ["retournement","enseignement-inverse"],
+      "humeurs": ["insolent","rire-de-soi"],
+      "texte": "A poor man passes before the stall of a meat-roaster. The meat sizzles, the air is full of fragrant smoke. The poor man takes out a crust of dry bread, holds it a moment above the grill so that it may be steeped in the savour, and goes off to eat it a little further on.\n\nThe roaster catches up with him, seizes him by the sleeve:\n— You have profited from the smoke of my meats. You must pay me!\n\nThey go to the court. Hodja is judge that day.\n\n— How much do you claim? he asks the roaster.\n— Two pieces of silver.\n\nHodja takes two coins from his own purse. He makes them ring at length in the hollow of his hand, close to the roaster's ear.\n\n— Did you hear well?\n— Yes.\n— There is your payment. The sound of a coin, for the fragrance of a meat. Case judged.",
+      "question": "What do you pay for in hollow sounds — and what do you pay for in full coins?",
+      "meditation": "All true justice is a justice of right measure. What has been received in semblance is paid in semblance; what has been received in substance is paid in substance. To confuse the orders is the beginning of all oppression.",
+      "source": "International oral tradition. A tale also attested in China and India under other names"
+    },
+    {
+      "id": "grammairien-et-passeur",
+      "titre": "The grammarian and the ferryman",
+      "themes": ["savoir","mort"],
+      "esprits": ["enseignement-inverse","retournement"],
+      "humeurs": ["savoir-rien","insolent"],
+      "texte": "Hodja crosses a river in a boat. To pass the time, he questions the ferryman:\n\n— Have you studied grammar?\n— No.\n— Then half of your life is lost.\n\nThe ferryman does not answer. He rows.\n\nBut suddenly the sky darkens, the wind rises, enormous waves strike the boat. It begins to take on water. The ferryman turns calmly towards Hodja:\n\n— Master, have you learned to swim?\n— No!\n— Then the whole of your life is lost.",
+      "question": "On what kinds of knowledge do you pride yourself, which will not carry you when the water rises?",
+      "meditation": "Knowledge that does not save was not knowledge: it was an adornment. Rūmī: <em>the scholar is the one who has read much; the sage is the one who has lived much — and only the sage will cross the river.</em>",
+      "source": "Universal oral tradition. A tale emblematic of the Sufi critique of purely formal knowledge"
+    },
+    {
+      "id": "chandelle-et-soupe",
+      "titre": "The candle and the soup",
+      "themes": ["argent","quotidien","puissants"],
+      "esprits": ["retournement","insolence"],
+      "humeurs": ["insolent","rire-de-soi"],
+      "texte": "Hodja wagers with his friends that he can stay outside all night, in the depth of winter, without fire or blanket. If he succeeds, they will all invite him to a great feast.\n\nHe succeeds. In the morning, he comes to claim his meal.\n\n— Hodja, says one of the friends, do not be so proud. During the night, we clearly saw the glow of a candle at the palace on the hill. It was that which warmed you.\n— A candle? A mile away?\n— A candle. You have lost the wager.\n\nHodja does not insist. A few days later, it is he who invites his friends to his house for a feast. They arrive, famished. Hodja makes them wait. An hour. Two hours. Three.\n\n— But where is this soup?\n— It is cooking, it is cooking. Come and see.\n\nHe leads them to the kitchen. Above an immense cauldron hung very high, a single small candle flickers.\n\n— A candle to bring all that cauldron to the boil?!\n— If a candle can warm me all night a mile away, it can well cook a soup at a metre's distance.",
+      "question": "What “distant candles” are you asked to believe sufficient to feed you?",
+      "meditation": "Power imposes its logic, and asks you to believe in it. The only free answer is not to fight it — it is to turn it against itself, until it collapses under its own absurd weight.",
+      "source": "Universal oral tradition. A tale especially famous in the Turkish collections"
+    },
+    {
+      "id": "tu-as-raison",
+      "titre": "You are right",
+      "themes": ["justice","miroir"],
+      "esprits": ["koan","miroir-spirituel"],
+      "humeurs": ["savoir-rien","absurde"],
+      "texte": "Hodja is judge that day. Two men come to lay a complaint, one against the other. The first sets out his case, at length, full of indignation.\n\nHodja nods his head:\n— You are right.\n\nThe second answers, point by point, demonstrating exactly the contrary.\n\nHodja nods his head:\n— You are right too.\n\nThe clerk, scandalised, steps forward:\n— But Hodja, they cannot both be right! It is logically impossible!\n\nHodja raises his eyes, smiles:\n— You are right too.",
+      "question": "And if several opposing things were true at the same time — what would you do with your certainties?",
+      "meditation": "Non-duality (<em>tawḥīd</em>) is not an opinion to be defended: it is a station to be inhabited. There where ordinary logic sees contradiction, the unified heart sees two faces of a single Face. Ibn ʿArabī: <em>Every thing, save God, is at once itself and its contrary.</em>",
+      "source": "Universal oral tradition. One of the most cited tales in the Sufi commentaries on non-duality"
+    },
+    {
+      "id": "babouches",
+      "titre": "The slippers",
+      "themes": ["savoir","quotidien"],
+      "esprits": ["idiotie","retournement"],
+      "humeurs": ["rire-de-soi","absurde"],
+      "texte": "Hodja wants to learn medicine. He accompanies a physician friend to a patient who complains of his stomach.\n\nScarcely has he entered when the physician declares:\n— You have eaten too many cherries. Rest, a light diet, in two days there will be no sign of it.\n\nHodja is dazzled. On the way out, he asks:\n— How did you guess?\n— Very simple. Under the bed, there was a heap of cherry stones.\n\nHodja tells himself that medicine is within his reach. The next day, he visits his first patient alone. He looks under the bed. Nothing.\n\nHe ponders gravely, then turns to the sick man:\n— You have a colic. But in future — avoid eating your slippers.",
+      "question": "What conclusions do you draw from clues that do not exist?",
+      "meditation": "Method without presence becomes caricature. The true master is not the one who knows — it is the one who <em>looks</em>. The Sufi's diagnosis begins where calculation ends: at the instant when, no longer knowing, he consents to see.",
+      "source": "Universal oral tradition"
+    },
+    {
+      "id": "monter-descendre",
+      "titre": "Going up and coming down",
+      "themes": ["enfance","foi"],
+      "esprits": ["enseignement-inverse","retournement"],
+      "humeurs": ["insolent","absurde"],
+      "texte": "Hodja, that day, is eight years old.\n\nHe passes at the foot of a minaret. High up, the muezzin sends out the call to prayer — a long plaintive, vibrant chant.\n\nHodja stops. He raises his head. And he cries out with all his might, cupping his hands around his mouth:\n\n— Stop wailing! You managed to climb all alone up that branchless tree — well, to come down again, manage on your own too!",
+      "question": "What have you climbed up to, without knowing how to come down?",
+      "meditation": "Every child understands what adults have forgotten: that one has gone up without knowing why, and that one will have to come down alone. Wisdom does not dwell in the chant of the muezzin — it dwells in the question of the child who listens to him.",
+      "source": "Universal oral tradition"
+    }
+  ]
+}

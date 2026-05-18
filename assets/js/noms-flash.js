@@ -44,13 +44,29 @@
     }, 200);
   }
 
-  function shuffle() {
-    for (let i = order.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [order[i], order[j]] = [order[j], order[i]];
+  const shuf = document.getElementById('nf-shuffle');
+  const LABELS = EN
+    ? { shuffle: '↻ Shuffle', order: '↻ Back in order' }
+    : { shuffle: '↻ Mélanger', order: '↻ Ordre 1–99' };
+  let shuffled = false;
+
+  function applyOrder() {
+    if (shuffled) {
+      for (let i = order.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [order[i], order[j]] = [order[j], order[i]];
+      }
+    } else {
+      order = noms.map((_, i) => i);
     }
     pos = 0;
     render();
+  }
+
+  function toggleShuffle() {
+    shuffled = !shuffled;
+    if (shuf) shuf.textContent = shuffled ? LABELS.order : LABELS.shuffle;
+    applyOrder();
   }
 
   card.addEventListener('click', () => turn(1));
@@ -62,8 +78,7 @@
 
   const prev = document.getElementById('nf-prev');
   if (prev) prev.addEventListener('click', () => turn(-1));
-  const shuf = document.getElementById('nf-shuffle');
-  if (shuf) shuf.addEventListener('click', shuffle);
+  if (shuf) shuf.addEventListener('click', toggleShuffle);
 
   fetch(DATA_ROOT + 'data/noms-divins.json')
     .then((r) => r.json())

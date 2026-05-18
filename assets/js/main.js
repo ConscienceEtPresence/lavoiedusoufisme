@@ -113,7 +113,7 @@ document.querySelectorAll('.period').forEach(el => observer.observe(el));
   // a-bis) Injecter search.js (palette globale, Cmd+K)
   if (!document.querySelector('script[data-search]')) {
     const s = document.createElement('script');
-    s.src = baseHref + 'assets/js/search.js?v=4';
+    s.src = baseHref + 'assets/js/search.js?v=5';
     s.dataset.search = '1';
     document.head.appendChild(s);
   }

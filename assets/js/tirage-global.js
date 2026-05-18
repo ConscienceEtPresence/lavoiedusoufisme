@@ -87,7 +87,7 @@
         url: DATA_ROOT + 'pages/noms-divins/index.html#' + n.n,
         titre: n.fr,
         ar: n.ar,
-        soustitre: 'al-' + n.tr,
+        soustitre: n.tr,
         contexte: TG_T.noms
       }));
     }

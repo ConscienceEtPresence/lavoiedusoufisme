@@ -679,3 +679,168 @@
   .newsletter__form input[type="email"] { flex: 1 1 100%; width: 100%; }
   .newsletter__form button[type="submit"] { flex: 1 1 100%; width: 100%; }
 }
+
+/* ============================================
+   RÉCITER LES 99 NOMS — flashcards d'accueil
+   ============================================ */
+.noms-flash {
+  padding: var(--space-2xl) 0 var(--space-xl);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(184, 134, 11, 0.06), transparent 60%);
+}
+.noms-flash__head {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+.noms-flash__eyebrow {
+  font-family: var(--font-arabic);
+  font-size: 1.5rem;
+  color: var(--gold);
+  direction: rtl;
+  margin-bottom: 0.3rem;
+}
+.noms-flash__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  color: var(--ink-title);
+  font-weight: 600;
+  margin: 0.2rem 0 0.6rem;
+}
+.noms-flash__intro {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--ink-soft);
+  max-width: 30rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* La carte */
+.noms-flash__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  margin: var(--space-lg) auto 0;
+  max-width: 30rem;
+  padding: var(--space-xl) var(--space-lg) var(--space-lg);
+  background: linear-gradient(170deg, #FFFDF8, var(--paper-warm));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.noms-flash__card:hover { box-shadow: 0 10px 36px rgba(27, 42, 78, 0.13); }
+.noms-flash__card:active { transform: scale(0.985); }
+.noms-flash__card:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+.noms-flash__card::before,
+.noms-flash__card::after {
+  content: "✦";
+  position: absolute;
+  font-size: 0.7rem;
+  color: var(--gold-soft);
+  top: 0.9rem;
+}
+.noms-flash__card::before { left: 1.1rem; }
+.noms-flash__card::after  { right: 1.1rem; }
+
+.noms-flash__num {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-md);
+}
+.noms-flash__num .nf-total { color: var(--ink-mute); }
+
+/* zone qui change — fondu doux */
+.noms-flash__body {
+  transition: opacity 0.32s ease, transform 0.32s ease;
+}
+.noms-flash__card.is-turning .noms-flash__body {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.noms-flash__ar {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  font-size: clamp(3.4rem, 13vw, 5.2rem);
+  line-height: 1.35;
+  color: var(--ink-title);
+  margin-bottom: 0.4rem;
+}
+.noms-flash__tr {
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 4vw, 1.7rem);
+  font-style: italic;
+  color: var(--gold);
+  margin-bottom: var(--space-sm);
+}
+.noms-flash__rule {
+  width: 2.6rem;
+  height: 1px;
+  background: var(--gold-soft);
+  margin: var(--space-sm) auto;
+}
+.noms-flash__fr {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 4vw, 1.6rem);
+  font-weight: 600;
+  color: var(--ink-title);
+  margin-bottom: 0.5rem;
+}
+.noms-flash__sens {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 24rem;
+  margin: 0 auto;
+}
+.noms-flash__hint {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-top: var(--space-md);
+}
+
+/* commandes */
+.noms-flash__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem var(--space-md);
+  margin-top: var(--space-md);
+}
+.noms-flash__btn {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+.noms-flash__btn:hover { border-color: var(--gold); color: var(--gold); }
+.noms-flash__link {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--turquoise);
+  text-decoration: none;
+}
+.noms-flash__link:hover { text-decoration: underline; }
+
+@media (max-width: 520px) {
+  .noms-flash__card { padding: var(--space-lg) var(--space-md); }
+}

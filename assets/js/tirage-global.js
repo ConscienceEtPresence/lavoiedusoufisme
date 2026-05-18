@@ -10,10 +10,23 @@
     return src.replace(/assets\/js\/tirage-global\.js.*$/, '');
   }
   const ROOT = siteRoot();
+  const TG_EN = document.documentElement.lang === 'en';
+  const DATA_ROOT = ROOT + (TG_EN ? 'en/' : '');
+  const TG_T = TG_EN ? {
+    close: 'Close', goto: 'Go to this sign →', again: 'Draw again',
+    hint: '“Open a page at random — what appears was meant for you.”',
+    amour: 'The names of love', conte: 'Tale of Nasr Eddin Hodja',
+    poesie: 'Sufi poetry', noms: 'The 99 divine Names', racines: 'Arabic roots of the Quran'
+  } : {
+    close: 'Fermer', goto: 'Aller vers ce signe →', again: 'Tirer encore',
+    hint: '« Ouvre une page au hasard, ce qui apparaît t\'était destiné. »',
+    amour: 'Les noms de l\'amour', conte: 'Conte de Nasr Eddin Hodja',
+    poesie: 'Poésie soufie', noms: 'Les 99 Noms divins', racines: 'Racines arabes du Coran'
+  };
 
-  // Charge un JSON depuis /data/<file>
+  // Charge un JSON depuis /data/<file> (ou /en/data/ en anglais)
   function loadJSON(file) {
-    return fetch(ROOT + 'data/' + file).then(r => r.json()).catch(() => null);
+    return fetch(DATA_ROOT + 'data/' + file).then(r => r.json()).catch(() => null);
   }
 
   // Construit le pool unifié
@@ -32,11 +45,11 @@
     if (amour && amour.mots) {
       amour.mots.forEach(m => pool.push({
         type: 'amour',
-        url: ROOT + 'pages/amour/mot.html?id=' + m.id,
+        url: DATA_ROOT + 'pages/amour/mot.html?id=' + m.id,
         titre: m.translit,
         ar: m.ar,
         soustitre: m.definition,
-        contexte: 'Les noms de l\'amour'
+        contexte: TG_T.amour
       }));
     }
 
@@ -44,11 +57,11 @@
     if (hodja && hodja.contes) {
       hodja.contes.forEach(c => pool.push({
         type: 'conte',
-        url: ROOT + 'pages/contes/nasr-eddin/conte.html?id=' + c.id,
+        url: DATA_ROOT + 'pages/contes/nasr-eddin/conte.html?id=' + c.id,
         titre: c.titre,
         ar: '',
         soustitre: c.question || '',
-        contexte: 'Conte de Nasr Eddin Hodja'
+        contexte: TG_T.conte
       }));
     }
 
@@ -58,11 +71,11 @@
         if (p.status === 'soon') return;
         pool.push({
           type: 'poeme',
-          url: ROOT + (p.href || 'pages/poesie/index.html'),
+          url: DATA_ROOT + (p.href || 'pages/poesie/index.html'),
           titre: p.titre_fr,
           ar: p.titre_orig,
           soustitre: p.auteur_nom + ' — ' + p.tagline,
-          contexte: 'Poésie soufie'
+          contexte: TG_T.poesie
         });
       });
     }
@@ -71,11 +84,11 @@
     if (noms && noms.noms) {
       noms.noms.forEach(n => pool.push({
         type: 'nom',
-        url: ROOT + 'pages/noms-divins/index.html#' + n.n,
+        url: DATA_ROOT + 'pages/noms-divins/index.html#' + n.n,
         titre: n.fr,
         ar: n.ar,
         soustitre: 'al-' + n.tr,
-        contexte: 'Les 99 Noms divins'
+        contexte: TG_T.noms
       }));
     }
 
@@ -83,11 +96,11 @@
     if (racines && racines.racines) {
       racines.racines.forEach(r => pool.push({
         type: 'racine',
-        url: ROOT + 'pages/racines/index.html#' + r.id,
+        url: DATA_ROOT + 'pages/racines/index.html#' + r.id,
         titre: r.core_fr || r.letters,
         ar: r.root_ar,
         soustitre: r.root_tr || r.letters,
-        contexte: 'Racines arabes du Coran'
+        contexte: TG_T.racines
       }));
     }
 
@@ -105,16 +118,16 @@
     modal.innerHTML = `
       <div class="tirage-modal__backdrop"></div>
       <div class="tirage-modal__inner">
-        <button class="tirage-modal__close" aria-label="Fermer">✕</button>
+        <button class="tirage-modal__close" aria-label="${TG_T.close}">✕</button>
         <div class="tirage-modal__corpus">${item.contexte}</div>
         ${item.ar ? `<div class="tirage-modal__ar" lang="ar" dir="rtl">${item.ar}</div>` : ''}
         <h2 class="tirage-modal__titre">${item.titre}</h2>
         ${item.soustitre ? `<p class="tirage-modal__soustitre">${item.soustitre}</p>` : ''}
         <div class="tirage-modal__actions">
-          <a href="${item.url}" class="tirage-modal__cta">Aller vers ce signe →</a>
-          <button class="tirage-modal__again">Tirer encore</button>
+          <a href="${item.url}" class="tirage-modal__cta">${TG_T.goto}</a>
+          <button class="tirage-modal__again">${TG_T.again}</button>
         </div>
-        <p class="tirage-modal__hint"><em>« Ouvre une page au hasard, ce qui apparaît t'était destiné. »</em></p>
+        <p class="tirage-modal__hint"><em>${TG_T.hint}</em></p>
       </div>
     `;
     document.body.appendChild(modal);

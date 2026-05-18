@@ -1,0 +1,810 @@
+{
+ "source_notice": "An Ottoman scholar born in Crimea, head of the Hanafites in Cairo, master of al-Suyūṭī. His method weaves three threads: the linguistic sense (luġawī), the rational and theological sense (ʿaqlī), and the spiritual sense (ṣūfī). For each Name he also indicates <em>the servant's share</em> — that which, of the Name, may become a virtue and a path in the human being.",
+ "themes": {
+  "jamal": { "fr": "Beauty · Mercy", "sens": "The Names of gentleness, of nearness, of the love that bends down." },
+  "jalal": { "fr": "Majesty · Power", "sens": "The Names of greatness, of justice, of the awe that makes one draw back." },
+  "kamal": { "fr": "Perfection · Essence", "sens": "The Names of absolute Unity, where Beauty and Majesty coincide." }
+ },
+ "noms": {
+  "1": {
+   "fr": "God",
+   "sens_court": "The supreme Name that gathers all the Names.",
+   "lugha": "According to al-Kāfījī, this is the proper Name of the Essence (ism al-dhāt), reserved for Him alone; no being has ever borne it, in the past or in the future. The grammarians differ: for some (الأُنْس) it is derived from <em>al-ilāh (الإِلَه)</em> (the worshipped), for others it is underived — a pure Name of the Essence.",
+   "aqli": "It gathers all the attributes of perfection. Whoever says “Allāh” has, without knowing it, named all the beauties and all the majesties at once.",
+   "sufi": "The invocation of this Name, says al-Kāfījī, opens the <em>door</em>; the other Names are its rays. The heart that takes root in it has no other dwelling.",
+   "part": "Let the servant pronounce this Name only with reverence, and let his life become silent worship."
+  },
+  "2": {
+   "fr": "The All-Merciful",
+   "sens_court": "The Mercy that precedes all things and embraces the entire universe.",
+   "lugha": "An intensive form (<em>faʿlān</em>) on the root <em>r-ḥ-m</em>: the womb, the matrix. Al-Kāfījī specifies that this form indicates <em>amplitude</em> — a mercy so vast that it overflows onto every existent thing, believer or not.",
+   "aqli": "This is the mercy of creation: it is through it that things are, rather than not being. The gift of existence before any other gift.",
+   "sufi": "For al-Kāfījī, <em>ar-Raḥmān</em> is the breath (<em>nafas (النَّفَس)</em>) that sustains the worlds. At every instant, His mercy begins the world anew. Without it, the universe would return to nothingness.",
+   "part": "Let the servant be merciful toward every being, without distinction — for the rain of <em>ar-Raḥmān</em> falls upon all."
+  },
+  "3": {
+   "fr": "The Most Merciful",
+   "sens_court": "The Mercy that chooses, that bends down over the soul turned toward Him.",
+   "lugha": "A <em>faʿīl (فَعِيل)</em> form, from the same root as <em>ar-Raḥmān (اَلرَّحْمَٰن)</em>, but of more intimate reach. Al-Kāfījī says: <em>ar-Raḥmān</em> is for this world, <em>ar-Raḥīm</em> is for the next — the one is universal, the other elects.",
+   "aqli": "This is the mercy of the return: it welcomes the penitent, soothes the burned, forgives the broken.",
+   "sufi": "Where <em>ar-Raḥmān</em> gives being, <em>ar-Raḥīm</em> gives felicity. It is the smile of God upon the face of the faithful.",
+   "part": "Let the servant, after having given, accompany — let him not be content with the general gift, but bend down over the details of another's pain."
+  },
+  "4": {
+   "fr": "The King",
+   "sens_court": "The absolute Sovereign, whose Kingdom is without bounds.",
+   "lugha": "From <em>m-l-k</em>: to possess, to reign. Al-Kāfījī distinguishes <em>al-Mālik</em> (the Possessor) and <em>al-Malik</em> (the King who governs): God is both, but this Name underlines effective rule.",
+   "aqli": "All that exists is His property and His subject. Not an atom moves without His permission.",
+   "sufi": "The servant who contemplates this Name understands that he possesses nothing — not even his own breath. This understanding is the beginning of spiritual poverty (<em>faqr (الفَقْر)</em>).",
+   "part": "Reign over your own inner kingdom: let reason govern the passions, and let the heart govern reason."
+  },
+  "5": {
+   "fr": "The Most Holy",
+   "sens_court": "Pure of all imperfection, transcending all that the mind can conceive.",
+   "lugha": "An intensive form of <em>q-d-s</em>: to be pure, set apart, sanctified. Al-Kāfījī: “He is so holy that every description diminishes Him.”",
+   "aqli": "No analogy reaches Him, no flaw touches Him. He is beyond the like and the contrary.",
+   "sufi": "<em>Al-Quddūs</em> is the Name that purifies the heart of its inner idols — including the images one forms of God Himself.",
+   "part": "Purify your heart, not only of fault, but also of the concepts that claim to enclose the Real."
+  },
+  "6": {
+   "fr": "Peace",
+   "sens_court": "Peace in itself, the source of all peace.",
+   "lugha": "From <em>s-l-m</em>: to be sound, intact, at peace. Al-Kāfījī: “He is Peace, for no alteration reaches Him, and from Him flows the peace of hearts.”",
+   "aqli": "Being free of all lack, He is absolute security; creatures have peace only in proportion to their return toward Him.",
+   "sufi": "The <em>sakīna</em> that descends upon the heart of the one who remembers is a reflection of this Name. Whoever enters into peace with God enters into peace with all.",
+   "part": "Be a source of peace for whoever draws near you: let your presence calm without need of words."
+  },
+  "7": {
+   "fr": "The Granter of Safety",
+   "sens_court": "He who reassures, who makes faith secure.",
+   "lugha": "From <em>a-m-n</em>: safety, trust. An active form: the One who grants safety (<em>amān (أَمَان)</em>).",
+   "aqli": "He verifies His own word — confirms His promises, attests His truth through the signs of the world and of the soul.",
+   "sufi": "The heart that rests in this Name no longer trembles before the vicissitudes: it knows that the promise holds.",
+   "part": "Be reliable: let your word be a shelter, and not a trap."
+  },
+  "8": {
+   "fr": "The Watchful Guardian",
+   "sens_court": "He who watches over all things, witness and preserver.",
+   "lugha": "A rare word; al-Kāfījī recalls several etymologies: from <em>amīn (أَمِين)</em> (trustworthy), or from <em>haymana</em> (to spread one's wing over).",
+   "aqli": "He observes, attests, preserves: nothing escapes His guard.",
+   "sufi": "To feel this Name is to live under the gaze — not a gaze that surveils, but a gaze that broods over.",
+   "part": "Watch over what is entrusted to you: your loved ones, your body, the passing of time."
+  },
+  "9": {
+   "fr": "The Invincible Mighty One",
+   "sens_court": "He who cannot be vanquished, whose strength is unreachable.",
+   "lugha": "From <em>ʿ-z-z</em>: to be rare, strong, beyond reach.",
+   "aqli": "His power is limited by nothing; no one has the slightest power over Him.",
+   "sufi": "The servant who attaches himself to <em>al-ʿAzīz</em> becomes unreachable by the humiliations that come from outside: his centre is elsewhere.",
+   "part": "Keep your dignity in poverty as in abundance; offer your heart only to what deserves it."
+  },
+  "10": {
+   "fr": "The Sovereign Restorer",
+   "sens_court": "He who repairs what is broken, and imposes what He wills.",
+   "lugha": "From <em>j-b-r</em>; a twofold sense — <em>jabara</em> means both <em>to set a broken bone</em> and <em>to compel</em>. Al-Kāfījī insists on the first: He is above all the Restorer.",
+   "aqli": "He restores broken hearts and straightens what leans; and no one compels His will.",
+   "sufi": "When the soul is in pieces, this Name is the balm. Ibn ʿArabī would say: <em>al-Jabbār</em> does not diminish the broken — He recomposes it vaster than before.",
+   "part": "Do not break what is already fragile; be <em>jābir</em> — a restorer — for those around you."
+  },
+  "11": {
+   "fr": "The Supreme in Greatness",
+   "sens_court": "The only One to whom greatness rightfully belongs.",
+   "lugha": "A reflexive form of <em>k-b-r</em>: to manifest oneself as great. In the creature this is a flaw; in God it is a truth.",
+   "aqli": "He is great in Himself, and not by comparison.",
+   "sufi": "The more the servant effaces himself, the more this Name appears in clarity. Human pride is a theft committed against the only One who possesses greatness by full right.",
+   "part": "Acknowledge that any greatness you feel within you has been lent to you — and give it back through gratitude."
+  },
+  "12": {
+   "fr": "The Creator",
+   "sens_court": "He who measures and makes be.",
+   "lugha": "From <em>kh-l-q</em>: to measure with exactness before producing. Creation is first of all proportion.",
+   "aqli": "He has created each thing according to its just measure (<em>qadar (القَدَر)</em>), neither too much nor too little.",
+   "sufi": "To contemplate this Name in a blade of grass or a face: creation is not a past fact, it renews itself at every instant.",
+   "part": "Create to your own measure: a gesture, a work, a word — but with exactness."
+  },
+  "13": {
+   "fr": "The Maker",
+   "sens_court": "He who distinguishes each being, draws it apart.",
+   "lugha": "From <em>b-r-ʾ</em>: to separate, to distinguish from nothingness. Where <em>al-Khāliq (اَلْخَالِق)</em> conceives, <em>al-Bāriʾ</em> distinguishes.",
+   "aqli": "No being is confused with another: each soul is unique within creation.",
+   "sufi": "Your face never existed before you and will never exist again: it is a signature of <em>al-Bāriʾ</em>.",
+   "part": "Honour the singularity of others — do not reduce them to a category."
+  },
+  "14": {
+   "fr": "The Fashioner of Forms",
+   "sens_court": "He who gives form and face.",
+   "lugha": "From <em>ṣ-w-r</em>: form, image. An intensive form: the One who shapes with art.",
+   "aqli": "He gives each being its own figure, never repeating.",
+   "sufi": "The forms of the world are calligraphies of His Names. To learn to read forms is to learn to read God.",
+   "part": "Give your life a beautiful form: let beauty too be a spiritual act."
+  },
+  "15": {
+   "fr": "The Infinite Forgiver",
+   "sens_court": "He who covers faults and effaces them without ceasing.",
+   "lugha": "From <em>gh-f-r</em>: to veil, to cover with a helmet. An intensive form: He veils again and again.",
+   "aqli": "No fault is too great for His forgiveness, provided one returns.",
+   "sufi": "God's forgiveness precedes the servant's repentance: it is because He already forgives that the servant dares to return.",
+   "part": "Forgive before you are asked; cover the weakness of others as you would wish your own to be covered."
+  },
+  "16": {
+   "fr": "The Subduer",
+   "sens_court": "He before whom every force bends.",
+   "lugha": "An intensive form of <em>q-h-r</em>: to subdue, to tame, to vanquish absolutely. Al-Kāfījī specifies that <em>qahr</em> is stronger than <em>ghalaba</em>: it is not only to defeat, it is to reduce to total powerlessness.",
+   "aqli": "Every will other than His breaks against His will. The mighty of the earth grow old and die — proof that above them watches a Subduer.",
+   "sufi": "<em>Al-Qahhār</em> is the Name that tames the inner passions. The spiritual combatant is not the one who destroys his outward enemies, but the one who takes his carnal soul captive.",
+   "part": "Subdue your ego before it subdues you; and do not forget that you yourself will one day be tamed by one greater than you."
+  },
+  "17": {
+   "fr": "The Bestower",
+   "sens_court": "He who gives without recompense or motive.",
+   "lugha": "From <em>w-h-b</em>; <em>hiba</em> is the pure gift — without exchange, without debt. An intensive form: He gives and gives again, without wearying.",
+   "aqli": "The gift precedes merit: before you existed, you had nothing that would justify being given being. Everything since is of this order.",
+   "sufi": "To recognise this Name is to cease believing that one has <em>earned</em> anything. Gratitude is no longer mere courtesy: it becomes vertigo.",
+   "part": "Give without expecting — neither return, nor recognition, nor even to see yourself give."
+  },
+  "18": {
+   "fr": "The Provider",
+   "sens_court": "He who nourishes every creature.",
+   "lugha": "From <em>r-z-q</em>; <em>rizq</em> denotes all that sustains — bread, breath, knowledge, consolation. An intensive form: subsistence is continual.",
+   "aqli": "Not a mouth is opened on earth for which He has not prepared its food. The ant beneath the stone is nourished just as the king is.",
+   "sufi": "There is a <em>rizq</em> of the body and a <em>rizq</em> of the heart. The second is rarer and more necessary: wisdom, presence, right encounters.",
+   "part": "Work for your subsistence, but without anguish; and be yourself nourishment for others — through your word, your time, your attention."
+  },
+  "19": {
+   "fr": "The Opener",
+   "sens_court": "He who opens the ways and the hearts.",
+   "lugha": "From <em>f-t-ḥ</em>: to open, to conquer, to unveil. An intensive form: He ceaselessly opens what seemed shut.",
+   "aqli": "He opens the doors of the world (subsistence, ways, encounters) and the doors of the soul (understanding, repentance, unveiling).",
+   "sufi": "The <em>fatḥ</em> is, in the Sufi way, spiritual opening — the moment when a truth long approached suddenly opens. No one can bring it about; one only makes oneself <em>openable</em>.",
+   "part": "Open what you can open: a closed door, a shut heart, a broken dialogue — and leave to God what you cannot open."
+  },
+  "20": {
+   "fr": "The All-Knowing",
+   "sens_court": "Whose knowledge embraces all things, manifest and secret.",
+   "lugha": "A <em>faʿīl (فَعِيل)</em> form of <em>ʿ-l-m</em>: to know with certainty. Al-Kāfījī notes: His knowledge is not acquired, it is essential — He knows <em>by Himself</em>.",
+   "aqli": "His knowledge has neither before nor after: He knows the past without memory, the future without foresight, the present without observation.",
+   "sufi": "To live under the gaze of <em>al-ʿAlīm</em> is to cease playing a role. There is no use in seeming: He sees even beneath the veil you lay over yourself.",
+   "part": "Seek true knowledge — not the erudition that puffs up, but the knowing that transforms."
+  },
+  "21": {
+   "fr": "He who Contracts",
+   "sens_court": "Who restricts, withdraws, makes one feel the contraction.",
+   "lugha": "From <em>q-b-ḍ</em>: to seize, to close the hand, to contract. The gesture of the hand that shuts.",
+   "aqli": "He contracts subsistence, health, joy — according to a wisdom we do not measure. At the threshold of death, it is still He who <em>gathers</em> the soul.",
+   "sufi": "<em>Al-Qabḍ</em> is also a spiritual state: the contraction of the heart, dryness, inner narrowness. It is not a chastisement but a work — the flower shuts at night to open in the morning.",
+   "part": "Accept your contractions without panic: the hand that closes will open again."
+  },
+  "22": {
+   "fr": "He who Expands",
+   "sens_court": "Who enlarges the heart and extends grace.",
+   "lugha": "From <em>b-s-ṭ</em>: to extend, to unfold, to open the hand. The gesture inverse to <em>qabḍ (قَبْض)</em>.",
+   "aqli": "He extends subsistence, health, the horizon. He enlarges the narrow heart until it becomes vaster than the world.",
+   "sufi": "<em>Al-Basṭ</em> is the state in which the heart breathes widely, without care. It is the gift of the moment, not an acquisition — to alternate <em>qabḍ</em> and <em>basṭ</em> is the normal breathing of the wayfarer.",
+   "part": "When expansion comes, do not cling to it; when it departs, do not despair. Acknowledge that both hands are His."
+  },
+  "23": {
+   "fr": "He who Lowers",
+   "sens_court": "Who brings down the proud.",
+   "lugha": "From <em>kh-f-ḍ</em>; literally: to make descend, to incline downward.",
+   "aqli": "He lowers unjust powers, empty renowns, empires that believe themselves eternal. History is the great narrative of this Name.",
+   "sufi": "But He also lowers in order to raise: the buried grain descends before it rises. Every humiliation accepted prepares an elevation.",
+   "part": "Lower yourself of your own accord: spare God from having to do it."
+  },
+  "24": {
+   "fr": "He who Raises",
+   "sens_court": "Who raises the humble.",
+   "lugha": "From <em>r-f-ʿ</em>: to lift, to hoist, to raise up.",
+   "aqli": "He raises the humble, the sincere, the unseen. Many a saint has had no other elevation than this — a name unknown to men, written in letters of gold with Him.",
+   "sufi": "True elevation has nothing to do with social rank: it is nearness to God, which often passes by way of the stripping-away of rank.",
+   "part": "Do not seek to rise: seek to be just, and leave elevation to His hand."
+  },
+  "25": {
+   "fr": "He who Honours",
+   "sens_court": "Who grants dignity to whom He wills.",
+   "lugha": "From <em>ʿ-z-z</em>; a causative form: to make <em>ʿazīz</em> — rare, precious, untouchable.",
+   "aqli": "True honour comes neither from birth nor from wealth, but from Him alone. Whomever He honours, no one can shame.",
+   "sufi": "The spiritual dignity (<em>ʿizza</em>) of the servant grows as he depends less on creatures. The more he is in need, the less he is free.",
+   "part": "Keep your dignity through poverty toward creatures and richness in God."
+  },
+  "26": {
+   "fr": "He who Humiliates",
+   "sens_court": "Who strips glory from the one who arrays himself in it.",
+   "lugha": "From <em>dh-l-l</em>; a causative form: to make <em>dhalīl</em> — base, brought low.",
+   "aqli": "He humbles those who swell with a dignity that is not their own. The proud one fashions his own downfall.",
+   "sufi": "Humility accepted before God protects from the humiliation inflicted by men. Whoever bows of his own will need no longer be bowed down.",
+   "part": "Never place your glory in what can be taken from you."
+  },
+  "27": {
+   "fr": "He who Hears All",
+   "sens_court": "No voice, no murmur escapes Him.",
+   "lugha": "A <em>faʿīl (فَعِيل)</em> form of <em>s-m-ʿ</em>; al-Kāfījī insists: He hears <em>the murmur of the ant upon the black rock in the dark of night</em>.",
+   "aqli": "His hearing is not an organ: it is a presence to every vibration of being. Silence too is heard.",
+   "sufi": "When the heart is heavy and the tongue falls silent, know that He already hears. The highest prayer is sometimes the one we cannot put into words.",
+   "part": "Be attentive: listen before you speak, listen more than you speak, listen to what is not said."
+  },
+  "28": {
+   "fr": "He who Sees All",
+   "sens_court": "His sight passes through the veils.",
+   "lugha": "A <em>faʿīl (فَعِيل)</em> form of <em>b-ṣ-r</em>; <em>baṣīra (بَصِيرَة)</em> is penetrating vision, which sees the invisible behind the visible.",
+   "aqli": "He sees the thought before the word, the intention before the gesture. No veil is opaque to Him — not even the veil of the self over itself.",
+   "sufi": "<em>Al-Baṣīr</em> grants His servants a share of <em>baṣīra</em>: the lucidity that blinds itself neither about others nor about oneself.",
+   "part": "Ask for baṣīra more than for sight: to see clearly is worth more than to see far."
+  },
+  "29": {
+   "fr": "The Judge",
+   "sens_court": "He who decides with exactness.",
+   "lugha": "From <em>ḥ-k-m</em>: to judge, to settle, to seal. A <em>faʿal</em> form that names the function itself: <em>the</em> Judge.",
+   "aqli": "No dispute remains without a verdict: what is not settled here below will be settled there, with a justice that does not err.",
+   "sufi": "To cease being a judge of others is to entrust oneself to <em>al-Ḥakam</em>: He knows what you do not know of hearts.",
+   "part": "Do not rush your judgement upon another; leave it to a Judge greater than you."
+  },
+  "30": {
+   "fr": "The Just",
+   "sens_court": "Equity itself.",
+   "lugha": "From <em>ʿ-d-l</em>: to hold in balance, to set straight. Here the word denotes not an attribute but the very <em>essence</em> of justice.",
+   "aqli": "He is so just that one says not that He <em>acts</em> justly, but that He <em>is</em> Justice. The apparent evil of the world, over the whole span of time, resolves into equity.",
+   "sufi": "When you suffer an injustice, do not tense up: the balance of <em>al-ʿAdl</em> weighs at this very instant what your eyes do not see.",
+   "part": "Be just — first toward yourself: do not betray yourself, do not idolise yourself. Then toward others, even toward the enemy."
+  },
+  "31": {
+   "fr": "The Subtle and Kind",
+   "sens_court": "His gentleness acts where no one suspects it.",
+   "lugha": "From <em>l-ṭ-f</em>; <em>luṭf</em> unites two senses: <em>fineness</em> (that which is imperceptible) and <em>kindness</em> (that which softens itself in order to reach).",
+   "aqli": "His knowledge penetrates to the most deeply buried secrets, and His action insinuates itself into things with a delicacy that crushes nothing.",
+   "sufi": "<em>Al-Laṭīf</em> is the Name of the invisible graces: those coincidences that save, those words that arrive just in time, those consolations that come without a sound. Often you recognise their work only afterward.",
+   "part": "Be gentle in your manners, fine in your attentions; enter another's life without trampling it."
+  },
+  "32": {
+   "fr": "The Perfectly Informed",
+   "sens_court": "Knower of secrets and of nuances.",
+   "lugha": "From <em>kh-b-r</em>; <em>khabar</em> is news, true information. A <em>faʿīl (فَعِيل)</em> form: He knows through intimate experience, not by hearsay.",
+   "aqli": "His knowledge descends to the detail: the movement of an atom, the nuance of an intention, the weight of a silence.",
+   "sufi": "Where <em>al-ʿAlīm (اَلْعَلِيم)</em> knows things, <em>al-Khabīr</em> knows their savour, their background, their hidden underside.",
+   "part": "Seek to know things in depth, not at the surface; and acknowledge your own opacity to yourself."
+  },
+  "33": {
+   "fr": "The Forbearing",
+   "sens_court": "Who is patient, not hasty to punish.",
+   "lugha": "From <em>ḥ-l-m</em>; <em>ḥilm (حِلْم)</em> is self-mastery before what irritates, the absence of haste to react.",
+   "aqli": "He defers the chastisement, grants the guilty time, opens the door of return until the last breath.",
+   "sufi": "How many of us, had we been punished on the spot for every fault, would no longer be here to repent of it? <em>Ḥilm</em> is the great reprieve that makes the way possible.",
+   "part": "Learn to defer your reaction; between the offence and the response, leave a space — it is there that your freedom dwells."
+  },
+  "34": {
+   "fr": "The Immeasurable",
+   "sens_court": "His greatness exceeds all measure.",
+   "lugha": "From <em>ʿ-ẓ-m</em>; <em>ʿaẓama</em> is greatness in majesty, the kind that inspires respect and trembling.",
+   "aqli": "All created greatness is small beside His; and all created greatnesses added together do not form even one atom of His.",
+   "sufi": "To meditate on this Name restores to their just measure the <em>great</em> cares that occupy the soul: beside <em>al-ʿAẓīm</em>, what seemed enormous shrinks.",
+   "part": "Keep a sense of proportion: do not make much of what is small, nor little of what is great."
+  },
+  "35": {
+   "fr": "The All-Forgiving",
+   "sens_court": "Whose forgiveness covers the deepest faults.",
+   "lugha": "The same root as <em>al-Ghaffār (اَلْغَفَّار)</em> (<em>gh-f-r</em>: to veil), but a <em>faʿūl (فَعُول)</em> form that underlines the <em>depth</em> of the forgiveness rather than its repetition.",
+   "aqli": "No sin is too old, no fault too black, not to be covered by His forgiveness, provided the heart returns.",
+   "sufi": "<em>Al-Ghaffār</em> repeats, <em>al-Ghafūr</em> penetrates: He is not content to efface, He transforms the scar itself into light.",
+   "part": "When you forgive, go to the very bottom: a surface forgiveness reopens."
+  },
+  "36": {
+   "fr": "The Most Grateful",
+   "sens_court": "Who multiplies in return the little that one offers.",
+   "lugha": "From <em>sh-k-r</em>: to acknowledge a benefit. Strange: a <em>grateful</em> God? Al-Kāfījī explains: it is because He rewards beyond the measure of the gesture — He multiplies the grain of good that is sown.",
+   "aqli": "An atom of kindness on your part meets a mountain of reward on His. Such is His <em>gratitude</em>.",
+   "sufi": "To understand this Name heals one of bitterness: you are never forgotten, never undervalued. The good you do is known, even when men ignore it.",
+   "part": "Be grateful for the least benefit received, and acknowledge the least good you receive from others — gratitude is an art that is cultivated."
+  },
+  "37": {
+   "fr": "The Most High",
+   "sens_court": "Above every conceivable height.",
+   "lugha": "From <em>ʿ-l-w</em>; <em>ʿuluww</em> is elevation. A <em>faʿīl (فَعِيل)</em> form: He is in essential height, not spatial.",
+   "aqli": "His elevation is not in a geographical <em>above</em>: it is qualitative — beyond analogy, beyond the <em>more than</em>.",
+   "sufi": "To lift one's eyes toward Him is not to look upward: it is to open another eye, which sees neither high nor low, but the Real.",
+   "part": "Raise your intentions: do not ask little of a Most High."
+  },
+  "38": {
+   "fr": "The Infinitely Great",
+   "sens_court": "Greater than all, in all.",
+   "lugha": "From <em>k-b-r</em>; <em>kibr (الكِبْر)</em> is greatness; <em>kabīr</em> speaks essential greatness, not comparative.",
+   "aqli": "All created greatness holds its greatness from Him. This is why the ritual invocation <em>Allāhu akbar (اَللَّٰهُ أَكْبَر)</em> does not mean “God is <em>greater</em>” — but “God is <em>the</em> Greatness.”",
+   "sufi": "When you say <em>Allāhu akbar</em> on entering prayer, you lay down at the door all the false greatnesses: your own, that of men, that of your cares.",
+   "part": "Do not make yourself great; there is only one Great."
+  },
+  "39": {
+   "fr": "The Preserver",
+   "sens_court": "Who guards and conserves all things.",
+   "lugha": "From <em>ḥ-f-ẓ</em>; <em>ḥifẓ</em> is the keeping — the kind one has for what is precious. The <em>ḥifẓ</em> of the Quran is its memorisation: one <em>keeps</em> it within oneself.",
+   "aqli": "He preserves the existent in being at every instant. He also keeps the deed — not one act is lost in His memory.",
+   "sufi": "Your story is not lost: all the good you have done, all that you have suffered unjustly, is kept. Nothing evaporates.",
+   "part": "Be a keeper: of your word, of your promises, of the dignity of others, of the things entrusted to you."
+  },
+  "40": {
+   "fr": "The Provider of Sustenance",
+   "sens_court": "Who gives each one its just nourishment.",
+   "lugha": "From <em>q-w-t</em>; <em>qūt (قُوت)</em> is precise, measured nourishment, that which suffices. More targeted than <em>rizq</em>.",
+   "aqli": "To each being, the exact portion that keeps it alive — neither too much nor too little. The knowledge of this measure escapes creatures entirely.",
+   "sufi": "There is a spiritual <em>qūt</em>: the measure of knowledge, of suffering, of joy that your soul needs today. You receive exactly what keeps you alive — no more, no less.",
+   "part": "Be temperate in consumption, generous in sharing. Give others their just portion."
+  },
+  "41": {
+   "fr": "He who Suffices",
+   "sens_court": "He suffices for the one who leans upon Him.",
+   "lugha": "From <em>ḥ-s-b</em>; a twofold sense: <em>to reckon</em> (He keeps the exact account) and <em>to suffice</em> (He alone is a sufficient reckoning).",
+   "aqli": "For the one for whom He suffices, nothing more is lacking. For the one for whom He does not suffice, nothing will ever suffice.",
+   "sufi": "<em>Ḥasbunā Allāh (اَللَّٰه) wa niʿma-l-Wakīl (اَلْوَكِيل)</em> — “God suffices us, and what an excellent guardian”: the formula of moments of trial, when every support gives way save that one.",
+   "part": "Learn to say <em>this is enough for me</em>. It is the beginning of freedom."
+  },
+  "42": {
+   "fr": "The Majestic",
+   "sens_court": "Of a majesty that inspires awe.",
+   "lugha": "From <em>j-l-l</em>; <em>jalāl (جَلَال)</em> is the greatness that overawes, that makes one draw back. A <em>faʿīl (فَعِيل)</em> form: He is essentially majestic.",
+   "aqli": "His majesty inspires an awe-struck stillness (<em>hayba (الهَيْبَة)</em>) that is not fear, but a reverence that effaces in us the idle chatter.",
+   "sufi": "Before <em>al-Jalīl</em>, the heart ceases to argue, to propose, to calculate. It simply stands there.",
+   "part": "Learn to stand in silence before what exceeds you. Do not profane with words what deserves recollectedness."
+  },
+  "43": {
+   "fr": "The Generous",
+   "sens_court": "Who gives without recalling His gifts.",
+   "lugha": "From <em>k-r-m</em>; <em>karam</em> unites material generosity and inner nobility. The <em>karīm</em> gives, and he gives <em>well</em> — without humiliating, without reminding.",
+   "aqli": "He gives before being asked, gives what one would not have known to ask for, gives above merit.",
+   "sufi": "<em>Al-Karīm</em> does not make the one who receives feel that he receives. The best generosity is the one we forget having shown — as He does.",
+   "part": "Give with a hand that knows not what the other gives; and forget at once what you have given."
+  },
+  "44": {
+   "fr": "The Watchful",
+   "sens_court": "Present to all, an attentive witness.",
+   "lugha": "From <em>r-q-b</em>; <em>raqaba</em> is the nape of the neck — hence <em>to watch over</em>: the one who stands behind you, who sees the back of your neck.",
+   "aqli": "No act, no thought unfolds without His attentive presence.",
+   "sufi": "To live in the sense of <em>ar-Raqīb</em> is <em>murāqaba</em> — inner vigilance: making of each act an act done <em>before Him</em>, hence in full presence.",
+   "part": "Watch over yourself as you would watch over a child: not to punish, but so as not to lose sight of it."
+  },
+  "45": {
+   "fr": "He who Answers",
+   "sens_court": "Who grants the sincere call.",
+   "lugha": "From <em>j-w-b</em>; <em>jawāb</em> is the answer. An active form: He <em>answers</em> in act.",
+   "aqli": "He answers the call — sometimes by giving what is asked, sometimes by giving better, sometimes by deferring for a greater gift.",
+   "sufi": "Do not judge His answer by the immediate yes or no alone: the prayer not granted here sometimes receives its answer at another time, or in an invisible transformation of yourself.",
+   "part": "Answer those who call you: leave no cry without an echo, to the measure of your power."
+  },
+  "46": {
+   "fr": "The Immense",
+   "sens_court": "His mercy and His knowledge embrace all things.",
+   "lugha": "From <em>w-s-ʿ</em>; <em>saʿa</em> is amplitude, extent — the opposite of narrowness (<em>ḍīq</em>).",
+   "aqli": "The whole universe does not fill His amplitude; human miseries added together do not exhaust His mercy.",
+   "sufi": "Narrowness outside, but amplitude within: the servant of <em>al-Wāsiʿ</em> knows that the inner space has no walls.",
+   "part": "Enlarge your heart: do not let it shrink to the dimensions of your cares."
+  },
+  "47": {
+   "fr": "The Wise",
+   "sens_court": "Who sets each thing in its just place.",
+   "lugha": "From <em>ḥ-k-m</em> (the same root as <em>al-Ḥakam (اَلْحَكَم)</em>); <em>ḥikma (حِكْمَة)</em> is wisdom — knowing and acting rightly. A <em>faʿīl (فَعِيل)</em> form: He is Wise by essence.",
+   "aqli": "Not an atom of His work is in surplus, not a detail is wanting. What we do not understand bears witness to this as much as what we do understand.",
+   "sufi": "When the meaning of a trial escapes you, recall: it is you who lack height, not He who lacks wisdom.",
+   "part": "Seek wisdom more than knowledge; act with measure more than by impulse."
+  },
+  "48": {
+   "fr": "The Loving",
+   "sens_court": "Who loves and lets Himself be loved.",
+   "lugha": "From <em>w-d-d</em>; <em>wudd</em> is love-tenderness, lasting affection. A <em>faʿūl (فَعُول)</em> form that can be active (He loves) and passive (He is loved).",
+   "aqli": "He loves His creatures before they love Him; it is His love that calls forth theirs in return.",
+   "sufi": "<em>Al-Wadūd</em> is the secret Name of the Sufis: <em>God is not only to be feared, He is to be loved</em>. The whole way lies in this shift.",
+   "part": "Love, simply. Love those who love you, love those who do not love you. And know that, first of all, you are loved."
+  },
+  "49": {
+   "fr": "The Glorious",
+   "sens_court": "Of a glory full of goodness.",
+   "lugha": "From <em>m-j-d</em>; <em>majd</em> combines greatness and generosity — the glory that pours itself out, not the one that keeps itself.",
+   "aqli": "His glory is not haughty: it manifests in the gift, the radiance, the beauty.",
+   "sufi": "He is glorious in His very mercy: majesty casts no shadow over beauty, it crowns it.",
+   "part": "Let your dignity never be dry: let it be inhabited by generosity."
+  },
+  "50": {
+   "fr": "He who Resurrects",
+   "sens_court": "Who raises up from among the dead.",
+   "lugha": "From <em>b-ʿ-th</em>; <em>baʿth</em> is the sending, and more precisely the <em>raising-up</em> — making rise what is lying down.",
+   "aqli": "He will raise the dead on the promised Day; but already He <em>raises</em> each morning, from the sleep that resembles death, and from deeper sleeps still.",
+   "sufi": "Every spiritual awakening is a small resurrection: a sleeping heart rises again, a hope thought dead breathes anew.",
+   "part": "Raise up what has fallen: a discouraged loved one, an abandoned work, a friendship grown cold."
+  },
+  "51": {
+   "fr": "The Witness",
+   "sens_court": "Present to every being at every instant.",
+   "lugha": "From <em>sh-h-d</em>: to be present, to see, to attest. <em>Shahāda</em> is at once <em>presence</em> and <em>testimony</em>.",
+   "aqli": "He is present to all things and attests to all things: not an outside witness, but a presence inward to the event.",
+   "sufi": "<em>Ash-Shahīd</em> is the great antidote to solitude: you have never acted alone, never suffered alone, never loved alone. You have always been seen.",
+   "part": "Live as though someone saw you — for it is so. And bear witness to the true, even against yourself."
+  },
+  "52": {
+   "fr": "The Real · The True",
+   "sens_court": "Reality itself, set against all that vanishes.",
+   "lugha": "From <em>ḥ-q-q</em>; <em>ḥaqq (حَقّ)</em> is at once truth (against the false), reality (against illusion), and right (against the unjust).",
+   "aqli": "All that is not He has only a borrowed being; at every instant He alone is, and makes be.",
+   "sufi": "<em>Al-Ḥaqq</em> is the most spoken Name of the Sufis. <em>Anā-l-Ḥaqq (أَنَا الْحَقّ)</em>; <em>Yā Ḥaqq</em> — not because they identify themselves with God, but because all the rest suddenly appears to them as less real than He.",
+   "part": "Seek the Real beneath the appearance; do not lie, and do not accept the lie within yourself."
+  },
+  "53": {
+   "fr": "The Guardian-Trustee",
+   "sens_court": "He to whom one entrusts one's affairs.",
+   "lugha": "From <em>w-k-l</em>; the <em>wakīl</em> is the one to whom a matter is handed over so that he may carry it through. A <em>faʿīl (فَعِيل)</em> form: He is essentially worthy of this handing-over.",
+   "aqli": "To Him all affairs may be entrusted: material, moral, spiritual. He loses nothing of what is handed to Him.",
+   "sufi": "<em>Tawakkul</em> derives from this Name: not passivity, but the gesture of handing over <em>after having done one's part</em>. You do what you must; the outcome, you lay down.",
+   "part": "Learn to let go of results. You are not the director of the world — and that is good news."
+  },
+  "54": {
+   "fr": "The Strong",
+   "sens_court": "Of a strength without weakness.",
+   "lugha": "From <em>q-w-y</em>; <em>quwwa</em> is strength, the capacity to act. A <em>faʿīl (فَعِيل)</em> form: He is Strength in essence, not by accumulation.",
+   "aqli": "His strength does not tire, does not wear out, meets no equal. It needs no exercise in order to exist.",
+   "sufi": "The servant who leans on <em>al-Qawī</em> receives, within weakness, a strength that is not his own: it passes through the trial by him, more than by his own reserves.",
+   "part": "Take no vanity in your strengths — they are lent. And feel no shame at your weaknesses — they make room for one stronger than you."
+  },
+  "55": {
+   "fr": "The Firm",
+   "sens_court": "Unshakeable, without wear.",
+   "lugha": "From <em>m-t-n</em>; <em>matn</em> is firmness, the consistency of a tightly woven fabric. More precise than <em>al-Qawī (اَلْقَوِيّ)</em>: the strength <em>that does not give way</em>.",
+   "aqli": "No fatigue eats into His power; no repetition wears it; no century diminishes it.",
+   "sufi": "In holding to Him, you hold to what does not tremble. The rest — opinions, fashions, moods — will pass.",
+   "part": "Seek the firm within yourself: that in you which can withstand the trial without collapsing."
+  },
+  "56": {
+   "fr": "The Near Friend",
+   "sens_court": "Friend and protector of His own.",
+   "lugha": "From <em>w-l-y</em>; <em>walāya (وَلَايَة)</em> is protecting nearness, faithful alliance. The <em>walī (وَلِيّ)</em> is at once friend, ally, guardian.",
+   "aqli": "He is the ally of His sincere servants: He protects them, guides them, takes their affair in hand.",
+   "sufi": "From this Name derives the term <em>walī</em> in the sense of <em>saint</em>: the one who has become an intimate of God, and whom God takes under His particular wing. Sainthood is less a performance than a friendship.",
+   "part": "Choose your allies with care; and be a faithful friend to those who have trusted you."
+  },
+  "57": {
+   "fr": "The Worthy of Praise",
+   "sens_court": "Praised for Himself, independently of all praise.",
+   "lugha": "From <em>ḥ-m-d</em>; <em>ḥamd</em> is praise — not only <em>shukr (الشُّكْر)</em> (thanks for a gift received), but the acknowledgement of excellence in itself.",
+   "aqli": "He is praised whether or not He is praised. The whole of creation, by its very existence, is a silent praise.",
+   "sufi": "<em>Al-ḥamdu li-Llāh</em>: praise belongs to God, in every situation. To say it in joy is easy; to say it in trial — that is the way.",
+   "part": "Praise before you ask; acknowledge the good before the lack."
+  },
+  "58": {
+   "fr": "He who Numbers",
+   "sens_court": "Not an atom escapes Him.",
+   "lugha": "From <em>ḥ-ṣ-y</em>; <em>iḥṣāʾ</em> is the exact reckoning. An active form: He numbers in the present.",
+   "aqli": "All is counted with Him: the grains of sand, the breaths, the drops of rain, the hidden good deeds, the secret faults.",
+   "sufi": "Nothing invisible has been lost: not your unnoticed pain, not your unremarked patience, not your forgotten kindness. All is in His great book.",
+   "part": "Do not do good so that it may be counted by men — it is already counted elsewhere."
+  },
+  "59": {
+   "fr": "He who Originates",
+   "sens_court": "Origin of all things.",
+   "lugha": "From <em>b-d-ʾ</em>: to begin. An active form: the One who inaugurates, who makes begin.",
+   "aqli": "Every thing that begins to exist, He is its first author. He does not draw His own beginning from another.",
+   "sufi": "At the beginning of every right thought, of every impulse toward the good, there is He — the first cause, with no cause behind it.",
+   "part": "Acknowledge that you are the origin of nothing. The ideas that come to you, the strengths that carry you — all have a source upstream of you."
+  },
+  "60": {
+   "fr": "He who Brings Back",
+   "sens_court": "Who makes return to the point of origin.",
+   "lugha": "From <em>ʿ-w-d</em>; <em>ʿaud</em> is the return, the resumption. An active form: He makes return.",
+   "aqli": "All that He has begun will return to Him: <em>innā li-Llāhi wa innā ilayhi rājiʿūn</em> — “We belong to God, and it is to Him that we return.”",
+   "sufi": "The whole way lies in this verb: <em>to return</em>. The servant creates nothing, he returns. And at the end, it is still <em>al-Muʿīd</em> who brings him back, more than his own steps.",
+   "part": "Know where you are going: not forward, but toward the origin. The goal is also the source."
+  },
+  "61": {
+   "fr": "He who Gives Life",
+   "sens_court": "Source of all life.",
+   "lugha": "From <em>ḥ-y-y</em>; <em>ḥayāt (حَيَاة)</em>, life. A causative form: He makes alive.",
+   "aqli": "Life in all its forms — biological, mental, spiritual — flows from Him at every instant. The dead earth grows green as a sign: so too will hearts.",
+   "sufi": "<em>Al-Muḥyī</em> revives dead hearts: there is a life above biological life, and it is this that the way seeks.",
+   "part": "Give life around you: through your words that encourage, your attention that awakens, your presence that revives."
+  },
+  "62": {
+   "fr": "He who Gives Death",
+   "sens_court": "Master of the ultimate threshold.",
+   "lugha": "From <em>m-w-t</em>; <em>mawt</em>, death. A causative form: He makes die.",
+   "aqli": "No creature dies without His decree. Death is not a failure of the system: it is part of it, by His ordinance.",
+   "sufi": "There is a death before death — death to the ego, <em>fanāʾ (فَنَاء)</em>. <em>Al-Mumīt</em> is also the Name of this inner death that opens another life.",
+   "part": "Learn to die before dying: each day, to each false image of yourself, to each attachment that divides you. You will then die more freely."
+  },
+  "63": {
+   "fr": "The Living",
+   "sens_court": "Life in itself, without beginning.",
+   "lugha": "From <em>ḥ-y-y</em>; <em>ḥayy</em>, the Living — not living <em>from</em> something, but Living in essence.",
+   "aqli": "His life is not a state, it is His very being. All life is a reflection, never a copy.",
+   "sufi": "<em>Al-Ḥayy</em> is one of the two Names of the Verse of the Throne (<em>Āyat al-Kursī (آيَةُ الكُرْسِيّ)</em>), with <em>al-Qayyūm (اَلْقَيُّوم)</em>. To invoke them together is to take root in what does not die.",
+   "part": "Do not place your life in what dies. And within what dies, seek the living."
+  },
+  "64": {
+   "fr": "The Self-Subsisting",
+   "sens_court": "Who stands by Himself and makes all the rest stand.",
+   "lugha": "From <em>q-w-m</em>; <em>qiyām</em> is to stand upright, to subsist. An intensive form: He subsists by Himself, and all the rest subsists by Him.",
+   "aqli": "If His <em>qayyūmiyya</em> were interrupted for an instant, the universe would cease to be. The keeping-in-being is as miraculous as the bringing-into-being.",
+   "sufi": "<em>Yā Ḥayy (اَلْحَيّ) yā Qayyūm</em> is the invocation of moments of exhaustion: <em>You who are living and who stand upright, hold me upright</em>.",
+   "part": "Stand upright. And hold upright what threatens to fall around you."
+  },
+  "65": {
+   "fr": "He who Finds",
+   "sens_court": "He who lacks nothing.",
+   "lugha": "From <em>w-j-d</em>; <em>wajd</em> is to find — including in the existential sense, <em>wujūd</em> being <em>being</em>. The <em>wājid</em> is also the one who lacks nothing: He has all within Himself.",
+   "aqli": "He never <em>seeks</em> — He has all. No resource fails Him, no means is wanting to Him.",
+   "sufi": "Among the Sufis, <em>wajd</em> also denotes ecstasy — the inner finding. The servant <em>finds</em> God: not as an object, but as a sudden self-evidence.",
+   "part": "Be, in that poverty, rich: lack not the essential, and the essential is already within you."
+  },
+  "66": {
+   "fr": "The Glorious in Nobility",
+   "sens_court": "Of a nobility full of generosity.",
+   "lugha": "An active form of the root <em>m-j-d</em> (the same as <em>al-Majīd (اَلْمَجِيد)</em>); the nuance: <em>al-Mājid</em> stresses the present act of nobility, <em>al-Majīd</em> the essential attribute.",
+   "aqli": "He is noble in the instant as in eternity: His acting and His being never contradict each other.",
+   "sufi": "The nobility of the soul is from Him: <em>futuwwa (الفُتُوَّة)</em> (spiritual chivalry) draws its source from this Name.",
+   "part": "Be noble: not haughty, but great of heart. True nobility is measured by what one forgives, not by what one demands."
+  },
+  "67": {
+   "fr": "The One",
+   "sens_court": "Unique, without associate or like.",
+   "lugha": "From <em>w-ḥ-d</em>; <em>waḥda</em>, unity. <em>Wāḥid</em>: the One who excludes multiplicity within His essence.",
+   "aqli": "He has neither partner, nor part, nor like, nor equivalent. To think more than one is to step outside Him.",
+   "sufi": "<em>Tawḥīd</em>, the profession of unity, is the heart of the way: not a dogma to recite, but an experience to live — to see that nothing else has an existence of its own.",
+   "part": "Unify your heart: do not serve two masters, do not run in two directions, do not wear two faces."
+  },
+  "68": {
+   "fr": "The Unique",
+   "sens_court": "Unity of essence, indivisible.",
+   "lugha": "From the same root as <em>al-Wāḥid (اَلْوَاحِد)</em>, but more radical: <em>aḥad</em> excludes not only multiplicity, but all internal composition.",
+   "aqli": "Where <em>al-Wāḥid</em> says <em>sole</em>, <em>al-Aḥad</em> says <em>simple</em> — uncompounded, undivisible, with neither inside nor outside.",
+   "sufi": "It is by this Name that sūrat <em>al-Ikhlāṣ</em> opens: <em>Qul huwa-Llāhu Aḥad</em>. Uniqueness is there stated in its pure state.",
+   "part": "Be simple: a single heart, a single intention, a single aim."
+  },
+  "69": {
+   "fr": "The Impenetrable Absolute",
+   "sens_court": "Full, without hollow, toward whom all turns.",
+   "lugha": "A rare word, with a twofold sense: <em>without hollow or flaw</em> — hence full, self-sufficient; and <em>the one toward whom one turns</em> in need.",
+   "aqli": "He needs nothing, and all things need Him. He has neither hunger, nor thirst, nor sleep, nor lack of any kind.",
+   "sufi": "<em>Aṣ-Ṣamad</em> is the Name of the ultimate Refuge: when all the doors are shut, one turns toward the One who has no door, because He is wholly welcome.",
+   "part": "Turn toward Him in need — first. And learn, in your turn, to be a refuge for whoever turns toward you."
+  },
+  "70": {
+   "fr": "The Powerful",
+   "sens_court": "Who can do all that He wills.",
+   "lugha": "From <em>q-d-r</em>; <em>qudra</em> is the capacity to act. <em>Qādir</em>, an active form: the One who can.",
+   "aqli": "His power is without limit: neither resistance that obstructs Him, nor effort that costs Him.",
+   "sufi": "To feel <em>al-Qādir</em> is to cease despairing: what is humanly impossible is not so for Him.",
+   "part": "Do not say <em>it is impossible</em> too soon. The door will not open of itself — but it can open."
+  },
+  "71": {
+   "fr": "The All-Powerful",
+   "sens_court": "Whose power is exercised without effort.",
+   "lugha": "An augmented form of the same root; <em>iqtidār</em> adds to <em>qudra</em> the notion of <em>effective mastery</em> and of ease.",
+   "aqli": "What He wills is done, without a necessary intermediary, without gradation, without difficulty.",
+   "sufi": "Where <em>al-Qādir (اَلْقَادِر)</em> says <em>He can</em>, <em>al-Muqtadir</em> says <em>He can absolutely, and without effort</em>. It is the Name of the great reversals — when the oppressor falls in an instant.",
+   "part": "Do not fear the mighty; know that their power is borrowed, and that the reversal is in His hand."
+  },
+  "72": {
+   "fr": "He who Brings Forward",
+   "sens_court": "Who raises what He wills to the first rank.",
+   "lugha": "From <em>q-d-m</em>; <em>qadima</em> is to precede, to be at the head. An intensive form: He places forward.",
+   "aqli": "He places first what He wills: the prophets, the saints, the just works. And He places first, in each one's life, what ought to be.",
+   "sufi": "Inner order matters: what you put first in your life reveals who you are. God first, and the rest follows in the just hierarchy.",
+   "part": "Put first what ought to be first; inner disorder always arises from a wrong priority."
+  },
+  "73": {
+   "fr": "He who Holds Back",
+   "sens_court": "Who keeps what He wills behind.",
+   "lugha": "From <em>ʾ-kh-r</em>; <em>taʾakhkhur</em> is delay. An intensive form: He places behind, He defers.",
+   "aqli": "He delays what He wills: a chastisement that might fall, a grace the soul is not yet ready to receive, a victory that would need to be tamed.",
+   "sufi": "The delay you undergo is not a forgetting: it is often a hidden gift. What arrives later arrives riper.",
+   "part": "Accept the delays of life; do not rush upon the unripe fruit."
+  },
+  "74": {
+   "fr": "The First",
+   "sens_court": "Before all beginning.",
+   "lugha": "From <em>w-ʾ-l</em>; <em>awwal</em> is the first in order — but here, with no <em>second</em> that prefigures Him.",
+   "aqli": "Before Him, nothing. No empty time precedes Him: He <em>is</em> before time.",
+   "sufi": "To meditate on <em>al-Awwal</em> is to go back beyond every thinkable origin. Thought draws back, and back, and finds at last a silence: it is there.",
+   "part": "Seek within yourself what was <em>before</em> your stories: bare consciousness, there where you had not yet an image of yourself."
+  },
+  "75": {
+   "fr": "The Last",
+   "sens_court": "After all ending.",
+   "lugha": "From <em>ʾ-kh-r</em>; <em>ākhir</em> is the last in order — but with no <em>next-to-last</em> that precedes Him.",
+   "aqli": "After Him, nothing. When all has passed — the worlds, the names, the works — He will be, as He was.",
+   "sufi": "<em>Al-Awwal (اَلْأَوَّل)</em> and <em>al-Ākhir</em> are pronounced together: He is at the beginning and at the end. All that unfolds between the two is inscribed within His parenthesis.",
+   "part": "Keep the end in view: not to be frightened by it, but so as not to waste your time along the way."
+  },
+  "76": {
+   "fr": "The Manifest",
+   "sens_court": "Manifest in every sign of the world.",
+   "lugha": "From <em>ẓ-h-r</em>; <em>ẓuhūr</em> is appearance, the becoming-manifest. <em>Ẓāhir</em>, that which shows itself.",
+   "aqli": "All that exists is a sign of Him. Creation is a calligraphy — each line says something of it.",
+   "sufi": "He is not hidden behind the world; He is manifest <em>within</em> the world, to whoever knows how to look. The eye of the heart sees Him everywhere, the eye of flesh misses Him everywhere.",
+   "part": "Learn to see the signs; to read the visible as a language."
+  },
+  "77": {
+   "fr": "The Hidden",
+   "sens_court": "Inward to all inwardness.",
+   "lugha": "From <em>b-ṭ-n</em>; <em>baṭn</em>, the interior, the belly. <em>Bāṭin</em>, that which is within.",
+   "aqli": "He is inward to every thing, without being confused with it. <em>More inward to me than myself</em>, the tradition will say.",
+   "sufi": "<em>Aẓ-Ẓāhir</em> and <em>al-Bāṭin</em> go together: He is manifest and hidden at once — manifest through the signs, hidden by His essence. To seek Him outside and within is the same gesture.",
+   "part": "Cultivate your inwardness. What is interior to you carries more weight than your appearance."
+  },
+  "78": {
+   "fr": "The Governor",
+   "sens_court": "Who governs each thing with authority.",
+   "lugha": "The same root as <em>al-Walī (اَلْوَلِيّ)</em> (<em>w-l-y</em>), but inflected toward governance: the <em>wālī</em> is the governor of a province.",
+   "aqli": "He governs the entire universe: not an event occurs outside His decree, not a leaf falls without Him.",
+   "sufi": "To recognise <em>al-Wālī</em> is to cease believing that one holds the reins. You do your part; the governing belongs to another.",
+   "part": "Govern first your own kingdom — your body, your tongue, your heart. The rest will be added to you."
+  },
+  "79": {
+   "fr": "The Most Exalted",
+   "sens_court": "Above every thought about Him.",
+   "lugha": "A reflexive form of <em>ʿ-l-w</em>; literally <em>the One who exalts Himself</em> above all analogy.",
+   "aqli": "He surpasses not only the creatures, but every description one might form of Him. <em>Tanzīh</em> — transcendence — is the proper sense of this Name.",
+   "sufi": "When you believe you <em>have understood</em> God, recall <em>al-Mutaʿālī</em>: He is beyond what you have understood.",
+   "part": "Rise above the petty: do not waste your time in basenesses, aim higher than life pulls you."
+  },
+  "80": {
+   "fr": "The Most Good",
+   "sens_court": "Of a goodness that runs ahead of the request.",
+   "lugha": "From <em>b-r-r</em>; <em>birr</em> is acting goodness, the doing of good; <em>bārr (بَارّ)</em> qualifies the son devoted to his parents. <em>Al-Barr</em> is goodness in essence.",
+   "aqli": "His goodness does not wait for merit: it is first, free, overflowing.",
+   "sufi": "You are not loved because you deserve it; you deserve because you are loved. This inversion is grace.",
+   "part": "Be good by habit, not by calculation. And be <em>bārr</em> toward those to whom you owe: parents, masters, faithful friends."
+  },
+  "81": {
+   "fr": "He who Welcomes the Return",
+   "sens_court": "Who returns ceaselessly toward the one who returns toward Him.",
+   "lugha": "From <em>t-w-b</em>; <em>tawba (التَّوْبَة)</em>, the return. An intensive form: He returns toward the penitent — even before the penitent returns toward Him.",
+   "aqli": "Human repentance is preceded by a divine movement: He <em>turns</em> His face toward us, and it is this that allows us to turn toward Him.",
+   "sufi": "Every conversion, every spiritual resumption, is a response to an inner call — which is already <em>at-Tawwāb</em> at work.",
+   "part": "Return — each time you stray. And welcome the return of others: do not throw their past in their face."
+  },
+  "82": {
+   "fr": "He who Restores",
+   "sens_court": "Who restores troubled justice.",
+   "lugha": "From <em>n-q-m</em>; often translated as <em>vengeance</em>, but al-Kāfījī specifies: divine <em>intiqām</em> is a <em>restoration</em>, not a passion. He is not wounded; He re-establishes the order.",
+   "aqli": "When injustice is prolonged, <em>al-Muntaqim</em> acts — sometimes slowly, sometimes suddenly. The balance always rights itself.",
+   "sufi": "Do not avenge yourself; that is not your role, it is His. And He does it better than you would.",
+   "part": "Leave to God His function. Keep, for yourself, forgiveness and service."
+  },
+  "83": {
+   "fr": "He who Effaces",
+   "sens_court": "Who effaces the fault down to its trace.",
+   "lugha": "From <em>ʿ-f-w</em>; <em>ʿafw (عَفْو)</em> is effacement, the wiping clean. Stronger than <em>maghfira</em> (which veils): <em>ʿafw</em> leaves not even a trace.",
+   "aqli": "The forgiveness of <em>al-Ghafūr (اَلْغَفُور)</em> covers; that of <em>al-ʿAfū</em> effaces. As though the fault had never occurred.",
+   "sufi": "<em>Allāhumma innaka ʿafuwwun karīmun tuḥibbu-l-ʿafwa fa-ʿfu ʿannī</em> — “My God, You are the One who effaces, generous, who loves to efface: efface my faults.” The invocation of the Nights of Destiny.",
+   "part": "Forgive without reminding. Do not bring up another's old faults again: leave them truly behind."
+  },
+  "84": {
+   "fr": "The Most Tender",
+   "sens_court": "Of a motherly tenderness.",
+   "lugha": "From <em>r-ʾ-f</em>; <em>raʾfa</em> is the compassion that softens, gentler still than <em>raḥma</em>.",
+   "aqli": "If <em>ar-Raḥmān (اَلرَّحْمَٰن)</em> is wide mercy, <em>ar-Raʾūf</em> is the tenderness that bends down — the one that takes into its arms.",
+   "sufi": "When you feel too small for <em>ar-Raḥmān</em>, invoke <em>ar-Raʾūf</em>: the same tenderness, but nearer, more tangible.",
+   "part": "Be tender. The world cruelly lacks tenderness — above all where it claims to have no need of it."
+  },
+  "85": {
+   "fr": "The Sovereign of the Kingdom",
+   "sens_court": "Master of every kingdom, visible and invisible.",
+   "lugha": "A construction in two words: <em>Mālik</em>, possessor; <em>al-Mulk</em>, the kingdom, sovereignty. <em>Possessor of the Kingdom</em>.",
+   "aqli": "He gives the kingdom to whom He wills, withdraws it from whom He wills: no throne is held for life.",
+   "sufi": "The human being too receives a small kingdom — his body, his time, his gifts. But it is a <em>lent</em> kingdom, for which an account will have to be given.",
+   "part": "Rule your kingdom with justice; remember that it does not belong to you as your own."
+  },
+  "86": {
+   "fr": "The Holder of Majesty and Generosity",
+   "sens_court": "In Him, majesty and beauty do not contradict each other — they coincide.",
+   "lugha": "<em>Dhū</em>, possessor of; <em>al-jalāl (جَلَال)</em>, the majesty that inspires awe; <em>al-ikrām</em>, the generosity that honours. The Name says: He alone is <em>both the one and the other</em>.",
+   "aqli": "In creatures, strength and gentleness are opposed. In Him, they are wedded: His majesty is generous, His generosity is majestic.",
+   "sufi": "It is the Name of the <em>coincidence of opposites</em> in God — a vertigo dear to the Sufis: neither hard nor soft, neither distant nor cloying, but both in their perfection.",
+   "part": "Cultivate within yourself <em>jalāl</em> (dignity, firmness) <em>and</em> <em>ikrām</em> (gentleness, generosity). The one without the other is disfigured."
+  },
+  "87": {
+   "fr": "The Equitable",
+   "sens_court": "Who renders to each his due.",
+   "lugha": "From <em>q-s-ṭ</em>; <em>qisṭ</em> is equity, the just portion. An active form: the One who balances.",
+   "aqli": "Different from <em>al-ʿAdl (اَلْعَدْل)</em>, which is essential Justice: <em>al-Muqsiṭ</em> is equity in act, distributed — He renders to each one what he is due to receive, neither more nor less.",
+   "sufi": "Divine equity often reveals itself beyond appearances. What seems unequal to you today balances within an economy vaster than you see.",
+   "part": "Be equitable in small things: in the apportioning of time, of attention, of speech. No one should be wronged by you."
+  },
+  "88": {
+   "fr": "He who Gathers",
+   "sens_court": "Who reunites what was scattered.",
+   "lugha": "From <em>j-m-ʿ</em>; <em>jamʿ</em>, the gathering. An active form: the One who gathers.",
+   "aqli": "He will gather humankind on the promised Day; and already He gathers the opposites within each being (life and death, suffering and joy, day and night).",
+   "sufi": "<em>Al-Jāmiʿ</em> also gathers the scattered heart: <em>jamʿ al-qalb (القَلْب)</em> is inner unification, in which a thousand preoccupations give way to a single presence.",
+   "part": "Gather: what within you is scattered, what around you is divided. Do not be an agent of separation."
+  },
+  "89": {
+   "fr": "The Self-Sufficient",
+   "sens_court": "Rich by essence, without need.",
+   "lugha": "From <em>gh-n-y</em>; <em>ghinā (غِنَى)</em>, richness, sufficiency. <em>Ghanī</em>, the one who has need of nothing.",
+   "aqli": "He is rich in Himself, and we can add nothing to Him by our worship, nor subtract anything from Him by our neglect.",
+   "sufi": "Whether you pray to Him or not, He is no greater for it; but you become more yourself. Worship serves the servant, not the Lord.",
+   "part": "Tend toward inner <em>ghinā</em>: poverty toward creatures and inner richness. That is freedom."
+  },
+  "90": {
+   "fr": "He who Enriches",
+   "sens_court": "Who fulfils the needs of His servants.",
+   "lugha": "A causative form of the same root: the One who makes <em>ghanī</em>, who makes sufficient.",
+   "aqli": "He makes His servants rich — of money sometimes, of heart above all. Many are poor with much; a few (الأُنْس) are rich with nothing.",
+   "sufi": "<em>Al-Mughnī</em> enriches the soul until it no longer needs the goods of the world. That is the most solid wealth.",
+   "part": "Help to enrich others — first of all inwardly. The greatest gift is not material."
+  },
+  "91": {
+   "fr": "He who Withholds",
+   "sens_court": "Who prevents what would do harm.",
+   "lugha": "From <em>m-n-ʿ</em>; <em>manʿ</em>, to prevent, to forbid. An active form: the One who withholds.",
+   "aqli": "He withholds what He wills: a gift one asks of Him, an evil one feared, an event one hoped for. And His withholding is as much a grace as His giving.",
+   "sufi": "Often, what you did not obtain was your protection. <em>Al-Māniʿ</em> sometimes withholds for your good — you will know it later, perhaps.",
+   "part": "Learn to withhold: your anger, your tongue, your desire to have the last word. Prevention is an act of strength."
+  },
+  "92": {
+   "fr": "He who Afflicts",
+   "sens_court": "The ultimate source of every trial, which comes only through wisdom.",
+   "lugha": "From <em>ḍ-r-r</em>; <em>ḍarr</em>, harm, injury. A Name to be handled with reverence: it says that nothing can do harm outside His decree.",
+   "aqli": "No affliction comes without His permission. This does not mean that He loves evil — it means that nothing escapes His ordinance.",
+   "sufi": "To understand <em>aḍ-Ḍārr</em> heals one of rancour against the world: what comes to you, even by another's hand, is also by His permission. You no longer have to struggle against the shadows: you turn toward the Source.",
+   "part": "Never be a cause of harm, to the measure of your power; but accept harm undergone as a part of the great economy you do not yet understand."
+  },
+  "93": {
+   "fr": "He who Benefits",
+   "sens_court": "The ultimate source of all good.",
+   "lugha": "From <em>n-f-ʿ</em>; <em>nafʿ (نَفْع)</em>, benefit, usefulness. An active form: the One who does good.",
+   "aqli": "No good comes without His being its source. The hands that do you good are His hands.",
+   "sufi": "<em>Aḍ-Ḍārr</em> and <em>an-Nāfiʿ</em> are named together: one must hold to both so as not to fall into dualism. Apparent good and evil come from the same Source, within a single wisdom.",
+   "part": "Be useful. Seek the <em>nafʿ</em> in each of your days — what good have you brought, and to whom?"
+  },
+  "94": {
+   "fr": "The Light",
+   "sens_court": "Light of the heavens and the earth, and light of hearts.",
+   "lugha": "From <em>n-w-r</em>; <em>nūr</em>, light. Not a visual attribute: the light by which <em>something</em> is <em>seen</em>.",
+   "aqli": "<em>Allāh (اَللَّٰه) is the Light of the heavens and the earth</em> (Quran 24:35). He is that by which all becomes manifest: without Him, nothing would be <em>seen</em>, hence nothing would be.",
+   "sufi": "<em>An-Nūr</em> is also the inner light of the heart — knowledge by unveiling (<em>kashf (الكَشْف)</em>). You do not kindle this light: you withdraw the veils, and it is there.",
+   "part": "Be a light, modestly: illumine around you, not too much, just enough that one may see."
+  },
+  "95": {
+   "fr": "The Guide",
+   "sens_court": "Who leads to the Real.",
+   "lugha": "From <em>h-d-y</em>; <em>hidāya (هِدَايَة)</em>, guidance. An active form: the One who guides in the present.",
+   "aqli": "He guides on several levels: general guidance (the senses, the intelligence), prophetic guidance (the revealed messages), intimate guidance (the inspiration of the heart).",
+   "sufi": "One does not guide oneself to the Real; one is guided. All you can do is <em>make yourself guidable</em>: sincere, attentive, humble.",
+   "part": "Ask for guidance before all the rest. <em>Ihdinā-ṣ-ṣirāṭa-l-mustaqīm</em> — “Guide us upon the straight way”: the prayer one recites seventeen times a day."
+  },
+  "96": {
+   "fr": "The Inventor without Model",
+   "sens_court": "Who creates without prior model.",
+   "lugha": "From <em>b-d-ʿ</em>; <em>ibdāʿ</em> is to create an entirely new thing, without precedent. Different from <em>khalq</em> (to create from a prior measure).",
+   "aqli": "Before Him, there was nothing from which He could have drawn inspiration; the models, it is He who set them down.",
+   "sufi": "Each day is <em>badīʿ</em>: it has never existed before. Each face you cross is an original. Creation is <em>today</em>, not yesterday.",
+   "part": "Live each day as a new day; and dare, in your life, to create what did not exist before you."
+  },
+  "97": {
+   "fr": "The Permanent",
+   "sens_court": "Who remains when all passes.",
+   "lugha": "From <em>b-q-y</em>; <em>baqāʾ (بَقَاء)</em>, subsistence, permanence. The contrary of <em>fanāʾ (فَنَاء)</em>, evanescence.",
+   "aqli": "All passes, save His Face: <em>kullu shayʾin hālik illā wajhah</em> (Quran 28:88). He is what remains when all the rest has come undone.",
+   "sufi": "<em>Fanāʾ fī-Llāh</em> and <em>baqāʾ bi-Llāh</em> — extinction in God and subsistence through God — are the two poles of the way. To die to the transient in order to subsist through the Permanent.",
+   "part": "Place your heart in what does not pass: truth, true love, the good done in secret. These are the only coins one carries away."
+  },
+  "98": {
+   "fr": "The Inheritor",
+   "sens_court": "To whom all returns in the end.",
+   "lugha": "From <em>w-r-th</em>; <em>wirth</em>, the inheritance. <em>Wārith</em>, the one who inherits.",
+   "aqli": "When all people will have passed — their goods, their works, their names — He will remain, the sole Inheritor of all.",
+   "sufi": "To meditate on this Name relativises every attachment to possessions: you only occupy temporarily. The true owner comes after you.",
+   "part": "Do not believe yourself the owner of what you hold. You are its usufructuary — and soon the inheritance will return to the Inheritor."
+  },
+  "99": {
+   "fr": "The Guide to Right Direction",
+   "sens_court": "Whose direction leads to rectitude.",
+   "lugha": "From <em>r-sh-d</em>; <em>rushd</em> is rectitude, maturity, the sense of the right path. Different from <em>hidāya (هِدَايَة)</em>: <em>rushd</em> stresses the soundness of the direction taken.",
+   "aqli": "All His ways lead to the good, even those that seem contrary. His direction is never mistaken — ours, sometimes, does not know how to read it.",
+   "sufi": "To ask for <em>rushd</em> is to ask not to take the wrong path <em>once already on the path</em>. Many have guidance and still lose the direction.",
+   "part": "Seek spiritual maturity (<em>rushd</em>) more than worldly wisdom. Worldly wisdom impresses; rushd transforms."
+  },
+  "100": {
+   "fr": "The Most Patient",
+   "sens_court": "Whose patience spans the centuries.",
+   "lugha": "From <em>ṣ-b-r</em>; <em>ṣabr (صَبْر)</em>, patience, the holding firm within the trial. A <em>faʿūl (فَعُول)</em> form: He is essentially and magnificently patient.",
+   "aqli": "He defers the chastisement, gives time, awaits the return, begins again with whoever begins again. His patience covers our centuries as it covers our seconds.",
+   "sufi": "Of all the virtues, <em>ṣabr</em> is perhaps the most divine: it is cited in the Quran more than 90 times. Without it, no way holds for long.",
+   "part": "Be patient: with others, with yourself, with God (in appearance) — without ascribing any forgetting to Him. Patience is the other name of trust."
+  }
+ }
+}

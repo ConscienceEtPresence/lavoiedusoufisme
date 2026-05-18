@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon-16.png" />
+  <link rel="shortcut icon" href="../../assets/img/favicon.ico" />
+  <link rel="manifest" href="../../manifest.webmanifest" />
+  <meta name="theme-color" content="#0F1830" />
+  <title>Site map — The Inner Path</title>
+  <meta name="description" content="Complete site map: all the pages organised by section. An overview for finding one's way through the library." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../assets/css/base.css" />
+  <link rel="stylesheet" href="../../assets/css/layout.css" />
+  <link rel="stylesheet" href="../../assets/css/components.css" />
+  <link rel="stylesheet" href="../../assets/css/bilingue.css" />
+
+  <style>
+    .plan-search {
+      max-width: 480px;
+      margin: 0 auto var(--space-xl);
+      position: relative;
+    }
+    .plan-search input {
+      width: 100%;
+      padding: .9rem 1.2rem .9rem 2.8rem;
+      font-family: 'Source Serif 4', serif;
+      font-size: 1rem;
+      border: 1px solid rgba(15, 24, 48, 0.15);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--ink);
+      transition: border-color .25s ease, box-shadow .25s ease;
+    }
+    .plan-search input:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.12);
+    }
+    .plan-search::before {
+      content: '✦';
+      position: absolute;
+      left: 1.1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gold);
+      font-size: 1rem;
+      opacity: .7;
+    }
+    .plan-section { max-width: 760px; margin: 0 auto var(--space-xl); }
+    .plan-section__head {
+      display: flex; align-items: baseline; gap: 1rem;
+      margin-bottom: 1.2rem; padding-bottom: .7rem;
+      border-bottom: 1px solid rgba(184, 134, 11, .3);
+    }
+    .plan-section__num {
+      font-family: 'Cormorant Garamond', serif; font-style: italic;
+      font-size: 1.8rem; color: var(--gold); line-height: 1;
+    }
+    .plan-section__title {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.6rem;
+      color: var(--ink-title, #1B2A4E); font-weight: 500; margin: 0;
+    }
+    .plan-section__ar {
+      font-family: 'Amiri', serif; font-size: 1.4rem;
+      color: var(--gold); direction: rtl; margin-right: auto;
+    }
+    .plan-section__intro {
+      font-style: italic; color: var(--ink-soft);
+      font-size: .98rem; margin-bottom: 1rem; line-height: 1.6;
+    }
+    .plan-list {
+      list-style: none; padding: 0; margin: 0; display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: .7rem 1.4rem;
+    }
+    .plan-list li { padding: .35rem 0; }
+    .plan-list a {
+      display: block; color: var(--ink); text-decoration: none;
+      padding: .25rem 0; border-bottom: 1px dotted transparent;
+      transition: border-color .2s ease, color .2s ease, padding-left .2s ease;
+      font-family: 'Source Serif 4', serif;
+    }
+    .plan-list a:hover {
+      color: var(--gold); border-bottom-color: var(--gold); padding-left: .3rem;
+    }
+    .plan-list a .item-sub {
+      display: block; font-size: .82rem; color: var(--ink-soft);
+      font-style: italic; margin-top: .12rem;
+    }
+    .plan-list .new {
+      display: inline-block; font-family: 'Inter', sans-serif;
+      font-size: .65rem; color: var(--gold); letter-spacing: .15em;
+      text-transform: uppercase; margin-left: .4rem; vertical-align: middle;
+    }
+    .plan-list--hub a { font-weight: 500; color: var(--ink-title, #1B2A4E); }
+    .plan-hidden { display: none !important; }
+    .plan-empty {
+      text-align: center; color: var(--ink-soft); font-style: italic;
+      padding: 2rem; display: none;
+    }
+    .plan-empty.is-visible { display: block; }
+  </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B7WRGPZMT3');
+  </script>
+
+  <!-- Open Graph & Twitter Card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Inner Path" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:title" content="Site map — The Inner Path" />
+  <meta property="og:description" content="Complete site map: all the pages organised by section. An overview for finding one's way through the library." />
+  <meta property="og:url" content="https://lavoiedudedans.fr/en/pages/plan.html" />
+  <meta property="og:image" content="https://lavoiedudedans.fr/assets/img/icon-512.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Site map — The Inner Path" />
+  <meta name="twitter:description" content="Complete site map: all the pages organised by section. An overview for finding one's way through the library." />
+  <meta name="twitter:image" content="https://lavoiedudedans.fr/assets/img/icon-512.png" />
+  <link rel="canonical" href="https://lavoiedudedans.fr/en/pages/plan.html" />
+  <link rel="alternate" hreflang="fr" href="https://lavoiedudedans.fr/pages/plan.html" />
+  <link rel="alternate" hreflang="en" href="https://lavoiedudedans.fr/en/pages/plan.html" />
+  <link rel="alternate" hreflang="x-default" href="https://lavoiedudedans.fr/pages/plan.html" />
+</head>
+<body class="page-enter">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="16" cy="16" r="13" /><circle cx="16" cy="16" r="7" /><circle cx="16" cy="16" r="1.5" fill="currentColor" />
+        </svg>
+        <span>The Inner Path</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/decouvrir.html">Discover</a></li>
+          <li><a href="../pages/cheminer.html">Journeying</a></li>
+          <li><a href="../pages/rencontrer.html">Encounter</a></li>
+          <li><a href="../pages/metaphysique/index.html">Metaphysics</a></li>
+          <li><a href="../pages/poesie/index.html">Poetry</a></li>
+          <li><a href="../pages/contes/index.html">Tales</a></li>
+          <li><a href="../pages/dictionnaire/index.html">م Dictionary</a></li>
+          <li><a href="../pages/racines/index.html">جذر Roots</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <header class="bi-header">
+      <div class="bi-header__ar">فِهْرِسْت</div>
+      <h1 class="bi-header__name">Site map</h1>
+      <div class="bi-header__dates">Fihrist · All the pages, organised</div>
+      <div class="bi-header__rule"></div>
+      <p class="bi-header__tag">An overview of the library — to find one's way, to find again, to explore.</p>
+    </header>
+
+    <section class="container container--narrow">
+      <div class="plan-search">
+        <input type="search" id="plan-filter" placeholder="Filter the pages…" autocomplete="off" />
+      </div>
+
+      <div class="plan-section" data-section>
+        <div class="plan-section__head">
+          <span class="plan-section__num">I</span>
+          <h2 class="plan-section__title">Discover</h2>
+          <span class="plan-section__ar">مَعْرِفَة</span>
+        </div>
+        <p class="plan-section__intro">To understand the way — its essence, its history, its lands, its confusions.</p>
+
+        <ul class="plan-list plan-list--hub" data-list>
+          <li><a href="decouvrir.html">Discover hub<span class="item-sub">the starting point of the section</span></a></li>
+        </ul>
+
+        <ul class="plan-list" data-list>
+          <li><a href="essence.html">What is Sufism?<span class="item-sub">The essence — taṣawwuf, iḥsān</span></a></li>
+          <li><a href="origine-mot.html">The origin of the word<span class="item-sub">The etymological hypotheses</span></a></li>
+          <li><a href="hadith-gabriel.html">The ḥadīth of Gabriel<span class="item-sub">Islām, īmān, iḥsān</span></a></li>
+          <li><a href="malentendus.html">The misunderstandings<span class="item-sub">What Sufism is not</span></a></li>
+          <li><a href="histoire.html">History of the way<span class="item-sub">A chronology: from the Companions to today</span></a></li>
+          <li><a href="courants.html">Currents &amp; brotherhoods<span class="item-sub">14 great ṭuruq</span></a></li>
+          <li><a href="geographie.html">Geography<span class="item-sub">A map of the Sufi lands</span></a></li>
+          <li><a href="lexique.html">Lexicon<span class="item-sub">The terms of the way</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">Brotherhoods</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="confreries/mevleviyya.html">Mevleviyya<span class="item-sub">Konya · Rūmī · the whirling dervishes</span></a></li>
+          <li><a href="confreries/shadhiliyya.html">Shādhiliyya<span class="item-sub">Maghreb · present poverty</span></a></li>
+          <li><a href="confreries/naqshbandiyya.html">Naqshbandiyya<span class="item-sub">Central Asia · dhikr of the heart</span></a></li>
+          <li><a href="confreries/chishtiyya.html">Chishtiyya<span class="item-sub">India · samāʿ and service</span></a></li>
+        </ul>
+      </div>
+
+      <div class="plan-section" data-section>
+        <div class="plan-section__head">
+          <span class="plan-section__num">II</span>
+          <h2 class="plan-section__title">Journeying</h2>
+          <span class="plan-section__ar">سُلُوك</span>
+        </div>
+        <p class="plan-section__intro">The living practice — heart, love, remembrance, divine Names, metaphysics.</p>
+
+        <ul class="plan-list plan-list--hub" data-list>
+          <li><a href="cheminer.html">Journeying hub<span class="item-sub">the living practice</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">The living notions</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="cheminer-pages/qalb.html">The heart (qalb)<span class="item-sub">The spiritual organ</span></a></li>
+          <li><a href="cheminer-pages/amour.html">Love (maḥabba, ʿishq)<span class="item-sub">From Rābiʿa to Rūmī</span></a></li>
+          <li><a href="cheminer-pages/dhikr.html">Remembrance (dhikr)<span class="item-sub">Invocation and presence</span></a></li>
+          <li><a href="cheminer-pages/nafs.html">The ego (nafs)<span class="item-sub">The carnal soul and its veils</span></a></li>
+          <li><a href="cheminer-pages/sama.html">Listening (samāʿ)<span class="item-sub">Music, song, dance</span></a></li>
+          <li><a href="cheminer-pages/khalwa.html">The retreat (khalwa)<span class="item-sub">The 40 days of silence</span></a></li>
+          <li><a href="cheminer-pages/stations.html">States &amp; stations<span class="item-sub">Aḥwāl and maqāmāt</span></a></li>
+          <li><a href="cheminer-pages/faqr.html">Poverty (faqr)<span class="item-sub">Inner stripping away</span></a></li>
+          <li><a href="cheminer-pages/fana-baqa.html">Fanāʾ and baqāʾ<span class="item-sub">Extinction and subsistence</span></a></li>
+          <li><a href="cheminer-pages/tawakkul.html">Abandonment (tawakkul)<span class="item-sub">Active confidence</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">Dedicated modules</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="noms-divins/index.html">The 99 divine Names<span class="item-sub">Al-Asmāʾ al-Ḥusnā — after al-Kāfījī</span><span class="new">New</span></a></li>
+          <li><a href="metaphysique/index.html">Metaphysics<span class="item-sub">Ten chapters, scientia sacra</span><span class="new">New</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">Metaphysics — thematic entries</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="auteurs/rumi/mathnawi.html">The song of the reed<span class="item-sub">Rūmī: love, separation, return</span></a></li>
+          <li><a href="metaphysique/themes/imiter-ou-realiser.html">Imitate or realise<span class="item-sub">Chittick: taqlīd, taḥqīq</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">Metaphysics — authors</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="auteurs/nasr.html">Seyyed Hossein Nasr<span class="item-sub">What Is Metaphysics? (2025)</span></a></li>
+        </ul>
+      </div>
+
+      <div class="plan-section" data-section>
+        <div class="plan-section__head">
+          <span class="plan-section__num">III</span>
+          <h2 class="plan-section__title">Encounter</h2>
+          <span class="plan-section__ar">لِقَاء</span>
+        </div>
+        <p class="plan-section__intro">Masters, texts and resonances between traditions.</p>
+
+        <ul class="plan-list plan-list--hub" data-list>
+          <li><a href="rencontrer.html">Encounter hub<span class="item-sub">the shared horizon</span></a></li>
+        </ul>
+
+        <ul class="plan-list" data-list>
+          <li><a href="maitres.html">Gallery of the masters<span class="item-sub">From Ḥasan al-Baṣrī to Schuon</span></a></li>
+          <li><a href="textes-fondamentaux.html">Foundational texts<span class="item-sub">Quran, ḥadīth, Sufi classics</span></a></li>
+          <li><a href="resonances.html">Resonances<span class="item-sub">Bridges toward the other traditions</span></a></li>
+        </ul>
+
+        <h3 class="plan-section__title" style="font-size:1.25rem;margin-top:1.5rem;margin-bottom:.7rem;">Author entries</h3>
+        <ul class="plan-list" data-list>
+          <li><a href="auteurs/rumi.html">Rūmī<span class="item-sub">Mawlānā · Konya · 1207-1273</span></a></li>
+        </ul>
+      </div>
+
+      <div class="plan-section" data-section>
+        <div class="plan-section__head">
+          <span class="plan-section__num">✦</span>
+          <h2 class="plan-section__title">Transversal</h2>
+          <span class="plan-section__ar">جَامِع</span>
+        </div>
+        <p class="plan-section__intro">Pages of orientation and of service.</p>
+
+        <ul class="plan-list" data-list>
+          <li><a href="../index.html">Home<span class="item-sub">The threshold, the three doors</span></a></li>
+          <li><a href="plan.html">Site map<span class="item-sub">This page</span></a></li>
+        </ul>
+      </div>
+
+      <p class="plan-empty" id="plan-empty">
+        Nothing matches your search.
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p><em>“There are as many ways leading to God as there are breaths of the children of Adam.”</em></p>
+      <p class="small" style="margin-top:1rem;"><a href="../index.html">← Back to the home page</a></p>
+          <p class="site-footer__contact">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScLBwWZA-VZf4OaIEl11fnKasayyVrll7DZL5A3uZZBCwLdkQ/viewform?usp=header" target="_blank" rel="noopener" class="contact-link">
+          <span aria-hidden="true">✉</span> Write to me
+        </a>
+      </p>
+    </div>
+</footer>
+
+  <script src="../../assets/js/main.js?v=10"></script>
+  <script>
+    (function() {
+      const input = document.getElementById('plan-filter');
+      const sections = document.querySelectorAll('[data-section]');
+      const empty = document.getElementById('plan-empty');
+      if (!input) return;
+      input.addEventListener('input', () => {
+        const q = input.value.trim().toLowerCase();
+        let totalVisible = 0;
+        sections.forEach(section => {
+          let visibleInSection = 0;
+          section.querySelectorAll('[data-list] li').forEach(li => {
+            const text = li.textContent.toLowerCase();
+            const matches = !q || text.includes(q);
+            li.classList.toggle('plan-hidden', !matches);
+            if (matches) visibleInSection++;
+          });
+          section.classList.toggle('plan-hidden', visibleInSection === 0);
+          totalVisible += visibleInSection;
+        });
+        empty.classList.toggle('is-visible', totalVisible === 0);
+      });
+    })();
+  </script>
+</body>
+</html>

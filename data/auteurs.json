@@ -6,28 +6,73 @@
   },
   "filtres": {
     "epoque": [
-      { "id": "fondateurs",    "label": "Fondateurs",    "periode": "VIIIᵉ–Xᵉ s." },
-      { "id": "classiques",    "label": "Classiques",    "periode": "XIᵉ–XIVᵉ s." },
-      { "id": "tardifs",       "label": "Tardifs",       "periode": "XVᵉ–XIXᵉ s." },
-      { "id": "contemporains", "label": "Contemporains", "periode": "XXᵉ–XXIᵉ s." }
+      {
+        "id": "fondateurs",
+        "label": "Fondateurs",
+        "periode": "VIIIᵉ–Xᵉ s."
+      },
+      {
+        "id": "classiques",
+        "label": "Classiques",
+        "periode": "XIᵉ–XIVᵉ s."
+      },
+      {
+        "id": "tardifs",
+        "label": "Tardifs",
+        "periode": "XVᵉ–XIXᵉ s."
+      },
+      {
+        "id": "contemporains",
+        "label": "Contemporains",
+        "periode": "XXᵉ–XXIᵉ s."
+      }
     ],
     "tradition": [
-      { "id": "arabe",        "label": "Arabe" },
-      { "id": "persane",      "label": "Persane" },
-      { "id": "turque",       "label": "Turque" },
-      { "id": "indienne",     "label": "Indienne" },
-      { "id": "occidentale",  "label": "Occidentale moderne" }
+      {
+        "id": "arabe",
+        "label": "Arabe"
+      },
+      {
+        "id": "persane",
+        "label": "Persane"
+      },
+      {
+        "id": "turque",
+        "label": "Turque"
+      },
+      {
+        "id": "indienne",
+        "label": "Indienne"
+      },
+      {
+        "id": "occidentale",
+        "label": "Occidentale moderne"
+      }
     ],
     "approche": [
-      { "id": "mystique",      "label": "Mystiques-éducateurs" },
-      { "id": "metaphysicien", "label": "Métaphysiciens" },
-      { "id": "poete",         "label": "Poètes mystiques" },
-      { "id": "chroniqueur",   "label": "Synthèses et chroniques" },
-      { "id": "moderne",       "label": "Penseurs modernes" }
+      {
+        "id": "mystique",
+        "label": "Mystiques-éducateurs"
+      },
+      {
+        "id": "metaphysicien",
+        "label": "Métaphysiciens"
+      },
+      {
+        "id": "poete",
+        "label": "Poètes mystiques"
+      },
+      {
+        "id": "chroniqueur",
+        "label": "Synthèses et chroniques"
+      },
+      {
+        "id": "moderne",
+        "label": "Penseurs modernes"
+      }
     ]
   },
   "auteurs": [
-
     {
       "id": "rabia",
       "name_ar": "رَابِعَة العَدَوِيَّة",
@@ -88,7 +133,6 @@
       "href": "auteurs/hallaj.html",
       "status": "ready"
     },
-
     {
       "id": "qushayri",
       "name_ar": "القُشَيْرِي",
@@ -239,7 +283,6 @@
       "href": "auteurs/hafez.html",
       "status": "ready"
     },
-
     {
       "id": "jili",
       "name_ar": "عَبْد الكَرِيم الجِيلِي",
@@ -253,7 +296,7 @@
       "tagline": "Al-Insān al-Kāmil — la doctrine de l'Homme parfait, héritier d'Ibn ʿArabī.",
       "citation": "« L'Homme parfait est le miroir où Dieu Se voit Lui-même. »",
       "href": "auteurs/jili.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "mulla-sadra",
@@ -268,7 +311,7 @@
       "tagline": "La sagesse transcendante — al-ḥikma al-mutaʿāliya, synthèse de l'ishrāq et d'Ibn ʿArabī.",
       "citation": "« L'existence (al-wujūd) est ce qui se déploie en degrés, du plus dense au plus subtil. »",
       "href": "auteurs/mulla-sadra.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "sirhindi",
@@ -315,7 +358,6 @@
       "href": "auteurs/tijani.html",
       "status": "soon"
     },
-
     {
       "id": "alawi",
       "name_ar": "أَحْمَد العَلَاوِي",
@@ -344,7 +386,7 @@
       "tagline": "Le métaphysicien qui restitua la Tradition à l'Occident.",
       "citation": "« La métaphysique pure n'admet pas de divisions. »",
       "href": "auteurs/guenon.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "schuon",
@@ -359,7 +401,7 @@
       "tagline": "L'unité transcendante des religions — l'aile la plus métaphysique de la Tradition.",
       "citation": "« Tout ce qui existe est nécessairement le reflet de quelque chose qui est en Dieu. »",
       "href": "auteurs/schuon.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "burckhardt",
@@ -374,7 +416,7 @@
       "tagline": "L'art sacré, la cosmologie, l'alchimie soufie expliquée à l'Occident.",
       "citation": "« L'art sacré est l'expression sensible du sacré. »",
       "href": "auteurs/burckhardt.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "lings",
@@ -389,7 +431,7 @@
       "tagline": "Le biographe d'al-ʿAlawī et de Muḥammad — celui qui sut transmettre.",
       "citation": "« Sa simple présence dans une pièce changeait tout. »",
       "href": "auteurs/lings.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "chodkiewicz",
@@ -404,7 +446,7 @@
       "tagline": "Le grand passeur d'Ibn ʿArabī en français.",
       "citation": "« Toute la pensée d'Ibn ʿArabī tient dans une fidélité absolue au Coran. »",
       "href": "auteurs/chodkiewicz.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "corbin",
@@ -451,6 +493,5 @@
       "href": "auteurs/chittick.html",
       "status": "soon"
     }
-
   ]
 }

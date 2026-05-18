@@ -6,28 +6,73 @@
   },
   "filtres": {
     "epoque": [
-      { "id": "fondateurs",    "label": "Founders",        "periode": "8th–10th c." },
-      { "id": "classiques",    "label": "Classical",       "periode": "11th–14th c." },
-      { "id": "tardifs",       "label": "Late",            "periode": "15th–19th c." },
-      { "id": "contemporains", "label": "Contemporary",    "periode": "20th–21st c." }
+      {
+        "id": "fondateurs",
+        "label": "Founders",
+        "periode": "8th–10th c."
+      },
+      {
+        "id": "classiques",
+        "label": "Classical",
+        "periode": "11th–14th c."
+      },
+      {
+        "id": "tardifs",
+        "label": "Late",
+        "periode": "15th–19th c."
+      },
+      {
+        "id": "contemporains",
+        "label": "Contemporary",
+        "periode": "20th–21st c."
+      }
     ],
     "tradition": [
-      { "id": "arabe",        "label": "Arab" },
-      { "id": "persane",      "label": "Persian" },
-      { "id": "turque",       "label": "Turkish" },
-      { "id": "indienne",     "label": "Indian" },
-      { "id": "occidentale",  "label": "Modern Western" }
+      {
+        "id": "arabe",
+        "label": "Arab"
+      },
+      {
+        "id": "persane",
+        "label": "Persian"
+      },
+      {
+        "id": "turque",
+        "label": "Turkish"
+      },
+      {
+        "id": "indienne",
+        "label": "Indian"
+      },
+      {
+        "id": "occidentale",
+        "label": "Modern Western"
+      }
     ],
     "approche": [
-      { "id": "mystique",      "label": "Mystic-educators" },
-      { "id": "metaphysicien", "label": "Metaphysicians" },
-      { "id": "poete",         "label": "Mystical poets" },
-      { "id": "chroniqueur",   "label": "Syntheses and chronicles" },
-      { "id": "moderne",       "label": "Modern thinkers" }
+      {
+        "id": "mystique",
+        "label": "Mystic-educators"
+      },
+      {
+        "id": "metaphysicien",
+        "label": "Metaphysicians"
+      },
+      {
+        "id": "poete",
+        "label": "Mystical poets"
+      },
+      {
+        "id": "chroniqueur",
+        "label": "Syntheses and chronicles"
+      },
+      {
+        "id": "moderne",
+        "label": "Modern thinkers"
+      }
     ]
   },
   "auteurs": [
-
     {
       "id": "rabia",
       "name_ar": "رَابِعَة العَدَوِيَّة",
@@ -88,7 +133,6 @@
       "href": "auteurs/hallaj.html",
       "status": "ready"
     },
-
     {
       "id": "qushayri",
       "name_ar": "القُشَيْرِي",
@@ -239,7 +283,6 @@
       "href": "auteurs/hafez.html",
       "status": "ready"
     },
-
     {
       "id": "jili",
       "name_ar": "عَبْد الكَرِيم الجِيلِي",
@@ -253,7 +296,7 @@
       "tagline": "Al-Insān al-Kāmil — the doctrine of the Perfect Man, heir of Ibn ʿArabī.",
       "citation": "“The Perfect Man is the mirror in which God sees Himself.”",
       "href": "auteurs/jili.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "mulla-sadra",
@@ -268,7 +311,7 @@
       "tagline": "Transcendent wisdom — al-ḥikma al-mutaʿāliya, a synthesis of ishrāq and Ibn ʿArabī.",
       "citation": "“Existence (al-wujūd) is what unfolds in degrees, from the densest to the most subtle.”",
       "href": "auteurs/mulla-sadra.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "sirhindi",
@@ -315,7 +358,6 @@
       "href": "auteurs/tijani.html",
       "status": "soon"
     },
-
     {
       "id": "alawi",
       "name_ar": "أَحْمَد العَلَاوِي",
@@ -344,7 +386,7 @@
       "tagline": "The metaphysician who restored Tradition to the West.",
       "citation": "“Pure metaphysics admits of no divisions.”",
       "href": "auteurs/guenon.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "schuon",
@@ -359,7 +401,7 @@
       "tagline": "The transcendent unity of religions — the most metaphysical wing of Tradition.",
       "citation": "“All that exists is necessarily the reflection of something that is in God.”",
       "href": "auteurs/schuon.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "burckhardt",
@@ -374,7 +416,7 @@
       "tagline": "Sacred art, cosmology, Sufi alchemy explained to the West.",
       "citation": "“Sacred art is the sensible expression of the sacred.”",
       "href": "auteurs/burckhardt.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "lings",
@@ -389,7 +431,7 @@
       "tagline": "The biographer of al-ʿAlawī and of Muḥammad — the one who knew how to transmit.",
       "citation": "“His mere presence in a room changed everything.”",
       "href": "auteurs/lings.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "chodkiewicz",
@@ -404,7 +446,7 @@
       "tagline": "The great conveyor of Ibn ʿArabī into French.",
       "citation": "“The whole thought of Ibn ʿArabī rests upon an absolute fidelity to the Quran.”",
       "href": "auteurs/chodkiewicz.html",
-      "status": "soon"
+      "status": "ready"
     },
     {
       "id": "corbin",
@@ -451,6 +493,5 @@
       "href": "auteurs/chittick.html",
       "status": "soon"
     }
-
   ]
 }

@@ -5,12 +5,17 @@
   const grilleEl = document.getElementById('meta-grille');
   if (!grilleEl) return;
 
+  const MQ_EN = document.documentElement.lang === 'en';
+  const MQ_T = MQ_EN
+    ? { soon: 'coming soon', error: 'Unable to load the chapters.' }
+    : { soon: 'à venir', error: 'Impossible de charger les chapitres.' };
+
   fetch('../../data/metaphysique.json')
     .then(r => r.json())
     .then(data => {
       grilleEl.innerHTML = data.sections.map(s => {
         const readyClass = s.status === 'ready' ? 'is-ready' : 'is-soon';
-        const readyBadge = s.status === 'soon' ? '<span class="meta-badge">à venir</span>' : '';
+        const readyBadge = s.status === 'soon' ? `<span class="meta-badge">${MQ_T.soon}</span>` : '';
         const themesHTML = s.themes.map(t => `<li>${t}</li>`).join('');
         return `
           <a class="meta-carte ${readyClass}" href="themes/${s.id}.html">
@@ -26,6 +31,6 @@
     })
     .catch(err => {
       console.error('Erreur chargement métaphysique', err);
-      grilleEl.innerHTML = '<p class="center muted">Impossible de charger les chapitres.</p>';
+      grilleEl.innerHTML = `<p class="center muted">${MQ_T.error}</p>`;
     });
 })();

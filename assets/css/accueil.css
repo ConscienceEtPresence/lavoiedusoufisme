@@ -897,3 +897,75 @@
 @media (max-width: 520px) {
   .noms-flash__card { padding: var(--space-lg) var(--space-md); }
 }
+
+/* séparateur avant le widget — un peu plus d'air sous le bouton tirage */
+.meditate-divider--spaced { margin-top: var(--space-xl); }
+
+/* ============================================
+   NOMS 99 — mode plein écran
+   ============================================ */
+body.nf-locked { overflow: hidden; }
+
+.noms-flash__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  z-index: 3;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.noms-flash__close:hover { color: var(--gold); border-color: var(--gold); }
+
+.noms-flash.is-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  max-width: none;
+  margin: 0;
+  padding: clamp(2rem, 6vh, 4rem) clamp(1.2rem, 5vw, 3rem);
+  background: radial-gradient(ellipse at 50% 28%, #FFFDF8, var(--paper-warm));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  animation: nf-fade 0.35s ease;
+}
+@keyframes nf-fade { from { opacity: 0; } to { opacity: 1; } }
+
+.noms-flash.is-fullscreen .noms-flash__close { display: flex; }
+.noms-flash.is-fullscreen .noms-flash__head { display: none; }
+.noms-flash.is-fullscreen .noms-flash__card {
+  background: none;
+  border: none;
+  box-shadow: none;
+  max-width: 42rem;
+  padding: var(--space-lg);
+}
+.noms-flash.is-fullscreen .noms-flash__card::before,
+.noms-flash.is-fullscreen .noms-flash__card::after { display: none; }
+.noms-flash.is-fullscreen .noms-flash__card:hover { box-shadow: none; }
+.noms-flash.is-fullscreen .noms-flash__ar {
+  font-size: clamp(4.5rem, 20vw, 9rem);
+}
+.noms-flash.is-fullscreen .noms-flash__tr {
+  font-size: clamp(1.5rem, 6vw, 2.3rem);
+}
+.noms-flash.is-fullscreen .noms-flash__fr {
+  font-size: clamp(1.4rem, 5vw, 1.95rem);
+}
+.noms-flash.is-fullscreen .noms-flash__sens {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  max-width: 30rem;
+}
+.noms-flash.is-fullscreen .noms-flash__modes { margin-top: 0; }

@@ -209,6 +209,33 @@
     if (document.hidden) stopPlay();
   });
 
+  /* ---- plein écran ---- */
+  const expandBtn = document.getElementById('nf-expand');
+  const closeBtn  = document.getElementById('nf-close');
+  let placeholder = null;
+  function setFullscreen(on) {
+    if (on && !placeholder) {
+      /* on sort le widget de ses conteneurs pour un plein écran propre */
+      placeholder = document.createComment('nf-home');
+      root.parentNode.insertBefore(placeholder, root);
+      document.body.appendChild(root);
+    } else if (!on && placeholder) {
+      placeholder.parentNode.insertBefore(root, placeholder);
+      placeholder.parentNode.removeChild(placeholder);
+      placeholder = null;
+    }
+    root.classList.toggle('is-fullscreen', on);
+    document.body.classList.toggle('nf-locked', on);
+    if (closeBtn)  closeBtn.hidden  = !on;
+    if (expandBtn) expandBtn.hidden = on;
+    if (on) root.scrollTop = 0;
+  }
+  if (expandBtn) expandBtn.addEventListener('click', function () { setFullscreen(true); });
+  if (closeBtn)  closeBtn.addEventListener('click', function () { setFullscreen(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && root.classList.contains('is-fullscreen')) setFullscreen(false);
+  });
+
   /* ---- chargement ---- */
   fetch(DATA_ROOT + 'data/noms-divins.json')
     .then(function (r) { return r.json(); })

@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="../assets/css/base.css" />
   <link rel="stylesheet" href="../assets/css/layout.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
-  <link rel="stylesheet" href="../assets/css/accueil.css?v=6" />
+  <link rel="stylesheet" href="../assets/css/accueil.css?v=8" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
   <script>
@@ -213,14 +213,14 @@
               <span class="tirage-accueil__sub">a poem, a word of love, a divine name, a tale, a root…</span>
             </button>
           </div>
-        </div>
 
-        <!-- ============================================
-             Reciting the 99 Names — flashcards
-             ============================================ -->
-        <div class="meditate-divider" aria-hidden="true">✦ ✦ ✦</div>
+          <!-- ============================================
+               Reciting the 99 Names — flashcards
+               ============================================ -->
+          <div class="meditate-divider meditate-divider--spaced" aria-hidden="true">✦ ✦ ✦</div>
 
         <div class="noms-flash" id="noms-flash" aria-label="Reciting the 99 Divine Names">
+          <button type="button" class="noms-flash__close" id="nf-close" aria-label="Close fullscreen" hidden>✕</button>
           <div class="noms-flash__head">
             <div class="noms-flash__eyebrow" lang="ar" dir="rtl">الأَسْمَاءُ الحُسْنَى</div>
             <h2 class="noms-flash__title">Reciting the 99 Names</h2>
@@ -253,6 +253,7 @@
             <button type="button" class="noms-flash__btn" id="nf-prev">← Previous</button>
             <button type="button" class="noms-flash__btn" id="nf-play" hidden>▷ Play</button>
             <button type="button" class="noms-flash__btn" id="nf-shuffle">↻ Shuffle</button>
+            <button type="button" class="noms-flash__btn" id="nf-expand">⤢ Fullscreen</button>
             <a class="noms-flash__link" href="pages/noms-divins/index.html">See all →</a>
           </div>
 
@@ -261,6 +262,7 @@
             <span class="noms-flash__audio-icon" aria-hidden="true">♪</span>
             <span class="noms-flash__audio-label">voice</span>
           </button>
+        </div>
         </div>
 
         <p class="hero__library">
@@ -312,6 +314,6 @@
 
   <script src="../assets/js/main.js?v=11"></script>
   <script src="../assets/js/tirage-global.js?v=3"></script>
-  <script src="../assets/js/noms-flash.js?v=3"></script>
+  <script src="../assets/js/noms-flash.js?v=5"></script>
 </body>
 </html>

@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/accueil.css?v=6" />
+  <link rel="stylesheet" href="assets/css/accueil.css?v=8" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
   <script>
@@ -212,14 +212,14 @@
               <span class="tirage-accueil__sub">poème, mot d'amour, nom divin, conte, racine…</span>
             </button>
           </div>
-        </div>
 
-        <!-- ============================================
-             Réciter les 99 Noms — flashcards
-             ============================================ -->
-        <div class="meditate-divider" aria-hidden="true">✦ ✦ ✦</div>
+          <!-- ============================================
+               Réciter les 99 Noms — flashcards
+               ============================================ -->
+          <div class="meditate-divider meditate-divider--spaced" aria-hidden="true">✦ ✦ ✦</div>
 
         <div class="noms-flash" id="noms-flash" aria-label="Réciter les 99 Noms divins">
+          <button type="button" class="noms-flash__close" id="nf-close" aria-label="Fermer le plein écran" hidden>✕</button>
           <div class="noms-flash__head">
             <div class="noms-flash__eyebrow" lang="ar" dir="rtl">الأَسْمَاءُ الحُسْنَى</div>
             <h2 class="noms-flash__title">Réciter les 99 Noms</h2>
@@ -252,6 +252,7 @@
             <button type="button" class="noms-flash__btn" id="nf-prev">← Précédent</button>
             <button type="button" class="noms-flash__btn" id="nf-play" hidden>▷ Lancer</button>
             <button type="button" class="noms-flash__btn" id="nf-shuffle">↻ Mélanger</button>
+            <button type="button" class="noms-flash__btn" id="nf-expand">⤢ Plein écran</button>
             <a class="noms-flash__link" href="pages/noms-divins/index.html">Tout voir →</a>
           </div>
 
@@ -260,6 +261,7 @@
             <span class="noms-flash__audio-icon" aria-hidden="true">♪</span>
             <span class="noms-flash__audio-label">voix</span>
           </button>
+        </div>
         </div>
 
         <p class="hero__library">
@@ -311,6 +313,6 @@
 
   <script src="assets/js/main.js?v=11"></script>
   <script src="assets/js/tirage-global.js?v=3"></script>
-  <script src="assets/js/noms-flash.js?v=3"></script>
+  <script src="assets/js/noms-flash.js?v=5"></script>
 </body>
 </html>

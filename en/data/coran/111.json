@@ -1,0 +1,90 @@
+{
+  "n": 111,
+  "nom_ar": "المَسَد",
+  "nom_tr": "al-Masad",
+  "nom_fr": "The Palm Fiber",
+  "revelation": "Meccan",
+  "versets_count": 5,
+  "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
+  "intro": "Al-Masad — “The Palm Fiber”, also known as al-Lahab, “The Flame” — is among the earliest Meccan sūras. It was revealed in response to a precise episode: one day the Prophet climbed the hill of Ṣafā and called out the whole tribe of Quraysh, the way one calls when an enemy is near. He warned them of a coming punishment if they did not turn to the one God. His paternal uncle, <em>Abū Lahab</em> (أَبُو لَهَب) — nicknamed “Father of Flame” because of his bright red complexion — answered him: “<em>tabban laka</em> (تَبًّا لَكَ) — may you perish! Is this why you have gathered us?” The sūra, in five brief verses, turns his curse back upon him and describes the fate awaiting him and his wife Umm Jamīl, who supported him in his hostility.",
+  "themes": ["judgment", "retribution", "vanity of wealth", "hostility to the Prophet"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
+      "tr": "tabbat yadā Abī Lahabin wa-tabb",
+      "trad": "May the hands of Abū Lahab perish, and may he perish!",
+      "themes": ["curse", "retribution"],
+      "commentaire": "The verb <em>tabba</em> (تَبَّ) names loss, ruin, the fruitlessness of an effort. “The hands” are, in Arabic, a common metonymy for a man's power — what he undertakes, what he holds, what he extends over the world. To Abū Lahab's curse against the Prophet — <em>tabban laka</em> (تَبًّا لَكَ) — the sūra answers with the very same word, turned back as a mirror: to his earthly curse, the heavenly curse.",
+      "mots": [
+        { "ar": "تَبَّتْ", "tr": "tabbat", "racine": "ت ب ب", "sens": "they have perished", "def": "tabba: to perish, to be lost, to see one's effort come to naught.", "gram": "perfect verb, 3rd pers. fem. sing." },
+        { "ar": "يَدَا", "tr": "yadā", "racine": "ي د ي", "sens": "the two hands", "def": "yad: the hand; in the dual, the two hands. Metonymy for power, action, what a man undertakes.", "gram": "dual nominative, construct state" },
+        { "ar": "أَبِي", "tr": "Abī", "racine": "أ ب و", "sens": "of the father of", "def": "ab: the father; in the construct genitive: “of the father of”. Forms the kunya, the surname by sonship.", "gram": "noun, construct genitive" },
+        { "ar": "لَهَبٍ", "tr": "Lahab", "racine": "ل ه ب", "sens": "(the) Flame", "def": "lahab: the flame, the blazing fire. “Abū Lahab”, “Father of the Flame”, the nickname of the Prophet's uncle.", "gram": "proper noun, indefinite genitive" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "coordinating conjunction: and.", "gram": "conjunction" },
+        { "ar": "تَبَّ", "tr": "tabb", "racine": "ت ب ب", "sens": "he has perished", "def": "tabba: to perish, to be ruined; here, in parallel to the opening verb, refers to Abū Lahab himself.", "gram": "perfect verb, 3rd pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "مَا أَغْنَىٰ عَنْهُ مَالُهُ وَمَا كَسَبَ",
+      "tr": "mā aghnā ʿanhu māluhu wa-mā kasab",
+      "trad": "His wealth avails him not, nor what he has earned.",
+      "themes": ["vanity of wealth", "judgment"],
+      "commentaire": "Abū Lahab was the wealthiest of the Prophet's uncles. Tradition relates that he said: “Even if what my nephew says is true, I shall ransom myself with my wealth and my children.” The sūra answers: nothing ransoms on the day of judgment. <em>Mā kasab</em> (مَا كَسَبَ), “what he has earned”, is also read by some commentators as an allusion to his children — money and offspring, the two supports of a man before men, do not stand before eternity.",
+      "mots": [
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "not... at all", "def": "negative particle: not, not at all.", "gram": "particle" },
+        { "ar": "أَغْنَىٰ", "tr": "aghnā", "racine": "غ ن ي", "sens": "has availed", "def": "aghnā: to enrich, to be of profit, to make independent of; with mā: has been of no profit.", "gram": "perfect verb, 3rd pers. masc. sing." },
+        { "ar": "عَنْهُ", "tr": "ʿanhu", "racine": "—", "sens": "for him", "def": "preposition ʿan + suffix pronoun: from him, for him, on his behalf.", "gram": "preposition + pronoun" },
+        { "ar": "مَالُهُ", "tr": "māluhu", "racine": "م و ل", "sens": "his wealth", "def": "māl: wealth, possessions; with the suffix pronoun: his own wealth.", "gram": "noun + suffix pronoun, nominative" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction: and.", "gram": "conjunction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "what", "def": "neuter relative pronoun: that which; here introducing “what he has earned”.", "gram": "relative pronoun" },
+        { "ar": "كَسَبَ", "tr": "kasab", "racine": "ك س ب", "sens": "he has earned", "def": "kasaba: to earn, to gain by one's work; some commentators also hear: his children.", "gram": "perfect verb, 3rd pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
+      "tr": "sa-yaṣlā nāran dhāta lahab",
+      "trad": "He shall enter a blazing Fire,",
+      "themes": ["retribution", "fire", "mirror of the name"],
+      "commentaire": "The word <em>lahab</em> (لَهَب) — flame — refers back to Abū Lahab's very nickname: the one who adorned himself with the name of Flame shall enter it. Justice here is a mirror — the name one bears, one bears also its destiny. The verb <em>ṣalā</em> (صَلَى) names the enduring of a live fire, not mere presence in it.",
+      "mots": [
+        { "ar": "سَ", "tr": "sa-", "racine": "—", "sens": "he will...", "def": "prefix particle of the future attached to the verb: announces the coming action.", "gram": "future particle" },
+        { "ar": "يَصْلَىٰ", "tr": "yaṣlā", "racine": "ص ل ي", "sens": "he will burn in", "def": "ṣalā: to enter a live fire, to endure its heat; here in the future, sa-yaṣlā.", "gram": "imperfect verb, 3rd pers. masc. sing." },
+        { "ar": "نَارًا", "tr": "nāran", "racine": "ن و ر", "sens": "a fire", "def": "nār: fire; in the indefinite accusative, the object.", "gram": "noun, indefinite accusative" },
+        { "ar": "ذَاتَ", "tr": "dhāta", "racine": "—", "sens": "possessing, ablaze with", "def": "dhāt: “possessing”; used to form a qualification: “endowed with”, “ablaze with”.", "gram": "noun, construct accusative" },
+        { "ar": "لَهَبٍ", "tr": "lahab", "racine": "ل ه ب", "sens": "flames", "def": "lahab: flame, blazing fire; the same word as Abū Lahab's nickname.", "gram": "noun, indefinite genitive" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ",
+      "tr": "wa-mraʾatuhu ḥammālata l-ḥaṭab",
+      "trad": "and his wife, the carrier of firewood,",
+      "themes": ["retribution", "slander"],
+      "commentaire": "<em>Umm Jamīl</em>, Abū Lahab's wife, supported her husband in his hostility to the Prophet; tradition reports that she even scattered thorns on Muḥammad's path at night, to wound him. “To carry firewood” — <em>ḥammālat al-ḥaṭab</em> (حَمَّالَة الْحَطَب) — is also a proverbial figure in Arabic for one who carries slander: calumny feeds the fire of discord as wood feeds the flame. In the next life, she will herself carry the wood that burns her husband — her gesture returns upon her.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction: and.", "gram": "conjunction" },
+        { "ar": "امْرَأَتُهُ", "tr": "mraʾatuhu", "racine": "م ر ء", "sens": "his wife", "def": "imraʾa: woman, wife; with the suffix pronoun: his wife.", "gram": "noun + suffix pronoun, nominative" },
+        { "ar": "حَمَّالَةَ", "tr": "ḥammālata", "racine": "ح م ل", "sens": "carrier of", "def": "ḥammāla: intensive form of ḥāmil, the one who carries; here, “habitual carrier”.", "gram": "noun, construct accusative" },
+        { "ar": "الْحَطَبِ", "tr": "al-ḥaṭab", "racine": "ح ط ب", "sens": "the firewood", "def": "ḥaṭab: firewood, fuel; figuratively, that which feeds the fire of slander.", "gram": "noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "فِي جِيدِهَا حَبْلٌ مِّن مَّسَدٍ",
+      "tr": "fī jīdihā ḥablun min masad",
+      "trad": "around her neck a rope of palm fibre.",
+      "themes": ["punishment", "pride turned back"],
+      "commentaire": "<em>masad</em> (مَسَد) names the woven fibre of palm, used to make the coarsest ropes — it is also the word that gives the sūra its name. In place of the precious necklace that Umm Jamīl wore — tradition says she had sworn to sell it to fund a campaign against the Prophet — it is a rough cord, sometimes described as of fire or iron, that weighs upon her neck. The sūra closes on this dense image: the ornament of pride, turned back into a bond of punishment.",
+      "mots": [
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "in, on", "def": "preposition: in, on, around.", "gram": "preposition" },
+        { "ar": "جِيدِهَا", "tr": "jīdihā", "racine": "ج ي د", "sens": "her neck", "def": "jīd: the neck; the noble part where ornament is worn. With the feminine suffix pronoun: her neck.", "gram": "noun + suffix pronoun, genitive" },
+        { "ar": "حَبْلٌ", "tr": "ḥabl", "racine": "ح ب ل", "sens": "a rope", "def": "ḥabl: rope, cord, cable.", "gram": "noun, indefinite nominative" },
+        { "ar": "مِّن", "tr": "min", "racine": "—", "sens": "of", "def": "preposition: of, from; indicates the material from which something is made.", "gram": "preposition" },
+        { "ar": "مَّسَدٍ", "tr": "masad", "racine": "م س د", "sens": "woven palm fibre", "def": "masad: woven palm fibre, used for coarse ropes; the rare word that gives the sūra its name.", "gram": "noun, indefinite genitive" }
+      ]
+    }
+  ]
+}

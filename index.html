@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/accueil.css?v=5" />
+  <link rel="stylesheet" href="assets/css/accueil.css?v=6" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
   <script>
@@ -214,46 +214,59 @@
           </div>
         </div>
 
+        <!-- ============================================
+             Réciter les 99 Noms — flashcards
+             ============================================ -->
+        <div class="meditate-divider" aria-hidden="true">✦ ✦ ✦</div>
+
+        <div class="noms-flash" id="noms-flash" aria-label="Réciter les 99 Noms divins">
+          <div class="noms-flash__head">
+            <div class="noms-flash__eyebrow" lang="ar" dir="rtl">الأَسْمَاءُ الحُسْنَى</div>
+            <h2 class="noms-flash__title">Réciter les 99 Noms</h2>
+            <p class="noms-flash__intro">
+              Touchez la carte pour faire défiler les Noms — un à un, ou en mode
+              défilement, ou en quiz pour vous tester. Pour les apprendre, dans le calme.
+            </p>
+          </div>
+
+          <div class="noms-flash__modes" role="group" aria-label="Mode de récitation">
+            <button type="button" class="noms-flash__mode is-active" data-mode="lecture">Lecture</button>
+            <button type="button" class="noms-flash__mode" data-mode="defilement">Défilement</button>
+            <button type="button" class="noms-flash__mode" data-mode="quiz">Quiz</button>
+          </div>
+
+          <div class="noms-flash__card" id="nf-card" role="button" tabindex="0"
+               aria-label="Carte des Noms divins">
+            <div class="noms-flash__num"><span id="nf-n">1</span> <span class="nf-total">/ 99</span></div>
+            <div class="noms-flash__body">
+              <div class="noms-flash__ar" id="nf-ar" lang="ar" dir="rtl">اَللَّٰه</div>
+              <div class="noms-flash__tr" id="nf-tr">Allāh</div>
+              <div class="noms-flash__rule" aria-hidden="true"></div>
+              <div class="noms-flash__fr" id="nf-fr">Dieu</div>
+              <p class="noms-flash__sens" id="nf-sens">Le Nom suprême qui rassemble tous les Noms.</p>
+            </div>
+            <div class="noms-flash__cue" id="nf-cue" aria-hidden="true"></div>
+          </div>
+
+          <div class="noms-flash__controls">
+            <button type="button" class="noms-flash__btn" id="nf-prev">← Précédent</button>
+            <button type="button" class="noms-flash__btn" id="nf-play" hidden>▷ Lancer</button>
+            <button type="button" class="noms-flash__btn" id="nf-shuffle">↻ Mélanger</button>
+            <a class="noms-flash__link" href="pages/noms-divins/index.html">Tout voir →</a>
+          </div>
+
+          <button type="button" class="noms-flash__audio" id="nf-audio" aria-pressed="false"
+                  title="Activer la voix (récitation à voix basse)">
+            <span class="noms-flash__audio-icon" aria-hidden="true">♪</span>
+            <span class="noms-flash__audio-label">voix</span>
+          </button>
+        </div>
+
         <p class="hero__library">
           <em>Une bibliothèque vivante qui s'enrichit au fil des saisons —<br>
           maîtres, Noms divins, poèmes, pratiques, résonances.</em>
         </p>
 
-      </div>
-    </section>
-
-    <!-- ============================================
-         Réciter les 99 Noms — flashcards
-         ============================================ -->
-    <section class="noms-flash" aria-label="Réciter les 99 Noms divins">
-      <div class="container container--narrow">
-        <div class="noms-flash__head">
-          <div class="noms-flash__eyebrow" lang="ar" dir="rtl">الأَسْمَاءُ الحُسْنَى</div>
-          <h2 class="noms-flash__title">Réciter les 99 Noms</h2>
-          <p class="noms-flash__intro">
-            Touchez la carte — un Nom apparaît. Touchez encore — voici le suivant.
-            Pour les apprendre, un à un, dans le calme.
-          </p>
-        </div>
-
-        <div class="noms-flash__card" id="nf-card" role="button" tabindex="0"
-             aria-label="Carte des Noms divins — toucher pour le Nom suivant">
-          <div class="noms-flash__num"><span id="nf-n">1</span> <span class="nf-total">/ 99</span></div>
-          <div class="noms-flash__body">
-            <div class="noms-flash__ar" id="nf-ar" lang="ar" dir="rtl">اَللَّٰه</div>
-            <div class="noms-flash__tr" id="nf-tr">Allāh</div>
-            <div class="noms-flash__rule" aria-hidden="true"></div>
-            <div class="noms-flash__fr" id="nf-fr">Dieu</div>
-            <p class="noms-flash__sens" id="nf-sens">Le Nom suprême qui rassemble tous les Noms.</p>
-          </div>
-          <div class="noms-flash__hint">Touchez pour le suivant ✦</div>
-        </div>
-
-        <div class="noms-flash__controls">
-          <button type="button" class="noms-flash__btn" id="nf-prev">← Précédent</button>
-          <button type="button" class="noms-flash__btn" id="nf-shuffle">↻ Mélanger</button>
-          <a class="noms-flash__link" href="pages/noms-divins/index.html">Tout voir →</a>
-        </div>
       </div>
     </section>
 
@@ -298,6 +311,6 @@
 
   <script src="assets/js/main.js?v=11"></script>
   <script src="assets/js/tirage-global.js?v=3"></script>
-  <script src="assets/js/noms-flash.js?v=2"></script>
+  <script src="assets/js/noms-flash.js?v=3"></script>
 </body>
 </html>

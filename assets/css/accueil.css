@@ -681,17 +681,14 @@
 }
 
 /* ============================================
-   RÉCITER LES 99 NOMS — flashcards d'accueil
+   RÉCITER LES 99 NOMS — flashcards (3 modes)
    ============================================ */
 .noms-flash {
-  padding: var(--space-2xl) 0 var(--space-xl);
-  background:
-    radial-gradient(ellipse at 50% 0%, rgba(184, 134, 11, 0.06), transparent 60%);
-}
-.noms-flash__head {
+  max-width: 33rem;
+  margin: var(--space-xl) auto 0;
   text-align: center;
-  margin-bottom: var(--space-lg);
 }
+.noms-flash__head { margin-bottom: var(--space-sm); }
 .noms-flash__eyebrow {
   font-family: var(--font-arabic);
   font-size: 1.5rem;
@@ -701,21 +698,48 @@
 }
 .noms-flash__title {
   font-family: var(--font-display);
-  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
   color: var(--ink-title);
   font-weight: 600;
-  margin: 0.2rem 0 0.6rem;
+  margin: 0.2rem 0 0.5rem;
 }
 .noms-flash__intro {
   font-family: var(--font-serif);
   font-style: italic;
   color: var(--ink-soft);
-  max-width: 30rem;
+  max-width: 28rem;
   margin: 0 auto;
   line-height: 1.6;
+  font-size: 0.98rem;
 }
 
-/* La carte */
+/* sélecteur de modes */
+.noms-flash__modes {
+  display: inline-flex;
+  gap: 0.2rem;
+  padding: 0.25rem;
+  margin: var(--space-md) 0 var(--space-sm);
+  background: rgba(184, 134, 11, 0.07);
+  border-radius: 999px;
+}
+.noms-flash__mode {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  background: none;
+  border: none;
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.noms-flash__mode.is-active {
+  background: #FFFDF8;
+  color: var(--gold);
+  box-shadow: var(--shadow-soft);
+}
+
+/* la carte */
 .noms-flash__card {
   position: relative;
   display: flex;
@@ -724,7 +748,7 @@
   text-align: center;
   cursor: pointer;
   user-select: none;
-  margin: var(--space-lg) auto 0;
+  margin: var(--space-sm) auto 0;
   max-width: 30rem;
   padding: var(--space-xl) var(--space-lg) var(--space-lg);
   background: linear-gradient(170deg, #FFFDF8, var(--paper-warm));
@@ -758,14 +782,8 @@
 }
 .noms-flash__num .nf-total { color: var(--ink-mute); }
 
-/* zone qui change — fondu doux */
-.noms-flash__body {
-  transition: opacity 0.32s ease, transform 0.32s ease;
-}
-.noms-flash__card.is-turning .noms-flash__body {
-  opacity: 0;
-  transform: translateY(6px);
-}
+.noms-flash__body { transition: opacity 0.32s ease, transform 0.32s ease; }
+.noms-flash__card.is-turning .noms-flash__body { opacity: 0; transform: translateY(6px); }
 
 .noms-flash__ar {
   font-family: var(--font-arabic);
@@ -803,14 +821,20 @@
   max-width: 24rem;
   margin: 0 auto;
 }
-.noms-flash__hint {
+.noms-flash__cue {
   font-family: var(--font-sans);
   font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-mute);
   margin-top: var(--space-md);
+  min-height: 1em;
 }
+
+/* mode quiz — réponse cachée */
+.noms-flash.is-hidden-answer .noms-flash__ar,
+.noms-flash.is-hidden-answer .noms-flash__tr,
+.noms-flash.is-hidden-answer .noms-flash__rule { display: none; }
 
 /* commandes */
 .noms-flash__controls {
@@ -833,6 +857,7 @@
   transition: border-color 0.25s ease, color 0.25s ease;
 }
 .noms-flash__btn:hover { border-color: var(--gold); color: var(--gold); }
+.noms-flash__btn[hidden] { display: none; }
 .noms-flash__link {
   font-family: var(--font-sans);
   font-size: 0.82rem;
@@ -840,6 +865,34 @@
   text-decoration: none;
 }
 .noms-flash__link:hover { text-decoration: underline; }
+
+/* bouton voix — volontairement discret et à l'écart,
+   pour éviter tout appui accidentel (usage transports) */
+.noms-flash__audio {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: var(--space-md) auto 0;
+  padding: 0.25rem 0.7rem;
+  font-family: var(--font-sans);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+.noms-flash__audio:hover { opacity: 0.9; }
+.noms-flash__audio.is-on {
+  opacity: 1;
+  color: var(--gold);
+  border-color: var(--gold-soft);
+}
+.noms-flash__audio-icon { font-size: 0.8rem; }
 
 @media (max-width: 520px) {
   .noms-flash__card { padding: var(--space-lg) var(--space-md); }

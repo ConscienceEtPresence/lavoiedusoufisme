@@ -1,0 +1,89 @@
+{
+  "n": 113,
+  "nom_ar": "الفَلَق",
+  "nom_tr": "al-Falaq",
+  "nom_fr": "L'Aurore",
+  "revelation": "mecquoise",
+  "versets_count": 5,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Falaq — « L'Aurore » — est la cent-treizième sourate du Coran. Avec la suivante, an-Nās, elle forme les <em>Muʿawwidhatān</em>, « les deux protectrices » : les deux sourates du refuge. La tradition rapporte qu'elles ont été révélées en réponse à un envoûtement fait au Prophète : une cordelette nouée sur laquelle des paroles maléfiques avaient été soufflées. L'archange Gabriel en indiqua le lieu, et les deux sourates — quatorze versets pour quatorze nœuds — furent récitées sur la cordelette pour défaire le sortilège. Les musulmans en font aujourd'hui des paroles de protection contre toutes sortes de maux. Mais leur portée est plus vaste : <em>al-Falaq</em> garde des maux qui viennent du dehors — la nuit qui s'avance, la parole nouée des sorciers, l'envie qui consume —, tandis qu'<em>an-Nās</em> garde l'intérieur, le cœur, contre le murmure du tentateur.",
+  "themes": ["refuge", "protection", "mal extérieur", "lumière"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+      "tr": "qul aʿūdhu bi-rabbi l-falaq",
+      "trad": "Dis : « Je prends refuge auprès du Seigneur de l'aube",
+      "themes": ["refuge", "aube", "lumière", "vérité"],
+      "commentaire": "<em>al-falaq</em> (الفَلَق) : l'aube, le premier jour qui se fend de la nuit. Le mot vient du verbe <em>falaqa</em> (فَلَقَ), « fendre », « refendre » — Dieu est appelé ailleurs <em>fāliq al-iṣbāḥ</em> (فَالِق الْإِصْبَاح), « Celui qui fend l'aube » (6, 96). L'image dit la déchirure du noir par la lumière. Mais <em>al-falaq</em> a aussi un sens élargi : ce qui jaillit, ce qui paraît — y compris la vérité qui émerge de l'incertitude. Chercher refuge auprès du Seigneur de l'aube, c'est donc se mettre du côté de la lumière contre les ombres, du vrai contre le faux. Le Coran le dit ailleurs : « La vérité est venue, le mensonge s'est évanoui » (17, 81).",
+      "mots": [
+        { "ar": "قُلْ", "tr": "qul", "racine": "ق و ل", "sens": "dis", "def": "dire, prononcer, énoncer ; à l'impératif : « dis », « proclame ».", "gram": "verbe, impératif, 2ᵉ pers. masc. sing." },
+        { "ar": "أَعُوذُ", "tr": "aʿūdhu", "racine": "ع و ذ", "sens": "je cherche refuge", "def": "chercher protection, se réfugier auprès de quelqu'un pour se garder d'un danger ou d'un mal.", "gram": "verbe inaccompli, 1ʳᵉ pers. sing." },
+        { "ar": "بِرَبِّ", "tr": "bi-rabbi", "racine": "ر ب ب", "sens": "auprès du Seigneur", "def": "rabb : le Seigneur, le Maître ; celui qui possède une chose, la nourrit, l'élève et la fait croître jusqu'à son terme.", "gram": "préposition bi- + nom au génitif" },
+        { "ar": "الْفَلَقِ", "tr": "al-falaq", "racine": "ف ل ق", "sens": "de l'aube", "def": "l'aube qui fend la nuit, l'apparition du jour ; au sens large, ce qui jaillit ou émerge — la vérité après l'incertitude. De la racine f-l-q, « fendre ».", "gram": "nom, génitif" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "مِنْ شَرِّ مَا خَلَقَ",
+      "tr": "min sharri mā khalaq",
+      "trad": "contre le mal de ce qu'Il a créé,",
+      "themes": ["création", "mal", "providence"],
+      "commentaire": "La formule est volontairement très large : <em>min sharri mā khalaq</em> (مِنْ شَرِّ مَا خَلَقَ), « du mal de ce qu'Il a créé ». Elle peut désigner Satan et ses semblables, le feu de la Géhenne, ou plus simplement tout ce qui, dans la création, peut faire mal. Certains commentateurs y lisent aussi un voile : la création elle-même, qui à la fois recouvre le Créateur et révèle Ses Qualités. Sous quelque forme du mal qu'il se trouve, c'est auprès de Celui-là même qui crée que le croyant cherche abri — non d'un autre pouvoir, mais du seul Seigneur, à qui l'être tout entier appartient.",
+      "mots": [
+        { "ar": "مِنْ", "tr": "min", "racine": "—", "sens": "contre", "def": "préposition : de, à partir de ; ici, l'idée de se garder de, de se protéger contre.", "gram": "préposition" },
+        { "ar": "شَرِّ", "tr": "sharr", "racine": "ش ر ر", "sens": "mal", "def": "le mal, la nuisance, ce qui est mauvais ou nuisible ; le contraire du bien (khayr).", "gram": "nom, génitif" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce que", "def": "pronom relatif neutre : ce que, ce qui ; renvoie ici à l'ensemble de ce qui a été créé.", "gram": "pronom relatif" },
+        { "ar": "خَلَقَ", "tr": "khalaq", "racine": "خ ل ق", "sens": "Il a créé", "def": "khalaqa : créer, façonner, donner l'existence à partir d'un dessein ; sujet sous-entendu : Dieu.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+      "tr": "wa-min sharri ghāsiqin idhā waqab",
+      "trad": "et contre le mal de l'obscurité lorsqu'elle s'étend,",
+      "themes": ["nuit", "obscurité", "monde caché"],
+      "commentaire": "<em>ghāsiq idhā waqab</em> (غَاسِقٍ إِذَا وَقَبَ) : l'obscurité quand elle s'étend. Le verbe <em>waqaba</em> (وَقَبَ) dit l'idée de pénétrer, de s'introduire, de se répandre lentement. La plupart des commentateurs y voient la nuit qui tombe — l'heure où, dit le Coran ailleurs, « complotent ceux qui complotent la nuit » (4, 81). Une parole du Prophète, regardant la lune, applique aussi le mot à elle : « Ô ʿĀʾisha, prends refuge en Dieu contre celle-ci, c'est elle, <em>al-ghāsiq</em> (الغَاسِق), lorsqu'elle décline. » L'obscurité est ici tout ce qui s'avance en couvrant — la nuit du dehors comme celle qui peut tomber sur une vie.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction de coordination : et ; relie deux termes ou deux propositions.", "gram": "conjonction" },
+        { "ar": "مِنْ", "tr": "min", "racine": "—", "sens": "contre", "def": "préposition : de, à partir de ; ici, l'idée de protection contre.", "gram": "préposition" },
+        { "ar": "شَرِّ", "tr": "sharr", "racine": "ش ر ر", "sens": "mal", "def": "le mal, la nuisance, ce qui est mauvais ou nuisible ; le contraire du bien (khayr).", "gram": "nom, génitif" },
+        { "ar": "غَاسِقٍ", "tr": "ghāsiq", "racine": "غ س ق", "sens": "obscurité", "def": "ce qui s'enténèbre, ce qui devient sombre ; désigne d'abord la nuit qui tombe, parfois la lune en déclin. De la racine gh-s-q.", "gram": "nom, génitif indéfini" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle : lorsque, quand ; introduit l'instant où l'action s'accomplit.", "gram": "particule" },
+        { "ar": "وَقَبَ", "tr": "waqab", "racine": "و ق ب", "sens": "elle s'étend", "def": "waqaba : pénétrer, s'introduire, se répandre ; en parlant de la nuit, s'avancer et envelopper toute chose.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+      "tr": "wa-min sharri n-naffāthāti fī l-ʿuqad",
+      "trad": "et contre le mal de celles qui soufflent sur les nœuds,",
+      "themes": ["sorcellerie", "parole", "envoûtement"],
+      "commentaire": "<em>an-naffāthāt fī l-ʿuqad</em> (النَّفَّاثَاتِ فِي الْعُقَدِ) : celles qui soufflent sur les nœuds. La tradition rapporte l'image précise — une cordelette nouée sur laquelle on souffle en murmurant une incantation. C'est l'arrière-plan même de la révélation de la sourate. Plus largement, l'expression vise tous ceux — femmes ou hommes, le pluriel féminin n'étant pas exclusif — qui pratiquent la magie noire. Le verbe <em>nafatha</em> (نَفَثَ), « souffler, expulser un peu de souffle », évoque le rite : on lie un fil, on souffle une parole, on prétend lier une volonté. Contre ce geste, où le souffle humain s'arroge un pouvoir, le seul abri est la parole de Dieu.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction de coordination : et.", "gram": "conjonction" },
+        { "ar": "مِنْ", "tr": "min", "racine": "—", "sens": "contre", "def": "préposition : de, à partir de ; ici, l'idée de protection contre.", "gram": "préposition" },
+        { "ar": "شَرِّ", "tr": "sharr", "racine": "ش ر ر", "sens": "mal", "def": "le mal, la nuisance, ce qui est mauvais ou nuisible.", "gram": "nom, génitif" },
+        { "ar": "النَّفَّاثَاتِ", "tr": "an-naffāthāt", "racine": "ن ف ث", "sens": "celles qui soufflent", "def": "naffāthāt : celles (ou ceux) qui soufflent en murmurant, qui pratiquent l'envoûtement par le souffle ; forme intensive du verbe nafatha, « souffler une parole ».", "gram": "nom pluriel féminin, génitif" },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "sur, dans", "def": "préposition : dans, sur, à l'intérieur de.", "gram": "préposition" },
+        { "ar": "الْعُقَدِ", "tr": "al-ʿuqad", "racine": "ع ق د", "sens": "les nœuds", "def": "ʿuqda : un nœud, un lien ; au pluriel, les nœuds — tels ceux d'une cordelette utilisée pour l'envoûtement. De la racine ʿ-q-d.", "gram": "nom pluriel, génitif" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "tr": "wa-min sharri ḥāsidin idhā ḥasad",
+      "trad": "et contre le mal de l'envieux lorsqu'il envie ».",
+      "themes": ["envie", "cœur", "racine du mal"],
+      "commentaire": "<em>ḥāsid idhā ḥasad</em> (حَاسِدٍ إِذَا حَسَدَ) : l'envieux quand il envie. L'envie — <em>ḥasad</em> (حَسَد) — n'est pas le simple désir d'avoir ce que possède l'autre : c'est le mal plus profond de souhaiter qu'il en soit dépossédé. Le calife ʿUmar ibn ʿAbd al-ʿAzīz le disait ainsi : « Je ne vois pas d'oppresseur qui s'oppresse lui-même autant que l'envieux. » D'un certain point de vue, l'envie est la racine de tous les maux : la première faute commise au ciel fut l'envie d'Iblīs à l'égard d'Adam, et la première sur la terre, l'envie de Caïn à l'égard d'Abel. L'envieux, en réalité, s'oppose aux bienfaits mêmes que Dieu répand. C'est donc d'un mal intime, et non d'une simple jalousie, qu'on demande à être protégé — un mal qui ronge celui qui le porte autant qu'il vise celui qui en est l'objet.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction de coordination : et.", "gram": "conjonction" },
+        { "ar": "مِنْ", "tr": "min", "racine": "—", "sens": "contre", "def": "préposition : de, à partir de ; ici, l'idée de protection contre.", "gram": "préposition" },
+        { "ar": "شَرِّ", "tr": "sharr", "racine": "ش ر ر", "sens": "mal", "def": "le mal, la nuisance, ce qui est mauvais ou nuisible.", "gram": "nom, génitif" },
+        { "ar": "حَاسِدٍ", "tr": "ḥāsid", "racine": "ح س د", "sens": "envieux", "def": "ḥāsid : l'envieux, celui qui souhaite la perte du bien que possède un autre ; participe actif du verbe ḥasada.", "gram": "nom, génitif indéfini" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle : lorsque, quand ; introduit l'instant où l'envie s'actualise.", "gram": "particule" },
+        { "ar": "حَسَدَ", "tr": "ḥasad", "racine": "ح س د", "sens": "il envie", "def": "ḥasada : envier ; souhaiter qu'un autre soit dépossédé d'un bien ou d'une grâce qu'il a reçu.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "n": 112,
+  "nom_ar": "الإِخْلَاص",
+  "nom_tr": "al-Ikhlāṣ",
+  "nom_fr": "Le Culte pur",
+  "revelation": "mecquoise",
+  "versets_count": 4,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Ikhlāṣ — « Le Culte pur », parfois aussi nommée <em>al-Tawḥīd</em> — est l'une des sourates les plus brèves et les plus essentielles du Coran. Son titre — qui veut dire à la fois sincérité, dévotion, pureté — décrit son contenu : elle est l'énoncé complet du <em>tawḥīd</em>, l'affirmation que Dieu est Un. Un hadith répandu dit qu'elle équivaut à « un tiers du Coran » : non par sa longueur, mais parce que le message de l'Unité divine est un tiers du message du Livre. Avec la sourate 109, al-Kāfirūn, qui est, elle, la dénégation complète de tout faux culte, les deux forment les <em>Muqashqishatān</em>, « les deux remèdes ». Al-Rāzī résume ainsi sa centralité : « Le Coran tout entier est une huître, et la perle est cette parole : <em>Dis, Lui, Dieu, est Un</em>. »",
+  "themes": ["tawḥīd", "unité divine", "transcendance", "noms divins"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+      "tr": "qul huwa Llāhu aḥad",
+      "trad": "Dis : « Lui, Dieu, est Un !",
+      "themes": ["tawḥīd", "unité", "noms divins"],
+      "commentaire": "<em>qul huwa Llāhu aḥad</em> (قُلْ هُوَ اللَّهُ أَحَدٌ) : quatre mots qui condensent tout le tawḥīd. <em>Huwa</em> (هُوَ), « Lui », est d'abord un pronom — Dieu désigné sans nom, comme l'Essence en deçà de toute attribution ; certains soufis en ont fait le Nom suprême, et la formule <em>yā Huwa</em> (يَا هُوَ) est devenue une invocation. Vient ensuite <em>Allāh</em> (اللَّه), le Nom qui rassemble. Puis <em>aḥad</em> (أَحَد), « Un » — non pas le <em>wāḥid</em> (وَاحِد) du dénombrement, qui est l'un d'une suite, mais l'Unité absolue, qui ne peut souffrir ni second ni division.",
+      "mots": [
+        { "ar": "قُلْ", "tr": "qul", "racine": "ق و ل", "sens": "dis", "def": "dire, prononcer ; à l'impératif : « dis », « proclame ».", "gram": "verbe, impératif, 2ᵉ pers. masc. sing." },
+        { "ar": "هُوَ", "tr": "huwa", "racine": "—", "sens": "Lui", "def": "pronom de la 3ᵉ personne du singulier masculin : Lui ; ici en sens absolu, désignant Dieu en son Essence, avant tout Nom et tout attribut.", "gram": "pronom personnel" },
+        { "ar": "اللَّهُ", "tr": "Allāh", "racine": "أ ل ه", "sens": "Dieu", "def": "Allāh : le Nom propre de Dieu en arabe ; appelé par les commentateurs le « Nom qui rassemble » (al-ism al-jāmiʿ), où tous les autres Noms divins sont contenus.", "gram": "nom, nominatif" },
+        { "ar": "أَحَدٌ", "tr": "aḥad", "racine": "أ ح د", "sens": "Un", "def": "aḥad : l'Un absolu, l'Unité indivisible qui ne peut souffrir ni second ni partage ; à distinguer de wāḥid (l'un du dénombrement).", "gram": "nom, nominatif" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "اللَّهُ الصَّمَدُ",
+      "tr": "Allāhu ṣ-ṣamad",
+      "trad": "Dieu est le Soutien universel !",
+      "themes": ["noms divins", "dépendance", "transcendance"],
+      "commentaire": "<em>al-Ṣamad</em> (الصَّمَد) est un Nom unique : il ne paraît qu'ici dans le Coran. Son sens lexical premier évoque ce qui est plein, dense, sans creux — l'inaltérable. Théologiquement, il signifie Celui vers qui tout être se tourne dans son besoin, Celui de qui dépend toute chose tandis qu'Il ne dépend d'aucune. Al-Zamakhsharī l'explique ainsi : <em>al-Ṣamad</em>, c'est Celui qu'on cherche (<em>man ṣumida ilayhi</em>, مَنْ صُمِدَ إِلَيْه) quand on a besoin — le Maître à qui tout être s'adresse, et qui n'a besoin de personne. C'est l'Unité du verset 1 envisagée comme source absolue.",
+      "mots": [
+        { "ar": "اللَّهُ", "tr": "Allāh", "racine": "أ ل ه", "sens": "Dieu", "def": "Allāh : le Nom propre de Dieu en arabe.", "gram": "nom, nominatif" },
+        { "ar": "الصَّمَدُ", "tr": "aṣ-ṣamad", "racine": "ص م د", "sens": "le Soutien universel", "def": "al-Ṣamad : Nom divin propre à cette sourate ; au sens lexical, ce qui est plein, inaltérable, sans creux ; au sens théologique, Celui vers qui tout être se tourne dans son besoin et de qui toute chose dépend.", "gram": "nom, nominatif défini" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+      "tr": "lam yalid wa-lam yūlad",
+      "trad": "Il n'engendre pas et Il n'est pas engendré,",
+      "themes": ["transcendance", "tawḥīd", "négation des associés"],
+      "commentaire": "Le verset dit la transcendance pure : aucune lignée divine, aucun fils ni fille, aucun ancêtre. Le Coran le redira : « Comment aurait-Il un enfant, Lui qui n'a pas de compagne, Lui qui a créé toute chose ? » (6, 101). La sourate vise d'abord les Arabes d'avant l'islam, qui attribuaient des filles à Dieu, mais sa portée propre est métaphysique : Dieu n'engendre pas, parce que ce qui est engendré naît et meurt ; et Il n'est pas engendré, parce qu'Il est sans origine.",
+      "mots": [
+        { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "ne... pas", "def": "particule de négation : ne... pas ; suivie de l'inaccompli apocopé, elle nie un fait passé.", "gram": "particule de négation" },
+        { "ar": "يَلِدْ", "tr": "yalid", "racine": "و ل د", "sens": "Il engendre", "def": "walada : engendrer, mettre au monde, donner naissance ; avec lam, négation absolue.", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction de coordination : et.", "gram": "conjonction" },
+        { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "ne... pas", "def": "particule de négation : ne... pas.", "gram": "particule de négation" },
+        { "ar": "يُولَدْ", "tr": "yūlad", "racine": "و ل د", "sens": "Il est engendré", "def": "verbe walada au passif : être engendré, naître ; avec lam : Il n'a pas été engendré.", "gram": "verbe inaccompli apocopé passif, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
+      "tr": "wa-lam yakun lahu kufuwan aḥad",
+      "trad": "et Il n'a pas d'égal. »",
+      "themes": ["transcendance", "tawḥīd"],
+      "commentaire": "Aucune chose créée ne Lui ressemble. « Rien ne Lui est semblable » dit ailleurs le Coran (42, 11). Les attributs que l'on donne aux créatures — vivant, voyant, entendant — Dieu les a aussi, mais en un sens infiniment autre. Et cette transcendance n'est pas pour autant un lointain : tout en étant absolument autre, Il est aussi le plus proche — « où que vous vous tourniez, là est la Face de Dieu » (2, 115). La sourate s'achève sur le mot par lequel elle a commencé — <em>aḥad</em> (أَحَد), « Un » —, comme un anneau refermé.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction de coordination : et.", "gram": "conjonction" },
+        { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "ne... pas", "def": "particule de négation : ne... pas.", "gram": "particule de négation" },
+        { "ar": "يَكُن", "tr": "yakun", "racine": "ك و ن", "sens": "il n'est", "def": "kāna : être ; ici à l'inaccompli apocopé avec lam : il n'est pas, il n'y a pas.", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
+        { "ar": "لَّهُ", "tr": "lahu", "racine": "—", "sens": "à Lui", "def": "préposition li- + pronom suffixe 3ᵉ pers. masc. sing. : pour Lui, à Lui.", "gram": "préposition + pronom" },
+        { "ar": "كُفُوًا", "tr": "kufuwan", "racine": "ك ف ء", "sens": "égal", "def": "kufuw : égal, équivalent, comparable ; ce qui se tiendrait en vis-à-vis comme une mesure équivalente.", "gram": "nom, accusatif indéfini" },
+        { "ar": "أَحَدٌ", "tr": "aḥad", "racine": "أ ح د", "sens": "aucun", "def": "aḥad : un, quelqu'un ; en contexte négatif : pas un seul, aucun. Le mot referme la sourate qu'il avait ouverte au v. 1.", "gram": "nom, nominatif" }
+      ]
+    }
+  ]
+}

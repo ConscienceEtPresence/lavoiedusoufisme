@@ -107,7 +107,7 @@
   border-radius: 999px;
   margin-bottom: var(--space-sm);
 }
-.cv { cursor: pointer; }
+.cv--read { cursor: pointer; }
 .cv__ar {
   font-family: var(--font-arabic);
   direction: rtl;
@@ -137,22 +137,30 @@
 .cw:hover { background: rgba(184, 134, 11, 0.13); }
 .cw.is-active { background: rgba(184, 134, 11, 0.2); color: var(--gold); }
 
-/* invite « toucher pour étudier » */
-.cv__open {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-top: var(--space-sm);
-  font-family: var(--font-sans);
-  font-size: 0.74rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--turquoise);
-  background: none;
-  border: none;
-  cursor: pointer;
+/* ---- partie 2 : l'étude ---- */
+.coran-study__head {
+  text-align: center;
+  margin: var(--space-2xl) auto var(--space-lg);
 }
-.cv__open:hover { color: var(--gold); }
+.coran-study__rule {
+  width: 3rem;
+  height: 1px;
+  background: var(--gold-soft);
+  margin: 0 auto var(--space-lg);
+}
+.coran-study__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 3.5vw, 1.7rem);
+  font-weight: 600;
+  color: var(--ink-title);
+  margin: 0;
+}
+.coran-study__sub {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--ink-mute);
+  margin-top: 0.3rem;
+}
 
 /* panneau d'étude */
 .cv__study {

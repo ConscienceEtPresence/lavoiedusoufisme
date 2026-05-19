@@ -1,5 +1,6 @@
 /* ============================================================
    MODULE CORAN — lecteur de sourate (piloté par JSON)
+   Deux parties : 1) la lecture pure  2) l'étude verset par verset
    ============================================================ */
 (function () {
   const mount = document.getElementById('coran-reader');
@@ -15,17 +16,19 @@
 
   const T = EN ? {
     sura: 'Sūra', verses: 'verses',
-    study: 'Study this verse', close: 'Close',
     commentaire: 'Commentary', themes: 'Themes',
     sens: 'Sense here', def: 'Definition',
     racine: 'Root', gram: 'Grammar',
+    hint: 'Touch a verse to reveal its translation — touch it again to return to the bare text.',
+    studyTitle: 'Study', studySub: 'Verse by verse: translation, the sense of each word, commentary.',
     revel: { 'Meccan': 'Meccan', 'Medinan': 'Medinan' }
   } : {
     sura: 'Sourate', verses: 'versets',
-    study: 'Étudier ce verset', close: 'Fermer',
     commentaire: 'Commentaire', themes: 'Thèmes',
     sens: 'Sens ici', def: 'Définition',
     racine: 'Racine', gram: 'Grammaire',
+    hint: 'Touchez un verset pour révéler sa traduction — touchez-le à nouveau pour retrouver le texte nu.',
+    studyTitle: 'Étude', studySub: 'Verset par verset : traduction, sens de chaque mot, commentaire.',
     revel: { 'mecquoise': 'mecquoise', 'médinoise': 'médinoise' }
   };
 
@@ -46,7 +49,7 @@
     const root = document.createElement('div');
     root.className = 'coran';
 
-    /* couverture — titre, histoire, sens de la sourate */
+    /* ---- couverture : titre, histoire, sens de la sourate ---- */
     const cover = document.createElement('header');
     cover.className = 'coran-cover';
     cover.innerHTML =
@@ -59,28 +62,39 @@
       '<p class="coran-cover__intro">' + (d.intro || '') + '</p>';
     root.appendChild(cover);
 
-    /* invite discrète */
+    /* ============ PARTIE 1 — LA LECTURE ============ */
+    const reading = document.createElement('section');
+    reading.className = 'coran-reading';
+
     const hint = document.createElement('p');
     hint.className = 'coran-hint';
-    hint.textContent = EN
-      ? 'Touch a verse to reveal its translation. Touch a word to study it.'
-      : 'Touchez un verset pour révéler sa traduction. Touchez un mot pour l\'étudier.';
-    root.appendChild(hint);
+    hint.textContent = T.hint;
+    reading.appendChild(hint);
 
-    /* basmala */
-    if (d.basmala) {
-      const bm = document.createElement('div');
-      bm.className = 'coran-basmala';
-      bm.innerHTML =
-        '<div class="coran-basmala__ar" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>' +
-        '<div class="coran-basmala__fr">' + esc(d.basmala) + '</div>';
-      root.appendChild(bm);
-    }
+    if (d.basmala) reading.appendChild(buildBasmala(d.basmala));
 
-    /* versets */
     d.versets.forEach(function (v) {
-      root.appendChild(buildVerse(v));
+      reading.appendChild(buildReadingVerse(v));
     });
+    root.appendChild(reading);
+
+    /* ============ PARTIE 2 — L'ÉTUDE ============ */
+    const study = document.createElement('section');
+    study.className = 'coran-study';
+
+    const head = document.createElement('header');
+    head.className = 'coran-study__head';
+    head.innerHTML =
+      '<div class="coran-study__rule"></div>' +
+      '<h2 class="coran-study__title">' + T.studyTitle + ' — ' + T.sura.toLowerCase() +
+      ' ' + esc(d.nom_tr) + '</h2>' +
+      '<p class="coran-study__sub">' + T.studySub + '</p>';
+    study.appendChild(head);
+
+    d.versets.forEach(function (v) {
+      study.appendChild(buildStudyVerse(v));
+    });
+    root.appendChild(study);
 
     /* pied */
     const foot = document.createElement('div');
@@ -92,16 +106,57 @@
     mount.appendChild(root);
   }
 
-  function buildVerse(v) {
-    const cv = document.createElement('article');
-    cv.className = 'cv';
+  function buildBasmala(text) {
+    const bm = document.createElement('div');
+    bm.className = 'coran-basmala';
+    bm.innerHTML =
+      '<div class="coran-basmala__ar" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>' +
+      '<div class="coran-basmala__fr">' + esc(text) + '</div>';
+    return bm;
+  }
 
+  function verseNum(n) {
     const num = document.createElement('div');
     num.className = 'cv__num';
-    num.textContent = v.n;
-    cv.appendChild(num);
+    num.textContent = n;
+    return num;
+  }
 
-    /* texte arabe : chaque mot cliquable */
+  /* ---- PARTIE 1 : verset de lecture (arabe nu, traduction au toucher) ---- */
+  function buildReadingVerse(v) {
+    const cv = document.createElement('article');
+    cv.className = 'cv cv--read';
+
+    cv.appendChild(verseNum(v.n));
+
+    const ar = document.createElement('div');
+    ar.className = 'cv__ar';
+    ar.lang = 'ar';
+    ar.dir = 'rtl';
+    ar.textContent = v.ar;
+    cv.appendChild(ar);
+
+    const tr = document.createElement('p');
+    tr.className = 'cv__trad';
+    tr.textContent = v.trad || '';
+    tr.hidden = true;
+    cv.appendChild(tr);
+
+    cv.addEventListener('click', function () {
+      tr.hidden = !tr.hidden;
+      cv.classList.toggle('cv--open', !tr.hidden);
+    });
+
+    return cv;
+  }
+
+  /* ---- PARTIE 2 : verset d'étude (mots cliquables, traduction + commentaire) ---- */
+  function buildStudyVerse(v) {
+    const cv = document.createElement('article');
+    cv.className = 'cv cv--study';
+
+    cv.appendChild(verseNum(v.n));
+
     const ar = document.createElement('div');
     ar.className = 'cv__ar';
     ar.lang = 'ar';
@@ -123,45 +178,25 @@
     }
     cv.appendChild(ar);
 
-    /* traduction — masquée, révélée en touchant le verset */
     const tr = document.createElement('p');
     tr.className = 'cv__trad';
     tr.textContent = v.trad || '';
-    tr.hidden = true;
     cv.appendChild(tr);
 
-    /* panneau d'étude */
-    const study = document.createElement('div');
-    study.className = 'cv__study';
-    study.hidden = true;
-    let html = '';
-    if (v.commentaire) html += '<h3>' + T.commentaire + '</h3><p>' + v.commentaire + '</p>';
-    if (v.themes && v.themes.length) {
-      html += '<h3>' + T.themes + '</h3><div class="cv__themes">' +
-        v.themes.map(function (t) { return '<span class="cv__theme">' + esc(t) + '</span>'; }).join('') +
-        '</div>';
+    if (v.commentaire || (v.themes && v.themes.length)) {
+      const study = document.createElement('div');
+      study.className = 'cv__study';
+      let html = '';
+      if (v.commentaire) html += '<h3>' + T.commentaire + '</h3><p>' + v.commentaire + '</p>';
+      if (v.themes && v.themes.length) {
+        html += '<h3>' + T.themes + '</h3><div class="cv__themes">' +
+          v.themes.map(function (t) { return '<span class="cv__theme">' + esc(t) + '</span>'; }).join('') +
+          '</div>';
+      }
+      study.innerHTML = html;
+      cv.appendChild(study);
     }
-    study.innerHTML = html;
 
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'cv__open';
-    btn.textContent = '✦ ' + T.study;
-    btn.addEventListener('click', function (e) {
-      e.stopPropagation();
-      study.hidden = !study.hidden;
-      btn.textContent = (study.hidden ? '✦ ' + T.study : '✦ ' + T.close);
-    });
-
-    /* toucher le verset → révèle / cache la traduction */
-    cv.addEventListener('click', function (e) {
-      if (e.target.closest('.cv__study') || e.target.closest('.cv__open')) return;
-      tr.hidden = !tr.hidden;
-      cv.classList.toggle('cv--open', !tr.hidden);
-    });
-
-    cv.appendChild(btn);
-    cv.appendChild(study);
     return cv;
   }
 

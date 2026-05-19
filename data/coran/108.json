@@ -1,0 +1,55 @@
+{
+  "n": 108,
+  "nom_ar": "الكَوْثَر",
+  "nom_tr": "al-Kawthar",
+  "nom_fr": "Le Fleuve d'abondance",
+  "revelation": "mecquoise",
+  "versets_count": 3,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Kawthar — « Le Fleuve d'abondance » — est la plus brève sourate du Coran : trois versets seulement. Elle tire son nom du don promis au Prophète au premier verset, <em>al-Kawthar</em> (الكَوْثَر), « l'abondant ». La tradition rapporte qu'elle fut révélée en réponse à un homme de Quraysh, al-ʿĀṣ ibn Wāʾil, qui disait du Prophète : « Laissez-le, c'est un homme sans postérité ; quand il mourra, plus personne ne parlera de lui. » Les deux fils du Prophète, Qāsim et ʿAbd Allāh, étaient morts en bas âge ; on appelait alors <em>abtar</em> (أَبْتَر), « coupé », celui dont la lignée masculine s'éteint. La sourate retourne l'insulte : c'est l'ennemi du Prophète qui est l'<em>abtar</em>. Et au lieu d'une postérité d'enfants, c'est un fleuve, le Kawthar, qui lui est donné — symbole d'une abondance plus profonde, dont la postérité spirituelle ne se mesure pas.",
+  "themes": ["don divin", "abondance", "gratitude", "postérité spirituelle"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ",
+      "tr": "innā aʿṭaynāka l-kawthar",
+      "trad": "En vérité, Nous t'avons donné le Fleuve d'abondance.",
+      "themes": ["don", "abondance", "paradis"],
+      "commentaire": "<em>al-Kawthar</em> (الكَوْثَر) est dérivé de <em>kathīr</em> (كَثِير), « beaucoup », « abondant » : c'est l'abondance par excellence. Les commentateurs en ont donné plus de seize sens : un fleuve ou un bassin du Paradis, le don de la prophétie, le Coran lui-même, la prière quotidienne, la profession de foi, la lumière qui guide vers la religion, la postérité du Prophète. Un hadith rapporte que le Prophète, lors de son ascension, vit un fleuve « dont les rives étaient des tentes de perles creuses » et que Gabriel lui dit : « C'est le Kawthar. » Al-Ṭabarsī résume : tous ces sens sont des aspects d'un même bien — l'abondance que Dieu donne dans les deux demeures, ici-bas et au-delà.",
+      "mots": [
+        { "ar": "إِنَّا", "tr": "innā", "racine": "—", "sens": "en vérité, Nous", "def": "particule de mise en relief inna + pronom suffixe Nous : « en vérité, Nous ».", "gram": "particule + pronom" },
+        { "ar": "أَعْطَيْنَاكَ", "tr": "aʿṭaynāka", "racine": "ع ط و", "sens": "Nous t'avons donné", "def": "aʿṭā : donner, accorder, offrir ; à l'accompli 1ʳᵉ pers. plur. + pronom suffixe 2ᵉ pers. masc. sing. : Nous t'avons donné.", "gram": "verbe accompli + pronom suffixe, 1ʳᵉ pers. plur." },
+        { "ar": "الْكَوْثَرَ", "tr": "al-kawthar", "racine": "ك ث ر", "sens": "le Fleuve d'abondance", "def": "al-Kawthar : forme intensive de la racine k-th-r (abondance, multitude) ; désigne l'abondance par excellence — souvent identifiée à un fleuve du Paradis, mais aussi à toute grâce donnée au Prophète.", "gram": "nom, accusatif défini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "فَصَلِّ لِرَبِّكَ وَانْحَرْ",
+      "tr": "fa-ṣalli li-rabbika wa-nḥar",
+      "trad": "Prie donc ton Seigneur et sacrifie !",
+      "themes": ["prière", "sacrifice", "gratitude"],
+      "commentaire": "La réponse au don est double : la <em>ṣalāt</em> (صَلَاة) — la prière rituelle — et le sacrifice, <em>naḥr</em> (نَحْر), qui désigne au sens premier l'égorgement d'un animal (chameau ou bovin) au creux du cou, dans la pratique du sacrifice de l'Aïd. Une interprétation moins répandue lit aussi <em>wa-nḥar</em> comme « élève les mains » jusqu'à la base du cou — geste qui accompagne le <em>takbīr</em> au commencement de la prière. Dans les deux lectures, la réponse à l'abondance reçue est un mouvement vers Dieu : la prière qui élève, le sacrifice qui rend.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors, donc", "def": "particule de liaison : alors, donc ; introduit la conséquence du don précédent.", "gram": "particule" },
+        { "ar": "صَلِّ", "tr": "ṣalli", "racine": "ص ل و", "sens": "prie", "def": "ṣallā : prier ; à l'impératif, « prie ». Désigne aussi la prière rituelle, ṣalāt.", "gram": "verbe impératif, 2ᵉ pers. masc. sing." },
+        { "ar": "لِرَبِّكَ", "tr": "li-rabbika", "racine": "ر ب ب", "sens": "pour ton Seigneur", "def": "préposition li- + rabb + pronom suffixe : pour, à l'adresse de ton Seigneur.", "gram": "préposition + nom + pronom suffixe" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "انْحَرْ", "tr": "nḥar", "racine": "ن ح ر", "sens": "sacrifie", "def": "naḥara : sacrifier en égorgeant à la base du cou (chameau, bovin) ; à l'impératif, « sacrifie ». Une autre lecture y entend : « élève les mains [jusqu'au naḥr, la base du cou] » au commencement de la prière.", "gram": "verbe impératif, 2ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ",
+      "tr": "inna shāniʾaka huwa l-abtar",
+      "trad": "Certes, celui qui te hait, c'est lui qui sera incapable de procréer.",
+      "themes": ["renversement", "postérité spirituelle"],
+      "commentaire": "<em>shāniʾ</em> (شَانِئ) — celui qui hait, qui méprise. <em>abtar</em> (أَبْتَر) — au sens propre, l'animal à la queue coupée ; au sens figuré, celui dont la postérité est interrompue, celui dont rien ne suit après lui. C'est le mot que les ennemis du Prophète avaient employé contre lui, parce que ses fils étaient morts en bas âge. La sourate le retourne : c'est l'ennemi qui est <em>abtar</em>, sans postérité véritable. Le Prophète, lui, reçoit le Kawthar — non des enfants par le sang, mais une postérité spirituelle sans mesure. Comme dit le Coran : « le Jour où ni richesse ni enfants ne servent, sauf à celui qui vient à Dieu avec un cœur sain » (26, 88-89).",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "en vérité, certes", "def": "particule de mise en relief : certes, en vérité.", "gram": "particule" },
+        { "ar": "شَانِئَكَ", "tr": "shāniʾaka", "racine": "ش ن ء", "sens": "celui qui te hait", "def": "shāniʾ : qui hait, qui méprise ; participe actif de shanaʾa. Avec le pronom suffixe : ton ennemi, celui qui te hait.", "gram": "participe actif + pronom suffixe, accusatif" },
+        { "ar": "هُوَ", "tr": "huwa", "racine": "—", "sens": "lui", "def": "pronom personnel 3ᵉ pers. masc. sing. : lui ; en position de pronom d'isolement (pronom de séparation).", "gram": "pronom personnel" },
+        { "ar": "الْأَبْتَرُ", "tr": "al-abtar", "racine": "ب ت ر", "sens": "le sans postérité, le coupé", "def": "abtar : au sens propre, à la queue coupée ; au sens figuré, celui dont la postérité s'éteint, dont rien ne suit après lui. Mot que les ennemis du Prophète avaient employé contre lui.", "gram": "nom, nominatif défini" }
+      ]
+    }
+  ]
+}

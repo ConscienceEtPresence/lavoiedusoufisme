@@ -57,32 +57,15 @@
   text-align: left;
 }
 
-/* ---- sélecteur de mode ---- */
-.coran-modes {
-  display: flex;
-  justify-content: center;
-  gap: 0.2rem;
-  padding: 0.25rem;
-  margin: var(--space-lg) auto;
-  width: fit-content;
-  background: rgba(184, 134, 11, 0.07);
-  border-radius: 999px;
-}
-.coran-modes button {
+/* ---- invite de lecture ---- */
+.coran-hint {
+  text-align: center;
   font-family: var(--font-sans);
-  font-size: 0.8rem;
-  color: var(--ink-soft);
-  background: none;
-  border: none;
-  border-radius: 999px;
-  padding: 0.4rem 1rem;
-  cursor: pointer;
-  transition: background 0.25s ease, color 0.25s ease;
-}
-.coran-modes button.is-active {
-  background: #FFFDF8;
-  color: var(--gold);
-  box-shadow: var(--shadow-soft);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-mute);
+  margin: var(--space-lg) auto 0;
+  max-width: 30rem;
 }
 
 /* ---- la basmala ---- */
@@ -124,23 +107,25 @@
   border-radius: 999px;
   margin-bottom: var(--space-sm);
 }
+.cv { cursor: pointer; }
 .cv__ar {
   font-family: var(--font-arabic);
   direction: rtl;
   text-align: right;
-  font-size: clamp(2rem, 7vw, 2.9rem);
+  font-size: clamp(2.1rem, 7.5vw, 3rem);
   line-height: 2.05;
   color: var(--ink-title);
-  margin-bottom: var(--space-sm);
 }
 .cv__trad {
   font-family: var(--font-serif);
   font-size: 1.12rem;
   line-height: 1.7;
   color: var(--ink);
+  margin-top: var(--space-sm);
+  padding-left: var(--space-md);
+  border-left: 2px solid var(--gold-soft);
 }
-.coran[data-mode="lecture"] .cv__trad { display: none; }
-.coran[data-mode="lecture"] .cv__ar { font-size: clamp(2.2rem, 8vw, 3.2rem); }
+.cv__trad[hidden] { display: none; }
 
 /* mot cliquable */
 .cw {
@@ -228,7 +213,41 @@
   color: var(--ink-title);
 }
 .cw-pop__tr { font-style: italic; color: var(--gold); font-size: 0.9rem; font-family: var(--font-serif); }
-.cw-pop__sens { font-size: 0.95rem; color: var(--ink); margin-top: 0.3rem; }
+.cw-pop__sens { font-size: 0.9rem; color: var(--ink); margin-top: 0.35rem; }
+.cw-pop__sens b { color: var(--ink-title); font-weight: 600; }
+.cw-pop__def {
+  margin-top: 0.45rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--line);
+}
+.cw-pop__deflabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.cw-pop__deflabel b { color: var(--ink-title); font-weight: 600; font-size: 0.82rem; }
+.cw-pop__deftext {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--ink);
+  line-height: 1.55;
+  margin-top: 0.2rem;
+}
+.cw-pop__defpick { display: inline-flex; gap: 0.2rem; }
+.cw-pop__defbtn {
+  width: 1.3rem;
+  height: 1.3rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  background: none;
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.cw-pop__defbtn.is-active { background: var(--gold); color: #FFFDF8; border-color: var(--gold); }
 .cw-pop__row { font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.3rem; }
 .cw-pop__row b { color: var(--ink-title); font-weight: 600; }
 .cw-pop__racine { font-family: var(--font-arabic); direction: rtl; }

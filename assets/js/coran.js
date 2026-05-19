@@ -15,16 +15,16 @@
 
   const T = EN ? {
     sura: 'Sūra', verses: 'verses',
-    lecture: 'Reading', bilingue: 'Bilingual',
     study: 'Study this verse', close: 'Close',
-    commentaire: 'Commentary', themes: 'Themes', mots: 'Word by word',
+    commentaire: 'Commentary', themes: 'Themes',
+    sens: 'Sense here', def: 'Definition',
     racine: 'Root', gram: 'Grammar',
     revel: { 'Meccan': 'Meccan', 'Medinan': 'Medinan' }
   } : {
     sura: 'Sourate', verses: 'versets',
-    lecture: 'Lecture', bilingue: 'Bilingue',
     study: 'Étudier ce verset', close: 'Fermer',
-    commentaire: 'Commentaire', themes: 'Thèmes', mots: 'Mot à mot',
+    commentaire: 'Commentaire', themes: 'Thèmes',
+    sens: 'Sens ici', def: 'Définition',
     racine: 'Racine', gram: 'Grammaire',
     revel: { 'mecquoise': 'mecquoise', 'médinoise': 'médinoise' }
   };
@@ -45,9 +45,8 @@
   function render(d) {
     const root = document.createElement('div');
     root.className = 'coran';
-    root.setAttribute('data-mode', 'bilingue');
 
-    /* couverture */
+    /* couverture — titre, histoire, sens de la sourate */
     const cover = document.createElement('header');
     cover.className = 'coran-cover';
     cover.innerHTML =
@@ -60,21 +59,13 @@
       '<p class="coran-cover__intro">' + (d.intro || '') + '</p>';
     root.appendChild(cover);
 
-    /* modes */
-    const modes = document.createElement('div');
-    modes.className = 'coran-modes';
-    modes.innerHTML =
-      '<button type="button" data-m="lecture">' + T.lecture + '</button>' +
-      '<button type="button" class="is-active" data-m="bilingue">' + T.bilingue + '</button>';
-    modes.addEventListener('click', function (e) {
-      const b = e.target.closest('button');
-      if (!b) return;
-      root.setAttribute('data-mode', b.dataset.m);
-      modes.querySelectorAll('button').forEach(function (x) {
-        x.classList.toggle('is-active', x === b);
-      });
-    });
-    root.appendChild(modes);
+    /* invite discrète */
+    const hint = document.createElement('p');
+    hint.className = 'coran-hint';
+    hint.textContent = EN
+      ? 'Touch a verse to reveal its translation. Touch a word to study it.'
+      : 'Touchez un verset pour révéler sa traduction. Touchez un mot pour l\'étudier.';
+    root.appendChild(hint);
 
     /* basmala */
     if (d.basmala) {
@@ -132,12 +123,14 @@
     }
     cv.appendChild(ar);
 
+    /* traduction — masquée, révélée en touchant le verset */
     const tr = document.createElement('p');
     tr.className = 'cv__trad';
     tr.textContent = v.trad || '';
+    tr.hidden = true;
     cv.appendChild(tr);
 
-    /* bouton étude */
+    /* panneau d'étude */
     const study = document.createElement('div');
     study.className = 'cv__study';
     study.hidden = true;
@@ -154,13 +147,21 @@
     btn.type = 'button';
     btn.className = 'cv__open';
     btn.textContent = '✦ ' + T.study;
-    btn.addEventListener('click', function () {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
       study.hidden = !study.hidden;
       btn.textContent = (study.hidden ? '✦ ' + T.study : '✦ ' + T.close);
     });
+
+    /* toucher le verset → révèle / cache la traduction */
+    cv.addEventListener('click', function (e) {
+      if (e.target.closest('.cv__study') || e.target.closest('.cv__open')) return;
+      tr.hidden = !tr.hidden;
+      cv.classList.toggle('cv--open', !tr.hidden);
+    });
+
     cv.appendChild(btn);
     cv.appendChild(study);
-
     return cv;
   }
 
@@ -177,14 +178,48 @@
     pop.className = 'cw-pop';
     let html =
       '<div class="cw-pop__ar" lang="ar" dir="rtl">' + esc(m.ar) + '</div>' +
-      '<div class="cw-pop__tr">' + esc(m.tr) + '</div>' +
-      '<div class="cw-pop__sens">' + esc(m.sens) + '</div>';
+      '<div class="cw-pop__tr">' + esc(m.tr) + '</div>';
+    if (m.sens) {
+      html += '<div class="cw-pop__sens"><b>' + T.sens + '</b> · ' + esc(m.sens) + '</div>';
+    }
+
+    /* définition propre du mot — une ou plusieurs au choix */
+    const defs = m.def == null ? [] : (Array.isArray(m.def) ? m.def : [m.def]);
+    if (defs.length) {
+      html += '<div class="cw-pop__def">' +
+        '<div class="cw-pop__deflabel"><b>' + T.def + '</b>';
+      if (defs.length > 1) {
+        html += '<span class="cw-pop__defpick">';
+        for (let i = 0; i < defs.length; i++) {
+          html += '<button type="button" class="cw-pop__defbtn' +
+            (i === 0 ? ' is-active' : '') + '" data-i="' + i + '">' + (i + 1) + '</button>';
+        }
+        html += '</span>';
+      }
+      html += '</div><div class="cw-pop__deftext">' + esc(defs[0]) + '</div></div>';
+    }
+
     if (m.racine && m.racine !== '—') {
       html += '<div class="cw-pop__row"><b>' + T.racine + '</b> · ' +
         '<span class="cw-pop__racine" lang="ar" dir="rtl">' + esc(m.racine) + '</span></div>';
     }
     if (m.gram) html += '<div class="cw-pop__row"><b>' + T.gram + '</b> · ' + esc(m.gram) + '</div>';
     pop.innerHTML = html;
+
+    /* sélecteur de définition (quand il y en a plusieurs) */
+    if (defs.length > 1) {
+      const txt = pop.querySelector('.cw-pop__deftext');
+      pop.querySelectorAll('.cw-pop__defbtn').forEach(function (b) {
+        b.addEventListener('click', function (e) {
+          e.stopPropagation();
+          txt.textContent = defs[+b.dataset.i];
+          pop.querySelectorAll('.cw-pop__defbtn').forEach(function (x) {
+            x.classList.toggle('is-active', x === b);
+          });
+        });
+      });
+    }
+
     document.body.appendChild(pop);
 
     const r = span.getBoundingClientRect();

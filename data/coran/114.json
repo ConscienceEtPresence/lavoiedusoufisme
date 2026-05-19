@@ -1,0 +1,94 @@
+{
+  "n": 114,
+  "nom_ar": "النَّاس",
+  "nom_tr": "an-Nās",
+  "nom_fr": "Les Hommes",
+  "revelation": "mecquoise",
+  "versets_count": 6,
+  "basmala": "Au nom de Dieu, le Tout-Miséricordieux, le Très-Miséricordieux.",
+  "intro": "An-Nās — « Les Hommes » — est la cent-quatorzième et dernière sourate du Coran. Avec la sourate précédente, al-Falaq, elle forme les <em>Muʿawwidhatān</em>, « les deux protectrices » : les deux sourates du refuge. Toutes deux s'ouvrent sur le même ordre — <em>Dis : je cherche refuge…</em> Mais là où al-Falaq protège des maux du dehors, an-Nās garde le lieu le plus intime : le cœur. Elle demande refuge contre le <em>tentateur</em>, celui qui souffle le doute au-dedans de l'homme.",
+  "themes": ["refuge", "protection", "combat intérieur"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+      "tr": "qul aʿūdhu bi-rabbi n-nās",
+      "trad": "Dis : « Je cherche refuge auprès du Seigneur des hommes,",
+      "themes": ["refuge", "noms divins", "souveraineté", "tawḥīd"],
+      "commentaire": "Trois Noms divins vont être prononcés, en une montée. Le premier est <em>Rabb</em>, le Seigneur — Celui qui nourrit, élève, fait croître ; Celui de qui l'on tient l'existence à chaque instant. Chercher refuge, c'est d'abord se reconnaître entièrement dépendant — tout le contraire de l'illusion de se suffire à soi-même.",
+      "mots": [
+        { "ar": "قُلْ", "tr": "qul", "racine": "ق و ل", "sens": "dis", "gram": "verbe, impératif, 2ᵉ pers. masc. sing." },
+        { "ar": "أَعُوذُ", "tr": "aʿūdhu", "racine": "ع و ذ", "sens": "je cherche refuge", "gram": "verbe inaccompli, 1ʳᵉ pers. sing." },
+        { "ar": "بِرَبِّ", "tr": "bi-rabbi", "racine": "ر ب ب", "sens": "auprès du Seigneur", "gram": "préposition bi- + nom au génitif" },
+        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "des hommes", "gram": "nom, génitif" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "مَلِكِ النَّاسِ",
+      "tr": "maliki n-nās",
+      "trad": "le Roi des hommes,",
+      "themes": ["noms divins", "souveraineté"],
+      "commentaire": "Le deuxième Nom : <em>Malik</em>, le Roi — Celui qui gouverne, de qui relève toute autorité véritable. Après Celui qui fait être, Celui qui régit : le monde n'est pas livré au hasard, il est tenu.",
+      "mots": [
+        { "ar": "مَلِكِ", "tr": "malik", "racine": "م ل ك", "sens": "Roi", "gram": "nom, génitif (apposition)" },
+        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "des hommes", "gram": "nom, génitif" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "إِلَٰهِ النَّاسِ",
+      "tr": "ilāhi n-nās",
+      "trad": "le Dieu des hommes,",
+      "themes": ["noms divins", "tawḥīd", "adoration"],
+      "commentaire": "Le troisième Nom : <em>Ilāh</em>, le Dieu — l'unique vers qui va l'adoration. La montée s'achève : Il nous fait être (<em>Rabb</em>), Il nous régit (<em>Malik</em>), Il est seul digne d'être adoré (<em>Ilāh</em>). Trois manières d'être lié à Lui — et c'est en les oubliant que l'homme s'attribue à lui-même une suffisance qui n'appartient qu'à Dieu.",
+      "mots": [
+        { "ar": "إِلَٰهِ", "tr": "ilāh", "racine": "أ ل ه", "sens": "Dieu, l'Adoré", "gram": "nom, génitif (apposition)" },
+        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "des hommes", "gram": "nom, génitif" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
+      "tr": "min sharri l-waswāsi l-khannās",
+      "trad": "contre le mal du tentateur furtif,",
+      "themes": ["le tentateur", "combat intérieur", "mal"],
+      "commentaire": "<em>al-waswās al-khannās</em> : le tentateur furtif. La <em>waswasa</em> est le murmure — une suggestion dite à voix basse, et répétée. <em>Khannās</em> désigne celui qui se retire, qui recule puis revient. La tradition l'explique ainsi : le souffleur de doute s'efface dès que le cœur se souvient de Dieu, et il revient dès que le cœur L'oublie. Le remède est donc inscrit dans le geste même de la sourate.",
+      "mots": [
+        { "ar": "مِن", "tr": "min", "racine": "—", "sens": "contre, du", "gram": "préposition" },
+        { "ar": "شَرِّ", "tr": "sharr", "racine": "ش ر ر", "sens": "mal", "gram": "nom, génitif" },
+        { "ar": "الْوَسْوَاسِ", "tr": "al-waswās", "racine": "و س و س", "sens": "le souffleur de doute", "gram": "nom, génitif" },
+        { "ar": "الْخَنَّاسِ", "tr": "al-khannās", "racine": "خ ن س", "sens": "le furtif, qui se retire", "gram": "adjectif intensif, génitif" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",
+      "tr": "alladhī yuwaswisu fī ṣudūri n-nās",
+      "trad": "celui qui souffle le doute dans la poitrine des hommes —",
+      "themes": ["le cœur", "âme", "tentation"],
+      "commentaire": "Il souffle <em>dans la poitrine</em> des hommes — <em>ṣudūr</em>, la chambre intérieure du cœur. La tentation n'est pas un cri du dehors : elle est intime, elle parle du dedans, à voix basse. Les commentateurs s'interrogent : est-ce le démon qui murmure, ou l'âme elle-même ? La tradition retient les deux — la suggestion vient, et l'<em>âme qui commande au mal</em> (al-nafs al-ammāra) y consent. Le combat se joue dans cet espace étroit entre la suggestion reçue et le consentement donné.",
+      "mots": [
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "celui qui", "gram": "pronom relatif" },
+        { "ar": "يُوَسْوِسُ", "tr": "yuwaswisu", "racine": "و س و س", "sens": "il souffle le doute", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "gram": "préposition" },
+        { "ar": "صُدُورِ", "tr": "ṣudūr", "racine": "ص د ر", "sens": "les poitrines", "gram": "nom, pluriel, génitif" },
+        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "des hommes", "gram": "nom, génitif" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "مِنَ الْجِنَّةِ وَالنَّاسِ",
+      "tr": "mina l-jinnati wa-n-nās",
+      "trad": "qu'il soit des djinns ou des hommes. »",
+      "themes": ["djinns", "le monde invisible"],
+      "commentaire": "Le tentateur est de deux ordres : <em>les djinns</em> — l'invisible — et <em>les hommes</em>. Le mauvais conseil ne vient pas seulement d'un monde caché : il nous atteint aussi par d'autres êtres humains. Et le Coran tout entier s'achève ici sur le mot <em>an-nās</em>, « les hommes » — ce même mot qui a scandé toute la sourate, répété comme un refrain. Le Livre se ferme sur l'homme : celui qu'il a, d'un bout à l'autre, voulu éveiller.",
+      "mots": [
+        { "ar": "مِنَ", "tr": "mina", "racine": "—", "sens": "parmi, qu'il soit de", "gram": "préposition" },
+        { "ar": "الْجِنَّةِ", "tr": "al-jinna", "racine": "ج ن ن", "sens": "les djinns", "gram": "nom, génitif" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "gram": "conjonction" },
+        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "les hommes", "gram": "nom, génitif" }
+      ]
+    }
+  ]
+}

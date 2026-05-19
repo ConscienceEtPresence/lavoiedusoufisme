@@ -1,0 +1,241 @@
+/* ============================================================
+   MODULE CORAN — lecteur de sourate
+   ============================================================ */
+
+.coran {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: var(--space-xl) 0 var(--space-2xl);
+}
+
+/* ---- couverture de la sourate ---- */
+.coran-cover {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+.coran-cover__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-sm);
+}
+.coran-cover__ar {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  font-size: clamp(3rem, 11vw, 4.6rem);
+  line-height: 1.4;
+  color: var(--ink-title);
+}
+.coran-cover__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 600;
+  color: var(--ink-title);
+  margin: 0.2rem 0 0.3rem;
+}
+.coran-cover__meta {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--ink-mute);
+  letter-spacing: 0.04em;
+}
+.coran-cover__rule {
+  width: 3rem;
+  height: 1px;
+  background: var(--gold-soft);
+  margin: var(--space-md) auto;
+}
+.coran-cover__intro {
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  max-width: 34rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* ---- sélecteur de mode ---- */
+.coran-modes {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.25rem;
+  margin: var(--space-lg) auto;
+  width: fit-content;
+  background: rgba(184, 134, 11, 0.07);
+  border-radius: 999px;
+}
+.coran-modes button {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  background: none;
+  border: none;
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.coran-modes button.is-active {
+  background: #FFFDF8;
+  color: var(--gold);
+  box-shadow: var(--shadow-soft);
+}
+
+/* ---- la basmala ---- */
+.coran-basmala {
+  text-align: center;
+  margin: var(--space-lg) 0 var(--space-xl);
+}
+.coran-basmala__ar {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  color: var(--gold);
+  line-height: 1.8;
+}
+.coran-basmala__fr {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--ink-mute);
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+/* ---- un verset ---- */
+.cv {
+  border-top: 1px solid var(--line);
+  padding: var(--space-lg) 0;
+}
+.cv:first-of-type { border-top: none; }
+.cv__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--gold);
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  margin-bottom: var(--space-sm);
+}
+.cv__ar {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  text-align: right;
+  font-size: clamp(2rem, 7vw, 2.9rem);
+  line-height: 2.05;
+  color: var(--ink-title);
+  margin-bottom: var(--space-sm);
+}
+.cv__trad {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.coran[data-mode="lecture"] .cv__trad { display: none; }
+.coran[data-mode="lecture"] .cv__ar { font-size: clamp(2.2rem, 8vw, 3.2rem); }
+
+/* mot cliquable */
+.cw {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0 0.05em;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.cw:hover { background: rgba(184, 134, 11, 0.13); }
+.cw.is-active { background: rgba(184, 134, 11, 0.2); color: var(--gold); }
+
+/* invite « toucher pour étudier » */
+.cv__open {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: var(--space-sm);
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--turquoise);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.cv__open:hover { color: var(--gold); }
+
+/* panneau d'étude */
+.cv__study {
+  margin-top: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: linear-gradient(170deg, #FFFDF8, var(--paper-warm));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+.cv__study[hidden] { display: none; }
+.cv__study h3 {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 var(--space-sm);
+}
+.cv__study h3:not(:first-child) { margin-top: var(--space-md); }
+.cv__study p {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.72;
+  color: var(--ink-soft);
+}
+.cv__themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: var(--space-sm);
+}
+.cv__theme {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  background: rgba(46, 125, 122, 0.1);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+}
+
+/* popover du mot */
+.cw-pop {
+  position: absolute;
+  z-index: 100;
+  max-width: 17rem;
+  padding: var(--space-sm) var(--space-md);
+  background: #FFFDF8;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-family: var(--font-sans);
+}
+.cw-pop[hidden] { display: none; }
+.cw-pop__ar {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  font-size: 1.6rem;
+  color: var(--ink-title);
+}
+.cw-pop__tr { font-style: italic; color: var(--gold); font-size: 0.9rem; font-family: var(--font-serif); }
+.cw-pop__sens { font-size: 0.95rem; color: var(--ink); margin-top: 0.3rem; }
+.cw-pop__row { font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.3rem; }
+.cw-pop__row b { color: var(--ink-title); font-weight: 600; }
+.cw-pop__racine { font-family: var(--font-arabic); direction: rtl; }
+
+.coran-foot {
+  text-align: center;
+  margin-top: var(--space-2xl);
+}
+.coran-foot a { color: var(--turquoise); text-decoration: none; font-family: var(--font-sans); font-size: 0.85rem; }
+.coran-foot a:hover { text-decoration: underline; }

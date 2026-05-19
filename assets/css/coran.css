@@ -239,3 +239,79 @@
 }
 .coran-foot a { color: var(--turquoise); text-decoration: none; font-family: var(--font-sans); font-size: 0.85rem; }
 .coran-foot a:hover { text-decoration: underline; }
+
+/* ============================================
+   MODULE CORAN — page d'index (grille des sourates)
+   ============================================ */
+.coran-intro {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.78;
+  color: var(--ink-soft);
+  max-width: 36rem;
+  margin: 0 auto var(--space-xl);
+}
+.coran-intro p + p { margin-top: 1rem; }
+
+.coran-index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: var(--space-md);
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.coran-sira {
+  display: block;
+  text-decoration: none;
+  padding: var(--space-md) var(--space-sm);
+  text-align: center;
+  background: linear-gradient(170deg, #FFFDF8, var(--paper-warm));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.coran-sira:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--gold-soft);
+}
+.coran-sira--soon {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.coran-sira__num {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.coran-sira__ar {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: var(--ink-title);
+  margin: 0.2rem 0;
+}
+.coran-sira__name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink-title);
+}
+.coran-sira__meta {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  color: var(--ink-mute);
+  margin-top: 0.2rem;
+}
+.coran-sira__cta {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--turquoise);
+  margin-top: var(--space-sm);
+}

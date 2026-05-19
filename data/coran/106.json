@@ -1,0 +1,75 @@
+{
+  "n": 106,
+  "nom_ar": "قُرَيْش",
+  "nom_tr": "Quraysh",
+  "nom_fr": "Les Quraïchites",
+  "revelation": "mecquoise",
+  "versets_count": 4,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Quraysh — du nom de la tribu du Prophète — est une brève sourate mecquoise, étroitement liée à la précédente, <em>al-Fīl</em> (sourate 105, « L'Éléphant »), qui rappelle comment Dieu a écarté l'armée d'Abraha venue détruire la Kaʿba. Certaines traditions rapportent que dans le codex d'Ubayy ibn Kaʿb, les sourates 105 et 106 n'en formaient qu'une, et que ʿUmar ibn al-Khaṭṭāb les récitait ensemble à la prière. Les deux premiers versets rappellent une grâce historique : la sécurité dont les Quraysh ont joui pour leurs caravanes — d'hiver vers le Yémen, d'été vers la Syrie —, sécurité reçue des grandes puissances voisines en raison de leur charge de gardiens de la Kaʿba. Les deux versets suivants en tirent la conclusion : qu'ils adorent donc le Seigneur de cette Maison, qui les a nourris et délivrés de la peur. La sourate condense en quatre lignes la logique coranique du don : reconnaître la grâce reçue, et tourner le cœur vers Celui qui l'a donnée.",
+  "themes": ["grâce divine", "Kaʿba", "gratitude", "tribu de Quraysh"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "لِإِيلَافِ قُرَيْشٍ",
+      "tr": "li-īlāfi Quraysh",
+      "trad": "A l'union des Quraïchites,",
+      "themes": ["sécurité", "tribu"],
+      "commentaire": "<em>īlāf</em> (إِيلَاف) vient de la racine <em>ʾ-l-f</em>, qui dit d'abord la familiarité, l'habitude — ce à quoi l'on est lié de cœur, ce dont on a coutume. Le mot en est venu à désigner les pactes de sécurité accordés aux Quraysh par les grands voisins — Byzance, la Perse, l'Abyssinie, le Yémen — pour qu'ils puissent voyager sans crainte. Le verset commence par une préposition de cause, <em>li-</em>, « pour, en raison de » : c'est en raison de cette union assurée que les Quraysh sont appelés, au verset 3, à adorer.",
+      "mots": [
+        { "ar": "لِ", "tr": "li-", "racine": "—", "sens": "pour, en raison de", "def": "préposition : pour, en raison de, à cause de ; introduit la motivation.", "gram": "préposition" },
+        { "ar": "إِيلَافِ", "tr": "īlāf", "racine": "أ ل ف", "sens": "union, sécurité par habitude", "def": "īlāf : le lien d'habitude, la familiarité ; ici, l'union des Quraysh autour de leur charge et les pactes de sécurité qui leur sont accordés. De la racine ʾ-l-f : être familier, accoutumé.", "gram": "nom verbal, génitif construit" },
+        { "ar": "قُرَيْشٍ", "tr": "Quraysh", "racine": "—", "sens": "Quraysh", "def": "Quraysh : nom de la tribu du Prophète, gardienne de la Kaʿba à La Mecque.", "gram": "nom propre, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "إِيلَافِهِمْ رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ",
+      "tr": "īlāfihim riḥlata sh-shitāʾi wa-ṣ-ṣayf",
+      "trad": "à leur union pour la caravane de l'hiver et celle de l'été !",
+      "themes": ["caravanes", "vie économique"],
+      "commentaire": "Les Quraysh avaient deux grandes caravanes : en hiver, vers le Yémen, pour s'y procurer les épices et marchandises venues d'Inde ; en été, vers la Syrie, où ils écoulaient ces produits et achetaient ceux de la terre. Le verset rappelle ce rythme très concret de la vie. Dieu n'est pas seulement Seigneur des choses sacrées : Il est aussi Seigneur des routes, des saisons, du commerce — de tout ce qui rend une vie possible.",
+      "mots": [
+        { "ar": "إِيلَافِهِمْ", "tr": "īlāfihim", "racine": "أ ل ف", "sens": "leur union", "def": "īlāf + pronom suffixe : leur union ; renvoie au verset précédent et le précise.", "gram": "nom verbal + pronom suffixe, génitif" },
+        { "ar": "رِحْلَةَ", "tr": "riḥlata", "racine": "ر ح ل", "sens": "la caravane, le voyage", "def": "riḥla : voyage, expédition, caravane.", "gram": "nom, accusatif construit" },
+        { "ar": "الشِّتَاءِ", "tr": "ash-shitāʾ", "racine": "ش ت و", "sens": "de l'hiver", "def": "shitāʾ : l'hiver ; saison de la caravane vers le Yémen.", "gram": "nom, génitif défini" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "الصَّيْفِ", "tr": "aṣ-ṣayf", "racine": "ص ي ف", "sens": "de l'été", "def": "ṣayf : l'été ; saison de la caravane vers la Syrie.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "فَلْيَعْبُدُوا رَبَّ هَٰذَا الْبَيْتِ",
+      "tr": "fa-l-yaʿbudū rabba hādhā l-bayt",
+      "trad": "Qu'ils adorent donc le Seigneur de cette Maison,",
+      "themes": ["adoration", "Kaʿba"],
+      "commentaire": "<em>hādhā l-bayt</em> (هَٰذَا البَيْت) : « cette Maison » — la Kaʿba, sanctuaire que les Quraysh ont la charge de garder. Le verset opère le retournement clé de la sourate : ce ne sont pas leurs idoles ni leur ingéniosité commerciale qui les ont gardés en paix, c'est le <em>Rabb</em> (رَبّ) de cette Maison — son Seigneur. Le devoir s'ensuit naturellement : qu'ils adorent Celui à qui ils doivent leur sécurité, leur nourriture, et la vie même de leur tribu.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors, donc", "def": "particule de liaison : alors, donc.", "gram": "particule" },
+        { "ar": "لْ", "tr": "l-", "racine": "—", "sens": "qu'ils...", "def": "particule d'injonction (lām al-amr) : marque l'ordre à la 3ᵉ personne, « qu'il/qu'ils ».", "gram": "particule d'impératif" },
+        { "ar": "يَعْبُدُوا", "tr": "yaʿbudū", "racine": "ع ب د", "sens": "qu'ils adorent", "def": "ʿabada : adorer, servir ; à l'inaccompli subjonctif pluriel, en injonction : qu'ils adorent.", "gram": "verbe inaccompli subjonctif, 3ᵉ pers. masc. plur." },
+        { "ar": "رَبَّ", "tr": "rabba", "racine": "ر ب ب", "sens": "le Seigneur de", "def": "rabb : le Seigneur, le Maître ; à l'accusatif construit : « Seigneur de ».", "gram": "nom, accusatif construit" },
+        { "ar": "هَٰذَا", "tr": "hādhā", "racine": "—", "sens": "cette, ce", "def": "démonstratif masculin singulier proche : ce, cette.", "gram": "démonstratif" },
+        { "ar": "الْبَيْتِ", "tr": "al-bayt", "racine": "ب ي ت", "sens": "la Maison", "def": "bayt : la maison ; ici, « la Maison » par excellence — la Kaʿba.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "الَّذِي أَطْعَمَهُم مِّن جُوعٍ وَآمَنَهُم مِّنْ خَوْفٍ",
+      "tr": "alladhī aṭʿamahum min jūʿin wa-āmanahum min khawf",
+      "trad": "qui les a nourris et sauvés de la famine, et qui les a délivrés de la peur.",
+      "themes": ["faim", "peur", "providence"],
+      "commentaire": "Deux maux fondamentaux ferment la sourate : <em>jūʿ</em> (جُوع), la faim, et <em>khawf</em> (خَوْف), la peur. Dans la vie d'un peuple, tout part de là — manger et se sentir sauf. À Quraysh, Dieu a donné les deux. La sourate ne flatte pas la tribu : elle l'oblige. Le don, dans le Coran, n'est jamais une simple faveur ; il appelle la reconnaissance. Le verset fait écho à 16, 112 : « Dieu propose en parabole une cité sûre et paisible : sa subsistance lui venait en abondance de partout. Mais elle fut ingrate envers les bienfaits de Dieu ; Dieu lui fit alors goûter le vêtement de la faim et de la peur, à cause de ce qu'elle avait fait. »",
+      "mots": [
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "qui", "def": "pronom relatif masculin singulier : celui qui, qui.", "gram": "pronom relatif" },
+        { "ar": "أَطْعَمَهُم", "tr": "aṭʿamahum", "racine": "ط ع م", "sens": "Il les a nourris", "def": "aṭʿama : donner à manger, nourrir ; à l'accompli + pronom suffixe pluriel : Il les a nourris.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "مِّن", "tr": "min", "racine": "—", "sens": "de, contre", "def": "préposition : de, à partir de ; ici, « contre la faim », « de la faim ».", "gram": "préposition" },
+        { "ar": "جُوعٍ", "tr": "jūʿ", "racine": "ج و ع", "sens": "la faim", "def": "jūʿ : la faim ; l'un des deux maux fondamentaux de la vie collective, avec la peur.", "gram": "nom, génitif indéfini" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "آمَنَهُم", "tr": "āmanahum", "racine": "أ م ن", "sens": "Il les a mis en sécurité", "def": "āmana : rendre sûr, mettre à l'abri, donner la sécurité ; à l'accompli + pronom suffixe pluriel.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "مِّنْ", "tr": "min", "racine": "—", "sens": "de, contre", "def": "préposition : de, contre.", "gram": "préposition" },
+        { "ar": "خَوْفٍ", "tr": "khawf", "racine": "خ و ف", "sens": "la peur", "def": "khawf : la peur, la crainte ; second mal fondamental, ce qui empêche la vie commune autant que la faim.", "gram": "nom, génitif indéfini" }
+      ]
+    }
+  ]
+}

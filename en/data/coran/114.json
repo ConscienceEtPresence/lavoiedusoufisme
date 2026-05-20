@@ -6,16 +6,16 @@
   "revelation": "Meccan",
   "versets_count": 6,
   "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
-  "intro": "An-Nās — “Mankind” — is the one hundred and fourteenth and final sūra of the Quran. Together with the preceding sūra, al-Falaq, it forms the <em>Muʿawwidhatān</em>, “the two protectresses”: the two sūras of refuge. Both open with the same command — <em>Say: I seek refuge…</em> But where al-Falaq protects from outward harms, an-Nās guards the most intimate place: the heart. It asks for refuge from the <em>whisperer</em>, the one who breathes doubt within man.",
-  "themes": ["refuge", "protection", "inner struggle"],
+  "intro": "An-Nās — “Mankind” — is the last sūra of the Quran, and the second of the <em>Muʿawwidhatān</em> (المُعَوِّذَتَان), the “two protectresses”. If al-Falaq taught one to take refuge with the Lord of every emergence, an-Nās descends into a still more intimate place: the <em>breast</em>, the <em>ṣadr</em> (صَدْر), where the soul speaks of itself. Tustarī gives the key from the start: “All that is other than God is a whispering. When the heart of a man is with God, it speaks from God; if it is with another than Him, it speaks from that other.” And further: “The knowledge of the lower self (<em>nafs</em>, نَفْس) is more hidden than the knowledge of the Enemy; and the knowledge of the Enemy is more apparent than the knowledge of the world.” The sūra is therefore not only a magical protection against outward demons: it is the training of a vigilance — that which distinguishes, in the stream of thoughts, the <em>ilhām</em> (إِلْهَام), true inspiration, from the <em>waswās</em> (وَسْوَاس), the whisper wearing the face of the self. Tustarī concludes: “You must have sincerity (<em>ikhlāṣ</em>, إِخْلَاص) to be preserved from whispering. Beware of scheming and self-management (<em>tadbīr</em>, تَدْبِير): it is a sickness of the lower soul.”",
+  "themes": ["refuge", "nafs", "waswās", "vigilance", "ikhlāṣ"],
   "versets": [
     {
       "n": 1,
       "ar": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
       "tr": "qul aʿūdhu bi-rabbi n-nās",
       "trad": "Say: “I seek refuge with the Lord of mankind,",
-      "themes": ["refuge", "divine names", "sovereignty", "tawḥīd"],
-      "commentaire": "Three divine Names open the sūra, like an ascent. The first is <em>Rabb</em> (رَبّ), the Lord. The commentators read these three verses as a single indication: to find true refuge from the tempter, one must first acknowledge the complete sovereignty of God — that He alone is worshipped, He alone may be called upon for help — unlike those who take other lords apart from Him. To seek refuge is thus to recognise oneself as wholly dependent: the very opposite of the illusion of self-sufficiency.",
+      "themes": ["refuge", "Rabb", "Lordship"],
+      "commentaire": "Three Names will be pronounced in the opening — <em>Rabb</em>, <em>Malik</em>, <em>Ilāh</em>. For Qushayrī, it is an ascent that answers three ways in which the creature depends on God: He is the Lord who brings into being (<em>Rabb</em>), the King who orders every thing (<em>Malik</em>), the sole God toward whom worship goes (<em>Ilāh</em>). Three ways of stating, from three angles, the same absolute Lordship — and therefore the servant's total dependence. <em>Aʿūdhu</em>, “I take refuge”, is the beginning of acknowledging this dependence, of letting go the illusion of being one's own Lord.",
       "mots": [
         { "ar": "قُلْ", "tr": "qul", "racine": "ق و ل", "sens": "say", "def": "to say, to utter, to pronounce; in the imperative: “say”, “proclaim”.", "gram": "verb, imperative, 2nd pers. masc. sing." },
         { "ar": "أَعُوذُ", "tr": "aʿūdhu", "racine": "ع و ذ", "sens": "I seek refuge", "def": "to seek protection, to take refuge with someone so as to be guarded from a danger or an evil.", "gram": "imperfect verb, 1st pers. sing." },
@@ -28,11 +28,11 @@
       "ar": "مَلِكِ النَّاسِ",
       "tr": "maliki n-nās",
       "trad": "the King of mankind,",
-      "themes": ["divine names", "sovereignty"],
-      "commentaire": "The second Name: <em>Malik</em> (مَلِك), the King. It is by forgetting that God is the King of mankind that the human being arrogates to himself a sovereignty that is not his own. The Quran gives this its figure in Pharaoh, who dares to say: “Is not the kingdom of Egypt mine?” To know oneself under a King is to give up the claim to be one's own master.",
+      "themes": ["Malik", "inner sovereignty"],
+      "commentaire": "<em>Malik</em> (مَلِك), the King: He from whom every true authority derives. Qushayrī notes simply — “the Master of them all”. Tustarī, when he names the King, looks at the inner kingdom: within man lies a realm where forces vie for the attention — the intellect, the passion, the imagination, the memories. To acknowledge that God alone is its King is to cease letting those forces reign. It is to make silence within, that one voice may rule — the One whom one calls when one says <em>aʿūdhu</em>.",
       "mots": [
         { "ar": "مَلِكِ", "tr": "malik", "racine": "م ل ك", "sens": "King", "def": "the king, the sovereign; the one who holds authority and the power to command and to govern.", "gram": "noun, genitive (apposition)" },
-        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "of mankind", "def": "mankind, people, humanity; from a root evoking familiarity, sociability, life in company.", "gram": "noun, genitive" }
+        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "of mankind", "def": "mankind, people, humanity.", "gram": "noun, genitive" }
       ]
     },
     {
@@ -40,11 +40,11 @@
       "ar": "إِلَٰهِ النَّاسِ",
       "tr": "ilāhi n-nās",
       "trad": "the God of mankind,",
-      "themes": ["divine names", "tawḥīd", "worship"],
-      "commentaire": "The third Name: <em>Ilāh</em> (إِلَٰه), the God — the sole One towards whom worship goes. The ascent is complete: He brings into being (<em>Rabb</em>, رَبّ), He governs (<em>Malik</em>, مَلِك), He alone is worshipped (<em>Ilāh</em>, إِلَٰه). Pharaoh carries forgetfulness to its end: “I know of no god for you other than myself.” And so man is here called to seek refuge from that illusion of self-sufficiency — the root of every sin — by confessing his total dependence: O my Lord, O my King, O my God.",
+      "themes": ["Ilāh", "worship", "end of the path"],
+      "commentaire": "<em>Ilāh</em> (إِلَٰه), the God — the sole One toward whom worship goes. The ascent of the three Names is complete: He brings into being (<em>Rabb</em>), He governs (<em>Malik</em>), He alone is worshipped (<em>Ilāh</em>). According to Sufi commentators, the three answer to three planes of the human being: <em>Rabb</em> meets the <em>nafs</em> (the animated soul that asks for what it needs to live); <em>Malik</em> meets the <em>qalb</em> (the heart that needs an inner order); <em>Ilāh</em> meets the <em>sirr</em> (the inmost secret whose proper food is worship itself). To seek refuge before these three Names joined is to ask that the whole person, from the flesh to the secret, be turned back to God alone.",
       "mots": [
-        { "ar": "إِلَٰهِ", "tr": "ilāh", "racine": "أ ل ه", "sens": "God, the Worshipped", "def": "the deity, that which is worshipped; the being towards whom worship and devotion turn.", "gram": "noun, genitive (apposition)" },
-        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "of mankind", "def": "mankind, people, humanity; from a root evoking familiarity, sociability, life in company.", "gram": "noun, genitive" }
+        { "ar": "إِلَٰهِ", "tr": "ilāh", "racine": "أ ل ه", "sens": "God, the Worshipped", "def": "the deity, that which is worshipped; the being toward whom worship and devotion turn.", "gram": "noun, genitive (apposition)" },
+        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "of mankind", "def": "mankind, people, humanity.", "gram": "noun, genitive" }
       ]
     },
     {
@@ -52,13 +52,13 @@
       "ar": "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
       "tr": "min sharri l-waswāsi l-khannās",
       "trad": "from the harm of the furtive whisperer,",
-      "themes": ["the whisperer", "inner struggle", "evil"],
-      "commentaire": "<em>al-waswās al-khannās</em> (الوَسْوَاس الخَنَّاس): the stealthy whisperer. <em>Waswasa</em> (وَسْوَسَة) is the murmur — a suggestion uttered low and endlessly repeated. If the tempter is called <em>khannās</em> (خَنَّاس), “the one who withdraws,” it is because he slips from the heart the moment man remembers God, and returns the moment man forgets Him. The first sin of Adam and Eve was precisely to lend an ear to this murmur. Elsewhere the Quran names him the Deluder: he seduces, makes one forget, makes evil seem fair, desires to lead astray — a manifest enemy.",
+      "themes": ["waswās", "khannās", "vigilance"],
+      "commentaire": "<em>al-waswās</em> (الوَسْوَاس), the whisper; <em>al-khannās</em> (الخَنَّاس), the one who withdraws. Qushayrī explains: “<em>al-Khannās</em> is the one who hides and slips away before the remembrance of God — it is one of the attributes of Satan.” The whisper does not remain before the clear face of <em>dhikr</em>: it retreats when the soul remembers, and returns when it forgets. That is why the sūra is not only a request for refuge — it is itself <em>dhikr</em>: to pronounce it is to make recede what it denounces. Tustarī: “You must have sincerity (<em>ikhlāṣ</em>) to be preserved from whispering. Beware of scheming and self-management (<em>tadbīr</em>, تَدْبِير) — it is a sickness of the soul.”",
       "mots": [
-        { "ar": "مِن", "tr": "min", "racine": "—", "sens": "from", "def": "preposition: from, out of, being part of; here, the idea of guarding oneself from, of protection against.", "gram": "preposition" },
+        { "ar": "مِن", "tr": "min", "racine": "—", "sens": "from", "def": "preposition: from, out of; here, the idea of protection against.", "gram": "preposition" },
         { "ar": "شَرِّ", "tr": "sharr", "racine": "ش ر ر", "sens": "harm, evil", "def": "evil, harm; that which is bad or harmful — the opposite of good (khayr).", "gram": "noun, genitive" },
-        { "ar": "الْوَسْوَاسِ", "tr": "al-waswās", "racine": "و س و س", "sens": "the whisperer of doubt", "def": "the insidious murmur, the suggestion repeated in a low voice; by extension, the one who utters it, the tempter.", "gram": "noun, genitive" },
-        { "ar": "الْخَنَّاسِ", "tr": "al-khannās", "racine": "خ ن س", "sens": "the furtive, who withdraws", "def": "the one who draws back, slips away, hides and then returns; an intensive form marking the habit of this retreat.", "gram": "intensive adjective, genitive" }
+        { "ar": "الْوَسْوَاسِ", "tr": "al-waswās", "racine": "و س و س", "sens": "the whisper, the tempter", "def": "the insidious murmur, the suggestion repeated in a low voice; by extension, the one who utters it.", "gram": "noun, genitive" },
+        { "ar": "الْخَنَّاسِ", "tr": "al-khannās", "racine": "خ ن س", "sens": "the furtive, who withdraws", "def": "khannās: intensive form — the one who slips away and hides; for Qushayrī, “the one who withdraws before the remembrance of God”.", "gram": "intensive adjective, genitive" }
       ]
     },
     {
@@ -66,14 +66,14 @@
       "ar": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",
       "tr": "alladhī yuwaswisu fī ṣudūri n-nās",
       "trad": "who whispers doubt into the breasts of mankind —",
-      "themes": ["the heart", "soul", "temptation"],
-      "commentaire": "He whispers <em>into the breasts</em> of mankind — <em>ṣudūr</em> (صُدُور), the inmost chamber of the heart. Here it is the tempter who murmurs; yet elsewhere the Quran describes the soul itself as whispering and prompting to evil. Not the soul as such, but the <em>soul that commands to evil</em> — al-nafs al-ammāra (النَّفْس الأَمَّارَة) —, of which a famous ḥadīth says: “Satan flows through man as the blood flows.” From one view, the tempter suggests and the passionate soul follows its caprice rather than God's command; from another, only the soul that commands to evil bears this inclination. And the Quran warns: to whoever turns away from the remembrance of the Compassionate, He assigns a satan as companion.",
+      "themes": ["nafs", "sirr", "discernment of thoughts"],
+      "commentaire": "The verse descends into the intimate place — <em>ṣudūr</em> (صُدُور), the breast, the inmost where a word resounds before any sound is uttered. Tustarī writes here the phrase that lights the whole sūra: “All that is other than God is a whisper. When the heart of a man is with God, it speaks from God; if it is with another than Him, it speaks from that other.” And he makes a decisive distinction: “The place of the whisper, with regard to the servant, is that of the soul that commands to evil (<em>al-nafs al-ammāra bi-l-sūʾ</em>, النَّفْس الأَمَّارَة بِالسُّوء) when it suggests something to the nature. The whisper of the Enemy is in the breasts, the whisper of the soul is in the heart — for God has said: <em>We know what his soul whispers to him, and We are nearer to him than his jugular vein</em> (50:16). The knowledge of the soul is more hidden than the knowledge of the Enemy.” That is to say: it is harder still to recognise the voice that speaks within us in our own name than the one that comes from without. Qushayrī adds, for discernment: “By knowledge one distinguishes between inspiration (<em>ilhām</em>, إِلْهَام), sound thoughts, and whisperings (<em>waswās</em>).”",
       "mots": [
-        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "who, the one who", "def": "relative pronoun, masculine singular: who, which, the one who.", "gram": "relative pronoun" },
-        { "ar": "يُوَسْوِسُ", "tr": "yuwaswisu", "racine": "و س و س", "sens": "he whispers doubt", "def": "to murmur an insidious suggestion, to whisper doubt in a low voice and repeatedly.", "gram": "imperfect verb, 3rd pers. masc. sing." },
-        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "into, in", "def": "preposition: in, inside, within, into.", "gram": "preposition" },
-        { "ar": "صُدُورِ", "tr": "ṣudūr", "racine": "ص د ر", "sens": "the breasts", "def": "ṣadr: the breast, the seat of the heart and of the inmost self; in the plural, ṣudūr, the breasts, the inner selves.", "gram": "noun, plural, genitive" },
-        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "of mankind", "def": "mankind, people, humanity; from a root evoking familiarity, sociability, life in company.", "gram": "noun, genitive" }
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "who, the one who", "def": "relative pronoun, masculine singular: who, which.", "gram": "relative pronoun" },
+        { "ar": "يُوَسْوِسُ", "tr": "yuwaswisu", "racine": "و س و س", "sens": "he whispers", "def": "yuwaswisu: to murmur an insidious suggestion, to whisper a low voice repeatedly — the word imitates the thing by alliteration.", "gram": "imperfect verb, 3rd pers. masc. sing." },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "into, in", "def": "preposition: in, inside, into.", "gram": "preposition" },
+        { "ar": "صُدُورِ", "tr": "ṣudūr", "racine": "ص د ر", "sens": "the breasts", "def": "ṣadr: the breast, the seat of the heart and of the inmost self; in the plural, ṣudūr, the inner selves.", "gram": "noun, plural, genitive" },
+        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "of mankind", "def": "mankind, people, humanity.", "gram": "noun, genitive" }
       ]
     },
     {
@@ -81,13 +81,13 @@
       "ar": "مِنَ الْجِنَّةِ وَالنَّاسِ",
       "tr": "mina l-jinnati wa-n-nās",
       "trad": "whether of jinn or of mankind.”",
-      "themes": ["jinn", "the unseen world"],
-      "commentaire": "The tempter is of two orders: <em>the jinn</em> — the unseen — and <em>mankind</em>. Evil counsel does not come only from a hidden world; it reaches us also through other human beings, for there are tempters among jinn as among men. The verse may also be read: that which whispers doubt into the hearts of jinn no less than of men — the tradition recalls that there was a “people” among the jinn. And the whole Quran ends upon this word, <em>an-nās</em> (النَّاس), “mankind,” repeated like a refrain throughout the sūra: the Book closes upon man, the one it has, from beginning to end, sought to awaken.",
+      "themes": ["jinn", "humans", "inner and outer enemies"],
+      "commentaire": "The enemy is of two orders — <em>the jinn</em> (the unseen, the subtle) and <em>mankind</em> (the visible, the rumour of others). But in the Sufi reading, the opposition shifts: there is an Enemy from without and an Enemy from within, and the second is harder to know. Tustarī gives the strategy: “The way to capture the enemy is to know him. When you know him, you have captured him; but if you do not know that he is the enemy, then he has captured you.” To know one's own lower soul — its way of putting on the face of piety, of judgment, of kindness — is a life's work. And the whole Quran ends upon this word, <em>an-nās</em>, “mankind”, repeated four times in the sūra: the Book closes upon man — the one who seeks himself, and who will only find himself by handing over to God all that in him takes itself for God.",
       "mots": [
-        { "ar": "مِنَ", "tr": "mina", "racine": "—", "sens": "whether of, among", "def": "preposition min: from, among, being part of; here, origin or belonging.", "gram": "preposition" },
+        { "ar": "مِنَ", "tr": "mina", "racine": "—", "sens": "whether of, among", "def": "preposition min: from, among, being part of.", "gram": "preposition" },
         { "ar": "الْجِنَّةِ", "tr": "al-jinna", "racine": "ج ن ن", "sens": "the jinn", "def": "the jinn, the beings of the hidden world; from a root evoking what is veiled, hidden from sight.", "gram": "noun, genitive" },
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and, or", "def": "coordinating conjunction: and; joins two terms or two clauses.", "gram": "conjunction" },
-        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "mankind", "def": "mankind, people, humanity; from a root evoking familiarity, sociability, life in company.", "gram": "noun, genitive" }
+        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "mankind", "def": "mankind, people, humanity.", "gram": "noun, genitive" }
       ]
     }
   ]

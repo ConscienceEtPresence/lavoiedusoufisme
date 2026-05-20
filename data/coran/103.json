@@ -1,0 +1,60 @@
+{
+  "n": 103,
+  "nom_ar": "العَصْر",
+  "nom_tr": "al-ʿAṣr",
+  "nom_fr": "Le Déclin du jour",
+  "revelation": "mecquoise",
+  "versets_count": 3,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-ʿAṣr — « Le Déclin du jour » — est une sourate mecquoise très brève : trois versets. Le mot <em>ʿaṣr</em> (عَصْر) signifie l'après-midi qui décline, l'heure où le jour penche vers la nuit ; mais il dit aussi, plus largement, le temps lui-même, l'époque. La racine <em>ʿ-ṣ-r</em> évoque le verbe <em>ʿaṣara</em> (عَصَرَ), « presser, comprimer » — comme on presse un fruit pour en tirer le jus —, et désigne ainsi le temps qui se hâte, qui ne reste pas. La sourate est d'une concision célèbre : on rapporte que deux Compagnons du Prophète ne se séparaient jamais sans s'être récité ce texte entier. Le juriste al-Shāfiʿī disait : « Si les gens méditaient cette sourate, elle leur suffirait. » En quelques mots, elle dit la condition humaine — l'homme est en perte — et la voie qui l'en sauve : croire, agir bien, et se soutenir mutuellement dans la vérité et la patience.",
+  "themes": ["temps", "perte", "foi", "œuvres", "vérité", "patience"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَالْعَصْرِ",
+      "tr": "wa-l-ʿaṣr",
+      "trad": "Par le déclin du jour !",
+      "themes": ["temps", "serment"],
+      "commentaire": "La sourate commence par un serment, comme plusieurs sourates mecquoises courtes : <em>wa-l-ʿaṣr</em> (وَالْعَصْر), « par le déclin du jour ». Dieu jure par le temps lui-même — par cette part du jour qui s'achève, où la lumière se retire, où ce qui n'a pas été fait ne le sera plus. Certains commentateurs entendent <em>al-ʿaṣr</em> comme la prière de l'après-midi (la <em>ṣalāt al-ʿaṣr</em>, l'une des cinq prières quotidiennes) ; d'autres comme l'époque, le siècle entier ; d'autres encore comme « l'ère du Prophète », tant elle fut féconde. Ces sens ne se contredisent pas. Sur tous ces fronts, le temps presse.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wa : préposition de serment (wāw al-qasam) — « par… », « j'en jure par… ».", "gram": "particule de serment" },
+        { "ar": "الْعَصْرِ", "tr": "al-ʿaṣr", "racine": "ع ص ر", "sens": "le déclin du jour, le temps", "def": "ʿaṣr : l'après-midi qui décline, la dernière partie du jour ; aussi le temps, l'époque, le siècle. De la racine ʿ-ṣ-r : presser, comprimer — le temps qui se hâte.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "إِنَّ الْإِنسَانَ لَفِي خُسْرٍ",
+      "tr": "inna l-insāna la-fī khusr",
+      "trad": "Certes, l'homme court à sa perte,",
+      "themes": ["condition humaine", "perte"],
+      "commentaire": "<em>khusr</em> (خُسْر) : la perte, le déficit, le marché qui tourne mal. Le verbe arabe désigne au sens premier le négoce qui ne rapporte pas — où l'on dépense plus qu'on ne gagne. La métaphore est dense : la vie est un négoce, et l'homme y dépense un capital — le temps — sans toujours en tirer ce qui lui survivrait. Le verset commence par deux particules de mise en relief — <em>inna</em>, « certes », et <em>la-</em>, préfixe affirmatif —, qui disent que le diagnostic n'admet pas d'échappatoire. L'humanité, en tant que telle, est en perte. Reste à savoir qui en sort.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule de mise en relief : certes, en vérité.", "gram": "particule" },
+        { "ar": "الْإِنسَانَ", "tr": "al-insān", "racine": "أ ن س", "sens": "l'homme", "def": "insān : l'être humain, l'homme générique ; de la racine ʾ-n-s, liée à la sociabilité et à la fragilité de l'oubli.", "gram": "nom, accusatif défini" },
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation : certainement.", "gram": "particule" },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "def": "préposition : dans.", "gram": "préposition" },
+        { "ar": "خُسْرٍ", "tr": "khusr", "racine": "خ س ر", "sens": "perte", "def": "khusr : la perte, le déficit, le négoce qui ne rapporte pas ; au sens propre, un marché où l'on perd plus qu'on ne gagne.", "gram": "nom, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ",
+      "tr": "illā lladhīna āmanū wa-ʿamilū ṣ-ṣāliḥāti wa-tawāṣaw bi-l-ḥaqqi wa-tawāṣaw bi-ṣ-ṣabr",
+      "trad": "à l'exception de ceux qui croient et accomplissent des œuvres pies, s'exhortent mutuellement à la Vérité et s'exhortent mutuellement à la patience.",
+      "themes": ["foi", "œuvres", "vérité", "patience", "fraternité"],
+      "commentaire": "Quatre traits seulement, mais qui résument le chemin. <em>Āmanū</em> (آمَنُوا), « ils ont cru » : foi en Dieu, en l'invisible, en ce qui ne se voit pas mais oriente tout. <em>ʿAmilū ṣ-ṣāliḥāt</em> (عَمِلُوا الصَّالِحَات), « ils ont accompli les œuvres pies » : la foi se vérifie en actes, et les actes mauvais ne sont pas effacés par la seule croyance. <em>Tawāṣaw bi-l-ḥaqq</em> (تَوَاصَوْا بِالْحَقّ), « ils se sont mutuellement recommandé la Vérité » : la racine <em>w-ṣ-y</em> (وصي) est celle du testament, ce qu'on transmet ; ici, la voie n'est pas solitaire, elle se soutient entre proches. <em>Tawāṣaw bi-ṣ-ṣabr</em> (تَوَاصَوْا بِالصَّبْر), « ils se sont mutuellement recommandé la patience » : car tenir dans la vérité ne va pas sans endurance. La sourate dit ainsi en peu de mots ce que les autres déploient sur des pages — et c'est pourquoi al-Shāfiʿī la disait suffisante.",
+      "mots": [
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "à l'exception de", "def": "particule d'exception : sauf, à l'exception de.", "gram": "particule d'exception" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif masculin pluriel.", "gram": "pronom relatif pluriel" },
+        { "ar": "آمَنُوا", "tr": "āmanū", "racine": "أ م ن", "sens": "ils ont cru", "def": "āmana : croire, avoir foi ; lié à amn (sécurité) — la foi qui apporte le repos du cœur. À l'accompli pluriel.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "عَمِلُوا", "tr": "ʿamilū", "racine": "ع م ل", "sens": "ils ont accompli", "def": "ʿamila : faire, agir, accomplir ; ici, accomplir les œuvres.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "الصَّالِحَاتِ", "tr": "aṣ-ṣāliḥāt", "racine": "ص ل ح", "sens": "les œuvres pies", "def": "ṣāliḥāt : les bonnes actions, ce qui est juste, droit, bénéfique ; participe actif féminin pluriel substantivé. Racine ṣ-l-ḥ : être bon, droit, propre à servir.", "gram": "nom pluriel, accusatif défini" },
+        { "ar": "وَتَوَاصَوْا", "tr": "wa-tawāṣaw", "racine": "و ص ي", "sens": "et ils se sont recommandé mutuellement", "def": "tawāṣā : forme réciproque du verbe waṣṣā (recommander, transmettre comme testament) ; se recommander mutuellement, s'exhorter ensemble.", "gram": "verbe accompli réciproque, 3ᵉ pers. masc. plur." },
+        { "ar": "بِالْحَقِّ", "tr": "bi-l-ḥaqq", "racine": "ح ق ق", "sens": "la Vérité", "def": "ḥaqq : la vérité, le réel, ce qui est dû ; un des Noms divins. Préposition bi- + nom au génitif.", "gram": "préposition + nom, génitif défini" },
+        { "ar": "وَتَوَاصَوْا", "tr": "wa-tawāṣaw", "racine": "و ص ي", "sens": "et ils se sont recommandé", "def": "tawāṣā : se recommander mutuellement ; voir plus haut.", "gram": "verbe accompli réciproque, 3ᵉ pers. masc. plur." },
+        { "ar": "بِالصَّبْرِ", "tr": "bi-ṣ-ṣabr", "racine": "ص ب ر", "sens": "la patience", "def": "ṣabr : la patience, l'endurance, la constance ; vertu cardinale du Coran. Préposition bi- + nom au génitif.", "gram": "préposition + nom, génitif défini" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "n": 93,
+  "nom_ar": "الضُّحَى",
+  "nom_tr": "al-Ḍuḥā",
+  "nom_fr": "La Clarté du Matin",
+  "revelation": "mecquoise",
+  "versets_count": 11,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Ḍuḥā — « La Clarté du Matin » — est sœur d'al-Sharḥ. La tradition rapporte qu'après les premières révélations, Gabriel cessa de venir au Prophète pendant un certain nombre de jours — douze, vingt-cinq, ou quarante selon les versions. Les opposants de la Mekke en profitèrent pour dire : <em>Muḥammad a été abandonné par son Seigneur</em>. Le Prophète en fut profondément peiné. C'est alors que cette sourate descendit, comme une main posée sur l'épaule. Elle s'ouvre par deux serments — la clarté du matin, la nuit qui s'apaise — et ce sont, pour Qushayrī, les deux temps de la vie spirituelle : <em>al-ḍuḥā est le temps du témoignage</em> (<em>waqt al-shuhūd</em>, وَقْت الشُّهُود), la nuit est le temps du recueillement. Vient ensuite la parole bouleversante : <em>Ton Seigneur ne t'a ni quitté, ni détesté</em>. Et la sourate, après avoir promis le meilleur pour demain (v. 4-5), retourne en arrière pour rappeler trois grâces déjà reçues — orphelin abrité, errant guidé, démuni enrichi — avant de se refermer sur trois ordres simples : ne pas brimer l'orphelin, ne pas rabrouer le mendiant, proclamer les bienfaits reçus. La sourate est tout entière dans le mouvement du retour : Dieu n'a jamais cessé d'être présent, même quand le silence le faisait croire.",
+  "themes": ["consolation", "absence apparente", "grâces rappelées", "orphelin", "proclamation des bienfaits"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَالضُّحَىٰ",
+      "tr": "wa-ḍ-ḍuḥā",
+      "trad": "Par la clarté du matin !",
+      "themes": ["serment", "lumière du matin"],
+      "commentaire": "<em>al-ḍuḥā</em> (الضُّحَى) : ces premières heures du jour, juste après le lever du soleil, quand la lumière monte sans être encore haute. Pour beaucoup, c'est aussi la prière surérogatoire qui prend ce nom — la <em>ṣalāt al-ḍuḥā</em>, prière du milieu de la matinée. Qushayrī, plus profond, voit dans <em>al-ḍuḥā</em> « le temps du témoignage » (<em>waqt al-shuhūd</em>, وَقْت الشُّهُود) — l'heure intérieure où l'âme voit clairement ce qu'elle a à voir. Et il ajoute, en passant : « C'est aussi l'heure à laquelle Dieu parla à Moïse. » Les heures n'ont pas toutes le même poids — certaines sont chargées de la parole divine, par mémoire ou par disposition. La clarté du matin n'est pas seulement une lumière physique ; c'est un état du cœur.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "الضُّحَىٰ", "tr": "al-ḍuḥā", "racine": "ض ح و", "sens": "la clarté du matin", "def": "ḍuḥā : la matinée, le début du jour quand le soleil est levé mais pas encore haut. Aussi : la prière surérogatoire du milieu de la matinée.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَاللَّيْلِ إِذَا سَجَىٰ",
+      "tr": "wa-l-layli idhā sajā",
+      "trad": "Par la nuit, quand elle est calme !",
+      "themes": ["serment", "nuit apaisée", "miʿrāj"],
+      "commentaire": "<em>sajā</em> (سَجَى) : se calmer, s'apaiser, devenir silencieuse. Image très juste : la nuit n'est pas tout d'un coup paisible — elle <em>devient</em> calme à mesure que les bruits du jour s'éteignent. Qushayrī lit ce verset en plusieurs profondeurs. D'abord, la nuit du <em>miʿrāj</em> (مِعْرَاج), l'ascension nocturne du Prophète. Puis, plus largement, toute nuit où Dieu, selon la parole prophétique, « descend dans le ciel le plus proche pour appeler : <em>Quelqu'un demande-t-il, que Je lui donne ?</em> » Et plus intime encore : la nuit dont le Prophète disait : <em>Il s'étend parfois un voile sur mon cœur, et je demande pardon à Dieu cent fois par jour</em>. Le matin et la nuit sont ainsi posés ensemble comme les deux lieux de la conversation avec Dieu : la lumière où l'on voit, et l'obscurité où l'on attend.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "اللَّيْلِ", "tr": "al-layl", "racine": "ل ي ل", "sens": "la nuit", "def": "layl : la nuit.", "gram": "nom, génitif défini" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "سَجَىٰ", "tr": "sajā", "racine": "س ج و", "sens": "elle s'apaise", "def": "sajā : se calmer, s'apaiser, devenir silencieuse ; à l'accompli.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+      "tr": "mā waddaʿaka rabbuka wa-mā qalā",
+      "trad": "Ton Seigneur ne t'a ni abandonné, ni repoussé.",
+      "themes": ["fidélité divine", "consolation"],
+      "commentaire": "Voici la phrase pour laquelle la sourate descendit. <em>mā waddaʿaka</em> (مَا وَدَّعَكَ) : Il ne t'a pas pris congé de toi, Il ne t'a pas dit adieu. <em>mā qalā</em> (مَا قَلَى) : Il ne t'a pas détesté. La tradition rapporte que Gabriel avait cessé de venir au Prophète pendant plusieurs jours, et les opposants de la Mekke se moquaient : « Muḥammad a été abandonné par son Seigneur. » Le silence ressenti comme un congédiement. Et Dieu fait descendre, après ce long silence, ces neuf mots qui sont tout l'enseignement de la sourate : <em>Il ne t'a ni quitté, ni détesté</em>. Les soufis lisent ce verset comme une parole adressée à chaque cœur qui, traversant une période de sécheresse, croit avoir été abandonné. La réponse de Dieu : Je n'ai jamais cessé d'être là. Le silence était une autre forme de la présence.",
+      "mots": [
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
+        { "ar": "وَدَّعَكَ", "tr": "waddaʿaka", "racine": "و د ع", "sens": "Il t'a abandonné, pris congé", "def": "waddaʿa : forme intensive de wadaʿa ; prendre congé, faire ses adieux. Avec pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "رَبُّكَ", "tr": "rabbuka", "racine": "ر ب ب", "sens": "ton Seigneur", "def": "rabb + pronom suffixe.", "gram": "nom + pronom suffixe, nominatif" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ne... pas", "def": "voir plus haut.", "gram": "particule" },
+        { "ar": "قَلَىٰ", "tr": "qalā", "racine": "ق ل ي", "sens": "Il a détesté, repoussé", "def": "qalā : détester, prendre en haine, repousser ; à l'accompli.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَلَلْآخِرَةُ خَيْرٌ لَّكَ مِنَ الْأُولَىٰ",
+      "tr": "wa-la-l-ākhiratu khayrun laka mina l-ūlā",
+      "trad": "Certes, la vie future est meilleure pour toi que la présente.",
+      "themes": ["au-delà", "horizon"],
+      "commentaire": "Qushayrī commente : « Ce qu'Il te donnera dans l'au-delà sera meilleur pour toi que ce qu'Il te donne dans ce monde. » Puis il précise, plus délicatement : « l'intercession (<em>shafāʿa</em>, شَفَاعَة), le Bassin (<em>ḥawḍ</em>, حَوْض), et le vêtement de l'unification (<em>libās al-tawḥīd</em>, لِبَاس التَّوْحِيد) qu'Il te revêtira demain — voilà ce qui est meilleur que ce qu'Il te donne aujourd'hui. » Le verset console doublement : non seulement Dieu n'a pas abandonné le Prophète, mais ce qu'Il lui réserve dépasse de très loin ce qu'Il lui a déjà donné. Le silence présent n'est pas la fin du don ; il en prépare un plus grand.",
+      "mots": [
+        { "ar": "وَلَ", "tr": "wa-la-", "racine": "—", "sens": "et certes", "def": "conjonction + particule d'affirmation.", "gram": "conjonction + particule" },
+        { "ar": "الْآخِرَةُ", "tr": "al-ākhira", "racine": "أ خ ر", "sens": "la vie dernière", "def": "ākhira : la dernière, l'au-delà ; participe actif féminin substantivé.", "gram": "nom, nominatif défini" },
+        { "ar": "خَيْرٌ", "tr": "khayr", "racine": "خ ي ر", "sens": "meilleure", "def": "khayr : le bien, le meilleur ; ici comparatif.", "gram": "nom adjectival, nominatif indéfini" },
+        { "ar": "لَّكَ", "tr": "laka", "racine": "—", "sens": "pour toi", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "مِنَ", "tr": "mina", "racine": "—", "sens": "que", "def": "préposition de comparaison.", "gram": "préposition" },
+        { "ar": "الْأُولَىٰ", "tr": "al-ūlā", "racine": "أ و ل", "sens": "la première", "def": "ūlā : la première (vie), la présente.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰ",
+      "tr": "wa-la-sawfa yuʿṭīka rabbuka fa-tarḍā",
+      "trad": "Le jour viendra où ton Seigneur t'accordera Ses dons et où tu seras satisfait.",
+      "themes": ["promesse", "contentement"],
+      "commentaire": "<em>fa-tarḍā</em> (فَتَرْضَى) : « et tu seras satisfait ». Qushayrī rapporte un échange splendide à propos de ce verset. On demanda au Prophète : « Es-tu satisfait du don, ou du Donateur ? » Il répondit : « Non » — c'est-à-dire : <em>non, je ne suis pas satisfait du don ; je ne le suis que du Donateur</em>. C'est l'enseignement le plus haut. La satisfaction (<em>riḍā</em>, رِضَا) du serviteur ne porte pas sur ce qu'il reçoit, mais sur Celui dont il reçoit. Une vie satisfaite, c'est une vie où le cœur s'est attaché au Donateur plutôt qu'aux dons — et alors, quoi qu'il vienne, le cœur reste paisible.",
+      "mots": [
+        { "ar": "وَلَ", "tr": "wa-la-", "racine": "—", "sens": "et certes", "def": "conjonction + particule d'affirmation.", "gram": "conjonction + particule" },
+        { "ar": "سَوْفَ", "tr": "sawfa", "racine": "—", "sens": "bientôt, viendra", "def": "particule du futur lointain.", "gram": "particule" },
+        { "ar": "يُعْطِيكَ", "tr": "yuʿṭīka", "racine": "ع ط و", "sens": "Il te donnera", "def": "aʿṭā : donner ; à l'inaccompli + pronom suffixe.", "gram": "verbe inaccompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "رَبُّكَ", "tr": "rabbuka", "racine": "ر ب ب", "sens": "ton Seigneur", "def": "rabb + pronom suffixe.", "gram": "nom + pronom suffixe, nominatif" },
+        { "ar": "فَتَرْضَىٰ", "tr": "fa-tarḍā", "racine": "ر ض و", "sens": "et tu seras satisfait", "def": "raḍiya : être satisfait, agréer ; à l'inaccompli.", "gram": "verbe inaccompli, 2ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "أَلَمْ يَجِدْكَ يَتِيمًا فَآوَىٰ",
+      "tr": "a-lam yajidka yatīman fa-āwā",
+      "trad": "Ne t'a-t-Il pas trouvé orphelin et, alors, procuré un refuge ?",
+      "themes": ["orphelin", "refuge", "qurb"],
+      "commentaire": "Première des trois grâces rappelées. Muḥammad fut orphelin de père avant sa naissance, et perdit sa mère à six ans. Il fut alors recueilli par son grand-père ʿAbd al-Muṭṭalib, puis par son oncle Abū Ṭālib. C'est cela d'abord que le verset rappelle. Mais Qushayrī ne s'en tient pas là. Il lit : « Il t'a abrité dans le creux de Son ombre (<em>kanaf ẓilluh</em>, كَنَف ظِلُّه), et t'a élevé par la délicatesse de Sa garde. » Puis, plus profond encore : « Il t'a abrité sur le tapis de la proximité (<em>bisāṭ al-qurba</em>, بِسَاط القُرْبَة), où tu te tenais seul — sans que personne ne partage avec toi cette station. » L'orphelin perdu est devenu l'orphelin reçu : c'est précisément parce qu'il n'avait personne au monde que Dieu l'a pris pour Lui seul.",
+      "mots": [
+        { "ar": "أَلَمْ", "tr": "a-lam", "racine": "—", "sens": "ne... pas", "def": "particule interrogative + particule de négation.", "gram": "particules" },
+        { "ar": "يَجِدْكَ", "tr": "yajidka", "racine": "و ج د", "sens": "Il t'a trouvé", "def": "wajada : trouver ; à l'inaccompli apocopé + pronom suffixe.", "gram": "verbe inaccompli apocopé + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "يَتِيمًا", "tr": "yatīman", "racine": "ي ت م", "sens": "orphelin", "def": "yatīm : orphelin ; au sens premier, celui qui a perdu son père enfant.", "gram": "nom, accusatif indéfini (état)" },
+        { "ar": "فَآوَىٰ", "tr": "fa-āwā", "racine": "أ و ي", "sens": "alors Il a abrité", "def": "āwā : abriter, recueillir, donner refuge ; à l'accompli.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَوَجَدَكَ ضَالًّا فَهَدَىٰ",
+      "tr": "wa-wajadaka ḍāllan fa-hadā",
+      "trad": "Ne t'a-t-Il pas trouvé errant et, alors, guidé ?",
+      "themes": ["égarement", "guidance", "amour"],
+      "commentaire": "Verset délicat, car le mot <em>ḍāll</em> (ضَالّ) — « égaré » — appliqué au Prophète a fait couler beaucoup d'encre. Qushayrī en donne <strong>huit</strong> lectures successives, chacune plus intérieure que la précédente. La première, anecdotique : enfant, il s'était perdu dans les ruelles de la Mekke, et Dieu guida son oncle vers lui. La deuxième : tu étais « égaré en Nous » — hésitant, étonné — et Nous t'avons guidé <em>de Nous vers Nous</em>. La troisième : tu ne connaissais pas le détail des prescriptions, Nous te les avons enseignées. La quatrième : les gens étaient égarés autour de toi, Nous les avons guidés <em>par toi</em>. Et puis ces trois lectures bouleversantes : « Tu étais perdu dans Notre amour, et Nous t'avons guidé par la lumière de la proximité vers Nous. » « Tu étais perdu vis-à-vis de Mon amour pour toi — alors Je t'ai fait savoir que Je t'aime. » « Tu ignorais le rang de ta noblesse — alors Je t'ai enseigné ta valeur. » Huit lectures, mais une seule note tenue : ce n'est pas l'erreur morale qui est nommée — c'est la perplexité de l'aimant qui ne sait pas encore qu'il est aimé.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "وَجَدَكَ", "tr": "wajadaka", "racine": "و ج د", "sens": "Il t'a trouvé", "def": "wajada : trouver ; à l'accompli + pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "ضَالًّا", "tr": "ḍāllan", "racine": "ض ل ل", "sens": "errant, égaré", "def": "ḍāll : participe actif de ḍalla, errer, s'égarer ; ici, perplexe, sans repère.", "gram": "participe actif, accusatif indéfini (état)" },
+        { "ar": "فَهَدَىٰ", "tr": "fa-hadā", "racine": "ه د ي", "sens": "alors Il a guidé", "def": "hadā : guider, conduire dans la voie droite ; à l'accompli.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "وَوَجَدَكَ عَائِلًا فَأَغْنَىٰ",
+      "tr": "wa-wajadaka ʿāʾilan fa-aghnā",
+      "trad": "Ne t'a-t-Il pas trouvé démuni et, alors, enrichi ?",
+      "themes": ["dénuement", "ghinā", "richesse en Dieu"],
+      "commentaire": "<em>ʿāʾil</em> (عَائِل) : pauvre, en charge de famille sans moyens. Le tafsīr traditionnel rappelle que le Prophète fut enrichi par les biens de Khadīja, son épouse. Mais Qushayrī, fidèle à sa méthode, déplie le verset : « Il t'a enrichi <em>au-delà du désir et de la quête</em> (<em>al-irāda wa-l-ṭalab</em>, الإرَادَة وَالطَّلَب) — en te rendant satisfait dans la perte même (<em>al-faqd</em>, الفَقْد). » C'est la grande lecture soufie de la richesse : être riche, ce n'est pas posséder beaucoup, c'est ne plus avoir besoin de posséder. Et la dernière définition de Qushayrī ramasse tout : « Il t'a enrichi <em>par Dieu</em> (<em>aghnāka bi-Llāh</em>, أَغْنَاكَ بِاللَّه). » Le serviteur enrichi par Dieu Lui-même n'a plus besoin d'autre chose.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "وَجَدَكَ", "tr": "wajadaka", "racine": "و ج د", "sens": "Il t'a trouvé", "def": "voir verset 7.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "عَائِلًا", "tr": "ʿāʾilan", "racine": "ع و ل", "sens": "démuni, en charge", "def": "ʿāʾil : pauvre, qui a une famille à charge sans moyens suffisants.", "gram": "participe actif, accusatif indéfini" },
+        { "ar": "فَأَغْنَىٰ", "tr": "fa-aghnā", "racine": "غ ن ي", "sens": "alors Il a enrichi", "def": "aghnā : enrichir, rendre indépendant (du besoin) ; à l'accompli.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ",
+      "tr": "fa-ammā l-yatīma fa-lā taqhar",
+      "trad": "L'orphelin, ne le traite donc pas avec dureté,",
+      "themes": ["orphelin", "douceur"],
+      "commentaire": "Trois grâces ont été reçues (v. 6-8) ; trois ordres en découlent. Le premier prolonge la première grâce. <em>taqhar</em> (تَقْهَر) signifie « opprimer, vaincre par la force, écraser ». Qushayrī commente : « Ne lui fais pas peur, sois doux avec lui, rapproche-le. » Trois mots simples qui valent un traité d'éducation : ne pas effrayer, traiter avec douceur, faire venir près. Toute la délicatesse de l'islam envers l'orphelin tient dans ce verset. Le Prophète disait : « Moi et le tuteur d'un orphelin, nous serons au Paradis comme ces deux-là » — et il joignait l'index et le majeur. Et celui qui a été lui-même orphelin a la responsabilité de tendre à un autre orphelin la main que Dieu lui a tendue.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "أَمَّا", "tr": "ammā", "racine": "—", "sens": "quant à", "def": "particule introduisant un cas particulier.", "gram": "particule" },
+        { "ar": "الْيَتِيمَ", "tr": "al-yatīm", "racine": "ي ت م", "sens": "l'orphelin", "def": "yatīm : voir verset 6.", "gram": "nom, accusatif défini" },
+        { "ar": "فَلَا", "tr": "fa-lā", "racine": "—", "sens": "ne... pas", "def": "fa- + lā de défense.", "gram": "particules" },
+        { "ar": "تَقْهَرْ", "tr": "taqhar", "racine": "ق ه ر", "sens": "tu opprimes", "def": "qahara : opprimer, vaincre par la force, écraser ; à l'inaccompli apocopé négatif.", "gram": "verbe inaccompli apocopé, 2ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَأَمَّا السَّائِلَ فَلَا تَنْهَرْ",
+      "tr": "wa-ammā s-sāʾila fa-lā tanhar",
+      "trad": "le mendiant, ne l'éconduis donc pas,",
+      "themes": ["mendiant", "questionneur", "douceur"],
+      "commentaire": "<em>al-sāʾil</em> (السَّائِل) signifie en arabe à la fois « celui qui demande » (le mendiant) et « celui qui interroge » (le questionneur). Les deux sens sont voulus. Pour le mendiant : « Soit tu lui donnes, dit Qushayrī, soit tu le refuses doucement, par une promesse de plus tard. » Le refus lui-même doit être délicat. Et pour le questionneur — celui qui vient chercher Dieu sans encore Le trouver — Qushayrī ajoute : « <em>Celui qui interroge sur Nous, celui qui est perplexe en Nous</em> — ne les rabroue pas, car c'est Nous qui les guidons ; et Nous leur dévoilerons les lieux mêmes de leurs questions. Toi, sois doux dans la parole avec eux. » Le verset s'adresse ainsi à tous ceux qui sont en position d'enseigner : ne pas chasser celui qui cherche.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "أَمَّا", "tr": "ammā", "racine": "—", "sens": "quant à", "def": "voir verset 9.", "gram": "particule" },
+        { "ar": "السَّائِلَ", "tr": "as-sāʾila", "racine": "س أ ل", "sens": "le demandeur, le questionneur", "def": "sāʾil : celui qui demande (mendiant) ou celui qui interroge (questionneur) ; participe actif de saʾala.", "gram": "participe actif, accusatif défini" },
+        { "ar": "فَلَا", "tr": "fa-lā", "racine": "—", "sens": "ne... pas", "def": "fa- + lā de défense.", "gram": "particules" },
+        { "ar": "تَنْهَرْ", "tr": "tanhar", "racine": "ن ه ر", "sens": "tu rabroues", "def": "nahara : rabrouer, repousser avec brusquerie ; à l'inaccompli apocopé négatif.", "gram": "verbe inaccompli apocopé, 2ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+      "tr": "wa-ammā bi-niʿmati rabbika fa-ḥaddith",
+      "trad": "et les bienfaits de ton Seigneur, proclame-les !",
+      "themes": ["gratitude", "proclamation des bienfaits"],
+      "commentaire": "Le dernier ordre est positif et solaire. <em>fa-ḥaddith</em> (فَحَدِّثْ) : raconte, dis, transmets — c'est la même racine que <em>ḥadīth</em>, la parole rapportée. Qushayrī résume : « Remercie, et déclare clairement Son bienfait envers toi, Sa grâce sur toi. » Le verset interdit la fausse modestie qui voudrait taire ce que Dieu a fait. Quand on a reçu, il faut le dire — non pour se vanter, mais pour rendre l'hommage qui est dû au Donateur. Le Prophète appliquera ce verset tout au long de sa vie en répétant : <em>al-ḥamdu li-Llāh</em> — louange à Dieu — devant la moindre grâce reçue. La sourate, ouverte sur le silence qu'on croyait être un abandon, se referme ainsi sur la voix qui proclame : Dieu, lui, n'a jamais cessé de donner.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "أَمَّا", "tr": "ammā", "racine": "—", "sens": "quant à", "def": "voir verset 9.", "gram": "particule" },
+        { "ar": "بِنِعْمَةِ", "tr": "bi-niʿmati", "racine": "ن ع م", "sens": "le bienfait de", "def": "niʿma : bienfait, grâce, faveur ; préposition bi- + nom génitif construit.", "gram": "préposition + nom, génitif construit" },
+        { "ar": "رَبِّكَ", "tr": "rabbika", "racine": "ر ب ب", "sens": "ton Seigneur", "def": "rabb + pronom suffixe.", "gram": "nom + pronom suffixe, génitif" },
+        { "ar": "فَحَدِّثْ", "tr": "fa-ḥaddith", "racine": "ح د ث", "sens": "raconte, proclame", "def": "ḥaddatha : forme intensive de ḥadatha ; raconter, transmettre, déclarer. Même racine que ḥadīth.", "gram": "verbe impératif, 2ᵉ pers. masc. sing." }
+      ]
+    }
+  ]
+}

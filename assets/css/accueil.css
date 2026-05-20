@@ -2,14 +2,27 @@
    ACCUEIL — Le seuil-portail et les trois portes
    ================================================================== */
 
+/* === Titre "Trois chemins, une même voie" === */
+.doors-reveal__heading {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-style: italic;
+  font-size: clamp(1.55rem, 3.4vw, 2.1rem);
+  color: var(--ink-title);
+  letter-spacing: .01em;
+  margin: 0 0 0.45rem;
+  text-align: center;
+}
+
 /* === Indication "Choisissez la porte..." === */
 .doors-reveal__hint {
-  display: inline-block;
-  margin-top: 0.3rem;
+  display: block;
+  text-align: center;
   font-style: italic;
   font-size: 0.92rem;
   color: var(--ink-mute);
   letter-spacing: .02em;
+  margin-top: 0.1rem;
 }
 
 /* === Section "Pour méditer" — distincte des 3 portes === */
@@ -174,6 +187,24 @@
 .meditate-card--contes:hover {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 10px 26px rgba(184, 118, 47, 0.22);
   border-color: rgba(184, 118, 47, 0.6);
+}
+
+.meditate-card--verbe {
+  background: linear-gradient(180deg, rgba(70, 90, 130, 0.10), rgba(70, 90, 130, 0.03));
+  border-color: rgba(70, 90, 130, 0.32);
+}
+.meditate-card--verbe::after {
+  color: rgba(70, 90, 130, 0.55);
+}
+.meditate-card--verbe .meditate-card__ar {
+  color: rgba(50, 70, 110, 0.95);
+}
+.meditate-card--verbe .meditate-card__title {
+  color: #36527A;
+}
+.meditate-card--verbe:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 10px 26px rgba(70, 90, 130, 0.22);
+  border-color: rgba(70, 90, 130, 0.6);
 }
 
 @media (max-width: 600px) {

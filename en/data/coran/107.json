@@ -6,22 +6,22 @@
   "revelation": "Meccan",
   "versets_count": 7,
   "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
-  "intro": "Al-Māʿūn — “Small Kindnesses” — is an early Meccan sūra, named after its last word: <em>māʿūn</em> (مَاعُون), a wide term naming at once the utensils people lend each other (the pickax, the pot, the bucket), the alms that are due, and more broadly every small service by which common life is held together. Seven brief verses set out a strong thesis: to deny religion (<em>dīn</em>) is not first a wrong opinion — it is a conduct. The one who does not feed, who drives away the orphan, who prays without heart, who acts to be seen — that one, in the Quran, treats religion as a lie. The sūra thus opens an essential equivalence: true devotion and care for the weakest cannot be separated.",
-  "themes": ["true religion", "orphan", "indigent", "hypocrisy", "ostentation", "sharing"],
+  "intro": "Al-Māʿūn — “Small Kindnesses” — is a brief sūra that overturns the usual order of things: to deny religion (<em>dīn</em>), it says, is not first a false opinion — it is a conduct. The one who shoves away the orphan, who does not feed the poor, who prays to be seen, who refuses to lend what is useful — that one, in Quranic speech, treats religion as a lie. Tustarī cites a rare saying he attributes to the Psalms of David: “Ask those who stand at the temple, keeping the postures of the worshippers, while their hearts are in the world, whether they take Me lightly, or are trying to deceive Me.” And the Prophet said to Muʿādh when he asked for counsel: “Be sincere to God, and a small amount of deeds will suffice you.” The sūra, by contrast with the Kawthar that precedes it, names the posterity turned back upon itself: one can have all the gestures of devotion and be inwardly cut off. True piety verifies itself in the orphans one looks at, the poor one feeds, the objects one lends.",
+  "themes": ["true dīn", "ikhlāṣ", "riyāʾ", "small services", "denial by deed"],
   "versets": [
     {
       "n": 1,
       "ar": "أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ",
       "tr": "a-raʾayta lladhī yukadhdhibu bi-d-dīn",
       "trad": "Have you seen the one who treats religion as a lie?",
-      "themes": ["denial", "religion"],
-      "commentaire": "<em>yukadhdhibu bi-d-dīn</em> (يُكَذِّبُ بِالدِّين): “to treat religion as a lie”. The verb <em>kadhdhaba</em> (كَذَّبَ) — intensive form of the root k-dh-b, “to lie” — means “to give the lie to”, “to hold as a liar”. <em>al-Dīn</em> (الدِّين) can be the revealed religion, but also “the judgment” (the Day of dīn). Commentators note that this first verse governs all that follows: if denying judgment is the root of every sin, the verse names not an opinion about God but an attitude that will show itself in the deeds described next.",
+      "themes": ["denial", "dīn"],
+      "commentaire": "<em>yukadhdhibu bi-d-dīn</em> (يُكَذِّبُ بِالدِّين) — to give the lie to religion, or to the Judgment (<em>dīn</em> means both). Qushayrī notes the form: the verse came down as a rebuke, in astonishment at what the disbeliever does to the orphan. Tustarī suggests, on the first verse, that to deny the Judgment <em>is the root of every other sin and transgression</em>. When the soul ceases to believe there is an Eye on its acts, its acts grow slack. What remains, like an empty shell, is the outward form of piety — described in the verses that follow.",
       "mots": [
-        { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "is it that…?", "def": "prefixed interrogative particle: is it that…?; introduces a question.", "gram": "interrogative particle" },
-        { "ar": "رَأَيْتَ", "tr": "raʾayta", "racine": "ر أ ي", "sens": "have you seen", "def": "raʾā: to see; perfect, 2nd pers. masc. sing.: have you seen.", "gram": "perfect verb, 2nd pers. masc. sing." },
-        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "the one who", "def": "masc. sing. relative pronoun: the one who.", "gram": "relative pronoun" },
+        { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "is it that…?", "def": "prefixed interrogative particle.", "gram": "interrogative particle" },
+        { "ar": "رَأَيْتَ", "tr": "raʾayta", "racine": "ر أ ي", "sens": "have you seen", "def": "raʾā: to see; perfect.", "gram": "perfect verb, 2nd pers. masc. sing." },
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "the one who", "def": "masc. sing. relative pronoun.", "gram": "relative pronoun" },
         { "ar": "يُكَذِّبُ", "tr": "yukadhdhibu", "racine": "ك ذ ب", "sens": "he treats as a lie", "def": "kadhdhaba: intensive form of kadhaba (to lie); “to hold as a liar”, “to give the lie to”.", "gram": "imperfect verb, 3rd pers. masc. sing." },
-        { "ar": "بِالدِّينِ", "tr": "bi-d-dīn", "racine": "د ي ن", "sens": "religion, the judgment", "def": "dīn: religion, way, due order; also: judgment (the Day of dīn). Preposition bi- + noun in the genitive.", "gram": "preposition + noun, definite genitive" }
+        { "ar": "بِالدِّينِ", "tr": "bi-d-dīn", "racine": "د ي ن", "sens": "religion, the judgment", "def": "dīn: religion, but also judgment, the debt to God.", "gram": "preposition + noun, definite genitive" }
       ]
     },
     {
@@ -29,14 +29,14 @@
       "ar": "فَذَٰلِكَ الَّذِي يَدُعُّ الْيَتِيمَ",
       "tr": "fa-dhālika lladhī yaduʿʿu l-yatīm",
       "trad": "That is the one who drives away the orphan,",
-      "themes": ["orphan", "social violence"],
-      "commentaire": "<em>yaduʿʿu</em> (يَدُعُّ): to push away roughly, to repulse, to brush off. The verb is harsh. And its object is the most vulnerable: <em>al-yatīm</em> (اليَتِيم), the orphan of the father. The sūra does not say “the one who does not love the orphan”; it says: the one who pushes him away with the back of his hand. The Quran elsewhere names also “devouring the inheritance of orphans” among the grave faults (4:2–3). True religion begins there — not in the abstract, but in the face of one who has no one.",
+      "themes": ["orphan", "mercy withdrawn"],
+      "commentaire": "<em>yaduʿʿu</em> (يَدُعُّ) — a harsh verb: to thrust away, to brush off in a single stroke. Qushayrī adds: “God has taken mercy away from his heart; and mercy is taken away only from the heart of a wretched man (<em>shaqī</em>, شَقِيّ).” The presence of the orphan is in reality a sign: the man who cannot bear the orphan's face is the man whose heart has been dried out. Harshness to another is the mark of a more secret hardening. The sūra thus says: show me what a man does to the orphan, and I will tell you where he stands.",
       "mots": [
         { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "then", "def": "linking particle: then, so.", "gram": "particle" },
-        { "ar": "ذَٰلِكَ", "tr": "dhālika", "racine": "—", "sens": "that one", "def": "masc. sing. far demonstrative: that one.", "gram": "demonstrative" },
+        { "ar": "ذَٰلِكَ", "tr": "dhālika", "racine": "—", "sens": "that one", "def": "masc. sing. far demonstrative.", "gram": "demonstrative" },
         { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "the one who", "def": "masc. sing. relative pronoun.", "gram": "relative pronoun" },
-        { "ar": "يَدُعُّ", "tr": "yaduʿʿu", "racine": "د ع ع", "sens": "he drives away", "def": "daʿʿa: to push roughly, to repulse with a stroke; a harsh verb naming a curt rejection.", "gram": "imperfect verb, 3rd pers. masc. sing." },
-        { "ar": "الْيَتِيمَ", "tr": "al-yatīm", "racine": "ي ت م", "sens": "the orphan", "def": "yatīm: orphan (of the father, in Arab culture; figure of absolute vulnerability).", "gram": "noun, definite accusative" }
+        { "ar": "يَدُعُّ", "tr": "yaduʿʿu", "racine": "د ع ع", "sens": "he drives away", "def": "daʿʿa: to push roughly, to repulse with a stroke.", "gram": "imperfect verb, 3rd pers. masc. sing." },
+        { "ar": "الْيَتِيمَ", "tr": "al-yatīm", "racine": "ي ت م", "sens": "the orphan", "def": "yatīm: orphan (of the father); figure of absolute vulnerability.", "gram": "noun, definite accusative" }
       ]
     },
     {
@@ -44,15 +44,15 @@
       "ar": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ",
       "tr": "wa-lā yaḥuḍḍu ʿalā ṭaʿāmi l-miskīn",
       "trad": "and does not urge the feeding of the indigent.",
-      "themes": ["indigent", "sharing", "responsibility"],
-      "commentaire": "<em>yaḥuḍḍu</em> (يَحُضُّ): to urge, to incite to. The verse does not only say that this man does not feed the indigent — it says he does not urge others to do so. The fault here is twofold: not to give, and not to encourage giving. Another reading hears: “he does not urge the giving of the food due to the indigent”, for the Quran elsewhere recalls that in the wealth of the believer “there is an acknowledged right for the beggar and the deprived” (70:24–25). Food is not a favour but a due.",
+      "themes": ["indigent", "stinginess", "egoism"],
+      "commentaire": "Qushayrī: “He does not urge the feeding of the poor, because he is in the avarice of his soul and in the command of his stinginess.” The verse does not only reproach not giving — it reproaches not <em>urging</em> to give. When the soul is sound, it worries also for the poor that others do not see, it urges others to feed them. When it is sick, it stays sealed in its own self-sufficiency.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction: and.", "gram": "conjunction" },
         { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "not", "def": "negative particle.", "gram": "particle" },
-        { "ar": "يَحُضُّ", "tr": "yaḥuḍḍu", "racine": "ح ض ض", "sens": "he urges", "def": "ḥaḍḍa: to urge, to incite, to exhort to do something; with lā: he does not urge.", "gram": "imperfect verb, 3rd pers. masc. sing." },
-        { "ar": "عَلَىٰ", "tr": "ʿalā", "racine": "—", "sens": "to, upon", "def": "preposition: upon, regarding; here introduces the object of urging.", "gram": "preposition" },
+        { "ar": "يَحُضُّ", "tr": "yaḥuḍḍu", "racine": "ح ض ض", "sens": "he urges", "def": "ḥaḍḍa: to urge, to incite, to exhort to do something.", "gram": "imperfect verb, 3rd pers. masc. sing." },
+        { "ar": "عَلَىٰ", "tr": "ʿalā", "racine": "—", "sens": "to, upon", "def": "preposition: upon, regarding.", "gram": "preposition" },
         { "ar": "طَعَامِ", "tr": "ṭaʿām", "racine": "ط ع م", "sens": "feeding of", "def": "ṭaʿām: food, what is eaten.", "gram": "noun, construct genitive" },
-        { "ar": "الْمِسْكِينِ", "tr": "al-miskīn", "racine": "س ك ن", "sens": "the indigent", "def": "miskīn: the indigent, the destitute; from the root s-k-n that names immobility — one who no longer has the strength to move.", "gram": "noun, definite genitive" }
+        { "ar": "الْمِسْكِينِ", "tr": "al-miskīn", "racine": "س ك ن", "sens": "the indigent", "def": "miskīn: the indigent, the destitute; from the root s-k-n (immobility) — one who no longer has the strength to move.", "gram": "noun, definite genitive" }
       ]
     },
     {
@@ -60,12 +60,12 @@
       "ar": "فَوَيْلٌ لِّلْمُصَلِّينَ",
       "tr": "fa-waylun li-l-muṣallīn",
       "trad": "So woe to those who pray,",
-      "themes": ["hypocrisy", "prayer"],
-      "commentaire": "The verse is startling: “woe to those who pray”. The word <em>wayl</em> (وَيْل) — “woe!” — is among the strongest interjections of Quranic speech. But what follows narrows it: not woe to all who pray, but to those whose prayer the next verses will describe — the heedless, the showy. The sūra aims at what the Quran will name elsewhere as “the prayer of the hypocrites”: a gesture without heart.",
+      "themes": ["wayl", "heartless prayer"],
+      "commentaire": "The verse is famous for its boldness: <em>wayl</em> (وَيْل), “woe”, addressed to <em>those who pray</em>. But Qushayrī stops on a decisive nuance of the next verse: the sūra says <em>ʿan ṣalātihim</em>, “<em>about</em> their prayer” — not <em>fī ṣalātihim</em>, “<em>in</em> their prayer”. The difference is immense: to be heedless <em>in</em> prayer (the mind drifting for an instant) every worshipper knows; were that condemned, none would be safe. But to be heedless <em>about</em> prayer — to delay it, to forget it, to take it lightly — that is what is aimed at.",
       "mots": [
-        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "so, then", "def": "linking particle: so, then.", "gram": "particle" },
-        { "ar": "وَيْلٌ", "tr": "wayl", "racine": "و ي ل", "sens": "woe!", "def": "wayl: interjection of threat or lament: woe!; among the strongest Quranic expressions.", "gram": "noun, indefinite nominative" },
-        { "ar": "لِّلْمُصَلِّينَ", "tr": "li-l-muṣallīn", "racine": "ص ل و", "sens": "to those who pray", "def": "muṣallī: one who prays; active participle of ṣallā. Preposition li- + plural definite noun.", "gram": "preposition + plural active participle, definite genitive" }
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "so, then", "def": "linking particle.", "gram": "particle" },
+        { "ar": "وَيْلٌ", "tr": "wayl", "racine": "و ي ل", "sens": "woe!", "def": "wayl: interjection of threat; among the strongest Quranic expressions.", "gram": "noun, indefinite nominative" },
+        { "ar": "لِّلْمُصَلِّينَ", "tr": "li-l-muṣallīn", "racine": "ص ل و", "sens": "to those who pray", "def": "muṣallī: one who prays; active participle of ṣallā.", "gram": "preposition + plural active participle, definite genitive" }
       ]
     },
     {
@@ -73,14 +73,14 @@
       "ar": "الَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
       "tr": "alladhīna hum ʿan ṣalātihim sāhūn",
       "trad": "who pray with negligence,",
-      "themes": ["negligence", "inner presence"],
-      "commentaire": "<em>sāhūn</em> (سَاهُون) — heedless, negligent, forgetful. Commentators distinguish several senses: those who delay prayer past its time, those who fail to complete bowings and prostrations, those who pray with the heart elsewhere. A ḥadīth describes such prayer: “This is the prayer of the hypocrite: he watches the sun until it is between the two horns of Satan, then he rises and pecks out four cycles in which he remembers God but little.” The sūra does not condemn prayer itself — it names the distance between the gesture and the presence.",
+      "themes": ["negligence", "presence"],
+      "commentaire": "<em>Sāhūn ʿan</em> (سَاهُون عَنْ): heedless <em>about</em> the prayer. Tustarī cites a word he takes from the Psalms of David: “Ask those who stand at the temple, keeping the postures of the worshippers, while their hearts are in the world, whether they take Me lightly, or are trying to deceive Me.” And a ḥadīth: “A man does not obtain from his prayer save what he has grasped (<em>mā ʿaqala</em>).” The sūra does not ask for ecstasy; it asks that prayer not be treated as a chore to clear off. It asks that we <em>take</em> it — that the mind be in it for something.",
       "mots": [
         { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "those who", "def": "masc. plur. relative pronoun: those who.", "gram": "plural relative pronoun" },
-        { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "they", "def": "masc. plur. personal pronoun: they; in isolation, reinforces the subject.", "gram": "personal pronoun" },
-        { "ar": "عَن", "tr": "ʿan", "racine": "—", "sens": "from, regarding", "def": "preposition: from, regarding; here introduces what they are heedless of.", "gram": "preposition" },
-        { "ar": "صَلَاتِهِمْ", "tr": "ṣalātihim", "racine": "ص ل و", "sens": "their prayer", "def": "ṣalāt: the ritual prayer; with the plural suffix pronoun: their prayer.", "gram": "noun + suffix pronoun, genitive" },
-        { "ar": "سَاهُونَ", "tr": "sāhūn", "racine": "س ه و", "sens": "heedless", "def": "sāhī: heedless, forgetful; active participle of sahā. Plural: sāhūn.", "gram": "plural active participle, nominative" }
+        { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "they", "def": "masc. plur. personal pronoun: they.", "gram": "personal pronoun" },
+        { "ar": "عَن", "tr": "ʿan", "racine": "—", "sens": "about, regarding", "def": "preposition: about, regarding — not “in”, which would be fī.", "gram": "preposition" },
+        { "ar": "صَلَاتِهِمْ", "tr": "ṣalātihim", "racine": "ص ل و", "sens": "their prayer", "def": "ṣalāt: ritual prayer.", "gram": "noun + suffix pronoun, genitive" },
+        { "ar": "سَاهُونَ", "tr": "sāhūn", "racine": "س ه و", "sens": "heedless", "def": "sāhī: heedless, forgetful; active participle of sahā.", "gram": "plural active participle, nominative" }
       ]
     },
     {
@@ -88,12 +88,12 @@
       "ar": "الَّذِينَ هُمْ يُرَاءُونَ",
       "tr": "alladhīna hum yurāʾūn",
       "trad": "who act to be seen,",
-      "themes": ["ostentation", "riyāʾ"],
-      "commentaire": "<em>yurāʾūn</em> (يُرَاءُون): they do things to be seen. This is the word <em>riyāʾ</em> (رِيَاء) — ostentation —, a central fault in Muslim spirituality: to act for the gaze of men rather than the Face of God. The Quran says elsewhere of the hypocrites: “When they pray, they pray lazily, to be seen of men” (4:142). The sūra here touches the finest inversion: one may perform the gesture of devotion perfectly, and have lost devotion itself.",
+      "themes": ["riyāʾ", "hidden shirk"],
+      "commentaire": "<em>yurāʾūn</em> (يُرَاءُون): they act to be seen. This is <em>riyāʾ</em> (رِيَاء), ostentation — a central fault in Muslim spirituality. Tustarī calls it <em>shirk khafī</em>, “hidden association”: “there are two kinds of association, he writes — that which concerns God Himself, which is not forgiven, and that which concerns one's deeds — as when a man prays or makes the pilgrimage knowing people will speak of him. That too is association.” The ḥadīth that follows: “Be sincere to God, and a small amount of deeds will suffice you.” One act wholly for God is worth more than a thousand cut in half.",
       "mots": [
         { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "those who", "def": "masc. plur. relative pronoun.", "gram": "plural relative pronoun" },
         { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "they", "def": "masc. plur. personal pronoun.", "gram": "personal pronoun" },
-        { "ar": "يُرَاءُونَ", "tr": "yurāʾūn", "racine": "ر أ ي", "sens": "they make themselves seen", "def": "rāʾā: the derived form of raʾā (to see); “to make oneself seen”, “to act to be seen” — ostentation, riyāʾ.", "gram": "imperfect verb, 3rd pers. masc. plur." }
+        { "ar": "يُرَاءُونَ", "tr": "yurāʾūn", "racine": "ر أ ي", "sens": "they make themselves seen", "def": "rāʾā: a derived form of raʾā (to see); “to make oneself seen”, “to act to be seen” — ostentation, riyāʾ.", "gram": "imperfect verb, 3rd pers. masc. plur." }
       ]
     },
     {
@@ -101,12 +101,12 @@
       "ar": "وَيَمْنَعُونَ الْمَاعُونَ",
       "tr": "wa-yamnaʿūna l-māʿūn",
       "trad": "and refuse the small kindnesses.",
-      "themes": ["sharing", "alms", "small services"],
-      "commentaire": "<em>al-māʿūn</em> (المَاعُون): the word that gives the sūra its name. Commentators give it a broad meaning: what is shared between neighbours — the pickax, the pot, the bucket —, the utensils one lends, but also the alms that are due (the <em>zakāt</em>), or any small service by which common life is held together. To refuse the <em>māʿūn</em> is to break the very ordinary fabric of human solidarity. The sūra closes there, on this tiny detail: religion is tested not only in great things, but in the small — an object lent, a face listened to, a daily kindness given.",
+      "themes": ["sharing", "small gestures", "fraternity"],
+      "commentaire": "<em>al-māʿūn</em> (المَاعُون). Qushayrī defines it with precision: “like water, fire, pasture, the axe, the cooking-pot, and the other implements of the household; this includes also stinginess and miserliness with anything that can serve creation, within the bounds of what is possible.” A very concrete reading: religion verifies itself in what one lends, what one shares, in the trouble one accepts to take for another in the daily detail. The sūra closes there, on this tiny detail. To refuse the <em>māʿūn</em> is, undramatically, to sign one's inward <em>kufr</em>. And to share it, simply, is to carry — softly, without anyone noticing — true religion.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction: and.", "gram": "conjunction" },
-        { "ar": "يَمْنَعُونَ", "tr": "yamnaʿūn", "racine": "م ن ع", "sens": "they refuse", "def": "manaʿa: to refuse, to withhold, to keep from access; imperfect plural.", "gram": "imperfect verb, 3rd pers. masc. plur." },
-        { "ar": "الْمَاعُونَ", "tr": "al-māʿūn", "racine": "م ع ن", "sens": "the small kindnesses, the daily aid", "def": "māʿūn: what is of use (shared utensils, alms due, small services between neighbours); that without which common life cannot stand.", "gram": "noun, definite accusative" }
+        { "ar": "يَمْنَعُونَ", "tr": "yamnaʿūn", "racine": "م ن ع", "sens": "they refuse", "def": "manaʿa: to refuse, to withhold, to keep from access.", "gram": "imperfect verb, 3rd pers. masc. plur." },
+        { "ar": "الْمَاعُونَ", "tr": "al-māʿūn", "racine": "م ع ن", "sens": "small kindnesses, daily aid", "def": "māʿūn: what is of use — water, fire, pasture, axe, pot, and every household implement; figuratively, anything that can serve creation and is refused out of avarice.", "gram": "noun, definite accusative" }
       ]
     }
   ]

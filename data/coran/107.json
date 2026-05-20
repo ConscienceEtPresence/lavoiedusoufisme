@@ -6,22 +6,22 @@
   "revelation": "mecquoise",
   "versets_count": 7,
   "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
-  "intro": "Al-Māʿūn — « Le Nécessaire » — est une sourate mecquoise précoce, qui prend son nom du dernier mot du texte : <em>māʿūn</em> (مَاعُون), terme large qui désigne à la fois les ustensiles que l'on se prête entre voisins (la pioche, le pot, le seau), l'aumône due, et au sens étendu tout petit service par lequel s'entretient la vie commune. Sept versets brefs qui posent une thèse forte : nier la religion (<em>dīn</em>) n'est pas d'abord une opinion fausse — c'est une conduite. Celui qui ne nourrit pas, qui repousse l'orphelin, qui prie sans cœur, qui cherche à être vu — celui-là, dans le Coran, traite la religion de mensonge. La sourate ouvre ainsi une équivalence essentielle : la dévotion vraie et le souci des plus faibles ne se séparent pas.",
-  "themes": ["religion vraie", "orphelin", "indigent", "hypocrisie", "ostentation", "partage"],
+  "intro": "Al-Māʿūn — « Le Nécessaire » — est une sourate brève qui inverse l'ordre des choses : nier la religion (<em>dīn</em>), dit-elle, n'est pas d'abord une opinion fausse — c'est une conduite. Celui qui repousse l'orphelin, qui ne nourrit pas le pauvre, qui prie pour être vu, qui refuse de prêter ce qui sert — celui-là, dans le langage du Coran, traite la religion de mensonge. Tustarī rapporte un mot rare extrait du Psautier de David : « Demande à ceux qui se tiennent au temple, gardant les postures des adorateurs, tandis que leur cœur est occupé du monde, s'ils me prennent à la légère, ou s'ils essaient de me tromper. » Et le Prophète disait à Muʿādh quand celui-ci lui demandait conseil : « Sois sincère envers Dieu, et peu d'œuvres te suffiront. » La sourate, par contraste avec celle du Kawthar qui précède, dit la postérité retournée : on peut avoir tous les gestes de la dévotion, et en être au fond séparé. La piété vraie se vérifie aux orphelins qu'on regarde, aux pauvres qu'on nourrit, aux objets qu'on prête.",
+  "themes": ["dīn vrai", "ikhlāṣ", "riyāʾ", "petits services", "dénégation par les actes"],
   "versets": [
     {
       "n": 1,
       "ar": "أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ",
       "tr": "a-raʾayta lladhī yukadhdhibu bi-d-dīn",
       "trad": "As-tu vu celui qui traite de mensonge la religion ?",
-      "themes": ["dénégation", "religion"],
-      "commentaire": "<em>yukadhdhibu bi-d-dīn</em> (يُكَذِّبُ بِالدِّين) : « traiter la religion de mensonge ». Le verbe <em>kadhdhaba</em> (كَذَّبَ) — forme intensive de la racine k-dh-b, « mentir » — signifie « démentir », « tenir pour menteur ». <em>al-Dīn</em> (الدِّين) peut être ici la religion révélée, mais aussi le « jugement » (le Jour du dīn). Les commentateurs notent que ce premier verset gouverne tout ce qui suit : si nier le jugement est la racine de tous les péchés, alors le sens du verset n'est pas une opinion sur Dieu, mais une attitude qui se manifestera dans les actes décrits ensuite.",
+      "themes": ["dénégation", "dīn"],
+      "commentaire": "<em>yukadhdhibu bi-d-dīn</em> (يُكَذِّبُ بِالدِّين) — démentir la religion ou démentir le Jugement (<em>dīn</em> dit les deux). Qushayrī précise la forme : le verset est descendu en blâme, dans l'étonnement devant ce que l'incrédule fait subir à l'orphelin. Mais Tustarī, en commentant le premier verset, suggère que démentir le Jugement <em>est la racine de tous les autres péchés et transgressions</em>. Quand l'âme cesse de croire qu'il y a un Œil sur ses actes, ses actes se relâchent. Reste, comme dans une coquille vide, la forme extérieure de la piété — qui sera décrite dans les versets suivants.",
       "mots": [
-        { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "est-ce que ?", "def": "particule interrogative préfixée : est-ce que ? ; introduit une question.", "gram": "particule interrogative" },
-        { "ar": "رَأَيْتَ", "tr": "raʾayta", "racine": "ر أ ي", "sens": "as-tu vu", "def": "raʾā : voir ; à l'accompli, 2ᵉ pers. masc. sing. : as-tu vu.", "gram": "verbe accompli, 2ᵉ pers. masc. sing." },
-        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "celui qui", "def": "pronom relatif masculin singulier : celui qui.", "gram": "pronom relatif" },
+        { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "est-ce que ?", "def": "particule interrogative préfixée.", "gram": "particule interrogative" },
+        { "ar": "رَأَيْتَ", "tr": "raʾayta", "racine": "ر أ ي", "sens": "as-tu vu", "def": "raʾā : voir ; à l'accompli.", "gram": "verbe accompli, 2ᵉ pers. masc. sing." },
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "celui qui", "def": "pronom relatif masculin singulier.", "gram": "pronom relatif" },
         { "ar": "يُكَذِّبُ", "tr": "yukadhdhibu", "racine": "ك ذ ب", "sens": "il traite de mensonge", "def": "kadhdhaba : forme intensive de kadhaba (mentir) ; « tenir pour menteur », « démentir ».", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
-        { "ar": "بِالدِّينِ", "tr": "bi-d-dīn", "racine": "د ي ن", "sens": "la religion, le jugement", "def": "dīn : la religion, la voie, l'ordre dû ; aussi : le jugement (le Jour du dīn). Préposition bi- + nom au génitif.", "gram": "préposition + nom, génitif défini" }
+        { "ar": "بِالدِّينِ", "tr": "bi-d-dīn", "racine": "د ي ن", "sens": "la religion, le jugement", "def": "dīn : la religion, mais aussi le jugement, la dette envers Dieu.", "gram": "préposition + nom, génitif défini" }
       ]
     },
     {
@@ -29,14 +29,14 @@
       "ar": "فَذَٰلِكَ الَّذِي يَدُعُّ الْيَتِيمَ",
       "tr": "fa-dhālika lladhī yaduʿʿu l-yatīm",
       "trad": "C'est lui qui repousse l'orphelin",
-      "themes": ["orphelin", "violence sociale"],
-      "commentaire": "<em>yaduʿʿu</em> (يَدُعُّ) : repousser brutalement, refouler, brusquer. Le verbe est rude. Et l'objet est le plus vulnérable de la société : <em>al-yatīm</em> (اليَتِيم), l'orphelin de père. La sourate ne dit pas : « celui qui n'aime pas l'orphelin » ; elle dit : celui qui l'écarte d'un revers de main. Le Coran ailleurs nomme aussi « dévorer l'héritage des orphelins » parmi les fautes graves (4, 2-3). La religion vraie commence là — non dans l'abstrait, mais dans le visage de qui n'a personne.",
+      "themes": ["orphelin", "miséricorde retirée"],
+      "commentaire": "<em>yaduʿʿu</em> (يَدُعُّ) — un verbe rude : repousser avec brutalité, écarter d'un coup. Qushayrī ajoute : « Dieu a retiré la miséricorde de son cœur, et la miséricorde ne se retire que du cœur d'un être malheureux (<em>shaqī</em>, شَقِيّ). » La présence de l'orphelin est en réalité un signe : l'homme qui ne supporte pas son visage est celui dont le cœur a été asséché ; la dureté envers l'autre est l'indice d'un endurcissement plus secret. La sourate dit ainsi : montre-moi ce qu'un homme fait à l'orphelin, et je te dirai où il en est.",
       "mots": [
         { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison : alors, donc.", "gram": "particule" },
-        { "ar": "ذَٰلِكَ", "tr": "dhālika", "racine": "—", "sens": "celui-là", "def": "démonstratif masculin singulier éloigné : celui-là.", "gram": "démonstratif" },
-        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "celui qui", "def": "pronom relatif masculin singulier.", "gram": "pronom relatif" },
-        { "ar": "يَدُعُّ", "tr": "yaduʿʿu", "racine": "د ع ع", "sens": "il repousse", "def": "daʿʿa : repousser brutalement, refouler d'un coup ; verbe rude qui désigne un rejet sec.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
-        { "ar": "الْيَتِيمَ", "tr": "al-yatīm", "racine": "ي ت م", "sens": "l'orphelin", "def": "yatīm : orphelin (de père, dans la culture arabe ; figure de la vulnérabilité absolue).", "gram": "nom, accusatif défini" }
+        { "ar": "ذَٰلِكَ", "tr": "dhālika", "racine": "—", "sens": "celui-là", "def": "démonstratif masculin singulier éloigné.", "gram": "démonstratif" },
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "celui qui", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "يَدُعُّ", "tr": "yaduʿʿu", "racine": "د ع ع", "sens": "il repousse", "def": "daʿʿa : repousser brutalement, refouler d'un coup.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "الْيَتِيمَ", "tr": "al-yatīm", "racine": "ي ت م", "sens": "l'orphelin", "def": "yatīm : orphelin (de père) ; figure de la vulnérabilité absolue.", "gram": "nom, accusatif défini" }
       ]
     },
     {
@@ -44,15 +44,15 @@
       "ar": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ",
       "tr": "wa-lā yaḥuḍḍu ʿalā ṭaʿāmi l-miskīn",
       "trad": "et qui n'encourage pas à nourrir l'indigent.",
-      "themes": ["indigent", "partage", "responsabilité"],
-      "commentaire": "<em>yaḥuḍḍu</em> (يَحُضُّ) : pousser à, exhorter à. Le verset ne dit pas seulement que cet homme ne nourrit pas l'indigent — il dit qu'il n'incite pas les autres à le faire. La faute ici est double : ne pas donner, et ne pas encourager à donner. Une autre lecture entend : « il n'encourage pas à donner la nourriture qui est due à l'indigent », car le Coran ailleurs rappelle que dans la richesse du croyant « il y a un droit reconnu pour le mendiant et le démuni » (70, 24-25). La nourriture n'est pas une faveur, c'est un dû.",
+      "themes": ["indigent", "avarice", "égoïsme"],
+      "commentaire": "Qushayrī : « Il n'incite pas à nourrir le pauvre, parce qu'il est dans l'avarice de son âme et dans le commandement de sa cupidité. » Le verset ne reproche pas seulement de ne pas donner — il reproche de ne pas <em>pousser</em> à donner. Quand l'âme est saine, elle s'inquiète aussi du pauvre que les autres ne voient pas, elle incite à ce que d'autres soient nourris. Quand elle est malade, elle reste calfeutrée dans sa propre suffisance.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
         { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
-        { "ar": "يَحُضُّ", "tr": "yaḥuḍḍu", "racine": "ح ض ض", "sens": "il encourage", "def": "ḥaḍḍa : pousser, inciter, exhorter à faire quelque chose ; avec lā : il n'incite pas.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
-        { "ar": "عَلَىٰ", "tr": "ʿalā", "racine": "—", "sens": "à, sur", "def": "préposition : sur, à propos de ; ici introduit l'objet de l'exhortation.", "gram": "préposition" },
+        { "ar": "يَحُضُّ", "tr": "yaḥuḍḍu", "racine": "ح ض ض", "sens": "il encourage", "def": "ḥaḍḍa : pousser, inciter, exhorter à faire quelque chose.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "عَلَىٰ", "tr": "ʿalā", "racine": "—", "sens": "à, sur", "def": "préposition : sur, à propos de.", "gram": "préposition" },
         { "ar": "طَعَامِ", "tr": "ṭaʿām", "racine": "ط ع م", "sens": "la nourriture de", "def": "ṭaʿām : la nourriture, ce qui se mange.", "gram": "nom, génitif construit" },
-        { "ar": "الْمِسْكِينِ", "tr": "al-miskīn", "racine": "س ك ن", "sens": "l'indigent", "def": "miskīn : l'indigent, le pauvre démuni ; de la racine s-k-n qui dit l'immobilité — celui qui n'a plus la force d'aller.", "gram": "nom, génitif défini" }
+        { "ar": "الْمِسْكِينِ", "tr": "al-miskīn", "racine": "س ك ن", "sens": "l'indigent", "def": "miskīn : l'indigent, le pauvre démuni ; de la racine s-k-n (immobilité) — celui qui n'a plus la force d'aller.", "gram": "nom, génitif défini" }
       ]
     },
     {
@@ -60,12 +60,12 @@
       "ar": "فَوَيْلٌ لِّلْمُصَلِّينَ",
       "tr": "fa-waylun li-l-muṣallīn",
       "trad": "Malheur à ceux qui, lorsqu'ils prient,",
-      "themes": ["hypocrisie", "prière"],
-      "commentaire": "Le verset surprend par son audace : « malheur à ceux qui prient ». Le mot <em>wayl</em> (وَيْل) — « malheur ! » — est l'une des interjections les plus fortes de la langue coranique. Mais la suite précise : non pas malheur à tous ceux qui prient, mais à ceux dont la prière sera l'objet des deux versets suivants — celle des distraits, celle des ostentatoires. La sourate vise ce que le Coran appellera ailleurs « la prière des hypocrites » : un geste sans cœur.",
+      "themes": ["wayl", "prière sans cœur"],
+      "commentaire": "Le verset est célèbre pour son apparente audace : <em>wayl</em> (وَيْل), « malheur », adressé à <em>ceux qui prient</em>. Mais Qushayrī s'arrête sur une nuance décisive du verset suivant : la sourate dit <em>ʿan ṣalātihim</em>, « <em>à propos</em> de leur prière » — non <em>fī ṣalātihim</em>, « <em>dans</em> leur prière ». La différence est immense : être négligent <em>dans</em> la prière (le cœur qui dérive un instant), tout adorateur le connaît ; ce serait une catastrophe que cela soit condamné. Mais être négligent <em>à propos</em> de la prière — la retarder, l'oublier, ne pas en faire cas — voilà ce qui est visé.",
       "mots": [
-        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison : alors, donc.", "gram": "particule" },
-        { "ar": "وَيْلٌ", "tr": "wayl", "racine": "و ي ل", "sens": "malheur !", "def": "wayl : interjection de menace ou de plainte : malheur ! ; l'une des expressions les plus fortes du Coran.", "gram": "nom, nominatif indéfini" },
-        { "ar": "لِّلْمُصَلِّينَ", "tr": "li-l-muṣallīn", "racine": "ص ل و", "sens": "à ceux qui prient", "def": "muṣallī : celui qui prie ; participe actif de ṣallā. Préposition li- + nom pluriel défini : à ceux qui prient.", "gram": "préposition + participe actif pluriel, génitif défini" }
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "وَيْلٌ", "tr": "wayl", "racine": "و ي ل", "sens": "malheur !", "def": "wayl : interjection de menace ; l'une des plus fortes du Coran.", "gram": "nom, nominatif indéfini" },
+        { "ar": "لِّلْمُصَلِّينَ", "tr": "li-l-muṣallīn", "racine": "ص ل و", "sens": "à ceux qui prient", "def": "muṣallī : celui qui prie ; participe actif de ṣallā.", "gram": "préposition + participe actif pluriel, génitif défini" }
       ]
     },
     {
@@ -73,14 +73,14 @@
       "ar": "الَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
       "tr": "alladhīna hum ʿan ṣalātihim sāhūn",
       "trad": "font leur prière avec négligence,",
-      "themes": ["négligence", "présence intérieure"],
-      "commentaire": "<em>sāhūn</em> (سَاهُون) — distraits, négligents, oublieux. Les commentateurs distinguent plusieurs sens : ceux qui retardent leur prière au-delà de son temps, ceux qui n'accomplissent pas correctement les inclinations et prosternations, ceux qui prient mais le cœur ailleurs. Un hadith décrit cette prière : « C'est la prière de l'hypocrite : il regarde le soleil jusqu'à ce qu'il soit entre les deux cornes de Satan, puis il se lève et picore quatre cycles où il se souvient de Dieu bien peu. » La sourate ne condamne pas la prière en elle-même — elle dit la distance entre le geste et la présence.",
+      "themes": ["négligence", "présence"],
+      "commentaire": "<em>Sāhūn ʿan</em> (سَاهُون عَنْ) : négligents <em>à l'égard</em> de la prière. Tustarī cite un mot extrait, dit-il, du Psautier de David : « Demande à ceux qui se tiennent au temple, gardant les postures des adorateurs, alors que leur cœur est dans le monde, s'ils Me prennent à la légère, ou s'ils essaient de Me tromper. » Et un hadith : « L'homme ne tire de sa prière que ce qu'il en a saisi (<em>mā ʿaqala</em>). » La sourate ne demande pas l'extase ; elle demande qu'on ne traite pas la prière comme une corvée à liquider. Elle demande qu'on la <em>prenne</em> — que l'esprit y soit pour quelque chose.",
       "mots": [
-        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif masculin pluriel : ceux qui.", "gram": "pronom relatif pluriel" },
-        { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "ils, eux", "def": "pronom personnel masculin pluriel : ils, eux ; en position d'isolement, renforce le sujet.", "gram": "pronom personnel" },
-        { "ar": "عَن", "tr": "ʿan", "racine": "—", "sens": "à, à propos de", "def": "préposition : de, à propos de ; ici introduit l'objet de la distraction.", "gram": "préposition" },
-        { "ar": "صَلَاتِهِمْ", "tr": "ṣalātihim", "racine": "ص ل و", "sens": "leur prière", "def": "ṣalāt : la prière rituelle ; avec le pronom suffixe pluriel : leur prière.", "gram": "nom + pronom suffixe, génitif" },
-        { "ar": "سَاهُونَ", "tr": "sāhūn", "racine": "س ه و", "sens": "distraits, négligents", "def": "sāhī : distrait, oublieux ; participe actif de sahā. Au pluriel : sāhūn.", "gram": "participe actif pluriel, nominatif" }
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif masculin pluriel.", "gram": "pronom relatif pluriel" },
+        { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "ils, eux", "def": "pronom personnel masculin pluriel.", "gram": "pronom personnel" },
+        { "ar": "عَن", "tr": "ʿan", "racine": "—", "sens": "à propos de", "def": "préposition : à propos de, au sujet de ; et non « dans », ce qui serait fī.", "gram": "préposition" },
+        { "ar": "صَلَاتِهِمْ", "tr": "ṣalātihim", "racine": "ص ل و", "sens": "leur prière", "def": "ṣalāt : la prière rituelle.", "gram": "nom + pronom suffixe, génitif" },
+        { "ar": "سَاهُونَ", "tr": "sāhūn", "racine": "س ه و", "sens": "distraits, négligents", "def": "sāhī : distrait, oublieux ; participe actif de sahā.", "gram": "participe actif pluriel, nominatif" }
       ]
     },
     {
@@ -88,12 +88,12 @@
       "ar": "الَّذِينَ هُمْ يُرَاءُونَ",
       "tr": "alladhīna hum yurāʾūn",
       "trad": "ceux qui recherchent surtout l'ostentation",
-      "themes": ["ostentation", "riyāʾ"],
-      "commentaire": "<em>yurāʾūn</em> (يُرَاءُون) : ils font les choses pour être vus. C'est le mot <em>riyāʾ</em> (رِيَاء) — l'ostentation —, péché central dans la spiritualité musulmane : agir pour la vue des hommes plutôt que pour la Face de Dieu. Le Coran dit ailleurs des hypocrites : « Quand ils prient, ils prient avec paresse, pour être vus des gens » (4, 142). La sourate touche ici l'inversion la plus fine : on peut accomplir le geste de la dévotion exactement, et avoir perdu la dévotion elle-même.",
+      "themes": ["riyāʾ", "shirk caché"],
+      "commentaire": "<em>yurāʾūn</em> (يُرَاءُون) : ils font pour être vus. C'est le mot <em>riyāʾ</em> (رِيَاء), l'ostentation — péché central dans la spiritualité musulmane. Tustarī l'appelle <em>shirk khafī</em>, « l'association cachée » : « il y a deux associations, écrit-il, celle qu'on fait à propos de Dieu Lui-même, qui n'est pas pardonnée, et celle qu'on fait dans ses actes — comme l'homme qui prie ou fait le pèlerinage en sachant que les gens en parleront. Cela aussi est de l'association. » Le hadith qui suit : « Sois sincère envers Dieu, et peu d'œuvres te suffiront. » Un acte tout entier pour Dieu vaut mieux que mille actes coupés.",
       "mots": [
         { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif masculin pluriel.", "gram": "pronom relatif pluriel" },
         { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "ils, eux", "def": "pronom personnel masculin pluriel.", "gram": "pronom personnel" },
-        { "ar": "يُرَاءُونَ", "tr": "yurāʾūn", "racine": "ر أ ي", "sens": "ils s'exhibent", "def": "rāʾā : la forme verbale dérivée de raʾā (voir) ; « se faire voir », « agir pour être vu » — l'ostentation, riyāʾ.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." }
+        { "ar": "يُرَاءُونَ", "tr": "yurāʾūn", "racine": "ر أ ي", "sens": "ils s'exhibent", "def": "rāʾā : forme dérivée de raʾā (voir) ; « se faire voir », agir pour être vu — l'ostentation, riyāʾ.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." }
       ]
     },
     {
@@ -101,12 +101,12 @@
       "ar": "وَيَمْنَعُونَ الْمَاعُونَ",
       "tr": "wa-yamnaʿūna l-māʿūn",
       "trad": "et refusent de faire l'aumône du nécessaire.",
-      "themes": ["partage", "aumône", "petits services"],
-      "commentaire": "<em>al-māʿūn</em> (المَاعُون) : le mot qui donne son nom à la sourate. Les commentateurs lui donnent un sens élargi : ce que l'on partage entre voisins — la pioche, le pot, le seau —, les ustensiles que l'on se prête, mais aussi l'aumône due (la <em>zakāt</em>), ou tout petit service par lequel s'entretient la vie commune. Refuser le <em>māʿūn</em>, c'est rompre le tissu très ordinaire de la solidarité humaine. La sourate se ferme là, sur ce détail minuscule : la religion ne se vérifie pas seulement dans le grand, mais dans le menu — un objet prêté, un visage écouté, un nécessaire partagé.",
+      "themes": ["partage", "petits gestes", "fraternité"],
+      "commentaire": "<em>al-māʿūn</em> (المَاعُون). Qushayrī le définit avec précision : « comme l'eau, le feu, le pâturage, la hache, la marmite, et les autres ustensiles de maison ; cela inclut aussi l'avarice et la mesquinerie pour tout ce qui peut servir aux créatures, dans la limite du possible. » Lecture très concrète : la religion se vérifie à ce qu'on prête, à ce qu'on partage, à la peine qu'on accepte de prendre pour autrui dans le menu quotidien. La sourate s'achève là, sur ce détail minuscule. Refuser le <em>māʿūn</em>, c'est, sans dramatique, signer son <em>kufr</em> intérieur. Et le partager, simplement, c'est porter — à bas bruit, sans qu'on s'en aperçoive — la religion vraie.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
-        { "ar": "يَمْنَعُونَ", "tr": "yamnaʿūn", "racine": "م ن ع", "sens": "ils refusent", "def": "manaʿa : refuser, retenir, empêcher d'accéder à quelque chose ; à l'inaccompli pluriel.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." },
-        { "ar": "الْمَاعُونَ", "tr": "al-māʿūn", "racine": "م ع ن", "sens": "le nécessaire, les petits services", "def": "māʿūn : ce qui sert (ustensiles partagés, aumône due, petits services entre voisins) ; ce sans quoi la vie commune ne tient pas.", "gram": "nom, accusatif défini" }
+        { "ar": "يَمْنَعُونَ", "tr": "yamnaʿūn", "racine": "م ن ع", "sens": "ils refusent", "def": "manaʿa : refuser, retenir, empêcher d'accéder ; à l'inaccompli pluriel.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." },
+        { "ar": "الْمَاعُونَ", "tr": "al-māʿūn", "racine": "م ع ن", "sens": "le nécessaire, les petits services", "def": "māʿūn : ce qui sert — eau, feu, pâturage, hache, marmite, et tout ustensile de maison ; au figuré, tout ce qui peut servir aux créatures et qu'on refuse par avarice.", "gram": "nom, accusatif défini" }
       ]
     }
   ]

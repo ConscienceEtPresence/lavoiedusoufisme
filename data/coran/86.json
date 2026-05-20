@@ -1,0 +1,257 @@
+{
+  "n": 86,
+  "nom_ar": "الطَّارِق",
+  "nom_tr": "al-Ṭāriq",
+  "nom_fr": "L'Astre Nocturne",
+  "revelation": "mecquoise",
+  "versets_count": 17,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Ṭāriq — « L'astre nocturne », « ce qui frappe à la porte » — désigne l'étoile qui paraît la nuit, perçante au point de transpercer l'obscurité. Le serment ouvre une sourate dense en dix-sept versets : <em>par le ciel et par l'astre nocturne... toute âme a sur elle un gardien</em>. Puis vient l'invitation à se retourner sur soi : <em>que l'homme considère donc de quoi il a été créé</em> — d'une simple giclée d'eau ; et Celui qui l'a tiré d'aussi peu peut, à fortiori, le faire revenir. Au Jour où les secrets seront éprouvés, nul n'aura ni force ni défenseur. Qushayrī, sur le premier verset, ouvre la voie spirituelle : <em>l'astre perçant n'est pas seulement physique — ce sont aussi les étoiles de la connaissance (nujūm al-maʿrifa) qui désignent l'Un, et dont la lumière éclaire les gens de l'intuition (ulū al-baṣāʾir)</em>. La sourate s'achève sur une parole d'une étonnante sérénité : eux ourdissent, Je conduis ; donne-leur un peu de répit. Le ciel n'est pas pressé.",
+  "themes": ["serment cosmique", "gardien de l'âme", "origine de l'homme", "jour des secrets", "patience divine"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَالسَّمَاءِ وَالطَّارِقِ",
+      "tr": "wa-s-samāʾi wa-ṭ-ṭāriq",
+      "trad": "Par le ciel et par l'astre nocturne !",
+      "themes": ["serment", "étoile perçante"],
+      "commentaire": "<em>al-ṭāriq</em> (الطَّارِق) : ce qui survient la nuit. La racine <em>ṭ-r-q</em> désigne le coup frappé à la porte — l'arrivée d'un visiteur inattendu. Étoile qui frappe le toit du ciel. Qushayrī : « Il jure par le ciel, et par l'étoile qui frappe la nuit. » Puis ouvre la lecture intérieure : « On dit aussi que ce sont <em>les étoiles de la connaissance</em> (<em>nujūm al-maʿrifa</em>, نُجُوم المَعْرِفَة) qui désignent l'Unicité, et dont les gens de l'intuition (<em>ulū al-baṣāʾir</em>, أُولُو البَصَائِر) tirent la lumière pour leur orientation. » Toute connaissance vraie est un coup frappé à la nuit du cœur.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "السَّمَاءِ", "tr": "as-samāʾ", "racine": "س م و", "sens": "le ciel", "def": "samāʾ : le ciel.", "gram": "nom, génitif défini" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "الطَّارِقِ", "tr": "aṭ-ṭāriq", "racine": "ط ر ق", "sens": "l'astre nocturne", "def": "ṭāriq : ce qui survient la nuit, qui frappe à la porte ; ici, l'étoile qui paraît dans la nuit. Participe actif de ṭaraqa.", "gram": "participe actif, génitif défini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَمَا أَدْرَاكَ مَا الطَّارِقُ",
+      "tr": "wa-mā adrāka mā ṭ-ṭāriq",
+      "trad": "Mais qu'est-ce qui te fera connaître ce qu'est l'astre nocturne ?",
+      "themes": ["mystère", "amplification"],
+      "commentaire": "Question rhétorique d'amplification — <em>mā adrāka</em>, déjà rencontrée à la sourate 97. Ce qui suit ne définit pas la chose ; il en magnifie la portée.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "qu'est-ce qui", "def": "interrogatif.", "gram": "interrogatif" },
+        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "te fera savoir", "def": "adrā : faire savoir ; + pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qu'est", "def": "interrogatif.", "gram": "interrogatif" },
+        { "ar": "الطَّارِقُ", "tr": "aṭ-ṭāriq", "racine": "ط ر ق", "sens": "l'astre nocturne", "def": "voir verset 1.", "gram": "participe actif, nominatif défini" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "النَّجْمُ الثَّاقِبُ",
+      "tr": "an-najmu th-thāqib",
+      "trad": "C'est l'étoile dont l'éclat perce la nuit.",
+      "themes": ["étoile perçante"],
+      "commentaire": "<em>al-najm al-thāqib</em> (النَّجْم الثَّاقِب) : Qushayrī, en peu de mots : « la lumineuse, l'élevée ». La racine <em>th-q-b</em> dit le perçage : l'étoile dont la lumière <em>traverse</em> l'obscurité. C'est l'image même de la révélation divine : ce qui perce, ce qui se fraie un chemin, ce qui se manifeste dans la nuit du monde. Et, à un autre niveau, c'est aussi l'image du savant véritable : son éclat traverse les voiles que la nuit du cœur avait posés.",
+      "mots": [
+        { "ar": "النَّجْمُ", "tr": "an-najm", "racine": "ن ج م", "sens": "l'étoile", "def": "najm : étoile.", "gram": "nom, nominatif défini" },
+        { "ar": "الثَّاقِبُ", "tr": "ath-thāqib", "racine": "ث ق ب", "sens": "qui perce, perçante", "def": "thāqib : participe actif de thaqaba ; qui perce, qui traverse de sa lumière.", "gram": "participe actif, nominatif défini" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "إِن كُلُّ نَفْسٍ لَّمَّا عَلَيْهَا حَافِظٌ",
+      "tr": "in kullu nafsin lammā ʿalayhā ḥāfiẓ",
+      "trad": "Pour toute âme il existe un gardien qui se tient auprès d'elle.",
+      "themes": ["gardien", "ange de garde"],
+      "commentaire": "Réponse du serment. <em>Il n'est pas d'âme qui n'ait sur elle un gardien</em>. Qushayrī précise : « un gardien parmi les anges, qui conserve ses œuvres, sa subsistance et son terme. » Mais il ajoute le sens éveilleur : « et qui l'incite à une vigilance constante (<em>tayaqquẓ</em>, تَيَقُّظ) et à une belle conservation de soi (<em>taḥaffuẓ</em>, تَحَفُّظ). » Avoir un gardien, c'est aussi sentir, dans la nuit même, un regard qui veille : non un regard menaçant, mais celui d'un compagnon invisible qui réveille à l'attention.",
+      "mots": [
+        { "ar": "إِن", "tr": "in", "racine": "—", "sens": "il n'y a... que", "def": "particule de négation à valeur restrictive avec lammā.", "gram": "particule" },
+        { "ar": "كُلُّ", "tr": "kullu", "racine": "ك ل ل", "sens": "toute, chaque", "def": "kull : tout, chaque.", "gram": "nom, nominatif construit" },
+        { "ar": "نَفْسٍ", "tr": "nafsin", "racine": "ن ف س", "sens": "âme", "def": "nafs : âme, personne.", "gram": "nom, génitif indéfini" },
+        { "ar": "لَّمَّا", "tr": "lammā", "racine": "—", "sens": "que, sinon", "def": "particule restrictive : il n'y a pas... sinon.", "gram": "particule" },
+        { "ar": "عَلَيْهَا", "tr": "ʿalayhā", "racine": "—", "sens": "sur elle", "def": "préposition + pronom suffixe féminin.", "gram": "préposition + pronom" },
+        { "ar": "حَافِظٌ", "tr": "ḥāfiẓ", "racine": "ح ف ظ", "sens": "un gardien", "def": "ḥāfiẓ : participe actif de ḥafiẓa ; gardien, conservateur.", "gram": "participe actif, nominatif indéfini" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "فَلْيَنظُرِ الْإِنسَانُ مِمَّ خُلِقَ",
+      "tr": "fa-l-yanẓuri l-insānu mim-ma khuliq",
+      "trad": "Que l'homme considère de quoi il a été créé !",
+      "themes": ["regarde toi-même", "humilité"],
+      "commentaire": "Qushayrī : « Il l'incite à la considération et à l'argumentation, jusqu'à ce qu'il connaisse la perfection de Sa puissance, de Son savoir et de Sa volonté — gloire à Lui. » Avant de regarder le ciel, regarde-toi. Avant d'argumenter sur Dieu, examine ton propre commencement. La spiritualité vraie ne commence pas par les abstractions ; elle commence par le souvenir précis de ce dont on est sorti.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "donc", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "لْ", "tr": "l-", "racine": "—", "sens": "qu'il", "def": "lām d'injonction (lām al-amr).", "gram": "particule" },
+        { "ar": "يَنظُرِ", "tr": "yanẓuri", "racine": "ن ظ ر", "sens": "qu'il considère", "def": "naẓara : regarder, considérer.", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
+        { "ar": "الْإِنسَانُ", "tr": "al-insān", "racine": "أ ن س", "sens": "l'homme", "def": "insān : l'être humain.", "gram": "nom, nominatif défini" },
+        { "ar": "مِمَّ", "tr": "mim-ma", "racine": "—", "sens": "de quoi", "def": "min + mā (contracté).", "gram": "préposition + pronom interrogatif" },
+        { "ar": "خُلِقَ", "tr": "khuliq", "racine": "خ ل ق", "sens": "il a été créé", "def": "khalaqa au passif accompli.", "gram": "verbe accompli passif, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "خُلِقَ مِن مَّاءٍ دَافِقٍ",
+      "tr": "khuliqa min māʾin dāfiq",
+      "trad": "Il a été créé d'une giclée d'eau",
+      "themes": ["origine", "humilité d'être"],
+      "commentaire": "<em>māʾ dāfiq</em> : eau qui jaillit, sperme. Le verset n'a pas peur de la matérialité : il pose, sans détour, l'origine la plus humble. Et c'est précisément l'humilité de cette origine qui rend visible la grandeur de l'œuvre. D'aussi peu, un homme.",
+      "mots": [
+        { "ar": "خُلِقَ", "tr": "khuliqa", "racine": "خ ل ق", "sens": "il a été créé", "def": "khalaqa au passif.", "gram": "verbe accompli passif, 3ᵉ pers. masc. sing." },
+        { "ar": "مِن", "tr": "min", "racine": "—", "sens": "à partir de", "def": "préposition.", "gram": "préposition" },
+        { "ar": "مَّاءٍ", "tr": "māʾ", "racine": "م و ه", "sens": "une eau", "def": "māʾ : eau.", "gram": "nom, génitif indéfini" },
+        { "ar": "دَافِقٍ", "tr": "dāfiq", "racine": "د ف ق", "sens": "qui jaillit", "def": "dāfiq : participe actif de dafaqa ; qui jaillit en flot.", "gram": "participe actif, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "يَخْرُجُ مِن بَيْنِ الصُّلْبِ وَالتَّرَائِبِ",
+      "tr": "yakhruju min bayni ṣ-ṣulbi wa-t-tarāʾib",
+      "trad": "sortie d'entre les lombes et les côtes.",
+      "themes": ["anatomie de l'engendrement"],
+      "commentaire": "Qushayrī : « elle sort des reins du père et de la poitrine de la mère. » L'engendrement implique deux corps, deux origines précises. Le verset honore cette précision pour rappeler que rien dans l'homme ne s'est fait tout seul : tout porte la marque d'un dialogue qui le précède.",
+      "mots": [
+        { "ar": "يَخْرُجُ", "tr": "yakhruju", "racine": "خ ر ج", "sens": "elle sort", "def": "kharaja : sortir.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "مِن", "tr": "min", "racine": "—", "sens": "de", "def": "préposition.", "gram": "préposition" },
+        { "ar": "بَيْنِ", "tr": "bayni", "racine": "ب ي ن", "sens": "entre", "def": "bayn : entre ; au génitif construit.", "gram": "nom, génitif construit" },
+        { "ar": "الصُّلْبِ", "tr": "aṣ-ṣulb", "racine": "ص ل ب", "sens": "les lombes, l'épine dorsale", "def": "ṣulb : lombes, épine dorsale ; siège de la procréation chez l'homme selon l'anatomie ancienne.", "gram": "nom, génitif défini" },
+        { "ar": "وَالتَّرَائِبِ", "tr": "wa-t-tarāʾib", "racine": "ت ر ب", "sens": "les côtes", "def": "tarāʾib : pluriel de tarība ; les côtes, la poitrine ; siège anatomique chez la femme.", "gram": "nom pluriel, génitif défini" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "إِنَّهُ عَلَىٰ رَجْعِهِ لَقَادِرٌ",
+      "tr": "innahu ʿalā rajʿihi la-qādir",
+      "trad": "Certes, Dieu a le pouvoir de le faire revenir",
+      "themes": ["résurrection", "qudra"],
+      "commentaire": "Qushayrī formule le grand argument : « Sur son retour à la vie, et sur sa nouvelle création, Il est tout-puissant — car Il est puissant sur la perfection. Et la puissance sur une chose entraîne la puissance sur son semblable. La répétition relève du même registre que le commencement. » Si Dieu a pu créer une fois à partir d'une giclée, Il peut recréer à partir de ce qui en restera. La résurrection n'est, du point de vue de la puissance divine, qu'une seconde fois.",
+      "mots": [
+        { "ar": "إِنَّهُ", "tr": "innahu", "racine": "—", "sens": "certes Il", "def": "inna + pronom suffixe.", "gram": "particule + pronom" },
+        { "ar": "عَلَىٰ", "tr": "ʿalā", "racine": "—", "sens": "sur", "def": "préposition.", "gram": "préposition" },
+        { "ar": "رَجْعِهِ", "tr": "rajʿihi", "racine": "ر ج ع", "sens": "son retour", "def": "rajʿ : retour, faire revenir ; avec pronom suffixe.", "gram": "nom + pronom suffixe, génitif" },
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
+        { "ar": "قَادِرٌ", "tr": "qādir", "racine": "ق د ر", "sens": "puissant", "def": "qādir : participe actif de qadara ; capable, puissant.", "gram": "participe actif, nominatif indéfini" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "يَوْمَ تُبْلَى السَّرَائِرُ",
+      "tr": "yawma tublā s-sarāʾir",
+      "trad": "le Jour où les secrets seront dévoilés.",
+      "themes": ["sarāʾir", "secrets éprouvés"],
+      "commentaire": "Verset bouleversant. <em>al-sarāʾir</em> (السَّرَائِر) : pluriel de <em>sarīra</em>, le secret intime. <em>tublā</em> (تُبْلَى) : seront mis à l'épreuve, éprouvés (de la même racine que <em>balāʾ</em>, l'épreuve). Qushayrī, en un mot : « le Jour où les consciences (<em>al-ḍamāʾir</em>, الضَّمَائِر) seront éprouvées. » Le Jour, ce n'est donc pas seulement le jugement des actes — c'est l'examen de ce que les actes voulaient dire pour qui les faisait. Tout ce qui était enfoui (intentions, mobiles, demi-savoirs) sera mis au creuset. Le verset propose dès aujourd'hui une discipline : préparer chaque jour ce <em>sarīra</em> à supporter l'épreuve.",
+      "mots": [
+        { "ar": "يَوْمَ", "tr": "yawma", "racine": "ي و م", "sens": "le Jour où", "def": "yawm : jour ; à l'accusatif adverbial.", "gram": "nom, accusatif adverbial" },
+        { "ar": "تُبْلَى", "tr": "tublā", "racine": "ب ل و", "sens": "seront éprouvés", "def": "balā : éprouver, mettre à l'épreuve ; au passif inaccompli.", "gram": "verbe inaccompli passif, 3ᵉ pers. fém. sing." },
+        { "ar": "السَّرَائِرُ", "tr": "as-sarāʾir", "racine": "س ر ر", "sens": "les secrets", "def": "sarāʾir : pluriel de sarīra ; les secrets intimes, ce que l'âme cache.", "gram": "nom pluriel, nominatif défini" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "فَمَا لَهُ مِن قُوَّةٍ وَلَا نَاصِرٍ",
+      "tr": "fa-mā lahu min quwwatin wa-lā nāṣir",
+      "trad": "L'homme n'aura alors ni force, ni défenseur.",
+      "themes": ["solitude du Jour"],
+      "commentaire": "Qushayrī : « cet homme-là, ce jour-là, n'aura pas d'auxiliaire qui repousse de lui le décret de Dieu. » Au moment où les secrets sortent, plus d'avocat extérieur ; plus de force intérieure non plus. Le verset n'humilie pas ; il prépare. Ce qui ne sera pas porté par soi-même au Jour, il faut le tenir aujourd'hui.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
+        { "ar": "لَهُ", "tr": "lahu", "racine": "—", "sens": "pour lui", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "مِن", "tr": "min", "racine": "—", "sens": "de, aucune", "def": "préposition.", "gram": "préposition" },
+        { "ar": "قُوَّةٍ", "tr": "quwwatin", "racine": "ق و ي", "sens": "force", "def": "quwwa : force.", "gram": "nom, génitif indéfini" },
+        { "ar": "وَلَا", "tr": "wa-lā", "racine": "—", "sens": "ni", "def": "conjonction + négation.", "gram": "particules" },
+        { "ar": "نَاصِرٍ", "tr": "nāṣir", "racine": "ن ص ر", "sens": "défenseur", "def": "nāṣir : participe actif de naṣara ; secoureur, défenseur.", "gram": "participe actif, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "وَالسَّمَاءِ ذَاتِ الرَّجْعِ",
+      "tr": "wa-s-samāʾi dhāti r-rajʿ",
+      "trad": "Par le ciel qui accomplit ses révolutions !",
+      "themes": ["ciel et pluie"],
+      "commentaire": "Second cycle de serments. <em>dhāt al-rajʿ</em> : « doté du retour ». Qushayrī, en un mot : « c'est-à-dire la pluie ». Le ciel <em>revient</em> à la terre par la pluie qu'il rend. Image splendide : ce qui monte (la vapeur) revient sous la forme de ce qui donne la vie. Le ciel n'est pas qu'élévation — il est aussi ce qui se redonne.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "السَّمَاءِ", "tr": "as-samāʾ", "racine": "س م و", "sens": "le ciel", "def": "samāʾ : ciel.", "gram": "nom, génitif défini" },
+        { "ar": "ذَاتِ", "tr": "dhāti", "racine": "—", "sens": "dotée de", "def": "particule possessive féminine.", "gram": "particule construite" },
+        { "ar": "الرَّجْعِ", "tr": "ar-rajʿ", "racine": "ر ج ع", "sens": "le retour, la pluie", "def": "rajʿ : retour ; par extension, la pluie qui revient à la terre.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "وَالْأَرْضِ ذَاتِ الصَّدْعِ",
+      "tr": "wa-l-arḍi dhāti ṣ-ṣadʿ",
+      "trad": "Par la terre qui s'entrouvre !",
+      "themes": ["terre fendue", "germination"],
+      "commentaire": "<em>dhāt al-ṣadʿ</em> : « dotée de la fente ». Qushayrī : « la fente, c'est la déchirure de la terre par la végétation, pour les cultures et les arbres. » Image silencieuse de la grâce : il faut bien que la terre <em>s'entrouvre</em> pour que la vie pousse. Et l'on entend, derrière, l'analogie : il faut que le cœur s'entrouve aussi.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "الْأَرْضِ", "tr": "al-arḍ", "racine": "أ ر ض", "sens": "la terre", "def": "arḍ : la terre.", "gram": "nom, génitif défini" },
+        { "ar": "ذَاتِ", "tr": "dhāti", "racine": "—", "sens": "dotée de", "def": "particule possessive féminine.", "gram": "particule construite" },
+        { "ar": "الصَّدْعِ", "tr": "aṣ-ṣadʿ", "racine": "ص د ع", "sens": "la fissure, l'entrouverture", "def": "ṣadʿ : fissure, fente ; ici, la fente par laquelle les plantes percent la terre.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "إِنَّهُ لَقَوْلٌ فَصْلٌ",
+      "tr": "innahu la-qawlun faṣl",
+      "trad": "Voici, vraiment, une parole décisive,",
+      "themes": ["parole décisive", "qawl faṣl"],
+      "commentaire": "<em>qawl faṣl</em> (قَوْل فَصْل) : parole qui tranche, parole décisive. Qushayrī, en un mot : « le Coran est parole catégorique (<em>jazm</em>, جَزْم). » Le mot <em>faṣl</em> est de la même racine que ce qui sépare le vrai du faux. La parole de Dieu ne flotte pas dans l'indéterminé : elle <em>décide</em>. C'est cette précision intérieure qui fait sa lumière.",
+      "mots": [
+        { "ar": "إِنَّهُ", "tr": "innahu", "racine": "—", "sens": "certes ceci", "def": "inna + pronom suffixe.", "gram": "particule + pronom" },
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
+        { "ar": "قَوْلٌ", "tr": "qawl", "racine": "ق و ل", "sens": "une parole", "def": "qawl : parole.", "gram": "nom, nominatif indéfini" },
+        { "ar": "فَصْلٌ", "tr": "faṣl", "racine": "ف ص ل", "sens": "décisive, qui tranche", "def": "faṣl : ce qui sépare, ce qui tranche ; parole qui décide.", "gram": "nom, nominatif indéfini" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "وَمَا هُوَ بِالْهَزْلِ",
+      "tr": "wa-mā huwa bi-l-hazl",
+      "trad": "et qui n'est pas un discours frivole.",
+      "themes": ["sérieux du Verbe"],
+      "commentaire": "Qushayrī, sobre : « <em>al-hazl</em> est le contraire du sérieux ; le Coran n'est ni vain ni jeu. » La parole divine est posée comme l'inverse du badinage. C'est une distinction discrète mais cruciale : il y a des paroles qui se rétractent, qui se nuancent, qui se reprennent au demi-mot. Pas celle-ci. Ce qui y est dit y est dit, et tient.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "n'est pas", "def": "particule de négation.", "gram": "particule" },
+        { "ar": "هُوَ", "tr": "huwa", "racine": "—", "sens": "lui, ceci", "def": "pronom personnel masc.", "gram": "pronom" },
+        { "ar": "بِالْهَزْلِ", "tr": "bi-l-hazl", "racine": "ه ز ل", "sens": "un badinage", "def": "hazl : plaisanterie, badinage, frivolité ; opposé du sérieux.", "gram": "préposition + nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "إِنَّهُمْ يَكِيدُونَ كَيْدًا",
+      "tr": "innahum yakīdūna kaydā",
+      "trad": "Ils ourdissent un stratagème,",
+      "themes": ["kayd humain"],
+      "commentaire": "<em>kayd</em> (كَيْد) : ruse, stratagème. Qushayrī : « ils manigancent une ruse. » La sourate nomme la résistance à la parole décisive : elle n'est pas seulement déni, elle est <em>manœuvre</em>. Les hommes contre Dieu inventent des plans pour faire échouer la parole.",
+      "mots": [
+        { "ar": "إِنَّهُمْ", "tr": "innahum", "racine": "—", "sens": "certes ils", "def": "inna + pronom suffixe pluriel.", "gram": "particule + pronom" },
+        { "ar": "يَكِيدُونَ", "tr": "yakīdūna", "racine": "ك ي د", "sens": "ils ourdissent", "def": "kāda : ourdir, ruser ; à l'inaccompli pluriel.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." },
+        { "ar": "كَيْدًا", "tr": "kaydā", "racine": "ك ي د", "sens": "une ruse", "def": "kayd : ruse, stratagème ; à l'accusatif d'objet interne.", "gram": "nom, accusatif indéfini" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "وَأَكِيدُ كَيْدًا",
+      "tr": "wa-akīdu kaydā",
+      "trad": "et Moi J'en ourdis un aussi.",
+      "themes": ["kayd divin", "estirdrāj"],
+      "commentaire": "Verset à comprendre avec délicatesse. Qushayrī : « Eux usent de ruse ; et Nous, Nous établissons un décret par notre acte, Nous nouons une création ; et Nous les rétribuons de leur ruse par ce dont Nous les traitons — l'<em>istidrāj</em> (l'attirance progressive, اسْتِدْرَاج) et le délai (<em>imhāl</em>). » Le <em>kayd</em> divin n'est donc pas du même ordre que celui des humains ; c'est une justice subtile qui les laisse aller en croyant gagner, jusqu'au moment où ils découvrent qu'ils s'étaient eux-mêmes piégés. La grâce, ici aussi, est dans la patience apparente.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "أَكِيدُ", "tr": "akīdu", "racine": "ك ي د", "sens": "J'ourdis", "def": "kāda à l'inaccompli 1ʳᵉ pers. sing.", "gram": "verbe inaccompli, 1ʳᵉ pers. sing." },
+        { "ar": "كَيْدًا", "tr": "kaydā", "racine": "ك ي د", "sens": "une ruse", "def": "voir verset 15.", "gram": "nom, accusatif indéfini" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "فَمَهِّلِ الْكَافِرِينَ أَمْهِلْهُمْ رُوَيْدًا",
+      "tr": "fa-mahhili l-kāfirīna amhilhum ruwaydā",
+      "trad": "Accorde donc un délai aux mécréants, accorde-leur quelque répit !",
+      "themes": ["délai", "patience prophétique"],
+      "commentaire": "La sourate, qui semblait prête à tonner, se referme dans un mouvement d'une étonnante douceur. <em>mahhil... amhilhum ruwaydā</em> : donne-leur un délai, donne-leur du temps, doucement. Le triplement même du verbe (<em>mahhil</em> intensif, <em>amhil</em> redoublé, <em>ruwayd</em> diminutif) ralentit le rythme. Qushayrī, en un mot : « regarde-les, donne-leur encore un peu, et va lentement avec eux. » C'est l'instruction du Très-Haut au Prophète : ne sois pas pressé. La précipitation n'est pas une vertu prophétique ; elle est l'inverse du <em>mirṣād</em> divin (cf. 89, 14) qui sait attendre. Et c'est, pour qui prêche ou enseigne, une parole précieuse : laisser à chacun le temps qu'il faut.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "donc", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "مَهِّلِ", "tr": "mahhili", "racine": "م ه ل", "sens": "accorde un délai", "def": "mahhala : forme intensive de mahala ; accorder un délai.", "gram": "verbe impératif, 2ᵉ pers. masc. sing." },
+        { "ar": "الْكَافِرِينَ", "tr": "al-kāfirīn", "racine": "ك ف ر", "sens": "les mécréants", "def": "kāfirīn : pluriel de kāfir ; les dénégateurs.", "gram": "participe actif pluriel, accusatif défini" },
+        { "ar": "أَمْهِلْهُمْ", "tr": "amhilhum", "racine": "م ه ل", "sens": "accorde-leur du répit", "def": "amhala : forme dérivée ; accorder un répit ; avec pronom suffixe.", "gram": "verbe impératif + pronom suffixe, 2ᵉ pers. masc. sing." },
+        { "ar": "رُوَيْدًا", "tr": "ruwaydā", "racine": "ر و د", "sens": "doucement", "def": "ruwayd : diminutif intensif ; doucement, un petit peu, sans hâte.", "gram": "adverbe, accusatif" }
+      ]
+    }
+  ]
+}

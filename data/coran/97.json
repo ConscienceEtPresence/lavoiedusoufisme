@@ -1,0 +1,94 @@
+{
+  "n": 97,
+  "nom_ar": "القَدْر",
+  "nom_tr": "al-Qadr",
+  "nom_fr": "La Valeur",
+  "revelation": "mecquoise",
+  "versets_count": 5,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Qadr — « La Valeur », mot que l'on rend aussi par « le Décret » ou « le Pouvoir » — est une sourate mecquoise célèbre pour ce qu'elle dit de la <em>Laylat al-Qadr</em> (لَيْلَة الْقَدْر), la Nuit où le Coran fut révélé pour la première fois. La tradition unanime situe cette Nuit dans le mois de Ramadan, comme dit ailleurs le Coran : « Le mois de Ramadan est celui où le Coran fut fait descendre » (2, 185). Cette Nuit revient chaque année — les musulmans la cherchent dans les dix dernières nuits du Ramadan, et particulièrement dans les nuits impaires. Le Prophète passait ces nuits-là en retraite spirituelle (<em>iʿtikāf</em>), priant, jeûnant, veillant. Il enseignait cette invocation pour la nuit : « Mon Dieu, Tu es Celui qui pardonne, et Tu aimes le pardon — pardonne-moi. » Cinq versets seulement, mais qui disent une vérité bouleversante : qu'il existe, dans le temps des hommes, une nuit pesant plus que mille mois.",
+  "themes": ["révélation", "Nuit du Destin", "anges", "Esprit", "paix"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ",
+      "tr": "innā anzalnāhu fī laylati l-qadr",
+      "trad": "En Vérité, Nous l'avons fait descendre durant la Nuit de la Valeur.",
+      "themes": ["descente du Coran", "Nuit"],
+      "commentaire": "<em>anzalnāhu</em> (أَنزَلْنَاهُ) : « Nous l'avons fait descendre ». Le pronom <em>hu</em> renvoie au Coran. Selon plusieurs commentateurs, ce verset désigne la première descente — celle où le Coran fut transmis dans son intégralité de la <em>Lawḥ al-Maḥfūẓ</em> (لَوْح المَحْفُوظ), la Table préservée, vers le ciel de ce monde (la <em>Maison de la Majesté</em>, <em>bayt al-ʿizza</em>) ; ensuite seulement, le Coran fut révélé par fragments au Prophète sur vingt-trois ans. <em>Qadr</em> (قَدْر) a plusieurs sens : décret divin, mesure, valeur, pouvoir. Le mot couvre tout — c'est la Nuit où Dieu décide, mesure, et où Sa Puissance se manifeste à l'humanité.",
+      "mots": [
+        { "ar": "إِنَّا", "tr": "innā", "racine": "—", "sens": "en vérité, Nous", "def": "particule de mise en relief inna + pronom suffixe Nous.", "gram": "particule + pronom" },
+        { "ar": "أَنزَلْنَاهُ", "tr": "anzalnāhu", "racine": "ن ز ل", "sens": "Nous l'avons fait descendre", "def": "anzala : faire descendre, faire venir d'en haut ; à l'accompli 1ʳᵉ pers. plur. + pronom suffixe masc. sing. (renvoie au Coran).", "gram": "verbe accompli + pronom suffixe, 1ʳᵉ pers. plur." },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "durant, dans", "def": "préposition : dans, durant.", "gram": "préposition" },
+        { "ar": "لَيْلَةِ", "tr": "laylati", "racine": "ل ي ل", "sens": "la nuit de", "def": "layla : la nuit ; au génitif construit : « la nuit de ».", "gram": "nom, génitif construit" },
+        { "ar": "الْقَدْرِ", "tr": "al-qadr", "racine": "ق د ر", "sens": "la Valeur, le Décret, le Pouvoir", "def": "qadr : la mesure, le décret divin, la valeur, le pouvoir ; tous ces sens convergent dans la Laylat al-Qadr.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ",
+      "tr": "wa-mā adrāka mā laylatu l-qadr",
+      "trad": "Mais qu'est-ce qui te fera connaître ce qu'est la Nuit de la Valeur ?",
+      "themes": ["mystère", "incommensurabilité"],
+      "commentaire": "Comme partout où le Coran emploie cette formule — <em>mā adrāka</em> (مَا أَدْرَاكَ) —, ce qui suit est moins une définition qu'un signe. La Nuit du Décret excède le savoir humain. Selon Sh., la question rhétorique souligne « l'extrême sainteté de cette nuit », dont la vraie connaissance n'appartient qu'à Dieu. Le verset suspend la phrase ; les trois versets suivants viendront non pas l'expliquer, mais en dire la grandeur.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "qu'est-ce qui", "def": "interrogatif.", "gram": "interrogatif" },
+        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "te fera savoir", "def": "adrā : faire savoir, faire connaître ; à l'accompli + pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qu'est", "def": "interrogatif relatif.", "gram": "interrogatif" },
+        { "ar": "لَيْلَةُ", "tr": "laylatu", "racine": "ل ي ل", "sens": "la Nuit de", "def": "layla : la nuit.", "gram": "nom, nominatif construit" },
+        { "ar": "الْقَدْرِ", "tr": "al-qadr", "racine": "ق د ر", "sens": "la Valeur", "def": "voir verset 1.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "لَيْلَةُ الْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
+      "tr": "laylatu l-qadri khayrun min alfi shahr",
+      "trad": "La Nuit de la Valeur est meilleure que mille mois !",
+      "themes": ["temps", "valeur", "incommensurable"],
+      "commentaire": "<em>alf shahr</em> (أَلْف شَهْر) : mille mois — soit, en années, plus de quatre-vingts. Les commentateurs précisent que le chiffre « mille » dans le Coran n'a pas toujours valeur arithmétique : il dit ici la démesure. Une seule nuit de prière dans cette Nuit-là est, en valeur spirituelle, supérieure à plus de quatre-vingts ans de pratique ordinaire. Selon certains, le sens de « mille mois » est tout simplement « tout le temps » — toute la durée qu'un homme peut espérer. La grâce d'une nuit excède la peine de toute une vie.",
+      "mots": [
+        { "ar": "لَيْلَةُ", "tr": "laylatu", "racine": "ل ي ل", "sens": "la Nuit de", "def": "layla : la nuit.", "gram": "nom, nominatif construit" },
+        { "ar": "الْقَدْرِ", "tr": "al-qadr", "racine": "ق د ر", "sens": "la Valeur", "def": "voir verset 1.", "gram": "nom, génitif défini" },
+        { "ar": "خَيْرٌ", "tr": "khayr", "racine": "خ ي ر", "sens": "meilleure", "def": "khayr : le bien, le meilleur ; ici comparatif : meilleure que.", "gram": "nom adjectival, nominatif indéfini" },
+        { "ar": "مِّنْ", "tr": "min", "racine": "—", "sens": "que", "def": "préposition de comparaison.", "gram": "préposition" },
+        { "ar": "أَلْفِ", "tr": "alfi", "racine": "أ ل ف", "sens": "mille", "def": "alf : mille ; ici plus largement, une durée incommensurable.", "gram": "nom de nombre, génitif construit" },
+        { "ar": "شَهْرٍ", "tr": "shahr", "racine": "ش ه ر", "sens": "mois", "def": "shahr : le mois ; au génitif indéfini.", "gram": "nom, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "تَنَزَّلُ الْمَلَائِكَةُ وَالرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
+      "tr": "tanazzalu l-malāʾikatu wa-r-rūḥu fīhā bi-idhni rabbihim min kulli amr",
+      "trad": "Les anges et l'Esprit descendent en elle avec la permission de leur Seigneur, munis de tous les décrets.",
+      "themes": ["anges", "Esprit", "ordre divin"],
+      "commentaire": "<em>al-malāʾika wa-r-rūḥ</em> (المَلَائِكَة وَالرُّوح) : les anges et l'Esprit. La plupart des commentateurs identifient <em>al-Rūḥ</em> (الرُّوح) à l'archange Gabriel, l'ange de la révélation, désigné par un titre supérieur. D'autres y voient une catégorie particulière d'anges plus nobles encore, ou les anges du Lotus de la limite (voir 53, 14-15). Certains y entendent aussi la Miséricorde divine elle-même (<em>raḥma</em>). <em>min kulli amr</em> : « avec tout décret » — pour chaque chose que Dieu a ordonnée pour l'année à venir, un ange descend en porter le sens. La nuit est ainsi traversée d'envoyés invisibles, et chaque souffle d'une vie s'y inscrit.",
+      "mots": [
+        { "ar": "تَنَزَّلُ", "tr": "tanazzalu", "racine": "ن ز ل", "sens": "descendent", "def": "tanazzala : forme dérivée de nazala, descendre par étapes, descendre nombreux ; à l'inaccompli.", "gram": "verbe inaccompli, 3ᵉ pers. fém. sing. (sujet pluriel non-rationnel)" },
+        { "ar": "الْمَلَائِكَةُ", "tr": "al-malāʾika", "racine": "م ل ك", "sens": "les anges", "def": "malāʾika : pluriel de malak/malaʾak, ange ; envoyés du monde subtil.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "وَالرُّوحُ", "tr": "wa-r-rūḥ", "racine": "ر و ح", "sens": "et l'Esprit", "def": "rūḥ : l'esprit, le souffle ; ici, l'Esprit par excellence — identifié majoritairement à Gabriel, ange de la révélation.", "gram": "nom, nominatif défini" },
+        { "ar": "فِيهَا", "tr": "fīhā", "racine": "—", "sens": "en elle", "def": "préposition fī + pronom suffixe féminin : en elle (la Nuit).", "gram": "préposition + pronom" },
+        { "ar": "بِإِذْنِ", "tr": "bi-idhni", "racine": "أ ذ ن", "sens": "avec la permission de", "def": "idhn : permission, autorisation ; préposition bi- + nom au génitif.", "gram": "préposition + nom, génitif construit" },
+        { "ar": "رَبِّهِم", "tr": "rabbihim", "racine": "ر ب ب", "sens": "leur Seigneur", "def": "rabb + pronom suffixe pluriel.", "gram": "nom + pronom suffixe, génitif" },
+        { "ar": "مِّن", "tr": "min", "racine": "—", "sens": "avec, pour", "def": "préposition min : ici, « avec », « pour ».", "gram": "préposition" },
+        { "ar": "كُلِّ", "tr": "kulli", "racine": "ك ل ل", "sens": "tout, chaque", "def": "kull : tout, chaque ; au génitif construit.", "gram": "nom, génitif construit" },
+        { "ar": "أَمْرٍ", "tr": "amr", "racine": "أ م ر", "sens": "décret, ordre", "def": "amr : ordre, décret, affaire ; ce que Dieu a ordonné.", "gram": "nom, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "سَلَامٌ هِيَ حَتَّىٰ مَطْلَعِ الْفَجْرِ",
+      "tr": "salāmun hiya ḥattā maṭlaʿi l-fajr",
+      "trad": "Elle est Paix jusqu'au lever de l'aube.",
+      "themes": ["paix", "aube"],
+      "commentaire": "<em>salām</em> (سَلَام) : la paix — pleine, sans manque. La syntaxe arabe est splendide : <em>salāmun hiya</em>, « paix elle est », met le mot « paix » en tête, comme si la nuit elle-même était d'abord une qualité, et seulement ensuite un temps. Les commentateurs disent : c'est la paix que les anges descendant apportent aux croyants veillant en prière ; c'est aussi que cette nuit, en elle-même, n'a rien de mal — pas un instant de discorde, du coucher du soleil jusqu'au <em>maṭlaʿ al-fajr</em> (مَطْلَع الفَجْر), le lever de l'aube. On peut y entendre encore la silence chargé qui précède l'apparition de la Parole divine dans le monde humain, et, par analogie, la quiétude du cœur que demande la vraie remémoration de Dieu.",
+      "mots": [
+        { "ar": "سَلَامٌ", "tr": "salām", "racine": "س ل م", "sens": "paix", "def": "salām : paix, salut, plénitude sans manque ; un des Noms divins.", "gram": "nom, nominatif indéfini" },
+        { "ar": "هِيَ", "tr": "hiya", "racine": "—", "sens": "elle est", "def": "pronom personnel féminin : elle (renvoie à la Nuit).", "gram": "pronom personnel" },
+        { "ar": "حَتَّىٰ", "tr": "ḥattā", "racine": "—", "sens": "jusqu'à", "def": "particule : jusqu'à.", "gram": "particule" },
+        { "ar": "مَطْلَعِ", "tr": "maṭlaʿi", "racine": "ط ل ع", "sens": "lever de", "def": "maṭlaʿ : le lieu ou l'instant du lever (d'un astre) ; au génitif construit.", "gram": "nom, génitif construit" },
+        { "ar": "الْفَجْرِ", "tr": "al-fajr", "racine": "ف ج ر", "sens": "l'aube", "def": "fajr : l'aube, la première lumière qui fend la nuit. Même racine que falaq.", "gram": "nom, génitif défini" }
+      ]
+    }
+  ]
+}

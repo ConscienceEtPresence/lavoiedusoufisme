@@ -1,0 +1,283 @@
+{
+  "n": 82,
+  "nom_ar": "الاِنْفِطَار",
+  "nom_tr": "al-Infiṭār",
+  "nom_fr": "The Cleaving",
+  "revelation": "Meccan",
+  "versets_count": 19,
+  "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
+  "intro": "Al-Infiṭār — “The Cleaving” — unfolds four images of apocalypse in four verses: <em>the heaven cleaves, the stars scatter, the seas overflow, the graves are overturned</em>. And then, in a flash, the sentence: <em>every soul shall know what it has done and what it has left undone</em>. Then comes the most singular apostrophe in the Quran to the sinner: <em>O man, what has deceived you concerning your most generous Lord?</em> And Qushayrī plunges into the extreme delicacy of this question. He imagines that the question itself contains its answer, like a secret breathed by divine generosity: <em>« It is Your generosity itself that deceived me; without Your generosity, I would not have committed the fault, for You see and You cover, You measure and You grant the delay. »</em> And he then cites one of his small poems — one of the rare passages in which he speaks in his own name: <em>« My Master says: Are you not ashamed of the ugliness of your acts? — I say: O my Master, be gentle, for the abundance of Your favours has emboldened me. »</em> The sūra closes on sovereignty: <em>the Affair, that Day, belongs to God</em>. Always His, certainly; but on that Day, no human pretension will any longer mask it.",
+  "themes": ["cleaving", "divine generosity and sin", "the soul that knows", "noble scribes", "Day of decision"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "إِذَا السَّمَاءُ انفَطَرَتْ",
+      "tr": "idhā s-samāʾu nfaṭarat",
+      "trad": "When the heaven shall cleave,",
+      "themes": ["cleaving of the heaven"],
+      "commentaire": "<em>infaṭarat</em> (انْفَطَرَتْ) — Qushayrī, in one word: “it has split.” Same root as <em>fiṭra</em> (original nature): the heaven returns, in cleaving, to its primordial state — that of before cosmic ordering.",
+      "mots": [
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "when", "def": "temporal particle.", "gram": "particle" },
+        { "ar": "السَّمَاءُ", "tr": "as-samāʾ", "racine": "س م و", "sens": "the heaven", "def": "samāʾ.", "gram": "noun, definite nominative" },
+        { "ar": "انفَطَرَتْ", "tr": "infaṭarat", "racine": "ف ط ر", "sens": "shall cleave", "def": "infaṭara: to split, to cleave. Same root as fiṭra.", "gram": "perfect verb, 3rd pers. fem. sing." }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَإِذَا الْكَوَاكِبُ انتَثَرَتْ",
+      "tr": "wa-idhā l-kawākibu ntatharat",
+      "trad": "when the stars shall scatter,",
+      "themes": ["scattered stars"],
+      "commentaire": "<em>intatharat</em>: they have scattered, like the beads of a broken necklace. The very structure of the heaven — its ornament (cf. sūra 85) — comes undone.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "and when", "def": "conjunction + particle.", "gram": "conjunction + particle" },
+        { "ar": "الْكَوَاكِبُ", "tr": "al-kawākib", "racine": "ك و ك ب", "sens": "the stars", "def": "kawākib: plural of kawkab; stars, planets.", "gram": "plural noun, definite nominative" },
+        { "ar": "انتَثَرَتْ", "tr": "intatharat", "racine": "ن ث ر", "sens": "have scattered", "def": "intathara: to be scattered.", "gram": "perfect verb, 3rd pers. fem. sing." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَإِذَا الْبِحَارُ فُجِّرَتْ",
+      "tr": "wa-idhā l-biḥāru fujjirat",
+      "trad": "when the seas shall overflow,",
+      "themes": ["unleashed seas"],
+      "commentaire": "<em>fujjirat</em>: have been burst open, one into another. Qushayrī: “opened one into the other.” The seas, hitherto separated by barriers, merge.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "and when", "def": "conjunction + particle.", "gram": "conjunction + particle" },
+        { "ar": "الْبِحَارُ", "tr": "al-biḥār", "racine": "ب ح ر", "sens": "the seas", "def": "biḥār: plural of baḥr.", "gram": "plural noun, definite nominative" },
+        { "ar": "فُجِّرَتْ", "tr": "fujjirat", "racine": "ف ج ر", "sens": "have been burst, unleashed", "def": "fajjara in the passive; to make gush, to open.", "gram": "passive perfect verb, 3rd pers. fem. sing." }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَإِذَا الْقُبُورُ بُعْثِرَتْ",
+      "tr": "wa-idhā l-qubūru buʿthirat",
+      "trad": "when the graves shall be overturned,",
+      "themes": ["opened tombs"],
+      "commentaire": "<em>buʿthirat</em> — a verb already met in sūra 100. Qushayrī: “its earth is overturned, and the dead in it are raised; what it contained of treasures and dead is brought out.”",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "and when", "def": "conjunction + particle.", "gram": "conjunction + particle" },
+        { "ar": "الْقُبُورُ", "tr": "al-qubūr", "racine": "ق ب ر", "sens": "the graves", "def": "qubūr: plural of qabr.", "gram": "plural noun, definite nominative" },
+        { "ar": "بُعْثِرَتْ", "tr": "buʿthirat", "racine": "ب ع ث ر", "sens": "shall be overturned", "def": "buʿthira: to be overturned, to be tipped out.", "gram": "passive perfect verb, 3rd pers. fem. sing." }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَتْ",
+      "tr": "ʿalimat nafsun mā qaddamat wa-akhkharat",
+      "trad": "every soul shall know what it has accomplished and what it has deferred.",
+      "themes": ["final knowing"],
+      "commentaire": "Response to the four preceding conditions. Qushayrī: “when these things come about, every soul knows what it has sent forward of good and evil.” <em>Qaddamat</em>: what it has sent ahead — its accomplished works. <em>Akhkharat</em>: what it has left behind — its delayed works, its postponements, the seeds it never planted.",
+      "mots": [
+        { "ar": "عَلِمَتْ", "tr": "ʿalimat", "racine": "ع ل م", "sens": "shall know", "def": "ʿalima: to know.", "gram": "perfect verb, 3rd pers. fem. sing." },
+        { "ar": "نَفْسٌ", "tr": "nafs", "racine": "ن ف س", "sens": "soul", "def": "nafs.", "gram": "noun, indefinite nominative" },
+        { "ar": "مَّا", "tr": "mā", "racine": "—", "sens": "what", "def": "relative pronoun.", "gram": "relative pronoun" },
+        { "ar": "قَدَّمَتْ", "tr": "qaddamat", "racine": "ق د م", "sens": "it sent forward", "def": "qaddama: to send ahead.", "gram": "perfect verb, 3rd pers. fem. sing." },
+        { "ar": "وَأَخَّرَتْ", "tr": "wa-akhkharat", "racine": "أ خ ر", "sens": "and deferred", "def": "akhkhara: to delay, to defer.", "gram": "perfect verb, 3rd pers. fem. sing." }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "يَا أَيُّهَا الْإِنسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَرِيمِ",
+      "tr": "yā ayyuhā l-insānu mā gharraka bi-rabbika l-karīm",
+      "trad": "O you, man! What then has deceived you concerning your most generous Lord,",
+      "themes": ["the great question", "deception", "generosity"],
+      "commentaire": "A prodigious verse. <em>mā gharraka</em>: what has deceived you? Qushayrī: “what has illusioned you, what has seduced you, to the point that you have acted in His disobediences?” And he offers the most delicate reading in the Quran: <em>« He has questioned him as though the question itself contained the answer. He said: Your generosity deceived me; without Your generosity, I would not have done it, because You see and You cover, You measure and You grant the delay. »</em> The sinner acknowledges: it is <em>because You are generous</em> that I have been emboldened to sin. And Qushayrī then cites one of his small poems — one of the rare passages where he speaks in his own name: <em>« My Master says: Are you not ashamed of what I see of the ugliness of your acts? / I say: O my Master, be gentle, for the abundance of Your favours has emboldened me. »</em>",
+      "mots": [
+        { "ar": "يَا أَيُّهَا", "tr": "yā ayyuhā", "racine": "—", "sens": "O", "def": "vocative particles.", "gram": "particles" },
+        { "ar": "الْإِنسَانُ", "tr": "al-insān", "racine": "أ ن س", "sens": "man", "def": "insān.", "gram": "noun, definite nominative" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "what", "def": "interrogative.", "gram": "interrogative" },
+        { "ar": "غَرَّكَ", "tr": "gharraka", "racine": "غ ر ر", "sens": "has deceived you", "def": "gharra: to deceive, to lure; with suffix pronoun.", "gram": "perfect verb + suffix pronoun, 3rd pers. masc. sing." },
+        { "ar": "بِرَبِّكَ", "tr": "bi-rabbika", "racine": "ر ب ب", "sens": "concerning your Lord", "def": "preposition + rabb + suffix pronoun.", "gram": "preposition + noun + pronoun, genitive" },
+        { "ar": "الْكَرِيمِ", "tr": "al-karīm", "racine": "ك ر م", "sens": "the Generous", "def": "Karīm: Generous; Divine Name.", "gram": "adjectival noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "الَّذِي خَلَقَكَ فَسَوَّاكَ فَعَدَلَكَ",
+      "tr": "alladhī khalaqaka fa-sawwāka fa-ʿadalak",
+      "trad": "Who created you, then modelled and harmoniously fashioned you?",
+      "themes": ["creation", "harmonisation", "balance"],
+      "commentaire": "Three verbs for the creation of man: <em>khalaqa</em> (to create), <em>sawwā</em> (to harmonise), <em>ʿadala</em> (to balance). This last one says the equity of the composition: no part is in excess, none lacking. The human body is, in essence, just.",
+      "mots": [
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "Who", "def": "relative pronoun.", "gram": "relative pronoun" },
+        { "ar": "خَلَقَكَ", "tr": "khalaqaka", "racine": "خ ل ق", "sens": "created you", "def": "khalaqa + suffix pronoun.", "gram": "perfect verb + suffix pronoun, 3rd pers. masc. sing." },
+        { "ar": "فَسَوَّاكَ", "tr": "fa-sawwāka", "racine": "س و ي", "sens": "then modelled you", "def": "sawwā: to harmonise; with suffix pronoun.", "gram": "perfect verb + suffix pronoun, 3rd pers. masc. sing." },
+        { "ar": "فَعَدَلَكَ", "tr": "fa-ʿadalak", "racine": "ع د ل", "sens": "and balanced you", "def": "ʿadala: to balance, to render just; with suffix pronoun.", "gram": "perfect verb + suffix pronoun, 3rd pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "فِي أَيِّ صُورَةٍ مَّا شَاءَ رَكَّبَكَ",
+      "tr": "fī ayyi ṣūratin mā shāʾa rakkabak",
+      "trad": "He has composed you in whatever form He has willed.",
+      "themes": ["willed form"],
+      "commentaire": "Qushayrī: “He has composed your members along the paths of wisdom, in whatever form He has willed — beauty or homeliness, length or shortness.” And he opens a deeper reading: <em>ṣūra</em> here may signify the inward form, the spiritual state. In whichever state He has willed to place you — happiness or wretchedness, faith or disobedience — He has set you there.",
+      "mots": [
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "in", "def": "preposition.", "gram": "preposition" },
+        { "ar": "أَيِّ", "tr": "ayyi", "racine": "—", "sens": "whatever", "def": "indeterminate particle.", "gram": "particle" },
+        { "ar": "صُورَةٍ", "tr": "ṣūratin", "racine": "ص و ر", "sens": "form", "def": "ṣūra: form.", "gram": "noun, indefinite genitive" },
+        { "ar": "مَّا", "tr": "mā", "racine": "—", "sens": "that", "def": "subordinating particle.", "gram": "particle" },
+        { "ar": "شَاءَ", "tr": "shāʾa", "racine": "ش ي أ", "sens": "He has willed", "def": "shāʾa: to will.", "gram": "perfect verb, 3rd pers. masc. sing." },
+        { "ar": "رَكَّبَكَ", "tr": "rakkabak", "racine": "ر ك ب", "sens": "He has composed you", "def": "rakkaba: to compose, to assemble.", "gram": "perfect verb + suffix pronoun, 3rd pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "كَلَّا بَلْ تُكَذِّبُونَ بِالدِّينِ",
+      "tr": "kallā bal tukadhdhibūna bi-d-dīn",
+      "trad": "On the contrary, you treat the Judgment as a lie",
+      "themes": ["denial of Judgment"],
+      "commentaire": "Qushayrī: “the Judgment, that is, the Resurrection.” After the reminder of favours, the point of denial: one has received all this grace — and one holds the Judgment as a lie.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "no!", "def": "refutation particle.", "gram": "particle" },
+        { "ar": "بَلْ", "tr": "bal", "racine": "—", "sens": "on the contrary", "def": "rectification particle.", "gram": "particle" },
+        { "ar": "تُكَذِّبُونَ", "tr": "tukadhdhibūn", "racine": "ك ذ ب", "sens": "you treat as a lie", "def": "kadhdhaba.", "gram": "imperfect verb, 2nd pers. masc. plur." },
+        { "ar": "بِالدِّينِ", "tr": "bi-d-dīn", "racine": "د ي ن", "sens": "the Judgment", "def": "dīn: here, Judgment.", "gram": "preposition + noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَإِنَّ عَلَيْكُمْ لَحَافِظِينَ",
+      "tr": "wa-inna ʿalaykum la-ḥāfiẓīn",
+      "trad": "while keepers are set over you",
+      "themes": ["appointed keepers"],
+      "commentaire": "<em>ḥāfiẓīn</em>: keepers. Qushayrī: “these are the angels who write down the deeds. He frightened them by the sight of the angels and their writing of deeds — yet if they truly knew the matter, their guarding against transgressions, through the sight of the True and shame before His gaze, would be more complete than through the sight of the angels.” Subtle: modesty before God Himself ought to be stronger than modesty before the scribe-angels. But since we measure only what is visible, God speaks to us first of the visible.",
+      "mots": [
+        { "ar": "وَإِنَّ", "tr": "wa-inna", "racine": "—", "sens": "and truly", "def": "conjunction + particle.", "gram": "conjunction + particle" },
+        { "ar": "عَلَيْكُمْ", "tr": "ʿalaykum", "racine": "—", "sens": "over you", "def": "preposition + suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "لَحَافِظِينَ", "tr": "la-ḥāfiẓīn", "racine": "ح ف ظ", "sens": "keepers", "def": "ḥāfiẓīn: keepers.", "gram": "particle + active plural participle, accusative" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "كِرَامًا كَاتِبِينَ",
+      "tr": "kirāman kātibīn",
+      "trad": "noble scribes",
+      "themes": ["angelic scribes"],
+      "commentaire": "<em>kirām kātibīn</em>: noble scribes. Quranic tradition of the two angels who inscribe good deeds on the right and bad deeds on the left.",
+      "mots": [
+        { "ar": "كِرَامًا", "tr": "kirāman", "racine": "ك ر م", "sens": "noble", "def": "kirām: plural of karīm.", "gram": "adjectival plural noun, accusative" },
+        { "ar": "كَاتِبِينَ", "tr": "kātibīn", "racine": "ك ت ب", "sens": "scribes", "def": "kātib: scribe.", "gram": "active plural participle, accusative" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "يَعْلَمُونَ مَا تَفْعَلُونَ",
+      "tr": "yaʿlamūna mā tafʿalūn",
+      "trad": "who know what you do.",
+      "themes": ["knowing of angels"],
+      "commentaire": "A simple, and formidable, phrase. Their knowing has no delay. At the very moment the act is done, it is <em>already</em> known.",
+      "mots": [
+        { "ar": "يَعْلَمُونَ", "tr": "yaʿlamūn", "racine": "ع ل م", "sens": "they know", "def": "ʿalima.", "gram": "imperfect verb, 3rd pers. masc. plur." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "what", "def": "relative pronoun.", "gram": "relative pronoun" },
+        { "ar": "تَفْعَلُونَ", "tr": "tafʿalūn", "racine": "ف ع ل", "sens": "you do", "def": "faʿala.", "gram": "imperfect verb, 2nd pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "إِنَّ الْأَبْرَارَ لَفِي نَعِيمٍ",
+      "tr": "inna l-abrāra la-fī naʿīm",
+      "trad": "Truly, the just shall be in a place of delight",
+      "themes": ["delight of the just"],
+      "commentaire": "A verse anticipating the finale of sūra 83. But Qushayrī here gives the <em>present</em> reading: “The just are today in the breath of <em>dhikr</em>, in intimacy at their hours of seclusion.” <em>Naʿīm</em> does not begin tomorrow; it begins this very day in the heart that remembers.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "truly", "def": "particle.", "gram": "particle" },
+        { "ar": "الْأَبْرَارَ", "tr": "al-abrār", "racine": "ب ر ر", "sens": "the just", "def": "abrār.", "gram": "plural noun, definite accusative" },
+        { "ar": "لَفِي", "tr": "la-fī", "racine": "—", "sens": "are in", "def": "particle + preposition.", "gram": "particles" },
+        { "ar": "نَعِيمٍ", "tr": "naʿīm", "racine": "ن ع م", "sens": "delight", "def": "naʿīm.", "gram": "noun, indefinite genitive" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "وَإِنَّ الْفُجَّارَ لَفِي جَحِيمٍ",
+      "tr": "wa-inna l-fujjāra la-fī jaḥīm",
+      "trad": "and the libertines in a furnace",
+      "themes": ["furnace of libertines"],
+      "commentaire": "And Qushayrī gives the present reading, in mirror: “the libertines are in the narrowness of their hearts and in their displeasure with the decree, in the darkness of their planning (<em>tadbīr</em>, تَدْبِير) and the narrowness of their choosing (<em>ikhtiyār</em>, اخْتِيَار).” The <em>jaḥīm</em> of the libertine also begins down here: it is the inner narrowness of one who wants to control everything.",
+      "mots": [
+        { "ar": "وَإِنَّ", "tr": "wa-inna", "racine": "—", "sens": "and truly", "def": "conjunction + particle.", "gram": "conjunction + particle" },
+        { "ar": "الْفُجَّارَ", "tr": "al-fujjār", "racine": "ف ج ر", "sens": "the libertines", "def": "fujjār.", "gram": "plural noun, definite accusative" },
+        { "ar": "لَفِي", "tr": "la-fī", "racine": "—", "sens": "are in", "def": "particle + preposition.", "gram": "particles" },
+        { "ar": "جَحِيمٍ", "tr": "jaḥīm", "racine": "ج ح م", "sens": "a furnace", "def": "jaḥīm.", "gram": "noun, indefinite genitive" }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "يَصْلَوْنَهَا يَوْمَ الدِّينِ",
+      "tr": "yaṣlawnahā yawma d-dīn",
+      "trad": "where they shall burn the Day of Judgment",
+      "themes": ["combustion"],
+      "commentaire": "The Fire of the Day is the visible manifestation of the Fire already lit in the heart.",
+      "mots": [
+        { "ar": "يَصْلَوْنَهَا", "tr": "yaṣlawnahā", "racine": "ص ل ي", "sens": "they shall burn in it", "def": "ṣaliya + suffix pronoun.", "gram": "imperfect verb + suffix pronoun, 3rd pers. masc. plur." },
+        { "ar": "يَوْمَ", "tr": "yawma", "racine": "ي و م", "sens": "the Day of", "def": "yawm.", "gram": "noun, adverbial accusative" },
+        { "ar": "الدِّينِ", "tr": "ad-dīn", "racine": "د ي ن", "sens": "of Judgment", "def": "dīn.", "gram": "noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "وَمَا هُمْ عَنْهَا بِغَائِبِينَ",
+      "tr": "wa-mā hum ʿanhā bi-ghāʾibīn",
+      "trad": "without being able to absent themselves from it.",
+      "themes": ["no escape"],
+      "commentaire": "<em>ghāʾibīn</em>: absent. They shall have no power to absent themselves from the Fire. The verse names the opposite of usual human evasion: here, one can no longer look away.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "and not", "def": "conjunction + negation.", "gram": "conjunction + particle" },
+        { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "they", "def": "personal pronoun.", "gram": "pronoun" },
+        { "ar": "عَنْهَا", "tr": "ʿanhā", "racine": "—", "sens": "from it", "def": "preposition + suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "بِغَائِبِينَ", "tr": "bi-ghāʾibīn", "racine": "غ ي ب", "sens": "absent", "def": "ghāʾib: absent.", "gram": "preposition + active plural participle, genitive" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "وَمَا أَدْرَاكَ مَا يَوْمُ الدِّينِ",
+      "tr": "wa-mā adrāka mā yawmu d-dīn",
+      "trad": "But what will let you know what the Day of Judgment is?",
+      "themes": ["amplification"],
+      "commentaire": "Qushayrī: “a formula uttered with amplifying value (<em>tahwīl</em>).”",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "and what", "def": "conjunction + interrogative.", "gram": "conjunction + interrogative" },
+        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "will let you know", "def": "adrā + suffix pronoun.", "gram": "perfect verb + suffix pronoun, 3rd pers. masc. sing." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "what is", "def": "interrogative.", "gram": "interrogative" },
+        { "ar": "يَوْمُ", "tr": "yawmu", "racine": "ي و م", "sens": "the Day of", "def": "yawm.", "gram": "noun, construct nominative" },
+        { "ar": "الدِّينِ", "tr": "ad-dīn", "racine": "د ي ن", "sens": "of Judgment", "def": "dīn.", "gram": "noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "ثُمَّ مَا أَدْرَاكَ مَا يَوْمُ الدِّينِ",
+      "tr": "thumma mā adrāka mā yawmu d-dīn",
+      "trad": "Once again: what will let you know what the Day of Judgment is?",
+      "themes": ["repetition of gravity"],
+      "commentaire": "The repetition is not redundancy: it underlines, as in verses 5-6 of sūra 94, that the matter stated deserves to be heard twice. The amplification repeats itself so that the ear may halt at it.",
+      "mots": [
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "then", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "what", "def": "interrogative.", "gram": "interrogative" },
+        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "will let you know", "def": "see v. 17.", "gram": "perfect verb + suffix pronoun" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "what is", "def": "interrogative.", "gram": "interrogative" },
+        { "ar": "يَوْمُ", "tr": "yawmu", "racine": "ي و م", "sens": "the Day of", "def": "yawm.", "gram": "noun, construct nominative" },
+        { "ar": "الدِّينِ", "tr": "ad-dīn", "racine": "د ي ن", "sens": "of Judgment", "def": "dīn.", "gram": "noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْئًا ۖ وَالْأَمْرُ يَوْمَئِذٍ لِّلَّهِ",
+      "tr": "yawma lā tamliku nafsun li-nafsin shayʾan wa-l-amru yawmaʾidhin li-Llāh",
+      "trad": "That Day, no soul shall have any power to help another. And the decision, that day, belongs to God!",
+      "themes": ["ultimate sovereignty"],
+      "commentaire": "An absolute closing verse. Qushayrī: “The Affair belongs to God on that Day, and belongs to Him before and after. But <em>on that Day</em>, the pretensions fall, for the matter becomes clear, and knowings become <em>necessary</em>” — that is, they impose themselves on all without being refusable any longer. Today one can deny; tomorrow one will know, and one will no longer be able to undo it. Knowing becomes a forced evidence. The sūra, opened upon the heaven that cleaves, closes on this evidence that does not cleave.",
+      "mots": [
+        { "ar": "يَوْمَ", "tr": "yawma", "racine": "ي و م", "sens": "the Day when", "def": "yawm.", "gram": "noun, adverbial accusative" },
+        { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "not", "def": "negation particle.", "gram": "particle" },
+        { "ar": "تَمْلِكُ", "tr": "tamliku", "racine": "م ل ك", "sens": "she has any power", "def": "malaka: to possess, to have power.", "gram": "imperfect verb, 3rd pers. fem. sing." },
+        { "ar": "نَفْسٌ", "tr": "nafs", "racine": "ن ف س", "sens": "a soul", "def": "nafs.", "gram": "noun, indefinite nominative" },
+        { "ar": "لِّنَفْسٍ", "tr": "li-nafs", "racine": "ن ف س", "sens": "for a soul", "def": "preposition + nafs.", "gram": "preposition + noun, indefinite genitive" },
+        { "ar": "شَيْئًا", "tr": "shayʾan", "racine": "ش ي أ", "sens": "anything", "def": "shayʾ: thing.", "gram": "noun, indefinite accusative" },
+        { "ar": "وَالْأَمْرُ", "tr": "wa-l-amr", "racine": "أ م ر", "sens": "and the Affair", "def": "amr: order, affair, decision.", "gram": "conjunction + noun, definite nominative" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that Day", "def": "adverb.", "gram": "temporal adverb" },
+        { "ar": "لِّلَّهِ", "tr": "li-Llāh", "racine": "أ ل ه", "sens": "to God", "def": "preposition + Allāh.", "gram": "preposition + noun, genitive" }
+      ]
+    }
+  ]
+}

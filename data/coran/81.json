@@ -1,0 +1,409 @@
+{
+  "n": 81,
+  "nom_ar": "التَّكْوِير",
+  "nom_tr": "al-Takwīr",
+  "nom_fr": "Le Repli",
+  "revelation": "mecquoise",
+  "versets_count": 29,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Takwīr — « Le Repli » — ouvre par un chapelet de douze conditions, toutes en <em>lorsque</em>, qui dressent le tableau total du <em>yawm al-qiyāma</em> : soleil replié, étoiles ternies, montagnes en marche, chamelles pleines délaissées, bêtes sauvages rassemblées, mers en ébullition, âmes accouplées, fillette enterrée vive interrogée sur le crime de son meurtre, feuillets déployés, ciel dépouillé, Fournaise attisée, Paradis rapproché. Au bout de cette cascade, une réponse : <em>chaque âme saura ce qu'elle a préparé</em>. Mais Qushayrī ouvre alors une lecture stupéfiante : ces conditions ne décrivent pas seulement la Résurrection cosmique de demain — elles décrivent aussi <em>la résurrection intérieure que vivent les soufis aujourd'hui</em>. « Lorsque ces états les saisissent et que ces sens se manifestent à leurs cœurs, ces choses se produisent. Leurs soleils connaissent parfois une éclipse, quand ils sont renvoyés [au qabḍ après le basṭ] ; les étoiles de leurs sciences ternissent par l'emprise de la passion sur les disciples. <em>Et à ce moment-là, chaque âme sait ce qu'elle a préparé.</em> » Puis viennent les serments par les planètes qui s'évanouissent, par la nuit qui tombe, par l'aube qui exhale son souffle — pour proclamer que cette Parole est celle d'un <em>messager noble</em> (Gabriel), et que <em>votre compagnon</em> (Muḥammad) <em>l'a vu à l'horizon clair</em>. Et la sourate s'achève sur la grande question : <em>fa-ayna tadhhabūn — où donc allez-vous ?</em>",
+  "themes": ["Résurrection cosmique", "qiyāma intérieure", "messager noble", "Muḥammad et Gabriel", "où donc allez-vous ?"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "إِذَا الشَّمْسُ كُوِّرَتْ",
+      "tr": "idhā sh-shamsu kuwwirat",
+      "trad": "Lorsque le soleil sera replié,",
+      "themes": ["soleil replié"],
+      "commentaire": "<em>kuwwirat</em> : a été enroulée, repliée sur elle-même comme un turban. Qushayrī, en un mot : « sa lumière s'est évanouie ». Image saisissante : le soleil ne s'éteint pas — il <em>se replie</em>, comme on plie une étoffe lumineuse.",
+      "mots": [
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "الشَّمْسُ", "tr": "ash-shams", "racine": "ش م س", "sens": "le soleil", "def": "shams.", "gram": "nom, nominatif défini" },
+        { "ar": "كُوِّرَتْ", "tr": "kuwwirat", "racine": "ك و ر", "sens": "aura été repliée", "def": "kawwara : enrouler ; au passif accompli féminin.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَإِذَا النُّجُومُ انكَدَرَتْ",
+      "tr": "wa-idhā n-nujūmu nkadarat",
+      "trad": "lorsque les étoiles seront ternies,",
+      "themes": ["étoiles ternies"],
+      "commentaire": "<em>inkadarat</em> : Qushayrī : « elles se sont dispersées et sont tombées sur la terre. » La racine <em>k-d-r</em> dit le trouble, l'opacité — étoiles dont la clarté se brouille.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "النُّجُومُ", "tr": "an-nujūm", "racine": "ن ج م", "sens": "les étoiles", "def": "nujūm : pluriel de najm.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "انكَدَرَتْ", "tr": "inkadarat", "racine": "ك د ر", "sens": "se seront ternies", "def": "inkadara : se troubler, se ternir, tomber.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَإِذَا الْجِبَالُ سُيِّرَتْ",
+      "tr": "wa-idhā l-jibālu suyyirat",
+      "trad": "lorsque les montagnes seront mises en marche,",
+      "themes": ["montagnes en marche"],
+      "commentaire": "Qushayrī : « leurs sommets en ont été ôtés. » Les montagnes — image même de l'immuable — se mettent à marcher. Si elles bougent, qu'est-ce qui reste ferme ?",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الْجِبَالُ", "tr": "al-jibāl", "racine": "ج ب ل", "sens": "les montagnes", "def": "jibāl : pluriel de jabal.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "سُيِّرَتْ", "tr": "suyyirat", "racine": "س ي ر", "sens": "seront mises en marche", "def": "sayyara : faire marcher ; au passif accompli féminin.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَإِذَا الْعِشَارُ عُطِّلَتْ",
+      "tr": "wa-idhā l-ʿishāru ʿuṭṭilat",
+      "trad": "lorsque les chamelles près de mettre bas seront délaissées,",
+      "themes": ["bétail abandonné"],
+      "commentaire": "<em>al-ʿishār</em> (العِشَار) : Qushayrī : « ce sont les chamelles pleines dont la gestation est de dix mois. » Pour les Arabes du désert, ces chamelles étaient le bien le plus précieux. <em>ʿuṭṭilat</em> : sont laissées en jachère, sans soin. Qushayrī : « Délaissées ce jour-là à cause de l'intensité de l'épouvante. » L'image dit l'abandon de toute richesse devant l'urgence absolue.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الْعِشَارُ", "tr": "al-ʿishār", "racine": "ع ش ر", "sens": "les chamelles pleines", "def": "ʿishār : chamelles à dix mois de gestation.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "عُطِّلَتْ", "tr": "ʿuṭṭilat", "racine": "ع ط ل", "sens": "seront délaissées", "def": "ʿaṭṭala au passif ; laisser en jachère.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَإِذَا الْوُحُوشُ حُشِرَتْ",
+      "tr": "wa-idhā l-wuḥūshu ḥushirat",
+      "trad": "lorsque les bêtes sauvages seront rassemblées,",
+      "themes": ["bêtes sauvages rassemblées"],
+      "commentaire": "<em>al-wuḥūsh</em> : les bêtes sauvages. Qushayrī : « ramenées à la vie et rassemblées à la Résurrection pour que justice soit faite entre elles : il sera fait justice à la [bête] sans cornes contre celle qui en a (selon la parole d'Ibn ʿAbbās). Et c'est par mode d'exemple, car il n'y a pas de responsabilité morale sur les bêtes. » Au Jour, même la justice animale est rendue : aucun tort n'est négligé.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الْوُحُوشُ", "tr": "al-wuḥūsh", "racine": "و ح ش", "sens": "les bêtes sauvages", "def": "wuḥūsh : pluriel de waḥsh.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "حُشِرَتْ", "tr": "ḥushirat", "racine": "ح ش ر", "sens": "auront été rassemblées", "def": "ḥashara au passif ; rassembler.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "وَإِذَا الْبِحَارُ سُجِّرَتْ",
+      "tr": "wa-idhā l-biḥāru sujjirat",
+      "trad": "lorsque les mers seront en ébullition,",
+      "themes": ["mers brûlées"],
+      "commentaire": "<em>sujjirat</em> : Qushayrī : « ont été enflammées — de <em>sajartu al-tannūr</em>, « j'ai chauffé le four ». » L'image est terrible : les océans deviennent fournaises.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الْبِحَارُ", "tr": "al-biḥār", "racine": "ب ح ر", "sens": "les mers", "def": "biḥār.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "سُجِّرَتْ", "tr": "sujjirat", "racine": "س ج ر", "sens": "seront chauffées", "def": "sajara : chauffer (un four).", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَإِذَا النُّفُوسُ زُوِّجَتْ",
+      "tr": "wa-idhā n-nufūsu zuwwijat",
+      "trad": "lorsque les âmes seront accouplées,",
+      "themes": ["âmes accouplées"],
+      "commentaire": "<em>zuwwijat</em> : appariées à leurs semblables. Qushayrī : « appariées avec leurs époux. Et le hadith dit : « Chaque homme est joint au groupe dont il accomplissait les œuvres semblables. » » Chacun se retrouve avec ses pairs spirituels — ce sera, déjà, une partie de la sentence.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "النُّفُوسُ", "tr": "an-nufūs", "racine": "ن ف س", "sens": "les âmes", "def": "nufūs : pluriel de nafs.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "زُوِّجَتْ", "tr": "zuwwijat", "racine": "ز و ج", "sens": "auront été accouplées", "def": "zawwaja au passif ; apparier.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "وَإِذَا الْمَوْءُودَةُ سُئِلَتْ",
+      "tr": "wa-idhā l-mawʾūdatu suʾilat",
+      "trad": "lorsqu'on demandera à la fillette enterrée vivante",
+      "themes": ["mawʾūda", "infanticide"],
+      "commentaire": "<em>al-mawʾūda</em> (المَوْءُودَة) : la fillette enterrée vive — pratique connue de l'Arabie pré-islamique, où l'on enterrait parfois les filles à la naissance par crainte de la honte ou de la pauvreté. Le Coran abolit absolument la pratique, et ici fait de la victime le sujet du procès, non l'objet : c'est <em>elle</em> qu'on interroge. La sourate retourne ainsi le rapport bourreau/victime.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الْمَوْءُودَةُ", "tr": "al-mawʾūda", "racine": "و أ د", "sens": "la fillette enterrée vivante", "def": "mawʾūda : participe passif de waʾada ; enterrée vive.", "gram": "participe passif féminin, nominatif défini" },
+        { "ar": "سُئِلَتْ", "tr": "suʾilat", "racine": "س أ ل", "sens": "il lui sera demandé", "def": "saʾala au passif accompli féminin.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "بِأَيِّ ذَنبٍ قُتِلَتْ",
+      "tr": "bi-ayyi dhanbin qutilat",
+      "trad": "pour quel crime elle a été tuée,",
+      "themes": ["accusation portée"],
+      "commentaire": "La question est adressée à la fillette, non au meurtrier : <em>pour quel crime as-tu été tuée ?</em> En grammaire arabe, c'est encore plus saisissant : c'est elle qu'on interroge, comme si l'on attendait d'elle la réponse — sachant qu'elle n'en a aucune. La question, en sa structure même, est la condamnation du meurtrier.",
+      "mots": [
+        { "ar": "بِأَيِّ", "tr": "bi-ayyi", "racine": "—", "sens": "pour quel", "def": "préposition + ayy.", "gram": "préposition + nom" },
+        { "ar": "ذَنبٍ", "tr": "dhanbin", "racine": "ذ ن ب", "sens": "crime", "def": "dhanb : péché, crime.", "gram": "nom, génitif indéfini" },
+        { "ar": "قُتِلَتْ", "tr": "qutilat", "racine": "ق ت ل", "sens": "elle a été tuée", "def": "qatala au passif accompli féminin.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَإِذَا الصُّحُفُ نُشِرَتْ",
+      "tr": "wa-idhā ṣ-ṣuḥufu nushirat",
+      "trad": "lorsque les feuillets [sacrés] seront déployés,",
+      "themes": ["feuillets ouverts"],
+      "commentaire": "<em>nushirat</em> — Qushayrī, en un mot : « ouverts, étendus ». Les registres des actes, jusqu'alors fermés, sont déroulés. Chaque âme y lit son histoire.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الصُّحُفُ", "tr": "aṣ-ṣuḥuf", "racine": "ص ح ف", "sens": "les feuillets", "def": "ṣuḥuf : pluriel de ṣaḥīfa.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "نُشِرَتْ", "tr": "nushirat", "racine": "ن ش ر", "sens": "auront été déployés", "def": "nashara au passif ; déployer.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "وَإِذَا السَّمَاءُ كُشِطَتْ",
+      "tr": "wa-idhā s-samāʾu kushiṭat",
+      "trad": "lorsque le ciel sera dépouillé de son enveloppe,",
+      "themes": ["ciel arraché"],
+      "commentaire": "<em>kushiṭat</em> : Qushayrī : « arrachée et repliée ». Le verbe désigne l'écorchement — on retire au ciel sa peau comme à une bête sa fourrure.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "السَّمَاءُ", "tr": "as-samāʾ", "racine": "س م و", "sens": "le ciel", "def": "samāʾ.", "gram": "nom, nominatif défini" },
+        { "ar": "كُشِطَتْ", "tr": "kushiṭat", "racine": "ك ش ط", "sens": "aura été dépouillé", "def": "kashaṭa au passif ; écorcher, dépouiller.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "وَإِذَا الْجَحِيمُ سُعِّرَتْ",
+      "tr": "wa-idhā l-jaḥīmu suʿʿirat",
+      "trad": "lorsque la Fournaise sera attisée,",
+      "themes": ["Fournaise attisée"],
+      "commentaire": "<em>suʿʿirat</em> : enflammée, attisée jusqu'à son maximum.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الْجَحِيمُ", "tr": "al-jaḥīm", "racine": "ج ح م", "sens": "la Fournaise", "def": "jaḥīm.", "gram": "nom, nominatif défini" },
+        { "ar": "سُعِّرَتْ", "tr": "suʿʿirat", "racine": "س ع ر", "sens": "aura été attisée", "def": "saʿʿara au passif ; attiser.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "وَإِذَا الْجَنَّةُ أُزْلِفَتْ",
+      "tr": "wa-idhā l-jannatu uzlifat",
+      "trad": "lorsque le Paradis sera rapproché,",
+      "themes": ["Paradis approché"],
+      "commentaire": "<em>uzlifat</em> : Qushayrī : « rapprochée des pieux. » Le Paradis n'attend pas — il vient au-devant de ceux qui l'ont préparé.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الْجَنَّةُ", "tr": "al-janna", "racine": "ج ن ن", "sens": "le Paradis", "def": "janna.", "gram": "nom, nominatif défini" },
+        { "ar": "أُزْلِفَتْ", "tr": "uzlifat", "racine": "ز ل ف", "sens": "aura été rapproché", "def": "azlafa au passif ; rapprocher.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "عَلِمَتْ نَفْسٌ مَّا أَحْضَرَتْ",
+      "tr": "ʿalimat nafsun mā aḥḍarat",
+      "trad": "toute âme saura ce qu'elle a préparé.",
+      "themes": ["savoir final", "qiyāma intérieure"],
+      "commentaire": "Verset-réponse de la sourate, qui boucle les douze conditions. Mais Qushayrī ouvre alors une lecture qui change tout : « <em>Dans la qiyāma intérieure de ce groupe</em> [les soufis] <em>au moment où ces états les saisissent et où ces sens se manifestent à leurs cœurs, ces choses se produisent.</em> Parmi leurs états divers : leurs soleils connaissent parfois une éclipse, quand ils sont renvoyés [au qabḍ après le basṭ] ; les étoiles de leurs sciences peuvent ternir par l'emprise de la passion sur les disciples dans certains états. <em>Alors, chaque âme sait ce qu'elle a préparé.</em> » Toute la sourate, lue à ce niveau, devient le tableau d'une <em>résurrection présente</em> qui se vit dans le cœur du chemineau : il connaît, dans ces traversées, des éclipses, des opacités, des fournaises et des paradis approchés. Et chaque traversée le ramène à ce savoir : <em>ce que j'ai préparé</em>.",
+      "mots": [
+        { "ar": "عَلِمَتْ", "tr": "ʿalimat", "racine": "ع ل م", "sens": "saura", "def": "ʿalima.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." },
+        { "ar": "نَفْسٌ", "tr": "nafs", "racine": "ن ف س", "sens": "une âme", "def": "nafs.", "gram": "nom, nominatif indéfini" },
+        { "ar": "مَّا", "tr": "mā", "racine": "—", "sens": "ce que", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "أَحْضَرَتْ", "tr": "aḥḍarat", "racine": "ح ض ر", "sens": "elle a préparé, présenté", "def": "aḥḍara : faire venir, préparer.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "فَلَا أُقْسِمُ بِالْخُنَّسِ",
+      "tr": "fa-lā uqsimu bi-l-khunnas",
+      "trad": "Non !... J'en jure par les planètes",
+      "themes": ["serment astral"],
+      "commentaire": "<em>al-khunnas</em> (الخُنَّس) : Qushayrī : « les étoiles quand elles se cachent. » Selon certaines lectures, ce sont les cinq planètes errantes — Mercure, Vénus, Mars, Jupiter, Saturne — qui « se cachent » de jour. Le mot vient de <em>khanasa</em>, « se retirer, se cacher ». La sourate jure par ces astres furtifs.",
+      "mots": [
+        { "ar": "فَلَا", "tr": "fa-lā", "racine": "—", "sens": "non !", "def": "fa- + lā emphatique du serment.", "gram": "particules" },
+        { "ar": "أُقْسِمُ", "tr": "uqsimu", "racine": "ق س م", "sens": "je jure", "def": "aqsama.", "gram": "verbe inaccompli, 1ʳᵉ pers. sing." },
+        { "ar": "بِالْخُنَّسِ", "tr": "bi-l-khunnas", "racine": "خ ن س", "sens": "par les furtives", "def": "khunnas : pluriel ; celles qui se cachent.", "gram": "préposition + nom pluriel, génitif défini" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "الْجَوَارِ الْكُنَّسِ",
+      "tr": "al-jawāri l-kunnas",
+      "trad": "qui gravitent et disparaissent,",
+      "themes": ["course astrale"],
+      "commentaire": "<em>al-jawār al-kunnas</em> : les courantes et les rentrantes. <em>Jārī</em> dit le cours fluide ; <em>kunnas</em>, la rentrée dans la tanière (comme l'antilope rentre dans son gîte). Image splendide des planètes en parcours, qui paraissent, gravitent et se retirent.",
+      "mots": [
+        { "ar": "الْجَوَارِ", "tr": "al-jawār", "racine": "ج ر ي", "sens": "celles qui gravitent", "def": "jārī : courant, fluide.", "gram": "participe actif pluriel, génitif défini" },
+        { "ar": "الْكُنَّسِ", "tr": "al-kunnas", "racine": "ك ن س", "sens": "et rentrent", "def": "kunnas : pluriel ; celles qui rentrent dans leur gîte.", "gram": "nom pluriel, génitif défini" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "وَاللَّيْلِ إِذَا عَسْعَسَ",
+      "tr": "wa-l-layli idhā ʿasʿas",
+      "trad": "par la nuit quand elle tombe,",
+      "themes": ["nuit qui vient"],
+      "commentaire": "<em>ʿasʿas</em> : Qushayrī : « il est venu et a avancé. » Verbe rare et beau, redoublé pour mimer le mouvement lent d'arrivée de la nuit.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "اللَّيْلِ", "tr": "al-layl", "racine": "ل ي ل", "sens": "la nuit", "def": "layl.", "gram": "nom, génitif défini" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsqu'", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "عَسْعَسَ", "tr": "ʿasʿas", "racine": "ع س ع س", "sens": "elle s'avance", "def": "ʿasʿasa : avancer, venir, se retirer (verbe à double sens).", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "وَالصُّبْحِ إِذَا تَنَفَّسَ",
+      "tr": "wa-ṣ-ṣubḥi idhā tanaffas",
+      "trad": "par l'aube quand elle exhale son souffle :",
+      "themes": ["aube qui souffle"],
+      "commentaire": "<em>tanaffasa</em> : il a respiré. Qushayrī : « il est sorti du ventre de la nuit. » Image splendide : l'aube est la nuit qui prend sa première respiration, qui exhale son souffle premier après la longue retenue.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "الصُّبْحِ", "tr": "aṣ-ṣubḥ", "racine": "ص ب ح", "sens": "l'aube", "def": "ṣubḥ : aube.", "gram": "nom, génitif défini" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsqu'", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "تَنَفَّسَ", "tr": "tanaffas", "racine": "ن ف س", "sens": "elle exhale son souffle", "def": "tanaffasa : respirer.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+      "tr": "innahu la-qawlu rasūlin karīm",
+      "trad": "cette Parole est vraiment celle d'un noble Envoyé,",
+      "themes": ["messager noble"],
+      "commentaire": "Réponse aux serments : <em>« Ce Coran est la parole d'un Envoyé noble — c'est-à-dire Gabriel, paix sur lui »</em> (Qushayrī). Il s'agit ici de Gabriel comme transmetteur, non du Prophète Muḥammad qui sera nommé un peu plus loin.",
+      "mots": [
+        { "ar": "إِنَّهُ", "tr": "innahu", "racine": "—", "sens": "certes ceci", "def": "inna + pronom suffixe.", "gram": "particule + pronom" },
+        { "ar": "لَقَوْلُ", "tr": "la-qawlu", "racine": "ق و ل", "sens": "est assurément la parole", "def": "particule + qawl.", "gram": "particule + nom, nominatif construit" },
+        { "ar": "رَسُولٍ", "tr": "rasūlin", "racine": "ر س ل", "sens": "d'un envoyé", "def": "rasūl.", "gram": "nom, génitif indéfini" },
+        { "ar": "كَرِيمٍ", "tr": "karīm", "racine": "ك ر م", "sens": "noble", "def": "karīm.", "gram": "nom adjectival, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "ذِي قُوَّةٍ عِندَ ذِي الْعَرْشِ مَكِينٍ",
+      "tr": "dhī quwwatin ʿinda dhī l-ʿarshi makīn",
+      "trad": "doué d'une grande force et d'un rang solide auprès du Maître du Trône,",
+      "themes": ["puissance de Gabriel"],
+      "commentaire": "<em>makīn</em> : Qushayrī : « ferme dans sa position. Sa puissance est telle qu'il a arraché la cité des gens de Lot et l'a retournée. » Gabriel n'est pas seulement messager — il est aussi l'instrument de la justice divine quand il faut.",
+      "mots": [
+        { "ar": "ذِي", "tr": "dhī", "racine": "—", "sens": "doué de", "def": "particule possessive.", "gram": "particule construite" },
+        { "ar": "قُوَّةٍ", "tr": "quwwatin", "racine": "ق و ي", "sens": "force", "def": "quwwa : force.", "gram": "nom, génitif indéfini" },
+        { "ar": "عِندَ", "tr": "ʿinda", "racine": "—", "sens": "auprès de", "def": "préposition.", "gram": "préposition" },
+        { "ar": "ذِي", "tr": "dhī", "racine": "—", "sens": "le Maître de", "def": "particule possessive.", "gram": "particule construite" },
+        { "ar": "الْعَرْشِ", "tr": "al-ʿarsh", "racine": "ع ر ش", "sens": "le Trône", "def": "ʿarsh.", "gram": "nom, génitif défini" },
+        { "ar": "مَكِينٍ", "tr": "makīn", "racine": "م ك ن", "sens": "de rang solide", "def": "makīn : ferme dans sa position.", "gram": "nom adjectival, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "مُّطَاعٍ ثَمَّ أَمِينٍ",
+      "tr": "muṭāʿin thamma amīn",
+      "trad": "digne d'obéissance et de confiance.",
+      "themes": ["confiance"],
+      "commentaire": "<em>muṭāʿ</em> : obéi (parmi les anges) ; <em>amīn</em> : digne de confiance, fidèle dépositaire. Quatre qualités de Gabriel énumérées : force, position, obéissance, fidélité.",
+      "mots": [
+        { "ar": "مُّطَاعٍ", "tr": "muṭāʿ", "racine": "ط و ع", "sens": "obéi", "def": "muṭāʿ : participe passif d'aṭāʿa ; obéi.", "gram": "participe passif, génitif indéfini" },
+        { "ar": "ثَمَّ", "tr": "thamma", "racine": "—", "sens": "là", "def": "adverbe de lieu.", "gram": "adverbe" },
+        { "ar": "أَمِينٍ", "tr": "amīn", "racine": "أ م ن", "sens": "fidèle", "def": "amīn : sûr, digne de confiance.", "gram": "nom adjectival, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "وَمَا صَاحِبُكُم بِمَجْنُونٍ",
+      "tr": "wa-mā ṣāḥibukum bi-majnūn",
+      "trad": "Votre compagnon n'est pas un possédé !",
+      "themes": ["défense du Prophète"],
+      "commentaire": "<em>ṣāḥibukum</em> : votre compagnon — Muḥammad. La sourate retourne contre les Mecquois leurs propres accusations. Et la défense de Dieu pour Son messager est sobre, et formelle.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "et n'est pas", "def": "conjonction + négation.", "gram": "conjonction + particule" },
+        { "ar": "صَاحِبُكُم", "tr": "ṣāḥibukum", "racine": "ص ح ب", "sens": "votre compagnon", "def": "ṣāḥib + pronom suffixe.", "gram": "nom + pronom suffixe, nominatif" },
+        { "ar": "بِمَجْنُونٍ", "tr": "bi-majnūn", "racine": "ج ن ن", "sens": "un possédé", "def": "majnūn : possédé par un jinn, fou.", "gram": "préposition + participe passif, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "وَلَقَدْ رَآهُ بِالْأُفُقِ الْمُبِينِ",
+      "tr": "wa-la-qad raʾāhu bi-l-ufuqi l-mubīn",
+      "trad": "Il l'a vu (l'ange) à l'horizon lumineux,",
+      "themes": ["vision à l'horizon"],
+      "commentaire": "<em>raʾāhu bi-l-ufuq al-mubīn</em> : il l'a vu à l'horizon clair. Qushayrī : « Muḥammad a vu Gabriel à l'horizon clair la nuit du Miʿrāj. <em>Et on dit : il a vu son Seigneur, alors qu'il était à l'horizon clair.</em> » La double lecture est précieuse : la vision peut être celle de Gabriel — ou, plus haut, celle du Seigneur Lui-même lors de l'Ascension nocturne.",
+      "mots": [
+        { "ar": "وَلَقَدْ", "tr": "wa-la-qad", "racine": "—", "sens": "et certes", "def": "conjonction + particules.", "gram": "conjonction + particules" },
+        { "ar": "رَآهُ", "tr": "raʾāhu", "racine": "ر أ ي", "sens": "il l'a vu", "def": "raʾā + pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "بِالْأُفُقِ", "tr": "bi-l-ufuq", "racine": "أ ف ق", "sens": "à l'horizon", "def": "ufuq : horizon.", "gram": "préposition + nom, génitif défini" },
+        { "ar": "الْمُبِينِ", "tr": "al-mubīn", "racine": "ب ي ن", "sens": "lumineux, clair", "def": "mubīn : clair, manifeste.", "gram": "nom adjectival, génitif défini" }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "وَمَا هُوَ عَلَى الْغَيْبِ بِضَنِينٍ",
+      "tr": "wa-mā huwa ʿalā l-ghaybi bi-ḍanīn",
+      "trad": "et il ne garde pas jalousement le mystère.",
+      "themes": ["transmission du mystère"],
+      "commentaire": "<em>ḍanīn</em> (ضَنِين) — Qushayrī : « avare ». Selon certaines lectures avec <em>ẓ</em> au lieu de <em>ḍ</em> : « suspect ». Le Prophète, dans les deux lectures, est exonéré : il ne retient pas pour lui ce que Dieu lui révèle de l'Invisible ; et il n'est pas suspect de l'avoir inventé. Tout ce qu'il sait, il le dit.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "et n'est pas", "def": "conjonction + négation.", "gram": "conjonction + particule" },
+        { "ar": "هُوَ", "tr": "huwa", "racine": "—", "sens": "il", "def": "pronom personnel.", "gram": "pronom" },
+        { "ar": "عَلَى", "tr": "ʿalā", "racine": "—", "sens": "sur", "def": "préposition.", "gram": "préposition" },
+        { "ar": "الْغَيْبِ", "tr": "al-ghayb", "racine": "غ ي ب", "sens": "l'Invisible", "def": "ghayb : ce qui est caché, l'Invisible.", "gram": "nom, génitif défini" },
+        { "ar": "بِضَنِينٍ", "tr": "bi-ḍanīn", "racine": "ض ن ن", "sens": "avare", "def": "ḍanīn : avare, qui retient ; ou (avec ẓ) suspect.", "gram": "préposition + nom adjectival, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "وَمَا هُوَ بِقَوْلِ شَيْطَانٍ رَّجِيمٍ",
+      "tr": "wa-mā huwa bi-qawli shayṭānin rajīm",
+      "trad": "Ceci n'est pas la parole d'un démon maudit !",
+      "themes": ["origine pure"],
+      "commentaire": "Triple affirmation : ni Muḥammad n'est possédé (v. 22), ni il ne retient l'Invisible (v. 24), ni la Parole vient d'un démon. Origine pure : Gabriel envoyé par Dieu.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "et n'est pas", "def": "conjonction + négation.", "gram": "conjonction + particule" },
+        { "ar": "هُوَ", "tr": "huwa", "racine": "—", "sens": "ceci", "def": "pronom.", "gram": "pronom" },
+        { "ar": "بِقَوْلِ", "tr": "bi-qawl", "racine": "ق و ل", "sens": "la parole de", "def": "qawl.", "gram": "préposition + nom, génitif construit" },
+        { "ar": "شَيْطَانٍ", "tr": "shayṭān", "racine": "ش ط ن", "sens": "un démon", "def": "shayṭān.", "gram": "nom, génitif indéfini" },
+        { "ar": "رَّجِيمٍ", "tr": "rajīm", "racine": "ر ج م", "sens": "maudit, lapidé", "def": "rajīm : lapidé, maudit.", "gram": "nom adjectival, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "فَأَيْنَ تَذْهَبُونَ",
+      "tr": "fa-ayna tadhhabūn",
+      "trad": "Où allez-vous donc ?",
+      "themes": ["où allez-vous ?"],
+      "commentaire": "Question vertigineuse. Qushayrī la prolonge avec une force soufie particulière : « Jusqu'à quand vous égarerez-vous dans les vallées des conjectures et des suppositions ? Et où allez-vous, en vous détournant de la contemplation des lieux de la Vérité ? Pourquoi ne pas revenir à votre Maître dans ce qui vous a plu et dans ce qui vous a affligé ? » <em>Fa-ayna tadhhabūn</em> n'est pas une question géographique : c'est l'interrogation la plus profonde qu'on puisse adresser à une vie. Où vas-tu — et qu'es-tu donc allé chercher si loin de chez Lui ?",
+      "mots": [
+        { "ar": "فَأَيْنَ", "tr": "fa-ayna", "racine": "—", "sens": "où donc", "def": "fa- + ayna interrogatif.", "gram": "particule + interrogatif" },
+        { "ar": "تَذْهَبُونَ", "tr": "tadhhabūn", "racine": "ذ ه ب", "sens": "allez-vous", "def": "dhahaba : aller.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "إِنْ هُوَ إِلَّا ذِكْرٌ لِّلْعَالَمِينَ",
+      "tr": "in huwa illā dhikrun li-l-ʿālamīn",
+      "trad": "Ceci n'est qu'un Rappel adressé aux mondes",
+      "themes": ["Rappel universel"],
+      "commentaire": "Le Coran est un <em>dhikr</em> — un rappel, un mémorial. Et il s'adresse aux <em>ʿālamīn</em>, les mondes — c'est-à-dire à toute créature et à toute époque. Le Rappel universel.",
+      "mots": [
+        { "ar": "إِنْ", "tr": "in", "racine": "—", "sens": "ne... que", "def": "particule de négation restrictive avec illā.", "gram": "particule" },
+        { "ar": "هُوَ", "tr": "huwa", "racine": "—", "sens": "ceci est", "def": "pronom.", "gram": "pronom" },
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "sinon", "def": "particule d'exception.", "gram": "particule" },
+        { "ar": "ذِكْرٌ", "tr": "dhikrun", "racine": "ذ ك ر", "sens": "un rappel", "def": "dhikr.", "gram": "nom, nominatif indéfini" },
+        { "ar": "لِّلْعَالَمِينَ", "tr": "li-l-ʿālamīn", "racine": "ع ل م", "sens": "pour les mondes", "def": "ʿālamīn.", "gram": "préposition + nom pluriel, génitif défini" }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "لِمَن شَاءَ مِنكُمْ أَن يَسْتَقِيمَ",
+      "tr": "li-man shāʾa minkum an yastaqīm",
+      "trad": "pour celui d'entre vous qui veut suivre la voie droite.",
+      "themes": ["istiqāma"],
+      "commentaire": "<em>yastaqīm</em> : se redresser, suivre la voie droite. La racine <em>q-w-m</em> dit la verticalité, la rectitude. L'<em>istiqāma</em> est l'un des maîtres-mots de la spiritualité musulmane : tenir droit, sans dévier, dans le chemin de Dieu. Et Qushayrī, sobre, dit : « il a été dit sur la rectitude ce qui a été dit. »",
+      "mots": [
+        { "ar": "لِمَن", "tr": "li-man", "racine": "—", "sens": "pour celui qui", "def": "préposition + pronom relatif.", "gram": "préposition + pronom" },
+        { "ar": "شَاءَ", "tr": "shāʾa", "racine": "ش ي أ", "sens": "veut", "def": "shāʾa.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "مِنكُمْ", "tr": "minkum", "racine": "—", "sens": "d'entre vous", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "أَن", "tr": "an", "racine": "—", "sens": "que", "def": "particule subordonnante.", "gram": "particule" },
+        { "ar": "يَسْتَقِيمَ", "tr": "yastaqīm", "racine": "ق و م", "sens": "il se tienne droit", "def": "istaqāma : se tenir droit, suivre la voie droite.", "gram": "verbe inaccompli subjonctif, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 29,
+      "ar": "وَمَا تَشَاءُونَ إِلَّا أَن يَشَاءَ اللَّهُ رَبُّ الْعَالَمِينَ",
+      "tr": "wa-mā tashāʾūna illā an yashāʾa Llāhu rabbu l-ʿālamīn",
+      "trad": "Mais vous ne le voudrez que si Dieu le veut, Lui, le Seigneur des mondes.",
+      "themes": ["volonté divine première"],
+      "commentaire": "Verset fondamental sur le rapport entre volonté humaine et volonté divine. Vous voudriez vous tenir droit (v. 28) ? Vous ne le pouvez que parce que Dieu, le premier, l'a voulu pour vous. Tout vouloir humain dérive d'un vouloir divin antérieur. Qushayrī, en un mot : « <em>qu'ils veuillent</em> » — c'est-à-dire que leur vouloir même est subordonné au Vouloir suprême. C'est l'un des fondements coraniques du <em>tawakkul</em> (l'abandon confiant) : on s'abandonne non parce qu'on a renoncé à vouloir, mais parce qu'on a compris que tout vouloir est, à l'origine, un don.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "et ne... que", "def": "conjonction + négation restrictive.", "gram": "conjonction + particule" },
+        { "ar": "تَشَاءُونَ", "tr": "tashāʾūn", "racine": "ش ي أ", "sens": "vous voulez", "def": "shāʾa.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." },
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "sinon, que", "def": "particule d'exception.", "gram": "particule" },
+        { "ar": "أَن", "tr": "an", "racine": "—", "sens": "que", "def": "particule subordonnante.", "gram": "particule" },
+        { "ar": "يَشَاءَ", "tr": "yashāʾa", "racine": "ش ي أ", "sens": "veuille", "def": "shāʾa au subjonctif.", "gram": "verbe inaccompli subjonctif, 3ᵉ pers. masc. sing." },
+        { "ar": "اللَّهُ", "tr": "Allāhu", "racine": "أ ل ه", "sens": "Dieu", "def": "Allāh nominatif.", "gram": "nom, nominatif" },
+        { "ar": "رَبُّ", "tr": "rabbu", "racine": "ر ب ب", "sens": "le Seigneur de", "def": "rabb.", "gram": "nom, nominatif construit" },
+        { "ar": "الْعَالَمِينَ", "tr": "al-ʿālamīn", "racine": "ع ل م", "sens": "des mondes", "def": "ʿālamīn.", "gram": "nom pluriel, génitif défini" }
+      ]
+    }
+  ]
+}

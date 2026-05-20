@@ -1,0 +1,283 @@
+{
+  "n": 82,
+  "nom_ar": "الاِنْفِطَار",
+  "nom_tr": "al-Infiṭār",
+  "nom_fr": "La Fissure",
+  "revelation": "mecquoise",
+  "versets_count": 19,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Infiṭār — « La Fissure » — déploie quatre images d'apocalypse en quatre versets : <em>le ciel se fissure, les étoiles se dispersent, les mers débordent, les sépulcres sont retournés</em>. Et alors, en un éclair, la sentence : <em>chaque âme saura ce qu'elle a accompli et ce qu'elle a ajourné</em>. Vient ensuite l'apostrophe la plus singulière du Coran à l'égard du pécheur : <em>Ô homme, qu'est-ce qui t'a trompé au sujet de ton Seigneur si Généreux ?</em> Et Qushayrī s'engouffre dans la délicatesse extrême de cette interrogation. Il imagine que la question elle-même contient sa réponse, comme un secret soufflé par la générosité divine : <em>« C'est Ta générosité même qui m'a trompé ; sans Ta générosité, je n'aurais pas commis la faute, car Tu vois et Tu couvres, Tu mesures et Tu accordes le délai. »</em> Et il cite alors un de ses petits poèmes : <em>« Mon Maître dit : N'as-tu pas honte de la laideur de tes actes ? — Je dis : Ô mon Maître, sois doux, car l'abondance de Tes bienfaits m'a enhardi. »</em> La sourate se referme sur la souveraineté : <em>l'Affaire, ce Jour-là, appartient à Dieu</em>. Toujours Sienne, certes ; mais ce Jour-là, plus aucune prétention humaine ne pourra plus la masquer.",
+  "themes": ["fissure", "générosité divine et péché", "âme qui sait", "nobles scribes", "Jour de la décision"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "إِذَا السَّمَاءُ انفَطَرَتْ",
+      "tr": "idhā s-samāʾu nfaṭarat",
+      "trad": "Lorsque le ciel se fissurera,",
+      "themes": ["fissure du ciel"],
+      "commentaire": "<em>infaṭarat</em> (انْفَطَرَتْ) — Qushayrī, en un mot : « elle s'est fendue ». Même racine que <em>fiṭra</em> (nature originelle) : le ciel revient, en se fissurant, à son état primordial — celui d'avant l'organisation cosmique.",
+      "mots": [
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "السَّمَاءُ", "tr": "as-samāʾ", "racine": "س م و", "sens": "le ciel", "def": "samāʾ.", "gram": "nom, nominatif défini" },
+        { "ar": "انفَطَرَتْ", "tr": "infaṭarat", "racine": "ف ط ر", "sens": "se sera fissuré", "def": "infaṭara : se fendre, se fissurer. Même racine que fiṭra.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَإِذَا الْكَوَاكِبُ انتَثَرَتْ",
+      "tr": "wa-idhā l-kawākibu ntatharat",
+      "trad": "lorsque les étoiles se disperseront,",
+      "themes": ["étoiles dispersées"],
+      "commentaire": "<em>intatharat</em> : se sont éparpillées, comme les grains d'un collier rompu. La structure même du ciel — son ornement (cf. sourate 85) — se défait.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الْكَوَاكِبُ", "tr": "al-kawākib", "racine": "ك و ك ب", "sens": "les étoiles", "def": "kawākib : pluriel de kawkab ; étoiles, planètes.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "انتَثَرَتْ", "tr": "intatharat", "racine": "ن ث ر", "sens": "se sont dispersées", "def": "intathara : s'éparpiller.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَإِذَا الْبِحَارُ فُجِّرَتْ",
+      "tr": "wa-idhā l-biḥāru fujjirat",
+      "trad": "lorsque les mers déborderont,",
+      "themes": ["mers déchaînées"],
+      "commentaire": "<em>fujjirat</em> : ont été crevées, ouvertes les unes dans les autres. Qushayrī : « ouvert l'une dans l'autre ». Les mers, jusqu'alors séparées par des barrières, fusionnent.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الْبِحَارُ", "tr": "al-biḥār", "racine": "ب ح ر", "sens": "les mers", "def": "biḥār : pluriel de baḥr.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "فُجِّرَتْ", "tr": "fujjirat", "racine": "ف ج ر", "sens": "ont été crevées, déchaînées", "def": "fajjara au passif ; faire jaillir, ouvrir.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَإِذَا الْقُبُورُ بُعْثِرَتْ",
+      "tr": "wa-idhā l-qubūru buʿthirat",
+      "trad": "lorsque les sépulcres seront retournés,",
+      "themes": ["tombes ouvertes"],
+      "commentaire": "<em>buʿthirat</em> — verbe déjà rencontré dans la sourate 100. Qushayrī : « sa terre est retournée, et sont ressuscités les morts qui y étaient ; et sont sortis les trésors et les morts qu'elle contenait. »",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الْقُبُورُ", "tr": "al-qubūr", "racine": "ق ب ر", "sens": "les sépulcres", "def": "qubūr : pluriel de qabr.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "بُعْثِرَتْ", "tr": "buʿthirat", "racine": "ب ع ث ر", "sens": "auront été retournés", "def": "buʿthira : être renversé, être retourné.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "عَلِمَتْ نَفْسٌ مَّا قَدَّمَتْ وَأَخَّرَتْ",
+      "tr": "ʿalimat nafsun mā qaddamat wa-akhkharat",
+      "trad": "toute âme saura ce qu'elle a accompli et ce qu'elle a ajourné.",
+      "themes": ["savoir final"],
+      "commentaire": "Réponse aux quatre conditions précédentes. Qushayrī : « lorsque ces choses arrivent, chaque âme connaît ce qu'elle a avancé du bien et du mal. » <em>Qaddamat</em> : ce qu'elle a envoyé en avant — ses œuvres accomplies. <em>Akhkharat</em> : ce qu'elle a laissé en arrière — ses œuvres retardées, ses ajournements, les graines qu'elle n'a jamais semées.",
+      "mots": [
+        { "ar": "عَلِمَتْ", "tr": "ʿalimat", "racine": "ع ل م", "sens": "saura", "def": "ʿalima : savoir.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." },
+        { "ar": "نَفْسٌ", "tr": "nafs", "racine": "ن ف س", "sens": "âme", "def": "nafs.", "gram": "nom, nominatif indéfini" },
+        { "ar": "مَّا", "tr": "mā", "racine": "—", "sens": "ce que", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "قَدَّمَتْ", "tr": "qaddamat", "racine": "ق د م", "sens": "elle a avancé", "def": "qaddama : envoyer en avant.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." },
+        { "ar": "وَأَخَّرَتْ", "tr": "wa-akhkharat", "racine": "أ خ ر", "sens": "et a ajourné", "def": "akhkhara : retarder, ajourner.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "يَا أَيُّهَا الْإِنسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَرِيمِ",
+      "tr": "yā ayyuhā l-insānu mā gharraka bi-rabbika l-karīm",
+      "trad": "Ô toi, l'homme ! Qu'est-ce donc qui t'a trompé au sujet de ton Seigneur très Généreux,",
+      "themes": ["la grande question", "tromperie", "générosité"],
+      "commentaire": "Verset prodigieux. <em>mā gharraka</em> : qu'est-ce qui t'a trompé ? Qushayrī : « qu'est-ce qui t'a illusionné, qu'est-ce qui t'a séduit, au point que tu agis dans Ses désobéissances ? » Et il offre alors la lecture la plus délicate du Coran : <em>« Il l'a interrogé comme si la question même contenait la réponse. Il dit : Ta générosité m'a trompé ; sans Ta générosité, je ne l'aurais pas fait, parce que Tu vois et Tu couvres, Tu mesures et Tu accordes le délai. »</em> Le pécheur reconnaît : c'est <em>parce que Tu es généreux</em> que je me suis enhardi à pécher. Et Qushayrī cite alors un de ses petits poèmes — il est l'un des rares passages où il parle en son nom propre : <em>« Mon Maître dit : N'as-tu pas honte de ce que je vois de la laideur de tes actes ? / Je dis : Ô mon Maître, sois doux, car l'abondance de Tes bienfaits m'a enhardi. »</em>",
+      "mots": [
+        { "ar": "يَا أَيُّهَا", "tr": "yā ayyuhā", "racine": "—", "sens": "ô", "def": "particules vocatives.", "gram": "particules" },
+        { "ar": "الْإِنسَانُ", "tr": "al-insān", "racine": "أ ن س", "sens": "l'homme", "def": "insān.", "gram": "nom, nominatif défini" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "qu'est-ce qui", "def": "interrogatif.", "gram": "interrogatif" },
+        { "ar": "غَرَّكَ", "tr": "gharraka", "racine": "غ ر ر", "sens": "t'a trompé", "def": "gharra : tromper, leurrer, illusionner ; avec pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "بِرَبِّكَ", "tr": "bi-rabbika", "racine": "ر ب ب", "sens": "au sujet de ton Seigneur", "def": "préposition + rabb + pronom suffixe.", "gram": "préposition + nom + pronom, génitif" },
+        { "ar": "الْكَرِيمِ", "tr": "al-karīm", "racine": "ك ر م", "sens": "le Généreux", "def": "Karīm : Généreux ; Nom divin.", "gram": "nom adjectival, génitif défini" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "الَّذِي خَلَقَكَ فَسَوَّاكَ فَعَدَلَكَ",
+      "tr": "alladhī khalaqaka fa-sawwāka fa-ʿadalak",
+      "trad": "Celui qui t'a créé, puis modelé et constitué harmonieusement ?",
+      "themes": ["création", "harmonisation", "équilibre"],
+      "commentaire": "Trois verbes pour dire la création de l'homme : <em>khalaqa</em> (créer), <em>sawwā</em> (mettre en harmonie), <em>ʿadala</em> (équilibrer). Ce dernier dit l'équité de la composition : aucune partie n'est en excès, aucune en défaut. Le corps humain est, par essence, juste.",
+      "mots": [
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "Celui qui", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "خَلَقَكَ", "tr": "khalaqaka", "racine": "خ ل ق", "sens": "t'a créé", "def": "khalaqa + pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "فَسَوَّاكَ", "tr": "fa-sawwāka", "racine": "س و ي", "sens": "puis t'a modelé", "def": "sawwā : harmoniser ; avec pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "فَعَدَلَكَ", "tr": "fa-ʿadalak", "racine": "ع د ل", "sens": "et t'a équilibré", "def": "ʿadala : équilibrer, rendre juste ; avec pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "فِي أَيِّ صُورَةٍ مَّا شَاءَ رَكَّبَكَ",
+      "tr": "fī ayyi ṣūratin mā shāʾa rakkabak",
+      "trad": "Il t'a composé dans la forme qu'Il a voulue.",
+      "themes": ["forme voulue"],
+      "commentaire": "Qushayrī : « Il a composé tes membres selon les voies de la sagesse, dans n'importe quelle forme qu'Il a voulue — beauté ou laideur, longueur ou brièveté. » Et il ouvre une lecture plus profonde : <em>ṣūra</em> peut signifier ici la forme intérieure, l'état spirituel. Dans quelque état qu'Il ait voulu te placer — bonheur ou malheur, foi ou désobéissance — Il t'y a posé.",
+      "mots": [
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "def": "préposition.", "gram": "préposition" },
+        { "ar": "أَيِّ", "tr": "ayyi", "racine": "—", "sens": "quelque", "def": "particule indéterminée.", "gram": "particule" },
+        { "ar": "صُورَةٍ", "tr": "ṣūratin", "racine": "ص و ر", "sens": "forme", "def": "ṣūra : forme.", "gram": "nom, génitif indéfini" },
+        { "ar": "مَّا", "tr": "mā", "racine": "—", "sens": "que", "def": "particule subordonnante.", "gram": "particule" },
+        { "ar": "شَاءَ", "tr": "shāʾa", "racine": "ش ي أ", "sens": "Il a voulue", "def": "shāʾa : vouloir.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "رَكَّبَكَ", "tr": "rakkabak", "racine": "ر ك ب", "sens": "Il t'a composé", "def": "rakkaba : composer, assembler.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "كَلَّا بَلْ تُكَذِّبُونَ بِالدِّينِ",
+      "tr": "kallā bal tukadhdhibūna bi-d-dīn",
+      "trad": "Voici qu'au contraire vous traitez de mensonge le Jugement",
+      "themes": ["déni du Jugement"],
+      "commentaire": "Qushayrī : « le Jugement, c'est-à-dire la Résurrection ». Après le rappel des bienfaits, la pointe du déni : on a reçu toute cette grâce — et l'on tient le Jugement pour mensonge.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation.", "gram": "particule" },
+        { "ar": "بَلْ", "tr": "bal", "racine": "—", "sens": "au contraire", "def": "particule de rectification.", "gram": "particule" },
+        { "ar": "تُكَذِّبُونَ", "tr": "tukadhdhibūn", "racine": "ك ذ ب", "sens": "vous traitez de mensonge", "def": "kadhdhaba.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." },
+        { "ar": "بِالدِّينِ", "tr": "bi-d-dīn", "racine": "د ي ن", "sens": "le Jugement", "def": "dīn : ici, le Jugement.", "gram": "préposition + nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَإِنَّ عَلَيْكُمْ لَحَافِظِينَ",
+      "tr": "wa-inna ʿalaykum la-ḥāfiẓīn",
+      "trad": "alors que sont préposés à votre garde",
+      "themes": ["gardiens préposés"],
+      "commentaire": "<em>ḥāfiẓīn</em> : gardiens. Qushayrī : « ce sont les anges qui écrivent les actes. Il leur a fait peur par la vue des anges et leur écriture des actes — alors même que, s'ils savaient vraiment ce qu'il en est, leur vigilance contre les transgressions serait, par la vue du Vrai et la honte devant Son regard, plus complète que par la vue des anges. » Subtil : la pudeur devant Dieu Lui-même devrait être plus forte que la pudeur devant les anges scribes. Mais comme nous ne mesurons que ce qui se voit, Dieu nous parle d'abord du visible.",
+      "mots": [
+        { "ar": "وَإِنَّ", "tr": "wa-inna", "racine": "—", "sens": "et certes", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "عَلَيْكُمْ", "tr": "ʿalaykum", "racine": "—", "sens": "sur vous", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "لَحَافِظِينَ", "tr": "la-ḥāfiẓīn", "racine": "ح ف ظ", "sens": "des gardiens", "def": "ḥāfiẓīn : gardiens.", "gram": "particule + participe actif pluriel, accusatif" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "كِرَامًا كَاتِبِينَ",
+      "tr": "kirāman kātibīn",
+      "trad": "de nobles scribes",
+      "themes": ["scribes angéliques"],
+      "commentaire": "<em>kirām kātibīn</em> : nobles scribes. Tradition coranique des deux anges qui inscrivent à droite les bonnes actions, à gauche les mauvaises.",
+      "mots": [
+        { "ar": "كِرَامًا", "tr": "kirāman", "racine": "ك ر م", "sens": "nobles", "def": "kirām : pluriel de karīm.", "gram": "nom adjectival pluriel, accusatif" },
+        { "ar": "كَاتِبِينَ", "tr": "kātibīn", "racine": "ك ت ب", "sens": "scribes", "def": "kātib : scribe.", "gram": "participe actif pluriel, accusatif" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "يَعْلَمُونَ مَا تَفْعَلُونَ",
+      "tr": "yaʿlamūna mā tafʿalūn",
+      "trad": "qui savent ce que vous faites.",
+      "themes": ["savoir des anges"],
+      "commentaire": "Phrase simple, et redoutable. Leur savoir n'a aucun retard. Au moment même où l'acte se fait, il est <em>déjà</em> connu.",
+      "mots": [
+        { "ar": "يَعْلَمُونَ", "tr": "yaʿlamūn", "racine": "ع ل م", "sens": "ils savent", "def": "ʿalima.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce que", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "تَفْعَلُونَ", "tr": "tafʿalūn", "racine": "ف ع ل", "sens": "vous faites", "def": "faʿala.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "إِنَّ الْأَبْرَارَ لَفِي نَعِيمٍ",
+      "tr": "inna l-abrāra la-fī naʿīm",
+      "trad": "Certes, les justes seront dans un lieu de délice",
+      "themes": ["délice des justes"],
+      "commentaire": "Verset qui anticipe la finale de la sourate 83. Mais Qushayrī donne ici la lecture <em>actuelle</em> : « Les justes sont aujourd'hui dans le souffle du <em>dhikr</em>, dans l'intimité aux heures de leur retraite. » Le <em>naʿīm</em> ne commence pas demain ; il commence dès aujourd'hui dans le cœur qui se souvient.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule.", "gram": "particule" },
+        { "ar": "الْأَبْرَارَ", "tr": "al-abrār", "racine": "ب ر ر", "sens": "les justes", "def": "abrār.", "gram": "nom pluriel, accusatif défini" },
+        { "ar": "لَفِي", "tr": "la-fī", "racine": "—", "sens": "sont dans", "def": "particule + préposition.", "gram": "particules" },
+        { "ar": "نَعِيمٍ", "tr": "naʿīm", "racine": "ن ع م", "sens": "délice", "def": "naʿīm.", "gram": "nom, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "وَإِنَّ الْفُجَّارَ لَفِي جَحِيمٍ",
+      "tr": "wa-inna l-fujjāra la-fī jaḥīm",
+      "trad": "et les libertins dans une fournaise",
+      "themes": ["fournaise des libertins"],
+      "commentaire": "Et Qushayrī donne la lecture actuelle, en miroir : « les libertins sont dans l'étroitesse de leurs cœurs et dans leur mécontentement du décret, dans les ténèbres de leur planification (<em>tadbīr</em>, تَدْبِير) et l'étroitesse de leur choix (<em>ikhtiyār</em>, اخْتِيَار). » La <em>jaḥīm</em> du libertin commence elle aussi dès ici-bas : c'est l'étroitesse intérieure de qui veut tout contrôler.",
+      "mots": [
+        { "ar": "وَإِنَّ", "tr": "wa-inna", "racine": "—", "sens": "et certes", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "الْفُجَّارَ", "tr": "al-fujjār", "racine": "ف ج ر", "sens": "les libertins", "def": "fujjār.", "gram": "nom pluriel, accusatif défini" },
+        { "ar": "لَفِي", "tr": "la-fī", "racine": "—", "sens": "sont dans", "def": "particule + préposition.", "gram": "particules" },
+        { "ar": "جَحِيمٍ", "tr": "jaḥīm", "racine": "ج ح م", "sens": "une fournaise", "def": "jaḥīm.", "gram": "nom, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "يَصْلَوْنَهَا يَوْمَ الدِّينِ",
+      "tr": "yaṣlawnahā yawma d-dīn",
+      "trad": "où ils brûleront le Jour du Jugement",
+      "themes": ["combustion"],
+      "commentaire": "Le Feu du Jour est la manifestation visible du Feu déjà allumé dans le cœur.",
+      "mots": [
+        { "ar": "يَصْلَوْنَهَا", "tr": "yaṣlawnahā", "racine": "ص ل ي", "sens": "ils y brûleront", "def": "ṣaliya + pronom suffixe.", "gram": "verbe inaccompli + pronom suffixe, 3ᵉ pers. masc. plur." },
+        { "ar": "يَوْمَ", "tr": "yawma", "racine": "ي و م", "sens": "le Jour de", "def": "yawm.", "gram": "nom, accusatif adverbial" },
+        { "ar": "الدِّينِ", "tr": "ad-dīn", "racine": "د ي ن", "sens": "du Jugement", "def": "dīn.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "وَمَا هُمْ عَنْهَا بِغَائِبِينَ",
+      "tr": "wa-mā hum ʿanhā bi-ghāʾibīn",
+      "trad": "sans pouvoir s'en absenter.",
+      "themes": ["sans échappatoire"],
+      "commentaire": "<em>ghāʾibīn</em> : absents. Ils n'auront pas le pouvoir de s'absenter du Feu. Le verset dit l'inverse de l'évasion humaine habituelle : ici, on ne peut plus détourner le regard.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "et ne... pas", "def": "conjonction + négation.", "gram": "conjonction + particule" },
+        { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "ils", "def": "pronom personnel.", "gram": "pronom" },
+        { "ar": "عَنْهَا", "tr": "ʿanhā", "racine": "—", "sens": "de lui", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "بِغَائِبِينَ", "tr": "bi-ghāʾibīn", "racine": "غ ي ب", "sens": "absents", "def": "ghāʾib : absent.", "gram": "préposition + participe actif pluriel, génitif" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "وَمَا أَدْرَاكَ مَا يَوْمُ الدِّينِ",
+      "tr": "wa-mā adrāka mā yawmu d-dīn",
+      "trad": "Mais qu'est-ce qui te fera connaître ce qu'est le Jour du Jugement ?",
+      "themes": ["amplification"],
+      "commentaire": "Qushayrī : « formule prononcée à valeur d'amplification (<em>tahwīl</em>). »",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "et qu'est-ce qui", "def": "conjonction + interrogatif.", "gram": "conjonction + interrogatif" },
+        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "te fera savoir", "def": "adrā + pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qu'est", "def": "interrogatif.", "gram": "interrogatif" },
+        { "ar": "يَوْمُ", "tr": "yawmu", "racine": "ي و م", "sens": "le Jour de", "def": "yawm.", "gram": "nom, nominatif construit" },
+        { "ar": "الدِّينِ", "tr": "ad-dīn", "racine": "د ي ن", "sens": "du Jugement", "def": "dīn.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "ثُمَّ مَا أَدْرَاكَ مَا يَوْمُ الدِّينِ",
+      "tr": "thumma mā adrāka mā yawmu d-dīn",
+      "trad": "Une fois encore : qu'est-ce qui te fera connaître ce qu'est le Jour du Jugement ?",
+      "themes": ["répétition de gravité"],
+      "commentaire": "La répétition n'est pas une redondance : elle souligne, comme aux versets 5-6 de la sourate 94, que la chose énoncée mérite d'être entendue deux fois. L'amplification se répète pour que l'oreille s'y arrête.",
+      "mots": [
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "puis", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "qu'est-ce qui", "def": "interrogatif.", "gram": "interrogatif" },
+        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "te fera savoir", "def": "voir verset 17.", "gram": "verbe accompli + pronom suffixe" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qu'est", "def": "interrogatif.", "gram": "interrogatif" },
+        { "ar": "يَوْمُ", "tr": "yawmu", "racine": "ي و م", "sens": "le Jour de", "def": "yawm.", "gram": "nom, nominatif construit" },
+        { "ar": "الدِّينِ", "tr": "ad-dīn", "racine": "د ي ن", "sens": "du Jugement", "def": "dīn.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّنَفْسٍ شَيْئًا ۖ وَالْأَمْرُ يَوْمَئِذٍ لِّلَّهِ",
+      "tr": "yawma lā tamliku nafsun li-nafsin shayʾan wa-l-amru yawmaʾidhin li-Llāh",
+      "trad": "Ce Jour-là, aucune âme ne peut rien en faveur d'une autre âme. Et la décision, ce jour-là, appartient à Dieu !",
+      "themes": ["souveraineté ultime"],
+      "commentaire": "Verset de clôture absolu. Qushayrī : « L'Affaire est à Dieu ce Jour-là, et à Lui avant et après. Mais <em>ce Jour-là</em>, tombent les prétentions, car la chose devient claire, et les connaissances deviennent <em>nécessaires</em> » — c'est-à-dire qu'elles s'imposent à tous sans plus pouvoir être refusées. Aujourd'hui, on peut nier ; demain, on saura, et l'on ne pourra plus s'en défaire. Le savoir devient une évidence forcée. La sourate, ouverte sur le ciel qui se fissure, se referme sur cette évidence qui ne se fissure pas.",
+      "mots": [
+        { "ar": "يَوْمَ", "tr": "yawma", "racine": "ي و م", "sens": "le Jour où", "def": "yawm.", "gram": "nom, accusatif adverbial" },
+        { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
+        { "ar": "تَمْلِكُ", "tr": "tamliku", "racine": "م ل ك", "sens": "elle ne peut", "def": "malaka : posséder, avoir pouvoir.", "gram": "verbe inaccompli, 3ᵉ pers. fém. sing." },
+        { "ar": "نَفْسٌ", "tr": "nafs", "racine": "ن ف س", "sens": "une âme", "def": "nafs.", "gram": "nom, nominatif indéfini" },
+        { "ar": "لِّنَفْسٍ", "tr": "li-nafs", "racine": "ن ف س", "sens": "pour une âme", "def": "préposition + nafs.", "gram": "préposition + nom, génitif indéfini" },
+        { "ar": "شَيْئًا", "tr": "shayʾan", "racine": "ش ي أ", "sens": "rien", "def": "shayʾ : chose.", "gram": "nom, accusatif indéfini" },
+        { "ar": "وَالْأَمْرُ", "tr": "wa-l-amr", "racine": "أ م ر", "sens": "et l'Affaire", "def": "amr : ordre, affaire, décision.", "gram": "conjonction + nom, nominatif défini" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce Jour-là", "def": "adverbe.", "gram": "adverbe de temps" },
+        { "ar": "لِّلَّهِ", "tr": "li-Llāh", "racine": "أ ل ه", "sens": "à Dieu", "def": "préposition + Allāh.", "gram": "préposition + nom, génitif" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "n": 83,
+  "nom_ar": "المُطَفِّفِين",
+  "nom_tr": "al-Muṭaffifīn",
+  "nom_fr": "Les Fraudeurs",
+  "revelation": "mecquoise",
+  "versets_count": 36,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Muṭaffifīn — « Les Fraudeurs » — s'ouvre sur une dénonciation morale précise : malheur à ceux qui exigent pleine mesure quand on les sert, et lésinent quand c'est à eux de servir. Mais Qushayrī élargit aussitôt la portée du mot : la fraude n'est pas seulement dans la pesée — elle est dans toutes les inégalités qu'on s'accorde sans les accorder aux autres : <em>celui qui voit les défauts d'autrui sans voir les siens, celui qui exige son droit sans rendre les droits, celui qui ne veut pas pour son frère ce qu'il veut pour lui-même</em>. Et il oppose à ces hommes une figure : <em>le futā</em> (الفَتَى, l'homme noble) — « celui qui rend les droits des gens et n'exige son droit de personne ». La sourate s'élève ensuite vers deux lieux symétriques : <em>Sijjīn</em> (سِجِّين), où sont enregistrés les actes des libertins, et <em>ʿIlliyyīn</em> (عِلِّيِّين), les Hauteurs où sont enregistrés ceux des justes. Au cœur de la sourate, un verset bouleversant : <em>ils seront ce Jour-là séparés de leur Seigneur par un voile</em>. Qushayrī en tire une déduction théologique célèbre : « Comme ils sont aujourd'hui empêchés de Sa connaissance, ils sont demain empêchés de Sa vue. La logique du verset entraîne que les croyants, eux, Le verront demain comme ils Le connaissent aujourd'hui. » La pire des peines, dans cette sourate, n'est pas le Feu — c'est le voile.",
+  "themes": ["fraude", "Sijjīn", "ʿIlliyyīn", "voile (ḥijāb)", "Tasnīm", "rivalité spirituelle"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَيْلٌ لِّلْمُطَفِّفِينَ",
+      "tr": "waylun li-l-muṭaffifīn",
+      "trad": "Malheur aux fraudeurs !",
+      "themes": ["malheur", "fraude"],
+      "commentaire": "<em>wayl</em> (وَيْل) — mot d'imprécation qu'on prononce devant l'arrivée du malheur. <em>al-muṭaffif</em> (المُطَفِّف) : celui qui diminue la mesure et le poids. Qushayrī l'élargit immédiatement : « Il vise par là ceux qui, dans leurs rapports avec les gens, prennent pour eux-mêmes la pleine mesure et donnent en retour une mesure réduite. Cela se manifeste dans le poids et la mesure, mais aussi dans le fait de montrer les défauts [d'autrui sans voir les siens], dans le jugement, dans l'acquittement et dans la réclamation. »",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "wayl", "racine": "و ي ل", "sens": "malheur", "def": "wayl : malheur, imprécation prononcée devant la calamité.", "gram": "nom, nominatif indéfini" },
+        { "ar": "لِّلْمُطَفِّفِينَ", "tr": "li-l-muṭaffifīn", "racine": "ط ف ف", "sens": "aux fraudeurs", "def": "muṭaffif : celui qui diminue la mesure ou le poids. Racine ṭ-f-f, désignant le peu, ce qui dépasse à peine le bord.", "gram": "préposition + participe actif pluriel, génitif défini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "الَّذِينَ إِذَا اكْتَالُوا عَلَى النَّاسِ يَسْتَوْفُونَ",
+      "tr": "alladhīna idhā ktālū ʿalā n-nāsi yastawfūn",
+      "trad": "Ceux qui, lorsqu'ils se font servir par d'autres, exigent une pleine mesure,",
+      "themes": ["exigence pour soi"],
+      "commentaire": "<em>yastawfūn</em> : ils exigent que la mesure soit pleine. Pour soi, on demande tout.",
+      "mots": [
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif pluriel.", "gram": "pronom relatif" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "اكْتَالُوا", "tr": "iktālū", "racine": "ك ي ل", "sens": "ils se font mesurer pour eux", "def": "iktāla : recevoir mesure ; forme réfléchie de kāla.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "عَلَى", "tr": "ʿalā", "racine": "—", "sens": "auprès de", "def": "préposition.", "gram": "préposition" },
+        { "ar": "النَّاسِ", "tr": "an-nās", "racine": "أ ن س", "sens": "les gens", "def": "nās : les gens.", "gram": "nom, génitif défini" },
+        { "ar": "يَسْتَوْفُونَ", "tr": "yastawfūn", "racine": "و ف ي", "sens": "ils exigent pleine mesure", "def": "istawfā : exiger sa pleine part.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ",
+      "tr": "wa-idhā kālūhum aw wazanūhum yukhsirūn",
+      "trad": "et lorsqu'ils mesurent ou pèsent pour d'autres, leur causent une perte.",
+      "themes": ["lésine pour autrui"],
+      "commentaire": "Le grief s'élargit, comme on l'a vu, dans la lecture de Qushayrī. Et il livre une définition splendide en contraste : <em>« al-fatā</em> (الفَتَى, l'homme noble) <em>est celui qui rend les droits des gens et n'exige son droit de personne. »</em> Tout le contraire du fraudeur. La <em>futuwwa</em> (فُتُوَّة), la chevalerie spirituelle, se mesure exactement à cet écart.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "كَالُوهُمْ", "tr": "kālūhum", "racine": "ك ي ل", "sens": "ils mesurent pour eux", "def": "kāla : mesurer ; avec pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. plur." },
+        { "ar": "أَو", "tr": "aw", "racine": "—", "sens": "ou", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "وَّزَنُوهُمْ", "tr": "wazanūhum", "racine": "و ز ن", "sens": "ils pèsent pour eux", "def": "wazana : peser ; avec pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. plur." },
+        { "ar": "يُخْسِرُونَ", "tr": "yukhsirūn", "racine": "خ س ر", "sens": "ils font perdre", "def": "akhsara : faire perdre, causer un dommage.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "أَلَا يَظُنُّ أُولَٰئِكَ أَنَّهُم مَّبْعُوثُونَ",
+      "tr": "a-lā yaẓunnu ulāʾika annahum mabʿūthūn",
+      "trad": "Ces gens ne pensent-ils pas qu'ils seront ressuscités",
+      "themes": ["Résurrection"],
+      "commentaire": "Question rhétorique. Qushayrī : « N'ont-ils pas la certitude qu'ils rendront compte demain, et qu'on leur demandera compte des droits des gens ? » Et il ajoute : « Celui qui ne se souvient pas, dans ses relations avec les gens, du Jour de la Résurrection et de son compte, est en perte dans sa relation même. »",
+      "mots": [
+        { "ar": "أَلَا", "tr": "a-lā", "racine": "—", "sens": "ne... pas", "def": "particule interrogative + négation.", "gram": "particules" },
+        { "ar": "يَظُنُّ", "tr": "yaẓunnu", "racine": "ظ ن ن", "sens": "il pense, présume", "def": "ẓanna : penser, présumer.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "أُولَٰئِكَ", "tr": "ulāʾika", "racine": "—", "sens": "ceux-là", "def": "démonstratif pluriel.", "gram": "démonstratif" },
+        { "ar": "أَنَّهُم", "tr": "annahum", "racine": "—", "sens": "qu'ils", "def": "anna + pronom suffixe.", "gram": "particule + pronom" },
+        { "ar": "مَّبْعُوثُونَ", "tr": "mabʿūthūn", "racine": "ب ع ث", "sens": "ressuscités", "def": "mabʿūth : participe passif de baʿatha.", "gram": "participe passif pluriel, nominatif" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "لِيَوْمٍ عَظِيمٍ",
+      "tr": "li-yawmin ʿaẓīm",
+      "trad": "en un Jour terrible,",
+      "themes": ["Jour terrible"],
+      "commentaire": "Et Qushayrī livre alors un mot précieux : « Celui qui est dans la vigilance envers le Seigneur des mondes ressent dès maintenant la <em>hayba</em> (هَيْبَة, la crainte révérentielle) — comme le seront les hommes au Rassemblement — parce que le regard du Vrai aujourd'hui est comme Son regard demain. » Vivre <em>maintenant</em> comme si la Résurrection avait déjà eu lieu.",
+      "mots": [
+        { "ar": "لِيَوْمٍ", "tr": "li-yawmin", "racine": "ي و م", "sens": "en un Jour", "def": "préposition + yawm.", "gram": "préposition + nom, génitif indéfini" },
+        { "ar": "عَظِيمٍ", "tr": "ʿaẓīm", "racine": "ع ظ م", "sens": "terrible, immense", "def": "ʿaẓīm : grand, immense.", "gram": "nom adjectival, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ",
+      "tr": "yawma yaqūmu n-nāsu li-rabbi l-ʿālamīn",
+      "trad": "le Jour où les hommes se tiendront debout devant le Seigneur des mondes ?",
+      "themes": ["station debout"],
+      "commentaire": "<em>yaqūm</em> : ils se tiendront debout. La <em>qiyāma</em> (Résurrection) est de la même racine : c'est le grand redressement, où chacun se tient face à face avec le Seigneur des mondes.",
+      "mots": [
+        { "ar": "يَوْمَ", "tr": "yawma", "racine": "ي و م", "sens": "le Jour où", "def": "accusatif adverbial.", "gram": "nom, accusatif adverbial" },
+        { "ar": "يَقُومُ", "tr": "yaqūmu", "racine": "ق و م", "sens": "ils se tiennent debout", "def": "qāma : se tenir debout, se lever.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "النَّاسُ", "tr": "an-nās", "racine": "أ ن س", "sens": "les hommes", "def": "nās.", "gram": "nom, nominatif défini" },
+        { "ar": "لِرَبِّ", "tr": "li-rabbi", "racine": "ر ب ب", "sens": "devant le Seigneur de", "def": "préposition + rabb.", "gram": "préposition + nom, génitif construit" },
+        { "ar": "الْعَالَمِينَ", "tr": "al-ʿālamīn", "racine": "ع ل م", "sens": "des mondes", "def": "ʿālamīn : pluriel de ʿālam ; les mondes.", "gram": "nom pluriel, génitif défini" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "كَلَّا إِنَّ كِتَابَ الْفُجَّارِ لَفِي سِجِّينٍ",
+      "tr": "kallā inna kitāba l-fujjāri la-fī sijjīn",
+      "trad": "Que non ! Certes, le Livre des libertins est dans Sijjīn ;",
+      "themes": ["Sijjīn", "registre des fujjār"],
+      "commentaire": "<em>Sijjīn</em> (سِجِّين) — Qushayrī : « On dit que c'est la septième terre, la plus basse ; là est déposé le livre des œuvres des dénégateurs, pour les humilier ; puis leurs âmes y sont portées. On dit aussi : un puits en enfer. Ou : un rocher dans la terre la plus basse. Et linguistiquement, c'est <em>fa-ʿīl</em> dérivé de <em>sijn</em> (prison). » Le mot dit donc une <em>prison souterraine du registre</em>, là où les actes des libertins sont enfermés.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation.", "gram": "particule" },
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule de mise en relief.", "gram": "particule" },
+        { "ar": "كِتَابَ", "tr": "kitāba", "racine": "ك ت ب", "sens": "le Livre de", "def": "kitāb : livre, registre.", "gram": "nom, accusatif construit" },
+        { "ar": "الْفُجَّارِ", "tr": "al-fujjār", "racine": "ف ج ر", "sens": "des libertins", "def": "fujjār : pluriel de fājir ; ceux qui débordent dans la transgression.", "gram": "nom pluriel, génitif défini" },
+        { "ar": "لَفِي", "tr": "la-fī", "racine": "—", "sens": "est assurément dans", "def": "particule + préposition.", "gram": "particules" },
+        { "ar": "سِجِّينٍ", "tr": "sijjīn", "racine": "س ج ن", "sens": "Sijjīn", "def": "Sijjīn : registre des libertins ; aussi le lieu où il est gardé.", "gram": "nom propre, génitif" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "وَمَا أَدْرَاكَ مَا سِجِّينٌ",
+      "tr": "wa-mā adrāka mā sijjīn",
+      "trad": "mais qu'est-ce qui te fera connaître ce qu'est Sijjīn ?",
+      "themes": ["mystère"],
+      "commentaire": "Formule d'amplification qui souligne la gravité du lieu.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "et qu'est-ce qui", "def": "conjonction + interrogatif.", "gram": "conjonction + interrogatif" },
+        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "te fera savoir", "def": "adrā + pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qu'est", "def": "interrogatif.", "gram": "interrogatif" },
+        { "ar": "سِجِّينٌ", "tr": "sijjīn", "racine": "س ج ن", "sens": "Sijjīn", "def": "voir verset 7.", "gram": "nom propre, nominatif" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "كِتَابٌ مَّرْقُومٌ",
+      "tr": "kitābun marqūm",
+      "trad": "C'est un registre tenu avec soin.",
+      "themes": ["registre"],
+      "commentaire": "<em>marqūm</em> : marqué, scellé, écrit avec précision. Qushayrī : « Dieu y a écrit ce qu'ils font, et vers quoi ils vont. » Rien d'imprécis dans la comptabilité divine.",
+      "mots": [
+        { "ar": "كِتَابٌ", "tr": "kitāb", "racine": "ك ت ب", "sens": "un registre", "def": "kitāb.", "gram": "nom, nominatif indéfini" },
+        { "ar": "مَّرْقُومٌ", "tr": "marqūm", "racine": "ر ق م", "sens": "marqué, scellé", "def": "marqūm : participe passif de raqama ; marqué de chiffres ou d'inscriptions.", "gram": "participe passif, nominatif indéfini" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīn",
+      "trad": "Malheur, ce Jour-là, à ceux qui crient au mensonge,",
+      "themes": ["malheur aux dénégateurs"],
+      "commentaire": "Reprise du <em>wayl</em> initial, déplacé maintenant des fraudeurs aux dénégateurs : la fraude commerciale et la fraude métaphysique sont du même registre.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "wayl", "racine": "و ي ل", "sens": "malheur", "def": "voir verset 1.", "gram": "nom, nominatif indéfini" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce Jour-là", "def": "yawm + idh.", "gram": "adverbe de temps" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "à ceux qui crient au mensonge", "def": "mukadhdhibīn : pluriel ; ceux qui traitent de mensonge.", "gram": "préposition + participe actif pluriel, génitif défini" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "الَّذِينَ يُكَذِّبُونَ بِيَوْمِ الدِّينِ",
+      "tr": "alladhīna yukadhdhibūna bi-yawmi d-dīn",
+      "trad": "ceux qui traitent de mensonge le Jour du Jugement :",
+      "themes": ["Jugement nié"],
+      "commentaire": "Le Jour du Jugement (<em>yawm al-dīn</em>) — la racine <em>d-y-n</em> signifie aussi la rétribution, le compte rendu de la dette.",
+      "mots": [
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif pluriel.", "gram": "pronom relatif" },
+        { "ar": "يُكَذِّبُونَ", "tr": "yukadhdhibūn", "racine": "ك ذ ب", "sens": "ils traitent de mensonge", "def": "kadhdhaba : forme intensive.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." },
+        { "ar": "بِيَوْمِ", "tr": "bi-yawmi", "racine": "ي و م", "sens": "le Jour de", "def": "préposition + yawm.", "gram": "préposition + nom, génitif construit" },
+        { "ar": "الدِّينِ", "tr": "ad-dīn", "racine": "د ي ن", "sens": "du Jugement", "def": "dīn : religion, jugement, rétribution.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "وَمَا يُكَذِّبُ بِهِ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ",
+      "tr": "wa-mā yukadhdhibu bihi illā kullu muʿtadin athīm",
+      "trad": "seul un transgresseur, un pécheur invétéré le traite de mensonge !",
+      "themes": ["transgresseur invétéré"],
+      "commentaire": "<em>muʿtad athīm</em> : dépasse-mesures et tisseur de péché. Qushayrī : « celui qui dépasse la limite qu'on lui a fixée — quand on lui récite le Coran, il y mécroit. » Le déni du Jugement est rarement le fruit du doute pur ; il est le fruit d'une vie qui a déjà dépassé les limites et préfère qu'aucun compte ne lui soit demandé.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "et ne... que", "def": "conjonction + négation restrictive.", "gram": "conjonction + particule" },
+        { "ar": "يُكَذِّبُ", "tr": "yukadhdhibu", "racine": "ك ذ ب", "sens": "traite de mensonge", "def": "kadhdhaba.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "بِهِ", "tr": "bihi", "racine": "—", "sens": "le", "def": "préposition + pronom.", "gram": "préposition + pronom" },
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "sinon", "def": "particule d'exception.", "gram": "particule" },
+        { "ar": "كُلُّ", "tr": "kullu", "racine": "ك ل ل", "sens": "tout", "def": "kull.", "gram": "nom, nominatif construit" },
+        { "ar": "مُعْتَدٍ", "tr": "muʿtad", "racine": "ع د و", "sens": "transgresseur", "def": "muʿtad : qui dépasse la mesure.", "gram": "participe actif, génitif indéfini" },
+        { "ar": "أَثِيمٍ", "tr": "athīm", "racine": "أ ث م", "sens": "pécheur invétéré", "def": "athīm : forme intensive ; couvert de péchés.", "gram": "nom adjectival, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "إِذَا تُتْلَىٰ عَلَيْهِ آيَاتُنَا قَالَ أَسَاطِيرُ الْأَوَّلِينَ",
+      "tr": "idhā tutlā ʿalayhi āyātunā qāla asāṭīru l-awwalīn",
+      "trad": "Quand on lui récite Nos versets, il s'écrie : « Fables d'anciens ! »",
+      "themes": ["fables d'anciens"],
+      "commentaire": "<em>asāṭīr al-awwalīn</em> : « écrits des Anciens ». Insulte typique des dénégateurs mecquois : ramener la révélation au rang de vieille histoire. Le mot <em>asāṭīr</em> dit la fable, la légende, par opposition au discours sérieux.",
+      "mots": [
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "تُتْلَىٰ", "tr": "tutlā", "racine": "ت ل و", "sens": "sont récités", "def": "talā au passif inaccompli.", "gram": "verbe inaccompli passif, 3ᵉ pers. fém. sing." },
+        { "ar": "عَلَيْهِ", "tr": "ʿalayhi", "racine": "—", "sens": "à lui", "def": "préposition + pronom.", "gram": "préposition + pronom" },
+        { "ar": "آيَاتُنَا", "tr": "āyātunā", "racine": "أ ي ي", "sens": "Nos versets", "def": "āyāt + pronom suffixe.", "gram": "nom pluriel + pronom suffixe, nominatif" },
+        { "ar": "قَالَ", "tr": "qāla", "racine": "ق و ل", "sens": "il dit", "def": "qāla.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "أَسَاطِيرُ", "tr": "asāṭīru", "racine": "س ط ر", "sens": "fables, légendes de", "def": "asāṭīr : pluriel d'usṭūra ; fables, légendes.", "gram": "nom pluriel, nominatif construit" },
+        { "ar": "الْأَوَّلِينَ", "tr": "al-awwalīn", "racine": "أ و ل", "sens": "des Anciens", "def": "awwalīn : pluriel d'awwal ; les premiers, les anciens.", "gram": "nom pluriel, génitif défini" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "كَلَّا ۖ بَلْ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا يَكْسِبُونَ",
+      "tr": "kallā bal rāna ʿalā qulūbihim mā kānū yaksibūn",
+      "trad": "Que non ! Mais leurs cœurs ont été endurcis par leurs propres œuvres.",
+      "themes": ["rān", "rouille du cœur"],
+      "commentaire": "Verset capital. <em>rāna</em> (رَانَ) : le verbe désigne la <em>rouille</em> ou la <em>patine</em> qui se dépose sur une surface au point de la voiler. Qushayrī : « ce qu'ils ont acquis comme transgressions a recouvert leurs cœurs. » L'image est précise : le péché ne perce pas le cœur d'un coup — il s'y dépose en couche fine, puis en couches superposées, jusqu'à former une couverture qui empêche la lumière de passer. C'est l'inverse du <em>ṣaqala al-qulūb</em>, « polir les cœurs » par le <em>dhikr</em>.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation.", "gram": "particule" },
+        { "ar": "بَلْ", "tr": "bal", "racine": "—", "sens": "au contraire", "def": "particule de rectification.", "gram": "particule" },
+        { "ar": "رَانَ", "tr": "rāna", "racine": "ر ي ن", "sens": "il s'est déposé comme rouille", "def": "rāna : rouiller, recouvrir d'une couche qui voile.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "عَلَىٰ", "tr": "ʿalā", "racine": "—", "sens": "sur", "def": "préposition.", "gram": "préposition" },
+        { "ar": "قُلُوبِهِم", "tr": "qulūbihim", "racine": "ق ل ب", "sens": "leurs cœurs", "def": "qulūb : pluriel de qalb.", "gram": "nom pluriel + pronom suffixe, génitif" },
+        { "ar": "مَّا", "tr": "mā", "racine": "—", "sens": "ce que", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "كَانُوا", "tr": "kānū", "racine": "ك و ن", "sens": "ils étaient", "def": "kāna pluriel.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "يَكْسِبُونَ", "tr": "yaksibūn", "racine": "ك س ب", "sens": "à acquérir, à gagner", "def": "kasaba : acquérir.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "كَلَّا إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ",
+      "tr": "kallā innahum ʿan rabbihim yawmaʾidhin la-maḥjūbūn",
+      "trad": "Que non ! Ils seront, ce Jour-là, séparés de leur Seigneur par un voile,",
+      "themes": ["ḥijāb", "voile suprême"],
+      "commentaire": "Verset bouleversant — l'un des plus profonds du Coran pour la pensée soufie. <em>maḥjūbūn</em> : voilés, séparés par un voile (<em>ḥijāb</em>, حِجَاب). Qushayrī tire de ce verset une déduction qu'on n'oubliera pas : « Comme ils sont aujourd'hui empêchés de Sa connaissance, ils seront demain empêchés de Sa vue. <em>Et la logique du verset entraîne que les croyants, eux, Le verront demain comme ils Le connaissent aujourd'hui.</em> » C'est dans cette inférence que toute la spiritualité du <em>ruʾyat Allāh</em> — la vision de Dieu — trouve son fondement. Et il en découle aussi que la pire des peines, pour ceux du Sijjīn, n'est pas la fournaise — c'est le <em>voile</em>. Ce qu'ils refusaient ici (la connaissance), ils en sont là privés (la vision). Or que serait le Paradis si l'on n'y voyait pas Dieu ? Et que serait la Géhenne si l'on Le voyait encore ?",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation.", "gram": "particule" },
+        { "ar": "إِنَّهُمْ", "tr": "innahum", "racine": "—", "sens": "certes ils", "def": "inna + pronom suffixe.", "gram": "particule + pronom" },
+        { "ar": "عَن", "tr": "ʿan", "racine": "—", "sens": "de, loin de", "def": "préposition.", "gram": "préposition" },
+        { "ar": "رَّبِّهِمْ", "tr": "rabbihim", "racine": "ر ب ب", "sens": "leur Seigneur", "def": "rabb + pronom suffixe.", "gram": "nom + pronom suffixe, génitif" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce Jour-là", "def": "adverbe.", "gram": "adverbe de temps" },
+        { "ar": "لَّمَحْجُوبُونَ", "tr": "la-maḥjūbūn", "racine": "ح ج ب", "sens": "assurément voilés", "def": "maḥjūb : participe passif de ḥajaba ; séparé par un voile. Racine de ḥijāb.", "gram": "participe passif pluriel, nominatif" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "ثُمَّ إِنَّهُمْ لَصَالُو الْجَحِيمِ",
+      "tr": "thumma innahum la-ṣālū l-jaḥīm",
+      "trad": "puis ils brûleront dans la Fournaise.",
+      "themes": ["Fournaise"],
+      "commentaire": "La Fournaise vient <em>après</em> le voile. La séparation d'avec Dieu est première ; la souffrance physique en est la conséquence.",
+      "mots": [
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "puis", "def": "conjonction de succession.", "gram": "conjonction" },
+        { "ar": "إِنَّهُمْ", "tr": "innahum", "racine": "—", "sens": "certes ils", "def": "voir verset 15.", "gram": "particule + pronom" },
+        { "ar": "لَصَالُو", "tr": "la-ṣālū", "racine": "ص ل ي", "sens": "brûleront", "def": "ṣalā : brûler.", "gram": "participe actif pluriel, nominatif" },
+        { "ar": "الْجَحِيمِ", "tr": "al-jaḥīm", "racine": "ج ح م", "sens": "la Fournaise", "def": "jaḥīm : feu intense, fournaise.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "ثُمَّ يُقَالُ هَٰذَا الَّذِي كُنتُم بِهِ تُكَذِّبُونَ",
+      "tr": "thumma yuqālu hādhā lladhī kuntum bihi tukadhdhibūn",
+      "trad": "On leur dira alors : « C'est là ce que vous traitiez de mensonge ! »",
+      "themes": ["constat ironique"],
+      "commentaire": "Le constat final est une simple reconnaissance : voici ce que vous niiez. Pas d'argumentation supplémentaire ; le réel parle de lui-même.",
+      "mots": [
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "puis", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "يُقَالُ", "tr": "yuqālu", "racine": "ق و ل", "sens": "il sera dit", "def": "qāla au passif.", "gram": "verbe inaccompli passif, 3ᵉ pers. masc. sing." },
+        { "ar": "هَٰذَا", "tr": "hādhā", "racine": "—", "sens": "ceci est", "def": "démonstratif.", "gram": "démonstratif" },
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "ce que", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "كُنتُم", "tr": "kuntum", "racine": "ك و ن", "sens": "vous étiez", "def": "kāna.", "gram": "verbe accompli, 2ᵉ pers. masc. plur." },
+        { "ar": "بِهِ", "tr": "bihi", "racine": "—", "sens": "à le", "def": "préposition + pronom.", "gram": "préposition + pronom" },
+        { "ar": "تُكَذِّبُونَ", "tr": "tukadhdhibūn", "racine": "ك ذ ب", "sens": "traiter de mensonge", "def": "kadhdhaba.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "كَلَّا إِنَّ كِتَابَ الْأَبْرَارِ لَفِي عِلِّيِّينَ",
+      "tr": "kallā inna kitāba l-abrāri la-fī ʿilliyyīn",
+      "trad": "Que non ! Certes, le Livre des justes est dans ʿIlliyyīn ;",
+      "themes": ["ʿIlliyyīn", "registre des justes"],
+      "commentaire": "<em>ʿIlliyyīn</em> (عِلِّيِّين) — Qushayrī : « le plus haut des lieux, où sont portées les âmes des justes pour leur honneur et leur dignité. On dit aussi : le Lotus de la Limite (<em>Sidrat al-muntahā</em>). On dit : au-dessus du septième ciel. » La racine <em>ʿ-l-w</em> est celle de la hauteur — c'est l'image inverse de Sijjīn (la prison souterraine) : un <em>palais élevé</em> où sont gardés les actes des <em>abrār</em> (les justes, les pieux).",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation.", "gram": "particule" },
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule.", "gram": "particule" },
+        { "ar": "كِتَابَ", "tr": "kitāba", "racine": "ك ت ب", "sens": "le Livre de", "def": "kitāb.", "gram": "nom, accusatif construit" },
+        { "ar": "الْأَبْرَارِ", "tr": "al-abrār", "racine": "ب ر ر", "sens": "des justes", "def": "abrār : pluriel de barr ; les pieux, les bienfaisants.", "gram": "nom pluriel, génitif défini" },
+        { "ar": "لَفِي", "tr": "la-fī", "racine": "—", "sens": "est dans", "def": "particule + préposition.", "gram": "particules" },
+        { "ar": "عِلِّيِّينَ", "tr": "ʿilliyyīn", "racine": "ع ل و", "sens": "les Hauteurs", "def": "ʿIlliyyīn : nom propre du registre des justes ; littéralement « les Hauteurs ».", "gram": "nom propre, génitif" }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "وَمَا أَدْرَاكَ مَا عِلِّيُّونَ",
+      "tr": "wa-mā adrāka mā ʿilliyyūn",
+      "trad": "mais qu'est-ce qui te fera connaître ce qu'est ʿIlliyyīn ?",
+      "themes": ["mystère lumineux"],
+      "commentaire": "Le mystère est ici inverse : non plus la profondeur de la prison, mais la hauteur de la noblesse. Et la même formule oratoire dit, des deux côtés, qu'on ne peut <em>savoir</em> d'avance — il faut y être pour comprendre.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "et qu'est-ce qui", "def": "conjonction + interrogatif.", "gram": "conjonction + interrogatif" },
+        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "te fera savoir", "def": "adrā + pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qu'est", "def": "interrogatif.", "gram": "interrogatif" },
+        { "ar": "عِلِّيُّونَ", "tr": "ʿilliyyūn", "racine": "ع ل و", "sens": "ʿIlliyyūn", "def": "voir verset 18.", "gram": "nom propre, nominatif" }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "كِتَابٌ مَّرْقُومٌ",
+      "tr": "kitābun marqūm",
+      "trad": "C'est un registre tenu avec soin.",
+      "themes": ["registre lumineux"],
+      "commentaire": "Exact écho au verset 9 : même formulation pour Sijjīn et pour ʿIlliyyīn — un même soin dans la tenue des deux registres. Dieu ne perd rien, ni d'un côté ni de l'autre.",
+      "mots": [
+        { "ar": "كِتَابٌ", "tr": "kitāb", "racine": "ك ت ب", "sens": "un registre", "def": "kitāb.", "gram": "nom, nominatif indéfini" },
+        { "ar": "مَّرْقُومٌ", "tr": "marqūm", "racine": "ر ق م", "sens": "marqué", "def": "voir verset 9.", "gram": "participe passif, nominatif indéfini" }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "يَشْهَدُهُ الْمُقَرَّبُونَ",
+      "tr": "yashhaduhu l-muqarrabūn",
+      "trad": "Ceux qui sont proches de Dieu le contemplent.",
+      "themes": ["muqarrabūn", "rapprochés"],
+      "commentaire": "<em>al-muqarrabūn</em> (المُقَرَّبُون) — Qushayrī : « les rapprochés parmi les anges, témoins du registre. » Dans la pensée soufie, les <em>muqarrabūn</em> sont la plus haute catégorie : au-dessus des justes (<em>abrār</em>), il y a les rapprochés (<em>muqarrabūn</em>) — ceux qui, déjà ici-bas, ne sont occupés que de Lui.",
+      "mots": [
+        { "ar": "يَشْهَدُهُ", "tr": "yashhaduhu", "racine": "ش ه د", "sens": "le contemplent", "def": "shahida : témoigner, contempler ; avec pronom suffixe.", "gram": "verbe inaccompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "الْمُقَرَّبُونَ", "tr": "al-muqarrabūn", "racine": "ق ر ب", "sens": "les rapprochés", "def": "muqarrabūn : pluriel de muqarrab ; les rapprochés (de Dieu).", "gram": "participe passif pluriel, nominatif défini" }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "إِنَّ الْأَبْرَارَ لَفِي نَعِيمٍ",
+      "tr": "inna l-abrāra la-fī naʿīm",
+      "trad": "Certes, les justes sont placés dans un lieu de délice ;",
+      "themes": ["naʿīm", "délices"],
+      "commentaire": "Qushayrī donne une lecture lumineuse, en deux temps : « <em>aujourd'hui et demain</em>. Aujourd'hui dans le souffle de la connaissance, le repos de l'obéissance et de la bienfaisance, la grâce du contentement, l'intimité de la proximité et l'expansion de la jonction. Et demain dans le Jardin, et dans toutes les variétés de proximité et d'intimité qui leur ont été promises. » La <em>naʿīm</em> des justes commence dès maintenant.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule.", "gram": "particule" },
+        { "ar": "الْأَبْرَارَ", "tr": "al-abrār", "racine": "ب ر ر", "sens": "les justes", "def": "voir verset 18.", "gram": "nom pluriel, accusatif défini" },
+        { "ar": "لَفِي", "tr": "la-fī", "racine": "—", "sens": "sont dans", "def": "particule + préposition.", "gram": "particules" },
+        { "ar": "نَعِيمٍ", "tr": "naʿīm", "racine": "ن ع م", "sens": "délice, félicité", "def": "naʿīm : délice, grâce.", "gram": "nom, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "عَلَى الْأَرَائِكِ يَنظُرُونَ",
+      "tr": "ʿalā l-arāʾiki yanẓurūn",
+      "trad": "étendus sur des lits d'apparat, ils regardent...",
+      "themes": ["regard non précisé"],
+      "commentaire": "Verset délicat. Le Coran dit « ils regardent » <em>sans préciser ce qu'ils regardent</em>. Qushayrī s'en saisit : « Il a posé le regard sans déterminer l'objet regardé, à cause de la diversité de leurs états. Certains regardent leurs palais. Certains regardent leurs houris. Certains regardent... et certains. <em>Et il y a les khawāṣṣ : ils regardent Dieu — gloire à Lui — en permanence.</em> » Trois niveaux de regard, des palais aux houris à la vision même de Dieu.",
+      "mots": [
+        { "ar": "عَلَى", "tr": "ʿalā", "racine": "—", "sens": "sur", "def": "préposition.", "gram": "préposition" },
+        { "ar": "الْأَرَائِكِ", "tr": "al-arāʾik", "racine": "أ ر ك", "sens": "les lits d'apparat", "def": "arāʾik : pluriel d'arīka ; lits d'apparat, divans.", "gram": "nom pluriel, génitif défini" },
+        { "ar": "يَنظُرُونَ", "tr": "yanẓurūn", "racine": "ن ظ ر", "sens": "ils regardent", "def": "naẓara : regarder.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "تَعْرِفُ فِي وُجُوهِهِمْ نَضْرَةَ النَّعِيمِ",
+      "tr": "taʿrifu fī wujūhihim naḍrata n-naʿīm",
+      "trad": "Tu reconnais sur leurs visages l'éclat de la béatitude.",
+      "themes": ["éclat du visage", "trace de l'amour"],
+      "commentaire": "Qushayrī s'envole ici dans l'un des plus beaux passages de tout son commentaire : « Qui les regarde sait que la trace de leur regard vers leur Maître est ce qui paraît sur leur visage. <em>Les états de l'amant sont toujours des témoins sur lui.</em> Si c'est le temps de l'union : sa pavane et sa galanterie, sa joie et son ravissement, son énergie et son expansion. Si c'est le temps de l'absence et de la séparation : sa pâleur et son dépérissement, son gémissement et son sanglot, ses larmes et ses insomnies. » Le visage de l'amant est le tableau public de son intimité. Et Qushayrī cite un poème dont il est l'auteur : <em>« Ô toi dont la vue a changé ma figure, donnant raison à tout ce qu'on soupçonnait de nous... »</em>",
+      "mots": [
+        { "ar": "تَعْرِفُ", "tr": "taʿrifu", "racine": "ع ر ف", "sens": "tu reconnais", "def": "ʿarafa : connaître, reconnaître.", "gram": "verbe inaccompli, 2ᵉ pers. masc. sing." },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "sur", "def": "préposition.", "gram": "préposition" },
+        { "ar": "وُجُوهِهِمْ", "tr": "wujūhihim", "racine": "و ج ه", "sens": "leurs visages", "def": "wujūh : pluriel de wajh.", "gram": "nom pluriel + pronom suffixe, génitif" },
+        { "ar": "نَضْرَةَ", "tr": "naḍrata", "racine": "ن ض ر", "sens": "l'éclat de", "def": "naḍra : éclat, fraîcheur.", "gram": "nom, accusatif construit" },
+        { "ar": "النَّعِيمِ", "tr": "an-naʿīm", "racine": "ن ع م", "sens": "la béatitude", "def": "naʿīm.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ",
+      "tr": "yusqawna min raḥīqin makhtūm",
+      "trad": "On leur sert à boire un nectar scellé",
+      "themes": ["nectar scellé"],
+      "commentaire": "<em>raḥīq makhtūm</em> : nectar scellé. Qushayrī donne quatre lectures : « un nectar sans mélange ; vieux et excellent ; qu'ils boiront jusqu'à un fond de musc ; ou bien : <em>scellé avant leur venue, mis de côté pour chacun à son nom.</em> » Cette dernière lecture est splendide : ce qu'on boit au Paradis a été préparé pour soi, scellé en attente de l'invité.",
+      "mots": [
+        { "ar": "يُسْقَوْنَ", "tr": "yusqawn", "racine": "س ق ي", "sens": "on leur fait boire", "def": "saqā au passif.", "gram": "verbe inaccompli passif, 3ᵉ pers. masc. plur." },
+        { "ar": "مِن", "tr": "min", "racine": "—", "sens": "de", "def": "préposition.", "gram": "préposition" },
+        { "ar": "رَّحِيقٍ", "tr": "raḥīq", "racine": "ر ح ق", "sens": "nectar", "def": "raḥīq : nectar, vin pur.", "gram": "nom, génitif indéfini" },
+        { "ar": "مَّخْتُومٍ", "tr": "makhtūm", "racine": "خ ت م", "sens": "scellé", "def": "makhtūm : participe passif de khatama ; scellé.", "gram": "participe passif, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "خِتَامُهُ مِسْكٌ ۚ وَفِي ذَٰلِكَ فَلْيَتَنَافَسِ الْمُتَنَافِسُونَ",
+      "tr": "khitāmuhu miskun wa-fī dhālika fa-l-yatanāfasi l-mutanāfisūn",
+      "trad": "par un cachet de musc. Que ceux qui en désirent rivalisent pour l'obtenir !",
+      "themes": ["rivalité noble", "munāfasa"],
+      "commentaire": "<em>fa-l-yatanāfas</em> : que rivalisent. Qushayrī liste les voies de cette <em>rivalité noble</em> (<em>munāfasa</em>, مُنَافَسَة) : « par l'empressement aux œuvres pies, la course à la proximité, l'attachement du cœur à Dieu, le dépouillement des qualités basses, le mouvement des aspirations dans le Royaume, la continuation de la conversation intime. » Six voies pour une seule course.",
+      "mots": [
+        { "ar": "خِتَامُهُ", "tr": "khitāmuhu", "racine": "خ ت م", "sens": "son cachet", "def": "khitām + pronom suffixe.", "gram": "nom + pronom suffixe, nominatif" },
+        { "ar": "مِسْكٌ", "tr": "misk", "racine": "م س ك", "sens": "musc", "def": "misk : musc.", "gram": "nom, nominatif indéfini" },
+        { "ar": "وَفِي", "tr": "wa-fī", "racine": "—", "sens": "et dans", "def": "conjonction + préposition.", "gram": "conjonction + préposition" },
+        { "ar": "ذَٰلِكَ", "tr": "dhālika", "racine": "—", "sens": "cela", "def": "démonstratif.", "gram": "démonstratif" },
+        { "ar": "فَلْيَتَنَافَسِ", "tr": "fa-l-yatanāfas", "racine": "ن ف س", "sens": "que rivalisent", "def": "tanāfasa : rivaliser noblement.", "gram": "verbe impératif énergique, 3ᵉ pers. masc. sing." },
+        { "ar": "الْمُتَنَافِسُونَ", "tr": "al-mutanāfisūn", "racine": "ن ف س", "sens": "les rivaux", "def": "mutanāfisūn : pluriel.", "gram": "participe actif pluriel, nominatif défini" }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "وَمِزَاجُهُ مِن تَسْنِيمٍ",
+      "tr": "wa-mizājuhu min tasnīm",
+      "trad": "Il est mélangé à l'eau de Tasnīm,",
+      "themes": ["Tasnīm"],
+      "commentaire": "<em>Tasnīm</em> (تَسْنِيم) — Qushayrī : « une source qui s'élève sur eux d'en haut. On dit aussi : une gouttière qui se déverse sur eux d'au-dessus. On l'appelle Tasnīm parce que son eau coule dans l'air d'une élévation à l'autre, puis se déverse dans les coupes des gens du Paradis. » La racine <em>s-n-m</em> est celle de la hauteur, de l'élévation.",
+      "mots": [
+        { "ar": "وَمِزَاجُهُ", "tr": "wa-mizājuhu", "racine": "م ز ج", "sens": "et son mélange", "def": "mizāj + pronom suffixe.", "gram": "nom + pronom suffixe, nominatif" },
+        { "ar": "مِن", "tr": "min", "racine": "—", "sens": "de", "def": "préposition.", "gram": "préposition" },
+        { "ar": "تَسْنِيمٍ", "tr": "tasnīm", "racine": "س ن م", "sens": "Tasnīm", "def": "Tasnīm : source d'élévation au Paradis.", "gram": "nom propre, génitif" }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "عَيْنًا يَشْرَبُ بِهَا الْمُقَرَّبُونَ",
+      "tr": "ʿaynan yashrabu bihā l-muqarrabūn",
+      "trad": "une fontaine où s'abreuvent ceux qui sont proches de Dieu.",
+      "themes": ["fontaine des muqarrabūn"],
+      "commentaire": "Et Qushayrī livre la hiérarchie spirituelle parfaite : « Parmi les gens, certains boivent <em>mélangé</em>, certains boivent <em>pur</em>. Les <em>awliyāʾ</em> (les amis de Dieu) boivent mélangé ; les <em>khawāṣṣ</em> (l'élite) boivent pur. » Trois degrés : les justes (<em>abrār</em>) boivent du <em>raḥīq</em> mélangé à un peu de Tasnīm ; les amis (<em>awliyāʾ</em>) boivent davantage de Tasnīm ; les rapprochés (<em>muqarrabūn</em>) boivent <em>la source elle-même</em>, sans mélange. Plus on s'approche, plus la boisson devient pure.",
+      "mots": [
+        { "ar": "عَيْنًا", "tr": "ʿaynan", "racine": "ع ي ن", "sens": "une fontaine", "def": "ʿayn : source, œil.", "gram": "nom, accusatif indéfini" },
+        { "ar": "يَشْرَبُ", "tr": "yashrabu", "racine": "ش ر ب", "sens": "boivent", "def": "shariba : boire.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "بِهَا", "tr": "bihā", "racine": "—", "sens": "à elle", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "الْمُقَرَّبُونَ", "tr": "al-muqarrabūn", "racine": "ق ر ب", "sens": "les rapprochés", "def": "voir verset 21.", "gram": "participe passif pluriel, nominatif défini" }
+      ]
+    },
+    {
+      "n": 29,
+      "ar": "إِنَّ الَّذِينَ أَجْرَمُوا كَانُوا مِنَ الَّذِينَ آمَنُوا يَضْحَكُونَ",
+      "tr": "inna lladhīna ajramū kānū mina lladhīna āmanū yaḍḥakūn",
+      "trad": "De vrai, les criminels riaient de ceux qui croient,",
+      "themes": ["raillerie"],
+      "commentaire": "Le verset bascule vers ce qui se passait ici-bas : les coupables riaient des croyants. Qushayrī : « ils riaient par moquerie. » La sourate va maintenant retourner le rapport.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule.", "gram": "particule" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif pluriel.", "gram": "pronom relatif" },
+        { "ar": "أَجْرَمُوا", "tr": "ajramū", "racine": "ج ر م", "sens": "ont commis le crime", "def": "ajrama : commettre un crime, transgresser.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "كَانُوا", "tr": "kānū", "racine": "ك و ن", "sens": "ils étaient", "def": "kāna.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "مِنَ", "tr": "mina", "racine": "—", "sens": "de", "def": "préposition.", "gram": "préposition" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "آمَنُوا", "tr": "āmanū", "racine": "أ م ن", "sens": "ont cru", "def": "āmana.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "يَضْحَكُونَ", "tr": "yaḍḥakūn", "racine": "ض ح ك", "sens": "ils riaient", "def": "ḍaḥika : rire.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 30,
+      "ar": "وَإِذَا مَرُّوا بِهِمْ يَتَغَامَزُونَ",
+      "tr": "wa-idhā marrū bihim yataghāmazūn",
+      "trad": "lorsqu'ils passaient près d'eux, ils échangeaient des clins d'œil,",
+      "themes": ["clins d'œil moqueurs"],
+      "commentaire": "Détail glaçant. <em>yataghāmazūn</em> : ils se faisaient des clins d'œil moqueurs. Le mépris n'est pas seulement bruyant — il a sa langue secrète, signe entre initiés contre ceux qu'on dédaigne.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "مَرُّوا", "tr": "marrū", "racine": "م ر ر", "sens": "ils passaient", "def": "marra : passer.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "بِهِمْ", "tr": "bihim", "racine": "—", "sens": "près d'eux", "def": "préposition + pronom.", "gram": "préposition + pronom" },
+        { "ar": "يَتَغَامَزُونَ", "tr": "yataghāmazūn", "racine": "غ م ز", "sens": "ils échangeaient des clins d'œil", "def": "taghāmaza : se faire des signes moqueurs réciproques.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 31,
+      "ar": "وَإِذَا انقَلَبُوا إِلَىٰ أَهْلِهِمُ انقَلَبُوا فَكِهِينَ",
+      "tr": "wa-idhā nqalabū ilā ahlihimu nqalabū fakihīn",
+      "trad": "et ils rentraient dans leur famille en plaisantant.",
+      "themes": ["plaisanterie chez soi"],
+      "commentaire": "<em>fakihīn</em> : amusés, hilares. La moquerie devient un spectacle qu'on rapporte chez soi, comme un bon souvenir.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "انقَلَبُوا", "tr": "inqalabū", "racine": "ق ل ب", "sens": "ils s'en retournaient", "def": "inqalaba.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "إِلَىٰ", "tr": "ilā", "racine": "—", "sens": "vers", "def": "préposition.", "gram": "préposition" },
+        { "ar": "أَهْلِهِمُ", "tr": "ahlihim", "racine": "أ ه ل", "sens": "leur famille", "def": "ahl + pronom suffixe.", "gram": "nom + pronom suffixe, génitif" },
+        { "ar": "انقَلَبُوا", "tr": "inqalabū", "racine": "ق ل ب", "sens": "ils s'en retournaient", "def": "inqalaba.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "فَكِهِينَ", "tr": "fakihīn", "racine": "ف ك ه", "sens": "en plaisantant", "def": "fakih : qui plaisante, qui rit.", "gram": "nom adjectival pluriel, accusatif" }
+      ]
+    },
+    {
+      "n": 32,
+      "ar": "وَإِذَا رَأَوْهُمْ قَالُوا إِنَّ هَٰؤُلَاءِ لَضَالُّونَ",
+      "tr": "wa-idhā raʾawhum qālū inna hāʾulāʾi la-ḍāllūn",
+      "trad": "Ils disaient en les regardant : « Ce sont là des égarés ! »",
+      "themes": ["accusation d'égarement"],
+      "commentaire": "La pointe du retournement : ceux qui sont sur la voie passent pour <em>égarés</em> aux yeux de ceux qui s'égarent. C'est l'expérience même de tout cheminant : son chemin paraît, du dehors, un égarement.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "et lorsque", "def": "conjonction + particule.", "gram": "conjonction + particule" },
+        { "ar": "رَأَوْهُمْ", "tr": "raʾawhum", "racine": "ر أ ي", "sens": "ils les voyaient", "def": "raʾā + pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. plur." },
+        { "ar": "قَالُوا", "tr": "qālū", "racine": "ق و ل", "sens": "ils disaient", "def": "qāla.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule.", "gram": "particule" },
+        { "ar": "هَٰؤُلَاءِ", "tr": "hāʾulāʾi", "racine": "—", "sens": "ces gens-là", "def": "démonstratif pluriel.", "gram": "démonstratif" },
+        { "ar": "لَضَالُّونَ", "tr": "la-ḍāllūn", "racine": "ض ل ل", "sens": "assurément égarés", "def": "ḍāllūn : pluriel de ḍāll.", "gram": "participe actif pluriel, nominatif" }
+      ]
+    },
+    {
+      "n": 33,
+      "ar": "وَمَا أُرْسِلُوا عَلَيْهِمْ حَافِظِينَ",
+      "tr": "wa-mā ursilū ʿalayhim ḥāfiẓīn",
+      "trad": "Pourtant, on ne les a pas envoyés pour être leurs gardiens.",
+      "themes": ["non-mandat"],
+      "commentaire": "Réplique implicite : ils s'arrogeaient un rôle de juges et de gardiens qu'aucune mission ne leur avait confié. Personne ne les avait nommés. Toute critique non mandatée par la responsabilité d'autrui n'est qu'arrogance.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "et ne... pas", "def": "conjonction + négation.", "gram": "conjonction + particule" },
+        { "ar": "أُرْسِلُوا", "tr": "ursilū", "racine": "ر س ل", "sens": "ils ont été envoyés", "def": "arsala au passif.", "gram": "verbe accompli passif, 3ᵉ pers. masc. plur." },
+        { "ar": "عَلَيْهِمْ", "tr": "ʿalayhim", "racine": "—", "sens": "sur eux", "def": "préposition + pronom.", "gram": "préposition + pronom" },
+        { "ar": "حَافِظِينَ", "tr": "ḥāfiẓīn", "racine": "ح ف ظ", "sens": "gardiens", "def": "ḥāfiẓ : gardien.", "gram": "participe actif pluriel, accusatif" }
+      ]
+    },
+    {
+      "n": 34,
+      "ar": "فَالْيَوْمَ الَّذِينَ آمَنُوا مِنَ الْكُفَّارِ يَضْحَكُونَ",
+      "tr": "fa-l-yawma lladhīna āmanū mina l-kuffāri yaḍḥakūn",
+      "trad": "Mais aujourd'hui, ce sont les croyants qui rient des mécréants :",
+      "themes": ["renversement"],
+      "commentaire": "Le rire se retourne. Mais Qushayrī précise discrètement le caractère du rire des justes : il n'est pas méprisant ; il est la reconnaissance de la vérité enfin manifeste.",
+      "mots": [
+        { "ar": "فَالْيَوْمَ", "tr": "fa-l-yawma", "racine": "ي و م", "sens": "alors aujourd'hui", "def": "fa- + yawm défini.", "gram": "particule + nom, accusatif" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "آمَنُوا", "tr": "āmanū", "racine": "أ م ن", "sens": "ont cru", "def": "āmana.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "مِنَ", "tr": "mina", "racine": "—", "sens": "des", "def": "préposition.", "gram": "préposition" },
+        { "ar": "الْكُفَّارِ", "tr": "al-kuffār", "racine": "ك ف ر", "sens": "des mécréants", "def": "kuffār : pluriel de kāfir.", "gram": "nom pluriel, génitif défini" },
+        { "ar": "يَضْحَكُونَ", "tr": "yaḍḥakūn", "racine": "ض ح ك", "sens": "rient", "def": "ḍaḥika.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 35,
+      "ar": "عَلَى الْأَرَائِكِ يَنظُرُونَ",
+      "tr": "ʿalā l-arāʾiki yanẓurūn",
+      "trad": "couchés sur des lits d'apparat, ils regardent...",
+      "themes": ["regard final"],
+      "commentaire": "Reprise textuelle du verset 23 : « sur les lits d'apparat, ils regardent ». Et l'on entend, dans la répétition, l'écho de la lecture de Qushayrī : <em>les khawāṣṣ regardent Dieu en permanence</em>. Le vrai regard, à la fin, est celui-là.",
+      "mots": [
+        { "ar": "عَلَى", "tr": "ʿalā", "racine": "—", "sens": "sur", "def": "préposition.", "gram": "préposition" },
+        { "ar": "الْأَرَائِكِ", "tr": "al-arāʾik", "racine": "أ ر ك", "sens": "les lits d'apparat", "def": "voir verset 23.", "gram": "nom pluriel, génitif défini" },
+        { "ar": "يَنظُرُونَ", "tr": "yanẓurūn", "racine": "ن ظ ر", "sens": "ils regardent", "def": "naẓara.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 36,
+      "ar": "هَلْ ثُوِّبَ الْكُفَّارُ مَا كَانُوا يَفْعَلُونَ",
+      "tr": "hal thuwwiba l-kuffāru mā kānū yafʿalūn",
+      "trad": "Les mécréants ont-ils été rétribués pour leurs actions ?",
+      "themes": ["rétribution"],
+      "commentaire": "Question rhétorique de clôture. Qushayrī : « interrogation à valeur affirmative ». Oui, ils ont été rétribués. La sourate, ouverte par <em>malheur aux fraudeurs</em>, se referme sur l'équité accomplie : chacun a reçu la juste mesure de ses actes — et cette équité même, pour les justes, est une joie supplémentaire.",
+      "mots": [
+        { "ar": "هَلْ", "tr": "hal", "racine": "—", "sens": "est-ce que", "def": "particule interrogative.", "gram": "particule" },
+        { "ar": "ثُوِّبَ", "tr": "thuwwiba", "racine": "ث و ب", "sens": "ont été rétribués", "def": "thawwaba au passif ; rétribuer.", "gram": "verbe accompli passif, 3ᵉ pers. masc. sing." },
+        { "ar": "الْكُفَّارُ", "tr": "al-kuffār", "racine": "ك ف ر", "sens": "les mécréants", "def": "kuffār.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce que", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "كَانُوا", "tr": "kānū", "racine": "ك و ن", "sens": "ils étaient", "def": "kāna.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "يَفْعَلُونَ", "tr": "yafʿalūn", "racine": "ف ع ل", "sens": "à faire", "def": "faʿala.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "n": 92,
+  "nom_ar": "اللَّيْل",
+  "nom_tr": "al-Layl",
+  "nom_fr": "La Nuit",
+  "revelation": "mecquoise",
+  "versets_count": 21,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Layl — « La Nuit » — déploie en vingt et un versets ce qu'al-Sharḥ et al-Ḍuḥā disaient en huit ou onze : la grande loi des <em>deux voies</em>. La sourate s'ouvre par quatre serments — la nuit, le jour, le mâle et la femelle, leur création — pour conclure à une vérité qu'on aimerait moins lourde : <em>inna saʿyakum la-shattā</em>, « vos efforts sont divergents ». Qushayrī, sur ce verset, dresse un inventaire ahurissant des efforts humains : l'un cherche son monde, l'autre les appétits de son âme et l'obéissance à sa passion (<em>hawā</em>, هَوى), un autre l'honneur et l'ambition ; mais aussi, plus haut, celui qui peaufine sa piété (<em>taqwā</em>, تَقْوى), celui qui purifie son souvenir (<em>dhikr</em>, ذِكْر), celui qui se tient debout dans la belle satisfaction (<em>riḍā</em>, رِضَا), et celui qui cherche son Maître (<em>mawlā</em>, مَوْلى). Suit la sentence : à celui qui donne, qui craint Dieu et qui confirme le souverain Bien (<em>al-ḥusnā</em>, الحُسْنى), Dieu rendra facile la voie aisée ; à celui qui retient, se croit suffisant et nie ce Bien, Il rendra facile la voie difficile. La sourate s'achève sur l'évocation d'Abū Bakr libérant l'esclave Bilāl — non par calcul, mais en cherchant seulement <em>la Face de son Seigneur le Très-Haut</em>. C'est l'exemple parfait du <em>ṣiddīq</em> (صِدِّيق), celui dont l'effort, parmi tous ceux qui divergent, va droit.",
+  "themes": ["deux voies", "saʿy", "al-ḥusnā", "Face de Dieu", "Abū Bakr et Bilāl", "riḍā"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَاللَّيْلِ إِذَا يَغْشَىٰ",
+      "tr": "wa-l-layli idhā yaghshā",
+      "trad": "Par la nuit, quand elle occulte !",
+      "themes": ["serment", "nuit", "perplexité"],
+      "commentaire": "<em>yaghshā</em> (يَغْشَى) : voile, recouvre, enveloppe. La nuit qui descend recouvre l'horizon et tout ce qui est entre ciel et terre ; ses ténèbres effacent les contours. Qushayrī ouvre déjà la lecture intérieure : « La nuit, pour ceux qui sont en perplexité (<em>taḥayyur</em>, تَحَيُّر), recouvre tous les espaces de leur pensée ; ils ne trouvent plus la voie. » Il y a une nuit du dehors et une nuit du dedans : celle où l'âme, ne discernant plus, attend que reparaisse une lumière qu'elle ne peut produire elle-même.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "اللَّيْلِ", "tr": "al-layl", "racine": "ل ي ل", "sens": "la nuit", "def": "layl : la nuit.", "gram": "nom, génitif défini" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "يَغْشَىٰ", "tr": "yaghshā", "racine": "غ ش و", "sens": "elle voile, recouvre", "def": "ghashiya : envelopper, recouvrir, voiler ; à l'inaccompli.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَالنَّهَارِ إِذَا تَجَلَّىٰ",
+      "tr": "wa-n-nahāri idhā tajallā",
+      "trad": "Par le jour, quand il irradie !",
+      "themes": ["serment", "jour", "tajallī", "ʿirfān"],
+      "commentaire": "<em>tajallā</em> (تَجَلَّى) — un mot capital pour la pensée soufie. Le verbe désigne la manifestation lumineuse, le dévoilement, l'épiphanie. C'est le mot que le Coran utilise pour la manifestation de Dieu à la montagne du Sinaï (7, 143). Qushayrī, en miroir avec le verset 1, lit : « Le jour des gens de la gnose (<em>ahl al-ʿirfān</em>, أَهْل العِرْفَان), c'est l'éclat de leurs cœurs et de leurs secrets, au point que rien ne leur demeure caché ; ils sont apaisés par le lever du soleil — le soleil de l'unification (<em>tawḥīd</em>, تَوْحِيد) — et n'ont plus à allumer la lampe » de leur raison. Le jour vrai est intérieur : c'est l'heure où le cœur, illuminé, n'a plus besoin de chercher.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "النَّهَارِ", "tr": "an-nahār", "racine": "ن ه ر", "sens": "le jour", "def": "nahār : le jour, par opposition à la nuit.", "gram": "nom, génitif défini" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "تَجَلَّىٰ", "tr": "tajallā", "racine": "ج ل و", "sens": "il se manifeste, il irradie", "def": "tajallā : se manifester, se dévoiler, briller ; mot central de la pensée soufie pour désigner les manifestations divines.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَمَا خَلَقَ الذَّكَرَ وَالْأُنثَىٰ",
+      "tr": "wa-mā khalaqa dh-dhakara wa-l-unthā",
+      "trad": "Par ce qu'Il a créé : le mâle et la femelle !",
+      "themes": ["polarité", "création"],
+      "commentaire": "Le pronom <em>mā</em> (مَا) peut signifier soit « ce qui » (par <em>ce qui</em> a créé le mâle et la femelle, c'est-à-dire la puissance créatrice elle-même), soit « qui » (par <em>Celui qui</em> a créé). Qushayrī lit la seconde voie : c'est Dieu Lui-même par qui l'on jure, à travers Son acte de création. Le mâle et la femelle, dans le Coran, sont l'image archétypale de toute polarité (cf. 51, 49 : « De toute chose Nous avons créé un couple »). Que les serments couvrent ainsi la nuit et le jour, puis le mâle et la femelle, c'est dire en images : tout est duel, et le serviteur lui aussi se tient dans la balance de ces dualités.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce que / Celui qui", "def": "ici introduit le complément du serment : Celui qui (ou : ce que [Sa puissance] a créé).", "gram": "pronom relatif" },
+        { "ar": "خَلَقَ", "tr": "khalaqa", "racine": "خ ل ق", "sens": "a créé", "def": "khalaqa : créer, façonner.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "الذَّكَرَ", "tr": "adh-dhakar", "racine": "ذ ك ر", "sens": "le mâle", "def": "dhakar : le mâle, le masculin.", "gram": "nom, accusatif défini" },
+        { "ar": "وَالْأُنثَىٰ", "tr": "wa-l-unthā", "racine": "أ ن ث", "sens": "et la femelle", "def": "unthā : la femelle, le féminin.", "gram": "nom, accusatif défini" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "إِنَّ سَعْيَكُمْ لَشَتَّىٰ",
+      "tr": "inna saʿyakum la-shattā",
+      "trad": "Certes, vos efforts sont divergents :",
+      "themes": ["saʿy", "divergence des voies"],
+      "commentaire": "Verset clé. <em>saʿy</em> (سَعْي) : effort, marche, peine — le mouvement même par lequel une vie se déploie. <em>shattā</em> (شَتَّى) : dispersés, divergents, allant chacun en sens contraire. Qushayrī déroule alors un inventaire saisissant des efforts humains, comme s'il faisait défiler les visages : « L'un est dans la quête de son monde ; un autre dans les appétits de son âme et l'obéissance à sa passion ; un autre dans la recherche de son honneur et de son ambition ; un autre dans le souci de l'au-delà ; un autre dans l'accomplissement de sa piété ; un autre dans la purification de son souvenir ; un autre dans la station de la satisfaction ; un autre — dans la quête de son Maître. » Et au sommet : « Celui qui réunit l'effort de l'âme dans l'obéissance, l'effort du cœur dans la sincérité (<em>ikhlāṣ</em>, إِخْلَاص), l'effort du corps dans la proximité, l'effort de la langue dans le souvenir de Dieu et la belle parole avec les hommes, l'appel des créatures à Dieu et le conseil sincère qu'on leur doit. » La sourate ne décrit pas seulement deux voies, mais une multitude — et il faut, pour chacun, savoir laquelle est la sienne.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule de mise en relief.", "gram": "particule" },
+        { "ar": "سَعْيَكُمْ", "tr": "saʿyakum", "racine": "س ع ي", "sens": "votre effort", "def": "saʿy : effort, course, marche tendue ; nom verbal de saʿā. Avec pronom suffixe pluriel.", "gram": "nom + pronom suffixe, accusatif" },
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
+        { "ar": "شَتَّىٰ", "tr": "shattā", "racine": "ش ت ت", "sens": "divergents, dispersés", "def": "shattā : pluriel de shatīt ; dispersés, divergents, allant chacun selon sa voie.", "gram": "nom adjectival pluriel, nominatif" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "فَأَمَّا مَنْ أَعْطَىٰ وَاتَّقَىٰ",
+      "tr": "fa-ammā man aʿṭā wa-ttaqā",
+      "trad": "à celui qui fait l'aumône et craint Dieu,",
+      "themes": ["don", "taqwā", "futuwwa"],
+      "commentaire": "Qushayrī déplie le verset en plusieurs sens superposés. La lecture courante : <em>aʿṭā</em> — il a donné de son bien ; <em>ittaqā</em> — il s'est gardé d'aller contre son Seigneur. Puis une lecture chevaleresque, qui touche au cœur de la <em>futuwwa</em> (فُتُوَّة, la vertu de chevalerie spirituelle) : « <em>aʿṭā</em> : il a donné aux autres l'équité venant de lui-même ; <em>ittaqā</em> : il s'est gardé d'exiger l'équité <em>pour</em> lui-même. » Donner aux autres ce qu'on aurait pu réclamer pour soi : telle est la générosité haute. Et plus profond encore : « <em>aʿṭā</em> : il s'est détourné des deux demeures (ce monde et l'autre comme objets de désir) ; <em>ittaqā</em> : il s'est gardé de leur donner aucun rang dans son cœur » — afin que le cœur, vide de tout, soit pur pour Dieu seul.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "أَمَّا", "tr": "ammā", "racine": "—", "sens": "quant à", "def": "particule introduisant un cas particulier.", "gram": "particule" },
+        { "ar": "مَنْ", "tr": "man", "racine": "—", "sens": "celui qui", "def": "pronom relatif/conditionnel.", "gram": "pronom" },
+        { "ar": "أَعْطَىٰ", "tr": "aʿṭā", "racine": "ع ط و", "sens": "a donné", "def": "aʿṭā : donner, faire l'aumône ; à l'accompli.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "وَاتَّقَىٰ", "tr": "wa-ttaqā", "racine": "و ق ي", "sens": "et a craint Dieu", "def": "ittaqā : se prémunir, craindre Dieu avec révérence ; même racine que taqwā.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "وَصَدَّقَ بِالْحُسْنَىٰ",
+      "tr": "wa-ṣaddaqa bi-l-ḥusnā",
+      "trad": "et qui déclare véridique le souverain Bien,",
+      "themes": ["ḥusnā", "souverain Bien"],
+      "commentaire": "<em>al-ḥusnā</em> (الْحُسْنى) — « la plus belle » — est un mot du Coran qui couvre plusieurs grâces : la rétribution la meilleure, le Paradis, la promesse de pardon pour les grands pécheurs, l'intercession du Prophète, la « compensation » que Dieu accorde à qui sait perdre pour Lui. Qushayrī en énumère certains de ces sens, mais ce qui compte est le verbe : <em>ṣaddaqa</em>, « tenir pour vrai, confirmer ». Le souverain Bien n'est pas seulement objet de croyance — c'est ce qu'il faut <em>oser tenir pour vrai</em> alors même qu'on ne le voit pas encore. La foi est l'organe de cette confiance.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "صَدَّقَ", "tr": "ṣaddaqa", "racine": "ص د ق", "sens": "il a tenu pour vrai", "def": "ṣaddaqa : forme intensive de ṣadaqa ; tenir pour vrai, confirmer comme véridique. Même racine que ṣidq (véracité) et ṣiddīq.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "بِالْحُسْنَىٰ", "tr": "bi-l-ḥusnā", "racine": "ح س ن", "sens": "le souverain Bien, la plus belle", "def": "ḥusnā : la plus belle (au féminin) ; nom abstrait du superlatif de ḥasan. Désigne dans le Coran la récompense suprême, le Paradis, le pardon, le souverain Bien.", "gram": "préposition + nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "فَسَنُيَسِّرُهُ لِلْيُسْرَىٰ",
+      "tr": "fa-sa-nuyassiruhu li-l-yusrā",
+      "trad": "Nous faciliterons l'accès au bonheur.",
+      "themes": ["facilitation", "voie aisée"],
+      "commentaire": "<em>nuyassiruhu li-l-yusrā</em> (نُيَسِّرُهُ لِلْيُسْرى) : Nous le rendrons facile à la voie facile. Qushayrī déplie ce que cela signifie concrètement : « Nous lui rendrons les actes d'obéissance faciles, Nous lui ferons paraître désagréables les transgressions, Nous Nous lui susciterons l'appétit de la proximité, Nous lui ferons aimer la foi, Nous embellirons à ses yeux la bienfaisance (<em>iḥsān</em>, إِحْسَان). » Et il ajoute : « Le maintien dans Son obéissance, et le retour à ce qui avait été commencé en fait d'adoration. » La grâce de Dieu, à celui qui s'est mis sur la bonne voie, n'est pas d'abord d'aplanir le terrain — c'est de rendre désirable ce qui est juste. Le bonheur du serviteur, c'est de prendre goût à ce que Dieu aime.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "سَ", "tr": "sa-", "racine": "—", "sens": "Nous (futur)", "def": "particule de futur proche.", "gram": "particule" },
+        { "ar": "نُيَسِّرُهُ", "tr": "nuyassiruhu", "racine": "ي س ر", "sens": "Nous le rendrons facile", "def": "yassara : rendre facile, faciliter ; forme intensive de yasara. Avec pronom suffixe.", "gram": "verbe inaccompli + pronom suffixe, 1ʳᵉ pers. plur." },
+        { "ar": "لِلْيُسْرَىٰ", "tr": "li-l-yusrā", "racine": "ي س ر", "sens": "à la voie facile", "def": "yusrā : la voie facile, l'aise ; superlatif féminin de yusr.", "gram": "préposition + nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "وَأَمَّا مَن بَخِلَ وَاسْتَغْنَىٰ",
+      "tr": "wa-ammā man bakhila wa-staghnā",
+      "trad": "Quant à l'avare qui se veut bien pourvu,",
+      "themes": ["avarice", "istighnāʾ"],
+      "commentaire": "Le verset retourne le miroir. <em>bakhila</em> (بَخِلَ) : il a été avare, il a retenu ce qu'il aurait dû donner. <em>istaghnā</em> (اسْتَغْنَى) : il s'est cru riche en lui-même, il s'est passé de Dieu. C'est le mot exact de la sourate 96 (<em>raʾāhu staghnā</em>) — l'illusion d'autarcie comme racine de toute rébellion. Qushayrī rapproche : « <em>Bakhila</em> : il a refusé l'obligatoire. <em>istaghnā</em> : il s'est cru sans besoin dans sa croyance. » Deux gestes qui paraissent inverses — retenir ce qu'on a, et se croire sans besoin — mais qui sont en réalité le même geste : celui d'un cœur qui se ferme.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "أَمَّا", "tr": "ammā", "racine": "—", "sens": "quant à", "def": "voir verset 5.", "gram": "particule" },
+        { "ar": "مَنْ", "tr": "man", "racine": "—", "sens": "celui qui", "def": "pronom relatif/conditionnel.", "gram": "pronom" },
+        { "ar": "بَخِلَ", "tr": "bakhila", "racine": "ب خ ل", "sens": "il a été avare", "def": "bakhila : être avare, retenir ce qu'on devrait donner ; à l'accompli.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "وَاسْتَغْنَىٰ", "tr": "wa-staghnā", "racine": "غ ن ي", "sens": "et s'est cru bien pourvu", "def": "istaghnā : se passer de, se croire sans besoin ; à l'accompli. Racine gh-n-y : la richesse, la suffisance.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "وَكَذَّبَ بِالْحُسْنَىٰ",
+      "tr": "wa-kadhdhaba bi-l-ḥusnā",
+      "trad": "et qui nie l'existence du souverain Bien,",
+      "themes": ["dénégation", "fermeture"],
+      "commentaire": "<em>kadhdhaba</em> (كَذَّبَ) — exact contraire de <em>ṣaddaqa</em> du verset 6. Là où l'un avait <em>tenu pour vrai</em>, l'autre <em>tient pour mensonge</em>. La symétrie est parfaite : à chacun des trois traits du juste correspond son inverse. Don / avarice ; piété / orgueil de suffisance ; foi / déni. Et la conséquence du verset suivant suit la même symétrie.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "كَذَّبَ", "tr": "kadhdhaba", "racine": "ك ذ ب", "sens": "il a démenti", "def": "kadhdhaba : forme intensive ; traiter de mensonge, tenir pour menteur.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "بِالْحُسْنَىٰ", "tr": "bi-l-ḥusnā", "racine": "ح س ن", "sens": "le souverain Bien", "def": "voir verset 6.", "gram": "préposition + nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "فَسَنُيَسِّرُهُ لِلْعُسْرَىٰ",
+      "tr": "fa-sa-nuyassiruhu li-l-ʿusrā",
+      "trad": "Nous lui faciliterons l'accès au malheur.",
+      "themes": ["facilitation inverse", "voie difficile"],
+      "commentaire": "Verset qui devrait faire trembler. Dieu ne dit pas qu'Il imposera la voie difficile à celui qui Le nie ; Il dit qu'Il la lui <em>facilitera</em>. Qushayrī : « Il tombera dans la transgression sans l'avoir préméditée, et Nous lui mettrons en main les occasions de la désobéissance. » L'idée est terrifiante de douceur dans sa logique : à force de retenir et de nier, l'âme finit par trouver naturel ce qu'elle avait fui d'abord. On ne se ferme pas en une fois ; on se ferme petit à petit, jusqu'à ce qu'il devienne <em>facile</em> de ne plus aimer.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "سَ", "tr": "sa-", "racine": "—", "sens": "Nous (futur)", "def": "particule de futur proche.", "gram": "particule" },
+        { "ar": "نُيَسِّرُهُ", "tr": "nuyassiruhu", "racine": "ي س ر", "sens": "Nous le rendrons facile", "def": "voir verset 7.", "gram": "verbe inaccompli + pronom suffixe, 1ʳᵉ pers. plur." },
+        { "ar": "لِلْعُسْرَىٰ", "tr": "li-l-ʿusrā", "racine": "ع س ر", "sens": "à la voie difficile", "def": "ʿusrā : la voie difficile, la dureté ; superlatif féminin de ʿusr.", "gram": "préposition + nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "وَمَا يُغْنِي عَنْهُ مَالُهُ إِذَا تَرَدَّىٰ",
+      "tr": "wa-mā yughnī ʿanhu māluhu idhā taraddā",
+      "trad": "Ses richesses ne lui serviront de rien lorsqu'il périra.",
+      "themes": ["vanité des biens", "chute"],
+      "commentaire": "<em>taraddā</em> (تَرَدَّى) : il s'effondre, il tombe à pic, il périt. Qushayrī simplement : « lorsqu'il meurt, à quoi lui servira son bien après sa mort ? » Le verset est une question d'évidence — et précisément, parce qu'elle est évidente, elle devrait suffire à dessiller les yeux. Mais l'évidence, comme dit ailleurs le Coran, ne suffit pas tant que le cœur s'est habitué à ne pas voir.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
+        { "ar": "يُغْنِي", "tr": "yughnī", "racine": "غ ن ي", "sens": "il enrichit, sert", "def": "aghnā : enrichir, servir, suffire ; à l'inaccompli.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "عَنْهُ", "tr": "ʿanhu", "racine": "—", "sens": "pour lui", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "مَالُهُ", "tr": "māluhu", "racine": "م و ل", "sens": "son bien", "def": "māl : bien, richesse, propriété ; avec pronom suffixe.", "gram": "nom + pronom suffixe, nominatif" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "تَرَدَّىٰ", "tr": "taraddā", "racine": "ر د ي", "sens": "il s'effondre, périt", "def": "taraddā : tomber à pic, s'effondrer, périr ; à l'accompli.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "إِنَّ عَلَيْنَا لَلْهُدَىٰ",
+      "tr": "inna ʿalaynā la-l-hudā",
+      "trad": "Certes, c'est à Nous qu'incombe la Guidance,",
+      "themes": ["guidance", "obligation divine"],
+      "commentaire": "Verset majeur. Dieu se met Lui-même une obligation : <em>ʿalaynā</em>, « à Notre charge ». Comme s'Il s'engageait. Qushayrī précise : « C'est à Nous qu'incombe la guidance pour Nos amis (<em>awliyāʾ</em>, أَوْلِيَاء), ceux que Nous avons orientés. » Mais aussi, plus largement : « par le moyen des preuves » que Dieu sème dans la création et dans le cœur. Le serviteur n'a pas à inventer la voie : elle lui sera montrée. Il n'a qu'à ne pas refuser de la voir.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule de mise en relief.", "gram": "particule" },
+        { "ar": "عَلَيْنَا", "tr": "ʿalaynā", "racine": "—", "sens": "sur Nous, à Notre charge", "def": "préposition ʿalā + pronom suffixe 1ʳᵉ pers. plur.", "gram": "préposition + pronom" },
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
+        { "ar": "الْهُدَىٰ", "tr": "al-hudā", "racine": "ه د ي", "sens": "la Guidance", "def": "hudā : la direction droite, la guidance ; nom verbal de hadā.", "gram": "nom, nominatif défini" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "وَإِنَّ لَنَا لَلْآخِرَةَ وَالْأُولَىٰ",
+      "tr": "wa-inna lanā la-l-ākhirata wa-l-ūlā",
+      "trad": "et c'est à Nous qu'appartiennent la vie dernière et la vie présente !",
+      "themes": ["souveraineté", "deux mondes"],
+      "commentaire": "Qushayrī : « Comme royaume, que Nous donnons à qui Nous voulons. » Les deux mondes — ce monde et l'autre — appartiennent au même Roi. Il ne peut donc pas y avoir, pour le serviteur, de stratégie qui tirerait avantage de l'un en sacrifiant l'autre : tout est sous la même main. Cela suffit à dissoudre l'illusion de pouvoir « calculer ».",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule de mise en relief.", "gram": "particule" },
+        { "ar": "لَنَا", "tr": "lanā", "racine": "—", "sens": "à Nous", "def": "préposition li- + pronom suffixe 1ʳᵉ pers. plur.", "gram": "préposition + pronom" },
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
+        { "ar": "الْآخِرَةَ", "tr": "al-ākhira", "racine": "أ خ ر", "sens": "la vie dernière", "def": "ākhira : la dernière, l'au-delà.", "gram": "nom, accusatif défini" },
+        { "ar": "وَالْأُولَىٰ", "tr": "wa-l-ūlā", "racine": "أ و ل", "sens": "et la première", "def": "ūlā : la première, la présente (vie).", "gram": "nom, accusatif défini" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "فَأَنذَرْتُكُمْ نَارًا تَلَظَّىٰ",
+      "tr": "fa-andhartukum nāran talaẓẓā",
+      "trad": "Je vous ai donc avertis d'un Feu ardent",
+      "themes": ["avertissement", "Feu"],
+      "commentaire": "<em>talaẓẓā</em> (تَلَظَّى) : flamboie, embrase, brûle de toute sa force. L'avertissement n'a pas pour but de terroriser — il a pour but de réveiller. La sourate ne s'achève d'ailleurs pas sur le Feu, mais sur la satisfaction du juste (v. 21). Le Feu est la conséquence, non la fin.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "donc", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "أَنذَرْتُكُمْ", "tr": "andhartukum", "racine": "ن ذ ر", "sens": "Je vous ai avertis", "def": "andhara : avertir, mettre en garde ; à l'accompli 1ʳᵉ pers. sing. + pronom suffixe pluriel.", "gram": "verbe accompli + pronom suffixe, 1ʳᵉ pers. sing." },
+        { "ar": "نَارًا", "tr": "nāran", "racine": "ن و ر", "sens": "un Feu", "def": "nār : le feu.", "gram": "nom, accusatif indéfini" },
+        { "ar": "تَلَظَّىٰ", "tr": "talaẓẓā", "racine": "ل ظ ي", "sens": "qui flamboie", "def": "talaẓẓā : flamboyer, brûler avec ardeur ; à l'inaccompli (forme contractée).", "gram": "verbe inaccompli, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "لَا يَصْلَاهَا إِلَّا الْأَشْقَى",
+      "tr": "lā yaṣlāhā illā l-ashqā",
+      "trad": "où ne brûlera que le réprouvé,",
+      "themes": ["shaqāwa", "fermeture"],
+      "commentaire": "<em>al-ashqā</em> (الأَشْقى) : le plus malheureux, celui qui est entré dans la <em>shaqāwa</em> (شَقَاوَة), l'état de l'âme qui s'est défaite d'elle-même. Le mot n'est pas seulement un jugement sur l'autre : c'est l'image de ce qu'une vie devient quand elle persévère dans le refus. Le verset suivant nommera les deux actes par lesquels on entre dans cet état.",
+      "mots": [
+        { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
+        { "ar": "يَصْلَاهَا", "tr": "yaṣlāhā", "racine": "ص ل ي", "sens": "il y brûlera", "def": "ṣaliya : brûler, être exposé au feu ; à l'inaccompli + pronom suffixe.", "gram": "verbe inaccompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "sinon, à l'exception de", "def": "particule d'exception.", "gram": "particule" },
+        { "ar": "الْأَشْقَى", "tr": "al-ashqā", "racine": "ش ق و", "sens": "le plus malheureux, le réprouvé", "def": "ashqā : superlatif de shaqī ; le plus malheureux, celui qui est entré dans la shaqāwa (état de malheur spirituel).", "gram": "nom adjectival, nominatif défini" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "الَّذِي كَذَّبَ وَتَوَلَّىٰ",
+      "tr": "alladhī kadhdhaba wa-tawallā",
+      "trad": "celui qui crie au mensonge et qui se détourne.",
+      "themes": ["démenti", "fuite"],
+      "commentaire": "Deux verbes, deux gestes : <em>kadhdhaba</em> (كَذَّبَ), démentir, et <em>tawallā</em> (تَوَلَّى), se détourner. Qushayrī, court : « c'est-à-dire : il a mécru. » Le déni est rarement seulement intellectuel ; il s'accompagne presque toujours d'un mouvement du corps — celui de tourner le dos, de partir. La sourate 96 nommait ces deux verbes en miroir, et on les retrouvera presque partout dans le Coran : ils forment ensemble l'attitude type de la dénégation.",
+      "mots": [
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "celui qui", "def": "pronom relatif masc. sing.", "gram": "pronom relatif" },
+        { "ar": "كَذَّبَ", "tr": "kadhdhaba", "racine": "ك ذ ب", "sens": "il a démenti", "def": "kadhdhaba : traiter de mensonge.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "وَتَوَلَّىٰ", "tr": "wa-tawallā", "racine": "و ل ي", "sens": "et s'est détourné", "def": "tawallā : se détourner, tourner le dos.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "وَسَيُجَنَّبُهَا الْأَتْقَى",
+      "tr": "wa-sa-yujannabuhā l-atqā",
+      "trad": "Mais en sera préservé celui qui craint Dieu,",
+      "themes": ["taqwā", "atqā"],
+      "commentaire": "<em>al-atqā</em> (الأَتْقى) : le plus pieux, celui qui a fait de la <em>taqwā</em> (تَقْوى) le centre de sa vie. La <em>taqwā</em> n'est pas la peur servile ; c'est la garde du cœur, la délicatesse envers ce qui est dû à Dieu. Et l'on en sera <em>préservé</em> — non en récompense extérieure, mais comme conséquence intérieure : l'âme qui s'est gardée se trouve, au moment venu, gardée à son tour.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "سَ", "tr": "sa-", "racine": "—", "sens": "(futur)", "def": "particule de futur proche.", "gram": "particule" },
+        { "ar": "يُجَنَّبُهَا", "tr": "yujannabuhā", "racine": "ج ن ب", "sens": "il en sera tenu à l'écart", "def": "jannaba : tenir à l'écart, écarter ; au passif inaccompli + pronom suffixe.", "gram": "verbe inaccompli passif + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "الْأَتْقَى", "tr": "al-atqā", "racine": "و ق ي", "sens": "le plus pieux", "def": "atqā : superlatif de taqī ; le plus pieux, le plus vigilant envers Dieu. Racine de taqwā.", "gram": "nom adjectival, nominatif défini" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "الَّذِي يُؤْتِي مَالَهُ يَتَزَكَّىٰ",
+      "tr": "alladhī yuʾtī mālahu yatazakkā",
+      "trad": "celui qui donne de son bien pour se purifier.",
+      "themes": ["don", "purification", "zakāt"],
+      "commentaire": "<em>yatazakkā</em> (يَتَزَكَّى) : il se purifie, il se sanctifie. La racine <em>z-k-w</em> est splendide : elle signifie à la fois « purifier » et « faire croître ». Donner purifie celui qui donne — non par magie, mais par défait des chaînes invisibles que le bien retenu noue autour du cœur. Qushayrī ajoute deux lectures complémentaires : « il donne la zakāt obligatoire » ; « il se purifie des péchés ». Le don, dans l'islam, n'est pas un acte parmi d'autres : c'est la voie par laquelle l'âme s'allège.",
+      "mots": [
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "celui qui", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "يُؤْتِي", "tr": "yuʾtī", "racine": "أ ت ي", "sens": "il donne", "def": "ātā : donner ; à l'inaccompli.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "مَالَهُ", "tr": "mālahu", "racine": "م و ل", "sens": "son bien", "def": "māl : bien, richesse.", "gram": "nom + pronom suffixe, accusatif" },
+        { "ar": "يَتَزَكَّىٰ", "tr": "yatazakkā", "racine": "ز ك و", "sens": "il se purifie, il se sanctifie", "def": "tazakkā : se purifier, se sanctifier. Racine z-k-w : purifier et faire croître. Même racine que zakāt.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "وَمَا لِأَحَدٍ عِندَهُ مِن نِّعْمَةٍ تُجْزَىٰ",
+      "tr": "wa-mā li-aḥadin ʿindahu min niʿmatin tujzā",
+      "trad": "Nul auprès de Lui ne sera récompensé par un bienfait,",
+      "themes": ["don pur", "absence de calcul"],
+      "commentaire": "Qushayrī rapporte la cause de révélation : Abū Bakr, voyant l'esclave Bilāl torturé par son maître parce qu'il proclamait <em>Aḥad, Aḥad</em> (« Un, Un »), alla acheter Bilāl à son maître et l'affranchit. Les polythéistes dirent alors : « Si Abū Bakr a affranchi Bilāl, c'est en réalité pour rendre une dette qu'il lui devait. » Et Dieu fit descendre ces deux versets pour démentir le calcul. <em>Personne, dit le verset, ne lui doit un bienfait à rendre.</em> Il n'a rien donné pour récupérer ; il a donné, simplement, parce que.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
+        { "ar": "لِأَحَدٍ", "tr": "li-aḥadin", "racine": "أ ح د", "sens": "à quiconque", "def": "préposition li- + aḥad (quelqu'un, un).", "gram": "préposition + nom, génitif indéfini" },
+        { "ar": "عِندَهُ", "tr": "ʿindahu", "racine": "—", "sens": "auprès de lui", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "مِنْ", "tr": "min", "racine": "—", "sens": "de", "def": "préposition partitive.", "gram": "préposition" },
+        { "ar": "نِعْمَةٍ", "tr": "niʿma", "racine": "ن ع م", "sens": "un bienfait", "def": "niʿma : bienfait, faveur ; ici, dette de reconnaissance.", "gram": "nom, génitif indéfini" },
+        { "ar": "تُجْزَىٰ", "tr": "tujzā", "racine": "ج ز ي", "sens": "à récompenser", "def": "jazā : récompenser, rétribuer ; ici au passif inaccompli féminin.", "gram": "verbe inaccompli passif, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "إِلَّا ابْتِغَاءَ وَجْهِ رَبِّهِ الْأَعْلَىٰ",
+      "tr": "illā btighāʾa wajhi rabbihi l-aʿlā",
+      "trad": "sinon celui qui aura recherché la Face de son Seigneur le Très-Haut :",
+      "themes": ["Face de Dieu", "ibtighāʾ wajh Allāh", "intention pure"],
+      "commentaire": "Verset capital. <em>ibtighāʾ wajh rabbihi</em> (ابْتِغَاء وَجْهِ رَبِّه), « la recherche de la Face de son Seigneur » : c'est l'expression coranique du don pur, celui qui ne vise rien d'autre que Dieu. <em>Al-wajh</em> (الوَجْه), la Face, désigne Dieu Lui-même en tant qu'Il se laisse rencontrer — l'aspect par lequel Il se tourne vers la créature et la créature vers Lui. Qushayrī : « afin de Lui devenir proche par ce don. » Le don pur n'est pas l'effacement de la motivation ; c'est l'unification de la motivation. Une seule fin : Lui. Et tout le reste s'aligne en silence derrière. Une parole soufie ancienne dit : « La sincérité (<em>ikhlāṣ</em>), c'est que tes actes du dehors et tes états du dedans se valent — quand personne ne te voit, et quand tout le monde te voit. »",
+      "mots": [
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "sinon, sauf", "def": "particule d'exception.", "gram": "particule" },
+        { "ar": "ابْتِغَاءَ", "tr": "ibtighāʾa", "racine": "ب غ ي", "sens": "la recherche de", "def": "ibtighāʾ : nom verbal d'ibtaghā ; chercher, désirer.", "gram": "nom, accusatif construit" },
+        { "ar": "وَجْهِ", "tr": "wajhi", "racine": "و ج ه", "sens": "la Face de", "def": "wajh : la face, le visage ; en théologie coranique, désigne Dieu en tant qu'Il se laisse rencontrer.", "gram": "nom, génitif construit" },
+        { "ar": "رَبِّهِ", "tr": "rabbihi", "racine": "ر ب ب", "sens": "son Seigneur", "def": "rabb + pronom suffixe.", "gram": "nom + pronom suffixe, génitif" },
+        { "ar": "الْأَعْلَىٰ", "tr": "al-aʿlā", "racine": "ع ل و", "sens": "le Très-Haut", "def": "aʿlā : superlatif de ʿālī ; le plus élevé, le Très-Haut. Nom divin.", "gram": "nom adjectival, génitif défini" }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "وَلَسَوْفَ يَرْضَىٰ",
+      "tr": "wa-la-sawfa yarḍā",
+      "trad": "alors, enfin, il obtiendra satisfaction.",
+      "themes": ["riḍā", "satisfaction mutuelle"],
+      "commentaire": "Verset final, et qui boucle la sourate. <em>yarḍā</em> (يَرْضَى) : il sera satisfait. Qushayrī, en peu de mots, ouvre l'horizon : « Dieu sera satisfait de lui, et lui sera satisfait de ce que Dieu lui donne. » La satisfaction est <em>mutuelle</em> — comme la grande formule qui revient ailleurs dans le Coran (5, 119 ; 98, 8) : <em>raḍiya Llāhu ʿanhum wa-raḍū ʿanhu</em>, « Dieu est satisfait d'eux, et ils sont satisfaits de Lui ». La sourate, ouverte par l'inventaire de tous les efforts divergents, se referme ainsi sur la seule joie qui compte : la satisfaction réciproque entre le serviteur et son Seigneur. C'est la pointe de toute vie spirituelle ; et le Bilāl libéré comme l'Abū Bakr libérateur s'y rejoignent.",
+      "mots": [
+        { "ar": "وَلَ", "tr": "wa-la-", "racine": "—", "sens": "et assurément", "def": "conjonction + particule d'affirmation.", "gram": "conjonction + particule" },
+        { "ar": "سَوْفَ", "tr": "sawfa", "racine": "—", "sens": "bientôt", "def": "particule du futur lointain.", "gram": "particule" },
+        { "ar": "يَرْضَىٰ", "tr": "yarḍā", "racine": "ر ض و", "sens": "il sera satisfait", "def": "raḍiya : être satisfait, agréer ; à l'inaccompli.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." }
+      ]
+    }
+  ]
+}

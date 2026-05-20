@@ -1,0 +1,132 @@
+{
+  "n": 95,
+  "nom_ar": "التِّين",
+  "nom_tr": "al-Tīn",
+  "nom_fr": "The Fig",
+  "revelation": "Meccan",
+  "versets_count": 8,
+  "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
+  "intro": "Al-Tīn — “The Fig” — is a Meccan sūra likely revealed after <em>al-Burūj</em> (sūra 85). It takes its name from the fig mentioned in the first verse. The heart of the sūra lies in verses 4–6, among the most famous of the Quran: they state both the original nobility of man — created “in the most beautiful stature” — and his possible fall to “the lowest of the low”. The sūra opens with three enigmatic oaths (fig, olive, Mount Sinai, secure land) read by commentators sometimes as fruits, sometimes as holy places — Damascus, Jerusalem, Sinai, Mecca —, the lands where the great revelations took place. A ḥadīth says that whoever recites this sūra to its end is to answer: <em>balā</em> (“yes indeed”), and the Prophet adds: “I bear witness to that with him”.",
+  "themes": ["oaths", "stature of man", "fall", "faith and deeds", "Judgment"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَالتِّينِ وَالزَّيْتُونِ",
+      "tr": "wa-t-tīni wa-z-zaytūn",
+      "trad": "By the fig and the olive!",
+      "themes": ["oath", "fruits", "holy places"],
+      "commentaire": "The double oath — <em>al-tīn</em> (التِّين) and <em>al-zaytūn</em> (الزَّيْتُون) — concerns two blessed trees. For many, these are the fruits themselves by which God swears, for the blessing they hold. For others, they have a symbolic value: the fig refers to where Noah's Ark landed, or to the “mosque” of Damascus; the olive to the sanctuary of Jerusalem. Another reading brings the fig close to the leaves with which Adam and Eve covered themselves (7:22), and the olive to the “blessed olive” of light (24:35) — making the verse a symbolic prelude to vv. 4–6: the fig naming the fall, the olive the light.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "by", "def": "oath wāw: “by”.", "gram": "oath particle" },
+        { "ar": "التِّينِ", "tr": "at-tīn", "racine": "ت ي ن", "sens": "the fig", "def": "tīn: the fig tree, or the fig; a blessed tree in the Quranic tradition.", "gram": "noun, definite genitive" },
+        { "ar": "وَالزَّيْتُونِ", "tr": "wa-z-zaytūn", "racine": "ز ي ت", "sens": "and the olive", "def": "zaytūn: the olive tree, or olives; central tree of Mediterranean culture and a Quranic symbol of light (24:35).", "gram": "noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَطُورِ سِينِينَ",
+      "tr": "wa-ṭūri sīnīn",
+      "trad": "by Mount Sinai!",
+      "themes": ["Mount Sinai", "Moses"],
+      "commentaire": "<em>Ṭūr Sīnīn</em> (طُور سِينِين): Mount Sinai, where God spoke to Moses. <em>Ṭūr</em> is the Arabic for mountain; <em>sīnīn</em>, according to some commentators, derives from Ethiopic for “beautiful” — hence the reading “the blessed and beautiful Mount”. The oath, by this mountain, calls to mind the revelation to Moses and places the sūra in the continuity of the great theophanies.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "by", "def": "oath wāw.", "gram": "oath particle" },
+        { "ar": "طُورِ", "tr": "ṭūri", "racine": "ط و ر", "sens": "the Mount of", "def": "ṭūr: the mountain; construct genitive: “the Mount of”.", "gram": "noun, construct genitive" },
+        { "ar": "سِينِينَ", "tr": "sīnīn", "racine": "—", "sens": "Sinai", "def": "sīnīn: proper noun; Mount Sinai where God spoke to Moses. Some commentators hear in it an Ethiopic word meaning “beautiful, blessed”.", "gram": "proper noun, genitive" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَهَٰذَا الْبَلَدِ الْأَمِينِ",
+      "tr": "wa-hādhā l-baladi l-amīn",
+      "trad": "by this land made safe!",
+      "themes": ["Mecca", "sanctuary"],
+      "commentaire": "<em>al-balad al-amīn</em> (البَلَد الأَمِين): “the safe city” — Mecca, a sanctuary acknowledged by the pre-Islamic Arabs themselves, where fighting was forbidden (cf. 29:67). The verse thus closes a triad of places of revelation: Jerusalem (fig-olive), Sinai (Moses), Mecca (Muḥammad). The three great prophetic monotheisms are evoked by their landscapes.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "by", "def": "oath wāw.", "gram": "oath particle" },
+        { "ar": "هَٰذَا", "tr": "hādhā", "racine": "—", "sens": "this", "def": "near masc. demonstrative.", "gram": "demonstrative" },
+        { "ar": "الْبَلَدِ", "tr": "al-balad", "racine": "ب ل د", "sens": "the land, the city", "def": "balad: country, region, city; here Mecca.", "gram": "noun, definite genitive" },
+        { "ar": "الْأَمِينِ", "tr": "al-amīn", "racine": "أ م ن", "sens": "safe, secure", "def": "amīn: safe, peaceful; same root as amn (security). Names Mecca as inviolable sanctuary.", "gram": "adjectival noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "لَقَدْ خَلَقْنَا الْإِنسَانَ فِي أَحْسَنِ تَقْوِيمٍ",
+      "tr": "la-qad khalaqnā l-insāna fī aḥsani taqwīm",
+      "trad": "Truly We created man in the most beautiful stature,",
+      "themes": ["nobility of man", "creation"],
+      "commentaire": "A crucial verse. <em>aḥsan taqwīm</em> (أَحْسَن تَقْوِيم): the most beautiful stature, the finest conformation. <em>Taqwīm</em>, from the root <em>q-w-m</em> (“to stand straight”), names what has received its just and balanced form. The outward sign: man stands upright, where every other creature has its face stooped to the ground (67:22). But the sense goes further. A famous ḥadīth says: “God created Adam in His image.” Theologians draw from it that the human qualities — life, knowledge, power, will, speech, hearing, sight — are reflections, in the creature, of divine attributes. That is why, before man, the angels were ordered to prostrate (2:34). “For this reason the philosophers say that man is a microcosm, for all that the cosmos is composed of is gathered within him.”",
+      "mots": [
+        { "ar": "لَقَدْ", "tr": "la-qad", "racine": "—", "sens": "truly", "def": "affirmative particle + qad: marks the perfect with emphasis.", "gram": "particles" },
+        { "ar": "خَلَقْنَا", "tr": "khalaqnā", "racine": "خ ل ق", "sens": "We created", "def": "khalaqa: to create; perfect 1st pers. plur.", "gram": "perfect verb, 1st pers. plur." },
+        { "ar": "الْإِنسَانَ", "tr": "al-insān", "racine": "أ ن س", "sens": "man", "def": "insān: man.", "gram": "noun, definite accusative" },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "in", "def": "preposition.", "gram": "preposition" },
+        { "ar": "أَحْسَنِ", "tr": "aḥsani", "racine": "ح س ن", "sens": "the most beautiful of", "def": "aḥsan: superlative of ḥasan, beautiful; in construct genitive: “the most beautiful of”.", "gram": "adjectival noun, construct genitive" },
+        { "ar": "تَقْوِيمٍ", "tr": "taqwīm", "racine": "ق و م", "sens": "stature, conformation", "def": "taqwīm: verbal noun of qawwama (to form, to set upright, to shape); just, harmonious conformation.", "gram": "verbal noun, indefinite genitive" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ",
+      "tr": "thumma radadnāhu asfala sāfilīn",
+      "trad": "then We cast him to the lowest of the low,",
+      "themes": ["fall", "abasement"],
+      "commentaire": "<em>asfal sāfilīn</em> (أَسْفَل سَافِلِين): the lowest of the low, the most abject. The verse can be heard two ways. First, an outward reading: old age, which diminishes the faculties to the point of decrepitude — as the Quran says elsewhere, “whomever We give long life, We cause to regress in creation” (36:68). But the inward reading dominates: man, created for nobility, can fall under the very measure of animal life; “they are like cattle — nay, even more astray” (25:44). The verse states this possibility, not as a fatality. Verse 6 opens the way out.",
+      "mots": [
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "then", "def": "succession conjunction: then, afterward.", "gram": "conjunction" },
+        { "ar": "رَدَدْنَاهُ", "tr": "radadnāhu", "racine": "ر د د", "sens": "We cast him back", "def": "radda: to return, to send back, to cast down; perfect 1st pers. plur. + suffix pronoun.", "gram": "perfect verb + suffix pronoun, 1st pers. plur." },
+        { "ar": "أَسْفَلَ", "tr": "asfala", "racine": "س ف ل", "sens": "the lowest of", "def": "asfal: the lowest; in construct accusative.", "gram": "adjectival noun, construct accusative" },
+        { "ar": "سَافِلِينَ", "tr": "sāfilīn", "racine": "س ف ل", "sens": "of the low", "def": "sāfil: low, abject; plural sāfilīn: the lowly.", "gram": "active participle plural, genitive" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
+      "tr": "illā lladhīna āmanū wa-ʿamilū ṣ-ṣāliḥāti fa-lahum ajrun ghayru mamnūn",
+      "trad": "save those who believe and perform righteous deeds; for them shall be a reward unceasing.",
+      "themes": ["faith", "deeds", "reward"],
+      "commentaire": "<em>ajr ghayr mamnūn</em> (أَجْر غَيْر مَمْنُون): an “unceasing” reward. <em>Mamnūn</em>, from the root <em>m-n-n</em>, can mean “lessened” or “constantly recalled” (a gift whose giver keeps mentioning it, which spoils it). A reward <em>ghayr mamnūn</em> is therefore at once without diminution and without humiliating reminder. The verse names the one path that saves from abasement: faith, good deeds. Some commentators add that, in this very life, if one holds to practice, one continues to receive the reward of habitual deeds even when sickness or travel keeps one from accomplishing them.",
+      "mots": [
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "save", "def": "exception particle.", "gram": "particle" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "those who", "def": "plural relative pronoun.", "gram": "relative pronoun" },
+        { "ar": "آمَنُوا", "tr": "āmanū", "racine": "أ م ن", "sens": "have believed", "def": "āmana: to believe.", "gram": "perfect verb, 3rd pers. masc. plur." },
+        { "ar": "وَعَمِلُوا", "tr": "wa-ʿamilū", "racine": "ع م ل", "sens": "and have performed", "def": "ʿamila: to do.", "gram": "perfect verb, 3rd pers. masc. plur." },
+        { "ar": "الصَّالِحَاتِ", "tr": "aṣ-ṣāliḥāt", "racine": "ص ل ح", "sens": "righteous deeds", "def": "ṣāliḥāt: good deeds.", "gram": "plural noun, definite accusative" },
+        { "ar": "فَلَهُمْ", "tr": "fa-lahum", "racine": "—", "sens": "for them is", "def": "fa- + li- + plural suffix pronoun.", "gram": "particle + preposition + pronoun" },
+        { "ar": "أَجْرٌ", "tr": "ajr", "racine": "أ ج ر", "sens": "a reward", "def": "ajr: wage, reward, recompense.", "gram": "noun, indefinite nominative" },
+        { "ar": "غَيْرُ", "tr": "ghayru", "racine": "غ ي ر", "sens": "not, without", "def": "ghayr: other than, not.", "gram": "noun, construct nominative" },
+        { "ar": "مَمْنُونٍ", "tr": "mamnūn", "racine": "م ن ن", "sens": "interrupted, spoilt by reminder", "def": "mamnūn: passive participle; what is diminished, or what is constantly recalled (making the gift burdensome).", "gram": "passive participle, indefinite genitive" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "فَمَا يُكَذِّبُكَ بَعْدُ بِالدِّينِ",
+      "tr": "fa-mā yukadhdhibuka baʿdu bi-d-dīn",
+      "trad": "What then will make you deny the Judgment?",
+      "themes": ["denial", "questioning"],
+      "commentaire": "The verse, by its form, can address the denier (“what makes you deny the Judgment, having seen this?”) or the Prophet as support (“who would treat you as a liar, after these signs?”). The word <em>dīn</em> (دِين) means here the Judgment, but also Religion: to deny one is to deny the other. The verse marvels: after the creation of man from a drop, raised to the “most beautiful stature”, how could anyone still deny the Resurrection?",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "so, then", "def": "linking particle.", "gram": "particle" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "what", "def": "interrogative.", "gram": "interrogative" },
+        { "ar": "يُكَذِّبُكَ", "tr": "yukadhdhibuka", "racine": "ك ذ ب", "sens": "makes you deny, accuses you of lying", "def": "kadhdhaba: to deny, to give the lie to; + 2nd pers. masc. sing. suffix pronoun.", "gram": "imperfect verb + suffix pronoun, 3rd pers. masc. sing." },
+        { "ar": "بَعْدُ", "tr": "baʿdu", "racine": "ب ع د", "sens": "after that", "def": "baʿd: after; here adverbial: “after that”.", "gram": "adverb" },
+        { "ar": "بِالدِّينِ", "tr": "bi-d-dīn", "racine": "د ي ن", "sens": "the Judgment, Religion", "def": "dīn: religion or judgment; here, more likely the Judgment.", "gram": "preposition + noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ",
+      "tr": "a-laysa Llāhu bi-aḥkami l-ḥākimīn",
+      "trad": "Is not God the most just of judges?",
+      "themes": ["divine judgment", "wisdom"],
+      "commentaire": "<em>aḥkam al-ḥākimīn</em> (أَحْكَم الحَاكِمِين): the most just, the wisest of judges. The root <em>ḥ-k-m</em> means both “to judge” and “to be wise” — the two senses converge in God. The verse closes the sūra with a rhetorical question that calls for inward assent. According to the ḥadīth already cited, one is to answer <em>balā</em>, “yes indeed”: a man noble in his stature or low in his fall — it is according to what he has done. And God, who distinguishes the two, is the most just of judges. A simple logic, but one that closes the sūra on the responsibility of each soul.",
+      "mots": [
+        { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "is it that", "def": "interrogative particle.", "gram": "particle" },
+        { "ar": "لَيْسَ", "tr": "laysa", "racine": "—", "sens": "is not", "def": "defective verb laysa: not to be; in the perfect, present sense.", "gram": "perfect verb, 3rd pers. masc. sing." },
+        { "ar": "اللَّهُ", "tr": "Allāhu", "racine": "أ ل ه", "sens": "God", "def": "Allāh.", "gram": "noun, nominative" },
+        { "ar": "بِأَحْكَمِ", "tr": "bi-aḥkami", "racine": "ح ك م", "sens": "the most just of", "def": "aḥkam: superlative of ḥakīm; the most just, the wisest. Root ḥ-k-m: to judge, to be wise.", "gram": "preposition + adjectival noun, construct genitive" },
+        { "ar": "الْحَاكِمِينَ", "tr": "al-ḥākimīn", "racine": "ح ك م", "sens": "of judges", "def": "ḥākim: judge; plural ḥākimīn.", "gram": "plural active participle, definite genitive" }
+      ]
+    }
+  ]
+}

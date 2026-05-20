@@ -1,0 +1,132 @@
+{
+  "n": 95,
+  "nom_ar": "التِّين",
+  "nom_tr": "al-Tīn",
+  "nom_fr": "Le Figuier",
+  "revelation": "mecquoise",
+  "versets_count": 8,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Tīn — « Le Figuier » — est une sourate mecquoise révélée vraisemblablement après <em>al-Burūj</em> (sourate 85). Elle tire son nom du figuier mentionné au premier verset. Le cœur de la sourate se trouve aux versets 4-6, qui sont parmi les plus célèbres du Coran : ils disent à la fois la noblesse originelle de l'homme — créé « dans la plus belle stature » — et sa chute possible jusqu'au « niveau le plus vil ». La sourate s'ouvre par trois serments énigmatiques (figuier, olivier, mont Sinaï, contrée sûre) que les commentateurs ont lus tantôt comme des fruits, tantôt comme des lieux saints — Damas, Jérusalem, Sinaï, Mekke —, c'est-à-dire les terres où les grandes révélations ont eu lieu. Un hadith dit que celui qui récite cette sourate jusqu'à la fin doit répondre : <em>balā</em> (« oui en vérité »), et le Prophète ajoute : « j'en témoigne avec lui ».",
+  "themes": ["serments", "stature de l'homme", "chute", "foi et œuvres", "Jugement"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَالتِّينِ وَالزَّيْتُونِ",
+      "tr": "wa-t-tīni wa-z-zaytūn",
+      "trad": "Par le figuier et l'olivier !",
+      "themes": ["serment", "fruits", "lieux saints"],
+      "commentaire": "Le serment double — <em>al-tīn</em> (التِّين) et <em>al-zaytūn</em> (الزَّيْتُون) — porte sur deux arbres bénis. Pour beaucoup, ce sont les fruits eux-mêmes par lesquels Dieu jure, à cause de la bénédiction qu'ils contiennent. Pour d'autres, valeur symbolique : le figuier renvoie au lieu où l'arche de Noé se posa, ou à la « mosquée » de Damas ; l'olivier, au sanctuaire de Jérusalem. Une autre lecture rapproche le figuier des feuilles dont Adam et Ève se couvrirent (7, 22), et l'olivier du « bel olivier béni » de la lumière (24, 35) — ce qui ferait du verset un prélude symbolique aux versets 4-6 : le figuier disant la chute, l'olivier la lumière.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment : « par ».", "gram": "particule de serment" },
+        { "ar": "التِّينِ", "tr": "at-tīn", "racine": "ت ي ن", "sens": "le figuier", "def": "tīn : le figuier, ou la figue ; arbre béni dans la tradition coranique.", "gram": "nom, génitif défini" },
+        { "ar": "وَالزَّيْتُونِ", "tr": "wa-z-zaytūn", "racine": "ز ي ت", "sens": "et l'olivier", "def": "zaytūn : l'olivier, ou les olives ; arbre central de la culture méditerranéenne et symbole coranique de la lumière (24, 35).", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَطُورِ سِينِينَ",
+      "tr": "wa-ṭūri sīnīn",
+      "trad": "Par le Mont Sinaï !",
+      "themes": ["mont Sinaï", "Moïse"],
+      "commentaire": "<em>Ṭūr Sīnīn</em> (طُور سِينِين) : le mont Sinaï, lieu où Dieu parla à Moïse. <em>Ṭūr</em> est le mot arabe pour la montagne ; <em>sīnīn</em>, selon certains commentateurs, viendrait de l'éthiopien <em>beau</em> — d'où la lecture « le Mont béni et beau ». Le serment, par cette montagne, évoque la révélation faite à Moïse, et place la sourate dans la continuité des grandes théophanies.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "طُورِ", "tr": "ṭūri", "racine": "ط و ر", "sens": "le mont de", "def": "ṭūr : la montagne ; au génitif construit : « le mont de ».", "gram": "nom, génitif construit" },
+        { "ar": "سِينِينَ", "tr": "sīnīn", "racine": "—", "sens": "Sinaï", "def": "sīnīn : nom propre ; le mont Sinaï où Dieu parla à Moïse. Certains commentateurs y entendent un mot d'origine éthiopienne signifiant « beau, béni ».", "gram": "nom propre, génitif" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَهَٰذَا الْبَلَدِ الْأَمِينِ",
+      "tr": "wa-hādhā l-baladi l-amīn",
+      "trad": "Par cette contrée où règne la sécurité !",
+      "themes": ["Mekke", "sanctuaire"],
+      "commentaire": "<em>al-balad al-amīn</em> (البَلَد الأَمِين) : « la cité sûre » — la Mekke, sanctuaire reconnu par les Arabes pré-islamiques eux-mêmes, où le combat était interdit (cf. 29, 67). Le verset clôt ainsi une triade des lieux de révélation : Jérusalem (figuier-olivier), Sinaï (Moïse), Mekke (Muḥammad). Les trois grands monothéismes prophétiques se trouvent évoqués par leurs paysages.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "هَٰذَا", "tr": "hādhā", "racine": "—", "sens": "cette", "def": "démonstratif masculin proche.", "gram": "démonstratif" },
+        { "ar": "الْبَلَدِ", "tr": "al-balad", "racine": "ب ل د", "sens": "la contrée, la cité", "def": "balad : pays, contrée, ville ; ici, la Mekke.", "gram": "nom, génitif défini" },
+        { "ar": "الْأَمِينِ", "tr": "al-amīn", "racine": "أ م ن", "sens": "sûr, paisible", "def": "amīn : sûr, paisible ; même racine qu'amn (sécurité). Désigne la Mekke comme sanctuaire inviolable.", "gram": "nom adjectival, génitif défini" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "لَقَدْ خَلَقْنَا الْإِنسَانَ فِي أَحْسَنِ تَقْوِيمٍ",
+      "tr": "la-qad khalaqnā l-insāna fī aḥsani taqwīm",
+      "trad": "Certes, Nous avons créé l'homme dans la plus belle stature",
+      "themes": ["noblesse de l'homme", "création"],
+      "commentaire": "Verset capital. <em>aḥsan taqwīm</em> (أَحْسَن تَقْوِيم) : la plus belle stature, la meilleure conformation. <em>Taqwīm</em>, de la racine <em>q-w-m</em> (« se tenir droit »), désigne ce qui a reçu sa forme juste et équilibrée. Le signe extérieur : l'homme se tient debout, là où toute autre créature a la face penchée vers le sol (67, 22). Mais le sens dépasse la forme. Un célèbre hadith dit : « Dieu créa Adam selon Sa forme. » Les théologiens en tirent que les qualités humaines — vie, savoir, pouvoir, vouloir, parole, ouïe, vue — sont des reflets, dans la créature, d'attributs divins. C'est pour cela qu'avant l'homme, les anges reçurent l'ordre de se prosterner (2, 34). « Pour cette raison les philosophes disent que [l'homme] est un microcosme, car tout ce dont est composé l'univers est rassemblé en lui. »",
+      "mots": [
+        { "ar": "لَقَدْ", "tr": "la-qad", "racine": "—", "sens": "certes", "def": "particule d'affirmation + qad : marque l'accompli avec emphase.", "gram": "particules" },
+        { "ar": "خَلَقْنَا", "tr": "khalaqnā", "racine": "خ ل ق", "sens": "Nous avons créé", "def": "khalaqa : créer ; à l'accompli 1ʳᵉ pers. plur.", "gram": "verbe accompli, 1ʳᵉ pers. plur." },
+        { "ar": "الْإِنسَانَ", "tr": "al-insān", "racine": "أ ن س", "sens": "l'homme", "def": "insān : l'homme.", "gram": "nom, accusatif défini" },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "def": "préposition.", "gram": "préposition" },
+        { "ar": "أَحْسَنِ", "tr": "aḥsani", "racine": "ح س ن", "sens": "la plus belle de", "def": "aḥsan : le superlatif de ḥasan, beau ; au génitif construit : « la plus belle de ».", "gram": "nom adjectival, génitif construit" },
+        { "ar": "تَقْوِيمٍ", "tr": "taqwīm", "racine": "ق و م", "sens": "stature, conformation", "def": "taqwīm : nom verbal de qawwama (former, dresser, mettre droit) ; la conformation juste, harmonieuse.", "gram": "nom verbal, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ",
+      "tr": "thumma radadnāhu asfala sāfilīn",
+      "trad": "puis Nous l'avons relégué au niveau le plus vil,",
+      "themes": ["chute", "abaissement"],
+      "commentaire": "<em>asfal sāfilīn</em> (أَسْفَل سَافِلِين) : le plus bas des bas, le niveau le plus vil. Le verset peut s'entendre de deux manières. D'abord la lecture extérieure : la vieillesse, qui diminue les facultés jusqu'à la décrépitude — comme dit ailleurs le Coran, « celui à qui Nous donnons une longue vie, Nous le faisons régresser dans la création » (36, 68). Mais c'est surtout la lecture intérieure qui domine : l'homme, créé pour la noblesse, peut tomber sous la mesure même de la condition animale ; « ils sont comme du bétail — non, plus égarés encore » (25, 44). C'est cette possibilité, et non une fatalité, que pose le verset. Le verset 6 ouvre l'échappée.",
+      "mots": [
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "puis", "def": "conjonction de succession : puis, ensuite.", "gram": "conjonction" },
+        { "ar": "رَدَدْنَاهُ", "tr": "radadnāhu", "racine": "ر د د", "sens": "Nous l'avons rendu, ramené", "def": "radda : rendre, faire retourner, faire descendre ; à l'accompli 1ʳᵉ pers. plur. + pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 1ʳᵉ pers. plur." },
+        { "ar": "أَسْفَلَ", "tr": "asfala", "racine": "س ف ل", "sens": "le plus bas de", "def": "asfal : le plus bas ; à l'accusatif construit.", "gram": "nom adjectival, accusatif construit" },
+        { "ar": "سَافِلِينَ", "tr": "sāfilīn", "racine": "س ف ل", "sens": "des bas", "def": "sāfil : bas, vil ; pluriel sāfilīn : les bas, les vils.", "gram": "participe actif pluriel, génitif" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
+      "tr": "illā lladhīna āmanū wa-ʿamilū ṣ-ṣāliḥāti fa-lahum ajrun ghayru mamnūn",
+      "trad": "à l'exception de ceux qui ont cru et accompli des œuvres pies ; à ceux-là est destinée une récompense sans fin.",
+      "themes": ["foi", "œuvres", "récompense"],
+      "commentaire": "<em>ajr ghayr mamnūn</em> (أَجْر غَيْر مَمْنُون) : une récompense « non interrompue ». <em>Mamnūn</em>, de la racine <em>m-n-n</em>, peut signifier « réduit, diminué » ou « rappelé constamment » (un don dont on rappelle sans cesse le donateur, ce qui le gâte). Une récompense <em>ghayr mamnūn</em> est donc à la fois sans diminution et sans rappel humiliant. Le verset trace l'unique voie qui sauve de l'abaissement : la foi, les œuvres bonnes. Selon certains, dans cette vie même, si l'on tient à la pratique, on continue à recevoir la récompense des actes habituels même quand la maladie ou le voyage empêchent de les accomplir.",
+      "mots": [
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "à l'exception de", "def": "particule d'exception.", "gram": "particule" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif pluriel.", "gram": "pronom relatif" },
+        { "ar": "آمَنُوا", "tr": "āmanū", "racine": "أ م ن", "sens": "ont cru", "def": "āmana : croire.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "وَعَمِلُوا", "tr": "wa-ʿamilū", "racine": "ع م ل", "sens": "et ont accompli", "def": "ʿamila : faire.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "الصَّالِحَاتِ", "tr": "aṣ-ṣāliḥāt", "racine": "ص ل ح", "sens": "les œuvres pies", "def": "ṣāliḥāt : les bonnes actions.", "gram": "nom pluriel, accusatif défini" },
+        { "ar": "فَلَهُمْ", "tr": "fa-lahum", "racine": "—", "sens": "à eux est", "def": "fa- + li- + pronom suffixe pluriel.", "gram": "particule + préposition + pronom" },
+        { "ar": "أَجْرٌ", "tr": "ajr", "racine": "أ ج ر", "sens": "une récompense", "def": "ajr : salaire, récompense, rétribution.", "gram": "nom, nominatif indéfini" },
+        { "ar": "غَيْرُ", "tr": "ghayru", "racine": "غ ي ر", "sens": "non, sans", "def": "ghayr : autre que, non.", "gram": "nom, nominatif construit" },
+        { "ar": "مَمْنُونٍ", "tr": "mamnūn", "racine": "م ن ن", "sens": "interrompue, gâtée par le rappel", "def": "mamnūn : participe passif ; ce qui est diminué, ou ce qui est constamment rappelé (rendant le don pesant).", "gram": "participe passif, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "فَمَا يُكَذِّبُكَ بَعْدُ بِالدِّينِ",
+      "tr": "fa-mā yukadhdhibuka baʿdu bi-d-dīn",
+      "trad": "Après cela, quoi donc pourrait t'inciter à traiter de mensonge le Jugement ?",
+      "themes": ["dénégation", "interrogation"],
+      "commentaire": "Le verset, par sa forme, peut s'adresser au dénégateur (« qu'est-ce qui te fait nier le Jugement, après avoir vu cela ? ») ou au Prophète comme appui (« qui te traiterait de menteur, après ces signes ? »). Le mot <em>dīn</em> (دِين) signifie ici le Jugement, mais aussi la Religion : nier l'un, c'est nier l'autre. Le verset s'étonne : devant la création de l'homme à partir d'une goutte, élevé jusqu'à la « plus belle stature », comment encore nier la Résurrection ?",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors, donc", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "qu'est-ce qui", "def": "interrogatif.", "gram": "interrogatif" },
+        { "ar": "يُكَذِّبُكَ", "tr": "yukadhdhibuka", "racine": "ك ذ ب", "sens": "te fait démentir, t'accuse de mensonge", "def": "kadhdhaba : démentir, traiter de mensonge ; + pronom suffixe 2ᵉ pers. masc. sing.", "gram": "verbe inaccompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "بَعْدُ", "tr": "baʿdu", "racine": "ب ع د", "sens": "après cela", "def": "baʿd : après ; ici adverbial : « après cela ».", "gram": "adverbe" },
+        { "ar": "بِالدِّينِ", "tr": "bi-d-dīn", "racine": "د ي ن", "sens": "le Jugement, la Religion", "def": "dīn : religion ou jugement ; ici, plus probablement le Jugement.", "gram": "préposition + nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ",
+      "tr": "a-laysa Llāhu bi-aḥkami l-ḥākimīn",
+      "trad": "Dieu n'est-il pas le plus sage des juges ?",
+      "themes": ["jugement divin", "sagesse"],
+      "commentaire": "<em>aḥkam al-ḥākimīn</em> (أَحْكَم الحَاكِمِين) : le plus juste, le plus sage des juges. La racine <em>ḥ-k-m</em> dit à la fois « juger » et « être sage » — les deux sens convergent en Dieu. Le verset clôt la sourate par une question rhétorique qui appelle l'assentiment intérieur. Selon le hadith déjà cité, on doit répondre <em>balā</em>, « oui en vérité » : l'homme noble dans sa stature ou vil dans sa chute, c'est selon ce qu'il a fait. Et Dieu, qui distingue les deux, est le plus juste des juges. Une logique simple, mais qui referme la sourate sur la responsabilité de chaque âme.",
+      "mots": [
+        { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "est-ce que", "def": "particule interrogative.", "gram": "particule" },
+        { "ar": "لَيْسَ", "tr": "laysa", "racine": "—", "sens": "n'est-il pas", "def": "verbe défectif laysa : ne pas être ; à l'accompli, valeur de présent.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "اللَّهُ", "tr": "Allāhu", "racine": "أ ل ه", "sens": "Dieu", "def": "Allāh.", "gram": "nom, nominatif" },
+        { "ar": "بِأَحْكَمِ", "tr": "bi-aḥkami", "racine": "ح ك م", "sens": "le plus juste de", "def": "aḥkam : superlatif de ḥakīm ; le plus juste, le plus sage. Racine ḥ-k-m : juger, être sage.", "gram": "préposition + nom adjectival, génitif construit" },
+        { "ar": "الْحَاكِمِينَ", "tr": "al-ḥākimīn", "racine": "ح ك م", "sens": "des juges", "def": "ḥākim : juge ; pluriel ḥākimīn.", "gram": "participe actif pluriel, génitif défini" }
+      ]
+    }
+  ]
+}

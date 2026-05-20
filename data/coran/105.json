@@ -1,0 +1,91 @@
+{
+  "n": 105,
+  "nom_ar": "الفِيل",
+  "nom_tr": "al-Fīl",
+  "nom_fr": "L'Éléphant",
+  "revelation": "mecquoise",
+  "versets_count": 5,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Fīl — « L'Éléphant » — est une sourate mecquoise précoce, qui forme un diptyque étroit avec la suivante, <em>Quraysh</em>. Elle rappelle un événement célèbre dans la mémoire arabe : l'an 570, l'année même où, selon la tradition, naquit le Prophète. Abraha, général abyssin gouverneur du Yémen, avait fait bâtir une église à Sanʿāʾ pour détourner les pèlerins de la Kaʿba ; voyant son projet échouer, il marcha sur la Mekke à la tête de la plus grande armée jamais rassemblée en Arabie, avec un éléphant — bête inconnue des Arabes — pour abattre le Sanctuaire. On rapporte qu'à l'approche de la Mekke, l'éléphant s'agenouilla et refusa d'avancer. Et Dieu envoya contre l'armée des nuées d'oiseaux portant des pierres d'argile cuite. L'armée fut détruite. Cinq versets seulement, mais qui disent une chose : la protection de la Kaʿba ne tient pas à la puissance des hommes, mais au dessein de Dieu — qui préparait déjà la venue de Son dernier Messager.",
+  "themes": ["providence divine", "Kaʿba", "stratagèmes vains", "protection"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ",
+      "tr": "a-lam tara kayfa faʿala rabbuka bi-aṣḥābi l-fīl",
+      "trad": "N'as-tu pas vu comment ton Seigneur a agi envers les compagnons de l'éléphant ?",
+      "themes": ["mémoire", "providence"],
+      "commentaire": "<em>aṣḥāb al-fīl</em> (أَصْحَاب الفِيل) : les compagnons de l'éléphant — l'armée d'Abraha. L'histoire était assez connue des Arabes pour que la sourate ne la raconte pas : elle l'évoque comme un fait public, et demande aux contemporains du Prophète d'en tirer la leçon. Le texte commence par une question rhétorique — <em>a-lam tara</em> (أَلَمْ تَرَ), « n'as-tu pas vu » — qui suppose un témoin moral : devant un tel signe, comment ne pas reconnaître la main de Dieu ?",
+      "mots": [
+        { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "est-ce que ?", "def": "particule interrogative préfixée.", "gram": "particule interrogative" },
+        { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "ne... pas", "def": "particule de négation : nie l'inaccompli apocopé, équivalent d'un passé négatif.", "gram": "particule de négation" },
+        { "ar": "تَرَ", "tr": "tara", "racine": "ر أ ي", "sens": "tu as vu", "def": "raʾā : voir ; à l'inaccompli apocopé après lam : « tu n'as pas vu ».", "gram": "verbe inaccompli apocopé, 2ᵉ pers. masc. sing." },
+        { "ar": "كَيْفَ", "tr": "kayfa", "racine": "—", "sens": "comment", "def": "adverbe interrogatif : comment ?", "gram": "adverbe interrogatif" },
+        { "ar": "فَعَلَ", "tr": "faʿala", "racine": "ف ع ل", "sens": "Il a agi, fait", "def": "faʿala : faire, agir, accomplir.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "رَبُّكَ", "tr": "rabbuka", "racine": "ر ب ب", "sens": "ton Seigneur", "def": "rabb + pronom suffixe : ton Seigneur.", "gram": "nom + pronom suffixe, nominatif" },
+        { "ar": "بِأَصْحَابِ", "tr": "bi-aṣḥāb", "racine": "ص ح ب", "sens": "envers les compagnons de", "def": "ṣāḥib (sing.) : compagnon ; aṣḥāb (plur.) : les gens de, les maîtres de. Préposition bi- + nom au génitif.", "gram": "préposition + nom pluriel, génitif construit" },
+        { "ar": "الْفِيلِ", "tr": "al-fīl", "racine": "ف ي ل", "sens": "de l'éléphant", "def": "fīl : l'éléphant ; mot d'origine persane introduit en arabe pour cette bête alors inconnue de l'Arabie.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ",
+      "tr": "a-lam yajʿal kaydahum fī taḍlīl",
+      "trad": "N'a-t-il pas déjoué leur stratagème,",
+      "themes": ["stratagèmes vains", "égarement"],
+      "commentaire": "<em>kayd</em> (كَيْد) : la ruse, la machination, le stratagème — souvent appliqué dans le Coran aux complots des ennemis de Dieu. <em>taḍlīl</em> (تَضْلِيل) : l'égarement, le fait de mener à l'erreur. Le verset retourne l'expression habituelle : ce sont les comploteurs eux-mêmes qui sont conduits à l'égarement par leur propre complot. C'est une des lois récurrentes du Coran : Dieu laisse l'homme accomplir son dessein jusqu'au bout — et c'est ce dessein qui se retourne contre lui.",
+      "mots": [
+        { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "est-ce que ?", "def": "particule interrogative.", "gram": "particule" },
+        { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
+        { "ar": "يَجْعَلْ", "tr": "yajʿal", "racine": "ج ع ل", "sens": "Il a rendu, placé", "def": "jaʿala : faire, rendre, mettre, placer ; à l'inaccompli apocopé après lam : « Il n'a pas rendu… ».", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
+        { "ar": "كَيْدَهُمْ", "tr": "kaydahum", "racine": "ك ي د", "sens": "leur stratagème", "def": "kayd : ruse, machination, complot ; avec le pronom suffixe pluriel : leur stratagème.", "gram": "nom + pronom suffixe, accusatif" },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans, à", "def": "préposition : dans.", "gram": "préposition" },
+        { "ar": "تَضْلِيلٍ", "tr": "taḍlīl", "racine": "ض ل ل", "sens": "égarement", "def": "taḍlīl : nom verbal de la racine ḍ-l-l ; l'égarement, le fait de conduire à l'erreur ou de s'y trouver pris.", "gram": "nom, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+      "tr": "wa-arsala ʿalayhim ṭayran abābīl",
+      "trad": "et envoyé contre eux des nuées d'oiseaux",
+      "themes": ["signes", "armes du Ciel"],
+      "commentaire": "<em>ṭayran abābīl</em> (طَيْرًا أَبَابِيلَ) : des oiseaux par groupes, par nuées. Le mot <em>abābīl</em> ne se rencontre nulle part ailleurs dans le Coran ; les commentateurs en donnent plusieurs sens — « en bandes successives », « en troupes », « venant de toutes parts ». La tradition décrit des oiseaux de mer, hirondelles ou hérons, chacun portant trois petites pierres — une dans chaque serre, une dans le bec — qui frappaient un homme et le détruisaient. La sourate ne s'attarde pas sur la merveille : elle dit simplement qu'une grande armée fut défaite par ce qui paraissait insignifiant.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "أَرْسَلَ", "tr": "arsala", "racine": "ر س ل", "sens": "Il a envoyé", "def": "arsala : envoyer, dépêcher, lancer.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "عَلَيْهِمْ", "tr": "ʿalayhim", "racine": "—", "sens": "contre eux", "def": "préposition ʿalā + pronom suffixe pluriel : sur eux, contre eux.", "gram": "préposition + pronom" },
+        { "ar": "طَيْرًا", "tr": "ṭayran", "racine": "ط ي ر", "sens": "des oiseaux", "def": "ṭayr : oiseau (terme collectif).", "gram": "nom collectif, accusatif indéfini" },
+        { "ar": "أَبَابِيلَ", "tr": "abābīl", "racine": "—", "sens": "en nuées, en bandes", "def": "abābīl : mot rare (hapax) du Coran ; en groupes, en bandes successives, par nuées.", "gram": "nom pluriel, accusatif" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
+      "tr": "tarmīhim bi-ḥijāratin min sijjīl",
+      "trad": "qui leur ont lancé des pierres marquées de sceaux.",
+      "themes": ["châtiment", "argile cuite"],
+      "commentaire": "<em>sijjīl</em> (سِجِّيل) : terme rare, considéré par certains commentateurs comme une composition de deux mots persans, <em>sang</em> (la pierre) et <em>gil</em> (l'argile) — d'où le sens souvent retenu : pierres d'argile cuite, dures comme la roche. La traduction « marquées de sceaux » entend que chaque pierre portait, dit-on, le nom de celui qu'elle devait atteindre — l'arrêt divin est précis, individuel. Petites par la taille, considérables par l'effet : il ne faut pas grand-chose, quand le Ciel décide, pour défaire les calculs des puissants.",
+      "mots": [
+        { "ar": "تَرْمِيهِم", "tr": "tarmīhim", "racine": "ر م ي", "sens": "elle leur lance", "def": "ramā : lancer, jeter ; à l'inaccompli féminin (l'oiseau, ṭayr, étant ici considéré comme féminin collectif) + pronom suffixe pluriel.", "gram": "verbe inaccompli + pronom suffixe, 3ᵉ pers. fém. sing." },
+        { "ar": "بِحِجَارَةٍ", "tr": "bi-ḥijāra", "racine": "ح ج ر", "sens": "avec des pierres", "def": "ḥajar : pierre ; ḥijāra : pluriel ou collectif (pierres). Préposition bi- + nom génitif.", "gram": "préposition + nom, génitif indéfini" },
+        { "ar": "مِّن", "tr": "min", "racine": "—", "sens": "de, en", "def": "préposition : de, à partir de ; indique la matière.", "gram": "préposition" },
+        { "ar": "سِجِّيلٍ", "tr": "sijjīl", "racine": "—", "sens": "argile cuite", "def": "sijjīl : pierre d'argile cuite, dure ; certains commentateurs y voient une composition persane (sang-gil, « pierre-argile »).", "gram": "nom, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍ",
+      "tr": "fa-jaʿalahum ka-ʿaṣfin maʾkūl",
+      "trad": "Il les a alors rendus semblables à du chaume dévoré.",
+      "themes": ["anéantissement", "vanité"],
+      "commentaire": "<em>ʿaṣf maʾkūl</em> (عَصْف مَّأْكُول) : le chaume dévoré — les restes de feuilles ou de paille qui ont été broutés par les bêtes, et qui ne sont plus que poussière éparpillée. L'image est dense : la plus grande armée jamais vue dans l'Arabie de l'époque, réduite à ce qu'il y a de plus insignifiant. La sourate s'achève sur cette comparaison brève — et elle ouvre, par contrecoup, la sourate suivante, où la grâce accordée aux Quraysh n'est pas due à leur force, mais au Seigneur de cette Maison.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison : alors, ainsi.", "gram": "particule" },
+        { "ar": "جَعَلَهُمْ", "tr": "jaʿalahum", "racine": "ج ع ل", "sens": "Il les a rendus", "def": "jaʿala : rendre, faire, transformer ; à l'accompli + pronom suffixe pluriel.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "كَ", "tr": "ka-", "racine": "—", "sens": "comme", "def": "préposition de comparaison : comme, à la manière de.", "gram": "préposition" },
+        { "ar": "عَصْفٍ", "tr": "ʿaṣf", "racine": "ع ص ف", "sens": "chaume, paille", "def": "ʿaṣf : les feuilles vertes des céréales ou leurs balles ; le chaume, le résidu sec des récoltes.", "gram": "nom, génitif indéfini" },
+        { "ar": "مَّأْكُولٍ", "tr": "maʾkūl", "racine": "أ ك ل", "sens": "dévoré, mangé", "def": "maʾkūl : participe passif d'akala (manger) ; ce qui a été mangé, dévoré, broyé.", "gram": "participe passif, génitif indéfini" }
+      ]
+    }
+  ]
+}

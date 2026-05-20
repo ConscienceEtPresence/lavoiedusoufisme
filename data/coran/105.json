@@ -6,8 +6,8 @@
   "revelation": "mecquoise",
   "versets_count": 5,
   "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
-  "intro": "Al-Fīl — « L'Éléphant » — est une sourate mecquoise précoce, qui forme un diptyque étroit avec la suivante, <em>Quraysh</em>. Elle rappelle un événement célèbre dans la mémoire arabe : l'an 570, l'année même où, selon la tradition, naquit le Prophète. Abraha, général abyssin gouverneur du Yémen, avait fait bâtir une église à Sanʿāʾ pour détourner les pèlerins de la Kaʿba ; voyant son projet échouer, il marcha sur la Mekke à la tête de la plus grande armée jamais rassemblée en Arabie, avec un éléphant — bête inconnue des Arabes — pour abattre le Sanctuaire. On rapporte qu'à l'approche de la Mekke, l'éléphant s'agenouilla et refusa d'avancer. Et Dieu envoya contre l'armée des nuées d'oiseaux portant des pierres d'argile cuite. L'armée fut détruite. Cinq versets seulement, mais qui disent une chose : la protection de la Kaʿba ne tient pas à la puissance des hommes, mais au dessein de Dieu — qui préparait déjà la venue de Son dernier Messager.",
-  "themes": ["providence divine", "Kaʿba", "stratagèmes vains", "protection"],
+  "intro": "Al-Fīl — « L'Éléphant » — rappelle un événement célèbre dans la mémoire arabe : l'an 570, l'année même de la naissance du Prophète. Abraha, gouverneur abyssin du Yémen, marcha sur la Mekke avec une armée et un éléphant, pour abattre la Kaʿba. Mais l'éléphant s'agenouilla aux portes du Sanctuaire et refusa d'avancer. Et Dieu envoya des nuées d'oiseaux portant des pierres d'argile cuite, qui détruisirent l'armée. Tustarī donne le sens du récit : « Ne sais-tu pas comment ton Seigneur a traité tes ennemis quand tu n'étais pas encore en ce monde ? De la même manière, Il traitera tes ennemis tandis que tu es parmi eux, et Il détournera de toi leur ruse (<em>makr</em>, مَكْر). » Et Qushayrī ajoute la leçon la plus secrète : on rapporte que ʿAbd al-Muṭṭalib, le grand-père du Prophète encore païen, alla parler à Abraha pour récupérer ses chameaux pris dans le butin ; quand Abraha s'étonna qu'il ne plaide pas pour la Kaʿba, il répondit : « Je suis le maître des chameaux ; pour la Maison, elle a son Maître qui la défendra. » Et Qushayrī conclut : « S'il fut entendu, c'est parce qu'il ne demanda rien pour lui-même — il demanda pour la Maison. Et ce qui est pour Dieu ne se perd pas. » La sourate, sous l'épisode historique, dit une loi : ce qui est demandé pour Dieu seul est exaucé.",
+  "themes": ["providence", "Kaʿba", "stratagèmes vains", "intention pure"],
   "versets": [
     {
       "n": 1,
@@ -15,16 +15,16 @@
       "tr": "a-lam tara kayfa faʿala rabbuka bi-aṣḥābi l-fīl",
       "trad": "N'as-tu pas vu comment ton Seigneur a agi envers les compagnons de l'éléphant ?",
       "themes": ["mémoire", "providence"],
-      "commentaire": "<em>aṣḥāb al-fīl</em> (أَصْحَاب الفِيل) : les compagnons de l'éléphant — l'armée d'Abraha. L'histoire était assez connue des Arabes pour que la sourate ne la raconte pas : elle l'évoque comme un fait public, et demande aux contemporains du Prophète d'en tirer la leçon. Le texte commence par une question rhétorique — <em>a-lam tara</em> (أَلَمْ تَرَ), « n'as-tu pas vu » — qui suppose un témoin moral : devant un tel signe, comment ne pas reconnaître la main de Dieu ?",
+      "commentaire": "<em>a-lam tara</em> (أَلَمْ تَرَ), « n'as-tu pas vu » — Dieu interpelle l'âme qui sait, qui a entendu raconter ce qui s'est passé. La question n'attend pas une réponse en mots, mais un retour de regard : <em>souviens-toi de ce que ton Seigneur peut faire</em>. Tustarī donne la portée pour le serviteur : « De la même manière, Il traitera tes ennemis tandis que tu es parmi eux, et Il détournera de toi leur ruse. » Ce qui fut fait au passé est aussi promesse pour le présent — pour qui s'en remet vraiment.",
       "mots": [
         { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "est-ce que ?", "def": "particule interrogative préfixée.", "gram": "particule interrogative" },
         { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "ne... pas", "def": "particule de négation : nie l'inaccompli apocopé, équivalent d'un passé négatif.", "gram": "particule de négation" },
-        { "ar": "تَرَ", "tr": "tara", "racine": "ر أ ي", "sens": "tu as vu", "def": "raʾā : voir ; à l'inaccompli apocopé après lam : « tu n'as pas vu ».", "gram": "verbe inaccompli apocopé, 2ᵉ pers. masc. sing." },
+        { "ar": "تَرَ", "tr": "tara", "racine": "ر أ ي", "sens": "tu as vu", "def": "raʾā : voir ; à l'inaccompli apocopé après lam.", "gram": "verbe inaccompli apocopé, 2ᵉ pers. masc. sing." },
         { "ar": "كَيْفَ", "tr": "kayfa", "racine": "—", "sens": "comment", "def": "adverbe interrogatif : comment ?", "gram": "adverbe interrogatif" },
-        { "ar": "فَعَلَ", "tr": "faʿala", "racine": "ف ع ل", "sens": "Il a agi, fait", "def": "faʿala : faire, agir, accomplir.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "فَعَلَ", "tr": "faʿala", "racine": "ف ع ل", "sens": "Il a agi, fait", "def": "faʿala : faire, agir.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
         { "ar": "رَبُّكَ", "tr": "rabbuka", "racine": "ر ب ب", "sens": "ton Seigneur", "def": "rabb + pronom suffixe : ton Seigneur.", "gram": "nom + pronom suffixe, nominatif" },
-        { "ar": "بِأَصْحَابِ", "tr": "bi-aṣḥāb", "racine": "ص ح ب", "sens": "envers les compagnons de", "def": "ṣāḥib (sing.) : compagnon ; aṣḥāb (plur.) : les gens de, les maîtres de. Préposition bi- + nom au génitif.", "gram": "préposition + nom pluriel, génitif construit" },
-        { "ar": "الْفِيلِ", "tr": "al-fīl", "racine": "ف ي ل", "sens": "de l'éléphant", "def": "fīl : l'éléphant ; mot d'origine persane introduit en arabe pour cette bête alors inconnue de l'Arabie.", "gram": "nom, génitif défini" }
+        { "ar": "بِأَصْحَابِ", "tr": "bi-aṣḥāb", "racine": "ص ح ب", "sens": "envers les compagnons de", "def": "aṣḥāb : les gens de, les maîtres de.", "gram": "préposition + nom pluriel, génitif construit" },
+        { "ar": "الْفِيلِ", "tr": "al-fīl", "racine": "ف ي ل", "sens": "de l'éléphant", "def": "fīl : l'éléphant — bête alors inconnue de l'Arabie.", "gram": "nom, génitif défini" }
       ]
     },
     {
@@ -32,15 +32,15 @@
       "ar": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ",
       "tr": "a-lam yajʿal kaydahum fī taḍlīl",
       "trad": "N'a-t-il pas déjoué leur stratagème,",
-      "themes": ["stratagèmes vains", "égarement"],
-      "commentaire": "<em>kayd</em> (كَيْد) : la ruse, la machination, le stratagème — souvent appliqué dans le Coran aux complots des ennemis de Dieu. <em>taḍlīl</em> (تَضْلِيل) : l'égarement, le fait de mener à l'erreur. Le verset retourne l'expression habituelle : ce sont les comploteurs eux-mêmes qui sont conduits à l'égarement par leur propre complot. C'est une des lois récurrentes du Coran : Dieu laisse l'homme accomplir son dessein jusqu'au bout — et c'est ce dessein qui se retourne contre lui.",
+      "themes": ["kayd", "makr", "retournement"],
+      "commentaire": "<em>kayd</em> (كَيْد), la ruse ; <em>taḍlīl</em> (تَضْلِيل), l'égarement. Tustarī, brièvement : « Leur stratagème, dans son anéantissement. » Et Qushayrī précise — leur projet fut conduit jusqu'à son terme, et c'est là, dans son aboutissement même, qu'il se retourna. C'est une loi spirituelle souvent répétée dans le Coran : Dieu ne s'oppose pas extérieurement au mal — Il laisse le mal aller jusqu'au bout, et au bout du chemin il se découvre vide. Toute ruse contre la lumière, à long terme, se conduit elle-même à l'égarement.",
       "mots": [
         { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "est-ce que ?", "def": "particule interrogative.", "gram": "particule" },
         { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
-        { "ar": "يَجْعَلْ", "tr": "yajʿal", "racine": "ج ع ل", "sens": "Il a rendu, placé", "def": "jaʿala : faire, rendre, mettre, placer ; à l'inaccompli apocopé après lam : « Il n'a pas rendu… ».", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
-        { "ar": "كَيْدَهُمْ", "tr": "kaydahum", "racine": "ك ي د", "sens": "leur stratagème", "def": "kayd : ruse, machination, complot ; avec le pronom suffixe pluriel : leur stratagème.", "gram": "nom + pronom suffixe, accusatif" },
+        { "ar": "يَجْعَلْ", "tr": "yajʿal", "racine": "ج ع ل", "sens": "Il a rendu, placé", "def": "jaʿala : faire, rendre, mettre, placer.", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
+        { "ar": "كَيْدَهُمْ", "tr": "kaydahum", "racine": "ك ي د", "sens": "leur stratagème", "def": "kayd : ruse, machination, complot.", "gram": "nom + pronom suffixe, accusatif" },
         { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans, à", "def": "préposition : dans.", "gram": "préposition" },
-        { "ar": "تَضْلِيلٍ", "tr": "taḍlīl", "racine": "ض ل ل", "sens": "égarement", "def": "taḍlīl : nom verbal de la racine ḍ-l-l ; l'égarement, le fait de conduire à l'erreur ou de s'y trouver pris.", "gram": "nom, génitif indéfini" }
+        { "ar": "تَضْلِيلٍ", "tr": "taḍlīl", "racine": "ض ل ل", "sens": "égarement", "def": "taḍlīl : l'égarement, le fait de conduire à l'erreur.", "gram": "nom, génitif indéfini" }
       ]
     },
     {
@@ -49,13 +49,13 @@
       "tr": "wa-arsala ʿalayhim ṭayran abābīl",
       "trad": "et envoyé contre eux des nuées d'oiseaux",
       "themes": ["signes", "armes du Ciel"],
-      "commentaire": "<em>ṭayran abābīl</em> (طَيْرًا أَبَابِيلَ) : des oiseaux par groupes, par nuées. Le mot <em>abābīl</em> ne se rencontre nulle part ailleurs dans le Coran ; les commentateurs en donnent plusieurs sens — « en bandes successives », « en troupes », « venant de toutes parts ». La tradition décrit des oiseaux de mer, hirondelles ou hérons, chacun portant trois petites pierres — une dans chaque serre, une dans le bec — qui frappaient un homme et le détruisaient. La sourate ne s'attarde pas sur la merveille : elle dit simplement qu'une grande armée fut défaite par ce qui paraissait insignifiant.",
+      "commentaire": "<em>ṭayran abābīl</em> (طَيْرًا أَبَابِيلَ). Qushayrī, brièvement : « <em>abābīl</em>, signifie : rassemblés et épars. » Les oiseaux viennent par groupes et par solitaires, en bandes successives. La lecture soufie peut entendre : ce ne sont pas les forces les plus visibles qui défont les armées du mal. Ce qui vient d'en haut vient par voies cachées, parfois sous des formes humbles, parfois par des choses qu'on n'aurait pas crues capables de cela. La providence se sert d'oiseaux, et de petites pierres.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
-        { "ar": "أَرْسَلَ", "tr": "arsala", "racine": "ر س ل", "sens": "Il a envoyé", "def": "arsala : envoyer, dépêcher, lancer.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "أَرْسَلَ", "tr": "arsala", "racine": "ر س ل", "sens": "Il a envoyé", "def": "arsala : envoyer, dépêcher.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
         { "ar": "عَلَيْهِمْ", "tr": "ʿalayhim", "racine": "—", "sens": "contre eux", "def": "préposition ʿalā + pronom suffixe pluriel : sur eux, contre eux.", "gram": "préposition + pronom" },
         { "ar": "طَيْرًا", "tr": "ṭayran", "racine": "ط ي ر", "sens": "des oiseaux", "def": "ṭayr : oiseau (terme collectif).", "gram": "nom collectif, accusatif indéfini" },
-        { "ar": "أَبَابِيلَ", "tr": "abābīl", "racine": "—", "sens": "en nuées, en bandes", "def": "abābīl : mot rare (hapax) du Coran ; en groupes, en bandes successives, par nuées.", "gram": "nom pluriel, accusatif" }
+        { "ar": "أَبَابِيلَ", "tr": "abābīl", "racine": "—", "sens": "en nuées, rassemblés et épars", "def": "abābīl : mot rare (hapax) du Coran ; selon Qushayrī, « rassemblés et épars » — par groupes successifs, par bandes diverses.", "gram": "nom pluriel, accusatif" }
       ]
     },
     {
@@ -63,28 +63,28 @@
       "ar": "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
       "tr": "tarmīhim bi-ḥijāratin min sijjīl",
       "trad": "qui leur ont lancé des pierres marquées de sceaux.",
-      "themes": ["châtiment", "argile cuite"],
-      "commentaire": "<em>sijjīl</em> (سِجِّيل) : terme rare, considéré par certains commentateurs comme une composition de deux mots persans, <em>sang</em> (la pierre) et <em>gil</em> (l'argile) — d'où le sens souvent retenu : pierres d'argile cuite, dures comme la roche. La traduction « marquées de sceaux » entend que chaque pierre portait, dit-on, le nom de celui qu'elle devait atteindre — l'arrêt divin est précis, individuel. Petites par la taille, considérables par l'effet : il ne faut pas grand-chose, quand le Ciel décide, pour défaire les calculs des puissants.",
+      "themes": ["pierres", "petitesse"],
+      "commentaire": "<em>sijjīl</em> (سِجِّيل), selon Qushayrī, vient du persan <em>sang-gil</em> — « pierre-argile », l'argile cuite comme la brique. Le plus puissant des animaux d'Arabie — l'éléphant, jamais vu jusque-là — est défait par les plus petites des armes : des cailloux portés par des oiseaux. Lecture inverse de toute logique de force : ce qui sauve la Maison de Dieu n'est pas un déploiement de moyens à la mesure de l'attaque ; c'est, à l'opposé, la petitesse de ce que Dieu choisit pour Sa défense — afin qu'on ne se trompe pas sur Celui qui agit derrière.",
       "mots": [
-        { "ar": "تَرْمِيهِم", "tr": "tarmīhim", "racine": "ر م ي", "sens": "elle leur lance", "def": "ramā : lancer, jeter ; à l'inaccompli féminin (l'oiseau, ṭayr, étant ici considéré comme féminin collectif) + pronom suffixe pluriel.", "gram": "verbe inaccompli + pronom suffixe, 3ᵉ pers. fém. sing." },
-        { "ar": "بِحِجَارَةٍ", "tr": "bi-ḥijāra", "racine": "ح ج ر", "sens": "avec des pierres", "def": "ḥajar : pierre ; ḥijāra : pluriel ou collectif (pierres). Préposition bi- + nom génitif.", "gram": "préposition + nom, génitif indéfini" },
+        { "ar": "تَرْمِيهِم", "tr": "tarmīhim", "racine": "ر م ي", "sens": "elle leur lance", "def": "ramā : lancer, jeter.", "gram": "verbe inaccompli + pronom suffixe, 3ᵉ pers. fém. sing." },
+        { "ar": "بِحِجَارَةٍ", "tr": "bi-ḥijāra", "racine": "ح ج ر", "sens": "avec des pierres", "def": "ḥajar : pierre.", "gram": "préposition + nom, génitif indéfini" },
         { "ar": "مِّن", "tr": "min", "racine": "—", "sens": "de, en", "def": "préposition : de, à partir de ; indique la matière.", "gram": "préposition" },
-        { "ar": "سِجِّيلٍ", "tr": "sijjīl", "racine": "—", "sens": "argile cuite", "def": "sijjīl : pierre d'argile cuite, dure ; certains commentateurs y voient une composition persane (sang-gil, « pierre-argile »).", "gram": "nom, génitif indéfini" }
+        { "ar": "سِجِّيلٍ", "tr": "sijjīl", "racine": "—", "sens": "argile cuite", "def": "sijjīl : pierre d'argile cuite ; selon Qushayrī, composition persane (sang-gil, « pierre-argile »).", "gram": "nom, génitif indéfini" }
       ]
     },
     {
       "n": 5,
       "ar": "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍ",
-      "tr": "fa-jaʿalahum ka-ʿaṣfin maʾkūl",
+      "tr": "fa-jaʿalahum kaʿaṣfin maʾkūl",
       "trad": "Il les a alors rendus semblables à du chaume dévoré.",
-      "themes": ["anéantissement", "vanité"],
-      "commentaire": "<em>ʿaṣf maʾkūl</em> (عَصْف مَّأْكُول) : le chaume dévoré — les restes de feuilles ou de paille qui ont été broutés par les bêtes, et qui ne sont plus que poussière éparpillée. L'image est dense : la plus grande armée jamais vue dans l'Arabie de l'époque, réduite à ce qu'il y a de plus insignifiant. La sourate s'achève sur cette comparaison brève — et elle ouvre, par contrecoup, la sourate suivante, où la grâce accordée aux Quraysh n'est pas due à leur force, mais au Seigneur de cette Maison.",
+      "themes": ["anéantissement", "vanité de la force"],
+      "commentaire": "<em>ʿaṣf maʾkūl</em> (عَصْف مَأْكُول) : « les pointes des semences avant qu'elles ne mûrissent, mâchées », selon Qushayrī. L'image n'est pas seulement la défaite — c'est la défaite avant l'aboutissement : un blé qui n'a même pas eu le temps de mûrir, et qui est broyé. Et la pointe finale de Qushayrī, qui éclaire toute la sourate : « Si ʿAbd al-Muṭṭalib, alors qu'il était encore païen, fut sincère dans son recours à Dieu pour défendre la Maison — Dieu ne déçut pas son espoir, entendit son appel. À combien plus forte raison, le croyant qui appelle son Seigneur n'est-il pas renvoyé bredouille. Il fut exaucé parce qu'il ne demanda pas pour lui-même, mais pour la Maison. Et ce qui est pour Dieu ne se perd pas. »",
       "mots": [
         { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison : alors, ainsi.", "gram": "particule" },
-        { "ar": "جَعَلَهُمْ", "tr": "jaʿalahum", "racine": "ج ع ل", "sens": "Il les a rendus", "def": "jaʿala : rendre, faire, transformer ; à l'accompli + pronom suffixe pluriel.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
-        { "ar": "كَ", "tr": "ka-", "racine": "—", "sens": "comme", "def": "préposition de comparaison : comme, à la manière de.", "gram": "préposition" },
-        { "ar": "عَصْفٍ", "tr": "ʿaṣf", "racine": "ع ص ف", "sens": "chaume, paille", "def": "ʿaṣf : les feuilles vertes des céréales ou leurs balles ; le chaume, le résidu sec des récoltes.", "gram": "nom, génitif indéfini" },
-        { "ar": "مَّأْكُولٍ", "tr": "maʾkūl", "racine": "أ ك ل", "sens": "dévoré, mangé", "def": "maʾkūl : participe passif d'akala (manger) ; ce qui a été mangé, dévoré, broyé.", "gram": "participe passif, génitif indéfini" }
+        { "ar": "جَعَلَهُمْ", "tr": "jaʿalahum", "racine": "ج ع ل", "sens": "Il les a rendus", "def": "jaʿala : rendre, faire, transformer.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "كَ", "tr": "ka-", "racine": "—", "sens": "comme", "def": "préposition de comparaison : comme.", "gram": "préposition" },
+        { "ar": "عَصْفٍ", "tr": "ʿaṣf", "racine": "ع ص ف", "sens": "chaume, semences vertes", "def": "ʿaṣf : pointes de semences, balle de céréale ; chaume avant la maturité.", "gram": "nom, génitif indéfini" },
+        { "ar": "مَّأْكُولٍ", "tr": "maʾkūl", "racine": "أ ك ل", "sens": "dévoré, mangé", "def": "maʾkūl : participe passif d'akala (manger) ; mâché, broyé.", "gram": "participe passif, génitif indéfini" }
       ]
     }
   ]

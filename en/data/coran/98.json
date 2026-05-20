@@ -1,0 +1,186 @@
+{
+  "n": 98,
+  "nom_ar": "البَيِّنَة",
+  "nom_tr": "al-Bayyina",
+  "nom_fr": "The Clear Proof",
+  "revelation": "Medinan",
+  "versets_count": 8,
+  "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
+  "intro": "Al-Bayyina — “The Clear Proof” — is generally received as a Medinan sūra. The word <em>bayyina</em> (بَيِّنَة) comes from the verb <em>bayyana</em> (بَيَّنَ), “to make clear, manifest”: it is that by which truth becomes visible — a sign, a messenger, a Book. In the Quran it is a fundamental term in the economy of revelation: every prophet is said to have come “with clear proofs”. The sūra unfolds in eight verses a precise movement: the deniers among the People of the Book (Jews and Christians) and the idolaters will not break with their denial until the Proof has come to them (vv. 1–3); but when the Proof came, it is they who divided (vv. 4–5); and the sūra closes with a contrast often found in the Quran, between “the worst” and “the best of creatures” (vv. 6–8). The phrase that sums it all: <em>dīn al-qayyima</em> (دِين الْقَيِّمَة), “the upright religion” — to worship God with a pure devotion, to pray, to give.",
+  "themes": ["clear proof", "People of the Book", "upright religion", "division", "Gardens of Eden"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "لَمْ يَكُنِ الَّذِينَ كَفَرُوا مِنْ أَهْلِ الْكِتَابِ وَالْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ الْبَيِّنَةُ",
+      "tr": "lam yakuni lladhīna kafarū min ahli l-kitābi wa-l-mushrikīna munfakkīna ḥattā taʾtiyahumu l-bayyina",
+      "trad": "Those who disbelieve among the People of the Book and the idolaters will not desist until the Clear Proof comes to them,",
+      "themes": ["denial", "coming of the proof"],
+      "commentaire": "The verse, among the most delicate of the Quran, says that the deniers — whether among the <em>ahl al-kitāb</em> (أَهْل الْكِتَاب), “the People of the Book” (Jews and Christians), or among the <em>mushrikūn</em> (المُشْرِكُون), “the idolaters” (those who associate partners with God) — will not part from their state until the <em>bayyina</em> has come to them. The verb <em>munfakkīn</em> (مُنفَكِّين) means “those who detach themselves”, “who come loose”: their present condition will not leave them. The verse thus assumes a dignity in the denier: he will not be judged before the Proof has reached him. The Quran will repeat: “We do not punish before sending a messenger” (17:15).",
+      "mots": [
+        { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "not", "def": "negative particle for the apocopated imperfect.", "gram": "negative particle" },
+        { "ar": "يَكُنِ", "tr": "yakuni", "racine": "ك و ن", "sens": "they were", "def": "kāna: to be; here apocopated after lam.", "gram": "apocopated imperfect verb, 3rd pers. masc. sing." },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "those who", "def": "masc. plur. relative pronoun.", "gram": "plural relative pronoun" },
+        { "ar": "كَفَرُوا", "tr": "kafarū", "racine": "ك ف ر", "sens": "disbelieved", "def": "kafara: to cover, to deny; in the perfect plural: they disbelieved.", "gram": "perfect verb, 3rd pers. masc. plur." },
+        { "ar": "مِنْ", "tr": "min", "racine": "—", "sens": "among, from", "def": "preposition: among, from.", "gram": "preposition" },
+        { "ar": "أَهْلِ", "tr": "ahli", "racine": "أ ه ل", "sens": "the people of", "def": "ahl: family, people, those who belong to; construct genitive.", "gram": "noun, construct genitive" },
+        { "ar": "الْكِتَابِ", "tr": "al-kitāb", "racine": "ك ت ب", "sens": "the Book", "def": "al-kitāb: the (revealed) Book; ahl al-kitāb: “the People of the Book”, Jews and Christians.", "gram": "noun, definite genitive" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "الْمُشْرِكِينَ", "tr": "al-mushrikīn", "racine": "ش ر ك", "sens": "the idolaters", "def": "mushrik: one who associates partners with God, who practises shirk (associating).", "gram": "plural noun, definite genitive" },
+        { "ar": "مُنفَكِّينَ", "tr": "munfakkīn", "racine": "ف ك ك", "sens": "detaching themselves", "def": "munfakk: active participle of infakka, to detach, to separate; not to be munfakk: to remain in one's state.", "gram": "plural active participle, accusative" },
+        { "ar": "حَتَّىٰ", "tr": "ḥattā", "racine": "—", "sens": "until", "def": "particle: until, up to.", "gram": "particle" },
+        { "ar": "تَأْتِيَهُمُ", "tr": "taʾtiyahumu", "racine": "أ ت ي", "sens": "comes to them", "def": "atā: to come; in the subjunctive imperfect feminine + plural suffix pronoun.", "gram": "subjunctive imperfect + suffix pronoun, 3rd pers. fem. sing." },
+        { "ar": "الْبَيِّنَةُ", "tr": "al-bayyina", "racine": "ب ي ن", "sens": "the Clear Proof", "def": "bayyina: what makes clear, manifest proof; in the Quran, names the sign or the revelation that distinguishes truth.", "gram": "noun, definite nominative" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "رَسُولٌ مِّنَ اللَّهِ يَتْلُو صُحُفًا مُّطَهَّرَةً",
+      "tr": "rasūlun mina Llāhi yatlū ṣuḥufan muṭahhara",
+      "trad": "a messenger from God reciting purified scriptures",
+      "themes": ["messenger", "scripture"],
+      "commentaire": "<em>rasūl min Allāh</em> (رَسُول مِنَ اللَّه): a messenger coming from God — most commentators recognise the Prophet Muḥammad; some also read here the archangel Gabriel, bearer of the Word. <em>ṣuḥuf muṭahhara</em> (صُحُف مُطَهَّرَة): purified pages. <em>Ṣaḥīfa</em> is the writing leaf; <em>muṭahhar</em>, what is rendered pure, washed of every stain. The image is concrete: pages are recited whose clarity nothing has altered.",
+      "mots": [
+        { "ar": "رَسُولٌ", "tr": "rasūl", "racine": "ر س ل", "sens": "a messenger", "def": "rasūl: a messenger, an envoy; the one who carries a mission from God.", "gram": "noun, indefinite nominative" },
+        { "ar": "مِّنَ", "tr": "mina", "racine": "—", "sens": "from", "def": "preposition min: from.", "gram": "preposition" },
+        { "ar": "اللَّهِ", "tr": "Allāh", "racine": "أ ل ه", "sens": "God", "def": "Allāh: God, in the genitive.", "gram": "noun, genitive" },
+        { "ar": "يَتْلُو", "tr": "yatlū", "racine": "ت ل و", "sens": "reciting", "def": "talā: to read aloud, to recite; in the imperfect.", "gram": "imperfect verb, 3rd pers. masc. sing." },
+        { "ar": "صُحُفًا", "tr": "ṣuḥufan", "racine": "ص ح ف", "sens": "scriptures, leaves", "def": "ṣaḥīfa: a writing leaf; plural ṣuḥuf, pages, leaves.", "gram": "plural noun, indefinite accusative" },
+        { "ar": "مُّطَهَّرَةً", "tr": "muṭahhara", "racine": "ط ه ر", "sens": "purified", "def": "muṭahhar: intensive passive participle of ṭahhara (to purify); rendered pure, free of stain.", "gram": "passive participle, indefinite accusative" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "فِيهَا كُتُبٌ قَيِّمَةٌ",
+      "tr": "fīhā kutubun qayyima",
+      "trad": "wherein are upright writings.",
+      "themes": ["writings", "uprightness"],
+      "commentaire": "<em>kutub qayyima</em> (كُتُب قَيِّمَة): upright writings, enduring scriptures. <em>Qayyim</em> (قَيِّم), from the root <em>q-w-m</em> (to stand straight), names what stands upright, just, firm and without deviation. The purified pages contain “books that stand”: without errors, without distortions. The Word is upright there.",
+      "mots": [
+        { "ar": "فِيهَا", "tr": "fīhā", "racine": "—", "sens": "in them", "def": "preposition fī + feminine suffix pronoun: in them (refers to the pages).", "gram": "preposition + pronoun" },
+        { "ar": "كُتُبٌ", "tr": "kutub", "racine": "ك ت ب", "sens": "writings, books", "def": "kutub: plural of kitāb, book, writing; here, scriptures.", "gram": "plural noun, indefinite nominative" },
+        { "ar": "قَيِّمَةٌ", "tr": "qayyima", "racine": "ق و م", "sens": "upright, enduring", "def": "qayyim: upright, standing firm, without error; rendered here as “upright”.", "gram": "adjectival noun, indefinite nominative" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَمَا تَفَرَّقَ الَّذِينَ أُوتُوا الْكِتَابَ إِلَّا مِن بَعْدِ مَا جَاءَتْهُمُ الْبَيِّنَةُ",
+      "tr": "wa-mā tafarraqa lladhīna ūtū l-kitāba illā min baʿdi mā jāʾathumu l-bayyina",
+      "trad": "Those who were given the Book did not divide except after the Clear Proof had come to them.",
+      "themes": ["division of religions", "irony"],
+      "commentaire": "The verse turns the movement: it is <em>after</em> the coming of the Proof, not before, that the People of the Book divided. The verb <em>tafarraqa</em> (تَفَرَّقَ) — to break into parts, to divide — names splintering into sects and schools. A famous ḥadīth: “The Jews divided into seventy-one sects, the Christians into seventy-two, and this community into seventy-three.” The irony is harsh: the light received did not unite, because it was received in a wrong way.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction: and.", "gram": "conjunction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "not", "def": "negative particle: not.", "gram": "particle" },
+        { "ar": "تَفَرَّقَ", "tr": "tafarraqa", "racine": "ف ر ق", "sens": "they divided", "def": "tafarraqa: to divide, to break into parts; in the perfect.", "gram": "perfect verb, 3rd pers. masc. sing." },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "those who", "def": "plural relative pronoun.", "gram": "relative pronoun" },
+        { "ar": "أُوتُوا", "tr": "ūtū", "racine": "أ ت ي", "sens": "were given", "def": "ātā: to give; passive perfect plural: “it was given to them”.", "gram": "passive perfect verb, 3rd pers. masc. plur." },
+        { "ar": "الْكِتَابَ", "tr": "al-kitāb", "racine": "ك ت ب", "sens": "the Book", "def": "kitāb: the revealed Book.", "gram": "noun, definite accusative" },
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "except, but after", "def": "exception particle.", "gram": "particle" },
+        { "ar": "مِن", "tr": "min", "racine": "—", "sens": "of", "def": "preposition.", "gram": "preposition" },
+        { "ar": "بَعْدِ", "tr": "baʿdi", "racine": "ب ع د", "sens": "after", "def": "baʿd: after; in the construct genitive.", "gram": "noun, construct genitive" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "the fact that", "def": "here subordinating: “the fact that”.", "gram": "subordinating particle" },
+        { "ar": "جَاءَتْهُمُ", "tr": "jāʾathum", "racine": "ج ي ء", "sens": "had come to them", "def": "jāʾa: to come; feminine perfect + plural suffix pronoun.", "gram": "perfect verb + suffix pronoun, 3rd pers. fem. sing." },
+        { "ar": "الْبَيِّنَةُ", "tr": "al-bayyina", "racine": "ب ي ن", "sens": "the Clear Proof", "def": "see v. 1.", "gram": "noun, definite nominative" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ حُنَفَاءَ وَيُقِيمُوا الصَّلَاةَ وَيُؤْتُوا الزَّكَاةَ ۚ وَذَٰلِكَ دِينُ الْقَيِّمَةِ",
+      "tr": "wa-mā umirū illā li-yaʿbudū Llāha mukhliṣīna lahu d-dīna ḥunafāʾa wa-yuqīmū ṣ-ṣalāta wa-yuʾtū z-zakāta, wa-dhālika dīnu l-qayyima",
+      "trad": "Yet they were only commanded to worship God, devoting religion entirely to Him, as ḥanīfs, and to perform the prayer, and to give the alms. That is the upright religion.",
+      "themes": ["upright religion", "pure worship", "prayer", "alms"],
+      "commentaire": "Key verse. <em>mukhliṣīna lahu d-dīn</em> (مُخْلِصِينَ لَهُ الدِّين): “rendering worship purely to Him” — the word <em>ikhlāṣ</em> (إِخْلَاص), of the same root, names total sincerity: nothing in devotion that is not for God alone. <em>ḥunafāʾ</em> (حُنَفَاء), plural of <em>ḥanīf</em>, names the one who naturally inclines toward tawḥīd, away from every idolatry — so is Abraham called. Three practices gather it all: to worship God, to perform the prayer, to give the alms. <em>dīn al-qayyima</em> (دِين الْقَيِّمَة): the upright religion, the religion that stands — that does not bend, does not deviate. The verse says in few words the heart of religious life: sincerity, purity of orientation, prayer, sharing.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "and not... but", "def": "conjunction + negative particle: and not; with illā: “they were only commanded to”.", "gram": "conjunction + particle" },
+        { "ar": "أُمِرُوا", "tr": "umirū", "racine": "أ م ر", "sens": "they were commanded", "def": "amara: to command; passive perfect plural: it was commanded to them.", "gram": "passive perfect verb, 3rd pers. masc. plur." },
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "but, except", "def": "exception particle: but, except.", "gram": "particle" },
+        { "ar": "لِيَعْبُدُوا", "tr": "li-yaʿbudū", "racine": "ع ب د", "sens": "to worship", "def": "preposition li- (in order to) + subjunctive imperfect plural: that they may worship.", "gram": "preposition + subjunctive imperfect verb" },
+        { "ar": "اللَّهَ", "tr": "Allāha", "racine": "أ ل ه", "sens": "God", "def": "Allāh in the accusative.", "gram": "noun, accusative" },
+        { "ar": "مُخْلِصِينَ", "tr": "mukhliṣīn", "racine": "خ ل ص", "sens": "purely, sincerely", "def": "mukhliṣ: who purifies, who renders sincerely; active participle of akhlaṣa. Root kh-l-ṣ: to be pure, free of admixture.", "gram": "plural active participle, accusative" },
+        { "ar": "لَهُ", "tr": "lahu", "racine": "—", "sens": "to Him", "def": "preposition + suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "الدِّينَ", "tr": "ad-dīn", "racine": "د ي ن", "sens": "the worship, the religion", "def": "dīn: religion, worship, way; in the accusative.", "gram": "noun, definite accusative" },
+        { "ar": "حُنَفَاءَ", "tr": "ḥunafāʾ", "racine": "ح ن ف", "sens": "purely oriented, ḥanīfs", "def": "ḥanīf (sing.): one who naturally inclines toward the oneness of God, away from idolatry; plural ḥunafāʾ. A word often applied to Abraham.", "gram": "plural noun, accusative" },
+        { "ar": "وَيُقِيمُوا", "tr": "wa-yuqīmū", "racine": "ق و م", "sens": "and to perform", "def": "aqāma: to establish, to perform (of the prayer); subjunctive plural.", "gram": "subjunctive imperfect verb, 3rd pers. masc. plur." },
+        { "ar": "الصَّلَاةَ", "tr": "aṣ-ṣalāta", "racine": "ص ل و", "sens": "the prayer", "def": "ṣalāt: ritual prayer.", "gram": "noun, definite accusative" },
+        { "ar": "وَيُؤْتُوا", "tr": "wa-yuʾtū", "racine": "أ ت ي", "sens": "and to give", "def": "ātā: to give; subjunctive plural.", "gram": "subjunctive imperfect verb, 3rd pers. masc. plur." },
+        { "ar": "الزَّكَاةَ", "tr": "az-zakāta", "racine": "ز ك و", "sens": "the alms, the purification", "def": "zakāt: the obligatory alms; the root z-k-w also means “to purify, to make grow” — giving purifies.", "gram": "noun, definite accusative" },
+        { "ar": "وَذَٰلِكَ", "tr": "wa-dhālika", "racine": "—", "sens": "and that", "def": "conjunction + demonstrative: and that, such is.", "gram": "conjunction + demonstrative" },
+        { "ar": "دِينُ", "tr": "dīn", "racine": "د ي ن", "sens": "the religion of", "def": "dīn: see above; in the construct nominative.", "gram": "noun, construct nominative" },
+        { "ar": "الْقَيِّمَةِ", "tr": "al-qayyima", "racine": "ق و م", "sens": "uprightness, enduring rectitude", "def": "qayyima: that which stands upright, that endures; here, uprightness made religion.", "gram": "noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "إِنَّ الَّذِينَ كَفَرُوا مِنْ أَهْلِ الْكِتَابِ وَالْمُشْرِكِينَ فِي نَارِ جَهَنَّمَ خَالِدِينَ فِيهَا ۚ أُولَٰئِكَ هُمْ شَرُّ الْبَرِيَّةِ",
+      "tr": "inna lladhīna kafarū min ahli l-kitābi wa-l-mushrikīna fī nāri jahannama khālidīna fīhā, ulāʾika hum sharru l-bariyya",
+      "trad": "Truly the disbelievers among the People of the Book and the idolaters shall dwell forever in the Fire of Hell. They are the worst of creatures.",
+      "themes": ["denial", "Hell"],
+      "commentaire": "<em>sharr al-bariyya</em> (شَرُّ الْبَرِيَّة): the worst of creatures. <em>Bariyya</em> comes from the verb <em>baraʾa</em> (بَرَأَ), “to create by shaping” — it is also the root of the Divine Name <em>al-Bāriʾ</em>, “the Maker who shapes”. The sūra does not say “the worst of men” but “the worst of what has been shaped” — all creation included. The next verse offers its exact opposite.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "truly", "def": "emphasis particle.", "gram": "particle" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "those who", "def": "plural relative pronoun.", "gram": "relative pronoun" },
+        { "ar": "كَفَرُوا", "tr": "kafarū", "racine": "ك ف ر", "sens": "disbelieved", "def": "kafara: to deny, to disbelieve.", "gram": "perfect verb, 3rd pers. masc. plur." },
+        { "ar": "مِنْ أَهْلِ الْكِتَابِ", "tr": "min ahli l-kitāb", "racine": "ك ت ب", "sens": "among the People of the Book", "def": "see v. 1.", "gram": "noun phrase, genitive" },
+        { "ar": "وَالْمُشْرِكِينَ", "tr": "wa-l-mushrikīn", "racine": "ش ر ك", "sens": "and the idolaters", "def": "see v. 1.", "gram": "plural noun, definite genitive" },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "in", "def": "preposition.", "gram": "preposition" },
+        { "ar": "نَارِ", "tr": "nār", "racine": "ن و ر", "sens": "the Fire of", "def": "nār: fire; in the construct genitive.", "gram": "noun, construct genitive" },
+        { "ar": "جَهَنَّمَ", "tr": "jahannam", "racine": "—", "sens": "Hell, Gehenna", "def": "Jahannam: proper name of Hell, one of the Quranic names for the abode of punishment.", "gram": "proper noun, genitive (diptote)" },
+        { "ar": "خَالِدِينَ", "tr": "khālidīn", "racine": "خ ل د", "sens": "abiding forever", "def": "khālid: active participle of khalada (to last); who abides perpetually.", "gram": "plural active participle, accusative" },
+        { "ar": "فِيهَا", "tr": "fīhā", "racine": "—", "sens": "in it", "def": "preposition + feminine suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "أُولَٰئِكَ", "tr": "ulāʾika", "racine": "—", "sens": "those", "def": "far plural demonstrative: those.", "gram": "plural demonstrative" },
+        { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "they", "def": "plural personal pronoun.", "gram": "pronoun" },
+        { "ar": "شَرُّ", "tr": "sharru", "racine": "ش ر ر", "sens": "the worst of", "def": "sharr: evil, worst; in the construct nominative.", "gram": "noun, construct nominative" },
+        { "ar": "الْبَرِيَّةِ", "tr": "al-bariyya", "racine": "ب ر أ", "sens": "creatures", "def": "bariyya: the created beings; what has been shaped, from the verb baraʾa (to create by shaping). Same root as al-Bāriʾ.", "gram": "noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ أُولَٰئِكَ هُمْ خَيْرُ الْبَرِيَّةِ",
+      "tr": "inna lladhīna āmanū wa-ʿamilū ṣ-ṣāliḥāti ulāʾika hum khayru l-bariyya",
+      "trad": "Truly those who believe and perform righteous deeds, they are the best of creatures.",
+      "themes": ["faith", "deeds", "nobility of man"],
+      "commentaire": "<em>khayr al-bariyya</em> (خَيْرُ الْبَرِيَّة): the best of creatures. The symmetry with the previous verse states the singular greatness of the human condition: it can be the worst and the best. Some commentators draw from this that the believer who does good deeds is greater even than many angels, who had no choice to make. The Prophet said to ʿAlī, according to a saying reported by both traditions: “That is you and your close ones on the Day of Resurrection, the best of creation.”",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "truly", "def": "emphasis particle.", "gram": "particle" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "those who", "def": "plural relative pronoun.", "gram": "relative pronoun" },
+        { "ar": "آمَنُوا", "tr": "āmanū", "racine": "أ م ن", "sens": "have believed", "def": "āmana: to believe, to have faith.", "gram": "perfect verb, 3rd pers. masc. plur." },
+        { "ar": "وَعَمِلُوا", "tr": "wa-ʿamilū", "racine": "ع م ل", "sens": "and have performed", "def": "ʿamila: to do, to perform.", "gram": "perfect verb, 3rd pers. masc. plur." },
+        { "ar": "الصَّالِحَاتِ", "tr": "aṣ-ṣāliḥāt", "racine": "ص ل ح", "sens": "righteous deeds", "def": "ṣāliḥāt: good actions, righteous deeds.", "gram": "plural noun, definite accusative" },
+        { "ar": "أُولَٰئِكَ", "tr": "ulāʾika", "racine": "—", "sens": "those", "def": "far plural demonstrative.", "gram": "demonstrative" },
+        { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "they", "def": "plural personal pronoun.", "gram": "pronoun" },
+        { "ar": "خَيْرُ", "tr": "khayru", "racine": "خ ي ر", "sens": "the best of", "def": "khayr: the good, the best; in the construct nominative.", "gram": "noun, construct nominative" },
+        { "ar": "الْبَرِيَّةِ", "tr": "al-bariyya", "racine": "ب ر أ", "sens": "creatures", "def": "see v. 6.", "gram": "noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "جَزَاؤُهُمْ عِندَ رَبِّهِمْ جَنَّاتُ عَدْنٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا أَبَدًا ۚ رَّضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِيَ رَبَّهُ",
+      "tr": "jazāʾuhum ʿinda rabbihim jannātu ʿadnin tajrī min taḥtihā l-anhāru khālidīna fīhā abadan, raḍiya Llāhu ʿanhum wa-raḍū ʿanhu, dhālika li-man khashiya rabbah",
+      "trad": "Their reward with their Lord shall be Gardens of Eden with rivers running below, abiding therein forever. God is content with them and they are content with Him. That is for whoever fears his Lord.",
+      "themes": ["Paradise", "Gardens of Eden", "mutual contentment", "fear"],
+      "commentaire": "<em>jannāt ʿadn</em> (جَنَّاتُ عَدْن): the Gardens of Eden. <em>ʿAdn</em> comes from the verb <em>ʿadana</em> (عَدَنَ), “to abide”, “to remain fixed”: these are the Gardens of abiding, those where one settles. But the essential verse is: <em>raḍiya Llāhu ʿanhum wa-raḍū ʿanhu</em> (رَضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ) — “God is content with them, and they are content with Him.” The reciprocity is rare and splendid: it is not only the bliss of the servant, it is also the contentment of God in him. Some have called this degree the <em>jannat al-riḍwān</em>, “the Garden of Contentment”, the second highest level of Paradise after the “Garden of the Essence”. The verse ends with a condition: <em>li-man khashiya rabbah</em>, “for whoever fears his Lord” — not slavish fear, but the reverential awe that is the first form of wisdom.",
+      "mots": [
+        { "ar": "جَزَاؤُهُمْ", "tr": "jazāʾuhum", "racine": "ج ز ي", "sens": "their reward", "def": "jazāʾ: retribution, reward; with plural suffix pronoun.", "gram": "noun + suffix pronoun, nominative" },
+        { "ar": "عِندَ", "tr": "ʿinda", "racine": "—", "sens": "with", "def": "preposition: with, at, in the presence of.", "gram": "preposition" },
+        { "ar": "رَبِّهِمْ", "tr": "rabbihim", "racine": "ر ب ب", "sens": "their Lord", "def": "rabb + plural suffix pronoun.", "gram": "noun + suffix pronoun, genitive" },
+        { "ar": "جَنَّاتُ", "tr": "jannātu", "racine": "ج ن ن", "sens": "the Gardens of", "def": "jannāt: plural of janna, garden; in the construct nominative.", "gram": "plural noun, construct nominative" },
+        { "ar": "عَدْنٍ", "tr": "ʿadn", "racine": "ع د ن", "sens": "Eden, abiding", "def": "ʿadn: abiding, lasting dwelling; a proper name, the Gardens of Eden.", "gram": "proper noun, genitive" },
+        { "ar": "تَجْرِي", "tr": "tajrī", "racine": "ج ر ي", "sens": "run", "def": "jarā: to run, to flow; in the feminine imperfect.", "gram": "imperfect verb, 3rd pers. fem. sing." },
+        { "ar": "مِن تَحْتِهَا", "tr": "min taḥtihā", "racine": "ت ح ت", "sens": "below them", "def": "min + taḥt + suffix pronoun: from beneath them, below which.", "gram": "preposition + noun + pronoun" },
+        { "ar": "الْأَنْهَارُ", "tr": "al-anhār", "racine": "ن ه ر", "sens": "the rivers", "def": "anhār: plural of nahr, river.", "gram": "plural noun, definite nominative" },
+        { "ar": "خَالِدِينَ", "tr": "khālidīn", "racine": "خ ل د", "sens": "abiding therein", "def": "khālid: who abides perpetually.", "gram": "plural active participle, accusative" },
+        { "ar": "فِيهَا", "tr": "fīhā", "racine": "—", "sens": "therein", "def": "preposition + suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "أَبَدًا", "tr": "abadan", "racine": "أ ب د", "sens": "forever", "def": "abad: eternity; in the adverbial accusative: forever, for all time.", "gram": "adverbial accusative" },
+        { "ar": "رَّضِيَ", "tr": "raḍiya", "racine": "ر ض و", "sens": "He was content", "def": "raḍiya: to be content, to approve; in the perfect.", "gram": "perfect verb, 3rd pers. masc. sing." },
+        { "ar": "اللَّهُ", "tr": "Allāhu", "racine": "أ ل ه", "sens": "God", "def": "Allāh in the nominative.", "gram": "noun, nominative" },
+        { "ar": "عَنْهُمْ", "tr": "ʿanhum", "racine": "—", "sens": "with them", "def": "preposition + suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "وَرَضُوا", "tr": "wa-raḍū", "racine": "ر ض و", "sens": "and they were content", "def": "raḍiya: to be content; in the perfect plural.", "gram": "perfect verb, 3rd pers. masc. plur." },
+        { "ar": "عَنْهُ", "tr": "ʿanhu", "racine": "—", "sens": "with Him", "def": "preposition + suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "ذَٰلِكَ", "tr": "dhālika", "racine": "—", "sens": "that", "def": "far masc. demonstrative.", "gram": "demonstrative" },
+        { "ar": "لِمَنْ", "tr": "li-man", "racine": "—", "sens": "for whoever", "def": "preposition li- + relative pronoun man.", "gram": "preposition + pronoun" },
+        { "ar": "خَشِيَ", "tr": "khashiya", "racine": "خ ش ي", "sens": "feared, revered", "def": "khashiya: to fear with reverence; not slavish fear, but respectful awe.", "gram": "perfect verb, 3rd pers. masc. sing." },
+        { "ar": "رَبَّهُ", "tr": "rabbah", "racine": "ر ب ب", "sens": "his Lord", "def": "rabb + suffix pronoun.", "gram": "noun + suffix pronoun, accusative" }
+      ]
+    }
+  ]
+}

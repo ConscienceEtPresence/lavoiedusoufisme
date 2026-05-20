@@ -1,0 +1,186 @@
+{
+  "n": 98,
+  "nom_ar": "البَيِّنَة",
+  "nom_tr": "al-Bayyina",
+  "nom_fr": "La Preuve décisive",
+  "revelation": "médinoise",
+  "versets_count": 8,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Bayyina — « La Preuve décisive » — est généralement reçue comme une sourate médinoise. Le mot <em>bayyina</em> (بَيِّنَة) vient du verbe <em>bayyana</em> (بَيَّنَ), « rendre clair, manifeste » : c'est ce par quoi la vérité devient visible — un signe, un envoyé, un Livre. Dans le Coran, c'est un terme fondamental de l'économie de la révélation : tous les prophètes sont décrits comme venus « avec des preuves claires ». La sourate déploie en huit versets un mouvement précis : les dénégateurs parmi les Gens du Livre (Juifs et Chrétiens) et les associateurs (les polythéistes) ne se sépareront de leur dénégation que lorsque la Preuve sera venue à eux (v. 1-3) ; mais lorsque cette Preuve est venue, ce sont eux qui se sont divisés (v. 4-5) ; et la sourate s'achève par le contraste, fréquent dans le Coran, entre « les pires » et « les meilleurs des êtres créés » (v. 6-8). La phrase qui résume tout : <em>dīn al-qayyima</em> (دِين الْقَيِّمَة), « la religion droite » — adorer Dieu d'un culte pur, prier, donner.",
+  "themes": ["Preuve", "Gens du Livre", "religion droite", "division", "Jardins d'Éden"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "لَمْ يَكُنِ الَّذِينَ كَفَرُوا مِنْ أَهْلِ الْكِتَابِ وَالْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ الْبَيِّنَةُ",
+      "tr": "lam yakuni lladhīna kafarū min ahli l-kitābi wa-l-mushrikīna munfakkīna ḥattā taʾtiyahumu l-bayyina",
+      "trad": "Les mécréants appartenant aux Gens du Livre et aux associateurs ne peuvent cesser de mécroire tant que la Preuve décisive ne leur est pas parvenue.",
+      "themes": ["dénégation", "venue de la preuve"],
+      "commentaire": "Le verset, parmi les plus délicats à interpréter, dit que les dénégateurs — qu'ils soient parmi les <em>ahl al-kitāb</em> (أَهْل الْكِتَاب), « les Gens du Livre » (Juifs et Chrétiens), ou parmi les <em>mushrikūn</em> (المُشْرِكُون), « les associateurs » (qui donnent à Dieu des associés) — ne se détacheront pas de leur erreur tant que ne leur sera pas venue la <em>bayyina</em>. Le verbe <em>munfakkīn</em> (مُنفَكِّين) signifie « ceux qui se séparent », « qui se défont » : leur état présent ne les quitte pas. Le verset suppose donc une dignité du dénégateur : il ne sera jugé qu'après que la Preuve lui sera parvenue. Le Coran le redira ailleurs : « Nous ne châtions point avant d'avoir envoyé un messager » (17, 15).",
+      "mots": [
+        { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "ne... pas", "def": "particule de négation pour l'inaccompli apocopé.", "gram": "particule de négation" },
+        { "ar": "يَكُنِ", "tr": "yakuni", "racine": "ك و ن", "sens": "il était", "def": "kāna : être ; ici apocopé après lam.", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif masculin pluriel.", "gram": "pronom relatif pluriel" },
+        { "ar": "كَفَرُوا", "tr": "kafarū", "racine": "ك ف ر", "sens": "ont mécru", "def": "kafara : couvrir, dénier ; à l'accompli pluriel : ils ont mécru.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "مِنْ", "tr": "min", "racine": "—", "sens": "parmi, d'entre", "def": "préposition : parmi, d'entre.", "gram": "préposition" },
+        { "ar": "أَهْلِ", "tr": "ahli", "racine": "أ ه ل", "sens": "les gens de", "def": "ahl : la famille, les gens, ceux qui appartiennent à ; au génitif construit.", "gram": "nom, génitif construit" },
+        { "ar": "الْكِتَابِ", "tr": "al-kitāb", "racine": "ك ت ب", "sens": "le Livre", "def": "al-kitāb : le Livre (révélé) ; ahl al-kitāb : « les Gens du Livre », Juifs et Chrétiens.", "gram": "nom, génitif défini" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "الْمُشْرِكِينَ", "tr": "al-mushrikīn", "racine": "ش ر ك", "sens": "les associateurs", "def": "mushrik : celui qui associe à Dieu d'autres divinités, qui pratique le shirk (associationnisme).", "gram": "nom pluriel, génitif défini" },
+        { "ar": "مُنفَكِّينَ", "tr": "munfakkīn", "racine": "ف ك ك", "sens": "se détachant, se défaisant", "def": "munfakk : participe actif d'infakka, se détacher, se séparer ; ne pas être munfakk : rester attaché à son état.", "gram": "participe actif pluriel, accusatif" },
+        { "ar": "حَتَّىٰ", "tr": "ḥattā", "racine": "—", "sens": "jusqu'à ce que", "def": "particule : jusqu'à, jusqu'à ce que.", "gram": "particule" },
+        { "ar": "تَأْتِيَهُمُ", "tr": "taʾtiyahumu", "racine": "أ ت ي", "sens": "elle leur vienne", "def": "atā : venir ; à l'inaccompli subjonctif féminin + pronom suffixe pluriel.", "gram": "verbe inaccompli subjonctif + pronom suffixe, 3ᵉ pers. fém. sing." },
+        { "ar": "الْبَيِّنَةُ", "tr": "al-bayyina", "racine": "ب ي ن", "sens": "la Preuve décisive", "def": "bayyina : ce qui rend clair, la preuve manifeste ; dans le Coran, désigne le signe ou la révélation qui distingue la vérité.", "gram": "nom, nominatif défini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "رَسُولٌ مِّنَ اللَّهِ يَتْلُو صُحُفًا مُّطَهَّرَةً",
+      "tr": "rasūlun mina Llāhi yatlū ṣuḥufan muṭahhara",
+      "trad": "[Mais voici qu'] un Envoyé de Dieu récite des feuillets purifiés",
+      "themes": ["messager", "Écriture"],
+      "commentaire": "<em>rasūl min Allāh</em> (رَسُول مِنَ اللَّه) : un envoyé venant de Dieu — la plupart des commentateurs y reconnaissent le Prophète Muḥammad ; certains y lisent aussi l'archange Gabriel, porteur de la Parole. <em>ṣuḥuf muṭahhara</em> (صُحُف مُطَهَّرَة) : des feuillets purifiés. <em>Ṣaḥīfa</em>, c'est le feuillet d'écriture ; <em>muṭahhar</em>, ce qui est rendu pur, lavé de toute souillure. L'image est concrète : on récite des pages dont rien n'altère la limpidité.",
+      "mots": [
+        { "ar": "رَسُولٌ", "tr": "rasūl", "racine": "ر س ل", "sens": "un envoyé", "def": "rasūl : envoyé, messager ; celui qui porte une mission de Dieu.", "gram": "nom, nominatif indéfini" },
+        { "ar": "مِّنَ", "tr": "mina", "racine": "—", "sens": "de la part de", "def": "préposition min : de, à partir de.", "gram": "préposition" },
+        { "ar": "اللَّهِ", "tr": "Allāh", "racine": "أ ل ه", "sens": "Dieu", "def": "Allāh : Dieu, au génitif.", "gram": "nom, génitif" },
+        { "ar": "يَتْلُو", "tr": "yatlū", "racine": "ت ل و", "sens": "il récite", "def": "talā : lire à haute voix, réciter ; à l'inaccompli.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "صُحُفًا", "tr": "ṣuḥufan", "racine": "ص ح ف", "sens": "des feuillets", "def": "ṣaḥīfa : un feuillet d'écriture ; pluriel ṣuḥuf, les pages, les feuillets.", "gram": "nom pluriel, accusatif indéfini" },
+        { "ar": "مُّطَهَّرَةً", "tr": "muṭahhara", "racine": "ط ه ر", "sens": "purifiés", "def": "muṭahhar : participe passif intensif de ṭahhara (purifier) ; rendus purs, sans souillure.", "gram": "participe passif, accusatif indéfini" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "فِيهَا كُتُبٌ قَيِّمَةٌ",
+      "tr": "fīhā kutubun qayyima",
+      "trad": "contenant des Écritures pérennes.",
+      "themes": ["écritures", "rectitude"],
+      "commentaire": "<em>kutub qayyima</em> (كُتُب قَيِّمَة) : des livres droits, des écritures pérennes. <em>Qayyim</em> (قَيِّم), de la racine <em>q-w-m</em> (se tenir droit), désigne ce qui est droit, juste, qui se tient debout — ferme et sans dérive. Les feuillets purifiés contiennent des « livres qui se tiennent » : sans erreurs, sans torsions. La Parole y est verticale.",
+      "mots": [
+        { "ar": "فِيهَا", "tr": "fīhā", "racine": "—", "sens": "en eux", "def": "préposition fī + pronom suffixe féminin : en eux (renvoie aux feuillets).", "gram": "préposition + pronom" },
+        { "ar": "كُتُبٌ", "tr": "kutub", "racine": "ك ت ب", "sens": "des écrits, des livres", "def": "kutub : pluriel de kitāb, livre, écrit ; ici, écritures.", "gram": "nom pluriel, nominatif indéfini" },
+        { "ar": "قَيِّمَةٌ", "tr": "qayyima", "racine": "ق و م", "sens": "droits, pérennes", "def": "qayyim : droit, qui se tient ferme, sans erreur ; rendu ici par « pérenne ».", "gram": "nom adjectival, nominatif indéfini" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَمَا تَفَرَّقَ الَّذِينَ أُوتُوا الْكِتَابَ إِلَّا مِن بَعْدِ مَا جَاءَتْهُمُ الْبَيِّنَةُ",
+      "tr": "wa-mā tafarraqa lladhīna ūtū l-kitāba illā min baʿdi mā jāʾathumu l-bayyina",
+      "trad": "Ceux qui avaient reçu le Livre ne se sont divisés qu'après que la Preuve décisive leur fut parvenue.",
+      "themes": ["division des religions", "ironie"],
+      "commentaire": "Le verset retourne le mouvement : c'est <em>après</em> la venue de la Preuve, et non avant, que les Gens du Livre se sont divisés. Le verbe <em>tafarraqa</em> (تَفَرَّقَ) — se séparer en parties, se diviser — désigne la fragmentation en sectes et écoles. Un hadith célèbre dit : « Les Juifs se sont divisés en soixante et onze sectes, les Chrétiens en soixante-douze, et cette communauté-ci en soixante-treize. » L'ironie est sévère : la lumière reçue n'a pas unifié, parce qu'elle a été reçue de mauvaise manière.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ne... pas", "def": "particule de négation : ne... pas.", "gram": "particule" },
+        { "ar": "تَفَرَّقَ", "tr": "tafarraqa", "racine": "ف ر ق", "sens": "ils se sont divisés", "def": "tafarraqa : se diviser, se séparer en parties ; à l'accompli.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif pluriel.", "gram": "pronom relatif" },
+        { "ar": "أُوتُوا", "tr": "ūtū", "racine": "أ ت ي", "sens": "ont reçu", "def": "ātā : donner ; au passif accompli pluriel : « il leur a été donné ».", "gram": "verbe accompli passif, 3ᵉ pers. masc. plur." },
+        { "ar": "الْكِتَابَ", "tr": "al-kitāb", "racine": "ك ت ب", "sens": "le Livre", "def": "kitāb : le Livre révélé.", "gram": "nom, accusatif défini" },
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "sauf, qu'après", "def": "particule d'exception.", "gram": "particule" },
+        { "ar": "مِن", "tr": "min", "racine": "—", "sens": "de", "def": "préposition.", "gram": "préposition" },
+        { "ar": "بَعْدِ", "tr": "baʿdi", "racine": "ب ع د", "sens": "après", "def": "baʿd : après ; au génitif construit.", "gram": "nom, génitif construit" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce que, le fait que", "def": "ici à valeur subordonnante : « le fait que ».", "gram": "particule subordonnante" },
+        { "ar": "جَاءَتْهُمُ", "tr": "jāʾathum", "racine": "ج ي ء", "sens": "elle leur est venue", "def": "jāʾa : venir ; à l'accompli féminin + pronom suffixe pluriel.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. fém. sing." },
+        { "ar": "الْبَيِّنَةُ", "tr": "al-bayyina", "racine": "ب ي ن", "sens": "la Preuve", "def": "voir verset 1.", "gram": "nom, nominatif défini" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ حُنَفَاءَ وَيُقِيمُوا الصَّلَاةَ وَيُؤْتُوا الزَّكَاةَ ۚ وَذَٰلِكَ دِينُ الْقَيِّمَةِ",
+      "tr": "wa-mā umirū illā li-yaʿbudū Llāha mukhliṣīna lahu d-dīna ḥunafāʾa wa-yuqīmū ṣ-ṣalāta wa-yuʾtū z-zakāta, wa-dhālika dīnu l-qayyima",
+      "trad": "Pourtant, il leur a seulement été ordonné d'adorer Dieu comme des croyants sincères, Lui rendant un culte pur, de s'acquitter de la prière et de faire l'aumône. Telle est la Religion de la pérennité.",
+      "themes": ["religion droite", "culte pur", "prière", "aumône"],
+      "commentaire": "Verset clé. <em>mukhliṣīna lahu d-dīn</em> (مُخْلِصِينَ لَهُ الدِّين) : « rendant le culte à Lui purement » — le mot <em>ikhlāṣ</em> (إِخْلَاص), même racine, désigne la sincérité totale : rien dans la dévotion qui ne soit pour Dieu seul. <em>ḥunafāʾ</em> (حُنَفَاء), pluriel de <em>ḥanīf</em>, désigne celui qui s'incline naturellement vers le tawḥīd, à l'écart de toute idolâtrie — c'est ainsi qu'Abraham est nommé. Trois pratiques rassemblent le tout : adorer Dieu, accomplir la prière, donner l'aumône. <em>dīn al-qayyima</em> (دِين الْقَيِّمَة) : la religion droite, la religion qui se tient — celle qui ne plie ni ne dévie. Le verset dit ainsi, en peu de mots, l'essentiel d'une vie religieuse : sincérité, pureté de l'orient, prière, partage.",
+      "mots": [
+        { "ar": "وَمَا", "tr": "wa-mā", "racine": "—", "sens": "et ne... que", "def": "conjonction + particule de négation : et ne... pas ; avec illā : « il ne leur a été ordonné que de ».", "gram": "conjonction + particule" },
+        { "ar": "أُمِرُوا", "tr": "umirū", "racine": "أ م ر", "sens": "ils ont reçu l'ordre", "def": "amara : ordonner ; au passif accompli pluriel : il leur a été ordonné.", "gram": "verbe accompli passif, 3ᵉ pers. masc. plur." },
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "sinon, que", "def": "particule d'exception : sinon, sauf.", "gram": "particule" },
+        { "ar": "لِيَعْبُدُوا", "tr": "li-yaʿbudū", "racine": "ع ب د", "sens": "afin d'adorer", "def": "préposition li- (afin de) + verbe inaccompli subjonctif : afin qu'ils adorent.", "gram": "préposition + verbe inaccompli subjonctif" },
+        { "ar": "اللَّهَ", "tr": "Allāha", "racine": "أ ل ه", "sens": "Dieu", "def": "Allāh à l'accusatif.", "gram": "nom, accusatif" },
+        { "ar": "مُخْلِصِينَ", "tr": "mukhliṣīn", "racine": "خ ل ص", "sens": "rendant sincèrement", "def": "mukhliṣ : qui purifie, qui rend sincèrement ; participe actif d'akhlaṣa. Racine kh-l-ṣ : être pur, dégagé.", "gram": "participe actif pluriel, accusatif" },
+        { "ar": "لَهُ", "tr": "lahu", "racine": "—", "sens": "à Lui", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "الدِّينَ", "tr": "ad-dīn", "racine": "د ي ن", "sens": "le culte, la religion", "def": "dīn : religion, culte, voie ; à l'accusatif.", "gram": "nom, accusatif défini" },
+        { "ar": "حُنَفَاءَ", "tr": "ḥunafāʾ", "racine": "ح ن ف", "sens": "purement orientés", "def": "ḥanīf (sing.) : qui incline naturellement vers l'unicité de Dieu, à l'écart de l'idolâtrie ; pluriel ḥunafāʾ. Mot souvent appliqué à Abraham.", "gram": "nom pluriel, accusatif" },
+        { "ar": "وَيُقِيمُوا", "tr": "wa-yuqīmū", "racine": "ق و م", "sens": "et qu'ils accomplissent", "def": "aqāma : établir, accomplir (en parlant de la prière) ; subjonctif pluriel.", "gram": "verbe inaccompli subjonctif, 3ᵉ pers. masc. plur." },
+        { "ar": "الصَّلَاةَ", "tr": "aṣ-ṣalāta", "racine": "ص ل و", "sens": "la prière", "def": "ṣalāt : la prière rituelle.", "gram": "nom, accusatif défini" },
+        { "ar": "وَيُؤْتُوا", "tr": "wa-yuʾtū", "racine": "أ ت ي", "sens": "et qu'ils donnent", "def": "ātā : donner ; subjonctif pluriel.", "gram": "verbe inaccompli subjonctif, 3ᵉ pers. masc. plur." },
+        { "ar": "الزَّكَاةَ", "tr": "az-zakāta", "racine": "ز ك و", "sens": "l'aumône, la purification", "def": "zakāt : l'aumône obligatoire ; la racine z-k-w signifie aussi « purifier, faire croître » — donner purifie.", "gram": "nom, accusatif défini" },
+        { "ar": "وَذَٰلِكَ", "tr": "wa-dhālika", "racine": "—", "sens": "et cela", "def": "conjonction + démonstratif : et cela, telle est.", "gram": "conjonction + démonstratif" },
+        { "ar": "دِينُ", "tr": "dīn", "racine": "د ي ن", "sens": "la religion de", "def": "dīn : voir plus haut ; au nominatif construit.", "gram": "nom, nominatif construit" },
+        { "ar": "الْقَيِّمَةِ", "tr": "al-qayyima", "racine": "ق و م", "sens": "la droiture, la pérennité", "def": "qayyima : qui se tient droit, qui dure ; ici, la rectitude faite religion.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "إِنَّ الَّذِينَ كَفَرُوا مِنْ أَهْلِ الْكِتَابِ وَالْمُشْرِكِينَ فِي نَارِ جَهَنَّمَ خَالِدِينَ فِيهَا ۚ أُولَٰئِكَ هُمْ شَرُّ الْبَرِيَّةِ",
+      "tr": "inna lladhīna kafarū min ahli l-kitābi wa-l-mushrikīna fī nāri jahannama khālidīna fīhā, ulāʾika hum sharru l-bariyya",
+      "trad": "Certes, les mécréants appartenant aux Gens du Livre et aux associateurs séjourneront à jamais dans le feu de la Géhenne. Ceux-là sont les pires des êtres créés.",
+      "themes": ["dénégation", "Géhenne"],
+      "commentaire": "<em>sharr al-bariyya</em> (شَرُّ الْبَرِيَّة) : les pires des créatures. <em>Bariyya</em> vient du verbe <em>baraʾa</em> (بَرَأَ), « créer en façonnant » — c'est aussi la racine du nom divin <em>al-Bāriʾ</em>, « le Créateur qui forme ». La sourate ne dit pas « les pires des hommes » mais « les pires de ce qui a été façonné » — toute créature confondue. Le verset suivant offrira son exact négatif.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule de mise en relief.", "gram": "particule" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif pluriel.", "gram": "pronom relatif" },
+        { "ar": "كَفَرُوا", "tr": "kafarū", "racine": "ك ف ر", "sens": "ont mécru", "def": "kafara : dénier, mécroire.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "مِنْ أَهْلِ الْكِتَابِ", "tr": "min ahli l-kitāb", "racine": "ك ت ب", "sens": "parmi les Gens du Livre", "def": "voir verset 1.", "gram": "groupe nominal, génitif" },
+        { "ar": "وَالْمُشْرِكِينَ", "tr": "wa-l-mushrikīn", "racine": "ش ر ك", "sens": "et les associateurs", "def": "voir verset 1.", "gram": "nom pluriel, génitif défini" },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "def": "préposition.", "gram": "préposition" },
+        { "ar": "نَارِ", "tr": "nār", "racine": "ن و ر", "sens": "le Feu de", "def": "nār : le feu ; au génitif construit.", "gram": "nom, génitif construit" },
+        { "ar": "جَهَنَّمَ", "tr": "jahannam", "racine": "—", "sens": "la Géhenne", "def": "Jahannam : nom propre de la Géhenne, l'un des noms de l'enfer dans le Coran.", "gram": "nom propre, génitif (diptote)" },
+        { "ar": "خَالِدِينَ", "tr": "khālidīn", "racine": "خ ل د", "sens": "y demeurant à jamais", "def": "khālid : participe actif de khalada (durer) ; qui demeure perpétuellement.", "gram": "participe actif pluriel, accusatif" },
+        { "ar": "فِيهَا", "tr": "fīhā", "racine": "—", "sens": "en elle", "def": "préposition + pronom suffixe féminin.", "gram": "préposition + pronom" },
+        { "ar": "أُولَٰئِكَ", "tr": "ulāʾika", "racine": "—", "sens": "ceux-là", "def": "démonstratif pluriel éloigné : ceux-là.", "gram": "démonstratif pluriel" },
+        { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "eux", "def": "pronom personnel pluriel.", "gram": "pronom" },
+        { "ar": "شَرُّ", "tr": "sharru", "racine": "ش ر ر", "sens": "le pire de", "def": "sharr : le mal, le pire ; au nominatif construit.", "gram": "nom, nominatif construit" },
+        { "ar": "الْبَرِيَّةِ", "tr": "al-bariyya", "racine": "ب ر أ", "sens": "des êtres créés", "def": "bariyya : la créature ; tout ce qui a été façonné, du verbe baraʾa (créer en façonnant). Même racine que al-Bāriʾ.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ أُولَٰئِكَ هُمْ خَيْرُ الْبَرِيَّةِ",
+      "tr": "inna lladhīna āmanū wa-ʿamilū ṣ-ṣāliḥāti ulāʾika hum khayru l-bariyya",
+      "trad": "Certes, ceux qui croient et accomplissent des œuvres pies, ceux-là sont les meilleurs des êtres créés.",
+      "themes": ["foi", "œuvres", "noblesse de l'homme"],
+      "commentaire": "<em>khayr al-bariyya</em> (خَيْرُ الْبَرِيَّة) : les meilleurs des êtres créés. La symétrie avec le verset précédent dit la grandeur singulière de la condition humaine : elle peut être la pire et la meilleure. Certains commentateurs en tirent que le croyant qui œuvre est même supérieur à beaucoup d'anges, qui n'ont pas eu à choisir. Le Prophète a dit à ʿAlī, selon une parole rapportée par les deux traditions : « C'est toi et tes proches qui êtes les meilleurs des créatures au Jour de la Résurrection. »",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule de mise en relief.", "gram": "particule" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "ceux qui", "def": "pronom relatif pluriel.", "gram": "pronom relatif" },
+        { "ar": "آمَنُوا", "tr": "āmanū", "racine": "أ م ن", "sens": "ont cru", "def": "āmana : croire, avoir foi.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "وَعَمِلُوا", "tr": "wa-ʿamilū", "racine": "ع م ل", "sens": "et ont accompli", "def": "ʿamila : faire, accomplir.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "الصَّالِحَاتِ", "tr": "aṣ-ṣāliḥāt", "racine": "ص ل ح", "sens": "les œuvres pies", "def": "ṣāliḥāt : les bonnes actions, les œuvres bonnes.", "gram": "nom pluriel, accusatif défini" },
+        { "ar": "أُولَٰئِكَ", "tr": "ulāʾika", "racine": "—", "sens": "ceux-là", "def": "démonstratif pluriel éloigné.", "gram": "démonstratif" },
+        { "ar": "هُمْ", "tr": "hum", "racine": "—", "sens": "eux", "def": "pronom personnel pluriel.", "gram": "pronom" },
+        { "ar": "خَيْرُ", "tr": "khayru", "racine": "خ ي ر", "sens": "le meilleur de", "def": "khayr : le bien, le meilleur ; au nominatif construit.", "gram": "nom, nominatif construit" },
+        { "ar": "الْبَرِيَّةِ", "tr": "al-bariyya", "racine": "ب ر أ", "sens": "des êtres créés", "def": "voir verset 6.", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "جَزَاؤُهُمْ عِندَ رَبِّهِمْ جَنَّاتُ عَدْنٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا أَبَدًا ۚ رَّضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِيَ رَبَّهُ",
+      "tr": "jazāʾuhum ʿinda rabbihim jannātu ʿadnin tajrī min taḥtihā l-anhāru khālidīna fīhā abadan, raḍiya Llāhu ʿanhum wa-raḍū ʿanhu, dhālika li-man khashiya rabbah",
+      "trad": "Leur récompense auprès de leur Seigneur sera les Jardins d'Eden sous lesquels coulent les fleuves, où ils demeureront à jamais. Dieu sera satisfait d'eux et ils seront satisfaits de Lui. Il en est ainsi pour quiconque craint son Seigneur !",
+      "themes": ["Paradis", "Jardins d'Éden", "satisfaction mutuelle", "crainte"],
+      "commentaire": "<em>jannāt ʿadn</em> (جَنَّاتُ عَدْن) : les Jardins d'Éden. <em>ʿAdn</em> vient du verbe <em>ʿadana</em> (عَدَنَ), « demeurer », « se fixer durablement » : ce sont les Jardins de la demeure, ceux où l'on s'établit. Mais le verset essentiel est : <em>raḍiya Llāhu ʿanhum wa-raḍū ʿanhu</em> (رَضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ) — « Dieu est satisfait d'eux, et ils sont satisfaits de Lui. » La réciprocité est rare et splendide : ce n'est pas seulement le bonheur du serviteur, c'est aussi le contentement de Dieu en lui. Certains commentateurs ont appelé ce degré le <em>jannat al-riḍwān</em>, « le Jardin de l'agrément », deuxième degré le plus élevé du Paradis après le « Jardin de l'Essence ». Le verset se conclut par une condition : <em>li-man khashiya rabbah</em>, « pour quiconque craint son Seigneur » — non la peur servile, mais cette crainte révérentielle qui est la première forme de la sagesse.",
+      "mots": [
+        { "ar": "جَزَاؤُهُمْ", "tr": "jazāʾuhum", "racine": "ج ز ي", "sens": "leur récompense", "def": "jazāʾ : la rétribution, la récompense ; avec pronom suffixe pluriel.", "gram": "nom + pronom suffixe, nominatif" },
+        { "ar": "عِندَ", "tr": "ʿinda", "racine": "—", "sens": "auprès de", "def": "préposition : auprès de, chez.", "gram": "préposition" },
+        { "ar": "رَبِّهِمْ", "tr": "rabbihim", "racine": "ر ب ب", "sens": "leur Seigneur", "def": "rabb + pronom suffixe pluriel.", "gram": "nom + pronom suffixe, génitif" },
+        { "ar": "جَنَّاتُ", "tr": "jannātu", "racine": "ج ن ن", "sens": "les Jardins de", "def": "jannāt : pluriel de janna, jardin ; au nominatif construit.", "gram": "nom pluriel, nominatif construit" },
+        { "ar": "عَدْنٍ", "tr": "ʿadn", "racine": "ع د ن", "sens": "Éden, demeure", "def": "ʿadn : la demeure, le séjour durable ; nom propre, les Jardins d'Éden.", "gram": "nom propre, génitif" },
+        { "ar": "تَجْرِي", "tr": "tajrī", "racine": "ج ر ي", "sens": "coulent", "def": "jarā : couler, s'écouler ; à l'inaccompli féminin.", "gram": "verbe inaccompli, 3ᵉ pers. fém. sing." },
+        { "ar": "مِن تَحْتِهَا", "tr": "min taḥtihā", "racine": "ت ح ت", "sens": "sous eux", "def": "min + taḥt + pronom suffixe : de sous eux, sous lesquels.", "gram": "préposition + nom + pronom" },
+        { "ar": "الْأَنْهَارُ", "tr": "al-anhār", "racine": "ن ه ر", "sens": "les fleuves", "def": "anhār : pluriel de nahr, fleuve.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "خَالِدِينَ", "tr": "khālidīn", "racine": "خ ل د", "sens": "y demeurant", "def": "khālid : qui demeure perpétuellement.", "gram": "participe actif pluriel, accusatif" },
+        { "ar": "فِيهَا", "tr": "fīhā", "racine": "—", "sens": "en eux", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "أَبَدًا", "tr": "abadan", "racine": "أ ب د", "sens": "à jamais", "def": "abad : éternité ; à l'accusatif adverbial : pour toujours, à jamais.", "gram": "adverbe accusatif" },
+        { "ar": "رَّضِيَ", "tr": "raḍiya", "racine": "ر ض و", "sens": "Il a agréé", "def": "raḍiya : être satisfait, agréer ; à l'accompli.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "اللَّهُ", "tr": "Allāhu", "racine": "أ ل ه", "sens": "Dieu", "def": "Allāh au nominatif.", "gram": "nom, nominatif" },
+        { "ar": "عَنْهُمْ", "tr": "ʿanhum", "racine": "—", "sens": "d'eux", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "وَرَضُوا", "tr": "wa-raḍū", "racine": "ر ض و", "sens": "et ils ont agréé", "def": "raḍiya : être satisfait ; à l'accompli pluriel.", "gram": "verbe accompli, 3ᵉ pers. masc. plur." },
+        { "ar": "عَنْهُ", "tr": "ʿanhu", "racine": "—", "sens": "de Lui", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "ذَٰلِكَ", "tr": "dhālika", "racine": "—", "sens": "cela", "def": "démonstratif masculin éloigné.", "gram": "démonstratif" },
+        { "ar": "لِمَنْ", "tr": "li-man", "racine": "—", "sens": "pour celui qui", "def": "préposition li- + pronom relatif man.", "gram": "préposition + pronom" },
+        { "ar": "خَشِيَ", "tr": "khashiya", "racine": "خ ش ي", "sens": "a craint, révéré", "def": "khashiya : craindre avec révérence ; non la peur servile, mais la crainte respectueuse.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "رَبَّهُ", "tr": "rabbah", "racine": "ر ب ب", "sens": "son Seigneur", "def": "rabb + pronom suffixe.", "gram": "nom + pronom suffixe, accusatif" }
+      ]
+    }
+  ]
+}

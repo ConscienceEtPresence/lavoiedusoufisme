@@ -1,0 +1,237 @@
+{
+  "n": 91,
+  "nom_ar": "الشَّمْس",
+  "nom_tr": "al-Shams",
+  "nom_fr": "Le Soleil",
+  "revelation": "mecquoise",
+  "versets_count": 15,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Shams — « Le Soleil » — est sans doute la sourate où le Coran enchaîne le plus grand nombre de serments d'affilée. Onze, en sept versets, qui dressent l'univers comme un témoin : soleil et sa clarté, lune qui suit, jour qui irradie, nuit qui voile, ciel et Celui qui l'a édifié, terre et Celui qui l'a étendue, âme et Celui qui l'a ordonnée harmonieusement. Onze serments pour dire <em>une seule chose</em> : <em>bienheureux qui purifie son âme, malheureux qui l'avilit</em>. Toute la cosmologie est convoquée pour témoigner du sort d'un seul cœur. Qushayrī, à la fin de la sourate, en donne ce qu'il appelle <em>la fruit (fāʾida)</em> — un résumé d'une beauté ramassée : « Bienheureux qui a purifié son âme des péchés et des défauts, puis de la cupidité pour les compensations et les calculs, puis a tenu son âme à l'écart de toute contestation des partages divins et de tout penchant pour l'interdit. Et malheureux qui a trahi son âme, l'a négligée, l'a souillée par les transgressions, et qui — non content de manquer du goût intérieur (<em>al-maʿānī</em>, المَعَانِي) — y a ajouté de prétentions sombres : alors son navire a sombré dans la mer du malheur. » Au centre de la sourate, le verset 8 — l'un des plus profonds du Coran sur la nature de l'âme : <em>Il lui a inspiré sa transgression et sa piété</em>. Les deux voies sont en l'âme ; elles sont en l'âme parce qu'elles y sont inspirées par Dieu. À chacun, dès lors, de choisir laquelle écouter.",
+  "themes": ["serments cosmiques", "nafs", "fujūr et taqwā", "purification", "Thamūd"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَالشَّمْسِ وَضُحَاهَا",
+      "tr": "wa-sh-shamsi wa-ḍuḥāhā",
+      "trad": "Par le soleil et sa clarté !",
+      "themes": ["soleil", "clarté", "serment"],
+      "commentaire": "<em>al-shams</em> (الشَّمْس) : le soleil. <em>ḍuḥā</em> (ضُحَى) — déjà rencontré dans la sourate 93 — désigne ici plus précisément le commencement du temps du lever, dit Qushayrī : « la <em>ḍuḥā</em> du soleil, c'est le tout début du moment de son lever ». La sourate commence par jurer non par le soleil seul, mais par le soleil <em>et sa clarté</em>. C'est une nuance importante : le serment porte sur l'astre <em>tel qu'il rayonne</em>, sur le couple de la source et de son don. Tout ce qui suit dans la sourate sera ainsi : on ne jure pas par les choses, mais par les choses dans le mouvement même par lequel elles se manifestent.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "الشَّمْسِ", "tr": "ash-shams", "racine": "ش م س", "sens": "le soleil", "def": "shams : le soleil.", "gram": "nom, génitif défini" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "ضُحَاهَا", "tr": "ḍuḥāhā", "racine": "ض ح و", "sens": "sa clarté du matin", "def": "ḍuḥā : le tout début du lever, la clarté du matin ; avec pronom suffixe féminin.", "gram": "nom + pronom suffixe, génitif" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَالْقَمَرِ إِذَا تَلَاهَا",
+      "tr": "wa-l-qamari idhā talāhā",
+      "trad": "Par la lune quand elle le suit !",
+      "themes": ["lune", "succession"],
+      "commentaire": "<em>talāhā</em> (تَلَاهَا) : elle l'a suivi. Qushayrī : « elle suit le soleil et baisse devant lui pendant la première moitié du mois » — c'est-à-dire que la lune apparaît derrière le soleil et croît à mesure qu'il s'efface. La <em>tilāwa</em>, mot de même racine, désigne aussi <em>la récitation suivie</em> du Coran. Dans les deux cas, c'est le geste de <em>venir après en gardant la mesure</em>. La lune ne précède pas le soleil ; elle ne le concurrence pas ; elle reçoit sa lumière et la rend. Image silencieuse du serviteur fidèle.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "الْقَمَرِ", "tr": "al-qamar", "racine": "ق م ر", "sens": "la lune", "def": "qamar : la lune.", "gram": "nom, génitif défini" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "تَلَاهَا", "tr": "talāhā", "racine": "ت ل و", "sens": "elle l'a suivi", "def": "talā : suivre ; aussi « réciter (en suivant la lettre du texte) ». Avec pronom suffixe féminin.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. fém. sing." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَالنَّهَارِ إِذَا جَلَّاهَا",
+      "tr": "wa-n-nahāri idhā jallāhā",
+      "trad": "Par le jour quand il le fait rayonner !",
+      "themes": ["jour", "manifestation"],
+      "commentaire": "<em>jallāhā</em> (جَلَّاهَا) : il l'a fait éclater de clarté, il l'a dévoilée. Même racine que <em>tajallā</em> du verset 92, 2 : la manifestation comme dévoilement. Qushayrī, sobre : « quand il a manifesté le soleil et l'a découvert ». Le jour n'est donc pas une lumière à côté du soleil ; le jour <em>est</em> ce qui dévoile le soleil, ce qui le rend visible à la créature. La nuance est exquise : ce qui éclaire n'est pas seulement la source — c'est aussi le médium par lequel cette source nous parvient.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "النَّهَارِ", "tr": "an-nahār", "racine": "ن ه ر", "sens": "le jour", "def": "nahār : le jour.", "gram": "nom, génitif défini" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "جَلَّاهَا", "tr": "jallāhā", "racine": "ج ل و", "sens": "il l'a dévoilée", "def": "jallā : forme intensive de jalā ; manifester, dévoiler, faire éclater de clarté.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَاللَّيْلِ إِذَا يَغْشَاهَا",
+      "tr": "wa-l-layli idhā yaghshāhā",
+      "trad": "Par la nuit quand elle le recouvre !",
+      "themes": ["nuit", "voile"],
+      "commentaire": "<em>yaghshāhā</em> (يَغْشَاهَا) : elle le voile, elle le couvre. Le verbe est le même que dans la sourate 92, 1, mais le sens est ici tout autre : c'est la nuit qui recouvre le soleil — c'est-à-dire qui voile sa lumière en l'absorbant dans l'ombre. Dans la grammaire des serments, soleil et nuit sont posés ensemble : non pour s'opposer, mais pour dire que toute lumière connaît son voile. Les Sufis y entendront le rythme même de la vie spirituelle : à l'expansion (<em>basṭ</em>) succède la contraction (<em>qabḍ</em>), à la clarté succède l'obscurité — et le serviteur, dans les deux, apprend à reconnaître la même main.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "اللَّيْلِ", "tr": "al-layl", "racine": "ل ي ل", "sens": "la nuit", "def": "layl : la nuit.", "gram": "nom, génitif défini" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "يَغْشَاهَا", "tr": "yaghshāhā", "racine": "غ ش و", "sens": "elle le recouvre", "def": "ghashiya : envelopper, voiler.", "gram": "verbe inaccompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَالسَّمَاءِ وَمَا بَنَاهَا",
+      "tr": "wa-s-samāʾi wa-mā banāhā",
+      "trad": "Par le ciel et Ce[lui] qui l'a édifié !",
+      "themes": ["ciel", "bâtisseur"],
+      "commentaire": "Le pronom <em>mā</em> (مَا) reprend, comme dans la sourate 92, l'ambiguïté tenue à dessein : on peut le rendre par « ce qui » (le ciel et son édification) ou par « Celui qui » (le ciel et Celui qui l'a bâti). Qushayrī penche pour la seconde lecture : « Celui qui l'a édifié », c'est Dieu Lui-même. Le serment ne porte plus seulement sur les choses créées — il englobe leur Créateur. C'est une bascule splendide : on est passé du témoignage des choses au témoignage de Dieu sur Lui-même à travers Ses œuvres.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "السَّمَاءِ", "tr": "as-samāʾ", "racine": "س م و", "sens": "le ciel", "def": "samāʾ : le ciel.", "gram": "nom, génitif défini" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qui / Celui qui", "def": "pronom relatif neutre, ici à valeur de « Celui qui ».", "gram": "pronom relatif" },
+        { "ar": "بَنَاهَا", "tr": "banāhā", "racine": "ب ن ي", "sens": "Il l'a édifié", "def": "banā : bâtir, édifier ; avec pronom suffixe féminin.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "وَالْأَرْضِ وَمَا طَحَاهَا",
+      "tr": "wa-l-arḍi wa-mā ṭaḥāhā",
+      "trad": "Par la terre et Ce[lui] qui l'a étendue !",
+      "themes": ["terre", "déploiement"],
+      "commentaire": "<em>ṭaḥā</em> (طَحَا) : étendre, déployer, distribuer — la terre vue comme une étoffe qu'on déroule, ou qu'on partage. Qushayrī : « celui qui l'a étendue (l'a déployée) ou l'a partagée ou l'a créée ». Le ciel s'élève, la terre s'étend. Tous deux portent ensemble la vie de l'homme : un ciel sans toit, une terre sans bord. Et entre les deux, la créature à qui sera maintenant nommée.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "الْأَرْضِ", "tr": "al-arḍ", "racine": "أ ر ض", "sens": "la terre", "def": "arḍ : la terre.", "gram": "nom, génitif défini" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "Celui qui", "def": "pronom relatif neutre, ici à valeur de « Celui qui ».", "gram": "pronom relatif" },
+        { "ar": "طَحَاهَا", "tr": "ṭaḥāhā", "racine": "ط ح و", "sens": "Il l'a étendue", "def": "ṭaḥā : étendre, déployer, distribuer ; avec pronom suffixe féminin.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَنَفْسٍ وَمَا سَوَّاهَا",
+      "tr": "wa-nafsin wa-mā sawwāhā",
+      "trad": "Par l'âme et Ce[lui] qui l'a ordonnée harmonieusement !",
+      "themes": ["âme", "taswiya", "harmonie"],
+      "commentaire": "Le sommet des serments. <em>sawwāhā</em> (سَوَّاهَا) : Il l'a faite égale, Il l'a harmonisée, Il a mis en équilibre toutes ses parties. Qushayrī, en peu de mots : « Celui qui a ajusté ses éléments et ses membres. » La <em>nafs</em> (نَفْس) — l'âme — est ainsi présentée non comme une chose donnée, mais comme une <em>œuvre d'ajustement</em> divine. Toute son architecture intérieure est tenue dans une harmonie qui n'est pas d'elle. C'est sur ce fond d'harmonie ajustée que le verset suivant pourra parler des deux voies qui sont en elle : le déséquilibre possible et l'équilibre à maintenir.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wāw du serment.", "gram": "particule de serment" },
+        { "ar": "نَفْسٍ", "tr": "nafsin", "racine": "ن ف س", "sens": "une âme", "def": "nafs : l'âme, le souffle, la personne intérieure ; au génitif indéfini.", "gram": "nom, génitif indéfini" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "Celui qui", "def": "pronom relatif neutre, ici à valeur de « Celui qui ».", "gram": "pronom relatif" },
+        { "ar": "سَوَّاهَا", "tr": "sawwāhā", "racine": "س و ي", "sens": "Il l'a ordonnée harmonieusement", "def": "sawwā : forme intensive de sawiya ; rendre égal, harmoniser, ajuster ; avec pronom suffixe féminin.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا",
+      "tr": "fa-alhamahā fujūrahā wa-taqwāhā",
+      "trad": "Il lui a inspiré son libertinage et sa piété ;",
+      "themes": ["ilhām", "fujūr", "taqwā", "deux voies en l'âme"],
+      "commentaire": "Verset capital — l'un des plus profonds du Coran sur la nature de l'âme. <em>alhamahā</em> (أَلْهَمَهَا) : Il lui a inspiré, Il a fait descendre en elle. <em>Fujūr</em> (فُجُور) : la transgression, le débordement (le fleuve qui sort de son lit). <em>Taqwā</em> (تَقْوى) : la piété, la vigilance révérentielle. Les deux sont nommées comme « inspirées » par Dieu — ce qui pose un mystère vertigineux. Qushayrī donne trois lectures qui coexistent : (1) Il lui a inspiré les deux en l'<em>abandonnant à</em> l'une ou en la <em>gardant pour</em> l'autre ; (2) <em>fujūr</em>, c'est le mouvement de l'âme dans la quête du subsistance ; <em>taqwā</em>, sa quiétude sous le décret divin ; (3) simplement : « la voie du bien et celle du mal ». L'âme connaît, du dedans même, les deux voies — non par déduction, mais par inspiration directe. Le choix est en elle, parce que les deux options sont en elle. La sourate ne demande pas à l'homme de découvrir ce qu'il devrait faire ; elle suppose qu'il le sait. Elle ne demande qu'à le faire.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "أَلْهَمَهَا", "tr": "alhamahā", "racine": "ل ه م", "sens": "Il lui a inspiré", "def": "alhama : inspirer (au sens d'insuffler dans le cœur sans intermédiaire) ; même racine qu'ilhām, l'inspiration intérieure.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "فُجُورَهَا", "tr": "fujūrahā", "racine": "ف ج ر", "sens": "sa transgression", "def": "fujūr : transgression, débordement (de la même racine que fajr, l'aube qui fend la nuit, et que infijār, débordement) ; avec pronom suffixe.", "gram": "nom + pronom suffixe, accusatif" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "تَقْوَاهَا", "tr": "taqwāhā", "racine": "و ق ي", "sens": "sa piété", "def": "taqwā : la piété, la vigilance révérentielle ; avec pronom suffixe.", "gram": "nom + pronom suffixe, accusatif" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "قَدْ أَفْلَحَ مَن زَكَّاهَا",
+      "tr": "qad aflaḥa man zakkāhā",
+      "trad": "bienheureux qui la purifie,",
+      "themes": ["réussite", "purification", "zakkāhā"],
+      "commentaire": "Voici la réponse aux onze serments — la phrase pour laquelle tout l'univers avait été convoqué. <em>aflaḥa</em> (أَفْلَحَ) : a réussi, est bienheureux ; même racine que <em>falāḥ</em>, la prospérité spirituelle. <em>zakkāhā</em> (زَكَّاهَا) : il l'a purifiée, il l'a faite croître. Qushayrī admet deux lectures grammaticales : « bienheureux celui qui purifie son âme » ; ou « bienheureux celui que Dieu, glorifié et exalté, a purifié ». La belle ambiguïté arabe permet les deux : la purification est à la fois une œuvre que l'homme accomplit et un don qui lui est fait. Comme presque toujours en spiritualité : ce qui dépend de l'homme et ce qui dépend de Dieu se rencontrent dans le même mouvement.",
+      "mots": [
+        { "ar": "قَدْ", "tr": "qad", "racine": "—", "sens": "certes", "def": "particule d'affirmation pour l'accompli.", "gram": "particule" },
+        { "ar": "أَفْلَحَ", "tr": "aflaḥa", "racine": "ف ل ح", "sens": "il a réussi, il est bienheureux", "def": "aflaḥa : prospérer, réussir spirituellement ; même racine que falāḥ (réussite, prospérité).", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "مَنْ", "tr": "man", "racine": "—", "sens": "celui qui", "def": "pronom relatif.", "gram": "pronom" },
+        { "ar": "زَكَّاهَا", "tr": "zakkāhā", "racine": "ز ك و", "sens": "il l'a purifiée", "def": "zakkā : forme intensive de zakā ; purifier, faire croître. Même racine que zakāt.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَقَدْ خَابَ مَن دَسَّاهَا",
+      "tr": "wa-qad khāba man dassāhā",
+      "trad": "et malheureux qui l'avilit !",
+      "themes": ["échec", "dissimulation", "abaissement"],
+      "commentaire": "<em>khāba</em> (خَابَ) : a échoué, a été déçu dans ses espoirs. <em>dassāhā</em> (دَسَّاهَا) — verbe rare et chargé. Sa forme originelle est <em>dassasahā</em> (دَسَّسَهَا), « il l'a enfouie » ; une lettre a été substituée par allègement phonétique. <em>Dasasa</em>, c'est cacher une chose dans une autre, ensevelir secrètement. Qushayrī propose quatre lectures : (1) « Dieu l'a enfouie » ; (2) « il l'a cachée parmi les justes alors qu'il n'est pas des leurs » ; (3) « il a enseveli son âme par la désobéissance à Dieu » ; (4) « il l'a rendue basse, méprisable, vile ». Toutes ces lectures convergent : avilir l'âme, c'est la <em>cacher</em>, l'enterrer sous les couches qu'on accumule par-dessus elle. Le péché ne détruit pas l'âme — il l'enfouit. La voie de la purification est, à l'inverse, un long mouvement de désensevelissement.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "قَدْ", "tr": "qad", "racine": "—", "sens": "certes", "def": "particule d'affirmation.", "gram": "particule" },
+        { "ar": "خَابَ", "tr": "khāba", "racine": "خ ي ب", "sens": "il a échoué", "def": "khāba : être déçu dans son espoir, échouer, périr.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "مَنْ", "tr": "man", "racine": "—", "sens": "celui qui", "def": "pronom relatif.", "gram": "pronom" },
+        { "ar": "دَسَّاهَا", "tr": "dassāhā", "racine": "د س س", "sens": "il l'a enfouie, avilie", "def": "dassā (originellement dassasa) : enfouir, cacher dans, ensevelir secrètement ; d'où : avilir.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "كَذَّبَتْ ثَمُودُ بِطَغْوَاهَا",
+      "tr": "kadhdhabat thamūdu bi-ṭaghwāhā",
+      "trad": "Les Thamoud, dans leur révolte, criaient au mensonge",
+      "themes": ["Thamūd", "exemple historique", "ṭughyān"],
+      "commentaire": "La sourate, après l'énoncé général de la loi, vient maintenant en illustrer le revers par un exemple historique. Les Thamoud, peuple ancien d'Arabie auquel fut envoyé le prophète Ṣāliḥ (Cf. 7, 73-79 ; 11, 61-68). <em>Bi-ṭaghwāhā</em> (بِطَغْوَاهَا) : « par leur propre débordement » — le verbe <em>ṭaghā</em>, déjà rencontré en 96, 6, désigne l'eau qui sort de son lit, l'orgueil qui ne tient plus. Qushayrī rapporte ici une tradition saisissante : « On dit que Ṣāliḥ était mort, et que son peuple avait mécru ; Dieu le fit revenir à la vie, et il les appela à la foi ; ils le démentirent, et lui demandèrent un signe — ce fut la chamelle. » Que cette tradition soit historique ou non, elle dit une vérité de l'âme : il y a des dénégations si entêtées que même un prophète revenu d'entre les morts ne les fléchit pas.",
+      "mots": [
+        { "ar": "كَذَّبَتْ", "tr": "kadhdhabat", "racine": "ك ذ ب", "sens": "elle a démenti", "def": "kadhdhaba : démentir, traiter de mensonge ; au féminin (sujet : Thamūd, tribu).", "gram": "verbe accompli, 3ᵉ pers. fém. sing." },
+        { "ar": "ثَمُودُ", "tr": "thamūdu", "racine": "—", "sens": "Thamūd", "def": "Thamūd : nom de l'ancienne tribu d'Arabie, peuple du prophète Ṣāliḥ.", "gram": "nom propre, nominatif (diptote)" },
+        { "ar": "بِطَغْوَاهَا", "tr": "bi-ṭaghwāhā", "racine": "ط غ ي", "sens": "par sa révolte", "def": "ṭaghwā : débordement, révolte, dépassement de la mesure ; avec pronom suffixe féminin.", "gram": "préposition + nom + pronom, génitif" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "إِذِ انبَعَثَ أَشْقَاهَا",
+      "tr": "idhi nbaʿatha ashqāhā",
+      "trad": "lorsque le plus misérable d'entre eux s'est levé...",
+      "themes": ["ashqā", "soulèvement"],
+      "commentaire": "<em>ashqāhā</em> (أَشْقاهَا) : « le plus malheureux d'entre eux » — Qushayrī le nomme : « celui qui a saigné la chamelle ». La tradition rapporte qu'il s'agit d'un homme nommé Qudār ibn Sālif. Le verset dit, en filigrane, une vérité subtile : ce n'est pas la majorité qui agit ; c'est <em>le plus malheureux</em>, celui que la <em>shaqāwa</em> avait déjà rongé, qui se lève. Et tous se rangent derrière. Le mal d'un peuple est souvent moins l'œuvre de la masse que l'œuvre d'un seul, suivie par le silence des autres.",
+      "mots": [
+        { "ar": "إِذِ", "tr": "idhi", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "انبَعَثَ", "tr": "inbaʿatha", "racine": "ب ع ث", "sens": "il s'est levé, s'est élancé", "def": "inbaʿatha : forme dérivée de baʿatha ; se lever, s'élancer.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "أَشْقَاهَا", "tr": "ashqāhā", "racine": "ش ق و", "sens": "le plus misérable d'entre eux", "def": "ashqā : superlatif de shaqī ; le plus malheureux, le plus réprouvé.", "gram": "nom adjectival + pronom suffixe, nominatif" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "فَقَالَ لَهُمْ رَسُولُ اللَّهِ نَاقَةَ اللَّهِ وَسُقْيَاهَا",
+      "tr": "fa-qāla lahum rasūlu Llāhi nāqata Llāhi wa-suqyāhā",
+      "trad": "L'Envoyé de Dieu leur avait dit : « La chamelle de Dieu !... Laissez-la boire !... »",
+      "themes": ["chamelle de Dieu", "signe"],
+      "commentaire": "La chamelle (<em>nāqa</em>, نَاقَة) était le signe que Dieu avait envoyé aux Thamoud à leur demande, par la main du prophète Ṣāliḥ. Le Coran raconte ailleurs (7, 73 ; 26, 155) qu'elle devait boire à un jour, et les Thamoud à l'autre. Qushayrī résume l'avertissement : « Prenez garde à la chamelle de Dieu, et prenez garde à son temps d'abreuvement — c'est-à-dire : ne lui faites pas obstacle. » Le verset est court, mais sa portée est immense : ce qui est <em>de Dieu</em> doit être respecté précisément dans sa modeste exigence, et non pas seulement dans son éclat.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "قَالَ", "tr": "qāla", "racine": "ق و ل", "sens": "il dit", "def": "qāla : dire.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "لَهُمْ", "tr": "lahum", "racine": "—", "sens": "à eux", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "رَسُولُ", "tr": "rasūlu", "racine": "ر س ل", "sens": "l'Envoyé de", "def": "rasūl : envoyé, messager.", "gram": "nom, nominatif construit" },
+        { "ar": "اللَّهِ", "tr": "Allāhi", "racine": "أ ل ه", "sens": "Dieu", "def": "Allāh au génitif.", "gram": "nom, génitif" },
+        { "ar": "نَاقَةَ", "tr": "nāqata", "racine": "ن و ق", "sens": "la chamelle de", "def": "nāqa : la chamelle ; au cas d'avertissement (taḥdhīr).", "gram": "nom, accusatif d'avertissement" },
+        { "ar": "اللَّهِ", "tr": "Allāhi", "racine": "أ ل ه", "sens": "Dieu", "def": "Allāh au génitif.", "gram": "nom, génitif" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "سُقْيَاهَا", "tr": "suqyāhā", "racine": "س ق ي", "sens": "son temps d'abreuvement", "def": "suqyā : action d'abreuver, droit de boire ; avec pronom suffixe féminin.", "gram": "nom + pronom suffixe, accusatif" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنبِهِمْ فَسَوَّاهَا",
+      "tr": "fa-kadhdhabūhu fa-ʿaqarūhā fa-damdama ʿalayhim rabbuhum bi-dhanbihim fa-sawwāhā",
+      "trad": "Ils l'ont traité de menteur et ils ont tranché les jarrets de la chamelle. Leur Seigneur les a alors détruits jusqu'au dernier à cause de leur péché,",
+      "themes": ["démenti", "châtiment", "égalisation"],
+      "commentaire": "Trois <em>fa-</em> successifs (« alors... alors... alors... ») marquent l'enchaînement implacable : ils démentent, ils tuent, Il anéantit. <em>damdama</em> (دَمْدَمَ) : Il a fait s'abattre sur eux le châtiment d'un seul mouvement. <em>fa-sawwāhā</em> (فَسَوَّاهَا), « Il l'a égalisée » : Qushayrī donne deux sens magnifiquement complémentaires : (1) « la terre a été nivelée sur eux » — comme si Dieu fermait sur eux le pays comme on referme un livre ; (2) « Il les a égalisés dans le châtiment, parce qu'ils avaient tous consenti à l'égorgement de la chamelle ». Note grammaticale subtile : le verbe <em>sawwā</em> est le même qu'au verset 7 (où Dieu ordonne harmonieusement l'âme). L'âme désharmonisée par le péché est, à la fin, <em>réharmonisée</em> dans le châtiment — non plus comme grâce, mais comme justice.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "كَذَّبُوهُ", "tr": "kadhdhabūhu", "racine": "ك ذ ب", "sens": "ils l'ont démenti", "def": "kadhdhaba : démentir ; avec pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. plur." },
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "عَقَرُوهَا", "tr": "ʿaqarūhā", "racine": "ع ق ر", "sens": "ils l'ont saignée", "def": "ʿaqara : couper les jarrets, saigner (une monture) ; avec pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. plur." },
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "دَمْدَمَ", "tr": "damdama", "racine": "د م د م", "sens": "Il a anéanti", "def": "damdama : faire s'abattre, anéantir d'un seul mouvement.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "عَلَيْهِمْ", "tr": "ʿalayhim", "racine": "—", "sens": "sur eux", "def": "préposition + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "رَبُّهُمْ", "tr": "rabbuhum", "racine": "ر ب ب", "sens": "leur Seigneur", "def": "rabb + pronom suffixe.", "gram": "nom + pronom suffixe, nominatif" },
+        { "ar": "بِذَنبِهِمْ", "tr": "bi-dhanbihim", "racine": "ذ ن ب", "sens": "à cause de leur péché", "def": "dhanb : péché, faute ; avec pronom suffixe.", "gram": "préposition + nom + pronom, génitif" },
+        { "ar": "فَسَوَّاهَا", "tr": "fa-sawwāhā", "racine": "س و ي", "sens": "Il l'a égalisée", "def": "sawwā : égaliser, niveler ; ici, soit niveler la terre sur eux, soit égaliser leur sort dans le châtiment.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "وَلَا يَخَافُ عُقْبَاهَا",
+      "tr": "wa-lā yakhāfu ʿuqbāhā",
+      "trad": "et leur disparition ne Lui cause nulle appréhension.",
+      "themes": ["souveraineté", "absence de crainte divine"],
+      "commentaire": "<em>ʿuqbā</em> (عُقْبَى) : la conséquence, le suivi d'une affaire. Qushayrī : « Dieu ne craint pas la conséquence de ce qu'Il a fait d'eux comme châtiment. » Le verset est sobre, mais il dit quelque chose de fondamental sur la souveraineté divine : Dieu n'a pas à se justifier, ni à craindre que Son acte produise contre Lui un retour. Ce qui pour l'homme est lourd de conséquences ne l'est pas pour Lui. Et Qushayrī clôt sa lecture de la sourate sur sa magnifique <em>fruit</em> (<em>fāʾida</em>, فَائِدَة), résumé en quelques lignes : « Bienheureux qui a purifié son âme des péchés et des défauts, puis de la cupidité pour les compensations et les calculs, puis l'a tenue à l'écart de toute contestation des partages divins et de tout penchant pour l'interdit. Et malheureux qui a trahi son âme, l'a négligée, l'a souillée par les transgressions, et qui — non content de manquer de la saveur intérieure (<em>al-maʿānī</em>, المَعَانِي) — y a ajouté de prétentions obscures : alors son navire a sombré dans la mer du malheur. »",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction.", "gram": "conjonction" },
+        { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
+        { "ar": "يَخَافُ", "tr": "yakhāfu", "racine": "خ و ف", "sens": "Il craint", "def": "khāfa : craindre.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "عُقْبَاهَا", "tr": "ʿuqbāhā", "racine": "ع ق ب", "sens": "ses suites, sa conséquence", "def": "ʿuqbā : la suite, la conséquence d'une affaire ; avec pronom suffixe féminin.", "gram": "nom + pronom suffixe, accusatif" }
+      ]
+    }
+  ]
+}

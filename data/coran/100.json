@@ -6,20 +6,20 @@
   "revelation": "mecquoise",
   "versets_count": 11,
   "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
-  "intro": "Al-ʿĀdiyāt — « Les Coursiers » — est une sourate mecquoise dont le nom vient des coursiers (au sens de chevaux ou de chameaux qui galopent) mentionnés dans le premier verset. La tradition rapporte plusieurs occasions de révélation. Selon un récit, le Prophète envoya une expédition militaire sous le commandement d'al-Mundhir ibn ʿAmr ; les nouvelles tardaient, les hypocrites disaient qu'ils avaient tous été tués, et la sourate vint donner des nouvelles. Selon un autre, attribué à ʿAlī ibn Abī Ṭālib, les serments décrivent plutôt l'élan des montures lors du pèlerinage, qui se hâtent du mont ʿArafāt à Muzdalifa puis à Minā. Les deux lectures sont reçues. La sourate s'ouvre par cinq serments éclatants sur la course des montures (v. 1-5), bascule en trois versets sur l'ingratitude de l'homme et son amour démesuré des biens (v. 6-8), et s'achève en trois versets sur le Jour où le secret des cœurs et des tombes sera mis au jour (v. 9-11).",
-  "themes": ["serments", "ingratitude", "amour des biens", "résurrection", "secret du cœur"],
+  "intro": "Al-ʿĀdiyāt — « Les Coursiers » — s'ouvre par cinq serments fougueux : des montures qui galopent, soufflent, font jaillir le feu sous leurs sabots, chargent à l'aube, soulèvent la poussière, plongent au cœur de la mêlée. Cinq images de course pure — puis l'arrêt. Et le verdict, sans préambule : <em>l'homme est ingrat envers son Seigneur</em>. Al-Qushayrī s'attarde longuement sur ce mot, <em>kanūd</em> (كَنُود), et en donne trois définitions qui se complètent. L'ingrat, dit-il, c'est « celui qui voit les épreuves qui l'atteignent, et ne voit pas les bienfaits dont il est comblé ». C'est aussi « celui dont la tête repose sur le coussin du bienfait, mais dont le cœur erre dans le champ de l'insouciance (<em>ghafla</em>, غَفْلَة) ». C'est enfin, simplement, « celui qui oublie les grâces et compte les malheurs ». Trois visages d'un même cœur sec. Tustarī ajoute : l'ingrat est celui qui a rompu le pacte (<em>al-ʿahd</em>, العَهْد), s'est éloigné de la véracité (<em>al-ṣidq</em>, الصِّدْق) et s'est intimisé avec sa passion (<em>al-hawā</em>, الهَوى) — et alors Dieu lui ôte tout espoir de probité et de crainte. La sourate, en onze versets, dit comment ce cœur sec se forme, et où il conduit.",
+  "themes": ["serments", "ingratitude", "ghafla", "amour des biens", "secret du cœur"],
   "versets": [
     {
       "n": 1,
       "ar": "وَالْعَادِيَاتِ ضَبْحًا",
       "tr": "wa-l-ʿādiyāti ḍabḥā",
       "trad": "Par les coursiers haletants,",
-      "themes": ["serment", "course"],
-      "commentaire": "<em>al-ʿādiyāt</em> (العَادِيَات) : celles qui courent — participe actif féminin pluriel de <em>ʿadā</em> (عَدَا), courir, s'élancer. <em>Ḍabḥ</em> (ضَبْح) désigne le souffle bruyant des bêtes qui galopent. Le serment est saisissant : Dieu jure par des chevaux haletants, par leur souffle même. Al-Bayḍāwī y voit aussi, en lecture spirituelle, les âmes ardentes qui se précipitent vers Dieu, et dont le souffle même devient prière.",
+      "themes": ["serment", "course", "élan"],
+      "commentaire": "Dieu jure par des bêtes qui courent à perdre haleine. <em>al-ʿādiyāt</em> (العَادِيَات), celles qui s'élancent ; <em>ḍabḥ</em> (ضَبْح), le souffle rauque du galop. Le serment est une image avant d'être un argument : la course pure, l'élan qui dépasse les forces, le souffle même devenu bruit. Certains soufis lisent ces serments comme la figure des âmes ferventes qui s'élancent vers Dieu — et dont le souffle, à la fin, n'est plus que prière. Mais la sourate ne s'arrête pas à cette beauté : elle l'invoque pour faire contraste avec l'ingratitude qui va être nommée. Car l'homme aussi sait courir — pour ce qu'il aime.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wa : préposition de serment.", "gram": "particule de serment" },
         { "ar": "الْعَادِيَاتِ", "tr": "al-ʿādiyāt", "racine": "ع د و", "sens": "les coursiers", "def": "ʿādiyāt : participe actif féminin pluriel de ʿadā (courir, s'élancer) ; celles qui courent — chevaux ou chameaux en course rapide.", "gram": "participe actif pluriel, génitif défini" },
-        { "ar": "ضَبْحًا", "tr": "ḍabḥā", "racine": "ض ب ح", "sens": "halètement", "def": "ḍabḥ : le souffle bruyant et halctant des bêtes qui galopent ; à l'accusatif comme complément d'objet interne.", "gram": "nom verbal, accusatif indéfini" }
+        { "ar": "ضَبْحًا", "tr": "ḍabḥā", "racine": "ض ب ح", "sens": "halètement", "def": "ḍabḥ : le souffle bruyant et haletant des bêtes qui galopent ; à l'accusatif comme complément d'objet interne.", "gram": "nom verbal, accusatif indéfini" }
       ]
     },
     {
@@ -27,8 +27,8 @@
       "ar": "فَالْمُورِيَاتِ قَدْحًا",
       "tr": "fa-l-mūriyāti qadḥā",
       "trad": "ceux qui font jaillir des étincelles,",
-      "themes": ["serment", "étincelles"],
-      "commentaire": "<em>al-mūriyāt</em> (المُورِيَات) : celles qui font jaillir le feu — des sabots qui battent les rochers, des étincelles s'élèvent. <em>Qadḥ</em> (قَدْح) est le geste par lequel on frappe la pierre pour en tirer une flamme. L'image est précise et belle : la course n'est pas seulement rapide, elle est lumineuse, elle arrache à la terre des éclats. Le serment monte d'un cran.",
+      "themes": ["serment", "étincelles", "feu"],
+      "commentaire": "<em>al-mūriyāt</em> (المُورِيَات) : celles dont les sabots arrachent du feu à la pierre. <em>Qadḥ</em> (قَدْح), le geste de battre le silex. La course n'éclaire pas seulement la nuit — elle l'embrase. Qushayrī, qui passe rapidement sur le tafsīr littéral de ces versets, suggère ailleurs que les vraies « étincelles » sont celles que le souvenir de Dieu (<em>dhikr</em>, ذِكْر) tire du cœur dur. Une étincelle suffit, parfois, pour qu'une nuit entière prenne feu.",
       "mots": [
         { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "et puis", "def": "particule de coordination : et puis, ensuite ; lie les serments successifs.", "gram": "particule" },
         { "ar": "الْمُورِيَاتِ", "tr": "al-mūriyāt", "racine": "و ر ي", "sens": "celles qui font jaillir le feu", "def": "mūriyāt : participe actif féminin pluriel de awrā (faire jaillir le feu) ; celles dont les sabots tirent des étincelles des rochers.", "gram": "participe actif pluriel, génitif défini" },
@@ -41,7 +41,7 @@
       "tr": "fa-l-mughīrāti ṣubḥā",
       "trad": "et qui surgissent à l'aube,",
       "themes": ["serment", "aube", "raid"],
-      "commentaire": "<em>al-mughīrāt</em> (المُغِيرَات) : celles qui chargent, qui font le raid — du verbe <em>aghāra</em> (أَغَارَ), lancer un assaut. <em>Ṣubḥ</em> (صُبْح) : l'aube, le matin précoce. C'est l'heure d'attaque dans l'Arabie ancienne — l'ennemi est encore endormi. Selon une autre lecture, ce sont les chameaux du pèlerinage qui se hâtent à l'aube du jour du sacrifice : la « charge » devient un mouvement de dévotion.",
+      "commentaire": "<em>al-mughīrāt</em> (المُغِيرَات), celles qui chargent ; <em>ṣubḥ</em> (صُبْح), l'aube. L'heure d'attaque dans l'Arabie ancienne, quand l'ennemi est encore endormi. Une autre tradition voit dans ces vers les chameaux du pèlerinage qui se hâtent à l'aube du jour du sacrifice : la charge devient mouvement dévotionnel. Les deux lectures se rejoignent dans la même intuition — il y a une heure où l'âme doit surgir avant que les ombres ne reviennent. Et cette heure, comme l'aube, ne dure pas.",
       "mots": [
         { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "et", "def": "particule de coordination : et puis.", "gram": "particule" },
         { "ar": "الْمُغِيرَاتِ", "tr": "al-mughīrāt", "racine": "غ و ر", "sens": "celles qui chargent", "def": "mughīrāt : participe actif féminin pluriel d'aghāra (charger, faire un raid).", "gram": "participe actif pluriel, génitif défini" },
@@ -54,7 +54,7 @@
       "tr": "fa-atharna bihi naqʿā",
       "trad": "et qui font voler la poussière,",
       "themes": ["poussière", "élan"],
-      "commentaire": "<em>naqʿ</em> (نَقْع) : la poussière soulevée. La course est si rapide que le sol monte derrière elle en nuée. Les versets 1-4 forment ainsi un cinéma vif : course haletante, étincelles, raid au point du jour, poussière levée. L'oreille suit le mouvement.",
+      "commentaire": "<em>naqʿ</em> (نَقْع) : la poussière soulevée. La course est si rapide que le sol monte derrière elle, comme un voile qui marque le passage. Image traversée d'un détail spirituel : tout grand mouvement laisse sa trace dans l'air. Ce que l'âme fait, même en secret, soulève quelque chose autour d'elle.",
       "mots": [
         { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "et", "def": "particule de coordination.", "gram": "particule" },
         { "ar": "أَثَرْنَ", "tr": "atharna", "racine": "ث و ر", "sens": "elles ont soulevé", "def": "athāra : soulever, faire monter (la poussière) ; à l'accompli féminin pluriel.", "gram": "verbe accompli, 3ᵉ pers. fém. plur." },
@@ -67,8 +67,8 @@
       "ar": "فَوَسَطْنَ بِهِ جَمْعًا",
       "tr": "fa-wasaṭna bihi jamʿā",
       "trad": "et qui pénètrent au cœur de la mêlée,",
-      "themes": ["combat", "centre"],
-      "commentaire": "<em>wasaṭna</em> (وَسَطْنَ) : elles se sont enfoncées au milieu — au centre des troupes ennemies, ou au cœur du rassemblement des pèlerins (le <em>jamʿ</em>, qui désigne aussi le pèlerinage à Muzdalifa). Le serment s'achève sur cette image de pénétration totale, et bascule au verset suivant pour livrer sa réponse.",
+      "themes": ["centre", "engagement", "jamʿ"],
+      "commentaire": "<em>wasaṭna</em> (وَسَطْنَ), elles se sont enfoncées au centre ; <em>jamʿ</em> (جَمْع), le rassemblement — et aussi, dans la langue du pèlerinage, le nom de Muzdalifa, où les pèlerins se rassemblent. Le serment culmine sur cette image de centre traversé. Et la sourate, à l'instant où la mêlée est atteinte, bascule. Le verset suivant ne parle plus de chevaux : il parle du cœur de l'homme.",
       "mots": [
         { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "et", "def": "particule de coordination.", "gram": "particule" },
         { "ar": "وَسَطْنَ", "tr": "wasaṭna", "racine": "و س ط", "sens": "elles se sont enfoncées au milieu", "def": "wasaṭa : être au milieu de, pénétrer au centre ; à l'accompli féminin pluriel.", "gram": "verbe accompli, 3ᵉ pers. fém. plur." },
@@ -81,8 +81,8 @@
       "ar": "إِنَّ الْإِنسَانَ لِرَبِّهِ لَكَنُودٌ",
       "tr": "inna l-insāna li-rabbihi la-kanūd",
       "trad": "certes, l'homme est ingrat envers son Seigneur,",
-      "themes": ["ingratitude", "condition humaine"],
-      "commentaire": "Après les cinq serments, la sourate livre son cœur : l'homme est <em>kanūd</em> (كَنُود) envers son Seigneur. Le mot vient d'une racine qui dit la terre stérile où rien ne pousse — l'ingratitude est cette terre intérieure où les bienfaits reçus ne font pas germer la reconnaissance. <em>Kanūd</em> désigne aussi celui qui n'oublie que les bienfaits, et ne se souvient que des malheurs. C'est tout un portrait moral en un mot.",
+      "themes": ["ingratitude", "kanūd", "condition humaine"],
+      "commentaire": "Voici le mot où tout se concentre : <em>kanūd</em> (كَنُود). Qushayrī en donne trois portraits successifs, comme trois éclairages sur un même visage. D'abord : « C'est celui qui voit l'épreuve qui l'atteint, et ne voit pas le bienfait dont il est comblé. » L'ingrat n'est pas un méchant, c'est un cœur qui regarde du mauvais côté. Ensuite : « C'est celui dont la tête repose sur le coussin du bienfait, mais dont le cœur erre dans le champ de l'insouciance (<em>ghafla</em>, غَفْلَة). » Le bienfait est là, sous la nuque ; le cœur, lui, est ailleurs. Enfin, plus simplement : « C'est celui qui oublie les bienfaits et compte les malheurs. » Tustarī va plus loin : l'ingrat est celui qui a rompu le pacte (<em>al-ʿahd</em>, العَهْد), s'est éloigné de la véracité, et s'est intimisé avec sa passion. Dieu alors le laisse, dit-il, sans espérance de bien ni de crainte salutaire. Quatre traits du même mot — et tous nous concernent, à des heures plus ou moins basses.",
       "mots": [
         { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule de mise en relief : certes, en vérité.", "gram": "particule" },
         { "ar": "الْإِنسَانَ", "tr": "al-insān", "racine": "أ ن س", "sens": "l'homme", "def": "insān : l'être humain, l'homme générique.", "gram": "nom, accusatif défini" },
@@ -96,8 +96,8 @@
       "ar": "وَإِنَّهُ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ",
       "tr": "wa-innahu ʿalā dhālika la-shahīd",
       "trad": "et lui-même peut en témoigner ;",
-      "themes": ["témoignage", "conscience"],
-      "commentaire": "<em>shahīd</em> (شَهِيد) : témoin. Selon certains commentateurs, le « lui » du verset désigne Dieu, Témoin universel ; selon d'autres, c'est l'homme lui-même, témoin de sa propre ingratitude. La seconde lecture est la plus belle moralement : l'homme sait, au fond, ce qu'il fait. Et au Jour du jugement, le Coran dit que les hommes témoigneront contre eux-mêmes (cf. 36, 65 ; 41, 20).",
+      "themes": ["témoignage", "conscience", "shahīd"],
+      "commentaire": "Deux lectures possibles, et Qushayrī les retient toutes deux. <em>Lui</em>, c'est l'homme : il est le premier témoin de son ingratitude. Au fond de lui, il sait — et c'est ce savoir refoulé qui rend l'ingratitude possible. Ou bien <em>Lui</em>, c'est Dieu : « Et Dieu, sur cet état du serviteur, est témoin », écrit Qushayrī. Les deux sens, ensemble, ferment toute échappatoire. L'homme se sait ingrat, et Dieu le voit se savoir ingrat. Il n'y a pas de tiers à appeler. Le seul mouvement possible, dans cette pince, c'est de tourner le visage.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
         { "ar": "إِنَّهُ", "tr": "innahu", "racine": "—", "sens": "en vérité, il", "def": "inna + pronom suffixe : en vérité, il.", "gram": "particule + pronom" },
@@ -112,8 +112,8 @@
       "ar": "وَإِنَّهُ لِحُبِّ الْخَيْرِ لَشَدِيدٌ",
       "tr": "wa-innahu li-ḥubbi l-khayri la-shadīd",
       "trad": "mais son amour des richesses est plus fort.",
-      "themes": ["amour des biens", "attachement"],
-      "commentaire": "<em>al-khayr</em> (الخَيْر) signifie « le bien », et les commentateurs le rendent ici par « les biens » — les richesses, par métonymie, sont nommées « le bien » dans la langue arabe. L'homme aime ce qui se possède d'une affection violente — <em>shadīd</em> (شَدِيد), « intense », « ferme ». Le Coran ailleurs nomme cet amour dans le détail : « des femmes, des enfants, des sommes amassées d'or et d'argent, des chevaux de marque, du bétail, des terres » (3, 14). La sourate vise plus large que la seule cupidité : tout attachement excessif à ce qui passe.",
+      "themes": ["amour des biens", "attachement", "iftiqār"],
+      "commentaire": "Le mot que la langue arabe utilise ici pour « richesses » est <em>al-khayr</em> (الخَيْر) — littéralement « le bien ». La langue dit donc ce que le cœur, en secret, croit : que ce qui se possède est <em>le bien</em>. Tustarī démonte cette croyance en distinguant trois sortes d'amour qu'on prend pour le bien : amour de l'âme charnelle (<em>ḥubb al-nafs</em>, حُبّ النَّفْس), amour du monde (<em>ḥubb al-dunyā</em>, حُبّ الدُّنْيا), amour de la passion (<em>ḥubb al-hawā</em>, حُبّ الهَوى). Et il nomme alors le vrai bien, en trois choses également : se rendre indépendant des hommes par contentement, reconnaître son indigence absolue devant Dieu (<em>iftiqār</em>, افْتِقَار), et accomplir Ses commandements. L'<em>iftiqār</em> est au centre : le pauvre vrai, qui n'a rien dans les mains, est riche de Celui qu'il attend.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
         { "ar": "إِنَّهُ", "tr": "innahu", "racine": "—", "sens": "en vérité, il", "def": "inna + pronom suffixe.", "gram": "particule + pronom" },
@@ -129,7 +129,7 @@
       "tr": "a-fa-lā yaʿlamu idhā buʿthira mā fī l-qubūr",
       "trad": "Ne sait-il donc pas qu'au moment où sera bouleversé le contenu des tombes",
       "themes": ["résurrection", "renversement"],
-      "commentaire": "<em>buʿthira</em> (بُعْثِرَ) : être bouleversé, renversé, retourné — comme on retourne un récipient. L'image est celle des tombes qui rendent leur contenu, dans un mouvement de pleine inversion. Le Coran emploie souvent cette grammaire de l'apocalypse : ce qui était caché en bas est mis en haut, ce qui dormait est éveillé. Le verset commence par une interrogation indignée : « Ne sait-il donc pas… ? »",
+      "commentaire": "Le verbe <em>buʿthira</em> (بُعْثِرَ) ne dit pas seulement « ressusciter » : il dit retourner, vider en renversant, comme on retourne un récipient pour qu'il livre tout son fond. Les tombes ne sont qu'une moitié de ce qui sera renversé. L'autre moitié — la plus inquiétante — vient au verset suivant.",
       "mots": [
         { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "est-ce que", "def": "particule interrogative.", "gram": "particule" },
         { "ar": "فَلَا", "tr": "fa-lā", "racine": "—", "sens": "ne... pas", "def": "fa- + lā : ne... pas (négation accompagnant l'interrogation).", "gram": "particules" },
@@ -146,8 +146,8 @@
       "ar": "وَحُصِّلَ مَا فِي الصُّدُورِ",
       "tr": "wa-ḥuṣṣila mā fī ṣ-ṣudūr",
       "trad": "et où sera récapitulé le contenu des poitrines,",
-      "themes": ["intériorité", "révélation des secrets"],
-      "commentaire": "<em>ḥuṣṣila</em> (حُصِّلَ) : être extrait, être recueilli, être amené au jour — comme on tire le métal de la mine, ou comme on rassemble la moisson. <em>al-ṣudūr</em> (الصُّدُور), « les poitrines », désigne le cœur intime, le for intérieur. Tout ce qui était tenu secret en sera tiré. Le Coran nomme ailleurs ce Jour « le Jour où les secrets sont éprouvés » (86, 9). Plus inquiétant encore que le bouleversement des tombes : le retournement des intérieurs.",
+      "themes": ["intériorité", "secret du cœur"],
+      "commentaire": "<em>ḥuṣṣila</em> (حُصِّلَ) : être extrait, comme on tire le métal de la mine, ou comme on rassemble la moisson. Qushayrī : ce qui était tenu caché dans les cœurs sera <em>mis au jour</em>, le bien comme le mal. La sourate ouvre ainsi un second renversement, plus grave que celui des tombes : le retournement des intérieurs. Le grand jour, dit Qushayrī ailleurs, ce n'est pas seulement le Jour du jugement — c'est, déjà, chaque heure où le cœur consent à se laisser voir. Le serviteur qui ne tient rien de secret pour son Seigneur prépare doucement ce Jour avant qu'il ne vienne.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
         { "ar": "حُصِّلَ", "tr": "ḥuṣṣila", "racine": "ح ص ل", "sens": "il sera recueilli, extrait", "def": "ḥaṣṣala : tirer, recueillir, faire sortir ce qui était caché ; au passif accompli, valeur future.", "gram": "verbe accompli passif, 3ᵉ pers. masc. sing." },
@@ -161,8 +161,8 @@
       "ar": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌ",
       "tr": "inna rabbahum bihim yawmaʾidhin la-khabīr",
       "trad": "ce Jour-là, leur Seigneur sera instruit de tout à leur sujet.",
-      "themes": ["omniscience divine", "Jour du jugement"],
-      "commentaire": "<em>khabīr</em> (خَبِير) : Celui qui sait par expérience profonde, qui connaît le fond des choses — un des Noms divins. Le verset n'apprend rien à Dieu : Il <em>sait</em> déjà tout. Ce qui change ce Jour-là, c'est que les hommes, eux, sauront enfin que Dieu savait ; et c'est cette nouvelle conscience qui devient l'épreuve. La sourate, ouverte sur des chevaux haletants, se ferme sur la connaissance silencieuse de Dieu.",
+      "themes": ["khabīr", "omniscience divine", "Jour du jugement"],
+      "commentaire": "<em>khabīr</em> (خَبِير) — l'un des Noms divins : Celui qui sait du dedans, qui connaît la chose par l'expérience même qu'Il en a. Le verset n'apprend rien à Dieu : Il sait déjà. Ce qui change ce Jour-là, c'est que l'homme, lui, saura enfin <em>que Dieu savait</em>. La sourate, ouverte sur des chevaux haletants, se referme sur ce silence : Dieu, déjà, est au courant de tout. Et celui qui le sait dès maintenant a déjà reçu, avant l'heure, sa part de lumière.",
       "mots": [
         { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "en vérité", "def": "particule de mise en relief.", "gram": "particule" },
         { "ar": "رَبَّهُم", "tr": "rabbahum", "racine": "ر ب ب", "sens": "leur Seigneur", "def": "rabb + pronom suffixe pluriel : leur Seigneur.", "gram": "nom + pronom suffixe, accusatif" },

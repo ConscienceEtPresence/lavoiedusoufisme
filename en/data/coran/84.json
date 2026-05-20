@@ -1,0 +1,384 @@
+{
+  "n": 84,
+  "nom_ar": "الاِنْشِقَاق",
+  "nom_tr": "al-Inshiqāq",
+  "nom_fr": "The Rending",
+  "revelation": "Meccan",
+  "versets_count": 25,
+  "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
+  "intro": "Al-Inshiqāq — “The Rending” — unfolds the great cosmic overturning: the heaven splits, the earth is levelled, casts out what it contained and empties itself. And both heaven and earth <em>lend an ear to their Lord</em>: to the obedience that is rightfully His, says the verse. At the heart of the sūra, a word addressed to man: <em>O man, you who toil (kādiḥ) on the way to your Lord — you shall meet Him</em>. Then comes the final distribution: the one to whom the book is given in the right hand will have an easy reckoning; and Qushayrī specifies, with rare delicacy: <em>God will not remind him of his sins — rather He will say: Did I not do this for you, and that? — counting His favours, and forgetting the failings.</em> Then come the three evening oaths — by the twilight, by the night that envelops, by the moon when it is full — which Qushayrī reads as the three times of the spiritual soul: <em>the twilight (qabḍ after basṭ), the night (absence and quest), and the full moon (when the sovereignty of gnosis manifests upon the heart, without diminution or lack).</em> The sūra ends on verse 19 — <em>you shall climb by successive strata</em> — which draws the whole life as an ascent from state to state.",
+  "themes": ["cosmic rending", "meeting the Lord", "easy reckoning", "three evening times", "ascent by strata"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "إِذَا السَّمَاءُ انشَقَّتْ",
+      "tr": "idhā s-samāʾu nshaqqat",
+      "trad": "When the heaven is rent asunder,",
+      "themes": ["rending", "end of the world"],
+      "commentaire": "<em>inshaqqat</em> (انْشَقَّتْ) — Qushayrī, in one word: “it has split.” The heaven is not destroyed; it is <em>opened</em>. The rending is the image of a final revelation: what veiled opens. In that instant, what had slept forever behind the vault is brought to light.",
+      "mots": [
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "when", "def": "temporal particle.", "gram": "particle" },
+        { "ar": "السَّمَاءُ", "tr": "as-samāʾ", "racine": "س م و", "sens": "the heaven", "def": "samāʾ: heaven.", "gram": "noun, definite nominative" },
+        { "ar": "انشَقَّتْ", "tr": "inshaqqat", "racine": "ش ق ق", "sens": "shall be rent", "def": "inshaqqa: to split, to be rent; in the feminine perfect.", "gram": "perfect verb, 3rd pers. fem. sing." }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+      "tr": "wa-adhinat li-rabbihā wa-ḥuqqat",
+      "trad": "and lends an ear to its Lord and does its duty,",
+      "themes": ["cosmic obedience"],
+      "commentaire": "<em>adhinat</em> (أَذِنَتْ): from the verb <em>adhina</em>, which means at once “to listen” and “to obey” — the root naturally links the two: to lend one's ear is to put oneself in a position to respond. Qushayrī: “it faced its Lord's command with listening and obedience — and it was right of it to do so.” <em>Ḥuqqat</em>: “it befitted of it that it did so.” The heaven, in its rending, does not lose its order — it obeys a higher order.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "أَذِنَتْ", "tr": "adhinat", "racine": "أ ذ ن", "sens": "she lent an ear, obeyed", "def": "adhina: to lend an ear, and thereby, to obey.", "gram": "perfect verb, 3rd pers. fem. sing." },
+        { "ar": "لِرَبِّهَا", "tr": "li-rabbihā", "racine": "ر ب ب", "sens": "to its Lord", "def": "preposition li- + rabb + feminine suffix pronoun.", "gram": "preposition + noun + pronoun, genitive" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "حُقَّتْ", "tr": "ḥuqqat", "racine": "ح ق ق", "sens": "it befitted of it", "def": "ḥuqqa: to be justified, to befit; in the passive perfect.", "gram": "passive perfect verb, 3rd pers. fem. sing." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَإِذَا الْأَرْضُ مُدَّتْ",
+      "tr": "wa-idhā l-arḍu muddat",
+      "trad": "when the earth is levelled,",
+      "themes": ["levelled earth"],
+      "commentaire": "Qushayrī: “it has been stretched out by the collapse of its hills and mountains, until it became smooth.” The earth, on that day, no longer has relief. It returns to what it was when nothing had yet been set on it.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "when", "def": "temporal particle.", "gram": "particle" },
+        { "ar": "الْأَرْضُ", "tr": "al-arḍ", "racine": "أ ر ض", "sens": "the earth", "def": "arḍ.", "gram": "noun, definite nominative" },
+        { "ar": "مُدَّتْ", "tr": "muddat", "racine": "م د د", "sens": "shall be stretched out", "def": "madda: to stretch, to level; in the passive feminine perfect.", "gram": "passive perfect verb, 3rd pers. fem. sing." }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ",
+      "tr": "wa-alqat mā fīhā wa-takhallat",
+      "trad": "casts forth what it contains and empties itself,",
+      "themes": ["emptied earth"],
+      "commentaire": "<em>alqat… takhallat</em>: she cast out... and emptied herself. Qushayrī: “she cast what she bore — dead and treasures — and parted from it.” The two verbs go together: for her to empty herself, she must cast; for her to cast, she must consent to empty herself. It is also the image of a soul preparing for the encounter: at some moment, it must restore what it was keeping.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "أَلْقَتْ", "tr": "alqat", "racine": "ل ق ي", "sens": "she cast out", "def": "alqā: to throw out, to cast; in the feminine perfect.", "gram": "perfect verb, 3rd pers. fem. sing." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "what", "def": "neuter relative pronoun.", "gram": "relative pronoun" },
+        { "ar": "فِيهَا", "tr": "fīhā", "racine": "—", "sens": "was in her", "def": "preposition + feminine suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "تَخَلَّتْ", "tr": "takhallat", "racine": "خ ل و", "sens": "she emptied herself", "def": "takhallā: to empty oneself, to part with, to disengage from.", "gram": "perfect verb, 3rd pers. fem. sing." }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+      "tr": "wa-adhinat li-rabbihā wa-ḥuqqat",
+      "trad": "and lends an ear to its Lord and does its duty,",
+      "themes": ["double obedience"],
+      "commentaire": "A textual repetition of verse 2, this time applied to the earth. So now we have heaven and earth in one same posture: to obey, and to recognise that it befitted them. The whole of creation bows in one single movement. And it is there — in the middle of this double obedience — that the sūra will address man.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "أَذِنَتْ", "tr": "adhinat", "racine": "أ ذ ن", "sens": "she lent an ear", "def": "see v. 2.", "gram": "perfect verb, 3rd pers. fem. sing." },
+        { "ar": "لِرَبِّهَا", "tr": "li-rabbihā", "racine": "ر ب ب", "sens": "to its Lord", "def": "see v. 2.", "gram": "preposition + noun + pronoun, genitive" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "حُقَّتْ", "tr": "ḥuqqat", "racine": "ح ق ق", "sens": "it befitted of it", "def": "see v. 2.", "gram": "passive perfect verb, 3rd pers. fem. sing." }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "يَا أَيُّهَا الْإِنسَانُ إِنَّكَ كَادِحٌ إِلَىٰ رَبِّكَ كَدْحًا فَمُلَاقِيهِ",
+      "tr": "yā ayyuhā l-insānu innaka kādiḥun ilā rabbika kadḥan fa-mulāqīh",
+      "trad": "O man, you who toil ceaselessly toward your Lord, you shall meet Him.",
+      "themes": ["kādiḥ", "toilsome walk", "meeting"],
+      "commentaire": "A prodigious verse. <em>kādiḥ</em> (كَادِح): active participle of <em>kadaḥa</em>, which names the pain, the persistent effort, the work that marks the body. The word evokes the very wear of walking — what the road costs a traveller in days. The sūra does not say: <em>you make your way to Him</em>, it says: <em>you toil toward Him</em>. Life is so named for what it is: an exhausting march that leaves traces. But the verse, which could have ended in toil, suddenly opens: <em>fa-mulāqīh</em>, “and you will meet Him.” Qushayrī: “you are in quest of what is yours, and you will meet its requital.” But behind the legal reading of the reckoning, one hears the higher truth: what one seeks, one meets. The fatigue of the road finds its meaning in the one moment when meeting Him becomes possible.",
+      "mots": [
+        { "ar": "يَا أَيُّهَا", "tr": "yā ayyuhā", "racine": "—", "sens": "O", "def": "vocative particles.", "gram": "particles" },
+        { "ar": "الْإِنسَانُ", "tr": "al-insān", "racine": "أ ن س", "sens": "man", "def": "insān.", "gram": "noun, definite nominative" },
+        { "ar": "إِنَّكَ", "tr": "innaka", "racine": "—", "sens": "truly you", "def": "inna + suffix pronoun.", "gram": "particle + pronoun" },
+        { "ar": "كَادِحٌ", "tr": "kādiḥ", "racine": "ك د ح", "sens": "who toils, who strives", "def": "kādiḥ: active participle of kadaḥa; who toils, who walks with effort.", "gram": "active participle, indefinite nominative" },
+        { "ar": "إِلَىٰ", "tr": "ilā", "racine": "—", "sens": "toward", "def": "preposition.", "gram": "preposition" },
+        { "ar": "رَبِّكَ", "tr": "rabbika", "racine": "ر ب ب", "sens": "your Lord", "def": "rabb + suffix pronoun.", "gram": "noun + suffix pronoun, genitive" },
+        { "ar": "كَدْحًا", "tr": "kadḥan", "racine": "ك د ح", "sens": "with toil, with effort", "def": "kadḥ: verbal noun; in the cognate accusative.", "gram": "noun, indefinite accusative" },
+        { "ar": "فَمُلَاقِيهِ", "tr": "fa-mulāqīh", "racine": "ل ق ي", "sens": "and you shall meet Him", "def": "mulāqī: active participle of lāqā (to meet); with suffix pronoun.", "gram": "active participle + suffix pronoun, nominative" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "فَأَمَّا مَنْ أُوتِيَ كِتَابَهُ بِيَمِينِهِ",
+      "tr": "fa-ammā man ūtiya kitābahu bi-yamīnih",
+      "trad": "Then the one who shall be given his Book in his right hand,",
+      "themes": ["book in the right"],
+      "commentaire": "Qushayrī: “he is the believer who has done good.” The Book — the register of deeds — is what every soul receives on the Day. The right hand is traditionally the side of happiness, as we saw in sūra 90.",
+      "mots": [
+        { "ar": "فَأَمَّا", "tr": "fa-ammā", "racine": "—", "sens": "then, as for", "def": "fa- + ammā.", "gram": "particles" },
+        { "ar": "مَنْ", "tr": "man", "racine": "—", "sens": "the one who", "def": "relative pronoun.", "gram": "pronoun" },
+        { "ar": "أُوتِيَ", "tr": "ūtiya", "racine": "أ ت ي", "sens": "shall be given", "def": "ātā in the passive perfect; “he was given.”", "gram": "passive perfect verb, 3rd pers. masc. sing." },
+        { "ar": "كِتَابَهُ", "tr": "kitābahu", "racine": "ك ت ب", "sens": "his Book", "def": "kitāb + suffix pronoun.", "gram": "noun + suffix pronoun, accusative" },
+        { "ar": "بِيَمِينِهِ", "tr": "bi-yamīnih", "racine": "ي م ن", "sens": "in his right hand", "def": "yamīn: right hand; with suffix pronoun.", "gram": "preposition + noun + pronoun, genitive" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا",
+      "tr": "fa-sawfa yuḥāsabu ḥisāban yasīrā",
+      "trad": "shall be granted an easy reckoning",
+      "themes": ["easy reckoning"],
+      "commentaire": "Qushayrī here unrolls four illuminating readings of <em>ḥisāb yasīr</em>, the easy reckoning. (1) “A reckoning without difficulty.” (2) “He will hear the Lord's speech — glory be to Him — without intermediary, and the sweetness of hearing His word will ease the trial of the reckoning.” (3) “He will not remind him of his sins.” And the most beautiful: (4) “He will say to him: <em>Did I not do this for you? And that?</em> — He will count the favours He bestowed on him, without saying: <em>did you not do this?</em> — without reminding him of his disobediences.” To imagine the Day as a moment in which God recalls His favours and forgets our failings — that is the very grammar of divine <em>karāma</em>.",
+      "mots": [
+        { "ar": "فَسَوْفَ", "tr": "fa-sawfa", "racine": "—", "sens": "then soon", "def": "fa- + particle of future.", "gram": "particles" },
+        { "ar": "يُحَاسَبُ", "tr": "yuḥāsabu", "racine": "ح س ب", "sens": "he will be reckoned with", "def": "ḥāsaba in the passive imperfect; to render account.", "gram": "passive imperfect verb, 3rd pers. masc. sing." },
+        { "ar": "حِسَابًا", "tr": "ḥisāban", "racine": "ح س ب", "sens": "a reckoning", "def": "ḥisāb: account.", "gram": "noun, indefinite accusative" },
+        { "ar": "يَسِيرًا", "tr": "yasīrā", "racine": "ي س ر", "sens": "easy", "def": "yasīr: easy.", "gram": "adjectival noun, indefinite accusative" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "وَيَنقَلِبُ إِلَىٰ أَهْلِهِ مَسْرُورًا",
+      "tr": "wa-yanqalibu ilā ahlihi masrūrā",
+      "trad": "and shall return to his people rejoicing.",
+      "themes": ["joyful return"],
+      "commentaire": "Qushayrī gives the full sense: “by salvation, by the degrees, and by what he will have found as intimate conversation (<em>munājāt</em>, مُنَاجَاة), as acceptance of acts of obedience, and as forgiveness of failings.” And he adds: “or by the intercession he will make for those whose hearts hold him dear; or by his not being put to shame; or by his meeting his Lord and speaking with Him before entering the Garden.” Four different joys, each completing the others.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "يَنقَلِبُ", "tr": "yanqalibu", "racine": "ق ل ب", "sens": "he shall return", "def": "inqalaba: to turn back, to return.", "gram": "imperfect verb, 3rd pers. masc. sing." },
+        { "ar": "إِلَىٰ", "tr": "ilā", "racine": "—", "sens": "toward", "def": "preposition.", "gram": "preposition" },
+        { "ar": "أَهْلِهِ", "tr": "ahlihi", "racine": "أ ه ل", "sens": "his people", "def": "ahl: family, people.", "gram": "noun + suffix pronoun, genitive" },
+        { "ar": "مَسْرُورًا", "tr": "masrūrā", "racine": "س ر ر", "sens": "rejoicing", "def": "masrūr: passive participle of sarra; filled with joy.", "gram": "passive participle, accusative" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَأَمَّا مَنْ أُوتِيَ كِتَابَهُ وَرَاءَ ظَهْرِهِ",
+      "tr": "wa-ammā man ūtiya kitābahu warāʾa ẓahrih",
+      "trad": "But the one who shall be given his Book behind his back,",
+      "themes": ["book behind the back"],
+      "commentaire": "Qushayrī: “he is the disbeliever.” To receive one's book <em>behind one's back</em> is the opposite image of receiving it in the right hand. It is not only the side that changes: it is that one does not receive it <em>face to face</em>, one does not see it. The reckoning comes from behind, with no chance to prepare for it.",
+      "mots": [
+        { "ar": "وَأَمَّا", "tr": "wa-ammā", "racine": "—", "sens": "but as for", "def": "conjunction + particle.", "gram": "conjunction + particle" },
+        { "ar": "مَنْ", "tr": "man", "racine": "—", "sens": "the one who", "def": "relative pronoun.", "gram": "pronoun" },
+        { "ar": "أُوتِيَ", "tr": "ūtiya", "racine": "أ ت ي", "sens": "shall be given", "def": "see v. 7.", "gram": "passive perfect verb, 3rd pers. masc. sing." },
+        { "ar": "كِتَابَهُ", "tr": "kitābahu", "racine": "ك ت ب", "sens": "his Book", "def": "kitāb + suffix pronoun.", "gram": "noun + suffix pronoun, accusative" },
+        { "ar": "وَرَاءَ", "tr": "warāʾa", "racine": "و ر ي", "sens": "behind", "def": "warāʾ: behind; in the adverbial accusative.", "gram": "noun, adverbial accusative" },
+        { "ar": "ظَهْرِهِ", "tr": "ẓahrih", "racine": "ظ ه ر", "sens": "his back", "def": "ẓahr + suffix pronoun.", "gram": "noun + suffix pronoun, genitive" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "فَسَوْفَ يَدْعُو ثُبُورًا",
+      "tr": "fa-sawfa yadʿū thubūrā",
+      "trad": "he shall call for annihilation",
+      "themes": ["thubūr", "call for annihilation"],
+      "commentaire": "<em>thubūr</em> (ثُبُور): Qushayrī: “woe.” A word that names wished-for annihilation, the “woe is me” of one who would want all to cease. The soul still prefers annihilation to the continuing revelation of its own fault.",
+      "mots": [
+        { "ar": "فَسَوْفَ", "tr": "fa-sawfa", "racine": "—", "sens": "then soon", "def": "fa- + particle of future.", "gram": "particles" },
+        { "ar": "يَدْعُو", "tr": "yadʿū", "racine": "د ع و", "sens": "he shall call", "def": "daʿā: to call, to invoke.", "gram": "imperfect verb, 3rd pers. masc. sing." },
+        { "ar": "ثُبُورًا", "tr": "thubūrā", "racine": "ث ب ر", "sens": "annihilation", "def": "thubūr: ruin, woe, annihilation.", "gram": "noun, indefinite accusative" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "وَيَصْلَىٰ سَعِيرًا",
+      "tr": "wa-yaṣlā saʿīrā",
+      "trad": "and shall burn in a furnace.",
+      "themes": ["furnace"],
+      "commentaire": "<em>saʿīr</em> (سَعِير) — Qushayrī, in one word: “Hell.” The fire that blazes and does not go out.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "يَصْلَىٰ", "tr": "yaṣlā", "racine": "ص ل ي", "sens": "he shall burn", "def": "ṣaliya: to burn.", "gram": "imperfect verb, 3rd pers. masc. sing." },
+        { "ar": "سَعِيرًا", "tr": "saʿīrā", "racine": "س ع ر", "sens": "a furnace", "def": "saʿīr: burning fire, furnace.", "gram": "noun, indefinite accusative" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "إِنَّهُ كَانَ فِي أَهْلِهِ مَسْرُورًا",
+      "tr": "innahu kāna fī ahlihi masrūrā",
+      "trad": "He was happy among his family;",
+      "themes": ["vain joy", "baṭr"],
+      "commentaire": "Qushayrī specifies the sense of this joy: “of vain arrogance (<em>baṭr</em>, بَطَر) and self-praise.” It was not the quiet joy of the just; it was the loud enjoyment of one taken with what he is not. The word <em>baṭr</em> is, in Sufi thought, one of the most dangerous flaws of the path: joy that swells upon itself instead of giving thanks.",
+      "mots": [
+        { "ar": "إِنَّهُ", "tr": "innahu", "racine": "—", "sens": "truly he", "def": "inna + suffix pronoun.", "gram": "particle + pronoun" },
+        { "ar": "كَانَ", "tr": "kāna", "racine": "ك و ن", "sens": "was", "def": "kāna: to be.", "gram": "perfect verb, 3rd pers. masc. sing." },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "in, among", "def": "preposition.", "gram": "preposition" },
+        { "ar": "أَهْلِهِ", "tr": "ahlihi", "racine": "أ ه ل", "sens": "his family", "def": "ahl + suffix pronoun.", "gram": "noun + suffix pronoun, genitive" },
+        { "ar": "مَسْرُورًا", "tr": "masrūrā", "racine": "س ر ر", "sens": "joyful", "def": "masrūr: see v. 9.", "gram": "passive participle, accusative" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "إِنَّهُ ظَنَّ أَن لَّن يَحُورَ",
+      "tr": "innahu ẓanna an lan yaḥūr",
+      "trad": "he truly thought he would never return [to God].",
+      "themes": ["illusion of no return"],
+      "commentaire": "<em>yaḥūr</em> (يَحُور): to return, to come back. Qushayrī: “he thought he would not come back to Us, and would not be resurrected.” Such is the root of the whole illusion: to think death is the end. This thought sets one free of all responsibility — but for nothing, because it is false.",
+      "mots": [
+        { "ar": "إِنَّهُ", "tr": "innahu", "racine": "—", "sens": "truly he", "def": "inna + suffix pronoun.", "gram": "particle + pronoun" },
+        { "ar": "ظَنَّ", "tr": "ẓanna", "racine": "ظ ن ن", "sens": "he thought, supposed", "def": "ẓanna: to think, to suppose.", "gram": "perfect verb, 3rd pers. masc. sing." },
+        { "ar": "أَن", "tr": "an", "racine": "—", "sens": "that", "def": "subordinating particle.", "gram": "particle" },
+        { "ar": "لَّن", "tr": "lan", "racine": "—", "sens": "never", "def": "particle of absolute negation of the future.", "gram": "particle" },
+        { "ar": "يَحُورَ", "tr": "yaḥūr", "racine": "ح و ر", "sens": "he would return", "def": "ḥāra: to return.", "gram": "subjunctive verb, 3rd pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "بَلَىٰ إِنَّ رَبَّهُ كَانَ بِهِ بَصِيرًا",
+      "tr": "balā inna rabbahu kāna bihi baṣīrā",
+      "trad": "Yes, indeed! His Lord saw him very clearly!",
+      "themes": ["divine gaze"],
+      "commentaire": "<em>balā</em> (بَلَى): “yes, on the contrary.” The particle overturns the false presumption of the previous verse. And the final sentence is of a sober power: <em>his Lord was seeing him</em>. While he believed he was going nowhere and that no one was seeing him, his Lord was <em>watching</em>. The verse echoes exactly the end of sūra 96: <em>does he not know that God sees?</em>",
+      "mots": [
+        { "ar": "بَلَىٰ", "tr": "balā", "racine": "—", "sens": "yes, on the contrary", "def": "positive refutation particle.", "gram": "particle" },
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "truly", "def": "emphasis particle.", "gram": "particle" },
+        { "ar": "رَبَّهُ", "tr": "rabbahu", "racine": "ر ب ب", "sens": "his Lord", "def": "rabb + suffix pronoun.", "gram": "noun + suffix pronoun, accusative" },
+        { "ar": "كَانَ", "tr": "kāna", "racine": "ك و ن", "sens": "was", "def": "kāna.", "gram": "perfect verb, 3rd pers. masc. sing." },
+        { "ar": "بِهِ", "tr": "bihi", "racine": "—", "sens": "of him, upon him", "def": "preposition + suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "بَصِيرًا", "tr": "baṣīrā", "racine": "ب ص ر", "sens": "clearly seeing", "def": "baṣīr: All-Seeing; one of the Divine Names.", "gram": "adjectival noun, indefinite accusative" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "فَلَا أُقْسِمُ بِالشَّفَقِ",
+      "tr": "fa-lā uqsimu bi-sh-shafaq",
+      "trad": "No! I swear by the twilight,",
+      "themes": ["twilight", "qabḍ after basṭ"],
+      "commentaire": "<em>al-shafaq</em>: Qushayrī, on the immediate sense: “the redness that follows the setting of the sun.” But he immediately unfolds the splendid inner reading: “<em>al-shafaq</em>, that is the moment when the sun of their union has set, and they have tasted separation in some of their states — it is the time of contraction (<em>qabḍ</em>, قَبْض) after expansion (<em>basṭ</em>, بَسْط), and the hour of separation after joining (<em>jamʿ</em>, جَمْع).” The redness of twilight is thus the image of that subtle ache: the moment when rapture withdraws and the soul finds itself face to face with itself.",
+      "mots": [
+        { "ar": "فَلَا", "tr": "fa-lā", "racine": "—", "sens": "indeed (emphatic)", "def": "fa- + emphatic lā.", "gram": "particles" },
+        { "ar": "أُقْسِمُ", "tr": "uqsimu", "racine": "ق س م", "sens": "I swear", "def": "aqsama: to swear.", "gram": "imperfect verb, 1st pers. sing." },
+        { "ar": "بِالشَّفَقِ", "tr": "bi-sh-shafaq", "racine": "ش ف ق", "sens": "by the twilight", "def": "shafaq: redness of the evening.", "gram": "preposition + noun, definite genitive" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "وَاللَّيْلِ وَمَا وَسَقَ",
+      "tr": "wa-l-layli wa-mā wasaq",
+      "trad": "by the night and what it gathers,",
+      "themes": ["night", "gathering"],
+      "commentaire": "<em>wasaq</em> (وَسَقَ): it has gathered, collected, enclosed. The night gathers in her bosom all of creation — beasts, things, men. Qushayrī, who began the inner reading at the preceding verse, continues: “<em>the night and what she has gathered</em>: the nights of their absence when they are in the posture of yearning; or the nights of their union when they are in the freshness of encounter; or the nights of their quest when they are in restlessness and burning.” Three possible nights according to the state of the heart: night of yearning, night of encounter, night of ardent quest. The same physical night is not the same according to what the soul experiences in it.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "by", "def": "oath particle.", "gram": "oath particle" },
+        { "ar": "اللَّيْلِ", "tr": "al-layl", "racine": "ل ي ل", "sens": "the night", "def": "layl: the night.", "gram": "noun, definite genitive" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "conjunction.", "gram": "conjunction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "what", "def": "neuter relative pronoun.", "gram": "relative pronoun" },
+        { "ar": "وَسَقَ", "tr": "wasaq", "racine": "و س ق", "sens": "she gathered", "def": "wasaqa: to gather, to enclose.", "gram": "perfect verb, 3rd pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "وَالْقَمَرِ إِذَا اتَّسَقَ",
+      "tr": "wa-l-qamari idhā ttasaq",
+      "trad": "and by the moon when it is full,",
+      "themes": ["full moon", "manifestation"],
+      "commentaire": "<em>ittasaqa</em> (اتَّسَقَ) — from the same root as <em>wasaq</em> — : she has gathered herself, fulfilled, harmonised. The full moon is the moon <em>complete</em>. And Qushayrī, here, gives one of his finest images of gnosis: “<em>the moon when she is full</em>: that is when the sovereignty of gnosis (<em>sulṭān al-ʿirfān</em>, سُلْطَان العِرْفَان) manifests itself upon the hearts — then there is no defect, no lack.” The full moon is the image of accomplished gnosis, where the heart is wholly illumined. Three spiritual times then, in three oaths: <em>the twilight</em> (qabḍ), <em>the night</em> (absence or quest), <em>the full moon</em> (total manifestation). The whole spiritual life in these three lights.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "by", "def": "oath particle.", "gram": "oath particle" },
+        { "ar": "الْقَمَرِ", "tr": "al-qamar", "racine": "ق م ر", "sens": "the moon", "def": "qamar: the moon.", "gram": "noun, definite genitive" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "when", "def": "temporal particle.", "gram": "particle" },
+        { "ar": "اتَّسَقَ", "tr": "ittasaq", "racine": "و س ق", "sens": "she is full, accomplished", "def": "ittasaqa: derived form of wasaqa; to gather, to fulfil, to reach completion.", "gram": "perfect verb, 3rd pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "لَتَرْكَبُنَّ طَبَقًا عَن طَبَقٍ",
+      "tr": "la-tarkabunna ṭabaqan ʿan ṭabaq",
+      "trad": "you shall certainly climb by successive strata.",
+      "themes": ["ṭabaq ʿan ṭabaq", "ascent by stages"],
+      "commentaire": "A pivotal verse of the whole sūra. <em>la-tarkabunna ṭabaqan ʿan ṭabaq</em>: you shall climb stratum after stratum. Qushayrī here unrolls five readings that sketch a whole life: (1) “state after state”; (2) “from layer to layer of the heaven”; (3) “trial after trial”; (4) <em>the ages of man</em>: “child, then youth, then mature man, then old man”; and the finest reading for the Sufi: (5) <em>the degrees of the journey</em>: “seeker (<em>ṭālib</em>, طَالِب), then arrived (<em>wāṣil</em>, وَاصِل), then joined (<em>muttaṣil</em>, مُتَّصِل).” Three statuses of love: the one who seeks, the one who arrives, the one who remains joined. And Qushayrī adds: “state after state, of poverty and wealth, of health and illness; or state after state in the hereafter.” The whole of life as an ascent from state to state. Nothing is fixed, nothing is repeated. The oath of the three times of evening thus opens onto the image of a never-ending climb.",
+      "mots": [
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "surely", "def": "affirmative particle.", "gram": "particle" },
+        { "ar": "تَرْكَبُنَّ", "tr": "tarkabunna", "racine": "ر ك ب", "sens": "you shall climb", "def": "rakiba: to climb, to mount; in the energetic plural imperfect.", "gram": "energetic imperfect verb, 2nd pers. masc. plur." },
+        { "ar": "طَبَقًا", "tr": "ṭabaqan", "racine": "ط ب ق", "sens": "a stratum", "def": "ṭabaq: layer, stage, level.", "gram": "noun, indefinite accusative" },
+        { "ar": "عَن", "tr": "ʿan", "racine": "—", "sens": "after", "def": "preposition: after, from.", "gram": "preposition" },
+        { "ar": "طَبَقٍ", "tr": "ṭabaq", "racine": "ط ب ق", "sens": "another stratum", "def": "see above.", "gram": "noun, indefinite genitive" }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "فَمَا لَهُمْ لَا يُؤْمِنُونَ",
+      "tr": "fa-mā lahum lā yuʾminūn",
+      "trad": "What is wrong with them, then, that they do not believe?",
+      "themes": ["unbelief"],
+      "commentaire": "Qushayrī: “What is wrong with the disbelievers of your community that they do not hold true, when the proofs have appeared?” After the grand image of ascent by strata, the verse almost candidly wonders: with so many signs, why this delay in believing?",
+      "mots": [
+        { "ar": "فَمَا", "tr": "fa-mā", "racine": "—", "sens": "what is with them", "def": "fa- + interrogative mā.", "gram": "particles" },
+        { "ar": "لَهُمْ", "tr": "lahum", "racine": "—", "sens": "with them", "def": "preposition + suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "not", "def": "negation particle.", "gram": "particle" },
+        { "ar": "يُؤْمِنُونَ", "tr": "yuʾminūn", "racine": "أ م ن", "sens": "they believe", "def": "āmana.", "gram": "imperfect verb, 3rd pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "وَإِذَا قُرِئَ عَلَيْهِمُ الْقُرْآنُ لَا يَسْجُدُونَ",
+      "tr": "wa-idhā quriʾa ʿalayhimu l-qurʾānu lā yasjudūn",
+      "trad": "and, when the Quran is recited to them, that they do not prostrate themselves?",
+      "themes": ["refusal of prostration"],
+      "commentaire": "This verse is one of the fourteen (in some schools, fifteen) after which prostration is traditionally recommended upon recitation. The sūra not only reproaches them with not <em>believing</em>; it reproaches them with not <em>prostrating</em> while listening. Faith is not only the assent of the mind; it is the movement of the body.",
+      "mots": [
+        { "ar": "وَإِذَا", "tr": "wa-idhā", "racine": "—", "sens": "and when", "def": "conjunction + particle.", "gram": "conjunction + particle" },
+        { "ar": "قُرِئَ", "tr": "quriʾa", "racine": "ق ر أ", "sens": "is recited", "def": "qaraʾa in the passive perfect.", "gram": "passive perfect verb, 3rd pers. masc. sing." },
+        { "ar": "عَلَيْهِمُ", "tr": "ʿalayhim", "racine": "—", "sens": "to them", "def": "preposition + suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "الْقُرْآنُ", "tr": "al-qurʾān", "racine": "ق ر أ", "sens": "the Quran", "def": "qurʾān.", "gram": "noun, definite nominative" },
+        { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "not", "def": "negation particle.", "gram": "particle" },
+        { "ar": "يَسْجُدُونَ", "tr": "yasjudūn", "racine": "س ج د", "sens": "they prostrate", "def": "sajada: to prostrate.", "gram": "imperfect verb, 3rd pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "بَلِ الَّذِينَ كَفَرُوا يُكَذِّبُونَ",
+      "tr": "bali lladhīna kafarū yukadhdhibūn",
+      "trad": "On the contrary, the unbelievers cry lies!",
+      "themes": ["denial"],
+      "commentaire": "The same verbal structure as in the preceding sūras: <em>kadhdhaba</em>, to deny, to hold as a lie. It is <em>the</em> posture of the denier in the Quran.",
+      "mots": [
+        { "ar": "بَلِ", "tr": "bal", "racine": "—", "sens": "on the contrary", "def": "rectification particle.", "gram": "particle" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "those who", "def": "plural relative pronoun.", "gram": "relative pronoun" },
+        { "ar": "كَفَرُوا", "tr": "kafarū", "racine": "ك ف ر", "sens": "have disbelieved", "def": "kafara.", "gram": "perfect verb, 3rd pers. masc. plur." },
+        { "ar": "يُكَذِّبُونَ", "tr": "yukadhdhibūn", "racine": "ك ذ ب", "sens": "cry lies", "def": "kadhdhaba: to hold as a lie.", "gram": "imperfect verb, 3rd pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "وَاللَّهُ أَعْلَمُ بِمَا يُوعُونَ",
+      "tr": "wa-Llāhu aʿlamu bi-mā yūʿūn",
+      "trad": "God knows perfectly what they conceal.",
+      "themes": ["known secrets of the heart"],
+      "commentaire": "<em>yūʿūn</em> (يُوعُون) — Qushayrī: “what their hearts contain, as one encloses a precious object in its casket.” The verb comes from <em>awʿā</em>, to place a thing in a vessel. What the soul holds hidden, as in a closed coffer, God knows its contents.",
+      "mots": [
+        { "ar": "وَاللَّهُ", "tr": "wa-Llāhu", "racine": "أ ل ه", "sens": "and God", "def": "conjunction + Allāh.", "gram": "conjunction + noun, nominative" },
+        { "ar": "أَعْلَمُ", "tr": "aʿlamu", "racine": "ع ل م", "sens": "knows better", "def": "aʿlam: superlative of ʿālim; the most knowing.", "gram": "adjectival noun, nominative" },
+        { "ar": "بِمَا", "tr": "bi-mā", "racine": "—", "sens": "of what", "def": "preposition + relative pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "يُوعُونَ", "tr": "yūʿūn", "racine": "و ع ي", "sens": "they conceal, contain", "def": "awʿā: to set in a vessel, to preserve within.", "gram": "imperfect verb, 3rd pers. masc. plur." }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ",
+      "tr": "fa-bashshirhum bi-ʿadhābin alīm",
+      "trad": "Announce them, then, a painful chastisement,",
+      "themes": ["ironic announcement"],
+      "commentaire": "<em>bashshir</em> (بَشِّرْ): “announce the good news.” The word is usually reserved for positive promises; here it is used ironically. The sūra uses the verb of glad tidings for a tragic message — as one says in French “fine gift” with sarcasm. The gravity passes through the twisting of the word.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "then", "def": "linking particle.", "gram": "particle" },
+        { "ar": "بَشِّرْهُم", "tr": "bashshirhum", "racine": "ب ش ر", "sens": "announce them", "def": "bashshara: to announce good news; here ironic.", "gram": "imperative verb + suffix pronoun, 2nd pers. masc. sing." },
+        { "ar": "بِعَذَابٍ", "tr": "bi-ʿadhāb", "racine": "ع ذ ب", "sens": "a chastisement", "def": "ʿadhāb.", "gram": "preposition + noun, indefinite genitive" },
+        { "ar": "أَلِيمٍ", "tr": "alīm", "racine": "أ ل م", "sens": "painful", "def": "alīm: painful.", "gram": "adjectival noun, indefinite genitive" }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
+      "tr": "illā lladhīna āmanū wa-ʿamilū ṣ-ṣāliḥāti lahum ajrun ghayru mamnūn",
+      "trad": "except those who have believed and done righteous deeds: for them [is reserved] an unending reward.",
+      "themes": ["unending reward"],
+      "commentaire": "<em>ajr ghayr mamnūn</em> (أَجْر غَيْر مَمْنُون) — Qushayrī, in one word: “uncut.” The believers' reward is not <em>truncated</em>; and one can hear in the root <em>m-n-n</em> two superposed senses: <em>undiminished</em>, and <em>not recalled as a debt</em>. The gift of God to the just is neither lessened, nor burdened with a debt that would spoil the grace. The sūra, opened on the rending of the heaven, closes on this whole gift, without cut and without grudge.",
+      "mots": [
+        { "ar": "إِلَّا", "tr": "illā", "racine": "—", "sens": "save", "def": "exception particle.", "gram": "particle" },
+        { "ar": "الَّذِينَ", "tr": "alladhīna", "racine": "—", "sens": "those who", "def": "plural relative pronoun.", "gram": "relative pronoun" },
+        { "ar": "آمَنُوا", "tr": "āmanū", "racine": "أ م ن", "sens": "have believed", "def": "āmana.", "gram": "perfect verb, 3rd pers. masc. plur." },
+        { "ar": "وَعَمِلُوا", "tr": "wa-ʿamilū", "racine": "ع م ل", "sens": "and have done", "def": "ʿamila.", "gram": "perfect verb, 3rd pers. masc. plur." },
+        { "ar": "الصَّالِحَاتِ", "tr": "aṣ-ṣāliḥāt", "racine": "ص ل ح", "sens": "the righteous deeds", "def": "ṣāliḥāt.", "gram": "plural noun, definite accusative" },
+        { "ar": "لَهُمْ", "tr": "lahum", "racine": "—", "sens": "for them", "def": "preposition + suffix pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "أَجْرٌ", "tr": "ajr", "racine": "أ ج ر", "sens": "a reward", "def": "ajr: reward, wages.", "gram": "noun, indefinite nominative" },
+        { "ar": "غَيْرُ", "tr": "ghayru", "racine": "غ ي ر", "sens": "without, not", "def": "ghayr: other than.", "gram": "noun, construct nominative" },
+        { "ar": "مَمْنُونٍ", "tr": "mamnūn", "racine": "م ن ن", "sens": "interrupted, diminished", "def": "mamnūn: passive participle; what is cut, lessened, or recalled as a debt.", "gram": "passive participle, indefinite genitive" }
+      ]
+    }
+  ]
+}

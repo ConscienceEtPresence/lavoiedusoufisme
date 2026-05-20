@@ -1,0 +1,176 @@
+{
+  "n": 100,
+  "nom_ar": "العَادِيَات",
+  "nom_tr": "al-ʿĀdiyāt",
+  "nom_fr": "Les Coursiers",
+  "revelation": "mecquoise",
+  "versets_count": 11,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-ʿĀdiyāt — « Les Coursiers » — est une sourate mecquoise dont le nom vient des coursiers (au sens de chevaux ou de chameaux qui galopent) mentionnés dans le premier verset. La tradition rapporte plusieurs occasions de révélation. Selon un récit, le Prophète envoya une expédition militaire sous le commandement d'al-Mundhir ibn ʿAmr ; les nouvelles tardaient, les hypocrites disaient qu'ils avaient tous été tués, et la sourate vint donner des nouvelles. Selon un autre, attribué à ʿAlī ibn Abī Ṭālib, les serments décrivent plutôt l'élan des montures lors du pèlerinage, qui se hâtent du mont ʿArafāt à Muzdalifa puis à Minā. Les deux lectures sont reçues. La sourate s'ouvre par cinq serments éclatants sur la course des montures (v. 1-5), bascule en trois versets sur l'ingratitude de l'homme et son amour démesuré des biens (v. 6-8), et s'achève en trois versets sur le Jour où le secret des cœurs et des tombes sera mis au jour (v. 9-11).",
+  "themes": ["serments", "ingratitude", "amour des biens", "résurrection", "secret du cœur"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَالْعَادِيَاتِ ضَبْحًا",
+      "tr": "wa-l-ʿādiyāti ḍabḥā",
+      "trad": "Par les coursiers haletants,",
+      "themes": ["serment", "course"],
+      "commentaire": "<em>al-ʿādiyāt</em> (العَادِيَات) : celles qui courent — participe actif féminin pluriel de <em>ʿadā</em> (عَدَا), courir, s'élancer. <em>Ḍabḥ</em> (ضَبْح) désigne le souffle bruyant des bêtes qui galopent. Le serment est saisissant : Dieu jure par des chevaux haletants, par leur souffle même. Al-Bayḍāwī y voit aussi, en lecture spirituelle, les âmes ardentes qui se précipitent vers Dieu, et dont le souffle même devient prière.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "par", "def": "wa : préposition de serment.", "gram": "particule de serment" },
+        { "ar": "الْعَادِيَاتِ", "tr": "al-ʿādiyāt", "racine": "ع د و", "sens": "les coursiers", "def": "ʿādiyāt : participe actif féminin pluriel de ʿadā (courir, s'élancer) ; celles qui courent — chevaux ou chameaux en course rapide.", "gram": "participe actif pluriel, génitif défini" },
+        { "ar": "ضَبْحًا", "tr": "ḍabḥā", "racine": "ض ب ح", "sens": "halètement", "def": "ḍabḥ : le souffle bruyant et halctant des bêtes qui galopent ; à l'accusatif comme complément d'objet interne.", "gram": "nom verbal, accusatif indéfini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "فَالْمُورِيَاتِ قَدْحًا",
+      "tr": "fa-l-mūriyāti qadḥā",
+      "trad": "ceux qui font jaillir des étincelles,",
+      "themes": ["serment", "étincelles"],
+      "commentaire": "<em>al-mūriyāt</em> (المُورِيَات) : celles qui font jaillir le feu — des sabots qui battent les rochers, des étincelles s'élèvent. <em>Qadḥ</em> (قَدْح) est le geste par lequel on frappe la pierre pour en tirer une flamme. L'image est précise et belle : la course n'est pas seulement rapide, elle est lumineuse, elle arrache à la terre des éclats. Le serment monte d'un cran.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "et puis", "def": "particule de coordination : et puis, ensuite ; lie les serments successifs.", "gram": "particule" },
+        { "ar": "الْمُورِيَاتِ", "tr": "al-mūriyāt", "racine": "و ر ي", "sens": "celles qui font jaillir le feu", "def": "mūriyāt : participe actif féminin pluriel de awrā (faire jaillir le feu) ; celles dont les sabots tirent des étincelles des rochers.", "gram": "participe actif pluriel, génitif défini" },
+        { "ar": "قَدْحًا", "tr": "qadḥā", "racine": "ق د ح", "sens": "en frappant", "def": "qadḥ : le geste de frapper la pierre pour en tirer du feu ; à l'accusatif comme complément.", "gram": "nom verbal, accusatif indéfini" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "فَالْمُغِيرَاتِ صُبْحًا",
+      "tr": "fa-l-mughīrāti ṣubḥā",
+      "trad": "et qui surgissent à l'aube,",
+      "themes": ["serment", "aube", "raid"],
+      "commentaire": "<em>al-mughīrāt</em> (المُغِيرَات) : celles qui chargent, qui font le raid — du verbe <em>aghāra</em> (أَغَارَ), lancer un assaut. <em>Ṣubḥ</em> (صُبْح) : l'aube, le matin précoce. C'est l'heure d'attaque dans l'Arabie ancienne — l'ennemi est encore endormi. Selon une autre lecture, ce sont les chameaux du pèlerinage qui se hâtent à l'aube du jour du sacrifice : la « charge » devient un mouvement de dévotion.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "et", "def": "particule de coordination : et puis.", "gram": "particule" },
+        { "ar": "الْمُغِيرَاتِ", "tr": "al-mughīrāt", "racine": "غ و ر", "sens": "celles qui chargent", "def": "mughīrāt : participe actif féminin pluriel d'aghāra (charger, faire un raid).", "gram": "participe actif pluriel, génitif défini" },
+        { "ar": "صُبْحًا", "tr": "ṣubḥā", "racine": "ص ب ح", "sens": "à l'aube", "def": "ṣubḥ : l'aube, le matin précoce ; à l'accusatif adverbial : « à l'aube ».", "gram": "nom, accusatif indéfini adverbial" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "فَأَثَرْنَ بِهِ نَقْعًا",
+      "tr": "fa-atharna bihi naqʿā",
+      "trad": "et qui font voler la poussière,",
+      "themes": ["poussière", "élan"],
+      "commentaire": "<em>naqʿ</em> (نَقْع) : la poussière soulevée. La course est si rapide que le sol monte derrière elle en nuée. Les versets 1-4 forment ainsi un cinéma vif : course haletante, étincelles, raid au point du jour, poussière levée. L'oreille suit le mouvement.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "et", "def": "particule de coordination.", "gram": "particule" },
+        { "ar": "أَثَرْنَ", "tr": "atharna", "racine": "ث و ر", "sens": "elles ont soulevé", "def": "athāra : soulever, faire monter (la poussière) ; à l'accompli féminin pluriel.", "gram": "verbe accompli, 3ᵉ pers. fém. plur." },
+        { "ar": "بِهِ", "tr": "bihi", "racine": "—", "sens": "par lui, là", "def": "préposition bi- + pronom suffixe masc. sing. : par cela, en ce lieu (l'aube ou la mêlée).", "gram": "préposition + pronom" },
+        { "ar": "نَقْعًا", "tr": "naqʿā", "racine": "ن ق ع", "sens": "de la poussière", "def": "naqʿ : la poussière soulevée par les pieds des bêtes.", "gram": "nom, accusatif indéfini" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "فَوَسَطْنَ بِهِ جَمْعًا",
+      "tr": "fa-wasaṭna bihi jamʿā",
+      "trad": "et qui pénètrent au cœur de la mêlée,",
+      "themes": ["combat", "centre"],
+      "commentaire": "<em>wasaṭna</em> (وَسَطْنَ) : elles se sont enfoncées au milieu — au centre des troupes ennemies, ou au cœur du rassemblement des pèlerins (le <em>jamʿ</em>, qui désigne aussi le pèlerinage à Muzdalifa). Le serment s'achève sur cette image de pénétration totale, et bascule au verset suivant pour livrer sa réponse.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "et", "def": "particule de coordination.", "gram": "particule" },
+        { "ar": "وَسَطْنَ", "tr": "wasaṭna", "racine": "و س ط", "sens": "elles se sont enfoncées au milieu", "def": "wasaṭa : être au milieu de, pénétrer au centre ; à l'accompli féminin pluriel.", "gram": "verbe accompli, 3ᵉ pers. fém. plur." },
+        { "ar": "بِهِ", "tr": "bihi", "racine": "—", "sens": "là, par lui", "def": "préposition bi- + pronom suffixe.", "gram": "préposition + pronom" },
+        { "ar": "جَمْعًا", "tr": "jamʿā", "racine": "ج م ع", "sens": "le rassemblement, la mêlée", "def": "jamʿ : le rassemblement, la troupe rassemblée, la mêlée du combat ; aussi nom du pèlerinage à Muzdalifa.", "gram": "nom, accusatif indéfini" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "إِنَّ الْإِنسَانَ لِرَبِّهِ لَكَنُودٌ",
+      "tr": "inna l-insāna li-rabbihi la-kanūd",
+      "trad": "certes, l'homme est ingrat envers son Seigneur,",
+      "themes": ["ingratitude", "condition humaine"],
+      "commentaire": "Après les cinq serments, la sourate livre son cœur : l'homme est <em>kanūd</em> (كَنُود) envers son Seigneur. Le mot vient d'une racine qui dit la terre stérile où rien ne pousse — l'ingratitude est cette terre intérieure où les bienfaits reçus ne font pas germer la reconnaissance. <em>Kanūd</em> désigne aussi celui qui n'oublie que les bienfaits, et ne se souvient que des malheurs. C'est tout un portrait moral en un mot.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule de mise en relief : certes, en vérité.", "gram": "particule" },
+        { "ar": "الْإِنسَانَ", "tr": "al-insān", "racine": "أ ن س", "sens": "l'homme", "def": "insān : l'être humain, l'homme générique.", "gram": "nom, accusatif défini" },
+        { "ar": "لِرَبِّهِ", "tr": "li-rabbihi", "racine": "ر ب ب", "sens": "envers son Seigneur", "def": "préposition li- + rabb + pronom suffixe : envers son Seigneur.", "gram": "préposition + nom + pronom suffixe, génitif" },
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
+        { "ar": "كَنُودٌ", "tr": "kanūd", "racine": "ك ن د", "sens": "ingrat", "def": "kanūd : ingrat ; le mot évoque aussi une terre stérile où rien ne pousse, et celui qui n'oublie que les bienfaits reçus.", "gram": "nom adjectival, nominatif indéfini" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَإِنَّهُ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ",
+      "tr": "wa-innahu ʿalā dhālika la-shahīd",
+      "trad": "et lui-même peut en témoigner ;",
+      "themes": ["témoignage", "conscience"],
+      "commentaire": "<em>shahīd</em> (شَهِيد) : témoin. Selon certains commentateurs, le « lui » du verset désigne Dieu, Témoin universel ; selon d'autres, c'est l'homme lui-même, témoin de sa propre ingratitude. La seconde lecture est la plus belle moralement : l'homme sait, au fond, ce qu'il fait. Et au Jour du jugement, le Coran dit que les hommes témoigneront contre eux-mêmes (cf. 36, 65 ; 41, 20).",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "إِنَّهُ", "tr": "innahu", "racine": "—", "sens": "en vérité, il", "def": "inna + pronom suffixe : en vérité, il.", "gram": "particule + pronom" },
+        { "ar": "عَلَىٰ", "tr": "ʿalā", "racine": "—", "sens": "de cela", "def": "préposition : sur, à propos de.", "gram": "préposition" },
+        { "ar": "ذَٰلِكَ", "tr": "dhālika", "racine": "—", "sens": "cela", "def": "démonstratif masculin éloigné : cela (renvoie au v. 6).", "gram": "démonstratif" },
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
+        { "ar": "شَهِيدٌ", "tr": "shahīd", "racine": "ش ه د", "sens": "témoin", "def": "shahīd : témoin ; selon les commentateurs, soit Dieu, soit l'homme lui-même témoin contre lui.", "gram": "nom, nominatif indéfini" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "وَإِنَّهُ لِحُبِّ الْخَيْرِ لَشَدِيدٌ",
+      "tr": "wa-innahu li-ḥubbi l-khayri la-shadīd",
+      "trad": "mais son amour des richesses est plus fort.",
+      "themes": ["amour des biens", "attachement"],
+      "commentaire": "<em>al-khayr</em> (الخَيْر) signifie « le bien », et les commentateurs le rendent ici par « les biens » — les richesses, par métonymie, sont nommées « le bien » dans la langue arabe. L'homme aime ce qui se possède d'une affection violente — <em>shadīd</em> (شَدِيد), « intense », « ferme ». Le Coran ailleurs nomme cet amour dans le détail : « des femmes, des enfants, des sommes amassées d'or et d'argent, des chevaux de marque, du bétail, des terres » (3, 14). La sourate vise plus large que la seule cupidité : tout attachement excessif à ce qui passe.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "إِنَّهُ", "tr": "innahu", "racine": "—", "sens": "en vérité, il", "def": "inna + pronom suffixe.", "gram": "particule + pronom" },
+        { "ar": "لِحُبِّ", "tr": "li-ḥubb", "racine": "ح ب ب", "sens": "pour l'amour de", "def": "ḥubb : amour, attachement ; préposition li- + nom au génitif.", "gram": "préposition + nom, génitif construit" },
+        { "ar": "الْخَيْرِ", "tr": "al-khayr", "racine": "خ ي ر", "sens": "le bien, les biens", "def": "khayr : le bien, ce qui est bon ; ici par extension, les biens matériels, les richesses.", "gram": "nom, génitif défini" },
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
+        { "ar": "شَدِيدٌ", "tr": "shadīd", "racine": "ش د د", "sens": "intense, violent", "def": "shadīd : intense, violent, ferme ; ici, qualifie l'amour démesuré.", "gram": "nom adjectival, nominatif indéfini" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِي الْقُبُورِ",
+      "tr": "a-fa-lā yaʿlamu idhā buʿthira mā fī l-qubūr",
+      "trad": "Ne sait-il donc pas qu'au moment où sera bouleversé le contenu des tombes",
+      "themes": ["résurrection", "renversement"],
+      "commentaire": "<em>buʿthira</em> (بُعْثِرَ) : être bouleversé, renversé, retourné — comme on retourne un récipient. L'image est celle des tombes qui rendent leur contenu, dans un mouvement de pleine inversion. Le Coran emploie souvent cette grammaire de l'apocalypse : ce qui était caché en bas est mis en haut, ce qui dormait est éveillé. Le verset commence par une interrogation indignée : « Ne sait-il donc pas… ? »",
+      "mots": [
+        { "ar": "أَ", "tr": "a-", "racine": "—", "sens": "est-ce que", "def": "particule interrogative.", "gram": "particule" },
+        { "ar": "فَلَا", "tr": "fa-lā", "racine": "—", "sens": "ne... pas", "def": "fa- + lā : ne... pas (négation accompagnant l'interrogation).", "gram": "particules" },
+        { "ar": "يَعْلَمُ", "tr": "yaʿlamu", "racine": "ع ل م", "sens": "il sait", "def": "ʿalima : savoir.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle : lorsque.", "gram": "particule" },
+        { "ar": "بُعْثِرَ", "tr": "buʿthira", "racine": "ب ع ث ر", "sens": "il sera bouleversé", "def": "buʿthira : être renversé, être retourné en pleine inversion ; passif accompli avec valeur future.", "gram": "verbe accompli passif, 3ᵉ pers. masc. sing." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qui", "def": "pronom relatif neutre.", "gram": "pronom relatif" },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "def": "préposition : dans.", "gram": "préposition" },
+        { "ar": "الْقُبُورِ", "tr": "al-qubūr", "racine": "ق ب ر", "sens": "les tombes", "def": "qubūr : pluriel de qabr, la tombe.", "gram": "nom pluriel, génitif défini" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَحُصِّلَ مَا فِي الصُّدُورِ",
+      "tr": "wa-ḥuṣṣila mā fī ṣ-ṣudūr",
+      "trad": "et où sera récapitulé le contenu des poitrines,",
+      "themes": ["intériorité", "révélation des secrets"],
+      "commentaire": "<em>ḥuṣṣila</em> (حُصِّلَ) : être extrait, être recueilli, être amené au jour — comme on tire le métal de la mine, ou comme on rassemble la moisson. <em>al-ṣudūr</em> (الصُّدُور), « les poitrines », désigne le cœur intime, le for intérieur. Tout ce qui était tenu secret en sera tiré. Le Coran nomme ailleurs ce Jour « le Jour où les secrets sont éprouvés » (86, 9). Plus inquiétant encore que le bouleversement des tombes : le retournement des intérieurs.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "حُصِّلَ", "tr": "ḥuṣṣila", "racine": "ح ص ل", "sens": "il sera recueilli, extrait", "def": "ḥaṣṣala : tirer, recueillir, faire sortir ce qui était caché ; au passif accompli, valeur future.", "gram": "verbe accompli passif, 3ᵉ pers. masc. sing." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qui", "def": "pronom relatif neutre.", "gram": "pronom relatif" },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "def": "préposition.", "gram": "préposition" },
+        { "ar": "الصُّدُورِ", "tr": "aṣ-ṣudūr", "racine": "ص د ر", "sens": "les poitrines", "def": "ṣadr : la poitrine, le siège du cœur intime ; au pluriel ṣudūr.", "gram": "nom pluriel, génitif défini" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌ",
+      "tr": "inna rabbahum bihim yawmaʾidhin la-khabīr",
+      "trad": "ce Jour-là, leur Seigneur sera instruit de tout à leur sujet.",
+      "themes": ["omniscience divine", "Jour du jugement"],
+      "commentaire": "<em>khabīr</em> (خَبِير) : Celui qui sait par expérience profonde, qui connaît le fond des choses — un des Noms divins. Le verset n'apprend rien à Dieu : Il <em>sait</em> déjà tout. Ce qui change ce Jour-là, c'est que les hommes, eux, sauront enfin que Dieu savait ; et c'est cette nouvelle conscience qui devient l'épreuve. La sourate, ouverte sur des chevaux haletants, se ferme sur la connaissance silencieuse de Dieu.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "en vérité", "def": "particule de mise en relief.", "gram": "particule" },
+        { "ar": "رَبَّهُم", "tr": "rabbahum", "racine": "ر ب ب", "sens": "leur Seigneur", "def": "rabb + pronom suffixe pluriel : leur Seigneur.", "gram": "nom + pronom suffixe, accusatif" },
+        { "ar": "بِهِمْ", "tr": "bihim", "racine": "—", "sens": "à leur sujet", "def": "préposition bi- + pronom suffixe pluriel : à leur sujet, les concernant.", "gram": "préposition + pronom" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce Jour-là", "def": "yawm + idh : ce jour-là (le Jour du jugement).", "gram": "adverbe de temps" },
+        { "ar": "لَّ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
+        { "ar": "خَبِيرٌ", "tr": "khabīr", "racine": "خ ب ر", "sens": "parfaitement informé", "def": "khabīr : Celui qui sait par expérience profonde, qui connaît le fond des choses ; Nom divin.", "gram": "nom, nominatif indéfini" }
+      ]
+    }
+  ]
+}

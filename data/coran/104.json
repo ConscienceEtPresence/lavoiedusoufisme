@@ -1,0 +1,139 @@
+{
+  "n": 104,
+  "nom_ar": "الهُمَزَة",
+  "nom_tr": "al-Humaza",
+  "nom_fr": "Le Calomniateur",
+  "revelation": "mecquoise",
+  "versets_count": 9,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Humaza — « Le Calomniateur » — est une sourate mecquoise précoce qui condamne d'une même phrase deux maux étroitement liés : la médisance qui blesse, et la richesse qui s'accumule. La tradition rapporte qu'elle a été révélée à propos d'un homme — al-Akhnas ibn Shurayq, ou al-Walīd ibn al-Mughīrah selon les versions — connu pour diffamer le Prophète en face comme en son absence. Mais le verset 1 emploie le mot <em>kull</em> (كُلّ), « tout », « tout homme » : la condamnation, partie d'un cas, vaut pour toute âme qui rit des autres en croyant que ses biens la mettent à l'abri de la mort. Neuf versets brefs qui tracent un mouvement implacable : du rire qui méprise, au calcul qui rassure, à l'illusion de durer toujours — et au Feu qui, lui, touche le cœur même.",
+  "themes": ["calomnie", "accumulation", "illusion d'immortalité", "Feu"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ",
+      "tr": "waylun li-kulli humazatin lumaza",
+      "trad": "Malheur à tout calomniateur sarcastique,",
+      "themes": ["médisance", "raillerie"],
+      "commentaire": "Deux mots accolés disent toute une figure morale. <em>humaza</em> (هُمَزَة) — du verbe <em>hamaza</em> (هَمَزَ), piquer, frapper — désigne, selon Mujāhid, celui qui blesse de la main ou des yeux : un geste, un regard moqueur. <em>lumaza</em> (لُمَزَة), lui, blesse avec la langue — la calomnie, la moquerie articulée. La forme intensive en <em>-aza</em> dit qu'il en a fait une habitude. Le verset commence par <em>wayl</em> (وَيْل), « malheur » — l'une des interjections les plus fortes du Coran —, et place l'accent moral : non sur des comportements isolés, mais sur un caractère qui fait métier de blesser.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "wayl", "racine": "و ي ل", "sens": "malheur !", "def": "wayl : interjection de menace : malheur ! ; selon certains commentateurs, le nom d'une vallée de la Géhenne.", "gram": "nom, nominatif indéfini" },
+        { "ar": "لِّكُلِّ", "tr": "li-kulli", "racine": "ك ل ل", "sens": "à tout", "def": "préposition li- + kull au génitif : à tout, pour tout, pour chaque.", "gram": "préposition + nom, génitif construit" },
+        { "ar": "هُمَزَةٍ", "tr": "humaza", "racine": "ه م ز", "sens": "calomniateur", "def": "humaza : forme intensive de hāmiz ; celui qui blesse par geste ou par regard ; le médisant habituel.", "gram": "nom, génitif indéfini" },
+        { "ar": "لُّمَزَةٍ", "tr": "lumaza", "racine": "ل م ز", "sens": "railleur", "def": "lumaza : forme intensive ; celui qui blesse de la langue, qui raille, qui ronge.", "gram": "nom, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "الَّذِي جَمَعَ مَالًا وَعَدَّدَهُ",
+      "tr": "alladhī jamaʿa mālan wa-ʿaddadah",
+      "trad": "qui amasse des richesses et en fait le compte !",
+      "themes": ["accumulation", "obsession des biens"],
+      "commentaire": "Le verset précise la figure : il ramasse — <em>jamaʿa</em> (جَمَعَ) — et il compte — <em>ʿaddada</em> (عَدَّدَ), forme intensive qui dit le geste répété de qui passe en revue ses biens, les chiffre, les recompte. Le Coran lie ici deux maux qu'on rapproche rarement : la médisance et la cupidité. Pourquoi ? Parce que l'une et l'autre procèdent du même refus : refus de l'autre, refus du don, refus de tout ce qui dépasse le moi.",
+      "mots": [
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "celui qui", "def": "pronom relatif masculin singulier.", "gram": "pronom relatif" },
+        { "ar": "جَمَعَ", "tr": "jamaʿa", "racine": "ج م ع", "sens": "il a amassé", "def": "jamaʿa : rassembler, amasser, réunir.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "مَالًا", "tr": "mālan", "racine": "م و ل", "sens": "des richesses", "def": "māl : la richesse, le bien, l'avoir ; à l'accusatif indéfini.", "gram": "nom, accusatif indéfini" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "عَدَّدَهُ", "tr": "ʿaddadah", "racine": "ع د د", "sens": "il l'a compté et recompté", "def": "ʿaddada : forme intensive de ʿadda (compter) ; compter et recompter avec soin.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "يَحْسَبُ أَنَّ مَالَهُ أَخْلَدَهُ",
+      "tr": "yaḥsabu anna mālahu akhladah",
+      "trad": "Il pense que sa fortune le rendra immortel !",
+      "themes": ["illusion d'immortalité", "vanité"],
+      "commentaire": "<em>akhlada</em> (أَخْلَدَ) : faire durer pour toujours, rendre éternel. Le mot vient de la même racine que <em>khulūd</em> (خُلُود) — la perpétuité, qui ne se dit en propre que de Dieu. L'homme cupide se trompe sur deux plans : il croit que la richesse le mettra à l'abri de la mort, et il croit qu'elle l'attache à un sol où rien ne dure. Un hadith célèbre dit : « Si le fils d'Adam avait une vallée d'or, il en voudrait deux. » La cupidité n'est pas comblée — elle s'agrandit en se nourrissant.",
+      "mots": [
+        { "ar": "يَحْسَبُ", "tr": "yaḥsabu", "racine": "ح س ب", "sens": "il pense", "def": "ḥasiba : penser, croire, supposer ; à l'inaccompli.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "أَنَّ", "tr": "anna", "racine": "—", "sens": "que", "def": "conjonction de subordination : que (introduit une proposition).", "gram": "conjonction" },
+        { "ar": "مَالَهُ", "tr": "mālahu", "racine": "م و ل", "sens": "sa richesse", "def": "māl + pronom suffixe : sa richesse.", "gram": "nom + pronom suffixe, accusatif" },
+        { "ar": "أَخْلَدَهُ", "tr": "akhladah", "racine": "خ ل د", "sens": "le rendra éternel", "def": "akhlada : forme dérivée de khalada (durer pour toujours) ; rendre éternel, faire perpétuer. + pronom suffixe.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "كَلَّا ۖ لَيُنبَذَنَّ فِي الْحُطَمَةِ",
+      "tr": "kallā, la-yunbadhanna fī l-ḥuṭama",
+      "trad": "Mais non !... Il sera précipité dans Celle qui écrase (al-Hûtama).",
+      "themes": ["jugement", "Feu"],
+      "commentaire": "<em>kallā</em> (كَلَّا) : « pas du tout ! », rupture nette qui dément l'illusion. <em>yunbadhu</em> (يُنْبَذُ) : être jeté, être projeté — verbe qu'on emploie pour ce qu'on rejette comme un déchet. <em>al-Ḥuṭama</em> (الحُطَمَة), « Celle qui écrase », est ici un nom propre du Feu : il vient de <em>ḥaṭama</em> (حَطَمَ), briser, broyer, fracasser. Ce qui était amassé sera broyé ; ce qui croyait durer sera précipité.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "pas du tout !", "def": "particule de réfutation : non, pas du tout ; coupure forte qui dément la phrase précédente.", "gram": "particule de réfutation" },
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation préfixée : certainement, assurément.", "gram": "particule d'affirmation" },
+        { "ar": "يُنبَذَنَّ", "tr": "yunbadhanna", "racine": "ن ب ذ", "sens": "il sera précipité", "def": "nabadha : jeter, rejeter, projeter ; au passif énergique, « il sera assurément jeté ».", "gram": "verbe inaccompli énergique passif, 3ᵉ pers. masc. sing." },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "def": "préposition : dans.", "gram": "préposition" },
+        { "ar": "الْحُطَمَةِ", "tr": "al-ḥuṭama", "racine": "ح ط م", "sens": "Celle qui écrase", "def": "al-Ḥuṭama : nom propre du Feu de la Géhenne ; forme intensive du verbe ḥaṭama (briser, broyer, fracasser).", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَمَا أَدْرَاكَ مَا الْحُطَمَةُ",
+      "tr": "wa-mā adrāka mā l-ḥuṭama",
+      "trad": "Et qu'est-ce qui te fera connaître ce qu'est la Hûtama ?",
+      "themes": ["mystère", "interrogation"],
+      "commentaire": "Question rhétorique caractéristique du Coran : <em>mā adrāka</em> (مَا أَدْرَاكَ) — qu'est-ce qui te ferait savoir ? — précède toujours, dans le texte, l'évocation d'une chose dont la mesure dépasse l'entendement. Ici, ce n'est pas une description complète qui suit : c'est une image, qui laisse entendre que <em>al-Ḥuṭama</em> ne peut être pleinement nommée — qu'elle déborde tout dire.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "qu'est-ce qui", "def": "interrogatif : qu'est-ce qui ?", "gram": "interrogatif" },
+        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "te fera savoir", "def": "adrā : faire savoir, faire connaître ; à l'accompli + pronom suffixe 2ᵉ pers. masc. sing.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qu'est", "def": "interrogatif : ce qu'est, qu'est-ce que.", "gram": "interrogatif" },
+        { "ar": "الْحُطَمَةُ", "tr": "al-ḥuṭama", "racine": "ح ط م", "sens": "la Hûtama", "def": "al-Ḥuṭama : Celle qui écrase ; voir verset 4.", "gram": "nom, nominatif défini" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "نَارُ اللَّهِ الْمُوقَدَةُ",
+      "tr": "nāru Llāhi l-mūqada",
+      "trad": "C'est le Feu de Dieu jamais éteint,",
+      "themes": ["Feu", "permanence du châtiment"],
+      "commentaire": "<em>nāru Llāhi l-mūqada</em> (نَارُ اللَّهِ المُوقَدَة) : le Feu de Dieu attisé, qui ne s'éteint pas. Le participe passif <em>mūqada</em> dit qu'il est sans cesse rallumé, jamais laissé à l'extinction. Le Coran ne cherche pas à effrayer pour effrayer : il pose une mesure. Devant ce qui ne s'éteint pas, l'amour pour ce qui passe — la richesse, la flatterie, le rire de la médisance — devient soudain dérisoire.",
+      "mots": [
+        { "ar": "نَارُ", "tr": "nār", "racine": "ن و ر", "sens": "le Feu", "def": "nār : le feu ; ici au nominatif construit : « le Feu de ».", "gram": "nom, nominatif construit" },
+        { "ar": "اللَّهِ", "tr": "Allāh", "racine": "أ ل ه", "sens": "de Dieu", "def": "Allāh : Dieu ; au génitif : « de Dieu ».", "gram": "nom, génitif" },
+        { "ar": "الْمُوقَدَةُ", "tr": "al-mūqada", "racine": "و ق د", "sens": "attisé, allumé", "def": "mūqada : participe passif de awqada (allumer, attiser) ; qui est sans cesse attisé, qui brûle continûment.", "gram": "participe passif, nominatif défini" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "الَّتِي تَطَّلِعُ عَلَى الْأَفْئِدَةِ",
+      "tr": "allatī taṭṭaliʿu ʿalā l-afʾida",
+      "trad": "qui pénètre dans les entrailles",
+      "themes": ["cœur", "intériorité"],
+      "commentaire": "<em>al-afʾida</em> (الأَفْئِدَة) : le pluriel de <em>fuʾād</em> (فُؤَاد), le cœur dans sa subtilité la plus intime, le centre même du sentir. Le Feu décrit ici ne brûle pas seulement la peau : il <em>taṭṭaliʿu</em> (تَطَّلِعُ), « monte jusqu'à », « s'élève sur », « atteint », les cœurs. C'est l'image essentielle : ce qui blesse l'autre par calomnie, ce qui s'accumule pour soi seul, atteint un jour le lieu d'où ces gestes venaient — non l'extérieur, mais le centre.",
+      "mots": [
+        { "ar": "الَّتِي", "tr": "allatī", "racine": "—", "sens": "celle qui", "def": "pronom relatif féminin singulier (renvoie à al-Ḥuṭama, féminin).", "gram": "pronom relatif" },
+        { "ar": "تَطَّلِعُ", "tr": "taṭṭaliʿu", "racine": "ط ل ع", "sens": "elle monte jusqu'à", "def": "iṭṭalaʿa : monter, s'élever, atteindre le sommet de ; ici, le Feu qui atteint l'intime des cœurs.", "gram": "verbe inaccompli, 3ᵉ pers. fém. sing." },
+        { "ar": "عَلَى", "tr": "ʿalā", "racine": "—", "sens": "sur", "def": "préposition : sur, jusqu'à.", "gram": "préposition" },
+        { "ar": "الْأَفْئِدَةِ", "tr": "al-afʾida", "racine": "ف أ د", "sens": "les cœurs", "def": "fuʾād : le cœur dans son centre subtil, le siège du sentir ; pluriel afʾida, les cœurs intimes.", "gram": "nom pluriel, génitif défini" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ",
+      "tr": "innahā ʿalayhim muʾṣada",
+      "trad": "jusqu'à les enfermer",
+      "themes": ["enfermement", "irréversibilité"],
+      "commentaire": "<em>muʾṣada</em> (مُؤْصَدَة) : ce qui est refermé, scellé sur. Le verset prolonge l'image : non seulement le Feu atteint le cœur, mais ses portes se referment sur ceux qui s'y trouvent. La sourate 90, verset 20, dit de même : « Sur eux est un Feu refermé. » Le châtiment n'est pas seulement intense, il est sans issue — non que Dieu refuse la miséricorde, mais que l'homme, à force de refermer son propre cœur sur lui-même, a déjà fermé la porte avant que rien d'autre la ferme.",
+      "mots": [
+        { "ar": "إِنَّهَا", "tr": "innahā", "racine": "—", "sens": "en vérité, elle", "def": "particule de mise en relief inna + pronom suffixe féminin : « en vérité, elle ».", "gram": "particule + pronom" },
+        { "ar": "عَلَيْهِم", "tr": "ʿalayhim", "racine": "—", "sens": "sur eux", "def": "préposition ʿalā + pronom suffixe pluriel : sur eux.", "gram": "préposition + pronom" },
+        { "ar": "مُّؤْصَدَةٌ", "tr": "muʾṣada", "racine": "أ ص د", "sens": "refermée", "def": "muʾṣada : participe passif d'awṣada ; refermée, scellée, close.", "gram": "participe passif, nominatif indéfini" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "فِي عَمَدٍ مُّمَدَّدَةٍ",
+      "tr": "fī ʿamadin mumaddada",
+      "trad": "dans d'immenses colonnes.",
+      "themes": ["image apocalyptique"],
+      "commentaire": "<em>ʿamad mumaddada</em> (عَمَد مُمَدَّدَة) : des colonnes étendues, allongées. Les commentateurs y voient les colonnes du Feu lui-même — celles qui referment et tiennent la Géhenne, ou celles qui se déploient à l'horizon comme les murs d'une enceinte close. L'image, dans son obscurité, est volontaire : la sourate s'achève sur quelque chose d'à la fois vaste et clos. Et le lecteur, lui, est ramené aux premiers versets : un homme qui rit, qui compte, qui se croit immortel. C'est de cela que parlait, au fond, toute la sourate.",
+      "mots": [
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "def": "préposition : dans.", "gram": "préposition" },
+        { "ar": "عَمَدٍ", "tr": "ʿamad", "racine": "ع م د", "sens": "des colonnes", "def": "ʿamad : pluriel de ʿamūd, colonne, pilier ; ici colonnes du Feu ou de la Géhenne.", "gram": "nom pluriel, génitif indéfini" },
+        { "ar": "مُّمَدَّدَةٍ", "tr": "mumaddada", "racine": "م د د", "sens": "étendues, allongées", "def": "mumaddada : participe passif intensif de madda ; étirée, étendue, déployée en longueur.", "gram": "participe passif, génitif indéfini" }
+      ]
+    }
+  ]
+}

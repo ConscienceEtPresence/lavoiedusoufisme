@@ -1,0 +1,134 @@
+{
+  "n": 99,
+  "nom_ar": "الزَّلْزَلَة",
+  "nom_tr": "al-Zalzala",
+  "nom_fr": "Le Tremblement",
+  "revelation": "médinoise",
+  "versets_count": 8,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-Zalzala — « Le Tremblement » — est tantôt rattachée à la fin de la période mecquoise, tantôt à la période médinoise (vers l'an 1 de l'hégire). Son nom vient du verbe <em>zalzala</em> (زَلْزَلَ), « secouer violemment », « ébranler ». Cinq versets décrivent le tremblement de la terre au Jour du Jugement, ses fardeaux qui se vident, l'étonnement de l'homme, et la voix de la terre elle-même devenue témoin. Les trois derniers versets posent l'enseignement : tout acte, fût-il du poids d'un atome, sera vu. Selon une parole attribuée à Ibn ʿAbbās, « <em>idhā zulzilat</em> équivaut à la moitié du Coran » — car la sourate condense tout ce que le Livre dit sur l'au-delà. Un hadith ajoute qu'un homme âgé, ne pouvant retenir de longues sourates, vint demander au Prophète une parole brève qui contienne tout : c'est <em>al-Zalzala</em> qu'il reçut.",
+  "themes": ["fin du monde", "tremblement", "résurrection", "poids des actes", "atome de bien et de mal"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "إِذَا زُلْزِلَتِ الْأَرْضُ زِلْزَالَهَا",
+      "tr": "idhā zulzilati l-arḍu zilzālahā",
+      "trad": "Lorsque la terre sera secouée par son tremblement,",
+      "themes": ["tremblement", "fin du monde"],
+      "commentaire": "<em>zulzilat</em> (زُلْزِلَتْ) : passif du verbe <em>zalzala</em> (زَلْزَلَ), redoublement intensif de la racine z-l, « ébranler ». Le verbe lui-même est tremblant — sa forme imite la chose. <em>zilzālahā</em> (زِلْزَالَهَا), « son propre tremblement », ajoute le possessif : chaque chose tremblera de son tremblement à elle. La terre, qui semblait la chose la plus stable, sera atteinte au cœur d'elle-même.",
+      "mots": [
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle introduisant la circonstance : lorsque, quand.", "gram": "particule" },
+        { "ar": "زُلْزِلَتِ", "tr": "zulzilat", "racine": "ز ل ل", "sens": "elle aura été secouée", "def": "zalzala : secouer violemment, ébranler ; au passif accompli féminin, sujet : la terre.", "gram": "verbe accompli passif, 3ᵉ pers. fém. sing." },
+        { "ar": "الْأَرْضُ", "tr": "al-arḍ", "racine": "أ ر ض", "sens": "la terre", "def": "arḍ : la terre, le sol, la planète.", "gram": "nom, nominatif défini" },
+        { "ar": "زِلْزَالَهَا", "tr": "zilzālahā", "racine": "ز ل ل", "sens": "son tremblement", "def": "zilzāl : nom d'action de zalzala, « le tremblement », « la secousse » ; avec pronom suffixe féminin : son tremblement à elle.", "gram": "nom + pronom suffixe, accusatif d'objet interne" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَأَخْرَجَتِ الْأَرْضُ أَثْقَالَهَا",
+      "tr": "wa-akhrajati l-arḍu athqālahā",
+      "trad": "que la terre rejettera ses fardeaux",
+      "themes": ["vidage de la terre", "secret rendu"],
+      "commentaire": "<em>athqāl</em> (أَثْقَال) : les fardeaux, ce qu'elle porte de pesant — les morts, les trésors enfouis, ce que les hommes ont caché. Un hadith décrit ce moment : « La terre jettera ses entrailles ; l'or et l'argent en sortiront comme des colonnes. Le meurtrier viendra et dira : « C'est pour cela que j'ai tué ! » Celui qui a rompu les liens du sang dira : « C'est pour cela que j'ai brisé les liens ! » Le voleur dira : « C'est pour cela que j'ai eu les mains coupées ! » Puis ils laisseront tout là, et personne n'en prendra rien. »",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "أَخْرَجَتِ", "tr": "akhrajat", "racine": "خ ر ج", "sens": "elle aura fait sortir", "def": "akhraja : faire sortir, expulser, rendre ; à l'accompli féminin.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." },
+        { "ar": "الْأَرْضُ", "tr": "al-arḍ", "racine": "أ ر ض", "sens": "la terre", "def": "arḍ : la terre.", "gram": "nom, nominatif défini" },
+        { "ar": "أَثْقَالَهَا", "tr": "athqālahā", "racine": "ث ق ل", "sens": "ses fardeaux", "def": "athqāl : pluriel de thiql, fardeau, charge ; ce que la terre porte de pesant, y compris ses morts et ses trésors.", "gram": "nom pluriel + pronom suffixe, accusatif" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَقَالَ الْإِنسَانُ مَا لَهَا",
+      "tr": "wa-qāla l-insānu mā lahā",
+      "trad": "et que l'homme s'exclamera : « Qu'a-t-elle ? »",
+      "themes": ["étonnement", "rupture"],
+      "commentaire": "<em>mā lahā</em> (مَا لَهَا) : « qu'a-t-elle ? », « qu'est-ce qui lui prend ? ». L'expression courante pour s'étonner devant un événement inattendu. Selon certains, la question est celle de tous les hommes ; selon d'autres, seulement celle des dénégateurs, car les croyants savaient déjà que ce monde était passager. Quoi qu'il en soit, l'étonnement est l'attitude première : la terre, base de toute habitude, brise son habitude.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "قَالَ", "tr": "qāla", "racine": "ق و ل", "sens": "il dira", "def": "qāla : dire ; à l'accompli avec valeur de futur dans la circonstance.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "الْإِنسَانُ", "tr": "al-insān", "racine": "أ ن س", "sens": "l'homme", "def": "insān : l'homme, l'être humain.", "gram": "nom, nominatif défini" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "qu'est-ce qui", "def": "interrogatif : qu'est-ce que ?", "gram": "interrogatif" },
+        { "ar": "لَهَا", "tr": "lahā", "racine": "—", "sens": "à elle", "def": "préposition li- + pronom suffixe féminin : pour elle, à elle.", "gram": "préposition + pronom" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
+      "tr": "yawmaʾidhin tuḥaddithu akhbārahā",
+      "trad": "Ce Jour-là, elle relatera sa chronique",
+      "themes": ["témoignage de la terre"],
+      "commentaire": "<em>tuḥaddithu akhbārahā</em> (تُحَدِّثُ أَخْبَارَهَا) : « elle racontera ses nouvelles ». Le verbe <em>ḥaddatha</em> (حَدَّثَ), forme intensive de <em>ḥadatha</em>, désigne la transmission d'un récit — c'est le même verbe qui donne <em>ḥadīth</em>, la parole rapportée du Prophète. La terre devient narratrice. Selon un hadith, « la chronique de la terre, c'est qu'elle témoignera contre chaque homme et chaque femme : tel jour, untel a fait telle chose sur ma surface. Voilà sa chronique. » Rien de ce qu'on a fait sur le sol n'a échappé au sol.",
+      "mots": [
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce Jour-là", "def": "yawm + idh : ce jour-là, ce jour précis.", "gram": "adverbe de temps" },
+        { "ar": "تُحَدِّثُ", "tr": "tuḥaddithu", "racine": "ح د ث", "sens": "elle racontera", "def": "ḥaddatha : forme intensive de ḥadatha (arriver, advenir) ; raconter, transmettre un récit. Même racine que ḥadīth.", "gram": "verbe inaccompli, 3ᵉ pers. fém. sing." },
+        { "ar": "أَخْبَارَهَا", "tr": "akhbārahā", "racine": "خ ب ر", "sens": "ses nouvelles, ses chroniques", "def": "akhbār : pluriel de khabar, nouvelle, récit, chronique ; avec pronom suffixe féminin : ses nouvelles à elle.", "gram": "nom pluriel + pronom suffixe, accusatif" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
+      "tr": "bi-anna rabbaka awḥā lahā",
+      "trad": "d'après ce que ton Seigneur lui aura révélé.",
+      "themes": ["inspiration", "ordre divin"],
+      "commentaire": "<em>awḥā</em> (أَوْحَىٰ) : inspirer, suggérer, communiquer un ordre subtil — c'est le verbe utilisé pour la révélation prophétique (<em>waḥy</em>), mais aussi pour ce que Dieu « inspire » à l'abeille (16, 68) ou au ciel (41, 12). Ici, la terre elle-même est instruite par Dieu de tout dire. Le verset rappelle ainsi que le témoignage qui sortira de la terre n'est pas son initiative, mais une parole rendue selon l'ordre divin.",
+      "mots": [
+        { "ar": "بِ", "tr": "bi-", "racine": "—", "sens": "par, parce que", "def": "préposition bi- : par ; introduit la cause ou le moyen.", "gram": "préposition" },
+        { "ar": "أَنَّ", "tr": "anna", "racine": "—", "sens": "que", "def": "conjonction de subordination : que.", "gram": "conjonction" },
+        { "ar": "رَبَّكَ", "tr": "rabbaka", "racine": "ر ب ب", "sens": "ton Seigneur", "def": "rabb + pronom suffixe : ton Seigneur.", "gram": "nom + pronom suffixe, accusatif" },
+        { "ar": "أَوْحَىٰ", "tr": "awḥā", "racine": "و ح ي", "sens": "Il aura inspiré", "def": "awḥā : inspirer, communiquer subtilement, révéler ; même racine que waḥy, la révélation prophétique.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "لَهَا", "tr": "lahā", "racine": "—", "sens": "à elle", "def": "préposition li- + pronom suffixe féminin.", "gram": "préposition + pronom" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "يَوْمَئِذٍ يَصْدُرُ النَّاسُ أَشْتَاتًا لِّيُرَوْا أَعْمَالَهُمْ",
+      "tr": "yawmaʾidhin yaṣduru n-nāsu ashtātan li-yuraw aʿmālahum",
+      "trad": "Ce Jour-là, les hommes surgiront par groupes pour que leur soient montrées leurs actions.",
+      "themes": ["résurrection", "examen des œuvres"],
+      "commentaire": "<em>ashtātan</em> (أَشْتَاتًا) : pluriel de <em>shatīt</em>, dispersés, séparés, allant chacun selon sa voie. Le mot dit deux choses : la dispersion (chacun seul devant ses œuvres), et la divergence (les uns vers la lumière, les autres ailleurs). Le Coran le précisera : « ce Jour-là, vous viendrez à Nous seuls, comme Nous vous avons créés la première fois » (6, 94). <em>li-yuraw aʿmālahum</em> : « pour qu'il leur soit montré leurs actions » — non pour qu'ils en voient le résultat seulement, mais pour qu'ils les voient elles, telles qu'elles étaient.",
+      "mots": [
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce Jour-là", "def": "voir verset 4.", "gram": "adverbe de temps" },
+        { "ar": "يَصْدُرُ", "tr": "yaṣduru", "racine": "ص د ر", "sens": "ils surgiront, ils s'avanceront", "def": "ṣadara : sortir, s'en aller, s'avancer ; à l'inaccompli singulier (verbe au singulier précédant le sujet pluriel).", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "النَّاسُ", "tr": "an-nās", "racine": "أ ن س", "sens": "les hommes", "def": "an-nās : les hommes.", "gram": "nom, nominatif défini" },
+        { "ar": "أَشْتَاتًا", "tr": "ashtātan", "racine": "ش ت ت", "sens": "dispersés, par groupes", "def": "ashtāt : pluriel de shatīt, dispersés, séparés ; ici, allant chacun selon sa voie.", "gram": "nom pluriel, accusatif indéfini" },
+        { "ar": "لِّيُرَوْا", "tr": "li-yuraw", "racine": "ر أ ي", "sens": "pour qu'ils voient", "def": "li- + yuraw : préposition de but + verbe au passif subjonctif pluriel ; « pour qu'il leur soit montré ».", "gram": "préposition + verbe inaccompli subjonctif passif, 3ᵉ pers. masc. plur." },
+        { "ar": "أَعْمَالَهُمْ", "tr": "aʿmālahum", "racine": "ع م ل", "sens": "leurs actions", "def": "aʿmāl : pluriel de ʿamal, action, œuvre ; avec pronom suffixe pluriel.", "gram": "nom pluriel + pronom suffixe, accusatif" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ",
+      "tr": "fa-man yaʿmal mithqāla dharratin khayran yarah",
+      "trad": "Alors, celui qui aura fait le poids d'un atome de bien le verra,",
+      "themes": ["poids", "atome", "récompense"],
+      "commentaire": "<em>mithqāl dharra</em> (مِثْقَال ذَرَّة) : le poids d'un atome. <em>Dharra</em> (ذَرَّة) désigne en arabe ancien la fourmi minuscule, ou la poussière qu'on voit dans le rayon de soleil — la plus petite unité concevable. Le Coran le redira ailleurs : « rien du poids d'un atome ne Lui échappe » (34, 3). Un commentateur ancien rapporte : un homme dédaignait de donner aux mendiants une datte ou un quignon de pain, en se disant : « C'est trop peu, je ne serai récompensé que pour ce qui me coûte. » L'autre minimisait les petits péchés. La sourate fut révélée pour les deux à la fois.",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "مَن", "tr": "man", "racine": "—", "sens": "celui qui", "def": "pronom relatif/conditionnel : celui qui, quiconque.", "gram": "pronom" },
+        { "ar": "يَعْمَلْ", "tr": "yaʿmal", "racine": "ع م ل", "sens": "il fait", "def": "ʿamila : faire, agir ; à l'inaccompli apocopé après la conditionnelle.", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
+        { "ar": "مِثْقَالَ", "tr": "mithqāla", "racine": "ث ق ل", "sens": "le poids de", "def": "mithqāl : le poids, la mesure ; à l'accusatif construit : « le poids de ».", "gram": "nom, accusatif construit" },
+        { "ar": "ذَرَّةٍ", "tr": "dharra", "racine": "ذ ر ر", "sens": "atome, poussière", "def": "dharra : en arabe ancien, la plus petite chose concevable — la fourmi minuscule, ou la poussière dans un rayon de soleil ; rendu aujourd'hui par « atome ».", "gram": "nom, génitif indéfini" },
+        { "ar": "خَيْرًا", "tr": "khayran", "racine": "خ ي ر", "sens": "de bien", "def": "khayr : le bien ; à l'accusatif indéfini comme accusatif de spécification.", "gram": "nom, accusatif indéfini" },
+        { "ar": "يَرَهُ", "tr": "yarah", "racine": "ر أ ي", "sens": "il le verra", "def": "raʾā : voir ; à l'inaccompli apocopé + pronom suffixe.", "gram": "verbe inaccompli apocopé + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُ",
+      "tr": "wa-man yaʿmal mithqāla dharratin sharran yarah",
+      "trad": "et celui qui aura fait le poids d'un atome de mal le verra.",
+      "themes": ["responsabilité", "rien d'invisible"],
+      "commentaire": "La symétrie est parfaite : tout, vraiment, est vu — le bien et le mal, dans leur plus petite mesure. <em>ʿĀʾisha</em> rapporte un mot du Prophète : « Ô ʿĀʾisha, prends garde aux fautes que l'on tient pour petites — elles seront comptées par Dieu. » Et un autre : « Crains le feu, fût-ce en donnant la moitié d'une datte en aumône, ou en disant un seul mot de bien. » La sourate dissout l'illusion que ce qui est petit n'a pas de poids : aucune œuvre n'est trop infime pour échapper à la mesure.",
+      "mots": [
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "مَن", "tr": "man", "racine": "—", "sens": "celui qui", "def": "pronom relatif/conditionnel.", "gram": "pronom" },
+        { "ar": "يَعْمَلْ", "tr": "yaʿmal", "racine": "ع م ل", "sens": "il fait", "def": "ʿamila : faire.", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
+        { "ar": "مِثْقَالَ", "tr": "mithqāla", "racine": "ث ق ل", "sens": "le poids de", "def": "mithqāl : voir verset 7.", "gram": "nom, accusatif construit" },
+        { "ar": "ذَرَّةٍ", "tr": "dharra", "racine": "ذ ر ر", "sens": "atome", "def": "dharra : voir verset 7.", "gram": "nom, génitif indéfini" },
+        { "ar": "شَرًّا", "tr": "sharran", "racine": "ش ر ر", "sens": "de mal", "def": "sharr : le mal ; accusatif indéfini.", "gram": "nom, accusatif indéfini" },
+        { "ar": "يَرَهُ", "tr": "yarah", "racine": "ر أ ي", "sens": "il le verra", "def": "raʾā : voir.", "gram": "verbe inaccompli apocopé + pronom suffixe, 3ᵉ pers. masc. sing." }
+      ]
+    }
+  ]
+}

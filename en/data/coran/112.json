@@ -6,20 +6,20 @@
   "revelation": "Meccan",
   "versets_count": 4,
   "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
-  "intro": "Al-Ikhlāṣ — “Sincerity”, also called <em>al-Tawḥīd</em>, “The Unity” — is among the briefest and most essential sūras of the Quran. Its title — meaning sincerity, devotion, and purity together — describes its content: it is the full statement of <em>tawḥīd</em>, the affirmation that God is One. A widespread ḥadīth says that it is “equivalent to one-third of the Quran”: not for its length, but because the message of Divine Oneness is one-third of the Book's whole message. With Sūra 109, al-Kāfirūn — the complete denial of every false worship — the two together form the <em>Muqashqishatān</em>, “the two cures”. Al-Rāzī sums up its centrality: “The whole Quran is an oyster, and the pearl is this saying: <em>Say, He, God, is One</em>.”",
-  "themes": ["tawḥīd", "divine oneness", "transcendence", "divine names"],
+  "intro": "Al-Ikhlāṣ — “Sincerity”, or “the Purity of Faith” — is the shortest affirmation of Divine Unity in the Quran. But its title, <em>ikhlāṣ</em> (إِخْلَاص), joins two things — the sincerity of the worshipper and the purity of the Worshipped: for none can worship purely save the one who acknowledges purely. Tustarī, asked what sincerity is, answered with a word that almost sounds the same: <em>iflās</em> (إِفْلَاس), insolvency. “Whoever knows that he is insolvent has grasped the truth of his situation.” <em>Ikhlāṣ</em> begins there — in the recognition that one has nothing of one's own. Qushayrī opens another window: the four verses, he says, address four degrees of soul at once — <em>Huwa</em> (He) calls those absorbed in love; <em>Allāh</em> calls the unifiers; <em>Aḥad</em> (One) calls the gnostics; <em>al-Ṣamad</em> calls the learned; <em>lam yalid wa-lam yūlad</em> calls those of intellect. Each Name unveils a veil. The sūra is thus not only the profession of Unity: it is a graded unveiling, toward the One whom no name can contain.",
+  "themes": ["tawḥīd", "ikhlāṣ", "iflās", "transcendence", "divine names"],
   "versets": [
     {
       "n": 1,
       "ar": "قُلْ هُوَ اللَّهُ أَحَدٌ",
       "tr": "qul huwa Llāhu aḥad",
       "trad": "Say: “He, God, is One,",
-      "themes": ["tawḥīd", "oneness", "divine names"],
-      "commentaire": "<em>qul huwa Llāhu aḥad</em> (قُلْ هُوَ اللَّهُ أَحَدٌ): four words that gather the whole of tawḥīd. <em>Huwa</em> (هُوَ), “He”, is first a pronoun — God named without a name, as the Essence beneath every attribution; some Sufis took it as the supreme Name, and the call <em>yā Huwa</em> (يَا هُوَ) became an invocation. Then comes <em>Allāh</em> (اللَّه), the Name that gathers. Then <em>aḥad</em> (أَحَد), “One” — not the <em>wāḥid</em> (وَاحِد) of counting, which is one in a series, but the absolute Oneness that admits neither second nor division.",
+      "themes": ["Huwa", "tawḥīd", "essence"],
+      "commentaire": "Qushayrī reads the verse as a graded unveiling. <em>Huwa</em> (هُوَ), “He”, is more than a pronoun: for several Sufis it is the supreme Name — pure designation, before every attribute, before every saying. Some gnostics (<em>ahl al-maʿrifa</em>) have made it their only invocation: <em>yā Huwa</em>, “O He”. Then comes <em>Allāh</em>, the Name that gathers. Then <em>Aḥad</em> (أَحَد), “One” — not the oneness of counting (<em>wāḥid</em>), which is one in a series, but the absolute Oneness that admits neither second nor division. And Qushayrī then says a profound word: “He [Huwa] is the unveiler of secrets; Allāh, the unveiler of spirits; Aḥad, the unveiler of hearts.” Each word, as it is pronounced, draws back a veil within the reader's soul.",
       "mots": [
         { "ar": "قُلْ", "tr": "qul", "racine": "ق و ل", "sens": "say", "def": "to say, to utter; in the imperative: “say”, “proclaim”.", "gram": "verb, imperative, 2nd pers. masc. sing." },
-        { "ar": "هُوَ", "tr": "huwa", "racine": "—", "sens": "He", "def": "3rd person singular masculine pronoun: He; here used absolutely to designate God in His Essence, beneath every Name and attribute.", "gram": "personal pronoun" },
-        { "ar": "اللَّهُ", "tr": "Allāh", "racine": "أ ل ه", "sens": "God", "def": "Allāh: the proper Name of God in Arabic; called by the commentators the “Gathering Name” (al-ism al-jāmiʿ), in which all the other Divine Names are contained.", "gram": "noun, nominative" },
+        { "ar": "هُوَ", "tr": "huwa", "racine": "—", "sens": "He", "def": "3rd person singular masculine pronoun: He; for several Sufis, the supreme Name — God named without a name, in pure otherness.", "gram": "personal pronoun" },
+        { "ar": "اللَّهُ", "tr": "Allāh", "racine": "أ ل ه", "sens": "God", "def": "Allāh: the proper Name of God in Arabic; the “Gathering Name” (al-ism al-jāmiʿ), in which all the other Divine Names are contained.", "gram": "noun, nominative" },
         { "ar": "أَحَدٌ", "tr": "aḥad", "racine": "أ ح د", "sens": "One", "def": "aḥad: the absolute One, the indivisible Oneness which admits neither second nor partition; distinct from wāḥid (the one of counting).", "gram": "noun, nominative" }
       ]
     },
@@ -28,8 +28,8 @@
       "ar": "اللَّهُ الصَّمَدُ",
       "tr": "Allāhu ṣ-ṣamad",
       "trad": "God, the Universal Sustainer,",
-      "themes": ["divine names", "dependence", "transcendence"],
-      "commentaire": "<em>al-Ṣamad</em> (الصَّمَد) is a unique Name: it appears only here in the Quran. Its lexical sense first evokes what is full, dense, without hollow — the imperishable. Theologically it means the One toward whom every being turns in its need, the One on whom all things depend while He depends on none. Al-Zamakhsharī puts it thus: <em>al-Ṣamad</em> is the One who is sought (<em>man ṣumida ilayhi</em>, مَنْ صُمِدَ إِلَيْه) when one is in need — the Master to whom every being turns, and who needs none.",
+      "themes": ["al-Ṣamad", "dependence", "plenitude"],
+      "commentaire": "<em>al-Ṣamad</em> (الصَّمَد) appears only here in the Quran. Tustarī defines it: “It is the Master (<em>al-Sayyid</em>) toward whom one turns for every need and every trial. Its meaning is: <em>the One who is sought</em> (<em>al-Maṣmūd ilayhi</em>). And He is the One who has no need of food or drink.” The word has two faces that meet. From one side, it says of the servant: he is what seeks, he is what needs. From the other, it says of God: He is what is sought, and He seeks nothing. Qushayrī adds: “<em>al-Ṣamad</em> is that which has no hollow within (<em>la jawfa lahu</em>), which is full, which lacks nothing.” All is in Him; and all, without Him, is mere void. When the servant, become insolvent, recognises himself as such — he turns at once toward <em>al-Ṣamad</em>, and finds there not a help, but the very origin of every help.",
       "mots": [
         { "ar": "اللَّهُ", "tr": "Allāh", "racine": "أ ل ه", "sens": "God", "def": "Allāh: the proper Name of God in Arabic.", "gram": "noun, nominative" },
         { "ar": "الصَّمَدُ", "tr": "aṣ-ṣamad", "racine": "ص م د", "sens": "the Universal Sustainer", "def": "al-Ṣamad: a Divine Name unique to this sūra; lexically, what is full, imperishable, without hollow; theologically, the One toward whom every being turns in its need, on whom all things depend.", "gram": "noun, definite nominative" }
@@ -40,8 +40,8 @@
       "ar": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
       "tr": "lam yalid wa-lam yūlad",
       "trad": "He begets not, nor is He begotten,",
-      "themes": ["transcendence", "tawḥīd", "negation of partners"],
-      "commentaire": "The verse states pure transcendence: no divine lineage, no son or daughter, no ancestor. The Quran repeats it: “How should He have a child when He has no consort, when He has created all things?” (6:101). The sūra first addresses the pre-Islamic Arabs who ascribed daughters to God, but its true reach is metaphysical: God does not beget, because that which is begotten is born and dies; and He is not begotten, because He is without origin.",
+      "themes": ["transcendence", "absolute negation"],
+      "commentaire": "Tustarī: “<em>He does not beget</em> — so He has no heirs; <em>nor is He begotten</em> — for then His Lordship would be something that came into being in time (<em>muḥdath</em>). This is also the confirmation of His Oneness (<em>waḥdāniyya</em>), and the denial that He depends on causes (<em>asbāb</em>).” A deeper reading: this verse does not only refute the pagans or the Christians, it says something <em>of</em> God — that He is outside time, outside the chain of causes, outside every series. Nothing proceeds from anything to Him, nothing proceeds from Him as a son from a father. God is not the first cause of a series: He is the One from whom no series proceeds, because every series belongs to Him at every instant.",
       "mots": [
         { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "not", "def": "negative particle: not; with the apocopated imperfect it negates a past fact.", "gram": "negative particle" },
         { "ar": "يَلِدْ", "tr": "yalid", "racine": "و ل د", "sens": "He begets", "def": "walada: to beget, to bring forth, to give birth; with lam, absolute negation.", "gram": "imperfect apocopated verb, 3rd pers. masc. sing." },
@@ -55,8 +55,8 @@
       "ar": "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
       "tr": "wa-lam yakun lahu kufuwan aḥad",
       "trad": "and none is like unto Him.”",
-      "themes": ["transcendence", "tawḥīd"],
-      "commentaire": "No created thing resembles Him. “Nothing is like unto Him,” says the Quran elsewhere (42:11). The attributes given to creatures — living, seeing, hearing — God also has, but in an infinitely other sense. And this transcendence is not for that a distance: utterly other, He is also the most near — “wheresoever you turn, there is the Face of God” (2:115). The sūra closes upon the word with which it began — <em>aḥad</em> (أَحَد), “One” — like a ring drawn shut.",
+      "themes": ["incomparability", "Aḥad"],
+      "commentaire": "“No one is comparable to Him,” Tustarī sums up. And Qushayrī, in a luminous formula, says that the verses of the sūra are the explanation of one another: <em>Who is God? — He is God. Which Allāh? — the Unique (Aḥad). Which Unique? — al-Ṣamad. Which al-Ṣamad? — the One who does not beget nor is begotten. Which One who does not beget nor is begotten? — the One to whom none is equal.</em> Each answer pushes the next a little further. The word <em>aḥad</em> closes the sūra it had opened: it is the <em>One</em> returning — not as a reminder, but as a final silence. At this last word, language lays down its arms: before the <em>One</em>, there is nothing more to say.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "and", "def": "coordinating conjunction: and.", "gram": "conjunction" },
         { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "not", "def": "negative particle: not.", "gram": "negative particle" },

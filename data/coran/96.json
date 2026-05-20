@@ -1,0 +1,279 @@
+{
+  "n": 96,
+  "nom_ar": "العَلَق",
+  "nom_tr": "al-ʿAlaq",
+  "nom_fr": "Le Grumeau",
+  "revelation": "mecquoise",
+  "versets_count": 19,
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "intro": "Al-ʿAlaq — « Le Grumeau », ou « Le Caillot de sang » — est une sourate mecquoise précoce dont les cinq premiers versets sont, selon la tradition unanime, les <strong>premiers versets du Coran à avoir été révélés</strong>. La scène est célèbre. Le Prophète, alors âgé d'une quarantaine d'années, s'était retiré pour méditer dans la grotte de Ḥirāʾ, au-dessus de la Mekke. Une nuit du Ramadan de l'an 610, l'archange Gabriel lui apparut et lui dit : « Lis ! » Le Prophète, qui n'avait jamais lu, répondit : « Je ne suis pas un lecteur. » L'ange le pressa contre sa poitrine, puis le relâcha, et redit : « Lis ! » Cela se répéta trois fois. Puis Gabriel récita les premiers mots : « Lis, au Nom de ton Seigneur qui a créé... » Le Prophète revint chez Khadīja en tremblant, demandant qu'on le couvre. C'est elle qui le rassura, et son cousin Waraqa, vieux chrétien, qui reconnut en lui le porteur d'une révélation prophétique. Les versets 6 à 19 furent révélés plus tard, lorsque Abū Jahl, chef des Quraysh, tenta d'empêcher le Prophète de prier près de la Kaʿba. La sourate, en dix-neuf versets, contient à la fois l'ordre originel — <em>iqraʾ</em> (اقْرَأْ), « lis » — et le drame ultérieur du refus.",
+  "themes": ["première révélation", "lecture", "création", "savoir", "calame", "rébellion", "prosternation"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ",
+      "tr": "iqraʾ bi-smi rabbika lladhī khalaq",
+      "trad": "Lis, au Nom de ton Seigneur qui a créé,",
+      "themes": ["lecture", "création"],
+      "commentaire": "Le premier mot du Coran révélé est un impératif : <em>iqraʾ</em> (اقْرَأْ), « lis », « récite », « proclame ». Le verbe vient de la racine <em>q-r-ʾ</em>, qui donnera aussi le mot <em>Qurʾān</em> — « la Récitation ». La lecture s'ouvre, et elle s'ouvre « au Nom de ton Seigneur » : non d'un Dieu lointain, mais du <em>Rabb</em> personnel — Celui qui élève, nourrit, fait croître. Premier acte de la révélation : nommer le Créateur avant de nommer rien d'autre.",
+      "mots": [
+        { "ar": "اقْرَأْ", "tr": "iqraʾ", "racine": "ق ر أ", "sens": "lis, récite", "def": "qaraʾa : lire à haute voix, réciter, proclamer ; à l'impératif. Même racine que Qurʾān.", "gram": "verbe impératif, 2ᵉ pers. masc. sing." },
+        { "ar": "بِاسْمِ", "tr": "bi-smi", "racine": "س م و", "sens": "au Nom de", "def": "préposition bi- + ism (nom) au génitif construit : « au Nom de ».", "gram": "préposition + nom, génitif construit" },
+        { "ar": "رَبِّكَ", "tr": "rabbika", "racine": "ر ب ب", "sens": "ton Seigneur", "def": "rabb + pronom suffixe : ton Seigneur — Celui qui élève, nourrit, fait croître.", "gram": "nom + pronom suffixe, génitif" },
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "qui", "def": "pronom relatif masculin singulier.", "gram": "pronom relatif" },
+        { "ar": "خَلَقَ", "tr": "khalaq", "racine": "خ ل ق", "sens": "a créé", "def": "khalaqa : créer, façonner, donner l'existence ; à l'accompli.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ",
+      "tr": "khalaqa l-insāna min ʿalaq",
+      "trad": "a créé l'homme à partir d'un grumeau.",
+      "themes": ["création de l'homme", "gestation"],
+      "commentaire": "<em>ʿalaq</em> (عَلَق) — qui donne son nom à la sourate — désigne le caillot de sang, ce qui est suspendu, accroché. C'est la troisième étape de la gestation dans le récit coranique : poussière, goutte, caillot, morceau de chair, os, chair (cf. 22, 5 ; 23, 14). La sourate dit ainsi, dans ses premiers mots, ce qui sera son enjeu : que l'homme, sorti d'un caillot, ait été élevé jusqu'à recevoir le Livre — voilà la disproportion qui doit le conduire à l'humilité.",
+      "mots": [
+        { "ar": "خَلَقَ", "tr": "khalaq", "racine": "خ ل ق", "sens": "a créé", "def": "khalaqa : créer, façonner.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "الْإِنسَانَ", "tr": "al-insān", "racine": "أ ن س", "sens": "l'homme", "def": "insān : l'être humain.", "gram": "nom, accusatif défini" },
+        { "ar": "مِنْ", "tr": "min", "racine": "—", "sens": "à partir de", "def": "préposition : de, à partir de.", "gram": "préposition" },
+        { "ar": "عَلَقٍ", "tr": "ʿalaq", "racine": "ع ل ق", "sens": "caillot, grumeau", "def": "ʿalaq : ce qui est suspendu, accroché ; le caillot de sang, troisième étape de la gestation embryonnaire selon le Coran.", "gram": "nom, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "اقْرَأْ وَرَبُّكَ الْأَكْرَمُ",
+      "tr": "iqraʾ wa-rabbuka l-akram",
+      "trad": "Lis ! Car ton Seigneur est le Généreux par excellence,",
+      "themes": ["noblesse divine", "générosité"],
+      "commentaire": "L'ordre est repris — <em>iqraʾ</em> — comme on insiste auprès de quelqu'un qui hésite. Le motif change : non plus « ton Seigneur qui a créé », mais « ton Seigneur est <em>al-akram</em> (الأَكْرَم) — le plus noble, le plus généreux ». <em>Karam</em> (كَرَم) désignait dans l'Arabie pré-islamique la plus haute des vertus humaines : noblesse de souche, magnanimité, générosité sans mesure. Le Coran applique le mot à Dieu — chose inédite dans la poésie pré-islamique. Il en fait, à travers la création et la révélation, le Maître de la générosité.",
+      "mots": [
+        { "ar": "اقْرَأْ", "tr": "iqraʾ", "racine": "ق ر أ", "sens": "lis", "def": "voir verset 1.", "gram": "verbe impératif, 2ᵉ pers. masc. sing." },
+        { "ar": "وَرَبُّكَ", "tr": "wa-rabbuka", "racine": "ر ب ب", "sens": "et ton Seigneur", "def": "conjonction + rabb + pronom suffixe.", "gram": "conjonction + nom + pronom suffixe, nominatif" },
+        { "ar": "الْأَكْرَمُ", "tr": "al-akram", "racine": "ك ر م", "sens": "le plus noble, le Généreux par excellence", "def": "akram : superlatif de karīm ; le plus noble, le plus généreux. Karam désigne en arabe la noblesse de cœur et la générosité sans mesure.", "gram": "nom adjectival, nominatif défini" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "الَّذِي عَلَّمَ بِالْقَلَمِ",
+      "tr": "alladhī ʿallama bi-l-qalam",
+      "trad": "Celui qui a enseigné au moyen du calame,",
+      "themes": ["calame", "écriture", "savoir"],
+      "commentaire": "<em>al-qalam</em> (القَلَم) : le calame, le roseau taillé qui servait à écrire. Le verset dit l'invention même de l'écriture comme don divin. Les commentateurs distinguent trois calames : celui du <em>Logos</em> ou Intellect, dont Dieu commanda qu'il écrivît tout ce qui serait jusqu'au Jour de la Résurrection ; ceux des anges qui consignent les actes des hommes ; et ceux dont les hommes se servent pour écrire. L'enseignement « par le calame » est donc à la fois cosmique et terrestre — c'est ce qui rend possible la transmission du savoir au-delà d'une seule vie.",
+      "mots": [
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "Celui qui", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "عَلَّمَ", "tr": "ʿallama", "racine": "ع ل م", "sens": "a enseigné", "def": "ʿallama : forme intensive de ʿalima (savoir) ; enseigner, donner à savoir.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "بِالْقَلَمِ", "tr": "bi-l-qalam", "racine": "ق ل م", "sens": "par le calame", "def": "qalam : le calame, le roseau taillé pour écrire ; symbole de l'écriture comme don.", "gram": "préposition + nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ",
+      "tr": "ʿallama l-insāna mā lam yaʿlam",
+      "trad": "a enseigné à l'homme ce qu'il ne savait pas.",
+      "themes": ["savoir", "ignorance vaincue"],
+      "commentaire": "Le verset boucle l'ouverture : Dieu a créé l'homme à partir d'un caillot (v. 2) ; Il lui enseigne ce qu'il ne savait pas. C'est par le savoir que la créature minuscule devient noble. Adam, dans la tradition coranique, a appris « les noms de toutes choses » (2, 31), et c'est en cela qu'il a été préféré aux anges. L'homme est donc né pour savoir — et le savoir est don, non conquête. Selon certains, ces cinq premiers versets — la totalité de la première révélation — sont aussi un programme : Dieu crée, Dieu enseigne, l'homme reçoit.",
+      "mots": [
+        { "ar": "عَلَّمَ", "tr": "ʿallama", "racine": "ع ل م", "sens": "a enseigné", "def": "voir verset 4.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "الْإِنسَانَ", "tr": "al-insān", "racine": "أ ن س", "sens": "l'homme", "def": "insān : l'homme.", "gram": "nom, accusatif défini" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce que", "def": "pronom relatif neutre.", "gram": "pronom relatif" },
+        { "ar": "لَمْ", "tr": "lam", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
+        { "ar": "يَعْلَمْ", "tr": "yaʿlam", "racine": "ع ل م", "sens": "il savait", "def": "ʿalima : savoir ; à l'inaccompli apocopé après lam.", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "كَلَّا إِنَّ الْإِنسَانَ لَيَطْغَىٰ",
+      "tr": "kallā inna l-insāna la-yaṭghā",
+      "trad": "Or, voici que l'homme se rebelle",
+      "themes": ["rébellion", "ingratitude"],
+      "commentaire": "À partir d'ici, la sourate change de souffle : les versets 6 à 19 ont été révélés des années plus tard, en réponse à <em>Abū Jahl</em>, chef hostile au Prophète. <em>kallā</em> (كَلَّا) : « non ! » — particule de rupture, qui dément ce qu'on pourrait croire au vu des bienfaits énumérés. Et la pointe : <em>yaṭghā</em> (يَطْغَىٰ), « il dépasse la mesure », « il déborde » — la racine <em>ṭ-gh-y</em> évoque l'eau qui sort de son lit, l'animal qui rue, l'orgueil qui ne tient plus en lui. L'homme, ayant tant reçu, ne devient pas reconnaissant ; il devient rebelle.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation forte.", "gram": "particule" },
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "en vérité", "def": "particule de mise en relief.", "gram": "particule" },
+        { "ar": "الْإِنسَانَ", "tr": "al-insān", "racine": "أ ن س", "sens": "l'homme", "def": "insān.", "gram": "nom, accusatif défini" },
+        { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
+        { "ar": "يَطْغَىٰ", "tr": "yaṭghā", "racine": "ط غ ي", "sens": "il déborde, se rebelle", "def": "ṭaghā : déborder, dépasser la mesure ; se révolter contre l'ordre.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "أَن رَّآهُ اسْتَغْنَىٰ",
+      "tr": "an raʾāhu staghnā",
+      "trad": "dès qu'il se voit bien pourvu.",
+      "themes": ["illusion de suffisance"],
+      "commentaire": "<em>istaghnā</em> (اسْتَغْنَىٰ) : se croire « riche en soi », n'avoir plus besoin. Le mot vient de <em>ghinā</em> (غِنَى), la suffisance, l'opulence. La racine spirituelle de la rébellion est nommée : c'est l'illusion d'autarcie. L'homme qui se voit « se suffire à lui-même » oublie le caillot, oublie le calame, oublie le Donateur — c'est de cette illusion que naît tout péché. Le Coran le redira ailleurs et la sourate 114 le rejoindra.",
+      "mots": [
+        { "ar": "أَن", "tr": "an", "racine": "—", "sens": "de ce que, dès que", "def": "particule de subordination : que, de ce que.", "gram": "particule" },
+        { "ar": "رَّآهُ", "tr": "raʾāhu", "racine": "ر أ ي", "sens": "il s'est vu", "def": "raʾā : voir ; à l'accompli + pronom suffixe (lui-même).", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "اسْتَغْنَىٰ", "tr": "staghnā", "racine": "غ ن ي", "sens": "se suffire à soi-même", "def": "istaghnā : se passer de, se croire indépendant ; à l'accompli. Racine gh-n-y : la richesse, la suffisance.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "إِنَّ إِلَىٰ رَبِّكَ الرُّجْعَىٰ",
+      "tr": "inna ilā rabbika r-rujʿā",
+      "trad": "Certes, c'est vers ton Seigneur que se fait le retour.",
+      "themes": ["retour à Dieu"],
+      "commentaire": "<em>al-rujʿā</em> (الرُّجْعَىٰ) : le retour. Une seule phrase pour rappeler la grande loi du Coran : « Certes, nous sommes à Dieu, et vers Lui nous retournons » (2, 156). Quoi que l'homme fasse de sa suffisance illusoire, il ne reste pas où il croit s'établir. Tout va vers Lui.",
+      "mots": [
+        { "ar": "إِنَّ", "tr": "inna", "racine": "—", "sens": "certes", "def": "particule de mise en relief.", "gram": "particule" },
+        { "ar": "إِلَىٰ", "tr": "ilā", "racine": "—", "sens": "vers", "def": "préposition : vers, jusqu'à.", "gram": "préposition" },
+        { "ar": "رَبِّكَ", "tr": "rabbika", "racine": "ر ب ب", "sens": "ton Seigneur", "def": "rabb + pronom suffixe.", "gram": "nom + pronom suffixe, génitif" },
+        { "ar": "الرُّجْعَىٰ", "tr": "ar-rujʿā", "racine": "ر ج ع", "sens": "le retour", "def": "rujʿā : le retour, le fait de revenir ; nom verbal de rajaʿa.", "gram": "nom, nominatif défini" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "أَرَأَيْتَ الَّذِي يَنْهَىٰ",
+      "tr": "a-raʾayta lladhī yanhā",
+      "trad": "As-tu vu celui qui empêchait",
+      "themes": ["interdiction", "obstruction à la prière"],
+      "commentaire": "Le ton se fait plus précis. <em>a-raʾayta</em> (أَرَأَيْتَ), « as-tu vu ? », appelle l'attention sur un cas particulier. La tradition l'identifie sans ambiguïté : Abū Jahl, qui empêchait le Prophète de prier près de la Kaʿba.",
+      "mots": [
+        { "ar": "أَرَأَيْتَ", "tr": "a-raʾayta", "racine": "ر أ ي", "sens": "as-tu vu ?", "def": "particule interrogative + raʾā à l'accompli.", "gram": "particule + verbe accompli, 2ᵉ pers. masc. sing." },
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "—", "sens": "celui qui", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "يَنْهَىٰ", "tr": "yanhā", "racine": "ن ه ي", "sens": "il empêche, interdit", "def": "nahā : interdire, défendre, empêcher de faire.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "عَبْدًا إِذَا صَلَّىٰ",
+      "tr": "ʿabdan idhā ṣallā",
+      "trad": "un serviteur [de Dieu] d'accomplir sa prière ?",
+      "themes": ["serviteur", "prière"],
+      "commentaire": "<em>ʿabd</em> (عَبْد) : serviteur, adorateur. Le mot, indéfini, désigne ici le Prophète priant — mais aussi, par sa généralité, tout croyant que l'on empêcherait de prier. Empêcher la prière, dans le Coran, est l'un des plus graves actes du déni.",
+      "mots": [
+        { "ar": "عَبْدًا", "tr": "ʿabdan", "racine": "ع ب د", "sens": "un serviteur", "def": "ʿabd : serviteur, adorateur ; un humain en posture d'adoration devant Dieu.", "gram": "nom, accusatif indéfini" },
+        { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle.", "gram": "particule" },
+        { "ar": "صَلَّىٰ", "tr": "ṣallā", "racine": "ص ل و", "sens": "il prie", "def": "ṣallā : accomplir la prière rituelle.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "أَرَأَيْتَ إِن كَانَ عَلَى الْهُدَىٰ",
+      "tr": "a-raʾayta in kāna ʿalā l-hudā",
+      "trad": "As-tu vu s'il se trouvait dans la bonne voie",
+      "themes": ["guidance", "interrogation"],
+      "commentaire": "Le verset retourne la question contre celui qui interdit : « As-tu vu si, par hasard, celui que tu empêches était dans la guidance ? » <em>al-hudā</em> (الهُدَى) : la guidance, le droit chemin. Le doute lui-même devrait suffire à arrêter le geste.",
+      "mots": [
+        { "ar": "أَرَأَيْتَ", "tr": "a-raʾayta", "racine": "ر أ ي", "sens": "as-tu vu ?", "def": "voir verset 9.", "gram": "particule + verbe accompli, 2ᵉ pers. masc. sing." },
+        { "ar": "إِن", "tr": "in", "racine": "—", "sens": "si", "def": "particule conditionnelle : si.", "gram": "particule" },
+        { "ar": "كَانَ", "tr": "kāna", "racine": "ك و ن", "sens": "il était", "def": "kāna : être.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "عَلَى", "tr": "ʿalā", "racine": "—", "sens": "sur, dans", "def": "préposition.", "gram": "préposition" },
+        { "ar": "الْهُدَىٰ", "tr": "al-hudā", "racine": "ه د ي", "sens": "la guidance", "def": "hudā : la direction droite, la guidance ; nom verbal de hadā (guider).", "gram": "nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "أَوْ أَمَرَ بِالتَّقْوَىٰ",
+      "tr": "aw amara bi-t-taqwā",
+      "trad": "et s'il ordonnait la piété ?",
+      "themes": ["piété", "taqwā"],
+      "commentaire": "<em>al-taqwā</em> (التَّقْوَى) : la piété, la conscience de Dieu, la crainte révérentielle ; vient du verbe <em>waqā</em> (se prémunir, se garder). Le mot est central dans le Coran — il désigne moins une émotion qu'une vigilance du cœur envers ce qui est dû à Dieu. Le verset prolonge l'ironie : « et si, en plus, il ordonnait la piété ? » L'opposant ne s'est-il pas placé dans une position intenable ?",
+      "mots": [
+        { "ar": "أَوْ", "tr": "aw", "racine": "—", "sens": "ou", "def": "conjonction disjonctive : ou.", "gram": "conjonction" },
+        { "ar": "أَمَرَ", "tr": "amara", "racine": "أ م ر", "sens": "il ordonnait", "def": "amara : ordonner, commander.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "بِالتَّقْوَىٰ", "tr": "bi-t-taqwā", "racine": "و ق ي", "sens": "la piété", "def": "taqwā : la piété, la conscience de Dieu, la vigilance respectueuse ; vient de waqā, se prémunir.", "gram": "préposition + nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "أَرَأَيْتَ إِن كَذَّبَ وَتَوَلَّىٰ",
+      "tr": "a-raʾayta in kadhdhaba wa-tawallā",
+      "trad": "As-tu vu s'il criait au mensonge et se détournait ?",
+      "themes": ["dénégation", "fuite"],
+      "commentaire": "<em>kadhdhaba</em> (كَذَّبَ) : tenir pour mensonge, démentir. <em>tawallā</em> (تَوَلَّى) : se détourner, tourner le dos. Les deux verbes désignent l'attitude type du dénégateur dans le Coran : ne pas se contenter de ne pas croire, mais activement traiter de mensonge et fuir. Le verset 14 viendra trancher.",
+      "mots": [
+        { "ar": "أَرَأَيْتَ", "tr": "a-raʾayta", "racine": "ر أ ي", "sens": "as-tu vu ?", "def": "voir verset 9.", "gram": "particule + verbe accompli" },
+        { "ar": "إِن", "tr": "in", "racine": "—", "sens": "si", "def": "particule conditionnelle.", "gram": "particule" },
+        { "ar": "كَذَّبَ", "tr": "kadhdhaba", "racine": "ك ذ ب", "sens": "il a démenti", "def": "kadhdhaba : forme intensive ; traiter de mensonge, tenir pour menteur.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
+        { "ar": "وَتَوَلَّىٰ", "tr": "wa-tawallā", "racine": "و ل ي", "sens": "et s'est détourné", "def": "tawallā : se détourner, tourner le dos.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "أَلَمْ يَعْلَم بِأَنَّ اللَّهَ يَرَىٰ",
+      "tr": "a-lam yaʿlam bi-anna Llāha yarā",
+      "trad": "Ne sait-il pas que Dieu voit [tout] ?",
+      "themes": ["omniscience divine", "vision"],
+      "commentaire": "Question lancée comme un éclair. <em>Allāhu yarā</em> (اللَّهَ يَرَىٰ) : « Dieu voit ». L'opposant agit comme si nul ne voyait. Or rien n'échappe au regard divin — ni le geste public d'empêcher la prière, ni l'intention cachée qui l'anime. Le verset suspend la sourate avant la sentence du verset 15.",
+      "mots": [
+        { "ar": "أَلَمْ", "tr": "a-lam", "racine": "—", "sens": "est-ce qu'il ne... pas", "def": "particule interrogative + particule de négation.", "gram": "particules" },
+        { "ar": "يَعْلَم", "tr": "yaʿlam", "racine": "ع ل م", "sens": "il sait", "def": "ʿalima : savoir.", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
+        { "ar": "بِأَنَّ", "tr": "bi-anna", "racine": "—", "sens": "que", "def": "préposition + conjonction : que.", "gram": "préposition + conjonction" },
+        { "ar": "اللَّهَ", "tr": "Allāha", "racine": "أ ل ه", "sens": "Dieu", "def": "Allāh à l'accusatif.", "gram": "nom, accusatif" },
+        { "ar": "يَرَىٰ", "tr": "yarā", "racine": "ر أ ي", "sens": "voit", "def": "raʾā : voir.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًا بِالنَّاصِيَةِ",
+      "tr": "kallā la-in lam yantahi la-nasfaʿan bi-n-nāṣiya",
+      "trad": "Mais non ! S'il ne cesse pas, Nous le traînerons par le toupet,",
+      "themes": ["avertissement", "saisie"],
+      "commentaire": "<em>al-nāṣiya</em> (النَّاصِيَة) : le toupet, la mèche de cheveux qui pend sur le front. Saisir quelqu'un par le toupet, dans l'Arabie ancienne, c'était le prendre dans l'humiliation totale — un esclave qu'on traîne. Le Coran ailleurs : « Toute créature, Dieu la tient par son toupet » (11, 56). Le verset prévient : si Abū Jahl ne cesse pas, c'est ainsi qu'il sera traité au Jour du jugement.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation.", "gram": "particule" },
+        { "ar": "لَئِن", "tr": "la-in", "racine": "—", "sens": "assurément si", "def": "particule d'affirmation + particule conditionnelle.", "gram": "particules" },
+        { "ar": "لَّمْ", "tr": "lam", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
+        { "ar": "يَنتَهِ", "tr": "yantahi", "racine": "ن ه ي", "sens": "il ne cesse", "def": "intahā : cesser, s'arrêter ; à l'inaccompli apocopé.", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
+        { "ar": "لَنَسْفَعًا", "tr": "la-nasfaʿan", "racine": "س ف ع", "sens": "Nous le saisirons brutalement", "def": "safaʿa : saisir et tirer avec violence ; énergique à la 1ʳᵉ pers. plur.", "gram": "verbe inaccompli énergique, 1ʳᵉ pers. plur." },
+        { "ar": "بِالنَّاصِيَةِ", "tr": "bi-n-nāṣiya", "racine": "ن ص و", "sens": "par le toupet", "def": "nāṣiya : la mèche de cheveux sur le front ; saisir par le toupet, geste d'humiliation totale.", "gram": "préposition + nom, génitif défini" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ",
+      "tr": "nāṣiyatin kādhibatin khāṭiʾa",
+      "trad": "un toupet menteur et pécheur !",
+      "themes": ["mensonge", "péché"],
+      "commentaire": "Le verset précise : pas n'importe quel toupet — un toupet « menteur » et « pécheur ». Comme si l'organe portait la culpabilité de son propriétaire. Trait stylistique remarquable du Coran : la partie pour le tout, et la partie comme accusée.",
+      "mots": [
+        { "ar": "نَاصِيَةٍ", "tr": "nāṣiya", "racine": "ن ص و", "sens": "un toupet", "def": "nāṣiya : voir verset 15.", "gram": "nom, génitif indéfini" },
+        { "ar": "كَاذِبَةٍ", "tr": "kādhiba", "racine": "ك ذ ب", "sens": "menteur", "def": "kādhib : qui ment ; participe actif de kadhaba.", "gram": "participe actif, génitif indéfini" },
+        { "ar": "خَاطِئَةٍ", "tr": "khāṭiʾa", "racine": "خ ط ء", "sens": "pécheur", "def": "khāṭiʾ : qui se trompe, qui pèche ; participe actif de khaṭiʾa.", "gram": "participe actif, génitif indéfini" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "فَلْيَدْعُ نَادِيَهُ",
+      "tr": "fa-l-yadʿu nādiyah",
+      "trad": "Qu'il appelle alors ses partisans !",
+      "themes": ["défi", "groupe"],
+      "commentaire": "<em>nādī</em> (نَادِي) : l'assemblée, le club, le groupe de ses pairs. La tradition rapporte qu'Abū Jahl s'était vanté devant le Prophète : « Tu sais qu'il n'y a personne à la Mekke qui ait plus d'hommes que moi. » Le verset réplique avec ironie : qu'il les appelle, donc, ses « hommes ».",
+      "mots": [
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "لْ", "tr": "l-", "racine": "—", "sens": "qu'il", "def": "particule d'injonction (lām al-amr).", "gram": "particule" },
+        { "ar": "يَدْعُ", "tr": "yadʿu", "racine": "د ع و", "sens": "qu'il appelle", "def": "daʿā : appeler, invoquer.", "gram": "verbe inaccompli apocopé, 3ᵉ pers. masc. sing." },
+        { "ar": "نَادِيَهُ", "tr": "nādiyah", "racine": "ن د و", "sens": "son club, ses partisans", "def": "nādī : assemblée, club, groupe ; les gens qu'on appelle pour témoigner ou soutenir.", "gram": "nom + pronom suffixe, accusatif" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "سَنَدْعُ الزَّبَانِيَةَ",
+      "tr": "sa-nadʿu z-zabāniya",
+      "trad": "Nous appellerons les gardiens !",
+      "themes": ["gardiens du feu"],
+      "commentaire": "<em>al-zabāniya</em> (الزَّبَانِيَة) : les gardiens du Feu — les anges chargés de l'enfer. À l'appel de ses partisans humains répond l'appel des gardiens célestes. La disproportion est nette : on n'appelle pas les mêmes forces. Selon Ibn ʿAbbās, « par Dieu, s'il avait appelé ses partisans, Dieu aurait envoyé contre lui les gardiens du Feu. »",
+      "mots": [
+        { "ar": "سَ", "tr": "sa-", "racine": "—", "sens": "Nous (futur)", "def": "particule de futur.", "gram": "particule" },
+        { "ar": "نَدْعُ", "tr": "nadʿu", "racine": "د ع و", "sens": "Nous appellerons", "def": "daʿā : appeler ; ici à l'inaccompli apocopé 1ʳᵉ pers. plur.", "gram": "verbe inaccompli apocopé, 1ʳᵉ pers. plur." },
+        { "ar": "الزَّبَانِيَةَ", "tr": "az-zabāniya", "racine": "ز ب ن", "sens": "les gardiens du Feu", "def": "zabāniya : les anges gardiens de la Géhenne.", "gram": "nom pluriel, accusatif défini" }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "كَلَّا لَا تُطِعْهُ وَاسْجُدْ وَاقْتَرِب",
+      "tr": "kallā lā tuṭiʿhu wa-sjud wa-qtarib",
+      "trad": "Non ! Ne lui obéis pas, mais prosterne-toi et rapproche-toi [de Dieu] !",
+      "themes": ["prosternation", "proximité"],
+      "commentaire": "La sourate s'achève sur trois impératifs adressés au Prophète — et, à travers lui, à tout croyant : <em>lā tuṭiʿhu</em> (لَا تُطِعْهُ), « ne lui obéis pas » ; <em>usjud</em> (اسْجُدْ), « prosterne-toi » ; <em>wa-qtarib</em> (وَاقْتَرِب), « rapproche-toi ». La réponse à l'obstacle n'est pas l'argumentation : c'est la prosternation. Un hadith dit : « Le plus proche qu'un serviteur puisse être de son Seigneur, c'est lorsqu'il se prosterne. » Ce verset fait partie des quinze versets après la récitation desquels une prosternation est recommandée — geste qui prolonge le sens du texte dans le corps même du lecteur.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation.", "gram": "particule" },
+        { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "ne... pas", "def": "particule de négation impérative.", "gram": "particule" },
+        { "ar": "تُطِعْهُ", "tr": "tuṭiʿhu", "racine": "ط و ع", "sens": "ne lui obéis pas", "def": "aṭāʿa : obéir ; ici à l'impératif apocopé négatif + pronom suffixe.", "gram": "verbe inaccompli apocopé + pronom suffixe, 2ᵉ pers. masc. sing." },
+        { "ar": "وَاسْجُدْ", "tr": "wa-sjud", "racine": "س ج د", "sens": "et prosterne-toi", "def": "sajada : se prosterner, poser le front à terre ; à l'impératif.", "gram": "verbe impératif, 2ᵉ pers. masc. sing." },
+        { "ar": "وَاقْتَرِب", "tr": "wa-qtarib", "racine": "ق ر ب", "sens": "et rapproche-toi", "def": "iqtaraba : se rapprocher, devenir proche ; à l'impératif.", "gram": "verbe impératif, 2ᵉ pers. masc. sing." }
+      ]
+    }
+  ]
+}

@@ -6,23 +6,23 @@
   "revelation": "médinoise",
   "versets_count": 3,
   "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
-  "intro": "Al-Naṣr — « Le Secours », aussi appelée « la sourate de l'Adieu » (<em>al-Tawdīʿ</em>, التَّوْدِيع) — est l'une des dernières sourates révélées, sans doute la dernière à l'être en entier. La tradition la situe à la fin de la vie du Prophète, autour du Pèlerinage de l'Adieu en l'an 10 de l'hégire. Ibn ʿAbbās rapporte qu'en l'entendant, le Prophète comprit que sa mort était proche : quand le secours de Dieu et la victoire viennent, le temps de la mission s'achève, le temps du retour s'ouvre. Trois versets seulement, mais qui disent à la fois la victoire historique de l'islam et la posture intérieure qu'elle demande : non l'orgueil de la réussite, mais la louange et la demande de pardon.",
-  "themes": ["secours divin", "victoire", "pèlerinage de l'adieu", "repentance"],
+  "intro": "Al-Naṣr — « Le Secours », souvent appelée <em>sūrat al-tawdīʿ</em> (سُورَة التَّوْدِيع), la « sourate de l'Adieu » — est l'une des dernières sourates révélées, à la fin de la mission du Prophète. Mais la lecture soufie en fait un texte d'une portée plus haute encore. Qushayrī écrit, à propos du secours et de l'ouverture : « Le secours que Dieu lui accorda, c'est qu'<em>Il l'annihila de son propre soi</em> (<em>afnāhu ʿan nafsihi</em>, أَفْنَاهُ عَنْ نَفْسِه), Il écarta de lui les jugements de l'humanité (<em>aḥkām al-bashariyya</em>), Il le purifia des troubles de l'âme. Quant à l'<em>ouverture</em>, c'est qu'Il l'éleva au lieu de la proximité (<em>maḥall al-dunuww</em>), Il en fit Son élu par les qualités de la nearness, Il le revêtit du vêtement de l'union (<em>libās al-jamʿ</em>), Il le ramena à Lui en l'arrachant à lui-même, et lui dévoila les secrets de la Vérité qui avaient été cachés auparavant. » La sourate raconte ainsi, au-delà de la victoire historique sur la Mekke, la victoire intérieure : celle où le serviteur, dépouillé de son propre soi, est rendu à Dieu — et où la mission de l'extérieur s'accomplit dans l'arrivée totale en Dieu. Tustarī l'avait dit autrement : « Donne secours à ton esprit (<em>rūḥ</em>) contre ton âme inférieure (<em>nafs</em>) — car l'esprit vient de l'Au-delà et y aspire ; l'âme vient du monde et y retombe. »",
+  "themes": ["fanāʾ", "naṣr intérieur", "fatḥ", "rūḥ contre nafs", "adieu"],
   "versets": [
     {
       "n": 1,
       "ar": "إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ",
       "tr": "idhā jāʾa naṣru Llāhi wa-l-fatḥ",
       "trad": "Lorsqu'arrivent le secours de Dieu et la victoire,",
-      "themes": ["secours divin", "ouverture", "victoire"],
-      "commentaire": "<em>naṣr Allāh</em> (نَصْر اللَّه), le secours de Dieu, n'est pas la victoire d'un homme par sa force, mais l'aide divine qui rend l'effort fécond. <em>al-fatḥ</em> (الفَتْح), « l'ouverture », désigne historiquement la conquête de la Mekke en l'an 8 — non une prise par les armes, mais une « ouverture » qui rendit possible le retour des cœurs. Les commentateurs mystiques entendent aussi <em>al-fatḥ</em> comme « l'ouverture des portes de l'arrivée et le dévoilement des lumières de la Beauté et de la Majesté » (al-Baqlī). La victoire, dans le Coran, est d'abord don.",
+      "themes": ["naṣr", "fatḥ", "fanāʾ"],
+      "commentaire": "<em>al-fatḥ</em> (الفَتْح), « l'ouverture », nomme la prise de la Mekke en l'an 8 de l'hégire — non par les armes, mais par ce mot rare en arabe pour la conquête : <em>ouvrir</em>. Mais Qushayrī porte le verset plus loin : « le secours de Dieu » au sens secret, c'est l'effacement (<em>fanāʾ</em>) du serviteur en Lui ; et « l'ouverture », c'est l'élévation au lieu de la proximité, et le dévoilement (<em>kashf</em>) des secrets qui étaient cachés. Lecture vertigineuse : la victoire dont parle la sourate n'est pas seulement celle d'un peuple sur un autre, c'est celle de l'âme tirée hors d'elle-même. <em>Naṣr</em>, le secours, devient le retrait par lequel Dieu écarte les voiles ; <em>fatḥ</em>, l'ouverture, devient l'irruption de la Face, là où il n'y avait que le moi.",
       "mots": [
         { "ar": "إِذَا", "tr": "idhā", "racine": "—", "sens": "lorsque", "def": "particule temporelle : lorsque, quand.", "gram": "particule" },
         { "ar": "جَاءَ", "tr": "jāʾa", "racine": "ج ي ء", "sens": "est venu", "def": "jāʾa : venir, advenir, arriver.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
-        { "ar": "نَصْرُ", "tr": "naṣr", "racine": "ن ص ر", "sens": "le secours", "def": "naṣr : le secours, l'assistance qui rend possible la victoire ; le mot suppose un appui venu d'ailleurs.", "gram": "nom, nominatif construit" },
-        { "ar": "اللَّهِ", "tr": "Allāh", "racine": "أ ل ه", "sens": "de Dieu", "def": "Allāh : Dieu ; ici au génitif : « le secours de Dieu ».", "gram": "nom, génitif" },
-        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction de coordination : et.", "gram": "conjonction" },
-        { "ar": "الْفَتْحُ", "tr": "al-fatḥ", "racine": "ف ت ح", "sens": "l'ouverture, la victoire", "def": "fatḥ : ouverture, percée ; désigne ici la conquête (l'ouverture de la Mekke), mais aussi toute « ouverture » spirituelle. Racine f-t-ḥ : ouvrir.", "gram": "nom, nominatif défini" }
+        { "ar": "نَصْرُ", "tr": "naṣr", "racine": "ن ص ر", "sens": "le secours", "def": "naṣr : le secours, l'assistance qui rend possible la victoire ; en lecture soufie, l'effacement du moi par Dieu Lui-même.", "gram": "nom, nominatif construit" },
+        { "ar": "اللَّهِ", "tr": "Allāh", "racine": "أ ل ه", "sens": "de Dieu", "def": "Allāh : Dieu ; ici au génitif.", "gram": "nom, génitif" },
+        { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
+        { "ar": "الْفَتْحُ", "tr": "al-fatḥ", "racine": "ف ت ح", "sens": "l'ouverture, la victoire", "def": "fatḥ : ouverture, percée ; ici la conquête de la Mekke (l'ouverture), mais aussi, en sens spirituel, l'irruption de la Vérité dans le cœur.", "gram": "nom, nominatif défini" }
       ]
     },
     {
@@ -30,17 +30,17 @@
       "ar": "وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا",
       "tr": "wa-raʾayta n-nāsa yadkhulūna fī dīni Llāhi afwājā",
       "trad": "et que tu vois les hommes entrer en foule dans la Religion de Dieu,",
-      "themes": ["expansion de l'islam", "loi spirituelle"],
-      "commentaire": "<em>afwājan</em> (أَفْوَاجًا) — en troupes, en vagues. Avant l'ouverture de la Mekke, les gens entraient en islam un à un, ou en petits groupes ; après, les tribus venaient en masse. Le verset décrit donc un moment historique précis, mais aussi une loi plus large : il vient des heures où le cœur du monde s'ouvre, et où ce qui paraissait difficile devient évident.",
+      "themes": ["mouvement collectif", "loi intérieure"],
+      "commentaire": "Au sens historique, <em>afwājan</em> (أَفْوَاجًا) — en foules, en troupes successives — décrit l'arrivée massive des tribus après l'ouverture de la Mekke. En lecture soufie, Tustarī donne au verset un sens d'application personnelle : « Donne secours à ton esprit (<em>rūḥ</em>, رُوح) contre ton âme inférieure (<em>nafs</em>, نَفْس), en te préparant à l'au-delà — car l'esprit vient de là-bas et y aspire. L'âme désire le monde parce qu'elle vient de là ; l'esprit désire l'au-delà parce qu'il vient de là. Prends l'ascendant sur l'âme, ouvre-lui la porte de l'au-delà par la glorification (<em>tasbīḥ</em>) et par la demande de pardon. » Le serviteur lui aussi a son ouverture à recevoir, son entrée à voir : celle où ses propres facultés, une à une, viennent en foule s'incliner devant la Présence.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
         { "ar": "رَأَيْتَ", "tr": "raʾayta", "racine": "ر أ ي", "sens": "tu vois", "def": "raʾā : voir ; ici à l'accompli avec une valeur de présent dans la conditionnelle.", "gram": "verbe accompli, 2ᵉ pers. masc. sing." },
         { "ar": "النَّاسَ", "tr": "an-nās", "racine": "أ ن س", "sens": "les hommes", "def": "an-nās : les hommes, les gens, l'humanité.", "gram": "nom, accusatif défini" },
-        { "ar": "يَدْخُلُونَ", "tr": "yadkhulūn", "racine": "د خ ل", "sens": "ils entrent", "def": "dakhala : entrer ; ici à l'inaccompli pluriel : ils entrent.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." },
+        { "ar": "يَدْخُلُونَ", "tr": "yadkhulūn", "racine": "د خ ل", "sens": "ils entrent", "def": "dakhala : entrer ; à l'inaccompli pluriel.", "gram": "verbe inaccompli, 3ᵉ pers. masc. plur." },
         { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "def": "préposition : dans, à l'intérieur de.", "gram": "préposition" },
-        { "ar": "دِينِ", "tr": "dīn", "racine": "د ي ن", "sens": "la religion de", "def": "dīn : la religion, la voie, l'ordre dû ; désigne à la fois la pratique et la dette envers Dieu.", "gram": "nom, génitif construit" },
-        { "ar": "اللَّهِ", "tr": "Allāh", "racine": "أ ل ه", "sens": "de Dieu", "def": "Allāh : Dieu ; ici au génitif.", "gram": "nom, génitif" },
-        { "ar": "أَفْوَاجًا", "tr": "afwājan", "racine": "ف و ج", "sens": "en foules", "def": "fawj : une troupe, un groupe ; au pluriel afwāj, « en troupes successives », « en vagues ».", "gram": "nom pluriel, accusatif indéfini" }
+        { "ar": "دِينِ", "tr": "dīn", "racine": "د ي ن", "sens": "la religion de", "def": "dīn : la religion, la voie, l'ordre dû.", "gram": "nom, génitif construit" },
+        { "ar": "اللَّهِ", "tr": "Allāh", "racine": "أ ل ه", "sens": "de Dieu", "def": "Allāh : Dieu.", "gram": "nom, génitif" },
+        { "ar": "أَفْوَاجًا", "tr": "afwājan", "racine": "ف و ج", "sens": "en foules", "def": "fawj : une troupe, un groupe ; au pluriel afwāj, « en vagues successives ».", "gram": "nom pluriel, accusatif indéfini" }
       ]
     },
     {
@@ -48,18 +48,18 @@
       "ar": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا",
       "tr": "fa-sabbiḥ bi-ḥamdi rabbika wa-staghfirh, innahu kāna tawwābā",
       "trad": "célèbre les louanges de ton Seigneur et demande-Lui pardon. Lui, en vérité, accueille tout repentir.",
-      "themes": ["louange", "pardon", "repentance"],
-      "commentaire": "À l'heure du succès, l'ordre n'est pas de se réjouir, mais de glorifier : <em>sabbiḥ</em> (سَبِّحْ), « proclamer la transcendance », souligne que Dieu est au-delà de tout ce qu'on peut Lui attribuer. Et de demander pardon — <em>istaghfir</em> (اسْتَغْفِرْ) — alors même qu'aucune faute apparente n'est commise : le pardon devient une posture, la reconnaissance que rien n'est jamais à la hauteur du Don reçu. <em>Tawwāb</em> (تَوَّاب) dit Celui qui revient sans cesse vers l'homme ; en arabe, le même mot, <em>tawba</em> (تَوْبَة), désigne le repentir de l'homme et le retour de Dieu — deux mouvements qui se répondent.",
+      "themes": ["louange", "pardon", "tawba réciproque", "annonce du retour"],
+      "commentaire": "À l'instant du succès, l'ordre n'est pas de se réjouir, mais de glorifier (<em>sabbiḥ</em>, سَبِّحْ) et de demander pardon (<em>staghfir</em>, اسْتَغْفِرْ). Tustarī : « Il accepte le repentir, encore et encore, chaque fois que le serviteur revient à Lui. » <em>Tawwāb</em> (تَوَّاب) est l'un des Noms les plus tendres — Celui-qui-revient-sans-cesse. Et le mot arabe <em>tawba</em> nomme à la fois le retour de l'homme vers Dieu et le retour de Dieu vers l'homme — la même racine pour les deux mouvements. Selon une parole d'Ibn ʿAbbās, en entendant cette sourate, Abū Bakr pleura : « Ô Messager de Dieu, on t'annonce ta mort. » Et le Prophète lui dit : « Tu as dit vrai. » L'ouverture historique de la Mekke est aussi, en secret, l'annonce du Retour final du Prophète vers son Seigneur — et c'est pour cela que la sourate finit, sans s'attarder, sur la louange, le pardon et le grand mot <em>tawwāb</em>.",
       "mots": [
-        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors, donc", "def": "particule de liaison : alors, donc ; introduit la conséquence.", "gram": "particule de liaison" },
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors, donc", "def": "particule de liaison : alors, donc ; introduit la conséquence.", "gram": "particule" },
         { "ar": "سَبِّحْ", "tr": "sabbiḥ", "racine": "س ب ح", "sens": "glorifie, proclame la transcendance", "def": "sabbaḥa : déclarer Dieu pur de toute imperfection, proclamer Sa transcendance ; à l'impératif.", "gram": "verbe impératif, 2ᵉ pers. masc. sing." },
-        { "ar": "بِحَمْدِ", "tr": "bi-ḥamd", "racine": "ح م د", "sens": "par la louange de", "def": "ḥamd : la louange ; préposition bi- + nom au génitif : « avec la louange de », « en louange à ».", "gram": "préposition + nom, génitif construit" },
-        { "ar": "رَبِّكَ", "tr": "rabbika", "racine": "ر ب ب", "sens": "ton Seigneur", "def": "rabb : le Seigneur ; avec le pronom suffixe 2ᵉ pers. masc. sing. : ton Seigneur.", "gram": "nom + pronom suffixe, génitif" },
+        { "ar": "بِحَمْدِ", "tr": "bi-ḥamd", "racine": "ح م د", "sens": "par la louange de", "def": "ḥamd : la louange.", "gram": "préposition + nom, génitif construit" },
+        { "ar": "رَبِّكَ", "tr": "rabbika", "racine": "ر ب ب", "sens": "ton Seigneur", "def": "rabb + pronom suffixe.", "gram": "nom + pronom suffixe, génitif" },
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
-        { "ar": "اسْتَغْفِرْهُ", "tr": "staghfirh", "racine": "غ ف ر", "sens": "demande-Lui pardon", "def": "istaghfara : demander pardon, implorer le voile sur les fautes ; à l'impératif avec pronom suffixe : « demande-Lui pardon ».", "gram": "verbe impératif + pronom suffixe, 2ᵉ pers. masc. sing." },
-        { "ar": "إِنَّهُ", "tr": "innahu", "racine": "—", "sens": "en vérité, Lui", "def": "particule de mise en relief inna + pronom suffixe 3ᵉ pers. masc. sing. : « certes Il », « en vérité, Lui ».", "gram": "particule + pronom" },
+        { "ar": "اسْتَغْفِرْهُ", "tr": "staghfirh", "racine": "غ ف ر", "sens": "demande-Lui pardon", "def": "istaghfara : demander pardon ; ghafara, c'est voiler — demander que Dieu jette un voile sur ce qui est entre Lui et nous.", "gram": "verbe impératif + pronom suffixe, 2ᵉ pers. masc. sing." },
+        { "ar": "إِنَّهُ", "tr": "innahu", "racine": "—", "sens": "en vérité, Lui", "def": "particule de mise en relief inna + pronom suffixe.", "gram": "particule + pronom" },
         { "ar": "كَانَ", "tr": "kāna", "racine": "ك و ن", "sens": "Il est, Il a toujours été", "def": "kāna : être ; à l'accompli, dit l'état permanent.", "gram": "verbe accompli, 3ᵉ pers. masc. sing." },
-        { "ar": "تَوَّابًا", "tr": "tawwābā", "racine": "ت و ب", "sens": "Celui qui accueille le repentir", "def": "tawwāb : forme intensive de tāʾib, « Celui qui revient sans cesse » ; nom divin : Celui qui accueille le repentir et y retourne. Le même mot, tawba, désigne aussi le repentir de l'homme.", "gram": "nom, accusatif indéfini" }
+        { "ar": "تَوَّابًا", "tr": "tawwābā", "racine": "ت و ب", "sens": "Celui qui revient sans cesse", "def": "tawwāb : forme intensive ; Nom divin — Celui qui accueille le repentir et qui revient vers le serviteur. Le même mot, tawba, désigne aussi le repentir de l'homme : deux mouvements pour une même réalité.", "gram": "nom, accusatif indéfini" }
       ]
     }
   ]

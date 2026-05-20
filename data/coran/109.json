@@ -6,21 +6,21 @@
   "revelation": "mecquoise",
   "versets_count": 6,
   "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
-  "intro": "Al-Kāfirūn — « Les Mécréants » — est l'une des premières sourates mecquoises, révélée peu après <em>al-Māʿūn</em> (sourate 107). Elle prend son nom du mot par lequel le Prophète est ordonné de s'adresser, dans tout le texte, à ceux qui rejettent la foi. La tradition rapporte qu'elle fut révélée en réponse à une proposition des chefs de Quraysh : « Muḥammad, viens, adorons ce que tu adores, et tu adoreras ce que nous adorons ; nous nous mettrons d'accord sur cette affaire. Si ce que tu adores est meilleur, nous en prendrons une part ; et si c'est ce que nous adorons qui est meilleur, tu en prendras une part. » Le Prophète répondit : « Que Dieu me garde d'associer à Lui quoi que ce soit. » Et la sourate fut révélée. Six versets très brefs qui disent, sans ambiguïté, la séparation des cultes. Avec la sourate 112 al-Ikhlāṣ, qui est l'affirmation complète du Vrai, al-Kāfirūn — qui est la dénégation complète du faux — forme les <em>Muqashqishatān</em>, « les deux remèdes ».",
-  "themes": ["tawḥīd", "refus du syncrétisme", "identité de la foi", "séparation"],
+  "intro": "Al-Kāfirūn — « Les Mécréants » — est l'une des plus anciennes sourates mecquoises. Au plan historique, elle répond à une proposition faite au Prophète par les chefs de Quraysh : adorer leurs idoles pendant un mois, et qu'eux adorent son Dieu pendant un an, puis fusionner les religions. Le Prophète refusa, et la sourate fut révélée. Mais Qushayrī, refusant de s'arrêter à l'épisode, donne une lecture qui transforme la sourate de l'extérieur vers le dedans : ce qu'elle refuse, c'est moins l'idolâtrie d'un autre que l'<em>adoration selon le choix propre</em>. La servitude véritable, écrit-il, « c'est l'abandon du choix (<em>ikhtiyār</em>, اخْتِيَار) ; elle se manifeste par la paix sous les renversements du destin, sans qu'on se brise. C'est l'absence, dans le cœur, de toute aversion — par quelque tour que le Maître nous fasse passer. » Ainsi <em>« je n'adore pas ce que vous adorez »</em> n'est plus un refus d'idoles, c'est le refus de mettre en commun la pure adoration du serviteur avec quoi que ce soit qui viendrait de son propre choix. La sourate enseigne, au fond, l'<em>ʿubūdiyya</em> — la servitude pure.",
+  "themes": ["tawḥīd", "ʿubūdiyya", "abandon du choix", "fermeté intérieure"],
   "versets": [
     {
       "n": 1,
       "ar": "قُلْ يَا أَيُّهَا الْكَافِرُونَ",
       "tr": "qul yā ayyuhā l-kāfirūn",
       "trad": "Dis : « O vous, les mécréants !",
-      "themes": ["adresse aux dénégateurs"],
-      "commentaire": "<em>al-kāfirūn</em> (الكَافِرُون) : ceux qui couvrent. La racine <em>k-f-r</em> signifie d'abord « voiler, recouvrir » — le mot désigne le paysan recouvrant la semence sous la terre ; il en est venu à désigner celui qui couvre la vérité reçue, qui la nie. Les commentateurs précisent qu'au moment de la révélation, l'adresse vise précisément les chefs de Quraysh qui avaient proposé un compromis, mais sa portée s'étend à tout dénégateur en toute époque.",
+      "themes": ["adresse claire", "discernement"],
+      "commentaire": "<em>al-kāfirūn</em> (الكَافِرُون) : ceux qui couvrent. La racine <em>k-f-r</em> signifie d'abord « voiler, couvrir » — le paysan qui recouvre la semence sous la terre est appelé <em>kāfir</em>. Au sens religieux, c'est celui qui couvre la vérité qu'il a reçue. La sourate s'ouvre par une adresse directe ; et l'adresse spirituelle, dans la lecture soufie, s'étend à tout ce qui en nous voile la lumière reçue — toute pensée, toute habitude, tout réflexe par lequel on continue à couvrir ce qu'on sait.",
       "mots": [
         { "ar": "قُلْ", "tr": "qul", "racine": "ق و ل", "sens": "dis", "def": "dire, prononcer ; à l'impératif : « dis ».", "gram": "verbe impératif, 2ᵉ pers. masc. sing." },
-        { "ar": "يَا", "tr": "yā", "racine": "—", "sens": "ô", "def": "particule du vocatif : ô (interpellation).", "gram": "particule du vocatif" },
+        { "ar": "يَا", "tr": "yā", "racine": "—", "sens": "ô", "def": "particule du vocatif : ô.", "gram": "particule du vocatif" },
         { "ar": "أَيُّهَا", "tr": "ayyuhā", "racine": "—", "sens": "vous, ceux", "def": "interjection vocative renforcée : ô vous (qui êtes...).", "gram": "interjection vocative" },
-        { "ar": "الْكَافِرُونَ", "tr": "al-kāfirūn", "racine": "ك ف ر", "sens": "les mécréants", "def": "kāfir : celui qui couvre, qui voile la vérité reçue, qui la nie ; au pluriel, al-kāfirūn. La racine k-f-r évoque d'abord le geste de couvrir.", "gram": "nom pluriel, nominatif défini" }
+        { "ar": "الْكَافِرُونَ", "tr": "al-kāfirūn", "racine": "ك ف ر", "sens": "les mécréants", "def": "kāfir : celui qui couvre, qui voile la vérité reçue. Racine k-f-r : couvrir.", "gram": "nom pluriel, nominatif défini" }
       ]
     },
     {
@@ -28,13 +28,13 @@
       "ar": "لَا أَعْبُدُ مَا تَعْبُدُونَ",
       "tr": "lā aʿbudu mā taʿbudūn",
       "trad": "Je n'adore pas ce que vous adorez,",
-      "themes": ["tawḥīd", "refus de l'idolâtrie"],
-      "commentaire": "Le verbe <em>ʿabada</em> (عَبَدَ) signifie servir, adorer ; il vient d'une racine où l'on entend l'idée d'humilité, de soumission — un <em>ʿabd</em> (عَبْد) est à la fois le serviteur et l'adorateur. La déclaration est nette : il n'y a pas de communauté possible entre l'adoration du Dieu unique et celle des idoles. Aucune part, aucun pacte.",
+      "themes": ["ʿibāda pure", "refus du mélange"],
+      "commentaire": "Le verbe <em>ʿabada</em> (عَبَدَ) signifie servir, adorer ; sa racine porte l'idée de soumission entière — un <em>ʿabd</em> (عَبْد) est à la fois serviteur et adorateur. Qushayrī ramène la déclaration à son niveau ontologique : « La servitude (<em>ʿubūdiyya</em>) consiste à se tenir à Son commandement, dans la manière qu'Il a ordonnée, dans la mesure qu'Il a ordonnée, au temps qu'Il a ordonné. » <em>Je n'adore pas ce que vous adorez</em> ne dit pas seulement : pas vos idoles. Cela dit aussi : pas selon votre manière, pas selon votre mesure, pas selon votre temps. L'adoration pure n'admet aucun mélange — pas même celui de notre propre style.",
       "mots": [
-        { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "ne... pas", "def": "particule de négation : ne... pas ; nie l'inaccompli.", "gram": "particule de négation" },
+        { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
         { "ar": "أَعْبُدُ", "tr": "aʿbudu", "racine": "ع ب د", "sens": "j'adore", "def": "ʿabada : adorer, servir avec soumission ; à l'inaccompli, 1ʳᵉ pers. sing.", "gram": "verbe inaccompli, 1ʳᵉ pers. sing." },
         { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce que", "def": "pronom relatif neutre : ce que.", "gram": "pronom relatif" },
-        { "ar": "تَعْبُدُونَ", "tr": "taʿbudūn", "racine": "ع ب د", "sens": "vous adorez", "def": "ʿabada : adorer ; ici à l'inaccompli pluriel, 2ᵉ pers.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." }
+        { "ar": "تَعْبُدُونَ", "tr": "taʿbudūn", "racine": "ع ب د", "sens": "vous adorez", "def": "ʿabada : adorer.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." }
       ]
     },
     {
@@ -42,15 +42,15 @@
       "ar": "وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
       "tr": "wa-lā antum ʿābidūna mā aʿbud",
       "trad": "et vous n'adorez pas ce que j'adore.",
-      "themes": ["séparation des cultes"],
-      "commentaire": "La symétrie est exacte : ni vous, ni moi. L'usage du participe <em>ʿābidūn</em> (عَابِدُون), « adorateurs », au lieu d'un simple verbe, souligne l'attitude permanente, l'identité même — non un acte ponctuel mais un orient durable du cœur. Et cet orient ne se mélange pas.",
+      "themes": ["symétrie", "incompatibilité"],
+      "commentaire": "La sourate emploie ici le participe — <em>ʿābidūn</em> (عَابِدُون), « adorateurs » —, qui dit non un acte ponctuel mais une posture durable. Ce que vous êtes en tant qu'adorateurs ne peut se mêler à ce que je suis. Pour Qushayrī, c'est aussi un mot adressé à toute âme : ce qui en toi adore de plein gré (selon ton goût, ton choix, ton humeur) ne peut se mêler à ce qui adore sans choix (selon Sa pure désignation). Les deux postures sont étrangères l'une à l'autre.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
         { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
         { "ar": "أَنتُمْ", "tr": "antum", "racine": "—", "sens": "vous", "def": "pronom personnel : vous (masculin pluriel).", "gram": "pronom personnel" },
-        { "ar": "عَابِدُونَ", "tr": "ʿābidūn", "racine": "ع ب د", "sens": "adorateurs", "def": "participe actif de ʿabada : adorateur, celui qui adore ; au pluriel, dit une posture durable.", "gram": "participe actif pluriel, nominatif" },
+        { "ar": "عَابِدُونَ", "tr": "ʿābidūn", "racine": "ع ب د", "sens": "adorateurs", "def": "participe actif de ʿabada : adorateur ; au pluriel, dit une posture durable.", "gram": "participe actif pluriel, nominatif" },
         { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce que", "def": "pronom relatif neutre : ce que.", "gram": "pronom relatif" },
-        { "ar": "أَعْبُدُ", "tr": "aʿbud", "racine": "ع ب د", "sens": "j'adore", "def": "ʿabada : adorer ; à l'inaccompli, 1ʳᵉ pers. sing.", "gram": "verbe inaccompli, 1ʳᵉ pers. sing." }
+        { "ar": "أَعْبُدُ", "tr": "aʿbud", "racine": "ع ب د", "sens": "j'adore", "def": "ʿabada : adorer.", "gram": "verbe inaccompli, 1ʳᵉ pers. sing." }
       ]
     },
     {
@@ -58,15 +58,15 @@
       "ar": "وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ",
       "tr": "wa-lā anā ʿābidun mā ʿabadtum",
       "trad": "Et moi, je n'adorerai pas ce que vous avez adoré",
-      "themes": ["constance de la foi"],
-      "commentaire": "La forme se déplace au passé : <em>mā ʿabadtum</em> (مَا عَبَدتُّمْ), « ce que vous avez adoré ». La sourate parcourt le temps tout entier. Certains commentateurs entendent la répétition comme une manière d'enfermer la séparation dans toutes les dimensions du temps : non à l'instant, non au passé, non à l'avenir. D'autres y voient simplement un renforcement par redondance — une fermeture définitive de la porte du compromis.",
+      "themes": ["constance", "abandon du choix"],
+      "commentaire": "Le passé entre dans la sourate : <em>mā ʿabadtum</em>, « ce que vous avez adoré ». La constance du serviteur traverse aussi le temps qui le précède — il n'a jamais adoré et il n'adorera jamais ce qui n'est pas Dieu. Qushayrī, sobre, donne la clef : « La vérité de la servitude est dans l'abandon du choix. » Ce qui change quand cet abandon est accompli, ce n'est pas seulement le présent : c'est tout ce qui dans le passé portait encore la trace d'un choix propre. Le verset balaie cela aussi.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
         { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
         { "ar": "أَنَا", "tr": "anā", "racine": "—", "sens": "moi", "def": "pronom personnel : moi, je.", "gram": "pronom personnel" },
         { "ar": "عَابِدٌ", "tr": "ʿābid", "racine": "ع ب د", "sens": "adorateur", "def": "participe actif de ʿabada : adorateur ; au singulier indéfini.", "gram": "participe actif, nominatif indéfini" },
         { "ar": "مَّا", "tr": "mā", "racine": "—", "sens": "ce que", "def": "pronom relatif neutre : ce que.", "gram": "pronom relatif" },
-        { "ar": "عَبَدتُّمْ", "tr": "ʿabadtum", "racine": "ع ب د", "sens": "vous avez adoré", "def": "ʿabada : adorer ; à l'accompli, 2ᵉ pers. masc. plur. : vous avez adoré.", "gram": "verbe accompli, 2ᵉ pers. masc. plur." }
+        { "ar": "عَبَدتُّمْ", "tr": "ʿabadtum", "racine": "ع ب د", "sens": "vous avez adoré", "def": "ʿabada : adorer ; à l'accompli, 2ᵉ pers. masc. plur.", "gram": "verbe accompli, 2ᵉ pers. masc. plur." }
       ]
     },
     {
@@ -74,8 +74,8 @@
       "ar": "وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ",
       "tr": "wa-lā antum ʿābidūna mā aʿbud",
       "trad": "pas plus que vous n'adorerez ce que j'adore.",
-      "themes": ["séparation définitive"],
-      "commentaire": "La sourate reprend exactement le verset 3, comme un refrain. Selon certains, ce parallélisme dit la continuité dans le temps : ni hier ni demain, ni au présent ni à l'avenir, les deux orients ne se mêlent. C'est une porte refermée — non par hostilité, mais par exigence intérieure.",
+      "themes": ["répétition", "séparation définitive"],
+      "commentaire": "La sourate reprend le verset 3 — répétition rare dans le Coran, et donc chargée. Pour les soufis, ce qui est dit deux fois ne dit pas la même chose : le premier <em>vous n'adorez pas ce que j'adore</em> portait sur le présent ; celui-ci porte sur l'avenir, par contraste avec le verset 4 qui portait sur le passé. La sourate couvre ainsi toute la durée : passé, présent, futur. Tous les temps de l'âme sont couverts par la même séparation — non un combat, mais une simple incompatibilité d'essence entre les deux orients.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
         { "ar": "لَا", "tr": "lā", "racine": "—", "sens": "ne... pas", "def": "particule de négation.", "gram": "particule" },
@@ -90,14 +90,14 @@
       "ar": "لَكُمْ دِينُكُمْ وَلِيَ دِينِ",
       "tr": "lakum dīnukum wa-liya dīn",
       "trad": "A vous votre religion, et à moi ma religion ».",
-      "themes": ["respect mutuel", "irréductibilité"],
-      "commentaire": "Le verset clôt la sourate par une formule devenue célèbre. <em>Dīn</em> (دِين) — « religion », mais aussi « voie », « ordre dû », « jugement » — est ici dit deux fois, miroir l'un de l'autre. Beaucoup y ont entendu une parole de paix : non l'agression, mais la séparation. D'autres lisent un avertissement : chacun aura le fruit de sa voie. Le Coran le dit ailleurs : « Soyez doux avec les dénégateurs, donnez-leur un répit » (86, 17). La fermeté de la foi n'exige pas la violence envers l'autre, mais l'irréductibilité de la sienne.",
+      "themes": ["dīn", "récompense séparée", "respect"],
+      "commentaire": "Qushayrī donne la clef du verset final : « <em>À vous votre religion</em> — c'est-à-dire : à vous, la rétribution de votre religion. Et à moi, la rétribution de la mienne. » Le verset n'est pas seulement un mot de paix laissant à chacun son chemin ; il est aussi l'annonce, implicite, que chaque chemin porte son fruit. <em>Dīn</em> (دِين) signifie à la fois religion et jugement : ce qu'on fait, on le récolte, et chaque âme aura la mesure de son orient. Le verset clôt la sourate sans violence, mais sans concession — non par tolérance complaisante, mais par fermeté intérieure. C'est l'<em>ʿubūdiyya</em> qui parle ici : qui sait à qui il est, sait aussi à qui il n'est pas.",
       "mots": [
         { "ar": "لَكُمْ", "tr": "lakum", "racine": "—", "sens": "à vous", "def": "préposition li- + pronom suffixe 2ᵉ pers. masc. plur. : à vous, pour vous.", "gram": "préposition + pronom" },
         { "ar": "دِينُكُمْ", "tr": "dīnukum", "racine": "د ي ن", "sens": "votre religion", "def": "dīn : religion, voie, ordre dû, jugement ; avec le pronom suffixe pluriel : votre religion.", "gram": "nom + pronom suffixe, nominatif" },
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
-        { "ar": "لِيَ", "tr": "liya", "racine": "—", "sens": "à moi", "def": "préposition li- + pronom suffixe 1ʳᵉ pers. sing. : à moi, pour moi.", "gram": "préposition + pronom" },
-        { "ar": "دِينِ", "tr": "dīn(i)", "racine": "د ي ن", "sens": "ma religion", "def": "dīn : religion, voie ; le pronom suffixe -ī (ma religion) est ici sous-entendu par la fin de mot, conformément à la diction du verset.", "gram": "nom, nominatif (suffixe possessif élidé)" }
+        { "ar": "لِيَ", "tr": "liya", "racine": "—", "sens": "à moi", "def": "préposition li- + pronom suffixe 1ʳᵉ pers. sing. : à moi.", "gram": "préposition + pronom" },
+        { "ar": "دِينِ", "tr": "dīn(i)", "racine": "د ي ن", "sens": "ma religion", "def": "dīn : religion, voie ; le suffixe possessif -ī (ma religion) est ici élidé par la diction.", "gram": "nom, nominatif (suffixe possessif élidé)" }
       ]
     }
   ]

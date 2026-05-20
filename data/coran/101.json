@@ -6,18 +6,18 @@
   "revelation": "mecquoise",
   "versets_count": 11,
   "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
-  "intro": "Al-Qāriʿa — « Le Grand Coup », ou « Le Fracas » — est une sourate mecquoise qui prend son nom du mot des trois premiers versets : <em>al-qāriʿa</em> (القَارِعَة), de la racine <em>q-r-ʿ</em> (قرع), « frapper », « cogner avec un grand bruit assourdissant ». Selon plusieurs commentateurs, c'est un des noms du Jour du jugement. La sourate commence par trois lignes qui répètent le mot pour en marteler l'effroi — comme si la chose elle-même venait à la rencontre du lecteur. Les versets 4-5 donnent ensuite deux images saisissantes de la fin du monde : les hommes éparpillés comme des papillons, les montagnes comme de la laine cardée. Les six derniers versets contrastent deux destins selon le poids des œuvres : ceux dont la balance pèse, et ceux dont elle est légère.",
-  "themes": ["Jour du jugement", "fin du monde", "balance", "œuvres", "résurrection"],
+  "intro": "Al-Qāriʿa — « Le Grand Coup », « ce qui frappe » — est l'un des noms du Jour du Jugement. La racine <em>q-r-ʿ</em> dit le bruit assourdissant d'un coup violent : la porte qu'on enfonce, le tambour qui éclate. Mais la lecture soufie n'attend pas le dernier jour pour entendre la <em>qāriʿa</em>. Tustarī distingue trois coups : « Le coup est triple — celui qui frappe les corps est la flèche de la mort ; celui qui frappe les œuvres, c'est l'interrogation que Dieu en fera ; et celui qui frappe les cœurs, c'est la <em>crainte de l'aliénation</em> (<em>fear of qaṭīʿa</em>, القَطِيعَة) — la peur d'être séparé de Lui. » Trois coups qui peuvent toucher l'âme avant l'heure finale. Et Qushayrī, sur les montagnes qui deviennent comme de la laine cardée, donne la pointe : « Ceux qui prétendaient à quelque chose ici-bas, les maîtres de la puissance — à la Résurrection, quand ils seront ressuscités, ils seront plus faibles que tout ce qui est faible. Car là-bas, les puissances tombent, et les prétentions sont annulées. » La sourate est donc d'abord un démontage : ce qui semblait inébranlable est révélé léger comme laine. Et seul reste le poids que les actes auront eu dans la Balance.",
+  "themes": ["Jour du Jugement", "fin des prétentions", "trois coups", "Balance"],
   "versets": [
     {
       "n": 1,
       "ar": "الْقَارِعَةُ",
       "tr": "al-qāriʿa",
       "trad": "Le grand Coup !",
-      "themes": ["fracas", "jugement"],
-      "commentaire": "<em>al-qāriʿa</em> (القَارِعَة) : « celle qui frappe », « ce qui cogne ». Du verbe <em>qaraʿa</em> (قَرَعَ), frapper avec un bruit assourdissant — celui de la porte qu'on enfonce, du tambour qu'on bat, de la voix qui éclate. La sourate s'ouvre par ce seul mot, posé comme un coup. Pas de verbe, pas de complément ; juste un nom qui claque et qui dit déjà la chose : un événement qui frappe et qu'on ne peut éviter d'entendre.",
+      "themes": ["fracas", "nom du Jour"],
+      "commentaire": "Un seul mot — posé. Qushayrī : « <em>al-qāriʿa</em> est l'un des noms de la Résurrection ; c'est la forme « <em>fāʿila</em> » de <em>qarʿ</em>, qui est de frapper avec violence. Elle est ainsi nommée parce qu'elle les <em>frappe</em>. » Le mot est lui-même un coup ; il commence avant que le sens commence.",
       "mots": [
-        { "ar": "الْقَارِعَةُ", "tr": "al-qāriʿa", "racine": "ق ر ع", "sens": "le grand Coup, celle qui frappe", "def": "qāriʿa : participe actif féminin de qaraʿa (frapper, cogner avec un bruit assourdissant) ; un des noms du Jour du jugement.", "gram": "nom, nominatif défini" }
+        { "ar": "الْقَارِعَةُ", "tr": "al-qāriʿa", "racine": "ق ر ع", "sens": "le grand Coup, celle qui frappe", "def": "qāriʿa : participe actif féminin de qaraʿa (frapper avec un bruit assourdissant) ; un des noms du Jour du Jugement.", "gram": "nom, nominatif défini" }
       ]
     },
     {
@@ -25,8 +25,8 @@
       "ar": "مَا الْقَارِعَةُ",
       "tr": "mā l-qāriʿa",
       "trad": "Qu'est-ce donc que le grand Coup ?",
-      "themes": ["interrogation", "redoublement"],
-      "commentaire": "La question est tournée vers ce qui vient d'être nommé : « Qu'est-ce que cette chose-là ? » Comme dans plusieurs sourates courtes (cf. 69, 2-3), la répétition du nom appelle l'attention sur ce qu'aucune définition ne contiendra. La phrase suivante creusera le sens, non par une définition, mais par des marques — quelques traits du Jour, suffisamment puissants pour qu'on en pressente la vérité.",
+      "themes": ["question", "résonance"],
+      "commentaire": "La question reprend le nom — comme un écho qui prolonge le coup. La sourate, par ce procédé, fait que le nom dure dans l'oreille avant que l'esprit ne s'en saisisse. Ainsi, dit Tustarī implicitement, la première manière dont la <em>qāriʿa</em> nous atteint déjà est par le son qui résonne.",
       "mots": [
         { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "qu'est-ce que", "def": "interrogatif : qu'est-ce que ?", "gram": "interrogatif" },
         { "ar": "الْقَارِعَةُ", "tr": "al-qāriʿa", "racine": "ق ر ع", "sens": "le grand Coup", "def": "voir verset 1.", "gram": "nom, nominatif défini" }
@@ -37,13 +37,13 @@
       "ar": "وَمَا أَدْرَاكَ مَا الْقَارِعَةُ",
       "tr": "wa-mā adrāka mā l-qāriʿa",
       "trad": "Qu'est-ce qui te fera savoir ce qu'est le grand Coup ?",
-      "themes": ["mystère", "incommensurabilité"],
-      "commentaire": "<em>mā adrāka</em> (مَا أَدْرَاكَ) — « qu'est-ce qui te ferait savoir ? » — est une formule récurrente du Coran. Elle précède toujours, dans le texte, l'évocation d'une chose dont la mesure dépasse l'esprit humain. La triple interrogation des trois premiers versets — <em>al-qāriʿa</em>, <em>mā l-qāriʿa</em>, <em>mā adrāka mā l-qāriʿa</em> — fonctionne comme un avertissement par paliers : la nommer, demander ce qu'elle est, dire enfin qu'aucune connaissance ordinaire n'y suffira.",
+      "themes": ["mystère", "ce qui dépasse"],
+      "commentaire": "Tustarī donne ici une règle de lecture du Coran : « Tout ce qui dans le Coran est précédé par les mots <em>mā adrāka</em> (qu'est-ce qui te fera savoir) est quelque chose à propos duquel Il n'avait pas encore donné d'information. » C'est une formule de réserve : ce qui suit ne définit pas — elle évoque. Le grand Coup, en lui-même, dépasse ce qu'on peut dire.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
-        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "qu'est-ce qui", "def": "interrogatif : qu'est-ce qui ?", "gram": "interrogatif" },
-        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "te fera savoir", "def": "adrā : faire savoir, faire connaître ; à l'accompli + pronom suffixe 2ᵉ pers. masc. sing.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
-        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qu'est", "def": "interrogatif relatif : ce que.", "gram": "interrogatif" },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "qu'est-ce qui", "def": "interrogatif.", "gram": "interrogatif" },
+        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "te fera savoir", "def": "adrā : faire savoir.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qu'est", "def": "interrogatif relatif.", "gram": "interrogatif" },
         { "ar": "الْقَارِعَةُ", "tr": "al-qāriʿa", "racine": "ق ر ع", "sens": "le grand Coup", "def": "voir verset 1.", "gram": "nom, nominatif défini" }
       ]
     },
@@ -52,13 +52,13 @@
       "ar": "يَوْمَ يَكُونُ النَّاسُ كَالْفَرَاشِ الْمَبْثُوثِ",
       "tr": "yawma yakūnu n-nāsu ka-l-farāshi l-mabthūth",
       "trad": "C'est le Jour où les hommes seront comme des papillons éparpillés,",
-      "themes": ["fin du monde", "image"],
-      "commentaire": "<em>al-farāsh al-mabthūth</em> (الفَرَاش المَبْثُوث) : les papillons éparpillés. <em>Farāsh</em> désigne les petits insectes volants attirés par la lumière — papillons de nuit, petits insectes qui se précipitent vers une flamme. <em>Mabthūth</em>, « répandu », « éparpillé », vient de la racine b-th-th, l'idée de ce qu'on a disséminé. L'image dit deux choses : la grande quantité, et le désordre total. Les hommes, ce Jour-là, courront sans direction — comme dit ailleurs le Coran : « avec les yeux humbles, ils sortent des tombes comme des sauterelles éparpillées » (54, 7).",
+      "themes": ["dispersion", "vertige"],
+      "commentaire": "<em>al-farāsh al-mabthūth</em> (الفَرَاش المَبْثُوث) : les petits insectes volants éparpillés. Tustarī ajoute la clef : « ils se heurteront les uns contre les autres à cause de la crainte révérentielle (<em>hayba</em>, هَيْبَة) qu'ils éprouvent devant Dieu. » Le désordre n'est pas l'absence de direction — c'est l'âme prise dans une trop grande Présence pour qu'elle puisse en supporter le silence. Devant la Face, les habitudes se défont.",
       "mots": [
-        { "ar": "يَوْمَ", "tr": "yawma", "racine": "ي و م", "sens": "le Jour où", "def": "yawm : jour ; à l'accusatif construit, introduit la circonstance temporelle : « le Jour où ».", "gram": "nom, accusatif construit" },
-        { "ar": "يَكُونُ", "tr": "yakūnu", "racine": "ك و ن", "sens": "seront", "def": "kāna : être ; ici à l'inaccompli, avec valeur de futur dans la circonstance.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
+        { "ar": "يَوْمَ", "tr": "yawma", "racine": "ي و م", "sens": "le Jour où", "def": "yawm : jour ; à l'accusatif construit, introduit la circonstance temporelle.", "gram": "nom, accusatif construit" },
+        { "ar": "يَكُونُ", "tr": "yakūnu", "racine": "ك و ن", "sens": "seront", "def": "kāna : être ; à l'inaccompli, valeur de futur.", "gram": "verbe inaccompli, 3ᵉ pers. masc. sing." },
         { "ar": "النَّاسُ", "tr": "an-nās", "racine": "أ ن س", "sens": "les hommes", "def": "an-nās : les hommes, l'humanité.", "gram": "nom, nominatif défini" },
-        { "ar": "كَالْفَرَاشِ", "tr": "ka-l-farāsh", "racine": "ف ر ش", "sens": "comme des papillons", "def": "farāsh : papillons de nuit, petits insectes ailés attirés par la lumière. Préposition ka- (comme) + nom au génitif défini.", "gram": "préposition + nom, génitif défini" },
+        { "ar": "كَالْفَرَاشِ", "tr": "ka-l-farāsh", "racine": "ف ر ش", "sens": "comme des papillons", "def": "farāsh : papillons de nuit, insectes ailés attirés par la lumière.", "gram": "préposition + nom, génitif défini" },
         { "ar": "الْمَبْثُوثِ", "tr": "al-mabthūth", "racine": "ب ث ث", "sens": "éparpillés", "def": "mabthūth : participe passif de bathth (disséminer) ; ce qui est répandu, éparpillé.", "gram": "participe passif, génitif défini" }
       ]
     },
@@ -67,14 +67,14 @@
       "ar": "وَتَكُونُ الْجِبَالُ كَالْعِهْنِ الْمَنفُوشِ",
       "tr": "wa-takūnu l-jibālu ka-l-ʿihni l-manfūsh",
       "trad": "et les montagnes semblables à de la laine cardée.",
-      "themes": ["dissolution du monde", "image"],
-      "commentaire": "<em>al-ʿihn al-manfūsh</em> (العِهْن المَنفُوش) : la laine cardée — laine peignée et défaite en flocons légers, qui s'envolent au moindre souffle. Le contraste avec les <em>jibāl</em> (جِبَال), les montagnes, est saisissant : ce qui semblait le plus dur, le plus inébranlable, devient le plus léger, le plus aérien. Le Coran multiplie ces images apocalyptiques : « les montagnes mises en marche » (81, 3), « dispersées » (77, 10), « comme des dunes de sable mouvant » (73, 14). La fin du monde, ce n'est pas le retour au néant, c'est le renversement complet du sens des choses.",
+      "themes": ["fin des prétentions", "chute de la force"],
+      "commentaire": "Qushayrī donne la clef spirituelle : « Le sens est que <em>les détenteurs de prétentions et les maîtres de la puissance ici-bas</em>, au Jour de la Résurrection, deviendront <em>plus faibles que tout ce qui est faible</em> — car là-bas, les puissances tombent, et les prétentions sont annulées. » Les montagnes, dans le Coran, sont l'image des grands solides, des puissances stables. Et elles deviennent comme de la laine cardée — légère, dispersée par le moindre souffle. Tout ce qui prétendait à de la consistance est révélé être de la laine.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
-        { "ar": "تَكُونُ", "tr": "takūnu", "racine": "ك و ن", "sens": "seront", "def": "kāna : être ; à l'inaccompli féminin (jibāl, pluriel féminin sans non-rationnel, prend l'accord féminin singulier).", "gram": "verbe inaccompli, 3ᵉ pers. fém. sing." },
-        { "ar": "الْجِبَالُ", "tr": "al-jibāl", "racine": "ج ب ل", "sens": "les montagnes", "def": "jabal : montagne ; au pluriel jibāl. Figure dans le Coran du solide, du fixé, du durable.", "gram": "nom pluriel, nominatif défini" },
-        { "ar": "كَالْعِهْنِ", "tr": "ka-l-ʿihn", "racine": "ع ه ن", "sens": "comme la laine", "def": "ʿihn : laine colorée, laine teinte ; ici simplement laine. Préposition ka- + nom au génitif défini.", "gram": "préposition + nom, génitif défini" },
-        { "ar": "الْمَنفُوشِ", "tr": "al-manfūsh", "racine": "ن ف ش", "sens": "cardée, défaite en flocons", "def": "manfūsh : participe passif de nafasha (carder, peigner la laine) ; laine défaite, légère, dispersée en flocons.", "gram": "participe passif, génitif défini" }
+        { "ar": "تَكُونُ", "tr": "takūnu", "racine": "ك و ن", "sens": "seront", "def": "kāna : être ; à l'inaccompli féminin (jibāl, pluriel féminin).", "gram": "verbe inaccompli, 3ᵉ pers. fém. sing." },
+        { "ar": "الْجِبَالُ", "tr": "al-jibāl", "racine": "ج ب ل", "sens": "les montagnes", "def": "jabal : montagne ; au pluriel jibāl. Figure du solide, du durable.", "gram": "nom pluriel, nominatif défini" },
+        { "ar": "كَالْعِهْنِ", "tr": "ka-l-ʿihn", "racine": "ع ه ن", "sens": "comme la laine", "def": "ʿihn : laine, surtout colorée.", "gram": "préposition + nom, génitif défini" },
+        { "ar": "الْمَنفُوشِ", "tr": "al-manfūsh", "racine": "ن ف ش", "sens": "cardée, défaite en flocons", "def": "manfūsh : participe passif de nafasha (carder la laine).", "gram": "participe passif, génitif défini" }
       ]
     },
     {
@@ -82,13 +82,13 @@
       "ar": "فَأَمَّا مَن ثَقُلَتْ مَوَازِينُهُ",
       "tr": "fa-ammā man thaqulat mawāzīnuhu",
       "trad": "Celui dont les œuvres pèseront lourd",
-      "themes": ["balance", "œuvres", "récompense"],
-      "commentaire": "<em>mawāzīn</em> (مَوَازِين) : les balances — pluriel de <em>mīzān</em> (مِيزَان), la balance. Le pluriel dit que chaque âme aura, en quelque sorte, sa propre pesée — bien qu'au fond ce soit la même Balance pour tous. Le Coran distingue : <em>mīzān</em> au singulier désigne souvent la révélation elle-même comme mesure ; <em>mawāzīn</em> au pluriel désigne la pesée individuelle des œuvres. <em>Thaqula</em> (ثَقُلَ) : peser lourd. Selon un hadith, « il n'y a rien que l'on place dans la Balance qui soit plus lourd que la beauté du caractère » ; selon un autre, « les actes ne valent que par leurs intentions ». Ce qui pèse, ce n'est pas le volume des actes — c'est ce qui les habite.",
+      "themes": ["Balance", "poids des actes"],
+      "commentaire": "<em>thaqulat mawāzīnuhu</em> : ses balances ont pesé lourd. Qushayrī ajoute une nuance qui touche au mystère : « Le poids des actes, ce Jour-là, se fait par le poids des feuillets. Et l'on dit : à la place de chaque part de ses actes, une substance (<em>jawhar</em>, جَوْهَر) est créée — et ce sont ces substances qu'on pèse. Et c'est cela, le poids des actes. » Les actes ne sont pas pesés en eux-mêmes — ils sont d'abord <em>matérialisés</em> en substances spirituelles, et c'est ces substances qui font le poids. Image étonnante : l'âme verra, au Jour, la condensation de tout ce qu'elle a fait, en formes qu'elle n'aura pas reconnues mais qui sont, en vérité, ce qu'elle a tissé.",
       "mots": [
-        { "ar": "فَأَمَّا", "tr": "fa-ammā", "racine": "—", "sens": "quant à, celui qui", "def": "fa- (de liaison) + ammā : « quant à », introduit un cas par opposition à un autre.", "gram": "particules introductives" },
-        { "ar": "مَن", "tr": "man", "racine": "—", "sens": "celui qui", "def": "pronom relatif/interrogatif : celui qui, quiconque.", "gram": "pronom relatif" },
-        { "ar": "ثَقُلَتْ", "tr": "thaqulat", "racine": "ث ق ل", "sens": "elles ont pesé lourd", "def": "thaqula : être lourd, peser ; à l'accompli féminin (sujet : mawāzīn).", "gram": "verbe accompli, 3ᵉ pers. fém. sing." },
-        { "ar": "مَوَازِينُهُ", "tr": "mawāzīnuhu", "racine": "و ز ن", "sens": "ses balances", "def": "mawāzīn : pluriel de mīzān, la balance ; ici, les pesées de chaque acte. Avec pronom suffixe 3ᵉ pers. masc. sing.", "gram": "nom pluriel + pronom suffixe, nominatif" }
+        { "ar": "فَأَمَّا", "tr": "fa-ammā", "racine": "—", "sens": "quant à, celui qui", "def": "fa- + ammā : « quant à ».", "gram": "particules introductives" },
+        { "ar": "مَن", "tr": "man", "racine": "—", "sens": "celui qui", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "ثَقُلَتْ", "tr": "thaqulat", "racine": "ث ق ل", "sens": "elles ont pesé lourd", "def": "thaqula : être lourd, peser.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." },
+        { "ar": "مَوَازِينُهُ", "tr": "mawāzīnuhu", "racine": "و ز ن", "sens": "ses balances", "def": "mawāzīn : pluriel de mīzān, la balance ; ici, les pesées de chaque acte.", "gram": "nom pluriel + pronom suffixe, nominatif" }
       ]
     },
     {
@@ -96,13 +96,13 @@
       "ar": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
       "tr": "fa-huwa fī ʿīshatin rāḍiya",
       "trad": "connaîtra alors une vie heureuse ;",
-      "themes": ["béatitude", "vie heureuse"],
-      "commentaire": "<em>ʿīsha rāḍiya</em> (عِيشَة رَاضِيَة) : une vie qui se contente, une vie qui est elle-même satisfaite. Le participe actif <em>rāḍiya</em> donne à la vie elle-même la qualité de « contenter », non seulement à celui qui la vit. L'image est rare en français — c'est une vie qui ne manque de rien, parce qu'elle ne désire plus rien d'autre qu'elle-même.",
+      "themes": ["béatitude", "vie qui se contente"],
+      "commentaire": "<em>ʿīsha rāḍiya</em> : une vie qui contente — ou : une vie qui se contente elle-même. Le participe actif (<em>rāḍiya</em>, « qui agrée ») donne à la vie elle-même la qualité de l'agrément. Pour la lecture soufie : ce n'est pas une vie qui plaît au sujet (le sujet n'est plus séparé de sa vie) ; c'est une vie devenue, en sa propre substance, contentement. État qui dépasse le plaisir, et qui répond, à un autre plan, au <em>riḍāʾ</em> (la satisfaction réciproque entre Dieu et le serviteur) qu'on trouve à la fin d'al-Bayyina.",
       "mots": [
-        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison : alors, donc.", "gram": "particule" },
-        { "ar": "هُوَ", "tr": "huwa", "racine": "—", "sens": "il", "def": "pronom personnel masculin singulier : il, lui.", "gram": "pronom personnel" },
-        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "def": "préposition : dans.", "gram": "préposition" },
-        { "ar": "عِيشَةٍ", "tr": "ʿīsha", "racine": "ع ي ش", "sens": "une vie", "def": "ʿīsha : la vie, le mode de vie ; de la racine ʿ-y-sh (vivre).", "gram": "nom, génitif indéfini" },
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "هُوَ", "tr": "huwa", "racine": "—", "sens": "il", "def": "pronom personnel.", "gram": "pronom personnel" },
+        { "ar": "فِي", "tr": "fī", "racine": "—", "sens": "dans", "def": "préposition.", "gram": "préposition" },
+        { "ar": "عِيشَةٍ", "tr": "ʿīsha", "racine": "ع ي ش", "sens": "une vie", "def": "ʿīsha : la vie, le mode de vie.", "gram": "nom, génitif indéfini" },
         { "ar": "رَّاضِيَةٍ", "tr": "rāḍiya", "racine": "ر ض و", "sens": "qui contente, satisfaite", "def": "rāḍiya : participe actif féminin de raḍiya (être satisfait) ; littéralement « qui est satisfaite » ou « qui satisfait ».", "gram": "participe actif, génitif indéfini" }
       ]
     },
@@ -111,12 +111,12 @@
       "ar": "وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ",
       "tr": "wa-ammā man khaffat mawāzīnuhu",
       "trad": "mais celui dont la balance sera légère",
-      "themes": ["balance", "manque"],
-      "commentaire": "Le second cas, par symétrie : <em>khaffat</em> (خَفَّتْ), « elles ont été légères » — peu de poids dans la balance, peu d'œuvres qui comptent. La sourate ne moralise pas longuement : elle pose deux états, et passe à leur conséquence.",
+      "themes": ["légèreté", "manque"],
+      "commentaire": "Symétrie inverse. <em>Khaffat</em> : elles ont été légères. Quand peu de substance s'est cristallisée des actes — quand peu d'<em>œuvres en Dieu</em> sont entrées dans la pesée — la balance ne penche pas. Ce qui faisait poids dans le monde, ici-bas, ne fait plus poids là-bas.",
       "mots": [
-        { "ar": "وَأَمَّا", "tr": "wa-ammā", "racine": "—", "sens": "quant à, celui qui", "def": "wa + ammā : « quant à », introduit le second cas par symétrie au verset 6.", "gram": "particules introductives" },
-        { "ar": "مَنْ", "tr": "man", "racine": "—", "sens": "celui qui", "def": "pronom relatif : celui qui.", "gram": "pronom relatif" },
-        { "ar": "خَفَّتْ", "tr": "khaffat", "racine": "خ ف ف", "sens": "elles ont été légères", "def": "khaffa : être léger, peu pesant ; à l'accompli féminin.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." },
+        { "ar": "وَأَمَّا", "tr": "wa-ammā", "racine": "—", "sens": "quant à, celui qui", "def": "wa + ammā : « quant à ».", "gram": "particules introductives" },
+        { "ar": "مَنْ", "tr": "man", "racine": "—", "sens": "celui qui", "def": "pronom relatif.", "gram": "pronom relatif" },
+        { "ar": "خَفَّتْ", "tr": "khaffat", "racine": "خ ف ف", "sens": "elles ont été légères", "def": "khaffa : être léger, peu pesant.", "gram": "verbe accompli, 3ᵉ pers. fém. sing." },
         { "ar": "مَوَازِينُهُ", "tr": "mawāzīnuhu", "racine": "و ز ن", "sens": "ses balances", "def": "mawāzīn : voir verset 6.", "gram": "nom pluriel + pronom suffixe, nominatif" }
       ]
     },
@@ -125,12 +125,12 @@
       "ar": "فَأُمُّهُ هَاوِيَةٌ",
       "tr": "fa-ummuhu hāwiya",
       "trad": "s'avancera vers un abîme.",
-      "themes": ["abîme", "fin sans retour"],
-      "commentaire": "<em>ummuhu hāwiya</em> (أُمُّهُ هَاوِيَة) : littéralement « sa mère sera l'Abîme ». <em>Umm</em> (أُمّ) signifie d'abord « mère », mais vient du verbe <em>amma</em> (أَمَّ), « se diriger vers », « prendre pour but ». Le sens est donc double : celui-là se dirigera vers l'abîme, ou : ce sera son seul refuge, comme une mère pour son enfant — refuge cruel, retournement de l'image maternelle. <em>Hāwiya</em>, « ce qui tombe », « l'abîme qui happe », est l'un des noms du Feu.",
+      "themes": ["abîme", "mère retournée"],
+      "commentaire": "<em>ummuhu hāwiya</em> — littéralement, « sa mère est l'Abîme ». <em>Umm</em> (mère) vient du verbe <em>amma</em> (se diriger vers), d'où la lecture : ce vers quoi il va comme un enfant. L'image est dure : la place qui devait être de la tendresse maternelle est devenue l'Abîme. C'est dire que ce vers quoi l'âme se tournait — ses prétentions, ses puissances, ses biens — l'attire en fin de compte vers le vide.",
       "mots": [
-        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison : alors.", "gram": "particule" },
-        { "ar": "أُمُّهُ", "tr": "ummuhu", "racine": "أ م م", "sens": "sa mère, son refuge", "def": "umm : mère ; au sens dérivé, ce vers quoi l'on se dirige (du verbe amma, « se diriger vers »).", "gram": "nom + pronom suffixe, nominatif" },
-        { "ar": "هَاوِيَةٌ", "tr": "hāwiya", "racine": "ه و ي", "sens": "l'Abîme", "def": "hāwiya : participe actif féminin de hawā (tomber, choir) ; ce qui tombe ou ce qui fait tomber. Nom du Feu, l'abîme qui happe.", "gram": "nom, nominatif indéfini" }
+        { "ar": "فَ", "tr": "fa-", "racine": "—", "sens": "alors", "def": "particule de liaison.", "gram": "particule" },
+        { "ar": "أُمُّهُ", "tr": "ummuhu", "racine": "أ م م", "sens": "sa mère, son refuge", "def": "umm : mère ; au sens dérivé, ce vers quoi l'on se dirige (du verbe amma).", "gram": "nom + pronom suffixe, nominatif" },
+        { "ar": "هَاوِيَةٌ", "tr": "hāwiya", "racine": "ه و ي", "sens": "l'Abîme", "def": "hāwiya : participe actif féminin de hawā (tomber, choir) ; ce qui tombe et fait tomber. Nom du Feu.", "gram": "nom, nominatif indéfini" }
       ]
     },
     {
@@ -138,14 +138,14 @@
       "ar": "وَمَا أَدْرَاكَ مَا هِيَهْ",
       "tr": "wa-mā adrāka mā hiyah",
       "trad": "Et qu'est-ce qui te fera savoir ce qu'est cet abîme ?",
-      "themes": ["mystère", "interrogation"],
-      "commentaire": "À nouveau la formule <em>mā adrāka</em>, qui annonce une réalité que rien ne décrit pleinement. La forme finale <em>hiyah</em> (هِيَهْ) avec un <em>hāʾ</em> de pause souligne le caractère terrifiant : la phrase semble s'achever sur un souffle qui se brise.",
+      "themes": ["mystère"],
+      "commentaire": "La même formule que pour le grand Coup. Encore une fois, le langage rend les armes devant ce qu'il évoque. Le <em>hāʾ</em> de pause final — <em>hiyah</em> — laisse la voix retomber, comme si la phrase elle-même tombait dans son propre vide.",
       "mots": [
         { "ar": "وَ", "tr": "wa", "racine": "—", "sens": "et", "def": "conjonction : et.", "gram": "conjonction" },
         { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "qu'est-ce qui", "def": "interrogatif.", "gram": "interrogatif" },
-        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "te fera savoir", "def": "adrā : faire savoir ; voir 5, 10.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "أَدْرَاكَ", "tr": "adrāka", "racine": "د ر ي", "sens": "te fera savoir", "def": "adrā : faire savoir.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
         { "ar": "مَا", "tr": "mā", "racine": "—", "sens": "ce qu'est", "def": "interrogatif relatif.", "gram": "interrogatif" },
-        { "ar": "هِيَهْ", "tr": "hiyah", "racine": "—", "sens": "elle (l'Abîme)", "def": "hiya : pronom personnel féminin (elle) ; avec hāʾ de pause final, renforce le ton dramatique.", "gram": "pronom personnel" }
+        { "ar": "هِيَهْ", "tr": "hiyah", "racine": "—", "sens": "elle", "def": "hiya : pronom personnel féminin ; avec hāʾ de pause final.", "gram": "pronom personnel" }
       ]
     },
     {
@@ -153,10 +153,10 @@
       "ar": "نَارٌ حَامِيَةٌ",
       "tr": "nārun ḥāmiya",
       "trad": "C'est un Feu ardent.",
-      "themes": ["Feu", "réponse"],
-      "commentaire": "<em>nār ḥāmiya</em> (نَار حَامِيَة) : un Feu brûlant, ardent. Le participe actif <em>ḥāmiya</em>, de la racine <em>ḥ-m-y</em> (chaud, brûlant), désigne l'intensité maximale. Les commentateurs ajoutent qu'aucun autre feu ne saurait être appelé véritablement « ardent » au regard de celui-ci : l'adjectif s'épuise dans la chose qu'il qualifie. La sourate s'achève là — comme le coup qu'elle annonçait : net, sans glose, sans rajout.",
+      "themes": ["Feu", "chaleur extrême"],
+      "commentaire": "<em>nār ḥāmiya</em> : un Feu d'une chaleur extrême. La sourate s'achève en deux mots — comme le coup qu'elle annonçait : net, sans glose, sans rajout. Mais Qushayrī ajoute en marge une nuance précieuse : « Il n'a pas dit que les <em>états</em> seront pesés, seulement les actes. Mais chacun est rétribué selon son état, dans la mesure où cet état est son <em>acquis</em> (<em>kasb</em>) — ou dans la mesure où il s'est mis en chemin par ses causes. » La balance n'oublie rien.",
       "mots": [
-        { "ar": "نَارٌ", "tr": "nār", "racine": "ن و ر", "sens": "un Feu", "def": "nār : le feu ; ici au nominatif indéfini.", "gram": "nom, nominatif indéfini" },
+        { "ar": "نَارٌ", "tr": "nār", "racine": "ن و ر", "sens": "un Feu", "def": "nār : le feu.", "gram": "nom, nominatif indéfini" },
         { "ar": "حَامِيَةٌ", "tr": "ḥāmiya", "racine": "ح م ي", "sens": "ardent, brûlant", "def": "ḥāmiya : participe actif féminin de ḥamiya (être brûlant) ; un feu d'une chaleur extrême.", "gram": "participe actif, nominatif indéfini" }
       ]
     }

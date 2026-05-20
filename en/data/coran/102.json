@@ -6,8 +6,8 @@
   "revelation": "Meccan",
   "versets_count": 8,
   "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
-  "intro": "Al-Takāthur — “Vying for Increase” — is a Meccan sūra sometimes called by the Companions “the sūra of the grave”. The word <em>takāthur</em> (تَكَاثُر) is derived from <em>kathīr</em> (كَثِير), “much”: it names rivalry in possession, the desire to have more than another, and also to boast of it. Tradition reports that it was revealed about two clans of Quraysh competing over which had the larger tribe: they went to count their dead in the cemeteries to settle the dispute. The image is striking — vanity does not stop even at the graves. The sūra unfolds in two movements: a curt diagnosis (accumulation distracts until death), then a rising emphasis in which three degrees of knowing are named — knowledge, sight, experience — that later Sufi tradition will know as <em>ʿilm al-yaqīn</em>, <em>ʿayn al-yaqīn</em>, <em>ḥaqq al-yaqīn</em>: to know by indication, to see, and to live.",
-  "themes": ["hoarding", "distraction", "death", "degrees of certainty", "judgment"],
+  "intro": "Al-Takāthur — “Vying for Increase” — diagnoses a sickness of the soul in every age: the race for accumulation and pride. But the sūra rises gradually, and ends by naming three degrees of knowing — what would become, among the Sufis, the three <em>yaqīn</em>. Tustarī explains them with a rare image: “Certainty (<em>yaqīn</em>) is the fire; affirmation by the tongue is the wick; and the deed is its oil. Certainty begins with unveiling (<em>mukāshafa</em>, مُكَاشَفَة), then comes direct contemplation (<em>muʿāyana</em>, مُعَايَنَة), then witnessing (<em>mushāhada</em>, مُشَاهَدَة).” The soul distracted by possessions becomes the opposite of a lamp; and the sūra recalls it, in few words, to the lamp it truly is. And the end — “then you will be questioned on that Day about the blessings” — is not a threat: it is, says Qushayrī, the reminder that God has given you so many things that call for gratitude, from cool water on a summer day to the Prophet himself.",
+  "themes": ["accumulation", "three yaqīn", "gratitude", "lamp of the soul"],
   "versets": [
     {
       "n": 1,
@@ -15,10 +15,10 @@
       "tr": "alhākumu t-takāthur",
       "trad": "Vying for increase distracts you,",
       "themes": ["distraction", "vanity"],
-      "commentaire": "<em>alhā</em> (أَلْهَىٰ): to divert, to distract, to make one forget what truly counts. <em>lahw</em> (لَهْو), from the same root, names amusement, what occupies without nourishing. <em>al-takāthur</em> (التَّكَاثُر): rivalry in possession — not just hoarding, but hoarding so as to have more than another, and boasting of it. In six syllables the sūra states a law of the soul: what carries you toward hoarding carries you far from yourself.",
+      "commentaire": "<em>alhā</em> (أَلْهَىٰ) — to divert, to distract. The same root gives <em>lahw</em>, amusement: what occupies without nourishing. Qushayrī: “Your rivalry in having has busied you.” The soul is made for something else; when it absorbs itself in counting what it has, it loses what it is. The sūra does not condemn possession — it observes that it distracts. Possession becomes an idol when it takes the attention.",
       "mots": [
-        { "ar": "أَلْهَاكُمُ", "tr": "alhākumu", "racine": "ل ه و", "sens": "it has distracted you", "def": "alhā: to divert, to distract, to occupy with trifles; perfect + plural suffix pronoun: “it has distracted you”.", "gram": "perfect verb + suffix pronoun, 3rd pers. masc. sing." },
-        { "ar": "التَّكَاثُرُ", "tr": "at-takāthur", "racine": "ك ث ر", "sens": "vying for increase", "def": "takāthur: reciprocal form of the root k-th-r; the race to hoard, rivalry by number and possession; also boasting about goods.", "gram": "verbal noun, definite nominative" }
+        { "ar": "أَلْهَاكُمُ", "tr": "alhākumu", "racine": "ل ه و", "sens": "it has distracted you", "def": "alhā: to divert, to distract; perfect + plural suffix pronoun.", "gram": "perfect verb + suffix pronoun, 3rd pers. masc. sing." },
+        { "ar": "التَّكَاثُرُ", "tr": "at-takāthur", "racine": "ك ث ر", "sens": "vying for increase", "def": "takāthur: reciprocal form of the root k-th-r; the race to amass, rivalry by number.", "gram": "verbal noun, definite nominative" }
       ]
     },
     {
@@ -27,11 +27,11 @@
       "tr": "ḥattā zurtumu l-maqābir",
       "trad": "till you visit the graves.",
       "themes": ["death", "grave"],
-      "commentaire": "The verse can be read in two ways — and both carry. Literally, one visits the grave at one's own death: the distraction of having does not stop before the tomb. But the episode that surrounded the revelation gives it a sharper literal sense: those men had indeed gone to <em>visit</em> the graves to count their dead, as one counts one's goods. The verse turns them back upon themselves: you wanted to count the dead? Soon you will be counted among them.",
+      "commentaire": "Qushayrī adds the detail: tradition reports that the Quraysh boasted by counting their living, and then went to the cemetery to count their dead in order to enlarge their tally. And the sūra turns the word: <em>you have visited</em> the graves — not as tourists, but as future residents. The race of having stretches even into the bone: one still counts on the day one enters.",
       "mots": [
-        { "ar": "حَتَّىٰ", "tr": "ḥattā", "racine": "—", "sens": "until", "def": "particle introducing a limit: until, up to.", "gram": "particle" },
-        { "ar": "زُرْتُمُ", "tr": "zurtumu", "racine": "ز و ر", "sens": "you have visited", "def": "zāra: to visit, to go to; perfect plural.", "gram": "perfect verb, 2nd pers. masc. plur." },
-        { "ar": "الْمَقَابِرَ", "tr": "al-maqābir", "racine": "ق ب ر", "sens": "the graves", "def": "maqbara: cemetery, burial ground; in the plural, al-maqābir: the graves. Root q-b-r: to bury.", "gram": "plural noun, definite accusative" }
+        { "ar": "حَتَّىٰ", "tr": "ḥattā", "racine": "—", "sens": "until", "def": "particle introducing a limit: until.", "gram": "particle" },
+        { "ar": "زُرْتُمُ", "tr": "zurtumu", "racine": "ز و ر", "sens": "you have visited", "def": "zāra: to visit.", "gram": "perfect verb, 2nd pers. masc. plur." },
+        { "ar": "الْمَقَابِرَ", "tr": "al-maqābir", "racine": "ق ب ر", "sens": "the graves", "def": "maqbara: cemetery; plural al-maqābir.", "gram": "plural noun, definite accusative" }
       ]
     },
     {
@@ -39,12 +39,12 @@
       "ar": "كَلَّا سَوْفَ تَعْلَمُونَ",
       "tr": "kallā sawfa taʿlamūn",
       "trad": "Nay! Soon you shall know!",
-      "themes": ["refutation", "coming knowledge"],
-      "commentaire": "<em>kallā</em> (كَلَّا): “no!”, “by no means!” — one of the strongest particles of the Quran, abruptly denying what came before. <em>sawfa</em> (سَوْفَ): marks a distant, undetermined future. The verse does not argue; it posits a certainty. Commentators say this “you shall know” is fulfilled at several moments: at the instant of death, in the grave, on the Day of Judgment. The knowledge refused in life will come back into full light.",
+      "themes": ["refutation", "knowing to come"],
+      "commentaire": "<em>kallā</em> — the rupture. And Tustarī, on this verse, has God say a word of strange tenderness: “The one who turned away from Me shall know that he will not find another like Me.” Then he cites this verse: <em>You will remember Me if you have tasted any other than Me, / And you will know then that I was for you a treasure.</em> The promised knowing is not a threat but a return: the soul will come back to itself when all its alternatives have been exhausted.",
       "mots": [
-        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "nay!", "def": "strong refutation particle: nay!, by no means!.", "gram": "refutation particle" },
-        { "ar": "سَوْفَ", "tr": "sawfa", "racine": "—", "sens": "soon, one day", "def": "particle of distant future: one day, in time to come.", "gram": "future particle" },
-        { "ar": "تَعْلَمُونَ", "tr": "taʿlamūn", "racine": "ع ل م", "sens": "you shall know", "def": "ʿalima: to know; imperfect plural, 2nd pers.", "gram": "imperfect verb, 2nd pers. masc. plur." }
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "nay!", "def": "strong refutation particle.", "gram": "particle" },
+        { "ar": "سَوْفَ", "tr": "sawfa", "racine": "—", "sens": "soon, one day", "def": "particle of distant future.", "gram": "particle" },
+        { "ar": "تَعْلَمُونَ", "tr": "taʿlamūn", "racine": "ع ل م", "sens": "you shall know", "def": "ʿalima: to know.", "gram": "imperfect verb, 2nd pers. masc. plur." }
       ]
     },
     {
@@ -52,10 +52,10 @@
       "ar": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
       "tr": "thumma kallā sawfa taʿlamūn",
       "trad": "Again, nay! Soon you shall know!",
-      "themes": ["emphatic repetition"],
-      "commentaire": "The near-identical repetition of the previous verse — with <em>thumma</em> (ثُمَّ), “then”, “again” — strengthens the warning. Some commentators hear in it two distinct moments: a first knowing at death (the grave), a second after the Resurrection. Others see only a doubling for whoever did not heed the first time.",
+      "themes": ["repetition", "redoubled knowing"],
+      "commentaire": "The repetition is not in vain. It says that there are two moments of knowing — one at death, one at the Resurrection; or: one for the deniers, one for the believers. Or more simply: what was not grasped the first time will be grasped the second. Grace does not tire of insisting.",
       "mots": [
-        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "then, again", "def": "conjunction of temporal order: then, after that.", "gram": "conjunction" },
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "then, again", "def": "conjunction of temporal order.", "gram": "conjunction" },
         { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "nay!", "def": "refutation particle.", "gram": "particle" },
         { "ar": "سَوْفَ", "tr": "sawfa", "racine": "—", "sens": "soon", "def": "future particle.", "gram": "particle" },
         { "ar": "تَعْلَمُونَ", "tr": "taʿlamūn", "racine": "ع ل م", "sens": "you shall know", "def": "ʿalima: to know.", "gram": "imperfect verb, 2nd pers. masc. plur." }
@@ -66,14 +66,14 @@
       "ar": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَقِينِ",
       "tr": "kallā law taʿlamūna ʿilma l-yaqīn",
       "trad": "Nay! If you knew with the knowledge of certainty —",
-      "themes": ["degrees of certainty", "knowing"],
-      "commentaire": "<em>ʿilm al-yaqīn</em> (عِلْم اليَقِين): the knowledge of certainty — the first of three degrees of <em>yaqīn</em> that Sufi tradition would distinguish: <em>ʿilm al-yaqīn</em>, knowing by indication or by trustworthy report (like knowing of a fire by seeing smoke); <em>ʿayn al-yaqīn</em> (v. 7), seeing the fire itself; <em>ḥaqq al-yaqīn</em>, dwelling in the fire — feeling its heat. The verse leaves the sentence hanging: “if you knew…”. The conditional answer is left in the air, so that each may complete it according to his own deeds.",
+      "themes": ["ʿilm al-yaqīn", "first degree"],
+      "commentaire": "<em>ʿilm al-yaqīn</em> (عِلْم اليَقِين), the knowledge of certainty — the first of the three degrees of <em>yaqīn</em>. Tustarī gives the image that lights the whole sūra: “Certainty is the fire, affirmation by the tongue is the wick, the deed is the oil. Certainty begins with unveiling (<em>mukāshafa</em>), then comes direct contemplation (<em>muʿāyana</em>), then witnessing (<em>mushāhada</em>).” The soul is a lamp: it needs a wick (the word) and an oil (the act) for certainty to catch fire. When it catches, it begins to light the place.",
       "mots": [
         { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "nay!", "def": "refutation particle.", "gram": "particle" },
-        { "ar": "لَوْ", "tr": "law", "racine": "—", "sens": "if", "def": "conditional particle: if (irrealis).", "gram": "conditional particle" },
-        { "ar": "تَعْلَمُونَ", "tr": "taʿlamūn", "racine": "ع ل م", "sens": "you knew", "def": "ʿalima: to know, to be aware.", "gram": "imperfect verb, 2nd pers. masc. plur." },
-        { "ar": "عِلْمَ", "tr": "ʿilma", "racine": "ع ل م", "sens": "the knowledge of", "def": "ʿilm: knowledge, science; in the construct accusative: “the knowledge of”.", "gram": "noun, construct accusative" },
-        { "ar": "الْيَقِينِ", "tr": "al-yaqīn", "racine": "ي ق ن", "sens": "certainty", "def": "yaqīn: certainty — not opinion, but what cannot be otherwise; in Sufism, a state of firm and doubtless knowing.", "gram": "noun, definite genitive" }
+        { "ar": "لَوْ", "tr": "law", "racine": "—", "sens": "if", "def": "conditional particle: if.", "gram": "conditional particle" },
+        { "ar": "تَعْلَمُونَ", "tr": "taʿlamūn", "racine": "ع ل م", "sens": "you knew", "def": "ʿalima: to know.", "gram": "imperfect verb, 2nd pers. masc. plur." },
+        { "ar": "عِلْمَ", "tr": "ʿilma", "racine": "ع ل م", "sens": "the knowledge of", "def": "ʿilm: knowledge, science.", "gram": "noun, construct accusative" },
+        { "ar": "الْيَقِينِ", "tr": "al-yaqīn", "racine": "ي ق ن", "sens": "certainty", "def": "yaqīn: certainty; in Sufism, a state of knowing without doubt.", "gram": "noun, definite genitive" }
       ]
     },
     {
@@ -81,12 +81,12 @@
       "ar": "لَتَرَوُنَّ الْجَحِيمَ",
       "tr": "la-tarawunna l-jaḥīm",
       "trad": "you would surely see Hellfire;",
-      "themes": ["judgment", "seeing"],
-      "commentaire": "<em>al-jaḥīm</em> (الجَحِيم): Hellfire, one of the Quranic names for the Fire; from <em>jaḥama</em> (جَحَمَ), “to burn intensely”. The verse uses the energetic particle <em>la-…-anna</em>: “you would surely see it”. The hanging sentence of the previous verse begins to unfold.",
+      "themes": ["vision", "blazing fire"],
+      "commentaire": "<em>al-jaḥīm</em> (الجَحِيم), the blaze — a name of the Fire. The verse extends the unfinished sentence of the previous one: if you knew by the knowledge of certainty, you would see. Seeing is not knowing, and it is not imagination either — it is a whole degree of knowing.",
       "mots": [
         { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "surely", "def": "affirmative particle.", "gram": "particle" },
-        { "ar": "تَرَوُنَّ", "tr": "tarawunna", "racine": "ر أ ي", "sens": "you would see", "def": "raʾā: to see; energetic imperfect, 2nd pers. plur.: “you would surely see”.", "gram": "energetic imperfect verb, 2nd pers. masc. plur." },
-        { "ar": "الْجَحِيمَ", "tr": "al-jaḥīm", "racine": "ج ح م", "sens": "Hellfire", "def": "al-Jaḥīm: name of the Fire, the raging blaze; from the root j-ḥ-m, to burn intensely.", "gram": "noun, definite accusative" }
+        { "ar": "تَرَوُنَّ", "tr": "tarawunna", "racine": "ر أ ي", "sens": "you would see", "def": "raʾā: to see; energetic imperfect.", "gram": "energetic imperfect verb, 2nd pers. masc. plur." },
+        { "ar": "الْجَحِيمَ", "tr": "al-jaḥīm", "racine": "ج ح م", "sens": "Hellfire", "def": "al-Jaḥīm: name of the Fire, the raging blaze; from the root j-ḥ-m.", "gram": "noun, definite accusative" }
       ]
     },
     {
@@ -94,14 +94,14 @@
       "ar": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِينِ",
       "tr": "thumma la-tarawunnahā ʿayna l-yaqīn",
       "trad": "then you would surely see it with the eye of certainty;",
-      "themes": ["degrees of certainty", "direct vision"],
-      "commentaire": "<em>ʿayn al-yaqīn</em> (عَيْن اليَقِين): the eye of certainty — the second degree of <em>yaqīn</em>. If <em>ʿilm al-yaqīn</em> knew by indication, <em>ʿayn al-yaqīn</em> sees directly. Ibn ʿArabī, in his <em>Meccan Openings</em>, writes: “He who witnesses himself witnesses his Lord, and so moves from the certainty of knowledge to the certainty of the eye.” The verse implies that what was not taken seriously as knowing will be so as vision — and the difference is not slight.",
+      "themes": ["ʿayn al-yaqīn", "second degree"],
+      "commentaire": "<em>ʿayn al-yaqīn</em> (عَيْن اليَقِين), the eye of certainty. Tustarī specifies: “The eye of certainty is not an aspect of certainty — it is <em>the thing itself</em>, in its entirety (<em>kulliyya</em>).” Knowledge had named; the eye sees. This is what the Sufi tradition will then name, in a third degree, <em>ḥaqq al-yaqīn</em> — the truth of certainty, where one is no longer only a witness but is within the thing itself.",
       "mots": [
-        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "then", "def": "conjunction of temporal order: then.", "gram": "conjunction" },
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "then", "def": "conjunction of temporal order.", "gram": "conjunction" },
         { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "surely", "def": "affirmative particle.", "gram": "particle" },
         { "ar": "تَرَوُنَّهَا", "tr": "tarawunnahā", "racine": "ر أ ي", "sens": "you would see it", "def": "raʾā: to see; energetic imperfect + feminine suffix pronoun.", "gram": "energetic imperfect + suffix pronoun, 2nd pers. masc. plur." },
-        { "ar": "عَيْنَ", "tr": "ʿayna", "racine": "ع ي ن", "sens": "the eye of", "def": "ʿayn: the eye; by extension, direct vision, actual perception. In the construct accusative.", "gram": "noun, construct accusative" },
-        { "ar": "الْيَقِينِ", "tr": "al-yaqīn", "racine": "ي ق ن", "sens": "certainty", "def": "yaqīn: certainty; see v. 5.", "gram": "noun, definite genitive" }
+        { "ar": "عَيْنَ", "tr": "ʿayna", "racine": "ع ي ن", "sens": "the eye of", "def": "ʿayn: the eye; by extension, direct vision, actual perception.", "gram": "noun, construct accusative" },
+        { "ar": "الْيَقِينِ", "tr": "al-yaqīn", "racine": "ي ق ن", "sens": "certainty", "def": "yaqīn: see v. 5.", "gram": "noun, definite genitive" }
       ]
     },
     {
@@ -109,15 +109,15 @@
       "ar": "ثُمَّ لَتُسْأَلُنَّ يَوْمَئِذٍ عَنِ النَّعِيمِ",
       "tr": "thumma la-tusʾalunna yawmaʾidhin ʿani n-naʿīm",
       "trad": "then you will surely be questioned, on that Day, about ease and delight.",
-      "themes": ["judgment", "responsibility", "blessings"],
-      "commentaire": "<em>al-naʿīm</em> (النَّعِيم): what makes life pleasant — goods, delights, ease, blessings. The sūra closes its loop: those goods one has piled up, one will be questioned about them. Not only about their amount, but about their use. The Prophet, recalling a meeting where Companions came to him after a hunger, said to them: “By the One in whose hand is my soul, you will be questioned about this blessing on the Day of Resurrection: hunger drew you from your homes, and you did not return before it reached you.” The smallest <em>naʿīm</em> will be named. And the first thing one will be questioned about, according to some commentators, will be the greatest grace of all — the Prophet himself.",
+      "themes": ["naʿīm", "gratitude", "all that was given"],
+      "commentaire": "<em>al-naʿīm</em> (النَّعِيم). Qushayrī unfolds: “He has meant all the blessings God has given them, and He demands of them the gratitude for these.” And he lists, with grave humour: “among the naʿīm about which one is questioned: the lightening of prescriptions and the facilities in worship; or warm water in winter and cool water in summer; or health of the body and free time; or contentment with destiny (<em>al-riḍāʾ bi-l-qaḍāʾ</em>); or satisfaction in daily life; or the Prophet himself, the Chosen One (<em>al-Muṣṭafā</em>).” Tustarī moves in the same direction: “Not an hour of day or night passes by jinn and men without containing a right (<em>ḥaqq</em>) that God holds over them.” The verse does not threaten — it recalls: every breath is a gift, and gratitude is the only payment God awaits for having given them.",
       "mots": [
         { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "then", "def": "conjunction: then.", "gram": "conjunction" },
         { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "surely", "def": "affirmative particle.", "gram": "particle" },
-        { "ar": "تُسْأَلُنَّ", "tr": "tusʾalunna", "racine": "س أ ل", "sens": "you will be questioned", "def": "saʾala: to ask, to question; passive energetic imperfect plural: “you will surely be questioned”.", "gram": "passive energetic imperfect, 2nd pers. masc. plur." },
-        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "on that Day", "def": "yawm + idh: on that day, on that very day; designates the Day of Judgment.", "gram": "adverb of time" },
+        { "ar": "تُسْأَلُنَّ", "tr": "tusʾalunna", "racine": "س أ ل", "sens": "you will be questioned", "def": "saʾala: to ask, to question; passive energetic imperfect plural.", "gram": "passive energetic imperfect, 2nd pers. masc. plur." },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "on that Day", "def": "yawm + idh: on that day, on that very day.", "gram": "adverb of time" },
         { "ar": "عَنِ", "tr": "ʿani", "racine": "—", "sens": "about", "def": "preposition ʿan: about, concerning.", "gram": "preposition" },
-        { "ar": "النَّعِيمِ", "tr": "an-naʿīm", "racine": "ن ع م", "sens": "the blessings, the delights", "def": "naʿīm: ease, agreeableness, blessing; what makes life pleasant, from the smallest (cool water) to the greatest (prophethood, in some commentaries).", "gram": "noun, definite genitive" }
+        { "ar": "النَّعِيمِ", "tr": "an-naʿīm", "racine": "ن ع م", "sens": "the blessings, the delights", "def": "naʿīm: ease, blessing; according to Qushayrī, all that God gives — from the humblest daily thing to the Prophet himself.", "gram": "noun, definite genitive" }
       ]
     }
   ]

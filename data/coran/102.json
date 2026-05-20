@@ -6,8 +6,8 @@
   "revelation": "mecquoise",
   "versets_count": 8,
   "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
-  "intro": "Al-Takāthur — « L'Accumulation » — est une sourate mecquoise, parfois appelée par les Compagnons « la sourate de la tombe ». Le mot <em>takāthur</em> (تَكَاثُر) est dérivé de <em>kathīr</em> (كَثِير), « beaucoup » : il dit la rivalité dans l'avoir, le désir de posséder plus que l'autre, mais aussi de s'en vanter. La tradition rapporte qu'elle fut révélée à propos de deux clans de Quraysh qui se disputaient le titre de la plus grande tribu : ils s'en sont allés compter leurs morts dans les cimetières pour départager le nombre. L'image est saisissante — la vanité ne s'arrête même pas devant les tombes. La sourate déroule alors un mouvement en deux temps : un constat sec (l'accumulation distrait jusqu'à la mort), puis une montée en intensité où sont nommés trois degrés de connaissance — le savoir, la vision, l'expérience — qu'on retrouvera plus tard dans la tradition soufie comme <em>ʿilm al-yaqīn</em>, <em>ʿayn al-yaqīn</em>, <em>ḥaqq al-yaqīn</em> : connaître par indication, voir, et vivre.",
-  "themes": ["accumulation", "distraction", "mort", "niveaux de certitude", "jugement"],
+  "intro": "Al-Takāthur — « La rivalité dans l'avoir » — diagnostique une maladie de l'âme à toute époque : la course à l'accumulation et à l'orgueil. Mais la sourate s'élève peu à peu, et finit par dire trois degrés de la connaissance — qui deviendront chez les soufis ce qu'on appelle les trois <em>yaqīn</em>. Tustarī les explique par une image rare : « La certitude (<em>yaqīn</em>) est le feu ; l'affirmation par la langue est la mèche ; et l'acte est son huile. La certitude commence par le dévoilement (<em>mukāshafa</em>, مُكَاشَفَة), puis vient la contemplation directe (<em>muʿāyana</em>, مُعَايَنَة), puis le témoignage (<em>mushāhada</em>, مُشَاهَدَة). » L'âme distraite par les biens devient le contraire d'une lampe ; et la sourate la rappelle, en peu de mots, à cette lampe qu'elle est en réalité. Et la fin — « vous serez interrogés ce Jour-là sur les bienfaits » — n'est pas une menace : c'est, dit Qushayrī, le rappel que Dieu vous a donné tant de choses qui appellent gratitude, depuis l'eau fraîche un jour d'été jusqu'au Prophète lui-même.",
+  "themes": ["accumulation", "trois yaqīn", "gratitude", "lampe de l'âme"],
   "versets": [
     {
       "n": 1,
@@ -15,10 +15,10 @@
       "tr": "alhākumu t-takāthur",
       "trad": "Vous vous préoccupez d'accumuler,",
       "themes": ["distraction", "vanité"],
-      "commentaire": "<em>alhā</em> (أَلْهَىٰ) : détourner, distraire, faire oublier ce qui compte vraiment. <em>lahw</em> (لَهْو), de la même racine, désigne le divertissement, ce qui occupe sans nourrir. <em>al-takāthur</em> (التَّكَاثُر) : la rivalité dans l'avoir — non seulement amasser, mais amasser pour avoir plus que l'autre, et se vanter de l'avoir. La sourate dit en six syllabes une loi de l'âme : ce qui vous emporte vers l'accumulation vous emporte loin de vous-mêmes.",
+      "commentaire": "<em>alhā</em> (أَلْهَىٰ) — détourner, distraire. La même racine donne <em>lahw</em>, le divertissement : ce qui occupe sans nourrir. Qushayrī : « Votre rivalité dans l'avoir vous a occupés. » L'âme est faite pour autre chose ; quand elle s'absorbe dans le compte de ce qu'elle a, elle perd ce qu'elle est. La sourate ne condamne pas la possession — elle constate qu'elle distrait. La possession devient idole quand elle prend l'attention.",
       "mots": [
-        { "ar": "أَلْهَاكُمُ", "tr": "alhākumu", "racine": "ل ه و", "sens": "il vous a distraits", "def": "alhā : détourner, distraire, occuper de futilités ; à l'accompli + pronom suffixe pluriel : « il vous a distraits ».", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
-        { "ar": "التَّكَاثُرُ", "tr": "at-takāthur", "racine": "ك ث ر", "sens": "l'accumulation, la rivalité dans l'avoir", "def": "takāthur : forme réciproque de la racine k-th-r ; la course à l'accumulation, la rivalité par le nombre et la possession ; aussi la vantardise sur les biens.", "gram": "nom verbal, nominatif défini" }
+        { "ar": "أَلْهَاكُمُ", "tr": "alhākumu", "racine": "ل ه و", "sens": "il vous a distraits", "def": "alhā : détourner, distraire ; à l'accompli + pronom suffixe pluriel.", "gram": "verbe accompli + pronom suffixe, 3ᵉ pers. masc. sing." },
+        { "ar": "التَّكَاثُرُ", "tr": "at-takāthur", "racine": "ك ث ر", "sens": "l'accumulation, la rivalité dans l'avoir", "def": "takāthur : forme réciproque de la racine k-th-r ; la course à l'accumulation, la rivalité par le nombre.", "gram": "nom verbal, nominatif défini" }
       ]
     },
     {
@@ -27,11 +27,11 @@
       "tr": "ḥattā zurtumu l-maqābir",
       "trad": "jusqu'à ce que vous visitiez les tombes.",
       "themes": ["mort", "tombe"],
-      "commentaire": "Le verset peut s'entendre de deux manières — et les deux portent. Littéralement, on visite la tombe à sa propre mort : la distraction de l'avoir ne s'arrête pas avant le tombeau. Mais l'épisode qui a entouré la révélation lui donne aussi un sens littéral plus dur : ces hommes étaient effectivement allés <em>visiter</em> les tombes pour y compter leurs morts, comme on compte ses biens. Le verset les renvoie à eux-mêmes : vous vouliez compter des morts ? Vous y serez bientôt comptés.",
+      "commentaire": "Qushayrī ajoute la précision : la tradition rapporte que les Quraysh se vantaient en comptant leurs vivants, puis allèrent au cimetière compter leurs morts pour augmenter leur compte. Et la sourate retourne le mot : <em>vous avez visité</em> les tombes — non en touristes, mais en futurs résidents. La rivalité de l'avoir s'étire jusque dans l'os : on compte encore le jour où l'on entre.",
       "mots": [
-        { "ar": "حَتَّىٰ", "tr": "ḥattā", "racine": "—", "sens": "jusqu'à ce que", "def": "particule introduisant une limite : jusqu'à, jusqu'à ce que.", "gram": "particule" },
-        { "ar": "زُرْتُمُ", "tr": "zurtumu", "racine": "ز و ر", "sens": "vous avez visité", "def": "zāra : visiter, se rendre auprès de ; à l'accompli pluriel.", "gram": "verbe accompli, 2ᵉ pers. masc. plur." },
-        { "ar": "الْمَقَابِرَ", "tr": "al-maqābir", "racine": "ق ب ر", "sens": "les tombes", "def": "maqbara : cimetière, lieu de sépulture ; au pluriel, al-maqābir : les tombes. Racine q-b-r : enterrer.", "gram": "nom pluriel, accusatif défini" }
+        { "ar": "حَتَّىٰ", "tr": "ḥattā", "racine": "—", "sens": "jusqu'à ce que", "def": "particule introduisant une limite : jusqu'à.", "gram": "particule" },
+        { "ar": "زُرْتُمُ", "tr": "zurtumu", "racine": "ز و ر", "sens": "vous avez visité", "def": "zāra : visiter, se rendre auprès de.", "gram": "verbe accompli, 2ᵉ pers. masc. plur." },
+        { "ar": "الْمَقَابِرَ", "tr": "al-maqābir", "racine": "ق ب ر", "sens": "les tombes", "def": "maqbara : cimetière ; pluriel al-maqābir.", "gram": "nom pluriel, accusatif défini" }
       ]
     },
     {
@@ -39,12 +39,12 @@
       "ar": "كَلَّا سَوْفَ تَعْلَمُونَ",
       "tr": "kallā sawfa taʿlamūn",
       "trad": "Mais non ! Quelque jour vous saurez !",
-      "themes": ["réfutation", "révélation à venir"],
-      "commentaire": "<em>kallā</em> (كَلَّا) : « non ! », « pas du tout ! » — l'une des particules les plus fortes du Coran, qui dément abruptement ce qui précède. <em>sawfa</em> (سَوْفَ) : marque d'un futur lointain, indéterminé. Le verset n'argumente pas ; il pose une certitude. Les commentateurs disent que ce « vous saurez » s'accomplit à plusieurs moments : à l'instant de la mort, dans la tombe, au Jour du jugement. Le savoir refusé dans la vie reviendra en pleine lumière.",
+      "themes": ["réfutation", "annonce du savoir"],
+      "commentaire": "<em>kallā</em> — la rupture. Et Tustarī, sur ce verset, fait dire à Dieu une parole d'une étrange tendresse : « Celui qui s'est détourné de Moi saura qu'il ne trouvera nul autre comme Moi. » Puis il cite ce vers : <em>Tu te souviendras de Moi si tu as goûté à un autre que Moi, / Et tu sauras alors que J'étais pour toi un trésor.</em> Le savoir promis n'est pas une menace mais un retour : l'âme reviendra à elle-même quand toutes ses alternatives auront été épuisées.",
       "mots": [
-        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation forte : non !, pas du tout !.", "gram": "particule de réfutation" },
-        { "ar": "سَوْفَ", "tr": "sawfa", "racine": "—", "sens": "quelque jour, bientôt", "def": "particule de futur lointain : un jour, dans un avenir à venir.", "gram": "particule de futur" },
-        { "ar": "تَعْلَمُونَ", "tr": "taʿlamūn", "racine": "ع ل م", "sens": "vous saurez", "def": "ʿalima : savoir, connaître ; à l'inaccompli pluriel, 2ᵉ pers.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." }
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation forte.", "gram": "particule" },
+        { "ar": "سَوْفَ", "tr": "sawfa", "racine": "—", "sens": "quelque jour, bientôt", "def": "particule de futur lointain.", "gram": "particule" },
+        { "ar": "تَعْلَمُونَ", "tr": "taʿlamūn", "racine": "ع ل م", "sens": "vous saurez", "def": "ʿalima : savoir.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." }
       ]
     },
     {
@@ -52,10 +52,10 @@
       "ar": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
       "tr": "thumma kallā sawfa taʿlamūn",
       "trad": "Une fois encore : quelque jour vous saurez !",
-      "themes": ["répétition emphatique"],
-      "commentaire": "La répétition presque identique du verset précédent — avec <em>thumma</em> (ثُمَّ), « ensuite », « puis » — renforce l'avertissement. Certains commentateurs y entendent deux moments distincts : la première connaissance à la mort (le tombeau), la seconde après la résurrection. D'autres y voient un redoublement pour celui qui n'écouterait pas la première fois.",
+      "themes": ["répétition", "savoir redoublé"],
+      "commentaire": "La répétition n'est pas vaine. Elle dit qu'il y a deux moments du savoir — l'un à la mort, l'autre à la résurrection ; ou bien : l'un pour les dénégateurs, l'autre pour les croyants. Ou plus simplement : ce qui n'a pas été saisi du premier coup le sera du second. La grâce ne se lasse pas d'insister.",
       "mots": [
-        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "puis, ensuite", "def": "conjonction marquant l'ordre temporel : puis, après cela.", "gram": "conjonction" },
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "puis, ensuite", "def": "conjonction marquant l'ordre temporel.", "gram": "conjonction" },
         { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation.", "gram": "particule" },
         { "ar": "سَوْفَ", "tr": "sawfa", "racine": "—", "sens": "quelque jour", "def": "particule de futur lointain.", "gram": "particule" },
         { "ar": "تَعْلَمُونَ", "tr": "taʿlamūn", "racine": "ع ل م", "sens": "vous saurez", "def": "ʿalima : savoir.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." }
@@ -66,14 +66,14 @@
       "ar": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَقِينِ",
       "tr": "kallā law taʿlamūna ʿilma l-yaqīn",
       "trad": "Ah, si vous pouviez savoir de science certaine :",
-      "themes": ["niveaux de certitude", "savoir"],
-      "commentaire": "<em>ʿilm al-yaqīn</em> (عِلْم اليَقِين) : la science de la certitude — premier des trois degrés du <em>yaqīn</em> que la tradition soufie distinguera : <em>ʿilm al-yaqīn</em>, savoir par indication ou par information sûre (comme savoir qu'il y a du feu en voyant la fumée) ; <em>ʿayn al-yaqīn</em> (verset 7), voir le feu lui-même ; <em>ḥaqq al-yaqīn</em>, vivre dans le feu — sentir sa chaleur. Le verset suspend la phrase : « Si vous saviez… » Le complément est laissé en l'air, pour que chacun le complète selon ses propres œuvres.",
+      "themes": ["ʿilm al-yaqīn", "premier degré"],
+      "commentaire": "<em>ʿilm al-yaqīn</em> (عِلْم اليَقِين), la science de la certitude — le premier des trois degrés du <em>yaqīn</em>. Tustarī donne l'image qui éclaire toute la sourate : « La certitude est le feu, l'affirmation par la langue est la mèche, l'acte est l'huile. La certitude commence par le dévoilement (<em>mukāshafa</em>), puis vient la contemplation directe (<em>muʿāyana</em>), puis le témoignage (<em>mushāhada</em>). » L'âme est une lampe : il lui faut une mèche (la parole), une huile (l'acte), pour que la certitude prenne feu. Quand elle prend, elle commence à éclairer la place.",
       "mots": [
         { "ar": "كَلَّا", "tr": "kallā", "racine": "—", "sens": "non !", "def": "particule de réfutation.", "gram": "particule" },
-        { "ar": "لَوْ", "tr": "law", "racine": "—", "sens": "si", "def": "particule conditionnelle : si (irréel).", "gram": "particule conditionnelle" },
-        { "ar": "تَعْلَمُونَ", "tr": "taʿlamūn", "racine": "ع ل م", "sens": "vous saviez", "def": "ʿalima : savoir, connaître.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." },
-        { "ar": "عِلْمَ", "tr": "ʿilma", "racine": "ع ل م", "sens": "la science de", "def": "ʿilm : science, connaissance ; à l'accusatif construit : « la science de ».", "gram": "nom, accusatif construit" },
-        { "ar": "الْيَقِينِ", "tr": "al-yaqīn", "racine": "ي ق ن", "sens": "la certitude", "def": "yaqīn : la certitude — non l'opinion, mais ce qui ne peut être autrement ; en soufisme, état de connaissance ferme et sans doute.", "gram": "nom, génitif défini" }
+        { "ar": "لَوْ", "tr": "law", "racine": "—", "sens": "si", "def": "particule conditionnelle : si.", "gram": "particule conditionnelle" },
+        { "ar": "تَعْلَمُونَ", "tr": "taʿlamūn", "racine": "ع ل م", "sens": "vous saviez", "def": "ʿalima : savoir.", "gram": "verbe inaccompli, 2ᵉ pers. masc. plur." },
+        { "ar": "عِلْمَ", "tr": "ʿilma", "racine": "ع ل م", "sens": "la science de", "def": "ʿilm : science, connaissance.", "gram": "nom, accusatif construit" },
+        { "ar": "الْيَقِينِ", "tr": "al-yaqīn", "racine": "ي ق ن", "sens": "la certitude", "def": "yaqīn : la certitude ; en soufisme, état de connaissance sans doute.", "gram": "nom, génitif défini" }
       ]
     },
     {
@@ -81,12 +81,12 @@
       "ar": "لَتَرَوُنَّ الْجَحِيمَ",
       "tr": "la-tarawunna l-jaḥīm",
       "trad": "vous verrez la Fournaise ;",
-      "themes": ["jugement", "vision"],
-      "commentaire": "<em>al-jaḥīm</em> (الجَحِيم) : la Fournaise, l'un des noms du Feu dans le Coran ; vient de <em>jaḥama</em> (جَحَمَ), « être brûlant », « avoir un feu intense ». Le verset emploie la particule énergique <em>la-…-anna</em> : « assurément vous la verrez ». La phrase suspendue du verset précédent commence à se déployer.",
+      "themes": ["vision", "fournaise"],
+      "commentaire": "<em>al-jaḥīm</em> (الجَحِيم), le brasier — un des noms du Feu. Le verset prolonge l'inachèvement du verset précédent : si vous saviez par la science de la certitude, vous verriez. Voir n'est pas savoir, et ce n'est pas non plus de l'imagination — c'est un degré entier de connaissance.",
       "mots": [
         { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
-        { "ar": "تَرَوُنَّ", "tr": "tarawunna", "racine": "ر أ ي", "sens": "vous verrez", "def": "raʾā : voir ; à l'inaccompli énergique, 2ᵉ pers. plur. : « vous verrez assurément ».", "gram": "verbe inaccompli énergique, 2ᵉ pers. masc. plur." },
-        { "ar": "الْجَحِيمَ", "tr": "al-jaḥīm", "racine": "ج ح م", "sens": "la Fournaise", "def": "al-Jaḥīm : nom du Feu, la Fournaise ardente ; de la racine j-ḥ-m, brûler intensément.", "gram": "nom, accusatif défini" }
+        { "ar": "تَرَوُنَّ", "tr": "tarawunna", "racine": "ر أ ي", "sens": "vous verrez", "def": "raʾā : voir ; à l'inaccompli énergique.", "gram": "verbe inaccompli énergique, 2ᵉ pers. masc. plur." },
+        { "ar": "الْجَحِيمَ", "tr": "al-jaḥīm", "racine": "ج ح م", "sens": "la Fournaise", "def": "al-Jaḥīm : nom du Feu, le brasier ardent ; de j-ḥ-m, brûler intensément.", "gram": "nom, accusatif défini" }
       ]
     },
     {
@@ -94,14 +94,14 @@
       "ar": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِينِ",
       "tr": "thumma la-tarawunnahā ʿayna l-yaqīn",
       "trad": "puis vous la verrez avec l'œil de la certitude ;",
-      "themes": ["niveaux de certitude", "vision directe"],
-      "commentaire": "<em>ʿayn al-yaqīn</em> (عَيْن اليَقِين) : l'œil de la certitude — le deuxième degré du <em>yaqīn</em>. Si <em>ʿilm al-yaqīn</em> savait par indice, <em>ʿayn al-yaqīn</em> voit directement. Ibn ʿArabī, dans les <em>Conquêtes mecquoises</em>, écrit : « Celui qui se voit lui-même voit son Seigneur, et passe ainsi de la certitude de la science à la certitude de l'œil. » Le verset implique que ce qui n'a pas été pris au sérieux comme connaissance le sera comme vision — et la différence n'est pas mince.",
+      "themes": ["ʿayn al-yaqīn", "deuxième degré"],
+      "commentaire": "<em>ʿayn al-yaqīn</em> (عَيْن اليَقِين), l'œil de la certitude. Tustarī précise : « L'œil de la certitude n'est pas un aspect de la certitude — c'est <em>la chose même</em>, dans sa totalité (<em>kulliyya</em>). » Le savoir avait nommé ; l'œil voit. C'est ce que la tradition soufie appellera ensuite, par un troisième degré, <em>ḥaqq al-yaqīn</em> — la vérité de la certitude, où l'on n'est plus seulement témoin mais on est dans la chose même.",
       "mots": [
-        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "puis", "def": "conjonction d'ordre temporel : puis.", "gram": "conjonction" },
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "puis", "def": "conjonction d'ordre temporel.", "gram": "conjonction" },
         { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
         { "ar": "تَرَوُنَّهَا", "tr": "tarawunnahā", "racine": "ر أ ي", "sens": "vous la verrez", "def": "raʾā : voir ; à l'inaccompli énergique + pronom suffixe féminin.", "gram": "verbe inaccompli énergique + pronom suffixe, 2ᵉ pers. masc. plur." },
-        { "ar": "عَيْنَ", "tr": "ʿayna", "racine": "ع ي ن", "sens": "l'œil de", "def": "ʿayn : l'œil ; au sens dérivé, la vision directe, la perception réelle. À l'accusatif construit.", "gram": "nom, accusatif construit" },
-        { "ar": "الْيَقِينِ", "tr": "al-yaqīn", "racine": "ي ق ن", "sens": "la certitude", "def": "yaqīn : la certitude ; voir verset 5.", "gram": "nom, génitif défini" }
+        { "ar": "عَيْنَ", "tr": "ʿayna", "racine": "ع ي ن", "sens": "l'œil de", "def": "ʿayn : l'œil ; au sens dérivé, la vision directe, la perception réelle.", "gram": "nom, accusatif construit" },
+        { "ar": "الْيَقِينِ", "tr": "al-yaqīn", "racine": "ي ق ن", "sens": "la certitude", "def": "yaqīn : voir verset 5.", "gram": "nom, génitif défini" }
       ]
     },
     {
@@ -109,15 +109,15 @@
       "ar": "ثُمَّ لَتُسْأَلُنَّ يَوْمَئِذٍ عَنِ النَّعِيمِ",
       "tr": "thumma la-tusʾalunna yawmaʾidhin ʿani n-naʿīm",
       "trad": "puis on vous interrogera, ce Jour-là, sur les plaisirs éphémères.",
-      "themes": ["jugement", "responsabilité", "bienfaits"],
-      "commentaire": "<em>al-naʿīm</em> (النَّعِيم) : ce qui rend la vie agréable — biens, plaisirs, douceurs, bienfaits. La sourate referme sa boucle : ces biens qu'on a accumulés, on en sera interrogé. Pas seulement sur leur quantité, mais sur l'usage qu'on en a fait. Le Prophète, racontant une rencontre où des Compagnons étaient venus à lui après une faim, leur a dit : « Par Celui dans la main de qui est mon âme, vous serez interrogés sur ce bienfait au Jour de la Résurrection : la faim vous a fait sortir de chez vous, et vous n'êtes pas rentrés sans qu'il vous parvienne. » Le moindre <em>naʿīm</em> sera nommé. Et la première chose dont on sera interrogé, selon certains commentateurs, sera la plus grande grâce de toutes — le Prophète lui-même.",
+      "themes": ["naʿīm", "gratitude", "tout ce qui a été donné"],
+      "commentaire": "<em>al-naʿīm</em> (النَّعِيم). Qushayrī déploie : « Il a voulu dire toutes les grâces que Dieu leur a données, et Il leur en réclame la gratitude. » Et il énumère, avec un humour grave : « parmi le naʿīm qu'on interrogera : l'allégement des prescriptions et les facilités dans le culte ; ou bien l'eau chaude en hiver et l'eau froide en été ; ou bien la santé du corps et le temps libre ; ou bien le contentement du destin (<em>al-riḍāʾ bi-l-qaḍāʾ</em>) ; ou bien la satisfaction dans le quotidien ; ou bien le Prophète lui-même, l'Élu (<em>al-Muṣṭafā</em>). » Tustarī va dans le même sens : « Il n'est pas d'heure du jour ou de la nuit que les djinns et les hommes traversent sans qu'elle ne contienne un droit (<em>ḥaqq</em>) que Dieu a sur eux. » Le verset ne menace pas — il rappelle : chaque souffle est un don, et la gratitude est l'unique salaire que Dieu attend pour les avoir donnés.",
       "mots": [
         { "ar": "ثُمَّ", "tr": "thumma", "racine": "—", "sens": "puis", "def": "conjonction : puis.", "gram": "conjonction" },
         { "ar": "لَ", "tr": "la-", "racine": "—", "sens": "assurément", "def": "particule d'affirmation.", "gram": "particule" },
-        { "ar": "تُسْأَلُنَّ", "tr": "tusʾalunna", "racine": "س أ ل", "sens": "vous serez interrogés", "def": "saʾala : demander, interroger ; au passif inaccompli énergique pluriel : « vous serez certainement interrogés ».", "gram": "verbe inaccompli énergique passif, 2ᵉ pers. masc. plur." },
-        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce Jour-là", "def": "yawm + idh : ce jour-là, en ce jour précis ; désigne le Jour du jugement.", "gram": "adverbe de temps" },
+        { "ar": "تُسْأَلُنَّ", "tr": "tusʾalunna", "racine": "س أ ل", "sens": "vous serez interrogés", "def": "saʾala : demander, interroger ; au passif inaccompli énergique pluriel.", "gram": "verbe inaccompli énergique passif, 2ᵉ pers. masc. plur." },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce Jour-là", "def": "yawm + idh : ce jour-là, en ce jour précis.", "gram": "adverbe de temps" },
         { "ar": "عَنِ", "tr": "ʿani", "racine": "—", "sens": "sur, à propos de", "def": "préposition ʿan : à propos de, au sujet de.", "gram": "préposition" },
-        { "ar": "النَّعِيمِ", "tr": "an-naʿīm", "racine": "ن ع م", "sens": "les bienfaits, les plaisirs", "def": "naʿīm : douceur, agrément, bienfait ; ce qui rend la vie agréable, du plus petit (l'eau fraîche) au plus grand (la prophétie, dans certains commentaires).", "gram": "nom, génitif défini" }
+        { "ar": "النَّعِيمِ", "tr": "an-naʿīm", "racine": "ن ع م", "sens": "les bienfaits, les douceurs", "def": "naʿīm : douceur, bienfait ; selon Qushayrī, tout ce que Dieu donne — du quotidien le plus humble au Prophète lui-même.", "gram": "nom, génitif défini" }
       ]
     }
   ]

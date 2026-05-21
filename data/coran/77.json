@@ -1,0 +1,642 @@
+{
+  "n": 77,
+  "nom_ar": "المُرْسَلَات",
+  "nom_tr": "al-Mursalāt",
+  "nom_fr": "Les Émissaires",
+  "revelation": "mecquoise",
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "versets_count": 50,
+  "intro": "al-Mursalāt — « les Émissaires » — s'ouvre, comme al-Nāziʿāt, par une suite de serments mystérieux : par celles qui sont envoyées, qui soufflent en tempête, qui dispersent, qui séparent, qui jettent un Rappel. Les anges, dit la tradition, porteurs de la révélation et de l'ordre. Toute la sourate est ensuite scandée par un refrain repris <em>dix fois</em> : « Malheur, ce Jour-là, à ceux qui crient au mensonge ! » (wayl yawmaʾidhin li-l-mukadhdhibīn) — litanie qui martèle le sort de ceux dont l'extérieur et l'intérieur ne s'accordent pas dans la reconnaissance de la vérité. Qushayrī en donne une lecture intérieure : <em>les étoiles des connaissances s'effacent à l'irruption de l'absence ; les montagnes — les cœurs établis dans la certitude de la contemplation — sont ébranlées</em>. Il y greffe deux méditations majeures : sur l'ombre à trois colonnes, image de l'âme qui, retournée aux créatures, voit se fermer les chemins de sa droiture ; et sur les ombres des bienheureux, où il distingue, pour aujourd'hui et pour demain, l'ombre de la providence, du tawḥīd, des connaissances, des grâces subtiles. La sourate se referme sur une question suspendue : « À quel discours, après celui-ci, croiront-ils donc ? »",
+  "themes": ["serments des anges", "le Jour de la Décision", "refrain du malheur", "origine humble de l'homme", "les ombres des bienheureux"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَالْمُرْسَلَاتِ عُرْفًا",
+      "tr": "wa-l-mursalāti ʿurfan",
+      "trad": "Par les émissaires envoyés en vagues successives,",
+      "themes": ["serment", "anges envoyés"],
+      "commentaire": "<em>al-mursalāt ʿurfan</em> (المُرْسَلات عُرْفًا) : celles qui sont envoyées. Qushayrī : ce sont « les anges, envoyés avec ce qui est bon et convenable de l'ordre » ; ou bien envoyés en foule serrée, « comme la crinière (ʿurf) du cheval » — vague après vague. Dès l'ouverture, Dieu jure par Ses messagers invisibles qui exécutent Son commandement. Le serment voile l'objet juré pour mieux éveiller l'attention : ce qui sera dit mérite l'appui des plus hautes réalités.",
+      "mots": [
+        { "ar": "وَالْمُرْسَلَاتِ", "tr": "wa-l-mursalāt", "racine": "ر س ل", "sens": "et par les émissaires", "def": "arsala : envoyer.", "gram": "participe passif fém. plur., wāw de serment" },
+        { "ar": "عُرْفًا", "tr": "ʿurfan", "racine": "ع ر ف", "sens": "en vagues successives / pour le bien", "def": "ʿurf : crinière, succession ; ou le convenable.", "gram": "complément d'état (ḥāl)" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "فَالْعَاصِفَاتِ عَصْفًا",
+      "tr": "fa-l-ʿāṣifāti ʿaṣfan",
+      "trad": "par ceux qui soufflent impétueusement,",
+      "themes": ["serment", "vents violents"],
+      "commentaire": "<em>al-ʿāṣifāt ʿaṣfan</em> (العاصِفات عَصْفًا) : celles qui soufflent en tempête. Qushayrī : « les vents violents. » De la douceur de l'envoi (v. 1) à la violence du souffle : la même force divine peut caresser ou emporter. Le vent ne se voit pas mais se reconnaît à son effet ; ainsi les puissances par lesquelles Dieu jure agissent dans l'invisible et bouleversent le visible.",
+      "mots": [
+        { "ar": "فَالْعَاصِفَاتِ", "tr": "fa-l-ʿāṣifāt", "racine": "ع ص ف", "sens": "puis par celles qui soufflent en tempête", "def": "ʿaṣafa : souffler violemment.", "gram": "participe actif fém. plur." },
+        { "ar": "عَصْفًا", "tr": "ʿaṣfan", "racine": "ع ص ف", "sens": "avec impétuosité", "def": "ʿaṣf : tempête, déchaînement.", "gram": "complément absolu" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَالنَّاشِرَاتِ نَشْرًا",
+      "tr": "wa-l-nāshirāti nashran",
+      "trad": "Par ceux qui dispersent au loin,",
+      "themes": ["serment", "déploiement", "vie"],
+      "commentaire": "<em>al-nāshirāt nashran</em> (النَّاشِرات نَشْرًا) : celles qui déploient. Qushayrī donne plusieurs sens : les pluies « qui déploient la végétation — car le déploiement est ici résurrection (iḥyāʾ) » ; ou les nuages qui répandent l'averse ; ou les anges. Le mot <em>nashr</em> dit le déploiement de ce qui était replié, le réveil de ce qui dormait : la pluie ressuscite la terre morte, image de la résurrection promise.",
+      "mots": [
+        { "ar": "وَالنَّاشِرَاتِ", "tr": "wa-l-nāshirāt", "racine": "ن ش ر", "sens": "et par celles qui déploient", "def": "nashara : déployer, étendre, faire revivre.", "gram": "participe actif fém. plur." },
+        { "ar": "نَشْرًا", "tr": "nashran", "racine": "ن ش ر", "sens": "en déployant", "def": "nashr : déploiement, dissémination.", "gram": "complément absolu" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "فَالْفَارِقَاتِ فَرْقًا",
+      "tr": "fa-l-fāriqāti farqan",
+      "trad": "Par ceux qui séparent et distinguent,",
+      "themes": ["serment", "discernement"],
+      "commentaire": "<em>al-fāriqāt farqan</em > (الفارِقات فَرْقًا) : celles qui séparent. Qushayrī : « les anges qui séparent le licite de l'illicite. » Le <em>farq</em> est le discernement, l'art de tracer la ligne entre le vrai et le faux, le pur et l'impur. Avant que vienne le Jour de la Décision (v. 13, yawm al-faṣl), Dieu jure par les puissances qui, déjà, distinguent : car toute la vie spirituelle est apprentissage du discernement.",
+      "mots": [
+        { "ar": "فَالْفَارِقَاتِ", "tr": "fa-l-fāriqāt", "racine": "ف ر ق", "sens": "puis par celles qui séparent", "def": "faraqa : séparer, distinguer.", "gram": "participe actif fém. plur." },
+        { "ar": "فَرْقًا", "tr": "farqan", "racine": "ف ر ق", "sens": "en distinguant", "def": "farq : séparation, discernement.", "gram": "complément absolu" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "فَالْمُلْقِيَاتِ ذِكْرًا",
+      "tr": "fa-l-mulqiyāti dhikran",
+      "trad": "Par ceux qui répandent un rappel,",
+      "themes": ["serment", "transmission du Rappel"],
+      "commentaire": "<em>al-mulqiyāt dhikran</em> (المُلْقِيات ذِكْرًا) : celles qui jettent un Rappel. Qushayrī : « les anges qui transmettent la révélation aux prophètes. » Le sommet de la série : après l'envoi, le souffle, le déploiement, le discernement, voici la mission ultime — porter la <em>Parole de rappel</em> aux cœurs des hommes. Tout le mouvement des serments converge vers le <em>dhikr</em> : le but de toute force angélique est de raviver le souvenir de Dieu.",
+      "mots": [
+        { "ar": "فَالْمُلْقِيَاتِ", "tr": "fa-l-mulqiyāt", "racine": "ل ق ي", "sens": "puis par celles qui jettent", "def": "alqā : jeter, transmettre.", "gram": "participe actif (forme IV) fém. plur." },
+        { "ar": "ذِكْرًا", "tr": "dhikran", "racine": "ذ ك ر", "sens": "un rappel", "def": "dhikr : rappel, mention, souvenir.", "gram": "complément d'objet" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "عُذْرًا أَوْ نُذْرًا",
+      "tr": "ʿudhran aw nudhran",
+      "trad": "en guise d'excuse ou d'avertissement,",
+      "themes": ["justification", "avertissement"],
+      "commentaire": "<em>ʿudhran aw nudhran</em> (عُذْرًا أَوْ نُذْرًا) : comme justification ou comme avertissement. Qushayrī : les anges transmettent la révélation « pour ôter toute excuse (iʿdhāran) et pour avertir (indhāran). » Double fonction du Rappel : il prive l'homme de toute excuse au Jour du Compte — nul ne pourra dire « je ne savais pas » — et il met en garde tant qu'il est temps. La même parole sauve qui l'écoute et accuse qui la rejette.",
+      "mots": [
+        { "ar": "عُذْرًا", "tr": "ʿudhran", "racine": "ع ذ ر", "sens": "comme justification", "def": "ʿudhr : excuse ; ici, ce qui ôte l'excuse.", "gram": "complément de cause" },
+        { "ar": "أَوْ نُذْرًا", "tr": "aw nudhran", "racine": "ن ذ ر", "sens": "ou comme avertissement", "def": "nudhr : avertissement.", "gram": "complément de cause" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "إِنَّمَا تُوعَدُونَ لَوَاقِعٌ",
+      "tr": "innamā tūʿadūna la-wāqiʿun",
+      "trad": "ce qui vous est promis est inéluctable !",
+      "themes": ["réponse au serment", "certitude"],
+      "commentaire": "Voici la réponse aux serments : <em>la-wāqiʿ</em> (لَواقِع) — cela tombera, arrivera immanquablement. Qushayrī : « Il a juré par toutes ces choses que la Résurrection est vérité (ḥaqq). » Tout ce déploiement de puissances invisibles n'avait qu'un but : ancrer une certitude. Ce qui est promis n'est pas une menace lointaine mais un fait à venir, aussi sûr que le vent qui souffle et la pluie qui ressuscite la terre.",
+      "mots": [
+        { "ar": "إِنَّمَا تُوعَدُونَ", "tr": "innamā tūʿadūna", "racine": "و ع د", "sens": "ce qui vous est promis", "def": "waʿada : promettre.", "gram": "particule + verbe inaccompli passif" },
+        { "ar": "لَوَاقِعٌ", "tr": "la-wāqiʿun", "racine": "و ق ع", "sens": "tombera assurément", "def": "waqaʿa : arriver, se produire.", "gram": "participe actif + lām d'insistance" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "فَإِذَا النُّجُومُ طُمِسَتْ",
+      "tr": "fa-ʾidhā l-nujūmu ṭumisat",
+      "trad": "Lorsque les étoiles seront obscurcies,",
+      "themes": ["effacement des astres", "lecture intérieure"],
+      "commentaire": "<em>ṭumisat</em> (طُمِسَتْ) : effacées, leur lumière éteinte. Qushayrī donne ici sa lecture par allusion (ishāra), splendide : « les étoiles des connaissances (nujūm al-maʿārif) sont effacées par l'irruption de l'absence (ghayba). » Au Jour cosmique répond un jour intérieur : il est des heures où même les lumières acquises de la gnose s'éteignent, où le connaissant se trouve plongé dans la nuit du retrait. L'effacement des étoiles annonce que toute lumière empruntée doit céder devant la seule Lumière.",
+      "mots": [
+        { "ar": "فَإِذَا النُّجُومُ", "tr": "fa-ʾidhā l-nujūm", "racine": "ن ج م", "sens": "lorsque les étoiles", "def": "najm : étoile.", "gram": "particule + nom plur., sujet" },
+        { "ar": "طُمِسَتْ", "tr": "ṭumisat", "racine": "ط م س", "sens": "seront effacées", "def": "ṭamasa : effacer, faire disparaître.", "gram": "verbe accompli passif" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "وَإِذَا السَّمَاءُ فُرِجَتْ",
+      "tr": "wa-ʾidhā l-samāʾu furijat",
+      "trad": "lorsque le ciel sera fendu,",
+      "themes": ["déchirure du ciel", "ouverture"],
+      "commentaire": "<em>furijat</em> (فُرِجَتْ) : fendue, ouverte. Le ciel, voûte solide qui semblait inébranlable, se déchire. C'est l'effondrement des certitudes apparentes : ce qui paraissait le plus stable s'ouvre comme un voile qu'on écarte. Intérieurement, c'est l'instant où le ciel du moi se fend pour laisser passer une réalité plus haute.",
+      "mots": [
+        { "ar": "وَإِذَا السَّمَاءُ", "tr": "wa-ʾidhā l-samāʾ", "racine": "س م و", "sens": "et lorsque le ciel", "def": "samāʾ : ciel.", "gram": "particule + nom, sujet" },
+        { "ar": "فُرِجَتْ", "tr": "furijat", "racine": "ف ر ج", "sens": "sera fendu", "def": "faraja : fendre, ouvrir.", "gram": "verbe accompli passif" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَإِذَا الْجِبَالُ نُسِفَتْ",
+      "tr": "wa-ʾidhā l-jibālu nusifat",
+      "trad": "lorsque les montagnes seront dispersées en poussière,",
+      "themes": ["pulvérisation des montagnes", "ébranlement des cœurs"],
+      "commentaire": "<em>nusifat</em> (نُسِفَتْ) : emportées, dispersées, glose Qushayrī : « ôtées d'un coup, sans qu'il en reste trace. » Et la lecture intérieure : « les montagnes — les cœurs établis dans la certitude de la contemplation (yaqīn al-shuhūd) — sont ébranlées, châtiment de ce vers quoi ils ont aspiré qui n'était pas permis. » Même la fermeté du cœur le plus assuré peut vaciller s'il s'attache à autre chose qu'à Dieu : nulle montagne intérieure n'est sûre d'elle-même.",
+      "mots": [
+        { "ar": "وَإِذَا الْجِبَالُ", "tr": "wa-ʾidhā l-jibāl", "racine": "ج ب ل", "sens": "et lorsque les montagnes", "def": "jabal : montagne.", "gram": "particule + nom plur., sujet" },
+        { "ar": "نُسِفَتْ", "tr": "nusifat", "racine": "ن س ف", "sens": "seront pulvérisées", "def": "nasafa : disperser, réduire en poussière.", "gram": "verbe accompli passif" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "وَإِذَا الرُّسُلُ أُقِّتَتْ",
+      "tr": "wa-ʾidhā l-rusulu uqqitat",
+      "trad": "lorsque les envoyés auront leur heure assignée.",
+      "themes": ["convocation des messagers", "terme fixé"],
+      "commentaire": "<em>uqqitat</em> (أُقِّتَتْ) : un terme leur est fixé. Qushayrī : « un temps et un délai leur sont assignés pour le règlement du jugement, au Jour de la Résurrection » — les messagers seront convoqués pour témoigner de ce qu'ils ont transmis. Tout aboutit à ce rendez-vous : ceux qui portèrent le Rappel comparaîtront, et avec eux les peuples qui les ont reçus ou rejetés. L'heure des messagers est l'heure de vérité pour ceux qui les ont écoutés.",
+      "mots": [
+        { "ar": "وَإِذَا الرُّسُلُ", "tr": "wa-ʾidhā l-rusul", "racine": "ر س ل", "sens": "et lorsque les messagers", "def": "rasūl : messager, envoyé.", "gram": "particule + nom plur., sujet" },
+        { "ar": "أُقِّتَتْ", "tr": "uqqitat", "racine": "و ق ت", "sens": "auront leur heure assignée", "def": "waqqata : fixer un temps, assigner un terme.", "gram": "verbe accompli passif (forme II)" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "لِأَيِّ يَوْمٍ أُجِّلَتْ",
+      "tr": "li-ayyi yawmin ujjilat",
+      "trad": "A quel jour cela sera-t-il reporté :",
+      "themes": ["question", "ajournement"],
+      "commentaire": "<em>ujjilat</em> (أُجِّلَتْ) : reportée, ajournée à un terme. Question d'attente et de gravité : pour quel Jour ce rendez-vous a-t-il été différé ? L'interrogation crée un suspens solennel avant la réponse du verset suivant. Tout ce qui semble tarder a son terme fixé dans la science de Dieu : le report n'est pas oubli, mais ajournement vers le Jour qui décidera de tout.",
+      "mots": [
+        { "ar": "لِأَيِّ يَوْمٍ", "tr": "li-ayyi yawmin", "racine": "ي و م", "sens": "à quel jour", "def": "ayy : quel ; yawm : jour.", "gram": "préposition + interrogatif + nom" },
+        { "ar": "أُجِّلَتْ", "tr": "ujjilat", "racine": "أ ج ل", "sens": "fut ajournée", "def": "ajjala : reporter, fixer un délai.", "gram": "verbe accompli passif (forme II)" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "لِيَوْمِ الْفَصْلِ",
+      "tr": "li-yawmi l-faṣli",
+      "trad": "au Jour de la Décision.",
+      "themes": ["Jour de la Décision", "séparation"],
+      "commentaire": "<em>yawm al-faṣl</em> (يَوْم الفَصْل) : le Jour de la Décision, de la séparation tranchante. La racine <em>faṣl</em> dit le fait de trancher net, de séparer ce qui était mêlé. C'est le Jour où le discernement (le <em>farq</em> du verset 4) devient verdict : le vrai séparé du faux, le juste de l'inique, sans plus de mélange possible. Ce qui demeurait confus dans l'épreuve terrestre se révèle alors dans sa pure distinction.",
+      "mots": [
+        { "ar": "لِيَوْمِ", "tr": "li-yawmi", "racine": "ي و م", "sens": "pour le Jour de", "def": "yawm : jour.", "gram": "préposition + nom" },
+        { "ar": "الْفَصْلِ", "tr": "al-faṣl", "racine": "ف ص ل", "sens": "la Décision, la séparation", "def": "faṣl : trancher, séparer, décider.", "gram": "complément du nom" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "وَمَا أَدْرَاكَ مَا يَوْمُ الْفَصْلِ",
+      "tr": "wa-mā adrāka mā yawmu l-faṣli",
+      "trad": "Mais qui te fera savoir ce qu'est le Jour de la Décision ?",
+      "themes": ["grandeur du Jour", "au-delà du savoir"],
+      "commentaire": "<em>wa-mā adrāka</em> (وَما أَدْراكَ) : qu'est-ce qui te fera savoir ? Qushayrī : la formule est ici « pour magnifier » la grandeur du Jour. La question n'attend pas de réponse : elle creuse le mystère. Le Jour de la Décision dépasse tout ce que l'esprit peut concevoir ; même au Prophète, sa pleine réalité reste voilée. Devant l'immense, le savoir reconnaît sa limite et fait place à la révérence.",
+      "mots": [
+        { "ar": "وَمَا أَدْرَاكَ", "tr": "wa-mā adrāka", "racine": "د ر ي", "sens": "qu'est-ce qui te fera savoir", "def": "adrā : faire savoir.", "gram": "interrogatif + verbe accompli + pronom" },
+        { "ar": "مَا يَوْمُ الْفَصْلِ", "tr": "mā yawmu l-faṣl", "racine": "ف ص ل", "sens": "ce qu'est le Jour de la Décision", "def": "faṣl : décision, séparation.", "gram": "interrogatif + sujet + complément" }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Malheur, ce Jour-là, à ceux qui crient au mensonge !",
+      "themes": ["refrain", "les démenteurs"],
+      "commentaire": "Premier énoncé du refrain qui rythmera dix fois la sourate. <em>al-mukadhdhibīn</em> (المُكَذِّبين) : ceux qui traitent de mensonge. Qushayrī : ce sont « ceux dont l'extérieur et l'intérieur ne s'accordent pas dans la reconnaissance de la vérité » (taṣdīq). Le malheur ne frappe pas l'ignorant mais le <em>menteur</em> — celui qui sait au fond et nie en surface, dont le cœur dément ce que la langue avoue ou inversement. La duplicité intérieure est la racine du malheur.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "malheur", "def": "wayl : malheur, ruine.", "gram": "nom, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce jour-là", "def": "yawmaʾidhin : ce jour-là.", "gram": "adverbe de temps" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "aux démenteurs", "def": "kadhdhaba : traiter de mensonge.", "gram": "préposition + participe actif plur." }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "أَلَمْ نُهْلِكِ الْأَوَّلِينَ",
+      "tr": "a-lam nuhliki l-awwalīna",
+      "trad": "N'avons-Nous pas fait périr les premiers hommes ?",
+      "themes": ["leçon de l'histoire", "peuples anéantis"],
+      "commentaire": "Rappel des générations passées que Dieu anéantit pour leur démenti. L'argument est celui de l'histoire : ce qui fut arrivé aux anciens menace les présents. Qushayrī rattache cela au démenti : « ceux qui ont traité leurs messagers de menteurs et nié Nos signes » ont péri. L'histoire n'est pas un simple passé mais un avertissement : le sort des premiers préfigure celui de quiconque répète leur refus.",
+      "mots": [
+        { "ar": "أَلَمْ نُهْلِكِ", "tr": "a-lam nuhliki", "racine": "ه ل ك", "sens": "n'avons-Nous pas fait périr", "def": "ahlaka : faire périr, anéantir.", "gram": "interrogation + verbe apocopé (forme IV)" },
+        { "ar": "الْأَوَّلِينَ", "tr": "al-awwalīn", "racine": "أ و ل", "sens": "les premiers", "def": "awwal : premier ; les anciens.", "gram": "nom plur., complément d'objet" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "ثُمَّ نُتْبِعُهُمُ الْآخِرِينَ",
+      "tr": "thumma nutbiʿuhumu l-ākhirīna",
+      "trad": "Et ne leur avons-Nous pas donné les derniers comme successeurs ?",
+      "themes": ["répétition de l'histoire", "successeurs"],
+      "commentaire": "<em>nutbiʿuhumu l-ākhirīn</em> (نُتْبِعُهُمُ الآخِرين) : Nous leur faisons suivre les derniers. Qushayrī : « de même que Nous avons anéanti les premiers, ainsi ferons-Nous des coupables s'ils agissent comme eux. » La loi est constante : les générations passent, mais le même comportement appelle le même sort. Nul n'est dispensé par le seul fait de venir après : la chaîne de l'histoire ne change pas ses règles.",
+      "mots": [
+        { "ar": "ثُمَّ نُتْبِعُهُمُ", "tr": "thumma nutbiʿuhumu", "racine": "ت ب ع", "sens": "puis Nous leur faisons suivre", "def": "atbaʿa : faire suivre.", "gram": "particule + verbe inaccompli (forme IV) + pronom" },
+        { "ar": "الْآخِرِينَ", "tr": "al-ākhirīn", "racine": "أ خ ر", "sens": "les derniers", "def": "ākhir : dernier ; les suivants.", "gram": "nom plur., complément d'objet" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "كَذَٰلِكَ نَفْعَلُ بِالْمُجْرِمِينَ",
+      "tr": "kadhālika nafʿalu bi-l-mujrimīna",
+      "trad": "C'est ainsi que Nous agissons avec les coupables.",
+      "themes": ["loi constante", "les coupables"],
+      "commentaire": "<em>kadhālika nafʿalu bi-l-mujrimīn</em> (كَذلِكَ نَفْعَلُ بِالمُجْرِمين) : ainsi agissons-Nous envers les criminels. Le verset énonce la loi sous-jacente aux deux précédents. <em>mujrim</em> : celui qui rompt, qui tranche le lien — le coupable n'est pas seulement fautif, il est celui qui sectionne ce qui le reliait à Dieu. La sanction n'est pas arbitraire : elle est la conséquence inscrite dans l'acte même de rompre.",
+      "mots": [
+        { "ar": "كَذَٰلِكَ", "tr": "kadhālika", "racine": "", "sens": "ainsi", "def": "kadhālika : de cette façon.", "gram": "adverbe de manière" },
+        { "ar": "نَفْعَلُ", "tr": "nafʿalu", "racine": "ف ع ل", "sens": "Nous agissons", "def": "faʿala : faire, agir.", "gram": "verbe inaccompli" },
+        { "ar": "بِالْمُجْرِمِينَ", "tr": "bi-l-mujrimīn", "racine": "ج ر م", "sens": "envers les coupables", "def": "mujrim : criminel, qui rompt le lien.", "gram": "préposition + participe actif (forme IV) plur." }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Malheur, ce Jour-là, à ceux qui crient au mensonge !",
+      "themes": ["refrain", "rythme"],
+      "commentaire": "Deuxième occurrence du refrain. Sa répétition n'est pas redondance mais rythme : comme un glas qui revient après chaque rappel des signes de Dieu. À chaque preuve déployée — l'histoire, la création, la providence — répond ce même avertissement, scandé pour s'imprimer dans le cœur. La litanie elle-même devient un appel : tant qu'elle résonne, il est encore temps de quitter le camp des démenteurs.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "malheur", "def": "wayl : malheur.", "gram": "nom, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce jour-là", "def": "yawmaʾidhin : ce jour-là.", "gram": "adverbe de temps" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "aux démenteurs", "def": "mukadhdhib : qui crie au mensonge.", "gram": "préposition + participe actif plur." }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "أَلَمْ نَخْلُقكُّم مِّن مَّاءٍ مَّهِينٍ",
+      "tr": "a-lam nakhluqkum min māʾin mahīnin",
+      "trad": "Ne vous avons-Nous par créés d'un liquide vil",
+      "themes": ["origine humble", "humilité"],
+      "commentaire": "<em>māʾ mahīn</em> (ماء مَهين) : un liquide vil, méprisable. Qushayrī développe ici une longue méditation sur l'humilité : « Il leur rappelle leur origine pour qu'ils ne s'enorgueillissent pas de leur état, car nul genre de créatures n'est plus enclin à la prétention que les fils d'Adam. » Et de cingler l'orgueilleux : l'homme « fut une goutte, à son terme sera charogne, et entre les deux porte en lui de l'ordure dans une tunique. » Comment se rengorger quand on est ce qu'on est ? Qushayrī conclut pourtant vers la grandeur : Celui qui t'a tiré de si bas peut t'élever des plus viles conditions aux plus nobles demeures.",
+      "mots": [
+        { "ar": "أَلَمْ نَخْلُقكُّم", "tr": "a-lam nakhluqkum", "racine": "خ ل ق", "sens": "ne vous avons-Nous pas créés", "def": "khalaqa : créer.", "gram": "interrogation + verbe apocopé + pronom" },
+        { "ar": "مِّن مَّاءٍ", "tr": "min māʾin", "racine": "م و ه", "sens": "d'un liquide", "def": "māʾ : eau, liquide.", "gram": "préposition + nom" },
+        { "ar": "مَّهِينٍ", "tr": "mahīn", "racine": "م ه ن", "sens": "vil, méprisable", "def": "mahīn : faible, vil.", "gram": "adjectif" }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "فَجَعَلْنَاهُ فِي قَرَارٍ مَّكِينٍ",
+      "tr": "fa-jaʿalnāhu fī qarārin makīnin",
+      "trad": "que Nous avons placé dans un réceptacle solide",
+      "themes": ["matrice", "providence cachée"],
+      "commentaire": "<em>qarār makīn</em > (قَرار مَكين) : un séjour sûr, bien établi — la matrice. Du liquide vil au lieu protégé : Dieu ne méprise pas ce qu'Il a créé d'humble, Il l'entoure aussitôt de soin. Le contraste est éloquent : l'origine est basse, mais la providence qui veille sur elle est immense. Dès l'invisible des origines, l'homme est gardé en un lieu sûr — image de la sollicitude qui ne l'a jamais quitté (cf. s. 76, v. 1).",
+      "mots": [
+        { "ar": "فَجَعَلْنَاهُ", "tr": "fa-jaʿalnāhu", "racine": "ج ع ل", "sens": "et Nous l'avons placé", "def": "jaʿala : placer, établir.", "gram": "verbe accompli + pronom" },
+        { "ar": "فِي قَرَارٍ", "tr": "fī qarārin", "racine": "ق ر ر", "sens": "dans un séjour", "def": "qarār : lieu de repos, séjour stable.", "gram": "préposition + nom" },
+        { "ar": "مَّكِينٍ", "tr": "makīn", "racine": "م ك ن", "sens": "solide, bien établi", "def": "makīn : ferme, assuré.", "gram": "adjectif" }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "إِلَىٰ قَدَرٍ مَّعْلُومٍ",
+      "tr": "ilā qadarin maʿlūmin",
+      "trad": "jusqu'à un terme connu ?",
+      "themes": ["terme fixé", "mesure"],
+      "commentaire": "<em>qadar maʿlūm</em> (قَدَر مَعْلوم) : un terme déterminé, connu de Dieu. La gestation a sa durée fixée, ni hâtée ni retardée. Tout, dans la création, est <em>mesuré</em> : le temps de l'embryon comme celui de la vie. Cette mesure connue de Dieu seul enseigne la confiance : ce qui croît en nous croît selon un terme que nous ne fixons pas et que nous ne pouvons devancer.",
+      "mots": [
+        { "ar": "إِلَىٰ قَدَرٍ", "tr": "ilā qadarin", "racine": "ق د ر", "sens": "jusqu'à un terme", "def": "qadar : mesure, terme fixé.", "gram": "préposition + nom" },
+        { "ar": "مَّعْلُومٍ", "tr": "maʿlūm", "racine": "ع ل م", "sens": "connu", "def": "maʿlūm : su, déterminé.", "gram": "participe passif, adjectif" }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "فَقَدَرْنَا فَنِعْمَ الْقَادِرُونَ",
+      "tr": "fa-qadarnā fa-niʿma l-qādirūna",
+      "trad": "Nous en avons décidé ainsi, en parfait Décideur !",
+      "themes": ["maîtrise divine", "perfection de la mesure"],
+      "commentaire": "<em>fa-niʿma l-qādirūn</em> (فَنِعْمَ القادِرون) : quel excellent Maître de la mesure ! Le verbe <em>qadarnā</em> joue sur deux sens : Nous avons mesuré, et Nous avons eu le pouvoir. Dieu a tout disposé avec une justesse parfaite — chaque étape à sa place, chaque terme à son heure. La louange jaillit de la contemplation de cette maîtrise : non un pouvoir brutal, mais un art de la mesure exacte, qui ne se trompe jamais d'un degré.",
+      "mots": [
+        { "ar": "فَقَدَرْنَا", "tr": "fa-qadarnā", "racine": "ق د ر", "sens": "Nous avons mesuré / décidé", "def": "qadara : mesurer, déterminer, avoir pouvoir.", "gram": "verbe accompli" },
+        { "ar": "فَنِعْمَ الْقَادِرُونَ", "tr": "fa-niʿma l-qādirūn", "racine": "ق د ر", "sens": "quels excellents Décideurs", "def": "niʿma : éloge ; qādir : qui détermine.", "gram": "verbe de louange + participe actif plur." }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Malheur, ce Jour-là, à ceux qui crient au mensonge !",
+      "themes": ["refrain", "après la création"],
+      "commentaire": "Troisième occurrence, placée après le rappel de la création de l'homme. Le refrain frappe d'autant plus fort : comment démentir la résurrection quand on porte en soi la preuve de la première création ? Celui qui a été tiré d'un liquide vil et façonné dans la matrice n'a aucune excuse à nier que Dieu puisse refaire. Le malheur des démenteurs est d'avoir, sous les yeux, le signe qu'ils refusent de lire.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "malheur", "def": "wayl : malheur.", "gram": "nom, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce jour-là", "def": "yawmaʾidhin : ce jour-là.", "gram": "adverbe de temps" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "aux démenteurs", "def": "mukadhdhib : démenteur.", "gram": "préposition + participe actif plur." }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "أَلَمْ نَجْعَلِ الْأَرْضَ كِفَاتًا",
+      "tr": "a-lam najʿali l-arḍa kifātan",
+      "trad": "N'avons-Nous pas fait de la terre un lieu de réunion",
+      "themes": ["terre matricielle", "rassemblement"],
+      "commentaire": "<em>kifāt</em> (كِفات) : ce qui réunit, contient, rassemble. Qushayrī : « la terre les contient et les rassemble, vivants et morts : ils vivent sur son dos, et après la mort sont déposés dans son ventre. » La terre est un seul lieu aux deux faces : berceau sur le dessus, tombe au-dedans. Elle porte les vivants et garde les morts — image saisissante de l'unité de la vie et de la mort dans la main qui tient tout.",
+      "mots": [
+        { "ar": "أَلَمْ نَجْعَلِ", "tr": "a-lam najʿali", "racine": "ج ع ل", "sens": "n'avons-Nous pas fait", "def": "jaʿala : faire, établir.", "gram": "interrogation + verbe apocopé" },
+        { "ar": "الْأَرْضَ", "tr": "al-arḍa", "racine": "أ ر ض", "sens": "la terre", "def": "arḍ : terre.", "gram": "nom, complément d'objet" },
+        { "ar": "كِفَاتًا", "tr": "kifātan", "racine": "ك ف ت", "sens": "un lieu qui rassemble", "def": "kifāt : contenant, ce qui réunit.", "gram": "nom, second complément d'objet" }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "أَحْيَاءً وَأَمْوَاتًا",
+      "tr": "aḥyāʾan wa-amwātan",
+      "trad": "pour les vivants et pour les morts ?",
+      "themes": ["vivants et morts", "unité"],
+      "commentaire": "<em>aḥyāʾan wa-amwātan</em> (أَحْياءً وَأَمْواتًا) : les vivants et les morts. La terre rassemble les deux états de l'homme. On y marche un temps, on y dort pour toujours : le sol que nous foulons est celui qui nous recevra. Méditation discrète sur la fraternité de tous les hommes dans la même poussière — et rappel que la frontière entre vivre et mourir n'est qu'un passage d'une face de la terre à l'autre.",
+      "mots": [
+        { "ar": "أَحْيَاءً", "tr": "aḥyāʾan", "racine": "ح ي ي", "sens": "des vivants", "def": "ḥayy : vivant.", "gram": "nom plur., état" },
+        { "ar": "وَأَمْوَاتًا", "tr": "wa-amwātan", "racine": "م و ت", "sens": "et des morts", "def": "mayyit : mort.", "gram": "nom plur., état" }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "وَجَعَلْنَا فِيهَا رَوَاسِيَ شَامِخَاتٍ وَأَسْقَيْنَاكُم مَّاءً فُرَاتًا",
+      "tr": "wa-jaʿalnā fīhā rawāsiya shāmikhātin wa-asqaynākum māʾan furātan",
+      "trad": "N'y avons-nous pas placé des cimes élevées et ne vous avons-Nous pas fait boire une eau douce ?",
+      "themes": ["montagnes", "eau douce", "bienfait"],
+      "commentaire": "<em>rawāsiya shāmikhāt</em> (رَواسِيَ شامِخات) : des montagnes hautes et fermes ; <em>māʾ furāt</em> : une eau douce et désaltérante. Qushayrī : « Il leur rappelle l'immensité de Son bienfait » — et il y ajoute une allusion délicate : le plus grand des bienfaits est « qu'Il ne vous ait pas engloutis dans la terre, malgré ce que vous avez fait. » La patience de Dieu est elle-même un don : qu'Il nous laisse vivre, boire et marcher après nos manquements est déjà une miséricorde quotidienne.",
+      "mots": [
+        { "ar": "وَجَعَلْنَا فِيهَا", "tr": "wa-jaʿalnā fīhā", "racine": "ج ع ل", "sens": "et Nous y avons placé", "def": "jaʿala : placer.", "gram": "verbe accompli + préposition + pronom" },
+        { "ar": "رَوَاسِيَ شَامِخَاتٍ", "tr": "rawāsiya shāmikhāt", "racine": "ر س و / ش م خ", "sens": "des cimes élevées et fermes", "def": "rāsiya : montagne ancrée ; shāmikh : haut.", "gram": "nom + adjectif plur." },
+        { "ar": "وَأَسْقَيْنَاكُم", "tr": "wa-asqaynākum", "racine": "س ق ي", "sens": "et Nous vous avons abreuvés", "def": "asqā : abreuver.", "gram": "verbe accompli (forme IV) + pronom" },
+        { "ar": "مَّاءً فُرَاتًا", "tr": "māʾan furātan", "racine": "ف ر ت", "sens": "d'une eau douce", "def": "furāt : eau douce, agréable.", "gram": "nom + adjectif" }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Malheur, ce Jour-là, à ceux qui crient au mensonge !",
+      "themes": ["refrain", "ingratitude"],
+      "commentaire": "Quatrième occurrence, après le rappel des bienfaits de la terre. Le refrain prend ici la couleur de l'ingratitude : démentir, c'est aussi méconnaître les dons reçus. Celui qui boit l'eau douce, marche sur la terre ferme, vit à l'abri des montagnes, et nie pourtant Celui qui lui donne tout — voilà le démenteur. Le malheur n'est que le revers de l'ingratitude : ne pas reconnaître la Source, c'est se couper d'elle.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "malheur", "def": "wayl : malheur.", "gram": "nom, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce jour-là", "def": "yawmaʾidhin : ce jour-là.", "gram": "adverbe de temps" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "aux démenteurs", "def": "mukadhdhib : démenteur.", "gram": "préposition + participe actif plur." }
+      ]
+    },
+    {
+      "n": 29,
+      "ar": "انطَلِقُوا إِلَىٰ مَا كُنتُم بِهِ تُكَذِّبُونَ",
+      "tr": "inṭaliqū ilā mā kuntum bihi tukadhdhibūna",
+      "trad": "Allez rejoindre ce que vous traitiez de mensonge !",
+      "themes": ["départ vers le châtiment", "retour à soi"],
+      "commentaire": "<em>inṭaliqū</em> (انطَلِقوا) : partez, mettez-vous en marche. Qushayrī : « il leur est dit : allez vers le Feu que vous démentiez. » Mais il en tire aussi une leçon intérieure saisissante : <em>« se tenir seul avec Dieu (al-istiqlāl bi-Llāh) est le Jardin du refuge, et le retour aux créatures est frapper à la porte de la Géhenne. »</em> Et de citer ce vers : « Je n'ai jamais vu, avant moi, quelqu'un quitter un jardin pour aller frapper, en parasite, à la porte de l'enfer. » Aller vers ce qu'on niait, c'est récolter le fruit de son propre détournement.",
+      "mots": [
+        { "ar": "انطَلِقُوا", "tr": "inṭaliqū", "racine": "ط ل ق", "sens": "partez", "def": "inṭalaqa : se mettre en route, partir.", "gram": "impératif (forme VII) plur." },
+        { "ar": "إِلَىٰ مَا كُنتُم", "tr": "ilā mā kuntum", "racine": "ك و ن", "sens": "vers ce que vous", "def": "vers ce dont.", "gram": "préposition + relatif + verbe" },
+        { "ar": "بِهِ تُكَذِّبُونَ", "tr": "bihi tukadhdhibūn", "racine": "ك ذ ب", "sens": "vous traitiez de mensonge", "def": "kadhdhaba : démentir.", "gram": "préposition + verbe inaccompli plur." }
+      ]
+    },
+    {
+      "n": 30,
+      "ar": "انطَلِقُوا إِلَىٰ ظِلٍّ ذِي ثَلَاثِ شُعَبٍ",
+      "tr": "inṭaliqū ilā ẓillin dhī thalāthi shuʿabin",
+      "trad": "Allez rejoindre l'ombre scindée en une triple colonne.",
+      "themes": ["fausse ombre", "fumée à trois branches"],
+      "commentaire": "<em>ẓill dhī thalāthi shuʿab</em > (ظِلّ ذي ثَلاث شُعَب) : une ombre à trois colonnes — la fumée du brasier, divisée en trois branches. Qushayrī applique l'image au cœur : « lorsque le serviteur ne connaît pas la valeur de l'ouverture de son chemin vers Dieu par son cœur, ni de sa force par la remise confiante (tawakkul), et qu'il retourne aux créatures à l'irruption de l'inattention, Dieu retire la miséricorde de son cœur, les voies de sa droiture se ferment, et le voici ballotté de l'une à l'autre, à l'autre. » L'ombre qui n'abrite pas, c'est le faux refuge de qui a déserté le vrai.",
+      "mots": [
+        { "ar": "انطَلِقُوا", "tr": "inṭaliqū", "racine": "ط ل ق", "sens": "allez", "def": "inṭalaqa : partir.", "gram": "impératif (forme VII) plur." },
+        { "ar": "إِلَىٰ ظِلٍّ", "tr": "ilā ẓillin", "racine": "ظ ل ل", "sens": "vers une ombre", "def": "ẓill : ombre.", "gram": "préposition + nom" },
+        { "ar": "ذِي ثَلَاثِ شُعَبٍ", "tr": "dhī thalāthi shuʿab", "racine": "ش ع ب", "sens": "à trois colonnes", "def": "shuʿba : branche, ramification.", "gram": "complément du nom + numéral + nom" }
+      ]
+    },
+    {
+      "n": 31,
+      "ar": "لَّا ظَلِيلٍ وَلَا يُغْنِي مِنَ اللَّهَبِ",
+      "tr": "lā ẓalīlin wa-lā yughnī mina l-lahabi",
+      "trad": "Peu épaisse, elle n'est d'aucun secours contre la flamme.",
+      "themes": ["ombre inutile", "faux abri"],
+      "commentaire": "<em>lā ẓalīl</em> (لا ظَليل) : qui n'ombrage pas ; <em>wa-lā yughnī mina l-lahab</em> : et ne protège pas de la flamme. Ironie cruelle : une ombre qui ne fait pas d'ombre, un abri qui n'abrite pas. Tout faux refuge a cette nature : il porte le nom de la protection sans en avoir la réalité. Celui qui a fui le seul vrai abri — l'autonomie en Dieu — se retrouve sous une fumée qui aggrave la brûlure au lieu de l'apaiser.",
+      "mots": [
+        { "ar": "لَّا ظَلِيلٍ", "tr": "lā ẓalīlin", "racine": "ظ ل ل", "sens": "qui n'ombrage pas", "def": "ẓalīl : qui donne de l'ombre.", "gram": "négation + adjectif" },
+        { "ar": "وَلَا يُغْنِي", "tr": "wa-lā yughnī", "racine": "غ ن ي", "sens": "et ne protège pas", "def": "aghnā : être utile, dispenser de.", "gram": "négation + verbe inaccompli (forme IV)" },
+        { "ar": "مِنَ اللَّهَبِ", "tr": "mina l-lahab", "racine": "ل ه ب", "sens": "contre la flamme", "def": "lahab : flamme.", "gram": "préposition + nom" }
+      ]
+    },
+    {
+      "n": 32,
+      "ar": "إِنَّهَا تَرْمِي بِشَرَرٍ كَالْقَصْرِ",
+      "tr": "innahā tarmī bi-shararin ka-l-qaṣri",
+      "trad": "Celle-ci lance des étincelles grosses comme des tours",
+      "themes": ["étincelles", "démesure du Feu"],
+      "commentaire": "<em>shararin ka-l-qaṣr</em> (شَرَر كَالقَصْر) : des étincelles grosses comme un château, une tour. La démesure de l'image dépasse l'entendement : ce que le feu ordinaire projette en infimes parcelles, ce Feu-là le lance en blocs énormes. L'image n'est pas faite pour être imaginée mais pour briser l'imagination : la réalité de l'au-delà excède toutes nos mesures, en horreur comme, ailleurs, en félicité.",
+      "mots": [
+        { "ar": "إِنَّهَا تَرْمِي", "tr": "innahā tarmī", "racine": "ر م ي", "sens": "elle lance", "def": "ramā : jeter, lancer.", "gram": "inna + pronom + verbe inaccompli" },
+        { "ar": "بِشَرَرٍ", "tr": "bi-shararin", "racine": "ش ر ر", "sens": "des étincelles", "def": "sharar : étincelles.", "gram": "préposition + nom collectif" },
+        { "ar": "كَالْقَصْرِ", "tr": "ka-l-qaṣr", "racine": "ق ص ر", "sens": "comme une tour", "def": "qaṣr : château, tour, gros tronc.", "gram": "préposition de comparaison + nom" }
+      ]
+    },
+    {
+      "n": 33,
+      "ar": "كَأَنَّهُ جِمَالَتٌ صُفْرٌ",
+      "tr": "kaʾannahu jimālatun ṣufrun",
+      "trad": "et semblables à des chameaux couleur de soufre.",
+      "themes": ["comparaison", "couleur du Feu"],
+      "commentaire": "<em>jimālatun ṣufr</em> (جِمالَة صُفْر) : des chameaux jaune-fauve, couleur de soufre. Après la taille (le château), la couleur et le mouvement : les étincelles s'élancent en troupeaux, comme des cordées de chameaux jaunes. L'image accumule le familier — le château, le chameau — pour dire l'inimaginable. Le connu sert d'échelle vers l'inconnu : on ne peut nommer l'horreur de l'au-delà qu'en empruntant les figures de l'ici-bas, tout en sachant que la réalité les dépasse.",
+      "mots": [
+        { "ar": "كَأَنَّهُ", "tr": "kaʾannahu", "racine": "", "sens": "comme s'il était", "def": "kaʾanna : comme si.", "gram": "particule d'assimilation + pronom" },
+        { "ar": "جِمَالَتٌ", "tr": "jimālatun", "racine": "ج م ل", "sens": "des chameaux", "def": "jimāla : troupe de chameaux.", "gram": "nom collectif" },
+        { "ar": "صُفْرٌ", "tr": "ṣufrun", "racine": "ص ف ر", "sens": "jaune-fauve, couleur de soufre", "def": "aṣfar : jaune.", "gram": "adjectif plur." }
+      ]
+    },
+    {
+      "n": 34,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Malheur, ce Jour-là, à ceux qui crient au mensonge !",
+      "themes": ["refrain", "après la description du Feu"],
+      "commentaire": "Cinquième occurrence, au centre de la sourate, après la description du Feu. Le refrain marque ici la bascule : la première moitié exposait les signes et les avertissements, la seconde déploiera les destinées. Au milieu, ce rappel solennel : tout ce qui précède n'était pas vain discours. Le malheur annoncé n'est pas une figure de style mais l'aboutissement réel d'un refus persistant.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "malheur", "def": "wayl : malheur.", "gram": "nom, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce jour-là", "def": "yawmaʾidhin : ce jour-là.", "gram": "adverbe de temps" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "aux démenteurs", "def": "mukadhdhib : démenteur.", "gram": "préposition + participe actif plur." }
+      ]
+    },
+    {
+      "n": 35,
+      "ar": "هَٰذَا يَوْمُ لَا يَنطِقُونَ",
+      "tr": "hādhā yawmu lā yanṭiqūna",
+      "trad": "Ce sera le Jour où ils ne parleront pas,",
+      "themes": ["mutisme", "fin des discours"],
+      "commentaire": "<em>lā yanṭiqūn</em> (لا يَنْطِقون) : ils ne parlent pas. Le Jour où la parole, dont l'homme abusa pour démentir, lui est ôtée. Celui qui criait au mensonge se tait enfin — non par sagesse mais par sidération. L'éloquence qui servait à nier n'a plus de prise : devant l'évidence, les mots tombent. Le silence forcé du Jour est le contraire du silence habité de la prière : l'un est vide, l'autre plein.",
+      "mots": [
+        { "ar": "هَٰذَا يَوْمُ", "tr": "hādhā yawmu", "racine": "ي و م", "sens": "ceci est le jour où", "def": "yawm : jour.", "gram": "démonstratif + nom" },
+        { "ar": "لَا يَنطِقُونَ", "tr": "lā yanṭiqūn", "racine": "ن ط ق", "sens": "ils ne parlent pas", "def": "naṭaqa : parler, articuler.", "gram": "négation + verbe inaccompli plur." }
+      ]
+    },
+    {
+      "n": 36,
+      "ar": "وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ",
+      "tr": "wa-lā yuʾdhanu lahum fa-yaʿtadhirūna",
+      "trad": "où il ne leur sera pas permis de présenter des excuses.",
+      "themes": ["excuses refusées", "trop tard"],
+      "commentaire": "<em>fa-yaʿtadhirūn</em> (فَيَعْتَذِرون) : pour qu'ils s'excusent. Non seulement ils se taisent, mais la permission même de se justifier leur est refusée. L'heure des excuses est passée : elle était la vie terrestre, le temps du Rappel « comme excuse ou avertissement » (v. 6). Qui n'a pas saisi le temps de l'excuse offerte ne trouve plus, au Jour, de tribune pour plaider. Toute la sagesse est de présenter sa réponse <em>avant</em> que la porte ne se ferme.",
+      "mots": [
+        { "ar": "وَلَا يُؤْذَنُ لَهُمْ", "tr": "wa-lā yuʾdhanu lahum", "racine": "أ ذ ن", "sens": "il ne leur est pas permis", "def": "adhina : permettre.", "gram": "négation + verbe passif + préposition" },
+        { "ar": "فَيَعْتَذِرُونَ", "tr": "fa-yaʿtadhirūn", "racine": "ع ذ ر", "sens": "de sorte qu'ils s'excusent", "def": "iʿtadhara : présenter des excuses.", "gram": "fa de conséquence + verbe (forme VIII)" }
+      ]
+    },
+    {
+      "n": 37,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Malheur, ce Jour-là, à ceux qui crient au mensonge !",
+      "themes": ["refrain", "le silence"],
+      "commentaire": "Sixième occurrence, après l'évocation du mutisme et du refus des excuses. Le refrain résonne dans ce silence même : tandis que les démenteurs se taisent, faute de pouvoir parler, la parole de l'avertissement, elle, continue de retentir. Ce contraste est tout l'enseignement : la seule parole qui demeure au Jour est celle de Dieu. Mieux vaut s'y accorder ici, tant que la nôtre peut encore répondre.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "malheur", "def": "wayl : malheur.", "gram": "nom, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce jour-là", "def": "yawmaʾidhin : ce jour-là.", "gram": "adverbe de temps" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "aux démenteurs", "def": "mukadhdhib : démenteur.", "gram": "préposition + participe actif plur." }
+      ]
+    },
+    {
+      "n": 38,
+      "ar": "هَٰذَا يَوْمُ الْفَصْلِ جَمَعْنَاكُمْ وَالْأَوَّلِينَ",
+      "tr": "hādhā yawmu l-faṣli jamaʿnākum wa-l-awwalīna",
+      "trad": "Ce sera le Jour de la Décision. Nous vous avons réunis, vous et les Anciens.",
+      "themes": ["Jour de la Décision", "rassemblement universel"],
+      "commentaire": "<em>jamaʿnākum wa-l-awwalīn</em> (جَمَعْناكُمْ وَالأَوَّلين) : Nous vous avons rassemblés, vous et les premiers. Qushayrī : « Nous vous avons fait ce que Nous leur avons fait dans le bas-monde — l'abandon ; ainsi, ce Jour, vous ferons-Nous ce que Nous leur faisons : l'entrée dans le Feu. » Toutes les générations comparaissent ensemble : le Jour de la Décision abolit les distances du temps. Devant le verdict, premiers et derniers ne forment plus qu'une seule assemblée jugée à la même aune.",
+      "mots": [
+        { "ar": "هَٰذَا يَوْمُ الْفَصْلِ", "tr": "hādhā yawmu l-faṣl", "racine": "ف ص ل", "sens": "ceci est le Jour de la Décision", "def": "faṣl : décision, séparation.", "gram": "démonstratif + nom + complément" },
+        { "ar": "جَمَعْنَاكُمْ", "tr": "jamaʿnākum", "racine": "ج م ع", "sens": "Nous vous avons rassemblés", "def": "jamaʿa : réunir.", "gram": "verbe accompli + pronom" },
+        { "ar": "وَالْأَوَّلِينَ", "tr": "wa-l-awwalīn", "racine": "أ و ل", "sens": "et les Anciens", "def": "awwal : premier.", "gram": "nom plur., coordonné" }
+      ]
+    },
+    {
+      "n": 39,
+      "ar": "فَإِن كَانَ لَكُمْ كَيْدٌ فَكِيدُونِ",
+      "tr": "fa-ʾin kāna lakum kaydun fa-kīdūni",
+      "trad": "Si vous possédez un stratagème, utilisez-le contre Moi !",
+      "themes": ["défi", "impuissance des ruses"],
+      "commentaire": "<em>fa-ʾin kāna lakum kaydun fa-kīdūni</em> (فَإِنْ كانَ لَكُمْ كَيْدٌ فَكيدون) : si vous avez une ruse, rusez donc contre Moi ! Défi cinglant adressé aux démenteurs. Toutes les ruses (kayd) déployées dans la vie pour échapper à la vérité ou en tirer profit s'effondrent ici : devant Dieu, nul stratagème ne tient. L'homme rusé croyait manœuvrer le réel ; au Jour, il découvre que la seule force qui demeure est celle qu'il a niée. L'invitation au défi est la preuve de l'absolue impuissance.",
+      "mots": [
+        { "ar": "فَإِن كَانَ لَكُمْ", "tr": "fa-ʾin kāna lakum", "racine": "ك و ن", "sens": "si vous avez", "def": "kāna : être ; ici, posséder.", "gram": "particule conditionnelle + verbe + préposition" },
+        { "ar": "كَيْدٌ", "tr": "kaydun", "racine": "ك ي د", "sens": "une ruse", "def": "kayd : stratagème, ruse.", "gram": "nom, sujet" },
+        { "ar": "فَكِيدُونِ", "tr": "fa-kīdūni", "racine": "ك ي د", "sens": "rusez donc contre Moi", "def": "kāda : ruser.", "gram": "impératif plur. + pronom (nūn de protection)" }
+      ]
+    },
+    {
+      "n": 40,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Malheur, ce Jour-là, à ceux qui crient au mensonge !",
+      "themes": ["refrain", "fin des ruses"],
+      "commentaire": "Septième occurrence, après le défi lancé aux ruseurs. Le refrain scelle l'impuissance : nul kayd ne peut détourner le malheur annoncé. À mesure que la sourate avance, le refrain ferme une à une les portes de l'évasion : ni la parole, ni l'excuse, ni la ruse. Il ne reste qu'un chemin — abandonner le camp du démenti tant qu'on le peut encore.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "malheur", "def": "wayl : malheur.", "gram": "nom, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce jour-là", "def": "yawmaʾidhin : ce jour-là.", "gram": "adverbe de temps" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "aux démenteurs", "def": "mukadhdhib : démenteur.", "gram": "préposition + participe actif plur." }
+      ]
+    },
+    {
+      "n": 41,
+      "ar": "إِنَّ الْمُتَّقِينَ فِي ظِلَالٍ وَعُيُونٍ",
+      "tr": "inna l-muttaqīna fī ẓilālin wa-ʿuyūnin",
+      "trad": "En vérité, ceux qui craignent Dieu seront sous les ombrages et près des sources,",
+      "themes": ["les pieux", "ombres et sources"],
+      "commentaire": "Renversement lumineux après les ombres de fumée (v. 30) : <em>al-muttaqūn fī ẓilāl wa-ʿuyūn</em> (المُتَّقون في ظِلال وَعُيون) — les pieux sous de vraies ombres, près de vraies sources. Qushayrī déploie ici sa plus belle méditation sur les ombres : « aujourd'hui dans l'ombre de la providence (ʿināya) et de la protection, demain dans l'ombre de la miséricorde ; aujourd'hui dans l'ombre du tawḥīd, demain dans l'ombre du beau surcroît ; aujourd'hui dans l'ombre des connaissances (maʿārif), demain dans l'ombre des grâces subtiles (laṭāʾif) ; aujourd'hui dans l'ombre du faire-connaître, demain dans l'ombre de l'honneur. » À la fausse ombre qui ne protège pas répond la vraie, qui abrite dès ici-bas.",
+      "mots": [
+        { "ar": "إِنَّ الْمُتَّقِينَ", "tr": "inna l-muttaqīn", "racine": "و ق ي", "sens": "ceux qui craignent Dieu", "def": "ittaqā : craindre Dieu, se prémunir.", "gram": "inna + participe actif (forme VIII) plur." },
+        { "ar": "فِي ظِلَالٍ", "tr": "fī ẓilālin", "racine": "ظ ل ل", "sens": "sous des ombrages", "def": "ẓill : ombre.", "gram": "préposition + nom plur." },
+        { "ar": "وَعُيُونٍ", "tr": "wa-ʿuyūnin", "racine": "ع ي ن", "sens": "et des sources", "def": "ʿayn : source.", "gram": "nom plur., coordonné" }
+      ]
+    },
+    {
+      "n": 42,
+      "ar": "وَفَوَاكِهَ مِمَّا يَشْتَهُونَ",
+      "tr": "wa-fawākiha mimmā yashtahūna",
+      "trad": "près des fruits qu'ils désireront :",
+      "themes": ["fruits", "désir comblé"],
+      "commentaire": "<em>mimmā yashtahūn</em> (مِمّا يَشْتَهون) : de ce qu'ils désirent. Au Jardin, le désir n'est plus tourment mais accomplissement : on a <em>ce qu'on veut</em>, à l'instant où on le veut. Le désir, ici-bas source de souffrance parce qu'il manque toujours son objet, y est enfin réconcilié avec son comblement. Mais ce désir-là est purifié : il ne porte plus que sur le bien, car le cœur du pieux a été lavé des convoitises basses.",
+      "mots": [
+        { "ar": "وَفَوَاكِهَ", "tr": "wa-fawākiha", "racine": "ف ك ه", "sens": "et des fruits", "def": "fākiha : fruit.", "gram": "nom plur." },
+        { "ar": "مِمَّا يَشْتَهُونَ", "tr": "mimmā yashtahūn", "racine": "ش ه و", "sens": "de ce qu'ils désirent", "def": "ishtahā : désirer, convoiter.", "gram": "préposition + relatif + verbe (forme VIII)" }
+      ]
+    },
+    {
+      "n": 43,
+      "ar": "كُلُوا وَاشْرَبُوا هَنِيئًا بِمَا كُنتُمْ تَعْمَلُونَ",
+      "tr": "kulū wa-shrabū haniʾan bimā kuntum taʿmalūna",
+      "trad": "» Mangez et buvez en paix, pour prix de vos œuvres !",
+      "themes": ["félicité", "fruit des œuvres"],
+      "commentaire": "<em>kulū wa-shrabū haniʾan</em> (كُلوا وَاشْرَبوا هَنيئًا) : mangez et buvez en toute quiétude. Qushayrī élève le sens : « aujourd'hui vous buvez sur Son souvenir (dhikr), demain vous boirez sur Sa contemplation (shuhūd) ; aujourd'hui vous buvez aux coupes de la limpidité (ṣafāʾ), demain aux coupes de l'alliance (walāʾ). » Le boire et le manger paradisiaques ne sont que le voile sensible d'une ivresse spirituelle : le vrai festin est la présence, et la vraie boisson, l'intimité avec l'Aimé.",
+      "mots": [
+        { "ar": "كُلُوا وَاشْرَبُوا", "tr": "kulū wa-shrabū", "racine": "أ ك ل / ش ر ب", "sens": "mangez et buvez", "def": "akala : manger ; shariba : boire.", "gram": "deux impératifs plur." },
+        { "ar": "هَنِيئًا", "tr": "haniʾan", "racine": "ه ن أ", "sens": "en paix, avec délice", "def": "hanīʾ : agréable, sans trouble.", "gram": "complément d'état" },
+        { "ar": "بِمَا كُنتُمْ تَعْمَلُونَ", "tr": "bimā kuntum taʿmalūn", "racine": "ع م ل", "sens": "pour ce que vous faisiez", "def": "ʿamila : agir, œuvrer.", "gram": "préposition + relatif + verbe" }
+      ]
+    },
+    {
+      "n": 44,
+      "ar": "إِنَّا كَذَٰلِكَ نَجْزِي الْمُحْسِنِينَ",
+      "tr": "innā kadhālika najzī l-muḥsinīna",
+      "trad": "C'est ainsi que Nous récompensons les hommes de bien ».",
+      "themes": ["récompense des bienfaisants", "ihsān"],
+      "commentaire": "<em>al-muḥsinīn</em> (المُحْسِنين) : ceux qui font le bien avec excellence (iḥsān). Qushayrī donne la définition la plus haute : « l'iḥsān, de la part du serviteur, c'est de tout laisser pour Lui » — abandonner tout par amour. « De même demain : Il te récompensera en laissant tomber tout ce qui pèse sur toi, pour toi. » L'excellence n'est pas faire beaucoup, mais tout remettre ; et la récompense répond exactement : à qui a tout lâché pour Dieu, Dieu allège tout. On reçoit selon la mesure de ce qu'on a donné.",
+      "mots": [
+        { "ar": "إِنَّا كَذَٰلِكَ", "tr": "innā kadhālika", "racine": "", "sens": "ainsi, certes", "def": "kadhālika : de cette façon.", "gram": "inna + adverbe" },
+        { "ar": "نَجْزِي", "tr": "najzī", "racine": "ج ز ي", "sens": "Nous récompensons", "def": "jazā : rétribuer.", "gram": "verbe inaccompli" },
+        { "ar": "الْمُحْسِنِينَ", "tr": "al-muḥsinīn", "racine": "ح س ن", "sens": "les bienfaisants", "def": "muḥsin : qui agit avec excellence.", "gram": "participe actif (forme IV) plur., complément d'objet" }
+      ]
+    },
+    {
+      "n": 45,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Malheur, ce Jour-là, à ceux qui crient au mensonge !",
+      "themes": ["refrain", "contraste des destinées"],
+      "commentaire": "Huitième occurrence, après la félicité des pieux. Le refrain prend ici toute sa force par contraste : aux ombres fraîches, aux sources, aux fruits et au festin des bienfaisants répond le malheur des démenteurs. Le même Jour sépare deux mondes : la joie de qui a reconnu et l'amertume de qui a nié. La litanie souligne la bifurcation : tout dépend de l'orientation du cœur, vers la reconnaissance ou vers le déni.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "malheur", "def": "wayl : malheur.", "gram": "nom, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce jour-là", "def": "yawmaʾidhin : ce jour-là.", "gram": "adverbe de temps" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "aux démenteurs", "def": "mukadhdhib : démenteur.", "gram": "préposition + participe actif plur." }
+      ]
+    },
+    {
+      "n": 46,
+      "ar": "كُلُوا وَتَمَتَّعُوا قَلِيلًا إِنَّكُم مُّجْرِمُونَ",
+      "tr": "kulū wa-tamattaʿū qalīlan innakum mujrimūna",
+      "trad": "» Mangez et jouissez un peu de cette vie, vous, qui êtes coupables ! »",
+      "themes": ["jouissance brève", "avertissement aux coupables"],
+      "commentaire": "<em>kulū wa-tamattaʿū qalīlan</em> (كُلوا وَتَمَتَّعوا قَليلًا) : mangez et jouissez un peu. Qushayrī : « ceci s'adresse aux dénégateurs ; c'est une menace et un avertissement. » Le contraste avec le « mangez et buvez » des bienheureux (v. 43) est mordant : aux uns le festin sans fin de l'intimité, aux autres une brève bouchée comptée. <em>Qalīlan</em> — « un peu » — dit tout : la jouissance du monde est par nature minuscule et provisoire. On vous laisse en profiter le temps d'un instant, car c'est tout ce qu'elle vaut.",
+      "mots": [
+        { "ar": "كُلُوا وَتَمَتَّعُوا", "tr": "kulū wa-tamattaʿū", "racine": "أ ك ل / م ت ع", "sens": "mangez et jouissez", "def": "tamattaʿa : jouir, profiter.", "gram": "deux impératifs plur." },
+        { "ar": "قَلِيلًا", "tr": "qalīlan", "racine": "ق ل ل", "sens": "un peu", "def": "qalīl : peu, bref.", "gram": "complément de temps" },
+        { "ar": "إِنَّكُم مُّجْرِمُونَ", "tr": "innakum mujrimūn", "racine": "ج ر م", "sens": "vous êtes des coupables", "def": "mujrim : criminel.", "gram": "inna + pronom + participe actif plur." }
+      ]
+    },
+    {
+      "n": 47,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Malheur, ce Jour-là, à ceux qui crient au mensonge !",
+      "themes": ["refrain", "jouissance trompeuse"],
+      "commentaire": "Neuvième occurrence, après l'invitation amère à jouir brièvement. Le refrain démasque l'illusion de la jouissance terrestre : ce qui paraissait gain n'était que sursis. Celui qui a tout misé sur le « peu » de l'ici-bas se retrouve, au Jour, dépouillé. La répétition obstinée du malheur est, paradoxalement, une miséricorde : tant qu'elle retentit, l'avertissement n'a pas fini d'appeler au revirement.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "malheur", "def": "wayl : malheur.", "gram": "nom, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce jour-là", "def": "yawmaʾidhin : ce jour-là.", "gram": "adverbe de temps" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "aux démenteurs", "def": "mukadhdhib : démenteur.", "gram": "préposition + participe actif plur." }
+      ]
+    },
+    {
+      "n": 48,
+      "ar": "وَإِذَا قِيلَ لَهُمُ ارْكَعُوا لَا يَرْكَعُونَ",
+      "tr": "wa-idhā qīla lahumu rkaʿū lā yarkaʿūna",
+      "trad": "Quand on leur dit : « Inclinez-vous, ils ne s'inclinent pas !",
+      "themes": ["refus de la prosternation", "orgueil"],
+      "commentaire": "<em>idhā qīla lahumu rkaʿū lā yarkaʿūn</em > (إذا قيلَ لَهُمُ ارْكَعوا لا يَرْكَعون) : quand on leur dit « inclinez-vous », ils ne s'inclinent pas. Qushayrī : « ils persistaient dans le refus et l'orgueil (istikbār) ; aussi subiront-ils la grande épreuve. » Voici la racine du démenti : non un manque d'arguments, mais un refus de fléchir. L'orgueil qui empêche de courber l'échine devant Dieu est le même qui empêche de reconnaître la vérité. Ne pas s'incliner, c'est tout dire de l'âme qui se prend pour son propre centre.",
+      "mots": [
+        { "ar": "وَإِذَا قِيلَ لَهُمُ", "tr": "wa-idhā qīla lahumu", "racine": "ق و ل", "sens": "et quand on leur dit", "def": "qāla : dire ; passif : il est dit.", "gram": "particule + verbe passif + préposition" },
+        { "ar": "ارْكَعُوا", "tr": "irkaʿū", "racine": "ر ك ع", "sens": "inclinez-vous", "def": "rakaʿa : s'incliner.", "gram": "impératif plur." },
+        { "ar": "لَا يَرْكَعُونَ", "tr": "lā yarkaʿūn", "racine": "ر ك ع", "sens": "ils ne s'inclinent pas", "def": "rakaʿa : s'incliner.", "gram": "négation + verbe inaccompli plur." }
+      ]
+    },
+    {
+      "n": 49,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Malheur, ce Jour-là, à ceux qui crient au mensonge !",
+      "themes": ["refrain", "dixième et dernier"],
+      "commentaire": "Dixième et dernière occurrence du refrain. Il vient sceller le portrait de l'orgueilleux qui refuse de s'incliner. Dix fois la sourate aura martelé ce même avertissement, comme dix coups frappés à la porte du cœur. Que reste-t-il à dire après cette litanie ? Une seule question, celle du verset final : si une telle parole ne touche pas, quelle parole le pourra ?",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "malheur", "def": "wayl : malheur.", "gram": "nom, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "ce jour-là", "def": "yawmaʾidhin : ce jour-là.", "gram": "adverbe de temps" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "aux démenteurs", "def": "mukadhdhib : démenteur.", "gram": "préposition + participe actif plur." }
+      ]
+    },
+    {
+      "n": 50,
+      "ar": "فَبِأَيِّ حَدِيثٍ بَعْدَهُ يُؤْمِنُونَ",
+      "tr": "fa-bi-ayyi ḥadīthin baʿdahu yuʾminūna",
+      "trad": "A quel discours, après celui-ci, croiront-ils donc ?",
+      "themes": ["question finale", "le Coran ultime preuve"],
+      "commentaire": "Verset de clôture, suspendu comme une question sans réponse. <em>fa-bi-ayyi ḥadīthin baʿdahu yuʾminūn</em> (فَبِأَيِّ حَديثٍ بَعْدَهُ يُؤْمِنون) : à quelle parole, après celle-ci, croiront-ils donc ? Si le Coran — avec ses serments, ses signes de la création, ses avertissements répétés dix fois — ne suffit pas à éveiller la foi, quelle autre parole le pourrait ? C'est l'ultime appel, retourné en question : la preuve a été donnée jusqu'au bout. Au cœur qui ne s'incline toujours pas, il ne reste plus de discours à offrir — sinon le silence où chacun reste seul avec son choix.",
+      "mots": [
+        { "ar": "فَبِأَيِّ حَدِيثٍ", "tr": "fa-bi-ayyi ḥadīthin", "racine": "ح د ث", "sens": "à quelle parole", "def": "ḥadīth : parole, discours, récit.", "gram": "préposition + interrogatif + nom" },
+        { "ar": "بَعْدَهُ", "tr": "baʿdahu", "racine": "ب ع د", "sens": "après lui", "def": "baʿd : après.", "gram": "adverbe + pronom" },
+        { "ar": "يُؤْمِنُونَ", "tr": "yuʾminūn", "racine": "أ م ن", "sens": "croiront-ils", "def": "āmana : croire, avoir foi.", "gram": "verbe inaccompli (forme IV) plur." }
+      ]
+    }
+  ]
+}

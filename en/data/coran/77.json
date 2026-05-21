@@ -1,0 +1,642 @@
+{
+  "n": 77,
+  "nom_ar": "المُرْسَلَات",
+  "nom_tr": "al-Mursalāt",
+  "nom_fr": "The Emissaries",
+  "revelation": "Meccan",
+  "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
+  "versets_count": 50,
+  "intro": "al-Mursalāt — “the Emissaries” — opens, like al-Nāziʿāt, with a sequence of mysterious oaths: by those sent forth, those that blow as a tempest, those that scatter, those that part, those that cast a Reminder. The angels, says tradition, bearers of the revelation and of the command. The whole sūra is then punctuated by a refrain repeated <em>ten times</em>: “Woe that Day to the deniers!” (wayl yawmaʾidhin li-l-mukadhdhibīn) — a litany hammering the fate of those whose outer and inner selves do not agree in acknowledging the truth. Qushayrī gives an inner reading: <em>the stars of knowledge are effaced at the onset of absence; the mountains — the hearts settled in the certainty of contemplation — are shaken</em>. Onto this he grafts two major meditations: on the shadow of three columns, an image of the soul that, having returned to creatures, sees the paths of its rectitude close; and on the shadows of the blessed, where he distinguishes, for today and for tomorrow, the shadow of providence, of tawḥīd, of knowledge, of subtle graces. The sūra closes on a suspended question: “In what discourse, after this one, will they then believe?”",
+  "themes": ["oaths of the angels", "the Day of Decision", "refrain of woe", "man's humble origin", "the shadows of the blessed"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَالْمُرْسَلَاتِ عُرْفًا",
+      "tr": "wa-l-mursalāti ʿurfan",
+      "trad": "By the emissaries sent forth in successive waves,",
+      "themes": ["oath", "angels sent"],
+      "commentaire": "<em>al-mursalāt ʿurfan</em> (المُرْسَلات عُرْفًا): those sent forth. Qushayrī: these are “the angels, sent with what is good and fitting of the command”; or sent in a dense throng, “like the mane (ʿurf) of a horse” — wave after wave. From the opening, God swears by His invisible messengers who carry out His command. The oath veils its object the better to awaken attention: what is to be said deserves the support of the highest realities.",
+      "mots": [
+        { "ar": "وَالْمُرْسَلَاتِ", "tr": "wa-l-mursalāt", "racine": "ر س ل", "sens": "and by the emissaries", "def": "arsala: to send.", "gram": "passive participle fem. plur., wāw of oath" },
+        { "ar": "عُرْفًا", "tr": "ʿurfan", "racine": "ع ر ف", "sens": "in successive waves / for the good", "def": "ʿurf: mane, succession; or the fitting.", "gram": "circumstantial (ḥāl)" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "فَالْعَاصِفَاتِ عَصْفًا",
+      "tr": "fa-l-ʿāṣifāti ʿaṣfan",
+      "trad": "by those that blow as a tempest,",
+      "themes": ["oath", "violent winds"],
+      "commentaire": "<em>al-ʿāṣifāt ʿaṣfan</em> (العاصِفات عَصْفًا): those that blow as a tempest. Qushayrī: “the violent winds.” From the gentleness of the sending (v. 1) to the violence of the blast: the same divine force can caress or sweep away. The wind is not seen but known by its effect; thus the powers by which God swears act in the invisible and overturn the visible.",
+      "mots": [
+        { "ar": "فَالْعَاصِفَاتِ", "tr": "fa-l-ʿāṣifāt", "racine": "ع ص ف", "sens": "then by those that blow as a tempest", "def": "ʿaṣafa: to blow violently.", "gram": "active participle fem. plur." },
+        { "ar": "عَصْفًا", "tr": "ʿaṣfan", "racine": "ع ص ف", "sens": "with violence", "def": "ʿaṣf: tempest, raging.", "gram": "absolute object" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَالنَّاشِرَاتِ نَشْرًا",
+      "tr": "wa-l-nāshirāti nashran",
+      "trad": "By those that scatter far and wide,",
+      "themes": ["oath", "spreading", "life"],
+      "commentaire": "<em>al-nāshirāt nashran</em> (النَّاشِرات نَشْرًا): those that spread out. Qushayrī gives several senses: the rains “that spread out the vegetation — for spreading here is resurrection (iḥyāʾ)”; or the clouds that pour the rain; or the angels. The word <em>nashr</em> speaks of the unfolding of what was folded, the awakening of what slept: rain resurrects the dead earth, an image of the promised resurrection.",
+      "mots": [
+        { "ar": "وَالنَّاشِرَاتِ", "tr": "wa-l-nāshirāt", "racine": "ن ش ر", "sens": "and by those that spread out", "def": "nashara: to spread, extend, revive.", "gram": "active participle fem. plur." },
+        { "ar": "نَشْرًا", "tr": "nashran", "racine": "ن ش ر", "sens": "spreading", "def": "nashr: unfolding, dissemination.", "gram": "absolute object" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "فَالْفَارِقَاتِ فَرْقًا",
+      "tr": "fa-l-fāriqāti farqan",
+      "trad": "By those that separate and distinguish,",
+      "themes": ["oath", "discernment"],
+      "commentaire": "<em>al-fāriqāt farqan</em> (الفارِقات فَرْقًا): those that separate. Qushayrī: “the angels who separate the lawful from the unlawful.” The <em>farq</em> is discernment, the art of drawing the line between true and false, pure and impure. Before the Day of Decision comes (v. 13, yawm al-faṣl), God swears by the powers that, already, distinguish: for the whole spiritual life is a schooling in discernment.",
+      "mots": [
+        { "ar": "فَالْفَارِقَاتِ", "tr": "fa-l-fāriqāt", "racine": "ف ر ق", "sens": "then by those that separate", "def": "faraqa: to separate, distinguish.", "gram": "active participle fem. plur." },
+        { "ar": "فَرْقًا", "tr": "farqan", "racine": "ف ر ق", "sens": "distinguishing", "def": "farq: separation, discernment.", "gram": "absolute object" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "فَالْمُلْقِيَاتِ ذِكْرًا",
+      "tr": "fa-l-mulqiyāti dhikran",
+      "trad": "By those that cast forth a reminder,",
+      "themes": ["oath", "transmission of the Reminder"],
+      "commentaire": "<em>al-mulqiyāt dhikran</em> (المُلْقِيات ذِكْرًا): those that cast forth a Reminder. Qushayrī: “the angels who transmit the revelation to the prophets.” The summit of the series: after the sending, the blast, the spreading, the discernment, here is the ultimate mission — to bear the <em>Word of remembrance</em> to the hearts of men. The whole movement of the oaths converges on <em>dhikr</em>: the goal of every angelic force is to revive the remembrance of God.",
+      "mots": [
+        { "ar": "فَالْمُلْقِيَاتِ", "tr": "fa-l-mulqiyāt", "racine": "ل ق ي", "sens": "then by those that cast", "def": "alqā: to cast, transmit.", "gram": "active participle (form IV) fem. plur." },
+        { "ar": "ذِكْرًا", "tr": "dhikran", "racine": "ذ ك ر", "sens": "a reminder", "def": "dhikr: reminder, mention, remembrance.", "gram": "object" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "عُذْرًا أَوْ نُذْرًا",
+      "tr": "ʿudhran aw nudhran",
+      "trad": "as a justification or a warning,",
+      "themes": ["justification", "warning"],
+      "commentaire": "<em>ʿudhran aw nudhran</em> (عُذْرًا أَوْ نُذْرًا): as justification or as warning. Qushayrī: the angels transmit the revelation “to remove all excuse (iʿdhāran) and to warn (indhāran).” The twofold function of the Reminder: it deprives man of all excuse on the Day of Reckoning — none can say “I did not know” — and it forewarns while there is time. The same word saves whoever heeds it and accuses whoever rejects it.",
+      "mots": [
+        { "ar": "عُذْرًا", "tr": "ʿudhran", "racine": "ع ذ ر", "sens": "as justification", "def": "ʿudhr: excuse; here, what removes the excuse.", "gram": "object of cause" },
+        { "ar": "أَوْ نُذْرًا", "tr": "aw nudhran", "racine": "ن ذ ر", "sens": "or as warning", "def": "nudhr: warning.", "gram": "object of cause" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "إِنَّمَا تُوعَدُونَ لَوَاقِعٌ",
+      "tr": "innamā tūʿadūna la-wāqiʿun",
+      "trad": "what you are promised is inescapable!",
+      "themes": ["answer to the oath", "certainty"],
+      "commentaire": "Here is the answer to the oaths: <em>la-wāqiʿ</em> (لَواقِع) — it will come, it will fall without fail. Qushayrī: “He swore by all these things that the Resurrection is truth (ḥaqq).” All this display of invisible powers had but one purpose: to anchor a certainty. What is promised is no distant threat but a fact to come, as sure as the wind that blows and the rain that resurrects the earth.",
+      "mots": [
+        { "ar": "إِنَّمَا تُوعَدُونَ", "tr": "innamā tūʿadūna", "racine": "و ع د", "sens": "what you are promised", "def": "waʿada: to promise.", "gram": "particle + imperfect verb, passive" },
+        { "ar": "لَوَاقِعٌ", "tr": "la-wāqiʿun", "racine": "و ق ع", "sens": "will surely come to pass", "def": "waqaʿa: to happen, occur.", "gram": "active participle + lām of emphasis" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "فَإِذَا النُّجُومُ طُمِسَتْ",
+      "tr": "fa-ʾidhā l-nujūmu ṭumisat",
+      "trad": "When the stars are blotted out,",
+      "themes": ["effacement of the stars", "inner reading"],
+      "commentaire": "<em>ṭumisat</em> (طُمِسَتْ): blotted out, their light extinguished. Qushayrī gives here his splendid reading by allusion (ishāra): “the stars of knowledge (nujūm al-maʿārif) are effaced by the onset of absence (ghayba).” To the cosmic Day answers an inner day: there are hours when even the acquired lights of gnosis go out, when the knower finds himself plunged in the night of withdrawal. The effacement of the stars announces that every borrowed light must yield before the one Light.",
+      "mots": [
+        { "ar": "فَإِذَا النُّجُومُ", "tr": "fa-ʾidhā l-nujūm", "racine": "ن ج م", "sens": "when the stars", "def": "najm: star.", "gram": "particle + plural noun, subject" },
+        { "ar": "طُمِسَتْ", "tr": "ṭumisat", "racine": "ط م س", "sens": "are blotted out", "def": "ṭamasa: to efface, make disappear.", "gram": "perfect verb, passive" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "وَإِذَا السَّمَاءُ فُرِجَتْ",
+      "tr": "wa-ʾidhā l-samāʾu furijat",
+      "trad": "when the heaven is split open,",
+      "themes": ["rending of the heaven", "opening"],
+      "commentaire": "<em>furijat</em> (فُرِجَتْ): split, opened. The heaven, the solid vault that seemed unshakeable, is rent. It is the collapse of apparent certainties: what seemed most stable opens like a veil drawn aside. Inwardly, it is the instant when the heaven of the self splits to let a higher reality through.",
+      "mots": [
+        { "ar": "وَإِذَا السَّمَاءُ", "tr": "wa-ʾidhā l-samāʾ", "racine": "س م و", "sens": "and when the heaven", "def": "samāʾ: heaven.", "gram": "particle + noun, subject" },
+        { "ar": "فُرِجَتْ", "tr": "furijat", "racine": "ف ر ج", "sens": "is split open", "def": "faraja: to split, open.", "gram": "perfect verb, passive" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَإِذَا الْجِبَالُ نُسِفَتْ",
+      "tr": "wa-ʾidhā l-jibālu nusifat",
+      "trad": "when the mountains are scattered as dust,",
+      "themes": ["pulverization of the mountains", "shaking of hearts"],
+      "commentaire": "<em>nusifat</em> (نُسِفَتْ): swept away, scattered, glosses Qushayrī: “removed at a stroke, leaving no trace.” And the inner reading: “the mountains — the hearts settled in the certainty of contemplation (yaqīn al-shuhūd) — are shaken, a chastisement for what they aspired to that was not permitted.” Even the firmness of the most assured heart can waver if it clings to anything other than God: no inner mountain is sure of itself.",
+      "mots": [
+        { "ar": "وَإِذَا الْجِبَالُ", "tr": "wa-ʾidhā l-jibāl", "racine": "ج ب ل", "sens": "and when the mountains", "def": "jabal: mountain.", "gram": "particle + plural noun, subject" },
+        { "ar": "نُسِفَتْ", "tr": "nusifat", "racine": "ن س ف", "sens": "are pulverized", "def": "nasafa: to scatter, reduce to dust.", "gram": "perfect verb, passive" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "وَإِذَا الرُّسُلُ أُقِّتَتْ",
+      "tr": "wa-ʾidhā l-rusulu uqqitat",
+      "trad": "when the messengers are given their appointed time.",
+      "themes": ["summoning of the messengers", "appointed term"],
+      "commentaire": "<em>uqqitat</em> (أُقِّتَتْ): a term is set for them. Qushayrī: “a time and a term are assigned to them for the settling of the judgement, on the Day of Resurrection” — the messengers will be summoned to bear witness to what they transmitted. All comes to this appointed meeting: those who bore the Reminder will appear, and with them the peoples who received or rejected them. The hour of the messengers is the hour of truth for those who heard them.",
+      "mots": [
+        { "ar": "وَإِذَا الرُّسُلُ", "tr": "wa-ʾidhā l-rusul", "racine": "ر س ل", "sens": "and when the messengers", "def": "rasūl: messenger, envoy.", "gram": "particle + plural noun, subject" },
+        { "ar": "أُقِّتَتْ", "tr": "uqqitat", "racine": "و ق ت", "sens": "are given their appointed time", "def": "waqqata: to set a time, assign a term.", "gram": "perfect verb, passive (form II)" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "لِأَيِّ يَوْمٍ أُجِّلَتْ",
+      "tr": "li-ayyi yawmin ujjilat",
+      "trad": "To what Day has it been deferred:",
+      "themes": ["question", "deferral"],
+      "commentaire": "<em>ujjilat</em> (أُجِّلَتْ): deferred, postponed to a term. A question of waiting and gravity: to what Day has this meeting been deferred? The query creates a solemn suspense before the answer of the next verse. All that seems to tarry has its term fixed in the knowledge of God: the deferral is not forgetfulness, but a postponement toward the Day that will decide everything.",
+      "mots": [
+        { "ar": "لِأَيِّ يَوْمٍ", "tr": "li-ayyi yawmin", "racine": "ي و م", "sens": "to what Day", "def": "ayy: which; yawm: day.", "gram": "preposition + interrogative + noun" },
+        { "ar": "أُجِّلَتْ", "tr": "ujjilat", "racine": "أ ج ل", "sens": "was it deferred", "def": "ajjala: to postpone, set a term.", "gram": "perfect verb, passive (form II)" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "لِيَوْمِ الْفَصْلِ",
+      "tr": "li-yawmi l-faṣli",
+      "trad": "to the Day of Decision.",
+      "themes": ["Day of Decision", "separation"],
+      "commentaire": "<em>yawm al-faṣl</em> (يَوْم الفَصْل): the Day of Decision, of the cutting separation. The root <em>faṣl</em> speaks of cutting clean, of separating what was mingled. It is the Day when discernment (the <em>farq</em> of verse 4) becomes verdict: the true parted from the false, the just from the unjust, with no further mingling possible. What remained confused in the earthly trial is then revealed in its pure distinction.",
+      "mots": [
+        { "ar": "لِيَوْمِ", "tr": "li-yawmi", "racine": "ي و م", "sens": "to the Day of", "def": "yawm: day.", "gram": "preposition + noun" },
+        { "ar": "الْفَصْلِ", "tr": "al-faṣl", "racine": "ف ص ل", "sens": "the Decision, the separation", "def": "faṣl: to cut, separate, decide.", "gram": "complement of the noun" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "وَمَا أَدْرَاكَ مَا يَوْمُ الْفَصْلِ",
+      "tr": "wa-mā adrāka mā yawmu l-faṣli",
+      "trad": "And what will make you know what the Day of Decision is?",
+      "themes": ["grandeur of the Day", "beyond knowledge"],
+      "commentaire": "<em>wa-mā adrāka</em> (وَما أَدْراكَ): what will make you know? Qushayrī: the formula is here “to magnify” the grandeur of the Day. The question expects no answer: it deepens the mystery. The Day of Decision surpasses all the mind can conceive; even to the Prophet, its full reality remains veiled. Before the immense, knowledge acknowledges its limit and gives way to reverence.",
+      "mots": [
+        { "ar": "وَمَا أَدْرَاكَ", "tr": "wa-mā adrāka", "racine": "د ر ي", "sens": "what will make you know", "def": "adrā: to make know.", "gram": "interrogative + perfect verb + pronoun" },
+        { "ar": "مَا يَوْمُ الْفَصْلِ", "tr": "mā yawmu l-faṣl", "racine": "ف ص ل", "sens": "what the Day of Decision is", "def": "faṣl: decision, separation.", "gram": "interrogative + subject + complement" }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Woe that Day to the deniers!",
+      "themes": ["refrain", "the deniers"],
+      "commentaire": "The first utterance of the refrain that will mark the sūra ten times. <em>al-mukadhdhibīn</em> (المُكَذِّبين): those who treat as a lie. Qushayrī: these are “those whose outer and inner selves do not agree in acknowledging the truth” (taṣdīq). Woe strikes not the ignorant but the <em>liar</em> — the one who knows deep down and denies on the surface, whose heart belies what the tongue confesses, or the reverse. Inner duplicity is the root of woe.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "woe", "def": "wayl: woe, ruin.", "gram": "noun, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "to the deniers", "def": "kadhdhaba: to treat as a lie.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "أَلَمْ نُهْلِكِ الْأَوَّلِينَ",
+      "tr": "a-lam nuhliki l-awwalīna",
+      "trad": "Did We not destroy the former peoples?",
+      "themes": ["lesson of history", "annihilated peoples"],
+      "commentaire": "A reminder of the past generations God destroyed for their denial. The argument is that of history: what befell the ancients threatens the present. Qushayrī ties this to denial: “those who treated their messengers as liars and denied Our signs” perished. History is not a mere past but a warning: the fate of the first prefigures that of whoever repeats their refusal.",
+      "mots": [
+        { "ar": "أَلَمْ نُهْلِكِ", "tr": "a-lam nuhliki", "racine": "ه ل ك", "sens": "did We not destroy", "def": "ahlaka: to destroy, annihilate.", "gram": "interrogation + jussive verb (form IV)" },
+        { "ar": "الْأَوَّلِينَ", "tr": "al-awwalīn", "racine": "أ و ل", "sens": "the former", "def": "awwal: first; the ancients.", "gram": "plural noun, object" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "ثُمَّ نُتْبِعُهُمُ الْآخِرِينَ",
+      "tr": "thumma nutbiʿuhumu l-ākhirīna",
+      "trad": "Then made the later ones follow them?",
+      "themes": ["repetition of history", "successors"],
+      "commentaire": "<em>nutbiʿuhumu l-ākhirīn</em> (نُتْبِعُهُمُ الآخِرين): We make the later ones follow them. Qushayrī: “as We annihilated the first, so shall We do with the guilty if they act like them.” The law is constant: generations pass, but the same conduct calls for the same fate. None is exempted by the mere fact of coming after: the chain of history does not change its rules.",
+      "mots": [
+        { "ar": "ثُمَّ نُتْبِعُهُمُ", "tr": "thumma nutbiʿuhumu", "racine": "ت ب ع", "sens": "then We make follow them", "def": "atbaʿa: to make follow.", "gram": "particle + imperfect verb (form IV) + pronoun" },
+        { "ar": "الْآخِرِينَ", "tr": "al-ākhirīn", "racine": "أ خ ر", "sens": "the later ones", "def": "ākhir: last; the following.", "gram": "plural noun, object" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "كَذَٰلِكَ نَفْعَلُ بِالْمُجْرِمِينَ",
+      "tr": "kadhālika nafʿalu bi-l-mujrimīna",
+      "trad": "Thus do We deal with the guilty.",
+      "themes": ["constant law", "the guilty"],
+      "commentaire": "<em>kadhālika nafʿalu bi-l-mujrimīn</em> (كَذلِكَ نَفْعَلُ بِالمُجْرِمين): thus do We deal with the criminals. The verse states the law underlying the two preceding. <em>mujrim</em>: one who breaks, who cuts the bond — the guilty one is not merely at fault, he is the one who severs what bound him to God. The sanction is not arbitrary: it is the consequence inscribed in the very act of breaking.",
+      "mots": [
+        { "ar": "كَذَٰلِكَ", "tr": "kadhālika", "racine": "", "sens": "thus", "def": "kadhālika: in this way.", "gram": "adverb of manner" },
+        { "ar": "نَفْعَلُ", "tr": "nafʿalu", "racine": "ف ع ل", "sens": "We deal", "def": "faʿala: to do, act.", "gram": "imperfect verb" },
+        { "ar": "بِالْمُجْرِمِينَ", "tr": "bi-l-mujrimīn", "racine": "ج ر م", "sens": "with the guilty", "def": "mujrim: criminal, one who breaks the bond.", "gram": "preposition + active participle (form IV) plur." }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Woe that Day to the deniers!",
+      "themes": ["refrain", "rhythm"],
+      "commentaire": "The second occurrence of the refrain. Its repetition is not redundancy but rhythm: like a knell that returns after each reminder of God's signs. To each proof unfolded — history, creation, providence — answers this same warning, scanned to imprint itself on the heart. The litany itself becomes a call: as long as it sounds, there is still time to leave the camp of the deniers.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "woe", "def": "wayl: woe.", "gram": "noun, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "to the deniers", "def": "mukadhdhib: one who cries lies.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "أَلَمْ نَخْلُقكُّم مِّن مَّاءٍ مَّهِينٍ",
+      "tr": "a-lam nakhluqkum min māʾin mahīnin",
+      "trad": "Did We not create you from a lowly fluid",
+      "themes": ["humble origin", "humility"],
+      "commentaire": "<em>māʾ mahīn</em> (ماء مَهين): a lowly, despicable fluid. Qushayrī develops here a long meditation on humility: “He reminds them of their origin so that they not be conceited about their state, for no kind of creature is more prone to pretension than the children of Adam.” And he lashes the proud: man “was a drop, at his end will be a carcass, and between the two carries within him filth in a tunic.” How be puffed up when one is what one is? Yet Qushayrī concludes toward grandeur: He who drew you from so low can raise you from the basest conditions to the noblest abodes.",
+      "mots": [
+        { "ar": "أَلَمْ نَخْلُقكُّم", "tr": "a-lam nakhluqkum", "racine": "خ ل ق", "sens": "did We not create you", "def": "khalaqa: to create.", "gram": "interrogation + jussive verb + pronoun" },
+        { "ar": "مِّن مَّاءٍ", "tr": "min māʾin", "racine": "م و ه", "sens": "from a fluid", "def": "māʾ: water, fluid.", "gram": "preposition + noun" },
+        { "ar": "مَّهِينٍ", "tr": "mahīn", "racine": "م ه ن", "sens": "lowly, despicable", "def": "mahīn: weak, base.", "gram": "adjective" }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "فَجَعَلْنَاهُ فِي قَرَارٍ مَّكِينٍ",
+      "tr": "fa-jaʿalnāhu fī qarārin makīnin",
+      "trad": "which We placed in a secure lodging",
+      "themes": ["womb", "hidden providence"],
+      "commentaire": "<em>qarār makīn</em> (قَرار مَكين): a secure, well-established lodging — the womb. From the lowly fluid to the protected place: God does not despise what He created humble, He at once surrounds it with care. The contrast is eloquent: the origin is low, but the providence that watches over it is immense. From the invisible of origins, man is kept in a secure place — an image of the solicitude that has never left him (cf. s. 76, v. 1).",
+      "mots": [
+        { "ar": "فَجَعَلْنَاهُ", "tr": "fa-jaʿalnāhu", "racine": "ج ع ل", "sens": "and We placed it", "def": "jaʿala: to place, establish.", "gram": "perfect verb + pronoun" },
+        { "ar": "فِي قَرَارٍ", "tr": "fī qarārin", "racine": "ق ر ر", "sens": "in a lodging", "def": "qarār: place of rest, stable lodging.", "gram": "preposition + noun" },
+        { "ar": "مَّكِينٍ", "tr": "makīn", "racine": "م ك ن", "sens": "secure, well-established", "def": "makīn: firm, assured.", "gram": "adjective" }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "إِلَىٰ قَدَرٍ مَّعْلُومٍ",
+      "tr": "ilā qadarin maʿlūmin",
+      "trad": "until a known term?",
+      "themes": ["appointed term", "measure"],
+      "commentaire": "<em>qadar maʿlūm</em> (قَدَر مَعْلوم): a determined term, known to God. The gestation has its set duration, neither hastened nor delayed. Everything in creation is <em>measured</em>: the time of the embryo as that of life. This measure known to God alone teaches trust: what grows in us grows according to a term we do not set and cannot outrun.",
+      "mots": [
+        { "ar": "إِلَىٰ قَدَرٍ", "tr": "ilā qadarin", "racine": "ق د ر", "sens": "until a term", "def": "qadar: measure, set term.", "gram": "preposition + noun" },
+        { "ar": "مَّعْلُومٍ", "tr": "maʿlūm", "racine": "ع ل م", "sens": "known", "def": "maʿlūm: known, determined.", "gram": "passive participle, adjective" }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "فَقَدَرْنَا فَنِعْمَ الْقَادِرُونَ",
+      "tr": "fa-qadarnā fa-niʿma l-qādirūna",
+      "trad": "We decreed it so — and how excellent We are at decreeing!",
+      "themes": ["divine mastery", "perfection of the measure"],
+      "commentaire": "<em>fa-niʿma l-qādirūn</em> (فَنِعْمَ القادِرون): how excellent the Master of measure! The verb <em>qadarnā</em> plays on two senses: We measured, and We had the power. God has disposed everything with a perfect exactness — each stage in its place, each term at its hour. Praise springs from the contemplation of this mastery: not a brute power, but an art of exact measure that never errs by a degree.",
+      "mots": [
+        { "ar": "فَقَدَرْنَا", "tr": "fa-qadarnā", "racine": "ق د ر", "sens": "We measured / decreed", "def": "qadara: to measure, determine, have power.", "gram": "perfect verb" },
+        { "ar": "فَنِعْمَ الْقَادِرُونَ", "tr": "fa-niʿma l-qādirūn", "racine": "ق د ر", "sens": "how excellent the Decreers", "def": "niʿma: praise; qādir: one who determines.", "gram": "verb of praise + active participle plur." }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Woe that Day to the deniers!",
+      "themes": ["refrain", "after creation"],
+      "commentaire": "The third occurrence, placed after the reminder of man's creation. The refrain strikes all the harder: how deny the resurrection when one carries within oneself the proof of the first creation? The one drawn from a lowly fluid and fashioned in the womb has no excuse to deny that God can remake. The woe of the deniers is to have, before their eyes, the sign they refuse to read.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "woe", "def": "wayl: woe.", "gram": "noun, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "to the deniers", "def": "mukadhdhib: denier.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "أَلَمْ نَجْعَلِ الْأَرْضَ كِفَاتًا",
+      "tr": "a-lam najʿali l-arḍa kifātan",
+      "trad": "Did We not make the earth a gathering place",
+      "themes": ["matricial earth", "gathering"],
+      "commentaire": "<em>kifāt</em> (كِفات): that which gathers, contains, brings together. Qushayrī: “the earth contains them and gathers them, living and dead: they live on its back, and after death are laid in its belly.” The earth is a single place with two faces: a cradle on top, a tomb within. It bears the living and keeps the dead — a striking image of the unity of life and death in the hand that holds all.",
+      "mots": [
+        { "ar": "أَلَمْ نَجْعَلِ", "tr": "a-lam najʿali", "racine": "ج ع ل", "sens": "did We not make", "def": "jaʿala: to make, establish.", "gram": "interrogation + jussive verb" },
+        { "ar": "الْأَرْضَ", "tr": "al-arḍa", "racine": "أ ر ض", "sens": "the earth", "def": "arḍ: earth.", "gram": "noun, object" },
+        { "ar": "كِفَاتًا", "tr": "kifātan", "racine": "ك ف ت", "sens": "a place that gathers", "def": "kifāt: container, that which gathers.", "gram": "noun, second object" }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "أَحْيَاءً وَأَمْوَاتًا",
+      "tr": "aḥyāʾan wa-amwātan",
+      "trad": "for the living and the dead?",
+      "themes": ["living and dead", "unity"],
+      "commentaire": "<em>aḥyāʾan wa-amwātan</em> (أَحْياءً وَأَمْواتًا): the living and the dead. The earth gathers both states of man. One walks upon it for a time, one sleeps in it forever: the soil we tread is the one that will receive us. A quiet meditation on the brotherhood of all men in the same dust — and a reminder that the boundary between living and dying is but a passage from one face of the earth to the other.",
+      "mots": [
+        { "ar": "أَحْيَاءً", "tr": "aḥyāʾan", "racine": "ح ي ي", "sens": "living", "def": "ḥayy: living.", "gram": "plural noun, state" },
+        { "ar": "وَأَمْوَاتًا", "tr": "wa-amwātan", "racine": "م و ت", "sens": "and dead", "def": "mayyit: dead.", "gram": "plural noun, state" }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "وَجَعَلْنَا فِيهَا رَوَاسِيَ شَامِخَاتٍ وَأَسْقَيْنَاكُم مَّاءً فُرَاتًا",
+      "tr": "wa-jaʿalnā fīhā rawāsiya shāmikhātin wa-asqaynākum māʾan furātan",
+      "trad": "Did We not set in it lofty peaks and give you sweet water to drink?",
+      "themes": ["mountains", "sweet water", "blessing"],
+      "commentaire": "<em>rawāsiya shāmikhāt</em> (رَواسِيَ شامِخات): high, firm mountains; <em>māʾ furāt</em>: sweet, thirst-quenching water. Qushayrī: “He reminds them of the immensity of His blessing” — and adds a delicate hint: the greatest of blessings is “that He did not make the earth swallow you, despite what you have done.” God's patience is itself a gift: that He lets us live, drink, and walk after our failings is already a daily mercy.",
+      "mots": [
+        { "ar": "وَجَعَلْنَا فِيهَا", "tr": "wa-jaʿalnā fīhā", "racine": "ج ع ل", "sens": "and We set in it", "def": "jaʿala: to place.", "gram": "perfect verb + preposition + pronoun" },
+        { "ar": "رَوَاسِيَ شَامِخَاتٍ", "tr": "rawāsiya shāmikhāt", "racine": "ر س و / ش م خ", "sens": "lofty, firm peaks", "def": "rāsiya: anchored mountain; shāmikh: high.", "gram": "noun + plural adjective" },
+        { "ar": "وَأَسْقَيْنَاكُم", "tr": "wa-asqaynākum", "racine": "س ق ي", "sens": "and gave you to drink", "def": "asqā: to give to drink.", "gram": "perfect verb (form IV) + pronoun" },
+        { "ar": "مَّاءً فُرَاتًا", "tr": "māʾan furātan", "racine": "ف ر ت", "sens": "sweet water", "def": "furāt: sweet, pleasant water.", "gram": "noun + adjective" }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Woe that Day to the deniers!",
+      "themes": ["refrain", "ingratitude"],
+      "commentaire": "The fourth occurrence, after the reminder of the earth's blessings. The refrain takes on here the colour of ingratitude: to deny is also to disregard the gifts received. The one who drinks the sweet water, walks on the firm earth, lives sheltered by the mountains, and yet denies the One who gives him all — that is the denier. Woe is but the reverse of ingratitude: not to acknowledge the Source is to cut oneself off from it.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "woe", "def": "wayl: woe.", "gram": "noun, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "to the deniers", "def": "mukadhdhib: denier.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 29,
+      "ar": "انطَلِقُوا إِلَىٰ مَا كُنتُم بِهِ تُكَذِّبُونَ",
+      "tr": "inṭaliqū ilā mā kuntum bihi tukadhdhibūna",
+      "trad": "Go off to that which you used to deny!",
+      "themes": ["departure to the chastisement", "return to oneself"],
+      "commentaire": "<em>inṭaliqū</em> (انطَلِقوا): go off, set out. Qushayrī: “it is said to them: go to the Fire you denied.” But he also draws a striking inner lesson: <em>“to stand alone with God (al-istiqlāl bi-Llāh) is the Garden of refuge, and to return to creatures is to knock at the door of Gehenna.”</em> And he cites this verse: “I never saw, before me, one who leaves a garden to go and knock, as a gatecrasher, at the door of hell.” To go toward what one denied is to reap the fruit of one's own turning away.",
+      "mots": [
+        { "ar": "انطَلِقُوا", "tr": "inṭaliqū", "racine": "ط ل ق", "sens": "go off", "def": "inṭalaqa: to set out, depart.", "gram": "imperative (form VII) plur." },
+        { "ar": "إِلَىٰ مَا كُنتُم", "tr": "ilā mā kuntum", "racine": "ك و ن", "sens": "to that which you", "def": "to that which.", "gram": "preposition + relative + verb" },
+        { "ar": "بِهِ تُكَذِّبُونَ", "tr": "bihi tukadhdhibūn", "racine": "ك ذ ب", "sens": "used to deny", "def": "kadhdhaba: to deny.", "gram": "preposition + imperfect verb plur." }
+      ]
+    },
+    {
+      "n": 30,
+      "ar": "انطَلِقُوا إِلَىٰ ظِلٍّ ذِي ثَلَاثِ شُعَبٍ",
+      "tr": "inṭaliqū ilā ẓillin dhī thalāthi shuʿabin",
+      "trad": "Go off to a shadow of three columns.",
+      "themes": ["false shadow", "smoke of three branches"],
+      "commentaire": "<em>ẓill dhī thalāthi shuʿab</em> (ظِلّ ذي ثَلاث شُعَب): a shadow of three columns — the smoke of the blaze, divided into three branches. Qushayrī applies the image to the heart: “when the servant does not know the worth of his heart's opening toward God, nor of his strength through trustful surrender (tawakkul), and returns to creatures at the onset of heedlessness, God withdraws mercy from his heart, the ways of his rectitude close, and he is tossed from one to another, to another.” The shadow that does not shelter is the false refuge of the one who has deserted the true.",
+      "mots": [
+        { "ar": "انطَلِقُوا", "tr": "inṭaliqū", "racine": "ط ل ق", "sens": "go off", "def": "inṭalaqa: to depart.", "gram": "imperative (form VII) plur." },
+        { "ar": "إِلَىٰ ظِلٍّ", "tr": "ilā ẓillin", "racine": "ظ ل ل", "sens": "to a shadow", "def": "ẓill: shadow.", "gram": "preposition + noun" },
+        { "ar": "ذِي ثَلَاثِ شُعَبٍ", "tr": "dhī thalāthi shuʿab", "racine": "ش ع ب", "sens": "of three columns", "def": "shuʿba: branch, ramification.", "gram": "complement + numeral + noun" }
+      ]
+    },
+    {
+      "n": 31,
+      "ar": "لَّا ظَلِيلٍ وَلَا يُغْنِي مِنَ اللَّهَبِ",
+      "tr": "lā ẓalīlin wa-lā yughnī mina l-lahabi",
+      "trad": "Thin, it gives no shade and is of no avail against the flame.",
+      "themes": ["useless shadow", "false shelter"],
+      "commentaire": "<em>lā ẓalīl</em> (لا ظَليل): that gives no shade; <em>wa-lā yughnī mina l-lahab</em>: and shields not from the flame. A cruel irony: a shadow that casts no shade, a shelter that does not shelter. Every false refuge has this nature: it bears the name of protection without its reality. The one who has fled the only true shelter — autonomy in God — finds himself under a smoke that worsens the burning instead of soothing it.",
+      "mots": [
+        { "ar": "لَّا ظَلِيلٍ", "tr": "lā ẓalīlin", "racine": "ظ ل ل", "sens": "giving no shade", "def": "ẓalīl: that gives shade.", "gram": "negation + adjective" },
+        { "ar": "وَلَا يُغْنِي", "tr": "wa-lā yughnī", "racine": "غ ن ي", "sens": "and shields not", "def": "aghnā: to avail, ward off.", "gram": "negation + imperfect verb (form IV)" },
+        { "ar": "مِنَ اللَّهَبِ", "tr": "mina l-lahab", "racine": "ل ه ب", "sens": "against the flame", "def": "lahab: flame.", "gram": "preposition + noun" }
+      ]
+    },
+    {
+      "n": 32,
+      "ar": "إِنَّهَا تَرْمِي بِشَرَرٍ كَالْقَصْرِ",
+      "tr": "innahā tarmī bi-shararin ka-l-qaṣri",
+      "trad": "It throws up sparks as huge as towers",
+      "themes": ["sparks", "the Fire's enormity"],
+      "commentaire": "<em>shararin ka-l-qaṣr</em> (شَرَر كَالقَصْر): sparks as huge as a castle, a tower. The excess of the image overwhelms the understanding: what ordinary fire throws off in tiny specks, this Fire hurls in enormous blocks. The image is meant not to be imagined but to shatter imagination: the reality of the hereafter exceeds all our measures, in horror as, elsewhere, in felicity.",
+      "mots": [
+        { "ar": "إِنَّهَا تَرْمِي", "tr": "innahā tarmī", "racine": "ر م ي", "sens": "it throws", "def": "ramā: to cast, throw.", "gram": "inna + pronoun + imperfect verb" },
+        { "ar": "بِشَرَرٍ", "tr": "bi-shararin", "racine": "ش ر ر", "sens": "sparks", "def": "sharar: sparks.", "gram": "preposition + collective noun" },
+        { "ar": "كَالْقَصْرِ", "tr": "ka-l-qaṣr", "racine": "ق ص ر", "sens": "like a tower", "def": "qaṣr: castle, tower, thick trunk.", "gram": "preposition of comparison + noun" }
+      ]
+    },
+    {
+      "n": 33,
+      "ar": "كَأَنَّهُ جِمَالَتٌ صُفْرٌ",
+      "tr": "kaʾannahu jimālatun ṣufrun",
+      "trad": "as if they were sulphur-coloured camels.",
+      "themes": ["comparison", "the Fire's colour"],
+      "commentaire": "<em>jimālatun ṣufr</em> (جِمالَة صُفْر): yellow-tawny camels, the colour of sulphur. After the size (the castle), the colour and the motion: the sparks surge in droves, like trains of yellow camels. The image piles up the familiar — the castle, the camel — to convey the unimaginable. The known serves as a ladder toward the unknown: one can name the horror of the hereafter only by borrowing the figures of this world, while knowing reality surpasses them.",
+      "mots": [
+        { "ar": "كَأَنَّهُ", "tr": "kaʾannahu", "racine": "", "sens": "as if it were", "def": "kaʾanna: as if.", "gram": "particle of likeness + pronoun" },
+        { "ar": "جِمَالَتٌ", "tr": "jimālatun", "racine": "ج م ل", "sens": "camels", "def": "jimāla: a train of camels.", "gram": "collective noun" },
+        { "ar": "صُفْرٌ", "tr": "ṣufrun", "racine": "ص ف ر", "sens": "yellow-tawny, sulphur-coloured", "def": "aṣfar: yellow.", "gram": "plural adjective" }
+      ]
+    },
+    {
+      "n": 34,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Woe that Day to the deniers!",
+      "themes": ["refrain", "after the description of the Fire"],
+      "commentaire": "The fifth occurrence, at the centre of the sūra, after the description of the Fire. The refrain marks here the turning point: the first half set out the signs and warnings, the second will unfold the destinies. At the middle, this solemn reminder: all that precedes was no idle discourse. The woe announced is no figure of speech but the real outcome of a persistent refusal.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "woe", "def": "wayl: woe.", "gram": "noun, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "to the deniers", "def": "mukadhdhib: denier.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 35,
+      "ar": "هَٰذَا يَوْمُ لَا يَنطِقُونَ",
+      "tr": "hādhā yawmu lā yanṭiqūna",
+      "trad": "This is the Day when they will not speak,",
+      "themes": ["muteness", "end of discourses"],
+      "commentaire": "<em>lā yanṭiqūn</em> (لا يَنْطِقون): they do not speak. The Day when speech, which man abused to deny, is taken from him. The one who cried lies falls silent at last — not from wisdom but from stupefaction. The eloquence that served to deny has no purchase: before the evidence, words fall away. The forced silence of the Day is the opposite of the inhabited silence of prayer: the one is empty, the other full.",
+      "mots": [
+        { "ar": "هَٰذَا يَوْمُ", "tr": "hādhā yawmu", "racine": "ي و م", "sens": "this is the day when", "def": "yawm: day.", "gram": "demonstrative + noun" },
+        { "ar": "لَا يَنطِقُونَ", "tr": "lā yanṭiqūn", "racine": "ن ط ق", "sens": "they do not speak", "def": "naṭaqa: to speak, articulate.", "gram": "negation + imperfect verb plur." }
+      ]
+    },
+    {
+      "n": 36,
+      "ar": "وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ",
+      "tr": "wa-lā yuʾdhanu lahum fa-yaʿtadhirūna",
+      "trad": "nor will they be allowed to make excuses.",
+      "themes": ["excuses refused", "too late"],
+      "commentaire": "<em>fa-yaʿtadhirūn</em> (فَيَعْتَذِرون): that they might excuse themselves. Not only do they fall silent, but the very permission to justify themselves is refused them. The hour of excuses is past: it was the earthly life, the time of the Reminder “as excuse or warning” (v. 6). Whoever did not seize the time of the offered excuse finds, on the Day, no platform to plead. All wisdom is to present one's answer <em>before</em> the door closes.",
+      "mots": [
+        { "ar": "وَلَا يُؤْذَنُ لَهُمْ", "tr": "wa-lā yuʾdhanu lahum", "racine": "أ ذ ن", "sens": "they are not allowed", "def": "adhina: to permit.", "gram": "negation + passive verb + preposition" },
+        { "ar": "فَيَعْتَذِرُونَ", "tr": "fa-yaʿtadhirūn", "racine": "ع ذ ر", "sens": "so as to make excuses", "def": "iʿtadhara: to offer excuses.", "gram": "fa of consequence + verb (form VIII)" }
+      ]
+    },
+    {
+      "n": 37,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Woe that Day to the deniers!",
+      "themes": ["refrain", "the silence"],
+      "commentaire": "The sixth occurrence, after the evocation of muteness and the refusal of excuses. The refrain resounds in this very silence: while the deniers fall silent, unable to speak, the word of warning continues to ring out. This contrast is the whole teaching: the only word that remains on the Day is God's. Better to accord with it here, while ours can still answer.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "woe", "def": "wayl: woe.", "gram": "noun, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "to the deniers", "def": "mukadhdhib: denier.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 38,
+      "ar": "هَٰذَا يَوْمُ الْفَصْلِ جَمَعْنَاكُمْ وَالْأَوَّلِينَ",
+      "tr": "hādhā yawmu l-faṣli jamaʿnākum wa-l-awwalīna",
+      "trad": "This is the Day of Decision. We have gathered you and the Ancients.",
+      "themes": ["Day of Decision", "universal gathering"],
+      "commentaire": "<em>jamaʿnākum wa-l-awwalīn</em> (جَمَعْناكُمْ وَالأَوَّلين): We have gathered you and the first. Qushayrī: “We did to you what We did to them in the world — abandonment; so, this Day, We shall do to you what We do to them: entry into the Fire.” All generations appear together: the Day of Decision abolishes the distances of time. Before the verdict, first and last form but one assembly judged by the same measure.",
+      "mots": [
+        { "ar": "هَٰذَا يَوْمُ الْفَصْلِ", "tr": "hādhā yawmu l-faṣl", "racine": "ف ص ل", "sens": "this is the Day of Decision", "def": "faṣl: decision, separation.", "gram": "demonstrative + noun + complement" },
+        { "ar": "جَمَعْنَاكُمْ", "tr": "jamaʿnākum", "racine": "ج م ع", "sens": "We have gathered you", "def": "jamaʿa: to gather.", "gram": "perfect verb + pronoun" },
+        { "ar": "وَالْأَوَّلِينَ", "tr": "wa-l-awwalīn", "racine": "أ و ل", "sens": "and the Ancients", "def": "awwal: first.", "gram": "plural noun, coordinated" }
+      ]
+    },
+    {
+      "n": 39,
+      "ar": "فَإِن كَانَ لَكُمْ كَيْدٌ فَكِيدُونِ",
+      "tr": "fa-ʾin kāna lakum kaydun fa-kīdūni",
+      "trad": "If you have a scheme, then scheme against Me!",
+      "themes": ["challenge", "the impotence of ruses"],
+      "commentaire": "<em>fa-ʾin kāna lakum kaydun fa-kīdūni</em> (فَإِنْ كانَ لَكُمْ كَيْدٌ فَكيدون): if you have a ruse, then scheme against Me! A cutting challenge to the deniers. All the ruses (kayd) deployed in life to escape the truth or profit from it collapse here: before God, no scheme holds. The cunning man thought he was manoeuvring reality; on the Day, he discovers that the only force that remains is the one he denied. The invitation to the challenge is the proof of utter impotence.",
+      "mots": [
+        { "ar": "فَإِن كَانَ لَكُمْ", "tr": "fa-ʾin kāna lakum", "racine": "ك و ن", "sens": "if you have", "def": "kāna: to be; here, to possess.", "gram": "conditional particle + verb + preposition" },
+        { "ar": "كَيْدٌ", "tr": "kaydun", "racine": "ك ي د", "sens": "a scheme", "def": "kayd: stratagem, ruse.", "gram": "noun, subject" },
+        { "ar": "فَكِيدُونِ", "tr": "fa-kīdūni", "racine": "ك ي د", "sens": "then scheme against Me", "def": "kāda: to scheme.", "gram": "imperative plur. + pronoun (protective nūn)" }
+      ]
+    },
+    {
+      "n": 40,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Woe that Day to the deniers!",
+      "themes": ["refrain", "end of schemes"],
+      "commentaire": "The seventh occurrence, after the challenge thrown to the schemers. The refrain seals the impotence: no kayd can avert the woe announced. As the sūra advances, the refrain closes one by one the doors of escape: neither speech, nor excuse, nor scheme. There remains but one path — to leave the camp of denial while one still can.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "woe", "def": "wayl: woe.", "gram": "noun, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "to the deniers", "def": "mukadhdhib: denier.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 41,
+      "ar": "إِنَّ الْمُتَّقِينَ فِي ظِلَالٍ وَعُيُونٍ",
+      "tr": "inna l-muttaqīna fī ẓilālin wa-ʿuyūnin",
+      "trad": "Truly, those who fear God will be amid shade and springs,",
+      "themes": ["the God-fearing", "shade and springs"],
+      "commentaire": "A luminous reversal after the shadows of smoke (v. 30): <em>al-muttaqūn fī ẓilāl wa-ʿuyūn</em> (المُتَّقون في ظِلال وَعُيون) — the God-fearing amid true shade, near true springs. Qushayrī unfolds here his loveliest meditation on shadows: “today in the shadow of providence (ʿināya) and protection, tomorrow in the shadow of mercy; today in the shadow of tawḥīd, tomorrow in the shadow of the beautiful increase; today in the shadow of knowledge (maʿārif), tomorrow in the shadow of subtle graces (laṭāʾif); today in the shadow of being made known, tomorrow in the shadow of honour.” To the false shadow that does not shelter answers the true, which shelters from this very life.",
+      "mots": [
+        { "ar": "إِنَّ الْمُتَّقِينَ", "tr": "inna l-muttaqīn", "racine": "و ق ي", "sens": "those who fear God", "def": "ittaqā: to fear God, to guard oneself.", "gram": "inna + active participle (form VIII) plur." },
+        { "ar": "فِي ظِلَالٍ", "tr": "fī ẓilālin", "racine": "ظ ل ل", "sens": "amid shade", "def": "ẓill: shade.", "gram": "preposition + plural noun" },
+        { "ar": "وَعُيُونٍ", "tr": "wa-ʿuyūnin", "racine": "ع ي ن", "sens": "and springs", "def": "ʿayn: spring.", "gram": "plural noun, coordinated" }
+      ]
+    },
+    {
+      "n": 42,
+      "ar": "وَفَوَاكِهَ مِمَّا يَشْتَهُونَ",
+      "tr": "wa-fawākiha mimmā yashtahūna",
+      "trad": "and fruits of whatever they desire:",
+      "themes": ["fruits", "desire fulfilled"],
+      "commentaire": "<em>mimmā yashtahūn</em> (مِمّا يَشْتَهون): of what they desire. In the Garden, desire is no longer torment but fulfilment: one has <em>what one wills</em>, at the instant one wills it. Desire, here below a source of suffering because it always misses its object, is there at last reconciled with its fulfilment. But that desire is purified: it bears only on the good, for the heart of the God-fearing has been washed of base cravings.",
+      "mots": [
+        { "ar": "وَفَوَاكِهَ", "tr": "wa-fawākiha", "racine": "ف ك ه", "sens": "and fruits", "def": "fākiha: fruit.", "gram": "plural noun" },
+        { "ar": "مِمَّا يَشْتَهُونَ", "tr": "mimmā yashtahūn", "racine": "ش ه و", "sens": "of what they desire", "def": "ishtahā: to desire, crave.", "gram": "preposition + relative + verb (form VIII)" }
+      ]
+    },
+    {
+      "n": 43,
+      "ar": "كُلُوا وَاشْرَبُوا هَنِيئًا بِمَا كُنتُمْ تَعْمَلُونَ",
+      "tr": "kulū wa-shrabū haniʾan bimā kuntum taʿmalūna",
+      "trad": "“Eat and drink in peace, in reward for your deeds!",
+      "themes": ["felicity", "fruit of deeds"],
+      "commentaire": "<em>kulū wa-shrabū haniʾan</em> (كُلوا وَاشْرَبوا هَنيئًا): eat and drink in full tranquillity. Qushayrī raises the sense: “today you drink upon His remembrance (dhikr), tomorrow you will drink upon His contemplation (shuhūd); today you drink from the cups of clarity (ṣafāʾ), tomorrow from the cups of allegiance (walāʾ).” The paradisal eating and drinking are but the sensible veil of a spiritual intoxication: the true feast is presence, and the true drink, intimacy with the Beloved.",
+      "mots": [
+        { "ar": "كُلُوا وَاشْرَبُوا", "tr": "kulū wa-shrabū", "racine": "أ ك ل / ش ر ب", "sens": "eat and drink", "def": "akala: to eat; shariba: to drink.", "gram": "two imperatives plur." },
+        { "ar": "هَنِيئًا", "tr": "haniʾan", "racine": "ه ن أ", "sens": "in peace, with delight", "def": "hanīʾ: pleasant, untroubled.", "gram": "circumstantial" },
+        { "ar": "بِمَا كُنتُمْ تَعْمَلُونَ", "tr": "bimā kuntum taʿmalūn", "racine": "ع م ل", "sens": "for what you did", "def": "ʿamila: to act, work.", "gram": "preposition + relative + verb" }
+      ]
+    },
+    {
+      "n": 44,
+      "ar": "إِنَّا كَذَٰلِكَ نَجْزِي الْمُحْسِنِينَ",
+      "tr": "innā kadhālika najzī l-muḥsinīna",
+      "trad": "Thus do We reward those who do good.”",
+      "themes": ["reward of the beneficent", "ihsān"],
+      "commentaire": "<em>al-muḥsinīn</em> (المُحْسِنين): those who do good with excellence (iḥsān). Qushayrī gives the highest definition: “iḥsān, from the servant, is to leave all for Him” — to abandon everything out of love. “Likewise tomorrow: He will reward you by letting fall away all that weighs on you, for you.” Excellence is not to do much, but to surrender all; and the reward answers exactly: from the one who has let go of everything for God, God lightens everything. One receives in the measure of what one has given.",
+      "mots": [
+        { "ar": "إِنَّا كَذَٰلِكَ", "tr": "innā kadhālika", "racine": "", "sens": "thus, indeed", "def": "kadhālika: in this way.", "gram": "inna + adverb" },
+        { "ar": "نَجْزِي", "tr": "najzī", "racine": "ج ز ي", "sens": "We reward", "def": "jazā: to recompense.", "gram": "imperfect verb" },
+        { "ar": "الْمُحْسِنِينَ", "tr": "al-muḥsinīn", "racine": "ح س ن", "sens": "the beneficent", "def": "muḥsin: one who acts with excellence.", "gram": "active participle (form IV) plur., object" }
+      ]
+    },
+    {
+      "n": 45,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Woe that Day to the deniers!",
+      "themes": ["refrain", "contrast of destinies"],
+      "commentaire": "The eighth occurrence, after the felicity of the God-fearing. The refrain takes on its full force by contrast: to the cool shades, the springs, the fruits, and the feast of the beneficent answers the woe of the deniers. The same Day separates two worlds: the joy of the one who acknowledged and the bitterness of the one who denied. The litany underlines the fork: all depends on the orientation of the heart, toward acknowledgement or toward denial.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "woe", "def": "wayl: woe.", "gram": "noun, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "to the deniers", "def": "mukadhdhib: denier.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 46,
+      "ar": "كُلُوا وَتَمَتَّعُوا قَلِيلًا إِنَّكُم مُّجْرِمُونَ",
+      "tr": "kulū wa-tamattaʿū qalīlan innakum mujrimūna",
+      "trad": "“Eat and enjoy yourselves a little of this life, you who are guilty!”",
+      "themes": ["brief enjoyment", "warning to the guilty"],
+      "commentaire": "<em>kulū wa-tamattaʿū qalīlan</em> (كُلوا وَتَمَتَّعوا قَليلًا): eat and enjoy a little. Qushayrī: “this is addressed to the deniers; it is a threat and a warning.” The contrast with the “eat and drink” of the blessed (v. 43) is biting: to the one, the endless feast of intimacy; to the other, a brief, counted morsel. <em>Qalīlan</em> — “a little” — says it all: the enjoyment of the world is by nature minute and provisional. You are let enjoy it for the space of an instant, for that is all it is worth.",
+      "mots": [
+        { "ar": "كُلُوا وَتَمَتَّعُوا", "tr": "kulū wa-tamattaʿū", "racine": "أ ك ل / م ت ع", "sens": "eat and enjoy", "def": "tamattaʿa: to enjoy, profit.", "gram": "two imperatives plur." },
+        { "ar": "قَلِيلًا", "tr": "qalīlan", "racine": "ق ل ل", "sens": "a little", "def": "qalīl: little, brief.", "gram": "complement of time" },
+        { "ar": "إِنَّكُم مُّجْرِمُونَ", "tr": "innakum mujrimūn", "racine": "ج ر م", "sens": "you are guilty", "def": "mujrim: criminal.", "gram": "inna + pronoun + active participle plur." }
+      ]
+    },
+    {
+      "n": 47,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Woe that Day to the deniers!",
+      "themes": ["refrain", "deceptive enjoyment"],
+      "commentaire": "The ninth occurrence, after the bitter invitation to enjoy briefly. The refrain unmasks the illusion of earthly enjoyment: what seemed gain was but a respite. The one who staked everything on the “little” of this world finds himself, on the Day, stripped bare. The stubborn repetition of woe is, paradoxically, a mercy: as long as it sounds, the warning has not finished calling to repentance.",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "woe", "def": "wayl: woe.", "gram": "noun, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "to the deniers", "def": "mukadhdhib: denier.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 48,
+      "ar": "وَإِذَا قِيلَ لَهُمُ ارْكَعُوا لَا يَرْكَعُونَ",
+      "tr": "wa-idhā qīla lahumu rkaʿū lā yarkaʿūna",
+      "trad": "When they are told, “Bow down,” they do not bow!",
+      "themes": ["refusal to prostrate", "pride"],
+      "commentaire": "<em>idhā qīla lahumu rkaʿū lā yarkaʿūn</em> (إذا قيلَ لَهُمُ ارْكَعوا لا يَرْكَعون): when they are told “bow down,” they do not bow. Qushayrī: “they persisted in refusal and pride (istikbār); so they shall undergo the great ordeal.” Here is the root of denial: not a lack of arguments, but a refusal to bend. The pride that prevents bowing the back before God is the same that prevents acknowledging the truth. Not to bow is to say all about the soul that takes itself for its own centre.",
+      "mots": [
+        { "ar": "وَإِذَا قِيلَ لَهُمُ", "tr": "wa-idhā qīla lahumu", "racine": "ق و ل", "sens": "and when they are told", "def": "qāla: to say; passive: it is said.", "gram": "particle + passive verb + preposition" },
+        { "ar": "ارْكَعُوا", "tr": "irkaʿū", "racine": "ر ك ع", "sens": "bow down", "def": "rakaʿa: to bow.", "gram": "imperative plur." },
+        { "ar": "لَا يَرْكَعُونَ", "tr": "lā yarkaʿūn", "racine": "ر ك ع", "sens": "they do not bow", "def": "rakaʿa: to bow.", "gram": "negation + imperfect verb plur." }
+      ]
+    },
+    {
+      "n": 49,
+      "ar": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "tr": "waylun yawmaʾidhin li-l-mukadhdhibīna",
+      "trad": "Woe that Day to the deniers!",
+      "themes": ["refrain", "tenth and last"],
+      "commentaire": "The tenth and last occurrence of the refrain. It comes to seal the portrait of the proud one who refuses to bow. Ten times the sūra will have hammered this same warning, like ten knocks struck at the door of the heart. What remains to be said after this litany? A single question, that of the final verse: if such a word does not touch, what word will?",
+      "mots": [
+        { "ar": "وَيْلٌ", "tr": "waylun", "racine": "و ي ل", "sens": "woe", "def": "wayl: woe.", "gram": "noun, exclamation" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "لِّلْمُكَذِّبِينَ", "tr": "li-l-mukadhdhibīn", "racine": "ك ذ ب", "sens": "to the deniers", "def": "mukadhdhib: denier.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 50,
+      "ar": "فَبِأَيِّ حَدِيثٍ بَعْدَهُ يُؤْمِنُونَ",
+      "tr": "fa-bi-ayyi ḥadīthin baʿdahu yuʾminūna",
+      "trad": "In what discourse, after this one, will they then believe?",
+      "themes": ["final question", "the Quran the ultimate proof"],
+      "commentaire": "A closing verse, suspended like a question without answer. <em>fa-bi-ayyi ḥadīthin baʿdahu yuʾminūn</em> (فَبِأَيِّ حَديثٍ بَعْدَهُ يُؤْمِنون): in what word, after this one, will they then believe? If the Quran — with its oaths, its signs of creation, its warnings repeated ten times — does not suffice to awaken faith, what other word could? It is the ultimate appeal, turned into a question: the proof has been given to the end. To the heart that still does not bow, there remains no discourse to offer — except the silence in which each is left alone with his choice.",
+      "mots": [
+        { "ar": "فَبِأَيِّ حَدِيثٍ", "tr": "fa-bi-ayyi ḥadīthin", "racine": "ح د ث", "sens": "in what word", "def": "ḥadīth: word, discourse, account.", "gram": "preposition + interrogative + noun" },
+        { "ar": "بَعْدَهُ", "tr": "baʿdahu", "racine": "ب ع د", "sens": "after it", "def": "baʿd: after.", "gram": "adverb + pronoun" },
+        { "ar": "يُؤْمِنُونَ", "tr": "yuʾminūn", "racine": "أ م ن", "sens": "will they believe", "def": "āmana: to believe, have faith.", "gram": "imperfect verb (form IV) plur." }
+      ]
+    }
+  ]
+}

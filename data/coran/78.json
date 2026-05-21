@@ -1,0 +1,519 @@
+{
+  "n": 78,
+  "nom_ar": "النَّبَأ",
+  "nom_tr": "al-Nabaʾ",
+  "nom_fr": "L'Annonce",
+  "revelation": "mecquoise",
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "versets_count": 40,
+  "intro": "al-Nabaʾ — « l'Annonce » — s'ouvre sur le murmure des hommes qui s'interrogent : « Sur quoi donc s'interrogent-ils ? » La grande Annonce (al-nabaʾ al-ʿaẓīm) sur laquelle ils se divisent, c'est la Résurrection. La sourate répond non par la dispute mais par le déploiement des signes de la création — la terre comme une couche, les montagnes comme des piquets, le sommeil comme repos, la nuit comme vêtement, le jour pour la vie, les sept cieux, le luminaire éblouissant, l'eau qui descend des nuées. Puis vient le Jour de la Décision : la trompe, les portes du ciel ouvertes, les montagnes devenues mirage. Qushayrī ouvre la sourate par une page admirable sur la <em>parure</em> : la parure des adorateurs est le manteau de leur obéissance, celle des gnostiques la robe de leur connaissance, celle des amants la couronne de leur sainteté — <em>et la parure des pécheurs est de laver leurs visages avec le ruissellement de leurs larmes</em>. Il greffe au verset « Nous avons tout dénombré dans un Livre » une méditation sur les jours de séparation des amants éprouvés, qui sont eux aussi comptés ; et il lit, dans le souhait du dénégateur « que ne suis-je poussière ! », la plainte d'Iblīs regrettant de n'avoir pas été tiré, comme Adam, de la terre.",
+  "themes": ["la grande Annonce", "signes de la création", "le Jour de la Décision", "la Géhenne aux aguets", "le Jardin des pieux", "l'Esprit et les anges"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "عَمَّ يَتَسَاءَلُونَ",
+      "tr": "ʿamma yatasāʾalūna",
+      "trad": "Sur quoi s'interrogent-ils mutuellement ?",
+      "themes": ["question", "division"],
+      "commentaire": "<em>ʿamma yatasāʾalūn</em> (عَمَّ يَتَساءَلون) : sur quoi s'interrogent-ils les uns les autres ? Qushayrī : ils se divisent « par la dureté de leur déni de la Résurrection, par la confusion où cela les jette, et par la multitude de leurs questions au Prophète à son sujet. » La sourate s'ouvre sur le bruissement d'une rumeur inquiète : on discute, on s'interroge, on doute à voix basse. La question même trahit le trouble du cœur qui pressent une vérité qu'il ne veut pas recevoir.",
+      "mots": [
+        { "ar": "عَمَّ", "tr": "ʿamma", "racine": "", "sens": "sur quoi", "def": "ʿan + mā : à propos de quoi.", "gram": "interrogatif" },
+        { "ar": "يَتَسَاءَلُونَ", "tr": "yatasāʾalūn", "racine": "س أ ل", "sens": "ils s'interrogent mutuellement", "def": "tasāʾala : se questionner les uns les autres.", "gram": "verbe inaccompli (forme VI) plur." }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "عَنِ النَّبَإِ الْعَظِيمِ",
+      "tr": "ʿani l-nabaʾi l-ʿaẓīmi",
+      "trad": "Sur l'Annonce solennelle",
+      "themes": ["la grande Annonce", "Résurrection"],
+      "commentaire": "<em>al-nabaʾ al-ʿaẓīm</em> (النَّبَأ العَظيم) : la grande Annonce, la nouvelle immense. Qushayrī : « la grande nouvelle » — la Résurrection. Le mot <em>nabaʾ</em> ne dit pas une simple information mais une annonce de poids, lourde de conséquences. La grandeur de la nouvelle est à la mesure de ce qu'elle révèle : que la vie ne s'arrête pas à la mort, que tout sera relevé et jugé. C'est l'annonce qui change le sens de toute existence.",
+      "mots": [
+        { "ar": "عَنِ النَّبَإِ", "tr": "ʿani l-nabaʾ", "racine": "ن ب أ", "sens": "sur l'Annonce", "def": "nabaʾ : nouvelle de poids, annonce.", "gram": "préposition + nom" },
+        { "ar": "الْعَظِيمِ", "tr": "al-ʿaẓīm", "racine": "ع ظ م", "sens": "solennelle, immense", "def": "ʿaẓīm : grand, immense.", "gram": "adjectif" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "الَّذِي هُمْ فِيهِ مُخْتَلِفُونَ",
+      "tr": "alladhī hum fīhi mukhtalifūna",
+      "trad": "au sujet de laquelle ils sont en désaccord.",
+      "themes": ["désaccord", "division des cœurs"],
+      "commentaire": "<em>mukhtalifūn</em> (مُخْتَلِفون) : en désaccord, divisés. Devant la grande Annonce, les hommes se partagent : certains croient, d'autres nient, d'autres hésitent. La division n'est pas dans la vérité mais dans les cœurs qui la reçoivent. La même nouvelle illumine l'un et inquiète l'autre : ce n'est pas l'Annonce qui change, c'est la disposition de celui qui l'entend.",
+      "mots": [
+        { "ar": "الَّذِي", "tr": "alladhī", "racine": "", "sens": "au sujet de laquelle", "def": "alladhī : relatif.", "gram": "pronom relatif" },
+        { "ar": "هُمْ فِيهِ", "tr": "hum fīhi", "racine": "", "sens": "à son sujet ils", "def": "fī + pronom.", "gram": "pronom + préposition + pronom" },
+        { "ar": "مُخْتَلِفُونَ", "tr": "mukhtalifūn", "racine": "خ ل ف", "sens": "en désaccord", "def": "ikhtalafa : diverger, être en désaccord.", "gram": "participe actif (forme VIII) plur." }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "كَلَّا سَيَعْلَمُونَ",
+      "tr": "kallā sa-yaʿlamūna",
+      "trad": "Et pourtant, bientôt ils sauront !",
+      "themes": ["avertissement", "savoir à venir"],
+      "commentaire": "<em>kallā sa-yaʿlamūn</em> (كَلّا سَيَعْلَمون) : mais non ! bientôt ils sauront. Le <em>kallā</em> tranche le débat : la dispute prendra fin, non par des arguments mais par l'évidence. Ce qu'on refuse de croire, on finira par le <em>savoir</em> — mais alors il sera trop tard pour que ce savoir serve. La menace est aussi une promesse : la vérité ne dépend pas de notre assentiment, elle s'imposera d'elle-même.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "", "sens": "mais non", "def": "kallā : dénégation, avertissement.", "gram": "particule" },
+        { "ar": "سَيَعْلَمُونَ", "tr": "sa-yaʿlamūn", "racine": "ع ل م", "sens": "ils sauront bientôt", "def": "ʿalima : savoir.", "gram": "particule de futur + verbe inaccompli plur." }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "ثُمَّ كَلَّا سَيَعْلَمُونَ",
+      "tr": "thumma kallā sa-yaʿlamūna",
+      "trad": "De vrai, bientôt ils sauront !",
+      "themes": ["insistance", "double avertissement"],
+      "commentaire": "Redoublement de l'avertissement précédent. La répétition n'ajoute pas une information mais une intensité : ce n'est pas une menace en l'air. Comme dans la sourate al-Takāthur, ce martèlement imite l'inéluctable. Qushayrī laisse entendre que ce savoir aura deux temps : celui de la mort, où le voile commence à se lever, et celui de la Résurrection, où il tombe tout entier. On saura — d'abord en passant le seuil, puis devant le Réel dévoilé.",
+      "mots": [
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "", "sens": "puis encore", "def": "thumma : ensuite.", "gram": "particule" },
+        { "ar": "كَلَّا سَيَعْلَمُونَ", "tr": "kallā sa-yaʿlamūn", "racine": "ع ل م", "sens": "non, ils sauront bientôt", "def": "ʿalima : savoir.", "gram": "particule + futur + verbe" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "أَلَمْ نَجْعَلِ الْأَرْضَ مِهَادًا",
+      "tr": "a-lam najʿali l-arḍa mihādan",
+      "trad": "N'avons-nous pas disposé la terre comme une couche",
+      "themes": ["terre-berceau", "providence"],
+      "commentaire": "<em>mihād</em> (مِهاد) : une couche, un berceau, un lit étendu. Qushayrī : « Nous l'avons rendue docile pour eux, afin qu'ils y demeurent. » Voici le premier des signes que la sourate oppose au doute : avant d'argumenter sur la Résurrection, Dieu montre la création. La terre n'est pas un sol hostile mais un lit préparé, comme on dresse un berceau pour l'enfant attendu. La providence est inscrite dans la forme même du monde.",
+      "mots": [
+        { "ar": "أَلَمْ نَجْعَلِ", "tr": "a-lam najʿali", "racine": "ج ع ل", "sens": "n'avons-nous pas fait", "def": "jaʿala : faire, établir.", "gram": "interrogation + verbe apocopé" },
+        { "ar": "الْأَرْضَ", "tr": "al-arḍa", "racine": "أ ر ض", "sens": "la terre", "def": "arḍ : terre.", "gram": "nom, complément d'objet" },
+        { "ar": "مِهَادًا", "tr": "mihādan", "racine": "م ه د", "sens": "une couche, un berceau", "def": "mihād : lit, berceau étendu.", "gram": "nom, second complément d'objet" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَالْجِبَالَ أَوْتَادًا",
+      "tr": "wa-l-jibāla awtādan",
+      "trad": "et les montagnes comme des piquets ?",
+      "themes": ["montagnes-piquets", "stabilité"],
+      "commentaire": "<em>awtād</em> (أَوْتاد) : des piquets, des pieux. Qushayrī : « des piquets pour la terre, afin qu'elle ne tangue pas avec eux. » L'image est celle de la tente : les montagnes plantent le sol comme les piquets tendent la toile et l'empêchent de s'envoler. Le monde est dressé comme une demeure pour l'hôte, et chaque élément y joue son rôle d'équilibre. Rien n'est laissé au hasard dans cette maison préparée.",
+      "mots": [
+        { "ar": "وَالْجِبَالَ", "tr": "wa-l-jibāla", "racine": "ج ب ل", "sens": "et les montagnes", "def": "jabal : montagne.", "gram": "nom plur., complément d'objet" },
+        { "ar": "أَوْتَادًا", "tr": "awtādan", "racine": "و ت د", "sens": "des piquets", "def": "watad : piquet, pieu de tente.", "gram": "nom plur., second complément d'objet" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "وَخَلَقْنَاكُمْ أَزْوَاجًا",
+      "tr": "wa-khalaqnākum azwājan",
+      "trad": "Nous vous avons créés par couples,",
+      "themes": ["polarité", "couples"],
+      "commentaire": "<em>azwājan</em> (أَزْواجًا) : par couples, par paires. Qushayrī : « mâle et femelle, beau et laid, et le reste. » La création procède par polarités : non l'uniformité, mais le jeu fécond des contraires et des complémentaires. Le couple est le signe que la vie naît de la rencontre, non de la solitude — et que la diversité voulue par Dieu est elle-même un bienfait, non un défaut à corriger.",
+      "mots": [
+        { "ar": "وَخَلَقْنَاكُمْ", "tr": "wa-khalaqnākum", "racine": "خ ل ق", "sens": "et Nous vous avons créés", "def": "khalaqa : créer.", "gram": "verbe accompli + pronom" },
+        { "ar": "أَزْوَاجًا", "tr": "azwājan", "racine": "ز و ج", "sens": "par couples", "def": "zawj : paire, conjoint.", "gram": "nom plur., état" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "وَجَعَلْنَا نَوْمَكُمْ سُبَاتًا",
+      "tr": "wa-jaʿalnā nawmakum subātan",
+      "trad": "Nous avons fait de votre sommeil un temps de repos,",
+      "themes": ["sommeil", "repos", "petite mort"],
+      "commentaire": "<em>subāt</em> (سُبات) : repos, interruption. Qushayrī : « un repos pour vous, afin que vous cessiez les mouvements qui vous ont fatigués le jour. » Le sommeil est une miséricorde quotidienne : chaque nuit, Dieu suspend la peine du jour. C'est aussi une petite mort, et un signe : Celui qui te retire chaque soir la conscience et te la rend chaque matin peut bien te rendre la vie après la mort. Le réveil quotidien préfigure la résurrection.",
+      "mots": [
+        { "ar": "وَجَعَلْنَا", "tr": "wa-jaʿalnā", "racine": "ج ع ل", "sens": "et Nous avons fait", "def": "jaʿala : faire, établir.", "gram": "verbe accompli" },
+        { "ar": "نَوْمَكُمْ", "tr": "nawmakum", "racine": "ن و م", "sens": "votre sommeil", "def": "nawm : sommeil.", "gram": "nom + pronom" },
+        { "ar": "سُبَاتًا", "tr": "subātan", "racine": "س ب ت", "sens": "un repos", "def": "subāt : repos, cessation.", "gram": "nom, second complément d'objet" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَجَعَلْنَا اللَّيْلَ لِبَاسًا",
+      "tr": "wa-jaʿalnā l-layla libāsan",
+      "trad": "Nous avons fait de la nuit une couverture,",
+      "themes": ["nuit-vêtement", "intimité"],
+      "commentaire": "<em>libās</em> (لِباس) : un vêtement, une couverture. Qushayrī : « son obscurité recouvre toute chose, afin que vous y trouviez le repos. » La nuit habille le monde comme un manteau, voile les fatigues et les laideurs du jour, enveloppe le dormeur. Métaphore délicate : la nuit n'est pas absence de lumière mais présence d'un voile protecteur. Ce qui paraît privation — l'obscurité — est en vérité une étreinte qui apaise.",
+      "mots": [
+        { "ar": "وَجَعَلْنَا اللَّيْلَ", "tr": "wa-jaʿalnā l-layl", "racine": "ل ي ل", "sens": "et Nous avons fait de la nuit", "def": "layl : nuit.", "gram": "verbe + complément" },
+        { "ar": "لِبَاسًا", "tr": "libāsan", "racine": "ل ب س", "sens": "un vêtement, une couverture", "def": "libās : habit, ce qui couvre.", "gram": "nom, second complément d'objet" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "وَجَعَلْنَا النَّهَارَ مَعَاشًا",
+      "tr": "wa-jaʿalnā l-nahāra maʿāshan",
+      "trad": "Nous avons fait du jour le moment de la vie,",
+      "themes": ["jour-subsistance", "alternance"],
+      "commentaire": "<em>maʿāsh</em> (مَعاش) : le temps de la subsistance, de la vie active. Qushayrī : « le temps de votre gagne-pain. » À la nuit-vêtement répond le jour-travail : Dieu a tissé l'alternance pour que l'homme se repose et œuvre tour à tour. Le rythme du jour et de la nuit est une sagesse : ni veille épuisante ni sommeil sans fin, mais la respiration équilibrée d'une vie où l'effort et le repos se relaient.",
+      "mots": [
+        { "ar": "وَجَعَلْنَا النَّهَارَ", "tr": "wa-jaʿalnā l-nahār", "racine": "ن ه ر", "sens": "et Nous avons fait du jour", "def": "nahār : jour.", "gram": "verbe + complément" },
+        { "ar": "مَعَاشًا", "tr": "maʿāshan", "racine": "ع ي ش", "sens": "un temps de subsistance", "def": "maʿāsh : moyens de vivre, temps de l'activité.", "gram": "nom, second complément d'objet" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا",
+      "tr": "wa-banaynā fawqakum sabʿan shidādan",
+      "trad": "Nous avons construit au-dessus de vous sept [cieux] solides,",
+      "themes": ["sept cieux", "solidité"],
+      "commentaire": "<em>sabʿan shidādan</em> (سَبْعًا شِدادًا) : sept solides — les sept cieux. Qushayrī : « les sept cieux. » Au-dessus de la terre-couche s'élève la voûte aux sept étages, ferme et bien bâtie. L'image complète la demeure : un sol étendu, un toit solide. La création est une architecture, non un chaos : tout y est construit (banaynā) avec mesure et fermeté, comme on bâtit une maison destinée à durer.",
+      "mots": [
+        { "ar": "وَبَنَيْنَا", "tr": "wa-banaynā", "racine": "ب ن ي", "sens": "et Nous avons bâti", "def": "banā : construire.", "gram": "verbe accompli" },
+        { "ar": "فَوْقَكُمْ", "tr": "fawqakum", "racine": "ف و ق", "sens": "au-dessus de vous", "def": "fawq : au-dessus.", "gram": "adverbe + pronom" },
+        { "ar": "سَبْعًا شِدَادًا", "tr": "sabʿan shidādan", "racine": "س ب ع / ش د د", "sens": "sept (cieux) solides", "def": "shidād : solides, fermes.", "gram": "numéral + adjectif plur." }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "وَجَعَلْنَا سِرَاجًا وَهَّاجًا",
+      "tr": "wa-jaʿalnā sirājan wahhājan",
+      "trad": "et Nous avons placé un luminaire éblouissant.",
+      "themes": ["soleil", "lampe ardente"],
+      "commentaire": "<em>sirāj wahhāj</em > (سِراج وَهّاج) : une lampe flamboyante — le soleil. Qushayrī : « c'est le soleil ; Nous en avons fait une lampe ardente et brûlante. » Le soleil suspendu à la voûte est la lampe de la grande demeure. Source de lumière et de chaleur, il rend possible la vie du jour (le <em>maʿāsh</em> du verset 11). Comme une lampe que le maître de maison allume pour ses hôtes, le soleil témoigne d'une intention : la création est éclairée pour être habitée.",
+      "mots": [
+        { "ar": "وَجَعَلْنَا", "tr": "wa-jaʿalnā", "racine": "ج ع ل", "sens": "et Nous avons placé", "def": "jaʿala : faire, placer.", "gram": "verbe accompli" },
+        { "ar": "سِرَاجًا", "tr": "sirājan", "racine": "س ر ج", "sens": "une lampe", "def": "sirāj : lampe, luminaire.", "gram": "nom, complément d'objet" },
+        { "ar": "وَهَّاجًا", "tr": "wahhājan", "racine": "و ه ج", "sens": "éblouissante, ardente", "def": "wahhāj : flamboyant, brûlant.", "gram": "adjectif intensif" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "وَأَنزَلْنَا مِنَ الْمُعْصِرَاتِ مَاءً ثَجَّاجًا",
+      "tr": "wa-anzalnā mina l-muʿṣirāti māʾan thajjājan",
+      "trad": "Nous avons fait descendre des nuées une eau abondante,",
+      "themes": ["pluie", "nuées"],
+      "commentaire": "<em>al-muʿṣirāt</em> (المُعْصِرات) : les nuées pressées par les vents, glose Qushayrī, « les vents qui pressent les nuages » ; <em>māʾ thajjāj</em> : une eau qui se déverse à flots. L'image est celle du pressoir : les vents pressent les nuages comme on presse le raisin, et l'eau ruisselle. Cette eau qui tombe du ciel pour faire vivre la terre est, elle aussi, un signe : Celui qui descend l'eau qui ressuscite le sol mort ressuscitera les morts.",
+      "mots": [
+        { "ar": "وَأَنزَلْنَا", "tr": "wa-anzalnā", "racine": "ن ز ل", "sens": "et Nous avons fait descendre", "def": "anzala : faire descendre.", "gram": "verbe accompli (forme IV)" },
+        { "ar": "مِنَ الْمُعْصِرَاتِ", "tr": "mina l-muʿṣirāt", "racine": "ع ص ر", "sens": "des nuées pressées", "def": "muʿṣirāt : nuages chargés de pluie / vents qui pressent.", "gram": "préposition + participe plur." },
+        { "ar": "مَاءً ثَجَّاجًا", "tr": "māʾan thajjājan", "racine": "م و ه / ث ج ج", "sens": "une eau abondante", "def": "thajjāj : qui se déverse à flots.", "gram": "nom + adjectif intensif" }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "لِنُخْرِجَ بِهِ حَبًّا وَنَبَاتًا",
+      "tr": "li-nukhrija bihi ḥabban wa-nabātan",
+      "trad": "pour en faire sortir des céréales, des plantes",
+      "themes": ["grain", "végétation", "vie tirée de l'eau"],
+      "commentaire": "<em>ḥabban wa-nabātan</em > (حَبًّا وَنَباتًا) : du grain et de la végétation. Qushayrī : « du grain comme le blé et l'orge. » L'eau descendue n'est pas une fin mais un moyen : elle fait <em>sortir</em> la vie de la terre. Le grain, mort en apparence, germe et nourrit : preuve quotidienne que la vie jaillit de ce qui semblait sans vie. Toute la sourate tisse cette leçon : la résurrection n'est que l'agriculture de Dieu portée à son terme.",
+      "mots": [
+        { "ar": "لِنُخْرِجَ بِهِ", "tr": "li-nukhrija bihi", "racine": "خ ر ج", "sens": "pour en faire sortir", "def": "akhraja : faire sortir.", "gram": "lām de but + verbe subjonctif + pronom" },
+        { "ar": "حَبًّا", "tr": "ḥabban", "racine": "ح ب ب", "sens": "du grain", "def": "ḥabb : grain, graines.", "gram": "nom collectif, complément d'objet" },
+        { "ar": "وَنَبَاتًا", "tr": "wa-nabātan", "racine": "ن ب ت", "sens": "et de la végétation", "def": "nabāt : plantes.", "gram": "nom, complément d'objet" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "وَجَنَّاتٍ أَلْفَافًا",
+      "tr": "wa-jannātin alfāfan",
+      "trad": "et des jardins luxuriants.",
+      "themes": ["jardins denses", "abondance"],
+      "commentaire": "<em>jannāt alfāf</em > (جَنّات أَلْفاف) : des jardins touffus, glose Qushayrī : « des vergers dont les uns s'entrelacent aux autres. » L'eau qui faisait sortir le grain (v. 15) produit aussi des jardins si denses que leurs branchages s'enchevêtrent. Et Qushayrī conclut l'argument : « Si vous avez vu tout cela, comment ne sauriez-vous pas que Je suis capable de refaire la création et de dresser la Résurrection ? » Le foisonnement de la vie est la signature du Vivant.",
+      "mots": [
+        { "ar": "وَجَنَّاتٍ", "tr": "wa-jannātin", "racine": "ج ن ن", "sens": "et des jardins", "def": "janna : jardin.", "gram": "nom plur., complément d'objet" },
+        { "ar": "أَلْفَافًا", "tr": "alfāfan", "racine": "ل ف ف", "sens": "luxuriants, touffus", "def": "alfāf : entrelacés, denses.", "gram": "adjectif plur." }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "إِنَّ يَوْمَ الْفَصْلِ كَانَ مِيقَاتًا",
+      "tr": "inna yawma l-faṣli kāna mīqātan",
+      "trad": "Certes, le Jour de la Décision arrivera au terme fixé.",
+      "themes": ["Jour de la Décision", "rendez-vous fixé"],
+      "commentaire": "<em>yawm al-faṣl… mīqātan</em > (يَوْم الفَصْل ميقاتًا) : le Jour de la Décision est un rendez-vous fixé. Après les signes de la création, voici la conclusion : ce Jour a son terme assigné, comme tout dans la création a sa mesure (cf. s. 77, v. 22). <em>Mīqāt</em> — le moment convenu — dit que rien n'est laissé au hasard : la Résurrection n'est pas une éventualité mais un rendez-vous déjà inscrit. Celui qui a tout disposé avec mesure a aussi fixé l'heure du compte.",
+      "mots": [
+        { "ar": "إِنَّ يَوْمَ الْفَصْلِ", "tr": "inna yawma l-faṣl", "racine": "ف ص ل", "sens": "le Jour de la Décision", "def": "faṣl : décision, séparation.", "gram": "inna + nom + complément" },
+        { "ar": "كَانَ مِيقَاتًا", "tr": "kāna mīqātan", "racine": "و ق ت", "sens": "est un rendez-vous fixé", "def": "mīqāt : terme, moment fixé.", "gram": "verbe + attribut" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "يَوْمَ يُنفَخُ فِي الصُّورِ فَتَأْتُونَ أَفْوَاجًا",
+      "tr": "yawma yunfakhu fī l-ṣūri fa-taʾtūna afwājan",
+      "trad": "Ce Jour-là, on soufflera dans la trompette et vous viendrez en foule.",
+      "themes": ["trompe", "rassemblement"],
+      "commentaire": "<em>afwājan</em > (أَفْواجًا) : en foules, par troupes. Qushayrī : « ce Jour-là, vous viendrez en groupes et en cohortes. » Le souffle dans la trompe (al-ṣūr) appelle les ressuscités, qui affluent par vagues vers le lieu du rassemblement. Image saisissante de l'humanité entière mise en marche d'un seul souffle. Les distinctions du monde — rangs, fortunes, nations — se dissolvent dans cette foule convoquée à la même heure.",
+      "mots": [
+        { "ar": "يَوْمَ يُنفَخُ", "tr": "yawma yunfakhu", "racine": "ن ف خ", "sens": "le jour où l'on soufflera", "def": "nafakha : souffler.", "gram": "adverbe + verbe inaccompli passif" },
+        { "ar": "فِي الصُّورِ", "tr": "fī l-ṣūr", "racine": "ص و ر", "sens": "dans la trompe", "def": "ṣūr : trompe, cor.", "gram": "préposition + nom" },
+        { "ar": "فَتَأْتُونَ أَفْوَاجًا", "tr": "fa-taʾtūna afwājan", "racine": "أ ت ي / ف و ج", "sens": "et vous viendrez en foule", "def": "fawj : troupe, foule.", "gram": "verbe + état (ḥāl)" }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "وَفُتِحَتِ السَّمَاءُ فَكَانَتْ أَبْوَابًا",
+      "tr": "wa-futiḥati l-samāʾu fa-kānat abwāban",
+      "trad": "Le ciel sera ouvert et nombreuses seront les portes ;",
+      "themes": ["ciel ouvert", "portes"],
+      "commentaire": "<em>fa-kānat abwāban</em > (فَكانَتْ أَبْوابًا) : et devint des portes. Qushayrī : « il se fendit et se déchira. » Le ciel solide aux sept étages (v. 12) s'ouvre de toutes parts, se changeant en autant de portes. Ce qui était voûte fermée devient passage. Image du dévoilement : la barrière entre le visible et l'invisible tombe, et ce qui était caché derrière le ciel apparaît. Les portes longtemps closes s'ouvrent toutes ensemble.",
+      "mots": [
+        { "ar": "وَفُتِحَتِ السَّمَاءُ", "tr": "wa-futiḥati l-samāʾ", "racine": "ف ت ح", "sens": "et le ciel sera ouvert", "def": "fataḥa : ouvrir.", "gram": "verbe accompli passif + sujet" },
+        { "ar": "فَكَانَتْ أَبْوَابًا", "tr": "fa-kānat abwāban", "racine": "ب و ب", "sens": "et devint des portes", "def": "bāb : porte.", "gram": "verbe + attribut plur." }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "وَسُيِّرَتِ الْجِبَالُ فَكَانَتْ سَرَابًا",
+      "tr": "wa-suyyirati l-jibālu fa-kānat sarāban",
+      "trad": "les montagnes seront mises en mouvement et deviendront un mirage.",
+      "themes": ["montagnes en mouvement", "mirage"],
+      "commentaire": "<em>fa-kānat sarāban</em > (فَكانَتْ سَرابًا) : et devinrent un mirage. Les montagnes-piquets (v. 7), symboles mêmes de la stabilité, se mettent en marche et se dissolvent en mirage — cette eau illusoire qui fuit le voyageur assoiffé. Renversement vertigineux : ce qui paraissait le plus solide se révèle aussi inconsistant qu'une illusion. Au Jour, toutes les fausses assurances de l'homme se découvrent pour ce qu'elles étaient : des mirages.",
+      "mots": [
+        { "ar": "وَسُيِّرَتِ الْجِبَالُ", "tr": "wa-suyyirati l-jibāl", "racine": "س ي ر", "sens": "et les montagnes seront mises en marche", "def": "sayyara : faire mouvoir.", "gram": "verbe accompli passif (forme II) + sujet" },
+        { "ar": "فَكَانَتْ سَرَابًا", "tr": "fa-kānat sarāban", "racine": "س ر ب", "sens": "et devinrent un mirage", "def": "sarāb : mirage.", "gram": "verbe + attribut" }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "إِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًا",
+      "tr": "inna jahannama kānat mirṣādan",
+      "trad": "Certes, la Géhenne se tient aux aguets,",
+      "themes": ["Géhenne aux aguets", "embuscade"],
+      "commentaire": "<em>mirṣād</em > (مِرْصاد) : un poste de guet, une embuscade — ou un passage obligé. Qushayrī donne les deux sens : « un lieu de passage » et « un poste qui guette ses gens. » La Géhenne n'est pas seulement un lieu lointain : elle est aux aguets, sur le chemin de tous, surveillant qui s'avance. Image redoutable : le mal qu'on a fui ne dort pas, il attend au tournant. Mais ce guet n'est tel que pour qui s'y est destiné par ses œuvres.",
+      "mots": [
+        { "ar": "إِنَّ جَهَنَّمَ", "tr": "inna jahannama", "racine": "", "sens": "certes la Géhenne", "def": "jahannam : Géhenne, enfer.", "gram": "inna + nom" },
+        { "ar": "كَانَتْ مِرْصَادًا", "tr": "kānat mirṣādan", "racine": "ر ص د", "sens": "se tient aux aguets", "def": "mirṣād : poste de guet, embuscade, passage.", "gram": "verbe + attribut" }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "لِّلطَّاغِينَ مَآبًا",
+      "tr": "li-l-ṭāghīna maʾāban",
+      "trad": "comme le lieu de retour pour les rebelles.",
+      "themes": ["les rebelles", "lieu de retour"],
+      "commentaire": "<em>li-l-ṭāghīn maʾāban</em > (لِلطّاغين مَآبًا) : pour les rebelles, un lieu de retour. Qushayrī : « un lieu où ils reviennent. » <em>al-ṭāghūn</em> : ceux qui ont outrepassé toute mesure (même racine que le <em>ṭughyān</em> de Pharaon, s. 79). On revient à ce qu'on a choisi : celui qui a fait de la démesure sa demeure intérieure y retourne au terme. Le mot <em>maʾāb</em> — lieu de retour — fait écho, en miroir sombre, au <em>maʾāb</em> vers le Seigneur du verset 39 : à chacun le retour qu'il a préparé.",
+      "mots": [
+        { "ar": "لِّلطَّاغِينَ", "tr": "li-l-ṭāghīn", "racine": "ط غ ي", "sens": "pour les rebelles", "def": "ṭāghī : qui outrepasse toute mesure.", "gram": "préposition + participe actif plur." },
+        { "ar": "مَآبًا", "tr": "maʾāban", "racine": "أ و ب", "sens": "un lieu de retour", "def": "maʾāb : lieu où l'on revient, demeure finale.", "gram": "nom de lieu, attribut" }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "لَّابِثِينَ فِيهَا أَحْقَابًا",
+      "tr": "lābithīna fīhā aḥqāban",
+      "trad": "Ils y demeureront des âges,",
+      "themes": ["séjour prolongé", "durée"],
+      "commentaire": "<em>aḥqāb</em > (أَحْقاب) : des âges, des durées sans nombre. Qushayrī : « des époques (duhūr), au sens d'éternellement. » Le mot évoque des cycles de temps qui se succèdent indéfiniment. La gravité de la démesure se mesure à la durée de ses conséquences : ce qui fut commis en peu de temps se paie en âges. L'image n'est pas faite pour terrifier seulement, mais pour donner son poids véritable au choix présent.",
+      "mots": [
+        { "ar": "لَّابِثِينَ فِيهَا", "tr": "lābithīna fīhā", "racine": "ل ب ث", "sens": "y demeurant", "def": "labitha : demeurer, séjourner.", "gram": "participe actif plur., état + préposition" },
+        { "ar": "أَحْقَابًا", "tr": "aḥqāban", "racine": "ح ق ب", "sens": "des âges", "def": "ḥuqub : longue période, âge.", "gram": "nom plur., complément de temps" }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "لَّا يَذُوقُونَ فِيهَا بَرْدًا وَلَا شَرَابًا",
+      "tr": "lā yadhūqūna fīhā bardan wa-lā sharāban",
+      "trad": "sans y goûter ni fraîcheur, ni boisson,",
+      "themes": ["privation", "ni fraîcheur ni boisson"],
+      "commentaire": "<em>lā bardan wa-lā sharāban</em > (لا بَرْدًا وَلا شَرابًا) : ni fraîcheur ni boisson. La double privation est l'exact contraire des dons de la terre rappelés plus haut : l'ombre des montagnes, l'eau douce (s. 77, v. 27). Ce qui rafraîchissait et désaltérait dans la création est retiré. La privation n'est pas un ajout arbitraire : elle est l'absence de ce qu'on a refusé de reconnaître comme don. Qui n'a pas rendu grâce de l'eau douce se trouve sans eau.",
+      "mots": [
+        { "ar": "لَّا يَذُوقُونَ فِيهَا", "tr": "lā yadhūqūna fīhā", "racine": "ذ و ق", "sens": "ils n'y goûtent pas", "def": "dhāqa : goûter.", "gram": "négation + verbe inaccompli + préposition" },
+        { "ar": "بَرْدًا", "tr": "bardan", "racine": "ب ر د", "sens": "fraîcheur", "def": "bard : froid, fraîcheur.", "gram": "nom, complément d'objet" },
+        { "ar": "وَلَا شَرَابًا", "tr": "wa-lā sharāban", "racine": "ش ر ب", "sens": "ni boisson", "def": "sharāb : boisson.", "gram": "nom, complément d'objet" }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "إِلَّا حَمِيمًا وَغَسَّاقًا",
+      "tr": "illā ḥamīman wa-ghassāqan",
+      "trad": "juste une eau bouillante et un liquide fétide.",
+      "themes": ["eau bouillante", "liquide fétide"],
+      "commentaire": "<em>ḥamīm wa-ghassāq</em > (حَميم وَغَسّاق) : une eau bouillante et un liquide glacial et puant. Ironie cruelle : la seule « boisson » est ce qui brûle ou ce qui répugne. Aux deux extrêmes — la fournaise et le froid putride — manque le juste milieu, cette tempérance qui faisait la félicité du Jardin (s. 76, v. 13 : ni soleil ardent ni froid mordant). Le châtiment est l'absence d'équilibre : l'âme qui a perdu la mesure se retrouve ballottée entre les contraires extrêmes.",
+      "mots": [
+        { "ar": "إِلَّا حَمِيمًا", "tr": "illā ḥamīman", "racine": "ح م م", "sens": "sauf une eau bouillante", "def": "ḥamīm : eau brûlante.", "gram": "exception + nom" },
+        { "ar": "وَغَسَّاقًا", "tr": "wa-ghassāqan", "racine": "غ س ق", "sens": "et un liquide fétide", "def": "ghassāq : pus glacial et fétide.", "gram": "nom, coordonné" }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "جَزَاءً وِفَاقًا",
+      "tr": "jazāʾan wifāqan",
+      "trad": "Ce sera une rétribution équitable.",
+      "themes": ["justice", "rétribution proportionnée"],
+      "commentaire": "<em>jazāʾan wifāqan</em > (جَزاءً وِفاقًا) : une rétribution conforme. Qushayrī : « ils sont rétribués en accord avec leurs œuvres » — ou « en accord avec ce que le décret a précédé et que le jugement a établi. » Le mot <em>wifāq</em> dit l'exacte correspondance : la peine épouse la faute, ni plus ni moins. Il n'y a pas d'arbitraire dans le châtiment : il est le reflet fidèle de l'acte, comme la félicité est le reflet de l'amour. On récolte précisément ce qu'on a semé.",
+      "mots": [
+        { "ar": "جَزَاءً", "tr": "jazāʾan", "racine": "ج ز ي", "sens": "une rétribution", "def": "jazāʾ : récompense, sanction.", "gram": "complément absolu" },
+        { "ar": "وِفَاقًا", "tr": "wifāqan", "racine": "و ف ق", "sens": "conforme, proportionnée", "def": "wifāq : accord, correspondance.", "gram": "adjectif" }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "إِنَّهُمْ كَانُوا لَا يَرْجُونَ حِسَابًا",
+      "tr": "innahum kānū lā yarjūna ḥisāban",
+      "trad": "Ils ne pensaient pas devoir rendre des comptes,",
+      "themes": ["insouciance du compte", "racine de la faute"],
+      "commentaire": "<em>lā yarjūna ḥisāban</em > (لا يَرْجونَ حِسابًا) : ils n'attendaient pas de compte. Qushayrī : « ils ne croyaient pas, espérant la récompense et craignant le châtiment. » Voici la racine de la démesure : vivre comme si l'on ne devait jamais répondre de rien. Celui qui n'attend aucun compte se croit sans limites — et cette illusion de l'impunité est la source de tous les débordements. Reconnaître qu'on rendra compte, c'est déjà commencer à se redresser.",
+      "mots": [
+        { "ar": "إِنَّهُمْ كَانُوا", "tr": "innahum kānū", "racine": "ك و ن", "sens": "ils étaient", "def": "kāna : être.", "gram": "inna + pronom + verbe accompli" },
+        { "ar": "لَا يَرْجُونَ", "tr": "lā yarjūna", "racine": "ر ج و", "sens": "ils n'attendaient pas", "def": "rajā : espérer, s'attendre à.", "gram": "négation + verbe inaccompli" },
+        { "ar": "حِسَابًا", "tr": "ḥisāban", "racine": "ح س ب", "sens": "de compte", "def": "ḥisāb : compte, reddition.", "gram": "nom, complément d'objet" }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "وَكَذَّبُوا بِآيَاتِنَا كِذَّابًا",
+      "tr": "wa-kadhdhabū bi-āyātinā kidhdhāban",
+      "trad": "et persistaient à traiter Nos signes de menterie.",
+      "themes": ["démenti des signes", "obstination"],
+      "commentaire": "<em>kadhdhabū bi-āyātinā kidhdhāban</em > (كَذَّبوا بِآياتِنا كِذّابًا) : ils ont démenti Nos signes d'un démenti total. Le complément absolu <em>kidhdhāban</em> souligne l'intensité : non un doute passager mais un déni systématique. Les signes (āyāt) déployés tout au long de la sourate — la terre, les cieux, la pluie, les jardins — ont été reçus comme mensonges. Le démenti n'est pas ignorance mais refus volontaire de lire le réel comme signe. On ferme les yeux sur ce qui crie pourtant la présence du Créateur.",
+      "mots": [
+        { "ar": "وَكَذَّبُوا", "tr": "wa-kadhdhabū", "racine": "ك ذ ب", "sens": "et ils ont démenti", "def": "kadhdhaba : traiter de mensonge.", "gram": "verbe accompli (forme II)" },
+        { "ar": "بِآيَاتِنَا", "tr": "bi-āyātinā", "racine": "أ ي ي", "sens": "Nos signes", "def": "āya : signe, verset.", "gram": "préposition + nom plur. + pronom" },
+        { "ar": "كِذَّابًا", "tr": "kidhdhāban", "racine": "ك ذ ب", "sens": "d'un démenti total", "def": "kidhdhāb : démenti répété.", "gram": "complément absolu" }
+      ]
+    },
+    {
+      "n": 29,
+      "ar": "وَكُلَّ شَيْءٍ أَحْصَيْنَاهُ كِتَابًا",
+      "tr": "wa-kulla shayʾin aḥṣaynāhu kitāban",
+      "trad": "Or, Nous avons consigné toute chose dans un livre.",
+      "themes": ["dénombrement", "le Livre", "mémoire des éprouvés"],
+      "commentaire": "<em>aḥṣaynāhu kitāban</em > (أَحْصَيْناهُ كِتابًا) : Nous l'avons dénombré, consigné par écrit. Rien n'échappe au registre divin. Mais Qushayrī ouvre ici une perle inattendue : si Dieu compte les fautes des désobéissants et les actes des obéissants, Il compte aussi « les jours de séparation des délaissés (mahjūrīn) et les jours d'épreuve des éprouvés (mumtaḥanīn) — et il y a là pour eux une consolation. » Le même Livre qui inquiète le coupable réconforte l'amant éprouvé : Dieu n'oublie ni nos manquements ni nos peines. Toute larme versée dans la séparation est, elle aussi, comptée.",
+      "mots": [
+        { "ar": "وَكُلَّ شَيْءٍ", "tr": "wa-kulla shayʾin", "racine": "ش ي أ", "sens": "et toute chose", "def": "kull : tout ; shayʾ : chose.", "gram": "complément d'objet antéposé" },
+        { "ar": "أَحْصَيْنَاهُ", "tr": "aḥṣaynāhu", "racine": "ح ص ي", "sens": "Nous l'avons dénombré", "def": "aḥṣā : compter, dénombrer.", "gram": "verbe accompli (forme IV) + pronom" },
+        { "ar": "كِتَابًا", "tr": "kitāban", "racine": "ك ت ب", "sens": "par écrit, dans un livre", "def": "kitāb : écrit, livre.", "gram": "complément absolu" }
+      ]
+    },
+    {
+      "n": 30,
+      "ar": "فَذُوقُوا فَلَن نَّزِيدَكُمْ إِلَّا عَذَابًا",
+      "tr": "fa-dhūqū fa-lan nazīdakum illā ʿadhāban",
+      "trad": "Goûtez donc car, pour vous, Nous n'augmenterons rien d'autre que le tourment.",
+      "themes": ["sentence", "accroissement opposé"],
+      "commentaire": "<em>fa-dhūqū falan nazīdakum illā ʿadhāban</em > (فَذوقوا فَلَنْ نَزيدَكُمْ إلّا عَذابًا) : goûtez, Nous ne vous accroîtrons qu'en châtiment. Verset que la tradition tient pour le plus terrible du Coran. Mais Qushayrī le retourne en une vaste symétrie lumineuse : « Ô vous, comblés du Jardin, réjouissez-vous : Nous ne vous accroîtrons qu'en récompense. Ô obéissants, réjouissez-vous : Nous ne vous accroîtrons qu'en faveur sur faveur. » À chacun, l'accroissement de ce qu'il a choisi : la loi du Jour est que tout grandit dans le sens où le cœur s'est orienté. Le même verbe — « accroître » — sépare deux éternités.",
+      "mots": [
+        { "ar": "فَذُوقُوا", "tr": "fa-dhūqū", "racine": "ذ و ق", "sens": "goûtez donc", "def": "dhāqa : goûter.", "gram": "impératif plur." },
+        { "ar": "فَلَن نَّزِيدَكُمْ", "tr": "fa-lan nazīdakum", "racine": "ز ي د", "sens": "Nous ne vous accroîtrons", "def": "zāda : augmenter, accroître.", "gram": "lan (négation du futur) + verbe + pronom" },
+        { "ar": "إِلَّا عَذَابًا", "tr": "illā ʿadhāban", "racine": "ع ذ ب", "sens": "qu'en tourment", "def": "ʿadhāb : châtiment.", "gram": "exception + complément d'objet" }
+      ]
+    },
+    {
+      "n": 31,
+      "ar": "إِنَّ لِلْمُتَّقِينَ مَفَازًا",
+      "tr": "inna li-l-muttaqīna mafāzan",
+      "trad": "Certes, pour ceux qui craignent Dieu, ce sera une béatitude :",
+      "themes": ["les pieux", "le triomphe"],
+      "commentaire": "<em>mafāz</em > (مَفاز) : le lieu du succès, le triomphe, le salut. Renversement lumineux après le tourment des rebelles : aux pieux, le <em>mafāz</em>. Le mot dit à la fois l'évasion hors du danger et l'accès au bonheur — échapper au Feu et atteindre le Jardin sont un seul et même mouvement. Qushayrī : « ce que Nous leur avons promis leur est garanti. » À la rétribution conforme des coupables (v. 26) répond le triomphe garanti des craignants.",
+      "mots": [
+        { "ar": "إِنَّ لِلْمُتَّقِينَ", "tr": "inna li-l-muttaqīn", "racine": "و ق ي", "sens": "pour ceux qui craignent Dieu", "def": "muttaqī : pieux, qui se prémunit.", "gram": "inna + préposition + participe actif plur." },
+        { "ar": "مَفَازًا", "tr": "mafāzan", "racine": "ف و ز", "sens": "un triomphe, une béatitude", "def": "mafāz : lieu de succès, salut.", "gram": "nom, nom retardé d'inna" }
+      ]
+    },
+    {
+      "n": 32,
+      "ar": "حَدَائِقَ وَأَعْنَابًا",
+      "tr": "ḥadāʾiqa wa-aʿnāban",
+      "trad": "des vergers et des vignes,",
+      "themes": ["jardins", "vignes"],
+      "commentaire": "<em>ḥadāʾiq wa-aʿnāb</em > (حَدائِق وَأَعْناب) : des jardins clos et des vignes. Le triomphe (v. 31) se déploie en images concrètes : vergers entourés de murs, treilles chargées de raisin. Aux jardins luxuriants de la création terrestre (v. 16) répondent les jardins du Paradis, leur accomplissement. Ce que la terre offrait en signe, le Jardin l'offre en plénitude : la beauté entrevue ici-bas n'était qu'une promesse de celle qui demeure.",
+      "mots": [
+        { "ar": "حَدَائِقَ", "tr": "ḥadāʾiqa", "racine": "ح د ق", "sens": "des vergers clos", "def": "ḥadīqa : jardin entouré de murs.", "gram": "nom plur., substitut (badal)" },
+        { "ar": "وَأَعْنَابًا", "tr": "wa-aʿnāban", "racine": "ع ن ب", "sens": "et des vignes", "def": "ʿinab : raisin, vigne.", "gram": "nom plur., coordonné" }
+      ]
+    },
+    {
+      "n": 33,
+      "ar": "وَكَوَاعِبَ أَتْرَابًا",
+      "tr": "wa-kawāʿiba atrāban",
+      "trad": "des jouvencelles d'une égale jeunesse,",
+      "themes": ["compagnes", "harmonie"],
+      "commentaire": "<em>kawāʿib atrāb</em > (كَواعِب أَتْراب) : des compagnes d'égale jeunesse, du même âge. L'image dit l'harmonie : non la disparate, mais l'accord — des êtres assortis, en parfaite concorde. Au-delà de la lettre, le Jardin est le lieu où tout s'accorde, où ne règne plus la discordance qui blesse l'âme ici-bas. La jeunesse égale figure la fraîcheur qui ne se flétrit pas et la paix d'une compagnie sans dissonance.",
+      "mots": [
+        { "ar": "وَكَوَاعِبَ", "tr": "wa-kawāʿiba", "racine": "ك ع ب", "sens": "et des jouvencelles", "def": "kāʿib : jeune fille épanouie.", "gram": "nom plur." },
+        { "ar": "أَتْرَابًا", "tr": "atrāban", "racine": "ت ر ب", "sens": "du même âge", "def": "tirb : du même âge, assorti.", "gram": "adjectif plur." }
+      ]
+    },
+    {
+      "n": 34,
+      "ar": "وَكَأْسًا دِهَاقًا",
+      "tr": "wa-kaʾsan dihāqan",
+      "trad": "des coupes débordantes.",
+      "themes": ["coupe pleine", "abondance"],
+      "commentaire": "<em>kaʾsan dihāqan</em > (كَأْسًا دِهاقًا) : une coupe pleine à ras bord, débordante. Image de la plénitude sans manque : la coupe ne se vide jamais. Dans le langage spirituel des sourates voisines (s. 76, v. 21 ; s. 77, v. 43), la coupe est le breuvage de l'intimité avec Dieu. Qu'elle déborde dit que la félicité n'a pas de mesure restrictive : à qui s'est ouvert à Dieu, le don est versé sans compter, toujours plein, jamais tari.",
+      "mots": [
+        { "ar": "وَكَأْسًا", "tr": "wa-kaʾsan", "racine": "ك أ س", "sens": "et une coupe", "def": "kaʾs : coupe.", "gram": "nom, complément d'objet" },
+        { "ar": "دِهَاقًا", "tr": "dihāqan", "racine": "د ه ق", "sens": "débordante, pleine", "def": "dihāq : rempli à ras bord.", "gram": "adjectif" }
+      ]
+    },
+    {
+      "n": 35,
+      "ar": "لَّا يَسْمَعُونَ فِيهَا لَغْوًا وَلَا كِذَّابًا",
+      "tr": "lā yasmaʿūna fīhā laghwan wa-lā kidhdhāban",
+      "trad": "Ils n'entendront là ni paroles futiles, ni menteries :",
+      "themes": ["paix de l'ouïe", "ni vain ni mensonge"],
+      "commentaire": "<em>lā laghwan wa-lā kidhdhāban</em > (لا لَغْوًا وَلا كِذّابًا) : ni vain bavardage ni mensonge. Qushayrī donne la lecture intérieure : « leurs oreilles sont préservées d'entendre ce qui est autre que Lui (al-aghyār), et leurs regards protégés de fixer les formes et les traces. » Le Jardin est d'abord un silence purifié : plus de paroles vaines, plus de mensonges qui salissaient l'ici-bas. Et plus profondément, l'ouïe du cœur n'entend plus que Lui : la félicité suprême est de n'écouter que l'Aimé.",
+      "mots": [
+        { "ar": "لَّا يَسْمَعُونَ فِيهَا", "tr": "lā yasmaʿūna fīhā", "racine": "س م ع", "sens": "ils n'y entendent pas", "def": "samiʿa : entendre.", "gram": "négation + verbe inaccompli + préposition" },
+        { "ar": "لَغْوًا", "tr": "laghwan", "racine": "ل غ و", "sens": "parole futile", "def": "laghw : vain bavardage.", "gram": "nom, complément d'objet" },
+        { "ar": "وَلَا كِذَّابًا", "tr": "wa-lā kidhdhāban", "racine": "ك ذ ب", "sens": "ni mensonge", "def": "kidhdhāb : mensonge.", "gram": "nom, complément d'objet" }
+      ]
+    },
+    {
+      "n": 36,
+      "ar": "جَزَاءً مِّن رَّبِّكَ عَطَاءً حِسَابًا",
+      "tr": "jazāʾan min rabbika ʿaṭāʾan ḥisāban",
+      "trad": "c'est une récompense de ton Seigneur, un don bien décompté",
+      "themes": ["don du Seigneur", "récompense suffisante"],
+      "commentaire": "<em>jazāʾan… ʿaṭāʾan ḥisāban</em > (جَزاءً عَطاءً حِسابًا) : une récompense, un don suffisant. Le mot <em>ʿaṭāʾ</em> — don gratuit — corrige discrètement <em>jazāʾ</em> — rétribution méritée : ce qui semble salaire est en réalité largesse. Et <em>ḥisāban</em> : un don « bien compté », c'est-à-dire amplement suffisant, à la mesure exacte du besoin et au-delà. La félicité du pieux n'est pas un dû arraché mais un présent du Seigneur : la grâce dépasse toujours le mérite.",
+      "mots": [
+        { "ar": "جَزَاءً مِّن رَّبِّكَ", "tr": "jazāʾan min rabbika", "racine": "ج ز ي / ر ب ب", "sens": "une récompense de ton Seigneur", "def": "jazāʾ : récompense ; rabb : Seigneur.", "gram": "complément absolu + complément" },
+        { "ar": "عَطَاءً", "tr": "ʿaṭāʾan", "racine": "ع ط و", "sens": "un don", "def": "ʿaṭāʾ : don gratuit, largesse.", "gram": "apposition" },
+        { "ar": "حِسَابًا", "tr": "ḥisāban", "racine": "ح س ب", "sens": "bien décompté, suffisant", "def": "ḥisāb : compte ; ici, suffisant.", "gram": "adjectif" }
+      ]
+    },
+    {
+      "n": 37,
+      "ar": "رَّبِّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا الرَّحْمَٰنِ لَا يَمْلِكُونَ مِنْهُ خِطَابًا",
+      "tr": "rabbi l-samāwāti wa-l-arḍi wa-mā baynahumā l-raḥmāni lā yamlikūna minhu khiṭāban",
+      "trad": "de la part du Seigneur des cieux et de la terre, et de ce qui est entre les deux, du Miséricordieux avec Lequel ils ne pourront engager de discussion.",
+      "themes": ["seigneurie universelle", "impuissance à parler"],
+      "commentaire": "<em>lā yamlikūna minhu khiṭāban</em > (لا يَمْلِكونَ مِنْهُ خِطابًا) : ils n'ont nul pouvoir de Lui adresser la parole. Qushayrī s'écrie : « comment la créature façonnée, pauvre et misérable, aurait-elle le pouvoir de Lui adresser un mot, ou de respirer un souffle sans Lui ? Non — Il est Dieu, l'Unique, le Tout-Contraignant. » Devant le Seigneur des cieux, de la terre et de l'entre-deux, nul n'a d'initiative : on ne parle que s'Il permet. Et pourtant ce Maître absolu est nommé <em>al-Raḥmān</em>, le Tout-Miséricordieux : la toute-puissance n'écrase pas, elle se révèle miséricorde.",
+      "mots": [
+        { "ar": "رَّبِّ السَّمَاوَاتِ وَالْأَرْضِ", "tr": "rabbi l-samāwāti wa-l-arḍ", "racine": "ر ب ب", "sens": "Seigneur des cieux et de la terre", "def": "rabb : Seigneur.", "gram": "nom + compléments" },
+        { "ar": "وَمَا بَيْنَهُمَا", "tr": "wa-mā baynahumā", "racine": "ب ي ن", "sens": "et de ce qui est entre eux", "def": "bayn : entre.", "gram": "relatif + adverbe + pronom" },
+        { "ar": "الرَّحْمَٰنِ", "tr": "al-raḥmān", "racine": "ر ح م", "sens": "le Tout-Miséricordieux", "def": "al-Raḥmān : le Miséricordieux par essence.", "gram": "nom divin, apposition" },
+        { "ar": "لَا يَمْلِكُونَ مِنْهُ خِطَابًا", "tr": "lā yamlikūna minhu khiṭāban", "racine": "م ل ك / خ ط ب", "sens": "ils ne peuvent Lui adresser la parole", "def": "khiṭāb : adresse, discours.", "gram": "négation + verbe + préposition + complément" }
+      ]
+    },
+    {
+      "n": 38,
+      "ar": "يَوْمَ يَقُومُ الرُّوحُ وَالْمَلَائِكَةُ صَفًّا لَّا يَتَكَلَّمُونَ إِلَّا مَنْ أَذِنَ لَهُ الرَّحْمَٰنُ وَقَالَ صَوَابًا",
+      "tr": "yawma yaqūmu l-rūḥu wa-l-malāʾikatu ṣaffan lā yatakallamūna illā man adhina lahu l-raḥmānu wa-qāla ṣawāban",
+      "trad": "Le Jour venu, l'Esprit et les anges se tiendront debout sur un rang. Ils ne parleront pas, sauf ceux à qui le Miséricordieux l'aura permis et qui diront des paroles justes.",
+      "themes": ["l'Esprit et les anges", "majesté", "parole permise"],
+      "commentaire": "<em>yaqūmu l-rūḥu wa-l-malāʾikatu ṣaffan</em > (يَقومُ الرّوحُ وَالمَلائِكَةُ صَفًّا) : l'Esprit et les anges se tiennent en rangs. Qushayrī ouvre ici une distinction profonde : « la majesté révérentielle (hayba) apparaît, ce Jour, sur l'ensemble des gens du rassemblement. Mais les élus, les gens de la présence (aṣḥāb al-ḥuḍūr), sont depuis toujours dans la contemplation de la Majesté (mashhad al-ʿizz), revêtus de cette crainte révérencielle, sans repos ni relâche : le voile de la majesté les enveloppe et ses réalités les subjuguent. » Pour le commun, la <em>hayba</em> est l'effroi d'un jour ; pour l'intime, elle est l'état permanent du cœur tenu sous le Regard. Et nul ne parle, sinon par permission et pour dire <em>juste</em> (ṣawāban) : au seuil de la Présence, la parole vraie est don, non initiative.",
+      "mots": [
+        { "ar": "يَوْمَ يَقُومُ الرُّوحُ", "tr": "yawma yaqūmu l-rūḥ", "racine": "ق و م / ر و ح", "sens": "le jour où l'Esprit se tiendra debout", "def": "rūḥ : l'Esprit (Gabriel, ou un ange suprême).", "gram": "adverbe + verbe + sujet" },
+        { "ar": "وَالْمَلَائِكَةُ صَفًّا", "tr": "wa-l-malāʾikatu ṣaffan", "racine": "م ل ك / ص ف ف", "sens": "et les anges en rang", "def": "malāʾika : anges ; ṣaff : rang.", "gram": "sujet + état" },
+        { "ar": "لَّا يَتَكَلَّمُونَ", "tr": "lā yatakallamūn", "racine": "ك ل م", "sens": "ils ne parlent pas", "def": "takallama : parler.", "gram": "négation + verbe inaccompli (forme V)" },
+        { "ar": "إِلَّا مَنْ أَذِنَ لَهُ الرَّحْمَٰنُ", "tr": "illā man adhina lahu l-raḥmān", "racine": "أ ذ ن", "sens": "sauf celui à qui le Miséricordieux a permis", "def": "adhina : permettre.", "gram": "exception + relatif + verbe" },
+        { "ar": "وَقَالَ صَوَابًا", "tr": "wa-qāla ṣawāban", "racine": "ص و ب", "sens": "et a dit juste", "def": "ṣawāb : ce qui est juste, correct.", "gram": "verbe + complément" }
+      ]
+    },
+    {
+      "n": 39,
+      "ar": "ذَٰلِكَ الْيَوْمُ الْحَقُّ فَمَن شَاءَ اتَّخَذَ إِلَىٰ رَبِّهِ مَآبًا",
+      "tr": "dhālika l-yawmu l-ḥaqqu fa-man shāʾa ttakhadha ilā rabbihi maʾāban",
+      "trad": "Ce sera le Jour de Vérité. Que quiconque le désire prenne le chemin du retour vers son Seigneur.",
+      "themes": ["Jour de Vérité", "retour vers le Seigneur", "liberté"],
+      "commentaire": "<em>al-yawm al-ḥaqq</em > (اليَوْم الحَقّ) : le Jour du Réel, de la Vérité. Qushayrī, en une formule dense : « ils sont dans la contemplation du Réel (al-Ḥaqq), le jugement sur eux est le Réel, Il les juge par le Réel, et ils sont attirés (majdhūbūn) par le Réel vers le Réel. » Au Jour de Vérité, tout est ramené à l'Unique : le voile de l'illusion tombe et seule subsiste la Réalité. Et la porte reste ouverte : <em>fa-man shāʾa</em> — « que celui qui veut prenne un retour (maʾāb) vers son Seigneur. » Au <em>maʾāb</em> des rebelles, qui est la Géhenne (v. 22), répond ce <em>maʾāb</em> vers le Seigneur : deux retours, le même mot, des sens opposés selon le cœur qui choisit.",
+      "mots": [
+        { "ar": "ذَٰلِكَ الْيَوْمُ الْحَقُّ", "tr": "dhālika l-yawmu l-ḥaqq", "racine": "ح ق ق", "sens": "voilà le Jour de Vérité", "def": "ḥaqq : vrai, réel.", "gram": "démonstratif + nom + adjectif" },
+        { "ar": "فَمَن شَاءَ", "tr": "fa-man shāʾa", "racine": "ش ي أ", "sens": "que celui qui veut", "def": "shāʾa : vouloir.", "gram": "relatif + verbe accompli" },
+        { "ar": "اتَّخَذَ", "tr": "ittakhadha", "racine": "أ خ ذ", "sens": "prenne", "def": "ittakhadha : prendre, adopter.", "gram": "verbe accompli (forme VIII)" },
+        { "ar": "إِلَىٰ رَبِّهِ مَآبًا", "tr": "ilā rabbihi maʾāban", "racine": "ر ب ب / أ و ب", "sens": "un retour vers son Seigneur", "def": "maʾāb : lieu de retour.", "gram": "préposition + nom + complément d'objet" }
+      ]
+    },
+    {
+      "n": 40,
+      "ar": "إِنَّا أَنذَرْنَاكُمْ عَذَابًا قَرِيبًا يَوْمَ يَنظُرُ الْمَرْءُ مَا قَدَّمَتْ يَدَاهُ وَيَقُولُ الْكَافِرُ يَا لَيْتَنِي كُنتُ تُرَابًا",
+      "tr": "innā andharnākum ʿadhāban qarīban yawma yanẓuru l-marʾu mā qaddamat yadāhu wa-yaqūlu l-kāfiru yā laytanī kuntu turāban",
+      "trad": "Certes, Nous vous avons avertis d'un châtiment prochain, pour le Jour où l'homme considérera ce que ses mains lui auront acquis et où le mécréant s'écriera : « Malheur à moi ! Que ne suis-je poussière ! »",
+      "themes": ["châtiment prochain", "regard sur ses œuvres", "le souhait d'être poussière"],
+      "commentaire": "Verset de clôture, où tout converge. <em>ʿadhāban qarīban</em > (عَذابًا قَريبًا) : un châtiment proche. Qushayrī : « lointain aux yeux des insouciants, mais en vérité proche. » Le Jour où chacun <em>regardera</em> ce que ses mains ont avancé : l'homme face au miroir sans complaisance de ses œuvres. Et le cri du dénégateur : <em>« que ne suis-je poussière ! »</em> Qushayrī (l'auteur) y reconnaît la plainte d'Iblīs : « Que n'ai-je été créé comme Adam, de terre, au lieu de dire : je vaux mieux que lui, car je suis de feu ! » Le refus orgueilleux d'hier devient le regret d'aujourd'hui. Et la dernière leçon de Qushayrī sur toute la sourate : « ils ont passé dans l'humiliation du choix (ikhtiyār) et la peine, et furent ressuscités dans le regret du vain souhait ; <em>s'ils s'étaient contentés du décret (taqdīr), ils auraient été délivrés du souhait.</em> » Le secret du salut tient dans cet abandon : non vouloir autrement, mais consentir à ce qui est.",
+      "mots": [
+        { "ar": "إِنَّا أَنذَرْنَاكُمْ", "tr": "innā andharnākum", "racine": "ن ذ ر", "sens": "Nous vous avons avertis", "def": "andhara : avertir.", "gram": "inna + verbe accompli (forme IV) + pronom" },
+        { "ar": "عَذَابًا قَرِيبًا", "tr": "ʿadhāban qarīban", "racine": "ع ذ ب / ق ر ب", "sens": "d'un châtiment prochain", "def": "qarīb : proche.", "gram": "nom + adjectif" },
+        { "ar": "يَوْمَ يَنظُرُ الْمَرْءُ", "tr": "yawma yanẓuru l-marʾu", "racine": "ن ظ ر / م ر أ", "sens": "le jour où l'homme regardera", "def": "naẓara : regarder ; marʾ : l'homme.", "gram": "adverbe + verbe + sujet" },
+        { "ar": "مَا قَدَّمَتْ يَدَاهُ", "tr": "mā qaddamat yadāhu", "racine": "ق د م / ي د ي", "sens": "ce que ses mains ont avancé", "def": "qaddama : présenter, avancer.", "gram": "relatif + verbe + sujet" },
+        { "ar": "وَيَقُولُ الْكَافِرُ", "tr": "wa-yaqūlu l-kāfir", "racine": "ك ف ر", "sens": "et le dénégateur dira", "def": "kāfir : dénégateur.", "gram": "verbe + sujet" },
+        { "ar": "يَا لَيْتَنِي كُنتُ تُرَابًا", "tr": "yā laytanī kuntu turāban", "racine": "ت ر ب", "sens": "que ne suis-je poussière", "def": "layta : plût au ciel que ; turāb : poussière, terre.", "gram": "particule de souhait + verbe + attribut" }
+      ]
+    }
+  ]
+}

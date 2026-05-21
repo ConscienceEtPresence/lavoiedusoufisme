@@ -1,0 +1,534 @@
+{
+  "n": 75,
+  "nom_ar": "القِيَامَة",
+  "nom_tr": "al-Qiyāma",
+  "nom_fr": "The Resurrection",
+  "revelation": "Meccan",
+  "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
+  "versets_count": 40,
+  "intro": "al-Qiyāma — “the Resurrection,” but also, inwardly, the <em>raising up</em>, the standing of the whole being before its Lord. The sūra opens with a twofold oath in which God swears by the Day of Resurrection and by <em>the soul that blames itself</em> (al-nafs al-lawwāma): that conscience which reproaches the servant his failings and acknowledges the deficiency of his state. Qushayrī opens with a luminous distinction concerning the divine name: whoever hears it through the witness of knowledge (ʿilm) gains insight; whoever hears it through the witness of gnosis (maʿrifa) is left in bewilderment — “the scholars in the stillness of His proof, the gnostics in the dazzlement of His sovereignty.” The sūra then unfolds man's doubt about his own resurrection, the harrowing scene of the death-agony — “when the breath rises to the throat” — and the parting of faces: those that, <em>radiant, turn their gaze toward their Lord</em> (the great verse of the vision of God), and those that are darkened. Qushayrī adds an unforgettable pearl: while men wash and bury the body of the deceased, <em>the Real clothes his soul in the adornments it deserves, washes it with the water of mercy, and prays over it with His angels</em>.",
+  "themes": ["Resurrection", "self-blaming soul", "vision of God", "death-agony", "clear sight against oneself"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "لَا أُقْسِمُ بِيَوْمِ الْقِيَامَةِ",
+      "tr": "lā uqsimu bi-yawmi l-qiyāmati",
+      "trad": "No!... I swear by the Day of Resurrection!",
+      "themes": ["oath", "Resurrection"],
+      "commentaire": "<em>lā uqsimu</em> (لا أُقْسِمُ): an emphatic oath-formula. Qushayrī: “it means: I swear by the Day of Resurrection.” The opening <em>lā</em> is not a true negation but a threshold: it sweeps aside what precedes — false certainties — to open onto the one certainty that counts. God swears by the Day of raising up: the standing of the whole being before Him.",
+      "mots": [
+        { "ar": "لَا أُقْسِمُ", "tr": "lā uqsimu", "racine": "ق س م", "sens": "I do swear", "def": "uqsimu: I swear; the lā reinforces the oath.", "gram": "imperfect verb, 1st pers., preceded by the particle lā" },
+        { "ar": "بِيَوْمِ", "tr": "bi-yawmi", "racine": "ي و م", "sens": "by the Day of", "def": "yawm: day.", "gram": "noun preceded by the oath-preposition bi-" },
+        { "ar": "الْقِيَامَةِ", "tr": "al-qiyāma", "racine": "ق و م", "sens": "the Resurrection, the raising up", "def": "qiyāma: raising up, resurrection; from qāma, to stand.", "gram": "complement of the noun" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَلَا أُقْسِمُ بِالنَّفْسِ اللَّوَّامَةِ",
+      "tr": "wa-lā uqsimu bi-l-nafsi l-lawwāmati",
+      "trad": "No!... I swear by the self-reproaching soul!",
+      "themes": ["oath", "self-blaming soul"],
+      "commentaire": "<em>al-nafs al-lawwāma</em> (النَّفْس اللَّوَّامَة): the soul that blames itself. Qushayrī defines it: “the soul that reproaches its possessor for his faults and acknowledges the deficiency of its state.” Tomorrow, he adds, every soul will blame itself — for its ingratitude or for its shortcoming. God thus swears by this inner voice of remorse: a sign that the conscience that accuses itself is already a beginning of salvation, whereas the soul satisfied with itself still sleeps.",
+      "mots": [
+        { "ar": "وَلَا أُقْسِمُ", "tr": "wa-lā uqsimu", "racine": "ق س م", "sens": "and I swear", "def": "reinforced oath.", "gram": "imperfect verb + lā" },
+        { "ar": "بِالنَّفْسِ", "tr": "bi-l-nafsi", "racine": "ن ف س", "sens": "by the soul", "def": "nafs: soul, ego.", "gram": "noun + preposition bi-" },
+        { "ar": "اللَّوَّامَةِ", "tr": "al-lawwāma", "racine": "ل و م", "sens": "that blames itself ceaselessly", "def": "lāma: to blame; lawwāma: intensive form, blaming much.", "gram": "intensive adjective fem." }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "أَيَحْسَبُ الْإِنسَانُ أَلَّن نَجْمَعَ عِظَامَهُ",
+      "tr": "a-yaḥsabu l-insānu allan najmaʿa ʿiẓāmahu",
+      "trad": "Does man think We shall not gather his bones?",
+      "themes": ["man's doubt", "resurrection of bodies"],
+      "commentaire": "“Does man imagine We shall not raise him after his death?” glosses Qushayrī. It all starts with this <em>supposition</em> (yaḥsabu): man takes the limit of his imagination for the limit of the possible. Because he himself cannot remake, he believes God cannot. The doubt here is not reason but the laziness of a mind closed to what lies beyond the visible.",
+      "mots": [
+        { "ar": "أَيَحْسَبُ", "tr": "a-yaḥsabu", "racine": "ح س ب", "sens": "does man think", "def": "ḥasiba: to think, suppose.", "gram": "interrogative hamza + imperfect verb" },
+        { "ar": "الْإِنسَانُ", "tr": "al-insān", "racine": "أ ن س", "sens": "man", "def": "insān: human being.", "gram": "noun, subject" },
+        { "ar": "أَلَّن نَجْمَعَ", "tr": "allan najmaʿa", "racine": "ج م ع", "sens": "that We shall not gather", "def": "jamaʿa: to gather.", "gram": "an + lan (negation of the future) + verb" },
+        { "ar": "عِظَامَهُ", "tr": "ʿiẓāmahu", "racine": "ع ظ م", "sens": "his bones", "def": "ʿaẓm: bone.", "gram": "plural noun + suffixed pronoun" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "بَلَىٰ قَادِرِينَ عَلَىٰ أَن نُّسَوِّيَ بَنَانَهُ",
+      "tr": "balā qādirīna ʿalā an nusawwiya banānahu",
+      "trad": "Yes indeed! We have the power to restore his very fingertips.",
+      "themes": ["divine power", "the detail of the fingers"],
+      "commentaire": "<em>balā</em> (بَلَى): “but yes!” — the rebuttal of doubt. <em>banān</em> (بَنان): the tips of the fingers. Qushayrī underlines the wonder of the detail: not only will God gather the bones, He will refashion the very <em>fingerprints</em>. “He who can remould the pulp of the fingers — each ridge unique — how could He not remake the whole man?” The miracle hides in the finest thing, where no one thinks to look.",
+      "mots": [
+        { "ar": "بَلَىٰ", "tr": "balā", "racine": "", "sens": "but yes", "def": "balā: affirmative particle answering a negation.", "gram": "particle of answer" },
+        { "ar": "قَادِرِينَ", "tr": "qādirīn", "racine": "ق د ر", "sens": "(being) able", "def": "qadara: to be able, have power.", "gram": "active participle plur., circumstantial (ḥāl)" },
+        { "ar": "أَن نُّسَوِّيَ", "tr": "an nusawwiya", "racine": "س و ي", "sens": "to refashion perfectly", "def": "sawwā: to fashion, level, perfect.", "gram": "an + imperfect verb (form II), subjunctive" },
+        { "ar": "بَنَانَهُ", "tr": "banānahu", "racine": "ب ن ن", "sens": "his fingertips", "def": "banān: the tips of the fingers.", "gram": "noun + suffixed pronoun" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "بَلْ يُرِيدُ الْإِنسَانُ لِيَفْجُرَ أَمَامَهُ",
+      "tr": "bal yurīdu l-insānu li-yafjura amāmahu",
+      "trad": "And yet, man prefers to deny what lies before him.",
+      "themes": ["headlong flight", "postponing repentance"],
+      "commentaire": "<em>li-yafjura amāmahu</em> (لِيَفْجُرَ أَمامَه): lit. “to transgress before him,” that is, in the time to come. Qushayrī gives a sharp spiritual reading: man “puts the fault forward and the repentance back.” He tells himself: “I shall repent later” — then dies without having repented. As long as the taste of the fault and the plan to return to it remain in the depth of the heart, repentance is not valid: for its very knot is to renounce the return.",
+      "mots": [
+        { "ar": "بَلْ", "tr": "bal", "racine": "", "sens": "rather", "def": "bal: particle of correction.", "gram": "particle" },
+        { "ar": "يُرِيدُ", "tr": "yurīdu", "racine": "ر و د", "sens": "he wants", "def": "arāda: to want.", "gram": "imperfect verb (form IV)" },
+        { "ar": "لِيَفْجُرَ", "tr": "li-yafjura", "racine": "ف ج ر", "sens": "to transgress", "def": "fajara: to sin, debauch, break the dam.", "gram": "lām of purpose + subjunctive verb" },
+        { "ar": "أَمَامَهُ", "tr": "amāmahu", "racine": "أ م م", "sens": "before him, in the future", "def": "amām: ahead, the time to come.", "gram": "adverb of place/time + pronoun" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "يَسْأَلُ أَيَّانَ يَوْمُ الْقِيَامَةِ",
+      "tr": "yasʾalu ayyāna yawmu l-qiyāmati",
+      "trad": "He asks: “When will the Day of Resurrection come?”",
+      "themes": ["incredulous question", "postponement"],
+      "commentaire": "“When then, the Day of Resurrection?” Qushayrī: the question is asked “out of incredulity” (istibʿād), not out of thirst for knowledge. To ask the date is yet another way of deferring: as long as the appointed time seems far off, one thinks oneself excused from preparing. Curiosity about the <em>when</em> is the mask of refusal.",
+      "mots": [
+        { "ar": "يَسْأَلُ", "tr": "yasʾalu", "racine": "س أ ل", "sens": "he asks", "def": "saʾala: to ask.", "gram": "imperfect verb" },
+        { "ar": "أَيَّانَ", "tr": "ayyāna", "racine": "", "sens": "when", "def": "ayyāna: when.", "gram": "interrogative adverb" },
+        { "ar": "يَوْمُ الْقِيَامَةِ", "tr": "yawmu l-qiyāma", "racine": "ق و م", "sens": "the Day of Resurrection", "def": "qiyāma: resurrection.", "gram": "subject + complement" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "فَإِذَا بَرِقَ الْبَصَرُ",
+      "tr": "fa-ʾidhā bariqa l-baṣaru",
+      "trad": "When the sight is dazzled,",
+      "themes": ["dazzling", "terror"],
+      "commentaire": "<em>bariqa l-baṣar</em> (بَرِقَ البَصَر): the gaze is dazzled, struck with stupor. Qushayrī notes the two readings: <em>bariqa</em> (i), it is seized with vertigo and confusion; <em>baraqa</em> (a), it freezes without blinking, transfixed with horror. It is the hour when the eye, until then sovereign in the world of the visible, no longer knows where to rest: the light of the Day overwhelms it.",
+      "mots": [
+        { "ar": "فَإِذَا", "tr": "fa-ʾidhā", "racine": "", "sens": "when", "def": "idhā: when.", "gram": "conditional particle" },
+        { "ar": "بَرِقَ", "tr": "bariqa", "racine": "ب ر ق", "sens": "was dazzled, struck with vertigo", "def": "bariqa: to be dazzled, struck with stupor.", "gram": "perfect verb" },
+        { "ar": "الْبَصَرُ", "tr": "al-baṣar", "racine": "ب ص ر", "sens": "the sight, the gaze", "def": "baṣar: sight.", "gram": "noun, subject" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "وَخَسَفَ الْقَمَرُ",
+      "tr": "wa-khasafa l-qamaru",
+      "trad": "when the moon is eclipsed,",
+      "themes": ["eclipse", "fading of lights"],
+      "commentaire": "<em>khasafa l-qamar</em> (خَسَفَ القَمَر): the moon is eclipsed, loses its brightness. The luminaries that ordered the night and the month are effaced. Inwardly: the borrowed glimmers — the ones the soul made do with — go out, that the one Light which is not eclipsed may remain.",
+      "mots": [
+        { "ar": "وَخَسَفَ", "tr": "wa-khasafa", "racine": "خ س ف", "sens": "and was eclipsed", "def": "khasafa: to be eclipsed, lose its light.", "gram": "perfect verb" },
+        { "ar": "الْقَمَرُ", "tr": "al-qamar", "racine": "ق م ر", "sens": "the moon", "def": "qamar: moon.", "gram": "noun, subject" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "وَجُمِعَ الشَّمْسُ وَالْقَمَرُ",
+      "tr": "wa-jumiʿa l-shamsu wa-l-qamaru",
+      "trad": "when the sun and the moon are brought together.",
+      "themes": ["joining of the heavenly bodies", "end of the cosmic order"],
+      "commentaire": "<em>jumiʿa l-shamsu wa-l-qamar</em> (جُمِعَ الشَّمْسُ وَالقَمَر): sun and moon are joined. Qushayrī reports the striking image: they will be joined “like two slaughtered bulls,” or united in the common loss of their light. What was separated to mark out time — day and night, the star of day and that of night — is merged: time itself is abolished in the eternity that opens.",
+      "mots": [
+        { "ar": "وَجُمِعَ", "tr": "wa-jumiʿa", "racine": "ج م ع", "sens": "and were brought together", "def": "jamaʿa: to gather.", "gram": "perfect verb, passive" },
+        { "ar": "الشَّمْسُ", "tr": "al-shams", "racine": "ش م س", "sens": "the sun", "def": "shams: sun.", "gram": "noun, subject" },
+        { "ar": "وَالْقَمَرُ", "tr": "wa-l-qamar", "racine": "ق م ر", "sens": "and the moon", "def": "qamar: moon.", "gram": "noun, coordinated" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "يَقُولُ الْإِنسَانُ يَوْمَئِذٍ أَيْنَ الْمَفَرُّ",
+      "tr": "yaqūlu l-insānu yawmaʾidhin ayna l-mafarru",
+      "trad": "That Day, man will say: “Where can I flee?”",
+      "themes": ["panic", "no refuge"],
+      "commentaire": "<em>ayna l-mafarr</em> (أَيْنَ المَفَرّ): “where is the escape?” Qushayrī evokes the moment when one is dragged toward Gehenna, when “no angel, no messenger says any longer: me, me! but: my soul, my soul!” Man casts about for a way out in every direction — but there is no longer any fleeing from the One whom one can flee only <em>into</em> Him.",
+      "mots": [
+        { "ar": "يَقُولُ", "tr": "yaqūlu", "racine": "ق و ل", "sens": "he will say", "def": "qāla: to say.", "gram": "imperfect verb" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "أَيْنَ", "tr": "ayna", "racine": "", "sens": "where", "def": "ayna: where.", "gram": "interrogative adverb" },
+        { "ar": "الْمَفَرُّ", "tr": "al-mafarr", "racine": "ف ر ر", "sens": "the place of flight, the escape", "def": "farra: to flee; mafarr: place to which one flees.", "gram": "noun of place" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "كَلَّا لَا وَزَرَ",
+      "tr": "kallā lā wazara",
+      "trad": "No indeed! There is no refuge!",
+      "themes": ["no shelter", "ineluctable decree"],
+      "commentaire": "<em>lā wazara</em> (لا وَزَر): no refuge. The <em>wazar</em>, it is explained, was the fortress or mountain where one sheltered from danger. Qushayrī: “that Day, no shelter, no flight from the decree of God.” All the ramparts man had built himself — wealth, alliances, cunning — prove vain. Nothing remains but to turn toward the One he was fleeing.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "", "sens": "no indeed, by no means", "def": "kallā: particle of denial and warning.", "gram": "particle" },
+        { "ar": "لَا وَزَرَ", "tr": "lā wazara", "racine": "و ز ر", "sens": "no refuge", "def": "wazar: shelter, fortress, mountain of refuge.", "gram": "lā of absolute negation + noun" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "إِلَىٰ رَبِّكَ يَوْمَئِذٍ الْمُسْتَقَرُّ",
+      "tr": "ilā rabbika yawmaʾidhin l-mustaqarru",
+      "trad": "That Day, the resting place will be with your Lord;",
+      "themes": ["return to God", "ultimate abode"],
+      "commentaire": "<em>al-mustaqarr</em> (المُستَقَرّ): the place of settling, the term. Qushayrī: “no way to escape His judgement.” Yet there is a hidden sweetness here: the only place where one finally comes to rest is <em>with your Lord</em>. Flight has no outlet, but return does — and it is the same movement, whether one endures it or embraces it.",
+      "mots": [
+        { "ar": "إِلَىٰ رَبِّكَ", "tr": "ilā rabbika", "racine": "ر ب ب", "sens": "to your Lord", "def": "rabb: Lord.", "gram": "preposition + noun + pronoun" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "الْمُسْتَقَرُّ", "tr": "al-mustaqarr", "racine": "ق ر ر", "sens": "the resting place, the term", "def": "istaqarra: to settle, become stable.", "gram": "noun of place, delayed subject" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "يُنَبَّأُ الْإِنسَانُ يَوْمَئِذٍ بِمَا قَدَّمَ وَأَخَّرَ",
+      "tr": "yunabbaʾu l-insānu yawmaʾidhin bimā qaddama wa-akhkhara",
+      "trad": "that Day, man will be informed of all he sent ahead and left behind.",
+      "themes": ["unveiling of deeds", "forgotten reckoning"],
+      "commentaire": "“He will know what he sent ahead — faults God has counted, even if the servant forgot them,” glosses Qushayrī. <em>Mā qaddama wa-akhkhara</em>: what he advanced (deeds committed) and what he deferred (what he neglected, or the consequences left behind him). Nothing is lost from the divine memory. Our forgetting does not erase the act; it only buries it until the Day it rises again.",
+      "mots": [
+        { "ar": "يُنَبَّأُ", "tr": "yunabbaʾu", "racine": "ن ب أ", "sens": "he will be informed", "def": "nabbaʾa: to inform, announce.", "gram": "imperfect verb, passive (form II)" },
+        { "ar": "بِمَا قَدَّمَ", "tr": "bimā qaddama", "racine": "ق د م", "sens": "of what he sent ahead", "def": "qaddama: to present, send forward.", "gram": "preposition + relative + verb" },
+        { "ar": "وَأَخَّرَ", "tr": "wa-akhkhara", "racine": "أ خ ر", "sens": "and left behind", "def": "akhkhara: to delay, leave behind.", "gram": "perfect verb (form II)" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "بَلِ الْإِنسَانُ عَلَىٰ نَفْسِهِ بَصِيرَةٌ",
+      "tr": "bali l-insānu ʿalā nafsihi baṣīratun",
+      "trad": "Man will be clear-sighted against himself,",
+      "themes": ["witness against oneself", "total lucidity"],
+      "commentaire": "A capital verse. <em>baṣīra</em> (بَصِيرَة): clear-sightedness, lucid witness. Qushayrī: “man is, against himself, a proof and a witness; his own limbs testify against him for what he has done.” On the Day of unveiling, no outer accuser is needed: the conscience becomes its own judge, endowed with a sight no veil can trouble. One sees oneself at last as one is — and that pitiless gaze is already the judgement.",
+      "mots": [
+        { "ar": "بَلِ", "tr": "bali", "racine": "", "sens": "rather", "def": "bal: particle of correction.", "gram": "particle" },
+        { "ar": "الْإِنسَانُ", "tr": "al-insān", "racine": "أ ن س", "sens": "man", "def": "insān: human being.", "gram": "noun, subject" },
+        { "ar": "عَلَىٰ نَفْسِهِ", "tr": "ʿalā nafsihi", "racine": "ن ف س", "sens": "against himself", "def": "nafs: soul, self.", "gram": "preposition + noun + pronoun" },
+        { "ar": "بَصِيرَةٌ", "tr": "baṣīra", "racine": "ب ص ر", "sens": "a clear sight, a lucid witness", "def": "baṣīra: inner vision, clear proof.", "gram": "noun, predicate" }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "وَلَوْ أَلْقَىٰ مَعَاذِيرَهُ",
+      "tr": "wa-law alqā maʿādhīrahu",
+      "trad": "even though he offers his excuses.",
+      "themes": ["vanity of excuses", "transparency"],
+      "commentaire": "<em>maʿādhīr</em> (مَعاذير): excuses, justifications. Qushayrī: even if he “brought every argument, it would not be accepted and would avail him nothing.” Before the <em>baṣīra</em> he has become against himself, excuses ring hollow: one no longer lies to oneself. Such is the nature of unveiling — not that words are forbidden, but that they no longer deceive anyone, beginning with oneself.",
+      "mots": [
+        { "ar": "وَلَوْ", "tr": "wa-law", "racine": "", "sens": "even if", "def": "law: if (hypothetical).", "gram": "conditional particle" },
+        { "ar": "أَلْقَىٰ", "tr": "alqā", "racine": "ل ق ي", "sens": "he offers, casts forth", "def": "alqā: to cast, present.", "gram": "perfect verb (form IV)" },
+        { "ar": "مَعَاذِيرَهُ", "tr": "maʿādhīrahu", "racine": "ع ذ ر", "sens": "his excuses", "def": "maʿdhira: excuse, justification.", "gram": "plural noun + pronoun" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "لَا تُحَرِّكْ بِهِ لِسَانَكَ لِتَعْجَلَ بِهِ",
+      "tr": "lā tuḥarrik bihi lisānaka li-taʿjala bihi",
+      "trad": "Do not move your tongue with it to hasten the recitation,",
+      "themes": ["receiving the revelation", "patience"],
+      "commentaire": "An aside addressed to the Prophet at the heart of the discourse on the Resurrection. Qushayrī: “Do not hasten to seize the Quran from the lips of Gabriel — for it is upon Us to gather it in your heart and fix it there.” The Prophet, fearing to forget, would race ahead of the recitation; he is taught the patience of reception. A lesson for every servant: not to outrun grace, but to receive it at its own pace.",
+      "mots": [
+        { "ar": "لَا تُحَرِّكْ", "tr": "lā tuḥarrik", "racine": "ح ر ك", "sens": "do not move", "def": "ḥarraka: to set in motion.", "gram": "negative imperative (form II)" },
+        { "ar": "بِهِ لِسَانَكَ", "tr": "bihi lisānaka", "racine": "ل س ن", "sens": "your tongue with it", "def": "lisān: tongue.", "gram": "preposition + noun + pronoun" },
+        { "ar": "لِتَعْجَلَ بِهِ", "tr": "li-taʿjala bihi", "racine": "ع ج ل", "sens": "to hasten it", "def": "ʿajila: to hasten.", "gram": "lām of purpose + subjunctive verb" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "إِنَّ عَلَيْنَا جَمْعَهُ وَقُرْآنَهُ",
+      "tr": "inna ʿalaynā jamʿahu wa-qurʾānahu",
+      "trad": "it is for Us to gather it and to recite it.",
+      "themes": ["divine guarantee", "the Quran entrusted to the heart"],
+      "commentaire": "<em>jamʿahu wa-qurʾānahu</em> (جَمْعَهُ وَقُرْآنَهُ): its gathering and its recitation. Qushayrī: “it is upon Us to gather it in your heart and preserve it there, and upon Us to make its recitation easy upon your tongue.” What is entrusted by God, God keeps. The servant need not exhaust himself in retaining: it is enough to hold out the heart; the deposit is protected by the One who lays it there.",
+      "mots": [
+        { "ar": "إِنَّ عَلَيْنَا", "tr": "inna ʿalaynā", "racine": "", "sens": "it is incumbent upon Us", "def": "ʿalā: upon, charged to.", "gram": "inna + preposition + pronoun" },
+        { "ar": "جَمْعَهُ", "tr": "jamʿahu", "racine": "ج م ع", "sens": "its gathering", "def": "jamʿ: act of bringing together.", "gram": "verbal noun + pronoun" },
+        { "ar": "وَقُرْآنَهُ", "tr": "wa-qurʾānahu", "racine": "ق ر أ", "sens": "and its recitation", "def": "qurʾān: recitation, reading.", "gram": "verbal noun + pronoun" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "فَإِذَا قَرَأْنَاهُ فَاتَّبِعْ قُرْآنَهُ",
+      "tr": "fa-ʾidhā qaraʾnāhu fa-ttabiʿ qurʾānahu",
+      "trad": "When We recite it, follow its recitation;",
+      "themes": ["listening", "following grace"],
+      "commentaire": "“When We have gathered it in your heart and fixed it, then follow its recitation.” Qushayrī: the right posture is to <em>follow</em>, not to precede. First to receive in silence, then to recite. The whole spiritual life holds in this order: God gives, then man responds; the initiative belongs to grace, the fidelity to the servant.",
+      "mots": [
+        { "ar": "فَإِذَا قَرَأْنَاهُ", "tr": "fa-ʾidhā qaraʾnāhu", "racine": "ق ر أ", "sens": "when We have recited it", "def": "qaraʾa: to read, recite.", "gram": "particle + perfect verb + pronoun" },
+        { "ar": "فَاتَّبِعْ", "tr": "fa-ttabiʿ", "racine": "ت ب ع", "sens": "then follow", "def": "ittabaʿa: to follow.", "gram": "imperative (form VIII)" },
+        { "ar": "قُرْآنَهُ", "tr": "qurʾānahu", "racine": "ق ر أ", "sens": "its recitation", "def": "qurʾān: recitation.", "gram": "noun + pronoun" }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "ثُمَّ إِنَّ عَلَيْنَا بَيَانَهُ",
+      "tr": "thumma inna ʿalaynā bayānahu",
+      "trad": "then it is for Us, thereafter, to make it clear.",
+      "themes": ["divine explanation", "the meaning given by God"],
+      "commentaire": "<em>bayānahu</em> (بَيانَهُ): its explanation. Qushayrī: “We shall make clear to you what it contains — the lawful, the unlawful, and the rest.” Not only does God give the text, He gives its meaning. True understanding is itself a gift: one does not force the sense of a divine word, one awaits it and receives it. To read is human, to understand is a grace.",
+      "mots": [
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "", "sens": "then", "def": "thumma: thereafter.", "gram": "particle" },
+        { "ar": "إِنَّ عَلَيْنَا", "tr": "inna ʿalaynā", "racine": "", "sens": "it is incumbent upon Us", "def": "to Our charge.", "gram": "inna + preposition + pronoun" },
+        { "ar": "بَيَانَهُ", "tr": "bayānahu", "racine": "ب ي ن", "sens": "its clarification", "def": "bayān: clear exposition, elucidation.", "gram": "noun + pronoun" }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "كَلَّا بَلْ تُحِبُّونَ الْعَاجِلَةَ",
+      "tr": "kallā bal tuḥibbūna l-ʿājilata",
+      "trad": "No indeed! You love the fleeting present",
+      "themes": ["love of the present", "root of denial"],
+      "commentaire": "<em>al-ʿājila</em> (العاجِلَة): the immediate, the hasty — this lower life. Qushayrī: “what drives them to deny the Resurrection is that they love the immediate, that is, abiding in this world.” The denial of the hereafter has its source not in the head but in the heart: one does not believe what one does not want. Attachment to the present shuts the eyes to the future.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "", "sens": "no indeed", "def": "kallā: denial.", "gram": "particle" },
+        { "ar": "بَلْ", "tr": "bal", "racine": "", "sens": "rather", "def": "bal: correction.", "gram": "particle" },
+        { "ar": "تُحِبُّونَ", "tr": "tuḥibbūna", "racine": "ح ب ب", "sens": "you love", "def": "aḥabba: to love.", "gram": "imperfect verb (form IV), 2nd pers. plur." },
+        { "ar": "الْعَاجِلَةَ", "tr": "al-ʿājila", "racine": "ع ج ل", "sens": "the immediate, the fleeting", "def": "ʿājila: the present life, which hastens away.", "gram": "noun, object" }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "وَتَذَرُونَ الْآخِرَةَ",
+      "tr": "wa-tadharūna l-ākhirata",
+      "trad": "and you neglect the life to come.",
+      "themes": ["neglect of the hereafter", "reversed choice"],
+      "commentaire": "<em>tadharūna</em> (تَذَرُونَ): you leave, you forsake. Qushayrī: “you abandon the work for the hereafter” — or even: “you deny it.” To love the immediate and forsake the eternal: that is the fool's bargain denounced by the whole sūra. One prefers the little that passes to the all that abides, for want of believing the all exists.",
+      "mots": [
+        { "ar": "وَتَذَرُونَ", "tr": "wa-tadharūna", "racine": "و ذ ر", "sens": "and you forsake", "def": "wadhara: to leave, abandon.", "gram": "imperfect verb, 2nd pers. plur." },
+        { "ar": "الْآخِرَةَ", "tr": "al-ākhira", "racine": "أ خ ر", "sens": "the life to come", "def": "ākhira: the hereafter.", "gram": "noun, object" }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "وُجُوهٌ يَوْمَئِذٍ نَّاضِرَةٌ",
+      "tr": "wujūhun yawmaʾidhin nāḍiratun",
+      "trad": "That Day, there will be radiant faces",
+      "themes": ["radiant faces", "joy of the encounter"],
+      "commentaire": "<em>nāḍira</em> (ناضِرَة): radiant, blooming, fresh with beauty. Qushayrī: “bright and beautiful — and it is so because it <em>looks toward its Lord</em>.” The radiance of the face is not a separate ornament: it is the reflection of the vision. One becomes luminous from what one contemplates. And Qushayrī notes: this radiance is a sign of expansion (basṭ), for these faces are in the state of full presence (ṣaḥw), without vertigo or stupor — “for subsistence in the encounter is more perfect than the encounter itself.”",
+      "mots": [
+        { "ar": "وُجُوهٌ", "tr": "wujūh", "racine": "و ج ه", "sens": "faces", "def": "wajh: face, countenance.", "gram": "plural noun, subject" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "نَّاضِرَةٌ", "tr": "nāḍira", "racine": "ن ض ر", "sens": "radiant", "def": "naḍara: to be flourishing, bright.", "gram": "active participle fem., predicate" }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "إِلَىٰ رَبِّهَا نَاظِرَةٌ",
+      "tr": "ilā rabbihā nāẓiratun",
+      "trad": "turning their gaze toward their Lord.",
+      "themes": ["vision of God", "contemplation"],
+      "commentaire": "The summit-verse of the whole sūra: <em>ilā rabbihā nāẓira</em> (إلى رَبِّها ناظِرَة) — “toward their Lord, gazing.” Qushayrī establishes that <em>naẓar</em> joined to <em>ilā</em> and ascribed to the face can mean nothing but real <em>vision</em>: God will create in their faces, in Paradise, the vision of Him, against the usual order of things. He finely adds: “the face does not see, but the eye in the face sees — as the river does not flow, but the water in the river flows.” And he adds the nuance of the realised: for the one who has been extinguished in the Existence (al-wujūd), the servant's annihilation in the Real is more complete still than the vision — for vision presupposes a seer who subsists.",
+      "mots": [
+        { "ar": "إِلَىٰ رَبِّهَا", "tr": "ilā rabbihā", "racine": "ر ب ب", "sens": "toward their Lord", "def": "rabb: Lord.", "gram": "preposition + noun + pronoun" },
+        { "ar": "نَاظِرَةٌ", "tr": "nāẓira", "racine": "ن ظ ر", "sens": "gazing, contemplating", "def": "naẓara: to look; with ilā: to truly see.", "gram": "active participle fem., predicate" }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "وَوُجُوهٌ يَوْمَئِذٍ بَاسِرَةٌ",
+      "tr": "wa-wujūhun yawmaʾidhin bāsiratun",
+      "trad": "That Day, there will be downcast faces",
+      "themes": ["darkened faces", "contrast"],
+      "commentaire": "<em>bāsira</em> (باسِرَة): scowling, darkened, contracted, glosses Qushayrī. The contrast is total with the radiant faces: there, the blossoming of one who sees his Lord; here, the shrinking of one who sees himself deprived of Him. The face betrays the state of the heart: one carries on the brow the light or the night one has chosen.",
+      "mots": [
+        { "ar": "وَوُجُوهٌ", "tr": "wa-wujūh", "racine": "و ج ه", "sens": "and faces", "def": "wajh: face.", "gram": "plural noun, subject" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "بَاسِرَةٌ", "tr": "bāsira", "racine": "ب س ر", "sens": "scowling, darkened", "def": "basara: to grow gloomy, to frown.", "gram": "active participle fem., predicate" }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "تَظُنُّ أَن يُفْعَلَ بِهَا فَاقِرَةٌ",
+      "tr": "taẓunnu an yufʿala bihā fāqiratun",
+      "trad": "sensing that a crushing calamity awaits them.",
+      "themes": ["foreboding of doom", "calamity"],
+      "commentaire": "<em>fāqira</em> (فاقِرَة): the calamity that breaks the spine. Qushayrī recalls the origin of the word: the branding with a hot iron on the camel's muzzle, reaching to the bone. The <em>fāqira</em>, here, is “abiding in the Fire” — the disaster that does not pass. And he notes: this foreboding itself is created by God in the faces, like a forerunning sign of the verdict.",
+      "mots": [
+        { "ar": "تَظُنُّ", "tr": "taẓunnu", "racine": "ظ ن ن", "sens": "it senses, presumes", "def": "ẓanna: to think, presume.", "gram": "imperfect verb" },
+        { "ar": "أَن يُفْعَلَ بِهَا", "tr": "an yufʿala bihā", "racine": "ف ع ل", "sens": "that there be inflicted upon it", "def": "faʿala: to do.", "gram": "an + passive subjunctive verb + preposition" },
+        { "ar": "فَاقِرَةٌ", "tr": "fāqira", "racine": "ف ق ر", "sens": "a spine-breaking calamity", "def": "fāqira: disaster that breaks the vertebrae.", "gram": "noun, subject" }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "كَلَّا إِذَا بَلَغَتِ التَّرَاقِيَ",
+      "tr": "kallā idhā balaghati l-tarāqiya",
+      "trad": "No indeed! When the breath rises to the collarbones,",
+      "themes": ["death-agony", "the soul at the throat"],
+      "commentaire": "<em>al-tarāqī</em> (التَّراقي): the collarbones, the hollow of the throat. Qushayrī: “when their soul reaches the throat” — it is the instant of the death-agony, when the breath rises to the threshold of the body it is about to leave. The sūra descends here to the most concrete: no longer the distant Day, but the hour each will know, when the least detail of the visible tips into the invisible.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "", "sens": "no indeed", "def": "kallā: denial, warning.", "gram": "particle" },
+        { "ar": "إِذَا بَلَغَتِ", "tr": "idhā balaghati", "racine": "ب ل غ", "sens": "when it reaches", "def": "balagha: to reach, attain.", "gram": "particle + perfect verb" },
+        { "ar": "التَّرَاقِيَ", "tr": "al-tarāqī", "racine": "ت ر ق", "sens": "the collarbones, the throat", "def": "tarquwa: collarbone.", "gram": "plural noun, complement" }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "وَقِيلَ مَنْ رَاقٍ",
+      "tr": "wa-qīla man rāqin",
+      "trad": "and it is asked: “Who can heal him?”,",
+      "themes": ["human helplessness", "vain recourse"],
+      "commentaire": "<em>man rāqin</em> (مَنْ راقٍ): “who can heal by incantation?” Qushayrī gives two readings. The first, human: those around the dying man ask “is there a healer, a physician, a remedy?” — knowing there is none against death. The second, angelic and more striking: it is the angels around him who ask “who will bear his soul up — angels of mercy or angels of chastisement?” The soul, barely gone out, is already awaited, and its fate is decided at the instant of the threshold.",
+      "mots": [
+        { "ar": "وَقِيلَ", "tr": "wa-qīla", "racine": "ق و ل", "sens": "and it is said", "def": "qāla: to say; passive: it is said.", "gram": "perfect verb, passive" },
+        { "ar": "مَنْ", "tr": "man", "racine": "", "sens": "who", "def": "man: who.", "gram": "interrogative pronoun" },
+        { "ar": "رَاقٍ", "tr": "rāqin", "racine": "ر ق ي", "sens": "healer, who bears up", "def": "raqā: to heal by incantation, or to raise up.", "gram": "active participle" }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "وَظَنَّ أَنَّهُ الْفِرَاقُ",
+      "tr": "wa-ẓanna annahu l-firāqu",
+      "trad": "and he realizes: “This is the parting!”,",
+      "themes": ["parting", "certainty of death"],
+      "commentaire": "<em>al-firāq</em> (الفِراق): the parting. Qushayrī: “the dying man then knows it is death.” The word <em>ẓanna</em> here no longer speaks of doubt but of the near-certainty that imposes itself. It is the hour when all illusions of duration fall away: one parts from the body, from kin, from possessions, from the world. For the prepared heart, this parting from everything is the eve of a union; for the other, a sheer tearing-away.",
+      "mots": [
+        { "ar": "وَظَنَّ", "tr": "wa-ẓanna", "racine": "ظ ن ن", "sens": "and he senses, realizes", "def": "ẓanna: to presume, be almost sure.", "gram": "perfect verb" },
+        { "ar": "أَنَّهُ الْفِرَاقُ", "tr": "annahu l-firāq", "racine": "ف ر ق", "sens": "that it is the parting", "def": "firāq: separation, departure.", "gram": "anna + pronoun + noun" }
+      ]
+    },
+    {
+      "n": 29,
+      "ar": "وَالْتَفَّتِ السَّاقُ بِالسَّاقِ",
+      "tr": "wa-ltaffati l-sāqu bi-l-sāqi",
+      "trad": "when leg twists against leg,",
+      "themes": ["spasm of the agony", "two ordeals"],
+      "commentaire": "<em>iltaffati l-sāqu bi-l-sāq</em> (التَفَّتِ السَّاقُ بِالسَّاق): the dying man's legs coil one against the other in the final spasm. Qushayrī gives a deep reading: “thus the hardship of the end of the world joins the hardship of the beginning of the hereafter.” At the instant of the threshold, the two worlds touch: one leaves the one in pain, one enters the other in dread — or in peace, according to what one has prepared.",
+      "mots": [
+        { "ar": "وَالْتَفَّتِ", "tr": "wa-ltaffati", "racine": "ل ف ف", "sens": "and coiled", "def": "iltaffa: to coil, intertwine.", "gram": "perfect verb (form VIII)" },
+        { "ar": "السَّاقُ بِالسَّاقِ", "tr": "al-sāqu bi-l-sāq", "racine": "س و ق", "sens": "leg against leg", "def": "sāq: leg, shin.", "gram": "subject + complement" }
+      ]
+    },
+    {
+      "n": 30,
+      "ar": "إِلَىٰ رَبِّكَ يَوْمَئِذٍ الْمَسَاقُ",
+      "tr": "ilā rabbika yawmaʾidhin l-masāqu",
+      "trad": "that Day, each is driven toward your Lord.",
+      "themes": ["leading the soul to God", "hidden mercy"],
+      "commentaire": "<em>al-masāq</em> (المَساق): the driving, the being led. Qushayrī: “the angels lead his soul toward God, where He commands them to bear it: either to ʿIlliyyīn — with varying degrees —, or to Sijjīn — with varying abysses.” And here is the unforgettable pearl: <em>while men wash the body of the deceased, wrap it and pray over it, the Real clothes his soul in the adornments it deserves, washes it with the water of mercy, and prays over it with His angels.</em> To the outer washing of the body answers the inner washing of the soul by grace.",
+      "mots": [
+        { "ar": "إِلَىٰ رَبِّكَ", "tr": "ilā rabbika", "racine": "ر ب ب", "sens": "toward your Lord", "def": "rabb: Lord.", "gram": "preposition + noun + pronoun" },
+        { "ar": "يَوْمَئِذٍ", "tr": "yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "adverb of time" },
+        { "ar": "الْمَسَاقُ", "tr": "al-masāq", "racine": "س و ق", "sens": "the driving, the leading", "def": "sāqa: to drive, lead; masāq: the being led.", "gram": "noun of place/action, delayed subject" }
+      ]
+    },
+    {
+      "n": 31,
+      "ar": "فَلَا صَدَّقَ وَلَا صَلَّىٰ",
+      "tr": "fa-lā ṣaddaqa wa-lā ṣallā",
+      "trad": "He did not acknowledge the truth, nor did he pray;",
+      "themes": ["twofold failure", "neither faith nor prayer"],
+      "commentaire": "A portrait of the denier. Qushayrī: “he neither believed in God nor prayed to Him; he denied and turned away from faith.” Two twin refusals: the refusal of the heart (not to acknowledge the truth) and the refusal of the body (not to prostrate). Faith that does not bend the knee is not yet faith, and prayer without inner acknowledgement is but a gesture; here both are lacking together.",
+      "mots": [
+        { "ar": "فَلَا صَدَّقَ", "tr": "fa-lā ṣaddaqa", "racine": "ص د ق", "sens": "he did not believe", "def": "ṣaddaqa: to hold true, believe.", "gram": "lā + perfect verb (form II)" },
+        { "ar": "وَلَا صَلَّىٰ", "tr": "wa-lā ṣallā", "racine": "ص ل و", "sens": "nor did he pray", "def": "ṣallā: to pray.", "gram": "lā + perfect verb (form II)" }
+      ]
+    },
+    {
+      "n": 32,
+      "ar": "وَلَٰكِن كَذَّبَ وَتَوَلَّىٰ",
+      "tr": "wa-lākin kadhdhaba wa-tawallā",
+      "trad": "on the contrary, he cried lies and turned away;",
+      "themes": ["denial", "turning away"],
+      "commentaire": "<em>kadhdhaba wa-tawallā</em> (كَذَّبَ وَتَوَلَّى): he denied and turned away. To the two omissions of the previous verse answer two positive acts of refusal: not only did he not believe, he actively treated the truth as a lie; not only did he not pray, he turned his back. Evil is not mere absence: it becomes movement, a repeated choice to draw away.",
+      "mots": [
+        { "ar": "وَلَٰكِن", "tr": "wa-lākin", "racine": "", "sens": "but on the contrary", "def": "lākin: but.", "gram": "particle of opposition" },
+        { "ar": "كَذَّبَ", "tr": "kadhdhaba", "racine": "ك ذ ب", "sens": "he denied", "def": "kadhdhaba: to treat as a lie.", "gram": "perfect verb (form II)" },
+        { "ar": "وَتَوَلَّىٰ", "tr": "wa-tawallā", "racine": "و ل ي", "sens": "and turned away", "def": "tawallā: to turn away.", "gram": "perfect verb (form V)" }
+      ]
+    },
+    {
+      "n": 33,
+      "ar": "ثُمَّ ذَهَبَ إِلَىٰ أَهْلِهِ يَتَمَطَّىٰ",
+      "tr": "thumma dhahaba ilā ahlihi yatamaṭṭā",
+      "trad": "then he went off to his people, strutting.",
+      "themes": ["pride", "self-satisfaction"],
+      "commentaire": "<em>yatamaṭṭā</em> (يَتَمَطَّى): he walks puffed up, glosses Qushayrī: “he struts and swaggers.” The summit of the portrait: not content to refuse, here he returns to his people swollen with himself, as if he had triumphed. Pride is the natural outcome of denial: having rejected what is greater than oneself, one fancies oneself the greatest. The gait betrays the heart.",
+      "mots": [
+        { "ar": "ثُمَّ ذَهَبَ", "tr": "thumma dhahaba", "racine": "ذ ه ب", "sens": "then he went off", "def": "dhahaba: to go.", "gram": "particle + perfect verb" },
+        { "ar": "إِلَىٰ أَهْلِهِ", "tr": "ilā ahlihi", "racine": "أ ه ل", "sens": "to his people", "def": "ahl: family, kin.", "gram": "preposition + noun + pronoun" },
+        { "ar": "يَتَمَطَّىٰ", "tr": "yatamaṭṭā", "racine": "م ط و", "sens": "strutting", "def": "tamaṭṭā: to swagger, walk with arrogance.", "gram": "imperfect verb (form V), state" }
+      ]
+    },
+    {
+      "n": 34,
+      "ar": "أَوْلَىٰ لَكَ فَأَوْلَىٰ",
+      "tr": "awlā laka fa-awlā",
+      "trad": "Woe to you, and woe again!",
+      "themes": ["threat", "imminence"],
+      "commentaire": "<em>awlā laka</em> (أَوْلى لَكَ): an expression of threat. Qushayrī: the Arabs, to call down misfortune upon someone, would say “awlā laka!”; the repetition increases its force. He offers the gloss: “woe to you the day you live, woe to you the day you die, woe to you the day you are raised, woe to you the day you enter the Fire.” The threat encircles man on all sides, present and to come.",
+      "mots": [
+        { "ar": "أَوْلَىٰ لَكَ", "tr": "awlā laka", "racine": "و ل ي", "sens": "woe to you", "def": "awlā laka: a formula of threat, “this is your due.”", "gram": "fixed expression" },
+        { "ar": "فَأَوْلَىٰ", "tr": "fa-awlā", "racine": "و ل ي", "sens": "and woe again", "def": "repetition of intensity.", "gram": "particle + expression" }
+      ]
+    },
+    {
+      "n": 35,
+      "ar": "ثُمَّ أَوْلَىٰ لَكَ فَأَوْلَىٰ",
+      "tr": "thumma awlā laka fa-awlā",
+      "trad": "Again, woe to you, and woe again!",
+      "themes": ["redoubled threat", "insistence"],
+      "commentaire": "The threat is redoubled, hammered home. Qushayrī recalls that tradition reports the Prophet may have addressed these verses to Abū Jahl, the harshest adversary of the early days. The repetition is not merely rhetorical: it imitates the ineluctable, what comes back and comes back again. To the pride that thought itself safe answers this stubborn reminder: you will not escape.",
+      "mots": [
+        { "ar": "ثُمَّ", "tr": "thumma", "racine": "", "sens": "then again", "def": "thumma: thereafter.", "gram": "particle" },
+        { "ar": "أَوْلَىٰ لَكَ فَأَوْلَىٰ", "tr": "awlā laka fa-awlā", "racine": "و ل ي", "sens": "woe to you, and woe again", "def": "redoubled formula of threat.", "gram": "fixed expression repeated" }
+      ]
+    },
+    {
+      "n": 36,
+      "ar": "أَيَحْسَبُ الْإِنسَانُ أَن يُتْرَكَ سُدًى",
+      "tr": "a-yaḥsabu l-insānu an yutraka sudan",
+      "trad": "Does man think he will be left to himself, unbound?",
+      "themes": ["responsibility", "the meaning of life"],
+      "commentaire": "<em>sudan</em> (سُدى): left to abandon, with no charge and no account to render. Qushayrī: “neglected, with no obligation? It is not so.” A decisive question: does man imagine himself created without purpose, free of all responsibility? But a creature endowed with hearing, sight, and heart is not a whim without sequel. To be called to account is no threat: it is the very dignity of a being who matters in the eyes of his Creator.",
+      "mots": [
+        { "ar": "أَيَحْسَبُ", "tr": "a-yaḥsabu", "racine": "ح س ب", "sens": "does he think", "def": "ḥasiba: to think, suppose.", "gram": "interrogation + imperfect verb" },
+        { "ar": "أَن يُتْرَكَ", "tr": "an yutraka", "racine": "ت ر ك", "sens": "that he be left", "def": "taraka: to leave.", "gram": "an + passive subjunctive verb" },
+        { "ar": "سُدًى", "tr": "sudan", "racine": "س د ي", "sens": "to abandon, without purpose", "def": "sudā: left to oneself, unconstrained.", "gram": "circumstantial (ḥāl)" }
+      ]
+    },
+    {
+      "n": 37,
+      "ar": "أَلَمْ يَكُ نُطْفَةً مِّن مَّنِيٍّ يُمْنَىٰ",
+      "tr": "a-lam yaku nuṭfatan min maniyyin yumnā",
+      "trad": "Was he not a drop of fluid emitted?",
+      "themes": ["humble origin", "argument from creation"],
+      "commentaire": "<em>nuṭfa</em> (نُطْفَة): a drop. Qushayrī: “a drop placed in the womb.” The argument for resurrection closes upon the origin: remember whence you came. This tiny drop, without form or name, became this being who doubts and struts. He who drew so much from so little can well draw life out of death. The proud man of verse 33 is sent back to his liquid source.",
+      "mots": [
+        { "ar": "أَلَمْ يَكُ", "tr": "a-lam yaku", "racine": "ك و ن", "sens": "was he not", "def": "kāna: to be.", "gram": "interrogation + jussive verb" },
+        { "ar": "نُطْفَةً", "tr": "nuṭfatan", "racine": "ن ط ف", "sens": "a drop", "def": "nuṭfa: drop of seminal fluid.", "gram": "noun, predicate" },
+        { "ar": "مِّن مَّنِيٍّ", "tr": "min maniyyin", "racine": "م ن ي", "sens": "of semen", "def": "maniyy: sperm.", "gram": "preposition + noun" },
+        { "ar": "يُمْنَىٰ", "tr": "yumnā", "racine": "م ن ي", "sens": "that is emitted, deposited", "def": "amnā: to emit, deposit.", "gram": "imperfect verb, passive" }
+      ]
+    },
+    {
+      "n": 38,
+      "ar": "ثُمَّ كَانَ عَلَقَةً فَخَلَقَ فَسَوَّىٰ",
+      "tr": "thumma kāna ʿalaqatan fa-khalaqa fa-sawwā",
+      "trad": "Then it became a clinging clot which God formed and fashioned.",
+      "themes": ["stages of formation", "fashioning"],
+      "commentaire": "<em>ʿalaqa</em> (عَلَقَة): a clot, clinging blood; <em>sawwā</em> (سَوَّى): He fashioned, set in just proportion. Qushayrī: “He arranged its limbs in its mother's womb, ordered its parts according to its form.” From drop to clot, from clot to form: a patient ascent in which each stage heralds the next. The same verb <em>sawwā</em> that speaks of the fashioning of the heaven (s. 79, v. 28) here speaks of the fashioning of the embryo — the same art, the same Artisan.",
+      "mots": [
+        { "ar": "ثُمَّ كَانَ", "tr": "thumma kāna", "racine": "ك و ن", "sens": "then it was", "def": "kāna: to be, become.", "gram": "particle + perfect verb" },
+        { "ar": "عَلَقَةً", "tr": "ʿalaqatan", "racine": "ع ل ق", "sens": "a clinging clot", "def": "ʿalaqa: coagulated blood, adhesion.", "gram": "noun, predicate" },
+        { "ar": "فَخَلَقَ", "tr": "fa-khalaqa", "racine": "خ ل ق", "sens": "then He created", "def": "khalaqa: to create.", "gram": "perfect verb" },
+        { "ar": "فَسَوَّىٰ", "tr": "fa-sawwā", "racine": "س و ي", "sens": "and fashioned harmoniously", "def": "sawwā: to perfect, proportion.", "gram": "perfect verb (form II)" }
+      ]
+    },
+    {
+      "n": 39,
+      "ar": "فَجَعَلَ مِنْهُ الزَّوْجَيْنِ الذَّكَرَ وَالْأُنثَىٰ",
+      "tr": "fa-jaʿala minhu l-zawjayni l-dhakara wa-l-unthā",
+      "trad": "From it He made a pair: the male and the female.",
+      "themes": ["polarity", "the pair"],
+      "commentaire": "<em>al-zawjayn</em> (الزَّوْجَيْن): the two members of the pair. Qushayrī: “from the same drop: if He wills, the male; if He wills, the female; if He wills, both.” From a single, undifferentiated origin God draws the polarity that makes life. The same fluid, and yet the masculine and the feminine: a sign that the richness of the created lies not in the diversity of origins but in the freedom of the Creator, who distinguishes what He wills from what He wills.",
+      "mots": [
+        { "ar": "فَجَعَلَ", "tr": "fa-jaʿala", "racine": "ج ع ل", "sens": "and He made", "def": "jaʿala: to make, establish.", "gram": "perfect verb" },
+        { "ar": "مِنْهُ", "tr": "minhu", "racine": "", "sens": "from it", "def": "min + pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "الزَّوْجَيْنِ", "tr": "al-zawjayn", "racine": "ز و ج", "sens": "the pair", "def": "zawj: spouse, pair.", "gram": "dual noun, object" },
+        { "ar": "الذَّكَرَ وَالْأُنثَىٰ", "tr": "al-dhakara wa-l-unthā", "racine": "ذ ك ر / أ ن ث", "sens": "the male and the female", "def": "dhakar: male; unthā: female.", "gram": "apposition" }
+      ]
+    },
+    {
+      "n": 40,
+      "ar": "أَلَيْسَ ذَٰلِكَ بِقَادِرٍ عَلَىٰ أَن يُحْيِيَ الْمَوْتَىٰ",
+      "tr": "a-laysa dhālika bi-qādirin ʿalā an yuḥyiya l-mawtā",
+      "trad": "Is the One who did this not able to bring the dead to life?",
+      "themes": ["conclusion", "proof through creation"],
+      "commentaire": "A closing verse, in the form of a question whose answer lies within it. Qushayrī: “The One who had power over all this — has He not the power to give life to the dead? — an interrogation with the meaning of affirmation.” The whole sūra returns to its starting point (v. 3): the doubt about resurrection collapses before the evidence of the first creation. To remake is easier than to make; and He who could draw a living being from a drop will be at no loss to draw it from the dust. The circle is closed: the end answers the beginning.",
+      "mots": [
+        { "ar": "أَلَيْسَ ذَٰلِكَ", "tr": "a-laysa dhālika", "racine": "ل ي س", "sens": "Is that One not", "def": "laysa: not (negative verb of state).", "gram": "interrogation + verb + demonstrative" },
+        { "ar": "بِقَادِرٍ", "tr": "bi-qādirin", "racine": "ق د ر", "sens": "able", "def": "qādir: powerful, able.", "gram": "active participle + emphatic bi-" },
+        { "ar": "أَن يُحْيِيَ", "tr": "an yuḥyiya", "racine": "ح ي ي", "sens": "to bring to life", "def": "aḥyā: to give life, resurrect.", "gram": "an + subjunctive verb (form IV)" },
+        { "ar": "الْمَوْتَىٰ", "tr": "al-mawtā", "racine": "م و ت", "sens": "the dead", "def": "mawtā: the dead.", "gram": "plural noun, object" }
+      ]
+    }
+  ]
+}

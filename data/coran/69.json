@@ -1,0 +1,633 @@
+{
+  "n": 69,
+  "nom_ar": "الحَاقَّة",
+  "nom_tr": "al-Ḥāqqa",
+  "nom_fr": "L'Inéluctable",
+  "revelation": "mecquoise",
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "versets_count": 52,
+  "intro": "al-Ḥāqqa — « l'Inéluctable » — tire son nom, dit Qushayrī, de ce qu'« elle rend chaque homme redevable de son œuvre, bonne ou mauvaise » : ce qui doit advenir adviendra, ce qui est dû sera rendu. La sourate rappelle les peuples anéantis — les Thamūd, les ʿĀd, Pharaon —, lit dans l'arche de Noé une image du salut des intimes « portés dans le vaisseau du bien-être tandis que le cosmos se débat dans les vagues de la dispersion », puis décrit le Jour : la trompe soufflée, la terre et les montagnes pulvérisées, le ciel fendu, le Trône porté par huit. Vient alors le partage des deux livres : celui qu'on reçoit dans la main droite — « tenez, lisez mon livre ! » — et celui de la main gauche. Qushayrī y greffe une perle bouleversante sur les délaissés : <em>il est aujourd'hui des hommes éloignés, dont les soupirs montent et l'angoisse redouble ; ils se croient rejetés — et ils sont, en vérité, des miséricordiés de Dieu : Il a laissé tomber sur eux le voile, et les a rapetissés à leurs propres yeux — eux qui sont les plus nobles de l'histoire</em>. La sourate s'achève sur l'affirmation que ce Coran est révélation du Seigneur des mondes, « la Vérité de la certitude », et l'ordre de glorifier le Nom du Seigneur immense.",
+  "themes": ["l'Inéluctable", "peuples anéantis", "le partage des deux livres", "les délaissés voilés de grâce", "la Vérité de la certitude"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "الْحَاقَّةُ",
+      "tr": "al-ḥāqqatu",
+      "trad": "l'Inéluctable !",
+      "themes": ["l'Inéluctable", "le Jour"],
+      "commentaire": "<em>al-ḥāqqa</em > (الحَاقَّة) : l'Inéluctable, ce qui se réalise immanquablement. Qushayrī : « c'est un nom de la Résurrection, car elle rend chaque homme redevable de son œuvre, bonne ou mauvaise. » La racine <em>ḥaqq</em> dit le vrai, le dû, ce qui s'impose. La sourate s'ouvre sur ce seul mot, lancé comme un coup : ce Jour est celui où tout devient exigible, où chaque acte réclame son compte. L'Inéluctable n'est pas une menace lointaine mais la vérité de fond de toute vie : ce qu'on a fait reviendra à soi.",
+      "mots": [
+        { "ar": "الْحَاقَّةُ", "tr": "al-ḥāqqa", "racine": "ح ق ق", "sens": "l'Inéluctable", "def": "ḥāqqa : ce qui se réalise nécessairement, qui rend dû.", "gram": "participe actif fém., nom propre du Jour" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "مَا الْحَاقَّةُ",
+      "tr": "mā l-ḥāqqatu",
+      "trad": "Qu'est-ce que l'Inéluctable ?",
+      "themes": ["question", "grandeur du Jour"],
+      "commentaire": "<em>mā l-ḥāqqa</em > (ما الحَاقَّة) : qu'est-ce que l'Inéluctable ? La question reprend le mot pour en creuser la portée. Ce n'est pas une demande d'information mais un procédé d'amplification : répéter le nom, le suspendre dans une interrogation, c'est en grossir la gravité. Avant même de décrire le Jour, le Coran en fait pressentir l'immensité par ce martèlement. La répétition du mot dit l'ampleur de ce qu'aucune parole ne peut contenir.",
+      "mots": [
+        { "ar": "مَا", "tr": "mā", "racine": "", "sens": "qu'est-ce que", "def": "mā : interrogatif.", "gram": "interrogatif" },
+        { "ar": "الْحَاقَّةُ", "tr": "al-ḥāqqa", "racine": "ح ق ق", "sens": "l'Inéluctable", "def": "ḥāqqa : la Résurrection inéluctable.", "gram": "nom propre" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَمَا أَدْرَاكَ مَا الْحَاقَّةُ",
+      "tr": "wa-mā adrāka mā l-ḥāqqatu",
+      "trad": "Qu'est-ce qui te fera connaître ce qu'est l'Inéluctable ?",
+      "themes": ["au-delà du savoir", "magnification"],
+      "commentaire": "<em>wa-mā adrāka</em > (وَما أَدْراكَ) : qu'est-ce qui te fera savoir ? Qushayrī : « interrogation qui sert à magnifier son affaire, à grandir son importance. » Comme pour Saqar (s. 74, v. 27) et le Jour de la Décision (s. 77, v. 14), la formule ne répond pas mais creuse le mystère. L'Inéluctable dépasse tout ce que l'esprit peut concevoir ; même au Prophète, sa pleine réalité est voilée. Le triple appel — l'Inéluctable, qu'est-ce, qu'est-ce qui te le fera savoir — installe une gravité solennelle avant le récit des peuples anéantis.",
+      "mots": [
+        { "ar": "وَمَا أَدْرَاكَ", "tr": "wa-mā adrāka", "racine": "د ر ي", "sens": "qu'est-ce qui te fera savoir", "def": "adrā : faire savoir.", "gram": "interrogatif + verbe + pronom" },
+        { "ar": "مَا الْحَاقَّةُ", "tr": "mā l-ḥāqqa", "racine": "ح ق ق", "sens": "ce qu'est l'Inéluctable", "def": "ḥāqqa : la Résurrection.", "gram": "interrogatif + nom" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "كَذَّبَتْ ثَمُودُ وَعَادٌ بِالْقَارِعَةِ",
+      "tr": "kadhdhabat thamūdu wa-ʿādun bi-l-qāriʿati",
+      "trad": "Les Thamoud et les 'Ad ont traité de mensonge le grand coup.",
+      "themes": ["démenti des peuples", "le grand fracas"],
+      "commentaire": "<em>al-qāriʿa</em > (القارِعَة) : le grand fracas, ce qui frappe — autre nom du Jour. Qushayrī : « la sourate mentionne ceux qui démentirent leurs messagers, s'obstinèrent dans leur déni, n'acceptèrent pas le conseil de leurs prophètes ; Il les anéantit, et vengea Ses prophètes. Le profit de leur mention est la leçon (iʿtibār) qu'on en tire, le fait de se garder de ce qu'ils firent, pour ne pas subir ce qu'ils subirent. » Thamūd et ʿĀd, peuples puissants, ont nié le Jour qui frappe — et ce Jour les a rejoints autrement, par leur destruction même. Démentir l'Inéluctable ne l'écarte pas ; cela hâte sa venue.",
+      "mots": [
+        { "ar": "كَذَّبَتْ ثَمُودُ وَعَادٌ", "tr": "kadhdhabat thamūdu wa-ʿād", "racine": "ك ذ ب", "sens": "Thamūd et ʿĀd ont démenti", "def": "kadhdhaba : traiter de mensonge.", "gram": "verbe + sujets" },
+        { "ar": "بِالْقَارِعَةِ", "tr": "bi-l-qāriʿa", "racine": "ق ر ع", "sens": "le grand fracas", "def": "qāriʿa : ce qui frappe, le cataclysme.", "gram": "préposition + nom" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "فَأَمَّا ثَمُودُ فَأُهْلِكُوا بِالطَّاغِيَةِ",
+      "tr": "fa-ammā thamūdu fa-uhlikū bi-l-ṭāghiyati",
+      "trad": "Pour les Thamoud, ils ont été détruits par la foudre.",
+      "themes": ["destruction des Thamūd", "la démesure"],
+      "commentaire": "<em>bi-l-ṭāghiya</em > (بِالطّاغِيَة) : par le cataclysme excédant toute mesure (le cri foudroyant, ou la foudre). Le mot partage la racine de <em>ṭughyān</em>, la démesure : les Thamūd, qui avaient outrepassé les bornes, furent saisis par une force démesurée. La sanction épouse la faute : à la démesure de l'orgueil répond la démesure du châtiment. Ce qui les a frappés portait, dans son nom même, l'écho de leur transgression.",
+      "mots": [
+        { "ar": "فَأَمَّا ثَمُودُ", "tr": "fa-ammā thamūd", "racine": "", "sens": "quant aux Thamūd", "def": "Thamūd : peuple de Ṣāliḥ.", "gram": "particule + nom propre" },
+        { "ar": "فَأُهْلِكُوا بِالطَّاغِيَةِ", "tr": "fa-uhlikū bi-l-ṭāghiya", "racine": "ه ل ك / ط غ ي", "sens": "ils furent détruits par le cataclysme", "def": "ahlaka : détruire ; ṭāghiya : ce qui dépasse toute mesure.", "gram": "verbe passif + complément" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "وَأَمَّا عَادٌ فَأُهْلِكُوا بِرِيحٍ صَرْصَرٍ عَاتِيَةٍ",
+      "tr": "wa-ammā ʿādun fa-uhlikū bi-rīḥin ṣarṣarin ʿātiyatin",
+      "trad": "Quant aux 'Ad, ils ont été détruits par un vent mugissant et impétueux",
+      "themes": ["destruction des ʿĀd", "le vent déchaîné"],
+      "commentaire": "<em>rīḥ ṣarṣar ʿātiya</em > (ريح صَرْصَر عاتِيَة) : un vent glacial, hurlant, déchaîné. Qushayrī donne ici une lecture intérieure saisissante : de même que les ʿĀd furent détruits par le vent, « certains des intimes, s'ils divulguent un secret ou négligent un adab, sont châtiés par les <em>vents du voilement</em> (riyāḥ al-ḥijba) : il ne reste plus en leur cœur de trace de la révérence pour la religion ni de leurs états passés. » Le vent qui ravage au-dehors a son répondant au-dedans : il est des bourrasques spirituelles qui dépouillent le cœur de ses lumières, lorsqu'il a manqué à la garde du secret.",
+      "mots": [
+        { "ar": "وَأَمَّا عَادٌ", "tr": "wa-ammā ʿād", "racine": "", "sens": "quant aux ʿĀd", "def": "ʿĀd : peuple de Hūd.", "gram": "particule + nom propre" },
+        { "ar": "فَأُهْلِكُوا بِرِيحٍ صَرْصَرٍ عَاتِيَةٍ", "tr": "fa-uhlikū bi-rīḥin ṣarṣarin ʿātiya", "racine": "ه ل ك / ص ر ص ر / ع ت و", "sens": "détruits par un vent hurlant, déchaîné", "def": "ṣarṣar : vent glacial et bruyant ; ʿātiya : déchaînée.", "gram": "verbe passif + complément + adjectifs" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "سَخَّرَهَا عَلَيْهِمْ سَبْعَ لَيَالٍ وَثَمَانِيَةَ أَيَّامٍ حُسُومًا فَتَرَى الْقَوْمَ فِيهَا صَرْعَىٰ كَأَنَّهُمْ أَعْجَازُ نَخْلٍ خَاوِيَةٍ",
+      "tr": "sakhkharahā ʿalayhim sabʿa layālin wa-thamāniyata ayyāmin ḥusūman fa-tarā l-qawma fīhā ṣarʿā kaʾannahum aʿjāzu nakhlin khāwiyatin",
+      "trad": "que Dieu a fait souffler contre eux durant sept nuits et huit jours sans discontinuer. Alors, tu aurais pu voir ces gens couchés à terre comme des troncs de palmiers évidés.",
+      "themes": ["sept nuits, huit jours", "anéantissement total"],
+      "commentaire": "<em>kaʾannahum aʿjāzu nakhlin khāwiya</em > (كَأَنَّهُمْ أَعْجازُ نَخْلٍ خاوِيَة) : comme des troncs de palmiers creux, abattus. Image saisissante : ce peuple jadis vigoureux, géants orgueilleux, gît à terre comme des souches vidées. <em>Ḥusūman</em> : sans répit, durée qui « tranche » net. Le vent souffla sept nuits et huit jours, jusqu'à ne plus rien laisser. La grandeur physique des ʿĀd n'a pesé d'aucun poids : un souffle de Dieu les a couchés. L'image du palmier creux dit la vacuité de toute force qui se croit autonome : majestueuse au-dehors, vide au-dedans, elle s'effondre au premier vent du Réel.",
+      "mots": [
+        { "ar": "سَخَّرَهَا عَلَيْهِمْ", "tr": "sakhkharahā ʿalayhim", "racine": "س خ ر", "sens": "Il le déchaîna contre eux", "def": "sakhkhara : soumettre, déchaîner.", "gram": "verbe (forme II) + compléments" },
+        { "ar": "سَبْعَ لَيَالٍ وَثَمَانِيَةَ أَيَّامٍ حُسُومًا", "tr": "sabʿa layālin wa-thamāniyata ayyāmin ḥusūman", "racine": "ح س م", "sens": "sept nuits et huit jours sans répit", "def": "ḥusūm : continu, qui tranche.", "gram": "compléments de temps + état" },
+        { "ar": "صَرْعَىٰ", "tr": "ṣarʿā", "racine": "ص ر ع", "sens": "abattus, terrassés", "def": "ṣarʿā : gisant à terre.", "gram": "complément d'état" },
+        { "ar": "كَأَنَّهُمْ أَعْجَازُ نَخْلٍ خَاوِيَةٍ", "tr": "kaʾannahum aʿjāzu nakhlin khāwiya", "racine": "ع ج ز / ن خ ل / خ و ي", "sens": "comme des troncs de palmiers évidés", "def": "aʿjāz nakhl : souches de palmiers ; khāwiya : creuse.", "gram": "particule + nom + adjectif" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "فَهَلْ تَرَىٰ لَهُم مِّن بَاقِيَةٍ",
+      "tr": "fa-hal tarā lahum min bāqiyatin",
+      "trad": "Peux-tu en voir qui auraient subsisté ?",
+      "themes": ["nul survivant", "néant de la puissance"],
+      "commentaire": "<em>hal tarā lahum min bāqiya</em > (هَلْ تَرى لَهُمْ مِنْ باقِيَة) : en vois-tu un seul qui subsiste ? Question dont la réponse est le vide. De ce peuple immense, rien ne reste. La puissance qui semblait éternelle s'est effacée sans laisser de trace. La question interpelle le présent : qu'est-il advenu de leur force, de leur orgueil ? Rien. Telle est la leçon des ruines : ce qui se croit indestructible passe, et seul demeure Celui qui ne passe pas. La permanence n'appartient qu'à Dieu.",
+      "mots": [
+        { "ar": "فَهَلْ تَرَىٰ لَهُم", "tr": "fa-hal tarā lahum", "racine": "ر أ ي", "sens": "en vois-tu pour eux", "def": "raʾā : voir.", "gram": "interrogatif + verbe + complément" },
+        { "ar": "مِّن بَاقِيَةٍ", "tr": "min bāqiya", "racine": "ب ق ي", "sens": "quelque survivant", "def": "bāqiya : ce qui reste, subsiste.", "gram": "préposition + participe actif fém." }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "وَجَاءَ فِرْعَوْنُ وَمَن قَبْلَهُ وَالْمُؤْتَفِكَاتُ بِالْخَاطِئَةِ",
+      "tr": "wa-jāʾa firʿawnu wa-man qablahu wa-l-muʾtafikātu bi-l-khāṭiʾati",
+      "trad": "Pharaon, ceux qui vécurent avant lui et les cités renversées commirent des fautes :",
+      "themes": ["Pharaon", "les cités renversées"],
+      "commentaire": "<em>wa-l-muʾtafikāt bi-l-khāṭiʾa</em > (وَالمُؤْتَفِكاتُ بِالخاطِئَة) : les cités renversées, par leur faute. Aux peuples de Thamūd et ʿĀd s'ajoutent Pharaon et les cités du peuple de Loth, « retournées » de fond en comble. Qushayrī avait noté que Pharaon « fut châtié par la noyade ; de même, celui qui avait un temps libre, occupé à l'obéissance de son Seigneur, mais qui ne rend pas grâce du bienfait, néglige son adab et méconnaît la valeur de la grâce reçue, Dieu le renvoie aux causes de la dispersion, puis le noie dans les mers de la préoccupation. » Toute destruction extérieure porte un enseignement intérieur : se détourner de Dieu après l'avoir connu noie le cœur.",
+      "mots": [
+        { "ar": "وَجَاءَ فِرْعَوْنُ وَمَن قَبْلَهُ", "tr": "wa-jāʾa firʿawnu wa-man qablahu", "racine": "ج ي أ / ق ب ل", "sens": "Pharaon vint, et ceux d'avant lui", "def": "Firʿawn : Pharaon.", "gram": "verbe + sujet + relatif" },
+        { "ar": "وَالْمُؤْتَفِكَاتُ", "tr": "wa-l-muʾtafikāt", "racine": "أ ف ك", "sens": "et les cités renversées", "def": "muʾtafikāt : villes retournées (peuple de Loth).", "gram": "nom plur." },
+        { "ar": "بِالْخَاطِئَةِ", "tr": "bi-l-khāṭiʾa", "racine": "خ ط أ", "sens": "par la faute", "def": "khāṭiʾa : faute, péché.", "gram": "préposition + nom" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "فَعَصَوْا رَسُولَ رَبِّهِمْ فَأَخَذَهُمْ أَخْذَةً رَّابِيَةً",
+      "tr": "fa-ʿaṣaw rasūla rabbihim fa-akhadhahum akhdhatan rābiyatan",
+      "trad": "ils désobéirent au prophète de leur Seigneur, et Celui-ci les saisit avec une force irrésistible.",
+      "themes": ["désobéissance au messager", "saisie accablante"],
+      "commentaire": "<em>akhdhatan rābiya</em > (أَخْذَةً رابِيَة) : une saisie accablante, qui déborde. Tous ces peuples ont une faute commune : <em>fa-ʿaṣaw rasūla rabbihim</em> — ils désobéirent au messager de leur Seigneur. La racine du désastre est toujours là : refuser le messager envoyé. La saisie qui suit est « rābiya », qui croît et déborde — à la mesure de la transgression. La loi est constante à travers l'histoire : à chaque peuple son messager, à chaque refus sa conséquence. Désobéir au porteur de la vérité, c'est appeler sur soi la saisie de Celui qui l'envoie.",
+      "mots": [
+        { "ar": "فَعَصَوْا رَسُولَ رَبِّهِمْ", "tr": "fa-ʿaṣaw rasūla rabbihim", "racine": "ع ص ي / ر س ل", "sens": "ils désobéirent au messager de leur Seigneur", "def": "ʿaṣā : désobéir.", "gram": "verbe + complément" },
+        { "ar": "فَأَخَذَهُمْ أَخْذَةً رَّابِيَةً", "tr": "fa-akhadhahum akhdhatan rābiya", "racine": "أ خ ذ / ر ب و", "sens": "Il les saisit d'une saisie accablante", "def": "akhdha : saisie ; rābiya : qui déborde.", "gram": "verbe + complément absolu + adjectif" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "إِنَّا لَمَّا طَغَى الْمَاءُ حَمَلْنَاكُمْ فِي الْجَارِيَةِ",
+      "tr": "innā lammā ṭaghā l-māʾu ḥamalnākum fī l-jāriyati",
+      "trad": "Mais Nous, lorsque l'eau déborda, Nous vous portâmes sur le vaisseau,",
+      "themes": ["l'arche de Noé", "salut des intimes"],
+      "commentaire": "<em>ḥamalnākum fī l-jāriya</em > (حَمَلْناكُمْ في الجارِيَة) : Nous vous portâmes dans le vaisseau. Au déluge qui engloutit les pécheurs répond l'arche qui sauve. Qushayrī donne une lecture intérieure splendide : « ainsi est Sa grâce sur l'élite de Ses saints, lorsqu'Il les met à l'abri dans le <em>vaisseau du bien-être</em> (safīnat al-ʿāfiya), tandis que le cosmos se débat dans les vagues des mers de la préoccupation, sous leurs formes diverses : eux demeurent dans la sécurité, sans dispute ni compte à régler avec personne, sans rien attendre de personne — saufs des gens, et les gens saufs d'eux. » L'arche de Noé est l'image du cœur que Dieu garde au milieu des tempêtes du monde : porté, à l'abri, en paix.",
+      "mots": [
+        { "ar": "إِنَّا لَمَّا طَغَى الْمَاءُ", "tr": "innā lammā ṭaghā l-māʾ", "racine": "ط غ ي / م و ه", "sens": "lorsque l'eau déborda", "def": "ṭaghā : déborder, monter.", "gram": "inna + adverbe + verbe + sujet" },
+        { "ar": "حَمَلْنَاكُمْ فِي الْجَارِيَةِ", "tr": "ḥamalnākum fī l-jāriya", "racine": "ح م ل / ج ر ي", "sens": "Nous vous portâmes dans le vaisseau", "def": "ḥamala : porter ; jāriya : vaisseau qui vogue.", "gram": "verbe + pronom + complément" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "لِنَجْعَلَهَا لَكُمْ تَذْكِرَةً وَتَعِيَهَا أُذُنٌ وَاعِيَةٌ",
+      "tr": "li-najʿalahā lakum tadhkiratan wa-taʿiyahā udhunun wāʿiyatun",
+      "trad": "afin d'en faire pour vous un rappel et pour qu'une oreille attentive le retienne.",
+      "themes": ["le rappel", "l'oreille qui recueille"],
+      "commentaire": "<em>taʿiyahā udhunun wāʿiya</em > (تَعِيَها أُذُنٌ واعِيَة) : qu'une oreille attentive la recueille. L'arche est faite « rappel » (tadhkira) : un signe à méditer. Mais le signe n'atteint que <em>l'oreille qui recueille</em> (wāʿiya) — celle qui non seulement entend mais retient, garde, médite. Comme dans al-Mulk (s. 67, v. 10), l'écoute vraie est un sens spirituel : il ne suffit pas que le son entre, il faut que le cœur le conserve. Le même rappel passe sur tous, mais seule l'oreille vivante le fait sien. Tout dépend de la qualité de l'écoute.",
+      "mots": [
+        { "ar": "لِنَجْعَلَهَا لَكُمْ تَذْكِرَةً", "tr": "li-najʿalahā lakum tadhkira", "racine": "ج ع ل / ذ ك ر", "sens": "pour en faire pour vous un rappel", "def": "tadhkira : rappel.", "gram": "lām de but + verbe + complément" },
+        { "ar": "وَتَعِيَهَا أُذُنٌ وَاعِيَةٌ", "tr": "wa-taʿiyahā udhunun wāʿiya", "racine": "و ع ي / أ ذ ن", "sens": "qu'une oreille attentive la retienne", "def": "waʿā : recueillir, retenir ; wāʿiya : qui conserve.", "gram": "verbe + sujet + adjectif" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "فَإِذَا نُفِخَ فِي الصُّورِ نَفْخَةٌ وَاحِدَةٌ",
+      "tr": "fa-idhā nufikha fī l-ṣūri nafkhatun wāḥidatun",
+      "trad": "Lorsqu'on sonnera une seule fois la trompette,",
+      "themes": ["la trompe", "un seul souffle"],
+      "commentaire": "<em>nafkhatun wāḥida</em > (نَفْخَةٌ واحِدَة) : un seul souffle. Tout ce que les hommes croient solide s'effondre à un unique souffle dans la trompe. Comme dans al-Nāziʿāt (s. 79), il n'y faut pas d'effort : un seul cri, et l'ordre du monde se défait. La sourate passe du récit des peuples passés à l'horizon du Jour : ce qui les frappa un à un frappera l'univers entier d'un coup. L'unicité du souffle dit la facilité absolue avec laquelle Dieu défait ce qu'Il a fait.",
+      "mots": [
+        { "ar": "فَإِذَا نُفِخَ فِي الصُّورِ", "tr": "fa-idhā nufikha fī l-ṣūr", "racine": "ن ف خ / ص و ر", "sens": "lorsqu'on soufflera dans la trompe", "def": "nafakha : souffler ; ṣūr : trompe.", "gram": "particule + verbe passif + complément" },
+        { "ar": "نَفْخَةٌ وَاحِدَةٌ", "tr": "nafkhatun wāḥida", "racine": "ن ف خ / و ح د", "sens": "un seul souffle", "def": "nafkha : souffle ; wāḥida : unique.", "gram": "sujet + adjectif" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "وَحُمِلَتِ الْأَرْضُ وَالْجِبَالُ فَدُكَّتَا دَكَّةً وَاحِدَةً",
+      "tr": "wa-ḥumilati l-arḍu wa-l-jibālu fa-dukkatā dakkatan wāḥidatan",
+      "trad": "lorsque la terre et les montagnes seront emportées et pulvérisées d'un seul coup,",
+      "themes": ["pulvérisation", "effondrement du solide"],
+      "commentaire": "<em>fa-dukkatā dakkatan wāḥida</em > (فَدُكَّتا دَكَّةً واحِدَة) : pulvérisées d'un seul broiement. La terre et les montagnes — symboles mêmes de la stabilité — sont soulevées puis broyées en une seule fois. Tout ce sur quoi l'homme s'appuie cède. Comme le palmier creux des ʿĀd (v. 7), la solidité du monde se révèle illusoire au Jour. Un seul coup suffit à réduire en poussière ce qui paraissait éternel. Seule demeure ferme la réalité fondée en Dieu ; tout le reste se broie.",
+      "mots": [
+        { "ar": "وَحُمِلَتِ الْأَرْضُ وَالْجِبَالُ", "tr": "wa-ḥumilati l-arḍu wa-l-jibāl", "racine": "ح م ل / أ ر ض / ج ب ل", "sens": "la terre et les montagnes seront soulevées", "def": "ḥumila : être porté, soulevé.", "gram": "verbe passif + sujets" },
+        { "ar": "فَدُكَّتَا دَكَّةً وَاحِدَةً", "tr": "fa-dukkatā dakkatan wāḥida", "racine": "د ك ك", "sens": "pulvérisées d'un seul coup", "def": "dakka : broyer, pulvériser.", "gram": "verbe passif duel + complément absolu" }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "فَيَوْمَئِذٍ وَقَعَتِ الْوَاقِعَةُ",
+      "tr": "fa-yawmaʾidhin waqaʿati l-wāqiʿatu",
+      "trad": "ce Jour-là surviendra l'Evénement ;",
+      "themes": ["l'Événement", "la Résurrection"],
+      "commentaire": "<em>waqaʿati l-wāqiʿa</em > (وَقَعَتِ الواقِعَة) : l'Événement advint. <em>Al-Wāqiʿa</em> — ce qui tombe, advient immanquablement — est encore un nom du Jour (titre de la sourate 56). Après le souffle et le broiement, l'Événement se produit : ce qui était annoncé devient présent. Tous les noms du Jour — l'Inéluctable, le Fracas, l'Événement — disent la même certitude sous des angles divers. Ce qui devait tomber tombe : la promesse se réalise, et nul ne peut plus la repousser.",
+      "mots": [
+        { "ar": "فَيَوْمَئِذٍ", "tr": "fa-yawmaʾidhin", "racine": "ي و م", "sens": "ce jour-là", "def": "yawmaʾidhin : ce jour-là.", "gram": "adverbe de temps" },
+        { "ar": "وَقَعَتِ الْوَاقِعَةُ", "tr": "waqaʿati l-wāqiʿa", "racine": "و ق ع", "sens": "l'Événement survint", "def": "waqaʿa : tomber, advenir ; wāqiʿa : l'Événement.", "gram": "verbe + sujet" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "وَانشَقَّتِ السَّمَاءُ فَهِيَ يَوْمَئِذٍ وَاهِيَةٌ",
+      "tr": "wa-nshaqqati l-samāʾu fa-hiya yawmaʾidhin wāhiyatun",
+      "trad": "le ciel se fendra et, ce Jour-là, il sera fragile.",
+      "themes": ["ciel fendu", "fragilité de la voûte"],
+      "commentaire": "<em>fa-hiya yawmaʾidhin wāhiya</em > (فَهِيَ يَوْمَئِذٍ واهِيَة) : et il sera, ce Jour-là, fragile, distendu. Le ciel, la voûte qui semblait la plus solide et la plus haute, se fend et devient ténu comme un tissu usé. Ce qui paraissait inébranlable se révèle frêle. Au Jour, l'ordre des grandeurs s'inverse : le plus haut cède. La fragilité soudaine du ciel dit que nulle structure créée n'a de solidité propre ; tout ne tient que par la main qui le maintient (cf. les oiseaux, s. 67, v. 19), et cette main, ce Jour, relâche ce qu'elle tenait.",
+      "mots": [
+        { "ar": "وَانشَقَّتِ السَّمَاءُ", "tr": "wa-nshaqqati l-samāʾ", "racine": "ش ق ق / س م و", "sens": "le ciel se fendra", "def": "inshaqqa : se fendre.", "gram": "verbe accompli (forme VII) + sujet" },
+        { "ar": "فَهِيَ يَوْمَئِذٍ وَاهِيَةٌ", "tr": "fa-hiya yawmaʾidhin wāhiya", "racine": "و ه ي", "sens": "il sera ce jour-là fragile", "def": "wāhiya : frêle, distendue.", "gram": "pronom + adverbe + attribut" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "وَالْمَلَكُ عَلَىٰ أَرْجَائِهَا وَيَحْمِلُ عَرْشَ رَبِّكَ فَوْقَهُمْ يَوْمَئِذٍ ثَمَانِيَةٌ",
+      "tr": "wa-l-malaku ʿalā arjāʾihā wa-yaḥmilu ʿarsha rabbika fawqahum yawmaʾidhin thamāniyatun",
+      "trad": "Les anges se tiendront sur ses confins et, ce Jour-là, huit d'entre eux porteront au-dessus d'eux le trône de ton Seigneur.",
+      "themes": ["les anges aux confins", "le Trône porté"],
+      "commentaire": "<em>yaḥmilu ʿarsha rabbika fawqahum yawmaʾidhin thamāniya</em > (يَحْمِلُ عَرْشَ رَبِّكَ فَوْقَهُمْ يَوْمَئِذٍ ثَمانِيَة) : huit porteront le Trône de ton Seigneur. Tandis que le ciel se déchire, les anges se rangent aux confins de ce qui reste, et huit d'entre eux portent le Trône. Image de la majesté souveraine au milieu de l'effondrement universel : tout se défait, mais le Trône — symbole du Règne — demeure, porté, élevé. Quand toutes les structures cèdent, la seigneurie de Dieu se manifeste dans sa pleine grandeur. Le nombre huit reste mystérieux ; ce qui importe est que le Trône, lui, ne tombe pas.",
+      "mots": [
+        { "ar": "وَالْمَلَكُ عَلَىٰ أَرْجَائِهَا", "tr": "wa-l-malaku ʿalā arjāʾihā", "racine": "م ل ك / ر ج و", "sens": "les anges sur ses confins", "def": "malak : ange (collectif) ; arjāʾ : confins, bords.", "gram": "nom + complément" },
+        { "ar": "وَيَحْمِلُ عَرْشَ رَبِّكَ فَوْقَهُمْ", "tr": "wa-yaḥmilu ʿarsha rabbika fawqahum", "racine": "ح م ل / ع ر ش", "sens": "ils portent le Trône de ton Seigneur au-dessus d'eux", "def": "ʿarsh : Trône.", "gram": "verbe + complément + adverbe" },
+        { "ar": "يَوْمَئِذٍ ثَمَانِيَةٌ", "tr": "yawmaʾidhin thamāniya", "racine": "ث م ن", "sens": "ce jour-là, huit", "def": "thamāniya : huit.", "gram": "adverbe + numéral, sujet" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "يَوْمَئِذٍ تُعْرَضُونَ لَا تَخْفَىٰ مِنكُمْ خَافِيَةٌ",
+      "tr": "yawmaʾidhin tuʿraḍūna lā takhfā minkum khāfiyatun",
+      "trad": "Ce Jour-là, vous serez exposés sans qu'aucun de vos secrets ne reste caché.",
+      "themes": ["exposition totale", "nul secret caché"],
+      "commentaire": "<em>lā takhfā minkum khāfiya</em > (لا تَخْفى مِنْكُمْ خافِيَة) : nul secret de vous ne demeurera caché. Le Jour est celui du dévoilement total : on est <em>exposé</em> (tuʿraḍūn), mis à découvert, sans que rien du for intérieur ne puisse rester voilé. Ce que l'on cachait aux hommes, et parfois à soi-même, apparaît en pleine lumière. Mais Celui devant qui tout se dévoile connaissait déjà tout (cf. s. 67, v. 13) : le Jour ne Lui apprend rien ; il révèle seulement à chacun ce qu'il était. Vivre dans la conscience que rien n'est caché, c'est commencer dès maintenant à se tenir dans la vérité.",
+      "mots": [
+        { "ar": "يَوْمَئِذٍ تُعْرَضُونَ", "tr": "yawmaʾidhin tuʿraḍūn", "racine": "ع ر ض", "sens": "ce jour-là vous serez exposés", "def": "ʿaraḍa : exposer, présenter.", "gram": "adverbe + verbe passif" },
+        { "ar": "لَا تَخْفَىٰ مِنكُمْ خَافِيَةٌ", "tr": "lā takhfā minkum khāfiya", "racine": "خ ف ي", "sens": "nul secret de vous ne reste caché", "def": "khāfiya : ce qui est caché.", "gram": "négation + verbe + sujet" }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "فَأَمَّا مَنْ أُوتِيَ كِتَابَهُ بِيَمِينِهِ فَيَقُولُ هَاؤُمُ اقْرَءُوا كِتَابِيَهْ",
+      "tr": "fa-ammā man ūtiya kitābahu bi-yamīnihi fa-yaqūlu hāʾumu qraʾū kitābiyah",
+      "trad": "Celui qui recevra son livre dans la main droite dira : « Tenez, lisez mon livre !",
+      "themes": ["le livre de la main droite", "joie du dévoilement"],
+      "commentaire": "<em>hāʾumu qraʾū kitābiyah</em > (هاؤُمُ اقْرَؤوا كِتابِيَهْ) : tenez, lisez mon livre ! Cri de joie de celui qui reçoit son registre dans la main droite : il l'offre fièrement à lire, n'ayant rien à cacher. Qushayrī : « le bonheur de la grâce de Dieu lui est acquis, et il se met à la louange. » Le dévoilement total (v. 18), qui terrifie le coupable, réjouit le juste : pour lui, n'avoir rien de caché est une libération, non une honte. Il invite les autres à lire son livre — geste de transparence heureuse. Celui qui a vécu sous le Regard n'a rien à redouter du dévoilement.",
+      "mots": [
+        { "ar": "فَأَمَّا مَنْ أُوتِيَ كِتَابَهُ بِيَمِينِهِ", "tr": "fa-ammā man ūtiya kitābahu bi-yamīnihi", "racine": "أ ت ي / ك ت ب / ي م ن", "sens": "celui à qui son livre est donné dans la droite", "def": "ūtiya : recevoir ; yamīn : droite.", "gram": "particule + relatif + verbe passif + compléments" },
+        { "ar": "فَيَقُولُ هَاؤُمُ اقْرَءُوا كِتَابِيَهْ", "tr": "fa-yaqūlu hāʾumu qraʾū kitābiyah", "racine": "ق و ل / ق ر أ", "sens": "il dit : tenez, lisez mon livre", "def": "hāʾum : tenez ; qaraʾa : lire.", "gram": "verbe + impératif + complément" }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "إِنِّي ظَنَنتُ أَنِّي مُلَاقٍ حِسَابِيَهْ",
+      "tr": "innī ẓanantu annī mulāqin ḥisābiyah",
+      "trad": "Je pensais bien que j'aurais à rendre compte !,",
+      "themes": ["la certitude du compte", "vie vécue dans l'attente"],
+      "commentaire": "<em>ẓanantu annī mulāqin ḥisābiyah</em > (ظَنَنْتُ أَنّي مُلاقٍ حِسابِيَهْ) : je pensais bien rencontrer mon compte. Le secret de sa joie : il a vécu en attendant ce Jour. <em>Ẓanantu</em> ici n'est pas doute mais certitude vécue : il s'est tenu, toute sa vie, dans la conscience qu'il rendrait compte. C'est l'exact contraire des dénégateurs qui « ne s'attendaient à aucun compte » (s. 78, v. 27). Avoir vécu en attendant le compte, c'est s'y être préparé ; et qui s'y est préparé l'accueille avec joie. La certitude du retour, gardée dans la vie, devient sérénité au Jour.",
+      "mots": [
+        { "ar": "إِنِّي ظَنَنتُ", "tr": "innī ẓanantu", "racine": "ظ ن ن", "sens": "je pensais bien", "def": "ẓanna : penser, être convaincu.", "gram": "inna + verbe accompli" },
+        { "ar": "أَنِّي مُلَاقٍ حِسَابِيَهْ", "tr": "annī mulāqin ḥisābiyah", "racine": "ل ق ي / ح س ب", "sens": "que je rencontrerais mon compte", "def": "mulāqī : qui rencontre ; ḥisāb : compte.", "gram": "anna + participe actif + complément" }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ",
+      "tr": "fa-huwa fī ʿīshatin rāḍiyatin",
+      "trad": "et il vivra satisfait",
+      "themes": ["vie agréée", "le contentement"],
+      "commentaire": "<em>fī ʿīshatin rāḍiya</em > (في عيشَةٍ راضِيَة) : dans une vie qui agrée. Qushayrī distingue finement : les bienheureux seront <em>demain</em> dans une vie agréable car « leurs besoins sont comblés, leurs désirs satisfaits » ; mais les réalisés sont <em>déjà aujourd'hui</em> dans une vie agréée, car « ils ont apaisé leurs désirs : Dieu a écarté de leur cœur leurs besoins, ils n'ont plus de vouloir, nul manque ne les touche — ils sont dans le repos du contentement (riḍā). » Et il conclut : « la vie des uns est dans le don, celle des autres dans le contentement. » Le plus haut n'est pas d'obtenir ce qu'on désire, mais de n'avoir plus rien à désirer que Dieu.",
+      "mots": [
+        { "ar": "فَهُوَ فِي عِيشَةٍ رَّاضِيَةٍ", "tr": "fa-huwa fī ʿīshatin rāḍiya", "racine": "ع ي ش / ر ض و", "sens": "il est dans une vie agréée", "def": "ʿīsha : vie ; rāḍiya : satisfaisante, agréée.", "gram": "pronom + complément + adjectif" }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "فِي جَنَّةٍ عَالِيَةٍ",
+      "tr": "fī jannatin ʿāliyatin",
+      "trad": "dans un Jardin élevé,",
+      "themes": ["Jardin élevé", "élévation"],
+      "commentaire": "<em>fī jannatin ʿāliya</em > (في جَنَّةٍ عالِيَة) : dans un Jardin élevé. Le Jardin est <em>haut</em> : élévation de lieu et de rang. Après la vie agréée du cœur (v. 21), la demeure qui lui correspond. L'élévation du Jardin répond à l'élévation de l'aspiration : qui a porté son cœur vers le haut y trouve sa demeure. Le Jardin n'est pas seulement un lieu de plaisir mais un lieu de hauteur — proche du Trône, loin de la bassesse du monde. On habite à la mesure de ce vers quoi on a tendu.",
+      "mots": [
+        { "ar": "فِي جَنَّةٍ عَالِيَةٍ", "tr": "fī jannatin ʿāliya", "racine": "ج ن ن / ع ل و", "sens": "dans un Jardin élevé", "def": "janna : jardin ; ʿāliya : haute.", "gram": "préposition + nom + adjectif" }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "قُطُوفُهَا دَانِيَةٌ",
+      "tr": "quṭūfuhā dāniyatun",
+      "trad": "dont les fruits seront à portée de main.",
+      "themes": ["fruits proches", "désir comblé sans peine"],
+      "commentaire": "<em>quṭūfuhā dāniya</em > (قُطوفُها دانِيَة) : ses fruits sont tout proches. Dans ce Jardin élevé, les fruits se penchent vers la main. Comme dans al-Insān (s. 76, v. 14), le fruit se fait docile. Paradoxe lumineux : le Jardin est haut (v. 22), et pourtant ses fruits sont à portée. L'élévation n'éloigne pas le don ; elle le rapproche. Là où ici-bas il faut peiner pour atteindre, là-bas le désir est devancé. Le cœur élevé n'a plus à se tendre vers ce qu'il aime : tout vient à lui.",
+      "mots": [
+        { "ar": "قُطُوفُهَا دَانِيَةٌ", "tr": "quṭūfuhā dāniya", "racine": "ق ط ف / د ن و", "sens": "ses fruits sont proches", "def": "quṭūf : grappes à cueillir ; dāniya : proche.", "gram": "sujet + adjectif" }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "كُلُوا وَاشْرَبُوا هَنِيئًا بِمَا أَسْلَفْتُمْ فِي الْأَيَّامِ الْخَالِيَةِ",
+      "tr": "kulū wa-shrabū hanīʾan bimā aslaftum fī l-ayyāmi l-khāliyati",
+      "trad": "» Mangez et buvez heureux, en récompense de ce que vous avez accompli durant les jours passés ».",
+      "themes": ["festin", "fruit des jours écoulés"],
+      "commentaire": "<em>bimā aslaftum fī l-ayyāmi l-khāliya</em > (بِما أَسْلَفْتُمْ في الأَيّامِ الخالِيَة) : pour ce que vous avez avancé dans les jours révolus. Qushayrī élève le sens : « on leur dira : écoutez et contemplez… écoutez de Nous, regardez-Nous, trouvez l'intimité de Notre proximité, contemplez Notre beauté et Notre majesté ; vous êtes par Nous et pour Nous. » Le festin du Jardin n'est que le voile sensible d'une intimité plus haute. <em>Aslaftum</em> — vous avez avancé : ce qu'on a semé dans « les jours révolus » de la vie se récolte ici. Les jours passés à œuvrer pour Dieu ne sont pas perdus : ils sont l'avance qu'on retrouve, multipliée, au terme.",
+      "mots": [
+        { "ar": "كُلُوا وَاشْرَبُوا هَنِيئًا", "tr": "kulū wa-shrabū hanīʾan", "racine": "أ ك ل / ش ر ب / ه ن أ", "sens": "mangez et buvez en paix", "def": "hanīʾ : agréable, sans trouble.", "gram": "deux impératifs + complément d'état" },
+        { "ar": "بِمَا أَسْلَفْتُمْ", "tr": "bimā aslaftum", "racine": "س ل ف", "sens": "pour ce que vous avez avancé", "def": "aslafa : avancer, faire d'avance.", "gram": "préposition + relatif + verbe" },
+        { "ar": "فِي الْأَيَّامِ الْخَالِيَةِ", "tr": "fī l-ayyāmi l-khāliya", "racine": "خ ل و", "sens": "dans les jours révolus", "def": "khāliya : passée, écoulée.", "gram": "complément + adjectif" }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "وَأَمَّا مَنْ أُوتِيَ كِتَابَهُ بِشِمَالِهِ فَيَقُولُ يَا لَيْتَنِي لَمْ أُوتَ كِتَابِيَهْ",
+      "tr": "wa-ammā man ūtiya kitābahu bi-shimālihi fa-yaqūlu yā laytanī lam ūta kitābiyah",
+      "trad": "Quant à celui qui recevra son livre dans la main gauche, il dira : « Malheur à moi !...Puissé-je ne pas avoir reçu mon livre",
+      "themes": ["le livre de la main gauche", "regret"],
+      "commentaire": "<em>yā laytanī lam ūta kitābiyah</em > (يا لَيْتَني لَمْ أوتَ كِتابِيَهْ) : que ne m'a-t-on pas donné mon livre ! Inverse exact de la joie du verset 19 : celui qui reçoit son registre dans la main gauche voudrait ne l'avoir jamais reçu. Le dévoilement (v. 18) qui réjouit le juste accable le coupable. Mais Qushayrī ouvre ici, pour les versets suivants, une lecture inattendue et bouleversante sur les « délaissés » (mahjūrīn) : tous ceux qui se croient rejetés ne le sont pas en vérité. Le regret peut être, pour certains cœurs aimants, le signe d'une grâce cachée sous le voile de l'épreuve.",
+      "mots": [
+        { "ar": "وَأَمَّا مَنْ أُوتِيَ كِتَابَهُ بِشِمَالِهِ", "tr": "wa-ammā man ūtiya kitābahu bi-shimālihi", "racine": "أ ت ي / ك ت ب / ش م ل", "sens": "celui à qui son livre est donné dans la gauche", "def": "shimāl : gauche.", "gram": "particule + relatif + verbe passif + compléments" },
+        { "ar": "يَا لَيْتَنِي لَمْ أُوتَ كِتَابِيَهْ", "tr": "yā laytanī lam ūta kitābiyah", "racine": "أ ت ي / ك ت ب", "sens": "que ne m'a-t-on pas donné mon livre", "def": "layta : plût au ciel que.", "gram": "particule de souhait + verbe + complément" }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "وَلَمْ أَدْرِ مَا حِسَابِيَهْ",
+      "tr": "wa-lam adri mā ḥisābiyah",
+      "trad": "et ne pas connaître mon compte !",
+      "themes": ["fuite du compte", "angoisse"],
+      "commentaire": "<em>wa-lam adri mā ḥisābiyah</em > (وَلَمْ أَدْرِ ما حِسابِيَهْ) : et ne jamais connaître mon compte ! Le coupable voudrait ignorer son propre bilan, fuir le savoir qui le condamne. C'est l'envers du juste qui « pensait bien rencontrer son compte » (v. 20) et l'attendait. Celui qui n'a pas vécu dans la conscience du retour voudrait maintenant échapper à la vérité — mais elle s'impose. Fuir son compte au Jour est aussi vain que de l'avoir nié dans la vie. On ne peut indéfiniment se cacher ce qu'on est.",
+      "mots": [
+        { "ar": "وَلَمْ أَدْرِ", "tr": "wa-lam adri", "racine": "د ر ي", "sens": "et ne pas savoir", "def": "darā : savoir.", "gram": "négation + verbe apocopé" },
+        { "ar": "مَا حِسَابِيَهْ", "tr": "mā ḥisābiyah", "racine": "ح س ب", "sens": "ce qu'est mon compte", "def": "ḥisāb : compte.", "gram": "interrogatif + nom + pronom" }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "يَا لَيْتَهَا كَانَتِ الْقَاضِيَةَ",
+      "tr": "yā laytahā kānati l-qāḍiyata",
+      "trad": "Malheur à moi pour ce qui m'échoit !",
+      "themes": ["souhait de néant", "désespoir"],
+      "commentaire": "<em>yā laytahā kānati l-qāḍiya</em > (يا لَيْتَها كانَتِ القاضِيَة) : que la mort eût été définitive ! Il souhaite que sa première mort eût été un anéantissement total, sans résurrection. C'est le comble du désespoir : préférer le néant à l'existence devenue insupportable. Mais c'est ici que Qushayrī ouvre sa perle sur les délaissés (v. 25-27) : « il est aujourd'hui des hommes éloignés, dont les soupirs montent, l'angoisse redouble nuit et jour ; leur nuit est malheur, leur jour distance ; leurs sources se troublent, les demeures de leur intimité sont ruinées ; nul n'a pitié de leurs pleurs, nul n'entend leur gémissement. Ils se croient rejetés — et ils sont, en vérité, des miséricordiés de Dieu : Il a laissé tomber sur eux le voile (asbala ʿalayhim al-sitr), et les a rapetissés à leurs propres yeux — eux qui sont les plus nobles de l'histoire. » Et de citer ce vers : « Ne renie pas mon déni de ton amour : ce déni même est un voile laissé tomber sur toi. » Parfois, l'apparence du rejet recouvre la plus tendre des grâces.",
+      "mots": [
+        { "ar": "يَا لَيْتَهَا كَانَتِ الْقَاضِيَةَ", "tr": "yā laytahā kānati l-qāḍiya", "racine": "ق ض ي", "sens": "que la mort eût été définitive", "def": "qāḍiya : ce qui tranche, achève définitivement.", "gram": "particule de souhait + verbe + attribut" }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "مَا أَغْنَىٰ عَنِّي مَالِيَهْ",
+      "tr": "mā aghnā ʿannī māliyah",
+      "trad": "Ma fortune ne m'a servi à rien",
+      "themes": ["richesse inutile", "vanité des biens"],
+      "commentaire": "<em>mā aghnā ʿannī māliyah</em > (ما أَغْنى عَنّي مالِيَهْ) : ma fortune ne m'a servi de rien. Au Jour, la richesse amassée ne sauve pas. Ce sur quoi le coupable avait fondé sa puissance s'avère sans valeur. Les biens qui rassuraient, qui donnaient prestige et sécurité, ne peuvent racheter une seule once du châtiment. C'est l'aveu de la vanité de tout ce qui n'était pas tourné vers Dieu. La fortune était un appui illusoire : au moment où l'on en aurait le plus besoin, elle ne pèse rien. Seul compte ce qu'on a envoyé devant soi (v. 24).",
+      "mots": [
+        { "ar": "مَا أَغْنَىٰ عَنِّي", "tr": "mā aghnā ʿannī", "racine": "غ ن ي", "sens": "ne m'a servi à rien", "def": "aghnā : être utile, dispenser.", "gram": "négation + verbe + complément" },
+        { "ar": "مَالِيَهْ", "tr": "māliyah", "racine": "م و ل", "sens": "ma fortune", "def": "māl : bien, richesse.", "gram": "nom + pronom" }
+      ]
+    },
+    {
+      "n": 29,
+      "ar": "هَلَكَ عَنِّي سُلْطَانِيَهْ",
+      "tr": "halaka ʿannī sulṭāniyah",
+      "trad": "et mon pouvoir m'a abandonné ! »",
+      "themes": ["pouvoir évanoui", "fin de l'autorité"],
+      "commentaire": "<em>halaka ʿannī sulṭāniyah</em > (هَلَكَ عَنّي سُلْطانِيَهْ) : mon pouvoir s'est évanoui. Après la richesse (v. 28), l'autorité : elle aussi s'effondre. Le coupable avait peut-être commandé, dominé, imposé sa loi ; au Jour, tout cela s'est dissipé. Le <em>sulṭān</em> — pouvoir, argument, force — qui le faisait redouter ne lui est plus d'aucun secours. Les deux piliers de la puissance mondaine, l'avoir et le pouvoir, tombent ensemble. Ce qui élevait l'homme au-dessus des autres ne l'élève en rien devant Dieu. La seule autorité qui demeure est celle du Roi du Royaume (s. 67, v. 1).",
+      "mots": [
+        { "ar": "هَلَكَ عَنِّي", "tr": "halaka ʿannī", "racine": "ه ل ك", "sens": "s'est évanoui loin de moi", "def": "halaka : périr, disparaître.", "gram": "verbe + complément" },
+        { "ar": "سُلْطَانِيَهْ", "tr": "sulṭāniyah", "racine": "س ل ط", "sens": "mon pouvoir", "def": "sulṭān : autorité, pouvoir.", "gram": "nom + pronom" }
+      ]
+    },
+    {
+      "n": 30,
+      "ar": "خُذُوهُ فَغُلُّوهُ",
+      "tr": "khudhūhu fa-ghullūhu",
+      "trad": "» Saisissez-le et mettez-lui un carcan !",
+      "themes": ["la sentence", "l'entrave"],
+      "commentaire": "<em>khudhūhu fa-ghullūhu</em > (خُذوهُ فَغُلّوهُ) : saisissez-le, entravez-le. La sentence tombe, brève et implacable. Le carcan (ghull) qu'on lui met est l'image de l'entrave que ses propres attachements ont forgée : qui s'est lié à sa fortune et à son pouvoir (v. 28-29) se trouve lié au Jour. L'orgueil qui ne voulait pas se courber (cf. s. 68, v. 42) est maintenant courbé de force. Le carcan extérieur n'est que la manifestation des chaînes intérieures que l'âme s'était données. On porte au-dehors les entraves qu'on a tissées au-dedans.",
+      "mots": [
+        { "ar": "خُذُوهُ", "tr": "khudhūhu", "racine": "أ خ ذ", "sens": "saisissez-le", "def": "akhadha : saisir.", "gram": "impératif + pronom" },
+        { "ar": "فَغُلُّوهُ", "tr": "fa-ghullūhu", "racine": "غ ل ل", "sens": "entravez-le", "def": "ghalla : mettre un carcan.", "gram": "impératif + pronom" }
+      ]
+    },
+    {
+      "n": 31,
+      "ar": "ثُمَّ الْجَحِيمَ صَلُّوهُ",
+      "tr": "thumma l-jaḥīma ṣallūhu",
+      "trad": "Puis jetez-le dans la Fournaise",
+      "themes": ["la Fournaise", "exécution de la sentence"],
+      "commentaire": "<em>thumma l-jaḥīma ṣallūhu</em > (ثُمَّ الجَحيمَ صَلّوهُ) : puis faites-le brûler dans la Fournaise. La sentence s'exécute : après l'entrave (v. 30), le feu. Le coupable, dépouillé de ses appuis (v. 28-29) et lié, est livré au brasier. La progression est inexorable, mais elle n'est que la suite logique de ce qui précède : qui a alimenté en lui le feu des passions sans le tourner vers Dieu en récolte la flamme. La Fournaise n'est pas un ajout arbitraire ; elle est le terme de ce que le cœur a couvé. On entre dans le feu qu'on a soi-même nourri.",
+      "mots": [
+        { "ar": "ثُمَّ الْجَحِيمَ", "tr": "thumma l-jaḥīm", "racine": "ج ح م", "sens": "puis la Fournaise", "def": "jaḥīm : brasier.", "gram": "particule + complément d'objet antéposé" },
+        { "ar": "صَلُّوهُ", "tr": "ṣallūhu", "racine": "ص ل ي", "sens": "faites-le brûler", "def": "ṣalā : faire brûler.", "gram": "impératif + pronom" }
+      ]
+    },
+    {
+      "n": 32,
+      "ar": "ثُمَّ فِي سِلْسِلَةٍ ذَرْعُهَا سَبْعُونَ ذِرَاعًا فَاسْلُكُوهُ",
+      "tr": "thumma fī silsilatin dharʿuhā sabʿūna dhirāʿan fa-slukūhu",
+      "trad": "et, ensuite, liez-le avec une chaîne de soixante-dix coudées ».",
+      "themes": ["la chaîne", "enchaînement total"],
+      "commentaire": "<em>silsilatin dharʿuhā sabʿūna dhirāʿan</em > (سِلْسِلَةٍ ذَرْعُها سَبْعونَ ذِراعًا) : une chaîne de soixante-dix coudées. L'image de l'enchaînement total : le coupable est enserré dans une chaîne démesurée. Le nombre, hyperbolique, dit l'ampleur de l'entrave. Spirituellement, la longueur de la chaîne mesure l'épaisseur des attachements accumulés : plus on s'est enchaîné au monde, plus la chaîne est longue. Celui qui a multiplié les liens — biens, pouvoir, passions — se trouve enroulé dans leur somme. La liberté refusée à Dieu se renverse en servitude sans mesure.",
+      "mots": [
+        { "ar": "ثُمَّ فِي سِلْسِلَةٍ", "tr": "thumma fī silsila", "racine": "س ل س ل", "sens": "puis dans une chaîne", "def": "silsila : chaîne.", "gram": "particule + préposition + nom" },
+        { "ar": "ذَرْعُهَا سَبْعُونَ ذِرَاعًا", "tr": "dharʿuhā sabʿūna dhirāʿan", "racine": "ذ ر ع", "sens": "longue de soixante-dix coudées", "def": "dhirāʿ : coudée.", "gram": "sujet + numéral + spécificatif" },
+        { "ar": "فَاسْلُكُوهُ", "tr": "fa-slukūhu", "racine": "س ل ك", "sens": "introduisez-le", "def": "salaka : faire entrer.", "gram": "impératif + pronom" }
+      ]
+    },
+    {
+      "n": 33,
+      "ar": "إِنَّهُ كَانَ لَا يُؤْمِنُ بِاللَّهِ الْعَظِيمِ",
+      "tr": "innahu kāna lā yuʾminu bi-llāhi l-ʿaẓīmi",
+      "trad": "Il ne croyait pas en Dieu le Magnifique,",
+      "themes": ["absence de foi", "première cause"],
+      "commentaire": "<em>kāna lā yuʾminu bi-llāhi l-ʿaẓīm</em > (كانَ لا يُؤْمِنُ بِالله العَظيم) : il ne croyait pas en Dieu l'Immense. Voici enfin la cause de tout : l'absence de foi. Avant les fautes, avant le refus de nourrir le pauvre (v. 34), il y avait ce manque premier — ne pas croire en Dieu, le Magnifique. La racine du désastre n'est pas tel ou tel péché mais le cœur fermé à la grandeur de Dieu. Tout le reste — l'avarice, l'orgueil, l'attachement aux biens — découle de ce vide initial. Qui ne reconnaît pas la grandeur de Dieu se fait son propre dieu, et tout s'ensuit.",
+      "mots": [
+        { "ar": "إِنَّهُ كَانَ لَا يُؤْمِنُ", "tr": "innahu kāna lā yuʾminu", "racine": "أ م ن", "sens": "il ne croyait pas", "def": "āmana : croire.", "gram": "inna + verbe d'état + négation + verbe" },
+        { "ar": "بِاللَّهِ الْعَظِيمِ", "tr": "bi-llāhi l-ʿaẓīm", "racine": "ع ظ م", "sens": "en Dieu l'Immense", "def": "al-ʿaẓīm : l'Immense, le Magnifique.", "gram": "préposition + nom divin + attribut" }
+      ]
+    },
+    {
+      "n": 34,
+      "ar": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ",
+      "tr": "wa-lā yaḥuḍḍu ʿalā ṭaʿāmi l-miskīni",
+      "trad": "il n'encourageait pas à nourrir le pauvre.",
+      "themes": ["indifférence au pauvre", "lien rompu"],
+      "commentaire": "<em>wa-lā yaḥuḍḍu ʿalā ṭaʿāmi l-miskīn</em > (وَلا يَحُضُّ عَلى طَعامِ المِسْكين) : il n'incitait pas à nourrir le pauvre. Seconde cause, jumelle de la première : après la rupture avec Dieu (v. 33), la rupture avec le prochain. Et le verset va plus loin que la sourate al-Mā‘ūn : il ne reproche pas seulement de ne pas nourrir le pauvre, mais de ne pas même <em>inciter</em> autrui à le faire. L'indifférence est totale : ni geste, ni parole en faveur du nécessiteux. Qui a fermé son cœur à Dieu le ferme au pauvre. Les deux liens — vers le haut et vers le bas — se rompent ensemble.",
+      "mots": [
+        { "ar": "وَلَا يَحُضُّ", "tr": "wa-lā yaḥuḍḍu", "racine": "ح ض ض", "sens": "il n'incitait pas", "def": "ḥaḍḍa : exhorter, encourager.", "gram": "négation + verbe inaccompli" },
+        { "ar": "عَلَىٰ طَعَامِ الْمِسْكِينِ", "tr": "ʿalā ṭaʿāmi l-miskīn", "racine": "ط ع م / س ك ن", "sens": "à nourrir le pauvre", "def": "ṭaʿām : nourriture ; miskīn : indigent.", "gram": "préposition + nom + complément" }
+      ]
+    },
+    {
+      "n": 35,
+      "ar": "فَلَيْسَ لَهُ الْيَوْمَ هَاهُنَا حَمِيمٌ",
+      "tr": "fa-laysa lahu l-yawma hāhunā ḥamīmun",
+      "trad": "Aujourd'hui, il ne lui reste aucun ami dévoué,",
+      "themes": ["nul ami dévoué", "solitude du Jour"],
+      "commentaire": "<em>laysa lahu l-yawma hāhunā ḥamīm</em > (لَيْسَ لَهُ اليَوْمَ هاهُنا حَميم) : il n'a aujourd'hui ici nul ami intime. Conséquence de son indifférence au pauvre (v. 34) : nul ne se soucie de lui au Jour. Qui n'a tendu la main à personne ne trouve aucune main tendue. Le <em>ḥamīm</em> — l'ami chaleureux, le proche dévoué — fait défaut. La solitude du coupable au Jour est le reflet exact de la solitude où il a laissé les autres : il a fermé son cœur, son cœur est laissé seul. Les liens qu'on n'a pas noués dans la vie manquent au moment où l'on en aurait besoin.",
+      "mots": [
+        { "ar": "فَلَيْسَ لَهُ الْيَوْمَ هَاهُنَا", "tr": "fa-laysa lahu l-yawma hāhunā", "racine": "ل ي س", "sens": "il n'a aujourd'hui ici", "def": "laysa : ne pas avoir.", "gram": "verbe négatif + compléments" },
+        { "ar": "حَمِيمٌ", "tr": "ḥamīm", "racine": "ح م م", "sens": "un ami dévoué", "def": "ḥamīm : proche intime, ami chaleureux.", "gram": "nom, sujet" }
+      ]
+    },
+    {
+      "n": 36,
+      "ar": "وَلَا طَعَامٌ إِلَّا مِنْ غِسْلِينٍ",
+      "tr": "wa-lā ṭaʿāmun illā min ghislīnin",
+      "trad": "ni d'autre nourriture qu'un aliment fétide",
+      "themes": ["nourriture infâme", "le don retourné"],
+      "commentaire": "<em>illā min ghislīn</em > (إلّا مِنْ غِسْلين) : sinon du ghislīn (sanie, lavure putride). Renversement saisissant : lui qui n'incitait pas à <em>nourrir</em> le pauvre (v. 34) n'a plus, pour toute nourriture, qu'un liquide infâme. La privation de nourriture qu'il a laissée subir aux autres se retourne contre lui. Le don de nourriture refusé devient nourriture infâme reçue. La justice du Jour épouse exactement la faute : qui n'a pas donné à manger se trouve sans rien à manger sinon l'horreur. On récolte le contraire de ce qu'on a refusé de semer.",
+      "mots": [
+        { "ar": "وَلَا طَعَامٌ", "tr": "wa-lā ṭaʿāmun", "racine": "ط ع م", "sens": "ni nourriture", "def": "ṭaʿām : nourriture.", "gram": "négation + nom" },
+        { "ar": "إِلَّا مِنْ غِسْلِينٍ", "tr": "illā min ghislīn", "racine": "غ س ل", "sens": "sinon un liquide fétide", "def": "ghislīn : sanie, lavure des plaies.", "gram": "exception + préposition + nom" }
+      ]
+    },
+    {
+      "n": 37,
+      "ar": "لَّا يَأْكُلُهُ إِلَّا الْخَاطِئُونَ",
+      "tr": "lā yaʾkuluhu illā l-khāṭiʾūna",
+      "trad": "dont seuls les pécheurs se nourrissent.",
+      "themes": ["nourriture des pécheurs", "conséquence de la faute"],
+      "commentaire": "<em>lā yaʾkuluhu illā l-khāṭiʾūn</em > (لا يَأْكُلُهُ إلّا الخاطِئون) : nul ne le mange sinon les pécheurs. Cette nourriture infâme est réservée à ceux dont la faute (khaṭīʾa) est délibérée. Le mot <em>khāṭiʾ</em> désigne celui qui commet le mal sciemment, par choix. La nourriture du Feu n'échoit pas par hasard : elle est le lot de ceux qui ont fait le mal en connaissance de cause. La conséquence est ajustée à la responsabilité : on ne reçoit le ghislīn que si l'on a, en pleine conscience, fermé son cœur à Dieu et au pauvre. La faute lucide appelle la rétribution exacte.",
+      "mots": [
+        { "ar": "لَّا يَأْكُلُهُ", "tr": "lā yaʾkuluhu", "racine": "أ ك ل", "sens": "nul ne le mange", "def": "akala : manger.", "gram": "négation + verbe + pronom" },
+        { "ar": "إِلَّا الْخَاطِئُونَ", "tr": "illā l-khāṭiʾūn", "racine": "خ ط أ", "sens": "sinon les pécheurs", "def": "khāṭiʾ : qui pèche délibérément.", "gram": "exception + sujet" }
+      ]
+    },
+    {
+      "n": 38,
+      "ar": "فَلَا أُقْسِمُ بِمَا تُبْصِرُونَ",
+      "tr": "fa-lā uqsimu bimā tubṣirūna",
+      "trad": "Ainsi donc, J'en jure par ce que vous voyez",
+      "themes": ["serment", "le visible"],
+      "commentaire": "<em>fa-lā uqsimu bimā tubṣirūn</em > (فَلا أُقْسِمُ بِما تُبْصِرون) : Je jure par ce que vous voyez. Qushayrī : « le <em>lā</em> est ici de liaison ; le sens : Je jure — comme s'Il disait : Je jure par toutes choses, car il n'y a de troisième terme entre le visible et l'invisible. » Dieu jure par le monde visible. Après le récit des deux destinées, le serment introduit l'affirmation décisive sur le Coran (v. 40). Jurer par le visible et l'invisible, c'est jurer par la totalité de l'existence : le serment le plus ample pour la vérité la plus haute.",
+      "mots": [
+        { "ar": "فَلَا أُقْسِمُ", "tr": "fa-lā uqsimu", "racine": "ق س م", "sens": "Je jure", "def": "uqsimu : je jure ; lā de liaison.", "gram": "verbe inaccompli + lā" },
+        { "ar": "بِمَا تُبْصِرُونَ", "tr": "bimā tubṣirūn", "racine": "ب ص ر", "sens": "par ce que vous voyez", "def": "abṣara : voir.", "gram": "préposition + relatif + verbe" }
+      ]
+    },
+    {
+      "n": 39,
+      "ar": "وَمَا لَا تُبْصِرُونَ",
+      "tr": "wa-mā lā tubṣirūna",
+      "trad": "et par ce que vous ne voyez pas :",
+      "themes": ["l'invisible", "totalité jurée"],
+      "commentaire": "<em>wa-mā lā tubṣirūn</em > (وَما لا تُبْصِرون) : et par ce que vous ne voyez pas. Le serment embrasse maintenant l'invisible. Qushayrī : « par toutes les choses, car il n'y a pas de troisième terme à ce qui se voit et ce qui ne se voit pas. » Le visible et l'invisible épuisent le réel : jurer par les deux, c'est jurer par tout ce qui est. Le serment total prépare la vérité totale qui va être affirmée. Et il rappelle au passage que l'invisible est aussi réel que le visible : ce que l'œil ne perçoit pas n'en est pas moins partie du réel sur lequel Dieu jure.",
+      "mots": [
+        { "ar": "وَمَا لَا تُبْصِرُونَ", "tr": "wa-mā lā tubṣirūn", "racine": "ب ص ر", "sens": "et par ce que vous ne voyez pas", "def": "abṣara : voir.", "gram": "relatif + négation + verbe" }
+      ]
+    },
+    {
+      "n": 40,
+      "ar": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+      "tr": "innahu la-qawlu rasūlin karīmin",
+      "trad": "c'est là, en vérité, la parole d'un noble Envoyé,",
+      "themes": ["réponse au serment", "parole du noble Messager"],
+      "commentaire": "<em>la-qawlu rasūlin karīm</em > (لَقَوْلُ رَسولٍ كَريم) : c'est la parole d'un noble Messager. Réponse au double serment : le Coran est parole transmise par un Messager honoré auprès de Dieu. Qushayrī : « vijh auprès de Dieu ; la parole du noble Messager est le Coran, ou sa récitation. » Le Coran n'est pas invention du Prophète mais parole qu'il transmet, lui le messager agréé (cf. s. 72, v. 27). La noblesse du porteur garantit la pureté du message. Ce qui sera dit aux versets suivants — ni poète, ni devin — découle de cette affirmation centrale : c'est une parole reçue, non fabriquée.",
+      "mots": [
+        { "ar": "إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ", "tr": "innahu la-qawlu rasūlin karīm", "racine": "ق و ل / ر س ل / ك ر م", "sens": "c'est la parole d'un noble Messager", "def": "qawl : parole ; rasūl karīm : messager honoré.", "gram": "inna + lām + nom + complément + adjectif" }
+      ]
+    },
+    {
+      "n": 41,
+      "ar": "وَمَا هُوَ بِقَوْلِ شَاعِرٍ قَلِيلًا مَّا تُؤْمِنُونَ",
+      "tr": "wa-mā huwa bi-qawli shāʿirin qalīlan mā tuʾminūna",
+      "trad": "ce n'est pas la parole d'un poète ; comme votre foi est faible !",
+      "themes": ["pas un poète", "déni du Coran"],
+      "commentaire": "<em>wa-mā huwa bi-qawli shāʿir</em > (وَما هُوَ بِقَوْلِ شاعِر) : ce n'est pas la parole d'un poète. Qushayrī : « Muhammad n'est ni poète ni devin. » Le Coran déborde la poésie : il n'a ni la mètre ni les ornements vains des vers, mais une vérité qui transforme. <em>Qalīlan mā tuʾminūn</em> — comme vous croyez peu ! Le reproche perce : leur foi est minime, voilà pourquoi ils réduisent la Parole à de la poésie. Étiqueter « poésie » ce qui dépasse la poésie est le réflexe de qui ne veut pas se soumettre. La faiblesse de la foi engendre ces fausses étiquettes.",
+      "mots": [
+        { "ar": "وَمَا هُوَ بِقَوْلِ شَاعِرٍ", "tr": "wa-mā huwa bi-qawli shāʿir", "racine": "ق و ل / ش ع ر", "sens": "ce n'est pas la parole d'un poète", "def": "shāʿir : poète.", "gram": "négation + pronom + complément" },
+        { "ar": "قَلِيلًا مَّا تُؤْمِنُونَ", "tr": "qalīlan mā tuʾminūn", "racine": "ق ل ل / أ م ن", "sens": "comme vous croyez peu", "def": "āmana : croire.", "gram": "complément + verbe" }
+      ]
+    },
+    {
+      "n": 42,
+      "ar": "وَلَا بِقَوْلِ كَاهِنٍ قَلِيلًا مَّا تَذَكَّرُونَ",
+      "tr": "wa-lā bi-qawli kāhinin qalīlan mā tadhakkarūna",
+      "trad": "ce n'est pas non plus la parole d'un devin ; comme vous réfléchissez peu !",
+      "themes": ["pas un devin", "manque de réflexion"],
+      "commentaire": "<em>wa-lā bi-qawli kāhin</em > (وَلا بِقَوْلِ كاهِن) : ni la parole d'un devin. Après le poète, le devin : deux étiquettes par lesquelles les Mecquois cherchaient à neutraliser le Coran. Mais il n'est ni l'un ni l'autre. <em>Qalīlan mā tadhakkarūn</em> — comme vous vous souvenez peu ! Au reproche du manque de foi (v. 41) répond celui du manque de réflexion : s'ils méditaient vraiment, ils verraient que cette Parole ne ressemble ni aux vers des poètes ni aux oracles des devins. Le déni se nourrit du refus de penser. Réduire le Coran à une catégorie connue dispense de l'affronter dans sa nouveauté.",
+      "mots": [
+        { "ar": "وَلَا بِقَوْلِ كَاهِنٍ", "tr": "wa-lā bi-qawli kāhin", "racine": "ق و ل / ك ه ن", "sens": "ni la parole d'un devin", "def": "kāhin : devin.", "gram": "négation + complément" },
+        { "ar": "قَلِيلًا مَّا تَذَكَّرُونَ", "tr": "qalīlan mā tadhakkarūn", "racine": "ذ ك ر", "sens": "comme vous réfléchissez peu", "def": "tadhakkara : se souvenir, méditer.", "gram": "complément + verbe (forme V)" }
+      ]
+    },
+    {
+      "n": 43,
+      "ar": "تَنزِيلٌ مِّن رَّبِّ الْعَالَمِينَ",
+      "tr": "tanzīlun min rabbi l-ʿālamīna",
+      "trad": "c'est une révélation du Seigneur des mondes !",
+      "themes": ["révélation divine", "origine du Coran"],
+      "commentaire": "<em>tanzīlun min rabbi l-ʿālamīn</em > (تَنْزيلٌ مِنْ رَبِّ العالَمين) : une descente venant du Seigneur des mondes. Affirmation centrale et positive après les démentis : le Coran n'est ni poésie ni divination, mais <em>révélation</em> — une descente (tanzīl) du Seigneur des mondes Lui-même. Voilà sa véritable origine. Tout le débat se résout là : ce qui paraît aux uns folie, poésie ou divination est en réalité Parole de Dieu descendue sur Son messager. L'origine divine explique la puissance qui touche les cœurs (cf. s. 74, v. 24) : ce n'est pas l'art d'un homme, mais le souffle du Seigneur.",
+      "mots": [
+        { "ar": "تَنزِيلٌ", "tr": "tanzīlun", "racine": "ن ز ل", "sens": "une révélation, une descente", "def": "tanzīl : ce qui est fait descendre.", "gram": "nom, attribut" },
+        { "ar": "مِّن رَّبِّ الْعَالَمِينَ", "tr": "min rabbi l-ʿālamīn", "racine": "ر ب ب / ع ل م", "sens": "du Seigneur des mondes", "def": "rabb al-ʿālamīn : Seigneur des univers.", "gram": "préposition + nom + complément" }
+      ]
+    },
+    {
+      "n": 44,
+      "ar": "وَلَوْ تَقَوَّلَ عَلَيْنَا بَعْضَ الْأَقَاوِيلِ",
+      "tr": "wa-law taqawwala ʿalaynā baʿḍa l-aqāwīli",
+      "trad": "S'il avait inventé contre Nous quelques paroles mensongères,",
+      "themes": ["hypothèse de l'imposture", "fidélité du Prophète"],
+      "commentaire": "<em>wa-law taqawwala ʿalaynā</em > (وَلَوْ تَقَوَّلَ عَلَيْنا) : et s'il avait forgé contre Nous. Hypothèse pour démontrer la fidélité du Prophète : <em>si</em> Muhammad inventait de fausses paroles en les attribuant à Dieu, le châtiment serait immédiat (v. 45-46). Qushayrī : « si Muhammad mentait sur Nous, Nous l'en empêcherions et l'en préserverions ; et s'il le faisait délibérément, Nous le châtierions. La croyance en l'impeccabilité (ʿiṣma) des prophètes est obligatoire. » Le raisonnement prouve l'authenticité : que le Prophète soit toujours en vie et soutenu atteste qu'il n'a rien forgé. La fidélité du messager garantit la véracité du message.",
+      "mots": [
+        { "ar": "وَلَوْ تَقَوَّلَ عَلَيْنَا", "tr": "wa-law taqawwala ʿalaynā", "racine": "ق و ل", "sens": "s'il avait forgé contre Nous", "def": "taqawwala : inventer des paroles, attribuer faussement.", "gram": "law + verbe (forme V) + complément" },
+        { "ar": "بَعْضَ الْأَقَاوِيلِ", "tr": "baʿḍa l-aqāwīl", "racine": "ق و ل", "sens": "quelques paroles", "def": "aqāwīl : dires, propos.", "gram": "complément d'objet" }
+      ]
+    },
+    {
+      "n": 45,
+      "ar": "لَأَخَذْنَا مِنْهُ بِالْيَمِينِ",
+      "tr": "la-akhadhnā minhu bi-l-yamīni",
+      "trad": "Nous l'aurions pris par la main droite,",
+      "themes": ["saisie immédiate", "rigueur envers l'imposteur"],
+      "commentaire": "<em>la-akhadhnā minhu bi-l-yamīn</em > (لَأَخَذْنا مِنْهُ بِاليَمين) : Nous l'aurions saisi par la droite (par la force, ou par la puissance). La conséquence de l'imposture hypothétique : une saisie immédiate et ferme. Le verset souligne, par contraste, la protection dont jouit le vrai messager : il n'est pas saisi, donc il ne ment pas. La rigueur extrême qui frapperait l'imposteur prouve, par son absence, l'authenticité du Prophète. Dieu ne laisse pas mentir en Son nom : que la mission se poursuive est le signe qu'elle est vraie.",
+      "mots": [
+        { "ar": "لَأَخَذْنَا مِنْهُ بِالْيَمِينِ", "tr": "la-akhadhnā minhu bi-l-yamīn", "racine": "أ خ ذ / ي م ن", "sens": "Nous l'aurions saisi par la droite", "def": "akhadha : saisir ; yamīn : droite, force.", "gram": "lām + verbe + complément" }
+      ]
+    },
+    {
+      "n": 46,
+      "ar": "ثُمَّ لَقَطَعْنَا مِنْهُ الْوَتِينَ",
+      "tr": "thumma la-qaṭaʿnā minhu l-watīna",
+      "trad": "puis Nous lui aurions tranché l'aorte",
+      "themes": ["sanction de l'imposture", "preuve par l'absence"],
+      "commentaire": "<em>la-qaṭaʿnā minhu l-watīn</em > (لَقَطَعْنا مِنْهُ الوَتين) : Nous lui aurions tranché l'aorte. Image de la sanction radicale et immédiate qui frapperait quiconque mentirait au nom de Dieu. <em>Watīn</em> — l'aorte, veine de la vie : la trancher, c'est ôter la vie sur-le-champ. La sévérité de la peine hypothétique mesure l'horreur du mensonge sur Dieu. Et son non-accomplissement est la preuve éclatante : le Prophète vit, soutenu — donc il n'a pas menti. L'argument est imparable : si la Parole était imposture, son porteur ne serait plus là pour la transmettre.",
+      "mots": [
+        { "ar": "ثُمَّ لَقَطَعْنَا مِنْهُ الْوَتِينَ", "tr": "thumma la-qaṭaʿnā minhu l-watīn", "racine": "ق ط ع / و ت ن", "sens": "Nous lui aurions tranché l'aorte", "def": "qaṭaʿa : trancher ; watīn : aorte.", "gram": "particule + lām + verbe + complément" }
+      ]
+    },
+    {
+      "n": 47,
+      "ar": "فَمَا مِنكُم مِّنْ أَحَدٍ عَنْهُ حَاجِزِينَ",
+      "tr": "fa-mā minkum min aḥadin ʿanhu ḥājizīna",
+      "trad": "et nul d'entre vous n'aurait pu s'y opposer.",
+      "themes": ["nul rempart", "souveraineté de Dieu"],
+      "commentaire": "<em>fa-mā minkum min aḥadin ʿanhu ḥājizīn</em > (فَما مِنْكُمْ مِنْ أَحَدٍ عَنْهُ حاجِزين) : nul d'entre vous n'aurait pu l'en empêcher. Achèvement de l'hypothèse : si Dieu décidait de châtier l'imposteur, nul ne pourrait Le retenir. Cette affirmation de la souveraineté absolue clôt la démonstration : c'est Dieu, et nul autre, qui garde ou abandonne. Que le Prophète soit gardé prouve que Dieu l'agrée. Personne ne peut s'interposer entre Dieu et Son décret — ni pour sauver l'imposteur, ni pour abattre le vrai messager. La protection du Prophète est l'œuvre de Dieu seul, et nul n'y peut rien.",
+      "mots": [
+        { "ar": "فَمَا مِنكُم مِّنْ أَحَدٍ", "tr": "fa-mā minkum min aḥad", "racine": "أ ح د", "sens": "nul d'entre vous", "def": "aḥad : quiconque.", "gram": "négation + complément" },
+        { "ar": "عَنْهُ حَاجِزِينَ", "tr": "ʿanhu ḥājizīn", "racine": "ح ج ز", "sens": "qui puisse l'en empêcher", "def": "ḥājiz : qui fait barrage, s'interpose.", "gram": "complément + participe actif plur." }
+      ]
+    },
+    {
+      "n": 48,
+      "ar": "وَإِنَّهُ لَتَذْكِرَةٌ لِّلْمُتَّقِينَ",
+      "tr": "wa-innahu la-tadhkiratun li-l-muttaqīna",
+      "trad": "C'est là un rappel pour ceux qui craignent Dieu,",
+      "themes": ["rappel pour les pieux", "réception du Coran"],
+      "commentaire": "<em>la-tadhkiratun li-l-muttaqīn</em > (لَتَذْكِرَةٌ لِلْمُتَّقين) : un rappel pour les pieux. Le Coran est <em>rappel</em> (tadhkira), mais il n'est reçu comme tel que par « ceux qui craignent Dieu » (al-muttaqūn). Comme l'oreille qui recueille (v. 12), le cœur pieux fait sien le rappel ; le cœur fermé le laisse passer. La même Parole tombe sur tous, mais seul le cœur ouvert par la crainte révérencielle la recueille comme un trésor. La piété n'est pas la condition d'accès à la lecture, mais à la réception véritable : on n'entend vraiment le rappel que si l'on est déjà tourné vers Dieu.",
+      "mots": [
+        { "ar": "وَإِنَّهُ لَتَذْكِرَةٌ", "tr": "wa-innahu la-tadhkira", "racine": "ذ ك ر", "sens": "c'est un rappel", "def": "tadhkira : rappel.", "gram": "inna + lām + nom" },
+        { "ar": "لِّلْمُتَّقِينَ", "tr": "li-l-muttaqīn", "racine": "و ق ي", "sens": "pour les pieux", "def": "muttaqī : qui craint Dieu.", "gram": "préposition + participe actif plur." }
+      ]
+    },
+    {
+      "n": 49,
+      "ar": "وَإِنَّا لَنَعْلَمُ أَنَّ مِنكُم مُّكَذِّبِينَ",
+      "tr": "wa-innā la-naʿlamu anna minkum mukadhdhibīna",
+      "trad": "mais Nous savons que certains d'entre vous crient au mensonge !",
+      "themes": ["science des démenteurs", "le déni connu"],
+      "commentaire": "<em>la-naʿlamu anna minkum mukadhdhibīn</em > (لَنَعْلَمُ أَنَّ مِنْكُمْ مُكَذِّبين) : Nous savons que parmi vous il est des démenteurs. Le même rappel qui guide les pieux (v. 48) est démenti par d'autres. Et Dieu le sait : rien ne Lui échappe du tri des cœurs. Le verset rappelle que le déni n'est pas ignoré de Dieu : Il connaît ceux qui refusent. Cette science n'est pas menace gratuite mais constat lucide : devant la même Parole, les cœurs se partagent, et ce partage est connu de Celui qui sonde. Que Dieu sache nos démentis devrait nous porter à les abandonner.",
+      "mots": [
+        { "ar": "وَإِنَّا لَنَعْلَمُ", "tr": "wa-innā la-naʿlamu", "racine": "ع ل م", "sens": "Nous savons bien", "def": "ʿalima : savoir.", "gram": "inna + lām + verbe" },
+        { "ar": "أَنَّ مِنكُم مُّكَذِّبِينَ", "tr": "anna minkum mukadhdhibīn", "racine": "ك ذ ب", "sens": "que parmi vous sont des démenteurs", "def": "mukadhdhib : qui dément.", "gram": "anna + complément + sujet" }
+      ]
+    },
+    {
+      "n": 50,
+      "ar": "وَإِنَّهُ لَحَسْرَةٌ عَلَى الْكَافِرِينَ",
+      "tr": "wa-innahu la-ḥasratun ʿalā l-kāfirīna",
+      "trad": "C'est là un sujet de lamentation pour les mécréants !",
+      "themes": ["regret des dénégateurs", "le Coran source de regret"],
+      "commentaire": "<em>la-ḥasratun ʿalā l-kāfirīn</em > (لَحَسْرَةٌ عَلى الكافِرين) : un sujet de regret pour les dénégateurs. Le même Coran qui est rappel pour les pieux (v. 48) sera regret amer pour ceux qui l'ont nié. Au Jour, ils verront ce qu'ils ont refusé, et le regret (ḥasra) les saisira. Une seule et même Parole : trésor pour qui la reçoit, source de regret éternel pour qui la rejette. Le Coran ne change pas ; c'est le cœur qui décide d'en faire sa lumière ou sa déploration. Le regret futur des dénégateurs devrait être, dès maintenant, un avertissement : il est encore temps de transformer le futur regret en présente lumière.",
+      "mots": [
+        { "ar": "وَإِنَّهُ لَحَسْرَةٌ", "tr": "wa-innahu la-ḥasra", "racine": "ح س ر", "sens": "c'est un sujet de regret", "def": "ḥasra : regret amer, lamentation.", "gram": "inna + lām + nom" },
+        { "ar": "عَلَى الْكَافِرِينَ", "tr": "ʿalā l-kāfirīn", "racine": "ك ف ر", "sens": "pour les dénégateurs", "def": "kāfir : dénégateur.", "gram": "préposition + nom plur." }
+      ]
+    },
+    {
+      "n": 51,
+      "ar": "وَإِنَّهُ لَحَقُّ الْيَقِينِ",
+      "tr": "wa-innahu la-ḥaqqu l-yaqīni",
+      "trad": "C'est là la Vérité et la certitude absolue !",
+      "themes": ["la Vérité de la certitude", "degrés de la certitude"],
+      "commentaire": "<em>la-ḥaqqu l-yaqīn</em > (لَحَقُّ اليَقين) : la Vérité même de la certitude. Qushayrī : « ḥaqq al-yaqīn, c'est la certitude même » — le Coran est vérité et certitude au degré le plus haut. Il rappelle la distinction des degrés de la certitude : <em>ʿilm al-yaqīn</em> (la science de la certitude, par la preuve), <em>ʿayn al-yaqīn</em> (l'œil de la certitude, par la vision directe), <em>ḥaqq al-yaqīn</em> (la réalité de la certitude, par l'expérience vécue, l'union). « Les sciences des hommes diffèrent selon les voies qui mènent à la certitude, en obscurité et en clarté. » Le Coran n'est pas opinion ni conjecture : il est le réel de la certitude, ce qu'on ne peut plus mettre en doute une fois qu'on l'a goûté.",
+      "mots": [
+        { "ar": "وَإِنَّهُ لَحَقُّ الْيَقِينِ", "tr": "wa-innahu la-ḥaqqu l-yaqīn", "racine": "ح ق ق / ي ق ن", "sens": "c'est la Vérité de la certitude", "def": "ḥaqq al-yaqīn : la réalité même de la certitude.", "gram": "inna + lām + nom + complément" }
+      ]
+    },
+    {
+      "n": 52,
+      "ar": "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ",
+      "tr": "fa-sabbiḥ bi-smi rabbika l-ʿaẓīmi",
+      "trad": "Glorifie le Nom de ton Seigneur, le Magnifique !",
+      "themes": ["glorification", "le Nom du Seigneur immense"],
+      "commentaire": "Verset de clôture : <em>fa-sabbiḥ bi-smi rabbika l-ʿaẓīm</em > (فَسَبِّحْ بِاسْمِ رَبِّكَ العَظيم) — glorifie le Nom de ton Seigneur l'Immense. Après l'affirmation que le Coran est la Vérité de la certitude (v. 51), la réponse juste du cœur : la glorification (tasbīḥ). Devant l'Immense (al-ʿAẓīm), il n'y a qu'à reconnaître Sa grandeur, à Le déclarer transcendant, au-dessus de tout ce qu'on Lui prête. La sourate qui a commencé par l'Inéluctable et le récit des peuples anéantis s'achève sur ce mouvement d'élévation : non l'effroi, mais la louange. Le dernier mot n'est pas le châtiment mais la glorification du Nom — car connaître la Vérité conduit, en son terme, à glorifier Celui qui est la Vérité.",
+      "mots": [
+        { "ar": "فَسَبِّحْ", "tr": "fa-sabbiḥ", "racine": "س ب ح", "sens": "glorifie", "def": "sabbaḥa : proclamer la transcendance.", "gram": "impératif (forme II)" },
+        { "ar": "بِاسْمِ رَبِّكَ الْعَظِيمِ", "tr": "bi-smi rabbika l-ʿaẓīm", "racine": "س م و / ر ب ب / ع ظ م", "sens": "le Nom de ton Seigneur l'Immense", "def": "al-ʿaẓīm : l'Immense, le Magnifique.", "gram": "préposition + nom + complément + attribut" }
+      ]
+    }
+  ]
+}

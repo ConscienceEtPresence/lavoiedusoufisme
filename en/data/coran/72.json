@@ -1,0 +1,374 @@
+{
+  "n": 72,
+  "nom_ar": "الجِنّ",
+  "nom_tr": "al-Jinn",
+  "nom_fr": "The Jinn",
+  "revelation": "Meccan",
+  "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
+  "versets_count": 28,
+  "intro": "al-Jinn — “the Jinn” — reports a singular event: a band of invisible beings, the jinn, lend an ear to the Prophet's recitation and exclaim: “We have heard a wondrous Quran!” The whole first part is their profession of faith, in the first person — wonder, acknowledgement of the Oneness, confession of their past errors. Qushayrī, from the basmala, sets out the mystery of faith: <em>by Him acknowledged who acknowledged His lordship; whoever denies, it is by abandonment; whoever confesses the Oneness, it is by His grace and His favour</em>. The sūra then unfolds teachings on the hereafter, the powerlessness of creatures, and culminates in two pearls of Qushayrī: on the verse “the mosques are God's,” where he marvels — <em>if the place where the worshipper's foot rests is honoured, what then of the worshipper himself, and of his rank with God?</em>; and on the knowledge of the Mystery, which God unveils only to the messengers He approves. It finally invites one to <em>watch always for the requital, with every breath, so as to remain in safety</em>.",
+  "themes": ["the jinn's listening", "profession of faith", "the divine Oneness", "the mosques God's", "the knowledge of the Mystery"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "قُلْ أُوحِيَ إِلَيَّ أَنَّهُ اسْتَمَعَ نَفَرٌ مِّنَ الْجِنِّ فَقَالُوا إِنَّا سَمِعْنَا قُرْآنًا عَجَبًا",
+      "tr": "qul ūḥiya ilayya annahu stamaʿa nafarun mina l-jinni fa-qālū innā samiʿnā qurʾānan ʿajaban",
+      "trad": "Say [O Muhammad]: “It has been revealed to me that a band of jinn listened and said: \"Indeed, we have heard a wondrous Quran!",
+      "themes": ["attentive listening", "wonder"],
+      "commentaire": "<em>istamaʿa</em> (اسْتَمَعَ): they lent an ear, listened attentively — not a mere <em>samiʿa</em> (to hear) but intentional listening. Qushayrī reports the account: after the Prophet was sent and the demons were driven off by meteors, nine jinn came near Baṭn Nakhla, heard his recitation, and believed. <em>Qurʾānan ʿajaban</em>: a wondrous, astonishing Quran. Wonder precedes faith: what first strikes the heart is the unheard-of beauty of the Word. The jinn, beings of fire, are touched where the men of Quraysh remained deaf.",
+      "mots": [
+        { "ar": "قُلْ أُوحِيَ إِلَيَّ", "tr": "qul ūḥiya ilayya", "racine": "ق و ل / و ح ي", "sens": "say: it has been revealed to me", "def": "awḥā: to reveal.", "gram": "imperative + passive verb + pronoun" },
+        { "ar": "اسْتَمَعَ نَفَرٌ مِّنَ الْجِنِّ", "tr": "stamaʿa nafarun mina l-jinn", "racine": "س م ع / ج ن ن", "sens": "a band of jinn listened", "def": "istamaʿa: to lend an ear; nafar: group; jinn: jinn.", "gram": "verb (form VIII) + subject" },
+        { "ar": "قُرْآنًا عَجَبًا", "tr": "qurʾānan ʿajaban", "racine": "ق ر أ / ع ج ب", "sens": "a wondrous Quran", "def": "ʿajab: astonishing, wondrous.", "gram": "noun + adjective" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "يَهْدِي إِلَى الرُّشْدِ فَآمَنَّا بِهِ وَلَن نُّشْرِكَ بِرَبِّنَا أَحَدًا",
+      "tr": "yahdī ilā l-rushdi fa-āmannā bihi wa-lan nushrika bi-rabbinā aḥadan",
+      "trad": "It guides to right conduct; we have believed in it and we will associate none with our Lord.",
+      "themes": ["guidance to rectitude", "faith", "Oneness"],
+      "commentaire": "<em>yahdī ilā l-rushd</em> (يَهْدي إلى الرُّشْد): it guides to rectitude, to spiritual maturity. <em>Rushd</em> is the opposite of straying: the soundness of judgement that leads to God. No sooner heard than believed: “we have believed in it.” And faith at once becomes pure monotheism: “we will associate nothing with our Lord.” True faith is not a lukewarm assent but a total turning: to acknowledge the guidance is, in a single motion, to renounce every idol.",
+      "mots": [
+        { "ar": "يَهْدِي إِلَى الرُّشْدِ", "tr": "yahdī ilā l-rushd", "racine": "ه د ي / ر ش د", "sens": "it guides to rectitude", "def": "hadā: to guide; rushd: rectitude, maturity.", "gram": "verb + complement" },
+        { "ar": "فَآمَنَّا بِهِ", "tr": "fa-āmannā bihi", "racine": "أ م ن", "sens": "we have believed in it", "def": "āmana: to believe.", "gram": "perfect verb (form IV) + pronoun" },
+        { "ar": "وَلَن نُّشْرِكَ بِرَبِّنَا أَحَدًا", "tr": "wa-lan nushrika bi-rabbinā aḥadan", "racine": "ش ر ك / ر ب ب", "sens": "we will associate none with our Lord", "def": "ashraka: to associate.", "gram": "negation of future + verb + complement" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَأَنَّهُ تَعَالَىٰ جَدُّ رَبِّنَا مَا اتَّخَذَ صَاحِبَةً وَلَا وَلَدًا",
+      "tr": "wa-annahu taʿālā jaddu rabbinā mā ttakhadha ṣāḥibatan wa-lā waladan",
+      "trad": "Our Lord, in truth — exalted be His grandeur! — has taken neither consort nor child!",
+      "themes": ["transcendence", "neither consort nor child"],
+      "commentaire": "<em>jadd</em> (جَدّ): majesty, grandeur, glosses Qushayrī: “grandeur is the deserving of the attributes of sublimity (jalāl).” The jinn proclaim pure transcendence: God has neither consort nor child. This is to strip the divinity of all resemblance to the created: He does not prolong Himself in a lineage, does not complete Himself in a couple. This purification of the idea of God is the heart of <em>tawḥīd</em>: to acknowledge that He is, absolutely, without like.",
+      "mots": [
+        { "ar": "وَأَنَّهُ تَعَالَىٰ", "tr": "wa-annahu taʿālā", "racine": "ع ل و", "sens": "exalted be He", "def": "taʿālā: to be sublime, transcendent.", "gram": "anna + pronoun + verb" },
+        { "ar": "جَدُّ رَبِّنَا", "tr": "jaddu rabbinā", "racine": "ج د د / ر ب ب", "sens": "the majesty of our Lord", "def": "jadd: grandeur, majesty.", "gram": "noun + complement" },
+        { "ar": "مَا اتَّخَذَ صَاحِبَةً وَلَا وَلَدًا", "tr": "mā ttakhadha ṣāḥibatan wa-lā waladan", "racine": "أ خ ذ / ص ح ب / و ل د", "sens": "He took neither consort nor child", "def": "ṣāḥiba: consort; walad: child.", "gram": "negation + verb + complements" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَأَنَّهُ كَانَ يَقُولُ سَفِيهُنَا عَلَى اللَّهِ شَطَطًا",
+      "tr": "wa-annahu kāna yaqūlu safīhunā ʿalā llāhi shaṭaṭan",
+      "trad": "One of us, a fool, used to utter outrageous things about God.",
+      "themes": ["fool", "outrageous speech"],
+      "commentaire": "<em>safīhunā</em> (سَفيهُنا): our fool. Qushayrī: “by the fool he means the one ignorant of God, that is, Iblīs”; <em>shaṭaṭ</em>: excess, outrageousness. The believing jinn disavow their own past folly: to ascribe consort and child to God was an outrageous, excessive utterance. <em>Safah</em> is the foolishness of the heart that does not know God's grandeur. To acknowledge one's past straying is already a sign of new faith: one no longer justifies oneself, one confesses.",
+      "mots": [
+        { "ar": "كَانَ يَقُولُ", "tr": "kāna yaqūlu", "racine": "ق و ل", "sens": "used to say", "def": "qāla: to say.", "gram": "verb of state + imperfect" },
+        { "ar": "سَفِيهُنَا", "tr": "safīhunā", "racine": "س ف ه", "sens": "our fool", "def": "safīh: fool, ignorant.", "gram": "noun + pronoun, subject" },
+        { "ar": "عَلَى اللَّهِ شَطَطًا", "tr": "ʿalā llāhi shaṭaṭan", "racine": "ش ط ط", "sens": "against God, outrageous things", "def": "shaṭaṭ: excess, outrage.", "gram": "complement + object" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَأَنَّا ظَنَنَّا أَن لَّن تَقُولَ الْإِنسُ وَالْجِنُّ عَلَى اللَّهِ كَذِبًا",
+      "tr": "wa-annā ẓanannā an lan taqūla l-insu wa-l-jinnu ʿalā llāhi kadhiban",
+      "trad": "We thought that neither men nor jinn would ever utter a lie against God,",
+      "themes": ["past credulity", "lie about God"],
+      "commentaire": "<em>ẓanannā an lan taqūla… kadhiban</em> (ظَنَنّا أَنْ لَنْ تَقولَ كَذِبًا): we thought none would lie about God. A confession of naïveté: the jinn believed that none, human or jinn, would dare invent lies about God — and so they had believed Iblīs's claims of consort and child. A quiet lesson: credulity is dangerous even in matters of faith; one must not blindly accept what is said of God, but measure it against His transcendence. True faith is awake, not credulous.",
+      "mots": [
+        { "ar": "وَأَنَّا ظَنَنَّا", "tr": "wa-annā ẓanannā", "racine": "ظ ن ن", "sens": "we thought", "def": "ẓanna: to think, presume.", "gram": "anna + pronoun + verb" },
+        { "ar": "أَن لَّن تَقُولَ الْإِنسُ وَالْجِنُّ", "tr": "an lan taqūla l-insu wa-l-jinn", "racine": "ق و ل / أ ن س / ج ن ن", "sens": "that men and jinn would not say", "def": "ins: humans; jinn: jinn.", "gram": "an + negation + verb + subjects" },
+        { "ar": "عَلَى اللَّهِ كَذِبًا", "tr": "ʿalā llāhi kadhiban", "racine": "ك ذ ب", "sens": "a lie against God", "def": "kadhib: lie.", "gram": "complement + object" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "وَأَنَّهُ كَانَ رِجَالٌ مِّنَ الْإِنسِ يَعُوذُونَ بِرِجَالٍ مِّنَ الْجِنِّ فَزَادُوهُمْ رَهَقًا",
+      "tr": "wa-annahu kāna rijālun mina l-insi yaʿūdhūna bi-rijālin mina l-jinni fa-zādūhum rahaqan",
+      "trad": "but there were men among humankind who sought refuge with males among the jinn, who only increased their trouble.",
+      "themes": ["false protection", "increased trouble"],
+      "commentaire": "<em>yaʿūdhūna bi-rijālin mina l-jinn</em> (يَعوذونَ بِرِجالٍ مِنَ الجِنّ): they sought refuge with jinn. Qushayrī: “the jinn increased the humans' abasement (dhilla) and trouble (rahaq)” — for to seek refuge other than with God brings only degradation. When travellers halted and said “I seek refuge with the lord of this valley,” the jinn fancied themselves exalted and tightened their hold. A lesson: every refuge sought outside God — superstition, false protector — does not increase safety but anguish. One is relieved only by taking refuge in Him alone.",
+      "mots": [
+        { "ar": "رِجَالٌ مِّنَ الْإِنسِ", "tr": "rijālun mina l-ins", "racine": "ر ج ل / أ ن س", "sens": "men among humankind", "def": "rijāl: men.", "gram": "noun + complement" },
+        { "ar": "يَعُوذُونَ بِرِجَالٍ مِّنَ الْجِنِّ", "tr": "yaʿūdhūna bi-rijālin mina l-jinn", "racine": "ع و ذ / ج ن ن", "sens": "sought refuge with jinn", "def": "ʿādha: to seek refuge.", "gram": "verb + complement" },
+        { "ar": "فَزَادُوهُمْ رَهَقًا", "tr": "fa-zādūhum rahaqan", "racine": "ز ي د / ر ه ق", "sens": "they only increased their trouble", "def": "rahaq: abasement, oppression, trouble.", "gram": "verb + object" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَأَنَّهُمْ ظَنُّوا كَمَا ظَنَنتُمْ أَن لَّن يَبْعَثَ اللَّهُ أَحَدًا",
+      "tr": "wa-annahum ẓannū kamā ẓanantum an lan yabʿatha llāhu aḥadan",
+      "trad": "They thought, as you did, that God would never raise anyone.",
+      "themes": ["denial of resurrection", "common error"],
+      "commentaire": "<em>an lan yabʿatha llāhu aḥadan</em> (أَنْ لَنْ يَبْعَثَ الله أَحَدًا): that God would raise no one. Qushayrī: “the deniers among the jinn believed there would be no resurrection or rising — as you believed, O humans.” The denial of the resurrection is the shared error of misguided humans and jinn. As in the neighbouring sūras, it is the refusal to believe in the return that opens the door to every straying: the one who expects no reckoning thinks himself free of everything.",
+      "mots": [
+        { "ar": "وَأَنَّهُمْ ظَنُّوا", "tr": "wa-annahum ẓannū", "racine": "ظ ن ن", "sens": "they thought", "def": "ẓanna: to presume.", "gram": "anna + pronoun + verb" },
+        { "ar": "كَمَا ظَنَنتُمْ", "tr": "kamā ẓanantum", "racine": "ظ ن ن", "sens": "as you thought", "def": "ẓanna: to presume.", "gram": "comparison + verb" },
+        { "ar": "أَن لَّن يَبْعَثَ اللَّهُ أَحَدًا", "tr": "an lan yabʿatha llāhu aḥadan", "racine": "ب ع ث", "sens": "that God would raise no one", "def": "baʿatha: to raise, send.", "gram": "an + negation + verb + subject + object" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "وَأَنَّا لَمَسْنَا السَّمَاءَ فَوَجَدْنَاهَا مُلِئَتْ حَرَسًا شَدِيدًا وَشُهُبًا",
+      "tr": "wa-annā lamasnā l-samāʾa fa-wajadnāhā muliʾat ḥarasan shadīdan wa-shuhuban",
+      "trad": "We sought to reach the heaven and found it filled with mighty guards and flaming darts.",
+      "themes": ["guarded heaven", "end of eavesdropping"],
+      "commentaire": "<em>muliʾat ḥarasan shadīdan wa-shuhuban</em> (مُلِئَتْ حَرَسًا شَديدًا وَشُهُبًا): filled with mighty guards and meteors. Qushayrī: “when they were barred from listening.” The jinn who once snatched scraps of the celestial words to whisper to soothsayers now find themselves blocked: the heaven is guarded. The coming of the pure Revelation closes the door to false, mingled inspirations. An image: when the authentic Word appears, the counterfeits are driven off; the true light repels the deceptive glimmers.",
+      "mots": [
+        { "ar": "لَمَسْنَا السَّمَاءَ", "tr": "lamasnā l-samāʾ", "racine": "ل م س / س م و", "sens": "we sought to reach the heaven", "def": "lamasa: to touch, to reach.", "gram": "verb + complement" },
+        { "ar": "مُلِئَتْ حَرَسًا شَدِيدًا", "tr": "muliʾat ḥarasan shadīdan", "racine": "م ل أ / ح ر س / ش د د", "sens": "filled with mighty guards", "def": "ḥaras: guards; shadīd: mighty.", "gram": "passive verb + complement + adjective" },
+        { "ar": "وَشُهُبًا", "tr": "wa-shuhuban", "racine": "ش ه ب", "sens": "and meteors", "def": "shihāb: shooting star, meteor.", "gram": "plural noun" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "وَأَنَّا كُنَّا نَقْعُدُ مِنْهَا مَقَاعِدَ لِلسَّمْعِ فَمَن يَسْتَمِعِ الْآنَ يَجِدْ لَهُ شِهَابًا رَّصَدًا",
+      "tr": "wa-annā kunnā naqʿudu minhā maqāʿida li-l-samʿi fa-man yastamiʿi l-āna yajid lahu shihāban raṣadan",
+      "trad": "We used to take up positions there to listen; but whoever now seeks to listen finds a flaming dart lying in wait for him.",
+      "themes": ["closed listening posts", "end of an age"],
+      "commentaire": "<em>shihāban raṣadan</em> (شِهابًا رَصَدًا): a meteor lying in wait. The jinn acknowledge that an age is over: they had their listening posts at the threshold of heaven; now whoever ventures there finds a dart lying in wait. Qushayrī sums up: “now we are barred from it.” A cosmic turning: the era of mingled inspirations and soothsayers ends with the coming of the clear Revelation. What was murky is now barred; the purity of the Word no longer suffers smuggling.",
+      "mots": [
+        { "ar": "نَقْعُدُ مِنْهَا مَقَاعِدَ لِلسَّمْعِ", "tr": "naqʿudu minhā maqāʿida li-l-samʿ", "racine": "ق ع د / س م ع", "sens": "we took up positions to listen", "def": "qaʿada: to sit; maqʿad: seat.", "gram": "verb + complements" },
+        { "ar": "فَمَن يَسْتَمِعِ الْآنَ", "tr": "fa-man yastamiʿi l-āna", "racine": "س م ع", "sens": "whoever listens now", "def": "istamaʿa: to lend an ear.", "gram": "relative + verb + adverb" },
+        { "ar": "يَجِدْ لَهُ شِهَابًا رَّصَدًا", "tr": "yajid lahu shihāban raṣadan", "racine": "و ج د / ش ه ب / ر ص د", "sens": "finds a meteor lying in wait", "def": "shihāb: meteor; raṣad: in wait.", "gram": "verb + complement + adjective" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "وَأَنَّا لَا نَدْرِي أَشَرٌّ أُرِيدَ بِمَن فِي الْأَرْضِ أَمْ أَرَادَ بِهِمْ رَبُّهُمْ رَشَدًا",
+      "tr": "wa-annā lā nadrī a-sharrun urīda bi-man fī l-arḍi am arāda bihim rabbuhum rashadan",
+      "trad": "So we did not know whether ill was intended for those on earth, or whether their Lord intended right guidance for them.",
+      "themes": ["ignorance of the design", "humility"],
+      "commentaire": "<em>lā nadrī</em> (لا نَدْري): we do not know. A fine confession of humility: before the cosmic change, the jinn do not claim to know God's design — ill intended for the inhabitants of the earth, or guidance? To acknowledge that one does not know God's ways is a wisdom: not to interpret events hastily, not to plaster one's judgement onto the Mystery. What appears a threat may be a grace, and vice versa; God alone knows the end of things.",
+      "mots": [
+        { "ar": "لَا نَدْرِي", "tr": "lā nadrī", "racine": "د ر ي", "sens": "we do not know", "def": "darā: to know.", "gram": "negation + imperfect verb" },
+        { "ar": "أَشَرٌّ أُرِيدَ بِمَن فِي الْأَرْضِ", "tr": "a-sharrun urīda bi-man fī l-arḍ", "racine": "ش ر ر / ر و د", "sens": "whether ill is intended for those on earth", "def": "sharr: ill; arāda: to intend.", "gram": "interrogation + noun + passive verb" },
+        { "ar": "أَمْ أَرَادَ بِهِمْ رَبُّهُمْ رَشَدًا", "tr": "am arāda bihim rabbuhum rashadan", "racine": "ر و د / ر ش د", "sens": "or their Lord intends right guidance", "def": "rashad: right guidance.", "gram": "or + verb + subject + complement" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "وَأَنَّا مِنَّا الصَّالِحُونَ وَمِنَّا دُونَ ذَٰلِكَ كُنَّا طَرَائِقَ قِدَدًا",
+      "tr": "wa-annā minnā l-ṣāliḥūna wa-minnā dūna dhālika kunnā ṭarāʾiqa qidadan",
+      "trad": "Among us are the righteous, and among us are others; we follow divergent ways.",
+      "themes": ["diversity", "divergent ways"],
+      "commentaire": "<em>ṭarāʾiqa qidadan</em> (طَرائِقَ قِدَدًا): disparate ways, divided paths. The jinn acknowledge their own diversity: among them, the righteous and others lesser. Creation is not uniform, even among the invisible: everywhere choice exists, everywhere paths part between rectitude and straying. This confession prepares the sorting of verse 14: the diversity of ways issues in two destinies, according to whether one submits or deviates.",
+      "mots": [
+        { "ar": "مِنَّا الصَّالِحُونَ", "tr": "minnā l-ṣāliḥūn", "racine": "ص ل ح", "sens": "among us, the righteous", "def": "ṣāliḥ: righteous, upright.", "gram": "preposition + active participle plur." },
+        { "ar": "وَمِنَّا دُونَ ذَٰلِكَ", "tr": "wa-minnā dūna dhālik", "racine": "", "sens": "and among us, lesser", "def": "dūna dhālik: less than that.", "gram": "preposition + adverb" },
+        { "ar": "طَرَائِقَ قِدَدًا", "tr": "ṭarāʾiqa qidadan", "racine": "ط ر ق / ق د د", "sens": "divergent ways", "def": "ṭarīqa: way; qidad: disparate, divided.", "gram": "plural noun + adjective" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "وَأَنَّا ظَنَنَّا أَن لَّن نُّعْجِزَ اللَّهَ فِي الْأَرْضِ وَلَن نُّعْجِزَهُ هَرَبًا",
+      "tr": "wa-annā ẓanannā an lan nuʿjiza llāha fī l-arḍi wa-lan nuʿjizahu haraban",
+      "trad": "We knew well that we could never thwart God's power on earth, nor thwart Him by flight.",
+      "themes": ["powerlessness before God", "no escape"],
+      "commentaire": "<em>lan nuʿjiza llāha… wa-lan nuʿjizahu haraban</em> (لَنْ نُعْجِزَ الله وَلَنْ نُعْجِزَهُ هَرَبًا): we could neither thwart Him, nor escape Him by flight. A lucid acknowledgement: none, on earth or in flight, can foil God's power. This certainty is the foundation of faith: to understand that one cannot escape Him is to cease fleeing and turn toward Him. Flight is vain; only the return remains. Powerlessness acknowledged becomes the threshold of trusting surrender.",
+      "mots": [
+        { "ar": "ظَنَنَّا", "tr": "ẓanannā", "racine": "ظ ن ن", "sens": "we understood, presumed", "def": "ẓanna: to think, be sure.", "gram": "perfect verb" },
+        { "ar": "أَن لَّن نُّعْجِزَ اللَّهَ فِي الْأَرْضِ", "tr": "an lan nuʿjiza llāha fī l-arḍ", "racine": "ع ج ز", "sens": "that we could not thwart God on earth", "def": "aʿjaza: to render incapable, thwart.", "gram": "an + negation + verb + complement" },
+        { "ar": "وَلَن نُّعْجِزَهُ هَرَبًا", "tr": "wa-lan nuʿjizahu haraban", "racine": "ع ج ز / ه ر ب", "sens": "nor by flight", "def": "harab: flight.", "gram": "negation + verb + complement" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "وَأَنَّا لَمَّا سَمِعْنَا الْهُدَىٰ آمَنَّا بِهِ فَمَن يُؤْمِن بِرَبِّهِ فَلَا يَخَافُ بَخْسًا وَلَا رَهَقًا",
+      "tr": "wa-annā lammā samiʿnā l-hudā āmannā bihi fa-man yuʾmin bi-rabbihi fa-lā yakhāfu bakhsan wa-lā rahaqan",
+      "trad": "So when we heard the Guidance, we believed in it. Whoever believes in his Lord fears neither loss nor oppression.",
+      "themes": ["faith without fear", "the believer's security"],
+      "commentaire": "<em>fa-lā yakhāfu bakhsan wa-lā rahaqan</em> (فَلا يَخافُ بَخْسًا وَلا رَهَقًا): he fears neither loss nor oppression. The fruit of faith: the heart's security. The one who believes in his Lord no longer dreads that his deeds be diminished (bakhs) or that he be unjustly burdened (rahaq). For the one whose account is in God's hands knows that no good will be lost, no injustice added. Faith delivers from fear: one entrusts one's fate to the One who wrongs no one.",
+      "mots": [
+        { "ar": "لَمَّا سَمِعْنَا الْهُدَىٰ", "tr": "lammā samiʿnā l-hudā", "racine": "س م ع / ه د ي", "sens": "when we heard the Guidance", "def": "samiʿa: to hear; hudā: guidance.", "gram": "adverb + verb + complement" },
+        { "ar": "آمَنَّا بِهِ", "tr": "āmannā bihi", "racine": "أ م ن", "sens": "we believed in it", "def": "āmana: to believe.", "gram": "verb (form IV) + pronoun" },
+        { "ar": "فَلَا يَخَافُ بَخْسًا وَلَا رَهَقًا", "tr": "fa-lā yakhāfu bakhsan wa-lā rahaqan", "racine": "خ و ف / ب خ س / ر ه ق", "sens": "he fears neither loss nor oppression", "def": "bakhs: diminution; rahaq: oppression.", "gram": "negation + verb + complements" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "وَأَنَّا مِنَّا الْمُسْلِمُونَ وَمِنَّا الْقَاسِطُونَ فَمَنْ أَسْلَمَ فَأُولَٰئِكَ تَحَرَّوْا رَشَدًا",
+      "tr": "wa-annā minnā l-muslimūna wa-minnā l-qāsiṭūna fa-man aslama fa-ulāʾika taḥarraw rashadan",
+      "trad": "Among us are those who submit to God (muslimūn), and among us are the deviators. Those who submitted earnestly sought right guidance.",
+      "themes": ["submission or rebellion", "quest for rectitude"],
+      "commentaire": "<em>taḥarraw rashadan</em> (تَحَرَّوْا رَشَدًا): they sought, aimed at rectitude. The sorting becomes precise: the <em>muslimūn</em> (those who submit) and the <em>qāsiṭūn</em> (deviators, the unjust). A fine Arabic wordplay: <em>qāsiṭ</em> (who deviates from justice) is opposed to <em>muqsiṭ</em> (who is equitable). And of the one who submitted it is said that he <em>sought</em> rectitude: submission is not passivity but an active quest, an ardent search for the straight path. To submit to God is to aim true.",
+      "mots": [
+        { "ar": "مِنَّا الْمُسْلِمُونَ", "tr": "minnā l-muslimūn", "racine": "س ل م", "sens": "among us, those who submit", "def": "muslim: submitted to God.", "gram": "preposition + active participle plur." },
+        { "ar": "وَمِنَّا الْقَاسِطُونَ", "tr": "wa-minnā l-qāsiṭūn", "racine": "ق س ط", "sens": "and among us, the deviators", "def": "qāsiṭ: unjust, deviating.", "gram": "preposition + active participle plur." },
+        { "ar": "فَمَنْ أَسْلَمَ", "tr": "fa-man aslama", "racine": "س ل م", "sens": "those who submitted", "def": "aslama: to submit.", "gram": "relative + verb (form IV)" },
+        { "ar": "تَحَرَّوْا رَشَدًا", "tr": "taḥarraw rashadan", "racine": "ح ر ي / ر ش د", "sens": "sought rectitude", "def": "taḥarrā: to seek, aim at; rashad: rectitude.", "gram": "verb (form V) + complement" }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "وَأَمَّا الْقَاسِطُونَ فَكَانُوا لِجَهَنَّمَ حَطَبًا",
+      "tr": "wa-ammā l-qāsiṭūna fa-kānū li-jahannama ḥaṭaban",
+      "trad": "As for the deviators, they will be fuel for Gehenna.",
+      "themes": ["the deviators", "fuel of the Fire"],
+      "commentaire": "<em>li-jahannama ḥaṭaban</em> (لِجَهَنَّمَ حَطَبًا): fuel for Gehenna. A striking image: the deviators become the fuel of the Fire they feed. As dry wood draws the flame, the soul that has deviated from justice carries within it what will consume it. The chastisement is not plastered on from outside: one becomes oneself the matter of one's torment. Conversely, the one who submitted (v. 14) becomes capable of receiving the abundant water of the next verse.",
+      "mots": [
+        { "ar": "وَأَمَّا الْقَاسِطُونَ", "tr": "wa-ammā l-qāsiṭūn", "racine": "ق س ط", "sens": "as for the deviators", "def": "qāsiṭ: who deviates from justice.", "gram": "particle + active participle plur." },
+        { "ar": "فَكَانُوا لِجَهَنَّمَ حَطَبًا", "tr": "fa-kānū li-jahannama ḥaṭaban", "racine": "ج ه ن م / ح ط ب", "sens": "they will be fuel for Gehenna", "def": "ḥaṭab: wood, fuel.", "gram": "verb + complement + predicate" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "وَأَن لَّوِ اسْتَقَامُوا عَلَى الطَّرِيقَةِ لَأَسْقَيْنَاهُم مَّاءً غَدَقًا",
+      "tr": "wa-an lawi staqāmū ʿalā l-ṭarīqati la-asqaynāhum māʾan ghadaqan",
+      "trad": "Had they kept to the straight way, We would have given them abundant water to drink,",
+      "themes": ["rectitude", "abundant water"],
+      "commentaire": "<em>law istaqāmū… la-asqaynāhum māʾan ghadaqan</em> (لَوِ اسْتَقاموا لَأَسْقَيْناهُمْ ماءً غَدَقًا): had they kept straight, We would have given them abundant water. Qushayrī gives the key: “rectitude (istiqāma) on the way calls forth the fullness of blessing and the abundance of rest; turning away from God brings the bitterness of life and the permanence of chastisement.” Abundant water is the symbol of grace pouring upon the upright heart. Rectitude is no sterile effort: it opens the springs. The one who keeps to the way is watered from on high.",
+      "mots": [
+        { "ar": "وَأَن لَّوِ اسْتَقَامُوا", "tr": "wa-an lawi staqāmū", "racine": "ق و م", "sens": "had they kept straight", "def": "istaqāma: to keep straight, persevere.", "gram": "an + law + verb (form X)" },
+        { "ar": "عَلَى الطَّرِيقَةِ", "tr": "ʿalā l-ṭarīqa", "racine": "ط ر ق", "sens": "on the way", "def": "ṭarīqa: way, path.", "gram": "preposition + noun" },
+        { "ar": "لَأَسْقَيْنَاهُم مَّاءً غَدَقًا", "tr": "la-asqaynāhum māʾan ghadaqan", "racine": "س ق ي / غ د ق", "sens": "We would have given them abundant water", "def": "ghadaq: abundant.", "gram": "lām + verb + complement + adjective" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "لِّنَفْتِنَهُمْ فِيهِ وَمَن يُعْرِضْ عَن ذِكْرِ رَبِّهِ يَسْلُكْهُ عَذَابًا صَعَدًا",
+      "tr": "li-naftinahum fīhi wa-man yuʿriḍ ʿan dhikri rabbihi yaslukhu ʿadhāban ṣaʿadan",
+      "trad": "to test them thereby. But whoever turns away from the remembrance of his Lord, God drives him to a relentless chastisement.",
+      "themes": ["test by blessing", "turning from dhikr"],
+      "commentaire": "<em>man yuʿriḍ ʿan dhikri rabbihi</em> (مَنْ يُعْرِضْ عَنْ ذِكْرِ رَبِّهِ): whoever turns away from the remembrance of his Lord. A double-edged verse: even abundant water (v. 16) is a <em>test</em> (fitna) — for abundance can make one forget the Giver. And the criterion is <em>dhikr</em>: to remember God in the blessing, or to turn away from it. Whoever turns from the remembrance is driven to a “relentless chastisement” (ṣaʿad), a painful ascent. The remembrance of God is what turns the gift into grace; forgetting turns it into a trap.",
+      "mots": [
+        { "ar": "لِّنَفْتِنَهُمْ فِيهِ", "tr": "li-naftinahum fīhi", "racine": "ف ت ن", "sens": "to test them thereby", "def": "fatana: to test, tempt.", "gram": "lām of purpose + verb + pronoun" },
+        { "ar": "وَمَن يُعْرِضْ عَن ذِكْرِ رَبِّهِ", "tr": "wa-man yuʿriḍ ʿan dhikri rabbihi", "racine": "ع ر ض / ذ ك ر", "sens": "whoever turns from his Lord's remembrance", "def": "aʿraḍa: to turn away; dhikr: remembrance.", "gram": "relative + verb + complement" },
+        { "ar": "يَسْلُكْهُ عَذَابًا صَعَدًا", "tr": "yaslukhu ʿadhāban ṣaʿadan", "racine": "س ل ك / ع ذ ب / ص ع د", "sens": "He drives him to a relentless chastisement", "def": "salaka: to drive into; ṣaʿad: hard, ascending.", "gram": "verb + complement + adjective" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "وَأَنَّ الْمَسَاجِدَ لِلَّهِ فَلَا تَدْعُوا مَعَ اللَّهِ أَحَدًا",
+      "tr": "wa-anna l-masājida lillāhi fa-lā tadʿū maʿa llāhi aḥadan",
+      "trad": "The mosques are devoted to God. So invoke none besides God in them.",
+      "themes": ["places of prostration", "pure invocation"],
+      "commentaire": "<em>al-masājid lillāh</em> (المَساجِد لله): the places of prostration are God's. A pearl of Qushayrī: “the mosque has an excellence, which is why God singled it out among places; it is the place of worship. <em>And how should the worshipper not be honoured, if even the place where his foot rests is?</em>” And a second, inner reading: “the <em>masājid</em> are the limbs by which one prostrates — they are God's: so worship none but God with what is God's.” Our very body, organ of prostration, is consecrated: to use it for other than Him would be a misappropriation.",
+      "mots": [
+        { "ar": "وَأَنَّ الْمَسَاجِدَ لِلَّهِ", "tr": "wa-anna l-masājida lillāh", "racine": "س ج د", "sens": "the mosques are God's", "def": "masjid: place of prostration.", "gram": "anna + noun + complement" },
+        { "ar": "فَلَا تَدْعُوا مَعَ اللَّهِ أَحَدًا", "tr": "fa-lā tadʿū maʿa llāhi aḥadan", "racine": "د ع و", "sens": "invoke none with God", "def": "daʿā: to invoke.", "gram": "prohibition + verb + complement" }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "وَأَنَّهُ لَمَّا قَامَ عَبْدُ اللَّهِ يَدْعُوهُ كَادُوا يَكُونُونَ عَلَيْهِ لِبَدًا",
+      "tr": "wa-annahu lammā qāma ʿabdu llāhi yadʿūhu kādū yakūnūna ʿalayhi libadan",
+      "trad": "When the Servant of God stood up to invoke Him, they nearly smothered him, crowding around him.",
+      "themes": ["the Servant of God", "pressing crowd"],
+      "commentaire": "<em>ʿabdu llāh</em> (عَبْدُ الله): the Servant of God — that is Muhammad, glosses Qushayrī. When he rose to call the creatures to God, “the jinn and humans nearly gathered upon him to prevent him from conveying.” The title is eloquent: at the summit of his mission, the Prophet is named neither “messenger” nor “chosen one” but <em>servant</em> — for the highest dignity is pure servitude before God. And the truth disturbs: scarcely is the call uttered when the crowd presses to smother it. Every true word arouses resistance.",
+      "mots": [
+        { "ar": "لَمَّا قَامَ عَبْدُ اللَّهِ يَدْعُوهُ", "tr": "lammā qāma ʿabdu llāhi yadʿūhu", "racine": "ق و م / ع ب د / د ع و", "sens": "when the Servant of God stood to invoke Him", "def": "ʿabd: servant; daʿā: to call, invoke.", "gram": "adverb + verb + subject + verb" },
+        { "ar": "كَادُوا يَكُونُونَ عَلَيْهِ لِبَدًا", "tr": "kādū yakūnūna ʿalayhi libadan", "racine": "ك و د / ل ب د", "sens": "they nearly crowded upon him in masses", "def": "kāda: to be on the point of; libad: dense masses.", "gram": "verb of imminence + verb + complement" }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "قُلْ إِنَّمَا أَدْعُو رَبِّي وَلَا أُشْرِكُ بِهِ أَحَدًا",
+      "tr": "qul innamā adʿū rabbī wa-lā ushriku bihi aḥadan",
+      "trad": "Say [O Muhammad]: “I invoke only my Lord and associate none with Him.”",
+      "themes": ["exclusive invocation", "rejection of association"],
+      "commentaire": "<em>innamā adʿū rabbī</em> (إنّما أَدْعو رَبّي): I invoke only my Lord. Faced with the hostile crowd, the Prophet does not retaliate: he simply declares his exclusive attachment. The whole of Islam holds in this sentence: to invoke God alone, to associate nothing with Him. It is the strongest answer to opposition: not polemic, but quiet fidelity to the One. The one who invokes none but God has nothing to fear from pressures, for his recourse is not in men.",
+      "mots": [
+        { "ar": "قُلْ إِنَّمَا أَدْعُو رَبِّي", "tr": "qul innamā adʿū rabbī", "racine": "د ع و / ر ب ب", "sens": "say: I invoke only my Lord", "def": "daʿā: to invoke.", "gram": "imperative + restriction + verb + complement" },
+        { "ar": "وَلَا أُشْرِكُ بِهِ أَحَدًا", "tr": "wa-lā ushriku bihi aḥadan", "racine": "ش ر ك", "sens": "I associate none with Him", "def": "ashraka: to associate.", "gram": "negation + verb + complement" }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "قُلْ إِنِّي لَا أَمْلِكُ لَكُمْ ضَرًّا وَلَا رَشَدًا",
+      "tr": "qul innī lā amliku lakum ḍarran wa-lā rashadan",
+      "trad": "Say: “I have no power to harm you or to guide you aright.”",
+      "themes": ["the prophet's powerlessness", "humility"],
+      "commentaire": "<em>lā amliku lakum ḍarran wa-lā rashadan</em> (لا أَمْلِكُ لَكُمْ ضَرًّا وَلا رَشَدًا): I possess for you neither harm nor guidance. Qushayrī: “I can neither ward off an ill from you, nor procure you a good — all comes from God.” A decisive confession: even the Prophet does not hold guidance; he conveys, but God alone guides (cf. s. 71, v. 6). This humility guards against any idolatry of the messenger: one does not cling to him for himself, but through him to the One who sends him. The servant claims no power.",
+      "mots": [
+        { "ar": "قُلْ إِنِّي", "tr": "qul innī", "racine": "ق و ل", "sens": "say: I", "def": "qāla: to say.", "gram": "imperative + inna + pronoun" },
+        { "ar": "لَا أَمْلِكُ لَكُمْ", "tr": "lā amliku lakum", "racine": "م ل ك", "sens": "I have no power for you", "def": "malaka: to possess, have power.", "gram": "negation + verb + complement" },
+        { "ar": "ضَرًّا وَلَا رَشَدًا", "tr": "ḍarran wa-lā rashadan", "racine": "ض ر ر / ر ش د", "sens": "neither harm nor right guidance", "def": "ḍarr: harm; rashad: guidance.", "gram": "two objects" }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "قُلْ إِنِّي لَن يُجِيرَنِي مِنَ اللَّهِ أَحَدٌ وَلَنْ أَجِدَ مِن دُونِهِ مُلْتَحَدًا",
+      "tr": "qul innī lan yujīranī mina llāhi aḥadun wa-lan ajida min dūnihi multaḥadan",
+      "trad": "Say: “None can protect me against God, and besides Him I shall find no refuge,",
+      "themes": ["no refuge but God", "total dependence"],
+      "commentaire": "<em>lan ajida min dūnihi multaḥadan</em> (لَنْ أَجِدَ مِنْ دونِهِ مُلْتَحَدًا): I shall find no refuge besides Him. The Prophet himself declares he has no refuge outside God: none would protect him against Him, no shelter exists anywhere but in Him. It is the exact reverse of the jinn's false protection (v. 6): there, men sought refuge with creatures and gained only trouble; here, the best of men seeks refuge in God alone. The only true shelter is the very One whom one cannot flee: one is saved from God only <em>in</em> God.",
+      "mots": [
+        { "ar": "لَن يُجِيرَنِي مِنَ اللَّهِ أَحَدٌ", "tr": "lan yujīranī mina llāhi aḥadun", "racine": "ج و ر", "sens": "none can protect me against God", "def": "ajāra: to protect, give asylum.", "gram": "negation + verb + complement + subject" },
+        { "ar": "وَلَنْ أَجِدَ مِن دُونِهِ مُلْتَحَدًا", "tr": "wa-lan ajida min dūnihi multaḥadan", "racine": "و ج د / ل ح د", "sens": "I shall find no refuge besides Him", "def": "multaḥad: refuge, shelter.", "gram": "negation + verb + complement" }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "إِلَّا بَلَاغًا مِّنَ اللَّهِ وَرِسَالَاتِهِ وَمَن يَعْصِ اللَّهَ وَرَسُولَهُ فَإِنَّ لَهُ نَارَ جَهَنَّمَ خَالِدِينَ فِيهَا أَبَدًا",
+      "tr": "illā balāghan mina llāhi wa-risālātihi wa-man yaʿṣi llāha wa-rasūlahu fa-inna lahu nāra jahannama khālidīna fīhā abadan",
+      "trad": "save by conveying the word of God and His messages.” As for those who disobey God and His Messenger, the Fire of Gehenna is theirs; they will abide in it forever!",
+      "themes": ["conveying alone", "disobedience"],
+      "commentaire": "<em>illā balāghan mina llāh</em> (إلّا بَلاغًا مِنَ الله): save a conveying from God. Qushayrī: “nothing will save me from God except that I convey His messages by His command.” The Prophet's only security is in faithfully fulfilling his mission: not a personal power, but obedience to the task received. His greatness lies entirely in the <em>balāgh</em>, the conveying. A universal lesson: our salvation is not in what we possess but in fidelity to what is entrusted to us.",
+      "mots": [
+        { "ar": "إِلَّا بَلَاغًا مِّنَ اللَّهِ", "tr": "illā balāghan mina llāh", "racine": "ب ل غ", "sens": "save a conveying from God", "def": "balāgh: communication, conveying.", "gram": "exception + noun + complement" },
+        { "ar": "وَرِسَالَاتِهِ", "tr": "wa-risālātihi", "racine": "ر س ل", "sens": "and His messages", "def": "risāla: message.", "gram": "plural noun + pronoun" },
+        { "ar": "وَمَن يَعْصِ اللَّهَ وَرَسُولَهُ", "tr": "wa-man yaʿṣi llāha wa-rasūlahu", "racine": "ع ص ي / ر س ل", "sens": "whoever disobeys God and His Messenger", "def": "ʿaṣā: to disobey.", "gram": "relative + verb + complements" },
+        { "ar": "خَالِدِينَ فِيهَا أَبَدًا", "tr": "khālidīna fīhā abadan", "racine": "خ ل د / أ ب د", "sens": "abiding in it forever", "def": "khālid: eternal; abad: eternity.", "gram": "active participle plur. + adverb" }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "حَتَّىٰ إِذَا رَأَوْا مَا يُوعَدُونَ فَسَيَعْلَمُونَ مَنْ أَضْعَفُ نَاصِرًا وَأَقَلُّ عَدَدًا",
+      "tr": "ḥattā idhā raʾaw mā yūʿadūna fa-sa-yaʿlamūna man aḍʿafu nāṣiran wa-aqallu ʿadadan",
+      "trad": "When at last they see what they were promised, they will know who is weaker in helpers and fewer in number.",
+      "themes": ["reversal", "true strength"],
+      "commentaire": "<em>man aḍʿafu nāṣiran wa-aqallu ʿadadan</em> (مَنْ أَضْعَفُ ناصِرًا وَأَقَلُّ عَدَدًا): who has the weakest helper and the smallest number. A final reversal: the deniers, proud of their numbers and alliances, will discover on the Day that they are the most destitute. True strength is not counted in partisans: a single man with God is stronger than multitudes without Him. What seemed weakness — the small band of believers — will prove strength, and the reverse. The world's reckoning is overturned before God's reckoning.",
+      "mots": [
+        { "ar": "حَتَّىٰ إِذَا رَأَوْا مَا يُوعَدُونَ", "tr": "ḥattā idhā raʾaw mā yūʿadūn", "racine": "ر أ ي / و ع د", "sens": "when they see what they are promised", "def": "raʾā: to see; waʿada: to promise.", "gram": "particle + verb + relative + verb" },
+        { "ar": "فَسَيَعْلَمُونَ", "tr": "fa-sa-yaʿlamūn", "racine": "ع ل م", "sens": "then they will know", "def": "ʿalima: to know.", "gram": "future particle + verb" },
+        { "ar": "مَنْ أَضْعَفُ نَاصِرًا وَأَقَلُّ عَدَدًا", "tr": "man aḍʿafu nāṣiran wa-aqallu ʿadadan", "racine": "ض ع ف / ن ص ر / ق ل ل / ع د د", "sens": "who is weaker in helpers and fewer in number", "def": "aḍʿaf: weakest; aqall: fewest.", "gram": "interrogative + comparatives" }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "قُلْ إِنْ أَدْرِي أَقَرِيبٌ مَّا تُوعَدُونَ أَمْ يَجْعَلُ لَهُ رَبِّي أَمَدًا",
+      "tr": "qul in adrī a-qarībun mā tūʿadūna am yajʿalu lahu rabbī amadan",
+      "trad": "Say: “I do not know whether what you are promised is near, or whether my Lord will set a term for it.",
+      "themes": ["ignorance of the Hour", "vigilance"],
+      "commentaire": "<em>in adrī</em> (إنْ أَدْري): I do not know. The Prophet himself does not know whether the Hour is near or far. Qushayrī draws from this a rule of life: “the servant must always expect the chastisement, with every breath, so as to remain in safety.” The ignorance of the <em>when</em> is no lack but a grace: it keeps the heart on watch. If one knew the date, one would put off till tomorrow; not knowing it, one lives each breath as if it might be the last. Uncertainty is the spur of vigilance.",
+      "mots": [
+        { "ar": "قُلْ إِنْ أَدْرِي", "tr": "qul in adrī", "racine": "د ر ي", "sens": "say: I do not know", "def": "darā: to know.", "gram": "imperative + negation + verb" },
+        { "ar": "أَقَرِيبٌ مَّا تُوعَدُونَ", "tr": "a-qarībun mā tūʿadūn", "racine": "ق ر ب / و ع د", "sens": "whether what you are promised is near", "def": "qarīb: near.", "gram": "interrogation + adjective + relative" },
+        { "ar": "أَمْ يَجْعَلُ لَهُ رَبِّي أَمَدًا", "tr": "am yajʿalu lahu rabbī amadan", "racine": "ج ع ل / أ م د", "sens": "or whether my Lord sets a term", "def": "amad: term, span.", "gram": "or + verb + subject + complement" }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "عَالِمُ الْغَيْبِ فَلَا يُظْهِرُ عَلَىٰ غَيْبِهِ أَحَدًا",
+      "tr": "ʿālimu l-ghaybi fa-lā yuẓhiru ʿalā ghaybihi aḥadan",
+      "trad": "He knows the Mystery perfectly; but He unveils His mystery to no one,",
+      "themes": ["knowledge of the Mystery", "the ghayb reserved"],
+      "commentaire": "<em>ʿālimu l-ghayb</em> (عالِمُ الغَيْب): the Knower of the Mystery, the invisible. And He unveils it to no one. The <em>ghayb</em> is what utterly escapes the creature: the Hour, destiny, the secret of hearts. This knowledge is the seal of divinity: God alone sees what is hidden. The spiritual lesson is one of measure: the servant acknowledges that he does not know, and makes of this ignorance a humility. To seek to pierce the ghayb by oneself is the pretension of the ego; to receive it from God, when He grants it, is a grace.",
+      "mots": [
+        { "ar": "عَالِمُ الْغَيْبِ", "tr": "ʿālimu l-ghayb", "racine": "ع ل م / غ ي ب", "sens": "the Knower of the Mystery", "def": "ʿālim: who knows; ghayb: invisible, mystery.", "gram": "active participle + complement" },
+        { "ar": "فَلَا يُظْهِرُ عَلَىٰ غَيْبِهِ أَحَدًا", "tr": "fa-lā yuẓhiru ʿalā ghaybihi aḥadan", "racine": "ظ ه ر / غ ي ب", "sens": "He unveils His mystery to no one", "def": "aẓhara: to unveil, make appear.", "gram": "negation + verb + complements" }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "إِلَّا مَنِ ارْتَضَىٰ مِن رَّسُولٍ فَإِنَّهُ يَسْلُكُ مِن بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِ رَصَدًا",
+      "tr": "illā mani rtaḍā min rasūlin fa-innahu yasluku min bayni yadayhi wa-min khalfihi raṣadan",
+      "trad": "except a messenger whom He approves. For such a one He sends guardians before him and behind him,",
+      "themes": ["the approved messenger", "protection of the revelation"],
+      "commentaire": "<em>illā mani rtaḍā min rasūl</em> (إلّا مَنِ ارْتَضى مِنْ رَسول): except the messenger He approves. The sole exception to the veil of the ghayb: God unveils a part of it to the <em>approved</em> messenger (irtaḍā), and according to the measure He wills. Qushayrī: God sends with the revelation angels, before and behind, guardians who protect it from demons and soothsayers, that nothing be added to or taken from it. The Word entrusted to the messenger is escorted, kept intact. Divine approval precedes the confidence: one receives God's secret only if one is first approved by Him.",
+      "mots": [
+        { "ar": "إِلَّا مَنِ ارْتَضَىٰ مِن رَّسُولٍ", "tr": "illā mani rtaḍā min rasūl", "racine": "ر ض و / ر س ل", "sens": "except the messenger He approves", "def": "irtaḍā: to approve, choose; rasūl: messenger.", "gram": "exception + relative + verb + complement" },
+        { "ar": "يَسْلُكُ مِن بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِ", "tr": "yasluku min bayni yadayhi wa-min khalfihi", "racine": "س ل ك", "sens": "He places before and behind him", "def": "salaka: to send, dispose.", "gram": "verb + complements of place" },
+        { "ar": "رَصَدًا", "tr": "raṣadan", "racine": "ر ص د", "sens": "guardians on watch", "def": "raṣad: guardians, sentinels.", "gram": "object" }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "لِّيَعْلَمَ أَن قَدْ أَبْلَغُوا رِسَالَاتِ رَبِّهِمْ وَأَحَاطَ بِمَا لَدَيْهِمْ وَأَحْصَىٰ كُلَّ شَيْءٍ عَدَدًا",
+      "tr": "li-yaʿlama an qad ablaghū risālāti rabbihim wa-aḥāṭa bimā ladayhim wa-aḥṣā kulla shayʾin ʿadadan",
+      "trad": "so that it may be known that they have conveyed the messages of their Lord. His knowledge encompasses all that is with them, and He has counted all things exactly.”",
+      "themes": ["fidelity of the conveying", "total knowledge"],
+      "commentaire": "A closing verse: <em>aḥṣā kulla shayʾin ʿadadan</em> (أَحْصى كُلَّ شَيْءٍ عَدَدًا) — He has numbered all things. The sūra that began with the jinn's wondering listening ends on God's all-encompassing knowledge. The protection of the revelation has a purpose: <em>that it may be known that the messengers have indeed conveyed</em> the messages of their Lord, intact. And nothing escapes the divine count: His knowledge encompasses all, numbers all. To the attentive heart, this verse inspires not dread but peace: the One who counts all forgets nothing — neither our failings, nor our sorrows, nor the least of our steps toward Him.",
+      "mots": [
+        { "ar": "لِّيَعْلَمَ أَن قَدْ أَبْلَغُوا", "tr": "li-yaʿlama an qad ablaghū", "racine": "ع ل م / ب ل غ", "sens": "that it may be known they conveyed", "def": "ablagha: to convey.", "gram": "lām of purpose + verb + an + verb" },
+        { "ar": "رِسَالَاتِ رَبِّهِمْ", "tr": "risālāti rabbihim", "racine": "ر س ل / ر ب ب", "sens": "the messages of their Lord", "def": "risāla: message.", "gram": "plural noun + complement" },
+        { "ar": "وَأَحَاطَ بِمَا لَدَيْهِمْ", "tr": "wa-aḥāṭa bimā ladayhim", "racine": "ح و ط", "sens": "He encompasses what is with them", "def": "aḥāṭa: to encompass.", "gram": "verb (form IV) + complement" },
+        { "ar": "وَأَحْصَىٰ كُلَّ شَيْءٍ عَدَدًا", "tr": "wa-aḥṣā kulla shayʾin ʿadadan", "racine": "ح ص ي / ع د د", "sens": "He has numbered all things", "def": "aḥṣā: to count, number; ʿadad: number.", "gram": "verb + complement + specifier" }
+      ]
+    }
+  ]
+}

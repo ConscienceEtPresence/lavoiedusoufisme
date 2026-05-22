@@ -1,0 +1,375 @@
+{
+  "n": 71,
+  "nom_ar": "نُوح",
+  "nom_tr": "Nūḥ",
+  "nom_fr": "Noé",
+  "revelation": "mecquoise",
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "versets_count": 28,
+  "intro": "Nūḥ — « Noé » — porte le nom du prophète de la longue patience. Toute la sourate est le récit, à la première personne, d'un appel inlassable et presque entièrement refusé : Noé appelle son peuple « nuit et jour », à voix haute et en secret, et son appel « ne fait qu'accroître leur fuite ». Au cœur de ce drame de l'obstination, une perle de Qushayrī éclaire la voie : <em>la demande de pardon (istighfār) est le heurtoir aux portes de la grâce ; quiconque a un besoin auprès de Dieu n'atteindra son but qu'en présentant d'abord sa demande de pardon ; qui veut la faveur, qu'il prenne le chemin de l'aveu de la faute</em>. La sourate déploie ensuite les signes de la création — les sept cieux superposés, la lune comme lumière et le soleil comme lampe, l'homme « fait croître de la terre comme les plantes » — puis se referme sur la plainte de Noé et sa double prière : pour les croyants, le pardon ; et la remise du sort des obstinés entre les mains de Dieu. Qushayrī souligne que Noé, sachant que les siens ne croiraient pas, transmit pourtant le message : <em>il montra que la guidance n'est pas en son pouvoir — les cœurs sont entre Tes mains, ô Toi seul</em>.",
+  "themes": ["l'appel inlassable", "istighfār et grâce", "signes de la création", "l'obstination du cœur", "la guidance entre les mains de Dieu"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "إِنَّا أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌ",
+      "tr": "innā arsalnā nūḥan ilā qawmihi an andhir qawmaka min qabli an yaʾtiyahum ʿadhābun alīmun",
+      "trad": "Oui, Nous avons envoyé Noé à son peuple : « Avertis ton peuple avant qu'un douloureux châtiment ne l'atteigne ! »",
+      "themes": ["envoi du prophète", "avertissement"],
+      "commentaire": "<em>arsalnā nūḥan</em> (أَرْسَلْنا نوحًا) : Nous avons envoyé Noé. Qushayrī note d'emblée une finesse théologique : « l'envoi des messagers est une faveur (faḍl) de Dieu ; Il a le droit, par Sa pure royauté, de faire ce qu'Il veut, et l'envoi des messagers ne Lui était pas une obligation. » La mission n'est pas un dû mais une grâce. Et Dieu envoie même vers ceux dont Il sait qu'ils ne croiront pas — pour que nul n'ait d'excuse, et que l'avertissement précède toujours le châtiment.",
+      "mots": [
+        { "ar": "إِنَّا أَرْسَلْنَا", "tr": "innā arsalnā", "racine": "ر س ل", "sens": "Nous avons envoyé", "def": "arsala : envoyer.", "gram": "inna + verbe accompli (forme IV)" },
+        { "ar": "نُوحًا", "tr": "nūḥan", "racine": "", "sens": "Noé", "def": "Nūḥ : Noé.", "gram": "nom propre, complément d'objet" },
+        { "ar": "أَنْ أَنذِرْ", "tr": "an andhir", "racine": "ن ذ ر", "sens": "avertis", "def": "andhara : avertir.", "gram": "an explicatif + impératif" },
+        { "ar": "عَذَابٌ أَلِيمٌ", "tr": "ʿadhābun alīmun", "racine": "ع ذ ب / أ ل م", "sens": "un châtiment douloureux", "def": "ʿadhāb alīm : châtiment douloureux.", "gram": "nom + adjectif, sujet" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "قَالَ يَا قَوْمِ إِنِّي لَكُمْ نَذِيرٌ مُّبِينٌ",
+      "tr": "qāla yā qawmi innī lakum nadhīrun mubīnun",
+      "trad": "Il dit : « O mon peuple ! Je suis pour vous un avertisseur explicite.",
+      "themes": ["mission claire", "avertisseur"],
+      "commentaire": "<em>nadhīr mubīn</em> (نَذير مُبين) : un avertisseur explicite. Noé se présente non en juge mais en serviteur chargé d'un message clair. Qushayrī rappelle qu'il savait déjà l'endurcissement des siens — « il sut d'eux qu'ils n'accepteraient pas » — et pourtant il transmit. C'est la grandeur du prophète : avertir clairement, sans se décharger de sa tâche sur le résultat. La clarté du message ne garantit pas son accueil ; elle ôte seulement toute excuse à celui qui refuse.",
+      "mots": [
+        { "ar": "قَالَ يَا قَوْمِ", "tr": "qāla yā qawmi", "racine": "ق و ل / ق و م", "sens": "il dit : ô mon peuple", "def": "qawm : peuple.", "gram": "verbe + vocatif" },
+        { "ar": "إِنِّي لَكُمْ", "tr": "innī lakum", "racine": "", "sens": "je suis pour vous", "def": "inna + pronoms.", "gram": "particule + pronoms" },
+        { "ar": "نَذِيرٌ مُّبِينٌ", "tr": "nadhīrun mubīn", "racine": "ن ذ ر / ب ي ن", "sens": "un avertisseur explicite", "def": "nadhīr : avertisseur ; mubīn : clair.", "gram": "nom + adjectif, attribut" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "أَنِ اعْبُدُوا اللَّهَ وَاتَّقُوهُ وَأَطِيعُونِ",
+      "tr": "ani ʿbudū llāha wa-ttaqūhu wa-aṭīʿūni",
+      "trad": "Adorez Dieu et craignez-Le, et obéissez-moi !",
+      "themes": ["adoration", "crainte", "obéissance"],
+      "commentaire": "Trois injonctions liées : <em>adorez</em> (ʿbudū), <em>craignez</em> (ttaqūhu), <em>obéissez</em> (aṭīʿūni). L'ordre n'est pas indifférent : l'adoration est le but, la crainte révérencielle la disposition du cœur, et l'obéissance au messager la voie concrète. Suivre le prophète n'est pas s'attacher à un homme mais entrer par la porte qu'il indique : il ne réclame l'obéissance que pour conduire à Dieu, non à lui-même.",
+      "mots": [
+        { "ar": "أَنِ اعْبُدُوا اللَّهَ", "tr": "ani ʿbudū llāh", "racine": "ع ب د", "sens": "adorez Dieu", "def": "ʿabada : adorer.", "gram": "an explicatif + impératif plur." },
+        { "ar": "وَاتَّقُوهُ", "tr": "wa-ttaqūhu", "racine": "و ق ي", "sens": "et craignez-Le", "def": "ittaqā : craindre, se prémunir.", "gram": "impératif (forme VIII) + pronom" },
+        { "ar": "وَأَطِيعُونِ", "tr": "wa-aṭīʿūni", "racine": "ط و ع", "sens": "et obéissez-moi", "def": "aṭāʿa : obéir.", "gram": "impératif (forme IV) + pronom" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرْكُمْ إِلَىٰ أَجَلٍ مُّسَمًّى إِنَّ أَجَلَ اللَّهِ إِذَا جَاءَ لَا يُؤَخَّرُ لَوْ كُنتُمْ تَعْلَمُونَ",
+      "tr": "yaghfir lakum min dhunūbikum wa-yuʾakhkhirkum ilā ajalin musamman inna ajala llāhi idhā jāʾa lā yuʾakhkharu law kuntum taʿlamūna",
+      "trad": "Il vous pardonnera vos péchés et Il vous accordera un délai jusqu'à un terme fixé ; mais quand vient le terme fixé par Dieu, il ne peut être différé. Ah, puissiez-vous savoir ! »",
+      "themes": ["pardon", "délai", "terme inéluctable"],
+      "commentaire": "Qushayrī s'arrête sur le <em>min</em> de « vos péchés » : il marque le genre, non une partie — Dieu pardonne les fautes. Et il note la délicatesse : Noé ne leur promet pas le pardon de ce qu'ils <em>vont</em> commettre, car ce serait les encourager au mal. Le pardon est offert, et avec lui un <em>délai</em> (taʾkhīr) — un sursis pour se reprendre. Mais le terme (ajal) fixé par Dieu, lorsqu'il vient, ne se diffère pas : la miséricorde du délai a sa limite, et la sagesse est d'en profiter avant qu'elle ne se ferme.",
+      "mots": [
+        { "ar": "يَغْفِرْ لَكُم", "tr": "yaghfir lakum", "racine": "غ ف ر", "sens": "Il vous pardonnera", "def": "ghafara : pardonner.", "gram": "verbe apocopé + pronom" },
+        { "ar": "مِّن ذُنُوبِكُمْ", "tr": "min dhunūbikum", "racine": "ذ ن ب", "sens": "vos péchés", "def": "dhanb : péché.", "gram": "préposition (de genre) + nom + pronom" },
+        { "ar": "وَيُؤَخِّرْكُمْ", "tr": "wa-yuʾakhkhirkum", "racine": "أ خ ر", "sens": "et Il vous accordera un délai", "def": "akhkhara : retarder, différer.", "gram": "verbe apocopé (forme II) + pronom" },
+        { "ar": "إِلَىٰ أَجَلٍ مُّسَمًّى", "tr": "ilā ajalin musamman", "racine": "أ ج ل / س م و", "sens": "jusqu'à un terme fixé", "def": "ajal : terme ; musammā : nommé, fixé.", "gram": "préposition + nom + adjectif" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "قَالَ رَبِّ إِنِّي دَعَوْتُ قَوْمِي لَيْلًا وَنَهَارًا",
+      "tr": "qāla rabbi innī daʿawtu qawmī laylan wa-nahāran",
+      "trad": "Il dit : « Mon Seigneur ! J'ai appelé mon peuple nuit et jour,",
+      "themes": ["appel inlassable", "plainte à Dieu"],
+      "commentaire": "<em>daʿawtu qawmī laylan wa-nahāran</em> (دَعَوْتُ قَوْمي لَيْلًا وَنَهارًا) : j'ai appelé mon peuple nuit et jour. Noé se tourne vers Dieu et rapporte sa peine. « Nuit et jour » : sans relâche, sans heure de répit. C'est le portrait de l'appelant qui ne se ménage pas, qui use toutes ses forces. Et pourtant — la suite le dira — l'effort le plus total ne force pas le cœur fermé. Noé apprend, et nous enseigne, que la persévérance est notre part, mais la guidance reste celle de Dieu.",
+      "mots": [
+        { "ar": "قَالَ رَبِّ", "tr": "qāla rabbi", "racine": "ق و ل / ر ب ب", "sens": "il dit : mon Seigneur", "def": "rabb : Seigneur.", "gram": "verbe + vocatif" },
+        { "ar": "دَعَوْتُ قَوْمِي", "tr": "daʿawtu qawmī", "racine": "د ع و / ق و م", "sens": "j'ai appelé mon peuple", "def": "daʿā : appeler, inviter.", "gram": "verbe accompli + complément" },
+        { "ar": "لَيْلًا وَنَهَارًا", "tr": "laylan wa-nahāran", "racine": "ل ي ل / ن ه ر", "sens": "nuit et jour", "def": "layl : nuit ; nahār : jour.", "gram": "deux adverbes de temps" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "فَلَمْ يَزِدْهُمْ دُعَائِي إِلَّا فِرَارًا",
+      "tr": "fa-lam yazidhum duʿāʾī illā firāran",
+      "trad": "mais mon appel n'a fait qu'augmenter son éloignement.",
+      "themes": ["fuite", "guidance non humaine"],
+      "commentaire": "<em>lam yazidhum… illā firāran</em> (لَمْ يَزِدْهُمْ إلّا فِرارًا) : il ne leur a accru que la fuite. Paradoxe douloureux : plus Noé appelle, plus ils s'éloignent. Qushayrī en tire la leçon décisive : « il a montré que la guidance n'est pas en son pouvoir, et il a dit : si Tu veux leur foi, leurs cœurs sont en Ta puissance, gloire à Toi. » L'appelant fidèle ne mesure pas sa réussite au résultat : il sème, et remet la moisson à Dieu. Le refus des autres ne le décourage pas, il le ramène à son Seigneur.",
+      "mots": [
+        { "ar": "فَلَمْ يَزِدْهُمْ", "tr": "fa-lam yazidhum", "racine": "ز ي د", "sens": "il ne leur a accru", "def": "zāda : augmenter.", "gram": "négation + verbe apocopé + pronom" },
+        { "ar": "دُعَائِي", "tr": "duʿāʾī", "racine": "د ع و", "sens": "mon appel", "def": "duʿāʾ : appel, invocation.", "gram": "nom + pronom, sujet" },
+        { "ar": "إِلَّا فِرَارًا", "tr": "illā firāran", "racine": "ف ر ر", "sens": "que la fuite", "def": "firār : fuite.", "gram": "exception + complément d'objet" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَإِنِّي كُلَّمَا دَعَوْتُهُمْ لِتَغْفِرَ لَهُمْ جَعَلُوا أَصَابِعَهُمْ فِي آذَانِهِمْ وَاسْتَغْشَوْا ثِيَابَهُمْ وَأَصَرُّوا وَاسْتَكْبَرُوا اسْتِكْبَارًا",
+      "tr": "wa-innī kullamā daʿawtuhum li-taghfira lahum jaʿalū aṣābiʿahum fī ādhānihim wa-staghshaw thiyābahum wa-aṣarrū wa-stakbarū stikbāran",
+      "trad": "Chaque fois que je les ai appelés pour que Tu leur pardonnes, ils se sont mis les doigts dans les oreilles, ils se sont enveloppés dans leurs vêtements, ils se sont obstinés et ont fait preuve d'un orgueil invétéré.",
+      "themes": ["refus d'entendre", "obstination", "orgueil"],
+      "commentaire": "Portrait saisissant du refus actif : doigts dans les oreilles pour ne pas entendre, vêtements rabattus pour ne pas voir, obstination (iṣrār) et orgueil (istikbār). Qushayrī enchaîne les deux derniers : « quand leur obstination dura, de l'obstination naquit leur orgueil » — et il cite : « le temps fut long sur eux, et leurs cœurs s'endurcirent. » L'endurcissement n'est pas instantané : il se forge à force de refuser. Chaque rejet répété épaissit le voile, jusqu'à ce que le cœur ne puisse plus s'ouvrir.",
+      "mots": [
+        { "ar": "كُلَّمَا دَعَوْتُهُمْ", "tr": "kullamā daʿawtuhum", "racine": "د ع و", "sens": "chaque fois que je les ai appelés", "def": "kullamā : chaque fois que.", "gram": "adverbe + verbe + pronom" },
+        { "ar": "جَعَلُوا أَصَابِعَهُمْ فِي آذَانِهِمْ", "tr": "jaʿalū aṣābiʿahum fī ādhānihim", "racine": "ص ب ع / أ ذ ن", "sens": "ils ont mis leurs doigts dans leurs oreilles", "def": "iṣbaʿ : doigt ; udhun : oreille.", "gram": "verbe + compléments" },
+        { "ar": "وَاسْتَغْشَوْا ثِيَابَهُمْ", "tr": "wa-staghshaw thiyābahum", "racine": "غ ش و / ث و ب", "sens": "ils se sont enveloppés de leurs vêtements", "def": "istaghshā : se couvrir entièrement.", "gram": "verbe (forme X) + complément" },
+        { "ar": "وَأَصَرُّوا", "tr": "wa-aṣarrū", "racine": "ص ر ر", "sens": "ils se sont obstinés", "def": "aṣarra : persister.", "gram": "verbe accompli (forme IV)" },
+        { "ar": "وَاسْتَكْبَرُوا اسْتِكْبَارًا", "tr": "wa-stakbarū stikbāran", "racine": "ك ب ر", "sens": "et se sont enflés d'un grand orgueil", "def": "istakbara : s'enorgueillir.", "gram": "verbe (forme X) + complément absolu" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "ثُمَّ إِنِّي دَعَوْتُهُمْ جِهَارًا",
+      "tr": "thumma innī daʿawtuhum jihāran",
+      "trad": "Je les ai ensuite appelés à voix haute,",
+      "themes": ["appel ouvert", "persévérance"],
+      "commentaire": "<em>jihāran</em> (جِهارًا) : ouvertement, à voix haute. Devant le refus, Noé ne renonce pas mais varie sa manière : après l'appel ordinaire, l'appel public et déclaré. La persévérance n'est pas répétition mécanique mais inventivité de l'amour : chercher toutes les voies pour atteindre le cœur. Celui qui appelle pour Dieu ne se lasse pas du premier échec ; il essaie encore, autrement.",
+      "mots": [
+        { "ar": "ثُمَّ إِنِّي دَعَوْتُهُمْ", "tr": "thumma innī daʿawtuhum", "racine": "د ع و", "sens": "puis je les ai appelés", "def": "daʿā : appeler.", "gram": "particule + inna + verbe + pronom" },
+        { "ar": "جِهَارًا", "tr": "jihāran", "racine": "ج ه ر", "sens": "à voix haute, ouvertement", "def": "jahr : déclaration ouverte, à voix haute.", "gram": "complément de manière" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "ثُمَّ إِنِّي أَعْلَنتُ لَهُمْ وَأَسْرَرْتُ لَهُمْ إِسْرَارًا",
+      "tr": "thumma innī aʿlantu lahum wa-asrartu lahum isrāran",
+      "trad": "j'ai fait des proclamations et je leur ai parlé en secret.",
+      "themes": ["en public et en privé", "toutes les voies"],
+      "commentaire": "<em>aʿlantu… wa-asrartu</em> (أَعْلَنْتُ وَأَسْرَرْتُ) : j'ai proclamé et j'ai parlé en secret. Noé épuise les modes de l'appel : ouvertement et confidentiellement, à la foule et à chacun. L'amour qui veut sauver ne néglige aucune approche : la parole forte qui ébranle et la parole douce, murmurée à l'oreille, qui apprivoise. Cette diversité même est une miséricorde : Dieu, par Son prophète, frappe à toutes les portes du cœur, espérant qu'une seule s'ouvre.",
+      "mots": [
+        { "ar": "أَعْلَنتُ لَهُمْ", "tr": "aʿlantu lahum", "racine": "ع ل ن", "sens": "j'ai proclamé pour eux", "def": "aʿlana : déclarer publiquement.", "gram": "verbe accompli (forme IV) + préposition" },
+        { "ar": "وَأَسْرَرْتُ لَهُمْ إِسْرَارًا", "tr": "wa-asrartu lahum isrāran", "racine": "س ر ر", "sens": "et je leur ai parlé en secret", "def": "asarra : parler en confidence.", "gram": "verbe (forme IV) + complément absolu" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا",
+      "tr": "fa-qultu staghfirū rabbakum innahu kāna ghaffāran",
+      "trad": "J'ai dit : \"Implorez le pardon de votre Seigneur, car Il est Celui qui pardonne généreusement.",
+      "themes": ["istighfār", "porte de la grâce"],
+      "commentaire": "Verset-clé, et perle de Qushayrī : <em>istaghfirū</em> (اسْتَغْفِروا) — demandez pardon. « Que les connaissants le sachent : la demande de pardon est le heurtoir aux portes de la grâce ; quiconque a un besoin auprès de Dieu n'atteindra son but qu'en présentant d'abord l'istighfār. » Et il ajoute : « qui veut obtenir la faveur, qu'il prenne le chemin de l'aveu de la faute (al-ʿudhr wa-l-tanaṣṣul). » <em>Ghaffār</em> — forme intensive : Celui qui pardonne sans cesse. Avant toute demande, reconnaître son manque ; la porte de la générosité s'ouvre à qui frappe en humilité.",
+      "mots": [
+        { "ar": "فَقُلْتُ", "tr": "fa-qultu", "racine": "ق و ل", "sens": "j'ai dit", "def": "qāla : dire.", "gram": "verbe accompli" },
+        { "ar": "اسْتَغْفِرُوا رَبَّكُمْ", "tr": "staghfirū rabbakum", "racine": "غ ف ر / ر ب ب", "sens": "implorez le pardon de votre Seigneur", "def": "istaghfara : demander pardon.", "gram": "impératif (forme X) + complément" },
+        { "ar": "إِنَّهُ كَانَ غَفَّارًا", "tr": "innahu kāna ghaffāran", "racine": "غ ف ر", "sens": "Il est grand Pardonneur", "def": "ghaffār : qui pardonne sans cesse.", "gram": "inna + verbe + attribut intensif" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "يُرْسِلِ السَّمَاءَ عَلَيْكُم مِّدْرَارًا",
+      "tr": "yursili l-samāʾa ʿalaykum midrāran",
+      "trad": "Il vous fera descendre du ciel une pluie abondante ;",
+      "themes": ["pluie", "fruit du pardon"],
+      "commentaire": "<em>midrār</em> (مِدْرار) : abondante, généreuse — la pluie. Étonnante promesse : à la demande de pardon répond non d'abord le ciel de l'au-delà, mais le ciel de la pluie qui féconde la terre. Qushayrī : « Noé, chaque fois qu'il leur exposait davantage les voies du bien et du bienfait, ils ajoutaient à leur dénégation et à leur oubli. » L'istighfār ouvre les écluses du ciel : la grâce du pardon se déverse en bienfaits visibles. Le cœur qui se purifie attire sur lui la pluie de la miséricorde.",
+      "mots": [
+        { "ar": "يُرْسِلِ السَّمَاءَ", "tr": "yursili l-samāʾ", "racine": "ر س ل / س م و", "sens": "Il enverra le ciel (la pluie)", "def": "arsala : envoyer ; samāʾ : ciel, ici pluie.", "gram": "verbe apocopé + complément" },
+        { "ar": "عَلَيْكُم مِّدْرَارًا", "tr": "ʿalaykum midrāran", "racine": "د ر ر", "sens": "sur vous, abondante", "def": "midrār : qui coule abondamment.", "gram": "préposition + complément d'état" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "وَيُمْدِدْكُم بِأَمْوَالٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّاتٍ وَيَجْعَل لَّكُمْ أَنْهَارًا",
+      "tr": "wa-yumdidkum bi-amwālin wa-banīna wa-yajʿal lakum jannātin wa-yajʿal lakum anhāran",
+      "trad": "Il vous assistera par des richesses et des enfants ; Il vous donnera des jardins et vous donnera des rivières.",
+      "themes": ["bienfaits", "abondance terrestre"],
+      "commentaire": "À l'istighfār Dieu promet richesses, descendance, jardins et rivières. Tous ces dons — biens, enfants, verdure, eaux — sont les fruits visibles d'un cœur réconcilié. Mais la sourate dévoilera plus loin (v. 21) que les richesses et les enfants peuvent aussi <em>accroître la perte</em> de qui s'y attache sans Dieu. Le même don est bénédiction pour le cœur tourné vers son Seigneur, épreuve pour le cœur qui s'y enferme. Tout dépend de l'orientation.",
+      "mots": [
+        { "ar": "وَيُمْدِدْكُم", "tr": "wa-yumdidkum", "racine": "م د د", "sens": "et Il vous assistera, fortifiera", "def": "amadda : renforcer, pourvoir.", "gram": "verbe apocopé (forme IV) + pronom" },
+        { "ar": "بِأَمْوَالٍ وَبَنِينَ", "tr": "bi-amwālin wa-banīna", "racine": "م و ل / ب ن ي", "sens": "de richesses et d'enfants", "def": "amwāl : biens ; banūn : fils.", "gram": "préposition + noms" },
+        { "ar": "جَنَّاتٍ", "tr": "jannātin", "racine": "ج ن ن", "sens": "des jardins", "def": "janna : jardin.", "gram": "nom plur., complément d'objet" },
+        { "ar": "أَنْهَارًا", "tr": "anhāran", "racine": "ن ه ر", "sens": "des rivières", "def": "nahr : rivière.", "gram": "nom plur., complément d'objet" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "مَّا لَكُمْ لَا تَرْجُونَ لِلَّهِ وَقَارًا",
+      "tr": "mā lakum lā tarjūna lillāhi waqāran",
+      "trad": "Pourquoi n'espérez-vous pas en Dieu avec révérence,",
+      "themes": ["révérence", "majesté de Dieu"],
+      "commentaire": "<em>lā tarjūna lillāhi waqāran</em> (لا تَرْجونَ لله وَقارًا) : vous n'espérez pas de Dieu une majesté à révérer. Qushayrī glose : « qu'avez-vous à ne pas craindre la grandeur de Dieu ? à ne pas espérer, en révérant Son ordre, une douceur et une grâce ? » Le <em>waqār</em> est la majesté qui appelle le respect : reconnaître la grandeur de Dieu, c'est déjà s'incliner. Le reproche dévoile la racine de l'incrédulité : non un manque de preuves, mais un manque de révérence — le cœur qui ne sait pas s'émerveiller devant plus grand que lui.",
+      "mots": [
+        { "ar": "مَّا لَكُمْ", "tr": "mā lakum", "racine": "", "sens": "qu'avez-vous", "def": "mā lakum : qu'avez-vous à.", "gram": "interrogatif + pronom" },
+        { "ar": "لَا تَرْجُونَ", "tr": "lā tarjūna", "racine": "ر ج و", "sens": "à ne pas espérer / attendre", "def": "rajā : espérer, s'attendre à.", "gram": "négation + verbe inaccompli plur." },
+        { "ar": "لِلَّهِ وَقَارًا", "tr": "lillāhi waqāran", "racine": "و ق ر", "sens": "pour Dieu une majesté révérée", "def": "waqār : majesté, gravité qui impose le respect.", "gram": "préposition + nom + complément" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "وَقَدْ خَلَقَكُمْ أَطْوَارًا",
+      "tr": "wa-qad khalaqakum aṭwāran",
+      "trad": "Lui qui vous a créés par phases successives ?",
+      "themes": ["étapes de la création", "signe en soi"],
+      "commentaire": "<em>aṭwāran</em> (أَطْوارًا) : par étapes, par phases successives. Argument du dedans : regardez votre propre formation — goutte, caillot, embryon, enfant, adulte. Celui qui vous a tirés du néant par degrés patients mérite bien votre révérence. Le premier signe à méditer n'est pas dans le ciel mais en soi : chaque homme porte en son histoire la preuve d'un Créateur sage, qui façonne sans hâte, étape après étape.",
+      "mots": [
+        { "ar": "وَقَدْ خَلَقَكُمْ", "tr": "wa-qad khalaqakum", "racine": "خ ل ق", "sens": "alors qu'Il vous a créés", "def": "khalaqa : créer.", "gram": "particule + verbe accompli + pronom" },
+        { "ar": "أَطْوَارًا", "tr": "aṭwāran", "racine": "ط و ر", "sens": "par phases successives", "def": "ṭawr : étape, phase.", "gram": "nom plur., complément d'état" }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "أَلَمْ تَرَوْا كَيْفَ خَلَقَ اللَّهُ سَبْعَ سَمَاوَاتٍ طِبَاقًا",
+      "tr": "a-lam taraw kayfa khalaqa llāhu sabʿa samāwātin ṭibāqan",
+      "trad": "N'avez-vous pas vu comment Dieu a créé sept cieux superposés ?",
+      "themes": ["sept cieux", "signe céleste"],
+      "commentaire": "<em>sabʿa samāwātin ṭibāqan</em> (سَبْعَ سَماواتٍ طِباقًا) : sept cieux superposés, en strates. Après le signe intérieur (v. 14), le signe du dehors. Qushayrī : Noé « les éveille à la création des cieux et de la terre, et à ce qu'elle contient comme indices qu'elle est créée, et que son Créateur mérite les attributs de l'élévation et de la puissance. » L'œuvre renvoie à l'Ouvrier : la voûte aux sept étages, parfaitement ordonnée, ne se conçoit pas sans une Sagesse qui l'a dressée.",
+      "mots": [
+        { "ar": "أَلَمْ تَرَوْا", "tr": "a-lam taraw", "racine": "ر أ ي", "sens": "n'avez-vous pas vu", "def": "raʾā : voir.", "gram": "interrogation + verbe apocopé plur." },
+        { "ar": "كَيْفَ خَلَقَ اللَّهُ", "tr": "kayfa khalaqa llāh", "racine": "خ ل ق", "sens": "comment Dieu a créé", "def": "khalaqa : créer.", "gram": "interrogatif + verbe + sujet" },
+        { "ar": "سَبْعَ سَمَاوَاتٍ طِبَاقًا", "tr": "sabʿa samāwātin ṭibāqan", "racine": "س م و / ط ب ق", "sens": "sept cieux superposés", "def": "ṭibāq : en strates, superposés.", "gram": "numéral + nom + adjectif" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "وَجَعَلَ الْقَمَرَ فِيهِنَّ نُورًا وَجَعَلَ الشَّمْسَ سِرَاجًا",
+      "tr": "wa-jaʿala l-qamara fīhinna nūran wa-jaʿala l-shamsa sirājan",
+      "trad": "Il y a placé la lune comme une lumière ; Il y a placé le soleil comme une lampe.",
+      "themes": ["lune et soleil", "lumière et lampe"],
+      "commentaire": "<em>al-qamar… nūran wa-l-shams… sirājan</em> (القَمَر نورًا وَالشَّمْس سِراجًا) : la lune lumière, le soleil lampe. Distinction délicate : la lune est <em>nūr</em> (lumière douce, réfléchie), le soleil <em>sirāj</em> (lampe ardente, source de chaleur). Deux luminaires aux rôles distincts, accordés à la nuit et au jour. Cette harmonie réglée des astres est un signe de plus : rien n'est laissé au hasard, chaque luminaire a sa mesure et sa fonction dans la grande demeure du monde.",
+      "mots": [
+        { "ar": "وَجَعَلَ الْقَمَرَ فِيهِنَّ نُورًا", "tr": "wa-jaʿala l-qamara fīhinna nūran", "racine": "ق م ر / ن و ر", "sens": "Il a placé la lune en eux comme lumière", "def": "qamar : lune ; nūr : lumière.", "gram": "verbe + complément + attribut" },
+        { "ar": "وَجَعَلَ الشَّمْسَ سِرَاجًا", "tr": "wa-jaʿala l-shamsa sirājan", "racine": "ش م س / س ر ج", "sens": "et le soleil comme lampe", "def": "shams : soleil ; sirāj : lampe.", "gram": "verbe + complément + attribut" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "وَاللَّهُ أَنبَتَكُم مِّنَ الْأَرْضِ نَبَاتًا",
+      "tr": "wa-llāhu anbatakum mina l-arḍi nabātan",
+      "trad": "Dieu vous a fait croître de la terre comme les plantes.",
+      "themes": ["croissance végétale", "l'homme tiré de la terre"],
+      "commentaire": "<em>anbatakum mina l-arḍi nabātan</em > (أَنْبَتَكُمْ مِنَ الأَرْضِ نَباتًا) : Il vous a fait pousser de la terre comme une végétation. Image magnifique : l'homme est planté, il croît, il s'élève — comme la graine devient plante. La provenance est humble (la terre) mais le mouvement est ascension. Le verbe végétal dit la lente maturation de l'être : non un produit fabriqué d'un coup, mais une croissance vivante, voulue et nourrie par Celui qui fait pousser.",
+      "mots": [
+        { "ar": "وَاللَّهُ أَنبَتَكُم", "tr": "wa-llāhu anbatakum", "racine": "ن ب ت", "sens": "et Dieu vous a fait croître", "def": "anbata : faire pousser.", "gram": "sujet + verbe accompli (forme IV) + pronom" },
+        { "ar": "مِّنَ الْأَرْضِ نَبَاتًا", "tr": "mina l-arḍi nabātan", "racine": "أ ر ض / ن ب ت", "sens": "de la terre, comme une plante", "def": "nabāt : végétation, croissance.", "gram": "préposition + nom + complément absolu" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "ثُمَّ يُعِيدُكُمْ فِيهَا وَيُخْرِجُكُمْ إِخْرَاجًا",
+      "tr": "thumma yuʿīdukum fīhā wa-yukhrijukum ikhrājan",
+      "trad": "Ensuite, Il vous y renverra, et Il vous en fera ressurgir.",
+      "themes": ["retour à la terre", "résurrection"],
+      "commentaire": "<em>yuʿīdukum fīhā wa-yukhrijukum</em > (يُعيدُكُمْ فيها وَيُخْرِجُكُمْ) : Il vous y ramène et vous en fait sortir. Le cycle complet : de la terre vous êtes venus, à la terre vous retournez, de la terre vous serez tirés à nouveau. La même terre qui fit croître la plante puis la rappelle la fera reverdir. La résurrection n'est qu'un troisième mouvement après la naissance et la mort — et le moins coûteux pour Celui qui a déjà fait les deux premiers.",
+      "mots": [
+        { "ar": "ثُمَّ يُعِيدُكُمْ فِيهَا", "tr": "thumma yuʿīdukum fīhā", "racine": "ع و د", "sens": "puis Il vous y ramène", "def": "aʿāda : faire revenir.", "gram": "particule + verbe (forme IV) + pronoms" },
+        { "ar": "وَيُخْرِجُكُمْ إِخْرَاجًا", "tr": "wa-yukhrijukum ikhrājan", "racine": "خ ر ج", "sens": "et vous en fait ressurgir", "def": "akhraja : faire sortir.", "gram": "verbe (forme IV) + complément absolu" }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "وَاللَّهُ جَعَلَ لَكُمُ الْأَرْضَ بِسَاطًا",
+      "tr": "wa-llāhu jaʿala lakumu l-arḍa bisāṭan",
+      "trad": "Dieu a fait pour vous de la terre un tapis",
+      "themes": ["terre-tapis", "providence"],
+      "commentaire": "<em>bisāṭ</em > (بِساط) : un tapis étendu. La terre est déroulée sous les pieds de l'homme comme un tapis sous l'hôte qu'on honore. Image de l'hospitalité divine : le monde est aménagé, accueillant, fait pour qu'on y marche et qu'on y vive. Chaque pas que l'homme pose sur la terre devrait lui rappeler la délicatesse de Celui qui l'a étalée pour lui.",
+      "mots": [
+        { "ar": "وَاللَّهُ جَعَلَ لَكُمُ الْأَرْضَ", "tr": "wa-llāhu jaʿala lakumu l-arḍa", "racine": "ج ع ل / أ ر ض", "sens": "Dieu a fait pour vous la terre", "def": "jaʿala : faire, établir.", "gram": "sujet + verbe + compléments" },
+        { "ar": "بِسَاطًا", "tr": "bisāṭan", "racine": "ب س ط", "sens": "un tapis", "def": "bisāṭ : tapis étendu.", "gram": "second complément d'objet" }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "لِّتَسْلُكُوا مِنْهَا سُبُلًا فِجَاجًا",
+      "tr": "li-taslukū minhā subulan fijājan",
+      "trad": "afin que vous puissiez en parcourir les voies spacieuses » ».",
+      "themes": ["chemins larges", "liberté de mouvement"],
+      "commentaire": "<em>subulan fijājan</em > (سُبُلًا فِجاجًا) : des chemins larges, des passages spacieux. La terre-tapis n'est pas close : elle est sillonnée de routes ouvertes. Dieu n'a pas seulement préparé la demeure, Il y a tracé des voies pour qu'on s'y meuve librement. Au-delà de la lettre, image de la vie : à l'homme sont offerts des chemins larges — encore faut-il choisir d'y marcher vers son Seigneur plutôt que de tourner en rond dans le refus.",
+      "mots": [
+        { "ar": "لِّتَسْلُكُوا مِنْهَا", "tr": "li-taslukū minhā", "racine": "س ل ك", "sens": "afin que vous y cheminiez", "def": "salaka : emprunter un chemin.", "gram": "lām de but + verbe + préposition" },
+        { "ar": "سُبُلًا فِجَاجًا", "tr": "subulan fijājan", "racine": "س ب ل / ف ج ج", "sens": "des voies spacieuses", "def": "sabīl : voie ; fijāj : larges passages.", "gram": "nom + adjectif plur." }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "قَالَ نُوحٌ رَّبِّ إِنَّهُمْ عَصَوْنِي وَاتَّبَعُوا مَن لَّمْ يَزِدْهُ مَالُهُ وَوَلَدُهُ إِلَّا خَسَارًا",
+      "tr": "qāla nūḥun rabbi innahum ʿaṣawnī wa-ttabaʿū man lam yazidhu māluhu wa-waladuhu illā khasāran",
+      "trad": "Noé dit encore : « Mon Seigneur, ils m'ont désobéi et ils ont suivi celui dont les richesses et les enfants n'ont fait qu'accroître leur perte.",
+      "themes": ["désobéissance", "richesse qui perd"],
+      "commentaire": "<em>lam yazidhu māluhu wa-waladuhu illā khasāran</em > (لَمْ يَزِدْهُ مالُهُ وَوَلَدُهُ إلّا خَسارًا) : ses biens et ses enfants ne lui ont accru que la perte. Renversement du verset 12 : ce qui pouvait être bénédiction (richesses, enfants) devient ruine pour qui s'y attache contre Dieu. Les mêmes dons accroissent la grâce ou la perte selon le cœur. Suivre les puissants et les riches qui se sont détournés, c'est suivre des guides aveugles : leur abondance même les enfonce, et entraîne ceux qui les imitent.",
+      "mots": [
+        { "ar": "إِنَّهُمْ عَصَوْنِي", "tr": "innahum ʿaṣawnī", "racine": "ع ص ي", "sens": "ils m'ont désobéi", "def": "ʿaṣā : désobéir.", "gram": "inna + verbe + pronom" },
+        { "ar": "وَاتَّبَعُوا", "tr": "wa-ttabaʿū", "racine": "ت ب ع", "sens": "et ils ont suivi", "def": "ittabaʿa : suivre.", "gram": "verbe accompli (forme VIII)" },
+        { "ar": "مَن لَّمْ يَزِدْهُ مَالُهُ وَوَلَدُهُ", "tr": "man lam yazidhu māluhu wa-waladuhu", "racine": "ز ي د / م و ل / و ل د", "sens": "celui dont les biens et l'enfant n'ont accru", "def": "māl : bien ; walad : enfant.", "gram": "relatif + verbe + sujets" },
+        { "ar": "إِلَّا خَسَارًا", "tr": "illā khasāran", "racine": "خ س ر", "sens": "que la perte", "def": "khasār : perte, ruine.", "gram": "exception + complément" }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "وَمَكَرُوا مَكْرًا كُبَّارًا",
+      "tr": "wa-makarū makran kubbāran",
+      "trad": "Ils ont tramé un vaste complot",
+      "themes": ["complot", "ruse des chefs"],
+      "commentaire": "<em>makran kubbāran</em > (مَكْرًا كُبّارًا) : une ruse immense, démesurée. Qushayrī précise : il s'agit de « leurs grands et leurs riches, ceux qui se sont égarés ici-bas et ont péri dans l'au-delà. » Le complot est l'œuvre des puissants : ils usent de leur influence pour détourner les faibles. La ruse (makr) est le contraire de la transparence du cœur : on manœuvre dans l'ombre pour préserver son pouvoir contre la vérité qui dérange.",
+      "mots": [
+        { "ar": "وَمَكَرُوا", "tr": "wa-makarū", "racine": "م ك ر", "sens": "ils ont tramé une ruse", "def": "makara : ruser, comploter.", "gram": "verbe accompli" },
+        { "ar": "مَكْرًا كُبَّارًا", "tr": "makran kubbāran", "racine": "م ك ر / ك ب ر", "sens": "un complot immense", "def": "kubbār : très grand, énorme.", "gram": "complément absolu + adjectif intensif" }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "وَقَالُوا لَا تَذَرُنَّ آلِهَتَكُمْ وَلَا تَذَرُنَّ وَدًّا وَلَا سُوَاعًا وَلَا يَغُوثَ وَيَعُوقَ وَنَسْرًا",
+      "tr": "wa-qālū lā tadharunna ālihatakum wa-lā tadharunna waddan wa-lā suwāʿan wa-lā yaghūtha wa-yaʿūqa wa-nasran",
+      "trad": "et ils ont dit : « N'abandonnez pas vos divinités : n'abandonnez ni Wadd, ni Souwa', ni Yaghouth, ni Ya'ouq, ni Nasr ! »",
+      "themes": ["attachement aux idoles", "noms des fausses divinités"],
+      "commentaire": "Le complot des chefs prend la forme d'un appel à la fidélité aux idoles : Wadd, Suwāʿ, Yaghūth, Yaʿūq, Nasr — noms d'anciennes divinités. La tradition rapporte qu'ils furent d'abord des hommes pieux, dont on fit des statues pour le souvenir, et qu'on finit par adorer. L'idolâtrie naît souvent ainsi : d'un attachement légitime dévoyé, d'un souvenir figé en idole. Le cri « n'abandonnez pas vos dieux ! » est celui de tous les conservatismes qui préfèrent l'habitude rassurante à la vérité dérangeante.",
+      "mots": [
+        { "ar": "لَا تَذَرُنَّ آلِهَتَكُمْ", "tr": "lā tadharunna ālihatakum", "racine": "و ذ ر / أ ل ه", "sens": "n'abandonnez pas vos divinités", "def": "wadhara : abandonner ; ilāh : divinité.", "gram": "défense + nūn d'insistance + complément" },
+        { "ar": "وَدًّا وَلَا سُوَاعًا", "tr": "waddan wa-lā suwāʿan", "racine": "", "sens": "ni Wadd ni Suwāʿ", "def": "noms de divinités préislamiques.", "gram": "noms propres" },
+        { "ar": "وَلَا يَغُوثَ وَيَعُوقَ وَنَسْرًا", "tr": "wa-lā yaghūtha wa-yaʿūqa wa-nasran", "racine": "", "sens": "ni Yaghūth, Yaʿūq, Nasr", "def": "noms de divinités préislamiques.", "gram": "noms propres" }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "وَقَدْ أَضَلُّوا كَثِيرًا وَلَا تَزِدِ الظَّالِمِينَ إِلَّا ضَلَالًا",
+      "tr": "wa-qad aḍallū kathīran wa-lā tazidi l-ẓālimīna illā ḍalālan",
+      "trad": "Ainsi ils ont égaré des multitudes. Mais Toi, Tu ne fais qu'accroître l'égarement des iniques ! »",
+      "themes": ["égarement répandu", "prière de Noé"],
+      "commentaire": "<em>wa-lā tazidi l-ẓālimīna illā ḍalālan</em > (وَلا تَزِدِ الظّالِمين إلّا ضَلالًا) : n'accrois aux iniques que l'égarement. Prière redoutable de Noé. Mais elle dit une loi spirituelle : qui refuse obstinément la lumière s'enfonce d'autant plus dans la nuit. L'égarement n'est pas imposé arbitrairement ; il est l'aboutissement d'un choix répété de fuir. Quand le cœur a verrouillé sa porte, chaque appel reçu le durcit davantage : la grâce refusée se retourne en surcroît d'égarement.",
+      "mots": [
+        { "ar": "وَقَدْ أَضَلُّوا كَثِيرًا", "tr": "wa-qad aḍallū kathīran", "racine": "ض ل ل / ك ث ر", "sens": "ils ont égaré beaucoup", "def": "aḍalla : égarer.", "gram": "particule + verbe (forme IV) + complément" },
+        { "ar": "وَلَا تَزِدِ الظَّالِمِينَ", "tr": "wa-lā tazidi l-ẓālimīn", "racine": "ز ي د / ظ ل م", "sens": "n'accrois aux iniques", "def": "zāda : accroître ; ẓālim : injuste.", "gram": "impératif négatif + complément" },
+        { "ar": "إِلَّا ضَلَالًا", "tr": "illā ḍalālan", "racine": "ض ل ل", "sens": "que l'égarement", "def": "ḍalāl : égarement.", "gram": "exception + complément" }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "مِّمَّا خَطِيئَاتِهِمْ أُغْرِقُوا فَأُدْخِلُوا نَارًا فَلَمْ يَجِدُوا لَهُم مِّن دُونِ اللَّهِ أَنصَارًا",
+      "tr": "mimmā khaṭīʾātihim ughriqū fa-udkhilū nāran fa-lam yajidū lahum min dūni llāhi anṣāran",
+      "trad": "A cause de leurs fautes, ils furent noyés, puis introduits dans un feu, et ils n'ont trouvé aucun protecteur à la place de Dieu.",
+      "themes": ["le déluge", "absence de secours"],
+      "commentaire": "<em>min dūni llāhi anṣāran</em > (مِنْ دونِ الله أَنْصارًا) : nul secours hors de Dieu. Saisissant contraste : noyés par l'eau, puis introduits dans le feu — l'eau du châtiment ici-bas, le feu de l'au-delà. Et au cœur du verset, la leçon : <em>ils ne trouvèrent nul protecteur en dehors de Dieu</em>. Les idoles invoquées (v. 23), les richesses et les enfants (v. 21), les puissants suivis — rien ne les secourut. Au jour de la détresse, tout appui autre que Dieu se révèle vain. Celui qu'on a fui était le seul refuge.",
+      "mots": [
+        { "ar": "مِّمَّا خَطِيئَاتِهِمْ", "tr": "mimmā khaṭīʾātihim", "racine": "خ ط أ", "sens": "à cause de leurs fautes", "def": "khaṭīʾa : faute, péché.", "gram": "préposition de cause + nom + pronom" },
+        { "ar": "أُغْرِقُوا", "tr": "ughriqū", "racine": "غ ر ق", "sens": "ils furent noyés", "def": "aghraqa : noyer.", "gram": "verbe accompli passif" },
+        { "ar": "فَأُدْخِلُوا نَارًا", "tr": "fa-udkhilū nāran", "racine": "د خ ل / ن و ر", "sens": "puis introduits dans un feu", "def": "adkhala : faire entrer ; nār : feu.", "gram": "verbe passif + complément" },
+        { "ar": "فَلَمْ يَجِدُوا لَهُم مِّن دُونِ اللَّهِ أَنصَارًا", "tr": "fa-lam yajidū lahum min dūni llāhi anṣāran", "racine": "و ج د / ن ص ر", "sens": "ils ne trouvèrent nul secours hors de Dieu", "def": "anṣār : secours, alliés.", "gram": "négation + verbe + compléments" }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "وَقَالَ نُوحٌ رَّبِّ لَا تَذَرْ عَلَى الْأَرْضِ مِنَ الْكَافِرِينَ دَيَّارًا",
+      "tr": "wa-qāla nūḥun rabbi lā tadhar ʿalā l-arḍi mina l-kāfirīna dayyāran",
+      "trad": "Noé dit : « Mon Seigneur ! Ne laisse sur la terre aucun habitant qui soit du nombre des mécréants.",
+      "themes": ["prière finale", "le savoir donné par Dieu"],
+      "commentaire": "<em>lā tadhar… dayyāran</em > (لا تَذَرْ دَيّارًا) : ne laisse pas un seul habitant. Qushayrī précise le contexte : cette prière vint « après que Dieu lui eut fait savoir que ne croira de ton peuple que celui qui a déjà cru. » Noé ne maudit pas par dépit : il prie après une révélation divine sur l'issue. La prière du prophète épouse la science de Dieu ; elle ne devance pas Son décret mais s'y accorde. C'est la patience longue de Noé qui, au terme, se remet entièrement à ce que Dieu lui a montré.",
+      "mots": [
+        { "ar": "رَّبِّ لَا تَذَرْ", "tr": "rabbi lā tadhar", "racine": "ر ب ب / و ذ ر", "sens": "mon Seigneur, ne laisse pas", "def": "wadhara : laisser.", "gram": "vocatif + impératif négatif" },
+        { "ar": "عَلَى الْأَرْضِ", "tr": "ʿalā l-arḍ", "racine": "أ ر ض", "sens": "sur la terre", "def": "arḍ : terre.", "gram": "préposition + nom" },
+        { "ar": "مِنَ الْكَافِرِينَ دَيَّارًا", "tr": "mina l-kāfirīna dayyāran", "racine": "ك ف ر / د و ر", "sens": "des mécréants, un seul habitant", "def": "dayyār : habitant, occupant.", "gram": "préposition + nom + complément d'objet" }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "إِنَّكَ إِن تَذَرْهُمْ يُضِلُّوا عِبَادَكَ وَلَا يَلِدُوا إِلَّا فَاجِرًا كَفَّارًا",
+      "tr": "innaka in tadharhum yuḍillū ʿibādaka wa-lā yalidū illā fājiran kaffāran",
+      "trad": "Si Tu les épargnais, ils égareraient Tes serviteurs et ils n'engendreraient que des négateurs pervertis.",
+      "themes": ["contagion de l'égarement", "héritage du déni"],
+      "commentaire": "<em>lā yalidū illā fājiran kaffāran</em > (لا يَلِدوا إلّا فاجِرًا كَفّارًا) : ils n'engendreront que des pervers et de grands dénégateurs. L'argument de Noé est celui de la contagion : laissés en vie, ils égareraient les serviteurs de Dieu et transmettraient leur déni à leur descendance. L'égarement n'est pas seulement personnel : il se propage, se transmet, devient héritage. Le mal qui s'enracine dans un cœur cherche à s'étendre. Mais cette gravité même rappelle, à l'inverse, la responsabilité de transmettre le bien.",
+      "mots": [
+        { "ar": "إِنَّكَ إِن تَذَرْهُمْ", "tr": "innaka in tadharhum", "racine": "و ذ ر", "sens": "si Tu les laisses", "def": "wadhara : laisser.", "gram": "inna + conditionnelle + verbe + pronom" },
+        { "ar": "يُضِلُّوا عِبَادَكَ", "tr": "yuḍillū ʿibādaka", "racine": "ض ل ل / ع ب د", "sens": "ils égareraient Tes serviteurs", "def": "aḍalla : égarer ; ʿibād : serviteurs.", "gram": "verbe (forme IV) + complément" },
+        { "ar": "وَلَا يَلِدُوا إِلَّا فَاجِرًا كَفَّارًا", "tr": "wa-lā yalidū illā fājiran kaffāran", "racine": "و ل د / ف ج ر / ك ف ر", "sens": "et n'engendreraient que pervers et grand ingrat", "def": "fājir : libertin ; kaffār : très ingrat.", "gram": "verbe + exception + compléments" }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "رَّبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَن دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا",
+      "tr": "rabbi ghfir lī wa-li-wālidayya wa-li-man dakhala baytiya muʾminan wa-li-l-muʾminīna wa-l-muʾmināti wa-lā tazidi l-ẓālimīna illā tabāran",
+      "trad": "Mon Seigneur ! Pardonne-moi ainsi qu'à mes père et mère, et à quiconque entre dans ma maison en ayant la foi, ainsi qu'aux croyants et aux croyantes. Et aux iniques, n'augmente que la perdition ! »",
+      "themes": ["prière de pardon", "intercession pour les croyants"],
+      "commentaire": "Verset de clôture : la prière de Noé s'élargit en cercles d'amour. Il demande pardon pour lui-même, pour ses parents, pour qui entre croyant dans sa maison, puis pour <em>tous les croyants et croyantes</em>, jusqu'à la fin des temps. Après une vie d'appel refusé, le prophète ne se referme pas sur l'amertume : il ouvre son cœur à la communauté entière des fidèles, présents et à venir. Telle est la fécondité cachée de la patience : celui qui n'a presque pas été écouté prie pour des multitudes qu'il ne verra jamais. Sa maison étroite devient, par la prière, la maison de tous les croyants.",
+      "mots": [
+        { "ar": "رَّبِّ اغْفِرْ لِي وَلِوَالِدَيَّ", "tr": "rabbi ghfir lī wa-li-wālidayya", "racine": "غ ف ر / و ل د", "sens": "pardonne-moi et à mes parents", "def": "ghafara : pardonner ; wālidayn : les deux parents.", "gram": "vocatif + impératif + compléments" },
+        { "ar": "وَلِمَن دَخَلَ بَيْتِيَ مُؤْمِنًا", "tr": "wa-li-man dakhala baytiya muʾminan", "racine": "د خ ل / ب ي ت / أ م ن", "sens": "et à qui entre croyant dans ma maison", "def": "dakhala : entrer ; muʾmin : croyant.", "gram": "relatif + verbe + complément + état" },
+        { "ar": "وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ", "tr": "wa-li-l-muʾminīna wa-l-muʾmināt", "racine": "أ م ن", "sens": "aux croyants et aux croyantes", "def": "muʾmin / muʾmina : croyant(e).", "gram": "préposition + noms plur." },
+        { "ar": "وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا", "tr": "wa-lā tazidi l-ẓālimīna illā tabāran", "racine": "ز ي د / ظ ل م / ت ب ر", "sens": "n'accrois aux iniques que la ruine", "def": "tabār : ruine, anéantissement.", "gram": "impératif négatif + complément + exception" }
+      ]
+    }
+  ]
+}

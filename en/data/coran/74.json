@@ -1,0 +1,695 @@
+{
+  "n": 74,
+  "nom_ar": "المُدَّثِّر",
+  "nom_tr": "al-Muddaththir",
+  "nom_fr": "The Cloaked One",
+  "revelation": "Meccan",
+  "basmala": "In the Name of God, the Infinitely Merciful, the Most Merciful.",
+  "versets_count": 56,
+  "intro": "al-Muddaththir — “the Cloaked One” — is, with al-ʿAlaq, one of the very first revelations: the Prophet, seized with dread after the vision of Gabriel, returned home saying “cover me!”, and the command came down: “O you wrapped in a cloak, rise and warn!” Qushayrī opens the sūra with a moving basmala: <em>the Name whose hearing is the recreation of the hearts of the poor, the joy of the secrets of the weak, the rest of the spirits of the beloved, the strength of the hearts of the saints, the consolation of the breasts of the chosen, the coolness of the eyes of the people of affliction</em>. The first commands sketch the program of all spiritual life: to warn, to magnify one's Lord, to purify one's garments (which Qushayrī reads: <em>purify your heart of all creatures and every blameworthy attribute</em>), to flee defilement, not to give in order to receive more, to be patient for one's Lord. The sūra then unfolds the portrait of the denier who “reflected and calculated” against the Word, the description of Saqar, the meaning of the number of the guardians, and culminates in the confession of the damned — “we were not among those who pray, we did not feed the poor” — before closing on the free reminder: “Whoever wills shall remember it.”",
+  "themes": ["rise and warn", "purification of the heart", "the denier who calculates", "Saqar", "the confession of the damned", "the free reminder"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "يَا أَيُّهَا الْمُدَّثِّرُ",
+      "tr": "yā ayyuhā l-muddaththiru",
+      "trad": "O you who are wrapped in a cloak!",
+      "themes": ["the cloaked one", "first revelation"],
+      "commentaire": "<em>al-muddaththir</em> (المُدَّثِّر): the one wrapped in his garment. Qushayrī reports the account: before prophethood, the Prophet went to Ḥirāʾ; Gabriel appeared to him in the air; seized with a great trembling, he returned to Khadīja saying “cover me, cover me!” — and Gabriel descended: “O you wrapped in a cloak, rise and warn!” Qushayrī adds an inner reading: “O you who seek to ward off harm by the cloak, seek it by warning”; and: “rise with Us, set down all that is not Us.” The cloak that sheltered becomes the place from which one is called to mission.",
+      "mots": [
+        { "ar": "يَا أَيُّهَا", "tr": "yā ayyuhā", "racine": "", "sens": "O you", "def": "vocative particle.", "gram": "vocative" },
+        { "ar": "الْمُدَّثِّرُ", "tr": "al-muddaththir", "racine": "د ث ر", "sens": "the cloaked one", "def": "taddaththara: to wrap oneself in a cloak (dithār).", "gram": "active participle" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "قُمْ فَأَنذِرْ",
+      "tr": "qum fa-andhir",
+      "trad": "Rise and warn!",
+      "themes": ["rising", "warning"],
+      "commentaire": "<em>qum fa-andhir</em> (قُمْ فَأَنْذِرْ): rise and warn. Two words that inaugurate a mission. Qushayrī: “when he found rest in the word ‘rise’ and rose, his secret was cut off from any rest in his own rising.” A subtlety: scarcely rested in the command, already torn from all rest — the mission leaves no halt. <em>Andhir</em>: to warn, to caution. The prophet's first act is to awaken: to draw men from their sleep before the forced awakening of the Day.",
+      "mots": [
+        { "ar": "قُمْ", "tr": "qum", "racine": "ق و م", "sens": "rise", "def": "qāma: to rise.", "gram": "imperative" },
+        { "ar": "فَأَنذِرْ", "tr": "fa-andhir", "racine": "ن ذ ر", "sens": "and warn", "def": "andhara: to warn.", "gram": "imperative (form IV)" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "وَرَبَّكَ فَكَبِّرْ",
+      "tr": "wa-rabbaka fa-kabbir",
+      "trad": "Magnify your Lord!",
+      "themes": ["magnify God", "takbīr"],
+      "commentaire": "<em>wa-rabbaka fa-kabbir</em> (وَرَبَّكَ فَكَبِّرْ): and your Lord, magnify Him. Qushayrī: “magnify Him above every request, above joining and separation, above cause and creature.” <em>Takbīr</em> is not only to say “God is greater”; it is to hold God greater than all the heart might associate with Him, even one's own spiritual states. To magnify truly is to set nothing at His height — neither the world, nor self, nor even the desire for Him.",
+      "mots": [
+        { "ar": "وَرَبَّكَ", "tr": "wa-rabbaka", "racine": "ر ب ب", "sens": "and your Lord", "def": "rabb: Lord.", "gram": "fronted object" },
+        { "ar": "فَكَبِّرْ", "tr": "fa-kabbir", "racine": "ك ب ر", "sens": "magnify", "def": "kabbara: to proclaim greatness.", "gram": "imperative (form II)" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "وَثِيَابَكَ فَطَهِّرْ",
+      "tr": "wa-thiyābaka fa-ṭahhir",
+      "trad": "Purify your garments!",
+      "themes": ["purification", "garment of the heart"],
+      "commentaire": "<em>wa-thiyābaka fa-ṭahhir</em> (وَثِيابَكَ فَطَهِّرْ): and your garments, purify them. Qushayrī gives the inner reading, splendid and graded: “purify your heart of all creatures and every blameworthy attribute; purify your soul of slips (zallāt), your heart of contraventions (mukhālafāt), your secret of glances elsewhere (iltifātāt).” Garments are the wrapping of the being: the purity demanded is not only of the garb but of the successive layers within — soul, heart, secret. Three degrees of purification for the three depths of man.",
+      "mots": [
+        { "ar": "وَثِيَابَكَ", "tr": "wa-thiyābaka", "racine": "ث و ب", "sens": "and your garments", "def": "thiyāb: garments.", "gram": "fronted object" },
+        { "ar": "فَطَهِّرْ", "tr": "fa-ṭahhir", "racine": "ط ه ر", "sens": "purify", "def": "ṭahhara: to purify.", "gram": "imperative (form II)" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَالرُّجْزَ فَاهْجُرْ",
+      "tr": "wa-l-rujza fa-hjur",
+      "trad": "Flee defilement!",
+      "themes": ["flee defilement", "health of the heart"],
+      "commentaire": "<em>al-rujz</em> (الرُّجْز): defilement, the abomination — sins, or idols, glosses Qushayrī: “purify your heart of faults and of the occupations of this world.” And he adds a luminous comparison: “as the one whose body is not healthy finds no appetite for food, so the one whose heart is not healthy finds no sweetness in obedience.” To flee defilement is no moral constraint but a return to health: the purified heart tastes prayer as the healthy body tastes bread.",
+      "mots": [
+        { "ar": "وَالرُّجْزَ", "tr": "wa-l-rujza", "racine": "ر ج ز", "sens": "and defilement", "def": "rujz: defilement, what is abominable.", "gram": "fronted object" },
+        { "ar": "فَاهْجُرْ", "tr": "fa-hjur", "racine": "ه ج ر", "sens": "flee, forsake", "def": "hajara: to forsake, flee.", "gram": "imperative" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "وَلَا تَمْنُن تَسْتَكْثِرُ",
+      "tr": "wa-lā tamnun tastakthiru",
+      "trad": "Do not give to gain more.",
+      "themes": ["selfless giving", "humility of the deed"],
+      "commentaire": "<em>lā tamnun tastakthiru</em> (لا تَمْنُنْ تَسْتَكْثِرُ): do not give seeking more. Qushayrī gives three readings: “do not make a gift expecting more than what you give”; “do not deem your obedience much”; “do not be vain of your work, do not find it great, do not marvel at it.” A threefold trap of giving: to expect a return, to think oneself generous, to admire oneself in one's act. The purity of giving requires that one forget it as soon as done — counting it neither in expectation of return, nor in merit, nor in pride.",
+      "mots": [
+        { "ar": "وَلَا تَمْنُن", "tr": "wa-lā tamnun", "racine": "م ن ن", "sens": "do not give (making much of your gift)", "def": "manna: to grant a favour, to reproach with it.", "gram": "negative imperative" },
+        { "ar": "تَسْتَكْثِرُ", "tr": "tastakthiru", "racine": "ك ث ر", "sens": "seeking more / deeming much", "def": "istakthara: to find abundant, to want more.", "gram": "imperfect verb (form X), state" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَلِرَبِّكَ فَاصْبِرْ",
+      "tr": "wa-li-rabbika fa-ṣbir",
+      "trad": "Be patient for your Lord!",
+      "themes": ["patience for God", "endurance"],
+      "commentaire": "<em>wa-li-rabbika fa-ṣbir</em> (وَلِرَبِّكَ فَاصْبِرْ): and for your Lord, be patient. Qushayrī: “you are harmed in God (tuʾdhā fī Llāh), so be patient in bearing their harm.” The patience asked is <em>for God</em>: not to endure for endurance's sake, nor by stoicism, but out of love for the One for whom one suffers. The program of the first seven verses thus closes: to warn, to magnify, to purify, to flee evil, to give without return, and to crown all with patience turned toward God. Such is the architecture of nascent spiritual life.",
+      "mots": [
+        { "ar": "وَلِرَبِّكَ", "tr": "wa-li-rabbika", "racine": "ر ب ب", "sens": "and for your Lord", "def": "rabb: Lord.", "gram": "fronted complement" },
+        { "ar": "فَاصْبِرْ", "tr": "fa-ṣbir", "racine": "ص ب ر", "sens": "be patient", "def": "ṣabara: to be patient.", "gram": "imperative" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "فَإِذَا نُقِرَ فِي النَّاقُورِ",
+      "tr": "fa-ʾidhā nuqira fī l-nāqūri",
+      "trad": "When the trumpet is sounded,",
+      "themes": ["the trumpet", "the Day"],
+      "commentaire": "<em>nuqira fī l-nāqūr</em> (نُقِرَ في النَّاقور): when the trumpet is sounded. Qushayrī: “when the Resurrection stands up.” After the commands addressed to the Prophet comes the horizon that grounds them: the Day. The <em>nāqūr</em> is the instrument whose sound summons the resurrected. It is because of this Day that one warns, purifies, perseveres: the whole spiritual program has its meaning in the prospect of the ultimate awakening.",
+      "mots": [
+        { "ar": "فَإِذَا نُقِرَ", "tr": "fa-ʾidhā nuqira", "racine": "ن ق ر", "sens": "when it is sounded", "def": "naqara: to strike, sound.", "gram": "particle + perfect verb, passive" },
+        { "ar": "فِي النَّاقُورِ", "tr": "fī l-nāqūr", "racine": "ن ق ر", "sens": "in the trumpet", "def": "nāqūr: horn, trumpet.", "gram": "preposition + noun" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "فَذَٰلِكَ يَوْمَئِذٍ يَوْمٌ عَسِيرٌ",
+      "tr": "fa-dhālika yawmaʾidhin yawmun ʿasīrun",
+      "trad": "that Day will be a hard Day,",
+      "themes": ["difficult day", "gravity"],
+      "commentaire": "<em>yawmun ʿasīr</em> (يَوْمٌ عَسير): a hard, difficult day. The word <em>ʿasīr</em> speaks of difficulty, the opposite of ease (yusr). That Day is not light: it is the moment when all is revealed and decided. Its difficulty matches its stakes — not to frighten in vain, but to give its true weight to the present life. What is hard on that Day depends on what one has prepared on this day.",
+      "mots": [
+        { "ar": "فَذَٰلِكَ يَوْمَئِذٍ", "tr": "fa-dhālika yawmaʾidhin", "racine": "ي و م", "sens": "that day", "def": "yawmaʾidhin: that day.", "gram": "demonstrative + adverb" },
+        { "ar": "يَوْمٌ عَسِيرٌ", "tr": "yawmun ʿasīr", "racine": "ع س ر", "sens": "a hard day", "def": "ʿasīr: difficult, arduous.", "gram": "noun + adjective, predicate" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "عَلَى الْكَافِرِينَ غَيْرُ يَسِيرٍ",
+      "tr": "ʿalā l-kāfirīna ghayru yasīrin",
+      "trad": "for the disbelievers far from easy.",
+      "themes": ["difficulty for the deniers", "two measures"],
+      "commentaire": "<em>ʿalā l-kāfirīna ghayru yasīr</em> (عَلى الكافِرين غَيْرُ يَسير): for the deniers, not easy. The precision is laden with meaning: the same Day, hard for all, is <em>particularly</em> hard for the deniers — implying that it will be, by contrast, eased for the believers. The Day is not uniform: it espouses each one's state. What weighs on one is light for another, according to the faith or denial he has carried. The difficulty is not in the Day but in the heart that faces it.",
+      "mots": [
+        { "ar": "عَلَى الْكَافِرِينَ", "tr": "ʿalā l-kāfirīn", "racine": "ك ف ر", "sens": "for the disbelievers", "def": "kāfir: who denies.", "gram": "preposition + plural noun" },
+        { "ar": "غَيْرُ يَسِيرٍ", "tr": "ghayru yasīr", "racine": "ي س ر", "sens": "not easy", "def": "yasīr: easy.", "gram": "noun of negation + adjective" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "ذَرْنِي وَمَنْ خَلَقْتُ وَحِيدًا",
+      "tr": "dharnī wa-man khalaqtu waḥīdan",
+      "trad": "Leave Me alone with the one I created alone,",
+      "themes": ["surrender to God", "solitary creation"],
+      "commentaire": "<em>dharnī wa-man khalaqtu waḥīdan</em> (ذَرْني وَمَنْ خَلَقْتُ وَحيدًا): leave Me with the one I created alone. Qushayrī: “do not trouble yourself over his affair, do not be concerned with it — I suffice you against him. I created him alone, none shared with Me in his creation.” As in al-Muzzammil (s. 73, v. 11), God relieves the Prophet of the burden of retaliation. <em>Waḥīd</em>: he was created alone, without support — and yet, heaped with goods, he grows proud. The reminder of the original solitude is a rebuttal of all pretension: one comes alone, stripped of everything.",
+      "mots": [
+        { "ar": "ذَرْنِي", "tr": "dharnī", "racine": "و ذ ر", "sens": "leave Me", "def": "wadhara: to leave.", "gram": "imperative + pronoun" },
+        { "ar": "وَمَنْ خَلَقْتُ", "tr": "wa-man khalaqtu", "racine": "خ ل ق", "sens": "with the one I created", "def": "khalaqa: to create.", "gram": "relative + perfect verb" },
+        { "ar": "وَحِيدًا", "tr": "waḥīdan", "racine": "و ح د", "sens": "alone", "def": "waḥīd: alone, single.", "gram": "circumstantial complement" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "وَجَعَلْتُ لَهُ مَالًا مَّمْدُودًا",
+      "tr": "wa-jaʿaltu lahu mālan mamdūdan",
+      "trad": "whom I endowed with vast wealth",
+      "themes": ["extended wealth", "unacknowledged gift"],
+      "commentaire": "<em>mālan mamdūdan</em> (مالًا مَمْدودًا): an extended, lasting wealth. Tradition reports this passage targets al-Walīd ibn al-Mughīra, a wealthy notable of Quraysh. God enumerates His gifts: abundant wealth, present sons, a smoothed situation. The irony is cutting: all this comes from God, and it is with these very gifts that he will fight God. The unacknowledged gift turns into a weapon against the Giver. Wealth becomes a trap for the one who forgets whence it comes.",
+      "mots": [
+        { "ar": "وَجَعَلْتُ لَهُ", "tr": "wa-jaʿaltu lahu", "racine": "ج ع ل", "sens": "I gave him", "def": "jaʿala: to make, grant.", "gram": "perfect verb + complement" },
+        { "ar": "مَالًا مَّمْدُودًا", "tr": "mālan mamdūdan", "racine": "م و ل / م د د", "sens": "extended wealth", "def": "mamdūd: extended, abundant.", "gram": "noun + adjective" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "وَبَنِينَ شُهُودًا",
+      "tr": "wa-banīna shuhūdan",
+      "trad": "and sons to surround him.",
+      "themes": ["present sons", "abundance"],
+      "commentaire": "<em>banīna shuhūdan</em> (بَنينَ شُهودًا): present sons. Qushayrī: “present beside him, who need not travel” — that is, children who stay at his side, a sign of ease and honour. To the wealth (v. 12) is added offspring, the other great good of the world. But these accumulated gifts, as in the sūra of Noah (s. 71, v. 21), can “increase the loss” of the one who shuts himself in them. Abundance itself becomes the trial: the more one receives, the more one is tempted to forget the Giver.",
+      "mots": [
+        { "ar": "وَبَنِينَ", "tr": "wa-banīna", "racine": "ب ن ي", "sens": "and sons", "def": "banūn: sons.", "gram": "plural noun, complement" },
+        { "ar": "شُهُودًا", "tr": "shuhūdan", "racine": "ش ه د", "sens": "present", "def": "shuhūd: present, witnesses.", "gram": "circumstantial complement" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "وَمَهَّدتُّ لَهُ تَمْهِيدًا",
+      "tr": "wa-mahhadtu lahu tamhīdan",
+      "trad": "For him I smoothed all things,",
+      "themes": ["facilitated situation", "providence"],
+      "commentaire": "<em>mahhadtu lahu tamhīdan</em> (مَهَّدْتُ لَهُ تَمْهيدًا): I smoothed everything for him. Qushayrī: “I made disposal (taṣarruf) easy for him, I made him master to act in affairs.” And he finely notes that this verse shows man enjoys a real freedom of action — the gift of the power to act. God prepared everything, smoothed everything before this man: the way was wide, the means given. The greater the gift, the greater the responsibility to acknowledge it. To whom all is given, all is asked.",
+      "mots": [
+        { "ar": "وَمَهَّدتُّ لَهُ", "tr": "wa-mahhadtu lahu", "racine": "م ه د", "sens": "I smoothed for him", "def": "mahhada: to prepare, smooth.", "gram": "perfect verb (form II) + complement" },
+        { "ar": "تَمْهِيدًا", "tr": "tamhīdan", "racine": "م ه د", "sens": "completely", "def": "tamhīd: smoothing, facilitation.", "gram": "absolute object" }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "ثُمَّ يَطْمَعُ أَنْ أَزِيدَ",
+      "tr": "thumma yaṭmaʿu an azīda",
+      "trad": "and he craves that I give more.",
+      "themes": ["greed", "ingratitude"],
+      "commentaire": "<em>yaṭmaʿu an azīda</em> (يَطْمَعُ أَنْ أَزيدَ): he covets that I add more. Qushayrī: “he hopes that I increase him in blessing.” The summit of ingratitude: heaped with all (v. 12-14), he still wants more — with no acknowledgement at all. Greed is bottomless: the one who gives no thanks is never sated, for it is not the gift that is lacking but the gratitude that turns the gift into joy. The ungrateful heart is a bottomless well: all falls into it without ever filling it.",
+      "mots": [
+        { "ar": "ثُمَّ يَطْمَعُ", "tr": "thumma yaṭmaʿu", "racine": "ط م ع", "sens": "then he covets", "def": "ṭamiʿa: to covet, desire greedily.", "gram": "particle + imperfect verb" },
+        { "ar": "أَنْ أَزِيدَ", "tr": "an azīda", "racine": "ز ي د", "sens": "that I add", "def": "zāda: to add, increase.", "gram": "an + subjunctive verb" }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "كَلَّا إِنَّهُ كَانَ لِآيَاتِنَا عَنِيدًا",
+      "tr": "kallā innahu kāna li-āyātinā ʿanīdan",
+      "trad": "By no means, for he stubbornly denied Our signs;",
+      "themes": ["obstinacy", "denial of the signs"],
+      "commentaire": "<em>ʿanīd</em> (عَنيد): obstinate, refractory, glosses Qushayrī: “a denier (jaḥūd).” The <em>kallā</em> cuts off: no, he will have no more. The reason is unveiled: not a lack, but an active obstinacy against God's signs. The drama is not ignorance but stubbornness: he saw the signs and balked. Obstinacy is the opposite of the suppleness of the open heart; it stiffens the soul against the evidence it will not receive.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "", "sens": "by no means", "def": "kallā: denial, warning.", "gram": "particle" },
+        { "ar": "إِنَّهُ كَانَ لِآيَاتِنَا", "tr": "innahu kāna li-āyātinā", "racine": "أ ي ي", "sens": "he was toward Our signs", "def": "āya: sign, verse.", "gram": "inna + verb + complement" },
+        { "ar": "عَنِيدًا", "tr": "ʿanīdan", "racine": "ع ن د", "sens": "obstinate, refractory", "def": "ʿanīd: stubborn, opposing.", "gram": "predicate" }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "سَأُرْهِقُهُ صَعُودًا",
+      "tr": "sa-urhiquhu ṣaʿūdan",
+      "trad": "soon I shall make him climb a mountain of calamities.",
+      "themes": ["painful ascent", "chastisement"],
+      "commentaire": "<em>sa-urhiquhu ṣaʿūdan</em> (سَأُرْهِقُهُ صَعودًا): I shall force upon him an arduous ascent. Qushayrī: “I shall burden him with a torment's hardship.” <em>Ṣaʿūd</em> evokes the steep slope one climbs to exhaustion, never reaching the summit. An image of the obstinate one's chastisement: an endless, restless effort, the opposite of the wide way offered to believers (s. 71, v. 20). The one who balked against the signs condemns himself to an ascent without respite; the refusal of the easy path leads to the impossible path.",
+      "mots": [
+        { "ar": "سَأُرْهِقُهُ", "tr": "sa-urhiquhu", "racine": "ر ه ق", "sens": "I shall force upon him", "def": "arhaqa: to burden, force.", "gram": "future + verb (form IV) + pronoun" },
+        { "ar": "صَعُودًا", "tr": "ṣaʿūdan", "racine": "ص ع د", "sens": "a painful ascent", "def": "ṣaʿūd: arduous slope to climb.", "gram": "object" }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "إِنَّهُ فَكَّرَ وَقَدَّرَ",
+      "tr": "innahu fakkara wa-qaddara",
+      "trad": "He reflected and devised.",
+      "themes": ["calculation against the Word", "intelligence misused"],
+      "commentaire": "<em>fakkara wa-qaddara</em> (فَكَّرَ وَقَدَّرَ): he reflected and calculated. Tradition (reported by Qushayrī) targets al-Walīd, who secretly acknowledged the beauty of the Quran — “it has a sweetness, a grace...” — then, pressed by Abū Jahl, calculated how to discredit it. The drama of misused intelligence: the very faculty that could acknowledge the truth is set to the service of refusal. To reflect and to calculate are gifts; turned against the Word, they become the instruments of the most lucid, and thus the most culpable, denial.",
+      "mots": [
+        { "ar": "إِنَّهُ فَكَّرَ", "tr": "innahu fakkara", "racine": "ف ك ر", "sens": "he reflected", "def": "fakkara: to reflect, ponder.", "gram": "inna + perfect verb (form II)" },
+        { "ar": "وَقَدَّرَ", "tr": "wa-qaddara", "racine": "ق د ر", "sens": "and calculated", "def": "qaddara: to measure, calculate.", "gram": "perfect verb (form II)" }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "فَقُتِلَ كَيْفَ قَدَّرَ",
+      "tr": "fa-qutila kayfa qaddara",
+      "trad": "May he perish, how he devised!",
+      "themes": ["malediction", "reversal"],
+      "commentaire": "<em>fa-qutila kayfa qaddara</em> (فَقُتِلَ كَيْفَ قَدَّرَ): cursed be he, how he calculated! Qushayrī: “may he be cursed (luʿina) as he reflected and calculated.” The verb <em>qutila</em> is an imprecation: may the one who used his mind against the truth perish. The irony is cutting: his very calculation turns against him. The one who thought to manoeuvre the Word finds himself caught in his own trap. Scheming against God leads only to the schemer's ruin.",
+      "mots": [
+        { "ar": "فَقُتِلَ", "tr": "fa-qutila", "racine": "ق ت ل", "sens": "may he perish / be cursed", "def": "qutila: lit. may he be slain; imprecation.", "gram": "perfect verb, passive (imprecation)" },
+        { "ar": "كَيْفَ قَدَّرَ", "tr": "kayfa qaddara", "racine": "ق د ر", "sens": "how he calculated", "def": "qaddara: to calculate.", "gram": "interrogative of wonder + verb" }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "ثُمَّ قُتِلَ كَيْفَ قَدَّرَ",
+      "tr": "thumma qutila kayfa qaddara",
+      "trad": "Again, may he perish, how he devised!",
+      "themes": ["redoubled malediction", "insistence"],
+      "commentaire": "The malediction is redoubled: “again, may he perish as he calculated!” The repetition hammers the condemnation of misused intelligence. This redoubling is not overload but insistence: it conveys the gravity of what is at stake. To use one's reflection to fight the truth one has glimpsed is the heaviest fault, for it is the most conscious. The more one has seen, the more one is responsible for what one refuses.",
+      "mots": [
+        { "ar": "ثُمَّ قُتِلَ", "tr": "thumma qutila", "racine": "ق ت ل", "sens": "again, may he perish", "def": "qutila: imprecation.", "gram": "particle + verb (imprecation)" },
+        { "ar": "كَيْفَ قَدَّرَ", "tr": "kayfa qaddara", "racine": "ق د ر", "sens": "how he calculated", "def": "qaddara: to calculate.", "gram": "interrogative + verb" }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "ثُمَّ نَظَرَ",
+      "tr": "thumma naẓara",
+      "trad": "Then he looked,",
+      "themes": ["calculating gaze", "manoeuvre"],
+      "commentaire": "<em>thumma naẓara</em> (ثُمَّ نَظَرَ): then he looked. The beginning of a striking sequence (v. 21-25) that breaks down, gesture by gesture, the denier's manoeuvre: he looks, frowns, scowls, turns his back, swells, and pronounces. The <em>naẓar</em> here is not the contemplation that uplifts (like “the faces turned toward their Lord,” s. 75, v. 23) but the calculating glance of one seeking a parry. The same verb serves salvation and ruin, according to the heart's intent.",
+      "mots": [
+        { "ar": "ثُمَّ نَظَرَ", "tr": "thumma naẓara", "racine": "ن ظ ر", "sens": "then he looked", "def": "naẓara: to look, examine.", "gram": "particle + perfect verb" }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "ثُمَّ عَبَسَ وَبَسَرَ",
+      "tr": "thumma ʿabasa wa-basara",
+      "trad": "then he frowned and scowled;",
+      "themes": ["frown", "contraction"],
+      "commentaire": "<em>ʿabasa wa-basara</em> (عَبَسَ وَبَسَرَ): he frowned and scowled. Two verbs of the face's contraction before what disturbs. The same verb <em>ʿabasa</em> names a whole sūra (s. 80) — there, the Prophet's frown before the poor blind man, at once corrected; here, the grimace of the denier cornered by the truth. The face betrays the heart: before the Word, one is lit up, the other hardens. The grimace is the seal of inner refusal.",
+      "mots": [
+        { "ar": "ثُمَّ عَبَسَ", "tr": "thumma ʿabasa", "racine": "ع ب س", "sens": "then he frowned", "def": "ʿabasa: to frown, grow gloomy.", "gram": "particle + perfect verb" },
+        { "ar": "وَبَسَرَ", "tr": "wa-basara", "racine": "ب س ر", "sens": "and scowled", "def": "basara: to contract, darken.", "gram": "perfect verb" }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "ثُمَّ أَدْبَرَ وَاسْتَكْبَرَ",
+      "tr": "thumma adbara wa-stakbara",
+      "trad": "then he turned his back and grew proud.",
+      "themes": ["turning away", "pride"],
+      "commentaire": "<em>adbara wa-stakbara</em> (أَدْبَرَ وَاسْتَكْبَرَ): he turned his back and grew proud. The culmination of the manoeuvre: after the look, the grimace, here come rejection and pride. <em>Istikbār</em> is the deep root of denial (cf. s. 71, v. 7): to think oneself greater than the truth offered. To turn one's back is no neutrality but an active choice to draw away; and pride is its engine. The swollen heart cannot bow; unable to bow, it cannot receive.",
+      "mots": [
+        { "ar": "ثُمَّ أَدْبَرَ", "tr": "thumma adbara", "racine": "د ب ر", "sens": "then he turned his back", "def": "adbara: to turn away.", "gram": "particle + verb (form IV)" },
+        { "ar": "وَاسْتَكْبَرَ", "tr": "wa-stakbara", "racine": "ك ب ر", "sens": "and grew proud", "def": "istakbara: to swell with pride.", "gram": "perfect verb (form X)" }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "فَقَالَ إِنْ هَٰذَا إِلَّا سِحْرٌ يُؤْثَرُ",
+      "tr": "fa-qāla in hādhā illā siḥrun yuʾtharu",
+      "trad": "He said: “This is nothing but magic learned from the ancients!",
+      "themes": ["accusation of magic", "verdict of denial"],
+      "commentaire": "<em>siḥrun yuʾthar</em> (سِحْرٌ يُؤْثَر): magic handed down, inherited. Here is the long-calculated verdict: to reduce the Word to learned magic. Qushayrī reports that al-Walīd, unable to deny the Quran's beauty, made it “magic” to explain its power over hearts: “do you not see it separate a man from his family?” A strategy of all ages: not to acknowledge what surpasses, one labels it with a reassuring word. To call “magic” what touches the heart is to refuse to see truth in it.",
+      "mots": [
+        { "ar": "فَقَالَ إِنْ هَٰذَا إِلَّا", "tr": "fa-qāla in hādhā illā", "racine": "ق و ل", "sens": "he said: this is nothing but", "def": "in... illā: nothing but.", "gram": "verb + restriction" },
+        { "ar": "سِحْرٌ يُؤْثَرُ", "tr": "siḥrun yuʾtharu", "racine": "س ح ر / أ ث ر", "sens": "magic handed down", "def": "siḥr: magic; yuʾthar: transmitted, inherited.", "gram": "noun + relative verb" }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "إِنْ هَٰذَا إِلَّا قَوْلُ الْبَشَرِ",
+      "tr": "in hādhā illā qawlu l-bashari",
+      "trad": "This is nothing but the word of a mortal!”",
+      "themes": ["reduction to the human", "denial of divine origin"],
+      "commentaire": "<em>qawlu l-bashar</em> (قَوْلُ البَشَر): the word of a mortal. The second part of the verdict: to deny the divine origin of the Word by reducing it to the human. It is the ultimate defence of pride: if this Word is only human, I need not bow before it. To reduce the divine to the human is the fundamental gesture of denial — it shields man from what surpasses him. But this Word that “separates a man from his family” (v. 24) betrays, by its very power, that it is not of man.",
+      "mots": [
+        { "ar": "إِنْ هَٰذَا إِلَّا", "tr": "in hādhā illā", "racine": "", "sens": "this is nothing but", "def": "in... illā: restriction.", "gram": "restriction" },
+        { "ar": "قَوْلُ الْبَشَرِ", "tr": "qawlu l-bashar", "racine": "ق و ل / ب ش ر", "sens": "the word of a mortal", "def": "qawl: word; bashar: human being.", "gram": "noun + complement" }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "سَأُصْلِيهِ سَقَرَ",
+      "tr": "sa-uṣlīhi saqara",
+      "trad": "I shall cast him into the blazing Fire (Saqar)",
+      "themes": ["Saqar", "sanction"],
+      "commentaire": "<em>sa-uṣlīhi saqar</em> (سَأُصْليهِ سَقَر): I shall make him burn in Saqar. To the word of denial (v. 24-25) answers the sentence. <em>Saqar</em> is one of the names of the Fire, evoking intense burning. God's answer to man's calculation is not another calculation but a consequence: the one who used everything — intelligence, wealth, influence — against the Word reaps its reverse. The very name Saqar, mysterious and harsh, prepares the vertiginous question of the next verse.",
+      "mots": [
+        { "ar": "سَأُصْلِيهِ", "tr": "sa-uṣlīhi", "racine": "ص ل ي", "sens": "I shall make him burn", "def": "aṣlā: to make enter the fire.", "gram": "future + verb (form IV) + pronoun" },
+        { "ar": "سَقَرَ", "tr": "saqara", "racine": "س ق ر", "sens": "Saqar (the Fire)", "def": "Saqar: name of the Fire, the furnace.", "gram": "proper noun, complement" }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "وَمَا أَدْرَاكَ مَا سَقَرُ",
+      "tr": "wa-mā adrāka mā saqaru",
+      "trad": "And what will make you know what Saqar is?",
+      "themes": ["grandeur of the mystery", "beyond knowledge"],
+      "commentaire": "<em>wa-mā adrāka mā saqar</em> (وَما أَدْراكَ ما سَقَر): what will make you know what Saqar is? As with the “Day of Decision” (s. 77, v. 14), the formula deepens the mystery rather than explaining it. Saqar surpasses understanding; one can name it only by saying it escapes knowledge. The suspended question is more eloquent than a description: it lets one sense a beyond past all measure. Before the immense, human knowledge acknowledges its limit.",
+      "mots": [
+        { "ar": "وَمَا أَدْرَاكَ", "tr": "wa-mā adrāka", "racine": "د ر ي", "sens": "what will make you know", "def": "adrā: to make know.", "gram": "interrogative + verb + pronoun" },
+        { "ar": "مَا سَقَرُ", "tr": "mā saqaru", "racine": "س ق ر", "sens": "what Saqar is", "def": "Saqar: the Fire.", "gram": "interrogative + noun" }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "لَا تُبْقِي وَلَا تَذَرُ",
+      "tr": "lā tubqī wa-lā tadharu",
+      "trad": "It leaves nothing and spares nothing;",
+      "themes": ["total fire", "nothing spared"],
+      "commentaire": "<em>lā tubqī wa-lā tadhar</em> (لا تُبْقي وَلا تَذَرُ): it leaves nothing and spares nothing. Qushayrī: “it leaves no flesh, leaves no bone.” The Fire is total, neither sparing nor releasing. The phrase conveys the absoluteness of consumption — but also, by contrast, the totality of what the denier refused to give: he left nothing for God of his intelligence or his goods (v. 12-25), and nothing is left to him in return. The measure of the chastisement espouses the measure of the refusal.",
+      "mots": [
+        { "ar": "لَا تُبْقِي", "tr": "lā tubqī", "racine": "ب ق ي", "sens": "it leaves nothing", "def": "abqā: to leave remaining.", "gram": "negation + verb (form IV)" },
+        { "ar": "وَلَا تَذَرُ", "tr": "wa-lā tadharu", "racine": "و ذ ر", "sens": "and spares nothing", "def": "wadhara: to leave, spare.", "gram": "negation + imperfect verb" }
+      ]
+    },
+    {
+      "n": 29,
+      "ar": "لَوَّاحَةٌ لِّلْبَشَرِ",
+      "tr": "lawwāḥatun li-l-bashari",
+      "trad": "it scorches the skin of mortals and blackens it.",
+      "themes": ["scorching of the skin", "mark"],
+      "commentaire": "<em>lawwāḥa li-l-bashar</em> (لَوّاحَة لِلْبَشَر): which scorches and blackens human skin. Qushayrī links the verb to <em>lāḥathu l-shams</em> (the sun tanned, blackened him): Saqar marks the flesh as the sun burns the complexion. <em>Bashar</em> here denotes the skin as much as humans. The image is concrete, almost visible: the Fire leaves its mark on the being. But it is also the reverse of denial: the one who refused the gentle light of the Word undergoes the burning of the Fire.",
+      "mots": [
+        { "ar": "لَوَّاحَةٌ", "tr": "lawwāḥa", "racine": "ل و ح", "sens": "which scorches and blackens", "def": "lawwāḥa: which tans, blackens.", "gram": "intensive active participle fem." },
+        { "ar": "لِّلْبَشَرِ", "tr": "li-l-bashar", "racine": "ب ش ر", "sens": "the skin of mortals", "def": "bashar: skin, human beings.", "gram": "preposition + noun" }
+      ]
+    },
+    {
+      "n": 30,
+      "ar": "عَلَيْهَا تِسْعَةَ عَشَرَ",
+      "tr": "ʿalayhā tisʿata ʿashara",
+      "trad": "Nineteen are assigned to it.",
+      "themes": ["nineteen guardians", "the number"],
+      "commentaire": "<em>tisʿata ʿashar</em> (تِسْعَةَ عَشَر): nineteen. Over Saqar watch nineteen guardians. Qushayrī reports the deniers' reaction: “we are a great host — what will nineteen do against us?” — and it is precisely this proud objection that calls forth the answer of the next verse. The number, enigmatic, becomes a touchstone: it separates those who balk at it (counting on their numbers) from those who bow before the mystery. The seemingly trivial detail reveals the heart's state.",
+      "mots": [
+        { "ar": "عَلَيْهَا", "tr": "ʿalayhā", "racine": "", "sens": "over it (Saqar)", "def": "ʿalā + pronoun.", "gram": "preposition + pronoun" },
+        { "ar": "تِسْعَةَ عَشَرَ", "tr": "tisʿata ʿashar", "racine": "ت س ع / ع ش ر", "sens": "nineteen", "def": "tisʿata ʿashar: nineteen (guardians).", "gram": "compound numeral" }
+      ]
+    },
+    {
+      "n": 31,
+      "ar": "وَمَا جَعَلْنَا أَصْحَابَ النَّارِ إِلَّا مَلَائِكَةً وَمَا جَعَلْنَا عِدَّتَهُمْ إِلَّا فِتْنَةً لِّلَّذِينَ كَفَرُوا لِيَسْتَيْقِنَ الَّذِينَ أُوتُوا الْكِتَابَ وَيَزْدَادَ الَّذِينَ آمَنُوا إِيمَانًا وَلَا يَرْتَابَ الَّذِينَ أُوتُوا الْكِتَابَ وَالْمُؤْمِنُونَ وَلِيَقُولَ الَّذِينَ فِي قُلُوبِهِم مَّرَضٌ وَالْكَافِرُونَ مَاذَا أَرَادَ اللَّهُ بِهَٰذَا مَثَلًا كَذَٰلِكَ يُضِلُّ اللَّهُ مَن يَشَاءُ وَيَهْدِي مَن يَشَاءُ وَمَا يَعْلَمُ جُنُودَ رَبِّكَ إِلَّا هُوَ وَمَا هِيَ إِلَّا ذِكْرَىٰ لِلْبَشَرِ",
+      "tr": "wa-mā jaʿalnā aṣḥāba l-nāri illā malāʾikatan wa-mā jaʿalnā ʿiddatahum illā fitnatan lilladhīna kafarū li-yastayqina lladhīna ūtū l-kitāba wa-yazdāda lladhīna āmanū īmānan wa-lā yartāba lladhīna ūtū l-kitāba wa-l-muʾminūna wa-li-yaqūla lladhīna fī qulūbihim maraḍun wa-l-kāfirūna mādhā arāda llāhu bi-hādhā mathalan kadhālika yuḍillu llāhu man yashāʾu wa-yahdī man yashāʾu wa-mā yaʿlamu junūda rabbika illā huwa wa-mā hiya illā dhikrā li-l-bashari",
+      "trad": "We have made none but angels the keepers of the Fire, and We have set their number only as a test for those who disbelieve, that those who were given the Book may be certain, that the believers may grow in faith, that those given the Book and the believers may no longer doubt, and that those in whose hearts is a sickness, and the disbelievers, may say: “What does God intend by this parable?” Thus God leads astray whom He wills and guides whom He wills. None knows the armies of your Lord but He. This is only a reminder to mortals.",
+      "themes": ["the number as test", "guidance and straying", "the armies of God"],
+      "commentaire": "A hinge-verse on the meaning of the number. <em>fitnatan lilladhīna kafarū</em> (فِتْنَةً لِلَّذينَ كَفَروا): a test for those who disbelieve. The same detail — nineteen — produces opposite effects according to the heart: it <em>strengthens</em> the certainty of the people of the Book, <em>increases</em> the faith of the believers, and makes the sick hearts <em>doubt</em>, asking “what does God mean by this?” The number is a revealer: it does not change, it is the heart that reacts. <em>kadhālika yuḍillu llāhu man yashāʾu wa-yahdī man yashāʾu</em>: thus God leads astray whom He wills and guides whom He wills — the same word divides, according to the disposition of the one who hears it. And Qushayrī comments on the verse's seal: <em>“the sciences of creatures are too short to grasp anything but a limited measure; the One who encompasses all things in His knowledge is God.”</em> The Lord's armies — angels, signs, mysteries — escape all human numbering.",
+      "mots": [
+        { "ar": "وَمَا جَعَلْنَا أَصْحَابَ النَّارِ إِلَّا مَلَائِكَةً", "tr": "wa-mā jaʿalnā aṣḥāba l-nāri illā malāʾikatan", "racine": "ج ع ل / ن و ر / م ل ك", "sens": "We made none but angels the keepers of the Fire", "def": "aṣḥāb al-nār: the keepers of the Fire.", "gram": "negation + verb + restriction" },
+        { "ar": "إِلَّا فِتْنَةً لِّلَّذِينَ كَفَرُوا", "tr": "illā fitnatan lilladhīna kafarū", "racine": "ف ت ن / ك ف ر", "sens": "only a test for those who disbelieve", "def": "fitna: test, temptation.", "gram": "restriction + noun + complement" },
+        { "ar": "لِيَسْتَيْقِنَ الَّذِينَ أُوتُوا الْكِتَابَ", "tr": "li-yastayqina lladhīna ūtū l-kitāb", "racine": "ي ق ن / ك ت ب", "sens": "that the people of the Book may be certain", "def": "istayqana: to be certain.", "gram": "lām of purpose + verb (form X)" },
+        { "ar": "وَيَزْدَادَ الَّذِينَ آمَنُوا إِيمَانًا", "tr": "wa-yazdāda lladhīna āmanū īmānan", "racine": "ز ي د / أ م ن", "sens": "that the believers may grow in faith", "def": "izdāda: to increase.", "gram": "verb (form VIII) + complement" },
+        { "ar": "كَذَٰلِكَ يُضِلُّ اللَّهُ مَن يَشَاءُ وَيَهْدِي مَن يَشَاءُ", "tr": "kadhālika yuḍillu llāhu man yashāʾu wa-yahdī man yashāʾu", "racine": "ض ل ل / ه د ي", "sens": "thus God leads astray whom He wills and guides whom He wills", "def": "aḍalla: to lead astray; hadā: to guide.", "gram": "adverb + verbs" },
+        { "ar": "وَمَا يَعْلَمُ جُنُودَ رَبِّكَ إِلَّا هُوَ", "tr": "wa-mā yaʿlamu junūda rabbika illā huwa", "racine": "ع ل م / ج ن د", "sens": "none knows the armies of your Lord but He", "def": "junūd: armies, hosts.", "gram": "negation + verb + restriction" },
+        { "ar": "وَمَا هِيَ إِلَّا ذِكْرَىٰ لِلْبَشَرِ", "tr": "wa-mā hiya illā dhikrā li-l-bashar", "racine": "ذ ك ر / ب ش ر", "sens": "this is only a reminder to mortals", "def": "dhikrā: reminder.", "gram": "restriction + noun + complement" }
+      ]
+    },
+    {
+      "n": 32,
+      "ar": "كَلَّا وَالْقَمَرِ",
+      "tr": "kallā wa-l-qamari",
+      "trad": "No indeed, [I swear] by the moon,",
+      "themes": ["oath by the moon", "inner readings"],
+      "commentaire": "<em>kallā wa-l-qamar</em> (كَلّا وَالقَمَر): no indeed! by the moon. Qushayrī gives first the literal sense, then opens an admirable spiritual reading: “by the moons of the sciences (aqmār al-ʿulūm): when their crescent grows with the increase of proofs, they wax; but when they reach the fullness of knowledge and touch their limit, the standards of gnosis (maʿrifa) appear — then knowledge wanes, and the sun of gnosis rises.” As the moon pales at the sun's approach until it vanishes, the moons of the sciences decline when the sun of direct knowledge rises: “like a lamp in the sun's light.” Knowledge prepares gnosis, then fades before it.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "", "sens": "no indeed", "def": "kallā: particle of rebuttal and awakening.", "gram": "particle" },
+        { "ar": "وَالْقَمَرِ", "tr": "wa-l-qamar", "racine": "ق م ر", "sens": "by the moon", "def": "qamar: moon.", "gram": "wāw of oath + noun" }
+      ]
+    },
+    {
+      "n": 33,
+      "ar": "وَاللَّيْلِ إِذْ أَدْبَرَ",
+      "tr": "wa-l-layli idh adbara",
+      "trad": "and by the night as it retreats,",
+      "themes": ["retreating night", "dispelled darkness"],
+      "commentaire": "<em>al-layl idh adbar</em> (اللَّيْل إذْ أَدْبَر): the night as it retreats. Qushayrī, in his inner reading: “the night, when the darknesses of the inmost selves (ẓulam al-bawāṭin) are dispelled.” The departing night figures the lifting of the heart's obscurities — the veils, the doubts, the attachments that darkened within. The oath by the retreating night is an oath by deliverance: what obscured the secret dissipates, making way for the morning of inner revelation.",
+      "mots": [
+        { "ar": "وَاللَّيْلِ", "tr": "wa-l-layl", "racine": "ل ي ل", "sens": "and by the night", "def": "layl: night.", "gram": "wāw of oath + noun" },
+        { "ar": "إِذْ أَدْبَرَ", "tr": "idh adbara", "racine": "د ب ر", "sens": "as it retreats", "def": "adbara: to turn the back, to depart.", "gram": "adverb + perfect verb (form IV)" }
+      ]
+    },
+    {
+      "n": 34,
+      "ar": "وَالصُّبْحِ إِذَا أَسْفَرَ",
+      "tr": "wa-l-ṣubḥi idhā asfara",
+      "trad": "and by the dawn as it brightens!",
+      "themes": ["breaking dawn", "lights of the realities"],
+      "commentaire": "<em>al-ṣubḥ idhā asfar</em> (الصُّبْح إذا أَسْفَر): the dawn as it shines forth. Qushayrī continues: “and when the lights of the realities (anwār al-ḥaqāʾiq) are unveiled in the secrets.” To the retreating night (v. 33) answers the rising dawn: the darknesses of the inmost self fade, the lights of the truths appear. It is the inner dawn, the morning of the unveiled heart. And Qushayrī adds, lucidly: this oath also serves “to warn against the return of darkness to hearts” — the dawn gained must be preserved.",
+      "mots": [
+        { "ar": "وَالصُّبْحِ", "tr": "wa-l-ṣubḥ", "racine": "ص ب ح", "sens": "and by the dawn", "def": "ṣubḥ: morning, dawn.", "gram": "wāw of oath + noun" },
+        { "ar": "إِذَا أَسْفَرَ", "tr": "idhā asfara", "racine": "س ف ر", "sens": "as it brightens", "def": "asfara: to shine, unveil.", "gram": "adverb + verb (form IV)" }
+      ]
+    },
+    {
+      "n": 35,
+      "ar": "إِنَّهَا لَإِحْدَى الْكُبَرِ",
+      "tr": "innahā la-iḥdā l-kubari",
+      "trad": "It is indeed one of the gravest things,",
+      "themes": ["answer to the oath", "major calamity"],
+      "commentaire": "<em>la-iḥdā l-kubar</em> (لَإِحْدى الكُبَر): one of the greatest (calamities). Qushayrī: “the Fire is one of the greatest disasters.” Here is the answer to the oaths by the moon, the night, and the dawn: Saqar is an immense reality, among the gravest. The oath by the heavenly bodies and the alternation — which are also, inwardly, the degrees of knowledge and gnosis — issues in the warning: do not let the night of the heart return, for at the end stands the great Fire. The grandeur of the signs matches the gravity of the stakes.",
+      "mots": [
+        { "ar": "إِنَّهَا", "tr": "innahā", "racine": "", "sens": "it is (indeed)", "def": "inna + pronoun.", "gram": "particle + pronoun" },
+        { "ar": "لَإِحْدَى الْكُبَرِ", "tr": "la-iḥdā l-kubar", "racine": "ك ب ر", "sens": "one of the greatest", "def": "kubar: the great (calamities).", "gram": "lām + numeral + complement" }
+      ]
+    },
+    {
+      "n": 36,
+      "ar": "نَذِيرًا لِّلْبَشَرِ",
+      "tr": "nadhīran li-l-bashari",
+      "trad": "a warning to mortals,",
+      "themes": ["warning", "caution of hearts"],
+      "commentaire": "<em>nadhīran li-l-bashar</em> (نَذيرًا لِلْبَشَر): a warning to humans. Qushayrī gives a deep inner gloss: “there is here a warning against the preoccupations that cut off from the Reality; let them beware of dwelling on and regarding their own acts of obedience — for these, in truth, have no weight.” A subtle warning: even good works can become a veil if one takes complacency in them. Man's regarding his own work, giving it value, is a “claim of the ego”; what matters is God's grace and election, not our self-sufficiency.",
+      "mots": [
+        { "ar": "نَذِيرًا", "tr": "nadhīran", "racine": "ن ذ ر", "sens": "a warning", "def": "nadhīr: warner, warning.", "gram": "circumstantial complement" },
+        { "ar": "لِّلْبَشَرِ", "tr": "li-l-bashar", "racine": "ب ش ر", "sens": "to mortals", "def": "bashar: human beings.", "gram": "preposition + noun" }
+      ]
+    },
+    {
+      "n": 37,
+      "ar": "لِمَن شَاءَ مِنكُمْ أَن يَتَقَدَّمَ أَوْ يَتَأَخَّرَ",
+      "tr": "li-man shāʾa minkum an yataqaddama aw yataʾakhkhara",
+      "trad": "to those of you who wish to advance or to hold back.",
+      "themes": ["freedom to advance", "responsibility"],
+      "commentaire": "<em>an yataqaddama aw yataʾakhkhara</em> (أَنْ يَتَقَدَّمَ أَوْ يَتَأَخَّرَ): to advance or to hold back. Qushayrī: “to advance or to draw back in acts of obedience — by way of warning.” The warning leaves man free: he may advance toward God or hold back. Freedom is real, and with it responsibility. None is forced to advance; but the one who chooses to hold back bears its consequence. The warning does not remove the choice, it illumines its stakes.",
+      "mots": [
+        { "ar": "لِمَن شَاءَ مِنكُمْ", "tr": "li-man shāʾa minkum", "racine": "ش ي أ", "sens": "to whoever wills among you", "def": "shāʾa: to will.", "gram": "preposition + relative + verb" },
+        { "ar": "أَن يَتَقَدَّمَ", "tr": "an yataqaddama", "racine": "ق د م", "sens": "to advance", "def": "taqaddama: to advance.", "gram": "an + verb (form V)" },
+        { "ar": "أَوْ يَتَأَخَّرَ", "tr": "aw yataʾakhkhara", "racine": "أ خ ر", "sens": "or to hold back", "def": "taʾakhkhara: to draw back, tarry.", "gram": "or + verb (form V)" }
+      ]
+    },
+    {
+      "n": 38,
+      "ar": "كُلُّ نَفْسٍ بِمَا كَسَبَتْ رَهِينَةٌ",
+      "tr": "kullu nafsin bimā kasabat rahīnatun",
+      "trad": "Every soul is held in pledge for what it has earned,",
+      "themes": ["the soul's responsibility", "pledge"],
+      "commentaire": "<em>rahīna</em> (رَهينَة): in pledge, held. Qushayrī: “each soul is held in pledge for what it has worked.” A strong image: the soul is like a pledged object, retained until the debt of its acts is paid. None bears another's burden: each answers for himself. This personal responsibility is the dignity of the free man — but it is also his seriousness: what I do binds me wholly, and holds me until the reckoning. The next verse will open an exception, however.",
+      "mots": [
+        { "ar": "كُلُّ نَفْسٍ", "tr": "kullu nafsin", "racine": "ن ف س", "sens": "every soul", "def": "nafs: soul.", "gram": "subject" },
+        { "ar": "بِمَا كَسَبَتْ", "tr": "bimā kasabat", "racine": "ك س ب", "sens": "for what it has earned", "def": "kasaba: to earn, accomplish.", "gram": "preposition + relative + verb" },
+        { "ar": "رَهِينَةٌ", "tr": "rahīna", "racine": "ر ه ن", "sens": "held in pledge", "def": "rahīna: held as a pledge.", "gram": "predicate" }
+      ]
+    },
+    {
+      "n": 39,
+      "ar": "إِلَّا أَصْحَابَ الْيَمِينِ",
+      "tr": "illā aṣḥāba l-yamīni",
+      "trad": "except the companions of the right.",
+      "themes": ["people of the right", "liberating exception"],
+      "commentaire": "<em>aṣḥāb al-yamīn</em> (أَصْحاب اليَمين): the companions of the right. Qushayrī: “they are not held in pledge by their works” — that is, their debt is lifted. The exception is liberating: while every soul is held in pledge of its acts (v. 38), the people of the right are released. Why? Not by their works alone, but by grace and election — in keeping with verse 36, where Qushayrī recalled that what matters is not the weight of our acts but God's favour. The right is the side of those whom God has set free.",
+      "mots": [
+        { "ar": "إِلَّا", "tr": "illā", "racine": "", "sens": "except", "def": "illā: save.", "gram": "exception" },
+        { "ar": "أَصْحَابَ الْيَمِينِ", "tr": "aṣḥāba l-yamīn", "racine": "ص ح ب / ي م ن", "sens": "the companions of the right", "def": "yamīn: right, the side of felicity.", "gram": "noun + complement" }
+      ]
+    },
+    {
+      "n": 40,
+      "ar": "فِي جَنَّاتٍ يَتَسَاءَلُونَ",
+      "tr": "fī jannātin yatasāʾalūna",
+      "trad": "In Gardens, they ask one another",
+      "themes": ["the Gardens", "dialogue of the blessed"],
+      "commentaire": "<em>fī jannātin yatasāʾalūn</em> (في جَنّاتٍ يَتَساءَلون): in Gardens, they ask one another. The people of the right (v. 39) are in the Garden, and from there they inquire. The verb <em>yatasāʾalūn</em> (to question one another) opens the dialogue to follow: the blessed question the damned. The Garden is not isolation but relation — joy shared, conversation. And their first movement is not triumph but inquiry: what then led the others to the Fire? The answer, in the following verses, is a teaching for all.",
+      "mots": [
+        { "ar": "فِي جَنَّاتٍ", "tr": "fī jannātin", "racine": "ج ن ن", "sens": "in Gardens", "def": "janna: garden.", "gram": "preposition + plural noun" },
+        { "ar": "يَتَسَاءَلُونَ", "tr": "yatasāʾalūn", "racine": "س أ ل", "sens": "they ask one another", "def": "tasāʾala: to question each other.", "gram": "imperfect verb (form VI)" }
+      ]
+    },
+    {
+      "n": 41,
+      "ar": "عَنِ الْمُجْرِمِينَ",
+      "tr": "ʿani l-mujrimīna",
+      "trad": "about the guilty:",
+      "themes": ["the guilty", "object of the inquiry"],
+      "commentaire": "<em>ʿani l-mujrimīn</em> (عَنِ المُجْرِمين): about the guilty. The blessed inquire about the fate of the <em>mujrimūn</em> — those who broke the bond with God (same root as in s. 77, v. 18). The inquiry bears on the cause: what lost them? The Garden allows this gaze, not out of cruelty but for instruction: to see the reverse of salvation illumines the price of faith. The question posed from above will receive an answer from below — the very confession of the damned.",
+      "mots": [
+        { "ar": "عَنِ الْمُجْرِمِينَ", "tr": "ʿani l-mujrimīn", "racine": "ج ر م", "sens": "about the guilty", "def": "mujrim: criminal, who breaks the bond.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 42,
+      "ar": "مَا سَلَكَكُمْ فِي سَقَرَ",
+      "tr": "mā salakakum fī saqara",
+      "trad": "“What led you into Saqar?”",
+      "themes": ["the decisive question", "cause of the loss"],
+      "commentaire": "<em>mā salakakum fī saqar</em> (ما سَلَكَكُمْ في سَقَر): what led you into Saqar? The question is put directly to the damned. It is decisive: it seeks the <em>cause</em>, not the mere fact. And the answer, in the four following verses, draws up the exact list of the failings — not spectacular faults, but the absence of the essential acts. The Garden questions the Fire so that all may understand: what saves or loses hangs on little things, but on constant ones.",
+      "mots": [
+        { "ar": "مَا سَلَكَكُمْ", "tr": "mā salakakum", "racine": "س ل ك", "sens": "what made you enter", "def": "salaka: to make enter, lead.", "gram": "interrogative + verb + pronoun" },
+        { "ar": "فِي سَقَرَ", "tr": "fī saqara", "racine": "س ق ر", "sens": "into Saqar", "def": "Saqar: the Fire.", "gram": "preposition + proper noun" }
+      ]
+    },
+    {
+      "n": 43,
+      "ar": "قَالُوا لَمْ نَكُ مِنَ الْمُصَلِّينَ",
+      "tr": "qālū lam naku mina l-muṣallīna",
+      "trad": "They will answer: “We were not among those who pray;",
+      "themes": ["absence of prayer", "first failing"],
+      "commentaire": "<em>lam naku mina l-muṣallīn</em> (لَمْ نَكُ مِنَ المُصَلّين): we were not among those who pray. The first confession, and the first failing: the absence of prayer. Qushayrī notes that this verse “shows that the deniers are addressed by the detail of the prescriptions.” Prayer is named first because it is the direct bond with God: not to pray is to cut the relation at its source. Before any fault committed, it is the good omitted that condemns — the heart that never turned toward its Lord.",
+      "mots": [
+        { "ar": "قَالُوا", "tr": "qālū", "racine": "ق و ل", "sens": "they said", "def": "qāla: to say.", "gram": "perfect verb" },
+        { "ar": "لَمْ نَكُ مِنَ الْمُصَلِّينَ", "tr": "lam naku mina l-muṣallīn", "racine": "ك و ن / ص ل و", "sens": "we were not among those who pray", "def": "muṣallī: who performs the prayer.", "gram": "negation + verb + complement" }
+      ]
+    },
+    {
+      "n": 44,
+      "ar": "وَلَمْ نَكُ نُطْعِمُ الْمِسْكِينَ",
+      "tr": "wa-lam naku nuṭʿimu l-miskīna",
+      "trad": "we did not feed the poor;",
+      "themes": ["absence of charity", "second failing"],
+      "commentaire": "<em>lam naku nuṭʿimu l-miskīn</em> (لَمْ نَكُ نُطْعِمُ المِسْكين): we did not feed the poor. The second failing: the absence of charity. After the rupture with God (v. 43, prayer), the rupture with the neighbour. The two go together: the one who does not turn toward God does not bend toward the poor. It is the exact opposite of the righteous of al-Insān (s. 76, v. 8), who fed “for the Face of God alone.” Not to feed the hungry is to close the hand that prayer should have opened.",
+      "mots": [
+        { "ar": "وَلَمْ نَكُ نُطْعِمُ", "tr": "wa-lam naku nuṭʿimu", "racine": "ط ع م", "sens": "we did not feed", "def": "aṭʿama: to give food.", "gram": "negation + verb + imperfect verb" },
+        { "ar": "الْمِسْكِينَ", "tr": "al-miskīn", "racine": "س ك ن", "sens": "the poor", "def": "miskīn: destitute.", "gram": "object" }
+      ]
+    },
+    {
+      "n": 45,
+      "ar": "وَكُنَّا نَخُوضُ مَعَ الْخَائِضِينَ",
+      "tr": "wa-kunnā nakhūḍu maʿa l-khāʾiḍīna",
+      "trad": "we waded in idle talk with the triflers;",
+      "themes": ["plunge into the vain", "third failing"],
+      "commentaire": "<em>nakhūḍu maʿa l-khāʾiḍīn</em> (نَخوضُ مَعَ الخائِضين): we waded with those who wade. Qushayrī: “we plunged into the false (al-bāṭil).” The third failing: no longer an omission but an action — to wallow in vain chatter, idle controversies, the false. <em>Khawḍ</em> is the bogging-down in what leads nowhere. After omitting prayer and charity, the empty heart fills with useless noise. The company of the “waders” drags one along: one is lost in numbers in the void.",
+      "mots": [
+        { "ar": "وَكُنَّا نَخُوضُ", "tr": "wa-kunnā nakhūḍu", "racine": "خ و ض", "sens": "we waded", "def": "khāḍa: to bog down, plunge (into the vain).", "gram": "verb of state + imperfect" },
+        { "ar": "مَعَ الْخَائِضِينَ", "tr": "maʿa l-khāʾiḍīn", "racine": "خ و ض", "sens": "with those who wade", "def": "khāʾiḍ: who plunges into the futile.", "gram": "preposition + active participle plur." }
+      ]
+    },
+    {
+      "n": 46,
+      "ar": "وَكُنَّا نُكَذِّبُ بِيَوْمِ الدِّينِ",
+      "tr": "wa-kunnā nukadhdhibu bi-yawmi l-dīni",
+      "trad": "and we denied the Day of Judgement",
+      "themes": ["denial of the Judgement", "root of all"],
+      "commentaire": "<em>nukadhdhibu bi-yawmi l-dīn</em> (نُكَذِّبُ بِيَوْمِ الدّين): we denied the Day of Judgement. The fourth and last confession, which is the root of the three preceding. Why not pray, not give, wallow in the vain? Because one did not believe in the reckoning. The denial of the Day of Judgement (yawm al-dīn) is the source of all laxity: the one who expects no reckoning thinks himself exempt from everything. The confession thus rises from effect to cause — from behaviour to the heart that denied the meaning.",
+      "mots": [
+        { "ar": "وَكُنَّا نُكَذِّبُ", "tr": "wa-kunnā nukadhdhibu", "racine": "ك ذ ب", "sens": "we denied", "def": "kadhdhaba: to treat as a lie.", "gram": "verb of state + imperfect (form II)" },
+        { "ar": "بِيَوْمِ الدِّينِ", "tr": "bi-yawmi l-dīn", "racine": "ي و م / د ي ن", "sens": "the Day of Judgement", "def": "dīn: judgement, requital.", "gram": "preposition + noun + complement" }
+      ]
+    },
+    {
+      "n": 47,
+      "ar": "حَتَّىٰ أَتَانَا الْيَقِينُ",
+      "tr": "ḥattā atānā l-yaqīnu",
+      "trad": "until the certainty came to us.”",
+      "themes": ["the certainty that comes", "too late"],
+      "commentaire": "<em>ḥattā atānā l-yaqīn</em> (حَتّى أَتانَا اليَقين): until certainty came to us. Qushayrī: “that is, the direct vision of the Resurrection (muʿāyanat al-qiyāma).” Certainty comes at last — but too late, by the evidence of the Day, when it can no longer avail. It is the drama of all deniers: they will <em>know</em> (cf. s. 78, v. 4), but then the time of faith will be closed. The certainty freely offered by present faith they refused; it now imposes itself as a verdict. Better the heart's certainty before the eyes' certainty.",
+      "mots": [
+        { "ar": "حَتَّىٰ أَتَانَا", "tr": "ḥattā atānā", "racine": "أ ت ي", "sens": "until there came to us", "def": "atā: to come.", "gram": "particle + perfect verb + pronoun" },
+        { "ar": "الْيَقِينُ", "tr": "al-yaqīn", "racine": "ي ق ن", "sens": "the certainty", "def": "yaqīn: certainty; here, death or the Resurrection.", "gram": "subject" }
+      ]
+    },
+    {
+      "n": 48,
+      "ar": "فَمَا تَنفَعُهُمْ شَفَاعَةُ الشَّافِعِينَ",
+      "tr": "fa-mā tanfaʿuhum shafāʿatu l-shāfiʿīna",
+      "trad": "The intercession of intercessors will avail them nothing.",
+      "themes": ["vain intercession", "consequence of denial"],
+      "commentaire": "<em>mā tanfaʿuhum shafāʿatu l-shāfiʿīn</em> (ما تَنْفَعُهُمْ شَفاعَةُ الشّافِعين): the intercession of the intercessors does not profit them. Qushayrī: “the intercession of no intercessor reaches them.” For the one who denied the Day and omitted all bond with God, no mediation avails at the end. Not that God lacks mercy, but that there is nothing left to attach it to: the heart that never reached out a hand cannot be grasped. Intercession presupposes a prior bond; where the bond was wholly broken, it finds no purchase.",
+      "mots": [
+        { "ar": "فَمَا تَنفَعُهُمْ", "tr": "fa-mā tanfaʿuhum", "racine": "ن ف ع", "sens": "does not profit them", "def": "nafaʿa: to be of use.", "gram": "negation + verb + pronoun" },
+        { "ar": "شَفَاعَةُ الشَّافِعِينَ", "tr": "shafāʿatu l-shāfiʿīn", "racine": "ش ف ع", "sens": "the intercession of the intercessors", "def": "shafāʿa: intercession; shāfiʿ: intercessor.", "gram": "noun + complement" }
+      ]
+    },
+    {
+      "n": 49,
+      "ar": "فَمَا لَهُمْ عَنِ التَّذْكِرَةِ مُعْرِضِينَ",
+      "tr": "fa-mā lahum ʿani l-tadhkirati muʿriḍīna",
+      "trad": "What is it with them that they turn away from the Reminder,",
+      "themes": ["turning from the Reminder", "astonishment"],
+      "commentaire": "<em>ʿani l-tadhkirati muʿriḍīn</em> (عَنِ التَّذْكِرَة مُعْرِضين): turning away from the Reminder. The <em>tadhkira</em>, Qushayrī specifies, “is the Quran.” The question marvels: what is it with these people that they flee the offered Reminder? The astonishment is eloquent: the Reminder is a gift, a chance of salvation — to flee it is as unreasonable as to flee the remedy when one is sick. This turning-away the next verse will paint with a striking image. The refusal of the Reminder is not reason but blind panic.",
+      "mots": [
+        { "ar": "فَمَا لَهُمْ", "tr": "fa-mā lahum", "racine": "", "sens": "what is it with them", "def": "mā lahum: what ails them that.", "gram": "interrogative + pronoun" },
+        { "ar": "عَنِ التَّذْكِرَةِ", "tr": "ʿani l-tadhkira", "racine": "ذ ك ر", "sens": "from the Reminder", "def": "tadhkira: reminder, the Quran.", "gram": "preposition + noun" },
+        { "ar": "مُعْرِضِينَ", "tr": "muʿriḍīn", "racine": "ع ر ض", "sens": "turning away", "def": "aʿraḍa: to turn away.", "gram": "active participle (form IV) plur., state" }
+      ]
+    },
+    {
+      "n": 50,
+      "ar": "كَأَنَّهُمْ حُمُرٌ مُّسْتَنفِرَةٌ",
+      "tr": "kaʾannahum ḥumurun mustanfiratun",
+      "trad": "like panicked wild donkeys",
+      "themes": ["image of flight", "panic"],
+      "commentaire": "<em>ḥumurun mustanfira</em> (حُمُرٌ مُسْتَنْفِرَة): startled wild donkeys. A striking image of unreasoning flight: the deniers flee the Reminder like onagers seized with panic. The wild donkey is the symbol of blind instinct, without reflection. The contrast is cruel: those who “reflected and calculated” (v. 18) end by fleeing like terrified beasts. Misused intelligence reverses into panicked foolishness. To flee the light is no act of reason but of instinctive terror.",
+      "mots": [
+        { "ar": "كَأَنَّهُمْ", "tr": "kaʾannahum", "racine": "", "sens": "as if they were", "def": "kaʾanna: as if.", "gram": "particle of likeness + pronoun" },
+        { "ar": "حُمُرٌ مُّسْتَنفِرَةٌ", "tr": "ḥumurun mustanfira", "racine": "ح م ر / ن ف ر", "sens": "panicked wild donkeys", "def": "ḥumur: wild donkeys; mustanfira: startled.", "gram": "noun + active participle (form X)" }
+      ]
+    },
+    {
+      "n": 51,
+      "ar": "فَرَّتْ مِن قَسْوَرَةٍ",
+      "tr": "farrat min qaswaratin",
+      "trad": "fleeing from a lion?",
+      "themes": ["flight from the lion", "blind terror"],
+      "commentaire": "<em>farrat min qaswara</em> (فَرَّتْ مِنْ قَسْوَرَة): fleeing from a lion. <em>Qaswara</em> denotes the lion (or the hunter), notes Qushayrī. The image completes itself: the onagers bolt at the sight of the beast. Thus the deniers flee the Reminder as one flees a predator — while the Reminder is their salvation, not their peril. A tragic reversal: they take for danger what would save them, and rush toward the true danger. Blind terror inverts values: one flees the remedy and runs toward the harm.",
+      "mots": [
+        { "ar": "فَرَّتْ", "tr": "farrat", "racine": "ف ر ر", "sens": "fleeing", "def": "farra: to flee.", "gram": "perfect verb, 3rd fem." },
+        { "ar": "مِن قَسْوَرَةٍ", "tr": "min qaswara", "racine": "ق س ر", "sens": "from a lion", "def": "qaswara: lion, or hunter.", "gram": "preposition + noun" }
+      ]
+    },
+    {
+      "n": 52,
+      "ar": "بَلْ يُرِيدُ كُلُّ امْرِئٍ مِّنْهُمْ أَن يُؤْتَىٰ صُحُفًا مُّنَشَّرَةً",
+      "tr": "bal yurīdu kullu mriʾin minhum an yuʾtā ṣuḥufan munashsharatan",
+      "trad": "Indeed, each of them wishes to be given unrolled scrolls.",
+      "themes": ["proud demand", "personal scrolls"],
+      "commentaire": "<em>an yuʾtā ṣuḥufan munashshara</em> (أَنْ يُؤْتى صُحُفًا مُنَشَّرَة): to be given unrolled scrolls. The summit of pride: each would wish to receive personally an open book from heaven, as if he could believe only in a revelation made to his measure. It is refusal disguised as demand: to set impossible conditions in order to excuse oneself from believing. The proud heart is not content with the Reminder given to all; it claims special treatment — a subtle way never to submit.",
+      "mots": [
+        { "ar": "بَلْ يُرِيدُ كُلُّ امْرِئٍ مِّنْهُمْ", "tr": "bal yurīdu kullu mriʾin minhum", "racine": "ر و د / م ر أ", "sens": "rather each of them wants", "def": "arāda: to want; imruʾ: man, individual.", "gram": "particle + verb + subject" },
+        { "ar": "أَن يُؤْتَىٰ صُحُفًا مُّنَشَّرَةً", "tr": "an yuʾtā ṣuḥufan munashshara", "racine": "أ ت ي / ص ح ف / ن ش ر", "sens": "to be given unrolled scrolls", "def": "ṣuḥuf: scrolls; munashshara: unrolled, opened.", "gram": "an + passive verb + complement + adjective" }
+      ]
+    },
+    {
+      "n": 53,
+      "ar": "كَلَّا بَل لَّا يَخَافُونَ الْآخِرَةَ",
+      "tr": "kallā bal lā yakhāfūna l-ākhirata",
+      "trad": "By no means! Rather, they have no fear of the life to come.",
+      "themes": ["the true cause", "absence of fear"],
+      "commentaire": "<em>lā yakhāfūna l-ākhira</em> (لا يَخافونَ الآخِرَة): they do not fear the hereafter. Qushayrī: “no, they will not be given what they covet, for they do not fear the hereafter.” The <em>kallā</em> cuts off their demand (v. 52) and unveils its root: it is not a lack of proofs but an absence of fear of the hereafter. All comes back to this: the one who does not dread the Day does not truly seek to believe. Their impossible conditions are but a mask; the true cause lies in the heart that does not tremble before eternity.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "", "sens": "by no means", "def": "kallā: denial.", "gram": "particle" },
+        { "ar": "بَل لَّا يَخَافُونَ الْآخِرَةَ", "tr": "bal lā yakhāfūna l-ākhira", "racine": "خ و ف / أ خ ر", "sens": "they do not fear the hereafter", "def": "khāfa: to fear; ākhira: the hereafter.", "gram": "particle + negation + verb + complement" }
+      ]
+    },
+    {
+      "n": 54,
+      "ar": "كَلَّا إِنَّهُ تَذْكِرَةٌ",
+      "tr": "kallā innahu tadhkiratun",
+      "trad": "By no means! This is truly a Reminder.",
+      "themes": ["the Reminder", "value of the Quran"],
+      "commentaire": "<em>innahu tadhkira</em> (إنَّهُ تَذْكِرَة): this is a Reminder. After unmasking the refusal (v. 53), the verse reaffirms the nature of the Quran: a <em>Reminder</em>. Not magic (v. 24), not a man's word (v. 25), but an awakening of the heart to what it already knows deep down. The repeated <em>kallā</em> sweeps away the false labels and restores the truth: what they flee is precisely what could save them. The Reminder does not impose itself, it offers itself — and the next verse will tell its freedom.",
+      "mots": [
+        { "ar": "كَلَّا", "tr": "kallā", "racine": "", "sens": "by no means", "def": "kallā: denial, awakening.", "gram": "particle" },
+        { "ar": "إِنَّهُ تَذْكِرَةٌ", "tr": "innahu tadhkira", "racine": "ذ ك ر", "sens": "this is a Reminder", "def": "tadhkira: reminder.", "gram": "inna + pronoun + predicate" }
+      ]
+    },
+    {
+      "n": 55,
+      "ar": "فَمَن شَاءَ ذَكَرَهُ",
+      "tr": "fa-man shāʾa dhakarahu",
+      "trad": "Whoever wills shall remember it.",
+      "themes": ["freedom of remembrance", "the willing"],
+      "commentaire": "<em>fa-man shāʾa dhakarahu</em> (فَمَنْ شاءَ ذَكَرَهُ): whoever wills remembers it. The door is wide open, as in the neighbouring sūras (s. 76, v. 29; s. 73, v. 19): the Reminder is forced on none. Remembrance (dhikr) depends on the willing: whoever wills to remember remembers. Freedom is real — and precious. But the next verse will root it in the divine Will, without abolishing it. The offer is universal; the reception depends on the heart; and the heart itself is held by grace.",
+      "mots": [
+        { "ar": "فَمَن شَاءَ", "tr": "fa-man shāʾa", "racine": "ش ي أ", "sens": "whoever wills", "def": "shāʾa: to will.", "gram": "relative + perfect verb" },
+        { "ar": "ذَكَرَهُ", "tr": "dhakarahu", "racine": "ذ ك ر", "sens": "remembers it", "def": "dhakara: to remember, mention.", "gram": "perfect verb + pronoun" }
+      ]
+    },
+    {
+      "n": 56,
+      "ar": "وَمَا يَذْكُرُونَ إِلَّا أَن يَشَاءَ اللَّهُ هُوَ أَهْلُ التَّقْوَىٰ وَأَهْلُ الْمَغْفِرَةِ",
+      "tr": "wa-mā yadhkurūna illā an yashāʾa llāhu huwa ahlu l-taqwā wa-ahlu l-maghfirati",
+      "trad": "But they will remember only if God wills, He who alone is worthy to be feared and able to grant forgiveness!",
+      "themes": ["the willing rooted in God", "Worthy of awe and forgiveness"],
+      "commentaire": "A closing verse that crowns all. <em>wa-mā yadhkurūna illā an yashāʾa llāh</em> (وَما يَذْكُرونَ إلّا أَنْ يَشاءَ الله): they remember only if God wills. As in al-Insān (s. 76, v. 30), the freedom offered in verse 55 is at once rooted in the divine Will: even your remembrance of Him comes from Him. Far from abolishing the human will, this verse unveils its source. And the final seal, of infinite gentleness: <em>huwa ahlu l-taqwā wa-ahlu l-maghfira</em> — “He is Worthy to be feared and Worthy to forgive.” Qushayrī concludes: “worthy that He be feared, and worthy to forgive whoever fears Him — if He wills.” Thus the long sūra of the Fire, of the damned and of warning, ends on two names of hope: the awe that opens, and the forgiveness that welcomes. The last word is not Saqar, but <em>maghfira</em>.",
+      "mots": [
+        { "ar": "وَمَا يَذْكُرُونَ", "tr": "wa-mā yadhkurūna", "racine": "ذ ك ر", "sens": "they remember not", "def": "dhakara: to remember.", "gram": "negation + imperfect verb plur." },
+        { "ar": "إِلَّا أَن يَشَاءَ اللَّهُ", "tr": "illā an yashāʾa llāh", "racine": "ش ي أ", "sens": "only if God wills", "def": "shāʾa: to will.", "gram": "exception + an + verb + subject" },
+        { "ar": "هُوَ أَهْلُ التَّقْوَىٰ", "tr": "huwa ahlu l-taqwā", "racine": "أ ه ل / و ق ي", "sens": "He is Worthy to be feared", "def": "ahl al-taqwā: worthy that He be revered.", "gram": "pronoun + noun + complement" },
+        { "ar": "وَأَهْلُ الْمَغْفِرَةِ", "tr": "wa-ahlu l-maghfira", "racine": "غ ف ر", "sens": "and Worthy to forgive", "def": "maghfira: forgiveness.", "gram": "noun + complement" }
+      ]
+    }
+  ]
+}

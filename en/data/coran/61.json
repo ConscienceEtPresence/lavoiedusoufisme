@@ -1,0 +1,193 @@
+{
+  "n": 61,
+  "nom_ar": "الصَّف",
+  "nom_tr": "al-Ṣaff",
+  "nom_fr": "The Ranks",
+  "revelation": "Medinan",
+  "basmala": "In the name of God, the All-Merciful, the Compassionate.",
+  "versets_count": 14,
+  "intro": "al-Ṣaff — “The Ranks” — rebukes the divorce between word and deed: “why do you say what you do not do?” Qushayrī makes it the spiritual axis of the sūra: <em>whoever wishes his glorification to be pure, let him purify his heart of the traces of his soul; whoever wishes his life in Paradise to be pure, let him purify his soul of the filth of his sin.</em> He recalls that <em>breaking one's promise is ugly with anyone, and uglier still with God</em>, and that <em>God loves that one declare oneself quit of all one's own strength and power</em> (tabarrī min al-ḥawl wa-l-quwwa). The sūra celebrates the fighters ranged “like a sealed edifice” — an image of the love that makes one prefer the Beloved's will to one's own; it evokes Moses blamed by his people, Jesus announcing Aḥmad, and the light of God that no breath puts out. It ends on the “trade that saves” (tijāra) — faith and striving in the way of God — and on the call to be “the helpers of God” (anṣār Allāh), as the disciples answered Jesus.",
+  "themes": ["the accord of word and deed", "the love that prefers the Beloved", "the inextinguishable light", "the trade that saves", "being the helpers of God"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "سَبَّحَ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+      "tr": "sabbaḥa lillāhi mā fī s-samāwāti wa-mā fī l-arḍi wa-huwa l-ʿazīzu l-ḥakīmu",
+      "trad": "All that is in the heavens and all that is on the earth glorifies God. He is the Mighty, the Wise.",
+      "themes": ["the universal glorification", "purifying the heart to glorify"],
+      "commentaire": "Qushayrī makes of tasbīḥ a demand for inner purity: <em>whoever wishes his glorification to be pure, let him purify his heart of the traces of his soul (āthār nafsih); and whoever wishes his life in Paradise to be pure, let him purify his soul of the filth of his sin.</em> Praise on the lips is worth nothing unless the heart that utters it is itself purified — otherwise it remains a word without reality, like the rebuke that opens the sūra.",
+      "mots": [
+        { "ar": "سَبَّحَ لِلَّهِ", "tr": "sabbaḥa lillāh", "racine": "س ب ح", "sens": "glorifies God", "def": "sabbaḥa: to proclaim transcendence.", "gram": "perfect verb (form II)" },
+        { "ar": "مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ", "tr": "mā fī s-samāwāti wa-mā fī l-arḍ", "racine": "س م و / أ ر ض", "sens": "what is in the heavens and the earth", "def": "samāwāt: heavens; arḍ: earth.", "gram": "relative subject + coordinated" },
+        { "ar": "وَهُوَ الْعَزِيزُ الْحَكِيمُ", "tr": "wa-huwa l-ʿazīzu l-ḥakīm", "racine": "ع ز ز / ح ك م", "sens": "the Mighty, the Wise", "def": "ʿazīz: mighty; ḥakīm: wise.", "gram": "pronoun + two predicates" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا لِمَ تَقُولُونَ مَا لَا تَفْعَلُونَ",
+      "tr": "yā ayyuhā lladhīna āmanū lima taqūlūna mā lā tafʿalūna",
+      "trad": "O you who believe, why do you say what you do not do?",
+      "themes": ["word without deed", "the rebuke"],
+      "commentaire": "Qushayrī reports the context: some had sworn they would fight with all their strength for what pleases God, but on the day of Uḥud they did not hold — hence this blame. And he generalizes: <em>breaking one's promise is ugly with anyone, and uglier still with God.</em> And he adds, in a Sufi key: <em>to display bravery without seeing, at every breath, one's essential poverty (faqr) before the Real, is to boast of an empty claim; God loves that one declare oneself quit of all one's own strength and power.</em>",
+      "mots": [
+        { "ar": "لِمَ تَقُولُونَ مَا لَا تَفْعَلُونَ", "tr": "lima taqūlūna mā lā tafʿalūn", "racine": "ق و ل / ف ع ل", "sens": "why do you say what you do not do?", "def": "qāla: to say; faʿala: to do.", "gram": "interrogative + verb + relative" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "كَبُرَ مَقْتًا عِندَ اللَّهِ أَن تَقُولُوا مَا لَا تَفْعَلُونَ",
+      "tr": "kabura maqtan ʿinda llāhi an taqūlū mā lā tafʿalūna",
+      "trad": "It is greatly hateful in the sight of God that you say what you do not do.",
+      "themes": ["God's hatred of acted falsehood", "the gravity of the gap"],
+      "commentaire": "Qushayrī stresses the rarity of such a warning: <em>God has not threatened any fault with a formula like this one, when He says: “It is greatly hateful (maqt) in the sight of God that you say what you do not do.”</em> The gap between saying and doing is no minor flaw: it is the object of a supreme reprobation (maqt), for it ruins the truthfulness (ṣidq) that is the soul of all faith.",
+      "mots": [
+        { "ar": "كَبُرَ مَقْتًا عِندَ اللَّهِ", "tr": "kabura maqtan ʿinda llāh", "racine": "ك ب ر / م ق ت", "sens": "it is greatly hateful in the sight of God", "def": "kabura: to be great; maqt: hatred, loathing.", "gram": "verb + specifier + complement" },
+        { "ar": "أَن تَقُولُوا مَا لَا تَفْعَلُونَ", "tr": "an taqūlū mā lā tafʿalūn", "racine": "ق و ل / ف ع ل", "sens": "that you say what you do not do", "def": "qāla: to say; faʿala: to do.", "gram": "subject subordinate" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "إِنَّ اللَّهَ يُحِبُّ الَّذِينَ يُقَاتِلُونَ فِي سَبِيلِهِ صَفًّا كَأَنَّهُم بُنْيَانٌ مَّرْصُوصٌ",
+      "tr": "inna llāha yuḥibbu lladhīna yuqātilūna fī sabīlihi ṣaffan ka-annahum bunyānun marṣūṣun",
+      "trad": "Truly, God loves those who fight in His way in ranks, as though they were a sealed edifice.",
+      "themes": ["the close rank", "the love that prefers the Beloved"],
+      "commentaire": "The verse that gives the sūra its name (ṣaff). Qushayrī interprets it through love: <em>love demands self-preference — to set your beloved's will before your own, and your beloved's beloved before yours. Since the Real loves that the servant fight in the way He has stated, whoever does not prefer God's will to his own — that is, to his own survival — strips himself of his love for his Lord; and whoever empties himself of the love of God falls into the other side, into his loss.</em> The “sealed rank” is the image of the soul welded to the Beloved.",
+      "mots": [
+        { "ar": "يُحِبُّ الَّذِينَ يُقَاتِلُونَ فِي سَبِيلِهِ", "tr": "yuḥibbu lladhīna yuqātilūna fī sabīlih", "racine": "ح ب ب / ق ت ل / س ب ل", "sens": "He loves those who fight in His way", "def": "aḥabba: to love; qātala: to fight; sabīl: way.", "gram": "verb + relative" },
+        { "ar": "صَفًّا", "tr": "ṣaffan", "racine": "ص ف ف", "sens": "in rank", "def": "ṣaff: rank, line.", "gram": "circumstantial of state" },
+        { "ar": "كَأَنَّهُم بُنْيَانٌ مَّرْصُوصٌ", "tr": "ka-annahum bunyānun marṣūṣ", "racine": "ب ن ي / ر ص ص", "sens": "as though a sealed edifice", "def": "bunyān: edifice; marṣūṣ: welded, cemented.", "gram": "comparison + subject + adjective" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَإِذْ قَالَ مُوسَىٰ لِقَوْمِهِ يَا قَوْمِ لِمَ تُؤْذُونَنِي وَقَد تَّعْلَمُونَ أَنِّي رَسُولُ اللَّهِ إِلَيْكُمْ ۖ فَلَمَّا زَاغُوا أَزَاغَ اللَّهُ قُلُوبَهُمْ ۚ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الْفَاسِقِينَ",
+      "tr": "wa-idh qāla mūsā li-qawmihi yā qawmi lima tuʾdhūnanī wa-qad taʿlamūna annī rasūlu llāhi ilaykum fa-lammā zāghū azāgha llāhu qulūbahum wa-llāhu lā yahdī l-qawma l-fāsiqīna",
+      "trad": "And when Moses said to his people: “O my people! Why do you harm me, when you know that I am truly the messenger of God sent to you?” When they deviated, God made their hearts deviate. God does not guide the perverse people!",
+      "themes": ["the harmed prophet", "the deviation that calls deviation"],
+      "commentaire": "Qushayrī unfolds a cascade of readings of “when they deviated, God made their hearts deviate” (zāghū / azāgha): <em>when they deviated by abandoning the limit, God made their hearts deviate by breaking the pact; when they deviated from the path of rectitude, God made their hearts deviate by rejection and remoteness from His love; when they deviated by their outsides, God made their insides deviate; when they deviated from the service of the Threshold, God turned their hearts from longing for the Carpet; when they deviated from worship, God turned their hearts from the very will to will Him.</em>",
+      "mots": [
+        { "ar": "لِمَ تُؤْذُونَنِي", "tr": "lima tuʾdhūnanī", "racine": "أ ذ ي", "sens": "why do you harm me?", "def": "ādhā: to harm, hurt.", "gram": "interrogative + verb (form IV)" },
+        { "ar": "فَلَمَّا زَاغُوا أَزَاغَ اللَّهُ قُلُوبَهُمْ", "tr": "fa-lammā zāghū azāgha llāhu qulūbahum", "racine": "ز ي غ", "sens": "when they deviated, God made their hearts deviate", "def": "zāgha: to deviate; azāgha: to make deviate.", "gram": "conjunction + verb + verb (form IV)" },
+        { "ar": "لَا يَهْدِي الْقَوْمَ الْفَاسِقِينَ", "tr": "lā yahdī l-qawma l-fāsiqīn", "racine": "ه د ي / ف س ق", "sens": "He does not guide the perverse", "def": "hadā: to guide; fāsiq: perverse.", "gram": "negation + verb + complement" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "وَإِذْ قَالَ عِيسَى ابْنُ مَرْيَمَ يَا بَنِي إِسْرَائِيلَ إِنِّي رَسُولُ اللَّهِ إِلَيْكُم مُّصَدِّقًا لِّمَا بَيْنَ يَدَيَّ مِنَ التَّوْرَاةِ وَمُبَشِّرًا بِرَسُولٍ يَأْتِي مِن بَعْدِي اسْمُهُ أَحْمَدُ ۖ فَلَمَّا جَاءَهُم بِالْبَيِّنَاتِ قَالُوا هَٰذَا سِحْرٌ مُّبِينٌ",
+      "tr": "wa-idh qāla ʿīsā bnu maryama yā banī isrāʾīla innī rasūlu llāhi ilaykum muṣaddiqan limā bayna yadayya mina t-tawrāti wa-mubashshiran bi-rasūlin yaʾtī min baʿdī smuhu aḥmadu fa-lammā jāʾahum bi-l-bayyināti qālū hādhā siḥrun mubīnun",
+      "trad": "And when Jesus, son of Mary, said: “O Children of Israel! I am truly the Messenger of God to you, confirming what came before me of the Torah, and bringing good tidings of a messenger to come after me whose name will be Aḥmad.” But when he came to them with clear proofs, they said: “This is manifest sorcery!”",
+      "themes": ["the announcement of Aḥmad", "the chain of prophets"],
+      "commentaire": "Jesus announces Aḥmad — one of the Prophet's names, from the root ḥ-m-d (“the praised”). Qushayrī: <em>every prophet announced to his people the coming of our Prophet; God singled out Jesus in this place because he was the last prophet before ours. He thus showed that the announcement of his coming ran through all the prophets, one after another, until it ended with Jesus.</em> The good tidings (bishāra) traverse all prophetic history like a single thread leading to Muḥammad.",
+      "mots": [
+        { "ar": "مُّصَدِّقًا لِّمَا بَيْنَ يَدَيَّ مِنَ التَّوْرَاةِ", "tr": "muṣaddiqan limā bayna yadayya mina t-tawrāt", "racine": "ص د ق / ت و ر", "sens": "confirming the Torah before me", "def": "muṣaddiq: confirming; tawrāt: Torah.", "gram": "state + complement" },
+        { "ar": "وَمُبَشِّرًا بِرَسُولٍ يَأْتِي مِن بَعْدِي", "tr": "wa-mubashshiran bi-rasūlin yaʾtī min baʿdī", "racine": "ب ش ر / ر س ل", "sens": "announcing a messenger to come after me", "def": "mubashshir: who brings good tidings.", "gram": "state + complement + relative" },
+        { "ar": "اسْمُهُ أَحْمَدُ", "tr": "ismuhu aḥmad", "racine": "س م و / ح م د", "sens": "whose name is Aḥmad", "def": "Aḥmad: “the most praised,” a name of the Prophet.", "gram": "subject + predicate" },
+        { "ar": "هَٰذَا سِحْرٌ مُّبِينٌ", "tr": "hādhā siḥrun mubīn", "racine": "س ح ر / ب ي ن", "sens": "this is manifest sorcery", "def": "siḥr: sorcery; mubīn: manifest.", "gram": "demonstrative + predicate + adjective" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَمَنْ أَظْلَمُ مِمَّنِ افْتَرَىٰ عَلَى اللَّهِ الْكَذِبَ وَهُوَ يُدْعَىٰ إِلَى الْإِسْلَامِ ۚ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الظَّالِمِينَ",
+      "tr": "wa-man aẓlamu mimmani ftarā ʿalā llāhi l-kadhiba wa-huwa yudʿā ilā l-islāmi wa-llāhu lā yahdī l-qawma ẓ-ẓālimīna",
+      "trad": "Who is more unjust than one who fabricates a lie against God while he is being called to submission (al-islām)? But God does not guide the unjust people.",
+      "themes": ["the lie against God", "the refusal of the call"],
+      "commentaire": "The greatest injustice (ẓulm): to fabricate a lie against God at the very moment one is called to submission. Qushayrī here rejoins the theme of deviation: to refuse the call is to place oneself outside guidance, for God does not guide the obstinate wrongdoer. The supreme iniquity is not ignorance but the deliberate refusal of the light offered.",
+      "mots": [
+        { "ar": "وَمَنْ أَظْلَمُ مِمَّنِ افْتَرَىٰ عَلَى اللَّهِ الْكَذِبَ", "tr": "wa-man aẓlamu mimmani ftarā ʿalā llāhi l-kadhib", "racine": "ظ ل م / ف ر ي / ك ذ ب", "sens": "who is more unjust than one who fabricates a lie against God", "def": "aẓlam: more unjust; iftarā: to fabricate; kadhib: lie.", "gram": "interrogative + comparative + relative" },
+        { "ar": "وَهُوَ يُدْعَىٰ إِلَى الْإِسْلَامِ", "tr": "wa-huwa yudʿā ilā l-islām", "racine": "د ع و / س ل م", "sens": "while he is called to islam", "def": "duʿiya: to be called; islām: submission.", "gram": "circumstantial + passive verb" },
+        { "ar": "لَا يَهْدِي الْقَوْمَ الظَّالِمِينَ", "tr": "lā yahdī l-qawma ẓ-ẓālimīn", "racine": "ه د ي / ظ ل م", "sens": "He does not guide the unjust", "def": "ẓālim: unjust.", "gram": "negation + verb + complement" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "يُرِيدُونَ لِيُطْفِئُوا نُورَ اللَّهِ بِأَفْوَاهِهِمْ وَاللَّهُ مُتِمُّ نُورِهِ وَلَوْ كَرِهَ الْكَافِرُونَ",
+      "tr": "yurīdūna li-yuṭfiʾū nūra llāhi bi-afwāhihim wa-llāhu mutimmu nūrihi wa-law kariha l-kāfirūna",
+      "trad": "They wish to extinguish the light of God with their mouths, but God will perfect His light, however much the disbelievers may detest it.",
+      "themes": ["the inextinguishable light", "the recoiling ruse"],
+      "commentaire": "Qushayrī: <em>whoever schemes to weaken it, or seeks to break it, his scheme recoils upon him and his stratagem unravels.</em> And he extends the image: <em>he who wishes to extinguish the light of islam by his scheme is like one who strives to put out the radiance of the sun with his breath — an absurd thing.</em> The light of God (nūr Allāh) cannot be blown out: to wish to extinguish it with one's mouth is to confess one's own impotence.",
+      "mots": [
+        { "ar": "يُرِيدُونَ لِيُطْفِئُوا نُورَ اللَّهِ بِأَفْوَاهِهِمْ", "tr": "yurīdūna li-yuṭfiʾū nūra llāhi bi-afwāhihim", "racine": "ر و د / ط ف أ / ن و ر / ف و ه", "sens": "they wish to extinguish God's light with their mouths", "def": "aṭfaʾa: to extinguish; afwāh: mouths.", "gram": "verb + lām of purpose + complement" },
+        { "ar": "وَاللَّهُ مُتِمُّ نُورِهِ", "tr": "wa-llāhu mutimmu nūrih", "racine": "ت م م / ن و ر", "sens": "God perfects His light", "def": "mutimm: who perfects; nūr: light.", "gram": "subject + predicate + complement" },
+        { "ar": "وَلَوْ كَرِهَ الْكَافِرُونَ", "tr": "wa-law kariha l-kāfirūn", "racine": "ك ر ه / ك ف ر", "sens": "however much the disbelievers detest it", "def": "kariha: to detest; kāfir: disbeliever.", "gram": "concession + verb + subject" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "هُوَ الَّذِي أَرْسَلَ رَسُولَهُ بِالْهُدَىٰ وَدِينِ الْحَقِّ لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ وَلَوْ كَرِهَ الْمُشْرِكُونَ",
+      "tr": "huwa lladhī arsala rasūlahu bi-l-hudā wa-dīni l-ḥaqqi li-yuẓhirahu ʿalā d-dīni kullihi wa-law kariha l-mushrikūna",
+      "trad": "It is He who sent His Messenger with guidance and the religion of Truth, to make it prevail over all religion, however much the idolaters may detest it.",
+      "themes": ["the sending of the Messenger", "the helpers God raises up"],
+      "commentaire": "Qushayrī, faced with the Prophet forsaken by his people and denied by his enemies, meditates on the helpers God raised up for him: <em>when his people drew back and his enemies rose to deny him, God raised up for him helpers of his community: the uprooted of the tribes, the rare and noble individuals — they spent their blood to aid him, protected him with their souls; God had kneaded their clay with the water of felicity and created their spirits from the light of tawḥīd.</em>",
+      "mots": [
+        { "ar": "أَرْسَلَ رَسُولَهُ بِالْهُدَىٰ", "tr": "arsala rasūlahu bi-l-hudā", "racine": "ر س ل / ه د ي", "sens": "He sent His Messenger with guidance", "def": "arsala: to send; hudā: guidance.", "gram": "verb (form IV) + complement" },
+        { "ar": "وَدِينِ الْحَقِّ", "tr": "wa-dīni l-ḥaqq", "racine": "د ي ن / ح ق ق", "sens": "and the religion of Truth", "def": "dīn al-ḥaqq: true religion.", "gram": "complement" },
+        { "ar": "لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ", "tr": "li-yuẓhirahu ʿalā d-dīni kullih", "racine": "ظ ه ر / د ي ن", "sens": "to make it prevail over all religion", "def": "aẓhara: to make prevail.", "gram": "lām of purpose + verb + complement" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا هَلْ أَدُلُّكُمْ عَلَىٰ تِجَارَةٍ تُنجِيكُم مِّنْ عَذَابٍ أَلِيمٍ",
+      "tr": "yā ayyuhā lladhīna āmanū hal adullukum ʿalā tijāratin tunjīkum min ʿadhābin alīmin",
+      "trad": "O you who believe! Shall I point you to a trade that will save you from a painful punishment:",
+      "themes": ["the trade that saves", "the invitation"],
+      "commentaire": "Qushayrī explains the choice of the word “trade” (tijāra): <em>He named faith and striving a trade, because of what there is in commerce of profit, loss, and a kind of gain for the merchant — so too, in faith and striving, there is the profit of Paradise, for which the servant toils, and its loss if the matter is reversed.</em> The spiritual life is a commerce in which one invests one's soul: the gain is deliverance, the loss is punishment.",
+      "mots": [
+        { "ar": "هَلْ أَدُلُّكُمْ عَلَىٰ تِجَارَةٍ", "tr": "hal adullukum ʿalā tijāra", "racine": "د ل ل / ت ج ر", "sens": "shall I point you to a trade?", "def": "dalla: to point; tijāra: trade.", "gram": "interrogative + verb + complement" },
+        { "ar": "تُنجِيكُم مِّنْ عَذَابٍ أَلِيمٍ", "tr": "tunjīkum min ʿadhābin alīm", "racine": "ن ج و / ع ذ ب / أ ل م", "sens": "that saves you from a painful punishment", "def": "anjā: to save; alīm: painful.", "gram": "verb (form IV) + complement" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "تُؤْمِنُونَ بِاللَّهِ وَرَسُولِهِ وَتُجَاهِدُونَ فِي سَبِيلِ اللَّهِ بِأَمْوَالِكُمْ وَأَنفُسِكُمْ ۚ ذَٰلِكُمْ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ",
+      "tr": "tuʾminūna billāhi wa-rasūlihi wa-tujāhidūna fī sabīli llāhi bi-amwālikum wa-anfusikum dhālikum khayrun lakum in kuntum taʿlamūna",
+      "trad": "believe in God and His Messenger, and strive in the way of God with your wealth and your selves. That is best for you, if only you knew!",
+      "themes": ["faith and striving", "the true good"],
+      "commentaire": "The content of the trade is disclosed: to believe and to strive with one's wealth and one's self. Qushayrī: <em>in this lie your striving, your faith, and your endeavour — and it is best for you.</em> The greater jihād the sūra celebrates is not first outward: it is the total engagement of the being, wealth (amwāl) and soul (anfus), in the way of God — an investment in which one gives oneself.",
+      "mots": [
+        { "ar": "تُؤْمِنُونَ بِاللَّهِ وَرَسُولِهِ", "tr": "tuʾminūna billāhi wa-rasūlih", "racine": "أ م ن / ر س ل", "sens": "you believe in God and His Messenger", "def": "āmana: to believe.", "gram": "verb + complements" },
+        { "ar": "وَتُجَاهِدُونَ فِي سَبِيلِ اللَّهِ بِأَمْوَالِكُمْ وَأَنفُسِكُمْ", "tr": "wa-tujāhidūna fī sabīli llāhi bi-amwālikum wa-anfusikum", "racine": "ج ه د / م و ل / ن ف س", "sens": "you strive in God's way with your wealth and selves", "def": "jāhada: to strive; amwāl: wealth; anfus: selves.", "gram": "verb (form III) + complements" },
+        { "ar": "ذَٰلِكُمْ خَيْرٌ لَّكُمْ", "tr": "dhālikum khayrun lakum", "racine": "خ ي ر", "sens": "that is best for you", "def": "khayr: good.", "gram": "demonstrative + predicate" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "يَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَيُدْخِلْكُمْ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ وَمَسَاكِنَ طَيِّبَةً فِي جَنَّاتِ عَدْنٍ ۚ ذَٰلِكَ الْفَوْزُ الْعَظِيمُ",
+      "tr": "yaghfir lakum dhunūbakum wa-yudkhilkum jannātin tajrī min taḥtihā l-anhāru wa-masākina ṭayyibatan fī jannāti ʿadnin dhālika l-fawzu l-ʿaẓīmu",
+      "trad": "He will forgive you your sins and admit you into Gardens beneath which rivers flow, and into pleasant dwellings in the Gardens of Eden. That is the supreme triumph!",
+      "themes": ["forgiveness first", "the dwellings and the vision"],
+      "commentaire": "Qushayrī notes the order of gifts: <em>He placed first the most important — forgiveness (maghfira); then, once the hearts are freed from punishment, He says: “He will admit you into Gardens.”</em> And he dwells on “pleasant dwellings” (masākin ṭayyiba): <em>by what are these dwellings sweet? They are sweet only by the vision of the Real.</em> And he cites: <em>we are at the height of joy, but joy is fulfilled only by you; the flaw of our happiness, O people of my love, is that you are absent and we present.</em>",
+      "mots": [
+        { "ar": "يَغْفِرْ لَكُمْ ذُنُوبَكُمْ", "tr": "yaghfir lakum dhunūbakum", "racine": "غ ف ر / ذ ن ب", "sens": "He will forgive you your sins", "def": "ghafara: to forgive; dhunūb: sins.", "gram": "verb + complement" },
+        { "ar": "وَمَسَاكِنَ طَيِّبَةً فِي جَنَّاتِ عَدْنٍ", "tr": "wa-masākina ṭayyibatan fī jannāti ʿadn", "racine": "س ك ن / ط ي ب / ع د ن", "sens": "pleasant dwellings in the Gardens of Eden", "def": "masākin: dwellings; ṭayyiba: pleasant; ʿadn: Eden.", "gram": "complement + adjective" },
+        { "ar": "ذَٰلِكَ الْفَوْزُ الْعَظِيمُ", "tr": "dhālika l-fawzu l-ʿaẓīm", "racine": "ف و ز / ع ظ م", "sens": "that is the supreme triumph", "def": "fawz: triumph; ʿaẓīm: immense.", "gram": "demonstrative + subject + adjective" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "وَأُخْرَىٰ تُحِبُّونَهَا ۖ نَصْرٌ مِّنَ اللَّهِ وَفَتْحٌ قَرِيبٌ ۗ وَبَشِّرِ الْمُؤْمِنِينَ",
+      "tr": "wa-ukhrā tuḥibbūnahā naṣrun mina llāhi wa-fatḥun qarībun wa-bashshiri l-muʾminīna",
+      "trad": "And another thing you love: help from God and a near victory. Give good tidings to the believers!",
+      "themes": ["help and victory", "the near conquest"],
+      "commentaire": "Qushayrī gives the “help” and the “near victory” (fatḥ qarīb) a scope at once immediate and mystical: <em>help from God today — the safeguarding of faith and the steadying of the steps on the path of rectitude, and tomorrow on the bridge of the Resurrection; and a near conquest: vision (al-ruʾya) and nearness; some say: contemplation (al-shuhūd); some say: the finding (al-wujūd) for the eternity of eternities.</em> The supreme victory is not the conquest of a land but the encounter with the Face.",
+      "mots": [
+        { "ar": "وَأُخْرَىٰ تُحِبُّونَهَا", "tr": "wa-ukhrā tuḥibbūnahā", "racine": "أ خ ر / ح ب ب", "sens": "and another you love", "def": "ukhrā: another; aḥabba: to love.", "gram": "subject + relative" },
+        { "ar": "نَصْرٌ مِّنَ اللَّهِ وَفَتْحٌ قَرِيبٌ", "tr": "naṣrun mina llāhi wa-fatḥun qarīb", "racine": "ن ص ر / ف ت ح / ق ر ب", "sens": "help from God and a near victory", "def": "naṣr: help; fatḥ: conquest, victory.", "gram": "apposition + coordinated" },
+        { "ar": "وَبَشِّرِ الْمُؤْمِنِينَ", "tr": "wa-bashshiri l-muʾminīn", "racine": "ب ش ر / أ م ن", "sens": "give good tidings to the believers", "def": "bashshara: to give good tidings.", "gram": "imperative (form II) + complement" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُونُوا أَنصَارَ اللَّهِ كَمَا قَالَ عِيسَى ابْنُ مَرْيَمَ لِلْحَوَارِيِّينَ مَنْ أَنصَارِي إِلَى اللَّهِ ۖ قَالَ الْحَوَارِيُّونَ نَحْنُ أَنصَارُ اللَّهِ ۖ فَآمَنَت طَّائِفَةٌ مِّن بَنِي إِسْرَائِيلَ وَكَفَرَت طَّائِفَةٌ ۖ فَأَيَّدْنَا الَّذِينَ آمَنُوا عَلَىٰ عَدُوِّهِمْ فَأَصْبَحُوا ظَاهِرِينَ",
+      "tr": "yā ayyuhā lladhīna āmanū kūnū anṣāra llāhi kamā qāla ʿīsā bnu maryama lil-ḥawāriyyīna man anṣārī ilā llāhi qāla l-ḥawāriyyūna naḥnu anṣāru llāhi fa-āmanat ṭāʾifatun min banī isrāʾīla wa-kafarat ṭāʾifatun fa-ayyadnā lladhīna āmanū ʿalā ʿaduwwihim fa-aṣbaḥū ẓāhirīna",
+      "trad": "O you who believe! Be the helpers of God, as Jesus, son of Mary, said to the disciples: “Who are my helpers toward God?” The disciples said: “We are the helpers of God!” A faction of the Children of Israel believed, and a faction disbelieved. We supported those who believed against their enemy, and they became the victors.",
+      "themes": ["being the helpers of God", "the support of believers"],
+      "commentaire": "The sūra culminates in the call to become <em>anṣār Allāh</em>, the helpers of God. Qushayrī: <em>be helpers of His religion and His Messenger, as the disciples helped Jesus when he called for aid; so help Muḥammad when he calls you for aid.</em> And he draws the lesson of the ending: <em>a faction believed and was honoured, a faction disbelieved and was humbled; God made His allies triumph over His enemies — that the Messenger might know that God always makes His saints triumph over His adversaries.</em>",
+      "mots": [
+        { "ar": "كُونُوا أَنصَارَ اللَّهِ", "tr": "kūnū anṣāra llāh", "racine": "ك و ن / ن ص ر", "sens": "be the helpers of God", "def": "anṣār: helpers, supporters.", "gram": "imperative + predicate" },
+        { "ar": "مَنْ أَنصَارِي إِلَى اللَّهِ", "tr": "man anṣārī ilā llāh", "racine": "ن ص ر", "sens": "who are my helpers toward God?", "def": "anṣārī: my helpers.", "gram": "interrogative + subject" },
+        { "ar": "فَأَيَّدْنَا الَّذِينَ آمَنُوا عَلَىٰ عَدُوِّهِمْ", "tr": "fa-ayyadnā lladhīna āmanū ʿalā ʿaduwwihim", "racine": "أ ي د / ع د و", "sens": "We supported the believers against their enemy", "def": "ayyada: to support, strengthen; ʿaduww: enemy.", "gram": "verb (form II) + complement" },
+        { "ar": "فَأَصْبَحُوا ظَاهِرِينَ", "tr": "fa-aṣbaḥū ẓāhirīn", "racine": "ص ب ح / ظ ه ر", "sens": "they became the victors", "def": "ẓāhir: prevailing, victorious.", "gram": "verb + predicate" }
+      ]
+    }
+  ]
+}

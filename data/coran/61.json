@@ -1,0 +1,193 @@
+{
+  "n": 61,
+  "nom_ar": "الصَّف",
+  "nom_tr": "al-Ṣaff",
+  "nom_fr": "Le Rang",
+  "revelation": "médinoise",
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "versets_count": 14,
+  "intro": "al-Ṣaff — « le Rang » — fustige le divorce entre la parole et l'acte : « pourquoi dites-vous ce que vous ne faites pas ? » Qushayrī en fait l'axe spirituel de la sourate : <em>qui veut que sa glorification se purifie, qu'il purifie son cœur des traces de son âme ; qui veut que sa vie au Paradis se purifie, qu'il purifie son âme des souillures de son péché.</em> Il rappelle que <em>manquer à sa promesse est laid avec quiconque, et plus laid encore avec Dieu</em>, et que <em>Dieu aime qu'on se déclare quitte de toute force et de tout pouvoir propres</em> (tabarrī min al-ḥawl wa-l-quwwa). La sourate célèbre les combattants alignés « comme un édifice scellé » — image de l'amour qui fait préférer le vouloir de l'Aimé au sien propre ; elle évoque Moïse blâmé par les siens, Jésus annonçant Aḥmad, et la lumière de Dieu que nul souffle n'éteint. Elle s'achève sur le « négoce qui sauve » (tijāra) — la foi et l'effort dans la voie de Dieu — et sur l'appel à être « les auxiliaires de Dieu » (anṣār Allāh), comme les Apôtres répondirent à Jésus.",
+  "themes": ["l'accord de la parole et de l'acte", "l'amour qui fait préférer l'Aimé", "la lumière inextinguible", "le négoce qui sauve", "être les auxiliaires de Dieu"],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "سَبَّحَ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+      "tr": "sabbaḥa lillāhi mā fī s-samāwāti wa-mā fī l-arḍi wa-huwa l-ʿazīzu l-ḥakīmu",
+      "trad": "Ce qui est dans les cieux et ce qui est sur la terre glorifie Dieu. Il est le Tout-Puissant, le Sage.",
+      "themes": ["la glorification universelle", "purifier le cœur pour glorifier"],
+      "commentaire": "Qushayrī fait du tasbīḥ une exigence de pureté intérieure : <em>qui veut que sa glorification se purifie, qu'il purifie son cœur des traces de son âme (āthār nafsih) ; et qui veut que sa vie au Paradis se purifie, qu'il purifie son âme des souillures de son péché.</em> La louange des lèvres ne vaut que si le cœur qui la profère est lui-même purifié — sinon elle reste un mot sans réalité, à l'image du reproche qui ouvre la sourate.",
+      "mots": [
+        { "ar": "سَبَّحَ لِلَّهِ", "tr": "sabbaḥa lillāh", "racine": "س ب ح", "sens": "glorifie Dieu", "def": "sabbaḥa : proclamer la transcendance.", "gram": "verbe accompli (forme II)" },
+        { "ar": "مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ", "tr": "mā fī s-samāwāti wa-mā fī l-arḍ", "racine": "س م و / أ ر ض", "sens": "ce qui est dans les cieux et la terre", "def": "samāwāt : cieux ; arḍ : terre.", "gram": "sujet relatif + coordonné" },
+        { "ar": "وَهُوَ الْعَزِيزُ الْحَكِيمُ", "tr": "wa-huwa l-ʿazīzu l-ḥakīm", "racine": "ع ز ز / ح ك م", "sens": "le Puissant, le Sage", "def": "ʿazīz : puissant ; ḥakīm : sage.", "gram": "pronom + deux attributs" }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا لِمَ تَقُولُونَ مَا لَا تَفْعَلُونَ",
+      "tr": "yā ayyuhā lladhīna āmanū lima taqūlūna mā lā tafʿalūna",
+      "trad": "O vous qui croyez, pourquoi dites-vous ce que vous ne faites pas ?",
+      "themes": ["la parole sans l'acte", "le reproche"],
+      "commentaire": "Qushayrī rapporte le contexte : certains avaient juré qu'ils combattraient de toutes leurs forces pour ce qui agrée à Dieu, mais le jour de Uḥud ils ne tinrent pas — d'où ce blâme. Et il généralise : <em>manquer à sa promesse est laid avec quiconque, et plus laid encore avec Dieu.</em> Et il ajoute, en clé soufie : <em>afficher la bravoure sans voir, à chaque souffle, sa pauvreté foncière (faqr) devant le Vrai, c'est se vanter d'une prétention vide ; or Dieu aime que l'on se déclare quitte de toute force et de tout pouvoir propres.</em>",
+      "mots": [
+        { "ar": "لِمَ تَقُولُونَ مَا لَا تَفْعَلُونَ", "tr": "lima taqūlūna mā lā tafʿalūn", "racine": "ق و ل / ف ع ل", "sens": "pourquoi dites-vous ce que vous ne faites pas ?", "def": "qāla : dire ; faʿala : faire.", "gram": "interrogatif + verbe + relative" }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "كَبُرَ مَقْتًا عِندَ اللَّهِ أَن تَقُولُوا مَا لَا تَفْعَلُونَ",
+      "tr": "kabura maqtan ʿinda llāhi an taqūlū mā lā tafʿalūna",
+      "trad": "C'est une grande félonie, auprès de Dieu, que de parler et de ne pas agir.",
+      "themes": ["la haine divine du mensonge en acte", "la gravité du décalage"],
+      "commentaire": "Qushayrī souligne la rareté d'un tel avertissement : <em>Dieu n'a menacé aucune faute par une formule semblable à celle-ci, quand Il dit : « C'est une grande détestation (maqt) auprès de Dieu que de dire ce que vous ne faites pas. »</em> Le décalage entre le dire et le faire n'est pas un défaut mineur : c'est l'objet d'une réprobation (maqt) supérieure, car il ruine la sincérité (ṣidq) qui est l'âme de toute foi.",
+      "mots": [
+        { "ar": "كَبُرَ مَقْتًا عِندَ اللَّهِ", "tr": "kabura maqtan ʿinda llāh", "racine": "ك ب ر / م ق ت", "sens": "c'est une grande détestation auprès de Dieu", "def": "kabura : être grand ; maqt : détestation, haine.", "gram": "verbe + spécificatif + complément" },
+        { "ar": "أَن تَقُولُوا مَا لَا تَفْعَلُونَ", "tr": "an taqūlū mā lā tafʿalūn", "racine": "ق و ل / ف ع ل", "sens": "que vous disiez ce que vous ne faites pas", "def": "qāla : dire ; faʿala : faire.", "gram": "subordonnée sujet" }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "إِنَّ اللَّهَ يُحِبُّ الَّذِينَ يُقَاتِلُونَ فِي سَبِيلِهِ صَفًّا كَأَنَّهُم بُنْيَانٌ مَّرْصُوصٌ",
+      "tr": "inna llāha yuḥibbu lladhīna yuqātilūna fī sabīlihi ṣaffan ka-annahum bunyānun marṣūṣun",
+      "trad": "En vérité, Dieu aime ceux qui combattent dans Son chemin en rangs serrés, comme s'ils formaient un édifice bien scellé.",
+      "themes": ["le rang serré", "l'amour qui fait préférer l'Aimé"],
+      "commentaire": "Le verset qui donne son nom à la sourate (ṣaff, صَفّ). Qushayrī l'interprète par l'amour : <em>l'amour exige l'altruisme — faire passer le vouloir de ton aimé avant ton propre vouloir, et l'objet aimé de ton aimé avant le tien. Puisque le Vrai aime que le serviteur combatte de la manière qu'Il a dite, qui ne préfère pas le vouloir de Dieu à son propre vouloir — c'est-à-dire à sa propre survie — se dépouille de son amour pour son Seigneur ; et qui se vide de l'amour de Dieu tombe dans l'autre bord, dans sa perte.</em> Le « rang scellé » est l'image de l'âme soudée à l'Aimé.",
+      "mots": [
+        { "ar": "يُحِبُّ الَّذِينَ يُقَاتِلُونَ فِي سَبِيلِهِ", "tr": "yuḥibbu lladhīna yuqātilūna fī sabīlih", "racine": "ح ب ب / ق ت ل / س ب ل", "sens": "Il aime ceux qui combattent dans Son chemin", "def": "aḥabba : aimer ; qātala : combattre ; sabīl : chemin.", "gram": "verbe + relative" },
+        { "ar": "صَفًّا", "tr": "ṣaffan", "racine": "ص ف ف", "sens": "en rang", "def": "ṣaff : rang, ligne.", "gram": "circonstanciel d'état" },
+        { "ar": "كَأَنَّهُم بُنْيَانٌ مَّرْصُوصٌ", "tr": "ka-annahum bunyānun marṣūṣ", "racine": "ب ن ي / ر ص ص", "sens": "comme un édifice scellé", "def": "bunyān : édifice ; marṣūṣ : soudé, cimenté.", "gram": "comparaison + sujet + adjectif" }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَإِذْ قَالَ مُوسَىٰ لِقَوْمِهِ يَا قَوْمِ لِمَ تُؤْذُونَنِي وَقَد تَّعْلَمُونَ أَنِّي رَسُولُ اللَّهِ إِلَيْكُمْ ۖ فَلَمَّا زَاغُوا أَزَاغَ اللَّهُ قُلُوبَهُمْ ۚ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الْفَاسِقِينَ",
+      "tr": "wa-idh qāla mūsā li-qawmihi yā qawmi lima tuʾdhūnanī wa-qad taʿlamūna annī rasūlu llāhi ilaykum fa-lammā zāghū azāgha llāhu qulūbahum wa-llāhu lā yahdī l-qawma l-fāsiqīna",
+      "trad": "Moïse parla ainsi à son peuple : « O mon peuple ! Pourquoi me maltraitez-vous, alors que vous savez que je suis vraiment le messager de Dieu envoyé vers vous ? » Lorsqu'ils dévièrent, Dieu fit dévier leurs cœurs. Dieu ne dirige pas les pervers !",
+      "themes": ["le prophète maltraité", "la déviation qui appelle la déviation"],
+      "commentaire": "Qushayrī déploie une cascade de lectures du « lorsqu'ils dévièrent, Dieu fit dévier leurs cœurs » (zāghū / azāgha) : <em>lorsqu'ils dévièrent en abandonnant la limite, Dieu fit dévier leurs cœurs en rompant le pacte ; lorsqu'ils dévièrent du chemin de la droiture, Dieu fit dévier leurs cœurs par le rejet et l'éloignement de Son amour ; lorsqu'ils dévièrent par leurs dehors, Dieu fit dévier leurs dedans ; lorsqu'ils dévièrent du service du Seuil, Dieu détourna leurs cœurs du désir du Tapis ; lorsqu'ils dévièrent de l'adoration, Dieu détourna leurs cœurs de la volonté même de Le vouloir.</em>",
+      "mots": [
+        { "ar": "لِمَ تُؤْذُونَنِي", "tr": "lima tuʾdhūnanī", "racine": "أ ذ ي", "sens": "pourquoi me faites-vous du tort ?", "def": "ādhā : nuire, blesser.", "gram": "interrogatif + verbe (forme IV)" },
+        { "ar": "فَلَمَّا زَاغُوا أَزَاغَ اللَّهُ قُلُوبَهُمْ", "tr": "fa-lammā zāghū azāgha llāhu qulūbahum", "racine": "ز ي غ", "sens": "lorsqu'ils dévièrent, Dieu fit dévier leurs cœurs", "def": "zāgha : dévier ; azāgha : faire dévier.", "gram": "conjonction + verbe + verbe (forme IV)" },
+        { "ar": "لَا يَهْدِي الْقَوْمَ الْفَاسِقِينَ", "tr": "lā yahdī l-qawma l-fāsiqīn", "racine": "ه د ي / ف س ق", "sens": "Il ne guide pas les pervers", "def": "hadā : guider ; fāsiq : pervers.", "gram": "négation + verbe + complément" }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "وَإِذْ قَالَ عِيسَى ابْنُ مَرْيَمَ يَا بَنِي إِسْرَائِيلَ إِنِّي رَسُولُ اللَّهِ إِلَيْكُم مُّصَدِّقًا لِّمَا بَيْنَ يَدَيَّ مِنَ التَّوْرَاةِ وَمُبَشِّرًا بِرَسُولٍ يَأْتِي مِن بَعْدِي اسْمُهُ أَحْمَدُ ۖ فَلَمَّا جَاءَهُم بِالْبَيِّنَاتِ قَالُوا هَٰذَا سِحْرٌ مُّبِينٌ",
+      "tr": "wa-idh qāla ʿīsā bnu maryama yā banī isrāʾīla innī rasūlu llāhi ilaykum muṣaddiqan limā bayna yadayya mina t-tawrāti wa-mubashshiran bi-rasūlin yaʾtī min baʿdī smuhu aḥmadu fa-lammā jāʾahum bi-l-bayyināti qālū hādhā siḥrun mubīnun",
+      "trad": "Et Jésus, fils de Marie, parla ainsi : « O fils d'Israël ! Je suis, en vérité, l'Envoyé de Dieu vers vous, venu pour confirmer ce qui, de la Tora, existait avant moi, et pour vous annoncer la bonne nouvelle d'un envoyé qui viendra après moi et dont le nom sera : Ahmad ». Mais lorsque celui-ci vint à eux avec des preuves évidentes, ils dirent : « C'est là manifestement de la sorcellerie ! »",
+      "themes": ["l'annonce d'Aḥmad", "la chaîne des prophètes"],
+      "commentaire": "Jésus annonce Aḥmad — un des noms du Prophète, de la racine ḥ-m-d (« le loué »). Qushayrī : <em>chaque prophète a annoncé à son peuple la venue de notre Prophète ; Dieu a singularisé Jésus en cet endroit parce qu'il fut le dernier prophète avant le nôtre. Il a ainsi montré que l'annonce de sa venue a parcouru tous les prophètes, l'un après l'autre, jusqu'à s'achever en Jésus.</em> La bonne nouvelle (bishāra) traverse toute l'histoire prophétique comme un seul fil qui mène à Muḥammad.",
+      "mots": [
+        { "ar": "مُّصَدِّقًا لِّمَا بَيْنَ يَدَيَّ مِنَ التَّوْرَاةِ", "tr": "muṣaddiqan limā bayna yadayya mina t-tawrāt", "racine": "ص د ق / ت و ر", "sens": "confirmant la Tora qui me précède", "def": "muṣaddiq : qui confirme ; tawrāt : Tora.", "gram": "état + complément" },
+        { "ar": "وَمُبَشِّرًا بِرَسُولٍ يَأْتِي مِن بَعْدِي", "tr": "wa-mubashshiran bi-rasūlin yaʾtī min baʿdī", "racine": "ب ش ر / ر س ل", "sens": "annonçant un envoyé qui viendra après moi", "def": "mubashshir : qui annonce une bonne nouvelle.", "gram": "état + complément + relative" },
+        { "ar": "اسْمُهُ أَحْمَدُ", "tr": "ismuhu aḥmad", "racine": "س م و / ح م د", "sens": "dont le nom est Aḥmad", "def": "Aḥmad : « le très loué », nom du Prophète.", "gram": "sujet + attribut" },
+        { "ar": "هَٰذَا سِحْرٌ مُّبِينٌ", "tr": "hādhā siḥrun mubīn", "racine": "س ح ر / ب ي ن", "sens": "c'est une magie évidente", "def": "siḥr : magie ; mubīn : manifeste.", "gram": "démonstratif + attribut + adjectif" }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَمَنْ أَظْلَمُ مِمَّنِ افْتَرَىٰ عَلَى اللَّهِ الْكَذِبَ وَهُوَ يُدْعَىٰ إِلَى الْإِسْلَامِ ۚ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الظَّالِمِينَ",
+      "tr": "wa-man aẓlamu mimmani ftarā ʿalā llāhi l-kadhiba wa-huwa yudʿā ilā l-islāmi wa-llāhu lā yahdī l-qawma ẓ-ẓālimīna",
+      "trad": "Qui donc est plus inique que celui qui forge un mensonge contre Dieu alors qu'il est appelé à la soumission (al-islâm) ? Mais Dieu ne dirige pas les iniques.",
+      "themes": ["le mensonge contre Dieu", "le refus de l'appel"],
+      "commentaire": "La plus grande injustice (ẓulm) : forger le mensonge contre Dieu au moment même où l'on est appelé à la soumission. Qushayrī rejoint ici le thème de la déviation : refuser l'appel, c'est se placer soi-même hors de la guidance, car Dieu ne guide pas l'injuste obstiné. L'iniquité suprême n'est pas l'ignorance mais le refus délibéré de la lumière offerte.",
+      "mots": [
+        { "ar": "وَمَنْ أَظْلَمُ مِمَّنِ افْتَرَىٰ عَلَى اللَّهِ الْكَذِبَ", "tr": "wa-man aẓlamu mimmani ftarā ʿalā llāhi l-kadhib", "racine": "ظ ل م / ف ر ي / ك ذ ب", "sens": "qui est plus injuste que celui qui forge un mensonge contre Dieu", "def": "aẓlam : plus injuste ; iftarā : forger ; kadhib : mensonge.", "gram": "interrogatif + comparatif + relative" },
+        { "ar": "وَهُوَ يُدْعَىٰ إِلَى الْإِسْلَامِ", "tr": "wa-huwa yudʿā ilā l-islām", "racine": "د ع و / س ل م", "sens": "alors qu'il est appelé à l'islam", "def": "duʿiya : être appelé ; islām : soumission.", "gram": "circonstanciel + verbe passif" },
+        { "ar": "لَا يَهْدِي الْقَوْمَ الظَّالِمِينَ", "tr": "lā yahdī l-qawma ẓ-ẓālimīn", "racine": "ه د ي / ظ ل م", "sens": "Il ne guide pas les injustes", "def": "ẓālim : injuste.", "gram": "négation + verbe + complément" }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "يُرِيدُونَ لِيُطْفِئُوا نُورَ اللَّهِ بِأَفْوَاهِهِمْ وَاللَّهُ مُتِمُّ نُورِهِ وَلَوْ كَرِهَ الْكَافِرُونَ",
+      "tr": "yurīdūna li-yuṭfiʾū nūra llāhi bi-afwāhihim wa-llāhu mutimmu nūrihi wa-law kariha l-kāfirūna",
+      "trad": "Ils veulent étouffer la lumière de Dieu avec leurs bouches, mais Dieu parachèvera Sa lumière, dussent les mécréants en concevoir du dépit.",
+      "themes": ["la lumière inextinguible", "la ruse retournée"],
+      "commentaire": "Qushayrī : <em>qui ruse pour l'affaiblir, ou cherche à la briser, sa ruse se retourne contre lui et son stratagème se défait.</em> Et il file l'image : <em>celui qui souhaite éteindre la lumière de l'islam par sa ruse est comme celui qui s'évertue à éteindre l'éclat du soleil de son souffle — chose absurde.</em> La lumière de Dieu (nūr Allāh) ne se souffle pas : vouloir l'éteindre de sa bouche, c'est avouer sa propre impuissance.",
+      "mots": [
+        { "ar": "يُرِيدُونَ لِيُطْفِئُوا نُورَ اللَّهِ بِأَفْوَاهِهِمْ", "tr": "yurīdūna li-yuṭfiʾū nūra llāhi bi-afwāhihim", "racine": "ر و د / ط ف أ / ن و ر / ف و ه", "sens": "ils veulent éteindre la lumière de Dieu de leurs bouches", "def": "aṭfaʾa : éteindre ; afwāh : bouches.", "gram": "verbe + lām de but + complément" },
+        { "ar": "وَاللَّهُ مُتِمُّ نُورِهِ", "tr": "wa-llāhu mutimmu nūrih", "racine": "ت م م / ن و ر", "sens": "Dieu parachève Sa lumière", "def": "mutimm : qui parachève ; nūr : lumière.", "gram": "sujet + attribut + complément" },
+        { "ar": "وَلَوْ كَرِهَ الْكَافِرُونَ", "tr": "wa-law kariha l-kāfirūn", "racine": "ك ر ه / ك ف ر", "sens": "même si les mécréants détestent", "def": "kariha : détester ; kāfir : mécréant.", "gram": "concession + verbe + sujet" }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "هُوَ الَّذِي أَرْسَلَ رَسُولَهُ بِالْهُدَىٰ وَدِينِ الْحَقِّ لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ وَلَوْ كَرِهَ الْمُشْرِكُونَ",
+      "tr": "huwa lladhī arsala rasūlahu bi-l-hudā wa-dīni l-ḥaqqi li-yuẓhirahu ʿalā d-dīni kullihi wa-law kariha l-mushrikūna",
+      "trad": "C'est Lui qui a dépêché Son Envoyé avec la bonne guidance et la religion de Vérité pour la faire prévaloir sur la religion toute entière, dussent les associateurs en concevoir du dépit.",
+      "themes": ["l'envoi du Messager", "les auxiliaires que Dieu suscite"],
+      "commentaire": "Qushayrī, devant le Prophète délaissé par les siens et démenti par ses ennemis, médite sur les auxiliaires que Dieu lui suscita : <em>quand son peuple recula et que ses ennemis se dressèrent pour le démentir, Dieu lui suscita des secoureurs de sa communauté : les déracinés des tribus, les rares et nobles individus — ils dépensèrent leur sang pour l'assister, le protégèrent de leurs âmes ; Dieu avait pétri leur argile de l'eau de la félicité et créé leurs esprits de la lumière du tawḥīd.</em>",
+      "mots": [
+        { "ar": "أَرْسَلَ رَسُولَهُ بِالْهُدَىٰ", "tr": "arsala rasūlahu bi-l-hudā", "racine": "ر س ل / ه د ي", "sens": "Il a envoyé Son Messager avec la guidance", "def": "arsala : envoyer ; hudā : guidance.", "gram": "verbe (forme IV) + complément" },
+        { "ar": "وَدِينِ الْحَقِّ", "tr": "wa-dīni l-ḥaqq", "racine": "د ي ن / ح ق ق", "sens": "et la religion de Vérité", "def": "dīn al-ḥaqq : religion vraie.", "gram": "complément" },
+        { "ar": "لِيُظْهِرَهُ عَلَى الدِّينِ كُلِّهِ", "tr": "li-yuẓhirahu ʿalā d-dīni kullih", "racine": "ظ ه ر / د ي ن", "sens": "pour la faire prévaloir sur toute religion", "def": "aẓhara : faire prévaloir.", "gram": "lām de but + verbe + complément" }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا هَلْ أَدُلُّكُمْ عَلَىٰ تِجَارَةٍ تُنجِيكُم مِّنْ عَذَابٍ أَلِيمٍ",
+      "tr": "yā ayyuhā lladhīna āmanū hal adullukum ʿalā tijāratin tunjīkum min ʿadhābin alīmin",
+      "trad": "O vous qui croyez ! Vous indiquerai-je un négoce qui vous sauvera d'un châtiment douloureux :",
+      "themes": ["le négoce qui sauve", "l'invitation"],
+      "commentaire": "Qushayrī explique le choix du mot « négoce » (tijāra, تِجارة) : <em>Il a nommé la foi et l'effort un négoce, à cause de ce qu'il y a dans le commerce de profit, de perte, et d'une forme de gain pour le marchand — de même, dans la foi et l'effort, il y a le profit du Paradis, pour lequel le serviteur peine, et sa perte si l'affaire est inverse.</em> La vie spirituelle est un commerce où l'on investit son âme : le gain est la délivrance, la perte le châtiment.",
+      "mots": [
+        { "ar": "هَلْ أَدُلُّكُمْ عَلَىٰ تِجَارَةٍ", "tr": "hal adullukum ʿalā tijāra", "racine": "د ل ل / ت ج ر", "sens": "vous indiquerai-je un négoce ?", "def": "dalla : indiquer ; tijāra : négoce.", "gram": "interrogatif + verbe + complément" },
+        { "ar": "تُنجِيكُم مِّنْ عَذَابٍ أَلِيمٍ", "tr": "tunjīkum min ʿadhābin alīm", "racine": "ن ج و / ع ذ ب / أ ل م", "sens": "qui vous sauve d'un châtiment douloureux", "def": "anjā : sauver ; alīm : douloureux.", "gram": "verbe (forme IV) + complément" }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "تُؤْمِنُونَ بِاللَّهِ وَرَسُولِهِ وَتُجَاهِدُونَ فِي سَبِيلِ اللَّهِ بِأَمْوَالِكُمْ وَأَنفُسِكُمْ ۚ ذَٰلِكُمْ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ",
+      "tr": "tuʾminūna billāhi wa-rasūlihi wa-tujāhidūna fī sabīli llāhi bi-amwālikum wa-anfusikum dhālikum khayrun lakum in kuntum taʿlamūna",
+      "trad": "croyez en Dieu et en Son Envoyé, et combattez dans le chemin de Dieu avec vos biens et vos personnes. C'est là un bien pour vous, si vous saviez !",
+      "themes": ["la foi et l'effort", "le bien véritable"],
+      "commentaire": "Le contenu du négoce est dévoilé : croire et lutter avec ses biens et sa personne. Qushayrī : <em>en cela résident votre effort, votre foi et votre application — et c'est un bien pour vous.</em> Le jihād majeur que la sourate célèbre n'est pas d'abord extérieur : c'est l'engagement total de l'être, biens (amwāl) et âme (anfus), dans la voie de Dieu — un investissement où l'on se donne soi-même.",
+      "mots": [
+        { "ar": "تُؤْمِنُونَ بِاللَّهِ وَرَسُولِهِ", "tr": "tuʾminūna billāhi wa-rasūlih", "racine": "أ م ن / ر س ل", "sens": "vous croyez en Dieu et Son Envoyé", "def": "āmana : croire.", "gram": "verbe + compléments" },
+        { "ar": "وَتُجَاهِدُونَ فِي سَبِيلِ اللَّهِ بِأَمْوَالِكُمْ وَأَنفُسِكُمْ", "tr": "wa-tujāhidūna fī sabīli llāhi bi-amwālikum wa-anfusikum", "racine": "ج ه د / م و ل / ن ف س", "sens": "vous luttez dans le chemin de Dieu par vos biens et vos personnes", "def": "jāhada : lutter ; amwāl : biens ; anfus : personnes.", "gram": "verbe (forme III) + compléments" },
+        { "ar": "ذَٰلِكُمْ خَيْرٌ لَّكُمْ", "tr": "dhālikum khayrun lakum", "racine": "خ ي ر", "sens": "cela est un bien pour vous", "def": "khayr : bien.", "gram": "démonstratif + attribut" }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "يَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَيُدْخِلْكُمْ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ وَمَسَاكِنَ طَيِّبَةً فِي جَنَّاتِ عَدْنٍ ۚ ذَٰلِكَ الْفَوْزُ الْعَظِيمُ",
+      "tr": "yaghfir lakum dhunūbakum wa-yudkhilkum jannātin tajrī min taḥtihā l-anhāru wa-masākina ṭayyibatan fī jannāti ʿadnin dhālika l-fawzu l-ʿaẓīmu",
+      "trad": "Il vous pardonnera vos péchés et Il vous fera entrer dans les Jardins sous lesquels coulent les fleuves et dans de plaisantes demeures situées dans les jardins d'Eden. C'est là le bonheur suprême !",
+      "themes": ["le pardon d'abord", "les demeures et la vision"],
+      "commentaire": "Qushayrī note l'ordre des dons : <em>Il a placé en tête le plus important — le pardon (maghfira) ; puis, une fois les cœurs libérés du châtiment, Il dit : « Il vous fera entrer dans des Jardins. »</em> Et il s'arrête sur « de plaisantes demeures » (masākin ṭayyiba) : <em>par quoi ces demeures sont-elles douces ? Elles ne sont douces que par la vision du Vrai.</em> Et il cite : <em>nous sommes au comble de la joie, mais la joie ne s'accomplit que par vous ; le défaut de notre bonheur, ô gens de mon amour, c'est que vous êtes absents et nous présents.</em>",
+      "mots": [
+        { "ar": "يَغْفِرْ لَكُمْ ذُنُوبَكُمْ", "tr": "yaghfir lakum dhunūbakum", "racine": "غ ف ر / ذ ن ب", "sens": "Il vous pardonnera vos péchés", "def": "ghafara : pardonner ; dhunūb : péchés.", "gram": "verbe + complément" },
+        { "ar": "وَمَسَاكِنَ طَيِّبَةً فِي جَنَّاتِ عَدْنٍ", "tr": "wa-masākina ṭayyibatan fī jannāti ʿadn", "racine": "س ك ن / ط ي ب / ع د ن", "sens": "de plaisantes demeures aux jardins d'Éden", "def": "masākin : demeures ; ṭayyiba : plaisante ; ʿadn : Éden.", "gram": "complément + adjectif" },
+        { "ar": "ذَٰلِكَ الْفَوْزُ الْعَظِيمُ", "tr": "dhālika l-fawzu l-ʿaẓīm", "racine": "ف و ز / ع ظ م", "sens": "c'est là le triomphe suprême", "def": "fawz : triomphe ; ʿaẓīm : immense.", "gram": "démonstratif + sujet + adjectif" }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "وَأُخْرَىٰ تُحِبُّونَهَا ۖ نَصْرٌ مِّنَ اللَّهِ وَفَتْحٌ قَرِيبٌ ۗ وَبَشِّرِ الْمُؤْمِنِينَ",
+      "tr": "wa-ukhrā tuḥibbūnahā naṣrun mina llāhi wa-fatḥun qarībun wa-bashshiri l-muʾminīna",
+      "trad": "Il y a autre chose que vous aimerez : un secours venant de Dieu et une victoire proche. Annonce la bonne nouvelle aux croyants !",
+      "themes": ["le secours et la victoire", "la conquête proche"],
+      "commentaire": "Qushayrī donne au « secours » et à la « victoire proche » (fatḥ qarīb) une portée à la fois immédiate et mystique : <em>un secours de Dieu aujourd'hui — la sauvegarde de la foi et l'affermissement des pas sur le sentier de la rectitude, et demain sur le pont de la Résurrection ; et une conquête proche : la vision (al-ruʾya) et la proximité ; on dit aussi : la contemplation (al-shuhūd) ; on dit : la trouvaille (al-wujūd) pour l'éternité des éternités.</em> La victoire suprême n'est pas la conquête d'une terre mais la rencontre du Visage.",
+      "mots": [
+        { "ar": "وَأُخْرَىٰ تُحِبُّونَهَا", "tr": "wa-ukhrā tuḥibbūnahā", "racine": "أ خ ر / ح ب ب", "sens": "et une autre que vous aimez", "def": "ukhrā : une autre ; aḥabba : aimer.", "gram": "sujet + relative" },
+        { "ar": "نَصْرٌ مِّنَ اللَّهِ وَفَتْحٌ قَرِيبٌ", "tr": "naṣrun mina llāhi wa-fatḥun qarīb", "racine": "ن ص ر / ف ت ح / ق ر ب", "sens": "un secours de Dieu et une victoire proche", "def": "naṣr : secours ; fatḥ : conquête, victoire.", "gram": "apposition + coordonné" },
+        { "ar": "وَبَشِّرِ الْمُؤْمِنِينَ", "tr": "wa-bashshiri l-muʾminīn", "racine": "ب ش ر / أ م ن", "sens": "annonce la bonne nouvelle aux croyants", "def": "bashshara : annoncer une bonne nouvelle.", "gram": "impératif (forme II) + complément" }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُونُوا أَنصَارَ اللَّهِ كَمَا قَالَ عِيسَى ابْنُ مَرْيَمَ لِلْحَوَارِيِّينَ مَنْ أَنصَارِي إِلَى اللَّهِ ۖ قَالَ الْحَوَارِيُّونَ نَحْنُ أَنصَارُ اللَّهِ ۖ فَآمَنَت طَّائِفَةٌ مِّن بَنِي إِسْرَائِيلَ وَكَفَرَت طَّائِفَةٌ ۖ فَأَيَّدْنَا الَّذِينَ آمَنُوا عَلَىٰ عَدُوِّهِمْ فَأَصْبَحُوا ظَاهِرِينَ",
+      "tr": "yā ayyuhā lladhīna āmanū kūnū anṣāra llāhi kamā qāla ʿīsā bnu maryama lil-ḥawāriyyīna man anṣārī ilā llāhi qāla l-ḥawāriyyūna naḥnu anṣāru llāhi fa-āmanat ṭāʾifatun min banī isrāʾīla wa-kafarat ṭāʾifatun fa-ayyadnā lladhīna āmanū ʿalā ʿaduwwihim fa-aṣbaḥū ẓāhirīna",
+      "trad": "O vous qui croyez ! Soyez les auxiliaires de Dieu, comme l'a dit Jésus, fils de Marie, en s'adressant aux Apôtres : « Qui seront mes auxiliaires dans la voie de Dieu ? » Les Apôtres ont répondu : « Nous sommes les auxiliaires de Dieu ! » Un groupe des fils d'Israël crut, tandis qu'un groupe mécrut. Nous avons soutenu contre leurs ennemis ceux qui croyaient, et c'est eux qui l'ont emporté.",
+      "themes": ["être les auxiliaires de Dieu", "le soutien des croyants"],
+      "commentaire": "La sourate culmine sur l'appel à devenir <em>anṣār Allāh</em> (أنصار الله), les auxiliaires de Dieu. Qushayrī : <em>soyez les auxiliaires de Sa religion et de Son Messager, comme les Apôtres secoururent Jésus lorsqu'il appela à l'aide ; secourez donc Muḥammad quand il vous appelle au secours.</em> Et il tire la leçon de la fin : <em>un groupe crut et fut honoré, un groupe mécrut et fut humilié ; Dieu fit triompher Ses alliés sur Ses ennemis — pour que le Messager sache que Dieu fait toujours triompher Ses saints sur Ses adversaires.</em>",
+      "mots": [
+        { "ar": "كُونُوا أَنصَارَ اللَّهِ", "tr": "kūnū anṣāra llāh", "racine": "ك و ن / ن ص ر", "sens": "soyez les auxiliaires de Dieu", "def": "anṣār : auxiliaires, secoureurs.", "gram": "impératif + attribut" },
+        { "ar": "مَنْ أَنصَارِي إِلَى اللَّهِ", "tr": "man anṣārī ilā llāh", "racine": "ن ص ر", "sens": "qui sont mes auxiliaires vers Dieu ?", "def": "anṣārī : mes auxiliaires.", "gram": "interrogatif + sujet" },
+        { "ar": "فَأَيَّدْنَا الَّذِينَ آمَنُوا عَلَىٰ عَدُوِّهِمْ", "tr": "fa-ayyadnā lladhīna āmanū ʿalā ʿaduwwihim", "racine": "أ ي د / ع د و", "sens": "Nous avons soutenu les croyants contre leur ennemi", "def": "ayyada : soutenir, fortifier ; ʿaduww : ennemi.", "gram": "verbe (forme II) + complément" },
+        { "ar": "فَأَصْبَحُوا ظَاهِرِينَ", "tr": "fa-aṣbaḥū ẓāhirīn", "racine": "ص ب ح / ظ ه ر", "sens": "ils devinrent les vainqueurs", "def": "ẓāhir : qui l'emporte, victorieux.", "gram": "verbe + attribut" }
+      ]
+    }
+  ]
+}

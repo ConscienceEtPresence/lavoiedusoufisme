@@ -1,0 +1,1509 @@
+{
+  "n": 51,
+  "nom_ar": "الذَّارِيَات",
+  "nom_tr": "al-Dhāriyāt",
+  "nom_fr": "Ceux Qui Éparpillent",
+  "revelation": "mecquoise",
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "versets_count": 60,
+  "intro": "al-Dhāriyāt — « Ceux qui éparpillent » — s'ouvre par un quadruple serment sur les agents de la Toute-Puissance : les vents qui dispersent, les nuées chargées, les vaisseaux qui voguent, les anges qui répartissent. Qushayrī y greffe une lecture des amants : <em>les vents portent le gémissement des éperdus vers les cours de la Puissance, et le souffle de la proximité revient aux narines des secrets.</em> La sourate affirme la vérité de la promesse et l'inéluctabilité du Jugement, peint les pieux qui « dormaient peu la nuit » et imploraient le pardon à l'aube, et invite à lire les signes <em>sur la terre, en vous-mêmes, et dans le ciel où est votre subsistance</em>. Elle rappelle les hôtes honorés d'Abraham, le châtiment des peuples — Loth, Pharaon, ʿĀd, Thamūd, Noé — et culmine sur deux versets-sommets : <em>« Fuyez vers Dieu ! »</em> (que Qushayrī déploie en une échelle de fuites : de l'ignorance à la science, de Lui vers Lui), et <em>« Je n'ai créé djinns et hommes que pour qu'ils M'adorent. »</em>",
+  "themes": [
+    "le serment par les agents de la Puissance",
+    "la promesse véridique",
+    "les pieux veilleurs",
+    "fuir vers Dieu",
+    "la finalité de l'adoration"
+  ],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "وَالذَّارِيَاتِ ذَرْوًا",
+      "tr": "wa-dh-dhāriyāti dharwan",
+      "trad": "Par ceux qui éparpillent !",
+      "themes": [
+        "le serment par les vents"
+      ],
+      "commentaire": "Qushayrī : <em>les Éparpilleuses (al-dhāriyāt) sont les vents.</em> Et il y greffe une lecture mystique : <em>parmi les vents, il en est de chargés des cris (des amants) — ils portent le gémissement des éperdus vers les cours de la Toute-Puissance, et le souffle de la proximité revient alors aux narines des secrets des amoureux, qui y trouvent un répit aux assauts de la passion.</em> Il cite : « je demande à la brise de m'apporter votre haleine, quand elle souffle de votre terre. »",
+      "mots": [
+        {
+          "ar": "وَالذَّارِيَاتِ ذَرْوًا",
+          "tr": "wa-dh-dhāriyāti dharwan",
+          "racine": "ذ ر و",
+          "sens": "par celles qui éparpillent",
+          "def": "dhāriyāt : les vents qui dispersent.",
+          "gram": "serment + complément absolu"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "فَالْحَامِلَاتِ وِقْرًا",
+      "tr": "fa-l-ḥāmilāti wiqran",
+      "trad": "Par ceux qui portent une charge !",
+      "themes": [
+        "les nuées chargées"
+      ],
+      "commentaire": "Qushayrī : <em>les Porteuses d'un fardeau (al-ḥāmilāt) sont les nuages.</em> Et dans le registre intérieur : <em>certains nuages pleuvent en reproche d'absence, annonçant les assauts de l'éloignement et de la séparation ; les amoureux le perçoivent par la lumière de leur clairvoyance, et se jettent dans l'imploration et la prière, cherchant refuge contre cela.</em>",
+      "mots": [
+        {
+          "ar": "فَالْحَامِلَاتِ وِقْرًا",
+          "tr": "fa-l-ḥāmilāti wiqran",
+          "racine": "ح م ل / و ق ر",
+          "sens": "celles qui portent une charge",
+          "def": "ḥāmilāt : les nuages porteurs ; wiqr : charge.",
+          "gram": "serment + complément"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "فَالْجَارِيَاتِ يُسْرًا",
+      "tr": "fa-l-jāriyāti yusran",
+      "trad": "Par ceux qui courent avec agilité !",
+      "themes": [
+        "les vaisseaux qui voguent"
+      ],
+      "commentaire": "Les Voguantes avec aisance (al-jāriyāt) sont les vaisseaux. Qushayrī : <em>de même que le marin embarque parfois le pauvre sans rétribution, par espoir du salut du navire, ainsi les pauvres en Dieu espèrent être portés dans la barque de la sollicitude, sur les mers de la Puissance, quand les vagues se déchaînent autour de la nef.</em>",
+      "mots": [
+        {
+          "ar": "فَالْجَارِيَاتِ يُسْرًا",
+          "tr": "fa-l-jāriyāti yusran",
+          "racine": "ج ر ي / ي س ر",
+          "sens": "celles qui voguent avec aisance",
+          "def": "jāriyāt : les vaisseaux (qui courent) ; yusr : aisance.",
+          "gram": "serment + complément"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "فَالْمُقَسِّمَاتِ أَمْرًا",
+      "tr": "fa-l-muqassimāti amran",
+      "trad": "Par ceux qui répartissent sur ordre !",
+      "themes": [
+        "les anges qui répartissent"
+      ],
+      "commentaire": "Les Répartiteurs d'un ordre (al-muqassimāt) sont les anges. Qushayrī : <em>certains anges descendent visiter les gens de l'union, ou consoler ceux de l'épreuve, ou pour mille affaires liées aux gens de cette histoire ; ces gens-là les interrogent sur leurs états : ont-ils nouvelle de leur séparation ou de leur union ?</em> Dieu jure par le Seigneur de ces réalités et par Sa puissance sur elles.",
+      "mots": [
+        {
+          "ar": "فَالْمُقَسِّمَاتِ أَمْرًا",
+          "tr": "fa-l-muqassimāti amran",
+          "racine": "ق س م / أ م ر",
+          "sens": "celles qui répartissent un ordre",
+          "def": "muqassimāt : les anges répartiteurs ; amr : ordre.",
+          "gram": "serment + complément"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "إِنَّمَا تُوعَدُونَ لَصَادِقٌ",
+      "tr": "innamā tūʿadūna la-ṣādiqun",
+      "trad": "Certes, ce qui vous est promis est véridique.",
+      "themes": [
+        "la promesse véridique"
+      ],
+      "commentaire": "La réponse au serment : ce qui vous est promis est vrai. Qushayrī : <em>le Vrai a promis aux obéissants le Paradis, aux repentants la miséricorde, aux saints la proximité, aux connaissants l'union ; et aux éprouvés, Il a promis : « sur eux, bénédictions et miséricorde de leur Seigneur ». Ils s'inquiètent du retard de la belle promesse — mais Dieu est doux envers les serviteurs.</em>",
+      "mots": [
+        {
+          "ar": "إِنَّمَا تُوعَدُونَ لَصَادِقٌ",
+          "tr": "innamā tūʿadūna la-ṣādiq",
+          "racine": "و ع د / ص د ق",
+          "sens": "ce qui vous est promis est véridique",
+          "def": "ṣādiq : véridique.",
+          "gram": "restriction + verbe passif + attribut"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "وَإِنَّ الدِّينَ لَوَاقِعٌ",
+      "tr": "wa-inna d-dīna la-wāqiʿun",
+      "trad": "Certes, le Jugement est inéluctable.",
+      "themes": [
+        "le Jugement inéluctable"
+      ],
+      "commentaire": "Le Jugement (dīn) — la rétribution — adviendra immanquablement (wāqiʿ). Après le serment quadruple par les vents, les nuées, les vaisseaux et les anges, Dieu affirme la double certitude : la promesse est vraie et le compte aura lieu. Toute la création atteste, par son service ordonné, la vérité du Jour qui vient.",
+      "mots": [
+        {
+          "ar": "وَإِنَّ الدِّينَ لَوَاقِعٌ",
+          "tr": "wa-inna d-dīna la-wāqiʿ",
+          "racine": "د ي ن / و ق ع",
+          "sens": "le Jugement est inéluctable",
+          "def": "dīn : rétribution ; wāqiʿ : qui adviendra.",
+          "gram": "particule + nom + attribut"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَالسَّمَاءِ ذَاتِ الْحُبُكِ",
+      "tr": "wa-s-samāʾi dhāti l-ḥubuki",
+      "trad": "Par le ciel rayé de nuées !",
+      "themes": [
+        "le ciel aux belles voies"
+      ],
+      "commentaire": "Second serment : par le ciel « aux belles voies » (dhāt al-ḥubuk). Qushayrī : <em>l'allusion est au ciel du tawḥīd, paré du soleil de la connaissance, de la lune de l'amour, et des étoiles de la proximité : vous tenez, à propos de cette Voie, des discours divergents.</em> Le firmament strié devient image de la connaissance ornée de ses astres intérieurs.",
+      "mots": [
+        {
+          "ar": "وَالسَّمَاءِ ذَاتِ الْحُبُكِ",
+          "tr": "wa-s-samāʾi dhāti l-ḥubuk",
+          "racine": "س م و / ح ب ك",
+          "sens": "par le ciel aux belles voies",
+          "def": "ḥubuk : stries, voies harmonieuses.",
+          "gram": "serment + qualificatif"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "إِنَّكُمْ لَفِي قَوْلٍ مُّخْتَلِفٍ",
+      "tr": "innakum la-fī qawlin mukhtalifin",
+      "trad": "Vous tenez [sur la vérité] des discours divergents ;",
+      "themes": [
+        "les discours divergents"
+      ],
+      "commentaire": "Réponse : vous êtes dans des propos contradictoires. Qushayrī : <em>au sujet de Muḥammad, l'un dit : c'est un magicien, l'autre : un possédé, un troisième : un poète.</em> Et il transpose : <em>face à cette Voie, l'un nie le chemin, l'autre conteste ses gens en s'imaginant qu'ils manquent à la Loi, un troisième, borné, ne sort pas de l'étroitesse de la servitude commune et ignore que Dieu distingue Ses saints par les états sublimes.</em>",
+      "mots": [
+        {
+          "ar": "إِنَّكُمْ لَفِي قَوْلٍ مُّخْتَلِفٍ",
+          "tr": "innakum la-fī qawlin mukhtalif",
+          "racine": "ق و ل / خ ل ف",
+          "sens": "vous êtes en un propos divergent",
+          "def": "mukhtalif : contradictoire.",
+          "gram": "particule + complément + adjectif"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "يُؤْفَكُ عَنْهُ مَنْ أُفِكَ",
+      "tr": "yuʾfaku ʿanhu man ufika",
+      "trad": "de l'insensé on se détournera.",
+      "themes": [
+        "le détournement décrété"
+      ],
+      "commentaire": "Qushayrī : <em>est détourné de lui (du Prophète, ou de la Vérité) celui qui fut détourné</em> — c'est-à-dire celui que le décret antérieur a écarté. Ceux qui empêchaient les gens de l'approcher en le traitant de fou ne faisaient qu'accomplir, sans le savoir, le partage primordial : on ne se détourne de la lumière que selon ce qui fut écrit.",
+      "mots": [
+        {
+          "ar": "يُؤْفَكُ عَنْهُ مَنْ أُفِكَ",
+          "tr": "yuʾfaku ʿanhu man ufika",
+          "racine": "أ ف ك",
+          "sens": "est détourné de lui qui fut détourné",
+          "def": "ufika : être dévié de la vérité.",
+          "gram": "verbe passif + relatif"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "قُتِلَ الْخَرَّاصُونَ",
+      "tr": "qutila l-kharrāṣūna",
+      "trad": "Que périssent les menteurs,",
+      "themes": [
+        "malheur aux conjectureurs"
+      ],
+      "commentaire": "« Maudits soient les conjectureurs » (al-kharrāṣūn). Qushayrī : <em>les menteurs maudits qui, dans le flot de l'égarement et l'obscurité de l'ignorance, sont distraits et insouciants.</em> Le kharrāṣ est celui qui parle par supposition, sans science : sa parole vaine sur Dieu et Sa Vérité le condamne.",
+      "mots": [
+        {
+          "ar": "قُتِلَ الْخَرَّاصُونَ",
+          "tr": "qutila l-kharrāṣūn",
+          "racine": "ق ت ل / خ ر ص",
+          "sens": "maudits soient les conjectureurs",
+          "def": "kharrāṣ : qui parle par conjecture, menteur.",
+          "gram": "verbe (malédiction) + sujet"
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "الَّذِينَ هُمْ فِي غَمْرَةٍ سَاهُونَ",
+      "tr": "alladhīna hum fī ghamratin sāhūna",
+      "trad": "ceux qui sont plongés dans l'insouciance !",
+      "themes": [
+        "le flot de l'oubli"
+      ],
+      "commentaire": "Ils sont « dans un flot, distraits » (fī ghamra sāhūn). Qushayrī : <em>dans le flot de l'égarement et les ténèbres de l'ignorance, ils sont oublieux et frivoles.</em> La ghamra est l'eau profonde qui submerge : ils sont noyés dans leur inadvertance, incapables de percevoir le Jour qui approche.",
+      "mots": [
+        {
+          "ar": "فِي غَمْرَةٍ سَاهُونَ",
+          "tr": "fī ghamratin sāhūn",
+          "racine": "غ م ر / س ه و",
+          "sens": "dans un flot, distraits",
+          "def": "ghamra : abîme, flot ; sāhī : distrait.",
+          "gram": "complément + attribut"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "يَسْأَلُونَ أَيَّانَ يَوْمُ الدِّينِ",
+      "tr": "yasʾalūna ayyāna yawmu d-dīni",
+      "trad": "Ils demandent : « A quand le Jour du Jugement ? »",
+      "themes": [
+        "l'impatience moqueuse"
+      ],
+      "commentaire": "Ils demandent par défi : « Quand donc le Jour du Jugement ? » Qushayrī : <em>parce qu'ils le démentent, leurs âmes ne s'y tiennent pas.</em> La question n'est pas recherche mais raillerie : pressés de voir venir ce qu'ils nient, ils ignorent qu'ils en hâtent leur propre épreuve.",
+      "mots": [
+        {
+          "ar": "يَسْأَلُونَ أَيَّانَ يَوْمُ الدِّينِ",
+          "tr": "yasʾalūna ayyāna yawmu d-dīn",
+          "racine": "س أ ل / د ي ن",
+          "sens": "ils demandent : à quand le Jour du Jugement ?",
+          "def": "ayyāna : quand ; yawm al-dīn : Jour de la rétribution.",
+          "gram": "verbe + interrogation"
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "يَوْمَ هُمْ عَلَى النَّارِ يُفْتَنُونَ",
+      "tr": "yawma hum ʿalā n-nāri yuftanūna",
+      "trad": "Le jour où ils seront éprouvés par le Feu [on leur dira] :",
+      "themes": [
+        "l'épreuve par le Feu"
+      ],
+      "commentaire": "« Le Jour où ils seront brûlés sur le Feu » (yuftanūn). Le verbe fitna, qui dit l'épreuve de l'or au creuset, désigne ici la combustion. Qushayrī, dans la lecture intérieure, vise <em>ceux qui mentent dans leurs œuvres par riyāʾ, dans leurs états par auto-satisfaction, et sur Dieu par les prétentions d'états qu'ils s'attribuent.</em>",
+      "mots": [
+        {
+          "ar": "يَوْمَ هُمْ عَلَى النَّارِ يُفْتَنُونَ",
+          "tr": "yawma hum ʿalā n-nāri yuftanūn",
+          "racine": "ن و ر / ف ت ن",
+          "sens": "le jour où ils seront brûlés sur le Feu",
+          "def": "yuftanu : être éprouvé, brûlé.",
+          "gram": "complément de temps + verbe passif"
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "ذُوقُوا فِتْنَتَكُمْ هَٰذَا الَّذِي كُنتُم بِهِ تَسْتَعْجِلُونَ",
+      "tr": "dhūqū fitnatakum hādhā lladhī kuntum bihi tastaʿjilūna",
+      "trad": "» Goûtez votre épreuve que voici, celle dont vous vouliez hâter la venue ! »",
+      "themes": [
+        "goûter l'épreuve hâtée"
+      ],
+      "commentaire": "« Goûtez votre épreuve, voici ce dont vous vouliez hâter la venue. » Qushayrī : <em>ils subiront le revers de leur travestissement, privés de respirer le parfum de la sincérité.</em> Ce qu'ils réclamaient par dérision (verset 12) leur est servi : l'impatience moqueuse devient châtiment goûté. La conséquence est le goût même de la faute.",
+      "mots": [
+        {
+          "ar": "ذُوقُوا فِتْنَتَكُمْ",
+          "tr": "dhūqū fitnatakum",
+          "racine": "ذ و ق / ف ت ن",
+          "sens": "goûtez votre épreuve",
+          "def": "dhāqa : goûter ; fitna : épreuve.",
+          "gram": "impératif + complément"
+        },
+        {
+          "ar": "هَٰذَا الَّذِي كُنتُم بِهِ تَسْتَعْجِلُونَ",
+          "tr": "hādhā lladhī kuntum bihi tastaʿjilūn",
+          "racine": "ع ج ل",
+          "sens": "voici ce que vous vouliez hâter",
+          "def": "istaʿjala : hâter.",
+          "gram": "démonstratif + relative"
+        }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "إِنَّ الْمُتَّقِينَ فِي جَنَّاتٍ وَعُيُونٍ",
+      "tr": "inna l-muttaqīna fī jannātin wa-ʿuyūnin",
+      "trad": "Ceux qui craignent Dieu séjourneront au milieu de jardins et de sources,",
+      "themes": [
+        "les pieux aux jardins"
+      ],
+      "commentaire": "Qushayrī ouvre la double demeure : <em>en leur présent, dans les jardins de l'union ; en leur futur, dans les jardins de la grâce. Demain : degrés et délivrance ; aujourd'hui : proximités et confidences. Ce qui est différé est la part de leurs âmes, ce qui est avancé est le droit de leur Seigneur.</em> Les jardins et les sources sont à la fois promesse future et grâce présente du cœur.",
+      "mots": [
+        {
+          "ar": "إِنَّ الْمُتَّقِينَ فِي جَنَّاتٍ وَعُيُونٍ",
+          "tr": "inna l-muttaqīna fī jannātin wa-ʿuyūn",
+          "racine": "و ق ي / ج ن ن / ع ي ن",
+          "sens": "les pieux sont en jardins et sources",
+          "def": "muttaqī : pieux ; ʿuyūn : sources.",
+          "gram": "particule + nom + complément"
+        }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "آخِذِينَ مَا آتَاهُمْ رَبُّهُمْ ۚ إِنَّهُمْ كَانُوا قَبْلَ ذَٰلِكَ مُحْسِنِينَ",
+      "tr": "ākhidhīna mā ātāhum rabbuhum innahum kānū qabla dhālika muḥsinīna",
+      "trad": "jouissant de ce que leur Seigneur leur donnera. C'est qu'auparavant ils étaient des hommes de bien,",
+      "themes": [
+        "recevoir de Dieu",
+        "la bienfaisance"
+      ],
+      "commentaire": "Qushayrī : <em>ils prennent aujourd'hui ce que leur Seigneur leur a donné, le recevant de la main de la gratitude et de la louange ; demain ils prendront ce qu'Il leur octroiera au Paradis. Qui aujourd'hui reçoit de Lui sans intermédiaire — par la foi, l'excellence (iḥsān) et la contemplation du partage dans le don et la privation — recevra de même demain, au Paradis, lors de la rencontre et de la vision face à face.</em> Il cite le hadith : « adore Dieu comme si tu Le voyais. »",
+      "mots": [
+        {
+          "ar": "آخِذِينَ مَا آتَاهُمْ رَبُّهُمْ",
+          "tr": "ākhidhīna mā ātāhum rabbuhum",
+          "racine": "أ خ ذ / أ ت ي",
+          "sens": "recevant ce que leur Seigneur leur a donné",
+          "def": "ākhidh : qui prend ; ātā : donner.",
+          "gram": "état + relative"
+        },
+        {
+          "ar": "كَانُوا قَبْلَ ذَٰلِكَ مُحْسِنِينَ",
+          "tr": "kānū qabla dhālika muḥsinīn",
+          "racine": "ح س ن",
+          "sens": "ils étaient auparavant bienfaisants",
+          "def": "muḥsin : qui fait le bien, l'excellent.",
+          "gram": "verbe + attribut"
+        }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "كَانُوا قَلِيلًا مِّنَ اللَّيْلِ مَا يَهْجَعُونَ",
+      "tr": "kānū qalīlan mina l-layli mā yahjaʿūna",
+      "trad": "ils dormaient peu la nuit,",
+      "themes": [
+        "la veille nocturne"
+      ],
+      "commentaire": "Ils dormaient peu de la nuit. Qushayrī évoque les amants de la nuit : <em>la nuit est, pour les bien-aimés, l'intimité de la confidence, et pour les pécheurs, la quête du salut. Leur veille est constante : par excès de regret, par ardeur du manque, par désir ou par séparation.</em> Il cite : « combien de nuits sans aube pour moi, je les ai consumées la main sur le foie… »",
+      "mots": [
+        {
+          "ar": "كَانُوا قَلِيلًا مِّنَ اللَّيْلِ مَا يَهْجَعُونَ",
+          "tr": "kānū qalīlan mina l-layli mā yahjaʿūn",
+          "racine": "ل ي ل / ه ج ع",
+          "sens": "ils dormaient peu la nuit",
+          "def": "hajaʿa : dormir la nuit.",
+          "gram": "verbe + complément"
+        }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "وَبِالْأَسْحَارِ هُمْ يَسْتَغْفِرُونَ",
+      "tr": "wa-bi-l-asḥāri hum yastaghfirūna",
+      "trad": "et dès l'aube ils imploraient le pardon de Dieu.",
+      "themes": [
+        "l'imploration de l'aube"
+      ],
+      "commentaire": "Aux dernières heures de la nuit (asḥār), ils implorent le pardon. Qushayrī : <em>malgré leur veille et leur prière, ils se placent à l'aube au rang des pécheurs, implorant pardon, par mépris de leur propre valeur et dédain de leur acte.</em> L'humilité parfaite : ceux qui ont le plus prié se tiennent comme les plus fautifs, demandant grâce.",
+      "mots": [
+        {
+          "ar": "وَبِالْأَسْحَارِ هُمْ يَسْتَغْفِرُونَ",
+          "tr": "wa-bi-l-asḥāri hum yastaghfirūn",
+          "racine": "س ح ر / غ ف ر",
+          "sens": "à l'aube ils implorent pardon",
+          "def": "asḥār : derniers tiers de la nuit ; istaghfara : implorer pardon.",
+          "gram": "complément + verbe"
+        }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "وَفِي أَمْوَالِهِمْ حَقٌّ لِّلسَّائِلِ وَالْمَحْرُومِ",
+      "tr": "wa-fī amwālihim ḥaqqun lil-sāʾili wa-l-maḥrūmi",
+      "trad": "Une partie de leurs biens revenait de droit au mendiant et au banni.",
+      "themes": [
+        "le droit du pauvre"
+      ],
+      "commentaire": "Qushayrī : <em>le sāʾil est celui qui tend la main ; le maḥrūm, celui qui se retient de demander — ou qui se prive lui-même en renonçant à mendier.</em> Ces croyants donnent selon le droit. Et il distingue les degrés : <em>les hommes de générosité jugent que le non-méritant a plus droit à leur bien que le méritant ; et les gens du dénuement n'ont plus de bien à donner, car ils ont déjà tout préféré aux autres.</em>",
+      "mots": [
+        {
+          "ar": "حَقٌّ لِّلسَّائِلِ وَالْمَحْرُومِ",
+          "tr": "ḥaqqun lil-sāʾili wa-l-maḥrūm",
+          "racine": "ح ق ق / س أ ل / ح ر م",
+          "sens": "un droit pour le mendiant et le privé",
+          "def": "sāʾil : qui demande ; maḥrūm : privé, démuni discret.",
+          "gram": "sujet + complément"
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "وَفِي الْأَرْضِ آيَاتٌ لِّلْمُوقِنِينَ",
+      "tr": "wa-fī l-arḍi āyātun lil-mūqinīna",
+      "trad": "Il y a sur la terre des signes pour ceux qui croient fermement,",
+      "themes": [
+        "les signes de la terre"
+      ],
+      "commentaire": "Qushayrī intériorise les signes de la terre par le portrait du connaissant : <em>de même que la terre porte toute chose, le connaissant supporte chacun ; qui s'alourdit d'autrui ou s'irrite de le voir, c'est par absence de la Réalité ; et de même que la terre reçoit toute ordure et n'en fait sortir que fleurs, le connaissant absorbe toute rudesse qu'on lui verse et n'en exsude que noble caractère.</em> Il cite al-Junayd : « le soufi est comme la terre : tout vil y est jeté, tout beau en sort. »",
+      "mots": [
+        {
+          "ar": "وَفِي الْأَرْضِ آيَاتٌ لِّلْمُوقِنِينَ",
+          "tr": "wa-fī l-arḍi āyātun lil-mūqinīn",
+          "racine": "أ ر ض / أ ي ي / ي ق ن",
+          "sens": "sur la terre des signes pour les certains",
+          "def": "āyāt : signes ; mūqin : qui a la certitude.",
+          "gram": "complément + sujet"
+        }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "وَفِي أَنفُسِكُمْ ۚ أَفَلَا تُبْصِرُونَ",
+      "tr": "wa-fī anfusikum a-fa-lā tubṣirūna",
+      "trad": "et il y en a en vous-mêmes ; n'êtes-vous pas capables de voir ?",
+      "themes": [
+        "les signes en soi-même"
+      ],
+      "commentaire": "« Et en vous-mêmes, ne voyez-vous pas ? » Qushayrī applique cela à l'âme (nafs) : <em>parmi ses signes : son effronterie dans ses aspirations, sa hardiesse dans ses qualités, ses prétentions démesurées sur ce qu'elle croit voir d'elle et par elle, ses états maladifs quand elle s'attribue une atome de valeur.</em> Le grand signe est de discerner en soi-même les ruses de l'âme : se voir, c'est déjà commencer à se dépasser.",
+      "mots": [
+        {
+          "ar": "وَفِي أَنفُسِكُمْ",
+          "tr": "wa-fī anfusikum",
+          "racine": "ن ف س",
+          "sens": "et en vous-mêmes",
+          "def": "anfus : âmes, personnes.",
+          "gram": "complément"
+        },
+        {
+          "ar": "أَفَلَا تُبْصِرُونَ",
+          "tr": "a-fa-lā tubṣirūn",
+          "racine": "ب ص ر",
+          "sens": "ne voyez-vous pas ?",
+          "def": "abṣara : voir, percevoir.",
+          "gram": "interrogation + verbe"
+        }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "وَفِي السَّمَاءِ رِزْقُكُمْ وَمَا تُوعَدُونَ",
+      "tr": "wa-fī s-samāʾi rizqukum wa-mā tūʿadūna",
+      "trad": "Et il y a dans le ciel ce qui assure votre subsistance et ce qui vous est promis.",
+      "themes": [
+        "la subsistance d'en haut"
+      ],
+      "commentaire": "« Dans le ciel, votre subsistance et ce qui vous est promis. » Qushayrī : <em>le partage de vos subsistances est dans le ciel ; ou bien : la subsistance vient par la pluie ; ou : votre subsistance incombe au Seigneur du ciel, qui s'en est porté garant.</em> Et la perle : <em>dans le ciel votre subsistance, et vers le ciel monte votre œuvre : si tu veux que descende ta subsistance, fais monter ton œuvre — c'est pourquoi l'on dit : la prière frappe à la porte de la subsistance.</em>",
+      "mots": [
+        {
+          "ar": "وَفِي السَّمَاءِ رِزْقُكُمْ",
+          "tr": "wa-fī s-samāʾi rizqukum",
+          "racine": "س م و / ر ز ق",
+          "sens": "dans le ciel votre subsistance",
+          "def": "rizq : subsistance.",
+          "gram": "complément + sujet"
+        },
+        {
+          "ar": "وَمَا تُوعَدُونَ",
+          "tr": "wa-mā tūʿadūn",
+          "racine": "و ع د",
+          "sens": "et ce qui vous est promis",
+          "def": "waʿada : promettre.",
+          "gram": "coordonné"
+        }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "فَوَرَبِّ السَّمَاءِ وَالْأَرْضِ إِنَّهُ لَحَقٌّ مِّثْلَ مَا أَنَّكُمْ تَنطِقُونَ",
+      "tr": "fa-wa-rabbi s-samāʾi wa-l-arḍi innahu la-ḥaqqun mithla mā annakum tanṭiqūna",
+      "trad": "Par le Seigneur du ciel et de la terre, c'est là une vérité, tout comme le fait que vous êtes doués de parole.",
+      "themes": [
+        "la certitude de la promesse"
+      ],
+      "commentaire": "Serment par le Seigneur des deux mondes : la promesse est vraie autant que votre faculté de parler. Qushayrī : <em>de même que ta parole, nul autre ne la prononce à ta place, ta subsistance, nul autre ne la mange.</em> Et : <em>Il a remis ta subsistance au ciel, et tu n'as nul moyen d'y monter — occupe-toi donc de ce dont tu es chargé, et ne te fatigue pas à chercher ce que tu ne peux atteindre.</em>",
+      "mots": [
+        {
+          "ar": "فَوَرَبِّ السَّمَاءِ وَالْأَرْضِ",
+          "tr": "fa-wa-rabbi s-samāʾi wa-l-arḍ",
+          "racine": "ر ب ب",
+          "sens": "par le Seigneur du ciel et de la terre",
+          "def": "rabb : Seigneur.",
+          "gram": "serment"
+        },
+        {
+          "ar": "إِنَّهُ لَحَقٌّ مِّثْلَ مَا أَنَّكُمْ تَنطِقُونَ",
+          "tr": "innahu la-ḥaqqun mithla mā annakum tanṭiqūn",
+          "racine": "ح ق ق / ن ط ق",
+          "sens": "c'est vrai comme votre faculté de parler",
+          "def": "ḥaqq : vérité ; naṭaqa : parler.",
+          "gram": "particule + attribut + comparaison"
+        }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "هَلْ أَتَاكَ حَدِيثُ ضَيْفِ إِبْرَاهِيمَ الْمُكْرَمِينَ",
+      "tr": "hal atāka ḥadīthu ḍayfi ibrāhīma l-mukramīna",
+      "trad": "L'histoire des nobles hôtes d'Abraham ne t'est-elle pas parvenue ?",
+      "themes": [
+        "les hôtes honorés d'Abraham"
+      ],
+      "commentaire": "Les « hôtes honorés » (al-mukramūn) d'Abraham. Qushayrī déploie l'hospitalité parfaite : <em>« honorés » parce qu'Abraham se mit à leur service ; il les honora par la sérénité de son visage et la joie de leur venue ; il ne se chargea pas devant eux et ne s'excusa point — c'est cela honorer l'hôte, qu'il n'y ait nulle obligation pesant sur lui que l'hôte doive porter.</em> Et : <em>chez les nobles, l'hôte qui n'est pas convié est encore honoré.</em>",
+      "mots": [
+        {
+          "ar": "حَدِيثُ ضَيْفِ إِبْرَاهِيمَ الْمُكْرَمِينَ",
+          "tr": "ḥadīthu ḍayfi ibrāhīma l-mukramīn",
+          "racine": "ح د ث / ض ي ف / ك ر م",
+          "sens": "le récit des hôtes honorés d'Abraham",
+          "def": "ḍayf : hôtes ; mukramūn : honorés.",
+          "gram": "sujet + complément + adjectif"
+        }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "إِذْ دَخَلُوا عَلَيْهِ فَقَالُوا سَلَامًا ۖ قَالَ سَلَامٌ قَوْمٌ مُّنكَرُونَ",
+      "tr": "idh dakhalū ʿalayhi fa-qālū salāman qāla salāmun qawmun munkarūna",
+      "trad": "Entrant chez lui, ils dirent : « Salut ! » ; \" Salut ! » répondit Abraham. \" Ce sont des inconnus \" [, se dit-il].",
+      "themes": [
+        "la salutation de paix"
+      ],
+      "commentaire": "« Paix ! » — « Paix ! » Qushayrī : <em>le salām signifie l'amān (la sécurité) : nous te donnons sécurité, et de moi vous avez paix.</em> « Des gens inconnus » (munkarūn) : <em>il ne connaissait pas leurs semblables parmi les hôtes ; on dit : des étrangers.</em> L'échange de paix entre Abraham et les anges-messagers ouvre la scène de l'annonce.",
+      "mots": [
+        {
+          "ar": "فَقَالُوا سَلَامًا ۖ قَالَ سَلَامٌ",
+          "tr": "fa-qālū salāman qāla salām",
+          "racine": "س ل م",
+          "sens": "ils dirent : paix ! il dit : paix",
+          "def": "salām : paix, sécurité.",
+          "gram": "verbe + complément"
+        },
+        {
+          "ar": "قَوْمٌ مُّنكَرُونَ",
+          "tr": "qawmun munkarūn",
+          "racine": "ن ك ر",
+          "sens": "des gens inconnus",
+          "def": "munkar : inconnu, non reconnu.",
+          "gram": "sujet + adjectif"
+        }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "فَرَاغَ إِلَىٰ أَهْلِهِ فَجَاءَ بِعِجْلٍ سَمِينٍ",
+      "tr": "fa-rāgha ilā ahlihi fa-jāʾa bi-ʿijlin samīnin",
+      "trad": "Puis il alla discrètement vers les siens et revint avec un veau gras.",
+      "themes": [
+        "la générosité discrète"
+      ],
+      "commentaire": "Qushayrī s'arrête sur « il se déroba (rāgha) vers les siens » : <em>il s'esquiva vers eux sans qu'on le sût — ainsi va la dérobade des nobles : en secret, pour ne pas mettre l'hôte dans la gêne.</em> Abraham apporte un veau gras sans bruit ni ostentation : la vraie générosité s'accomplit dans la discrétion, épargnant à l'invité tout embarras.",
+      "mots": [
+        {
+          "ar": "فَرَاغَ إِلَىٰ أَهْلِهِ",
+          "tr": "fa-rāgha ilā ahlihi",
+          "racine": "ر و غ",
+          "sens": "il se déroba vers les siens",
+          "def": "rāgha : s'esquiver discrètement.",
+          "gram": "verbe + complément"
+        },
+        {
+          "ar": "فَجَاءَ بِعِجْلٍ سَمِينٍ",
+          "tr": "fa-jāʾa bi-ʿijlin samīn",
+          "racine": "ع ج ل / س م ن",
+          "sens": "il vint avec un veau gras",
+          "def": "ʿijl : veau ; samīn : gras.",
+          "gram": "verbe + complément"
+        }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "فَقَرَّبَهُ إِلَيْهِمْ قَالَ أَلَا تَأْكُلُونَ",
+      "tr": "fa-qarrabahu ilayhim qāla alā taʾkulūna",
+      "trad": "Il le leur présenta en disant : « Ne mangerez-vous pas ? »",
+      "themes": [
+        "l'offre du repas"
+      ],
+      "commentaire": "Il rôtit le veau, l'approcha d'eux et dit : « Ne mangez-vous pas ? » L'hospitalité d'Abraham va jusqu'au bout du geste : non seulement il sert, mais il invite avec délicatesse. Leur refus de manger va, au verset suivant, éveiller sa crainte — car selon l'usage, l'hôte qui ne touche pas au repas est suspect.",
+      "mots": [
+        {
+          "ar": "فَقَرَّبَهُ إِلَيْهِمْ",
+          "tr": "fa-qarrabahu ilayhim",
+          "racine": "ق ر ب",
+          "sens": "il le leur présenta",
+          "def": "qarraba : approcher, présenter.",
+          "gram": "verbe + complément"
+        },
+        {
+          "ar": "قَالَ أَلَا تَأْكُلُونَ",
+          "tr": "qāla alā taʾkulūn",
+          "racine": "أ ك ل",
+          "sens": "il dit : ne mangez-vous pas ?",
+          "def": "akala : manger.",
+          "gram": "verbe + interrogation"
+        }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "فَأَوْجَسَ مِنْهُمْ خِيفَةً ۖ قَالُوا لَا تَخَفْ ۖ وَبَشَّرُوهُ بِغُلَامٍ عَلِيمٍ",
+      "tr": "fa-awjasa minhum khīfatan qālū lā takhaf wa-bashsharūhu bi-ghulāmin ʿalīmin",
+      "trad": "Il ressentait quelque crainte à leur égard. » Ne crains pas ! » lui dirent-ils, et ils lui annoncèrent la bonne nouvelle d'un garçon savant.",
+      "themes": [
+        "la crainte et la bonne nouvelle"
+      ],
+      "commentaire": "Voyant qu'ils ne mangeaient pas, Abraham ressentit une crainte (khīfa) — il les crut des brigands. Qushayrī : <em>ils lui dirent : « ne crains pas », et lui annoncèrent un garçon — un fils qui vivrait jusqu'à devenir savant (ʿalīm).</em> La frayeur se mue en annonce : la visite redoutée portait une promesse. Le ʿalīm est superlatif — l'enfant deviendra savant en grandissant.",
+      "mots": [
+        {
+          "ar": "فَأَوْجَسَ مِنْهُمْ خِيفَةً",
+          "tr": "fa-awjasa minhum khīfatan",
+          "racine": "و ج س / خ و ف",
+          "sens": "il ressentit une crainte d'eux",
+          "def": "awjasa : ressentir intérieurement ; khīfa : crainte.",
+          "gram": "verbe + complément"
+        },
+        {
+          "ar": "وَبَشَّرُوهُ بِغُلَامٍ عَلِيمٍ",
+          "tr": "wa-bashsharūhu bi-ghulāmin ʿalīm",
+          "racine": "ب ش ر / غ ل م / ع ل م",
+          "sens": "ils lui annoncèrent un garçon savant",
+          "def": "bashshara : annoncer ; ʿalīm : savant.",
+          "gram": "verbe + complément"
+        }
+      ]
+    },
+    {
+      "n": 29,
+      "ar": "فَأَقْبَلَتِ امْرَأَتُهُ فِي صَرَّةٍ فَصَكَّتْ وَجْهَهَا وَقَالَتْ عَجُوزٌ عَقِيمٌ",
+      "tr": "fa-aqbalati mraʾatuhu fī ṣarratin fa-ṣakkat wajhahā wa-qālat ʿajūzun ʿaqīmun",
+      "trad": "Sa femme s'avança avec un gémissement ; elle se frappait le visage et disait : « Une vieille femme stérile ?... »",
+      "themes": [
+        "l'étonnement de Sara"
+      ],
+      "commentaire": "L'épouse d'Abraham accourt « dans un cri » (ṣarra), se frappe le visage — geste des femmes — et s'exclame : « Une vieille femme stérile ! » Qushayrī rapporte qu'elle avait alors quatre-vingt-dix-huit ans et Abraham quatre-vingt-dix-neuf. L'incrédulité devant la promesse n'est pas refus mais saisissement : l'inouï dépasse l'entendement.",
+      "mots": [
+        {
+          "ar": "فَأَقْبَلَتِ امْرَأَتُهُ فِي صَرَّةٍ",
+          "tr": "fa-aqbalati mraʾatuhu fī ṣarra",
+          "racine": "ق ب ل / ص ر ر",
+          "sens": "sa femme s'avança dans un cri",
+          "def": "ṣarra : cri perçant.",
+          "gram": "verbe + sujet + complément"
+        },
+        {
+          "ar": "عَجُوزٌ عَقِيمٌ",
+          "tr": "ʿajūzun ʿaqīm",
+          "racine": "ع ج ز / ع ق م",
+          "sens": "une vieille stérile",
+          "def": "ʿajūz : vieille femme ; ʿaqīm : stérile.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "ar": "قَالُوا كَذَٰلِكِ قَالَ رَبُّكِ ۖ إِنَّهُ هُوَ الْحَكِيمُ الْعَلِيمُ",
+      "tr": "qālū kadhāliki qāla rabbuki innahu huwa l-ḥakīmu l-ʿalīmu",
+      "trad": "Ils dirent : « Ton Seigneur a parlé ainsi ; Il est, en vérité, le Sage, l'Omniscient ! »",
+      "themes": [
+        "la parole du Seigneur"
+      ],
+      "commentaire": "« Ainsi a dit ton Seigneur. » Qushayrī : <em>Il est le Sage (al-Ḥakīm) qui maîtrise Ses actes, l'Omniscient (al-ʿAlīm) à qui rien n'échappe.</em> La promesse de l'impossible repose sur deux Noms : la sagesse qui dispose et la science qui sait. Ce qui paraît absurde à la mesure humaine est parfaitement ordonné dans le décret du Sage.",
+      "mots": [
+        {
+          "ar": "كَذَٰلِكِ قَالَ رَبُّكِ",
+          "tr": "kadhāliki qāla rabbuki",
+          "racine": "ق و ل / ر ب ب",
+          "sens": "ainsi a dit ton Seigneur",
+          "def": "rabb : Seigneur.",
+          "gram": "complément + verbe"
+        },
+        {
+          "ar": "إِنَّهُ هُوَ الْحَكِيمُ الْعَلِيمُ",
+          "tr": "innahu huwa l-ḥakīmu l-ʿalīm",
+          "racine": "ح ك م / ع ل م",
+          "sens": "Il est le Sage, l'Omniscient",
+          "def": "ḥakīm : sage ; ʿalīm : omniscient.",
+          "gram": "particule + attributs"
+        }
+      ]
+    },
+    {
+      "n": 31,
+      "ar": "قَالَ فَمَا خَطْبُكُمْ أَيُّهَا الْمُرْسَلُونَ",
+      "tr": "qāla fa-mā khaṭbukum ayyuhā l-mursalūna",
+      "trad": "Abraham dit : « O vous les envoyés ! Quelle est donc votre mission ? »",
+      "themes": [
+        "la mission des envoyés"
+      ],
+      "commentaire": "Abraham, comprenant qu'ils sont des messagers (mursalūn), s'enquiert de leur affaire. Qushayrī : <em>quel est votre cas, votre ordre, pour quoi êtes-vous envoyés ?</em> Le saint, une fois rassuré, ne s'arrête pas à sa propre joie : il s'enquiert du dessein divin que portent ces messagers — qui se révélera être un châtiment.",
+      "mots": [
+        {
+          "ar": "فَمَا خَطْبُكُمْ",
+          "tr": "fa-mā khaṭbukum",
+          "racine": "خ ط ب",
+          "sens": "quelle est votre affaire ?",
+          "def": "khaṭb : affaire grave.",
+          "gram": "interrogation + sujet"
+        },
+        {
+          "ar": "أَيُّهَا الْمُرْسَلُونَ",
+          "tr": "ayyuhā l-mursalūn",
+          "racine": "ر س ل",
+          "sens": "ô les envoyés",
+          "def": "mursal : envoyé.",
+          "gram": "vocatif"
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "ar": "قَالُوا إِنَّا أُرْسِلْنَا إِلَىٰ قَوْمٍ مُّجْرِمِينَ",
+      "tr": "qālū innā ursilnā ilā qawmin mujrimīna",
+      "trad": "Ils dirent : « Nous sommes envoyés vers un peuple criminel",
+      "themes": [
+        "la mission de châtiment"
+      ],
+      "commentaire": "« Nous sommes envoyés vers un peuple criminel » — celui de Loth. La bonne nouvelle pour Abraham se double d'une menace pour les pervers : les mêmes messagers portent grâce et châtiment. Le mujrim est celui qui s'est coupé de Dieu par le crime ; l'envoi des anges scelle son sort.",
+      "mots": [
+        {
+          "ar": "إِنَّا أُرْسِلْنَا إِلَىٰ قَوْمٍ مُّجْرِمِينَ",
+          "tr": "innā ursilnā ilā qawmin mujrimīn",
+          "racine": "ر س ل / ج ر م",
+          "sens": "nous sommes envoyés vers un peuple criminel",
+          "def": "mujrim : criminel.",
+          "gram": "particule + verbe passif + complément"
+        }
+      ]
+    },
+    {
+      "n": 33,
+      "ar": "لِنُرْسِلَ عَلَيْهِمْ حِجَارَةً مِّن طِينٍ",
+      "tr": "li-nursila ʿalayhim ḥijāratan min ṭīnin",
+      "trad": "pour lancer contre lui des pierres d'argile",
+      "themes": [
+        "les pierres d'argile"
+      ],
+      "commentaire": "« Pour lancer sur eux des pierres d'argile » (ḥijāra min ṭīn). Le châtiment du peuple de Loth tombe du ciel comme une pluie de pierres durcies. L'argile, dont l'homme est tiré, devient instrument de sa perte : ce qui forme peut aussi anéantir, selon le décret.",
+      "mots": [
+        {
+          "ar": "لِنُرْسِلَ عَلَيْهِمْ حِجَارَةً مِّن طِينٍ",
+          "tr": "li-nursila ʿalayhim ḥijāratan min ṭīn",
+          "racine": "ر س ل / ح ج ر / ط ي ن",
+          "sens": "pour lancer sur eux des pierres d'argile",
+          "def": "ḥijāra : pierres ; ṭīn : argile.",
+          "gram": "lām de but + verbe + complément"
+        }
+      ]
+    },
+    {
+      "n": 34,
+      "ar": "مُّسَوَّمَةً عِندَ رَبِّكَ لِلْمُسْرِفِينَ",
+      "tr": "musawwamatan ʿinda rabbika lil-musrifīna",
+      "trad": "marquées auprès de ton Seigneur à l'intention des pervers ».",
+      "themes": [
+        "les pierres marquées"
+      ],
+      "commentaire": "Ces pierres sont « marquées » (musawwama) auprès du Seigneur, destinées aux outranciers (musrifīn). Chaque pierre porte son destinataire : le châtiment n'est pas aveugle mais ajusté. Le musrif est celui qui a dépassé toute mesure ; la marque sur la pierre dit la précision de la justice divine.",
+      "mots": [
+        {
+          "ar": "مُّسَوَّمَةً عِندَ رَبِّكَ",
+          "tr": "musawwamatan ʿinda rabbik",
+          "racine": "س و م",
+          "sens": "marquées auprès de ton Seigneur",
+          "def": "musawwama : marquée, désignée.",
+          "gram": "état + complément"
+        },
+        {
+          "ar": "لِلْمُسْرِفِينَ",
+          "tr": "lil-musrifīn",
+          "racine": "س ر ف",
+          "sens": "pour les outranciers",
+          "def": "musrif : qui dépasse toute mesure.",
+          "gram": "complément"
+        }
+      ]
+    },
+    {
+      "n": 35,
+      "ar": "فَأَخْرَجْنَا مَن كَانَ فِيهَا مِنَ الْمُؤْمِنِينَ",
+      "tr": "fa-akhrajnā man kāna fīhā mina l-muʾminīna",
+      "trad": "Nous avons fait sortir de cette cité les croyants qui y demeuraient.",
+      "themes": [
+        "le salut des croyants"
+      ],
+      "commentaire": "Avant le châtiment, Dieu fait sortir les croyants. La justice divine sépare : nul juste n'est emporté avec les coupables. Le salut des fidèles précède l'anéantissement des pervers — preuve que le châtiment vise le crime, non la cité elle-même.",
+      "mots": [
+        {
+          "ar": "فَأَخْرَجْنَا مَن كَانَ فِيهَا مِنَ الْمُؤْمِنِينَ",
+          "tr": "fa-akhrajnā man kāna fīhā mina l-muʾminīn",
+          "racine": "خ ر ج / أ م ن",
+          "sens": "Nous avons fait sortir les croyants qui y étaient",
+          "def": "akhraja : faire sortir ; muʾmin : croyant.",
+          "gram": "verbe + relative"
+        }
+      ]
+    },
+    {
+      "n": 36,
+      "ar": "فَمَا وَجَدْنَا فِيهَا غَيْرَ بَيْتٍ مِّنَ الْمُسْلِمِينَ",
+      "tr": "fa-mā wajadnā fīhā ghayra baytin mina l-muslimīna",
+      "trad": "Nous n'y avons trouvé qu'une seule maison habitée par des gens soumis à Dieu.",
+      "themes": [
+        "l'unique maison fidèle"
+      ],
+      "commentaire": "Il n'y avait qu'une seule maison de soumis (muslimīn) — celle de Loth et de ceux qui crurent avec lui. La rareté souligne le naufrage moral de la cité : un seul foyer fidèle dans tout un peuple. Mais ce seul foyer suffit à manifester que la fidélité, fût-elle unique, est reconnue et sauvée.",
+      "mots": [
+        {
+          "ar": "فَمَا وَجَدْنَا فِيهَا غَيْرَ بَيْتٍ",
+          "tr": "fa-mā wajadnā fīhā ghayra bayt",
+          "racine": "و ج د / ب ي ت",
+          "sens": "Nous n'y trouvâmes qu'une maison",
+          "def": "bayt : maison.",
+          "gram": "négation + verbe + complément"
+        },
+        {
+          "ar": "مِّنَ الْمُسْلِمِينَ",
+          "tr": "mina l-muslimīn",
+          "racine": "س ل م",
+          "sens": "de soumis à Dieu",
+          "def": "muslim : soumis.",
+          "gram": "complément"
+        }
+      ]
+    },
+    {
+      "n": 37,
+      "ar": "وَتَرَكْنَا فِيهَا آيَةً لِّلَّذِينَ يَخَافُونَ الْعَذَابَ الْأَلِيمَ",
+      "tr": "wa-taraknā fīhā āyatan lilladhīna yakhāfūna l-ʿadhāba l-alīma",
+      "trad": "Nous avons laissé là un signe pour ceux qui redoutent le châtiment douloureux,",
+      "themes": [
+        "le signe laissé"
+      ],
+      "commentaire": "Dieu a laissé un signe (āya) dans la cité détruite. Qushayrī : <em>une marque dont tirent leçon ceux qui craignent — non les cœurs durcis.</em> Le vestige de la ruine ne parle qu'à qui a gardé la crainte : le même signe reste muet pour le cœur insensible et éloquent pour le cœur attentif.",
+      "mots": [
+        {
+          "ar": "وَتَرَكْنَا فِيهَا آيَةً",
+          "tr": "wa-taraknā fīhā āyatan",
+          "racine": "ت ر ك / أ ي ي",
+          "sens": "Nous y avons laissé un signe",
+          "def": "āya : signe.",
+          "gram": "verbe + complément"
+        },
+        {
+          "ar": "لِّلَّذِينَ يَخَافُونَ الْعَذَابَ الْأَلِيمَ",
+          "tr": "lilladhīna yakhāfūna l-ʿadhāba l-alīm",
+          "racine": "خ و ف / ع ذ ب / أ ل م",
+          "sens": "pour qui craint le châtiment douloureux",
+          "def": "alīm : douloureux.",
+          "gram": "relative + complément"
+        }
+      ]
+    },
+    {
+      "n": 38,
+      "ar": "وَفِي مُوسَىٰ إِذْ أَرْسَلْنَاهُ إِلَىٰ فِرْعَوْنَ بِسُلْطَانٍ مُّبِينٍ",
+      "tr": "wa-fī mūsā idh arsalnāhu ilā firʿawna bi-sulṭānin mubīnin",
+      "trad": "comme Nous l'avons fait pour Moïse lorsque Nous l'avons envoyé à Pharaon avec un pouvoir évident",
+      "themes": [
+        "Moïse envoyé à Pharaon"
+      ],
+      "commentaire": "Nouveau signe : Moïse envoyé à Pharaon « avec un argument éclatant » (sulṭān mubīn). Qushayrī : <em>une preuve manifeste et éblouissante.</em> Le sulṭān ici n'est pas force armée mais évidence probante : Moïse vient désarmé, n'ayant pour toute puissance que la vérité qui le mande. Et pourtant Pharaon se détourne.",
+      "mots": [
+        {
+          "ar": "إِذْ أَرْسَلْنَاهُ إِلَىٰ فِرْعَوْنَ",
+          "tr": "idh arsalnāhu ilā firʿawn",
+          "racine": "ر س ل",
+          "sens": "quand Nous l'envoyâmes à Pharaon",
+          "def": "arsala : envoyer.",
+          "gram": "conjonction + verbe + complément"
+        },
+        {
+          "ar": "بِسُلْطَانٍ مُّبِينٍ",
+          "tr": "bi-sulṭānin mubīn",
+          "racine": "س ل ط / ب ي ن",
+          "sens": "avec un argument évident",
+          "def": "sulṭān : preuve, autorité ; mubīn : manifeste.",
+          "gram": "complément + adjectif"
+        }
+      ]
+    },
+    {
+      "n": 39,
+      "ar": "فَتَوَلَّىٰ بِرُكْنِهِ وَقَالَ سَاحِرٌ أَوْ مَجْنُونٌ",
+      "tr": "fa-tawallā bi-ruknihi wa-qāla sāḥirun aw majnūnun",
+      "trad": "et que, sûr de sa puissance, Pharaon lui tourna le dos en disant : « C'est un magicien ou un possédé ! »",
+      "themes": [
+        "le refus de Pharaon"
+      ],
+      "commentaire": "Pharaon « se détourna avec son appui » (bi-ruknihi) — confiant en sa puissance et ses armées — et traita Moïse de magicien (sāḥir) ou de possédé (majnūn). Mêmes accusations que celles portées contre Muḥammad (verset 52). L'orgueil de la force terrestre refuse l'évidence et qualifie de folie ce qui le dépasse.",
+      "mots": [
+        {
+          "ar": "فَتَوَلَّىٰ بِرُكْنِهِ",
+          "tr": "fa-tawallā bi-ruknihi",
+          "racine": "و ل ي / ر ك ن",
+          "sens": "il se détourna avec son appui",
+          "def": "tawallā : se détourner ; rukn : appui, puissance.",
+          "gram": "verbe + complément"
+        },
+        {
+          "ar": "وَقَالَ سَاحِرٌ أَوْ مَجْنُونٌ",
+          "tr": "wa-qāla sāḥirun aw majnūn",
+          "racine": "س ح ر / ج ن ن",
+          "sens": "il dit : magicien ou possédé",
+          "def": "sāḥir : magicien ; majnūn : possédé.",
+          "gram": "verbe + attributs"
+        }
+      ]
+    },
+    {
+      "n": 40,
+      "ar": "فَأَخَذْنَاهُ وَجُنُودَهُ فَنَبَذْنَاهُمْ فِي الْيَمِّ وَهُوَ مُلِيمٌ",
+      "tr": "fa-akhadhnāhu wa-junūdahu fa-nabadhnāhum fī l-yammi wa-huwa mulīmun",
+      "trad": "Nous les avons saisis, lui et ses armées, puis Nous les avons jetés dans l'abîme, le laissant se blâmer lui-même.",
+      "themes": [
+        "la noyade de Pharaon"
+      ],
+      "commentaire": "Dieu saisit Pharaon et ses armées et les jeta dans les flots (yamm), lui « se blâmant » (mulīm) — méritant le reproche. La puissance dont il se prévalait (verset 39) ne le sauve pas : l'appui terrestre s'effondre dans l'abîme. La fin de Pharaon est le contre-exemple du salut des croyants de Loth.",
+      "mots": [
+        {
+          "ar": "فَأَخَذْنَاهُ وَجُنُودَهُ",
+          "tr": "fa-akhadhnāhu wa-junūdahu",
+          "racine": "أ خ ذ / ج ن د",
+          "sens": "Nous le saisîmes, lui et ses armées",
+          "def": "akhadha : saisir ; junūd : armées.",
+          "gram": "verbe + compléments"
+        },
+        {
+          "ar": "فَنَبَذْنَاهُمْ فِي الْيَمِّ وَهُوَ مُلِيمٌ",
+          "tr": "fa-nabadhnāhum fī l-yammi wa-huwa mulīm",
+          "racine": "ن ب ذ / ي م م / ل و م",
+          "sens": "Nous les jetâmes dans l'abîme, blâmable",
+          "def": "yamm : flots ; mulīm : qui mérite le blâme.",
+          "gram": "verbe + complément + circonstanciel"
+        }
+      ]
+    },
+    {
+      "n": 41,
+      "ar": "وَفِي عَادٍ إِذْ أَرْسَلْنَا عَلَيْهِمُ الرِّيحَ الْعَقِيمَ",
+      "tr": "wa-fī ʿādin idh arsalnā ʿalayhimu r-rīḥa l-ʿaqīma",
+      "trad": "Il en fut ainsi pour les 'Ad lorsque Nous avons envoyé contre eux le vent dévastateur",
+      "themes": [
+        "le vent stérile contre les ʿĀd"
+      ],
+      "commentaire": "Signe des ʿĀd : le « vent stérile » (al-rīḥ al-ʿaqīm). Stérile, car il ne porte ni pluie ni fécondité, mais seulement la destruction. Le même vent qui, ailleurs, disperse les nuées bienfaisantes (verset 1) devient ici instrument de châtiment : la création obéit, selon le décret, à la grâce comme à la rigueur.",
+      "mots": [
+        {
+          "ar": "إِذْ أَرْسَلْنَا عَلَيْهِمُ الرِّيحَ الْعَقِيمَ",
+          "tr": "idh arsalnā ʿalayhimu r-rīḥa l-ʿaqīm",
+          "racine": "ر س ل / ر و ح / ع ق م",
+          "sens": "quand Nous envoyâmes le vent stérile",
+          "def": "rīḥ : vent ; ʿaqīm : stérile, dévastateur.",
+          "gram": "conjonction + verbe + complément"
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "ar": "مَا تَذَرُ مِن شَيْءٍ أَتَتْ عَلَيْهِ إِلَّا جَعَلَتْهُ كَالرَّمِيمِ",
+      "tr": "mā tadharu min shayʾin atat ʿalayhi illā jaʿalathu ka-r-ramīmi",
+      "trad": "qui ne laissait rien sur son passage sans l'avoir réduit en poussière.",
+      "themes": [
+        "la dévastation totale"
+      ],
+      "commentaire": "Le vent ne laisse rien sans le réduire « comme l'os friable » (ramīm). La dévastation est totale : tout ce qu'il touche tombe en débris. Image de l'impuissance absolue des ʿĀd, jadis si robustes, devant le souffle du décret : la puissance physique n'est rien face à l'ordre divin.",
+      "mots": [
+        {
+          "ar": "مَا تَذَرُ مِن شَيْءٍ أَتَتْ عَلَيْهِ",
+          "tr": "mā tadharu min shayʾin atat ʿalayhi",
+          "racine": "و ذ ر / أ ت ي",
+          "sens": "elle ne laisse rien sur quoi elle passe",
+          "def": "wadhara : laisser.",
+          "gram": "négation + verbe + relative"
+        },
+        {
+          "ar": "إِلَّا جَعَلَتْهُ كَالرَّمِيمِ",
+          "tr": "illā jaʿalathu ka-r-ramīm",
+          "racine": "ج ع ل / ر م م",
+          "sens": "sans le réduire comme l'os friable",
+          "def": "ramīm : os décomposé, débris.",
+          "gram": "exception + verbe + comparaison"
+        }
+      ]
+    },
+    {
+      "n": 43,
+      "ar": "وَفِي ثَمُودَ إِذْ قِيلَ لَهُمْ تَمَتَّعُوا حَتَّىٰ حِينٍ",
+      "tr": "wa-fī thamūda idh qīla lahum tamattaʿū ḥattā ḥīnin",
+      "trad": "Il en fut de même pour les Thamoud lorsqu'on leur dit : « Jouissez jusqu'à un certain terme ! »",
+      "themes": [
+        "le sursis des Thamūd"
+      ],
+      "commentaire": "Signe des Thamūd : « Jouissez jusqu'à un terme. » Le sursis accordé n'est pas grâce mais ultime avertissement : un délai pour se reprendre. Mais la jouissance sans repentir mène au châtiment. Le « terme » (ḥīn) fixé rappelle que tout délai a sa fin, et que l'insouciance dans le sursis aggrave la faute.",
+      "mots": [
+        {
+          "ar": "إِذْ قِيلَ لَهُمْ تَمَتَّعُوا حَتَّىٰ حِينٍ",
+          "tr": "idh qīla lahum tamattaʿū ḥattā ḥīn",
+          "racine": "م ت ع / ح ي ن",
+          "sens": "quand on leur dit : jouissez jusqu'à un terme",
+          "def": "tamattaʿa : jouir ; ḥīn : terme, temps.",
+          "gram": "verbe passif + impératif"
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "ar": "فَعَتَوْا عَنْ أَمْرِ رَبِّهِمْ فَأَخَذَتْهُمُ الصَّاعِقَةُ وَهُمْ يَنظُرُونَ",
+      "tr": "fa-ʿataw ʿan amri rabbihim fa-akhadhathumu ṣ-ṣāʿiqatu wa-hum yanẓurūna",
+      "trad": "Ils transgressèrent l'ordre de leur Seigneur et la foudre les surprit tandis qu'ils avaient les yeux ouverts.",
+      "themes": [
+        "la foudre des Thamūd"
+      ],
+      "commentaire": "Ils se révoltèrent (ʿataw) contre l'ordre de leur Seigneur, et la foudre (ṣāʿiqa) les saisit « les yeux ouverts » (yanẓurūn) — en pleine conscience, sans échappatoire. Le châtiment vient à découvert, en plein jour, comme pour rendre l'aveuglement impossible. La révolte appelle la foudre ; le sursis méprisé se referme.",
+      "mots": [
+        {
+          "ar": "فَعَتَوْا عَنْ أَمْرِ رَبِّهِمْ",
+          "tr": "fa-ʿataw ʿan amri rabbihim",
+          "racine": "ع ت و",
+          "sens": "ils se révoltèrent contre l'ordre de leur Seigneur",
+          "def": "ʿatā : transgresser avec arrogance.",
+          "gram": "verbe + complément"
+        },
+        {
+          "ar": "فَأَخَذَتْهُمُ الصَّاعِقَةُ وَهُمْ يَنظُرُونَ",
+          "tr": "fa-akhadhathumu ṣ-ṣāʿiqatu wa-hum yanẓurūn",
+          "racine": "ص ع ق / ن ظ ر",
+          "sens": "la foudre les saisit, les yeux ouverts",
+          "def": "ṣāʿiqa : foudre.",
+          "gram": "verbe + sujet + circonstanciel"
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "ar": "فَمَا اسْتَطَاعُوا مِن قِيَامٍ وَمَا كَانُوا مُنتَصِرِينَ",
+      "tr": "fa-mā staṭāʿū min qiyāmin wa-mā kānū muntaṣirīna",
+      "trad": "Ils ne purent alors ni se lever ni se mettre à l'abri.",
+      "themes": [
+        "l'impuissance finale"
+      ],
+      "commentaire": "Ils ne purent ni se relever (qiyām) ni se défendre (muntaṣirīn). L'effondrement est sans recours : ni la force pour se redresser, ni le secours pour se protéger. C'est l'image récurrente de la sourate — nul refuge hors de Dieu : qui se dresse contre l'ordre divin se retrouve sans appui ni défenseur.",
+      "mots": [
+        {
+          "ar": "فَمَا اسْتَطَاعُوا مِن قِيَامٍ",
+          "tr": "fa-mā staṭāʿū min qiyām",
+          "racine": "ط و ع / ق و م",
+          "sens": "ils ne purent se lever",
+          "def": "istaṭāʿa : pouvoir ; qiyām : se tenir debout.",
+          "gram": "négation + verbe + complément"
+        },
+        {
+          "ar": "وَمَا كَانُوا مُنتَصِرِينَ",
+          "tr": "wa-mā kānū muntaṣirīn",
+          "racine": "ن ص ر",
+          "sens": "ils ne purent se défendre",
+          "def": "muntaṣir : qui se défend.",
+          "gram": "négation + attribut"
+        }
+      ]
+    },
+    {
+      "n": 46,
+      "ar": "وَقَوْمَ نُوحٍ مِّن قَبْلُ ۖ إِنَّهُمْ كَانُوا قَوْمًا فَاسِقِينَ",
+      "tr": "wa-qawma nūḥin min qablu innahum kānū qawman fāsiqīna",
+      "trad": "Il en fut de même auparavant pour le peuple de Noé : c'étaient des gens pervers.",
+      "themes": [
+        "le peuple de Noé"
+      ],
+      "commentaire": "Le peuple de Noé, plus ancien encore, était « un peuple pervers » (fāsiqīn). La litanie des peuples châtiés — Loth, Pharaon, ʿĀd, Thamūd, Noé — remonte le temps pour montrer une loi constante : la perversité (fisq), sortie de l'obéissance, mène à la ruine. L'histoire ne fait que répéter le même avertissement.",
+      "mots": [
+        {
+          "ar": "وَقَوْمَ نُوحٍ مِّن قَبْلُ",
+          "tr": "wa-qawma nūḥin min qablu",
+          "racine": "",
+          "sens": "et le peuple de Noé auparavant",
+          "def": "qawm Nūḥ : peuple de Noé.",
+          "gram": "complément + circonstanciel"
+        },
+        {
+          "ar": "إِنَّهُمْ كَانُوا قَوْمًا فَاسِقِينَ",
+          "tr": "innahum kānū qawman fāsiqīn",
+          "racine": "ف س ق",
+          "sens": "c'étaient des gens pervers",
+          "def": "fāsiq : pervers.",
+          "gram": "particule + attribut"
+        }
+      ]
+    },
+    {
+      "n": 47,
+      "ar": "وَالسَّمَاءَ بَنَيْنَاهَا بِأَيْدٍ وَإِنَّا لَمُوسِعُونَ",
+      "tr": "wa-s-samāʾa banaynāhā bi-aydin wa-innā la-mūsiʿūna",
+      "trad": "Et le ciel ? Nous l'avons construit puissamment et Nous lui donnons son étendue.",
+      "themes": [
+        "le ciel bâti avec puissance"
+      ],
+      "commentaire": "Après les peuples, les signes du cosmos. « Le ciel, Nous l'avons bâti avec force (bi-ayd), et Nous sommes ceux qui élargissent (mūsiʿūn). » Qushayrī : <em>Nous avons fait entre lui et la terre une vaste étendue, et Nous sommes capables d'accroître encore cette ampleur.</em> La puissance qui châtie est la même qui édifie : le Maître du châtiment est le Maître de la création.",
+      "mots": [
+        {
+          "ar": "وَالسَّمَاءَ بَنَيْنَاهَا بِأَيْدٍ",
+          "tr": "wa-s-samāʾa banaynāhā bi-ayd",
+          "racine": "س م و / ب ن ي / أ ي د",
+          "sens": "le ciel, Nous l'avons bâti avec force",
+          "def": "ayd : force, puissance.",
+          "gram": "complément + verbe + complément"
+        },
+        {
+          "ar": "وَإِنَّا لَمُوسِعُونَ",
+          "tr": "wa-innā la-mūsiʿūn",
+          "racine": "و س ع",
+          "sens": "Nous sommes ceux qui élargissent",
+          "def": "mūsiʿ : qui élargit, étend.",
+          "gram": "particule + attribut"
+        }
+      ]
+    },
+    {
+      "n": 48,
+      "ar": "وَالْأَرْضَ فَرَشْنَاهَا فَنِعْمَ الْمَاهِدُونَ",
+      "tr": "wa-l-arḍa farashnāhā fa-niʿma l-māhidūna",
+      "trad": "Et la terre ? Nous l'avons déployée comme un tapis, et quelle perfection pour Celui qui l'a ainsi étendue !",
+      "themes": [
+        "la terre déployée"
+      ],
+      "commentaire": "« La terre, Nous l'avons étendue comme un tapis ; quels excellents préparateurs (al-māhidūn) ! » Qushayrī : <em>Nous l'avons faite berceau pour vous</em> — puis Dieu Se loue Lui-même de Sa propre œuvre. Tout cela atteste, dit-il, <em>la perfection de Sa puissance et la plénitude de Sa grâce et de Sa miséricorde.</em>",
+      "mots": [
+        {
+          "ar": "وَالْأَرْضَ فَرَشْنَاهَا",
+          "tr": "wa-l-arḍa farashnāhā",
+          "racine": "أ ر ض / ف ر ش",
+          "sens": "la terre, Nous l'avons étendue",
+          "def": "farasha : déployer comme un tapis.",
+          "gram": "complément + verbe"
+        },
+        {
+          "ar": "فَنِعْمَ الْمَاهِدُونَ",
+          "tr": "fa-niʿma l-māhidūn",
+          "racine": "م ه د",
+          "sens": "quels excellents préparateurs",
+          "def": "māhid : qui prépare, aplanit.",
+          "gram": "verbe de louange + sujet"
+        }
+      ]
+    },
+    {
+      "n": 49,
+      "ar": "وَمِن كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ",
+      "tr": "wa-min kulli shayʾin khalaqnā zawjayni laʿallakum tadhakkarūna",
+      "trad": "De chaque chose Nous avons créé un couple. Peut-être réfléchirez-vous ?",
+      "themes": [
+        "la dualité de toute chose"
+      ],
+      "commentaire": "« De toute chose Nous avons créé un couple (zawjayn). » Qushayrī : <em>deux espèces — chez le vivant, le mâle et la femelle ; ailleurs, le mouvement et le repos, le noir et le blanc, et toutes les paires de contraires.</em> La dualité du créé renvoie à l'Unicité du Créateur : tout ce qui est par paires pointe vers Celui qui, seul, n'a pas de pareil.",
+      "mots": [
+        {
+          "ar": "وَمِن كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ",
+          "tr": "wa-min kulli shayʾin khalaqnā zawjayn",
+          "racine": "خ ل ق / ز و ج",
+          "sens": "de toute chose Nous avons créé un couple",
+          "def": "zawjayn : deux, une paire.",
+          "gram": "complément + verbe + complément"
+        },
+        {
+          "ar": "لَعَلَّكُمْ تَذَكَّرُونَ",
+          "tr": "laʿallakum tadhakkarūn",
+          "racine": "ذ ك ر",
+          "sens": "peut-être méditerez-vous",
+          "def": "tadhakkara : méditer, se rappeler.",
+          "gram": "particule + verbe"
+        }
+      ]
+    },
+    {
+      "n": 50,
+      "ar": "فَفِرُّوا إِلَى اللَّهِ ۖ إِنِّي لَكُم مِّنْهُ نَذِيرٌ مُّبِينٌ",
+      "tr": "fa-firrū ilā llāhi innī lakum minhu nadhīrun mubīnun",
+      "trad": "Fuyez auprès de Dieu ! Certes, je suis pour vous, de Sa part, un avertisseur explicite.",
+      "themes": [
+        "la fuite vers Dieu"
+      ],
+      "commentaire": "Verset-sommet : « Fuyez vers Dieu ! » (firrū ilā llāh). Qushayrī déploie cette fuite : <em>l'homme doit fuir de l'ignorance vers la science, de la passion vers la piété, du doute vers la certitude, du démon vers Dieu ; fuir de son acte — qui est son épreuve — vers Son acte — qui est sa suffisance ; de Son attribut qui est colère vers Son attribut qui est miséricorde ; de Lui — « Dieu vous met en garde contre Lui-même » — vers Lui — « fuyez vers Dieu ».</em> Et : <em>qui rend pure sa fuite vers Dieu rend pure sa demeure avec Dieu.</em>",
+      "mots": [
+        {
+          "ar": "فَفِرُّوا إِلَى اللَّهِ",
+          "tr": "fa-firrū ilā llāh",
+          "racine": "ف ر ر",
+          "sens": "fuyez vers Dieu",
+          "def": "farra : fuir.",
+          "gram": "impératif + complément"
+        },
+        {
+          "ar": "إِنِّي لَكُم مِّنْهُ نَذِيرٌ مُّبِينٌ",
+          "tr": "innī lakum minhu nadhīrun mubīn",
+          "racine": "ن ذ ر / ب ي ن",
+          "sens": "je suis de Sa part un avertisseur clair",
+          "def": "nadhīr : avertisseur ; mubīn : explicite.",
+          "gram": "particule + attribut"
+        }
+      ]
+    },
+    {
+      "n": 51,
+      "ar": "وَلَا تَجْعَلُوا مَعَ اللَّهِ إِلَٰهًا آخَرَ ۖ إِنِّي لَكُم مِّنْهُ نَذِيرٌ مُّبِينٌ",
+      "tr": "wa-lā tajʿalū maʿa llāhi ilāhan ākhara innī lakum minhu nadhīrun mubīnun",
+      "trad": "Ne mettez pas une autre divinité à côté de Dieu ! Oui, je suis pour vous, de Sa part, un avertisseur explicite.",
+      "themes": [
+        "l'unicité",
+        "ne pas associer"
+      ],
+      "commentaire": "À la fuite vers Dieu répond l'interdit d'associer : ne placez nulle autre divinité auprès de Lui. La fuite n'a de sens que vers l'Unique : se réfugier auprès d'un autre serait fuir le refuge même. Le redoublement de « je suis pour vous un avertisseur clair » scelle l'urgence : le tawḥīd est le terme de toute fuite.",
+      "mots": [
+        {
+          "ar": "وَلَا تَجْعَلُوا مَعَ اللَّهِ إِلَٰهًا آخَرَ",
+          "tr": "wa-lā tajʿalū maʿa llāhi ilāhan ākhar",
+          "racine": "ج ع ل / أ ل ه",
+          "sens": "ne placez nulle autre divinité avec Dieu",
+          "def": "ilāh ākhar : une autre divinité.",
+          "gram": "prohibitif + verbe + complément"
+        },
+        {
+          "ar": "نَذِيرٌ مُّبِينٌ",
+          "tr": "nadhīrun mubīn",
+          "racine": "ن ذ ر / ب ي ن",
+          "sens": "un avertisseur clair",
+          "def": "nadhīr : avertisseur.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 52,
+      "ar": "كَذَٰلِكَ مَا أَتَى الَّذِينَ مِن قَبْلِهِم مِّن رَّسُولٍ إِلَّا قَالُوا سَاحِرٌ أَوْ مَجْنُونٌ",
+      "tr": "kadhālika mā atā lladhīna min qablihim min rasūlin illā qālū sāḥirun aw majnūnun",
+      "trad": "Il en est ainsi : aucun envoyé n'est venu à leurs prédécesseurs sans qu'ils aient dit : « C'est un sorcier ou un possédé ! »",
+      "themes": [
+        "l'accusation récurrente"
+      ],
+      "commentaire": "La même accusation traverse l'histoire : nul prophète ne vint sans qu'on le traitât de « magicien ou possédé » — exactement ce que dit Pharaon de Moïse (verset 39). Le rejet du Prophète n'est donc pas une singularité mais la répétition d'un schéma : les négateurs de toutes les époques parlent le même langage.",
+      "mots": [
+        {
+          "ar": "مَا أَتَى الَّذِينَ مِن قَبْلِهِم مِّن رَّسُولٍ",
+          "tr": "mā atā lladhīna min qablihim min rasūl",
+          "racine": "أ ت ي / ر س ل",
+          "sens": "nul envoyé ne vint à leurs devanciers",
+          "def": "rasūl : envoyé.",
+          "gram": "négation + verbe + complément"
+        },
+        {
+          "ar": "إِلَّا قَالُوا سَاحِرٌ أَوْ مَجْنُونٌ",
+          "tr": "illā qālū sāḥirun aw majnūn",
+          "racine": "س ح ر / ج ن ن",
+          "sens": "sans qu'ils disent : magicien ou possédé",
+          "def": "sāḥir : magicien ; majnūn : possédé.",
+          "gram": "exception + verbe + attributs"
+        }
+      ]
+    },
+    {
+      "n": 53,
+      "ar": "أَتَوَاصَوْا بِهِ ۚ بَلْ هُمْ قَوْمٌ طَاغُونَ",
+      "tr": "a-tawāṣaw bihi bal hum qawmun ṭāghūna",
+      "trad": "Se seraient-ils légués cette façon d'agir ? A vrai dire c'est un peuple rebelle !",
+      "themes": [
+        "la rébellion héritée"
+      ],
+      "commentaire": "« Se sont-ils transmis ce mot d'ordre ? » Qushayrī : <em>comme s'ils s'étaient mutuellement recommandé cela.</em> Mais la vraie cause n'est pas une transmission : <em>c'est un peuple rebelle (ṭāghūn)</em>. La constance de l'accusation à travers les âges ne vient pas d'un complot mais d'une même racine : la démesure (ṭughyān) du cœur qui refuse de se soumettre.",
+      "mots": [
+        {
+          "ar": "أَتَوَاصَوْا بِهِ",
+          "tr": "a-tawāṣaw bihi",
+          "racine": "و ص ي",
+          "sens": "se le sont-ils recommandé ?",
+          "def": "tawāṣā : se recommander mutuellement.",
+          "gram": "interrogation + verbe"
+        },
+        {
+          "ar": "بَلْ هُمْ قَوْمٌ طَاغُونَ",
+          "tr": "bal hum qawmun ṭāghūn",
+          "racine": "ط غ ي",
+          "sens": "c'est un peuple rebelle",
+          "def": "ṭāghī : qui transgresse, démesuré.",
+          "gram": "particule + attribut"
+        }
+      ]
+    },
+    {
+      "n": 54,
+      "ar": "فَتَوَلَّ عَنْهُمْ فَمَا أَنتَ بِمَلُومٍ",
+      "tr": "fa-tawalla ʿanhum fa-mā anta bi-malūmin",
+      "trad": "Détourne-toi d'eux, tu n'en seras pas blâmé.",
+      "themes": [
+        "se détourner sans blâme"
+      ],
+      "commentaire": "« Détourne-toi d'eux, tu n'es pas blâmable. » Qushayrī : <em>écarte-toi : nulle réprimande ne t'atteint pour leur mauvaise conduite.</em> Le Prophète a transmis ; le refus n'engage que les refusants. Se détourner n'est pas abandonner la mission mais reconnaître la liberté du cœur : l'avertisseur n'est pas comptable de l'obstination de l'auditeur.",
+      "mots": [
+        {
+          "ar": "فَتَوَلَّ عَنْهُمْ",
+          "tr": "fa-tawalla ʿanhum",
+          "racine": "و ل ي",
+          "sens": "détourne-toi d'eux",
+          "def": "tawallā : se détourner.",
+          "gram": "impératif + complément"
+        },
+        {
+          "ar": "فَمَا أَنتَ بِمَلُومٍ",
+          "tr": "fa-mā anta bi-malūm",
+          "racine": "ل و م",
+          "sens": "tu n'es pas blâmable",
+          "def": "malūm : blâmé.",
+          "gram": "négation + attribut"
+        }
+      ]
+    },
+    {
+      "n": 55,
+      "ar": "وَذَكِّرْ فَإِنَّ الذِّكْرَىٰ تَنفَعُ الْمُؤْمِنِينَ",
+      "tr": "wa-dhakkir fa-inna dh-dhikrā tanfaʿu l-muʾminīna",
+      "trad": "Et lance le Rappel, car vraiment le Rappel est profitable aux croyants.",
+      "themes": [
+        "le rappel profitable"
+      ],
+      "commentaire": "« Rappelle, car le rappel profite aux croyants. » Qushayrī déploie les destinataires : <em>rappelle aux pécheurs Mon châtiment, qu'ils reviennent ; rappelle aux obéissants Ma récompense abondante, qu'ils croissent en obéissance ; rappelle aux connaissants ce que J'ai écarté d'eux de Mon épreuve ; rappelle aux riches Mes bienfaits ; rappelle aux pauvres ce que J'ai détourné d'eux du bas-monde et ce que Je leur ai préparé de Ma rencontre.</em>",
+      "mots": [
+        {
+          "ar": "وَذَكِّرْ",
+          "tr": "wa-dhakkir",
+          "racine": "ذ ك ر",
+          "sens": "rappelle",
+          "def": "dhakkara : rappeler, exhorter.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "فَإِنَّ الذِّكْرَىٰ تَنفَعُ الْمُؤْمِنِينَ",
+          "tr": "fa-inna dh-dhikrā tanfaʿu l-muʾminīn",
+          "racine": "ذ ك ر / ن ف ع / أ م ن",
+          "sens": "le rappel profite aux croyants",
+          "def": "dhikrā : rappel ; nafaʿa : profiter.",
+          "gram": "particule + sujet + verbe"
+        }
+      ]
+    },
+    {
+      "n": 56,
+      "ar": "وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ",
+      "tr": "wa-mā khalaqtu l-jinna wa-l-insa illā li-yaʿbudūni",
+      "trad": "Je n'ai créé les djinns et les hommes que pour qu'ils M'adorent.",
+      "themes": [
+        "la finalité de la création"
+      ],
+      "commentaire": "Le grand verset de la finalité : « Je n'ai créé djinns et hommes que pour qu'ils M'adorent. » Qushayrī l'illumine d'une lecture du décret : <em>ceux que J'ai élus de toute éternité, distingués aujourd'hui par la beauté de Mon accueil, à qui J'ai promis Mes faveurs immenses — Je ne les ai créés que pour qu'ils M'adorent.</em> L'adoration (ʿibāda) n'est pas une corvée imposée mais la raison d'être de l'élu, sa vocation la plus haute.",
+      "mots": [
+        {
+          "ar": "وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ",
+          "tr": "wa-mā khalaqtu l-jinna wa-l-ins",
+          "racine": "خ ل ق / ج ن ن / أ ن س",
+          "sens": "Je n'ai créé djinns et hommes",
+          "def": "jinn : djinns ; ins : hommes.",
+          "gram": "négation + verbe + complément"
+        },
+        {
+          "ar": "إِلَّا لِيَعْبُدُونِ",
+          "tr": "illā li-yaʿbudūni",
+          "racine": "ع ب د",
+          "sens": "que pour qu'ils M'adorent",
+          "def": "ʿabada : adorer.",
+          "gram": "exception + lām de but + verbe"
+        }
+      ]
+    },
+    {
+      "n": 57,
+      "ar": "مَا أُرِيدُ مِنْهُم مِّن رِّزْقٍ وَمَا أُرِيدُ أَن يُطْعِمُونِ",
+      "tr": "mā urīdu minhum min rizqin wa-mā urīdu an yuṭʿimūni",
+      "trad": "Je ne désire de leur part nulle offrande et Je ne désire pas qu'ils Me nourrissent.",
+      "themes": [
+        "Dieu n'a besoin de rien"
+      ],
+      "commentaire": "Dieu ne demande aux créatures ni subsistance ni nourriture : l'adoration n'est pas un service dont Il aurait besoin. Qushayrī : <em>Je ne veux pas qu'ils nourrissent ou pourvoient quiconque de Mes serviteurs, car le Pourvoyeur, c'est Moi.</em> L'adoration est tout entière pour le bien du serviteur : Dieu, le Riche absolu, ne tire rien du culte qu'Il commande.",
+      "mots": [
+        {
+          "ar": "مَا أُرِيدُ مِنْهُم مِّن رِّزْقٍ",
+          "tr": "mā urīdu minhum min rizq",
+          "racine": "ر و د / ر ز ق",
+          "sens": "Je ne veux d'eux nulle subsistance",
+          "def": "arāda : vouloir ; rizq : subsistance.",
+          "gram": "négation + verbe + complément"
+        },
+        {
+          "ar": "وَمَا أُرِيدُ أَن يُطْعِمُونِ",
+          "tr": "wa-mā urīdu an yuṭʿimūni",
+          "racine": "ط ع م",
+          "sens": "Je ne veux qu'ils Me nourrissent",
+          "def": "aṭʿama : nourrir.",
+          "gram": "négation + verbe + subordonnée"
+        }
+      ]
+    },
+    {
+      "n": 58,
+      "ar": "إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ",
+      "tr": "inna llāha huwa r-razzāqu dhū l-quwwati l-matīnu",
+      "trad": "C'est Dieu qui est le Dispensateur suprême, le Maître de la force, l'Invincible.",
+      "themes": [
+        "le Pourvoyeur, le Fort"
+      ],
+      "commentaire": "Trois Noms scellent la finalité : <em>al-Razzāq</em> (le Pourvoyeur suprême), <em>Dhū l-quwwa</em> (Maître de la force), <em>al-Matīn</em> (l'Inébranlable). Puisque c'est Lui qui pourvoit, l'homme n'a pas à se charger de sa subsistance mais de son adoration. La force inébranlable de Dieu garantit que nul ne manquera de ce qui lui est départi.",
+      "mots": [
+        {
+          "ar": "إِنَّ اللَّهَ هُوَ الرَّزَّاقُ",
+          "tr": "inna llāha huwa r-razzāq",
+          "racine": "ر ز ق",
+          "sens": "Dieu est le Pourvoyeur suprême",
+          "def": "razzāq : le grand Pourvoyeur.",
+          "gram": "particule + pronom + attribut"
+        },
+        {
+          "ar": "ذُو الْقُوَّةِ الْمَتِينُ",
+          "tr": "dhū l-quwwati l-matīn",
+          "racine": "ق و ي / م ت ن",
+          "sens": "Maître de la force, l'Inébranlable",
+          "def": "quwwa : force ; matīn : inébranlable.",
+          "gram": "qualificatifs"
+        }
+      ]
+    },
+    {
+      "n": 59,
+      "ar": "فَإِنَّ لِلَّذِينَ ظَلَمُوا ذَنُوبًا مِّثْلَ ذَنُوبِ أَصْحَابِهِمْ فَلَا يَسْتَعْجِلُونِ",
+      "tr": "fa-inna lilladhīna ẓalamū dhanūban mithla dhanūbi aṣḥābihim fa-lā yastaʿjilūni",
+      "trad": "A ceux qui auront commis des iniquités, il sera infligé la même peine qu'à leurs comparses ; qu'ils ne cherchent donc pas à hâter le jugement.",
+      "themes": [
+        "la part de châtiment"
+      ],
+      "commentaire": "Les injustes auront une part (dhanūb — litt. un seau) de châtiment pareille à celle de leurs semblables disparus. Qushayrī : <em>pourquoi hâter le châtiment, alors qu'il ne leur échappera pas ?</em> Leur impatience moqueuse (verset 12) revient : ce qu'ils réclament viendra à coup sûr ; nul besoin de le presser, car le décret est inéluctable.",
+      "mots": [
+        {
+          "ar": "ذَنُوبًا مِّثْلَ ذَنُوبِ أَصْحَابِهِمْ",
+          "tr": "dhanūban mithla dhanūbi aṣḥābihim",
+          "racine": "ذ ن ب",
+          "sens": "une part pareille à celle de leurs pareils",
+          "def": "dhanūb : grand seau, part.",
+          "gram": "complément + comparaison"
+        },
+        {
+          "ar": "فَلَا يَسْتَعْجِلُونِ",
+          "tr": "fa-lā yastaʿjilūni",
+          "racine": "ع ج ل",
+          "sens": "qu'ils ne Me pressent pas",
+          "def": "istaʿjala : hâter.",
+          "gram": "prohibitif + verbe"
+        }
+      ]
+    },
+    {
+      "n": 60,
+      "ar": "فَوَيْلٌ لِّلَّذِينَ كَفَرُوا مِن يَوْمِهِمُ الَّذِي يُوعَدُونَ",
+      "tr": "fa-waylun lilladhīna kafarū min yawmihimu lladhī yūʿadūna",
+      "trad": "Malheur aux mécréants, à cause du Jour dont ils sont menacés !",
+      "themes": [
+        "malheur aux mécréants"
+      ],
+      "commentaire": "La sourate se referme sur le malheur (wayl) promis aux mécréants au Jour annoncé — le Jour de la Résurrection. Tout le parcours de la sourate y ramène : du serment sur les vents à la finalité de l'adoration, la promesse est vraie (verset 5) et le compte aura lieu. Qui a refusé de fuir vers Dieu (verset 50) rencontre, au terme, le Jour dont il s'était moqué.",
+      "mots": [
+        {
+          "ar": "فَوَيْلٌ لِّلَّذِينَ كَفَرُوا",
+          "tr": "fa-waylun lilladhīna kafarū",
+          "racine": "ك ف ر",
+          "sens": "malheur aux mécréants",
+          "def": "wayl : malheur.",
+          "gram": "sujet + complément"
+        },
+        {
+          "ar": "مِن يَوْمِهِمُ الَّذِي يُوعَدُونَ",
+          "tr": "min yawmihimu lladhī yūʿadūn",
+          "racine": "و ع د",
+          "sens": "de leur Jour qui leur est promis",
+          "def": "waʿada : promettre, menacer.",
+          "gram": "complément + relative"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,935 @@
+{
+  "n": 49,
+  "nom_ar": "الحُجُرَات",
+  "nom_tr": "al-Ḥujurāt",
+  "nom_fr": "Les Appartements",
+  "revelation": "médinoise",
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "versets_count": 18,
+  "intro": "Al-Ḥujurāt — « Les Appartements » — est la sourate de la haute courtoisie spirituelle (adab) : elle enseigne à ne rien devancer de Dieu et de Son Envoyé, à baisser la voix devant le Prophète — car ceux qui le font sont précisément « ceux dont Dieu a éprouvé les cœurs pour la crainte révérencielle ». Elle prescrit de vérifier la nouvelle plutôt que d'agir sur la rumeur, d'instaurer la paix entre les croyants qui se querellent, et proscrit la moquerie, la diffamation, le soupçon, l'espionnage et la médisance — « l'un d'entre vous aimerait-il manger la chair de son frère mort ? ». Puis vient l'adresse universelle : « ô vous les hommes, Nous vous avons créés… pour que vous vous connaissiez ; le plus noble auprès de Dieu est le plus pieux ». Qushayrī y lit que <em>la taqwā est l'affranchissement de l'âme : le plus noble serviteur est le plus éloigné de soi et le plus proche de Dieu</em>. Elle s'achève sur la distinction entre le simple islām professé au-dehors et l'īmān qui pénètre le cœur : <em>la foi est la vie du cœur, et le cœur ne vit qu'après l'immolation de l'âme.</em>",
+  "themes": [
+    "l'adab devant Dieu et le Prophète",
+    "vérifier la nouvelle",
+    "la fraternité et la réconciliation",
+    "moquerie, soupçon et médisance proscrits",
+    "tous créés pour se connaître",
+    "islām professé et īmān du cœur"
+  ],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تُقَدِّمُوا بَيْنَ يَدَيِ اللَّهِ وَرَسُولِهِ ۖ وَاتَّقُوا اللَّهَ ۚ إِنَّ اللَّهَ سَمِيعٌ عَلِيمٌ",
+      "tr": "yā ayyuhā l-ladhīna āmanū lā tuqaddimū bayna yadayi llāhi wa-rasūlihi wa-ttaqū llāha inna llāha samīʿun ʿalīmun",
+      "trad": "O vous qui croyez ! Ne soyez pas présomptueux envers Dieu et envers Son Envoyé ! Craignez Dieu ! En vérité, Dieu entend tout et Il sait tout.",
+      "themes": [
+        "l'adab devant Dieu",
+        "ne rien devancer"
+      ],
+      "commentaire": "L'appel « ô vous qui croyez ! » est lui-même un honneur : c'est attester de la noblesse de celui qu'on interpelle. Puis vient la charge : « ne devancez pas ». Qushayrī observe que <em>Dieu place d'abord l'honneur du titre avant l'obligation de l'effort</em>. Ne pas devancer, c'est ne rien décider de son propre fonds : <em>« Tenez-vous où l'on vous a placés, faites ce qui vous a été ordonné, et soyez des hommes de suite et de fidélité — non des maîtres de l'innovation et du commencement de soi. »</em>",
+      "mots": [
+        {
+          "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا",
+          "tr": "yā ayyuhā l-ladhīna āmanū",
+          "racine": "أ م ن",
+          "sens": "ô vous qui croyez",
+          "def": "interpellation des croyants ; selon Qushayrī, témoignage d'honneur fait à celui qu'on appelle.",
+          "gram": "vocatif"
+        },
+        {
+          "ar": "لَا تُقَدِّمُوا",
+          "tr": "lā tuqaddimū",
+          "racine": "ق د م",
+          "sens": "ne devancez pas",
+          "def": "qaddama : mettre en avant ; ne rien décider avant Dieu et Son Envoyé.",
+          "gram": "impératif négatif"
+        },
+        {
+          "ar": "بَيْنَ يَدَيِ اللَّهِ وَرَسُولِهِ",
+          "tr": "bayna yadayi llāhi wa-rasūlihi",
+          "racine": "ي د ي / ر س ل",
+          "sens": "devant Dieu et Son Envoyé",
+          "def": "locution : en avant de, par-devant.",
+          "gram": "locution adverbiale"
+        },
+        {
+          "ar": "وَاتَّقُوا اللَّهَ",
+          "tr": "wa-ttaqū llāha",
+          "racine": "و ق ي",
+          "sens": "craignez Dieu",
+          "def": "ittaqā : se prémunir, révérer.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "سَمِيعٌ عَلِيمٌ",
+          "tr": "samīʿun ʿalīmun",
+          "racine": "س م ع / ع ل م",
+          "sens": "Entendant, Savant",
+          "def": "deux Noms divins : Il entend tout, Il sait tout.",
+          "gram": "attributs"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَرْفَعُوا أَصْوَاتَكُمْ فَوْقَ صَوْتِ النَّبِيِّ وَلَا تَجْهَرُوا لَهُ بِالْقَوْلِ كَجَهْرِ بَعْضِكُمْ لِبَعْضٍ أَن تَحْبَطَ أَعْمَالُكُمْ وَأَنتُمْ لَا تَشْعُرُونَ",
+      "tr": "yā ayyuhā l-ladhīna āmanū lā tarfaʿū aṣwātakum fawqa ṣawti n-nabiyyi wa-lā tajharū lahu bi-l-qawli ka-jahri baʿḍikum li-baʿḍin an taḥbaṭa aʿmālukum wa-antum lā tashʿurūna",
+      "trad": "O vous qui croyez ! N'élevez pas la voix au-dessus de celle du Prophète. Ne lui adressez pas la parole à voix haute, comme vous le faites entre vous, de crainte que vos œuvres ne deviennent stériles sans que vous en ayez conscience.",
+      "themes": [
+        "l'adab envers le Prophète",
+        "garder la voix"
+      ],
+      "commentaire": "Il leur est ordonné de garder son inviolabilité et d'observer la courtoisie dans son service et sa compagnie : <em>ne pas le regarder de l'œil dont on regarde ses semblables</em>. S'il se fait familier par douceur de caractère, qu'ils ne se permettent pas pour autant l'audace ni ne franchissent leurs limites. Qushayrī ajoute cette finesse : <em>« Ne lui ouvrez pas la parole le premier ; attendez qu'il vous l'ouvre. »</em>",
+      "mots": [
+        {
+          "ar": "لَا تَرْفَعُوا أَصْوَاتَكُمْ",
+          "tr": "lā tarfaʿū aṣwātakum",
+          "racine": "ر ف ع / ص و ت",
+          "sens": "n'élevez pas vos voix",
+          "def": "rafaʿa : hausser ; ṣawt : voix.",
+          "gram": "impératif négatif"
+        },
+        {
+          "ar": "فَوْقَ صَوْتِ النَّبِيِّ",
+          "tr": "fawqa ṣawti n-nabiyyi",
+          "racine": "ف و ق / ن ب أ",
+          "sens": "au-dessus de la voix du Prophète",
+          "def": "nabī : prophète ; fawqa : au-dessus.",
+          "gram": "complément"
+        },
+        {
+          "ar": "وَلَا تَجْهَرُوا لَهُ بِالْقَوْلِ",
+          "tr": "wa-lā tajharū lahu bi-l-qawli",
+          "racine": "ج ه ر / ق و ل",
+          "sens": "ne lui parlez pas à voix forte",
+          "def": "jahara : parler haut, ouvertement.",
+          "gram": "impératif négatif"
+        },
+        {
+          "ar": "أَن تَحْبَطَ أَعْمَالُكُمْ",
+          "tr": "an taḥbaṭa aʿmālukum",
+          "racine": "ح ب ط / ع م ل",
+          "sens": "que vos œuvres ne soient anéanties",
+          "def": "ḥabiṭa : être rendu vain, stérile.",
+          "gram": "subjonctif de crainte"
+        },
+        {
+          "ar": "وَأَنتُمْ لَا تَشْعُرُونَ",
+          "tr": "wa-antum lā tashʿurūna",
+          "racine": "ش ع ر",
+          "sens": "sans que vous en ayez conscience",
+          "def": "shaʿara : percevoir, sentir.",
+          "gram": "circonstancielle"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "إِنَّ الَّذِينَ يَغُضُّونَ أَصْوَاتَهُمْ عِندَ رَسُولِ اللَّهِ أُولَٰئِكَ الَّذِينَ امْتَحَنَ اللَّهُ قُلُوبَهُمْ لِلتَّقْوَىٰ ۚ لَهُم مَّغْفِرَةٌ وَأَجْرٌ عَظِيمٌ",
+      "tr": "inna l-ladhīna yaghuḍḍūna aṣwātahum ʿinda rasūli llāhi ulāʾika l-ladhīna mtaḥana llāhu qulūbahum li-t-taqwā lahum maghfiratun wa-ajrun ʿaẓīmun",
+      "trad": "Ceux qui baissent la voix en présence de Son Envoyé sont vraiment ceux dont Dieu a sondé les cœurs pour en éprouver la crainte révérencielle. Ils obtiendront un pardon et une récompense magnifique.",
+      "themes": [
+        "les cœurs éprouvés",
+        "la crainte révérencielle"
+      ],
+      "commentaire": "Ce sont ceux sur qui descend la quiétude (sakīna) née de la majesté de sa présence. Qushayrī : <em>Dieu a éprouvé leurs cœurs pour la crainte en arrachant d'eux l'amour des passions ; alors ils se sont prémunis des mauvais caractères et ont gardé la courtoisie.</em> Et il ajoute, plus haut encore : <em>ce sont ceux qui se sont dépouillés des habitudes de la nature humaine.</em>",
+      "mots": [
+        {
+          "ar": "يَغُضُّونَ أَصْوَاتَهُمْ",
+          "tr": "yaghuḍḍūna aṣwātahum",
+          "racine": "غ ض ض / ص و ت",
+          "sens": "ils baissent leurs voix",
+          "def": "ghaḍḍa : abaisser, atténuer.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "عِندَ رَسُولِ اللَّهِ",
+          "tr": "ʿinda rasūli llāhi",
+          "racine": "ع ن د / ر س ل",
+          "sens": "auprès de l'Envoyé de Dieu",
+          "def": "ʿinda : en présence de.",
+          "gram": "complément de lieu"
+        },
+        {
+          "ar": "امْتَحَنَ اللَّهُ قُلُوبَهُمْ",
+          "tr": "mtaḥana llāhu qulūbahum",
+          "racine": "م ح ن / ق ل ب",
+          "sens": "Dieu a éprouvé leurs cœurs",
+          "def": "imtaḥana : mettre à l'épreuve, purifier.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "لِلتَّقْوَىٰ",
+          "tr": "li-t-taqwā",
+          "racine": "و ق ي",
+          "sens": "pour la piété",
+          "def": "taqwā : crainte révérencielle, prémunition.",
+          "gram": "complément de but"
+        },
+        {
+          "ar": "مَّغْفِرَةٌ وَأَجْرٌ عَظِيمٌ",
+          "tr": "maghfiratun wa-ajrun ʿaẓīmun",
+          "racine": "غ ف ر / أ ج ر",
+          "sens": "pardon et récompense immense",
+          "def": "maghfira : pardon ; ajr : salaire, récompense.",
+          "gram": "sujets"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "إِنَّ الَّذِينَ يُنَادُونَكَ مِن وَرَاءِ الْحُجُرَاتِ أَكْثَرُهُمْ لَا يَعْقِلُونَ",
+      "tr": "inna l-ladhīna yunādūnaka min warāʾi l-ḥujurāti aktharuhum lā yaʿqilūna",
+      "trad": "Ceux qui t'interpellent de l'extérieur de tes appartements sont, pour la plupart, des gens qui n'ont pas de tête.",
+      "themes": [
+        "l'ignorance de la mesure",
+        "les appartements"
+      ],
+      "commentaire": "Qushayrī tourne le reproche vers la connaissance du rang : <em>s'ils avaient connu ta mesure, ils n'auraient pas négligé ton inviolabilité, et se seraient tenus dans le respect de ta dignité.</em> Crier derrière les cloisons trahit l'aveuglement sur la grandeur de celui qu'on appelle. À l'opposé, il rappelle l'usage des Compagnons qui savaient son rang : <em>l'un d'eux frappait à sa porte du bout des ongles.</em>",
+      "mots": [
+        {
+          "ar": "يُنَادُونَكَ",
+          "tr": "yunādūnaka",
+          "racine": "ن د و",
+          "sens": "ils t'appellent",
+          "def": "nādā : héler, interpeller à voix forte.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "مِن وَرَاءِ الْحُجُرَاتِ",
+          "tr": "min warāʾi l-ḥujurāti",
+          "racine": "و ر ي / ح ج ر",
+          "sens": "de derrière les appartements",
+          "def": "ḥujra (pl. ḥujurāt) : chambre, appartement ; warāʾ : derrière.",
+          "gram": "complément de lieu"
+        },
+        {
+          "ar": "أَكْثَرُهُمْ",
+          "tr": "aktharuhum",
+          "racine": "ك ث ر",
+          "sens": "la plupart d'entre eux",
+          "def": "akthar : le plus grand nombre.",
+          "gram": "sujet"
+        },
+        {
+          "ar": "لَا يَعْقِلُونَ",
+          "tr": "lā yaʿqilūna",
+          "racine": "ع ق ل",
+          "sens": "ne raisonnent pas",
+          "def": "ʿaqala : comprendre, raisonner.",
+          "gram": "verbe inaccompli négatif"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "وَلَوْ أَنَّهُمْ صَبَرُوا حَتَّىٰ تَخْرُجَ إِلَيْهِمْ لَكَانَ خَيْرًا لَّهُمْ ۚ وَاللَّهُ غَفُورٌ رَّحِيمٌ",
+      "tr": "wa-law annahum ṣabarū ḥattā takhruja ilayhim la-kāna khayran lahum wa-llāhu ghafūrun raḥīmun",
+      "trad": "S'ils patientaient jusqu'à ce que tu sortes à leur rencontre, ce serait préférable pour eux. Mais Dieu est pardonneur, clément.",
+      "themes": [
+        "la patience",
+        "le pardon divin"
+      ],
+      "commentaire": "Qushayrī : <em>s'ils avaient patienté jusqu'à ce que tu sortes vers eux, sans précipitation, sans te réveiller à l'heure de la sieste par leurs appels, cela eût été meilleur pour eux.</em> La hâte indiscrète est châtiée d'elle-même ; la patience devant le seuil du Bien-aimé est déjà une part de l'adab. Et Dieu, pardonneur et clément, couvre l'inadvertance de qui revient.",
+      "mots": [
+        {
+          "ar": "وَلَوْ أَنَّهُمْ صَبَرُوا",
+          "tr": "wa-law annahum ṣabarū",
+          "racine": "ص ب ر",
+          "sens": "s'ils avaient patienté",
+          "def": "ṣabara : endurer, patienter.",
+          "gram": "conditionnel"
+        },
+        {
+          "ar": "حَتَّىٰ تَخْرُجَ إِلَيْهِمْ",
+          "tr": "ḥattā takhruja ilayhim",
+          "racine": "خ ر ج",
+          "sens": "jusqu'à ce que tu sortes vers eux",
+          "def": "kharaja : sortir, paraître.",
+          "gram": "subjonctif de finalité"
+        },
+        {
+          "ar": "لَكَانَ خَيْرًا لَّهُمْ",
+          "tr": "la-kāna khayran lahum",
+          "racine": "ك و ن / خ ي ر",
+          "sens": "ce serait meilleur pour eux",
+          "def": "khayr : bien, préférable.",
+          "gram": "réponse du conditionnel"
+        },
+        {
+          "ar": "غَفُورٌ رَّحِيمٌ",
+          "tr": "ghafūrun raḥīmun",
+          "racine": "غ ف ر / ر ح م",
+          "sens": "Pardonneur, Clément",
+          "def": "deux Noms divins de miséricorde.",
+          "gram": "attributs"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِن جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا أَن تُصِيبُوا قَوْمًا بِجَهَالَةٍ فَتُصْبِحُوا عَلَىٰ مَا فَعَلْتُمْ نَادِمِينَ",
+      "tr": "yā ayyuhā l-ladhīna āmanū in jāʾakum fāsiqun bi-nabaʾin fa-tabayyanū an tuṣībū qawman bi-jahālatin fa-tuṣbiḥū ʿalā mā faʿaltum nādimīna",
+      "trad": "O vous qui croyez ! Si quelqu'un de mal intentionné vous apporte une nouvelle, soyez circonspects ; car si, par ignorance, vous nuisiez à certaines personnes, vous auriez à vous repentir d'avoir agi ainsi.",
+      "themes": [
+        "la vérification",
+        "ne pas écouter le rapporteur"
+      ],
+      "commentaire": "Le verset enseigne <em>de ne pas se fier au propos du pervers tant que sa véracité n'apparaît pas</em>, et fait signe vers <em>le refus d'écouter le calomniateur, le rapporteur et le médisant des gens.</em> Le fāsiq, dit Qushayrī, est <em>celui qui est sorti de l'obéissance</em> ; on dit aussi : <em>celui qui a quitté la limite de la dignité</em> ; et encore : <em>celui qui a jeté le manteau de la pudeur.</em>",
+      "mots": [
+        {
+          "ar": "إِن جَاءَكُمْ فَاسِقٌ",
+          "tr": "in jāʾakum fāsiqun",
+          "racine": "ج ي أ / ف س ق",
+          "sens": "si un pervers vous vient",
+          "def": "fāsiq : qui est sorti de l'obéissance, dépravé.",
+          "gram": "conditionnelle"
+        },
+        {
+          "ar": "بِنَبَإٍ",
+          "tr": "bi-nabaʾin",
+          "racine": "ن ب أ",
+          "sens": "avec une nouvelle",
+          "def": "nabaʾ : information de portée.",
+          "gram": "complément"
+        },
+        {
+          "ar": "فَتَبَيَّنُوا",
+          "tr": "fa-tabayyanū",
+          "racine": "ب ي ن",
+          "sens": "vérifiez",
+          "def": "tabayyana : s'assurer, élucider.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "أَن تُصِيبُوا قَوْمًا بِجَهَالَةٍ",
+          "tr": "an tuṣībū qawman bi-jahālatin",
+          "racine": "ص و ب / ج ه ل",
+          "sens": "de peur d'atteindre des gens par ignorance",
+          "def": "aṣāba : frapper, atteindre ; jahāla : ignorance.",
+          "gram": "complément de crainte"
+        },
+        {
+          "ar": "نَادِمِينَ",
+          "tr": "nādimīna",
+          "racine": "ن د م",
+          "sens": "repentants",
+          "def": "nadima : se repentir, regretter.",
+          "gram": "état"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "وَاعْلَمُوا أَنَّ فِيكُمْ رَسُولَ اللَّهِ ۚ لَوْ يُطِيعُكُمْ فِي كَثِيرٍ مِّنَ الْأَمْرِ لَعَنِتُّمْ وَلَٰكِنَّ اللَّهَ حَبَّبَ إِلَيْكُمُ الْإِيمَانَ وَزَيَّنَهُ فِي قُلُوبِكُمْ وَكَرَّهَ إِلَيْكُمُ الْكُفْرَ وَالْفُسُوقَ وَالْعِصْيَانَ ۚ أُولَٰئِكَ هُمُ الرَّاشِدُونَ",
+      "tr": "wa-ʿlamū anna fīkum rasūla llāhi law yuṭīʿukum fī kathīrin mina l-amri la-ʿanittum wa-lākinna llāha ḥabbaba ilaykumu l-īmāna wa-zayyanahu fī qulūbikum wa-karraha ilaykumu l-kufra wa-l-fusūqa wa-l-ʿiṣyāna ulāʾika humu r-rāshidūna",
+      "trad": "Sachez que l'Envoyé de Dieu est parmi vous. S'il vous obéissait en bien des choses, vous tomberiez dans des difficultés. Mais Dieu vous a fait aimer la foi ; Il l'a rendue belle à vos cœurs, tandis qu'Il vous a fait détester la mécréance, la perversité et la désobéissance. Ceux-là sont les bien dirigés,",
+      "themes": [
+        "la grâce de la foi aimée",
+        "la droiture"
+      ],
+      "commentaire": "Si le Messager vous suivait en la plupart de vos demandes, vous tomberiez dans la corruption (ʿanat). Qushayrī fait de ce verset une preuve : <em>Dieu a réservé aux croyants des grâces (alṭāf) que ne partagent pas les mécréants ; sans qu'Il suscite en eux les motifs de l'obéissance, il y aurait négligence et manquement dans le culte.</em> C'est Lui qui a fait aimer la foi et l'a parée dans les cœurs, et fait haïr son contraire — pure faveur de Sa part.",
+      "mots": [
+        {
+          "ar": "أَنَّ فِيكُمْ رَسُولَ اللَّهِ",
+          "tr": "anna fīkum rasūla llāhi",
+          "racine": "ر س ل",
+          "sens": "que l'Envoyé de Dieu est parmi vous",
+          "def": "rasūl : envoyé, messager.",
+          "gram": "complétive"
+        },
+        {
+          "ar": "لَعَنِتُّمْ",
+          "tr": "la-ʿanittum",
+          "racine": "ع ن ت",
+          "sens": "vous tomberiez en peine",
+          "def": "ʿanat : épreuve, gêne, corruption.",
+          "gram": "réponse du conditionnel"
+        },
+        {
+          "ar": "حَبَّبَ إِلَيْكُمُ الْإِيمَانَ",
+          "tr": "ḥabbaba ilaykumu l-īmāna",
+          "racine": "ح ب ب / أ م ن",
+          "sens": "Il vous a fait aimer la foi",
+          "def": "ḥabbaba : rendre cher, faire aimer.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "وَزَيَّنَهُ فِي قُلُوبِكُمْ",
+          "tr": "wa-zayyanahu fī qulūbikum",
+          "racine": "ز ي ن / ق ل ب",
+          "sens": "et l'a embellie en vos cœurs",
+          "def": "zayyana : parer, embellir.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "كَرَّهَ إِلَيْكُمُ الْكُفْرَ وَالْفُسُوقَ وَالْعِصْيَانَ",
+          "tr": "karraha ilaykumu l-kufra wa-l-fusūqa wa-l-ʿiṣyāna",
+          "racine": "ك ر ه / ك ف ر / ف س ق / ع ص ي",
+          "sens": "vous a fait haïr mécréance, perversité, désobéissance",
+          "def": "karraha : rendre odieux ; les trois degrés du refus.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "الرَّاشِدُونَ",
+          "tr": "ar-rāshidūna",
+          "racine": "ر ش د",
+          "sens": "les bien dirigés",
+          "def": "rāshid : qui suit la droite voie.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "فَضْلًا مِّنَ اللَّهِ وَنِعْمَةً ۚ وَاللَّهُ عَلِيمٌ حَكِيمٌ",
+      "tr": "faḍlan mina llāhi wa-niʿmatan wa-llāhu ʿalīmun ḥakīmun",
+      "trad": "par la grâce de Dieu et Son bienfait. Dieu est omniscient, sage.",
+      "themes": [
+        "la pure grâce",
+        "la sagesse divine"
+      ],
+      "commentaire": "Qushayrī : <em>Il a fait cela en vous par grâce de Sa part et par miséricorde.</em> La droiture n'est pas un acquis du serviteur mais un don : faveur (faḍl) et bienfait (niʿma) gratuits. Et Dieu est Savant de qui mérite cette élection, Sage en la répartition de Ses dons.",
+      "mots": [
+        {
+          "ar": "فَضْلًا مِّنَ اللَّهِ",
+          "tr": "faḍlan mina llāhi",
+          "racine": "ف ض ل",
+          "sens": "par grâce de Dieu",
+          "def": "faḍl : faveur, surcroît gratuit.",
+          "gram": "complément de cause"
+        },
+        {
+          "ar": "وَنِعْمَةً",
+          "tr": "wa-niʿmatan",
+          "racine": "ن ع م",
+          "sens": "et bienfait",
+          "def": "niʿma : grâce, bénédiction.",
+          "gram": "complément"
+        },
+        {
+          "ar": "عَلِيمٌ حَكِيمٌ",
+          "tr": "ʿalīmun ḥakīmun",
+          "racine": "ع ل م / ح ك م",
+          "sens": "Savant, Sage",
+          "def": "deux Noms divins.",
+          "gram": "attributs"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "وَإِن طَائِفَتَانِ مِنَ الْمُؤْمِنِينَ اقْتَتَلُوا فَأَصْلِحُوا بَيْنَهُمَا ۖ فَإِن بَغَتْ إِحْدَاهُمَا عَلَى الْأُخْرَىٰ فَقَاتِلُوا الَّتِي تَبْغِي حَتَّىٰ تَفِيءَ إِلَىٰ أَمْرِ اللَّهِ ۚ فَإِن فَاءَتْ فَأَصْلِحُوا بَيْنَهُمَا بِالْعَدْلِ وَأَقْسِطُوا ۖ إِنَّ اللَّهَ يُحِبُّ الْمُقْسِطِينَ",
+      "tr": "wa-in ṭāʾifatāni mina l-muʾminīna qtatalū fa-aṣliḥū baynahumā fa-in baghat iḥdāhumā ʿalā l-ukhrā fa-qātilū llatī tabghī ḥattā tafīʾa ilā amri llāhi fa-in fāʾat fa-aṣliḥū baynahumā bi-l-ʿadli wa-aqsiṭū inna llāha yuḥibbu l-muqsiṭīna",
+      "trad": "Si deux groupes de croyants se combattent, réconciliez-les. Et si l'un des deux se dresse encore contre l'autre, combattez celui qui sème la discorde jusqu'à ce qu'il s'incline devant l'ordre de Dieu. S'il s'incline, rétablissez la paix entre les deux groupes avec justice et équité. Certes, Dieu aime ceux qui sont équitables !",
+      "themes": [
+        "la réconciliation",
+        "le combat intérieur"
+      ],
+      "commentaire": "Qushayrī tire deux leçons de droit : <em>le croyant ne sort pas de la foi par sa transgression — car des deux factions, l'une au moins est forcément en faute lorsqu'elles se combattent</em> ; et <em>le secours dû à l'opprimé est obligatoire.</em> Puis il intériorise : <em>quand l'âme opprime le cœur en l'appelant à ses passions et en s'affairant à le corrompre, il faut la combattre par les épées de l'effort spirituel jusqu'à ce qu'elle plie vers l'obéissance ; alors on l'épargne, car c'est elle la monture vers la porte de Dieu.</em>",
+      "mots": [
+        {
+          "ar": "طَائِفَتَانِ مِنَ الْمُؤْمِنِينَ",
+          "tr": "ṭāʾifatāni mina l-muʾminīna",
+          "racine": "ط و ف / أ م ن",
+          "sens": "deux groupes de croyants",
+          "def": "ṭāʾifa : faction, groupe.",
+          "gram": "sujet"
+        },
+        {
+          "ar": "اقْتَتَلُوا",
+          "tr": "qtatalū",
+          "racine": "ق ت ل",
+          "sens": "se combattent",
+          "def": "iqtatala : se faire la guerre.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "فَأَصْلِحُوا بَيْنَهُمَا",
+          "tr": "fa-aṣliḥū baynahumā",
+          "racine": "ص ل ح",
+          "sens": "réconciliez-les",
+          "def": "aṣlaḥa : rétablir, pacifier.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "بَغَتْ إِحْدَاهُمَا",
+          "tr": "baghat iḥdāhumā",
+          "racine": "ب غ ي",
+          "sens": "l'une transgresse",
+          "def": "baghā : se rebeller, opprimer.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "حَتَّىٰ تَفِيءَ إِلَىٰ أَمْرِ اللَّهِ",
+          "tr": "ḥattā tafīʾa ilā amri llāhi",
+          "racine": "ف ي أ / أ م ر",
+          "sens": "jusqu'à ce qu'elle revienne à l'ordre de Dieu",
+          "def": "fāʾa : revenir, se soumettre.",
+          "gram": "subjonctif de finalité"
+        },
+        {
+          "ar": "يُحِبُّ الْمُقْسِطِينَ",
+          "tr": "yuḥibbu l-muqsiṭīna",
+          "racine": "ح ب ب / ق س ط",
+          "sens": "aime les équitables",
+          "def": "muqsiṭ : qui agit avec équité.",
+          "gram": "verbe + objet"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ ۚ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ",
+      "tr": "innamā l-muʾminūna ikhwatun fa-aṣliḥū bayna akhawaykum wa-ttaqū llāha laʿallakum turḥamūna",
+      "trad": "Les croyants sont frères. Instaurez donc la paix entre vos frères, et craignez Dieu ! Peut-être vous sera-t-il fait miséricorde...",
+      "themes": [
+        "la fraternité",
+        "l'adab de l'amitié"
+      ],
+      "commentaire": "<em>Faire la paix entre ceux qui se querellent est l'une des résolutions les plus impérieuses de la religion</em> ; et si cela est obligatoire, c'est que <em>la faute du semeur de discorde et du rapporteur est immense.</em> Qushayrī déploie les droits de la fraternité : <em>ne pas contraindre ton frère à mendier ton aide ; ne pas négliger ses besoins au point qu'il doive te les demander ; ne pas l'acculer à s'excuser, mais lui trouver d'avance son excuse ; couvrir sa faute, le visiter malade, garder son ancien pacte et veiller sur ses proches dans sa présence comme en son absence, de son vivant comme après sa mort.</em>",
+      "mots": [
+        {
+          "ar": "إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ",
+          "tr": "innamā l-muʾminūna ikhwatun",
+          "racine": "أ م ن / أ خ و",
+          "sens": "les croyants ne sont que frères",
+          "def": "ikhwa : frères ; innamā : restriction.",
+          "gram": "phrase nominale"
+        },
+        {
+          "ar": "فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ",
+          "tr": "fa-aṣliḥū bayna akhawaykum",
+          "racine": "ص ل ح / أ خ و",
+          "sens": "réconciliez vos deux frères",
+          "def": "aṣlaḥa : pacifier.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "وَاتَّقُوا اللَّهَ",
+          "tr": "wa-ttaqū llāha",
+          "racine": "و ق ي",
+          "sens": "craignez Dieu",
+          "def": "ittaqā : se prémunir.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "لَعَلَّكُمْ تُرْحَمُونَ",
+          "tr": "laʿallakum turḥamūna",
+          "racine": "ر ح م",
+          "sens": "afin qu'il vous soit fait miséricorde",
+          "def": "raḥima : avoir miséricorde.",
+          "gram": "espérance + passif"
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا يَسْخَرْ قَوْمٌ مِّن قَوْمٍ عَسَىٰ أَن يَكُونُوا خَيْرًا مِّنْهُمْ وَلَا نِسَاءٌ مِّن نِّسَاءٍ عَسَىٰ أَن يَكُنَّ خَيْرًا مِّنْهُنَّ ۖ وَلَا تَلْمِزُوا أَنفُسَكُمْ وَلَا تَنَابَزُوا بِالْأَلْقَابِ ۖ بِئْسَ الِاسْمُ الْفُسُوقُ بَعْدَ الْإِيمَانِ ۚ وَمَن لَّمْ يَتُبْ فَأُولَٰئِكَ هُمُ الظَّالِمُونَ",
+      "tr": "yā ayyuhā l-ladhīna āmanū lā yaskhar qawmun min qawmin ʿasā an yakūnū khayran minhum wa-lā nisāʾun min nisāʾin ʿasā an yakunna khayran minhunna wa-lā talmizū anfusakum wa-lā tanābazū bi-l-alqābi biʾsa l-ismu l-fusūqu baʿda l-īmāni wa-man lam yatub fa-ulāʾika humu ẓ-ẓālimūna",
+      "trad": "O vous qui croyez ! Qu'il n'y ait pas des hommes qui se moquent des autres ; il se pourrait que ceux-ci fussent meilleurs que les railleurs ; et que les femmes ne se moquent pas des autres femmes ; il se pourrait que celles-ci fussent meilleures que les railleuses. Ne vous diffamez pas entre vous ; et ne vous donnez pas de sobriquets. Le nom injurieux est détestable entre ceux qui ont reçu la foi. Quiconque ne se repent pas de ses fautes fait partie des iniques.",
+      "themes": [
+        "interdit de la moquerie",
+        "respect des cachés"
+      ],
+      "commentaire": "Dieu interdit le mépris des gens, la médisance, le dédain des droits, l'abandon du respect. <em>« Ne vous diffamez pas vous-mêmes » : que nul ne déprécie l'autre</em> — l'autre est comme une part de soi. Qushayrī : <em>nul n'a rabaissé autrui sans en être à son tour accablé. Ne te fie pas à l'apparence des gens, car dans les recoins se cachent des trésors, et le Vrai voile Ses amis sous le manteau de l'humble effacement</em> — comme le dit le ḥadīth : <em>« Que de gens dépeignés, poussiéreux, en deux haillons, qu'on dédaigne, et qui, s'ils juraient par Dieu, Le verraient exaucer leur serment. »</em>",
+      "mots": [
+        {
+          "ar": "لَا يَسْخَرْ قَوْمٌ مِّن قَوْمٍ",
+          "tr": "lā yaskhar qawmun min qawmin",
+          "racine": "س خ ر / ق و م",
+          "sens": "qu'un groupe ne se moque d'un autre",
+          "def": "sakhira : railler, se moquer.",
+          "gram": "impératif négatif"
+        },
+        {
+          "ar": "عَسَىٰ أَن يَكُونُوا خَيْرًا مِّنْهُمْ",
+          "tr": "ʿasā an yakūnū khayran minhum",
+          "racine": "خ ي ر",
+          "sens": "peut-être valent-ils mieux qu'eux",
+          "def": "ʿasā : il se peut.",
+          "gram": "verbe d'imminence"
+        },
+        {
+          "ar": "وَلَا تَلْمِزُوا أَنفُسَكُمْ",
+          "tr": "wa-lā talmizū anfusakum",
+          "racine": "ل م ز / ن ف س",
+          "sens": "ne vous diffamez pas vous-mêmes",
+          "def": "lamaza : critiquer, blâmer.",
+          "gram": "impératif négatif"
+        },
+        {
+          "ar": "وَلَا تَنَابَزُوا بِالْأَلْقَابِ",
+          "tr": "wa-lā tanābazū bi-l-alqābi",
+          "racine": "ن ب ز / ل ق ب",
+          "sens": "ne vous donnez pas de sobriquets",
+          "def": "tanābaza : s'affubler de surnoms ; laqab : surnom.",
+          "gram": "impératif négatif"
+        },
+        {
+          "ar": "بِئْسَ الِاسْمُ الْفُسُوقُ",
+          "tr": "biʾsa l-ismu l-fusūqu",
+          "racine": "ب أ س / ف س ق",
+          "sens": "quel mauvais nom que la perversité",
+          "def": "biʾsa : verbe de blâme ; fusūq : iniquité.",
+          "gram": "verbe de blâme"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا اجْتَنِبُوا كَثِيرًا مِّنَ الظَّنِّ إِنَّ بَعْضَ الظَّنِّ إِثْمٌ ۖ وَلَا تَجَسَّسُوا وَلَا يَغْتَب بَّعْضُكُم بَعْضًا ۚ أَيُحِبُّ أَحَدُكُمْ أَن يَأْكُلَ لَحْمَ أَخِيهِ مَيْتًا فَكَرِهْتُمُوهُ ۚ وَاتَّقُوا اللَّهَ ۚ إِنَّ اللَّهَ تَوَّابٌ رَّحِيمٌ",
+      "tr": "yā ayyuhā l-ladhīna āmanū jtanibū kathīran mina ẓ-ẓanni inna baʿḍa ẓ-ẓanni ithmun wa-lā tajassasū wa-lā yaghtab baʿḍukum baʿḍan a-yuḥibbu aḥadukum an yaʾkula laḥma akhīhi maytan fa-karihtumūhu wa-ttaqū llāha inna llāha tawwābun raḥīmun",
+      "trad": "O vous qui croyez ! Evitez de trop conjecturer sur autrui : il y a des conjectures qui sont des péchés. Ne vous espionnez pas ! Ne médisez pas les uns des autres. L'un d'entre vous aimerait-il manger la chair de son frère mort ? Non, vous en auriez horreur ! Craignez Dieu ! Certes, Dieu agrée le repentir, Il est clément !",
+      "themes": [
+        "le soupçon",
+        "ne pas médire",
+        "le cœur et l'âme"
+      ],
+      "commentaire": "Qushayrī distingue subtilement l'âme et le cœur : <em>l'âme (nafs) ne dit pas vrai, le cœur ne ment pas ; et discerner entre eux est ardu. Tant qu'il reste à l'homme la moindre part de ses convoitises, il ne peut prétendre à la pure parole du cœur, et il doit suspecter son âme en tout défaut qu'il aperçoit chez autrui.</em> Sur l'espionnage : <em>le connaissant de Dieu ne se détourne pas de la contemplation du Vrai vers celle des créatures — comment épierait-il leurs états, lui qui ne se distrait même pas à son propre sujet ?</em> Et sur la médisance : <em>on ne médit des créatures que par absence d'avec le Vrai.</em>",
+      "mots": [
+        {
+          "ar": "اجْتَنِبُوا كَثِيرًا مِّنَ الظَّنِّ",
+          "tr": "jtanibū kathīran mina ẓ-ẓanni",
+          "racine": "ج ن ب / ظ ن ن",
+          "sens": "évitez beaucoup de conjectures",
+          "def": "ijtanaba : s'écarter ; ẓann : soupçon.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "إِنَّ بَعْضَ الظَّنِّ إِثْمٌ",
+          "tr": "inna baʿḍa ẓ-ẓanni ithmun",
+          "racine": "ظ ن ن / أ ث م",
+          "sens": "certaines conjectures sont péché",
+          "def": "ithm : péché.",
+          "gram": "phrase d'insistance"
+        },
+        {
+          "ar": "وَلَا تَجَسَّسُوا",
+          "tr": "wa-lā tajassasū",
+          "racine": "ج س س",
+          "sens": "ne vous espionnez pas",
+          "def": "tajassasa : épier.",
+          "gram": "impératif négatif"
+        },
+        {
+          "ar": "وَلَا يَغْتَب بَّعْضُكُم بَعْضًا",
+          "tr": "wa-lā yaghtab baʿḍukum baʿḍan",
+          "racine": "غ ي ب",
+          "sens": "que nul ne médise d'un autre",
+          "def": "ightāba : dire du mal de l'absent.",
+          "gram": "impératif négatif"
+        },
+        {
+          "ar": "أَن يَأْكُلَ لَحْمَ أَخِيهِ مَيْتًا",
+          "tr": "an yaʾkula laḥma akhīhi maytan",
+          "racine": "أ ك ل / ل ح م / م و ت",
+          "sens": "manger la chair de son frère mort",
+          "def": "image de la médisance.",
+          "gram": "complétive"
+        },
+        {
+          "ar": "تَوَّابٌ رَّحِيمٌ",
+          "tr": "tawwābun raḥīmun",
+          "racine": "ت و ب / ر ح م",
+          "sens": "Accueillant au repentir, Clément",
+          "def": "tawwāb : qui agrée le retour.",
+          "gram": "attributs"
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا ۚ إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ ۚ إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ",
+      "tr": "yā ayyuhā n-nāsu innā khalaqnākum min dhakarin wa-unthā wa-jaʿalnākum shuʿūban wa-qabāʾila li-taʿārafū inna akramakum ʿinda llāhi atqākum inna llāha ʿalīmun khabīrun",
+      "trad": "O vous, les hommes ! Nous vous avons créés d'un mâle et d'une femelle. Nous vous avons constitués en peuples et en tribus pour que vous vous connaissiez mutuellement. En vérité, le plus noble d'entre vous auprès de Dieu est celui qui l'emporte en piété. Dieu est omniscient, Il est instruit de tout.",
+      "themes": [
+        "l'égalité d'origine",
+        "la noblesse de la piété"
+      ],
+      "commentaire": "Qushayrī : <em>Nous vous avons tous créés d'Adam et Ève, puis répartis en peuples et tribus pour vous connaître — non pour vous enorgueillir ni rivaliser. Si les origines ne sont que terre, goutte et caillot, de quoi se vanter ? De l'argile pétrie ? De la goutte au creux obscur ? De tes actes mêlés d'ostentation, de tes états teintés de complaisance ?</em> Et il définit la vraie noblesse : <em>« le plus noble est le plus pieux » — c'est-à-dire le plus loin de son âme : la taqwā est l'affranchissement de l'âme, de ses convoitises et de ses parts. Le plus noble serviteur est donc le plus éloigné de soi et le plus proche de Dieu.</em>",
+      "mots": [
+        {
+          "ar": "يَا أَيُّهَا النَّاسُ",
+          "tr": "yā ayyuhā n-nāsu",
+          "racine": "ن و س",
+          "sens": "ô vous les hommes",
+          "def": "nās : l'humanité ; appel universel.",
+          "gram": "vocatif"
+        },
+        {
+          "ar": "خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ",
+          "tr": "khalaqnākum min dhakarin wa-unthā",
+          "racine": "خ ل ق / ذ ك ر / أ ن ث",
+          "sens": "Nous vous avons créés d'un mâle et d'une femelle",
+          "def": "dhakar : mâle ; unthā : femelle.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "شُعُوبًا وَقَبَائِلَ",
+          "tr": "shuʿūban wa-qabāʾila",
+          "racine": "ش ع ب / ق ب ل",
+          "sens": "peuples et tribus",
+          "def": "shaʿb : peuple ; qabīla : tribu.",
+          "gram": "compléments"
+        },
+        {
+          "ar": "لِتَعَارَفُوا",
+          "tr": "li-taʿārafū",
+          "racine": "ع ر ف",
+          "sens": "pour vous connaître",
+          "def": "taʿārafa : faire connaissance mutuelle.",
+          "gram": "complément de but"
+        },
+        {
+          "ar": "أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ",
+          "tr": "akramakum ʿinda llāhi atqākum",
+          "racine": "ك ر م / و ق ي",
+          "sens": "le plus noble est le plus pieux",
+          "def": "akram : le plus noble ; atqā : le plus pieux.",
+          "gram": "superlatifs"
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "قَالَتِ الْأَعْرَابُ آمَنَّا ۖ قُل لَّمْ تُؤْمِنُوا وَلَٰكِن قُولُوا أَسْلَمْنَا وَلَمَّا يَدْخُلِ الْإِيمَانُ فِي قُلُوبِكُمْ ۖ وَإِن تُطِيعُوا اللَّهَ وَرَسُولَهُ لَا يَلِتْكُم مِّنْ أَعْمَالِكُمْ شَيْئًا ۚ إِنَّ اللَّهَ غَفُورٌ رَّحِيمٌ",
+      "tr": "qālati l-aʿrābu āmannā qul lam tuʾminū wa-lākin qūlū aslamnā wa-lammā yadkhuli l-īmānu fī qulūbikum wa-in tuṭīʿū llāha wa-rasūlahu lā yalitkum min aʿmālikum shayʾan inna llāha ghafūrun raḥīmun",
+      "trad": "Les Arabes du désert disent : « Nous croyons ! ». Dis leur : « Vous ne croyez pas, mais dites plutôt : « Nous avons embrassé l'Islam,\" car la foi n'est pas encore entrée dans vos cœurs. » Si vous obéissez à Dieu et à Son Envoyé, Dieu ne vous fera rien perdre de vos [bonnes] actions. Dieu est pardonneur, clément.",
+      "themes": [
+        "islām et īmān",
+        "la foi qui entre au cœur"
+      ],
+      "commentaire": "Qushayrī fait de ce verset le cœur spirituel de la sourate : <em>la foi est la vie du cœur, et le cœur ne vit qu'après l'immolation de l'âme. Or les âmes ne meurent pas : elles s'absentent ; et tant qu'elles sont présentes, nul bien ne s'accomplit. La soumission de l'extérieur est islām ; mais tout soumis au-dehors n'est pas sincère en son secret.</em> « La foi n'est pas encore entrée dans vos cœurs » : preuve, dit-il, que <em>le siège de la foi est le cœur</em> — comme le mal des hypocrites siégeait dans leurs cœurs, et la maladie du cœur et la foi sont deux contraires.",
+      "mots": [
+        {
+          "ar": "قَالَتِ الْأَعْرَابُ آمَنَّا",
+          "tr": "qālati l-aʿrābu āmannā",
+          "racine": "ق و ل / ع ر ب / أ م ن",
+          "sens": "les bédouins disent : nous croyons",
+          "def": "aʿrāb : Arabes du désert.",
+          "gram": "verbe + discours"
+        },
+        {
+          "ar": "قُل لَّمْ تُؤْمِنُوا",
+          "tr": "qul lam tuʾminū",
+          "racine": "ق و ل / أ م ن",
+          "sens": "dis : vous ne croyez pas",
+          "def": "āmana : croire.",
+          "gram": "impératif + négation"
+        },
+        {
+          "ar": "وَلَٰكِن قُولُوا أَسْلَمْنَا",
+          "tr": "wa-lākin qūlū aslamnā",
+          "racine": "س ل م",
+          "sens": "dites plutôt : nous nous sommes soumis",
+          "def": "aslama : se soumettre, embrasser l'islām.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "وَلَمَّا يَدْخُلِ الْإِيمَانُ فِي قُلُوبِكُمْ",
+          "tr": "wa-lammā yadkhuli l-īmānu fī qulūbikum",
+          "racine": "د خ ل / أ م ن / ق ل ب",
+          "sens": "la foi n'est pas encore entrée en vos cœurs",
+          "def": "dakhala : entrer ; siège de la foi : le cœur.",
+          "gram": "négation de l'imminence"
+        },
+        {
+          "ar": "لَا يَلِتْكُم مِّنْ أَعْمَالِكُمْ شَيْئًا",
+          "tr": "lā yalitkum min aʿmālikum shayʾan",
+          "racine": "ل ي ت / ع م ل",
+          "sens": "Il ne vous diminuera rien de vos œuvres",
+          "def": "alāta : amoindrir, frustrer.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "إِنَّمَا الْمُؤْمِنُونَ الَّذِينَ آمَنُوا بِاللَّهِ وَرَسُولِهِ ثُمَّ لَمْ يَرْتَابُوا وَجَاهَدُوا بِأَمْوَالِهِمْ وَأَنفُسِهِمْ فِي سَبِيلِ اللَّهِ ۚ أُولَٰئِكَ هُمُ الصَّادِقُونَ",
+      "tr": "innamā l-muʾminūna l-ladhīna āmanū bi-llāhi wa-rasūlihi thumma lam yartābū wa-jāhadū bi-amwālihim wa-anfusihim fī sabīli llāhi ulāʾika humu ṣ-ṣādiqūna",
+      "trad": "Seuls sont vraiment croyants ceux qui croient en Dieu et en Son Envoyé sans jamais douter par la suite, et qui combattent avec leurs biens et leurs personnes dans le chemin de Dieu. Ceux-là sont les sincères.",
+      "themes": [
+        "la foi sans doute",
+        "les sincères"
+      ],
+      "commentaire": "Dieu a fait dépendre la foi de conditions énoncées, scellées par la particule de restriction innamā <em>qui exige l'inversion : quiconque sort de ces conditions, son prétendu acte de foi lui est rejeté.</em> Qushayrī ajoute cette équation : <em>la foi (īmān) procure au serviteur la sécurité (amān) ; là où la foi ne procure pas la sécurité, son détenteur est plus en danger que tout autre.</em>",
+      "mots": [
+        {
+          "ar": "آمَنُوا بِاللَّهِ وَرَسُولِهِ",
+          "tr": "āmanū bi-llāhi wa-rasūlihi",
+          "racine": "أ م ن / ر س ل",
+          "sens": "ils ont cru en Dieu et Son Envoyé",
+          "def": "āmana bi : avoir foi en.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "ثُمَّ لَمْ يَرْتَابُوا",
+          "tr": "thumma lam yartābū",
+          "racine": "ر ي ب",
+          "sens": "puis n'ont pas douté",
+          "def": "irtāba : douter, hésiter.",
+          "gram": "négation"
+        },
+        {
+          "ar": "وَجَاهَدُوا بِأَمْوَالِهِمْ وَأَنفُسِهِمْ",
+          "tr": "wa-jāhadū bi-amwālihim wa-anfusihim",
+          "racine": "ج ه د / م و ل / ن ف س",
+          "sens": "ont lutté par leurs biens et leurs personnes",
+          "def": "jāhada : lutter, se dépenser.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "فِي سَبِيلِ اللَّهِ",
+          "tr": "fī sabīli llāhi",
+          "racine": "س ب ل",
+          "sens": "dans le chemin de Dieu",
+          "def": "sabīl : voie, sentier.",
+          "gram": "complément"
+        },
+        {
+          "ar": "الصَّادِقُونَ",
+          "tr": "aṣ-ṣādiqūna",
+          "racine": "ص د ق",
+          "sens": "les véridiques",
+          "def": "ṣādiq : sincère, vrai.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "قُلْ أَتُعَلِّمُونَ اللَّهَ بِدِينِكُمْ وَاللَّهُ يَعْلَمُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۚ وَاللَّهُ بِكُلِّ شَيْءٍ عَلِيمٌ",
+      "tr": "qul a-tuʿallimūna llāha bi-dīnikum wa-llāhu yaʿlamu mā fī s-samāwāti wa-mā fī l-arḍi wa-llāhu bi-kulli shayʾin ʿalīmun",
+      "trad": "Dis : « Enseignerez-vous à Dieu votre religion, à Dieu qui sait ce qui est dans les cieux et sur la terre, à Dieu qui connaît parfaitement toute chose ? »",
+      "themes": [
+        "la science totale de Dieu",
+        "le suivre, non l'innover"
+      ],
+      "commentaire": "Comment prétendre instruire Dieu de sa propre religion quand Il connaît tout des cieux et de la terre ? Qushayrī en tire une règle d'adab du savoir : <em>il faut s'arrêter (al-waqf) aux questions de la religion telles qu'elles sont reçues : les noms se prennent de Lui, les jugements se demandent de Lui, et Ses ordres sont à suivre.</em> Le suivre est obligatoire, l'innovation est rejetée.",
+      "mots": [
+        {
+          "ar": "أَتُعَلِّمُونَ اللَّهَ بِدِينِكُمْ",
+          "tr": "a-tuʿallimūna llāha bi-dīnikum",
+          "racine": "ع ل م / د ي ن",
+          "sens": "enseignerez-vous à Dieu votre religion",
+          "def": "ʿallama : instruire ; dīn : religion.",
+          "gram": "interrogation de blâme"
+        },
+        {
+          "ar": "يَعْلَمُ مَا فِي السَّمَاوَاتِ",
+          "tr": "yaʿlamu mā fī s-samāwāti",
+          "racine": "ع ل م / س م و",
+          "sens": "Il sait ce qui est dans les cieux",
+          "def": "samāwāt : cieux.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "وَمَا فِي الْأَرْضِ",
+          "tr": "wa-mā fī l-arḍi",
+          "racine": "أ ر ض",
+          "sens": "et ce qui est sur la terre",
+          "def": "arḍ : terre.",
+          "gram": "complément"
+        },
+        {
+          "ar": "بِكُلِّ شَيْءٍ عَلِيمٌ",
+          "tr": "bi-kulli shayʾin ʿalīmun",
+          "racine": "ك ل ل / ش ي أ / ع ل م",
+          "sens": "de toute chose Savant",
+          "def": "ʿalīm : omniscient.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "يَمُنُّونَ عَلَيْكَ أَنْ أَسْلَمُوا ۖ قُل لَّا تَمُنُّوا عَلَيَّ إِسْلَامَكُم ۖ بَلِ اللَّهُ يَمُنُّ عَلَيْكُمْ أَنْ هَدَاكُمْ لِلْإِيمَانِ إِن كُنتُمْ صَادِقِينَ",
+      "tr": "yamunnūna ʿalayka an aslamū qul lā tamunnū ʿalayya islāmakum bali llāhu yamunnu ʿalaykum an hadākum li-l-īmāni in kuntum ṣādiqīna",
+      "trad": "Ils disent qu'en embrassant l'Islam ils t'ont fait une faveur. Réponds-leur : « Ne dites pas que votre islam est une faveur que vous m'avez faite. Non ! C'est Dieu qui vous a fait une faveur en vous guidant vers la foi, si vous êtes sincères ! »",
+      "themes": [
+        "nulle faveur du serviteur",
+        "la grâce de la guidée"
+      ],
+      "commentaire": "Qushayrī démonte la prétention du serviteur à se prévaloir de ses actes : <em>qui considère un de ses actes — s'il le voit venir de lui-même, c'est association (shirk) ; s'il le voit pour lui-même, c'est ruse cachée. Comment alors se prévaloir de ce qui est shirk ou ruse ? Son devoir est d'accueillir la faveur, non de s'en croire l'auteur sur autrui.</em> Et il distingue : <em>la faveur (minna) des créatures trouble le bienfait, mais venant de Dieu, c'est par elle que la grâce devient pure et bonne.</em>",
+      "mots": [
+        {
+          "ar": "يَمُنُّونَ عَلَيْكَ أَنْ أَسْلَمُوا",
+          "tr": "yamunnūna ʿalayka an aslamū",
+          "racine": "م ن ن / س ل م",
+          "sens": "ils te font grief de s'être soumis",
+          "def": "manna ʿalā : faire valoir un bienfait.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "قُل لَّا تَمُنُّوا عَلَيَّ إِسْلَامَكُم",
+          "tr": "qul lā tamunnū ʿalayya islāmakum",
+          "racine": "ق و ل / م ن ن / س ل م",
+          "sens": "dis : ne me faites pas valoir votre islām",
+          "def": "islām : soumission.",
+          "gram": "impératif négatif"
+        },
+        {
+          "ar": "بَلِ اللَّهُ يَمُنُّ عَلَيْكُمْ",
+          "tr": "bali llāhu yamunnu ʿalaykum",
+          "racine": "م ن ن",
+          "sens": "c'est Dieu qui vous oblige",
+          "def": "bal : bien plutôt.",
+          "gram": "rectification"
+        },
+        {
+          "ar": "أَنْ هَدَاكُمْ لِلْإِيمَانِ",
+          "tr": "an hadākum li-l-īmāni",
+          "racine": "ه د ي / أ م ن",
+          "sens": "de vous avoir guidés à la foi",
+          "def": "hadā : guider.",
+          "gram": "complétive"
+        },
+        {
+          "ar": "إِن كُنتُمْ صَادِقِينَ",
+          "tr": "in kuntum ṣādiqīna",
+          "racine": "ص د ق",
+          "sens": "si vous êtes véridiques",
+          "def": "ṣādiq : sincère.",
+          "gram": "conditionnelle"
+        }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "إِنَّ اللَّهَ يَعْلَمُ غَيْبَ السَّمَاوَاتِ وَالْأَرْضِ ۚ وَاللَّهُ بَصِيرٌ بِمَا تَعْمَلُونَ",
+      "tr": "inna llāha yaʿlamu ghayba s-samāwāti wa-l-arḍi wa-llāhu baṣīrun bi-mā taʿmalūna",
+      "trad": "Certes, Dieu connaît le mystère des cieux et de la terre, et Dieu voit parfaitement ce que vous faites.",
+      "themes": [
+        "la science du Caché",
+        "le regard de Dieu"
+      ],
+      "commentaire": "La sourate se scelle sur la science du ghayb — le Caché des cieux et de la terre — et sur le regard divin qui embrasse les œuvres. Qushayrī ouvre ici une note d'inquiétude amoureuse : <em>qui s'arrête à ce verset voit sa vie se troubler, car il ne sait pas ce qu'est son propre caché auprès de Lui</em> — d'où ce vers : <em>« Je pleure… et sais-tu ce qui me fait pleurer ? Je pleure de crainte que tu ne te sépares de moi, que tu ne tranches mon lien et ne me délaisses. »</em>",
+      "mots": [
+        {
+          "ar": "يَعْلَمُ غَيْبَ السَّمَاوَاتِ وَالْأَرْضِ",
+          "tr": "yaʿlamu ghayba s-samāwāti wa-l-arḍi",
+          "racine": "ع ل م / غ ي ب / س م و / أ ر ض",
+          "sens": "Il connaît le caché des cieux et de la terre",
+          "def": "ghayb : invisible, mystère.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "وَاللَّهُ بَصِيرٌ",
+          "tr": "wa-llāhu baṣīrun",
+          "racine": "ب ص ر",
+          "sens": "Dieu est Clairvoyant",
+          "def": "baṣīr : qui voit tout.",
+          "gram": "attribut"
+        },
+        {
+          "ar": "بِمَا تَعْمَلُونَ",
+          "tr": "bi-mā taʿmalūna",
+          "racine": "ع م ل",
+          "sens": "de ce que vous faites",
+          "def": "ʿamila : agir, œuvrer.",
+          "gram": "complément"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1428 @@
+{
+  "n": 47,
+  "nom_ar": "مُحَمَّد",
+  "nom_tr": "Muḥammad",
+  "nom_fr": "Muhammad",
+  "revelation": "Medinan",
+  "basmala": "In the name of God, the All-Merciful, the Compassionate.",
+  "versets_count": 38,
+  "intro": "Muhammad — also called “the sūra of Fighting” (al-Qitāl) — Medinan, sets two destinies term against term. From the opening, God “brings to nothing the deeds” of those who deny and bar from His way, while He “sets right the inward state” of the believers and effaces their faults. It lays out the rulings of war — firmness before the enemy, favour or ransom “until war lays down its burdens” — and makes of the outward jihad, for Qushayrī, a mirror of the <em>great struggle against the soul, which pours out its venom the moment one leaves it a remnant of life</em>. At the sūra's heart stands the parable of the Garden — rivers of water never stale, of milk, of wine and of purified honey — set against the scalding water that rends the bowels of the deniers; in it Qushayrī reads <em>the drinks of the saints here and now: fidelity, purity, allegiance, encounter</em>. The call rings out: “if you support God, He will support you and make firm your feet,” with the warning not to weaken nor sue for peace when one has the upper hand. It is sealed upon the essential poverty of the servant before the absolute richness of God, and the threat of a people of replacement for whoever turns his back.",
+  "themes": [
+    "the nullity of deeds and the setting-right of hearts",
+    "war and the great jihad against the soul",
+    "the parable of the Garden and the drinks of the saints",
+    "supporting God and the making-firm of the feet",
+    "the sealing of hearts and the disclosure of secrets",
+    "the poverty of the servant and the richness of God"
+  ],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "الَّذِينَ كَفَرُوا وَصَدُّوا عَنْ سَبِيلِ اللَّهِ أَضَلَّ أَعْمَالَهُمْ",
+      "tr": "alladhīna kafarū wa-ṣaddū ʿan sabīli llāhi aḍalla aʿmālahum",
+      "trad": "Those who disbelieve and bar others from God's way — God brings their deeds to nothing.",
+      "themes": [
+        "the nullity of deeds",
+        "the veiling"
+      ],
+      "commentaire": "Qushayrī: <em>because they refused God's way and turned others from it, they earned to be veiled and held apart from the Presence.</em> As for “bringing their deeds to nothing,” it means He annuls them utterly: <em>disbelief miscarries works, just as faith delivers from perpetual punishment.</em>",
+      "mots": [
+        {
+          "ar": "الَّذِينَ كَفَرُوا",
+          "tr": "alladhīna kafarū",
+          "racine": "ك ف ر",
+          "sens": "those who disbelieved",
+          "def": "kafara: to refuse, deny; here to refuse the path.",
+          "gram": "relative + perfect verb"
+        },
+        {
+          "ar": "وَصَدُّوا عَنْ سَبِيلِ اللَّهِ",
+          "tr": "wa-ṣaddū ʿan sabīli llāh",
+          "racine": "ص د د / س ب ل",
+          "sens": "and barred from God's way",
+          "def": "ṣadda ʿan: to turn away, obstruct.",
+          "gram": "verb + complement"
+        },
+        {
+          "ar": "أَضَلَّ أَعْمَالَهُمْ",
+          "tr": "aḍalla aʿmālahum",
+          "racine": "ض ل ل / ع م ل",
+          "sens": "He made their deeds vain",
+          "def": "aḍalla: to make lost, annul (aḥbaṭa).",
+          "gram": "verb + object"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "وَالَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَآمَنُوا بِمَا نُزِّلَ عَلَىٰ مُحَمَّدٍ وَهُوَ الْحَقُّ مِنْ رَبِّهِمْ كَفَّرَ عَنْهُمْ سَيِّئَاتِهِمْ وَأَصْلَحَ بَالَهُمْ",
+      "tr": "wa-lladhīna āmanū wa-ʿamilū ṣ-ṣāliḥāti wa-āmanū bimā nuzzila ʿalā muḥammadin wa-huwa l-ḥaqqu min rabbihim kaffara ʿanhum sayyiʾātihim wa-aṣlaḥa bālahum",
+      "trad": "But those who believe, who do righteous works, who believe in what has been sent down upon Muhammad — and it is the Truth from their Lord — He effaces their evil deeds and sets right their inward state.",
+      "themes": [
+        "active faith",
+        "the setting-right of the state"
+      ],
+      "commentaire": "Unlike the first, God sets these aright. Qushayrī: <em>those who devoted themselves to God's obedience and committed nothing that opposes Him — He inevitably takes charge of the sufficiency of those who occupy themselves with Him.</em> “He sets right their state” (aṣlaḥa bālahum): <em>disbelief sinks works, faith frees from perpetual abode in the Fire.</em>",
+      "mots": [
+        {
+          "ar": "آمَنُوا وَعَمِلُوا الصَّالِحَاتِ",
+          "tr": "āmanū wa-ʿamilū ṣ-ṣāliḥāt",
+          "racine": "أ م ن / ع م ل / ص ل ح",
+          "sens": "they believed and did righteous deeds",
+          "def": "ṣāliḥāt: upright, good actions.",
+          "gram": "perfect verbs + object"
+        },
+        {
+          "ar": "بِمَا نُزِّلَ عَلَىٰ مُحَمَّدٍ",
+          "tr": "bimā nuzzila ʿalā muḥammad",
+          "racine": "ن ز ل",
+          "sens": "in what was sent down upon Muhammad",
+          "def": "nuzzila: sent down, gradually revealed.",
+          "gram": "passive verb"
+        },
+        {
+          "ar": "كَفَّرَ عَنْهُمْ سَيِّئَاتِهِمْ",
+          "tr": "kaffara ʿanhum sayyiʾātihim",
+          "racine": "ك ف ر / س و أ",
+          "sens": "He effaced their evil deeds",
+          "def": "kaffara: to cover, expiate.",
+          "gram": "verb + object"
+        },
+        {
+          "ar": "وَأَصْلَحَ بَالَهُمْ",
+          "tr": "wa-aṣlaḥa bālahum",
+          "racine": "ص ل ح / ب و ل",
+          "sens": "and set right their inward state",
+          "def": "bāl: disposition of soul, thought, state.",
+          "gram": "verb + object"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "ذَٰلِكَ بِأَنَّ الَّذِينَ كَفَرُوا اتَّبَعُوا الْبَاطِلَ وَأَنَّ الَّذِينَ آمَنُوا اتَّبَعُوا الْحَقَّ مِنْ رَبِّهِمْ كَذَٰلِكَ يَضْرِبُ اللَّهُ لِلنَّاسِ أَمْثَالَهُمْ",
+      "tr": "dhālika bi-anna lladhīna kafarū ttabaʿū l-bāṭila wa-anna lladhīna āmanū ttabaʿū l-ḥaqqa min rabbihim kadhālika yaḍribu llāhu li-n-nāsi amthālahum",
+      "trad": "That is because those who disbelieve follow falsehood, while those who believe follow the Truth from their Lord. Thus God sets forth for mankind their parables.",
+      "themes": [
+        "following the True",
+        "following the false"
+      ],
+      "commentaire": "God strikes for the one their parables of good deeds, for the other their parables of misdeeds. Qushayrī: <em>following the True is conformity to the Sunna, observance of God's rights, preferring His good pleasure, and standing in His obedience; following the false is innovation, acting by passion, preferring one's own portions, and falling into disobedience.</em>",
+      "mots": [
+        {
+          "ar": "اتَّبَعُوا الْبَاطِلَ",
+          "tr": "ittabaʿū l-bāṭil",
+          "racine": "ت ب ع / ب ط ل",
+          "sens": "they followed falsehood",
+          "def": "bāṭil: the vain, the false, error.",
+          "gram": "verb + object"
+        },
+        {
+          "ar": "اتَّبَعُوا الْحَقَّ",
+          "tr": "ittabaʿū l-ḥaqq",
+          "racine": "ت ب ع / ح ق ق",
+          "sens": "they followed the True",
+          "def": "ḥaqq: the Truth, the real.",
+          "gram": "verb + object"
+        },
+        {
+          "ar": "يَضْرِبُ اللَّهُ لِلنَّاسِ أَمْثَالَهُمْ",
+          "tr": "yaḍribu llāhu li-n-nāsi amthālahum",
+          "racine": "ض ر ب / م ث ل",
+          "sens": "God sets forth for men their parables",
+          "def": "ḍaraba mathalan: to coin a parable.",
+          "gram": "imperfect verb"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "فَإِذَا لَقِيتُمُ الَّذِينَ كَفَرُوا فَضَرْبَ الرِّقَابِ حَتَّىٰ إِذَا أَثْخَنْتُمُوهُمْ فَشُدُّوا الْوَثَاقَ فَإِمَّا مَنًّا بَعْدُ وَإِمَّا فِدَاءً حَتَّىٰ تَضَعَ الْحَرْبُ أَوْزَارَهَا ذَٰلِكَ وَلَوْ يَشَاءُ اللَّهُ لَانْتَصَرَ مِنْهُمْ وَلَٰكِنْ لِيَبْلُوَ بَعْضَكُمْ بِبَعْضٍ وَالَّذِينَ قُتِلُوا فِي سَبِيلِ اللَّهِ فَلَنْ يُضِلَّ أَعْمَالَهُمْ",
+      "tr": "fa-idhā laqītumu lladhīna kafarū fa-ḍarba r-riqābi ḥattā idhā athkhantumūhum fa-shuddū l-wathāqa fa-immā mannan baʿdu wa-immā fidāʾan ḥattā taḍaʿa l-ḥarbu awzārahā dhālika wa-law yashāʾu llāhu la-ntaṣara minhum wa-lākin li-yabluwa baʿḍakum bi-baʿḍin wa-lladhīna qutilū fī sabīli llāhi fa-lan yuḍilla aʿmālahum",
+      "trad": "When you meet the disbelievers in battle, strike at their necks; then, when you have overcome them, bind them firmly; thereafter set them free as a favour or for a ransom, until war lays down its burdens. So it is: had God willed, He would have taken vengeance on them Himself, but He wills to test you one by another. And those slain in God's way — He will not let their deeds go to waste.",
+      "themes": [
+        "the battle",
+        "the great struggle against the soul"
+      ],
+      "commentaire": "Qushayrī makes the outward battle a mirror of the inward one. Once the enemy is vanquished, <em>to hesitate and spare him out of excess clemency invites regret and squanders the chance: his roots must be uprooted.</em> So too with the soul: <em>when the servant has subdued it, he must leave it no remnant of life after its sting has risen, for whoever lays a finger on it, into him it pours its venom.</em> Release or ransom hold good when the Muslims' benefit lies therein — a rest granted to the soul amid its toil, like an hour of sleep or the breaking of a fast, as the imam sees fit.",
+      "mots": [
+        {
+          "ar": "لَقِيتُمُ الَّذِينَ كَفَرُوا",
+          "tr": "laqītumu lladhīna kafarū",
+          "racine": "ل ق ي / ك ف ر",
+          "sens": "you meet those who disbelieve",
+          "def": "laqiya: to meet, encounter.",
+          "gram": "perfect verb"
+        },
+        {
+          "ar": "فَضَرْبَ الرِّقَابِ",
+          "tr": "fa-ḍarba r-riqāb",
+          "racine": "ض ر ب / ر ق ب",
+          "sens": "striking of the necks",
+          "def": "riqāb: pl. of raqaba, neck.",
+          "gram": "verbal noun / implied imperative"
+        },
+        {
+          "ar": "أَثْخَنْتُمُوهُمْ",
+          "tr": "athkhantumūhum",
+          "racine": "ث خ ن",
+          "sens": "you have overcome them",
+          "def": "athkhana: to subdue by heavy losses.",
+          "gram": "perfect verb"
+        },
+        {
+          "ar": "فَشُدُّوا الْوَثَاقَ",
+          "tr": "fa-shuddū l-wathāq",
+          "racine": "ش د د / و ث ق",
+          "sens": "bind firmly",
+          "def": "wathāq: bond, fetter.",
+          "gram": "imperative + object"
+        },
+        {
+          "ar": "مَنًّا ... فِدَاءً",
+          "tr": "mannan ... fidāʾan",
+          "racine": "م ن ن / ف د ي",
+          "sens": "favour (release) ... ransom",
+          "def": "mann: free grace; fidāʾ: exchange for ransom.",
+          "gram": "verbal noun / state"
+        },
+        {
+          "ar": "تَضَعَ الْحَرْبُ أَوْزَارَهَا",
+          "tr": "taḍaʿa l-ḥarbu awzārahā",
+          "racine": "و ض ع / ح ر ب / و ز ر",
+          "sens": "war lays down its burdens",
+          "def": "awzār: weights, loads.",
+          "gram": "subjunctive"
+        },
+        {
+          "ar": "لِيَبْلُوَ بَعْضَكُمْ بِبَعْضٍ",
+          "tr": "li-yabluwa baʿḍakum bi-baʿḍin",
+          "racine": "ب ل و",
+          "sens": "to test you one by another",
+          "def": "balā: to test, try.",
+          "gram": "subjunctive of purpose"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "سَيَهْدِيهِمْ وَيُصْلِحُ بَالَهُمْ",
+      "tr": "sa-yahdīhim wa-yuṣliḥu bālahum",
+      "trad": "He will guide them and set right their inward state,",
+      "themes": [
+        "guidance",
+        "the raising of ranks"
+      ],
+      "commentaire": "Qushayrī: <em>when one is slain in the way of the True, God takes charge of his heirs better than the slain one would have done himself.</em> And more: <em>He raises his degrees, magnifies his reward, and makes honourable his place of return.</em>",
+      "mots": [
+        {
+          "ar": "سَيَهْدِيهِمْ",
+          "tr": "sa-yahdīhim",
+          "racine": "ه د ي",
+          "sens": "He will guide them",
+          "def": "hadā: to guide, direct.",
+          "gram": "future + object"
+        },
+        {
+          "ar": "وَيُصْلِحُ بَالَهُمْ",
+          "tr": "wa-yuṣliḥu bālahum",
+          "racine": "ص ل ح / ب و ل",
+          "sens": "and set right their state",
+          "def": "bāl: state, disposition.",
+          "gram": "imperfect verb"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "وَيُدْخِلُهُمُ الْجَنَّةَ عَرَّفَهَا لَهُمْ",
+      "tr": "wa-yudkhiluhumu l-jannata ʿarrafahā lahum",
+      "trad": "and admit them into the Garden He has made known to them.",
+      "themes": [
+        "the Garden",
+        "the promised knowing"
+      ],
+      "commentaire": "The Garden is <em>already known</em> to them before they enter it: Qushayrī reads in “which He has made known to them” the promise of a familiar abode, as though the journey's end were but the recognition of what the heart already sensed. <em>He raises their degrees and makes honourable their return.</em>",
+      "mots": [
+        {
+          "ar": "وَيُدْخِلُهُمُ الْجَنَّةَ",
+          "tr": "wa-yudkhiluhumu l-jannah",
+          "racine": "د خ ل / ج ن ن",
+          "sens": "and admit them into the Garden",
+          "def": "adkhala: to bring in.",
+          "gram": "verb + object"
+        },
+        {
+          "ar": "عَرَّفَهَا لَهُمْ",
+          "tr": "ʿarrafahā lahum",
+          "racine": "ع ر ف",
+          "sens": "which He has made known to them",
+          "def": "ʿarrafa: to make known, designate.",
+          "gram": "perfect verb"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِنْ تَنْصُرُوا اللَّهَ يَنْصُرْكُمْ وَيُثَبِّتْ أَقْدَامَكُمْ",
+      "tr": "yā ayyuhā lladhīna āmanū in tanṣurū llāha yanṣurkum wa-yuthabbit aqdāmakum",
+      "trad": "O you who believe, if you support God, He will support you and make firm your feet.",
+      "themes": [
+        "supporting God",
+        "the making-firm"
+      ],
+      "commentaire": "Qushayrī: <em>the servant's support of God is the support of His religion by making the proof manifest and clarifying it; and God's support of the servant is the exalting of His word and the crushing of the religion's enemies through the blessing of his striving and resolve.</em> “He will make firm your feet”: <em>by the continuance of tawfīq, lest anyone be routed by the onslaught of the religion's foes.</em>",
+      "mots": [
+        {
+          "ar": "إِنْ تَنْصُرُوا اللَّهَ",
+          "tr": "in tanṣurū llāh",
+          "racine": "ن ص ر",
+          "sens": "if you support God",
+          "def": "naṣara: to aid, support, give victory.",
+          "gram": "conditional"
+        },
+        {
+          "ar": "يَنْصُرْكُمْ",
+          "tr": "yanṣurkum",
+          "racine": "ن ص ر",
+          "sens": "He will support you",
+          "def": "the answer to the condition.",
+          "gram": "jussive apodosis"
+        },
+        {
+          "ar": "وَيُثَبِّتْ أَقْدَامَكُمْ",
+          "tr": "wa-yuthabbit aqdāmakum",
+          "racine": "ث ب ت / ق د م",
+          "sens": "and make firm your feet",
+          "def": "thabbata: to steady, make firm.",
+          "gram": "jussive + object"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "وَالَّذِينَ كَفَرُوا فَتَعْسًا لَهُمْ وَأَضَلَّ أَعْمَالَهُمْ",
+      "tr": "wa-lladhīna kafarū fa-taʿsan lahum wa-aḍalla aʿmālahum",
+      "trad": "As for those who disbelieve — ruin to them, and He has made their deeds vain!",
+      "themes": [
+        "the downfall of the deniers"
+      ],
+      "commentaire": "“Ruin to them” (taʿsan): Qushayrī glosses it as <em>cursing and banishment, crushing and distancing.</em> And “making their deeds vain” here means: <em>tearing away their veils, disclosing their secrets to the believers, and quenching their fire.</em>",
+      "mots": [
+        {
+          "ar": "فَتَعْسًا لَهُمْ",
+          "tr": "fa-taʿsan lahum",
+          "racine": "ت ع س",
+          "sens": "ruin to them!",
+          "def": "taʿs: downfall, ruin, perdition.",
+          "gram": "imprecatory verbal noun"
+        },
+        {
+          "ar": "وَأَضَلَّ أَعْمَالَهُمْ",
+          "tr": "wa-aḍalla aʿmālahum",
+          "racine": "ض ل ل / ع م ل",
+          "sens": "and He made their deeds vain",
+          "def": "aḍalla: to annul, make lost.",
+          "gram": "verb + object"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "ذَٰلِكَ بِأَنَّهُمْ كَرِهُوا مَا أَنْزَلَ اللَّهُ فَأَحْبَطَ أَعْمَالَهُمْ",
+      "tr": "dhālika bi-annahum karihū mā anzala llāhu fa-aḥbaṭa aʿmālahum",
+      "trad": "That is because they loathed what God sent down, so He brought their deeds to nothing.",
+      "themes": [
+        "aversion to revelation"
+      ],
+      "commentaire": "Their ruin comes from their loathing of what God sent down. Qushayrī: <em>they hated the revelation because it exposed them</em> — aversion to the True is never more than the fear of being laid bare. That is why their deeds are reduced to nothing (aḥbaṭa).",
+      "mots": [
+        {
+          "ar": "كَرِهُوا مَا أَنْزَلَ اللَّهُ",
+          "tr": "karihū mā anzala llāh",
+          "racine": "ك ر ه / ن ز ل",
+          "sens": "they loathed what God sent down",
+          "def": "kariha: to hold in aversion.",
+          "gram": "verb + relative"
+        },
+        {
+          "ar": "فَأَحْبَطَ أَعْمَالَهُمْ",
+          "tr": "fa-aḥbaṭa aʿmālahum",
+          "racine": "ح ب ط / ع م ل",
+          "sens": "so He made their deeds vain",
+          "def": "aḥbaṭa: to annul, miscarry.",
+          "gram": "verb + object"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "أَفَلَمْ يَسِيرُوا فِي الْأَرْضِ فَيَنْظُرُوا كَيْفَ كَانَ عَاقِبَةُ الَّذِينَ مِنْ قَبْلِهِمْ دَمَّرَ اللَّهُ عَلَيْهِمْ وَلِلْكَافِرِينَ أَمْثَالُهَا",
+      "tr": "a-fa-lam yasīrū fī l-arḍi fa-yanẓurū kayfa kāna ʿāqibatu lladhīna min qablihim dammara llāhu ʿalayhim wa-li-l-kāfirīna amthāluhā",
+      "trad": "Have they not journeyed through the land and seen what was the end of those before them? God destroyed them utterly, and the like awaits the disbelievers.",
+      "themes": [
+        "the lesson of ruins"
+      ],
+      "commentaire": "Travel upon the earth is an invitation to read the vestiges. Qushayrī sums up the fate of past nations in a single breath: <em>how He annihilated them, exterminated them, swept them away.</em> The same end lies in wait for whoever persists in denial.",
+      "mots": [
+        {
+          "ar": "أَفَلَمْ يَسِيرُوا فِي الْأَرْضِ",
+          "tr": "a-fa-lam yasīrū fī l-arḍ",
+          "racine": "س ي ر / أ ر ض",
+          "sens": "have they not journeyed the earth",
+          "def": "sāra: to travel, traverse.",
+          "gram": "negative interrogative"
+        },
+        {
+          "ar": "عَاقِبَةُ الَّذِينَ مِنْ قَبْلِهِمْ",
+          "tr": "ʿāqibatu lladhīna min qablihim",
+          "racine": "ع ق ب / ق ب ل",
+          "sens": "the end of those before them",
+          "def": "ʿāqiba: outcome, end.",
+          "gram": "annexion"
+        },
+        {
+          "ar": "دَمَّرَ اللَّهُ عَلَيْهِمْ",
+          "tr": "dammara llāhu ʿalayhim",
+          "racine": "د م ر",
+          "sens": "God destroyed them utterly",
+          "def": "dammara: to destroy from the root.",
+          "gram": "perfect verb"
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "ذَٰلِكَ بِأَنَّ اللَّهَ مَوْلَى الَّذِينَ آمَنُوا وَأَنَّ الْكَافِرِينَ لَا مَوْلَىٰ لَهُمْ",
+      "tr": "dhālika bi-anna llāha mawlā lladhīna āmanū wa-anna l-kāfirīna lā mawlā lahum",
+      "trad": "That is because God is the Protector of those who believe, while the disbelievers have no protector.",
+      "themes": [
+        "God the Protector",
+        "the verse of hope"
+      ],
+      "commentaire": "Mawlā here means the Helper, but also, through walāya opposed to enmity, the Loving One: <em>He is the mawlā of the believers, that is, the One who loves them, while the disbelievers — He does not love them.</em> Qushayrī holds this verse to be <em>the most hope-bearing in the whole Qurʾān</em>: <em>He did not say “the protector of the ascetics, the devout, the assiduous worshippers,” but “of those who have believed” — and the believer, though sinful, remains among those who believe, all the more since “they believed” is a verb, and the verb carries no absolute generality.</em>",
+      "mots": [
+        {
+          "ar": "اللَّهَ مَوْلَى الَّذِينَ آمَنُوا",
+          "tr": "llāha mawlā lladhīna āmanū",
+          "racine": "و ل ي / أ م ن",
+          "sens": "God is the protector of the believers",
+          "def": "mawlā: master, ally, helper, friend.",
+          "gram": "nominal sentence"
+        },
+        {
+          "ar": "لَا مَوْلَىٰ لَهُمْ",
+          "tr": "lā mawlā lahum",
+          "racine": "و ل ي",
+          "sens": "they have no protector",
+          "def": "absolute negation of protection.",
+          "gram": "lā of generic negation"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "إِنَّ اللَّهَ يُدْخِلُ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ جَنَّاتٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ وَالَّذِينَ كَفَرُوا يَتَمَتَّعُونَ وَيَأْكُلُونَ كَمَا تَأْكُلُ الْأَنْعَامُ وَالنَّارُ مَثْوًى لَهُمْ",
+      "tr": "inna llāha yudkhilu lladhīna āmanū wa-ʿamilū ṣ-ṣāliḥāti jannātin tajrī min taḥtihā l-anhāru wa-lladhīna kafarū yatamattaʿūna wa-yaʾkulūna kamā taʾkulu l-anʿāmu wa-n-nāru mathwan lahum",
+      "trad": "God will admit those who believe and do righteous works into Gardens beneath which rivers flow. But the disbelievers take their enjoyment and eat as the cattle eat, and the Fire shall be their abode.",
+      "themes": [
+        "the Garden",
+        "eating without discernment"
+      ],
+      "commentaire": "Qushayrī contrasts two ways of being in the world. <em>Cattle eat anywhere, without distinction; such is the disbeliever, who makes no distinction between the lawful and the forbidden,</em> eating at every hour without restraint. The believer is content with little: <em>a third for food, a third for drink, a third for breath.</em> And he adds: <em>the beast eats in heedlessness; whoever eats while forgetting his Lord eats as the cattle eat.</em>",
+      "mots": [
+        {
+          "ar": "جَنَّاتٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ",
+          "tr": "jannātin tajrī min taḥtihā l-anhār",
+          "racine": "ج ن ن / ج ر ي / ن ه ر",
+          "sens": "Gardens beneath which rivers flow",
+          "def": "recurring image of Paradise.",
+          "gram": "object + relative"
+        },
+        {
+          "ar": "يَأْكُلُونَ كَمَا تَأْكُلُ الْأَنْعَامُ",
+          "tr": "yaʾkulūna kamā taʾkulu l-anʿām",
+          "racine": "أ ك ل / ن ع م",
+          "sens": "they eat as the cattle eat",
+          "def": "anʿām: livestock, herds.",
+          "gram": "comparison"
+        },
+        {
+          "ar": "وَالنَّارُ مَثْوًى لَهُمْ",
+          "tr": "wa-n-nāru mathwan lahum",
+          "racine": "ن و ر / ث و ي",
+          "sens": "and the Fire is their abode",
+          "def": "mathwā: dwelling, abode.",
+          "gram": "nominal sentence"
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "وَكَأَيِّنْ مِنْ قَرْيَةٍ هِيَ أَشَدُّ قُوَّةً مِنْ قَرْيَتِكَ الَّتِي أَخْرَجَتْكَ أَهْلَكْنَاهُمْ فَلَا نَاصِرَ لَهُمْ",
+      "tr": "wa-ka-ayyin min qaryatin hiya ashaddu quwwatan min qaryatika llatī akhrajatka ahlaknāhum fa-lā nāṣira lahum",
+      "trad": "How many a town stronger than your town which drove you out have We destroyed — and they had no helper.",
+      "themes": [
+        "the destruction of towns"
+      ],
+      "commentaire": "An allusion to Mecca, the town that forced the Prophet into exile. Qushayrī recalls that this “We destroyed them” concerns <em>the past generations swallowed up across the ages gone by</em>: no force, no town, stands before the decree, and no helper rose for them.",
+      "mots": [
+        {
+          "ar": "وَكَأَيِّنْ مِنْ قَرْيَةٍ",
+          "tr": "wa-ka-ayyin min qaryah",
+          "racine": "ق ر ي",
+          "sens": "and how many a town",
+          "def": "ka-ayyin: how many, ever so many.",
+          "gram": "expression of quantity"
+        },
+        {
+          "ar": "أَشَدُّ قُوَّةً مِنْ قَرْيَتِكَ",
+          "tr": "ashaddu quwwatan min qaryatik",
+          "racine": "ش د د / ق و ي",
+          "sens": "stronger than your town",
+          "def": "ashaddu quwwatan: mightier.",
+          "gram": "comparative"
+        },
+        {
+          "ar": "أَهْلَكْنَاهُمْ فَلَا نَاصِرَ لَهُمْ",
+          "tr": "ahlaknāhum fa-lā nāṣira lahum",
+          "racine": "ه ل ك / ن ص ر",
+          "sens": "We destroyed them, with no helper",
+          "def": "ahlaka: to annihilate.",
+          "gram": "verb + negation"
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "أَفَمَنْ كَانَ عَلَىٰ بَيِّنَةٍ مِنْ رَبِّهِ كَمَنْ زُيِّنَ لَهُ سُوءُ عَمَلِهِ وَاتَّبَعُوا أَهْوَاءَهُمْ",
+      "tr": "a-fa-man kāna ʿalā bayyinatin min rabbihi ka-man zuyyina lahu sūʾu ʿamalihi wa-ttabaʿū ahwāʾahum",
+      "trad": "Is one who stands upon clear evidence from his Lord like one to whom the evil of his deed is made fair-seeming, and who follow their own passions?",
+      "themes": [
+        "the clear evidence",
+        "the evil made fair-seeming"
+      ],
+      "commentaire": "“The clear evidence” (bayyina) is light and proof. Qushayrī distinguishes two clarities here: <em>the learned stand in the light of their demonstration, the knowers in the light of their exposition; the first see by the rulings of the foundational proofs, the second by inspiration and union.</em> One sees by demonstrative proof, the other is made clairvoyant by ilhām and wuṣūl.",
+      "mots": [
+        {
+          "ar": "عَلَىٰ بَيِّنَةٍ مِنْ رَبِّهِ",
+          "tr": "ʿalā bayyinatin min rabbih",
+          "racine": "ب ي ن / ر ب ب",
+          "sens": "upon clear evidence from his Lord",
+          "def": "bayyina: clear proof, light.",
+          "gram": "complement"
+        },
+        {
+          "ar": "زُيِّنَ لَهُ سُوءُ عَمَلِهِ",
+          "tr": "zuyyina lahu sūʾu ʿamalih",
+          "racine": "ز ي ن / س و أ / ع م ل",
+          "sens": "the evil of his deed made fair to him",
+          "def": "zuyyina: to be adorned, decked out.",
+          "gram": "passive verb"
+        },
+        {
+          "ar": "وَاتَّبَعُوا أَهْوَاءَهُمْ",
+          "tr": "wa-ttabaʿū ahwāʾahum",
+          "racine": "ت ب ع / ه و ي",
+          "sens": "and they followed their passions",
+          "def": "ahwāʾ: pl. of hawā, passion.",
+          "gram": "verb + object"
+        }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "مَثَلُ الْجَنَّةِ الَّتِي وُعِدَ الْمُتَّقُونَ فِيهَا أَنْهَارٌ مِنْ مَاءٍ غَيْرِ آسِنٍ وَأَنْهَارٌ مِنْ لَبَنٍ لَمْ يَتَغَيَّرْ طَعْمُهُ وَأَنْهَارٌ مِنْ خَمْرٍ لَذَّةٍ لِلشَّارِبِينَ وَأَنْهَارٌ مِنْ عَسَلٍ مُصَفًّى وَلَهُمْ فِيهَا مِنْ كُلِّ الثَّمَرَاتِ وَمَغْفِرَةٌ مِنْ رَبِّهِمْ كَمَنْ هُوَ خَالِدٌ فِي النَّارِ وَسُقُوا مَاءً حَمِيمًا فَقَطَّعَ أَمْعَاءَهُمْ",
+      "tr": "mathalu l-jannati llatī wuʿida l-muttaqūna fīhā anhārun min māʾin ghayri āsinin wa-anhārun min labanin lam yataghayyar ṭaʿmuhu wa-anhārun min khamrin ladhdhatin li-sh-shāribīna wa-anhārun min ʿasalin muṣaffan wa-lahum fīhā min kulli th-thamarāti wa-maghfiratun min rabbihim ka-man huwa khālidun fī n-nāri wa-suqū māʾan ḥamīman fa-qaṭṭaʿa amʿāʾahum",
+      "trad": "The likeness of the Garden promised to the godfearing: therein are rivers of water never stale, rivers of milk whose taste never alters, rivers of wine delicious to the drinkers, and rivers of purified honey; and therein they have all kinds of fruits, and forgiveness from their Lord. Are they like one who abides forever in the Fire and is given to drink scalding water that rends their bowels?",
+      "themes": [
+        "the four rivers",
+        "the drinks of the saints"
+      ],
+      "commentaire": "Upon the four rivers Qushayrī raises a mysticism of the saints' drinks, here and now: <em>the drink of fidelity (wafāʾ), then of purity (ṣafāʾ), then of allegiance (walāʾ), then of the state of encounter (liqāʾ).</em> Each drink has its work, its intoxication and its sobering: <em>whoever sips the drink of fidelity looks at no one in the days of his absence from the beloved; whoever drinks the cup of purity is washed clean of all admixture, pure of his own self, freed of his claims; whoever drinks the cup of allegiance loses all rest and is never absent from his secret a single instant; and whoever drinks at the hour of encounter is forever intimate with His subsistence, asking nothing further, annihilated in His loftiness beneath the assaults of His majesty.</em>",
+      "mots": [
+        {
+          "ar": "مَاءٍ غَيْرِ آسِنٍ",
+          "tr": "māʾin ghayri āsin",
+          "racine": "م و ه / أ س ن",
+          "sens": "water never stale",
+          "def": "āsin: stagnant, altered.",
+          "gram": "qualified annexion"
+        },
+        {
+          "ar": "لَبَنٍ لَمْ يَتَغَيَّرْ طَعْمُهُ",
+          "tr": "labanin lam yataghayyar ṭaʿmuhu",
+          "racine": "ل ب ن / غ ي ر / ط ع م",
+          "sens": "milk whose taste never altered",
+          "def": "taghayyara: to change, alter.",
+          "gram": "negative relative"
+        },
+        {
+          "ar": "خَمْرٍ لَذَّةٍ لِلشَّارِبِينَ",
+          "tr": "khamrin ladhdhatin li-sh-shāribīn",
+          "racine": "خ م ر / ل ذ ذ / ش ر ب",
+          "sens": "wine delicious to the drinkers",
+          "def": "ladhdha: delight, savour.",
+          "gram": "annexion"
+        },
+        {
+          "ar": "عَسَلٍ مُصَفًّى",
+          "tr": "ʿasalin muṣaffan",
+          "racine": "ع س ل / ص ف و",
+          "sens": "purified honey",
+          "def": "muṣaffā: clarified, refined.",
+          "gram": "qualifier"
+        },
+        {
+          "ar": "وَسُقُوا مَاءً حَمِيمًا",
+          "tr": "wa-suqū māʾan ḥamīman",
+          "racine": "س ق ي / ح م م",
+          "sens": "given scalding water to drink",
+          "def": "ḥamīm: boiling water.",
+          "gram": "passive verb + object"
+        },
+        {
+          "ar": "فَقَطَّعَ أَمْعَاءَهُمْ",
+          "tr": "fa-qaṭṭaʿa amʿāʾahum",
+          "racine": "ق ط ع / م ع ي",
+          "sens": "rending their bowels",
+          "def": "qaṭṭaʿa: to sever, tear apart.",
+          "gram": "verb + object"
+        }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "وَمِنْهُمْ مَنْ يَسْتَمِعُ إِلَيْكَ حَتَّىٰ إِذَا خَرَجُوا مِنْ عِنْدِكَ قَالُوا لِلَّذِينَ أُوتُوا الْعِلْمَ مَاذَا قَالَ آنِفًا أُولَٰئِكَ الَّذِينَ طَبَعَ اللَّهُ عَلَىٰ قُلُوبِهِمْ وَاتَّبَعُوا أَهْوَاءَهُمْ",
+      "tr": "wa-minhum man yastamiʿu ilayka ḥattā idhā kharajū min ʿindika qālū li-lladhīna ūtū l-ʿilma mādhā qāla ānifan ulāʾika lladhīna ṭabaʿa llāhu ʿalā qulūbihim wa-ttabaʿū ahwāʾahum",
+      "trad": "Among them are some who listen to you; but when they leave your presence they say to those given knowledge, “What did he say just now?” These are they whose hearts God has sealed, and who follow their own passions.",
+      "themes": [
+        "the sealing of hearts",
+        "hypocrisy"
+      ],
+      "commentaire": "Qushayrī identifies them with the hypocrites: <em>they hated what God sent down, because it carried their unmasking.</em> The seal set upon their hearts is but the consequence of that aversion: they listen without hearing, and their feigned question betrays a heart already sealed upon its passion.",
+      "mots": [
+        {
+          "ar": "مَنْ يَسْتَمِعُ إِلَيْكَ",
+          "tr": "man yastamiʿu ilayk",
+          "racine": "س م ع",
+          "sens": "who listens to you",
+          "def": "istamaʿa: to lend an ear.",
+          "gram": "relative + verb"
+        },
+        {
+          "ar": "مَاذَا قَالَ آنِفًا",
+          "tr": "mādhā qāla ānifan",
+          "racine": "ق و ل / أ ن ف",
+          "sens": "what did he say just now?",
+          "def": "ānifan: just now, a moment ago.",
+          "gram": "interrogative"
+        },
+        {
+          "ar": "طَبَعَ اللَّهُ عَلَىٰ قُلُوبِهِمْ",
+          "tr": "ṭabaʿa llāhu ʿalā qulūbihim",
+          "racine": "ط ب ع / ق ل ب",
+          "sens": "God has sealed their hearts",
+          "def": "ṭabaʿa: to seal, imprint.",
+          "gram": "verb + complement"
+        }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "وَالَّذِينَ اهْتَدَوْا زَادَهُمْ هُدًى وَآتَاهُمْ تَقْوَاهُمْ",
+      "tr": "wa-lladhīna htadaw zādahum hudan wa-ātāhum taqwāhum",
+      "trad": "As for those who are guided, He increases them in guidance and grants them their godfearing.",
+      "themes": [
+        "the increase of guidance",
+        "the unveiling"
+      ],
+      "commentaire": "Qushayrī makes of this verse a ladder of ascent: <em>they were guided by the kinds of striving (mujāhadāt), He increased them in guidance by the lights of contemplation (mushāhadāt); they were guided by pondering the proof, He increased them by the spirit of exposition; they were guided by the science of certainty (ʿilm al-yaqīn), He increased them by the truth of certainty (ḥaqq al-yaqīn); they were guided by the courtesies of intimate discourse, He increased them by deliverance and the raising of degrees.</em>",
+      "mots": [
+        {
+          "ar": "وَالَّذِينَ اهْتَدَوْا",
+          "tr": "wa-lladhīna htadaw",
+          "racine": "ه د ي",
+          "sens": "those who are guided",
+          "def": "ihtadā: to follow guidance.",
+          "gram": "relative + verb"
+        },
+        {
+          "ar": "زَادَهُمْ هُدًى",
+          "tr": "zādahum hudan",
+          "racine": "ز ي د / ه د ي",
+          "sens": "He increased them in guidance",
+          "def": "zāda: to add, increase.",
+          "gram": "verb + object"
+        },
+        {
+          "ar": "وَآتَاهُمْ تَقْوَاهُمْ",
+          "tr": "wa-ātāhum taqwāhum",
+          "racine": "أ ت ي / و ق ي",
+          "sens": "and granted them their godfearing",
+          "def": "taqwā: reverent fear.",
+          "gram": "verb + object"
+        }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "فَهَلْ يَنْظُرُونَ إِلَّا السَّاعَةَ أَنْ تَأْتِيَهُمْ بَغْتَةً فَقَدْ جَاءَ أَشْرَاطُهَا فَأَنَّىٰ لَهُمْ إِذَا جَاءَتْهُمْ ذِكْرَاهُمْ",
+      "tr": "fa-hal yanẓurūna illā s-sāʿata an taʾtiyahum baghtatan fa-qad jāʾa ashrāṭuhā fa-annā lahum idhā jāʾathum dhikrāhum",
+      "trad": "Do they await but the Hour, that it come upon them suddenly? Its tokens have already come; but how shall the reminder avail them when it has come upon them?",
+      "themes": [
+        "the sudden Hour",
+        "the forerunning signs"
+      ],
+      "commentaire": "The Hour will break in “suddenly” (baghtatan); <em>its forerunning signs have already come.</em> Qushayrī underscores the futility of belated remembrance: when reality bursts forth, recollection no longer saves the one who neglected it while he could still act.",
+      "mots": [
+        {
+          "ar": "فَهَلْ يَنْظُرُونَ إِلَّا السَّاعَةَ",
+          "tr": "fa-hal yanẓurūna illā s-sāʿah",
+          "racine": "ن ظ ر / س و ع",
+          "sens": "do they await but the Hour",
+          "def": "intaẓara: to await, watch for.",
+          "gram": "restrictive interrogative"
+        },
+        {
+          "ar": "أَنْ تَأْتِيَهُمْ بَغْتَةً",
+          "tr": "an taʾtiyahum baghtatan",
+          "racine": "أ ت ي / ب غ ت",
+          "sens": "that it come on them suddenly",
+          "def": "baghtatan: unawares.",
+          "gram": "subjunctive + state"
+        },
+        {
+          "ar": "فَقَدْ جَاءَ أَشْرَاطُهَا",
+          "tr": "fa-qad jāʾa ashrāṭuhā",
+          "racine": "ج ي أ / ش ر ط",
+          "sens": "its tokens have come",
+          "def": "ashrāṭ: portents, heralding signs.",
+          "gram": "verb + subject"
+        }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "فَاعْلَمْ أَنَّهُ لَا إِلَٰهَ إِلَّا اللَّهُ وَاسْتَغْفِرْ لِذَنْبِكَ وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَاللَّهُ يَعْلَمُ مُتَقَلَّبَكُمْ وَمَثْوَاكُمْ",
+      "tr": "fa-ʿlam annahu lā ilāha illā llāhu wa-staghfir li-dhanbika wa-li-l-muʾminīna wa-l-muʾmināti wa-llāhu yaʿlamu mutaqallabakum wa-mathwākum",
+      "trad": "Know, then, that there is no god but God, and ask forgiveness for your sin and for the believing men and women. God knows your going to and fro and your place of rest.",
+      "themes": [
+        "the oneness",
+        "knowing that one knows"
+      ],
+      "commentaire": "The Prophet already knew that “there is no god but God”: the command “know” enjoins steadfastness in that knowledge. Qushayrī reads in it the servant's ascent in knowledge: <em>first he knows his Lord by proof and demonstration — an acquired knowledge, the foundation of all reasoned science; then his knowledge is strengthened by added exposition, while his awareness of self diminishes under the sway of God's remembrance upon the heart; until the state of contemplation, where knowledge becomes necessary, and his self-awareness almost vanishes — like one absent from himself, forgetful of himself.</em> And he draws the image: <em>one at the shore is gripped by the sight of the sea; embarked, the state grows stronger; and once submerged in it, he is aware of nothing but that in which he is absorbed.</em> “Ask forgiveness for your sin”: <em>once you know that you know, ask forgiveness for that very thing, for the True, in the majesty of His measure, none knows Him but He.</em>",
+      "mots": [
+        {
+          "ar": "فَاعْلَمْ أَنَّهُ لَا إِلَٰهَ إِلَّا اللَّهُ",
+          "tr": "fa-ʿlam annahu lā ilāha illā llāh",
+          "racine": "ع ل م / أ ل ه",
+          "sens": "know that there is no god but God",
+          "def": "tahlīl, the word of oneness.",
+          "gram": "imperative + completive"
+        },
+        {
+          "ar": "وَاسْتَغْفِرْ لِذَنْبِكَ",
+          "tr": "wa-staghfir li-dhanbik",
+          "racine": "غ ف ر / ذ ن ب",
+          "sens": "ask forgiveness for your sin",
+          "def": "istaghfara: to implore pardon.",
+          "gram": "imperative"
+        },
+        {
+          "ar": "مُتَقَلَّبَكُمْ وَمَثْوَاكُمْ",
+          "tr": "mutaqallabakum wa-mathwākum",
+          "racine": "ق ل ب / ث و ي",
+          "sens": "your comings and goings and your rest",
+          "def": "mutaqallab: place of activity; mathwā: place of rest.",
+          "gram": "nouns of place"
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "وَيَقُولُ الَّذِينَ آمَنُوا لَوْلَا نُزِّلَتْ سُورَةٌ فَإِذَا أُنْزِلَتْ سُورَةٌ مُحْكَمَةٌ وَذُكِرَ فِيهَا الْقِتَالُ رَأَيْتَ الَّذِينَ فِي قُلُوبِهِمْ مَرَضٌ يَنْظُرُونَ إِلَيْكَ نَظَرَ الْمَغْشِيِّ عَلَيْهِ مِنَ الْمَوْتِ فَأَوْلَىٰ لَهُمْ",
+      "tr": "wa-yaqūlu lladhīna āmanū lawlā nuzzilat sūratun fa-idhā unzilat sūratun muḥkamatun wa-dhukira fīhā l-qitālu raʾayta lladhīna fī qulūbihim maraḍun yanẓurūna ilayka naẓara l-maghshiyyi ʿalayhi mina l-mawti fa-awlā lahum",
+      "trad": "Those who believe say, “If only a sūra were sent down!” Yet when a decisive sūra is sent down in which fighting is mentioned, you see those in whose hearts is sickness looking at you with the look of one swooning at the approach of death. Better for them",
+      "themes": [
+        "the sick heart",
+        "the dread of battle"
+      ],
+      "commentaire": "Qushayrī recalls the context: <em>the believers' hearts grew straitened at the delay of revelation, and they longed for it to descend swiftly.</em> But as soon as a “decisive” sūra (muḥkama) mentioned fighting, <em>you saw the hypocrites loathe it, for combat weighed on them: then they were unmasked, and looked at the Prophet with utmost loathing.</em> “Woe to them” (fa-awlā lahum) rings as a threat.",
+      "mots": [
+        {
+          "ar": "لَوْلَا نُزِّلَتْ سُورَةٌ",
+          "tr": "lawlā nuzzilat sūrah",
+          "racine": "ن ز ل / س و ر",
+          "sens": "if only a sūra were sent down",
+          "def": "lawlā: expresses a wish.",
+          "gram": "wish"
+        },
+        {
+          "ar": "سُورَةٌ مُحْكَمَةٌ",
+          "tr": "sūratun muḥkamah",
+          "racine": "ح ك م",
+          "sens": "a decisive sūra",
+          "def": "muḥkama: clear, with categorical rulings.",
+          "gram": "qualifier"
+        },
+        {
+          "ar": "فِي قُلُوبِهِمْ مَرَضٌ",
+          "tr": "fī qulūbihim maraḍ",
+          "racine": "ق ل ب / م ر ض",
+          "sens": "in their hearts a sickness",
+          "def": "maraḍ: sickness, doubt, hypocrisy.",
+          "gram": "nominal sentence"
+        },
+        {
+          "ar": "نَظَرَ الْمَغْشِيِّ عَلَيْهِ مِنَ الْمَوْتِ",
+          "tr": "naẓara l-maghshiyyi ʿalayhi mina l-mawt",
+          "racine": "ن ظ ر / غ ش ي / م و ت",
+          "sens": "the look of one swooning at death",
+          "def": "maghshī ʿalayh: fainting, swooning.",
+          "gram": "complement of manner"
+        }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "طَاعَةٌ وَقَوْلٌ مَعْرُوفٌ فَإِذَا عَزَمَ الْأَمْرُ فَلَوْ صَدَقُوا اللَّهَ لَكَانَ خَيْرًا لَهُمْ",
+      "tr": "ṭāʿatun wa-qawlun maʿrūfun fa-idhā ʿazama l-amru fa-law ṣadaqū llāha la-kāna khayran lahum",
+      "trad": "would be obedience and fitting speech. So when the matter is resolved, were they true to God it would be better for them.",
+      "themes": [
+        "obedience",
+        "sincerity"
+      ],
+      "commentaire": "Qushayrī: <em>it would be fitter for them to practise an obedience toward God and His Messenger, and a fitting word by their answering the command to fight.</em> And when “the matter is resolved” — that is, when fighting becomes serious and obligatory — <em>sincerity and compliance are better for them than their lying, their hypocrisy and their holding back.</em>",
+      "mots": [
+        {
+          "ar": "طَاعَةٌ وَقَوْلٌ مَعْرُوفٌ",
+          "tr": "ṭāʿatun wa-qawlun maʿrūf",
+          "racine": "ط و ع / ق و ل / ع ر ف",
+          "sens": "obedience and fitting speech",
+          "def": "qawl maʿrūf: seemly speech.",
+          "gram": "nominal sentence"
+        },
+        {
+          "ar": "فَإِذَا عَزَمَ الْأَمْرُ",
+          "tr": "fa-idhā ʿazama l-amr",
+          "racine": "ع ز م / أ م ر",
+          "sens": "when the matter is resolved",
+          "def": "ʿazama l-amr: the affair is settled.",
+          "gram": "conditional"
+        },
+        {
+          "ar": "فَلَوْ صَدَقُوا اللَّهَ",
+          "tr": "fa-law ṣadaqū llāh",
+          "racine": "ص د ق",
+          "sens": "were they true to God",
+          "def": "ṣadaqa: to be truthful, sincere.",
+          "gram": "conditional"
+        }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "فَهَلْ عَسَيْتُمْ إِنْ تَوَلَّيْتُمْ أَنْ تُفْسِدُوا فِي الْأَرْضِ وَتُقَطِّعُوا أَرْحَامَكُمْ",
+      "tr": "fa-hal ʿasaytum in tawallaytum an tufsidū fī l-arḍi wa-tuqaṭṭiʿū arḥāmakum",
+      "trad": "If you turned away, would you then spread corruption on earth and sever your ties of kinship?",
+      "themes": [
+        "the turning away",
+        "the severing of ties"
+      ],
+      "commentaire": "Qushayrī glosses: <em>perhaps, if you turn from faith in Muhammad and revert to what you were, you will spread corruption on earth, shed forbidden blood, sever your ties of kinship, and return to your age of ignorance.</em> Turning from faith returns a man to the barbarity that preceded the light.",
+      "mots": [
+        {
+          "ar": "فَهَلْ عَسَيْتُمْ",
+          "tr": "fa-hal ʿasaytum",
+          "racine": "ع س ي",
+          "sens": "is it not likely",
+          "def": "ʿasā: it may be, perhaps.",
+          "gram": "verb of imminence"
+        },
+        {
+          "ar": "إِنْ تَوَلَّيْتُمْ",
+          "tr": "in tawallaytum",
+          "racine": "و ل ي",
+          "sens": "if you turn away",
+          "def": "tawallā: to turn away, turn one's back.",
+          "gram": "conditional"
+        },
+        {
+          "ar": "تُفْسِدُوا فِي الْأَرْضِ",
+          "tr": "tufsidū fī l-arḍ",
+          "racine": "ف س د",
+          "sens": "you spread corruption on earth",
+          "def": "afsada: to corrupt, disturb.",
+          "gram": "subjunctive"
+        },
+        {
+          "ar": "وَتُقَطِّعُوا أَرْحَامَكُمْ",
+          "tr": "wa-tuqaṭṭiʿū arḥāmakum",
+          "racine": "ق ط ع / ر ح م",
+          "sens": "and sever your kinship ties",
+          "def": "arḥām: bonds of kinship.",
+          "gram": "subjunctive + object"
+        }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "أُولَٰئِكَ الَّذِينَ لَعَنَهُمُ اللَّهُ فَأَصَمَّهُمْ وَأَعْمَىٰ أَبْصَارَهُمْ",
+      "tr": "ulāʾika lladhīna laʿanahumu llāhu fa-aṣammahum wa-aʿmā abṣārahum",
+      "trad": "These are the ones whom God has cursed, making them deaf and blinding their sight.",
+      "themes": [
+        "the curse",
+        "deafness and blindness of heart"
+      ],
+      "commentaire": "The deafness and blindness in question are not those of the senses. Qushayrī: <em>He made them deaf to hearing the True and accepting it with their hearts, and blinded their inner sight (baṣāʾir).</em> The curse is this veil cast over the perception of the hidden meaning.",
+      "mots": [
+        {
+          "ar": "لَعَنَهُمُ اللَّهُ",
+          "tr": "laʿanahumu llāh",
+          "racine": "ل ع ن",
+          "sens": "God cursed them",
+          "def": "laʿana: to curse, banish.",
+          "gram": "perfect verb"
+        },
+        {
+          "ar": "فَأَصَمَّهُمْ",
+          "tr": "fa-aṣammahum",
+          "racine": "ص م م",
+          "sens": "made them deaf",
+          "def": "aṣamma: to deafen.",
+          "gram": "verb + object"
+        },
+        {
+          "ar": "وَأَعْمَىٰ أَبْصَارَهُمْ",
+          "tr": "wa-aʿmā abṣārahum",
+          "racine": "ع م ي / ب ص ر",
+          "sens": "and blinded their sight",
+          "def": "aʿmā: to make blind.",
+          "gram": "verb + object"
+        }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "أَفَلَا يَتَدَبَّرُونَ الْقُرْآنَ أَمْ عَلَىٰ قُلُوبٍ أَقْفَالُهَا",
+      "tr": "a-fa-lā yatadabbarūna l-qurʾāna am ʿalā qulūbin aqfāluhā",
+      "trad": "Will they not ponder the Qurʾān, or are there locks upon their hearts?",
+      "themes": [
+        "pondering the Qurʾān",
+        "the locked hearts"
+      ],
+      "commentaire": "Qushayrī: <em>were they to ponder the Qurʾān, it would lead them to gnosis (ʿirfān) and deliver them from the darkness of bewilderment.</em> But the True has locked the disbelievers' hearts: <em>a bolted door lets nothing in and nothing out; so too their hearts — the disbelief within does not leave, and the faith to which they are called does not enter.</em>",
+      "mots": [
+        {
+          "ar": "أَفَلَا يَتَدَبَّرُونَ الْقُرْآنَ",
+          "tr": "a-fa-lā yatadabbarūna l-qurʾān",
+          "racine": "د ب ر / ق ر أ",
+          "sens": "will they not ponder the Qurʾān",
+          "def": "tadabbara: to ponder, scrutinize meaning.",
+          "gram": "negative interrogative"
+        },
+        {
+          "ar": "أَمْ عَلَىٰ قُلُوبٍ أَقْفَالُهَا",
+          "tr": "am ʿalā qulūbin aqfāluhā",
+          "racine": "ق ل ب / ق ف ل",
+          "sens": "or upon hearts their locks",
+          "def": "aqfāl: pl. of qufl, lock.",
+          "gram": "alternative"
+        }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "إِنَّ الَّذِينَ ارْتَدُّوا عَلَىٰ أَدْبَارِهِمْ مِنْ بَعْدِ مَا تَبَيَّنَ لَهُمُ الْهُدَى الشَّيْطَانُ سَوَّلَ لَهُمْ وَأَمْلَىٰ لَهُمْ",
+      "tr": "inna lladhīna rtaddū ʿalā adbārihim min baʿdi mā tabayyana lahumu l-hudā sh-shayṭānu sawwala lahum wa-amlā lahum",
+      "trad": "Those who turned back on their heels after the guidance had become clear to them — Satan seduced them and filled them with false hopes.",
+      "themes": [
+        "apostasy",
+        "the heart's quenched dawn"
+      ],
+      "commentaire": "Qushayrī unfolds a striking image of defection after illumination: <em>one whose heart's dawn breaks, in whom the light of oneness glimmers, then, before the full clarity of his day, whose sun is eclipsed — the day of his gnosis darkens, the night of his doubt thickens, and the ardours of his intellect set… then tell of his darkness, and freely!</em> He means those who enter upon the Sufi path, then undo their pact with God after traversing but a short distance.",
+      "mots": [
+        {
+          "ar": "ارْتَدُّوا عَلَىٰ أَدْبَارِهِمْ",
+          "tr": "irtaddū ʿalā adbārihim",
+          "racine": "ر د د / د ب ر",
+          "sens": "they turned back on their heels",
+          "def": "irtadda: to turn back, apostatize.",
+          "gram": "verb + complement"
+        },
+        {
+          "ar": "تَبَيَّنَ لَهُمُ الْهُدَى",
+          "tr": "tabayyana lahumu l-hudā",
+          "racine": "ب ي ن / ه د ي",
+          "sens": "the guidance became clear to them",
+          "def": "tabayyana: to become clear.",
+          "gram": "perfect verb"
+        },
+        {
+          "ar": "الشَّيْطَانُ سَوَّلَ لَهُمْ وَأَمْلَىٰ لَهُمْ",
+          "tr": "sh-shayṭānu sawwala lahum wa-amlā lahum",
+          "racine": "س و ل / م ل و",
+          "sens": "Satan seduced them and prolonged their illusion",
+          "def": "sawwala: to make evil seem fair; amlā: to grant respite/false hope.",
+          "gram": "perfect verbs"
+        }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "ذَٰلِكَ بِأَنَّهُمْ قَالُوا لِلَّذِينَ كَرِهُوا مَا نَزَّلَ اللَّهُ سَنُطِيعُكُمْ فِي بَعْضِ الْأَمْرِ وَاللَّهُ يَعْلَمُ إِسْرَارَهُمْ",
+      "tr": "dhālika bi-annahum qālū li-lladhīna karihū mā nazzala llāhu sa-nuṭīʿukum fī baʿḍi l-amri wa-llāhu yaʿlamu isrārahum",
+      "trad": "That is because they said to those who loathed what God sent down, “We will obey you in part of the matter.” But God knows their secrets.",
+      "themes": [
+        "the hidden complicity",
+        "God knows the secrets"
+      ],
+      "commentaire": "Their secret connivance with the enemies of revelation does not escape Him: <em>God knows their secrets</em>, their unspoken thoughts and concealed agreements. The whispered pact against the True is already inscribed in His knowledge.",
+      "mots": [
+        {
+          "ar": "سَنُطِيعُكُمْ فِي بَعْضِ الْأَمْرِ",
+          "tr": "sa-nuṭīʿukum fī baʿḍi l-amr",
+          "racine": "ط و ع / أ م ر",
+          "sens": "we will obey you in part of the matter",
+          "def": "aṭāʿa: to obey.",
+          "gram": "future"
+        },
+        {
+          "ar": "وَاللَّهُ يَعْلَمُ إِسْرَارَهُمْ",
+          "tr": "wa-llāhu yaʿlamu isrārahum",
+          "racine": "ع ل م / س ر ر",
+          "sens": "God knows their secrets",
+          "def": "isrār: what is kept secret.",
+          "gram": "nominal sentence"
+        }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "فَكَيْفَ إِذَا تَوَفَّتْهُمُ الْمَلَائِكَةُ يَضْرِبُونَ وُجُوهَهُمْ وَأَدْبَارَهُمْ",
+      "tr": "fa-kayfa idhā tawaffathumu l-malāʾikatu yaḍribūna wujūhahum wa-adbārahum",
+      "trad": "How then will it be when the angels take their souls, striking their faces and their backs?",
+      "themes": [
+        "the death of the deniers",
+        "the angels' chastisement"
+      ],
+      "commentaire": "Qushayrī lets the terrible scene of the soul's seizing resound: the angels take them <em>striking their faces and their backs</em>. The question “how will it be?” is less an inquiry than a warning of the instant when all concealment ceases.",
+      "mots": [
+        {
+          "ar": "تَوَفَّتْهُمُ الْمَلَائِكَةُ",
+          "tr": "tawaffathumu l-malāʾikah",
+          "racine": "و ف ي / م ل ك",
+          "sens": "the angels take their souls",
+          "def": "tawaffā: to gather up the soul.",
+          "gram": "verb + subject"
+        },
+        {
+          "ar": "يَضْرِبُونَ وُجُوهَهُمْ وَأَدْبَارَهُمْ",
+          "tr": "yaḍribūna wujūhahum wa-adbārahum",
+          "racine": "ض ر ب / و ج ه / د ب ر",
+          "sens": "striking their faces and backs",
+          "def": "wujūh / adbār: faces / backs.",
+          "gram": "verb + objects"
+        }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "ذَٰلِكَ بِأَنَّهُمُ اتَّبَعُوا مَا أَسْخَطَ اللَّهَ وَكَرِهُوا رِضْوَانَهُ فَأَحْبَطَ أَعْمَالَهُمْ",
+      "tr": "dhālika bi-annahumu ttabaʿū mā askhaṭa llāha wa-karihū riḍwānahu fa-aḥbaṭa aʿmālahum",
+      "trad": "That is because they followed what angers God and loathed His good pleasure, so He brought their deeds to nothing.",
+      "themes": [
+        "following His anger",
+        "loathing His pleasure"
+      ],
+      "commentaire": "Their loss lies in a twofold inversion: <em>they followed what angers God and loathed His good pleasure.</em> To prefer what stirs the divine wrath and to flee what draws His satisfaction is to condemn oneself to the miscarriage of every deed (aḥbaṭa).",
+      "mots": [
+        {
+          "ar": "اتَّبَعُوا مَا أَسْخَطَ اللَّهَ",
+          "tr": "ittabaʿū mā askhaṭa llāh",
+          "racine": "ت ب ع / س خ ط",
+          "sens": "they followed what angers God",
+          "def": "askhaṭa: to provoke wrath.",
+          "gram": "verb + relative"
+        },
+        {
+          "ar": "وَكَرِهُوا رِضْوَانَهُ",
+          "tr": "wa-karihū riḍwānahu",
+          "racine": "ك ر ه / ر ض و",
+          "sens": "and loathed His good pleasure",
+          "def": "riḍwān: good pleasure, satisfaction.",
+          "gram": "verb + object"
+        },
+        {
+          "ar": "فَأَحْبَطَ أَعْمَالَهُمْ",
+          "tr": "fa-aḥbaṭa aʿmālahum",
+          "racine": "ح ب ط / ع م ل",
+          "sens": "He made their deeds vain",
+          "def": "aḥbaṭa: to annul.",
+          "gram": "verb + object"
+        }
+      ]
+    },
+    {
+      "n": 29,
+      "ar": "أَمْ حَسِبَ الَّذِينَ فِي قُلُوبِهِمْ مَرَضٌ أَنْ لَنْ يُخْرِجَ اللَّهُ أَضْغَانَهُمْ",
+      "tr": "am ḥasiba lladhīna fī qulūbihim maraḍun an lan yukhrija llāhu aḍghānahum",
+      "trad": "Do those in whose hearts is sickness suppose that God will not bring their rancour to light?",
+      "themes": [
+        "the disclosure of grudges"
+      ],
+      "commentaire": "Qushayrī: <em>the matter is not as they imagine; rather, God will unmask them and disclose their dissimulation.</em> And he recalls that the Prophet was informed of them: <em>He apprised him of their very persons.</em> The grudges (aḍghān) hidden deep in their breasts will be exposed.",
+      "mots": [
+        {
+          "ar": "أَمْ حَسِبَ",
+          "tr": "am ḥasiba",
+          "racine": "ح س ب",
+          "sens": "do they then suppose",
+          "def": "ḥasiba: to think, suppose.",
+          "gram": "interrogative"
+        },
+        {
+          "ar": "لَنْ يُخْرِجَ اللَّهُ أَضْغَانَهُمْ",
+          "tr": "lan yukhrija llāhu aḍghānahum",
+          "racine": "خ ر ج / ض غ ن",
+          "sens": "God will not bring out their rancour",
+          "def": "aḍghān: grudges, buried hatreds.",
+          "gram": "negation of the future"
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "ar": "وَلَوْ نَشَاءُ لَأَرَيْنَاكَهُمْ فَلَعَرَفْتَهُمْ بِسِيمَاهُمْ وَلَتَعْرِفَنَّهُمْ فِي لَحْنِ الْقَوْلِ وَاللَّهُ يَعْلَمُ أَعْمَالَكُمْ",
+      "tr": "wa-law nashāʾu la-araynākahum fa-la-ʿaraftahum bi-sīmāhum wa-la-taʿrifannahum fī laḥni l-qawli wa-llāhu yaʿlamu aʿmālakum",
+      "trad": "Had We willed, We would have shown them to you, and you would know them by their marks; yet you will surely know them by the tenor of their speech. And God knows your deeds.",
+      "themes": [
+        "the marks of the heart",
+        "the clairvoyance of the saints"
+      ],
+      "commentaire": "“By the tenor of their speech”: for the secret of the soul shows through upon the face. Qushayrī: <em>the countenances reveal the inner depths, and what haunts the hearts, its trace gleams upon the features.</em> Then he ranks the modes of seeing: <em>the believer sees by the light of discernment (firāsa), the knower by the light of realization, and the one who unifies sees by God — then nothing can be veiled from him.</em> And: <em>the inner sights of the truthful are not veiled.</em>",
+      "mots": [
+        {
+          "ar": "لَأَرَيْنَاكَهُمْ",
+          "tr": "la-araynākahum",
+          "racine": "ر أ ي",
+          "sens": "We would have shown them to you",
+          "def": "arā: to show, make see.",
+          "gram": "verb + double object"
+        },
+        {
+          "ar": "فَلَعَرَفْتَهُمْ بِسِيمَاهُمْ",
+          "tr": "fa-la-ʿaraftahum bi-sīmāhum",
+          "racine": "ع ر ف / س و م",
+          "sens": "you would know them by their marks",
+          "def": "sīmā: sign, distinguishing mark.",
+          "gram": "verb + complement"
+        },
+        {
+          "ar": "فِي لَحْنِ الْقَوْلِ",
+          "tr": "fī laḥni l-qawl",
+          "racine": "ل ح ن / ق و ل",
+          "sens": "in the tenor of their speech",
+          "def": "laḥn al-qawl: intonation, undertone.",
+          "gram": "complement"
+        }
+      ]
+    },
+    {
+      "n": 31,
+      "ar": "وَلَنَبْلُوَنَّكُمْ حَتَّىٰ نَعْلَمَ الْمُجَاهِدِينَ مِنْكُمْ وَالصَّابِرِينَ وَنَبْلُوَ أَخْبَارَكُمْ",
+      "tr": "wa-la-nabluwannakum ḥattā naʿlama l-mujāhidīna minkum wa-ṣ-ṣābirīna wa-nabluwa akhbārakum",
+      "trad": "We shall surely test you until We know those among you who strive and who are patient, and test your tidings.",
+      "themes": [
+        "the revealing trial",
+        "patience and striving"
+      ],
+      "commentaire": "Qushayrī makes the trial the touchstone of souls: <em>by trial and testing the essences of men are revealed: the sincere appears, the lukewarm is unmasked, the hypocrite is exposed. Those who believed and purified their faith are saved and delivered; those who disbelieved and dissembled fall into humiliation and are abased, branded with wretchedness and cut off.</em>",
+      "mots": [
+        {
+          "ar": "وَلَنَبْلُوَنَّكُمْ",
+          "tr": "wa-la-nabluwannakum",
+          "racine": "ب ل و",
+          "sens": "We shall surely test you",
+          "def": "balā: to test.",
+          "gram": "emphatic future (nūn)"
+        },
+        {
+          "ar": "الْمُجَاهِدِينَ ... وَالصَّابِرِينَ",
+          "tr": "al-mujāhidīna ... wa-ṣ-ṣābirīn",
+          "racine": "ج ه د / ص ب ر",
+          "sens": "the strivers and the patient",
+          "def": "mujāhid: one who strives; ṣābir: one who endures.",
+          "gram": "objects"
+        },
+        {
+          "ar": "وَنَبْلُوَ أَخْبَارَكُمْ",
+          "tr": "wa-nabluwa akhbārakum",
+          "racine": "ب ل و / خ ب ر",
+          "sens": "and test your tidings (your true state)",
+          "def": "akhbār: reports, true condition.",
+          "gram": "subjunctive"
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "ar": "إِنَّ الَّذِينَ كَفَرُوا وَصَدُّوا عَنْ سَبِيلِ اللَّهِ وَشَاقُّوا الرَّسُولَ مِنْ بَعْدِ مَا تَبَيَّنَ لَهُمُ الْهُدَىٰ لَنْ يَضُرُّوا اللَّهَ شَيْئًا وَسَيُحْبِطُ أَعْمَالَهُمْ",
+      "tr": "inna lladhīna kafarū wa-ṣaddū ʿan sabīli llāhi wa-shāqqū r-rasūla min baʿdi mā tabayyana lahumu l-hudā lan yaḍurrū llāha shayʾan wa-sa-yuḥbiṭu aʿmālahum",
+      "trad": "Those who disbelieve, bar others from God's way, and break with the Messenger after the guidance has become clear to them — they will not harm God in the least, and He will bring their deeds to nothing.",
+      "themes": [
+        "breaking with the Prophet",
+        "harming oneself"
+      ],
+      "commentaire": "Those who rise against the Messenger after the clarity of guidance do God no injury: <em>they will not harm Him in the least</em>, their opposition diminishes neither His glory nor His sovereignty. The sole effect of their revolt is the miscarriage of their own deeds.",
+      "mots": [
+        {
+          "ar": "وَشَاقُّوا الرَّسُولَ",
+          "tr": "wa-shāqqū r-rasūl",
+          "racine": "ش ق ق / ر س ل",
+          "sens": "and broke with the Messenger",
+          "def": "shāqqa: to oppose, breach with.",
+          "gram": "verb + object"
+        },
+        {
+          "ar": "لَنْ يَضُرُّوا اللَّهَ شَيْئًا",
+          "tr": "lan yaḍurrū llāha shayʾan",
+          "racine": "ض ر ر",
+          "sens": "they will not harm God at all",
+          "def": "ḍarra: to harm, injure.",
+          "gram": "negation of the future"
+        },
+        {
+          "ar": "وَسَيُحْبِطُ أَعْمَالَهُمْ",
+          "tr": "wa-sa-yuḥbiṭu aʿmālahum",
+          "racine": "ح ب ط / ع م ل",
+          "sens": "He will make their deeds vain",
+          "def": "aḥbaṭa: to annul.",
+          "gram": "future + object"
+        }
+      ]
+    },
+    {
+      "n": 33,
+      "ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَلَا تُبْطِلُوا أَعْمَالَكُمْ",
+      "tr": "yā ayyuhā lladhīna āmanū aṭīʿū llāha wa-aṭīʿū r-rasūla wa-lā tubṭilū aʿmālakum",
+      "trad": "O you who believe, obey God and obey the Messenger, and do not nullify your deeds!",
+      "themes": [
+        "obedience",
+        "not nullifying one's deeds"
+      ],
+      "commentaire": "Qushayrī enumerates the ways of nullifying one's own deeds: <em>do not annul them by ostentation, self-satisfaction and self-regard; nor by reposing upon them; nor by seeking some recompense in return; nor by the illusion that they earn you a due apart from God's sheer grace.</em> The most upright deed collapses the moment one clings to it for oneself.",
+      "mots": [
+        {
+          "ar": "أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ",
+          "tr": "aṭīʿū llāha wa-aṭīʿū r-rasūl",
+          "racine": "ط و ع / ر س ل",
+          "sens": "obey God and the Messenger",
+          "def": "aṭāʿa: to obey.",
+          "gram": "imperatives"
+        },
+        {
+          "ar": "وَلَا تُبْطِلُوا أَعْمَالَكُمْ",
+          "tr": "wa-lā tubṭilū aʿmālakum",
+          "racine": "ب ط ل / ع م ل",
+          "sens": "do not nullify your deeds",
+          "def": "abṭala: to annul, void.",
+          "gram": "prohibition + object"
+        }
+      ]
+    },
+    {
+      "n": 34,
+      "ar": "إِنَّ الَّذِينَ كَفَرُوا وَصَدُّوا عَنْ سَبِيلِ اللَّهِ ثُمَّ مَاتُوا وَهُمْ كُفَّارٌ فَلَنْ يَغْفِرَ اللَّهُ لَهُمْ",
+      "tr": "inna lladhīna kafarū wa-ṣaddū ʿan sabīli llāhi thumma mātū wa-hum kuffārun fa-lan yaghfira llāhu lahum",
+      "trad": "Those who disbelieve, bar others from God's way, then die as disbelievers — God will never forgive them.",
+      "themes": [
+        "dying in denial",
+        "forgiveness withheld"
+      ],
+      "commentaire": "What seals their fate is to <em>die in disbelief</em>. As long as life lasts, the door of return stays open; but whoever expires a denier after barring from the way shuts forgiveness against himself. The sentence targets obstinacy to the last breath.",
+      "mots": [
+        {
+          "ar": "ثُمَّ مَاتُوا وَهُمْ كُفَّارٌ",
+          "tr": "thumma mātū wa-hum kuffār",
+          "racine": "م و ت / ك ف ر",
+          "sens": "then died as disbelievers",
+          "def": "kuffār: pl. of kāfir.",
+          "gram": "verb + circumstantial"
+        },
+        {
+          "ar": "فَلَنْ يَغْفِرَ اللَّهُ لَهُمْ",
+          "tr": "fa-lan yaghfira llāhu lahum",
+          "racine": "غ ف ر",
+          "sens": "God will never forgive them",
+          "def": "ghafara: to forgive.",
+          "gram": "negation of the future"
+        }
+      ]
+    },
+    {
+      "n": 35,
+      "ar": "فَلَا تَهِنُوا وَتَدْعُوا إِلَى السَّلْمِ وَأَنْتُمُ الْأَعْلَوْنَ وَاللَّهُ مَعَكُمْ وَلَنْ يَتِرَكُمْ أَعْمَالَكُمْ",
+      "tr": "fa-lā tahinū wa-tadʿū ilā s-salmi wa-antumu l-aʿlawna wa-llāhu maʿakum wa-lan yatirakum aʿmālakum",
+      "trad": "So do not weaken and sue for peace while you have the upper hand and God is with you; He will not deprive you of your deeds.",
+      "themes": [
+        "do not weaken",
+        "God is with you"
+      ],
+      "commentaire": "Qushayrī moves from the outward to the inward: <em>do not incline to truce with the disbelievers while you are the higher by proof and by victory.</em> Then he interiorizes: <em>do not weaken in your hearts, and stand upright by God; for since God is with you, nothing of you escapes Him — He sees you unceasingly.</em> And he concludes: <em>whoever knows that his Master sees him bears every hardship, absorbed in His vision.</em>",
+      "mots": [
+        {
+          "ar": "فَلَا تَهِنُوا",
+          "tr": "fa-lā tahinū",
+          "racine": "و ه ن",
+          "sens": "do not weaken",
+          "def": "wahana: to grow weak, falter.",
+          "gram": "prohibition"
+        },
+        {
+          "ar": "وَتَدْعُوا إِلَى السَّلْمِ",
+          "tr": "wa-tadʿū ilā s-salm",
+          "racine": "د ع و / س ل م",
+          "sens": "and sue for peace",
+          "def": "salm: truce, peace.",
+          "gram": "subjunctive bound to prohibition"
+        },
+        {
+          "ar": "وَأَنْتُمُ الْأَعْلَوْنَ",
+          "tr": "wa-antumu l-aʿlawn",
+          "racine": "ع ل و",
+          "sens": "while you are the higher",
+          "def": "aʿlawn: the superior ones.",
+          "gram": "circumstantial"
+        },
+        {
+          "ar": "وَلَنْ يَتِرَكُمْ أَعْمَالَكُمْ",
+          "tr": "wa-lan yatirakum aʿmālakum",
+          "racine": "و ت ر / ع م ل",
+          "sens": "He will not deprive you of your deeds",
+          "def": "watara: to diminish, deprive of due.",
+          "gram": "negation of the future"
+        }
+      ]
+    },
+    {
+      "n": 36,
+      "ar": "إِنَّمَا الْحَيَاةُ الدُّنْيَا لَعِبٌ وَلَهْوٌ وَإِنْ تُؤْمِنُوا وَتَتَّقُوا يُؤْتِكُمْ أُجُورَكُمْ وَلَا يَسْأَلْكُمْ أَمْوَالَكُمْ",
+      "tr": "innamā l-ḥayātu d-dunyā laʿibun wa-lahwun wa-in tuʾminū wa-tattaqū yuʾtikum ujūrakum wa-lā yasʾalkum amwālakum",
+      "trad": "The life of this world is but play and diversion. If you believe and are godfearing, He will give you your rewards and will not ask you for your wealth.",
+      "themes": [
+        "the world, play and vanity",
+        "the reward"
+      ],
+      "commentaire": "Qushayrī gathers up the exhortation: <em>shun associationism and acts of disobedience, that He may pay you your rewards.</em> And he specifies the light measure of the due: <em>God asks of your wealth only a tiny portion — the measure of the zakāt.</em> The world is but play; what remains is faith and godfearing.",
+      "mots": [
+        {
+          "ar": "إِنَّمَا الْحَيَاةُ الدُّنْيَا لَعِبٌ وَلَهْوٌ",
+          "tr": "innamā l-ḥayātu d-dunyā laʿibun wa-lahw",
+          "racine": "ح ي ي / ل ع ب / ل ه و",
+          "sens": "this world's life is but play and diversion",
+          "def": "laʿib / lahw: play / vain amusement.",
+          "gram": "restriction"
+        },
+        {
+          "ar": "يُؤْتِكُمْ أُجُورَكُمْ",
+          "tr": "yuʾtikum ujūrakum",
+          "racine": "أ ت ي / أ ج ر",
+          "sens": "He will give you your rewards",
+          "def": "ujūr: wages, recompenses.",
+          "gram": "answer to the condition"
+        },
+        {
+          "ar": "وَلَا يَسْأَلْكُمْ أَمْوَالَكُمْ",
+          "tr": "wa-lā yasʾalkum amwālakum",
+          "racine": "س أ ل / م و ل",
+          "sens": "and will not ask you for your wealth",
+          "def": "amwāl: riches.",
+          "gram": "negation"
+        }
+      ]
+    },
+    {
+      "n": 37,
+      "ar": "إِنْ يَسْأَلْكُمُوهَا فَيُحْفِكُمْ تَبْخَلُوا وَيُخْرِجْ أَضْغَانَكُمْ",
+      "tr": "in yasʾalkumūhā fa-yuḥfikum tabkhalū wa-yukhrij aḍghānakum",
+      "trad": "Were He to ask it of you and press you, you would be miserly, and He would bring out your rancour.",
+      "themes": [
+        "miserliness exposed"
+      ],
+      "commentaire": "“To press” (iḥfāʾ) is to insist in the demand. Qushayrī specifies whom this warning addresses: <em>this holds only for one not preserved from the avarice of his soul; but as for the brethren and those whose rank has risen in freedom of heart, they are not let off even an atom withheld: of them is demanded the giving of the soul and the acceptance of sacrifices.</em>",
+      "mots": [
+        {
+          "ar": "إِنْ يَسْأَلْكُمُوهَا فَيُحْفِكُمْ",
+          "tr": "in yasʾalkumūhā fa-yuḥfikum",
+          "racine": "س أ ل / ح ف و",
+          "sens": "were He to ask it pressingly",
+          "def": "aḥfā: to insist, press.",
+          "gram": "conditional"
+        },
+        {
+          "ar": "تَبْخَلُوا",
+          "tr": "tabkhalū",
+          "racine": "ب خ ل",
+          "sens": "you would be miserly",
+          "def": "bakhila: to be miserly.",
+          "gram": "jussive apodosis"
+        },
+        {
+          "ar": "وَيُخْرِجْ أَضْغَانَكُمْ",
+          "tr": "wa-yukhrij aḍghānakum",
+          "racine": "خ ر ج / ض غ ن",
+          "sens": "and He would bring out your rancour",
+          "def": "aḍghān: buried grudges.",
+          "gram": "jussive + object"
+        }
+      ]
+    },
+    {
+      "n": 38,
+      "ar": "هَا أَنْتُمْ هَٰؤُلَاءِ تُدْعَوْنَ لِتُنْفِقُوا فِي سَبِيلِ اللَّهِ فَمِنْكُمْ مَنْ يَبْخَلُ وَمَنْ يَبْخَلْ فَإِنَّمَا يَبْخَلُ عَنْ نَفْسِهِ وَاللَّهُ الْغَنِيُّ وَأَنْتُمُ الْفُقَرَاءُ وَإِنْ تَتَوَلَّوْا يَسْتَبْدِلْ قَوْمًا غَيْرَكُمْ ثُمَّ لَا يَكُونُوا أَمْثَالَكُمْ",
+      "tr": "hā antum hāʾulāʾi tudʿawna li-tunfiqū fī sabīli llāhi fa-minkum man yabkhalu wa-man yabkhal fa-innamā yabkhalu ʿan nafsihi wa-llāhu l-ghaniyyu wa-antumu l-fuqarāʾu wa-in tatawallaw yastabdil qawman ghayrakum thumma lā yakūnū amthālakum",
+      "trad": "Here you are, called to spend in the way of God; yet among you are some who are miserly. Whoever is miserly is miserly only against himself. God is the Rich, and you are the poor. If you turn away, He will replace you with another people, and they will not be the likes of you.",
+      "themes": [
+        "the richness of God",
+        "the poverty of the servant"
+      ],
+      "commentaire": "Here Qushayrī founds a metaphysics of poverty: <em>the miser harms none but himself</em>, for he deprives himself of the only true gain. As for “God is the Rich, and you are the poor”: <em>His richness is that His wills know no bound; the servant is poor by essence, for he never does without his Master, from the beginning of his creation to its end, and remains at every instant suspended upon Him.</em> And he draws the definition of the true poor: <em>the truthful poor one is he who witnesses his poverty toward God; whoever grows poor toward God is enriched by God, and whoever grows poor toward other than God falls into humiliation.</em> As for the people of replacement, <em>they would be more obedient to Him and more faithful, and would not be your likes in disobedience and turning away: rather, they would be better than you.</em>",
+      "mots": [
+        {
+          "ar": "تُدْعَوْنَ لِتُنْفِقُوا فِي سَبِيلِ اللَّهِ",
+          "tr": "tudʿawna li-tunfiqū fī sabīli llāh",
+          "racine": "د ع و / ن ف ق / س ب ل",
+          "sens": "you are called to spend in God's way",
+          "def": "anfaqa: to spend, give alms.",
+          "gram": "passive + purpose"
+        },
+        {
+          "ar": "فَإِنَّمَا يَبْخَلُ عَنْ نَفْسِهِ",
+          "tr": "fa-innamā yabkhalu ʿan nafsih",
+          "racine": "ب خ ل / ن ف س",
+          "sens": "he is miserly only against himself",
+          "def": "bakhila: to withhold what is due.",
+          "gram": "restriction"
+        },
+        {
+          "ar": "وَاللَّهُ الْغَنِيُّ وَأَنْتُمُ الْفُقَرَاءُ",
+          "tr": "wa-llāhu l-ghaniyyu wa-antumu l-fuqarāʾ",
+          "racine": "غ ن ي / ف ق ر",
+          "sens": "God is the Rich, and you are the poor",
+          "def": "al-Ghaniyy: the Self-Sufficient; fuqarāʾ: the needy.",
+          "gram": "two nominal sentences"
+        },
+        {
+          "ar": "يَسْتَبْدِلْ قَوْمًا غَيْرَكُمْ",
+          "tr": "yastabdil qawman ghayrakum",
+          "racine": "ب د ل / ق و م",
+          "sens": "He will replace you with another people",
+          "def": "istabdala: to substitute, replace.",
+          "gram": "jussive + object"
+        }
+      ]
+    }
+  ]
+}

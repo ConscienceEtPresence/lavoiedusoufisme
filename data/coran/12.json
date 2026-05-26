@@ -1,0 +1,3173 @@
+{
+  "n": 12,
+  "nom_ar": "يُوسُف",
+  "nom_tr": "Yūsuf",
+  "nom_fr": "Joseph",
+  "revelation": "mecquoise",
+  "basmala": "Au nom de Dieu, le Miséricordieux, le Clément.",
+  "versets_count": 111,
+  "intro": "Yūsuf — la sourate annoncée comme « le plus beau des récits » (aḥsan al-qaṣaṣ) — déroule en cent-onze versets l'unique grande histoire continue du Coran : le rêve de l'enfant aux onze étoiles, au soleil et à la lune prosternés, la jalousie des frères, le puits, la caravane qui le recueille, la maison du grand d'Égypte, la tentation de la maîtresse aux portes closes et l'aveu : « Je ne cherche pas à m'innocenter, car l'âme incite fortement au mal, sauf si mon Seigneur fait miséricorde » ; la prison et l'interprétation des songes, l'élévation à l'intendance, le retour des frères affamés, la reconnaissance « Je suis Joseph et voici mon frère », la douceur de Jacob « je me plains seulement à Dieu de ma douleur », la prosternation finale « voici l'explication de mon ancienne vision », et le sceau : « en vérité, l'histoire des envoyés contient des enseignements pour les hommes doués d'intelligence ». Qushayrī y reconnaît partout <em>la voie de la patience belle (ṣabr jamīl)</em> : Jacob qui ne se plaint qu'à Dieu, Joseph que <em>le puits devient l'école du retrait et l'enclos de la solitude où la beauté se cache avant que Dieu ne la dévoile</em>. Toute la sourate dit la même loi : <em>Dieu n'ouvre pas une porte d'épreuve sur l'âme de Ses amis sans ouvrir sur leur cœur les portes de la limpidité</em>.",
+  "themes": [
+    "le plus beau des récits",
+    "la patience belle",
+    "le rêve et son interprétation",
+    "l'âme qui commande le mal",
+    "l'élection (ijtibāʾ)",
+    "la reconnaissance et le pardon"
+  ],
+  "versets": [
+    {
+      "n": 1,
+      "ar": "الر ۚ تِلْكَ آيَاتُ الْكِتَابِ الْمُبِينِ",
+      "tr": "alif lām rā tilka āyātu l-kitābi l-mubīni",
+      "trad": "Alif. Lâm. Râ. Voici les versets du Livre évident.",
+      "themes": [
+        "les lettres liminaires",
+        "le Livre évident"
+      ],
+      "commentaire": "Qushayrī : <em>l'échange par lettres détachées et non assemblées est la coutume des amants pour voiler ce qui leur est cher</em>. Le Coran, même destiné à éclairer, comporte allusion et déclaration, abrégé et détaillé ; les intelligences se sont arrêtées au seuil de ses secrets. <em>Le Bien-Aimé seul fut singularisé par leur compréhension intime — c'est son secret, que nul censeur ne perce</em>. « Voici » : c'est l'accomplissement de la promesse que Nous t'avons faite.",
+      "mots": [
+        {
+          "ar": "الر",
+          "tr": "alif lām rā",
+          "racine": "",
+          "sens": "Alif. Lâm. Râ.",
+          "def": "lettres liminaires, voile et clef.",
+          "gram": "lettres isolées"
+        },
+        {
+          "ar": "تِلْكَ آيَاتُ الْكِتَابِ الْمُبِينِ",
+          "tr": "tilka āyātu l-kitābi l-mubīn",
+          "racine": "أ ي ي / ك ت ب / ب ي ن",
+          "sens": "voici les versets du Livre évident",
+          "def": "mubīn : clair, qui éclaire.",
+          "gram": "démonstratif"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "ar": "إِنَّا أَنزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ",
+      "tr": "innā anzalnāhu qurʾānan ʿarabiyyan laʿallakum taʿqilūna",
+      "trad": "Nous l'avons fait descendre sous forme d'un Coran arabe pour que vous puissiez raisonner.",
+      "themes": [
+        "la descente du Coran"
+      ],
+      "commentaire": "Qushayrī : <em>la révélation du Livre et l'envoi du Messager confirment les liens de l'amour ; qui est privé de la jonction véritable trouve consolation dans le Messager, et qui demeure voilé de la contemplation des aimés se console par l'existence du Livre</em>.",
+      "mots": [
+        {
+          "ar": "أَنزَلْنَاهُ",
+          "tr": "anzalnāhu",
+          "racine": "ن ز ل",
+          "sens": "Nous l'avons fait descendre",
+          "def": "anzala : faire descendre.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "قُرْآنًا عَرَبِيًّا",
+          "tr": "qurʾānan ʿarabiyyan",
+          "racine": "ق ر أ / ع ر ب",
+          "sens": "un Coran arabe",
+          "def": "ʿarabī : arabe.",
+          "gram": "état + attribut"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "ar": "نَحْنُ نَقُصُّ عَلَيْكَ أَحْسَنَ الْقَصَصِ بِمَا أَوْحَيْنَا إِلَيْكَ هَٰذَا الْقُرْآنَ وَإِن كُنتَ مِن قَبْلِهِ لَمِنَ الْغَافِلِينَ",
+      "tr": "naḥnu naquṣṣu ʿalayka aḥsana l-qaṣaṣi bi-mā awḥaynā ilayka hādhā l-qurʾāna wa-in kunta min qablihi la-mina l-ghāfilīna",
+      "trad": "Nous te relatons, en te révélant ce Coran, le plus beau des récits, même si tu n'y prêtais pas attention auparavant.",
+      "themes": [
+        "le plus beau des récits"
+      ],
+      "commentaire": "Qushayrī donne plusieurs raisons à ce titre : <em>« le plus beau des récits » — car il est exempt de commandement et d'interdiction dont l'écoute occupe le cœur ; car il y est fait mention des aimés ; car Joseph y pardonne à ses frères ; car il y détourne le visage de la femme du grand Intendant qui le sollicite</em>. Et « tu n'étais auparavant qu'au nombre des distraits » : <em>tu n'es pas parvenu à cette connaissance par ton effort — c'est don, non gain ; faveur, non apprentissage ; par Nous, non par toi</em>.",
+      "mots": [
+        {
+          "ar": "نَقُصُّ",
+          "tr": "naquṣṣu",
+          "racine": "ق ص ص",
+          "sens": "Nous relatons",
+          "def": "qaṣṣa : raconter, suivre la trace.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "أَحْسَنَ الْقَصَصِ",
+          "tr": "aḥsana l-qaṣaṣ",
+          "racine": "ح س ن / ق ص ص",
+          "sens": "le plus beau des récits",
+          "def": "qaṣaṣ : narration.",
+          "gram": "élatif + annexion"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "ar": "إِذْ قَالَ يُوسُفُ لِأَبِيهِ يَا أَبَتِ إِنِّي رَأَيْتُ أَحَدَ عَشَرَ كَوْكَبًا وَالشَّمْسَ وَالْقَمَرَ رَأَيْتُهُمْ لِي سَاجِدِينَ",
+      "tr": "idh qāla yūsufu li-abīhi yā abati innī raʾaytu aḥada ʿashara kawkaban wa-sh-shamsa wa-l-qamara raʾaytuhum lī sājidīna",
+      "trad": "Joseph dit un jour à son père : « O mon père ! J'ai vu onze étoiles, le soleil et la lune, je les ai vues se prosterner devant moi ».",
+      "themes": [
+        "la vision de Joseph"
+      ],
+      "commentaire": "Lorsque Joseph raconte sa vision, Jacob en pressent la véracité — c'est pourquoi il ne cessera de se souvenir de lui durant son absence. Qushayrī : <em>le droit du secret est qu'il soit gardé, fût-ce de celui qui t'est proche ; lorsque Joseph divulgua le secret de sa vision à son père, l'épreuve fondit sur lui</em>. Le rêve, à la différence de l'acte, ne relève pas du choix : il échappe au reproche.",
+      "mots": [
+        {
+          "ar": "يَا أَبَتِ",
+          "tr": "yā abati",
+          "racine": "أ ب و",
+          "sens": "ô mon père",
+          "def": "vocatif affectueux.",
+          "gram": "vocatif"
+        },
+        {
+          "ar": "أَحَدَ عَشَرَ كَوْكَبًا",
+          "tr": "aḥada ʿashara kawkaban",
+          "racine": "ك و ك ب",
+          "sens": "onze étoiles",
+          "def": "kawkab : astre.",
+          "gram": "numéral composé"
+        },
+        {
+          "ar": "سَاجِدِينَ",
+          "tr": "sājidīn",
+          "racine": "س ج د",
+          "sens": "se prosternant",
+          "def": "sājid : qui se prosterne.",
+          "gram": "participe actif pluriel"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "ar": "قَالَ يَا بُنَيَّ لَا تَقْصُصْ رُؤْيَاكَ عَلَىٰ إِخْوَتِكَ فَيَكِيدُوا لَكَ كَيْدًا ۖ إِنَّ الشَّيْطَانَ لِلْإِنسَانِ عَدُوٌّ مُّبِينٌ",
+      "tr": "qāla yā bunayya lā taqṣuṣ ruʾyāka ʿalā ikhwatika fa-yakīdū laka kaydan inna sh-shayṭāna li-l-insāni ʿaduwwun mubīnun",
+      "trad": "Il dit : « O mon fils ! Ne raconte pas ta vision à tes frères, car ils trameraient alors des ruses contre toi. Satan est pour l'homme un ennemi déclaré ».",
+      "themes": [
+        "le secret confié"
+      ],
+      "commentaire": "Qushayrī : <em>quand le décret vient, ni l'avertissement ni la précaution ne servent</em> — Jacob a conseillé de toutes ses forces, et pourtant ce qui devait advenir advint. Et <em>Joseph, en désobéissant à la consigne de son père en exposant son rêve, ne fut pas épargné des épreuves</em>. Le secret divulgué appelle l'épreuve : voilà la loi de l'amour caché.",
+      "mots": [
+        {
+          "ar": "لَا تَقْصُصْ",
+          "tr": "lā taqṣuṣ",
+          "racine": "ق ص ص",
+          "sens": "ne raconte pas",
+          "def": "impératif négatif.",
+          "gram": "jussif"
+        },
+        {
+          "ar": "كَيْدًا",
+          "tr": "kaydan",
+          "racine": "ك ي د",
+          "sens": "une ruse",
+          "def": "kayd : machination.",
+          "gram": "complément absolu"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "ar": "وَكَذَٰلِكَ يَجْتَبِيكَ رَبُّكَ وَيُعَلِّمُكَ مِن تَأْوِيلِ الْأَحَادِيثِ وَيُتِمُّ نِعْمَتَهُ عَلَيْكَ وَعَلَىٰ آلِ يَعْقُوبَ كَمَا أَتَمَّهَا عَلَىٰ أَبَوَيْكَ مِن قَبْلُ إِبْرَاهِيمَ وَإِسْحَاقَ ۚ إِنَّ رَبَّكَ عَلِيمٌ حَكِيمٌ",
+      "tr": "wa-kadhālika yajtabīka rabbuka wa-yuʿallimuka min taʾwīli l-aḥādīthi wa-yutimmu niʿmatahu ʿalayka wa-ʿalā āli yaʿqūba kamā atammahā ʿalā abawayka min qablu ibrāhīma wa-isḥāqa inna rabbaka ʿalīmun ḥakīmun",
+      "trad": "Ainsi, ton Seigneur te prendra comme élu ; Il t'enseignera l'interprétation des événements ; Il te comblera de toute Sa faveur, ainsi que la famille de Jacob, comme Il a comblé tes deux ancêtres : Abraham et Isaac. Ton Seigneur est omniscient, sage.",
+      "themes": [
+        "l'élection (ijtibāʾ)"
+      ],
+      "commentaire": "Qushayrī : <em>l'élection (ijtibāʾ), c'est ce où la créature n'a aucune part — tout bien qui advient au serviteur sans son effort ni son intention relève de l'élection</em>. De cette élection : être préservé de ce à quoi le sollicitera la femme du grand Intendant, jeter le voile sur la faute des frères, et la prompte clémence : « nul reproche aujourd'hui ».",
+      "mots": [
+        {
+          "ar": "يَجْتَبِيكَ",
+          "tr": "yajtabīka",
+          "racine": "ج ب ي",
+          "sens": "Il t'élit",
+          "def": "ijtabā : choisir.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "تَأْوِيلِ الْأَحَادِيثِ",
+          "tr": "taʾwīli l-aḥādīth",
+          "racine": "أ و ل / ح د ث",
+          "sens": "interprétation des événements",
+          "def": "taʾwīl : interprétation profonde.",
+          "gram": "annexion"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "ar": "لَّقَدْ كَانَ فِي يُوسُفَ وَإِخْوَتِهِ آيَاتٌ لِّلسَّائِلِينَ",
+      "tr": "la-qad kāna fī yūsufa wa-ikhwatihi āyātun li-s-sāʾilīna",
+      "trad": "Il y a certes en Joseph et ses frères des signes pour ceux qui cherchent à savoir.",
+      "themes": [
+        "les signes pour les chercheurs"
+      ],
+      "commentaire": "Qushayrī : <em>des signes pour tout éprouvé, afin qu'il sache comment patienter ; et pour tout comblé, afin qu'il sache comment rendre grâce</em>. Dans leur récit : la manière de pardonner la faute, la honte des durs au jour de la rencontre, la délicatesse de Dieu envers Ses amis par la préservation, <em>et que l'amour est apparenté à l'épreuve</em>.",
+      "mots": [
+        {
+          "ar": "آيَاتٌ",
+          "tr": "āyāt",
+          "racine": "أ ي ي",
+          "sens": "des signes",
+          "def": "āya : signe, verset.",
+          "gram": "nom pluriel"
+        },
+        {
+          "ar": "السَّائِلِينَ",
+          "tr": "as-sāʾilīn",
+          "racine": "س أ ل",
+          "sens": "ceux qui questionnent",
+          "def": "sāʾil : qui demande.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "ar": "إِذْ قَالُوا لَيُوسُفُ وَأَخُوهُ أَحَبُّ إِلَىٰ أَبِينَا مِنَّا وَنَحْنُ عُصْبَةٌ إِنَّ أَبَانَا لَفِي ضَلَالٍ مُّبِينٍ",
+      "tr": "idh qālū la-yūsufu wa-akhūhu aḥabbu ilā abīnā minnā wa-naḥnu ʿuṣbatun inna abānā la-fī ḍalālin mubīnin",
+      "trad": "Ils se dirent alors : « Joseph et son [plus jeune] frère sont plus chers que nous à notre père, bien que nous formions un groupe. Notre père est manifestement égaré.",
+      "themes": [
+        "la jalousie des frères"
+      ],
+      "commentaire": "Qushayrī : <em>ils trahirent ce qu'ils dissimulaient de jalousie ; pour la chasser de leur cœur, ils s'en prirent à leur père au point de le dire « égaré »</em>. Quand ils jalousèrent la préférence du père, Dieu <em>les fit se prosterner devant Joseph, afin qu'ils apprennent que le jaloux ne règne jamais</em>. Ils voulurent jeter Joseph au fond du puits — Dieu l'éleva au-dessus du trône.",
+      "mots": [
+        {
+          "ar": "أَحَبُّ",
+          "tr": "aḥabbu",
+          "racine": "ح ب ب",
+          "sens": "plus aimé",
+          "def": "élatif de ḥabīb.",
+          "gram": "élatif"
+        },
+        {
+          "ar": "عُصْبَةٌ",
+          "tr": "ʿuṣbatun",
+          "racine": "ع ص ب",
+          "sens": "un groupe",
+          "def": "ʿuṣba : bande solidaire.",
+          "gram": "nom collectif"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "ar": "اقْتُلُوا يُوسُفَ أَوِ اطْرَحُوهُ أَرْضًا يَخْلُ لَكُمْ وَجْهُ أَبِيكُمْ وَتَكُونُوا مِن بَعْدِهِ قَوْمًا صَالِحِينَ",
+      "tr": "uqtulū yūsufa awi-ṭraḥūhu arḍan yakhlu lakum wajhu abīkum wa-takūnū min baʿdihi qawman ṣāliḥīna",
+      "trad": "Tuez Joseph, ou bien déportez-le en quelque contrée pour que votre père n'aie de regard que pour vous. Ensuite, vous vous conduirez en hommes de bien ».",
+      "themes": [
+        "le complot",
+        "le repentir différé"
+      ],
+      "commentaire": "Qushayrī : <em>qui veut le tout perd le tout</em> — ils voulurent que l'affection de Jacob leur revînt entièrement, et Dieu dit ensuite : « il se détourna d'eux ». Et : <em>ils précipitèrent l'illicite et différèrent la repentance par tergiversation ; ce qu'ils ajournèrent du repentir n'effaça pas ce qu'ils avancèrent de la faute</em>.",
+      "mots": [
+        {
+          "ar": "اقْتُلُوا",
+          "tr": "uqtulū",
+          "racine": "ق ت ل",
+          "sens": "tuez",
+          "def": "impératif.",
+          "gram": "impératif pluriel"
+        },
+        {
+          "ar": "يَخْلُ لَكُمْ وَجْهُ أَبِيكُمْ",
+          "tr": "yakhlu lakum wajhu abīkum",
+          "racine": "خ ل و / و ج ه",
+          "sens": "le visage de votre père vous sera libre",
+          "def": "khalā : être vide pour.",
+          "gram": "jussif"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "ar": "قَالَ قَائِلٌ مِّنْهُمْ لَا تَقْتُلُوا يُوسُفَ وَأَلْقُوهُ فِي غَيَابَتِ الْجُبِّ يَلْتَقِطْهُ بَعْضُ السَّيَّارَةِ إِن كُنتُمْ فَاعِلِينَ",
+      "tr": "qāla qāʾilun minhum lā taqtulū yūsufa wa-alqūhu fī ghayābati l-jubbi yaltaqiṭhu baʿḍu s-sayyārati in kuntum fāʿilīna",
+      "trad": "L'un d'eux prit la parole et dit : « Ne tuez pas Joseph ; s'il vous faut agir, jetez-le plutôt dans les profondeurs du puits, où quelque voyageur le recueillera ».",
+      "themes": [
+        "la voix qui retient",
+        "le puits"
+      ],
+      "commentaire": "Qushayrī : <em>les frères de Joseph, même venus à lui en rudesse, furent retenus par la tendresse du sang</em>. Puis : <em>parce que le décret divin était de faire parvenir Joseph à cette proximité, Dieu jeta dans le cœur de ce parlant la parole « ne tuez pas Joseph »</em>. Ainsi : « combien de fois les épreuves t'environnent — et Dieu choisit pour toi, alors que tu détestes ce qui adviendra ».",
+      "mots": [
+        {
+          "ar": "غَيَابَتِ الْجُبِّ",
+          "tr": "ghayābati l-jubb",
+          "racine": "غ ي ب / ج ب ب",
+          "sens": "les profondeurs du puits",
+          "def": "ghayāba : fond obscur ; jubb : puits.",
+          "gram": "annexion"
+        },
+        {
+          "ar": "السَّيَّارَةِ",
+          "tr": "as-sayyāra",
+          "racine": "س ي ر",
+          "sens": "la caravane",
+          "def": "sayyāra : caravane de voyageurs.",
+          "gram": "nom collectif"
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "ar": "قَالُوا يَا أَبَانَا مَا لَكَ لَا تَأْمَنَّا عَلَىٰ يُوسُفَ وَإِنَّا لَهُ لَنَاصِحُونَ",
+      "tr": "qālū yā abānā mā laka lā taʾmannā ʿalā yūsufa wa-innā lahu la-nāṣiḥūna",
+      "trad": "Ils dirent : « O notre père ! Pourquoi ne nous fais-tu pas confiance au sujet de Joseph alors que nous lui voulons du bien ?",
+      "themes": [
+        "la parole du jaloux"
+      ],
+      "commentaire": "Qushayrī : <em>la parole du jaloux ne s'écoute pas et sa promesse ne s'accepte pas — fût-elle revêtue d'apparence de conseil — car il fait goûter le miel et donne à boire le fiel</em>. Étrange est l'acceptation par Jacob de ce qu'ils prétendent vouloir préserver, alors que son cœur a déjà flairé en eux la ruse. Mais <em>quand le décret arrive, la clairvoyance se ferme</em>.",
+      "mots": [
+        {
+          "ar": "لَا تَأْمَنَّا",
+          "tr": "lā taʾmannā",
+          "racine": "أ م ن",
+          "sens": "tu ne nous fais pas confiance",
+          "def": "amina : faire confiance.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "نَاصِحُونَ",
+          "tr": "nāṣiḥūn",
+          "racine": "ن ص ح",
+          "sens": "des bienveillants",
+          "def": "nāṣiḥ : conseiller sincère.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "ar": "أَرْسِلْهُ مَعَنَا غَدًا يَرْتَعْ وَيَلْعَبْ وَإِنَّا لَهُ لَحَافِظُونَ",
+      "tr": "arsilhu maʿanā ghadan yartaʿ wa-yalʿab wa-innā lahu la-ḥāfiẓūna",
+      "trad": "Envoie-le demain avec nous ; il s'ébattra, il jouera et nous serons ses gardiens ».",
+      "themes": [
+        "la promesse de garde"
+      ],
+      "commentaire": "Qushayrī : <em>ils éveillèrent en Jacob l'espoir d'un moment de joie pour Joseph, et l'amant préfère le repos de son aimé à son propre amour</em>. Mais en se fiant à leurs paroles « nous serons ses gardiens », il s'en remit aux créatures pour garder son bien-aimé : <em>qui confie son aimé aux ennemis avale l'amertume de l'épreuve</em>.",
+      "mots": [
+        {
+          "ar": "يَرْتَعْ وَيَلْعَبْ",
+          "tr": "yartaʿ wa-yalʿab",
+          "racine": "ر ت ع / ل ع ب",
+          "sens": "qu'il s'ébatte et joue",
+          "def": "jussif.",
+          "gram": "jussifs"
+        },
+        {
+          "ar": "لَحَافِظُونَ",
+          "tr": "la-ḥāfiẓūn",
+          "racine": "ح ف ظ",
+          "sens": "gardiens",
+          "def": "ḥāfiẓ : qui garde.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "ar": "قَالَ إِنِّي لَيَحْزُنُنِي أَن تَذْهَبُوا بِهِ وَأَخَافُ أَن يَأْكُلَهُ الذِّئْبُ وَأَنتُمْ عَنْهُ غَافِلُونَ",
+      "tr": "qāla innī la-yaḥzununī an tadhhabū bihi wa-akhāfu an yaʾkulahu dh-dhiʾbu wa-antum ʿanhu ghāfilūna",
+      "trad": "Il dit : « Certes, je suis triste que vous l'emmeniez. Je crains que le loup ne le dévore pendant que vous ne ferez pas attention à lui ».",
+      "themes": [
+        "la crainte de Jacob",
+        "le loup"
+      ],
+      "commentaire": "Qushayrī : <em>il fut éprouvé par le récit du loup parce qu'il l'avait nommé</em> — selon la tradition : « on n'inflige au fils d'Adam que ce qu'il redoute ». Et : <em>du fait que la mention du loup tomba sur la langue de Jacob, elle devint comme l'enseignement par lequel les frères se saisirent du prétexte</em>. Mention prophétique, où le destin se glisse jusque dans le vocabulaire.",
+      "mots": [
+        {
+          "ar": "لَيَحْزُنُنِي",
+          "tr": "la-yaḥzununī",
+          "racine": "ح ز ن",
+          "sens": "cela m'attriste",
+          "def": "ḥazana : attrister.",
+          "gram": "verbe + suffixe"
+        },
+        {
+          "ar": "الذِّئْبُ",
+          "tr": "adh-dhiʾb",
+          "racine": "ذ أ ب",
+          "sens": "le loup",
+          "def": "dhiʾb : loup.",
+          "gram": "nom défini"
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "ar": "قَالُوا لَئِنْ أَكَلَهُ الذِّئْبُ وَنَحْنُ عُصْبَةٌ إِنَّا إِذًا لَّخَاسِرُونَ",
+      "tr": "qālū la-in akalahu dh-dhiʾbu wa-naḥnu ʿuṣbatun innā idhan la-khāsirūna",
+      "trad": "Ils dirent : « Si le loup le dévorait, alors que nous sommes en groupe, nous serions vraiment des misérables ! »",
+      "themes": [
+        "la perte annoncée"
+      ],
+      "commentaire": "Qushayrī : <em>les frères de Joseph se virent eux-mêmes confirmés dans la perte qu'ils se prédirent : car qui vend un frère tel que Joseph pour un tel prix mérite qu'on dise « il a perdu son marché »</em>. Et : <em>lorsqu'ils comptèrent leur propre force en disant « nous sommes un groupe », ils furent abandonnés à eux-mêmes jusqu'à commettre ce qu'ils commirent</em>.",
+      "mots": [
+        {
+          "ar": "عُصْبَةٌ",
+          "tr": "ʿuṣba",
+          "racine": "ع ص ب",
+          "sens": "un groupe solidaire",
+          "def": "ʿuṣba.",
+          "gram": "nom"
+        },
+        {
+          "ar": "لَّخَاسِرُونَ",
+          "tr": "la-khāsirūn",
+          "racine": "خ س ر",
+          "sens": "des perdants",
+          "def": "khāsir : qui perd.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 15,
+      "ar": "فَلَمَّا ذَهَبُوا بِهِ وَأَجْمَعُوا أَن يَجْعَلُوهُ فِي غَيَابَتِ الْجُبِّ ۚ وَأَوْحَيْنَا إِلَيْهِ لَتُنَبِّئَنَّهُم بِأَمْرِهِمْ هَٰذَا وَهُمْ لَا يَشْعُرُونَ",
+      "tr": "fa-lammā dhahabū bihi wa-ajmaʿū an yajʿalūhu fī ghayābati l-jubbi wa-awḥaynā ilayhi la-tunabbiʾannahum bi-amrihim hādhā wa-hum lā yashʿurūna",
+      "trad": "Ils l'emmenèrent, puis ils tombèrent d'accord pour le jeter dans les profondeurs du puits. Nous lui révélâmes : « Tu les aviseras un jour de ce qu'ils ont fait, alors qu'aujourd'hui ils sont inconscients ! »",
+      "themes": [
+        "la révélation au fond du puits"
+      ],
+      "commentaire": "Qushayrī : <em>quand l'épreuve fondit sur Joseph, Nous lui hâtâmes l'annonce de la bonne nouvelle, afin que la consolation du dévoilement le porte dans ce qu'il devait porter d'épreuve cruelle</em>. Et c'est la loi de Dieu : <em>Il n'ouvre pas une porte d'épreuve sur l'âme de Ses amis sans ouvrir sur leur cœur les portes de la limpidité et les arcanes de l'amitié</em>.",
+      "mots": [
+        {
+          "ar": "أَجْمَعُوا",
+          "tr": "ajmaʿū",
+          "racine": "ج م ع",
+          "sens": "ils se mirent d'accord",
+          "def": "ajmaʿa : décider unanimement.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "أَوْحَيْنَا",
+          "tr": "awḥaynā",
+          "racine": "و ح ي",
+          "sens": "Nous révélâmes",
+          "def": "awḥā : inspirer.",
+          "gram": "verbe accompli"
+        }
+      ]
+    },
+    {
+      "n": 16,
+      "ar": "وَجَاءُوا أَبَاهُمْ عِشَاءً يَبْكُونَ",
+      "tr": "wa-jāʾū abāhum ʿishāʾan yabkūna",
+      "trad": "Ils revinrent le soir chez leur père en pleurant",
+      "themes": [
+        "les larmes feintes"
+      ],
+      "commentaire": "Qushayrī : <em>que le menteur soit capable de pleurer est un signe de l'abandon de Dieu envers lui</em> ; dans la tradition : « quand l'hypocrisie de l'homme devient parfaite, il possède son œil pour pleurer à volonté ». Ou bien — <em>ils pleurèrent vraiment, par remords de ce qu'ils avaient commis, sans l'avouer à leur père</em>.",
+      "mots": [
+        {
+          "ar": "عِشَاءً",
+          "tr": "ʿishāʾan",
+          "racine": "ع ش و",
+          "sens": "le soir",
+          "def": "ʿishāʾ : soir.",
+          "gram": "circonstanciel"
+        },
+        {
+          "ar": "يَبْكُونَ",
+          "tr": "yabkūn",
+          "racine": "ب ك ي",
+          "sens": "pleurant",
+          "def": "bakā : pleurer.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 17,
+      "ar": "قَالُوا يَا أَبَانَا إِنَّا ذَهَبْنَا نَسْتَبِقُ وَتَرَكْنَا يُوسُفَ عِندَ مَتَاعِنَا فَأَكَلَهُ الذِّئْبُ ۖ وَمَا أَنتَ بِمُؤْمِنٍ لَّنَا وَلَوْ كُنَّا صَادِقِينَ",
+      "tr": "qālū yā abānā innā dhahabnā nastabiqu wa-taraknā yūsufa ʿinda matāʿinā fa-akalahu dh-dhiʾbu wa-mā anta bi-muʾminin lanā wa-law kunnā ṣādiqīna",
+      "trad": "et ils dirent : « O notre père ! Nous étions partis pour jouer à la course et avions laissé Joseph près de nos affaires. Le loup l'a dévoré. Tu ne vas pas nous croire, mais nous disons la vérité ».",
+      "themes": [
+        "le mensonge du loup"
+      ],
+      "commentaire": "Qushayrī : le mensonge enroulé d'apparence de vérité ne trompe pas le cœur du Connaissant. Jacob saisit aussitôt que <em>l'affaire est tout autre que ce qu'ils disent</em> — son cœur l'a informé avant que les détails n'apparaissent. C'est ainsi que <em>frappent au cœur des véridiques les conséquences des choses, en bloc, jusqu'à ce que le temps en déploie le détail</em>.",
+      "mots": [
+        {
+          "ar": "نَسْتَبِقُ",
+          "tr": "nastabiqu",
+          "racine": "س ب ق",
+          "sens": "nous faisons la course",
+          "def": "istabaqa : se disputer la course.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "مَتَاعِنَا",
+          "tr": "matāʿinā",
+          "racine": "م ت ع",
+          "sens": "nos affaires",
+          "def": "matāʿ : biens, bagages.",
+          "gram": "nom + suffixe"
+        }
+      ]
+    },
+    {
+      "n": 18,
+      "ar": "وَجَاءُوا عَلَىٰ قَمِيصِهِ بِدَمٍ كَذِبٍ ۚ قَالَ بَلْ سَوَّلَتْ لَكُمْ أَنفُسُكُمْ أَمْرًا ۖ فَصَبْرٌ جَمِيلٌ ۖ وَاللَّهُ الْمُسْتَعَانُ عَلَىٰ مَا تَصِفُونَ",
+      "tr": "wa-jāʾū ʿalā qamīṣihi bi-damin kadhibin qāla bal sawwalat lakum anfusukum amran fa-ṣabrun jamīlun wa-llāhu l-mustaʿānu ʿalā mā taṣifūna",
+      "trad": "Ils apportèrent sa tunique tachée d'un sang trompeur. Leur père dit : « C'est vous-mêmes qui avez manigancé cette affaire. Mais, douce patience ! C'est à Dieu qu'il faut demander assistance contre ce que vous racontez ».",
+      "themes": [
+        "la patience belle (ṣabr jamīl)",
+        "le sang trompeur"
+      ],
+      "commentaire": "Qushayrī : <em>leur falsification ne put obtenir que Jacob croie à leur mensonge : son cœur lui annonça que la chose était autre</em>. Et : <em>ils furent châtiés sur ce qu'ils firent : Dieu les rendit étourdis au point d'oublier de déchirer la tunique, afin que Jacob sût leur invention</em>. La « patience belle » : <em>douleur sans plainte aux créatures, recours à Dieu seul</em> — devise de Jacob tout au long de l'épreuve.",
+      "mots": [
+        {
+          "ar": "بِدَمٍ كَذِبٍ",
+          "tr": "bi-damin kadhibin",
+          "racine": "د م م / ك ذ ب",
+          "sens": "d'un sang menteur",
+          "def": "kadhib : mensonge.",
+          "gram": "attribut"
+        },
+        {
+          "ar": "صَبْرٌ جَمِيلٌ",
+          "tr": "ṣabrun jamīl",
+          "racine": "ص ب ر / ج م ل",
+          "sens": "patience belle",
+          "def": "ṣabr jamīl : patience sans plainte.",
+          "gram": "syntagme nominal"
+        }
+      ]
+    },
+    {
+      "n": 19,
+      "ar": "وَجَاءَتْ سَيَّارَةٌ فَأَرْسَلُوا وَارِدَهُمْ فَأَدْلَىٰ دَلْوَهُ ۖ قَالَ يَا بُشْرَىٰ هَٰذَا غُلَامٌ ۚ وَأَسَرُّوهُ بِضَاعَةً ۚ وَاللَّهُ عَلِيمٌ بِمَا يَعْمَلُونَ",
+      "tr": "wa-jāʾat sayyāratun fa-arsalū wāridahum fa-adlā dalwahu qāla yā bushrā hādhā ghulāmun wa-asarrūhu biḍāʿatan wa-llāhu ʿalīmun bi-mā yaʿmalūna",
+      "trad": "Arrivèrent des voyageurs qui envoyèrent au puits leur homme chargé de la corvée d'eau. Ayant fait descendre son seau, celui-ci s'écria : « Quelle bonne fortune ! Voici un jouvenceau ! » Ils le cachèrent comme une marchandise ; mais Dieu savait bien ce qu'ils allaient faire !",
+      "themes": [
+        "la sortie du puits",
+        "la providence cachée"
+      ],
+      "commentaire": "Qushayrī : <em>tous ne reçoivent pas seulement ce qu'ils demandent : il arrive qu'on reçoive au-dessus de toute espérance — la caravane se contentait d'eau, elle trouva Joseph</em>. Et : <em>tout ce que l'on trouve n'est pas tel qu'on le croit : la caravane crut trouver un esclave, et Joseph, en vérité, était libre</em>. Que de troubles surviennent en ce monde dont le but unique est le repos d'un seul.",
+      "mots": [
+        {
+          "ar": "وَارِدَهُمْ",
+          "tr": "wāridahum",
+          "racine": "و ر د",
+          "sens": "leur puiseur d'eau",
+          "def": "wārid : qui s'avance à l'eau.",
+          "gram": "nom + suffixe"
+        },
+        {
+          "ar": "يَا بُشْرَىٰ",
+          "tr": "yā bushrā",
+          "racine": "ب ش ر",
+          "sens": "ô bonne nouvelle",
+          "def": "bushrā : annonce heureuse.",
+          "gram": "exclamation"
+        },
+        {
+          "ar": "بِضَاعَةً",
+          "tr": "biḍāʿatan",
+          "racine": "ب ض ع",
+          "sens": "comme marchandise",
+          "def": "biḍāʿa : marchandise.",
+          "gram": "circonstanciel"
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "ar": "وَشَرَوْهُ بِثَمَنٍ بَخْسٍ دَرَاهِمَ مَعْدُودَةٍ وَكَانُوا فِيهِ مِنَ الزَّاهِدِينَ",
+      "tr": "wa-sharawhu bi-thamanin bakhsin darāhima maʿdūdatin wa-kānū fīhi mina z-zāhidīna",
+      "trad": "Ils le vendirent à vil prix, pour quelques pièces d'argent, car ils voulaient s'en défaire.",
+      "themes": [
+        "le prix dérisoire"
+      ],
+      "commentaire": "Qushayrī : <em>ils ne connurent pas leur perte sur l'heure — ils s'y arrêteront à la fin</em>. Et : <em>l'étonnant n'est pas que l'on vende un Joseph à vil prix : l'étonnant est que l'on vende son propre temps, plus précieux que le soufre rouge, contre un misérable bien de ce monde</em>. Le jour où ils dirent « je suis Joseph », la honte les saisit : <em>il suffit, au manquant, de la pudeur au jour de la rencontre</em>.",
+      "mots": [
+        {
+          "ar": "بِثَمَنٍ بَخْسٍ",
+          "tr": "bi-thamanin bakhs",
+          "racine": "ث م ن / ب خ س",
+          "sens": "à vil prix",
+          "def": "bakhs : minime, lésé.",
+          "gram": "attribut"
+        },
+        {
+          "ar": "الزَّاهِدِينَ",
+          "tr": "az-zāhidīn",
+          "racine": "ز ه د",
+          "sens": "les indifférents",
+          "def": "zāhid : qui se détourne.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 21,
+      "ar": "وَقَالَ الَّذِي اشْتَرَاهُ مِن مِّصْرَ لِامْرَأَتِهِ أَكْرِمِي مَثْوَاهُ عَسَىٰ أَن يَنفَعَنَا أَوْ نَتَّخِذَهُ وَلَدًا ۚ وَكَذَٰلِكَ مَكَّنَّا لِيُوسُفَ فِي الْأَرْضِ وَلِنُعَلِّمَهُ مِن تَأْوِيلِ الْأَحَادِيثِ ۚ وَاللَّهُ غَالِبٌ عَلَىٰ أَمْرِهِ وَلَٰكِنَّ أَكْثَرَ النَّاسِ لَا يَعْلَمُونَ",
+      "tr": "wa-qāla lladhī shtarāhu min miṣra li-mraʾatihi akrimī mathwāhu ʿasā an yanfaʿanā aw nattakhidhahu waladan wa-kadhālika makkannā li-yūsufa fī l-arḍi wa-li-nuʿallimahu min taʾwīli l-aḥādīthi wa-llāhu ghālibun ʿalā amrihi wa-lākinna akthara n-nāsi lā yaʿlamūna",
+      "trad": "Son acquéreur, originaire d'Egypte, dit à sa femme : « Traite-le généreusement ! Peut-être nous sera-t-il utile ou le prendrons-nous comme enfant ». C'est ainsi que Nous avons établi Joseph dans ce pays, afin aussi de lui enseigner l'interprétation des évènements. Dieu est souverain en Son commandement, mais la plupart des hommes ne le savent pas.",
+      "themes": [
+        "Dieu vainqueur de Son décret",
+        "l'établissement en Égypte"
+      ],
+      "commentaire": "Qushayrī : <em>ses ennemis voulurent qu'il n'eût aucun mérite sur ses frères ; Dieu voulut qu'il possède la terre — c'est ce que Dieu voulut qui fut, non ce que voulurent ses ennemis</em>. Ils voulurent que Joseph fût au fond du puits, Dieu voulut qu'il fût sur le trône royal : « Dieu est vainqueur de Son commandement ».",
+      "mots": [
+        {
+          "ar": "أَكْرِمِي مَثْوَاهُ",
+          "tr": "akrimī mathwāh",
+          "racine": "ك ر م / ث و ي",
+          "sens": "sois généreuse pour sa demeure",
+          "def": "mathwā : séjour, gîte.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "غَالِبٌ",
+          "tr": "ghālib",
+          "racine": "غ ل ب",
+          "sens": "vainqueur",
+          "def": "ghālib : qui prévaut.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 22,
+      "ar": "وَلَمَّا بَلَغَ أَشُدَّهُ آتَيْنَاهُ حُكْمًا وَعِلْمًا ۚ وَكَذَٰلِكَ نَجْزِي الْمُحْسِنِينَ",
+      "tr": "wa-lammā balagha ashuddahu ātaynāhu ḥukman wa-ʿilman wa-kadhālika najzī l-muḥsinīna",
+      "trad": "Lorsqu'il eut atteint l'âge viril, Nous lui donnâmes la sagesse et la science. De cette façon Nous récompensons ceux qui font le bien.",
+      "themes": [
+        "la sagesse à l'âge viril"
+      ],
+      "commentaire": "Qushayrī : <em>parmi le « jugement » que Dieu lui donna : l'autorité de son jugement sur sa propre âme, jusqu'à vaincre son désir et s'abstenir de ce à quoi cette femme le sollicitait — qui n'a pas autorité sur son âme n'a autorité sur nul autre</em>. À l'âge où la passion atteint son sommet, Dieu lui donna le discernement qui le retint sur la vérité.",
+      "mots": [
+        {
+          "ar": "أَشُدَّهُ",
+          "tr": "ashuddah",
+          "racine": "ش د د",
+          "sens": "sa pleine force",
+          "def": "ashudd : âge mûr.",
+          "gram": "nom + suffixe"
+        },
+        {
+          "ar": "حُكْمًا وَعِلْمًا",
+          "tr": "ḥukman wa-ʿilman",
+          "racine": "ح ك م / ع ل م",
+          "sens": "sagesse et science",
+          "def": "ḥukm : jugement.",
+          "gram": "COD"
+        }
+      ]
+    },
+    {
+      "n": 23,
+      "ar": "وَرَاوَدَتْهُ الَّتِي هُوَ فِي بَيْتِهَا عَن نَّفْسِهِ وَغَلَّقَتِ الْأَبْوَابَ وَقَالَتْ هَيْتَ لَكَ ۚ قَالَ مَعَاذَ اللَّهِ ۖ إِنَّهُ رَبِّي أَحْسَنَ مَثْوَايَ ۖ إِنَّهُ لَا يُفْلِحُ الظَّالِمُونَ",
+      "tr": "wa-rāwadathu llatī huwa fī baytihā ʿan nafsihi wa-ghallaqati l-abwāba wa-qālat hayta laka qāla maʿādha llāhi innahu rabbī aḥsana mathwāya innahu lā yufliḥu ẓ-ẓālimūna",
+      "trad": "Celle qui l'avait reçu dans sa maison tenta de le séduire. Elle ferma les portes et dit : « Me voici à toi ! » Il dit : « Que Dieu me garde ! Lui, mon maître, m'a traité avec bienveillance. Il n'y a pas de vrai bonheur pour les iniques ! »",
+      "themes": [
+        "la tentation",
+        "les portes fermées"
+      ],
+      "commentaire": "Qushayrī, jeu admirable des contraires : <em>lorsqu'elle ferma sur lui les portes de la demeure, Dieu ouvrit pour lui la porte de la préservation (ʿiṣma) ; ce qui fut fermé après l'honneur de ce qui fut ouvert ne lui nuisit en rien</em>. Et il dit en vérité : <em>« Lui, mon Seigneur » désigne son Seigneur véritable — Lui qui m'a tiré du puits, qui a mis dans le cœur du grand d'Égypte une place pour moi</em>.",
+      "mots": [
+        {
+          "ar": "رَاوَدَتْهُ",
+          "tr": "rāwadathu",
+          "racine": "ر و د",
+          "sens": "elle le sollicita",
+          "def": "rāwada : tenter en revenant à la charge.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "غَلَّقَتِ الْأَبْوَابَ",
+          "tr": "ghallaqati l-abwāb",
+          "racine": "غ ل ق / ب و ب",
+          "sens": "elle ferma les portes",
+          "def": "ghallaqa : fermer fortement.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "مَعَاذَ اللَّهِ",
+          "tr": "maʿādha llāh",
+          "racine": "ع و ذ",
+          "sens": "Dieu me préserve",
+          "def": "maʿādh : refuge.",
+          "gram": "exclamation"
+        }
+      ]
+    },
+    {
+      "n": 24,
+      "ar": "وَلَقَدْ هَمَّتْ بِهِ ۖ وَهَمَّ بِهَا لَوْلَا أَن رَّأَىٰ بُرْهَانَ رَبِّهِ ۚ كَذَٰلِكَ لِنَصْرِفَ عَنْهُ السُّوءَ وَالْفَحْشَاءَ ۚ إِنَّهُ مِنْ عِبَادِنَا الْمُخْلَصِينَ",
+      "tr": "wa-laqad hammat bihi wa-hamma bihā law-lā an raʾā burhāna rabbihi kadhālika li-naṣrifa ʿanhu s-sūʾa wa-l-faḥshāʾa innahu min ʿibādinā l-mukhlaṣīna",
+      "trad": "Mais elle le désirait ardemment, et lui aussi l'aurait désirée s'il n'avait eu une vision probante de son Seigneur. Nous avons ainsi écarté de lui le mal et la turpitude. Certes, il fait partie de Nos serviteurs intègres.",
+      "themes": [
+        "la preuve de son Seigneur",
+        "les serviteurs purifiés"
+      ],
+      "commentaire": "Qushayrī : <em>ce qui n'est pas acte de l'homme — ce qui le visite sans son choix ni son acquisition — est levé de lui, ne tombant pas sous la responsabilité ; le simple « penchant » (hamm) ne fut faute ni pour lui ni pour elle</em>. La preuve fut <em>un signe que Dieu fit voir à Joseph</em>. « Salut non en libération, mais en détournement et purification » : son salut tenait à ce que Dieu écarte de lui le mal.",
+      "mots": [
+        {
+          "ar": "هَمَّتْ",
+          "tr": "hammat",
+          "racine": "ه م م",
+          "sens": "elle eut le dessein",
+          "def": "hamma : avoir le projet.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "بُرْهَانَ رَبِّهِ",
+          "tr": "burhāna rabbih",
+          "racine": "ب ر ه ن",
+          "sens": "la preuve de son Seigneur",
+          "def": "burhān : preuve éclatante.",
+          "gram": "annexion"
+        },
+        {
+          "ar": "الْمُخْلَصِينَ",
+          "tr": "al-mukhlaṣīn",
+          "racine": "خ ل ص",
+          "sens": "les purifiés",
+          "def": "mukhlaṣ : purifié par Dieu.",
+          "gram": "participe passif"
+        }
+      ]
+    },
+    {
+      "n": 25,
+      "ar": "وَاسْتَبَقَا الْبَابَ وَقَدَّتْ قَمِيصَهُ مِن دُبُرٍ وَأَلْفَيَا سَيِّدَهَا لَدَى الْبَابِ ۚ قَالَتْ مَا جَزَاءُ مَنْ أَرَادَ بِأَهْلِكَ سُوءًا إِلَّا أَن يُسْجَنَ أَوْ عَذَابٌ أَلِيمٌ",
+      "tr": "wa-stabaqā l-bāba wa-qaddat qamīṣahu min duburin wa-alfayā sayyidahā ladā l-bābi qālat mā jazāʾu man arāda bi-ahlika sūʾan illā an yusjana aw ʿadhābun alīmun",
+      "trad": "Tandis que tous deux couraient vers la porte, elle s'agrippa à la tunique de Joseph et la déchira dans le dos. Devant la porte, ils se trouvèrent en présence du mari. » Que mérite celui qui a voulu nuire à ta famille, sinon la prison ou un dur châtiment ?, s'écria-t-elle.",
+      "themes": [
+        "la course vers la porte"
+      ],
+      "commentaire": "Qushayrī : <em>la déchirure de sa tunique — vêtement de son monde — ne lui nuisit pas, après que se confirma sur lui la tunique de sa piété</em>. Et : <em>elle ne visait pas à déchirer la tunique : elle s'y agrippa pour le retenir ; et son acte se retourna contre elle-même ; son malheur vint d'où elle attendait son repos</em>. « Devant la porte » : <em>ton Seigneur est aux aguets ; quand le serviteur sort de ce dont il est chargé, il tombe dans l'étroit de l'examen</em>.",
+      "mots": [
+        {
+          "ar": "اسْتَبَقَا",
+          "tr": "istabaqā",
+          "racine": "س ب ق",
+          "sens": "ils se précipitèrent",
+          "def": "istabaqa : faire la course.",
+          "gram": "verbe accompli duel"
+        },
+        {
+          "ar": "قَدَّتْ",
+          "tr": "qaddat",
+          "racine": "ق د د",
+          "sens": "elle déchira",
+          "def": "qadda : fendre.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "مِن دُبُرٍ",
+          "tr": "min dubur",
+          "racine": "د ب ر",
+          "sens": "par-derrière",
+          "def": "dubur : dos.",
+          "gram": "complément"
+        }
+      ]
+    },
+    {
+      "n": 26,
+      "ar": "قَالَ هِيَ رَاوَدَتْنِي عَن نَّفْسِي ۚ وَشَهِدَ شَاهِدٌ مِّنْ أَهْلِهَا إِن كَانَ قَمِيصُهُ قُدَّ مِن قُبُلٍ فَصَدَقَتْ وَهُوَ مِنَ الْكَاذِبِينَ",
+      "tr": "qāla hiya rāwadatnī ʿan nafsī wa-shahida shāhidun min ahlihā in kāna qamīṣuhu qudda min qubulin fa-ṣadaqat wa-huwa mina l-kādhibīna",
+      "trad": "» C'est elle qui a voulu me séduire ! » dit Joseph. Un parent de la femme appelé à témoigner déclara : « Si la tunique a été déchirée par-devant, elle dit vrai, et c'est lui qui est un menteur,",
+      "themes": [
+        "le témoin",
+        "la défense de Joseph"
+      ],
+      "commentaire": "Qushayrī : <em>Joseph proclama ouvertement la faute, car l'infidèle n'a pas de droit à la protection ; il ne se soucia pas de déchirer son voile</em>. Et puisqu'il était véridique sans témoin, <em>Dieu fit parler le petit enfant qui n'avait pas atteint l'âge de la parole — quand le serviteur est vrai en soi, Dieu ne se soucie pas de faire parler la pierre pour lui</em>.",
+      "mots": [
+        {
+          "ar": "شَاهِدٌ",
+          "tr": "shāhid",
+          "racine": "ش ه د",
+          "sens": "un témoin",
+          "def": "shāhid : qui témoigne.",
+          "gram": "participe actif"
+        },
+        {
+          "ar": "قُبُلٍ",
+          "tr": "qubul",
+          "racine": "ق ب ل",
+          "sens": "par-devant",
+          "def": "qubul : avant.",
+          "gram": "complément"
+        }
+      ]
+    },
+    {
+      "n": 27,
+      "ar": "وَإِنْ كَانَ قَمِيصُهُ قُدَّ مِن دُبُرٍ فَكَذَبَتْ وَهُوَ مِنَ الصَّادِقِينَ",
+      "tr": "wa-in kāna qamīṣuhu qudda min duburin fa-kadhabat wa-huwa mina ṣ-ṣādiqīna",
+      "trad": "mais si la tunique a été déchirée dans le dos, elle a menti et c'est lui qui est véridique ».",
+      "themes": [
+        "la preuve par la tunique"
+      ],
+      "commentaire": "Qushayrī : la preuve matérielle confirme le secret. <em>La vérité, en fin de compte, ne demeure point cachée ; il fallait que l'innocence de Joseph fût manifestée à tous</em>. Dieu fit parler ce qui ne parle pas — l'objet, la tunique, l'enfant — pour qu'éclatât la pureté de Son serviteur.",
+      "mots": [
+        {
+          "ar": "كَذَبَتْ",
+          "tr": "kadhabat",
+          "racine": "ك ذ ب",
+          "sens": "elle a menti",
+          "def": "kadhaba : mentir.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "الصَّادِقِينَ",
+          "tr": "aṣ-ṣādiqīn",
+          "racine": "ص د ق",
+          "sens": "les véridiques",
+          "def": "ṣādiq : véridique.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 28,
+      "ar": "فَلَمَّا رَأَىٰ قَمِيصَهُ قُدَّ مِن دُبُرٍ قَالَ إِنَّهُ مِن كَيْدِكُنَّ ۖ إِنَّ كَيْدَكُنَّ عَظِيمٌ",
+      "tr": "fa-lammā raʾā qamīṣahu qudda min duburin qāla innahu min kaydikunna inna kaydakunna ʿaẓīmun",
+      "trad": "Lorsque le maître vit la tunique déchirée dans le dos, il dit : « C'est bien là une de vos ruses féminines ; vraiment, votre ruse dépasse les bornes !",
+      "themes": [
+        "la ruse des femmes"
+      ],
+      "commentaire": "Qushayrī : <em>quand l'affaire devint claire et que l'innocence de Joseph apparut, le grand d'Égypte dit : « cela vient de votre ruse »</em>. Le verset, ajoute-t-il, prouve que la fornication était déjà chose défendue dans leur loi religieuse.",
+      "mots": [
+        {
+          "ar": "كَيْدِكُنَّ",
+          "tr": "kaydikunna",
+          "racine": "ك ي د",
+          "sens": "votre ruse",
+          "def": "kayd : machination.",
+          "gram": "annexion"
+        },
+        {
+          "ar": "عَظِيمٌ",
+          "tr": "ʿaẓīm",
+          "racine": "ع ظ م",
+          "sens": "considérable",
+          "def": "ʿaẓīm : grand.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 29,
+      "ar": "يُوسُفُ أَعْرِضْ عَنْ هَٰذَا ۚ وَاسْتَغْفِرِي لِذَنبِكِ ۖ إِنَّكِ كُنتِ مِنَ الْخَاطِئِينَ",
+      "tr": "yūsufu aʿriḍ ʿan hādhā wa-staghfirī li-dhanbiki innaki kunti mina l-khāṭiʾīna",
+      "trad": "Joseph, prends tes distances et toi, femme, demande pardon pour ton péché : vraiment, tu t'es rendue coupable ! »",
+      "themes": [
+        "l'étouffement de l'affaire"
+      ],
+      "commentaire": "Qushayrī : <em>il ne voulut pas déchirer le voile de son épouse : il dit à Joseph « détourne-toi de cette parole », puis à elle « demande pardon »</em>. Et : <em>tous ne sont pas dignes de l'épreuve, car l'épreuve est la marque des maîtres de l'amitié</em> ; les étrangers sont laissés à eux-mêmes, non par honneur, mais par leur petitesse. Joseph, lui, fut éprouvé par la prison — précisément parce qu'il était l'ami.",
+      "mots": [
+        {
+          "ar": "أَعْرِضْ",
+          "tr": "aʿriḍ",
+          "racine": "ع ر ض",
+          "sens": "détourne-toi",
+          "def": "aʿraḍa : se détourner.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "اسْتَغْفِرِي",
+          "tr": "istaghfirī",
+          "racine": "غ ف ر",
+          "sens": "demande pardon",
+          "def": "istaghfara : demander pardon.",
+          "gram": "impératif féminin"
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "ar": "وَقَالَ نِسْوَةٌ فِي الْمَدِينَةِ امْرَأَتُ الْعَزِيزِ تُرَاوِدُ فَتَاهَا عَن نَّفْسِهِ ۖ قَدْ شَغَفَهَا حُبًّا ۖ إِنَّا لَنَرَاهَا فِي ضَلَالٍ مُّبِينٍ",
+      "tr": "wa-qāla niswatun fī l-madīnati mraʾatu l-ʿazīzi turāwidu fatāhā ʿan nafsihi qad shaghafahā ḥubban innā la-narāhā fī ḍalālin mubīnin",
+      "trad": "Dans la ville, les femmes parlaient : « La femme de Son Excellence cherche à séduire son jeune serviteur : il l'a rendue éperdument amoureuse. Nous la voyons manifestement égarée ! »",
+      "themes": [
+        "la rumeur des femmes",
+        "l'amour qui transperce"
+      ],
+      "commentaire": "Qushayrī : <em>la passion ne se cache pas, et l'amour ne va pas sans une langue de blâme déliée contre lui</em>. Lorsque son amour pour Joseph s'avéra, les femmes étalèrent contre elle la langue du reproche. <em>Comme elle leur surpassait en valeur, elle fut la cible la plus prompte du blâme</em>.",
+      "mots": [
+        {
+          "ar": "شَغَفَهَا حُبًّا",
+          "tr": "shaghafahā ḥubban",
+          "racine": "ش غ ف / ح ب ب",
+          "sens": "l'amour l'a transpercée",
+          "def": "shaghaf : enveloppe du cœur.",
+          "gram": "spécification"
+        },
+        {
+          "ar": "نِسْوَةٌ",
+          "tr": "niswatun",
+          "racine": "ن س و",
+          "sens": "des femmes",
+          "def": "niswa : nom collectif féminin.",
+          "gram": "sujet"
+        }
+      ]
+    },
+    {
+      "n": 31,
+      "ar": "فَلَمَّا سَمِعَتْ بِمَكْرِهِنَّ أَرْسَلَتْ إِلَيْهِنَّ وَأَعْتَدَتْ لَهُنَّ مُتَّكَأً وَآتَتْ كُلَّ وَاحِدَةٍ مِّنْهُنَّ سِكِّينًا وَقَالَتِ اخْرُجْ عَلَيْهِنَّ ۖ فَلَمَّا رَأَيْنَهُ أَكْبَرْنَهُ وَقَطَّعْنَ أَيْدِيَهُنَّ وَقُلْنَ حَاشَ لِلَّهِ مَا هَٰذَا بَشَرًا إِنْ هَٰذَا إِلَّا مَلَكٌ كَرِيمٌ",
+      "tr": "fa-lammā samiʿat bi-makrihinna arsalat ilayhinna wa-aʿtadat lahunna muttakaʾan wa-ātat kulla wāḥidatin minhunna sikkīnan wa-qālati khruj ʿalayhinna fa-lammā raʾaynahu akbarnahu wa-qaṭṭaʿna aydiyahunna wa-qulna ḥāsha li-llāhi mā hādhā basharan in hādhā illā malakun karīmun",
+      "trad": "Ayant eu vent de leurs propos sournois, elle leur adressa une invitation, puis elle leur prépara un banquet et donna à chacune un couteau. Elle dit alors à Joseph : « Parais devant elles ! » Lorsqu'elles le virent, elles s'extasièrent et se tailladèrent les mains en s'exclamant : « A Dieu ne plaise ! Celui-ci n'est pas un mortel ; ce ne peut être qu'un ange noble ! »",
+      "themes": [
+        "la beauté qui ravit",
+        "le banquet des femmes"
+      ],
+      "commentaire": "Qushayrī : <em>elles furent altérées et égarées au point de parler hors du discernement : « ce n'est pas un mortel » — il l'était pourtant ; « ce n'est qu'un ange noble » — il ne l'était pas</em>. La rencontre du beau abolit en elles la mesure. Et : <em>la vue de Joseph les ébranla, mais elle, n'en fut pas troublée — car le commencement frémit, mais celui qui est ancré dans le sens ne frémit plus</em>.",
+      "mots": [
+        {
+          "ar": "مُتَّكَأً",
+          "tr": "muttakaʾan",
+          "racine": "و ك أ",
+          "sens": "un banquet",
+          "def": "muttakaʾ : repas étendu.",
+          "gram": "COD"
+        },
+        {
+          "ar": "سِكِّينًا",
+          "tr": "sikkīnan",
+          "racine": "س ك ن",
+          "sens": "un couteau",
+          "def": "sikkīn : couteau.",
+          "gram": "COD"
+        },
+        {
+          "ar": "أَكْبَرْنَهُ",
+          "tr": "akbarnahu",
+          "racine": "ك ب ر",
+          "sens": "elles le trouvèrent éminent",
+          "def": "akbara : tenir pour grand.",
+          "gram": "verbe accompli"
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "ar": "قَالَتْ فَذَٰلِكُنَّ الَّذِي لُمْتُنَّنِي فِيهِ ۖ وَلَقَدْ رَاوَدتُّهُ عَن نَّفْسِهِ فَاسْتَعْصَمَ ۖ وَلَئِن لَّمْ يَفْعَلْ مَا آمُرُهُ لَيُسْجَنَنَّ وَلَيَكُونًا مِّنَ الصَّاغِرِينَ",
+      "tr": "qālat fa-dhālikunna lladhī lumtunnanī fīhi wa-laqad rāwadttuhu ʿan nafsihi fa-staʿṣama wa-la-in lam yafʿal mā āmuruhu la-yusjananna wa-la-yakūnan mina ṣ-ṣāghirīna",
+      "trad": "Elle dit : « Voici donc celui à propos duquel vous m'avez blâmée ! C'est vrai, j'ai voulu le séduire, mais il s'est maîtrisé. Pourtant, s'il ne fait pas ce que je lui ordonne, il sera jeté en prison et se trouvera parmi les misérables ».",
+      "themes": [
+        "la menace de prison"
+      ],
+      "commentaire": "Qushayrī : son aveu prouve qu'elle voulut <em>renverser sur elles le mérite du blâme — puisqu'elles avaient elles-mêmes tranché leurs mains</em>. Et elle se réfugia dans la menace : Joseph préféra la prison à la souillure. <em>L'amant véritable préfère la peine en Dieu à la jouissance de son âme</em>.",
+      "mots": [
+        {
+          "ar": "اسْتَعْصَمَ",
+          "tr": "istaʿṣama",
+          "racine": "ع ص م",
+          "sens": "il se garda",
+          "def": "istaʿṣama : s'attacher fermement.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "الصَّاغِرِينَ",
+          "tr": "aṣ-ṣāghirīn",
+          "racine": "ص غ ر",
+          "sens": "les humiliés",
+          "def": "ṣāghir : abaissé.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 33,
+      "ar": "قَالَ رَبِّ السِّجْنُ أَحَبُّ إِلَيَّ مِمَّا يَدْعُونَنِي إِلَيْهِ ۖ وَإِلَّا تَصْرِفْ عَنِّي كَيْدَهُنَّ أَصْبُ إِلَيْهِنَّ وَأَكُن مِّنَ الْجَاهِلِينَ",
+      "tr": "qāla rabbi s-sijnu aḥabbu ilayya mimmā yadʿūnanī ilayhi wa-illā taṣrif ʿannī kaydahunna aṣbu ilayhinna wa-akun mina l-jāhilīna",
+      "trad": "Joseph dit : « Mon Seigneur ! Je préfère la prison à ce qu'elles m'incitent à commettre. Mais si tu ne détournes pas de moi leurs ruses, je leur céderai et serai parmi les insensés ».",
+      "themes": [
+        "la prison choisie",
+        "l'aveu d'impuissance"
+      ],
+      "commentaire": "Qushayrī : <em>l'épreuve va avec le choix ; s'il avait demandé la santé en lieu et place de ce qu'on lui demandait, peut-être l'aurait-on épargné — mais ayant dit « la prison m'est plus chère », il fut pris au mot</em>. Et : <em>Joseph parla du fond du Tawḥīd lorsqu'il dit « si tu n'écartes pas de moi leur ruse, je leur céderai » : il sut que son salut tient à ce que Dieu écarte l'épreuve, non à son effort</em>.",
+      "mots": [
+        {
+          "ar": "السِّجْنُ",
+          "tr": "as-sijn",
+          "racine": "س ج ن",
+          "sens": "la prison",
+          "def": "sijn : prison.",
+          "gram": "sujet"
+        },
+        {
+          "ar": "أَصْبُ",
+          "tr": "aṣbu",
+          "racine": "ص ب و",
+          "sens": "je céderai",
+          "def": "ṣabā : pencher vers.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "الْجَاهِلِينَ",
+          "tr": "al-jāhilīn",
+          "racine": "ج ه ل",
+          "sens": "les ignorants",
+          "def": "jāhil : ignorant.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 34,
+      "ar": "فَاسْتَجَابَ لَهُ رَبُّهُ فَصَرَفَ عَنْهُ كَيْدَهُنَّ ۚ إِنَّهُ هُوَ السَّمِيعُ الْعَلِيمُ",
+      "tr": "fa-stajāba lahu rabbuhu fa-ṣarafa ʿanhu kaydahunna innahu huwa s-samīʿu l-ʿalīmu",
+      "trad": "Son Seigneur l'exauça, et Il détourna de lui leurs ruses. Il est Celui qui entend tout, l'Omniscient.",
+      "themes": [
+        "la prière exaucée"
+      ],
+      "commentaire": "Qushayrī : <em>lorsqu'il revint à Dieu par la sincérité de l'imploration, Dieu vint à son secours par la promptitude du soulagement ; nul n'a vacillé pour Dieu qu'Il n'ait soulagé par Sa générosité</em>. « Il entend » les paroles de ceux qui demandent, « Il sait » leurs états.",
+      "mots": [
+        {
+          "ar": "فَاسْتَجَابَ",
+          "tr": "fa-stajāba",
+          "racine": "ج و ب",
+          "sens": "Il l'exauça",
+          "def": "istajāba : répondre.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "فَصَرَفَ",
+          "tr": "fa-ṣarafa",
+          "racine": "ص ر ف",
+          "sens": "Il écarta",
+          "def": "ṣarafa : détourner.",
+          "gram": "verbe accompli"
+        }
+      ]
+    },
+    {
+      "n": 35,
+      "ar": "ثُمَّ بَدَا لَهُم مِّن بَعْدِ مَا رَأَوُا الْآيَاتِ لَيَسْجُنُنَّهُ حَتَّىٰ حِينٍ",
+      "tr": "thumma badā lahum min baʿdi mā raʾawu l-āyāti la-yasjununnahu ḥattā ḥīnin",
+      "trad": "Ensuite, bien qu'aient été perçus les signes [de son innocence], on trouva bon de l'incarcérer pour un certain temps.",
+      "themes": [
+        "la prison injuste"
+      ],
+      "commentaire": "Qushayrī : <em>Joseph fut emprisonné malgré l'évidence de son innocence, pour préserver l'épouse du grand d'Égypte — Dieu en fit la cause par où Son décret tournerait à Joseph la royauté</em>. Le voile de l'injustice est la voie cachée de l'élévation : <em>tel est le salaire de qui patiente</em>.",
+      "mots": [
+        {
+          "ar": "بَدَا",
+          "tr": "badā",
+          "racine": "ب د و",
+          "sens": "il leur parut",
+          "def": "badā : sembler.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "لَيَسْجُنُنَّهُ",
+          "tr": "la-yasjununnahu",
+          "racine": "س ج ن",
+          "sens": "de l'emprisonner",
+          "def": "sajana : emprisonner.",
+          "gram": "énergique"
+        }
+      ]
+    },
+    {
+      "n": 36,
+      "ar": "وَدَخَلَ مَعَهُ السِّجْنَ فَتَيَانِ ۖ قَالَ أَحَدُهُمَا إِنِّي أَرَانِي أَعْصِرُ خَمْرًا ۖ وَقَالَ الْآخَرُ إِنِّي أَرَانِي أَحْمِلُ فَوْقَ رَأْسِي خُبْزًا تَأْكُلُ الطَّيْرُ مِنْهُ ۖ نَبِّئْنَا بِتَأْوِيلِهِ ۖ إِنَّا نَرَاكَ مِنَ الْمُحْسِنِينَ",
+      "tr": "wa-dakhala maʿahu s-sijna fatayāni qāla aḥaduhumā innī arānī aʿṣiru khamran wa-qāla l-ākharu innī arānī aḥmilu fawqa raʾsī khubzan taʾkulu ṭ-ṭayru minhu nabbiʾnā bi-taʾwīlihi innā narāka mina l-muḥsinīna",
+      "trad": "Deux jeunes serviteurs furent mis en prison avec lui. L'un d'eux dit : « Je me suis vu [en rêve] en train de presser du raisin. - Moi, dit l'autre, je me suis vu portant sur ma tête du pain que les oiseaux venaient picorer. Fais-nous connaître la signification de ces choses, car nous te tenons pour un homme de bien ».",
+      "themes": [
+        "les deux songes en prison"
+      ],
+      "commentaire": "Qushayrī : <em>la compagnie du juste, fût-ce en prison, porte sa bénédiction même après un temps</em>. C'est par la bouche de l'un de ces compagnons que Joseph fut tiré du cachot — « la compagnie donne ses bénédictions, même lentement ». Et le témoignage : « nous te tenons pour homme de bien » : <em>l'attestation du bien est une corde par laquelle on attire la bonté</em>.",
+      "mots": [
+        {
+          "ar": "أَعْصِرُ خَمْرًا",
+          "tr": "aʿṣiru khamran",
+          "racine": "ع ص ر / خ م ر",
+          "sens": "je presse du vin",
+          "def": "ʿaṣara : presser.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "الطَّيْرُ",
+          "tr": "aṭ-ṭayr",
+          "racine": "ط ي ر",
+          "sens": "les oiseaux",
+          "def": "ṭayr : nom collectif.",
+          "gram": "sujet"
+        }
+      ]
+    },
+    {
+      "n": 37,
+      "ar": "قَالَ لَا يَأْتِيكُمَا طَعَامٌ تُرْزَقَانِهِ إِلَّا نَبَّأْتُكُمَا بِتَأْوِيلِهِ قَبْلَ أَن يَأْتِيَكُمَا ۚ ذَٰلِكُمَا مِمَّا عَلَّمَنِي رَبِّي ۚ إِنِّي تَرَكْتُ مِلَّةَ قَوْمٍ لَّا يُؤْمِنُونَ بِاللَّهِ وَهُم بِالْآخِرَةِ هُمْ كَافِرُونَ",
+      "tr": "qāla lā yaʾtīkumā ṭaʿāmun turzaqānihi illā nabbaʾtukumā bi-taʾwīlihi qabla an yaʾtiyakumā dhālikumā mimmā ʿallamanī rabbī innī taraktu millata qawmin lā yuʾminūna bi-llāhi wa-hum bi-l-ākhirati hum kāfirūna",
+      "trad": "Joseph dit : « Avant même que l'on vous apporte la nourriture qui vous est destinée, je vous aurai fait connaître l'interprétation de ces choses, ceci grâce à ce que mon Seigneur m'a enseigné. C'est que j'ai abandonné la religion d'un peuple qui ne croit pas en Dieu et qui nie la vie future.",
+      "themes": [
+        "la science par enseignement divin",
+        "l'appel à la foi"
+      ],
+      "commentaire": "Qushayrī : <em>la pondération dans la réponse, sans précipitation, est la marque des nobles : Joseph leur promit la réponse sans la livrer aussitôt — et puisqu'on ne donne pas comptant, on donne au moins en promesse</em>. Et avant l'interprétation, il leur présenta la profession du Tawḥīd : <em>il ne pouvait presque se taire dès qu'il s'agissait de Dieu et du Bien-Aimé</em>.",
+      "mots": [
+        {
+          "ar": "نَبَّأْتُكُمَا",
+          "tr": "nabbaʾtukumā",
+          "racine": "ن ب أ",
+          "sens": "je vous informerai",
+          "def": "nabbaʾa : annoncer.",
+          "gram": "verbe inaccompli + suffixe"
+        },
+        {
+          "ar": "مِلَّةَ قَوْمٍ",
+          "tr": "millata qawmin",
+          "racine": "م ل ل / ق و م",
+          "sens": "la religion d'un peuple",
+          "def": "milla : voie religieuse.",
+          "gram": "COD"
+        }
+      ]
+    },
+    {
+      "n": 38,
+      "ar": "وَاتَّبَعْتُ مِلَّةَ آبَائِي إِبْرَاهِيمَ وَإِسْحَاقَ وَيَعْقُوبَ ۚ مَا كَانَ لَنَا أَن نُّشْرِكَ بِاللَّهِ مِن شَيْءٍ ۚ ذَٰلِكَ مِن فَضْلِ اللَّهِ عَلَيْنَا وَعَلَى النَّاسِ وَلَٰكِنَّ أَكْثَرَ النَّاسِ لَا يَشْكُرُونَ",
+      "tr": "wa-ttabaʿtu millata ābāʾī ibrāhīma wa-isḥāqa wa-yaʿqūba mā kāna lanā an nushrika bi-llāhi min shayʾin dhālika min faḍli llāhi ʿalaynā wa-ʿalā n-nāsi wa-lākinna akthara n-nāsi lā yashkurūna",
+      "trad": "J'ai alors suivi la religion de mes pères : Abraham, Isaac et Jacob. Nous ne pouvons associer quoi que ce soit à Dieu. C'est là une grâce que Dieu répand sur nous et sur tous les hommes ; mais la plupart d'entre eux ne sont pas reconnaissants.",
+      "themes": [
+        "la voie des pères",
+        "la grâce du Tawḥīd"
+      ],
+      "commentaire": "Qushayrī : le Tawḥīd lui-même est la grâce. <em>« C'est une faveur de Dieu sur nous et sur les hommes » : qu'Il l'ait inscrit en nous, qu'il soit offert à tous comme appel</em> — mais peu s'en montrent reconnaissants. Joseph relie sa science non à son génie, mais à la chaîne des aimés : Abraham, Isaac, Jacob.",
+      "mots": [
+        {
+          "ar": "اتَّبَعْتُ",
+          "tr": "ittabaʿtu",
+          "racine": "ت ب ع",
+          "sens": "j'ai suivi",
+          "def": "ittabaʿa : suivre.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "نُشْرِكَ",
+          "tr": "nushrika",
+          "racine": "ش ر ك",
+          "sens": "associer",
+          "def": "ashraka : associer à Dieu.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 39,
+      "ar": "يَا صَاحِبَيِ السِّجْنِ أَأَرْبَابٌ مُّتَفَرِّقُونَ خَيْرٌ أَمِ اللَّهُ الْوَاحِدُ الْقَهَّارُ",
+      "tr": "yā ṣāḥibayi s-sijni a-arbābun mutafarriqūna khayrun ami llāhu l-wāḥidu l-qahhāru",
+      "trad": "O mes deux compagnons de prison ! Une multitude de maîtres séparés vaut-elle mieux qu'Allâh, le Dieu unique, l'Invincible ?",
+      "themes": [
+        "le Dieu unique"
+      ],
+      "commentaire": "Qushayrī : <em>Joseph ne se taisait plus dès qu'il avait entamé l'exposé du Tawḥīd et la mention de l'Adoré : on raconte que quiconque aime une chose multiplie son rappel</em>. La prison devient ainsi chaire de prédication ; les chaînes ne contraignent pas la langue de l'amant.",
+      "mots": [
+        {
+          "ar": "أَرْبَابٌ مُّتَفَرِّقُونَ",
+          "tr": "arbābun mutafarriqūn",
+          "racine": "ر ب ب / ف ر ق",
+          "sens": "maîtres dispersés",
+          "def": "arbāb : seigneurs.",
+          "gram": "sujet"
+        },
+        {
+          "ar": "الْقَهَّارُ",
+          "tr": "al-qahhār",
+          "racine": "ق ه ر",
+          "sens": "l'Invincible",
+          "def": "qahhār : qui contraint.",
+          "gram": "attribut divin"
+        }
+      ]
+    },
+    {
+      "n": 40,
+      "ar": "مَا تَعْبُدُونَ مِن دُونِهِ إِلَّا أَسْمَاءً سَمَّيْتُمُوهَا أَنتُمْ وَآبَاؤُكُم مَّا أَنزَلَ اللَّهُ بِهَا مِن سُلْطَانٍ ۚ إِنِ الْحُكْمُ إِلَّا لِلَّهِ ۚ أَمَرَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ ۚ ذَٰلِكَ الدِّينُ الْقَيِّمُ وَلَٰكِنَّ أَكْثَرَ النَّاسِ لَا يَعْلَمُونَ",
+      "tr": "mā taʿbudūna min dūnihi illā asmāʾan sammaytumūhā antum wa-ābāʾukum mā anzala llāhu bihā min sulṭānin ini l-ḥukmu illā li-llāhi amara allā taʿbudū illā iyyāhu dhālika d-dīnu l-qayyimu wa-lākinna akthara n-nāsi lā yaʿlamūna",
+      "trad": "Ceux que vous adorez en dehors de Lui ne sont que des noms que vous et vos pères leur avez donnés sans que Dieu vous délègue un pouvoir quelconque à ce sujet. De fait, le jugement n'appartient qu'à Dieu. Il a ordonné que vous n'adoriez que Lui. Telle est la Religion immuable, mais la plupart des hommes ne savent pas.",
+      "themes": [
+        "la religion droite",
+        "les noms vides"
+      ],
+      "commentaire": "Qushayrī : <em>les idoles ne sont rien que de purs noms</em> — autant dire des conventions humaines couvrant le vide. Toute autorité est à Dieu seul. Joseph, en prison, déploie le Tawḥīd comme la seule réalité ; tout le reste n'est que langage.",
+      "mots": [
+        {
+          "ar": "أَسْمَاءً",
+          "tr": "asmāʾan",
+          "racine": "س م و",
+          "sens": "des noms",
+          "def": "asmāʾ : pluriel de ism.",
+          "gram": "COD"
+        },
+        {
+          "ar": "الدِّينُ الْقَيِّمُ",
+          "tr": "ad-dīnu l-qayyim",
+          "racine": "د ي ن / ق و م",
+          "sens": "la religion droite",
+          "def": "qayyim : droit, ferme.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 41,
+      "ar": "يَا صَاحِبَيِ السِّجْنِ أَمَّا أَحَدُكُمَا فَيَسْقِي رَبَّهُ خَمْرًا ۖ وَأَمَّا الْآخَرُ فَيُصْلَبُ فَتَأْكُلُ الطَّيْرُ مِن رَّأْسِهِ ۚ قُضِيَ الْأَمْرُ الَّذِي فِيهِ تَسْتَفْتِيَانِ",
+      "tr": "yā ṣāḥibayi s-sijni ammā aḥadukumā fa-yasqī rabbahu khamran wa-ammā l-ākharu fa-yuṣlabu fa-taʾkulu ṭ-ṭayru min raʾsihi quḍiya l-amru lladhī fīhi tastaftiyāni",
+      "trad": "O mes deux compagnons de prison ! L'un de vous versera du vin à son maître ; quant à l'autre, il sera crucifié et les oiseaux viendront picorer sa tête. L'affaire pour laquelle vous me consultez est déjà arrêtée ».",
+      "themes": [
+        "les deux destins"
+      ],
+      "commentaire": "Qushayrī : <em>ils partagèrent la question, le jugement et la prison, mais leurs fins divergèrent : l'un crucifié, l'autre élevé et comblé</em>. Telle est la mystérieuse division qu'opère le Tawḥīd : <em>au-dessus du firmament, l'élévation de l'un ; sous la terre, le tombeau de l'autre</em>.",
+      "mots": [
+        {
+          "ar": "يَسْقِي",
+          "tr": "yasqī",
+          "racine": "س ق ي",
+          "sens": "versera à boire",
+          "def": "saqā : abreuver.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "يُصْلَبُ",
+          "tr": "yuṣlabu",
+          "racine": "ص ل ب",
+          "sens": "sera crucifié",
+          "def": "ṣalaba : crucifier.",
+          "gram": "passif inaccompli"
+        },
+        {
+          "ar": "قُضِيَ",
+          "tr": "quḍiya",
+          "racine": "ق ض ي",
+          "sens": "a été décrété",
+          "def": "qaḍā : décréter.",
+          "gram": "passif accompli"
+        }
+      ]
+    },
+    {
+      "n": 42,
+      "ar": "وَقَالَ لِلَّذِي ظَنَّ أَنَّهُ نَاجٍ مِّنْهُمَا اذْكُرْنِي عِندَ رَبِّكَ فَأَنسَاهُ الشَّيْطَانُ ذِكْرَ رَبِّهِ فَلَبِثَ فِي السِّجْنِ بِضْعَ سِنِينَ",
+      "tr": "wa-qāla lilladhī ẓanna annahu nājin minhumā udhkurnī ʿinda rabbika fa-ansāhu sh-shayṭānu dhikra rabbihi fa-labitha fī s-sijni biḍʿa sinīna",
+      "trad": "S'adressant à celui qui, selon lui, allait être élargi, il lui dit : « Rappelle-moi au souvenir de ton maître ». Mais le Démon lui fit oublier de parler de Joseph à son maître, si bien que Joseph demeura en prison plusieurs années.",
+      "themes": [
+        "l'oubli du compagnon",
+        "l'épreuve du recours"
+      ],
+      "commentaire": "Qushayrī : <em>Joseph fut repris d'avoir oublié — dans son discours — Celui dont il aurait dû implorer le secours, lorsqu'il dit « rappelle-moi auprès de ton maître »</em>. Dans certains Livres révélés : <em>« ô fils d'Adam, enseigne gratuitement comme on t'a enseigné gratuitement »</em>. Avoir cherché secours auprès d'une créature prolongea son séjour en prison — <em>ainsi Dieu paie qui attache son cœur à un autre</em>.",
+      "mots": [
+        {
+          "ar": "نَاجٍ",
+          "tr": "nāj",
+          "racine": "ن ج و",
+          "sens": "sauvé",
+          "def": "nājin : qui échappe.",
+          "gram": "participe actif"
+        },
+        {
+          "ar": "بِضْعَ سِنِينَ",
+          "tr": "biḍʿa sinīn",
+          "racine": "ب ض ع / س ن و",
+          "sens": "quelques années",
+          "def": "biḍʿ : entre trois et neuf.",
+          "gram": "syntagme"
+        }
+      ]
+    },
+    {
+      "n": 43,
+      "ar": "وَقَالَ الْمَلِكُ إِنِّي أَرَىٰ سَبْعَ بَقَرَاتٍ سِمَانٍ يَأْكُلُهُنَّ سَبْعٌ عِجَافٌ وَسَبْعَ سُنبُلَاتٍ خُضْرٍ وَأُخَرَ يَابِسَاتٍ ۖ يَا أَيُّهَا الْمَلَأُ أَفْتُونِي فِي رُؤْيَايَ إِن كُنتُمْ لِلرُّؤْيَا تَعْبُرُونَ",
+      "tr": "wa-qāla l-maliku innī arā sabʿa baqarātin simānin yaʾkuluhunna sabʿun ʿijāfun wa-sabʿa sunbulātin khuḍrin wa-ukhara yābisātin yā ayyuhā l-malaʾu aftūnī fī ruʾyāya in kuntum li-r-ruʾyā taʿburūna",
+      "trad": "Le roi dit un jour : « J'ai vu [en rêve] sept vaches grasses que dévoraient sept vaches maigres, et sept épis verts et les autres desséchés. O mes dignitaires, expliquez-moi ce que j'ai vu, si vous savez interpréter les songes ».",
+      "themes": [
+        "le songe du roi"
+      ],
+      "commentaire": "Qushayrī : <em>le début de l'épreuve de Joseph fut un songe qu'il propagea ; la cause de sa délivrance fut un autre songe que le roi divulgua ; afin que l'on sache que Dieu fait ce qu'Il veut — par où Il a fait son épreuve, par là Il fait son salut</em>.",
+      "mots": [
+        {
+          "ar": "سَبْعَ بَقَرَاتٍ سِمَانٍ",
+          "tr": "sabʿa baqarātin simān",
+          "racine": "س ب ع / ب ق ر / س م ن",
+          "sens": "sept vaches grasses",
+          "def": "simān : grasses.",
+          "gram": "attribut"
+        },
+        {
+          "ar": "عِجَافٌ",
+          "tr": "ʿijāf",
+          "racine": "ع ج ف",
+          "sens": "maigres",
+          "def": "ʿijāf : décharnées.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 44,
+      "ar": "قَالُوا أَضْغَاثُ أَحْلَامٍ ۖ وَمَا نَحْنُ بِتَأْوِيلِ الْأَحْلَامِ بِعَالِمِينَ",
+      "tr": "qālū aḍghāthu aḥlāmin wa-mā naḥnu bi-taʾwīli l-aḥlāmi bi-ʿālimīna",
+      "trad": "Ils dirent : « C'est un amas de rêves, et nous n'entendons rien à l'interprétation des rêves ».",
+      "themes": [
+        "l'ignorance des dignitaires"
+      ],
+      "commentaire": "Qushayrī : <em>l'état du songe n'est pas altéré par l'erreur de l'interprète</em> — ils le déclarèrent confus, cela ne nuisit en rien à la justesse de son sens. <em>Qui cherche une chose hors de son lieu n'obtient pas ce qu'il cherche</em>.",
+      "mots": [
+        {
+          "ar": "أَضْغَاثُ أَحْلَامٍ",
+          "tr": "aḍghāthu aḥlāmin",
+          "racine": "ض غ ث / ح ل م",
+          "sens": "amas de songes",
+          "def": "aḍghāth : faisceaux confus.",
+          "gram": "annexion"
+        }
+      ]
+    },
+    {
+      "n": 45,
+      "ar": "وَقَالَ الَّذِي نَجَا مِنْهُمَا وَادَّكَرَ بَعْدَ أُمَّةٍ أَنَا أُنَبِّئُكُم بِتَأْوِيلِهِ فَأَرْسِلُونِ",
+      "tr": "wa-qāla lladhī najā minhumā wa-ddakara baʿda ummatin anā unabbiʾukum bi-taʾwīlihi fa-arsilūni",
+      "trad": "Celui des deux prisonniers qui avait été élargi et à qui la mémoire était enfin revenue prit la parole et dit : « Moi, je vous apporterai l'interprétation de ce rêve. Prenez-moi comme émissaire ! »",
+      "themes": [
+        "le souvenir tardif"
+      ],
+      "commentaire": "Qushayrī : <em>Dieu mit à part Joseph par deux choses : la beauté de sa forme et le surcroît de la science ; sa beauté devint la cause de son épreuve, et sa science devint la cause de son salut — afin que l'on connaisse la dignité de la science</em>. On dit : « la science est donnée, fût-ce avec retard ».",
+      "mots": [
+        {
+          "ar": "نَجَا",
+          "tr": "najā",
+          "racine": "ن ج و",
+          "sens": "fut sauvé",
+          "def": "najā : être délivré.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "ادَّكَرَ",
+          "tr": "iddakara",
+          "racine": "ذ ك ر",
+          "sens": "il se rappela",
+          "def": "tadhakkara : se souvenir.",
+          "gram": "verbe accompli"
+        }
+      ]
+    },
+    {
+      "n": 46,
+      "ar": "يُوسُفُ أَيُّهَا الصِّدِّيقُ أَفْتِنَا فِي سَبْعِ بَقَرَاتٍ سِمَانٍ يَأْكُلُهُنَّ سَبْعٌ عِجَافٌ وَسَبْعِ سُنبُلَاتٍ خُضْرٍ وَأُخَرَ يَابِسَاتٍ لَّعَلِّي أَرْجِعُ إِلَى النَّاسِ لَعَلَّهُمْ يَعْلَمُونَ",
+      "tr": "yūsufu ayyuhā ṣ-ṣiddīqu aftinā fī sabʿi baqarātin simānin yaʾkuluhunna sabʿun ʿijāfun wa-sabʿi sunbulātin khuḍrin wa-ukhara yābisātin laʿallī arjiʿu ilā n-nāsi laʿallahum yaʿlamūna",
+      "trad": "» O Joseph, toi qui es véridique, dis-nous ce que signifient sept vaches grasses que dévorent sept vaches maigres, et sept épis verts et les autres desséchés. Peut-être reviendrai-je vers ceux qui m'ont envoyé et pourront-ils savoir ce qu'il en est... »",
+      "themes": [
+        "Joseph le véridique (ṣiddīq)"
+      ],
+      "commentaire": "Qushayrī : <em>quand Dieu veut une chose, Il en facilite les causes</em> — les cœurs des dignitaires furent ainsi saisis, l'interprétation leur fut voilée, et la sérénité du roi ne fut atteinte qu'en passant par Joseph. La science véritable mène à la délivrance.",
+      "mots": [
+        {
+          "ar": "الصِّدِّيقُ",
+          "tr": "aṣ-ṣiddīq",
+          "racine": "ص د ق",
+          "sens": "le très-véridique",
+          "def": "ṣiddīq : intensif de ṣādiq.",
+          "gram": "attribut"
+        },
+        {
+          "ar": "أَفْتِنَا",
+          "tr": "aftinā",
+          "racine": "ف ت و",
+          "sens": "éclaire-nous",
+          "def": "aftā : donner un avis.",
+          "gram": "impératif"
+        }
+      ]
+    },
+    {
+      "n": 47,
+      "ar": "قَالَ تَزْرَعُونَ سَبْعَ سِنِينَ دَأَبًا فَمَا حَصَدتُّمْ فَذَرُوهُ فِي سُنبُلِهِ إِلَّا قَلِيلًا مِّمَّا تَأْكُلُونَ",
+      "tr": "qāla tazraʿūna sabʿa sinīna daʾaban fa-mā ḥaṣadtum fa-dharūhu fī sunbulihi illā qalīlan mimmā taʾkulūna",
+      "trad": "Joseph dit : « Vous sèmerez de la façon habituelle durant sept années. Ce que vous aurez moissonné, laissez-le en épis, sauf le peu que vous consommerez.",
+      "themes": [
+        "la prudence prophétique"
+      ],
+      "commentaire": "Qushayrī : <em>il ne fit pas précéder l'interprétation par l'appel au Tawḥīd cette fois — car son interlocuteur premier l'avait déjà oublié, ou bien il flaira chez le roi un cœur trop dur pour répondre à l'invitation</em>. La sagesse se mesure aux dispositions ; tantôt on prêche, tantôt on conseille seulement.",
+      "mots": [
+        {
+          "ar": "تَزْرَعُونَ",
+          "tr": "tazraʿūn",
+          "racine": "ز ر ع",
+          "sens": "vous sèmerez",
+          "def": "zaraʿa : semer.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "دَأَبًا",
+          "tr": "daʾaban",
+          "racine": "د أ ب",
+          "sens": "avec assiduité",
+          "def": "daʾab : habitude.",
+          "gram": "circonstanciel"
+        }
+      ]
+    },
+    {
+      "n": 48,
+      "ar": "ثُمَّ يَأْتِي مِن بَعْدِ ذَٰلِكَ سَبْعٌ شِدَادٌ يَأْكُلْنَ مَا قَدَّمْتُمْ لَهُنَّ إِلَّا قَلِيلًا مِّمَّا تُحْصِنُونَ",
+      "tr": "thumma yaʾtī min baʿdi dhālika sabʿun shidādun yaʾkulna mā qaddamtum lahunna illā qalīlan mimmā tuḥṣinūna",
+      "trad": "Viendront ensuite sept années arides, qui mangeront les provisions faites dans leur attente, laissant subsister une petite partie de vos réserves.",
+      "themes": [
+        "les sept années arides"
+      ],
+      "commentaire": "Qushayrī ne s'arrête pas spécifiquement sur ce verset — il y voit le déploiement de la sagesse de Joseph : <em>après les sept grasses viennent les sept maigres</em>. La grâce de l'interprétation est qu'elle prévoit le besoin avant qu'il ne survienne, et qu'elle ordonne la providence des hommes par la lumière de la science.",
+      "mots": [
+        {
+          "ar": "شِدَادٌ",
+          "tr": "shidād",
+          "racine": "ش د د",
+          "sens": "dures",
+          "def": "shadīd : sévère.",
+          "gram": "attribut"
+        },
+        {
+          "ar": "تُحْصِنُونَ",
+          "tr": "tuḥṣinūn",
+          "racine": "ح ص ن",
+          "sens": "vous mettez en réserve",
+          "def": "aḥṣana : préserver.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 49,
+      "ar": "ثُمَّ يَأْتِي مِن بَعْدِ ذَٰلِكَ عَامٌ فِيهِ يُغَاثُ النَّاسُ وَفِيهِ يَعْصِرُونَ",
+      "tr": "thumma yaʾtī min baʿdi dhālika ʿāmun fīhi yughāthu n-nāsu wa-fīhi yaʿṣirūna",
+      "trad": "Puis viendra une année durant laquelle les gens recevront une pluie abondante et se rendront au pressoir ».",
+      "themes": [
+        "l'année de la pluie"
+      ],
+      "commentaire": "Qushayrī : Joseph ajoute, par surcroît de science, ce que le roi n'avait pas vu en songe — <em>l'année du secours</em>. Le ṣiddīq voit au-delà de la question posée. Ainsi le serviteur véridique reçoit, avec la réponse au demandeur, une ouverture supplémentaire.",
+      "mots": [
+        {
+          "ar": "يُغَاثُ",
+          "tr": "yughāthu",
+          "racine": "غ و ث",
+          "sens": "sont secourus",
+          "def": "aghātha : secourir.",
+          "gram": "passif"
+        },
+        {
+          "ar": "يَعْصِرُونَ",
+          "tr": "yaʿṣirūn",
+          "racine": "ع ص ر",
+          "sens": "ils pressent",
+          "def": "ʿaṣara : presser.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 50,
+      "ar": "وَقَالَ الْمَلِكُ ائْتُونِي بِهِ ۖ فَلَمَّا جَاءَهُ الرَّسُولُ قَالَ ارْجِعْ إِلَىٰ رَبِّكَ فَاسْأَلْهُ مَا بَالُ النِّسْوَةِ اللَّاتِي قَطَّعْنَ أَيْدِيَهُنَّ ۚ إِنَّ رَبِّي بِكَيْدِهِنَّ عَلِيمٌ",
+      "tr": "wa-qāla l-maliku iʾtūnī bihi fa-lammā jāʾahu r-rasūlu qāla rjiʿ ilā rabbika fa-sʾalhu mā bālu n-niswati llātī qaṭṭaʿna aydiyahunna inna rabbī bi-kaydihinna ʿalīmun",
+      "trad": "Le roi dit : « Amenez-le-moi ! » A l'émissaire qui venait le chercher, Joseph dit : « Retourne auprès de ton seigneur et demande-lui quel dessein poursuivaient les femmes qui se sont tailladé les mains. Mon Seigneur, Lui, connaît parfaitement leur malice ! »",
+      "themes": [
+        "la dignité préservée"
+      ],
+      "commentaire": "Qushayrī : <em>Joseph ne voulut pas que le roi le considère avec l'œil du soupçon de trahison, car le défaut le rabaisserait dans son cœur et sa parole ne porterait plus — il attendit donc que son innocence éclate</em>. Le sage sait préserver le crédit de sa parole avant de l'engager dans le conseil.",
+      "mots": [
+        {
+          "ar": "مَا بَالُ",
+          "tr": "mā bālu",
+          "racine": "ب و ل",
+          "sens": "quel est l'état de",
+          "def": "bāl : situation.",
+          "gram": "interrogatif"
+        },
+        {
+          "ar": "بِكَيْدِهِنَّ",
+          "tr": "bi-kaydihinna",
+          "racine": "ك ي د",
+          "sens": "de leur ruse",
+          "def": "kayd : machination.",
+          "gram": "COI"
+        }
+      ]
+    },
+    {
+      "n": 51,
+      "ar": "قَالَ مَا خَطْبُكُنَّ إِذْ رَاوَدتُّنَّ يُوسُفَ عَن نَّفْسِهِ ۚ قُلْنَ حَاشَ لِلَّهِ مَا عَلِمْنَا عَلَيْهِ مِن سُوءٍ ۚ قَالَتِ امْرَأَتُ الْعَزِيزِ الْآنَ حَصْحَصَ الْحَقُّ أَنَا رَاوَدتُّهُ عَن نَّفْسِهِ وَإِنَّهُ لَمِنَ الصَّادِقِينَ",
+      "tr": "qāla mā khaṭbukunna idh rāwadttunna yūsufa ʿan nafsihi qulna ḥāsha li-llāhi mā ʿalimnā ʿalayhi min sūʾin qālati mraʾatu l-ʿazīzi l-āna ḥaṣḥaṣa l-ḥaqqu anā rāwadttuhu ʿan nafsihi wa-innahu la-mina ṣ-ṣādiqīna",
+      "trad": "Le roi demanda à ces femmes : « Quel discours avez-vous tenu à Joseph pour tenter de le séduire ? » Elles répondirent : « A Dieu ne plaise ! Nous ne connaissons aucun mal à lui attribuer ! » Et la femme du grand Intendant de déclarer : « Maintenant la vérité éclate : c'est moi qui cherchais à le séduire ; quant à lui, c'est un homme véridique !",
+      "themes": [
+        "la vérité qui éclate (ḥaṣḥaṣa l-ḥaqq)"
+      ],
+      "commentaire": "Qushayrī : <em>les vérités ne se cachent jamais en fin de compte — elles paraissent, fût-ce après un temps</em>. Joseph fut accusé alors qu'il était innocent ; Dieu retourna l'affaire, fit parler ses adversaires et révéla son état. Et de l'aveu plein : <em>l'achèvement de l'amour entraîne le déchirement du voile, le peu d'égard pour le manifeste et le secret</em>.",
+      "mots": [
+        {
+          "ar": "حَصْحَصَ الْحَقُّ",
+          "tr": "ḥaṣḥaṣa l-ḥaqq",
+          "racine": "ح ص ح ص / ح ق ق",
+          "sens": "la vérité a éclaté",
+          "def": "ḥaṣḥaṣa : se manifester pleinement.",
+          "gram": "verbe accompli"
+        }
+      ]
+    },
+    {
+      "n": 52,
+      "ar": "ذَٰلِكَ لِيَعْلَمَ أَنِّي لَمْ أَخُنْهُ بِالْغَيْبِ وَأَنَّ اللَّهَ لَا يَهْدِي كَيْدَ الْخَائِنِينَ",
+      "tr": "dhālika li-yaʿlama annī lam akhunhu bi-l-ghaybi wa-anna llāha lā yahdī kayda l-khāʾinīna",
+      "trad": "Je dis cela pour qu'il [mon mari] sache que je ne l'ai pas trahi en secret et que Dieu ne dirige pas la malice des traîtres.",
+      "themes": [
+        "la fidélité dans l'invisible"
+      ],
+      "commentaire": "Qushayrī : <em>Dieu voulut manifester l'innocence de Joseph, parce qu'il savait qu'elles méritaient châtiment pour leur médisance ; mais Joseph ne voulut pas qu'à cause de lui un châtiment leur tombe — telle est la marque des amis (awliyāʾ) : être l'adversaire d'eux-mêmes plutôt que des autres</em>.",
+      "mots": [
+        {
+          "ar": "بِالْغَيْبِ",
+          "tr": "bi-l-ghayb",
+          "racine": "غ ي ب",
+          "sens": "dans l'invisible",
+          "def": "ghayb : ce qui est caché.",
+          "gram": "COI"
+        },
+        {
+          "ar": "الْخَائِنِينَ",
+          "tr": "al-khāʾinīn",
+          "racine": "خ و ن",
+          "sens": "les traîtres",
+          "def": "khāʾin : qui trahit.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 53,
+      "ar": "وَمَا أُبَرِّئُ نَفْسِي ۚ إِنَّ النَّفْسَ لَأَمَّارَةٌ بِالسُّوءِ إِلَّا مَا رَحِمَ رَبِّي ۚ إِنَّ رَبِّي غَفُورٌ رَّحِيمٌ",
+      "tr": "wa-mā ubarriʾu nafsī inna n-nafsa la-ammāratun bi-s-sūʾi illā mā raḥima rabbī inna rabbī ghafūrun raḥīmun",
+      "trad": "Je ne cherche cependant pas à m'innocenter, car l'âme incite fortement au mal, sauf si mon Seigneur fait miséricorde. Certes, mon Seigneur est pardonneur, clément ! »",
+      "themes": [
+        "l'âme qui commande le mal",
+        "la miséricorde"
+      ],
+      "commentaire": "Verset capital. Qushayrī : <em>lorsqu'il se loua par « il saura que je ne l'ai pas trahi en secret », ce fut comme si une voix l'interpellait au fond : et pas même quand tu eus le penchant ? — alors il dit : « je ne disculpe pas mon âme »</em>. Joseph reconnaît qu'aucune préservation ne vient de lui : <em>la première parole exprime sa reconnaissance pour la préservation reçue ; la seconde, son aveu d'impuissance — par la reconnaissance il mérita le surcroît du bienfait, par l'aveu il mérita le pardon</em>.",
+      "mots": [
+        {
+          "ar": "أَمَّارَةٌ بِالسُّوءِ",
+          "tr": "ammāratun bi-s-sūʾ",
+          "racine": "أ م ر / س و أ",
+          "sens": "incitatrice au mal",
+          "def": "ammāra : qui ordonne avec insistance.",
+          "gram": "attribut + COI"
+        },
+        {
+          "ar": "رَحِمَ",
+          "tr": "raḥima",
+          "racine": "ر ح م",
+          "sens": "a fait miséricorde",
+          "def": "raḥima : avoir compassion.",
+          "gram": "verbe accompli"
+        }
+      ]
+    },
+    {
+      "n": 54,
+      "ar": "وَقَالَ الْمَلِكُ ائْتُونِي بِهِ أَسْتَخْلِصْهُ لِنَفْسِي ۖ فَلَمَّا كَلَّمَهُ قَالَ إِنَّكَ الْيَوْمَ لَدَيْنَا مَكِينٌ أَمِينٌ",
+      "tr": "wa-qāla l-maliku iʾtūnī bihi astakhliṣhu li-nafsī fa-lammā kallamahu qāla innaka l-yawma ladaynā makīnun amīnun",
+      "trad": "Le roi dit : « Amenez-moi Joseph ! Je vais l'attacher à ma personne ». Après lui avoir adressé quelques mots, le roi poursuivit : « Te voilà dès aujourd'hui auprès de nous, investi d'autorité et de confiance ».",
+      "themes": [
+        "l'élévation auprès du roi"
+      ],
+      "commentaire": "Qushayrī : <em>lorsque la pureté de son acte et la noblesse de son état se manifestèrent au roi, il l'appela pour le réserver à lui-même ; ayant entendu sa parole, il éleva son rang, son lieu, et garantit sa générosité</em>. Le silence patient en prison se renverse en haute parole d'autorité.",
+      "mots": [
+        {
+          "ar": "أَسْتَخْلِصْهُ",
+          "tr": "astakhliṣhu",
+          "racine": "خ ل ص",
+          "sens": "je me l'attribuerai",
+          "def": "istakhlaṣa : prendre pour soi.",
+          "gram": "verbe inaccompli + suffixe"
+        },
+        {
+          "ar": "مَكِينٌ أَمِينٌ",
+          "tr": "makīnun amīn",
+          "racine": "م ك ن / أ م ن",
+          "sens": "établi, sûr",
+          "def": "makīn : haut placé ; amīn : digne de confiance.",
+          "gram": "attributs"
+        }
+      ]
+    },
+    {
+      "n": 55,
+      "ar": "قَالَ اجْعَلْنِي عَلَىٰ خَزَائِنِ الْأَرْضِ ۖ إِنِّي حَفِيظٌ عَلِيمٌ",
+      "tr": "qāla jʿalnī ʿalā khazāʾini l-arḍi innī ḥafīẓun ʿalīmun",
+      "trad": "Joseph dit : « Confie-moi l'intendance des magasins du pays, j'en serai le gardien averti ».",
+      "themes": [
+        "l'intendance demandée"
+      ],
+      "commentaire": "Qushayrī : <em>il ne le demanda que pour mettre la vérité à sa place, faire parvenir aux pauvres leur part — il chercha le droit de Dieu, non un avantage pour lui</em>. Et il ne dit pas « je suis beau », mais <em>« je suis gardien, sachant » — afin qu'on sache que le mérite tient au sens intérieur, non à la forme</em>.",
+      "mots": [
+        {
+          "ar": "خَزَائِنِ الْأَرْضِ",
+          "tr": "khazāʾini l-arḍ",
+          "racine": "خ ز ن / أ ر ض",
+          "sens": "les magasins du pays",
+          "def": "khazāʾin : trésors, dépôts.",
+          "gram": "annexion"
+        },
+        {
+          "ar": "حَفِيظٌ عَلِيمٌ",
+          "tr": "ḥafīẓun ʿalīm",
+          "racine": "ح ف ظ / ع ل م",
+          "sens": "gardien, sachant",
+          "def": "ḥafīẓ : qui garde.",
+          "gram": "attributs"
+        }
+      ]
+    },
+    {
+      "n": 56,
+      "ar": "وَكَذَٰلِكَ مَكَّنَّا لِيُوسُفَ فِي الْأَرْضِ يَتَبَوَّأُ مِنْهَا حَيْثُ يَشَاءُ ۚ نُصِيبُ بِرَحْمَتِنَا مَن نَّشَاءُ ۖ وَلَا نُضِيعُ أَجْرَ الْمُحْسِنِينَ",
+      "tr": "wa-kadhālika makkannā li-yūsufa fī l-arḍi yatabawwaʾu minhā ḥaythu yashāʾu nuṣību bi-raḥmatinā man nashāʾu wa-lā nuḍīʿu ajra l-muḥsinīna",
+      "trad": "C'est ainsi que Nous avons solidement établi Joseph dans ce pays. Il pouvait s'y installer là où il voulait. Nous accordons Notre Miséricorde à qui Nous voulons, et Nous ne laissons pas perdre la récompense des hommes de bien.",
+      "themes": [
+        "l'établissement définitif"
+      ],
+      "commentaire": "Qushayrī : <em>puisqu'il n'eut pas en lui les appels du désir, Dieu l'établit dans Son royaume</em>. Puis Dieu informe de la pure vérité du Tawḥīd : <em>« Nous atteignons de Notre miséricorde qui Nous voulons » — Il comble Ses serviteurs par Sa grâce, non par leur acte ; par Sa miséricorde, non par leur service</em>.",
+      "mots": [
+        {
+          "ar": "يَتَبَوَّأُ",
+          "tr": "yatabawwaʾu",
+          "racine": "ب و أ",
+          "sens": "il s'installe",
+          "def": "tabawwaʾa : prendre demeure.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "لَا نُضِيعُ",
+          "tr": "lā nuḍīʿu",
+          "racine": "ض ي ع",
+          "sens": "Nous ne perdons pas",
+          "def": "aḍāʿa : laisser perdre.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 57,
+      "ar": "وَلَأَجْرُ الْآخِرَةِ خَيْرٌ لِّلَّذِينَ آمَنُوا وَكَانُوا يَتَّقُونَ",
+      "tr": "wa-la-ajru l-ākhirati khayrun lilladhīna āmanū wa-kānū yattaqūna",
+      "trad": "Cependant, la récompense de la vie future est meilleure pour ceux qui auront cru en Dieu et L'auront craint.",
+      "themes": [
+        "la récompense de l'au-delà"
+      ],
+      "commentaire": "Qushayrī : il importe d'élever l'aspiration au-dessus du don visible — <em>afin que l'on sache qu'il n'y a pas de salut sans la piété (taqwā) et la résistance à la passion</em>. Le rappel de l'au-delà vient corriger l'éclat du règne terrestre.",
+      "mots": [
+        {
+          "ar": "أَجْرُ الْآخِرَةِ",
+          "tr": "ajru l-ākhira",
+          "racine": "أ ج ر / أ خ ر",
+          "sens": "la récompense de l'au-delà",
+          "def": "ajr : salaire.",
+          "gram": "annexion"
+        },
+        {
+          "ar": "يَتَّقُونَ",
+          "tr": "yattaqūn",
+          "racine": "و ق ي",
+          "sens": "ils craignent",
+          "def": "ittaqā : craindre Dieu.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 58,
+      "ar": "وَجَاءَ إِخْوَةُ يُوسُفَ فَدَخَلُوا عَلَيْهِ فَعَرَفَهُمْ وَهُمْ لَهُ مُنكِرُونَ",
+      "tr": "wa-jāʾa ikhwatu yūsufa fa-dakhalū ʿalayhi fa-ʿarafahum wa-hum lahu munkirūna",
+      "trad": "Quant vinrent les frères de Joseph, ils se présentèrent à lui ; il les reconnut, mais eux ne le reconnurent pas.",
+      "themes": [
+        "la reconnaissance unilatérale"
+      ],
+      "commentaire": "Qushayrī : <em>Joseph reconnut ses frères et eux le méconnurent, parce qu'ils croyaient qu'il était sous la condition d'esclavage — et Joseph, à ce moment, était assis à la place du roi ; qui cherche le roi sous la figure de l'esclave, quand le reconnaîtra-t-il ?</em> Image transparente du Connaissant qui voit le Connu sous des formes qu'on ne soupçonne pas.",
+      "mots": [
+        {
+          "ar": "فَعَرَفَهُمْ",
+          "tr": "fa-ʿarafahum",
+          "racine": "ع ر ف",
+          "sens": "il les reconnut",
+          "def": "ʿarafa : connaître.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "مُنكِرُونَ",
+          "tr": "munkirūn",
+          "racine": "ن ك ر",
+          "sens": "méconnaissants",
+          "def": "munkir : qui ignore.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 59,
+      "ar": "وَلَمَّا جَهَّزَهُم بِجَهَازِهِمْ قَالَ ائْتُونِي بِأَخٍ لَّكُم مِّنْ أَبِيكُمْ ۚ أَلَا تَرَوْنَ أَنِّي أُوفِي الْكَيْلَ وَأَنَا خَيْرُ الْمُنزِلِينَ",
+      "tr": "wa-lammā jahhazahum bi-jahāzihim qāla iʾtūnī bi-akhin lakum min abīkum a-lā tarawna annī ūfī l-kayla wa-anā khayru l-munzilīna",
+      "trad": "Après les avoir pourvus de provisions, il leur dit : « Amenez-moi un de vos frères, celui qui est resté auprès de votre père. Ne voyez-vous pas que je donne pleine mesure [de blé] et que je suis le meilleur des hôtes ?",
+      "themes": [
+        "la demande de Benjamin"
+      ],
+      "commentaire": "Qushayrī : <em>l'amant est jaloux : Jacob trouvait consolation en regardant Benjamin — Joseph jalousa que Jacob le regarde</em>. Et Joseph allia <em>l'attrait par la générosité (« je donne pleine mesure ») et la menace par sa privation</em>.",
+      "mots": [
+        {
+          "ar": "جَهَّزَهُم",
+          "tr": "jahhazahum",
+          "racine": "ج ه ز",
+          "sens": "il les équipa",
+          "def": "jahhaza : équiper.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "أُوفِي الْكَيْلَ",
+          "tr": "ūfī l-kayl",
+          "racine": "و ف ي / ك ي ل",
+          "sens": "je donne pleine mesure",
+          "def": "awfā : donner pleinement.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 60,
+      "ar": "فَإِن لَّمْ تَأْتُونِي بِهِ فَلَا كَيْلَ لَكُمْ عِندِي وَلَا تَقْرَبُونِ",
+      "tr": "fa-in lam taʾtūnī bihi fa-lā kayla lakum ʿindī wa-lā taqrabūni",
+      "trad": "Si vous ne me l'amenez pas, vous ne recevrez plus de mesure chez moi, et vous ne m'approcherez plus ».",
+      "themes": [
+        "la condition impérative"
+      ],
+      "commentaire": "Qushayrī : tactique mesurée du véridique — <em>la menace double l'attrait, afin que les cœurs s'orientent vers la demande</em>. La fermeté apparente est ici un acte d'amour : elle conduira au retour et à la pleine reconnaissance.",
+      "mots": [
+        {
+          "ar": "فَلَا كَيْلَ",
+          "tr": "fa-lā kayla",
+          "racine": "ك ي ل",
+          "sens": "plus de mesure",
+          "def": "kayl : mesure de grain.",
+          "gram": "négation absolue"
+        },
+        {
+          "ar": "لَا تَقْرَبُونِ",
+          "tr": "lā taqrabūni",
+          "racine": "ق ر ب",
+          "sens": "ne m'approchez plus",
+          "def": "qaraba : approcher.",
+          "gram": "jussif"
+        }
+      ]
+    },
+    {
+      "n": 61,
+      "ar": "قَالُوا سَنُرَاوِدُ عَنْهُ أَبَاهُ وَإِنَّا لَفَاعِلُونَ",
+      "tr": "qālū sa-nurāwidu ʿanhu abāhu wa-innā la-fāʿilūna",
+      "trad": "Ils dirent : « Nous demanderons instamment à son père de le laisser partir ; oui, nous ferons de notre mieux ! »",
+      "themes": [
+        "la promesse aux frères"
+      ],
+      "commentaire": "Qushayrī : <em>Joseph, connaissant qu'ils l'avaient vendu à vil prix, sut qu'ils viendraient avec leur frère par convoitise de la mesure pleine — ce ne leur serait pas difficile</em>. Sondage des cœurs : Joseph mesure leur attachement par leur intérêt.",
+      "mots": [
+        {
+          "ar": "سَنُرَاوِدُ",
+          "tr": "sa-nurāwidu",
+          "racine": "ر و د",
+          "sens": "nous solliciterons",
+          "def": "rāwada : insister auprès de.",
+          "gram": "futur inaccompli"
+        },
+        {
+          "ar": "لَفَاعِلُونَ",
+          "tr": "la-fāʿilūn",
+          "racine": "ف ع ل",
+          "sens": "faisants",
+          "def": "fāʿil : qui fait.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 62,
+      "ar": "وَقَالَ لِفِتْيَانِهِ اجْعَلُوا بِضَاعَتَهُمْ فِي رِحَالِهِمْ لَعَلَّهُمْ يَعْرِفُونَهَا إِذَا انقَلَبُوا إِلَىٰ أَهْلِهِمْ لَعَلَّهُمْ يَرْجِعُونَ",
+      "tr": "wa-qāla li-fityānihi jʿalū biḍāʿatahum fī riḥālihim laʿallahum yaʿrifūnahā idhā nqalabū ilā ahlihim laʿallahum yarjiʿūna",
+      "trad": "Joseph dit à ses jeunes servants : « Remettez dans leurs sacs les marchandises avec lesquelles ils nous ont payés, afin qu'ils les retrouvent lorsqu'ils seront de retour dans leur famille ; peut-être alors reviendront-ils ici...\"",
+      "themes": [
+        "la marchandise rendue"
+      ],
+      "commentaire": "Qushayrī : <em>placer leur marchandise dans leurs sacs, en règle de générosité, est plus parfait que la leur donner ouvertement, car la donation en plein jour est un don avec mention ; la donation cachée est un don dépourvu de toute évocation</em>. C'est aussi <em>la nature des bienfaits de Dieu : ils arrivent dans le secret — rares sont ceux qui les remarquent</em>.",
+      "mots": [
+        {
+          "ar": "لِفِتْيَانِهِ",
+          "tr": "li-fityānih",
+          "racine": "ف ت ي",
+          "sens": "à ses jeunes servants",
+          "def": "fitya : pluriel de fatā.",
+          "gram": "COI"
+        },
+        {
+          "ar": "رِحَالِهِمْ",
+          "tr": "riḥālihim",
+          "racine": "ر ح ل",
+          "sens": "leurs sacs",
+          "def": "riḥāl : bagages.",
+          "gram": "nom + suffixe"
+        }
+      ]
+    },
+    {
+      "n": 63,
+      "ar": "فَلَمَّا رَجَعُوا إِلَىٰ أَبِيهِمْ قَالُوا يَا أَبَانَا مُنِعَ مِنَّا الْكَيْلُ فَأَرْسِلْ مَعَنَا أَخَانَا نَكْتَلْ وَإِنَّا لَهُ لَحَافِظُونَ",
+      "tr": "fa-lammā rajaʿū ilā abīhim qālū yā abānā muniʿa minnā l-kaylu fa-arsil maʿanā akhānā naktal wa-innā lahu la-ḥāfiẓūna",
+      "trad": "Une fois de retour chez leur père, ils lui dirent : « O notre père ! On nous refuse la mesure. Pour que nous l'obtenions, envoie notre frère avec nous ; certes, nous veillerons sur lui ».",
+      "themes": [
+        "la demande renouvelée"
+      ],
+      "commentaire": "Qushayrī : <em>Joseph ne leur refusa pas la mesure — comment l'aurait-il fait alors qu'il disait « ne voyez-vous pas que je la donne pleine » ? Mais ils exagérèrent pour ébranler le cœur de Jacob</em>.",
+      "mots": [
+        {
+          "ar": "مُنِعَ",
+          "tr": "muniʿa",
+          "racine": "م ن ع",
+          "sens": "fut refusé",
+          "def": "manaʿa : interdire.",
+          "gram": "passif"
+        },
+        {
+          "ar": "نَكْتَلْ",
+          "tr": "naktal",
+          "racine": "ك ي ل",
+          "sens": "nous mesurions",
+          "def": "iktāla : prendre la mesure.",
+          "gram": "jussif"
+        }
+      ]
+    },
+    {
+      "n": 64,
+      "ar": "قَالَ هَلْ آمَنُكُمْ عَلَيْهِ إِلَّا كَمَا أَمِنتُكُمْ عَلَىٰ أَخِيهِ مِن قَبْلُ ۖ فَاللَّهُ خَيْرٌ حَافِظًا ۖ وَهُوَ أَرْحَمُ الرَّاحِمِينَ",
+      "tr": "qāla hal āmanukum ʿalayhi illā kamā amintukum ʿalā akhīhi min qablu fa-llāhu khayrun ḥāfiẓan wa-huwa arḥamu r-rāḥimīna",
+      "trad": "Il répondit : « Vous le confierai-je tout comme je vous ai jadis confié son frère ? Dieu, il est vrai, est le meilleur gardien ; Il est le plus miséricordieux de ceux qui font miséricorde ! »",
+      "themes": [
+        "Dieu, meilleur gardien"
+      ],
+      "commentaire": "Qushayrī : <em>qui a connu la trahison ne contemple plus la garantie</em> — Jacob ne se laisse plus apaiser par leurs promesses, conscient de leur passé. <em>Il ne dit pas : « Dieu est meilleur que celui qui me le ramènera », et peut-être que s'il l'avait dit, Dieu le lui aurait ramené plus vite</em>.",
+      "mots": [
+        {
+          "ar": "آمَنُكُمْ",
+          "tr": "āmanukum",
+          "racine": "أ م ن",
+          "sens": "je vous confie",
+          "def": "āmana : faire confiance.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "أَرْحَمُ الرَّاحِمِينَ",
+          "tr": "arḥamu r-rāḥimīn",
+          "racine": "ر ح م",
+          "sens": "le plus miséricordieux des miséricordieux",
+          "def": "élatif.",
+          "gram": "annexion"
+        }
+      ]
+    },
+    {
+      "n": 65,
+      "ar": "وَلَمَّا فَتَحُوا مَتَاعَهُمْ وَجَدُوا بِضَاعَتَهُمْ رُدَّتْ إِلَيْهِمْ ۖ قَالُوا يَا أَبَانَا مَا نَبْغِي ۖ هَٰذِهِ بِضَاعَتُنَا رُدَّتْ إِلَيْنَا ۖ وَنَمِيرُ أَهْلَنَا وَنَحْفَظُ أَخَانَا وَنَزْدَادُ كَيْلَ بَعِيرٍ ۖ ذَٰلِكَ كَيْلٌ يَسِيرٌ",
+      "tr": "wa-lammā fataḥū matāʿahum wajadū biḍāʿatahum ruddat ilayhim qālū yā abānā mā nabghī hādhihi biḍāʿatunā ruddat ilaynā wa-namīru ahlanā wa-naḥfaẓu akhānā wa-nazdādu kayla baʿīrin dhālika kaylun yasīrun",
+      "trad": "En ouvrant leurs sacs, ils trouvèrent les marchandises qui leur avaient été rendues. Ils dirent : « O notre père ! Que désirer de plus ? Voici que nos marchandises nous ont été rendues. Nous irons approvisionner notre famille, nous protégerons notre frère et nous ajouterons le chargement d'un chameau : c'est une charge légère ! »",
+      "themes": [
+        "la marchandise reconnue"
+      ],
+      "commentaire": "Qushayrī : <em>Joseph montra que dans son commerce avec eux il n'avait pas eu besoin de leur prendre paiement — quand il leur vendit et leur rassembla la mesure, il ne leur prit aucun prix</em>. C'est l'image du « si vous faites le bien, vous le faites pour vous-mêmes » : <em>chaque pas du serviteur vers la religion, Dieu le récompense en réunissant pour lui la douceur de l'obéissance et la suavité du vivre</em>.",
+      "mots": [
+        {
+          "ar": "مَا نَبْغِي",
+          "tr": "mā nabghī",
+          "racine": "ب غ ي",
+          "sens": "que voulons-nous de plus",
+          "def": "baghā : désirer.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "نَمِيرُ",
+          "tr": "namīru",
+          "racine": "م ي ر",
+          "sens": "nous approvisionnons",
+          "def": "māra : approvisionner.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 66,
+      "ar": "قَالَ لَنْ أُرْسِلَهُ مَعَكُمْ حَتَّىٰ تُؤْتُونِ مَوْثِقًا مِّنَ اللَّهِ لَتَأْتُنَّنِي بِهِ إِلَّا أَن يُحَاطَ بِكُمْ ۖ فَلَمَّا آتَوْهُ مَوْثِقَهُمْ قَالَ اللَّهُ عَلَىٰ مَا نَقُولُ وَكِيلٌ",
+      "tr": "qāla lan ursilahu maʿakum ḥattā tuʾtūni mawthiqan mina llāhi la-taʾtunnanī bihi illā an yuḥāṭa bikum fa-lammā ātawhu mawthiqahum qāla llāhu ʿalā mā naqūlu wakīlun",
+      "trad": "Il dit : « Je ne l'enverrai pas avec vous tant que vous ne m'aurez pas donné, devant Dieu, la promesse formelle de me le ramener, sauf dans le cas où vous seriez encerclés ». Lorsqu'ils lui eurent donné leur promesse, leur père dit : « Dieu est garant de ce que nous disons ! »",
+      "themes": [
+        "le pacte solennel"
+      ],
+      "commentaire": "Qushayrī : <em>la précaution ne préserve pas du décret</em>. Jacob fit pour Benjamin tout ce que la prudence permettait — pactes, sermons, garanties — et cela ne le préserva nullement de ce que Dieu avait décrété.",
+      "mots": [
+        {
+          "ar": "مَوْثِقًا",
+          "tr": "mawthiqan",
+          "racine": "و ث ق",
+          "sens": "un engagement",
+          "def": "mīthāq : pacte.",
+          "gram": "COD"
+        },
+        {
+          "ar": "وَكِيلٌ",
+          "tr": "wakīl",
+          "racine": "و ك ل",
+          "sens": "garant",
+          "def": "wakīl : représentant, témoin.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 67,
+      "ar": "وَقَالَ يَا بَنِيَّ لَا تَدْخُلُوا مِن بَابٍ وَاحِدٍ وَادْخُلُوا مِنْ أَبْوَابٍ مُّتَفَرِّقَةٍ ۖ وَمَا أُغْنِي عَنكُم مِّنَ اللَّهِ مِن شَيْءٍ ۖ إِنِ الْحُكْمُ إِلَّا لِلَّهِ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَعَلَيْهِ فَلْيَتَوَكَّلِ الْمُتَوَكِّلُونَ",
+      "tr": "wa-qāla yā baniyya lā tadkhulū min bābin wāḥidin wa-dkhulū min abwābin mutafarriqatin wa-mā ughnī ʿankum mina llāhi min shayʾin ini l-ḥukmu illā li-llāhi ʿalayhi tawakkaltu wa-ʿalayhi fa-l-yatawakkali l-mutawakkilūna",
+      "trad": "Il dit encore : « O mes fils ! N'entrez pas [dans la cité] par une seule porte, mais entrez par des portes différentes. Je ne puis vous être d'aucune utilité contre Dieu. Le jugement n'appartient qu'à Dieu. Je m'en remets à Lui, et qu'à Lui s'en remettent ceux qui Lui font confiance ! »",
+      "themes": [
+        "la remise à Dieu (tawakkul)"
+      ],
+      "commentaire": "Qushayrī : Jacob conjoint la cause et le tawakkul — il prescrit la précaution, puis confesse aussitôt : <em>« Je ne vous suis d'aucune utilité contre Dieu ; le jugement n'appartient qu'à Dieu »</em>. Modèle parfait : prendre les moyens, en remettre l'effet.",
+      "mots": [
+        {
+          "ar": "أَبْوَابٍ مُّتَفَرِّقَةٍ",
+          "tr": "abwābin mutafarriqa",
+          "racine": "ب و ب / ف ر ق",
+          "sens": "portes différentes",
+          "def": "mutafarriq : dispersé.",
+          "gram": "attribut"
+        },
+        {
+          "ar": "تَوَكَّلْتُ",
+          "tr": "tawakkaltu",
+          "racine": "و ك ل",
+          "sens": "je m'en remets",
+          "def": "tawakkala : se confier.",
+          "gram": "verbe accompli"
+        }
+      ]
+    },
+    {
+      "n": 68,
+      "ar": "وَلَمَّا دَخَلُوا مِنْ حَيْثُ أَمَرَهُمْ أَبُوهُم مَّا كَانَ يُغْنِي عَنْهُم مِّنَ اللَّهِ مِن شَيْءٍ إِلَّا حَاجَةً فِي نَفْسِ يَعْقُوبَ قَضَاهَا ۚ وَإِنَّهُ لَذُو عِلْمٍ لِّمَا عَلَّمْنَاهُ وَلَٰكِنَّ أَكْثَرَ النَّاسِ لَا يَعْلَمُونَ",
+      "tr": "wa-lammā dakhalū min ḥaythu amarahum abūhum mā kāna yughnī ʿanhum mina llāhi min shayʾin illā ḥājatan fī nafsi yaʿqūba qaḍāhā wa-innahu la-dhū ʿilmin li-mā ʿallamnāhu wa-lākinna akthara n-nāsi lā yaʿlamūna",
+      "trad": "Ils entrèrent donc de la façon que leur père leur avait prescrite, ce qui ne leur aurait été d'aucune utilité auprès de Dieu si la chose n'avait eu, dans l'esprit de Jacob, l'importance d'un décret divin. Car Jacob possédait la science que Nous lui avions enseignée ; mais la plupart des hommes sont dans l'ignorance.",
+      "themes": [
+        "la science enseignée par Dieu"
+      ],
+      "commentaire": "Qushayrī : <em>même si le but de Jacob ne se réalisa pas en finale, son désir reçut sa part dans l'instant — et dans cette mesure, pour les hommes de cœur, il y a indépendance</em>. Et : <em>il ne faut pas croire que tout ce que veulent les maîtres advienne nécessairement — Celui dont la volonté ne souffre nul démenti est Dieu seul</em>.",
+      "mots": [
+        {
+          "ar": "حَاجَةً",
+          "tr": "ḥājatan",
+          "racine": "ح و ج",
+          "sens": "un besoin",
+          "def": "ḥāja : exigence intérieure.",
+          "gram": "COD"
+        },
+        {
+          "ar": "لَذُو عِلْمٍ",
+          "tr": "la-dhū ʿilm",
+          "racine": "ع ل م",
+          "sens": "détenteur de science",
+          "def": "dhū : doté de.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 69,
+      "ar": "وَلَمَّا دَخَلُوا عَلَىٰ يُوسُفَ آوَىٰ إِلَيْهِ أَخَاهُ ۖ قَالَ إِنِّي أَنَا أَخُوكَ فَلَا تَبْتَئِسْ بِمَا كَانُوا يَعْمَلُونَ",
+      "tr": "wa-lammā dakhalū ʿalā yūsufa āwā ilayhi akhāhu qāla innī anā akhūka fa-lā tabtaʾis bi-mā kānū yaʿmalūna",
+      "trad": "Lorsqu'ils pénétrèrent auprès de Joseph, celui-ci prit son (jeune) frère en aparté et lui dit : « Je suis ton frère ; ne t'afflige pas pour ce qu'ils ont commis ».",
+      "themes": [
+        "les retrouvailles secrètes"
+      ],
+      "commentaire": "Qushayrī : <em>Jacob attendit la rencontre de Joseph durant des années ; Joseph languit après Benjamin et obtint sa vue en très peu de temps. Ainsi va l'amour : l'un est suspendu, l'autre éprouvé</em>. Et : <em>si l'œil de Jacob s'enflamma de la séparation, l'œil de Joseph se rafraîchit par les retrouvailles ; le soleil ne se couche sur un peuple qu'il ne se lève sur un autre</em>.",
+      "mots": [
+        {
+          "ar": "آوَىٰ",
+          "tr": "āwā",
+          "racine": "أ و ي",
+          "sens": "il prit chez soi",
+          "def": "āwā : recueillir.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "لَا تَبْتَئِسْ",
+          "tr": "lā tabtaʾis",
+          "racine": "ب أ س",
+          "sens": "ne t'afflige pas",
+          "def": "ibtaʾasa : être affligé.",
+          "gram": "jussif"
+        }
+      ]
+    },
+    {
+      "n": 70,
+      "ar": "فَلَمَّا جَهَّزَهُم بِجَهَازِهِمْ جَعَلَ السِّقَايَةَ فِي رَحْلِ أَخِيهِ ثُمَّ أَذَّنَ مُؤَذِّنٌ أَيَّتُهَا الْعِيرُ إِنَّكُمْ لَسَارِقُونَ",
+      "tr": "fa-lammā jahhazahum bi-jahāzihim jaʿala s-siqāyata fī raḥli akhīhi thumma adhdhana muʾadhdhinun ayyatuhā l-ʿīru innakum la-sāriqūna",
+      "trad": "Après les avoir pourvus de leurs provisions, il plaça la coupe dans le sac de son (jeune) frère. C'est alors qu'un héraut proclama : « O les caravaniers, vous êtes des voleurs ! » Revenant sur leurs pas,",
+      "themes": [
+        "la coupe cachée"
+      ],
+      "commentaire": "Qushayrī : <em>Benjamin supporta l'accusation de vol après avoir retrouvé Joseph. Ce qui lui fut imputé de mauvais lui devint léger en regard de ce qu'il trouva d'union</em>. Soufisme du blâme : <em>il portait au-dehors le poids de la diffamation, et au-dedans il était porté par la trouvaille de la noblesse</em>.",
+      "mots": [
+        {
+          "ar": "السِّقَايَةَ",
+          "tr": "as-siqāya",
+          "racine": "س ق ي",
+          "sens": "la coupe",
+          "def": "siqāya : récipient à boire.",
+          "gram": "COD"
+        },
+        {
+          "ar": "الْعِيرُ",
+          "tr": "al-ʿīr",
+          "racine": "ع ي ر",
+          "sens": "la caravane",
+          "def": "ʿīr : caravane.",
+          "gram": "sujet"
+        }
+      ]
+    },
+    {
+      "n": 71,
+      "ar": "قَالُوا وَأَقْبَلُوا عَلَيْهِم مَّاذَا تَفْقِدُونَ",
+      "tr": "qālū wa-aqbalū ʿalayhim mādhā tafqidūna",
+      "trad": "ceux-ci dirent : « Que cherchez-vous ? »",
+      "themes": [
+        "la question des frères"
+      ],
+      "commentaire": "Qushayrī passe rapidement sur ce verset — il prépare la confrontation. <em>Les frères s'avancent en croyant à la pureté de leur cause ; la coupe dissimulée va inverser leur assurance</em>.",
+      "mots": [
+        {
+          "ar": "تَفْقِدُونَ",
+          "tr": "tafqidūn",
+          "racine": "ف ق د",
+          "sens": "vous cherchez (perdu)",
+          "def": "faqada : perdre.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 72,
+      "ar": "قَالُوا نَفْقِدُ صُوَاعَ الْمَلِكِ وَلِمَن جَاءَ بِهِ حِمْلُ بَعِيرٍ وَأَنَا بِهِ زَعِيمٌ",
+      "tr": "qālū nafqidu ṣuwāʿa l-maliki wa-li-man jāʾa bihi ḥimlu baʿīrin wa-anā bihi zaʿīmun",
+      "trad": "Ils (les Egyptiens) répondirent : « Nous cherchons la coupe du roi : celui qui la rapportera recevra le chargement d'un chameau ; j'en suis garant ! »",
+      "themes": [
+        "la coupe du roi"
+      ],
+      "commentaire": "Qushayrī : la mise en scène est entièrement de Joseph — <em>Nous avons suggéré cette ruse à Joseph, car il ne pouvait, selon la loi royale, retenir son frère autrement</em>. La ruse divine traverse les coutumes des hommes pour servir l'amour qu'elle protège.",
+      "mots": [
+        {
+          "ar": "صُوَاعَ الْمَلِكِ",
+          "tr": "ṣuwāʿa l-malik",
+          "racine": "ص و ع / م ل ك",
+          "sens": "la coupe du roi",
+          "def": "ṣuwāʿ : récipient.",
+          "gram": "annexion"
+        },
+        {
+          "ar": "زَعِيمٌ",
+          "tr": "zaʿīm",
+          "racine": "ز ع م",
+          "sens": "garant",
+          "def": "zaʿīm : qui se porte caution.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 73,
+      "ar": "قَالُوا تَاللَّهِ لَقَدْ عَلِمْتُم مَّا جِئْنَا لِنُفْسِدَ فِي الْأَرْضِ وَمَا كُنَّا سَارِقِينَ",
+      "tr": "qālū ta-llāhi laqad ʿalimtum mā jiʾnā li-nufsida fī l-arḍi wa-mā kunnā sāriqīna",
+      "trad": "Ils (les frères de Joseph) dirent : « Par Dieu ! Vous savez que nous ne sommes pas venus pour semer la corruption dans le pays et que nous ne sommes pas des voleurs ».",
+      "themes": [
+        "la défense par le serment"
+      ],
+      "commentaire": "Qushayrī : <em>la beauté de notre conduite extérieure témoigne de la beauté de notre intérieur ; si nous étions voleurs de votre bien, nous ne vous l'aurions pas rendu — vous ne l'auriez pas retrouvé dans nos sacs après notre départ</em>.",
+      "mots": [
+        {
+          "ar": "لِنُفْسِدَ",
+          "tr": "li-nufsida",
+          "racine": "ف س د",
+          "sens": "pour semer la corruption",
+          "def": "afsada : corrompre.",
+          "gram": "subjonctif"
+        },
+        {
+          "ar": "سَارِقِينَ",
+          "tr": "sāriqīn",
+          "racine": "س ر ق",
+          "sens": "des voleurs",
+          "def": "sāriq : voleur.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 74,
+      "ar": "قَالُوا فَمَا جَزَاؤُهُ إِن كُنتُمْ كَاذِبِينَ",
+      "tr": "qālū fa-mā jazāʾuhu in kuntum kādhibīna",
+      "trad": "Ils (les Egyptiens) reprirent : « Quelle sera donc la punition du voleur, si vous mentez ? »",
+      "themes": [
+        "la question du châtiment"
+      ],
+      "commentaire": "Qushayrī : ils retournent la question pour faire dire aux frères eux-mêmes la sentence — <em>art de la ruse providentielle : la cause se ferme sur ceux qui la prononcent</em>.",
+      "mots": [
+        {
+          "ar": "جَزَاؤُهُ",
+          "tr": "jazāʾuh",
+          "racine": "ج ز ي",
+          "sens": "sa rétribution",
+          "def": "jazāʾ : récompense ou châtiment.",
+          "gram": "sujet"
+        }
+      ]
+    },
+    {
+      "n": 75,
+      "ar": "قَالُوا جَزَاؤُهُ مَن وُجِدَ فِي رَحْلِهِ فَهُوَ جَزَاؤُهُ ۚ كَذَٰلِكَ نَجْزِي الظَّالِمِينَ",
+      "tr": "qālū jazāʾuhu man wujida fī raḥlihi fa-huwa jazāʾuhu kadhālika najzī ẓ-ẓālimīna",
+      "trad": "Ils (les frères de Joseph) répondirent : « Sa punition ? Celui dans le sac duquel on trouvera la coupe vous sera livré en expiation. C'est ainsi que nous punissons les iniques ! »",
+      "themes": [
+        "la sentence prononcée"
+      ],
+      "commentaire": "Qushayrī : <em>les frères eurent l'audace de prononcer la sentence eux-mêmes, confiants en leur innocence — Benjamin étant leur compagnon dans cette innocence apparente</em>. Mais ils ignoraient le stratagème divin qui retournerait leur parole en piège.",
+      "mots": [
+        {
+          "ar": "الظَّالِمِينَ",
+          "tr": "aẓ-ẓālimīn",
+          "racine": "ظ ل م",
+          "sens": "les iniques",
+          "def": "ẓālim : injuste.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 76,
+      "ar": "فَبَدَأَ بِأَوْعِيَتِهِمْ قَبْلَ وِعَاءِ أَخِيهِ ثُمَّ اسْتَخْرَجَهَا مِن وِعَاءِ أَخِيهِ ۚ كَذَٰلِكَ كِدْنَا لِيُوسُفَ ۖ مَا كَانَ لِيَأْخُذَ أَخَاهُ فِي دِينِ الْمَلِكِ إِلَّا أَن يَشَاءَ اللَّهُ ۚ نَرْفَعُ دَرَجَاتٍ مَّن نَّشَاءُ ۗ وَفَوْقَ كُلِّ ذِي عِلْمٍ عَلِيمٌ",
+      "tr": "fa-badaʾa bi-awʿiyatihim qabla wiʿāʾi akhīhi thumma stakhrajahā min wiʿāʾi akhīhi kadhālika kidnā li-yūsufa mā kāna li-yaʾkhudha akhāhu fī dīni l-maliki illā an yashāʾa llāhu narfaʿu darajātin man nashāʾu wa-fawqa kulli dhī ʿilmin ʿalīmun",
+      "trad": "Joseph commença par fouiller les bagages des autres frères ; puis il fouilla le bagage de son (jeune) frère et en extirpa la coupe. Nous avons suggéré cette ruse à Joseph, car il ne pouvait pas se saisir de son frère, d'après la loi royale et sans que Dieu l'ait voulu. Nous élevons le rang de qui Nous voulons. Au-dessus de chaque savant, il y a l'Omniscient.",
+      "themes": [
+        "la ruse divine",
+        "au-dessus de tout savant"
+      ],
+      "commentaire": "Qushayrī : <em>les frères élevèrent leur voix dans le blâme ; quant à Benjamin, il garda silence — comme s'il reconnaissait le vol, ce qui n'était point ; mais s'il avait nié, il aurait éventé le secret de Joseph. Sa langue se tut, et son cœur s'épanouit dans l'état véritable</em>. Modèle muet de l'homme du blâme (malāmatī).",
+      "mots": [
+        {
+          "ar": "كِدْنَا لِيُوسُفَ",
+          "tr": "kidnā li-yūsuf",
+          "racine": "ك ي د",
+          "sens": "Nous avons usé de stratagème pour Joseph",
+          "def": "kāda : machiner.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "فَوْقَ كُلِّ ذِي عِلْمٍ عَلِيمٌ",
+          "tr": "fawqa kulli dhī ʿilmin ʿalīm",
+          "racine": "ع ل م",
+          "sens": "au-dessus de tout savant un plus savant",
+          "def": "élatif de connaissance.",
+          "gram": "syntagme"
+        }
+      ]
+    },
+    {
+      "n": 77,
+      "ar": "قَالُوا إِن يَسْرِقْ فَقَدْ سَرَقَ أَخٌ لَّهُ مِن قَبْلُ ۚ فَأَسَرَّهَا يُوسُفُ فِي نَفْسِهِ وَلَمْ يُبْدِهَا لَهُمْ ۚ قَالَ أَنتُمْ شَرٌّ مَّكَانًا ۖ وَاللَّهُ أَعْلَمُ بِمَا تَصِفُونَ",
+      "tr": "qālū in yasriq fa-qad saraqa akhun lahu min qablu fa-asarrahā yūsufu fī nafsihi wa-lam yubdihā lahum qāla antum sharrun makānan wa-llāhu aʿlamu bi-mā taṣifūna",
+      "trad": "Ils (les frères) dirent : « S'il a volé, un de ses frères a aussi volé autrefois ». Joseph garda le secret sur ce qui s'était passé et ne leur dévoila rien. Il dit : « Vous voilà en vilaine posture ! Dieu sait parfaitement ce que vous insinuez ».",
+      "themes": [
+        "la calomnie",
+        "le secret gardé"
+      ],
+      "commentaire": "Qushayrī : <em>la blessure par la médisance fut la chose la plus pénible que Joseph entendit d'eux : « si lui a volé, un frère à lui a volé auparavant » — coup plus dur en son cœur que le premier outrage</em>. Loi des grands : <em>même quand le roi tait sa colère, n'en sois pas sûr ; il finira par la faire ressentir, fût-ce après longtemps</em>.",
+      "mots": [
+        {
+          "ar": "فَأَسَرَّهَا",
+          "tr": "fa-asarrahā",
+          "racine": "س ر ر",
+          "sens": "il la garda secrète",
+          "def": "asarra : cacher.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "شَرٌّ مَّكَانًا",
+          "tr": "sharrun makānan",
+          "racine": "ش ر ر / ك و ن",
+          "sens": "pire en position",
+          "def": "sharr : pire.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 78,
+      "ar": "قَالُوا يَا أَيُّهَا الْعَزِيزُ إِنَّ لَهُ أَبًا شَيْخًا كَبِيرًا فَخُذْ أَحَدَنَا مَكَانَهُ ۖ إِنَّا نَرَاكَ مِنَ الْمُحْسِنِينَ",
+      "tr": "qālū yā ayyuhā l-ʿazīzu inna lahu aban shaykhan kabīran fa-khudh aḥadanā makānahu innā narāka mina l-muḥsinīna",
+      "trad": "Ils dirent : « O Excellence ! Son père est très âgé ; prends l'un de nous à sa place. Nous voyons que tu es un homme de bien ».",
+      "themes": [
+        "la substitution refusée"
+      ],
+      "commentaire": "Qushayrī : <em>nulle âme ne porte le fardeau d'une autre — le père n'est pas pris à la place du fils, ni le proche accepté en remplacement de quelqu'un</em>. Chacun est tenu par son propre acte.",
+      "mots": [
+        {
+          "ar": "شَيْخًا كَبِيرًا",
+          "tr": "shaykhan kabīran",
+          "racine": "ش ي خ / ك ب ر",
+          "sens": "un vieillard âgé",
+          "def": "shaykh kabīr.",
+          "gram": "attributs"
+        },
+        {
+          "ar": "الْمُحْسِنِينَ",
+          "tr": "al-muḥsinīn",
+          "racine": "ح س ن",
+          "sens": "les bienfaisants",
+          "def": "muḥsin : qui fait le bien.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 79,
+      "ar": "قَالَ مَعَاذَ اللَّهِ أَن نَّأْخُذَ إِلَّا مَن وَجَدْنَا مَتَاعَنَا عِندَهُ إِنَّا إِذًا لَّظَالِمُونَ",
+      "tr": "qāla maʿādha llāhi an naʾkhudha illā man wajadnā matāʿanā ʿindahu innā idhan la-ẓālimūna",
+      "trad": "Il dit : « A Dieu ne plaise que nous nous saisissions d'un autre que celui chez qui nous avons trouvé notre bien ! Agir ainsi serait commettre une iniquité ».",
+      "themes": [
+        "la justice apparente"
+      ],
+      "commentaire": "Qushayrī : <em>ils s'imaginaient que c'était une affaire d'argent — ils ne savaient pas que Joseph rusait avec eux par amour pour son frère, et que jamais l'aimé ne souffre de substitut</em>.",
+      "mots": [
+        {
+          "ar": "مَعَاذَ اللَّهِ",
+          "tr": "maʿādha llāh",
+          "racine": "ع و ذ",
+          "sens": "Dieu nous en préserve",
+          "def": "exclamation.",
+          "gram": "exclamation"
+        },
+        {
+          "ar": "لَّظَالِمُونَ",
+          "tr": "la-ẓālimūn",
+          "racine": "ظ ل م",
+          "sens": "des injustes",
+          "def": "ẓālim.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 80,
+      "ar": "فَلَمَّا اسْتَيْأَسُوا مِنْهُ خَلَصُوا نَجِيًّا ۖ قَالَ كَبِيرُهُمْ أَلَمْ تَعْلَمُوا أَنَّ أَبَاكُمْ قَدْ أَخَذَ عَلَيْكُم مَّوْثِقًا مِّنَ اللَّهِ وَمِن قَبْلُ مَا فَرَّطتُمْ فِي يُوسُفَ ۖ فَلَنْ أَبْرَحَ الْأَرْضَ حَتَّىٰ يَأْذَنَ لِي أَبِي أَوْ يَحْكُمَ اللَّهُ لِي ۖ وَهُوَ خَيْرُ الْحَاكِمِينَ",
+      "tr": "fa-lammā stayʾasū minhu khalaṣū najiyyan qāla kabīruhum a-lam taʿlamū anna abākum qad akhadha ʿalaykum mawthiqan mina llāhi wa-min qablu mā farraṭtum fī yūsufa fa-lan abraḥa l-arḍa ḥattā yaʾdhana lī abī aw yaḥkuma llāhu lī wa-huwa khayru l-ḥākimīna",
+      "trad": "Désespérant de le fléchir, ils se retirèrent pour se consulter. L'aîné dit : « Ne savez-vous pas que votre père a reçu de vous une promesse formelle devant Dieu et que, déjà, vous y avez manqué autrefois à propos de Joseph ? Je ne quitterai donc pas ce pays avant que mon père ne m'y autorise ou que Dieu ne le décrète pour moi. Car c'est Lui le meilleur des juges. »",
+      "themes": [
+        "la honte des frères",
+        "l'aîné qui reste"
+      ],
+      "commentaire": "Qushayrī : <em>lorsqu'ils virent que Joseph ne se séparerait pas de son frère, ils se retirèrent à part ; la honte les saisit, ils surent que Jacob reverrait pour eux le même fait que la fois précédente</em>. La similitude des épreuves révèle la rigueur du compte intérieur.",
+      "mots": [
+        {
+          "ar": "اسْتَيْأَسُوا",
+          "tr": "istayʾasū",
+          "racine": "ي أ س",
+          "sens": "ils désespérèrent",
+          "def": "istayʾasa : désespérer.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "نَجِيًّا",
+          "tr": "najiyyan",
+          "racine": "ن ج و",
+          "sens": "en conciliabule",
+          "def": "najī : qui converse en secret.",
+          "gram": "circonstanciel"
+        }
+      ]
+    },
+    {
+      "n": 81,
+      "ar": "ارْجِعُوا إِلَىٰ أَبِيكُمْ فَقُولُوا يَا أَبَانَا إِنَّ ابْنَكَ سَرَقَ وَمَا شَهِدْنَا إِلَّا بِمَا عَلِمْنَا وَمَا كُنَّا لِلْغَيْبِ حَافِظِينَ",
+      "tr": "irjiʿū ilā abīkum fa-qūlū yā abānā inna bnaka saraqa wa-mā shahidnā illā bi-mā ʿalimnā wa-mā kunnā li-l-ghaybi ḥāfiẓīna",
+      "trad": "Retournez chez votre père et dites-lui : « O notre père ! Oui, ton fils a volé ; nous ne rapportons que ce que nous savons, sans pouvoir nous prononcer sur ce qui est caché.",
+      "themes": [
+        "l'aveu partiel"
+      ],
+      "commentaire": "Qushayrī : <em>cette fois ils ont une preuve visible, mais le cœur de Jacob ne s'apaise pas — car la faute première rendit le soupçon permanent</em>. Qui a menti une fois ne sera plus cru, même quand il dit vrai.",
+      "mots": [
+        {
+          "ar": "شَهِدْنَا",
+          "tr": "shahidnā",
+          "racine": "ش ه د",
+          "sens": "nous avons témoigné",
+          "def": "shahida : témoigner.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "لِلْغَيْبِ حَافِظِينَ",
+          "tr": "li-l-ghaybi ḥāfiẓīn",
+          "racine": "غ ي ب / ح ف ظ",
+          "sens": "gardiens de l'invisible",
+          "def": "ghayb : caché.",
+          "gram": "syntagme"
+        }
+      ]
+    },
+    {
+      "n": 82,
+      "ar": "وَاسْأَلِ الْقَرْيَةَ الَّتِي كُنَّا فِيهَا وَالْعِيرَ الَّتِي أَقْبَلْنَا فِيهَا ۖ وَإِنَّا لَصَادِقُونَ",
+      "tr": "wa-sʾali l-qaryata llatī kunnā fīhā wa-l-ʿīra llatī aqbalnā fīhā wa-innā la-ṣādiqūna",
+      "trad": "Interroge les gens de la cité où nous nous trouvions et ceux de la caravane avec laquelle nous sommes arrivés ; certes, nous disons la vérité ! »",
+      "themes": [
+        "les témoins de la cité"
+      ],
+      "commentaire": "Qushayrī : <em>plus ils multiplient les preuves, plus Jacob trouve à leur parole motif de doute</em>. Et : <em>interroger les vestiges, c'est une coutume des cœurs aimants — il y a là consolation pour leurs secrets</em>.",
+      "mots": [
+        {
+          "ar": "الْقَرْيَةَ",
+          "tr": "al-qarya",
+          "racine": "ق ر ي",
+          "sens": "la cité",
+          "def": "qarya : bourgade.",
+          "gram": "COD"
+        },
+        {
+          "ar": "الْعِيرَ",
+          "tr": "al-ʿīr",
+          "racine": "ع ي ر",
+          "sens": "la caravane",
+          "def": "ʿīr.",
+          "gram": "COD"
+        }
+      ]
+    },
+    {
+      "n": 83,
+      "ar": "قَالَ بَلْ سَوَّلَتْ لَكُمْ أَنفُسُكُمْ أَمْرًا ۖ فَصَبْرٌ جَمِيلٌ ۖ عَسَى اللَّهُ أَن يَأْتِيَنِي بِهِمْ جَمِيعًا ۚ إِنَّهُ هُوَ الْعَلِيمُ الْحَكِيمُ",
+      "tr": "qāla bal sawwalat lakum anfusukum amran fa-ṣabrun jamīlun ʿasā llāhu an yaʾtiyanī bihim jamīʿan innahu huwa l-ʿalīmu l-ḥakīmu",
+      "trad": "Jacob dit : « Mais encore ! Vos âmes vous ont inspiré quelque intrigue. Prenons patience, peut-être Dieu, me les rendra-t-il tous ! Il est, en vérité, l'Omniscient, le Sage ! »",
+      "themes": [
+        "la patience renouvelée",
+        "l'espoir"
+      ],
+      "commentaire": "Qushayrī : <em>il se réfugia dans la proximité de la délivrance par la patience</em>. Et : <em>il s'était engagé à la patience — mais il n'attendit pas le soir pour dire « hélas sur Joseph » ; afin que l'on sache que la résolution des amants à patienter est sans cesse rompue</em>.",
+      "mots": [
+        {
+          "ar": "سَوَّلَتْ",
+          "tr": "sawwalat",
+          "racine": "س و ل",
+          "sens": "a embelli",
+          "def": "sawwala : enjoliver pour tromper.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "صَبْرٌ جَمِيلٌ",
+          "tr": "ṣabrun jamīl",
+          "racine": "ص ب ر / ج م ل",
+          "sens": "patience belle",
+          "def": "syntagme classique.",
+          "gram": "syntagme"
+        }
+      ]
+    },
+    {
+      "n": 84,
+      "ar": "وَتَوَلَّىٰ عَنْهُمْ وَقَالَ يَا أَسَفَىٰ عَلَىٰ يُوسُفَ وَابْيَضَّتْ عَيْنَاهُ مِنَ الْحُزْنِ فَهُوَ كَظِيمٌ",
+      "tr": "wa-tawallā ʿanhum wa-qāla yā asafā ʿalā yūsufa wa-byaḍḍat ʿaynāhu mina l-ḥuzni fa-huwa kaẓīmun",
+      "trad": "Il dit en se détournant d'eux : « Hélas, pauvre Joseph ! » Et ses yeux blanchirent à cause du chagrin qu'il s'efforçait de contenir.",
+      "themes": [
+        "les yeux blanchis",
+        "le chagrin contenu"
+      ],
+      "commentaire": "Qushayrī rapporte al-Daqqāq : <em>« Dieu n'a pas dit ‘Jacob est devenu aveugle' mais ‘ses deux yeux blanchirent' : car ce n'était pas en vérité cécité, mais voile pour ne plus voir autre que Joseph »</em>. Et : <em>l'absence de vision lui fut don, afin qu'il n'eût plus à regarder ce qui n'était pas le bien-aimé — rien n'est plus dur aux amants que de voir autre chose que leur aimé en son absence</em>.",
+      "mots": [
+        {
+          "ar": "يَا أَسَفَىٰ",
+          "tr": "yā asafā",
+          "racine": "أ س ف",
+          "sens": "hélas !",
+          "def": "asaf : douleur poignante.",
+          "gram": "exclamation"
+        },
+        {
+          "ar": "ابْيَضَّتْ",
+          "tr": "ibyaḍḍat",
+          "racine": "ب ي ض",
+          "sens": "blanchirent",
+          "def": "ibyaḍḍa : devenir blanc.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "كَظِيمٌ",
+          "tr": "kaẓīm",
+          "racine": "ك ظ م",
+          "sens": "contenant son chagrin",
+          "def": "kāẓim : qui ravale.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 85,
+      "ar": "قَالُوا تَاللَّهِ تَفْتَأُ تَذْكُرُ يُوسُفَ حَتَّىٰ تَكُونَ حَرَضًا أَوْ تَكُونَ مِنَ الْهَالِكِينَ",
+      "tr": "qālū ta-llāhi taftaʾu tadhkuru yūsufa ḥattā takūna ḥaraḍan aw takūna mina l-hālikīna",
+      "trad": "Ils dirent : « Par Dieu ! Tu ne cesseras pas de penser à Joseph jusqu'à te consumer et jusqu'à en mourir ».",
+      "themes": [
+        "l'incompréhension des fils"
+      ],
+      "commentaire": "Qushayrī : <em>la chose la plus suave dans la mort est celle qui survient en suivant la passion (l'amour) — comment effrayer par la mort celui à qui la mort est la chose la plus chère ?</em> Étrange douceur : l'amant ne redoute pas ce que les autres redoutent.",
+      "mots": [
+        {
+          "ar": "تَفْتَأُ",
+          "tr": "taftaʾu",
+          "racine": "ف ت أ",
+          "sens": "tu ne cesses",
+          "def": "mā fatiʾa : ne pas cesser.",
+          "gram": "verbe inaccompli"
+        },
+        {
+          "ar": "حَرَضًا",
+          "tr": "ḥaraḍan",
+          "racine": "ح ر ض",
+          "sens": "consumé",
+          "def": "ḥaraḍ : à l'agonie.",
+          "gram": "circonstanciel"
+        }
+      ]
+    },
+    {
+      "n": 86,
+      "ar": "قَالَ إِنَّمَا أَشْكُو بَثِّي وَحُزْنِي إِلَى اللَّهِ وَأَعْلَمُ مِنَ اللَّهِ مَا لَا تَعْلَمُونَ",
+      "tr": "qāla innamā ashkū baththī wa-ḥuznī ilā llāhi wa-aʿlamu mina llāhi mā lā taʿlamūna",
+      "trad": "Il dit : « Je me plains seulement à Dieu de ma douleur et de mon affliction, et je sais, venant de Dieu, ce que vous ne savez pas.",
+      "themes": [
+        "la plainte à Dieu seul"
+      ],
+      "commentaire": "Verset central de l'éthique de Jacob. Qushayrī : <em>il se plaignit à Dieu et non de Dieu — qui se plaint à Dieu est joint ; qui se plaint de Dieu est séparé</em>. Et : <em>portant en lui-même le poids du corps, son cœur fut allégé par le secret et l'esprit ; il connaissait de Dieu la véracité de son état</em>.",
+      "mots": [
+        {
+          "ar": "بَثِّي",
+          "tr": "baththī",
+          "racine": "ب ث ث",
+          "sens": "mon affliction répandue",
+          "def": "bathth : peine débordante.",
+          "gram": "nom + suffixe"
+        },
+        {
+          "ar": "حُزْنِي",
+          "tr": "ḥuznī",
+          "racine": "ح ز ن",
+          "sens": "mon chagrin",
+          "def": "ḥuzn : tristesse.",
+          "gram": "nom + suffixe"
+        }
+      ]
+    },
+    {
+      "n": 87,
+      "ar": "يَا بَنِيَّ اذْهَبُوا فَتَحَسَّسُوا مِن يُوسُفَ وَأَخِيهِ وَلَا تَيْأَسُوا مِن رَّوْحِ اللَّهِ ۖ إِنَّهُ لَا يَيْأَسُ مِن رَّوْحِ اللَّهِ إِلَّا الْقَوْمُ الْكَافِرُونَ",
+      "tr": "yā baniyya dhhabū fa-taḥassasū min yūsufa wa-akhīhi wa-lā tayʾasū min rawḥi llāhi innahu lā yayʾasu min rawḥi llāhi illā l-qawmu l-kāfirūna",
+      "trad": "O mes fils ! Partez, et enquérez-vous de Joseph et de son frère. Ne désespérez pas de la Bonté de Dieu, car seuls les mécréants désespèrent de la Bonté de Dieu ».",
+      "themes": [
+        "ne pas désespérer du souffle de Dieu (rawḥ)"
+      ],
+      "commentaire": "Qushayrī : <em>la parole « cherchez Joseph et son frère » ordonne de le chercher avec tous les sens : par la vue, pour que peut-être leurs yeux tombent sur lui ; par l'ouïe, pour qu'ils entendent son nom ; par l'odorat, pour qu'ils trouvent son parfum</em>. Et il les renvoie à la grâce divine — <em>seul le mécréant désespère du souffle de Dieu (rawḥ)</em>.",
+      "mots": [
+        {
+          "ar": "فَتَحَسَّسُوا",
+          "tr": "fa-taḥassasū",
+          "racine": "ح س س",
+          "sens": "cherchez par les sens",
+          "def": "taḥassasa : enquêter.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "رَوْحِ اللَّهِ",
+          "tr": "rawḥi llāh",
+          "racine": "ر و ح",
+          "sens": "du souffle de Dieu",
+          "def": "rawḥ : douce brise, secours.",
+          "gram": "annexion"
+        }
+      ]
+    },
+    {
+      "n": 88,
+      "ar": "فَلَمَّا دَخَلُوا عَلَيْهِ قَالُوا يَا أَيُّهَا الْعَزِيزُ مَسَّنَا وَأَهْلَنَا الضُّرُّ وَجِئْنَا بِبِضَاعَةٍ مُّزْجَاةٍ فَأَوْفِ لَنَا الْكَيْلَ وَتَصَدَّقْ عَلَيْنَا ۖ إِنَّ اللَّهَ يَجْزِي الْمُتَصَدِّقِينَ",
+      "tr": "fa-lammā dakhalū ʿalayhi qālū yā ayyuhā l-ʿazīzu massanā wa-ahlanā ḍ-ḍurru wa-jiʾnā bi-biḍāʿatin muzjātin fa-awfi lanā l-kayla wa-taṣaddaq ʿalaynā inna llāha yajzī l-mutaṣaddiqīna",
+      "trad": "Une fois entrés auprès de Joseph, ils lui dirent : « O Excellence ! Le malheur nous a touchés, nous et notre famille, et nous n'apportons qu'une marchandise de faible valeur. Donne-nous donc une pleine mesure et fais-nous l'aumône. Dieu, certes, récompense ceux qui font l'aumône ».",
+      "themes": [
+        "la demande humble"
+      ],
+      "commentaire": "Qushayrī : <em>quand ils entrèrent chez Joseph, ils l'abordèrent par la mention du malheur, sans dire mot de Joseph et de la cause pour laquelle leur père les avait envoyés</em>. Puis : <em>ils descendirent au plus bas degré en disant « fais-nous l'aumône » — comme s'ils disaient : si nous ne méritons pas l'échange du commerce, nous méritons le don gratuit</em>.",
+      "mots": [
+        {
+          "ar": "مَسَّنَا",
+          "tr": "massanā",
+          "racine": "م س س",
+          "sens": "nous a touchés",
+          "def": "massa : toucher.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "بِبِضَاعَةٍ مُّزْجَاةٍ",
+          "tr": "bi-biḍāʿatin muzjāt",
+          "racine": "ب ض ع / ز ج و",
+          "sens": "une marchandise de peu",
+          "def": "muzjāt : de peu de valeur.",
+          "gram": "COI"
+        }
+      ]
+    },
+    {
+      "n": 89,
+      "ar": "قَالَ هَلْ عَلِمْتُم مَّا فَعَلْتُم بِيُوسُفَ وَأَخِيهِ إِذْ أَنتُمْ جَاهِلُونَ",
+      "tr": "qāla hal ʿalimtum mā faʿaltum bi-yūsufa wa-akhīhi idh antum jāhilūna",
+      "trad": "Il dit : « Ne savez-vous pas ce que, dans votre ignorance, vous avez fait à Joseph et à son frère ? »",
+      "themes": [
+        "le reproche voilé"
+      ],
+      "commentaire": "Qushayrī : <em>Joseph leur dit : vous avez fini vos paroles, multiplié vos discours, et il n'y a eu dans votre propos que la mention de votre détresse — ne vous est-il pas venu à l'esprit le souvenir de votre frère Joseph ? Cela, dans l'ordre du reproche, est plus grand que tout châtiment</em>.",
+      "mots": [
+        {
+          "ar": "جَاهِلُونَ",
+          "tr": "jāhilūn",
+          "racine": "ج ه ل",
+          "sens": "ignorants",
+          "def": "jāhil : ignorant.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 90,
+      "ar": "قَالُوا أَإِنَّكَ لَأَنتَ يُوسُفُ ۖ قَالَ أَنَا يُوسُفُ وَهَٰذَا أَخِي ۖ قَدْ مَنَّ اللَّهُ عَلَيْنَا ۖ إِنَّهُ مَن يَتَّقِ وَيَصْبِرْ فَإِنَّ اللَّهَ لَا يُضِيعُ أَجْرَ الْمُحْسِنِينَ",
+      "tr": "qālū a-innaka la-anta yūsufu qāla anā yūsufu wa-hādhā akhī qad manna llāhu ʿalaynā innahu man yattaqi wa-yaṣbir fa-inna llāha lā yuḍīʿu ajra l-muḥsinīna",
+      "trad": "Ils dirent : « Est-ce que toi tu ne serais pas Joseph ? » Il répondit : « Je suis Joseph, et voici mon frère. Dieu nous a comblés de Sa faveur. Pour celui qui Le craint et patiente, Dieu, certes, ne laisse pas perdre la récompense de ceux qui font le bien ».",
+      "themes": [
+        "la reconnaissance",
+        "piété et patience"
+      ],
+      "commentaire": "Qushayrī : <em>il dit « je suis Joseph et voici mon frère », et ne dit pas « et vous êtes mes frères » — allusion à un coin de reproche : ce que vous avez fait avec moi n'est pas l'acte des frères</em>. Et il atténua aussitôt la stupeur en orientant le discours sur Benjamin. Le verset scelle : la piété et la patience portent la récompense divine.",
+      "mots": [
+        {
+          "ar": "مَنَّ اللَّهُ",
+          "tr": "manna llāh",
+          "racine": "م ن ن",
+          "sens": "Dieu nous a comblés",
+          "def": "manna : faire grâce.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "يَتَّقِ وَيَصْبِرْ",
+          "tr": "yattaqi wa-yaṣbir",
+          "racine": "و ق ي / ص ب ر",
+          "sens": "craint et patiente",
+          "def": "ittaqā / ṣabara.",
+          "gram": "jussifs"
+        }
+      ]
+    },
+    {
+      "n": 91,
+      "ar": "قَالُوا تَاللَّهِ لَقَدْ آثَرَكَ اللَّهُ عَلَيْنَا وَإِن كُنَّا لَخَاطِئِينَ",
+      "tr": "qālū ta-llāhi laqad ātharaka llāhu ʿalaynā wa-in kunnā la-khāṭiʾīna",
+      "trad": "Ils dirent : « Par Dieu ! Il est vrai que Dieu t'a préféré à nous et que nous avons été pécheurs ».",
+      "themes": [
+        "l'aveu enfin"
+      ],
+      "commentaire": "Qushayrī rapporte al-Daqqāq : <em>quand Joseph dit « celui qui craint et patiente », il s'attribua le mérite par la patience — alors Dieu fit parler ses frères qui répondirent au nom du Tawḥīd : « par Dieu ! Dieu t'a préféré à nous » — c'est-à-dire ce n'est ni par ta patience ni par ta crainte, mais par l'élection de Dieu</em>. Alors Joseph répondit en acquiesçant : « nul reproche aujourd'hui ».",
+      "mots": [
+        {
+          "ar": "آثَرَكَ",
+          "tr": "ātharaka",
+          "racine": "أ ث ر",
+          "sens": "Il t'a préféré",
+          "def": "āthara : préférer.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "لَخَاطِئِينَ",
+          "tr": "la-khāṭiʾīn",
+          "racine": "خ ط أ",
+          "sens": "pécheurs",
+          "def": "khāṭiʾ : fautif.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 92,
+      "ar": "قَالَ لَا تَثْرِيبَ عَلَيْكُمُ الْيَوْمَ ۖ يَغْفِرُ اللَّهُ لَكُمْ ۖ وَهُوَ أَرْحَمُ الرَّاحِمِينَ",
+      "tr": "qāla lā tathrība ʿalaykumu l-yawma yaghfiru llāhu lakum wa-huwa arḥamu r-rāḥimīna",
+      "trad": "Il dit : « Aucun reproche ne vous sera adressé aujourd'hui ! Que Dieu vous pardonne ! Il est le plus miséricordieux de ceux qui font miséricorde.",
+      "themes": [
+        "nul reproche aujourd'hui (lā tathrība)"
+      ],
+      "commentaire": "Qushayrī : <em>Joseph s'empressa de pardonner ; Jacob, lui, leur promit seulement l'imploration future (« je demanderai pardon pour vous »), parce qu'il les aimait davantage, et que c'est l'amour intense qui blâme. Joseph ne les jugea pas dignes du blâme, et passa l'éponge à la première heure</em>.",
+      "mots": [
+        {
+          "ar": "لَا تَثْرِيبَ",
+          "tr": "lā tathrība",
+          "racine": "ث ر ب",
+          "sens": "nul reproche",
+          "def": "tathrīb : reproche.",
+          "gram": "négation absolue"
+        },
+        {
+          "ar": "يَغْفِرُ",
+          "tr": "yaghfiru",
+          "racine": "غ ف ر",
+          "sens": "Il pardonne",
+          "def": "ghafara : pardonner.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 93,
+      "ar": "اذْهَبُوا بِقَمِيصِي هَٰذَا فَأَلْقُوهُ عَلَىٰ وَجْهِ أَبِي يَأْتِ بَصِيرًا وَأْتُونِي بِأَهْلِكُمْ أَجْمَعِينَ",
+      "tr": "idhhabū bi-qamīṣī hādhā fa-alqūhu ʿalā wajhi abī yaʾti baṣīran wa-ʾtūnī bi-ahlikum ajmaʿīna",
+      "trad": "Emportez ma tunique que voici et appliquez-la sur le visage de mon père. Il recouvrera la vue ; puis amenez-moi votre famille au complet ».",
+      "themes": [
+        "la tunique guérisseuse"
+      ],
+      "commentaire": "Qushayrī : <em>l'épreuve, quand elle survient, surgit d'un coup ; quand elle se retire, elle se retire par degrés : d'abord la fragrance de Joseph, puis sa tunique, puis l'arrivée auprès de lui, puis sa vue</em>. Et : <em>la tunique ne sert qu'à être portée — sauf la tunique des amants : elle ne sert qu'à trouver la fragrance des bien-aimés</em>.",
+      "mots": [
+        {
+          "ar": "بِقَمِيصِي",
+          "tr": "bi-qamīṣī",
+          "racine": "ق م ص",
+          "sens": "avec ma tunique",
+          "def": "qamīṣ : chemise.",
+          "gram": "COI"
+        },
+        {
+          "ar": "بَصِيرًا",
+          "tr": "baṣīran",
+          "racine": "ب ص ر",
+          "sens": "voyant",
+          "def": "baṣīr : qui voit.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 94,
+      "ar": "وَلَمَّا فَصَلَتِ الْعِيرُ قَالَ أَبُوهُمْ إِنِّي لَأَجِدُ رِيحَ يُوسُفَ ۖ لَوْلَا أَن تُفَنِّدُونِ",
+      "tr": "wa-lammā faṣalati l-ʿīru qāla abūhum innī la-ajidu rīḥa yūsufa law-lā an tufannidūni",
+      "trad": "Lorsque la caravane se mit en route, leur père dit : « Je sens l'odeur de Joseph, même si vous pensez que je radote ! »",
+      "themes": [
+        "le parfum de Joseph"
+      ],
+      "commentaire": "Qushayrī : <em>seul Jacob trouva le parfum de Joseph, parce qu'il fut seul à porter le chagrin de la perte de Joseph ; on ne connaît le parfum des aimés que par l'amour ; quant aux étrangers, c'est pour eux une parole obscure — d'où l'homme aurait-il un parfum ?</em> Loi du discernement spirituel : on ne sent que ce qu'on aime.",
+      "mots": [
+        {
+          "ar": "فَصَلَتِ الْعِيرُ",
+          "tr": "faṣalati l-ʿīr",
+          "racine": "ف ص ل / ع ي ر",
+          "sens": "la caravane partit",
+          "def": "faṣala : se séparer, partir.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "تُفَنِّدُونِ",
+          "tr": "tufannidūni",
+          "racine": "ف ن د",
+          "sens": "vous me jugiez radoteur",
+          "def": "fannada : taxer de gâtisme.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 95,
+      "ar": "قَالُوا تَاللَّهِ إِنَّكَ لَفِي ضَلَالِكَ الْقَدِيمِ",
+      "tr": "qālū ta-llāhi innaka la-fī ḍalālika l-qadīmi",
+      "trad": "Ils dirent : « Par Dieu ! Te voici retombé dans ton ancien égarement ! »",
+      "themes": [
+        "la dérision des fils"
+      ],
+      "commentaire": "Qushayrī : <em>ils joignirent l'insulte à leur parole, ne respectèrent pas leur père, ne tinrent pas son droit dans l'adresse, et le qualifièrent d'« égarement dans l'amour »</em>. Dérision des aveugles qui ne voient pas le sens caché.",
+      "mots": [
+        {
+          "ar": "ضَلَالِكَ الْقَدِيمِ",
+          "tr": "ḍalālika l-qadīm",
+          "racine": "ض ل ل / ق د م",
+          "sens": "ton ancien égarement",
+          "def": "ḍalāl qadīm.",
+          "gram": "syntagme"
+        }
+      ]
+    },
+    {
+      "n": 96,
+      "ar": "فَلَمَّا أَن جَاءَ الْبَشِيرُ أَلْقَاهُ عَلَىٰ وَجْهِهِ فَارْتَدَّ بَصِيرًا ۖ قَالَ أَلَمْ أَقُل لَّكُمْ إِنِّي أَعْلَمُ مِنَ اللَّهِ مَا لَا تَعْلَمُونَ",
+      "tr": "fa-lammā an jāʾa l-bashīru alqāhu ʿalā wajhihi fa-rtadda baṣīran qāla a-lam aqul lakum innī aʿlamu mina llāhi mā lā taʿlamūna",
+      "trad": "Quand arriva celui qui apportait la bonne nouvelle, il appliqua la tunique sur le visage de Jacob et celui-ci recouvra la vue. Il dit : « Ne vous avais-je pas affirmé que je sais, venant de Dieu, ce que vous ignorez ? »",
+      "themes": [
+        "la vue recouvrée"
+      ],
+      "commentaire": "Qushayrī : <em>si l'on jetait la tunique de Joseph sur le visage de tous les aveugles de la terre, leur vue ne reviendrait pas ; seul le regard de Jacob revint avec la tunique de Joseph — car son regard s'en était allé par la séparation, et c'est par elle qu'il revint</em>.",
+      "mots": [
+        {
+          "ar": "الْبَشِيرُ",
+          "tr": "al-bashīr",
+          "racine": "ب ش ر",
+          "sens": "l'annonciateur",
+          "def": "bashīr : porteur de bonne nouvelle.",
+          "gram": "sujet"
+        },
+        {
+          "ar": "فَارْتَدَّ",
+          "tr": "fa-rtadda",
+          "racine": "ر د د",
+          "sens": "il recouvra",
+          "def": "irtadda : revenir à.",
+          "gram": "verbe accompli"
+        }
+      ]
+    },
+    {
+      "n": 97,
+      "ar": "قَالُوا يَا أَبَانَا اسْتَغْفِرْ لَنَا ذُنُوبَنَا إِنَّا كُنَّا خَاطِئِينَ",
+      "tr": "qālū yā abānā staghfir lanā dhunūbanā innā kunnā khāṭiʾīna",
+      "trad": "Ils dirent : « O notre père ! Implore, pour nous, le pardon de nos péchés. C'est vrai, nous avons été pécheurs ! »",
+      "themes": [
+        "la demande de pardon"
+      ],
+      "commentaire": "Qushayrī : <em>chacun selon son état — Jacob et Joseph en joie et bonne nouvelle ; les frères, dans l'embarras, en quête d'excuses et de demande de pardon</em>. Et : <em>jour pour jour : le jour où Jacob fut affligé par l'absence de Joseph, le jour où il fut comblé par sa tunique — et les frères, dans l'embarras de ce qu'ils avaient fait</em>.",
+      "mots": [
+        {
+          "ar": "اسْتَغْفِرْ لَنَا",
+          "tr": "istaghfir lanā",
+          "racine": "غ ف ر",
+          "sens": "demande pardon pour nous",
+          "def": "istaghfara : intercéder.",
+          "gram": "impératif"
+        },
+        {
+          "ar": "ذُنُوبَنَا",
+          "tr": "dhunūbanā",
+          "racine": "ذ ن ب",
+          "sens": "nos péchés",
+          "def": "dhanb : faute.",
+          "gram": "COD"
+        }
+      ]
+    },
+    {
+      "n": 98,
+      "ar": "قَالَ سَوْفَ أَسْتَغْفِرُ لَكُمْ رَبِّي ۖ إِنَّهُ هُوَ الْغَفُورُ الرَّحِيمُ",
+      "tr": "qāla sawfa astaghfiru lakum rabbī innahu huwa l-ghafūru r-raḥīmu",
+      "trad": "Il dit : « Je vais, pour vous, demander le pardon de mon Seigneur. Certes, Il est le Pardonneur, le Miséricordieux ».",
+      "themes": [
+        "le pardon différé"
+      ],
+      "commentaire": "Qushayrī : <em>il leur promit l'imploration de pardon, parce qu'il n'avait pas fini sa joie pour entrer dans l'imploration</em>. Et : <em>il ne leur répondit pas sur l'heure, pour les laisser sentir le mal qu'ils avaient commis — Joseph étant absent à ce moment, alors que la part la plus grande du droit revenait à Joseph</em>.",
+      "mots": [
+        {
+          "ar": "سَوْفَ",
+          "tr": "sawfa",
+          "racine": "س و ف",
+          "sens": "je vais bientôt",
+          "def": "particule de futur.",
+          "gram": "particule"
+        },
+        {
+          "ar": "الْغَفُورُ الرَّحِيمُ",
+          "tr": "al-ghafūru r-raḥīm",
+          "racine": "غ ف ر / ر ح م",
+          "sens": "le Pardonneur, le Miséricordieux",
+          "def": "attributs divins.",
+          "gram": "attributs"
+        }
+      ]
+    },
+    {
+      "n": 99,
+      "ar": "فَلَمَّا دَخَلُوا عَلَىٰ يُوسُفَ آوَىٰ إِلَيْهِ أَبَوَيْهِ وَقَالَ ادْخُلُوا مِصْرَ إِن شَاءَ اللَّهُ آمِنِينَ",
+      "tr": "fa-lammā dakhalū ʿalā yūsufa āwā ilayhi abawayhi wa-qāla dkhulū miṣra in shāʾa llāhu āminīna",
+      "trad": "Quand ils (Jacob et sa famille) arrivèrent auprès de Joseph, celui-ci accueillit son père et sa mère en disant : « Entrez en Egypte en toute sécurité, si Dieu le veut ! »",
+      "themes": [
+        "l'accueil",
+        "la sécurité promise"
+      ],
+      "commentaire": "Qushayrī : <em>ils entrèrent tous, mais ils se séparèrent dans l'accueil : Joseph singularisa ses parents par l'étreinte, parce qu'ils étaient loin de la rudesse</em>. Image du Jour : tous entrent au Jardin, mais les rangs de la proximité distinguent les purs.",
+      "mots": [
+        {
+          "ar": "آوَىٰ إِلَيْهِ",
+          "tr": "āwā ilayhi",
+          "racine": "أ و ي",
+          "sens": "il recueillit auprès de lui",
+          "def": "āwā : abriter.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "آمِنِينَ",
+          "tr": "āminīn",
+          "racine": "أ م ن",
+          "sens": "en sûreté",
+          "def": "āmin : tranquille.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 100,
+      "ar": "وَرَفَعَ أَبَوَيْهِ عَلَى الْعَرْشِ وَخَرُّوا لَهُ سُجَّدًا ۖ وَقَالَ يَا أَبَتِ هَٰذَا تَأْوِيلُ رُؤْيَايَ مِن قَبْلُ قَدْ جَعَلَهَا رَبِّي حَقًّا ۖ وَقَدْ أَحْسَنَ بِي إِذْ أَخْرَجَنِي مِنَ السِّجْنِ وَجَاءَ بِكُم مِّنَ الْبَدْوِ مِن بَعْدِ أَن نَّزَغَ الشَّيْطَانُ بَيْنِي وَبَيْنَ إِخْوَتِي ۚ إِنَّ رَبِّي لَطِيفٌ لِّمَا يَشَاءُ ۚ إِنَّهُ هُوَ الْعَلِيمُ الْحَكِيمُ",
+      "tr": "wa-rafaʿa abawayhi ʿalā l-ʿarshi wa-kharrū lahu sujjadan wa-qāla yā abati hādhā taʾwīlu ruʾyāya min qablu qad jaʿalahā rabbī ḥaqqan wa-qad aḥsana bī idh akhrajanī mina s-sijni wa-jāʾa bikum mina l-badwi min baʿdi an nazagha sh-shayṭānu baynī wa-bayna ikhwatī inna rabbī laṭīfun li-mā yashāʾu innahu huwa l-ʿalīmu l-ḥakīmu",
+      "trad": "Il fit monter son père et sa mère sur le dais et ils se prosternèrent à ses pieds. Il dit alors : « O mon père ! Voici l'explication de mon ancienne vision : mon Seigneur l'a rendue réelle. Il a été bon envers moi lorsqu'Il m'a fait sortir de prison et qu'Il vous a fait venir du désert après que le Démon eut suscité la discorde entre moi et mes frères. Certes, mon Seigneur est bienveillant envers qui Il veut, Il est l'Omniscient, le Sage !",
+      "themes": [
+        "la prosternation accomplie",
+        "la réalisation du songe"
+      ],
+      "commentaire": "Qushayrī : <em>il mentionna la prison plutôt que le puits — parce que l'épreuve y dura longtemps et celle du puits fut brève ; parce qu'évoquer le puits aurait fait rougir les frères ; parce que dans le puits il fut entouré (l'initiant est ménagé) tandis qu'en prison, ce ménagement disparaît (le fort est mis à l'épreuve)</em>. Et : <em>« le démon a suscité la discorde entre moi et mes frères » — manière de partager le manquement, voile élégant sur leur faute</em>.",
+      "mots": [
+        {
+          "ar": "الْعَرْشِ",
+          "tr": "al-ʿarsh",
+          "racine": "ع ر ش",
+          "sens": "le trône",
+          "def": "ʿarsh : trône, dais.",
+          "gram": "COI"
+        },
+        {
+          "ar": "سُجَّدًا",
+          "tr": "sujjadan",
+          "racine": "س ج د",
+          "sens": "prosternés",
+          "def": "sājid pluriel.",
+          "gram": "circonstanciel"
+        },
+        {
+          "ar": "نَزَغَ",
+          "tr": "nazagha",
+          "racine": "ن ز غ",
+          "sens": "a soufflé la discorde",
+          "def": "nazagha : susciter zizanie.",
+          "gram": "verbe accompli"
+        }
+      ]
+    },
+    {
+      "n": 101,
+      "ar": "رَبِّ قَدْ آتَيْتَنِي مِنَ الْمُلْكِ وَعَلَّمْتَنِي مِن تَأْوِيلِ الْأَحَادِيثِ ۚ فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ أَنتَ وَلِيِّي فِي الدُّنْيَا وَالْآخِرَةِ ۖ تَوَفَّنِي مُسْلِمًا وَأَلْحِقْنِي بِالصَّالِحِينَ",
+      "tr": "rabbi qad ātaytanī mina l-mulki wa-ʿallamtanī min taʾwīli l-aḥādīthi fāṭira s-samāwāti wa-l-arḍi anta waliyyī fī d-dunyā wa-l-ākhirati tawaffanī musliman wa-alḥiqnī bi-ṣ-ṣāliḥīna",
+      "trad": "O mon Seigneur ! Tu m'as investi de souveraineté et tu m'as enseigné l'interprétation des évènements. Créateur des cieux et de la terre, tu es mon Protecteur en ce monde et dans l'autre. Fais-moi mourir soumis à Toi (muslim) et place-moi parmi les vertueux ! »",
+      "themes": [
+        "la prière finale",
+        "mourir musulman"
+      ],
+      "commentaire": "Qushayrī rapporte al-Daqqāq : <em>les signes du désir ardent (ishtiyāq) sont de souhaiter la mort sur le tapis du bien-être — Joseph fut jeté au puits sans dire « fais-moi mourir musulman » ; mis en vente, il ne le dit pas ; emprisonné des années, il ne le dit pas ; et quand le règne lui fut donné, qu'il rencontra ses frères prosternés et ses parents sur le trône, alors il dit « fais-moi mourir musulman »</em> — preuve qu'il aspirait à la rencontre divine.",
+      "mots": [
+        {
+          "ar": "فَاطِرَ السَّمَاوَاتِ",
+          "tr": "fāṭira s-samāwāt",
+          "racine": "ف ط ر / س م و",
+          "sens": "Créateur des cieux",
+          "def": "fāṭir : qui crée à partir de rien.",
+          "gram": "apposition"
+        },
+        {
+          "ar": "تَوَفَّنِي مُسْلِمًا",
+          "tr": "tawaffanī musliman",
+          "racine": "و ف ي / س ل م",
+          "sens": "fais-moi mourir musulman",
+          "def": "muslim : soumis.",
+          "gram": "impératif + attribut"
+        }
+      ]
+    },
+    {
+      "n": 102,
+      "ar": "ذَٰلِكَ مِنْ أَنبَاءِ الْغَيْبِ نُوحِيهِ إِلَيْكَ ۖ وَمَا كُنتَ لَدَيْهِمْ إِذْ أَجْمَعُوا أَمْرَهُمْ وَهُمْ يَمْكُرُونَ",
+      "tr": "dhālika min anbāʾi l-ghaybi nūḥīhi ilayka wa-mā kunta ladayhim idh ajmaʿū amrahum wa-hum yamkurūna",
+      "trad": "Ce sont là des choses mystérieuses que Nous te révélons. Tu n'étais pas auprès d'eux lorsqu'ils se sont concertés pour ourdir leur stratagème.",
+      "themes": [
+        "les nouvelles de l'invisible"
+      ],
+      "commentaire": "Qushayrī : <em>il devient évident que cette exposition n'a pu être donnée par un illettré que par enseignement céleste. La condition d'illettré du Prophète au commencement est la marque de sa noblesse à la fin — c'est précisément parce qu'il est ummī que sa véracité est reconnue</em>.",
+      "mots": [
+        {
+          "ar": "أَنبَاءِ الْغَيْبِ",
+          "tr": "anbāʾi l-ghayb",
+          "racine": "ن ب أ / غ ي ب",
+          "sens": "nouvelles de l'invisible",
+          "def": "anbāʾ : annonces.",
+          "gram": "annexion"
+        },
+        {
+          "ar": "يَمْكُرُونَ",
+          "tr": "yamkurūn",
+          "racine": "م ك ر",
+          "sens": "ils trament",
+          "def": "makara : ruser.",
+          "gram": "verbe inaccompli"
+        }
+      ]
+    },
+    {
+      "n": 103,
+      "ar": "وَمَا أَكْثَرُ النَّاسِ وَلَوْ حَرَصْتَ بِمُؤْمِنِينَ",
+      "tr": "wa-mā aktharu n-nāsi wa-law ḥaraṣta bi-muʾminīna",
+      "trad": "En dépit de ton désir ardent, la plupart des hommes ne sont pas croyants.",
+      "themes": [
+        "l'incrédulité de la majorité"
+      ],
+      "commentaire": "Qushayrī : <em>Il t'a institué témoin de Sa volonté d'éveiller en eux la foi et de l'intensité de l'aspiration à la voir s'accomplir en eux ; puis Je sais que la plupart n'y croiront pas, et je te le fais savoir — et t'impose en même temps d'aspirer à ce dont Je sais qu'il ne sera pas</em>.",
+      "mots": [
+        {
+          "ar": "حَرَصْتَ",
+          "tr": "ḥaraṣta",
+          "racine": "ح ر ص",
+          "sens": "tu as ardemment voulu",
+          "def": "ḥaraṣa : être avide.",
+          "gram": "verbe accompli"
+        }
+      ]
+    },
+    {
+      "n": 104,
+      "ar": "وَمَا تَسْأَلُهُمْ عَلَيْهِ مِنْ أَجْرٍ ۚ إِنْ هُوَ إِلَّا ذِكْرٌ لِّلْعَالَمِينَ",
+      "tr": "wa-mā tasʾaluhum ʿalayhi min ajrin in huwa illā dhikrun li-l-ʿālamīna",
+      "trad": "Tu ne leur demandes en échange aucun salaire. Ceci n'est qu'un rappel adressé aux mondes.",
+      "themes": [
+        "la prédication sans salaire"
+      ],
+      "commentaire": "Qushayrī : <em>telle est la coutume de Dieu avec Ses prophètes : Il leur a interdit de prendre pour la transmission du message contrepartie ou salaire ; et même les savants — héritiers des prophètes — ne doivent rien recevoir des hommes pour l'appel à Dieu. Qui prend chez eux une part ne sera point béni dans ce qu'il a fait entendre</em>.",
+      "mots": [
+        {
+          "ar": "أَجْرٍ",
+          "tr": "ajrin",
+          "racine": "أ ج ر",
+          "sens": "salaire",
+          "def": "ajr : rétribution.",
+          "gram": "COI"
+        },
+        {
+          "ar": "ذِكْرٌ لِّلْعَالَمِينَ",
+          "tr": "dhikrun li-l-ʿālamīn",
+          "racine": "ذ ك ر / ع ل م",
+          "sens": "rappel pour les mondes",
+          "def": "dhikr : rappel.",
+          "gram": "attribut"
+        }
+      ]
+    },
+    {
+      "n": 105,
+      "ar": "وَكَأَيِّن مِّنْ آيَةٍ فِي السَّمَاوَاتِ وَالْأَرْضِ يَمُرُّونَ عَلَيْهَا وَهُمْ عَنْهَا مُعْرِضُونَ",
+      "tr": "wa-kaʾayyin min āyatin fī s-samāwāti wa-l-arḍi yamurrūna ʿalayhā wa-hum ʿanhā muʿriḍūna",
+      "trad": "Que de signes les cieux et la terre ne contiennent-ils pas ! Les hommes passent auprès d'eux et ils s'en détournent.",
+      "themes": [
+        "les signes ignorés"
+      ],
+      "commentaire": "Qushayrī : <em>les signes sont visibles, les preuves éclatantes, et chaque parcelle des créatures atteste qu'Il est Un ; mais comme qui ferme l'œil ne jouit pas de la lumière du jour, celui qui néglige son regard et sa réflexion ne profite pas de Sa connaissance et de Sa clairvoyance</em>.",
+      "mots": [
+        {
+          "ar": "كَأَيِّن",
+          "tr": "kaʾayyin",
+          "racine": "",
+          "sens": "combien de",
+          "def": "kam : combien.",
+          "gram": "particule"
+        },
+        {
+          "ar": "مُعْرِضُونَ",
+          "tr": "muʿriḍūn",
+          "racine": "ع ر ض",
+          "sens": "détournés",
+          "def": "muʿriḍ : qui se détourne.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 106,
+      "ar": "وَمَا يُؤْمِنُ أَكْثَرُهُم بِاللَّهِ إِلَّا وَهُم مُّشْرِكُونَ",
+      "tr": "wa-mā yuʾminu aktharuhum bi-llāhi illā wa-hum mushrikūna",
+      "trad": "La plupart d'entre eux ne croient pas en Dieu sans être des associateurs.",
+      "themes": [
+        "l'associationnisme caché"
+      ],
+      "commentaire": "Qushayrī distingue plusieurs degrés : <em>l'association manifeste est de prendre, à côté de Dieu, un adoré ; l'association cachée est de prendre, à côté de Lui, un but recherché du cœur dans les besoins. L'association des Connaissants est de regarder hors de Lui un objet contemplé, ou de voir autre que Lui comme existant en vérité</em>. Spectre fin du shirk intérieur.",
+      "mots": [
+        {
+          "ar": "مُشْرِكُونَ",
+          "tr": "mushrikūn",
+          "racine": "ش ر ك",
+          "sens": "associateurs",
+          "def": "mushrik.",
+          "gram": "participe actif"
+        }
+      ]
+    },
+    {
+      "n": 107,
+      "ar": "أَفَأَمِنُوا أَن تَأْتِيَهُمْ غَاشِيَةٌ مِّنْ عَذَابِ اللَّهِ أَوْ تَأْتِيَهُمُ السَّاعَةُ بَغْتَةً وَهُمْ لَا يَشْعُرُونَ",
+      "tr": "a-fa-aminū an taʾtiyahum ghāshiyatun min ʿadhābi llāhi aw taʾtiyahumu s-sāʿatu baghtatan wa-hum lā yashʿurūna",
+      "trad": "Sont-ils donc sûrs que le châtiment de Dieu ne les enveloppera pas, ou que l'Heure ne fondra pas sur eux à l'improviste ?",
+      "themes": [
+        "la sécurité trompeuse"
+      ],
+      "commentaire": "Qushayrī : <em>est-il en sûreté, celui qui s'illusionne par la durée du sursis, qu'il ne sera pas frappé d'extermination ? Est-il en sûreté, celui qui s'illusionne par la durée du bien-être, que l'épreuve ne se dressera pas contre lui au Jour de la Résurrection ?</em>",
+      "mots": [
+        {
+          "ar": "غَاشِيَةٌ",
+          "tr": "ghāshiya",
+          "racine": "غ ش و",
+          "sens": "une enveloppante",
+          "def": "ghāshiya : qui couvre tout.",
+          "gram": "sujet"
+        },
+        {
+          "ar": "بَغْتَةً",
+          "tr": "baghtatan",
+          "racine": "ب غ ت",
+          "sens": "soudainement",
+          "def": "baghta : surprise.",
+          "gram": "circonstanciel"
+        }
+      ]
+    },
+    {
+      "n": 108,
+      "ar": "قُلْ هَٰذِهِ سَبِيلِي أَدْعُو إِلَى اللَّهِ ۚ عَلَىٰ بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي ۖ وَسُبْحَانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ",
+      "tr": "qul hādhihi sabīlī adʿū ilā llāhi ʿalā baṣīratin anā wa-mani ttabaʿanī wa-subḥāna llāhi wa-mā anā mina l-mushrikīna",
+      "trad": "Dis : « Voici mon chemin ! J'en appelle à Dieu, moi et ceux qui me suivent, en toute clairvoyance. Gloire à Dieu ! Je ne suis pas au nombre des associateurs ».",
+      "themes": [
+        "la voie de la clairvoyance (baṣīra)"
+      ],
+      "commentaire": "Qushayrī : <em>la baṣīra est la certitude où nul doute, l'évidence sans ombre ; son détenteur est doucement secouru au manifeste, et confié au caché des dévoilements</em>. Et : <em>la baṣīra, c'est que les soleils de la gnose se lèvent et y résorbent les lumières des étoiles de la raison</em>. Belle figure : la connaissance directe absorbe la lumière de la raison comme le soleil avale les étoiles.",
+      "mots": [
+        {
+          "ar": "بَصِيرَةٍ",
+          "tr": "baṣīra",
+          "racine": "ب ص ر",
+          "sens": "clairvoyance",
+          "def": "baṣīra : vue intérieure.",
+          "gram": "COI"
+        },
+        {
+          "ar": "سُبْحَانَ اللَّهِ",
+          "tr": "subḥāna llāh",
+          "racine": "س ب ح",
+          "sens": "gloire à Dieu",
+          "def": "tasbīḥ.",
+          "gram": "exclamation"
+        }
+      ]
+    },
+    {
+      "n": 109,
+      "ar": "وَمَا أَرْسَلْنَا مِن قَبْلِكَ إِلَّا رِجَالًا نُّوحِي إِلَيْهِم مِّنْ أَهْلِ الْقُرَىٰ ۗ أَفَلَمْ يَسِيرُوا فِي الْأَرْضِ فَيَنظُرُوا كَيْفَ كَانَ عَاقِبَةُ الَّذِينَ مِن قَبْلِهِمْ ۗ وَلَدَارُ الْآخِرَةِ خَيْرٌ لِّلَّذِينَ اتَّقَوْا ۗ أَفَلَا تَعْقِلُونَ",
+      "tr": "wa-mā arsalnā min qablika illā rijālan nūḥī ilayhim min ahli l-qurā a-fa-lam yasīrū fī l-arḍi fa-yanẓurū kayfa kāna ʿāqibatu lladhīna min qablihim wa-la-dāru l-ākhirati khayrun lilladhīna ttaqaw a-fa-lā taʿqilūna",
+      "trad": "Nous n'avions envoyé avant toi que des hommes habitant les cités, que Nous inspirions. Ceux-là ne parcourent-ils pas la terre et ne voient-ils pas quelle a été la fin de ceux qui vécurent avant eux ? Oui, la demeure de l'Au-delà est meilleure pour ceux qui craignent Dieu. Ne comprenez-vous pas ?",
+      "themes": [
+        "les messagers d'entre les hommes",
+        "la leçon des nations"
+      ],
+      "commentaire": "Qushayrī : <em>ils s'étonnèrent que Dieu envoie aux créatures un homme messager ; Il explique que telle est Sa coutume parmi les communautés passées — un messager humain. Soit ils niaient la mission elle-même, soit ils tenaient pour étrange qu'un homme fût envoyé</em>. Et Il les invite au raisonnement et à la considération.",
+      "mots": [
+        {
+          "ar": "رِجَالًا",
+          "tr": "rijālan",
+          "racine": "ر ج ل",
+          "sens": "des hommes",
+          "def": "rajul : homme.",
+          "gram": "COD"
+        },
+        {
+          "ar": "عَاقِبَةُ",
+          "tr": "ʿāqibatu",
+          "racine": "ع ق ب",
+          "sens": "l'issue",
+          "def": "ʿāqiba : fin.",
+          "gram": "sujet"
+        }
+      ]
+    },
+    {
+      "n": 110,
+      "ar": "حَتَّىٰ إِذَا اسْتَيْأَسَ الرُّسُلُ وَظَنُّوا أَنَّهُمْ قَدْ كُذِبُوا جَاءَهُمْ نَصْرُنَا فَنُجِّيَ مَن نَّشَاءُ ۖ وَلَا يُرَدُّ بَأْسُنَا عَنِ الْقَوْمِ الْمُجْرِمِينَ",
+      "tr": "ḥattā idhā stayʾasa r-rusulu wa-ẓannū annahum qad kudhibū jāʾahum naṣrunā fa-nujjiya man nashāʾu wa-lā yuraddu baʾsunā ʿani l-qawmi l-mujrimīna",
+      "trad": "Alors que les envoyés se désespéraient, pensant qu'on les traitait de menteurs, Notre secours leur est parvenu. C'est que Nous sauvons qui Nous voulons, tandis que Notre rigueur ne se détourne pas des coupables.",
+      "themes": [
+        "le secours après le désespoir"
+      ],
+      "commentaire": "Qushayrī : <em>Dieu a décrété qu'Il n'ouvre aucun état aux disciples (murīdīn) sinon après leur désespoir de cet état</em>. Comme Il dit : « Il fait descendre la pluie après qu'ils ont désespéré » — <em>de même qu'Il envoie la pluie après le désespoir, Il ouvre les états après le désespoir d'eux et le contentement de leur perte</em>. Loi profonde du cheminement : c'est dans le déshéritement que le don véritable se reçoit.",
+      "mots": [
+        {
+          "ar": "اسْتَيْأَسَ",
+          "tr": "istayʾasa",
+          "racine": "ي أ س",
+          "sens": "ont désespéré",
+          "def": "istayʾasa.",
+          "gram": "verbe accompli"
+        },
+        {
+          "ar": "نَصْرُنَا",
+          "tr": "naṣrunā",
+          "racine": "ن ص ر",
+          "sens": "Notre secours",
+          "def": "naṣr : aide victorieuse.",
+          "gram": "sujet"
+        }
+      ]
+    },
+    {
+      "n": 111,
+      "ar": "لَقَدْ كَانَ فِي قَصَصِهِمْ عِبْرَةٌ لِّأُولِي الْأَلْبَابِ ۗ مَا كَانَ حَدِيثًا يُفْتَرَىٰ وَلَٰكِن تَصْدِيقَ الَّذِي بَيْنَ يَدَيْهِ وَتَفْصِيلَ كُلِّ شَيْءٍ وَهُدًى وَرَحْمَةً لِّقَوْمٍ يُؤْمِنُونَ",
+      "tr": "laqad kāna fī qaṣaṣihim ʿibratun li-ulī l-albābi mā kāna ḥadīthan yuftarā wa-lākin taṣdīqa lladhī bayna yadayhi wa-tafṣīla kulli shayʾin wa-hudan wa-raḥmatan li-qawmin yuʾminūna",
+      "trad": "Certes, l'histoire des envoyés contient des enseignements pour les hommes doués d'intelligence. Il ne s'agit pas d'un récit inventé, mais de la confirmation des révélations antérieures, d'une explication de toute chose, d'une Guidance et d'une Miséricorde pour ceux qui croient.",
+      "themes": [
+        "la leçon pour les cœurs intelligents",
+        "le sceau de la sourate"
+      ],
+      "commentaire": "Qushayrī conclut en éventail : <em>leçon pour les rois — dans l'étendue de la justice, à l'exemple de Joseph qui bénéficia les Égyptiens et les affranchit quand il les eut possédés ; leçon pour les hommes de la piété — Joseph, ayant laissé sa passion, fut élevé par Dieu ; leçon pour les hommes de la passion — la femme du grand d'Égypte, en suivant son penchant, rencontra l'épreuve et l'humiliation ; leçon pour les serviteurs en présence de leurs maîtres — Joseph, ayant préservé l'honneur de Zulaykhā, finit par posséder le royaume du grand d'Égypte</em>. Sceau : récit véridique, confirmation, détail, guidance, miséricorde.",
+      "mots": [
+        {
+          "ar": "عِبْرَةٌ",
+          "tr": "ʿibra",
+          "racine": "ع ب ر",
+          "sens": "leçon",
+          "def": "ʿibra : enseignement à méditer.",
+          "gram": "sujet"
+        },
+        {
+          "ar": "أُولِي الْأَلْبَابِ",
+          "tr": "ulī l-albāb",
+          "racine": "أ و ل / ل ب ب",
+          "sens": "les hommes d'intelligence",
+          "def": "lubb : noyau, cœur.",
+          "gram": "annexion"
+        },
+        {
+          "ar": "هُدًى وَرَحْمَةً",
+          "tr": "hudan wa-raḥma",
+          "racine": "ه د ي / ر ح م",
+          "sens": "guidance et miséricorde",
+          "def": "hudā : direction.",
+          "gram": "COD"
+        }
+      ]
+    }
+  ]
+}

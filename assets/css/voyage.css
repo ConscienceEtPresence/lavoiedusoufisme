@@ -53,20 +53,20 @@
 }
 
 /* --- Le Seuil : ouverture --- */
-.seuil {
+.voyage-seuil {
   max-width: var(--voyage-measure);
   margin: 0 auto;
   padding: clamp(4rem, 14vh, 9rem) var(--space-lg) var(--space-2xl);
   text-align: center;
 }
-.seuil__ar {
+.voyage-seuil__ar {
   font-family: var(--font-arabic);
   font-size: clamp(2.2rem, 7vw, 3.2rem);
   color: var(--gold);
   margin-bottom: var(--space-sm);
   letter-spacing: 0.04em;
 }
-.seuil__title {
+.voyage-seuil__title {
   font-family: var(--font-display);
   font-weight: 500;
   font-size: clamp(2.6rem, 9vw, 4.4rem);
@@ -74,13 +74,13 @@
   color: var(--ink-title);
   margin-bottom: var(--space-md);
 }
-.seuil__title em { font-style: italic; color: var(--gold); }
-.seuil__rule {
+.voyage-seuil__title em { font-style: italic; color: var(--gold); }
+.voyage-seuil__rule {
   width: 64px; height: 1px;
   background: var(--gold-soft);
   margin: var(--space-lg) auto;
 }
-.seuil p {
+.voyage-seuil p {
   font-family: var(--font-display);
   font-size: clamp(1.2rem, 2.4vw, 1.45rem);
   line-height: 1.85;
@@ -88,7 +88,7 @@
   max-width: var(--voyage-measure);
   margin: 0 auto var(--space-md);
 }
-.seuil p.lede { color: var(--ink); }
+.voyage-seuil p.lede { color: var(--ink); }
 
 /* La litanie des portes d'entrée */
 .seuil-portes {

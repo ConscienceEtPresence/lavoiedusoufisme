@@ -180,6 +180,9 @@ document.querySelectorAll('.period').forEach(el => observer.observe(el));
     fallback = rootPath + 'en/';
   }
 
+  // Conserver les paramètres d'URL (?id=...) et l'ancre (#...) lors du changement de langue
+  target += location.search + location.hash;
+
   const li = document.createElement('li');
   li.className = 'lang-switch';
   const a = document.createElement('a');

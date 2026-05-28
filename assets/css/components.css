@@ -481,3 +481,52 @@
   max-width: 100%;
   margin: 0 auto;
 }
+
+/* --- Invitation au Voyage / Le Seuil (page d'accueil) --- */
+.accueil-seuil {
+  display: block;
+  max-width: 30rem;
+  margin: var(--space-2xl) auto;
+  padding: var(--space-lg) var(--space-lg) var(--space-md);
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(170deg, #FFFDF8, var(--paper-deep));
+  border: 1px solid var(--gold-soft);
+  border-radius: 16px;
+  box-shadow: 0 18px 44px -30px rgba(27,42,78,0.45);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.accueil-seuil:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 54px -28px rgba(27,42,78,0.5);
+}
+.accueil-seuil__label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-sm);
+}
+.accueil-seuil__text {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: var(--space-md);
+}
+.accueil-seuil__text em { font-style: italic; color: var(--gold); }
+.accueil-seuil__cta {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--turquoise);
+  border-bottom: 1px solid var(--gold-soft);
+  padding-bottom: 0.2rem;
+  transition: letter-spacing 0.4s ease;
+}
+.accueil-seuil:hover .accueil-seuil__cta { letter-spacing: 0.2em; }

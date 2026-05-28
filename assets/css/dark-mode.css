@@ -540,3 +540,63 @@
   .search-toggle { bottom: 1rem; right: 4rem; width: 40px; height: 40px; }
   .search-palette__inner { margin-top: 4vh; }
 }
+
+/* ============================================================
+   PASSE MODE NUIT - fonds clairs codes en dur, rattrapes
+   (mode jour inchange ; uniquement [data-theme=dark])
+   ============================================================ */
+[data-theme="dark"] .mot-devoile { background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep)) !important; }
+[data-theme="dark"] .amour-porte { background: var(--paper-deep) !important; }
+[data-theme="dark"] .amour-station { background: var(--paper-deep) !important; }
+[data-theme="dark"] .mot-meta__tag { background: var(--paper-deep) !important; }
+[data-theme="dark"] .mot-racine { background: var(--paper-deep) !important; }
+[data-theme="dark"] .mot-frere { background: var(--paper-deep) !important; }
+[data-theme="dark"] .parcours-pill { background: var(--paper-deep) !important; }
+[data-theme="dark"] .mot-carte { background: var(--paper-deep) !important; }
+[data-theme="dark"] .newsletter__form input[type="email"] { background: var(--paper-deep) !important; }
+[data-theme="dark"] .noms-flash__mode.is-active { background: var(--paper-deep) !important; }
+[data-theme="dark"] .noms-flash__card { background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep)) !important; }
+[data-theme="dark"] .noms-flash__close { background: var(--paper-deep) !important; }
+[data-theme="dark"] .noms-flash.is-fullscreen { background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep)) !important; }
+[data-theme="dark"] .dict-search input { background: var(--paper-deep) !important; }
+[data-theme="dark"] .dict-card { background: var(--paper-deep) !important; }
+[data-theme="dark"] .entry-voix__item { background: var(--paper-deep) !important; }
+[data-theme="dark"] .poesie-carte { background: var(--paper-deep) !important; }
+[data-theme="dark"] .cv__study { background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep)) !important; }
+[data-theme="dark"] .cw-pop { background: var(--paper-deep) !important; }
+[data-theme="dark"] .cw-pop__defbtn { background: var(--paper-deep) !important; }
+[data-theme="dark"] .coran-sira { background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep)) !important; }
+[data-theme="dark"] .coran-search__input { background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep)) !important; }
+[data-theme="dark"] .coran-jump__chip { background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep)) !important; }
+[data-theme="dark"] .famille-card { background: var(--paper-deep) !important; }
+[data-theme="dark"] .auteur-tile { background: var(--paper-deep) !important; }
+[data-theme="dark"] .concept { background: var(--paper-deep) !important; }
+[data-theme="dark"] .oeuvre-box { background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep)) !important; }
+[data-theme="dark"] .oeuvre-mini { background: var(--paper-deep) !important; }
+[data-theme="dark"] .diptyque__col { background: var(--paper-deep) !important; }
+[data-theme="dark"] .glossaire__item { background: var(--paper-deep) !important; }
+[data-theme="dark"] .quatre-card { background: var(--paper-deep) !important; }
+[data-theme="dark"] .conclusion-box { background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep)) !important; }
+[data-theme="dark"] .meta-carte { background: var(--paper-deep) !important; }
+[data-theme="dark"] .theme-concept { background: var(--paper-deep) !important; }
+[data-theme="dark"] .contes-carte { background: var(--paper-deep) !important; }
+[data-theme="dark"] .hodja-porte { background: var(--paper-deep) !important; }
+[data-theme="dark"] .hodja-vignette { background: var(--paper-deep) !important; }
+[data-theme="dark"] .hodja-source { background: var(--paper-deep) !important; }
+[data-theme="dark"] .conte-meta__tag { background: var(--paper-deep) !important; }
+[data-theme="dark"] .conte-carnet { background: var(--paper-deep) !important; }
+[data-theme="dark"] .conte-carnet__textarea { background: var(--paper-deep) !important; }
+[data-theme="dark"] .conte-soeur { background: var(--paper-deep) !important; }
+[data-theme="dark"] .conte-carte-mini { background: var(--paper-deep) !important; }
+[data-theme="dark"] .carnet-entree { background: var(--paper-deep) !important; }
+[data-theme="dark"] .rac-key { background: var(--paper-deep) !important; }
+[data-theme="dark"] .rac-search__french input { background: var(--paper-deep) !important; }
+[data-theme="dark"] .rac-card { background: var(--paper-deep) !important; }
+[data-theme="dark"] .rac-form-row { background: var(--paper-deep) !important; }
+[data-theme="dark"] .rac-quran-row { background: var(--paper-deep) !important; }
+[data-theme="dark"] .auteur-carte { background: var(--paper-deep) !important; }
+[data-theme="dark"] .oeuvre-carte { background: var(--paper-deep) !important; }
+[data-theme="dark"] .voyage {
+  background:
+    radial-gradient(120% 80% at 50% -10%, var(--paper-warm) 0%, var(--paper) 55%, #0C1019 100%) !important;
+}

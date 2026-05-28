@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="../../assets/css/layout.css" />
   <link rel="stylesheet" href="../../assets/css/components.css" />
   <link rel="stylesheet" href="../../assets/css/bilingue.css" />
-  <link rel="stylesheet" href="../../assets/css/coran.css?v=5" />
+  <link rel="stylesheet" href="../../assets/css/coran.css?v=6" />
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
   <script>
@@ -98,6 +98,15 @@
           <strong>fin du Coran</strong> — les sourates les plus courtes d'abord.
         </p>
       </div>
+
+      <div class="coran-search">
+        <svg class="coran-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" />
+        </svg>
+        <input type="search" id="coranSearch" class="coran-search__input" placeholder="Rechercher une sourate — numéro ou nom…" autocomplete="off" aria-label="Rechercher une sourate" />
+        <button type="button" class="coran-search__clear" id="coranSearchClear" aria-label="Effacer la recherche">×</button>
+      </div>
+      <p class="coran-search__empty" id="coranSearchEmpty" hidden>Aucune sourate ne correspond à votre recherche.</p>
 
       <div class="coran-index-grid">
 
@@ -1043,5 +1052,39 @@
   </footer>
 
   <script src="../../assets/js/main.js?v=11"></script>
+  <script>
+  (function(){
+    var input = document.getElementById('coranSearch');
+    if (!input) return;
+    var clear = document.getElementById('coranSearchClear');
+    var empty = document.getElementById('coranSearchEmpty');
+    var wrap  = input.closest('.coran-search');
+    var cards = [].slice.call(document.querySelectorAll('.coran-index-grid .coran-sira'));
+    var norm = function(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); };
+    var data = cards.map(function(c){
+      var num  = (c.querySelector('.coran-sira__num')  || {}).textContent || '';
+      var name = (c.querySelector('.coran-sira__name') || {}).textContent || '';
+      var meta = (c.querySelector('.coran-sira__meta') || {}).textContent || '';
+      var ar   = (c.querySelector('.coran-sira__ar')   || {}).textContent || '';
+      var m = num.match(/\d+/);
+      return { el:c, n:(m?m[0]:''), text: norm(name + ' ' + meta) + ' ' + ar };
+    });
+    function apply(){
+      var raw = input.value.trim();
+      var q = norm(raw);
+      wrap.classList.toggle('has-value', raw.length > 0);
+      var isNum = /^\d+$/.test(raw);
+      var shown = 0;
+      data.forEach(function(d){
+        var hit = q === '' ? true : (isNum ? (d.n.indexOf(raw) === 0) : d.text.indexOf(q) > -1);
+        d.el.classList.toggle('is-hidden', !hit);
+        if (hit) shown++;
+      });
+      empty.hidden = shown > 0;
+    }
+    input.addEventListener('input', apply);
+    clear.addEventListener('click', function(){ input.value=''; apply(); input.focus(); });
+  })();
+  </script>
 </body>
 </html>

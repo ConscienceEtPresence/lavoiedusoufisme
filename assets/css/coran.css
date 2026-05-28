@@ -357,3 +357,73 @@ button.cv__num.is-open {
   color: var(--turquoise);
   margin-top: var(--space-sm);
 }
+
+/* --- Recherche rapide de sourate --- */
+.coran-search {
+  position: relative;
+  max-width: 32rem;
+  margin: 0 auto var(--space-lg);
+}
+.coran-search__icon {
+  position: absolute;
+  left: 1.05rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--gold);
+  pointer-events: none;
+}
+.coran-search__input {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--ink-title);
+  padding: 0.85rem 2.7rem;
+  background: linear-gradient(170deg, #FFFDF8, var(--paper-warm));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.coran-search__input::placeholder { color: var(--ink-mute); }
+.coran-search__input::-webkit-search-decoration,
+.coran-search__input::-webkit-search-cancel-button { -webkit-appearance: none; }
+.coran-search__input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px var(--gold-soft);
+}
+.coran-search__clear {
+  position: absolute;
+  right: 0.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.7rem;
+  height: 1.7rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--ink-mute);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: color 0.2s ease;
+}
+.coran-search__clear:hover { color: var(--gold); }
+.coran-search.has-value .coran-search__clear { display: flex; }
+.coran-sira.is-hidden { display: none; }
+.coran-search__empty {
+  text-align: center;
+  color: var(--ink-mute);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  margin: var(--space-lg) auto;
+}

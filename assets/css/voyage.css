@@ -1,0 +1,326 @@
+/* =========================================================
+   Le Voyage — « Le Seuil »
+   Feuille de style dédiée à la traversée initiatique.
+   Palette et typographie héritées de base.css.
+   ========================================================= */
+
+/* --- Atmosphère générale --- */
+.voyage {
+  --voyage-measure: 34rem;
+  background:
+    radial-gradient(120% 80% at 50% -10%, #FFFDF8 0%, var(--paper) 45%, var(--paper-warm) 100%);
+  min-height: 100vh;
+}
+.voyage main { overflow: hidden; }
+
+/* Filigrane arabe en fond, très discret */
+.voyage-watermark {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-arabic);
+  font-size: 38vw;
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.035;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.voyage main > * { position: relative; z-index: 1; }
+
+/* --- Effet d'apparition au défilement --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 1.4s cubic-bezier(.2,.7,.2,1), transform 1.4s cubic-bezier(.2,.7,.2,1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+.reveal[data-delay="1"] { transition-delay: 0.25s; }
+.reveal[data-delay="2"] { transition-delay: 0.5s; }
+.reveal[data-delay="3"] { transition-delay: 0.75s; }
+.reveal[data-delay="4"] { transition-delay: 1s; }
+.reveal[data-delay="5"] { transition-delay: 1.25s; }
+.reveal[data-delay="6"] { transition-delay: 1.5s; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* --- Le Seuil : ouverture --- */
+.seuil {
+  max-width: var(--voyage-measure);
+  margin: 0 auto;
+  padding: clamp(4rem, 14vh, 9rem) var(--space-lg) var(--space-2xl);
+  text-align: center;
+}
+.seuil__ar {
+  font-family: var(--font-arabic);
+  font-size: clamp(2.2rem, 7vw, 3.2rem);
+  color: var(--gold);
+  margin-bottom: var(--space-sm);
+  letter-spacing: 0.04em;
+}
+.seuil__title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 9vw, 4.4rem);
+  line-height: 1.05;
+  color: var(--ink-title);
+  margin-bottom: var(--space-md);
+}
+.seuil__title em { font-style: italic; color: var(--gold); }
+.seuil__rule {
+  width: 64px; height: 1px;
+  background: var(--gold-soft);
+  margin: var(--space-lg) auto;
+}
+.seuil p {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+  line-height: 1.85;
+  color: var(--ink-soft);
+  max-width: var(--voyage-measure);
+  margin: 0 auto var(--space-md);
+}
+.seuil p.lede { color: var(--ink); }
+
+/* La litanie des portes d'entrée */
+.seuil-portes {
+  margin: var(--space-2xl) auto;
+  max-width: var(--voyage-measure);
+}
+.seuil-portes__intro {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.15rem, 2.3vw, 1.4rem);
+  color: var(--ink-mute);
+  margin-bottom: var(--space-lg);
+}
+.seuil-porte {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.8vw, 1.7rem);
+  line-height: 1.7;
+  color: var(--ink-title);
+  padding: var(--space-sm) 0;
+  position: relative;
+}
+.seuil-porte::before {
+  content: "✦";
+  display: block;
+  color: var(--gold-soft);
+  font-size: 0.7rem;
+  margin-bottom: 0.4rem;
+  opacity: 0.6;
+}
+.seuil-porte em { font-style: italic; color: var(--gold); }
+
+/* L'invitation à entrer */
+.seuil-entrer {
+  margin: var(--space-2xl) auto var(--space-lg);
+}
+.seuil-entrer__link {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--gold);
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  padding: 0.95rem 2.4rem;
+  transition: background 0.5s ease, color 0.5s ease, letter-spacing 0.5s ease;
+}
+.seuil-entrer__link:hover {
+  background: var(--gold);
+  color: #fff;
+  letter-spacing: 0.28em;
+}
+.seuil-note {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--ink-mute);
+  letter-spacing: 0.03em;
+  margin-top: var(--space-lg);
+}
+
+/* --- Une station du voyage --- */
+.station {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: clamp(3rem, 10vh, 6rem) var(--space-lg) var(--space-2xl);
+}
+.station__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+.station__ar {
+  font-family: var(--font-arabic);
+  font-size: clamp(2.4rem, 8vw, 3.6rem);
+  color: var(--ink-title);
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+.station__title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2.2rem, 6vw, 3rem);
+  color: var(--ink-title);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+.station__title em { font-style: italic; color: var(--gold); }
+
+.station p {
+  font-family: var(--font-display);
+  font-size: clamp(1.18rem, 2.3vw, 1.4rem);
+  line-height: 1.9;
+  color: var(--ink);
+  margin-bottom: var(--space-md);
+}
+.station p em { color: var(--ink-soft); }
+/* Lettrine sur le premier paragraphe */
+.station__body > p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 3.4em;
+  float: left;
+  line-height: 0.8;
+  padding: 0.05em 0.12em 0 0;
+  color: var(--gold);
+}
+
+/* Le mot dévoilé (racine) */
+.mot-devoile {
+  margin: var(--space-xl) auto;
+  padding: var(--space-lg);
+  background: linear-gradient(170deg, #FFFDF8, var(--paper-deep));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg, 14px);
+  text-align: center;
+  box-shadow: 0 18px 40px -28px rgba(27,42,78,0.4);
+}
+.mot-devoile__ar {
+  font-family: var(--font-arabic);
+  font-size: clamp(2.4rem, 7vw, 3.2rem);
+  color: var(--gold);
+  line-height: 1.4;
+}
+.mot-devoile__tr {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--ink-title);
+  margin-top: 0.2rem;
+}
+.mot-devoile__racine {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin: var(--space-sm) 0;
+}
+.mot-devoile__racine span {
+  font-family: var(--font-arabic);
+  font-size: 1.3rem;
+  letter-spacing: 0.2em;
+  color: var(--turquoise);
+  text-transform: none;
+}
+.mot-devoile p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin: 0.6rem auto 0;
+  max-width: 26rem;
+}
+
+/* La voix (citation / verset) */
+.voix {
+  margin: var(--space-xl) auto;
+  padding-left: var(--space-lg);
+  border-left: 2px solid var(--gold-soft);
+}
+.voix__ar {
+  font-family: var(--font-arabic);
+  font-size: 1.7rem;
+  color: var(--ink-title);
+  line-height: 2;
+  direction: rtl;
+  margin-bottom: 0.4rem;
+}
+.voix__text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.25rem, 2.6vw, 1.55rem);
+  line-height: 1.7;
+  color: var(--ink);
+}
+.voix__source {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  margin-top: var(--space-sm);
+}
+
+/* Le souffle / invitation */
+.souffle {
+  margin: var(--space-xl) auto;
+  text-align: center;
+}
+.souffle__mark { color: var(--gold-soft); font-size: 0.9rem; letter-spacing: 0.4em; }
+.souffle p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  color: var(--ink-soft);
+  max-width: 30rem;
+  margin: var(--space-sm) auto 0;
+}
+
+/* Le seuil suivant */
+.seuil-suivant {
+  margin: var(--space-2xl) auto var(--space-lg);
+  text-align: center;
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-xl);
+}
+.seuil-suivant__label {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: var(--space-xs);
+}
+.seuil-suivant__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+  color: var(--ink-title);
+  margin-bottom: var(--space-lg);
+}
+.seuil-suivant__title em { color: var(--gold); font-style: italic; }
+.seuil-suivant__link,
+.station__retour a {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--gold);
+}
+.seuil-suivant__link { border-bottom: 1px solid var(--gold-soft); padding-bottom: 0.2rem; }
+.station__retour { text-align: center; margin-top: var(--space-xl); }
+.station__retour a { color: var(--ink-mute); letter-spacing: 0.1em; text-transform: none; font-size: 0.85rem; }

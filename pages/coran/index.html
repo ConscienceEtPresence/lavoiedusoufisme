@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="../../assets/css/layout.css" />
   <link rel="stylesheet" href="../../assets/css/components.css" />
   <link rel="stylesheet" href="../../assets/css/bilingue.css" />
-  <link rel="stylesheet" href="../../assets/css/coran.css?v=6" />
+  <link rel="stylesheet" href="../../assets/css/coran.css?v=7" />
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
   <script>
@@ -107,6 +107,15 @@
         <button type="button" class="coran-search__clear" id="coranSearchClear" aria-label="Effacer la recherche">×</button>
       </div>
       <p class="coran-search__empty" id="coranSearchEmpty" hidden>Aucune sourate ne correspond à votre recherche.</p>
+
+      <nav class="coran-jump" aria-label="Saut rapide par tranche de sourates">
+        <button type="button" class="coran-jump__chip" data-target="114">114–100</button>
+        <button type="button" class="coran-jump__chip" data-target="99">99–80</button>
+        <button type="button" class="coran-jump__chip" data-target="79">79–60</button>
+        <button type="button" class="coran-jump__chip" data-target="59">59–40</button>
+        <button type="button" class="coran-jump__chip" data-target="39">39–20</button>
+        <button type="button" class="coran-jump__chip" data-target="19">19–1</button>
+      </nav>
 
       <div class="coran-index-grid">
 
@@ -1084,6 +1093,23 @@
     }
     input.addEventListener('input', apply);
     clear.addEventListener('click', function(){ input.value=''; apply(); input.focus(); });
+
+    var jumpBar = document.querySelector('.coran-jump');
+    if (jumpBar) {
+      var chips = [].slice.call(jumpBar.querySelectorAll('.coran-jump__chip'));
+      chips.forEach(function(chip){
+        chip.addEventListener('click', function(){
+          if (input.value) { input.value = ''; apply(); }
+          var n = chip.getAttribute('data-target');
+          var card = document.querySelector('.coran-index-grid .coran-sira[href="sourate-' + n + '.html"]');
+          if (!card) return;
+          var y = card.getBoundingClientRect().top + window.pageYOffset - jumpBar.offsetHeight - 14;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+          chips.forEach(function(c){ c.classList.remove('is-active'); });
+          chip.classList.add('is-active');
+        });
+      });
+    }
   })();
   </script>
 </body>

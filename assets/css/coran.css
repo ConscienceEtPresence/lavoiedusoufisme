@@ -427,3 +427,40 @@ button.cv__num.is-open {
   font-size: 1.05rem;
   margin: var(--space-lg) auto;
 }
+
+/* --- Puces de saut rapide (sticky) --- */
+.coran-jump {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  max-width: 48rem;
+  margin: 0 auto var(--space-md);
+  padding: 0.6rem 0.1rem;
+  background: var(--paper-warm);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.coran-jump::-webkit-scrollbar { display: none; }
+.coran-jump__chip {
+  flex: 0 0 auto;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: var(--gold);
+  background: linear-gradient(170deg, #FFFDF8, var(--paper-warm));
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+.coran-jump__chip:hover,
+.coran-jump__chip.is-active {
+  background: var(--gold);
+  color: #fff;
+  border-color: var(--gold);
+}

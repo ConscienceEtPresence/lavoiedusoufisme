@@ -493,72 +493,116 @@
     return lines;
   }
 
+  function goldGrad(ctx, y0, y1, dark) {
+    const g = ctx.createLinearGradient(0, y0, 0, y1);
+    if (dark) { g.addColorStop(0, '#F0D27A'); g.addColorStop(0.5, '#D4A93A'); g.addColorStop(1, '#A87E1E'); }
+    else { g.addColorStop(0, '#D9B14C'); g.addColorStop(0.5, '#B8860B'); g.addColorStop(1, '#8A6307'); }
+    return g;
+  }
+
   function drawCard(canvas, v, theme) {
-    const S = 1080;
-    canvas.width = S; canvas.height = S;
+    const S = 1080, R = 2; // R = supersampling (rendu net)
+    canvas.width = S * R; canvas.height = S * R;
     const ctx = canvas.getContext('2d');
+    ctx.setTransform(R, 0, 0, R, 0, 0);
     const dark = theme === 'dark';
 
     const col = dark
-      ? { bg1:'#141A26', bg2:'#0E1019', ink:'#F5EFE0', soft:'#C9C0AA', gold:'#D4A93A', line:'#3A4255' }
-      : { bg1:'#FFFDF8', bg2:'#F0E6D2', ink:'#1B2A4E', soft:'#3A4D63', gold:'#B8860B', line:'#DDCDAE' };
+      ? { bg1:'#16202F', bg2:'#0C0F18', ink:'#F5EFE0', soft:'#CDC4AE' }
+      : { bg1:'#FFFDF8', bg2:'#ECE0C8', ink:'#1B2A4E', soft:'#3A4D63' };
 
-    // fond
+    // fond dégradé
     const g = ctx.createLinearGradient(0, 0, S, S);
     g.addColorStop(0, col.bg1); g.addColorStop(1, col.bg2);
     ctx.fillStyle = g; ctx.fillRect(0, 0, S, S);
 
-    // cadre
-    ctx.strokeStyle = col.gold; ctx.globalAlpha = 0.55; ctx.lineWidth = 2;
+    // halo central (lumière derrière le verset)
+    const halo = ctx.createRadialGradient(S / 2, S * 0.43, 30, S / 2, S * 0.43, 430);
+    halo.addColorStop(0, dark ? 'rgba(212,169,58,0.16)' : 'rgba(255,251,240,0.95)');
+    halo.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = halo; ctx.fillRect(0, 0, S, S);
+
+    // grain de parchemin
+    for (let i = 0; i < 2400; i++) {
+      const x = Math.random() * S, y = Math.random() * S;
+      ctx.fillStyle = (Math.random() < 0.5 ? 'rgba(255,255,255,' : 'rgba(0,0,0,') + (Math.random() * (dark ? 0.04 : 0.05)) + ')';
+      ctx.fillRect(x, y, 1.4, 1.4);
+    }
+
+    // vignette
+    const vg = ctx.createRadialGradient(S / 2, S / 2, S * 0.32, S / 2, S / 2, S * 0.74);
+    vg.addColorStop(0, 'rgba(0,0,0,0)');
+    vg.addColorStop(1, dark ? 'rgba(0,0,0,0.38)' : 'rgba(70,48,12,0.13)');
+    ctx.fillStyle = vg; ctx.fillRect(0, 0, S, S);
+
+    // cadre + ornements de coin
+    ctx.strokeStyle = goldGrad(ctx, 54, S - 54, dark); ctx.globalAlpha = 0.6; ctx.lineWidth = 2;
     roundRect(ctx, 54, 54, S - 108, S - 108, 26); ctx.stroke();
     ctx.globalAlpha = 1;
 
     ctx.textAlign = 'center';
+    ctx.textBaseline = 'alphabetic';
 
-    // ornement haut
-    ctx.fillStyle = col.gold; ctx.font = '40px "Inter", sans-serif';
-    ctx.fillText('✦', S / 2, 168);
+    // nom de la sourate en arabe (eyebrow)
+    if (currentSura && currentSura.n) {
+      ctx.fillStyle = goldGrad(ctx, 96, 130, dark);
+      ctx.font = '40px "Amiri", serif';
+      ctx.fillText((EN ? 'Sūra ' : 'Sourate ') + currentSura.n, S / 2, 116);
+    }
+    // ornement
+    ctx.fillStyle = goldGrad(ctx, 150, 180, dark);
+    ctx.font = '34px "Inter", sans-serif';
+    ctx.fillText('✦', S / 2, 178);
 
-    // arabe (centre)
+    // arabe (centre) — taille adaptative
     ctx.direction = 'rtl';
     ctx.fillStyle = col.ink;
-    let aSize = v.ar && v.ar.length > 60 ? 56 : 76;
+    let aSize = (v.ar && v.ar.length > 55) ? 58 : 80;
     ctx.font = '700 ' + aSize + 'px "Amiri", serif';
-    let aLines = wrapLines(ctx, v.ar, S - 260);
-    while (aLines.length > 4 && aSize > 38) {
+    let aLines = wrapLines(ctx, v.ar, S - 280);
+    while (aLines.length > 4 && aSize > 40) {
       aSize -= 6; ctx.font = '700 ' + aSize + 'px "Amiri", serif';
-      aLines = wrapLines(ctx, v.ar, S - 260);
+      aLines = wrapLines(ctx, v.ar, S - 280);
     }
-    const aLH = aSize * 1.6;
-    let ay = S / 2 - (aLines.length - 1) * aLH / 2 - 40;
+    const aLH = aSize * 1.62;
+    let ay = S * 0.43 - (aLines.length - 1) * aLH / 2;
     aLines.forEach(function (ln) { ctx.fillText(ln, S / 2, ay); ay += aLH; });
     ctx.direction = 'ltr';
 
     // filet or
-    ctx.strokeStyle = col.gold; ctx.globalAlpha = 0.7; ctx.lineWidth = 1.5;
-    ctx.beginPath(); ctx.moveTo(S / 2 - 50, ay + 6); ctx.lineTo(S / 2 + 50, ay + 6); ctx.stroke();
+    ctx.strokeStyle = goldGrad(ctx, ay, ay + 4, dark); ctx.globalAlpha = 0.8; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(S / 2 - 46, ay + 2); ctx.lineTo(S / 2 + 46, ay + 2); ctx.stroke();
     ctx.globalAlpha = 1;
+
+    // translittération (italique doré)
+    let ty = ay + 56;
+    if (v.tr) {
+      ctx.fillStyle = goldGrad(ctx, ty - 24, ty + 4, dark);
+      ctx.font = 'italic 30px "Cormorant Garamond", Georgia, serif';
+      wrapLines(ctx, v.tr, S - 320).slice(0, 2).forEach(function (ln) { ctx.fillText(ln, S / 2, ty); ty += 38; });
+      ty += 14;
+    }
 
     // traduction
     ctx.fillStyle = col.soft;
     ctx.font = 'italic 38px "Cormorant Garamond", Georgia, serif';
-    const tLines = wrapLines(ctx, '« ' + (v.trad || '') + ' »', S - 280);
-    let ty = ay + 78;
-    tLines.slice(0, 6).forEach(function (ln) { ctx.fillText(ln, S / 2, ty); ty += 52; });
+    wrapLines(ctx, '« ' + (v.trad || '') + ' »', S - 290).slice(0, 6).forEach(function (ln) {
+      ctx.fillText(ln, S / 2, ty); ty += 50;
+    });
 
     // attribution
-    ctx.fillStyle = col.gold;
-    ctx.font = '500 26px "Inter", sans-serif';
+    ctx.fillStyle = goldGrad(ctx, S - 172, S - 146, dark);
+    ctx.font = '500 25px "Inter", sans-serif';
     ctx.fillText(shareAttribution(v), S / 2, S - 150);
 
-    // signature + logo
-    ctx.strokeStyle = col.gold; ctx.lineWidth = 1.5;
-    ctx.beginPath(); ctx.arc(S / 2 - 92, S - 92, 13, 0, 6.2832); ctx.stroke();
-    ctx.beginPath(); ctx.arc(S / 2 - 92, S - 92, 6, 0, 6.2832); ctx.stroke();
-    ctx.fillStyle = col.gold;
-    ctx.font = '500 24px "Inter", sans-serif';
+    // signature + logo concentrique
+    ctx.strokeStyle = goldGrad(ctx, S - 105, S - 79, dark); ctx.lineWidth = 1.6;
+    ctx.beginPath(); ctx.arc(S / 2 - 96, S - 92, 12, 0, 6.2832); ctx.stroke();
+    ctx.beginPath(); ctx.arc(S / 2 - 96, S - 92, 5.5, 0, 6.2832); ctx.stroke();
+    ctx.fillStyle = goldGrad(ctx, S - 104, S - 80, dark);
+    ctx.font = '500 23px "Inter", sans-serif';
     ctx.textAlign = 'left';
-    ctx.fillText('lavoiedudedans.fr', S / 2 - 68, S - 84);
+    ctx.fillText('lavoiedudedans.fr', S / 2 - 74, S - 84);
     ctx.textAlign = 'center';
   }
 

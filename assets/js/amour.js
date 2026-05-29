@@ -117,6 +117,7 @@
         <div class="mot-fiche__translit">${mot.translit}</div>
         <div class="mot-fiche__rule"></div>
         <p class="mot-fiche__def">${escapeHtml(mot.definition)}</p>
+        <button type="button" class="mot-share" data-share-mot>✦ ${document.documentElement.lang === 'en' ? 'Share' : 'Partager'}</button>
 
         <div class="mot-meta">
           <div class="mot-meta__tags">${themesHtml}</div>
@@ -169,7 +170,6 @@
         <nav class="mot-nav">
           <a href="parcours.html" class="mot-nav__link">${AM_T.allWords}</a>
           <a href="hasard.html" class="mot-nav__link mot-nav__link--accent">${AM_T.drawRandom}</a>
-          <button type="button" class="mot-nav__link mot-share" data-share-mot>✦ ${document.documentElement.lang === 'en' ? 'Share' : 'Partager'}</button>
         </nav>
       </article>
     `;

@@ -219,3 +219,29 @@ document.querySelectorAll('.period').forEach(el => observer.observe(el));
       .catch(err => console.warn('SW registration failed:', err));
   });
 })();
+
+// 7. Partage de la citation (accueil)
+(function () {
+  const btn = document.getElementById('quote-share');
+  if (!btn) return;
+  const scripts = document.querySelectorAll('script[src*="main.js"]');
+  const baseHref = scripts.length ? scripts[scripts.length - 1].src.replace(/assets\/js\/main\.js.*$/, '') : '/';
+  function ensure(cb) {
+    if (window.LVDDPartage) { cb(); return; }
+    let s = document.querySelector('script[data-partage-js]');
+    if (!s) {
+      s = document.createElement('script');
+      s.src = baseHref + 'assets/js/partage.js?v=1';
+      s.dataset.partageJs = '1';
+      document.head.appendChild(s);
+    }
+    s.addEventListener('load', function () { if (window.LVDDPartage) cb(); });
+  }
+  btn.addEventListener('click', function () {
+    const t = document.querySelector('#rotating-quote .quote-text');
+    const c = document.querySelector('#rotating-quote .quote-cite');
+    ensure(function () {
+      window.LVDDPartage.open({ text: t ? t.textContent.trim() : '', attribution: c ? c.textContent.trim() : '' });
+    });
+  });
+})();

@@ -72,6 +72,16 @@
     g.addColorStop(0, col.bg1); g.addColorStop(1, col.bg2);
     ctx.fillStyle = g; ctx.fillRect(0, 0, S, S);
 
+    // filigrane géométrique (grille d'étoiles à 8 branches, très pâle)
+    ctx.save();
+    ctx.globalAlpha = 0.05;
+    ctx.strokeStyle = dark ? '#D4A93A' : '#B8860B';
+    ctx.lineWidth = 1;
+    for (var wy = 120; wy < S - 100; wy += 150) {
+      for (var wx = 120; wx < S - 100; wx += 150) { star8(ctx, wx, wy, 26); }
+    }
+    ctx.restore();
+
     // halo
     var halo = ctx.createRadialGradient(S / 2, S * 0.43, 30, S / 2, S * 0.43, 430);
     halo.addColorStop(0, dark ? 'rgba(212,169,58,0.16)' : 'rgba(255,251,240,0.95)');

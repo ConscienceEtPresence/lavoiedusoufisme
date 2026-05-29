@@ -13,6 +13,30 @@
   const grilleEl  = document.getElementById('poesie-grille');
   const emptyEl   = document.getElementById('poesie-empty');
 
+  function ensurePartage(cb) {
+    if (window.LVDDPartage) { cb(); return; }
+    let s = document.querySelector('script[data-partage-js]');
+    if (!s) {
+      s = document.createElement('script');
+      s.src = '../../assets/js/partage.js?v=1';
+      s.dataset.partageJs = '1';
+      document.head.appendChild(s);
+    }
+    s.addEventListener('load', function () { if (window.LVDDPartage) cb(); });
+  }
+  if (grilleEl) grilleEl.addEventListener('click', function (e) {
+    const b = e.target.closest('[data-share-poem]');
+    if (!b) return;
+    e.preventDefault();
+    const p = DATA && DATA.poemes.find(x => x.id === b.dataset.sharePoem);
+    if (p) ensurePartage(function () {
+      window.LVDDPartage.open({
+        ar: p.titre_orig, tr: p.titre_tr, text: p.extrait_fr,
+        attribution: p.auteur_nom + ' · ' + p.titre_fr
+      });
+    });
+  });
+
   fetch('../../data/poesie.json')
     .then(r => r.json())
     .then(data => {
@@ -73,16 +97,19 @@
       const readyBadge = p.status === 'soon' ? `<span class="poesie-badge">${T.soon}</span>` : '';
       const dir = p.langue === 'turque' ? 'ltr' : 'rtl';
       return `
-        <a class="poesie-carte ${readyClass}" href="${p.href}">
-          ${readyBadge}
-          <div class="poesie-carte__corpus">${p.corpus} · ${p.date}</div>
-          <div class="poesie-carte__titre-orig" lang="${p.langue === 'turque' ? 'tr' : (p.langue === 'persane' ? 'fa' : 'ar')}" dir="${dir}">${p.titre_orig}</div>
-          <div class="poesie-carte__titre-tr">${p.titre_tr}</div>
-          <h2 class="poesie-carte__titre-fr">${p.titre_fr}</h2>
-          <div class="poesie-carte__auteur">${p.auteur_nom}</div>
-          <p class="poesie-carte__extrait">${isEN ? `&ldquo;${p.extrait_fr}&rdquo;` : `« ${p.extrait_fr} »`}</p>
-          <p class="poesie-carte__tagline"><em>${p.tagline}</em></p>
-        </a>
+        <div class="poesie-carte-wrap">
+          <a class="poesie-carte ${readyClass}" href="${p.href}">
+            ${readyBadge}
+            <div class="poesie-carte__corpus">${p.corpus} · ${p.date}</div>
+            <div class="poesie-carte__titre-orig" lang="${p.langue === 'turque' ? 'tr' : (p.langue === 'persane' ? 'fa' : 'ar')}" dir="${dir}">${p.titre_orig}</div>
+            <div class="poesie-carte__titre-tr">${p.titre_tr}</div>
+            <h2 class="poesie-carte__titre-fr">${p.titre_fr}</h2>
+            <div class="poesie-carte__auteur">${p.auteur_nom}</div>
+            <p class="poesie-carte__extrait">${isEN ? `&ldquo;${p.extrait_fr}&rdquo;` : `« ${p.extrait_fr} »`}</p>
+            <p class="poesie-carte__tagline"><em>${p.tagline}</em></p>
+          </a>
+          ${p.status === 'ready' ? `<button type="button" class="poesie-share" data-share-poem="${p.id}" aria-label="${isEN ? 'Share' : 'Partager'}">✦</button>` : ''}
+        </div>
       `;
     }).join('');
   }

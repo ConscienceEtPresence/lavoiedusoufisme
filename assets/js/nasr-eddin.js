@@ -56,7 +56,8 @@
   function renderTexte(texte) {
     // Convert \n\n into <p> blocks, \n into <br>
     return texte.split('\n\n').map(para =>
-      '<p>' + escapeHtml(para).replace(/\n/g, '<br>') + '</p>'
+      '<p>' + escapeHtml(para).replace(/\n/g, '<br>')
+        .replace(/&lt;em&gt;/g, '<em>').replace(/&lt;\/em&gt;/g, '</em>') + '</p>'
     ).join('');
   }
 
@@ -191,7 +192,7 @@
 
     grilleEl.innerHTML = filtered.map(c => {
       const espritLabels = c.esprits.map(eid => findEsprit(eid)?.label).filter(Boolean).join(' · ');
-      const extrait = c.texte.replace(/\n+/g, ' ').slice(0, 140) + '…';
+      const extrait = c.texte.replace(/<\/?em>/g, '').replace(/\n+/g, ' ').slice(0, 140) + '…';
       return `
         <a class="conte-carte-mini" href="conte.html?id=${c.id}">
           <div class="conte-carte-mini__esprits">${escapeHtml(espritLabels)}</div>

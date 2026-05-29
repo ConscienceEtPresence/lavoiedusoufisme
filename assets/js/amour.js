@@ -142,7 +142,7 @@
         ${mot.meditation ? `
         <section class="mot-meditation">
           <span class="mot-meditation__label">${AM_T.toMeditate}</span>
-          <p class="mot-meditation__text">${escapeHtml(mot.meditation)}</p>
+          <p class="mot-meditation__text">${mot.meditation}</p>
         </section>
         ` : ''}
 

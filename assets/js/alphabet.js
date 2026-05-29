@@ -16,14 +16,31 @@
     sound: 'Sound', example: 'A word that holds it', sun: 'Sun letter', moon: 'Moon letter',
     links: 'Links to the next', nolink: 'Never links forward',
     forms: 'Its four shapes', fIso: 'isolated', fIni: 'initial', fMed: 'medial', fFin: 'final',
-    quizTitle: 'Recognise the letter', quizSub: 'Which letter is it?', quizScore: 'Score', quizNext: 'Next letter →', quizGood: 'Yes —', quizBad: 'It was'
+    quizTitle: 'Recognise the letter', quizSub: 'Which letter is it?', quizScore: 'Score', quizNext: 'Next letter →', quizGood: 'Yes —', quizBad: 'It was',
+    listen: 'Hear the word', listenLetter: 'Hear the letter'
   } : {
     sound: 'Le son', example: 'Un mot qui la porte', sun: 'Lettre solaire', moon: 'Lettre lunaire',
     links: 'Se lie à la suivante', nolink: 'Ne se lie jamais à gauche',
     forms: 'Ses quatre formes', fIso: 'isolée', fIni: 'initiale', fMed: 'médiane', fFin: 'finale',
-    quizTitle: 'Reconnais la lettre', quizSub: 'Quelle est cette lettre ?', quizScore: 'Score', quizNext: 'Lettre suivante →', quizGood: 'Oui —', quizBad: 'C’était'
+    quizTitle: 'Reconnais la lettre', quizSub: 'Quelle est cette lettre ?', quizScore: 'Score', quizNext: 'Lettre suivante →', quizGood: 'Oui —', quizBad: 'C’était',
+    listen: 'Écouter le mot', listenLetter: 'Écouter la lettre'
   };
   var ZWJ = '‍';
+  var HAS_TTS = (typeof window !== 'undefined') && ('speechSynthesis' in window);
+
+  function speak(text) {
+    if (!HAS_TTS) return;
+    try {
+      window.speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'ar-SA'; u.rate = 0.8;
+      var voices = window.speechSynthesis.getVoices() || [];
+      for (var i = 0; i < voices.length; i++) {
+        if ((voices[i].lang || '').toLowerCase().indexOf('ar') === 0) { u.voice = voices[i]; break; }
+      }
+      window.speechSynthesis.speak(u);
+    } catch (e) {}
+  }
 
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
@@ -108,7 +125,12 @@
         '<div class="alpha-ex__mot" lang="ar" dir="rtl">' + esc(L.exemple.mot) + '</div>' +
         '<div class="alpha-ex__tr">' + esc(L.exemple.tr) + '</div>' +
         '<div class="alpha-ex__sens">' + esc(L.exemple.sens) + '</div>' +
+        (HAS_TTS ? '<button type="button" class="alpha-listen" data-say="' + esc(L.exemple.mot) + '">🔊 ' + T.listen + '</button>' : '') +
       '</div>';
+    var btn = detail.querySelector('.alpha-listen');
+    if (btn) btn.addEventListener('click', function () { speak(btn.getAttribute('data-say')); });
+    var big = detail.querySelector('.alpha-detail__ar');
+    if (big && HAS_TTS) { big.classList.add('is-sayable'); big.addEventListener('click', function () { speak(L.exemple.mot); }); }
   }
 
   function formCell(label, glyph) {

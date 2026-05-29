@@ -94,7 +94,21 @@
 }
 .alpha-detail[hidden] { display: none; }
 @keyframes alphaIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-.alpha-detail__ar { font-family: var(--font-arabic); font-size: clamp(4rem, 16vw, 6rem); line-height: 1; color: var(--gold); }
+.alpha-detail__ar { font-family: var(--font-arabic); font-size: clamp(4rem, 16vw, 6rem); line-height: 1; color: var(--gold); animation: brushIn 0.9s cubic-bezier(.4,0,.2,1) both; }
+.alpha-detail__ar.is-sayable { cursor: pointer; }
+/* tracé calligraphique : la lettre se dévoile de droite à gauche */
+@keyframes brushIn { from { clip-path: inset(0 100% 0 0); opacity: 0.15; } to { clip-path: inset(0 0 0 0); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .alpha-detail__ar { animation: none; } }
+
+/* bouton écouter */
+.alpha-listen {
+  margin-top: var(--space-md);
+  font-family: var(--font-sans); font-size: 0.82rem; letter-spacing: 0.03em;
+  color: var(--paper); background: var(--gold); border: none; border-radius: 999px;
+  padding: 0.5rem 1.3rem; cursor: pointer; transition: transform 0.2s, filter 0.2s;
+}
+.alpha-listen:hover { transform: translateY(-2px); filter: brightness(1.05); }
+.alpha-listen:active { transform: translateY(0); }
 .alpha-detail__nom { font-family: var(--font-display); font-size: 1.6rem; color: var(--ink-title); margin-top: 0.2rem; }
 .alpha-detail__tr { font-family: var(--font-sans); font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); }
 .alpha-detail__son { font-family: var(--font-display); font-style: italic; font-size: 1.2rem; color: var(--ink-soft); margin: var(--space-md) auto; max-width: 26rem; }

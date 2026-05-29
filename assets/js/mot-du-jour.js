@@ -134,7 +134,7 @@
     var url = location.origin + location.pathname + '?id=' + encodeURIComponent(it.id);
     var box = document.getElementById('mdj-drawn');
     box.innerHTML =
-      '<article class="mdj-card mdj-card--offer">' + offerBodyShort(it) +
+      '<article class="mdj-card mdj-card--offer">' + bodyHTML(it) +
         '<div class="mdj-actions">' +
           '<button type="button" class="mdj-btn mdj-btn--gold" id="mdj-send">' + DOVE + ' ' + T.sendGift + '</button>' +
           '<button type="button" class="mdj-btn" id="mdj-redraw">' + T.redraw + '</button>' +

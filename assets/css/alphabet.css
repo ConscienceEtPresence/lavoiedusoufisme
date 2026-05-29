@@ -1,0 +1,142 @@
+/* ============================================================
+   Apprendre l'arabe — alphabet vivant
+   ============================================================ */
+.arabe {
+  background: radial-gradient(120% 70% at 50% -10%, #FFFDF8 0%, var(--paper) 55%, var(--paper-warm) 100%);
+  min-height: 100vh;
+}
+
+.arabe-intro {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: clamp(2rem, 7vh, 4rem) var(--space-lg) var(--space-lg);
+  text-align: center;
+}
+.arabe-intro__ar {
+  font-family: var(--font-arabic);
+  font-size: clamp(2.6rem, 9vw, 4rem);
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+.arabe-intro h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 6vw, 2.9rem);
+  color: var(--ink-title);
+  margin-bottom: var(--space-sm);
+}
+.arabe-intro p {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  line-height: 1.7;
+  color: var(--ink-soft);
+  max-width: 34rem;
+  margin: 0 auto var(--space-md);
+}
+.arabe-intro em { color: var(--gold); font-style: italic; }
+
+/* bandeau "sens de lecture" */
+.arabe-sens {
+  display: flex; align-items: center; justify-content: center; gap: 0.8rem;
+  font-family: var(--font-sans); font-size: 0.82rem; letter-spacing: 0.08em;
+  color: var(--ink-mute); margin: var(--space-md) auto var(--space-lg);
+}
+.arabe-sens span:first-child { color: var(--gold); font-size: 1.4rem; }
+
+/* sections */
+.arabe-section { max-width: 60rem; margin: 0 auto; padding: var(--space-xl) var(--space-lg); }
+.arabe-section__title {
+  text-align: center; font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2rem); color: var(--ink-title);
+  margin-bottom: 0.3rem;
+}
+.arabe-section__sub {
+  text-align: center; font-family: var(--font-sans); font-size: 0.85rem;
+  color: var(--ink-mute); margin-bottom: var(--space-lg); letter-spacing: 0.03em;
+}
+.arabe-rule { width: 56px; height: 1px; background: var(--gold-soft); margin: 0 auto var(--space-lg); }
+
+/* grille de l'alphabet */
+.alpha-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(82px, 1fr));
+  gap: var(--space-sm);
+}
+.alpha-cell {
+  position: relative;
+  aspect-ratio: 1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 0.1rem;
+  background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep));
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.alpha-cell:hover, .alpha-cell.is-active {
+  transform: translateY(-3px);
+  border-color: var(--gold);
+  box-shadow: 0 14px 30px -22px rgba(27,42,78,0.5);
+}
+.alpha-cell__ar { font-family: var(--font-arabic); font-size: 2.2rem; line-height: 1; color: var(--ink-title); }
+.alpha-cell.is-active .alpha-cell__ar { color: var(--gold); }
+.alpha-cell__tr { font-family: var(--font-sans); font-size: 0.66rem; color: var(--ink-mute); letter-spacing: 0.04em; }
+
+/* panneau détail d'une lettre */
+.alpha-detail {
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  background: linear-gradient(170deg, #FFFDF8, var(--paper-deep));
+  border: 1px solid var(--gold-soft);
+  border-radius: 18px;
+  text-align: center;
+  animation: alphaIn 0.5s cubic-bezier(.2,.7,.2,1) both;
+}
+.alpha-detail[hidden] { display: none; }
+@keyframes alphaIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.alpha-detail__ar { font-family: var(--font-arabic); font-size: clamp(4rem, 16vw, 6rem); line-height: 1; color: var(--gold); }
+.alpha-detail__nom { font-family: var(--font-display); font-size: 1.6rem; color: var(--ink-title); margin-top: 0.2rem; }
+.alpha-detail__tr { font-family: var(--font-sans); font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); }
+.alpha-detail__son { font-family: var(--font-display); font-style: italic; font-size: 1.2rem; color: var(--ink-soft); margin: var(--space-md) auto; max-width: 26rem; }
+.alpha-badges { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin: var(--space-sm) 0; }
+.alpha-badge { font-family: var(--font-sans); font-size: 0.7rem; letter-spacing: 0.04em; color: var(--ink-soft); background: rgba(46,125,122,0.1); border-radius: 999px; padding: 0.25rem 0.8rem; }
+.alpha-ex {
+  margin-top: var(--space-md); padding-top: var(--space-md);
+  border-top: 1px solid var(--line);
+}
+.alpha-ex__label { font-family: var(--font-sans); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+.alpha-ex__mot { font-family: var(--font-arabic); font-size: 2.6rem; color: var(--ink-title); line-height: 1.6; }
+.alpha-ex__tr { font-family: var(--font-display); font-style: italic; font-size: 1.2rem; color: var(--gold); }
+.alpha-ex__sens { font-family: var(--font-display); font-size: 1.1rem; color: var(--ink-soft); }
+
+/* voyelles */
+.voy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: var(--space-md); max-width: 46rem; margin: 0 auto; }
+.voy-cell { text-align: center; padding: var(--space-md); background: var(--paper-warm); border: 1px solid var(--line); border-radius: 14px; }
+.voy-cell__ar { font-family: var(--font-arabic); font-size: 2.4rem; color: var(--gold); }
+.voy-cell__nom { font-family: var(--font-display); font-size: 1.15rem; color: var(--ink-title); }
+.voy-cell__son { font-family: var(--font-sans); font-size: 0.78rem; color: var(--ink-mute); margin-top: 0.2rem; }
+
+/* solaires / lunaires */
+.lune-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); max-width: 46rem; margin: 0 auto; }
+@media (max-width: 560px) { .lune-grid { grid-template-columns: 1fr; } }
+.lune-box { padding: var(--space-lg); border-radius: 16px; border: 1px solid var(--line); background: var(--paper-warm); text-align: center; }
+.lune-box h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); margin-bottom: 0.3rem; }
+.lune-box p { font-family: var(--font-sans); font-size: 0.85rem; color: var(--ink-mute); margin-bottom: var(--space-sm); }
+.lune-box .letters { font-family: var(--font-arabic); font-size: 1.8rem; color: var(--ink-title); line-height: 1.8; letter-spacing: 0.15em; }
+
+/* déchiffrage */
+.dechif { display: grid; gap: var(--space-md); max-width: 40rem; margin: 0 auto; }
+.dechif-word {
+  padding: var(--space-md) var(--space-lg);
+  background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep));
+  border: 1px solid var(--line); border-radius: 14px; text-align: center;
+}
+.dechif-word__full { font-family: var(--font-arabic); font-size: 2.8rem; color: var(--gold); line-height: 1.5; }
+.dechif-word__sens { font-family: var(--font-display); font-style: italic; font-size: 1.15rem; color: var(--ink-soft); margin-bottom: var(--space-sm); }
+.dechif-letters { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; direction: rtl; }
+.dechif-letter { display: flex; flex-direction: column; align-items: center; min-width: 2.6rem; padding: 0.3rem 0.4rem; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; }
+.dechif-letter__ar { font-family: var(--font-arabic); font-size: 1.6rem; color: var(--ink-title); }
+.dechif-letter__tr { font-family: var(--font-sans); font-size: 0.7rem; color: var(--ink-mute); }
+
+.arabe-foot { text-align: center; padding: var(--space-2xl) var(--space-lg); }
+.arabe-foot a { font-family: var(--font-sans); font-size: 0.85rem; color: var(--gold); text-decoration: none; }

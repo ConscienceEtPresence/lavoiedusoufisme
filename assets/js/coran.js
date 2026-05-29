@@ -476,205 +476,25 @@
     return base + ' — ' + (s.n || '') + ' : ' + v.n;
   }
 
-  function wrapLines(ctx, text, maxWidth) {
-    const words = String(text).split(/\s+/);
-    const lines = [];
-    let line = '';
-    for (let i = 0; i < words.length; i++) {
-      const test = line ? line + ' ' + words[i] : words[i];
-      if (ctx.measureText(test).width > maxWidth && line) {
-        lines.push(line);
-        line = words[i];
-      } else {
-        line = test;
-      }
+  /* délégation au module partagé partage.js */
+  function ensurePartage(cb) {
+    if (window.LVDDPartage) { cb(); return; }
+    var s = document.querySelector('script[data-partage-js]');
+    if (!s) {
+      s = document.createElement('script');
+      s.src = siteRoot() + 'assets/js/partage.js?v=1';
+      s.dataset.partageJs = '1';
+      document.head.appendChild(s);
     }
-    if (line) lines.push(line);
-    return lines;
+    s.addEventListener('load', function () { if (window.LVDDPartage) cb(); });
   }
-
-  function goldGrad(ctx, y0, y1, dark) {
-    const g = ctx.createLinearGradient(0, y0, 0, y1);
-    if (dark) { g.addColorStop(0, '#F0D27A'); g.addColorStop(0.5, '#D4A93A'); g.addColorStop(1, '#A87E1E'); }
-    else { g.addColorStop(0, '#D9B14C'); g.addColorStop(0.5, '#B8860B'); g.addColorStop(1, '#8A6307'); }
-    return g;
-  }
-
-  function drawCard(canvas, v, theme) {
-    const S = 1080, R = 2; // R = supersampling (rendu net)
-    canvas.width = S * R; canvas.height = S * R;
-    const ctx = canvas.getContext('2d');
-    ctx.setTransform(R, 0, 0, R, 0, 0);
-    const dark = theme === 'dark';
-
-    const col = dark
-      ? { bg1:'#16202F', bg2:'#0C0F18', ink:'#F5EFE0', soft:'#CDC4AE' }
-      : { bg1:'#FFFDF8', bg2:'#ECE0C8', ink:'#1B2A4E', soft:'#3A4D63' };
-
-    // fond dégradé
-    const g = ctx.createLinearGradient(0, 0, S, S);
-    g.addColorStop(0, col.bg1); g.addColorStop(1, col.bg2);
-    ctx.fillStyle = g; ctx.fillRect(0, 0, S, S);
-
-    // halo central (lumière derrière le verset)
-    const halo = ctx.createRadialGradient(S / 2, S * 0.43, 30, S / 2, S * 0.43, 430);
-    halo.addColorStop(0, dark ? 'rgba(212,169,58,0.16)' : 'rgba(255,251,240,0.95)');
-    halo.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = halo; ctx.fillRect(0, 0, S, S);
-
-    // grain de parchemin
-    for (let i = 0; i < 2400; i++) {
-      const x = Math.random() * S, y = Math.random() * S;
-      ctx.fillStyle = (Math.random() < 0.5 ? 'rgba(255,255,255,' : 'rgba(0,0,0,') + (Math.random() * (dark ? 0.04 : 0.05)) + ')';
-      ctx.fillRect(x, y, 1.4, 1.4);
-    }
-
-    // vignette
-    const vg = ctx.createRadialGradient(S / 2, S / 2, S * 0.32, S / 2, S / 2, S * 0.74);
-    vg.addColorStop(0, 'rgba(0,0,0,0)');
-    vg.addColorStop(1, dark ? 'rgba(0,0,0,0.38)' : 'rgba(70,48,12,0.13)');
-    ctx.fillStyle = vg; ctx.fillRect(0, 0, S, S);
-
-    // cadre + ornements de coin
-    ctx.strokeStyle = goldGrad(ctx, 54, S - 54, dark); ctx.globalAlpha = 0.6; ctx.lineWidth = 2;
-    roundRect(ctx, 54, 54, S - 108, S - 108, 26); ctx.stroke();
-    ctx.globalAlpha = 1;
-
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'alphabetic';
-
-    // nom de la sourate en arabe (eyebrow)
-    if (currentSura && currentSura.n) {
-      ctx.fillStyle = goldGrad(ctx, 96, 130, dark);
-      ctx.font = '40px "Amiri", serif';
-      ctx.fillText((EN ? 'Sūra ' : 'Sourate ') + currentSura.n, S / 2, 116);
-    }
-    // ornement
-    ctx.fillStyle = goldGrad(ctx, 150, 180, dark);
-    ctx.font = '34px "Inter", sans-serif';
-    ctx.fillText('✦', S / 2, 178);
-
-    // arabe (centre) — taille adaptative
-    ctx.direction = 'rtl';
-    ctx.fillStyle = col.ink;
-    let aSize = (v.ar && v.ar.length > 55) ? 58 : 80;
-    ctx.font = '700 ' + aSize + 'px "Amiri", serif';
-    let aLines = wrapLines(ctx, v.ar, S - 280);
-    while (aLines.length > 4 && aSize > 40) {
-      aSize -= 6; ctx.font = '700 ' + aSize + 'px "Amiri", serif';
-      aLines = wrapLines(ctx, v.ar, S - 280);
-    }
-    const aLH = aSize * 1.62;
-    let ay = S * 0.43 - (aLines.length - 1) * aLH / 2;
-    aLines.forEach(function (ln) { ctx.fillText(ln, S / 2, ay); ay += aLH; });
-    ctx.direction = 'ltr';
-
-    // filet or
-    ctx.strokeStyle = goldGrad(ctx, ay, ay + 4, dark); ctx.globalAlpha = 0.8; ctx.lineWidth = 1.5;
-    ctx.beginPath(); ctx.moveTo(S / 2 - 46, ay + 2); ctx.lineTo(S / 2 + 46, ay + 2); ctx.stroke();
-    ctx.globalAlpha = 1;
-
-    // translittération (italique doré)
-    let ty = ay + 56;
-    if (v.tr) {
-      ctx.fillStyle = goldGrad(ctx, ty - 24, ty + 4, dark);
-      ctx.font = 'italic 30px "Cormorant Garamond", Georgia, serif';
-      wrapLines(ctx, v.tr, S - 320).slice(0, 2).forEach(function (ln) { ctx.fillText(ln, S / 2, ty); ty += 38; });
-      ty += 14;
-    }
-
-    // traduction
-    ctx.fillStyle = col.soft;
-    ctx.font = 'italic 38px "Cormorant Garamond", Georgia, serif';
-    wrapLines(ctx, (v.trad || ''), S - 290).slice(0, 6).forEach(function (ln) {
-      ctx.fillText(ln, S / 2, ty); ty += 50;
+  function openShareCard(v) {
+    ensurePartage(function () {
+      window.LVDDPartage.open({
+        ar: v.ar, tr: v.tr, text: v.trad,
+        attribution: shareAttribution(v),
+        eyebrow: (EN ? 'Sūra ' : 'Sourate ') + (currentSura ? currentSura.n : '')
+      });
     });
-
-    // attribution
-    ctx.fillStyle = goldGrad(ctx, S - 172, S - 146, dark);
-    ctx.font = '500 25px "Inter", sans-serif';
-    ctx.fillText(shareAttribution(v), S / 2, S - 150);
-
-    // signature + logo concentrique
-    ctx.strokeStyle = goldGrad(ctx, S - 105, S - 79, dark); ctx.lineWidth = 1.6;
-    ctx.beginPath(); ctx.arc(S / 2 - 96, S - 92, 12, 0, 6.2832); ctx.stroke();
-    ctx.beginPath(); ctx.arc(S / 2 - 96, S - 92, 5.5, 0, 6.2832); ctx.stroke();
-    ctx.fillStyle = goldGrad(ctx, S - 104, S - 80, dark);
-    ctx.font = '500 23px "Inter", sans-serif';
-    ctx.textAlign = 'left';
-    ctx.fillText('lavoiedudedans.fr', S / 2 - 74, S - 84);
-    ctx.textAlign = 'center';
-  }
-
-  function roundRect(ctx, x, y, w, h, r) {
-    ctx.beginPath();
-    ctx.moveTo(x + r, y);
-    ctx.arcTo(x + w, y, x + w, y + h, r);
-    ctx.arcTo(x + w, y + h, x, y + h, r);
-    ctx.arcTo(x, y + h, x, y, r);
-    ctx.arcTo(x, y, x + w, y, r);
-    ctx.closePath();
-  }
-
-  let shareOverlay = null;
-  async function openShareCard(v) {
-    if (shareOverlay) shareOverlay.remove();
-    const initialDark = document.documentElement.getAttribute('data-theme') === 'dark';
-
-    const ov = document.createElement('div');
-    ov.className = 'partage-overlay';
-    ov.innerHTML =
-      '<div class="partage-box">' +
-        '<canvas class="partage-canvas"></canvas>' +
-        '<div class="partage-actions">' +
-          '<button type="button" class="partage-btn" data-act="theme">' + (EN ? 'Day / Night' : 'Jour / Nuit') + '</button>' +
-          '<button type="button" class="partage-btn partage-btn--gold" data-act="share">' + (EN ? 'Share' : 'Partager') + '</button>' +
-          '<button type="button" class="partage-btn" data-act="dl">' + (EN ? 'Download' : 'Télécharger') + '</button>' +
-        '</div>' +
-        '<button type="button" class="partage-close" aria-label="' + (EN ? 'Close' : 'Fermer') + '">✕</button>' +
-      '</div>';
-    document.body.appendChild(ov);
-    shareOverlay = ov;
-
-    const canvas = ov.querySelector('.partage-canvas');
-    let theme = initialDark ? 'dark' : 'light';
-
-    try {
-      await Promise.all([
-        document.fonts.load('700 76px "Amiri"'),
-        document.fonts.load('italic 38px "Cormorant Garamond"'),
-        document.fonts.load('500 26px "Inter"')
-      ]);
-    } catch (e) {}
-
-    function paint() { drawCard(canvas, v, theme); }
-    paint();
-
-    ov.querySelector('[data-act="theme"]').addEventListener('click', function () {
-      theme = theme === 'dark' ? 'light' : 'dark'; paint();
-    });
-    ov.querySelector('[data-act="dl"]').addEventListener('click', function () {
-      const a = document.createElement('a');
-      a.href = canvas.toDataURL('image/png');
-      a.download = 'lavoiedudedans-' + (currentSura ? currentSura.n : '') + '-' + v.n + '.png';
-      a.click();
-    });
-    ov.querySelector('[data-act="share"]').addEventListener('click', function () {
-      canvas.toBlob(async function (blob) {
-        const file = new File([blob], 'lavoiedudedans.png', { type: 'image/png' });
-        const txt = 'lavoiedudedans.fr';
-        if (navigator.canShare && navigator.canShare({ files: [file] })) {
-          try { await navigator.share({ files: [file], text: txt }); } catch (e) {}
-        } else {
-          const a = document.createElement('a');
-          a.href = canvas.toDataURL('image/png');
-          a.download = 'lavoiedudedans-' + v.n + '.png';
-          a.click();
-        }
-      }, 'image/png');
-    });
-    function close() { ov.remove(); shareOverlay = null; }
-    ov.querySelector('.partage-close').addEventListener('click', close);
-    ov.addEventListener('click', function (e) { if (e.target === ov) close(); });
   }
 })();

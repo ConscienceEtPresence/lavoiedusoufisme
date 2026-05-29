@@ -348,6 +348,23 @@
   transform: translateY(-2px);
   background: #d4a04b;
 }
+.nom-fiche__share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin-left: .6rem;
+  padding: .6rem 1.2rem;
+  background: none;
+  color: var(--turquoise);
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  font-family: 'Inter', sans-serif;
+  font-size: .82rem;
+  letter-spacing: .06em;
+  cursor: pointer;
+  transition: color .25s ease, border-color .25s ease;
+}
+.nom-fiche__share-btn:hover { color: var(--gold); border-color: var(--gold); }
 
 /* === Mode méditation plein écran (99 Noms) === */
 .nom-med-mode {

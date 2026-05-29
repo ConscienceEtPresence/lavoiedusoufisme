@@ -11,6 +11,18 @@
   let currentFilter = 'all';
   let currentIndex = 0;
 
+  function ensurePartage(cb) {
+    if (window.LVDDPartage) { cb(); return; }
+    let s = document.querySelector('script[data-partage-js]');
+    if (!s) {
+      s = document.createElement('script');
+      s.src = '../../assets/js/partage.js?v=1';
+      s.dataset.partageJs = '1';
+      document.head.appendChild(s);
+    }
+    s.addEventListener('load', function () { if (window.LVDDPartage) cb(); });
+  }
+
   const ND_EN = document.documentElement.lang === 'en';
   const ND_T = ND_EN ? {
     loadError: 'Unable to load the data.',
@@ -169,6 +181,7 @@
         <button class="nom-fiche__meditate-btn" data-action="meditate-nom">
           ${ND_T.meditate}
         </button>
+        <button class="nom-fiche__share-btn" data-action="share-nom">✦ ${ND_EN ? 'Share' : 'Partager'}</button>
       </div>
       <div class="nom-fiche__nav">
         <button data-nav="prev">${ND_T.prev}</button>
@@ -193,6 +206,17 @@
     if (e.target.closest('[data-action="meditate-nom"]')) {
       const n = DATA.noms[currentIndex];
       if (n) openNomMeditation(n);
+      return;
+    }
+    if (e.target.closest('[data-action="share-nom"]')) {
+      const n = DATA.noms[currentIndex];
+      if (n) ensurePartage(function () {
+        window.LVDDPartage.open({
+          ar: n.ar, tr: n.tr, text: n.sens_court,
+          attribution: (ND_EN ? 'The 99 Names' : 'Les 99 Noms') + ' · ' + n.fr,
+          eyebrow: (ND_EN ? 'Name ' : 'Nom ') + n.n
+        });
+      });
       return;
     }
     const nav = e.target.closest('[data-nav]');

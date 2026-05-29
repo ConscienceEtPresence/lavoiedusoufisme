@@ -90,46 +90,61 @@
 
     root.appendChild(cover);
 
+    /* Mode « commentaire dépliable » verset par verset (activé via data-commentaire="inline") */
+    const inlineMode = mount.dataset.commentaire === 'inline';
+
     /* ============ PARTIE 1 — LA LECTURE ============ */
     const reading = document.createElement('section');
     reading.className = 'coran-reading';
 
     const hint = document.createElement('p');
     hint.className = 'coran-hint';
-    hint.textContent = T.hint;
+    hint.textContent = inlineMode
+      ? (EN ? 'Touch a verse number for its translation, a word to study it, or “commentary” to unfold it.'
+            : 'Touchez un numéro de verset pour sa traduction, un mot pour l’étudier, ou « commentaire » pour le déplier.')
+      : T.hint;
     reading.appendChild(hint);
+
+    if (inlineMode && d.intro) {
+      const intro = document.createElement('p');
+      intro.className = 'coran-study__intro';
+      intro.innerHTML = d.intro;
+      reading.appendChild(intro);
+    }
 
     if (d.basmala) reading.appendChild(buildBasmala(d.basmala));
 
     d.versets.forEach(function (v) {
-      reading.appendChild(buildReadingVerse(v));
+      reading.appendChild(inlineMode ? buildInlineVerse(v) : buildReadingVerse(v));
     });
     root.appendChild(reading);
 
-    /* ============ PARTIE 2 — L'ÉTUDE ============ */
-    const study = document.createElement('section');
-    study.className = 'coran-study';
+    /* ============ PARTIE 2 — L'ÉTUDE (mode classique uniquement) ============ */
+    if (!inlineMode) {
+      const study = document.createElement('section');
+      study.className = 'coran-study';
 
-    const head = document.createElement('header');
-    head.className = 'coran-study__head';
-    head.innerHTML =
-      '<div class="coran-study__rule"></div>' +
-      '<h2 class="coran-study__title">' + T.studyTitle + ' — ' + T.sura.toLowerCase() +
-      ' ' + esc(d.nom_tr) + '</h2>' +
-      '<p class="coran-study__sub">' + T.studySub + '</p>';
-    study.appendChild(head);
+      const head = document.createElement('header');
+      head.className = 'coran-study__head';
+      head.innerHTML =
+        '<div class="coran-study__rule"></div>' +
+        '<h2 class="coran-study__title">' + T.studyTitle + ' — ' + T.sura.toLowerCase() +
+        ' ' + esc(d.nom_tr) + '</h2>' +
+        '<p class="coran-study__sub">' + T.studySub + '</p>';
+      study.appendChild(head);
 
-    if (d.intro) {
-      const intro = document.createElement('p');
-      intro.className = 'coran-study__intro';
-      intro.innerHTML = d.intro;
-      study.appendChild(intro);
+      if (d.intro) {
+        const intro = document.createElement('p');
+        intro.className = 'coran-study__intro';
+        intro.innerHTML = d.intro;
+        study.appendChild(intro);
+      }
+
+      d.versets.forEach(function (v) {
+        study.appendChild(buildStudyVerse(v));
+      });
+      root.appendChild(study);
     }
-
-    d.versets.forEach(function (v) {
-      study.appendChild(buildStudyVerse(v));
-    });
-    root.appendChild(study);
 
     /* pied */
     const foot = document.createElement('div');
@@ -199,6 +214,62 @@
     cv.appendChild(num);
     cv.appendChild(buildArabic(v));
     cv.appendChild(tr);
+    return cv;
+  }
+
+  /* ---- verset « inline » : lecture + commentaire dépliable sur place ---- */
+  function buildInlineVerse(v) {
+    const cv = document.createElement('article');
+    cv.className = 'cv cv--read cv--inline';
+
+    const tr = document.createElement('p');
+    tr.className = 'cv__trad';
+    tr.textContent = v.trad || '';
+    tr.hidden = true;
+
+    const num = document.createElement('button');
+    num.type = 'button';
+    num.className = 'cv__num';
+    num.textContent = v.n;
+    num.setAttribute('aria-label', (EN ? 'Verse ' : 'Verset ') + v.n);
+    num.addEventListener('click', function () {
+      tr.hidden = !tr.hidden;
+      num.classList.toggle('is-open', !tr.hidden);
+    });
+
+    cv.appendChild(num);
+    cv.appendChild(buildArabic(v));
+    cv.appendChild(tr);
+
+    if (v.commentaire || (v.themes && v.themes.length)) {
+      const label = EN ? 'Commentary' : 'Commentaire';
+      const toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.className = 'cv__comment-toggle';
+      toggle.textContent = '▾ ' + label;
+
+      const panel = document.createElement('div');
+      panel.className = 'cv__study';
+      panel.hidden = true;
+      let html = '';
+      if (v.themes && v.themes.length) {
+        html += '<div class="cv__themes">' +
+          v.themes.map(function (t) { return '<span class="cv__theme">' + esc(t) + '</span>'; }).join('') +
+          '</div>';
+      }
+      if (v.commentaire) html += '<p>' + v.commentaire + '</p>';
+      panel.innerHTML = html;
+
+      toggle.addEventListener('click', function () {
+        panel.hidden = !panel.hidden;
+        toggle.classList.toggle('is-open', !panel.hidden);
+        toggle.textContent = (panel.hidden ? '▾ ' : '▴ ') + label;
+      });
+
+      cv.appendChild(toggle);
+      cv.appendChild(panel);
+    }
+
     return cv;
   }
 

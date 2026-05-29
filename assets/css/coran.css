@@ -475,3 +475,23 @@ button.cv__num.is-open {
   color: #fff;
   border-color: var(--gold);
 }
+
+/* --- Commentaire dépliable par verset (mode inline) --- */
+.cv--inline { padding-bottom: var(--space-sm); }
+.cv__comment-toggle {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  padding: 0.25rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+.cv__comment-toggle:hover { color: var(--gold-soft); }
+.cv__comment-toggle.is-open { color: var(--gold-soft); }
+.cv--inline .cv__study { margin-top: var(--space-sm); }

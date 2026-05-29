@@ -8,9 +8,9 @@
   if (!mount) return;
   var EN = document.documentElement.lang === 'en';
   var T = EN
-    ? { eyebrow: 'Word of the day', invite: 'A word is offered to you today.', tap: 'Touch to reveal it',
+    ? { eyebrow: 'The word offered', invite: 'A word is offered to you today.', tap: 'Touch to reveal it',
         meditate: 'To meditate', share: 'Offer', deeper: 'Go further →' }
-    : { eyebrow: 'Le mot du jour', invite: 'Un mot vous est offert aujourd’hui.', tap: 'Touchez pour le découvrir',
+    : { eyebrow: 'Le mot offert', invite: 'Un mot vous est offert aujourd’hui.', tap: 'Touchez pour le découvrir',
         meditate: 'À méditer', share: 'Offrir', deeper: 'Aller plus loin →' };
 
   var STAR = '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">' +
@@ -62,8 +62,8 @@
         '</div>';
     }
 
-    var sendIcon = '<svg class="mdj-send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">' +
-      '<path d="M21.5 2.5 L11 13" /><path d="M21.5 2.5 L15 21 L11 13 L3 9 z" /></svg>';
+    var sendIcon = '<svg class="mdj-send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      '<path d="M2.5 13 C6 9.5 9 9.5 12 12" /><path d="M12 12 C15 9.5 18 9.5 21.5 13" /></svg>';
 
     mount.innerHTML =
       '<div class="mdj-veil" id="mdj-veil">' +

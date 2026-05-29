@@ -49,8 +49,8 @@
       var prose = String(it.prose || '').split(/\n\n/).slice(0, 2).join(' ');
       if (prose || it.question) {
         med = '<div class="mdj-section"><span class="mdj-label">' + T.meditate + '</span>' +
-          (prose ? '<p>' + esc(prose) + '</p>' : '') +
-          (it.question ? '<p class="mdj-question">' + esc(it.question) + '</p>' : '') + '</div>';
+          (prose ? '<p>' + prose + '</p>' : '') +
+          (it.question ? '<p class="mdj-question">' + it.question + '</p>' : '') + '</div>';
       }
       return '<div class="mdj-ar" lang="ar" dir="rtl">' + esc(it.ar) + '</div>' +
         '<div class="mdj-tr">' + esc(it.tr) + '</div>' +

@@ -174,5 +174,27 @@
 .dechif-letter__ar { font-family: var(--font-arabic); font-size: 1.6rem; color: var(--ink-title); }
 .dechif-letter__tr { font-family: var(--font-sans); font-size: 0.7rem; color: var(--ink-mute); }
 
+/* jardin de beaux mots */
+.mots-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-md); max-width: 60rem; margin: 0 auto; }
+.mot-card {
+  position: relative;
+  padding: var(--space-lg) var(--space-md) var(--space-md);
+  background: linear-gradient(170deg, #FFFDF8, var(--paper-deep));
+  border: 1px solid var(--line); border-radius: 16px; text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.mot-card:hover { transform: translateY(-3px); border-color: var(--gold); box-shadow: 0 14px 30px -22px rgba(27,42,78,0.5); }
+.mot-card__ar { font-family: var(--font-arabic); font-size: 2.6rem; line-height: 1.6; color: var(--gold); }
+.mot-card__tr { font-family: var(--font-display); font-style: italic; font-size: 1.1rem; color: var(--ink-title); }
+.mot-card__sens { font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); margin: 0.15rem 0 0.5rem; }
+.mot-card__note { font-family: var(--font-display); font-size: 1.02rem; line-height: 1.5; color: var(--ink-soft); }
+.mot-card__say {
+  position: absolute; top: 0.6rem; right: 0.6rem;
+  width: 2rem; height: 2rem; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--paper); color: var(--ink-soft);
+  font-size: 0.85rem; cursor: pointer; line-height: 1; transition: border-color 0.2s, transform 0.2s;
+}
+.mot-card__say:hover { border-color: var(--gold); transform: scale(1.1); }
+
 .arabe-foot { text-align: center; padding: var(--space-2xl) var(--space-lg); }
 .arabe-foot a { font-family: var(--font-sans); font-size: 0.85rem; color: var(--gold); text-decoration: none; }

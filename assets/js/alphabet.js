@@ -11,6 +11,7 @@
   var sol = document.getElementById('lune-solaires');
   var lun = document.getElementById('lune-lunaires');
   var dechif = document.getElementById('dechif');
+  var motsEl = document.getElementById('beaux-mots');
 
   var T = EN ? {
     sound: 'Sound', example: 'A word that holds it', sun: 'Sun letter', moon: 'Moon letter',
@@ -97,6 +98,22 @@
         '<div class="dechif-word__sens"><em>' + esc(w.tr) + '</em> — ' + esc(w.sens) + '</div>' +
         '<div class="dechif-letters">' + letters + '</div>';
       dechif.appendChild(el);
+    });
+
+    // jardin de beaux mots
+    if (motsEl && d.mots) d.mots.forEach(function (m) {
+      var el = document.createElement('div'); el.className = 'mot-card';
+      el.innerHTML =
+        '<div class="mot-card__ar" lang="ar" dir="rtl">' + esc(m.ar) + '</div>' +
+        '<div class="mot-card__tr">' + esc(m.tr) + '</div>' +
+        '<div class="mot-card__sens">' + esc(m.sens) + '</div>' +
+        '<div class="mot-card__note">' + esc(m.note) + '</div>' +
+        (HAS_TTS ? '<button type="button" class="mot-card__say" aria-label="' + esc(T.listen) + '" data-say="' + esc(m.ar) + '">🔊</button>' : '');
+      var b = el.querySelector('.mot-card__say');
+      if (b) b.addEventListener('click', function () { speak(b.getAttribute('data-say')); });
+      var ar = el.querySelector('.mot-card__ar');
+      if (ar && HAS_TTS) { ar.style.cursor = 'pointer'; ar.addEventListener('click', function () { speak(m.ar); }); }
+      motsEl.appendChild(el);
     });
   });
 

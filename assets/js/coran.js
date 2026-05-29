@@ -586,7 +586,7 @@
     // traduction
     ctx.fillStyle = col.soft;
     ctx.font = 'italic 38px "Cormorant Garamond", Georgia, serif';
-    wrapLines(ctx, '« ' + (v.trad || '') + ' »', S - 290).slice(0, 6).forEach(function (ln) {
+    wrapLines(ctx, (v.trad || ''), S - 290).slice(0, 6).forEach(function (ln) {
       ctx.fillText(ln, S / 2, ty); ty += 50;
     });
 
@@ -662,7 +662,7 @@
     ov.querySelector('[data-act="share"]').addEventListener('click', function () {
       canvas.toBlob(async function (blob) {
         const file = new File([blob], 'lavoiedudedans.png', { type: 'image/png' });
-        const txt = '« ' + (v.trad || '') + ' » — ' + shareAttribution(v) + ' · lavoiedudedans.fr';
+        const txt = (v.trad || '') + ' — ' + shareAttribution(v) + ' · lavoiedudedans.fr';
         if (navigator.canShare && navigator.canShare({ files: [file] })) {
           try { await navigator.share({ files: [file], text: txt }); } catch (e) {}
         } else {

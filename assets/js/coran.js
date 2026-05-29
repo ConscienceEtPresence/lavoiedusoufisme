@@ -33,6 +33,9 @@
     revel: { 'mecquoise': 'mecquoise', 'médinoise': 'médinoise' }
   };
 
+  const shareEnabled = mount.dataset.partage === 'on';
+  let currentSura = null;
+
   const sn = mount.dataset.sourate;
   fetch(DATA_ROOT + 'data/coran/' + sn + '.json')
     .then(function (r) { return r.json(); })
@@ -47,6 +50,7 @@
   }
 
   function render(d) {
+    currentSura = { n: d.n, nom_tr: d.nom_tr, nom_fr: d.nom_fr };
     const root = document.createElement('div');
     root.className = 'coran';
 
@@ -335,6 +339,15 @@
       cv.appendChild(panel);
     }
 
+    if (shareEnabled) {
+      const share = document.createElement('button');
+      share.type = 'button';
+      share.className = 'cv__share';
+      share.textContent = '✦ ' + (EN ? 'Share' : 'Partager');
+      share.addEventListener('click', function () { openShareCard(v); });
+      cv.appendChild(share);
+    }
+
     return cv;
   }
 
@@ -453,4 +466,171 @@
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeWord();
   });
+
+  /* ============================================================
+     PARTAGE — génère une carte image (canvas) depuis un verset
+     ============================================================ */
+  function shareAttribution(v) {
+    const s = currentSura || {};
+    const base = (EN ? 'Quran' : 'Coran') + ' · ' + (s.nom_tr || '') ;
+    return base + ' — ' + (s.n || '') + ' : ' + v.n;
+  }
+
+  function wrapLines(ctx, text, maxWidth) {
+    const words = String(text).split(/\s+/);
+    const lines = [];
+    let line = '';
+    for (let i = 0; i < words.length; i++) {
+      const test = line ? line + ' ' + words[i] : words[i];
+      if (ctx.measureText(test).width > maxWidth && line) {
+        lines.push(line);
+        line = words[i];
+      } else {
+        line = test;
+      }
+    }
+    if (line) lines.push(line);
+    return lines;
+  }
+
+  function drawCard(canvas, v, theme) {
+    const S = 1080;
+    canvas.width = S; canvas.height = S;
+    const ctx = canvas.getContext('2d');
+    const dark = theme === 'dark';
+
+    const col = dark
+      ? { bg1:'#141A26', bg2:'#0E1019', ink:'#F5EFE0', soft:'#C9C0AA', gold:'#D4A93A', line:'#3A4255' }
+      : { bg1:'#FFFDF8', bg2:'#F0E6D2', ink:'#1B2A4E', soft:'#3A4D63', gold:'#B8860B', line:'#DDCDAE' };
+
+    // fond
+    const g = ctx.createLinearGradient(0, 0, S, S);
+    g.addColorStop(0, col.bg1); g.addColorStop(1, col.bg2);
+    ctx.fillStyle = g; ctx.fillRect(0, 0, S, S);
+
+    // cadre
+    ctx.strokeStyle = col.gold; ctx.globalAlpha = 0.55; ctx.lineWidth = 2;
+    roundRect(ctx, 54, 54, S - 108, S - 108, 26); ctx.stroke();
+    ctx.globalAlpha = 1;
+
+    ctx.textAlign = 'center';
+
+    // ornement haut
+    ctx.fillStyle = col.gold; ctx.font = '40px "Inter", sans-serif';
+    ctx.fillText('✦', S / 2, 168);
+
+    // arabe (centre)
+    ctx.direction = 'rtl';
+    ctx.fillStyle = col.ink;
+    let aSize = v.ar && v.ar.length > 60 ? 56 : 76;
+    ctx.font = '700 ' + aSize + 'px "Amiri", serif';
+    let aLines = wrapLines(ctx, v.ar, S - 260);
+    while (aLines.length > 4 && aSize > 38) {
+      aSize -= 6; ctx.font = '700 ' + aSize + 'px "Amiri", serif';
+      aLines = wrapLines(ctx, v.ar, S - 260);
+    }
+    const aLH = aSize * 1.6;
+    let ay = S / 2 - (aLines.length - 1) * aLH / 2 - 40;
+    aLines.forEach(function (ln) { ctx.fillText(ln, S / 2, ay); ay += aLH; });
+    ctx.direction = 'ltr';
+
+    // filet or
+    ctx.strokeStyle = col.gold; ctx.globalAlpha = 0.7; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(S / 2 - 50, ay + 6); ctx.lineTo(S / 2 + 50, ay + 6); ctx.stroke();
+    ctx.globalAlpha = 1;
+
+    // traduction
+    ctx.fillStyle = col.soft;
+    ctx.font = 'italic 38px "Cormorant Garamond", Georgia, serif';
+    const tLines = wrapLines(ctx, '« ' + (v.trad || '') + ' »', S - 280);
+    let ty = ay + 78;
+    tLines.slice(0, 6).forEach(function (ln) { ctx.fillText(ln, S / 2, ty); ty += 52; });
+
+    // attribution
+    ctx.fillStyle = col.gold;
+    ctx.font = '500 26px "Inter", sans-serif';
+    ctx.fillText(shareAttribution(v), S / 2, S - 150);
+
+    // signature + logo
+    ctx.strokeStyle = col.gold; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(S / 2 - 92, S - 92, 13, 0, 6.2832); ctx.stroke();
+    ctx.beginPath(); ctx.arc(S / 2 - 92, S - 92, 6, 0, 6.2832); ctx.stroke();
+    ctx.fillStyle = col.gold;
+    ctx.font = '500 24px "Inter", sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText('lavoiedudedans.fr', S / 2 - 68, S - 84);
+    ctx.textAlign = 'center';
+  }
+
+  function roundRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
+
+  let shareOverlay = null;
+  async function openShareCard(v) {
+    if (shareOverlay) shareOverlay.remove();
+    const initialDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+    const ov = document.createElement('div');
+    ov.className = 'partage-overlay';
+    ov.innerHTML =
+      '<div class="partage-box">' +
+        '<canvas class="partage-canvas"></canvas>' +
+        '<div class="partage-actions">' +
+          '<button type="button" class="partage-btn" data-act="theme">' + (EN ? 'Day / Night' : 'Jour / Nuit') + '</button>' +
+          '<button type="button" class="partage-btn partage-btn--gold" data-act="share">' + (EN ? 'Share' : 'Partager') + '</button>' +
+          '<button type="button" class="partage-btn" data-act="dl">' + (EN ? 'Download' : 'Télécharger') + '</button>' +
+        '</div>' +
+        '<button type="button" class="partage-close" aria-label="' + (EN ? 'Close' : 'Fermer') + '">✕</button>' +
+      '</div>';
+    document.body.appendChild(ov);
+    shareOverlay = ov;
+
+    const canvas = ov.querySelector('.partage-canvas');
+    let theme = initialDark ? 'dark' : 'light';
+
+    try {
+      await Promise.all([
+        document.fonts.load('700 76px "Amiri"'),
+        document.fonts.load('italic 38px "Cormorant Garamond"'),
+        document.fonts.load('500 26px "Inter"')
+      ]);
+    } catch (e) {}
+
+    function paint() { drawCard(canvas, v, theme); }
+    paint();
+
+    ov.querySelector('[data-act="theme"]').addEventListener('click', function () {
+      theme = theme === 'dark' ? 'light' : 'dark'; paint();
+    });
+    ov.querySelector('[data-act="dl"]').addEventListener('click', function () {
+      const a = document.createElement('a');
+      a.href = canvas.toDataURL('image/png');
+      a.download = 'lavoiedudedans-' + (currentSura ? currentSura.n : '') + '-' + v.n + '.png';
+      a.click();
+    });
+    ov.querySelector('[data-act="share"]').addEventListener('click', function () {
+      canvas.toBlob(async function (blob) {
+        const file = new File([blob], 'lavoiedudedans.png', { type: 'image/png' });
+        const txt = '« ' + (v.trad || '') + ' » — ' + shareAttribution(v) + ' · lavoiedudedans.fr';
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+          try { await navigator.share({ files: [file], text: txt }); } catch (e) {}
+        } else {
+          const a = document.createElement('a');
+          a.href = canvas.toDataURL('image/png');
+          a.download = 'lavoiedudedans-' + v.n + '.png';
+          a.click();
+        }
+      }, 'image/png');
+    });
+    function close() { ov.remove(); shareOverlay = null; }
+    ov.querySelector('.partage-close').addEventListener('click', close);
+    ov.addEventListener('click', function (e) { if (e.target === ov) close(); });
+  }
 })();

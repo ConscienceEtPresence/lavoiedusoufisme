@@ -574,3 +574,53 @@ button.cv__num.is-open {
   cursor: pointer;
 }
 .coran-jumpverse button:hover { color: var(--gold-soft); }
+
+/* --- Partager un verset (carte image) --- */
+.cv__share {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  margin-left: var(--space-md);
+  padding: 0.25rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--turquoise);
+  background: none; border: none; cursor: pointer;
+  transition: color 0.25s ease;
+}
+.cv__share:hover { color: var(--gold); }
+.partage-overlay {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(15, 24, 48, 0.7);
+  backdrop-filter: blur(4px);
+  padding: var(--space-md);
+}
+.partage-box { position: relative; width: min(92vw, 30rem); text-align: center; }
+.partage-canvas {
+  width: 100%; height: auto;
+  border-radius: 14px;
+  box-shadow: 0 30px 70px -20px rgba(0,0,0,0.6);
+  display: block;
+}
+.partage-actions {
+  display: flex; flex-wrap: wrap; gap: var(--space-sm);
+  justify-content: center; margin-top: var(--space-md);
+}
+.partage-btn {
+  font-family: var(--font-sans); font-size: 0.78rem;
+  letter-spacing: 0.08em; color: #F5EFE0;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(212,169,58,0.5);
+  border-radius: 999px; padding: 0.6rem 1.2rem; cursor: pointer;
+  transition: background 0.25s ease;
+}
+.partage-btn:hover { background: rgba(255,255,255,0.16); }
+.partage-btn--gold { background: var(--gold); border-color: var(--gold); color: #1B2A4E; font-weight: 600; }
+.partage-close {
+  position: absolute; top: -2.6rem; right: 0;
+  width: 2.2rem; height: 2.2rem;
+  font-size: 1.1rem; color: #F5EFE0;
+  background: rgba(255,255,255,0.1); border: none; border-radius: 999px; cursor: pointer;
+}

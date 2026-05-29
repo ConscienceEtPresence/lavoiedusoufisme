@@ -1,0 +1,133 @@
+/* ============================================================
+   Le mot du jour — page de révélation
+   ============================================================ */
+.mdj {
+  background: radial-gradient(120% 80% at 50% -10%, #FFFDF8 0%, var(--paper) 50%, var(--paper-warm) 100%);
+  min-height: 100vh;
+}
+.mdj main { overflow: hidden; }
+
+.mdj-mount {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 9vh, 6rem) var(--space-lg) var(--space-2xl);
+  text-align: center;
+  position: relative;
+}
+
+/* ---- le voile (avant révélation) ---- */
+.mdj-veil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  cursor: pointer;
+  min-height: 60vh;
+  transition: opacity 1s ease, transform 1s ease;
+}
+.mdj-veil.is-gone { opacity: 0; transform: scale(0.94); pointer-events: none; }
+
+.mdj-star {
+  width: clamp(120px, 30vw, 180px);
+  height: clamp(120px, 30vw, 180px);
+  color: var(--gold);
+  animation: mdjPulse 3.4s ease-in-out infinite;
+}
+.mdj-star svg { width: 100%; height: 100%; display: block; }
+@keyframes mdjPulse {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.78; filter: drop-shadow(0 0 10px rgba(184,134,11,0.25)); }
+  50%      { transform: scale(1.06) rotate(22.5deg); opacity: 1; filter: drop-shadow(0 0 26px rgba(184,134,11,0.45)); }
+}
+.mdj-invite {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  color: var(--ink-soft);
+  font-style: italic;
+  max-width: 22rem;
+  margin: 0 auto;
+}
+.mdj-tap {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ---- le mot révélé ---- */
+.mdj-card { animation: mdjReveal 1.4s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes mdjReveal {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: none; }
+}
+.mdj-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-md);
+}
+.mdj-ar {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  font-size: clamp(3rem, 12vw, 4.6rem);
+  line-height: 1.5;
+  color: var(--ink-title);
+}
+.mdj-tr {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.3rem, 4vw, 1.7rem);
+  color: var(--gold);
+  margin-top: 0.2rem;
+}
+.mdj-rule { width: 56px; height: 1px; background: var(--gold-soft); margin: var(--space-lg) auto; }
+.mdj-def {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  color: var(--ink-title);
+  margin: 0 auto var(--space-lg);
+  max-width: 26rem;
+}
+.mdj-section { margin: var(--space-lg) auto 0; max-width: 30rem; }
+.mdj-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-sm);
+}
+.mdj-section p {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.4vw, 1.35rem);
+  line-height: 1.8;
+  color: var(--ink-soft);
+}
+.mdj-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-top: var(--space-2xl);
+}
+.mdj-btn {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--gold);
+  background: none;
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.mdj-btn--gold { background: var(--gold); color: #FFFDF8; border-color: var(--gold); }
+.mdj-btn:hover { background: var(--gold); color: #FFFDF8; }
+.mdj-btn--gold:hover { background: var(--gold-soft); border-color: var(--gold-soft); }

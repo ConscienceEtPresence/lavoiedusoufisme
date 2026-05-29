@@ -100,21 +100,43 @@
       dechif.appendChild(el);
     });
 
-    // jardin de beaux mots
-    if (motsEl && d.mots) d.mots.forEach(function (m) {
-      var el = document.createElement('div'); el.className = 'mot-card';
-      el.innerHTML =
-        '<div class="mot-card__ar" lang="ar" dir="rtl">' + esc(m.ar) + '</div>' +
-        '<div class="mot-card__tr">' + esc(m.tr) + '</div>' +
-        '<div class="mot-card__sens">' + esc(m.sens) + '</div>' +
-        '<div class="mot-card__note">' + esc(m.note) + '</div>' +
-        (HAS_TTS ? '<button type="button" class="mot-card__say" aria-label="' + esc(T.listen) + '" data-say="' + esc(m.ar) + '">🔊</button>' : '');
-      var b = el.querySelector('.mot-card__say');
-      if (b) b.addEventListener('click', function () { speak(b.getAttribute('data-say')); });
-      var ar = el.querySelector('.mot-card__ar');
-      if (ar && HAS_TTS) { ar.style.cursor = 'pointer'; ar.addEventListener('click', function () { speak(m.ar); }); }
-      motsEl.appendChild(el);
-    });
+    // jardin de beaux mots — groupés par familles
+    if (motsEl && d.mots) {
+      var FAM_ORDER = ['lumiere', 'amour', 'coeur', 'voie', 'vertus', 'connaissance', 'pratique', 'reel'];
+      var FAM_LABELS = EN ? {
+        lumiere: 'Light', amour: 'Love', coeur: 'The heart', voie: 'The way',
+        vertus: 'Virtues', connaissance: 'Knowing', pratique: 'Practice', reel: 'The Real',
+        autres: 'Others'
+      } : {
+        lumiere: 'Lumière', amour: 'Amour', coeur: 'Le cœur', voie: 'La voie',
+        vertus: 'Vertus', connaissance: 'Connaissance', pratique: 'Pratique', reel: 'Le Réel',
+        autres: 'Autres'
+      };
+      var groups = {};
+      d.mots.forEach(function (m) { var k = m.famille || 'autres'; (groups[k] = groups[k] || []).push(m); });
+      var order = FAM_ORDER.filter(function (k) { return groups[k]; });
+      Object.keys(groups).forEach(function (k) { if (order.indexOf(k) === -1) order.push(k); });
+      order.forEach(function (fam) {
+        var h = document.createElement('h3'); h.className = 'mots-famille'; h.textContent = FAM_LABELS[fam] || fam;
+        motsEl.appendChild(h);
+        var g = document.createElement('div'); g.className = 'mots-grid__inner';
+        groups[fam].forEach(function (m) {
+          var el = document.createElement('div'); el.className = 'mot-card';
+          el.innerHTML =
+            '<div class="mot-card__ar" lang="ar" dir="rtl">' + esc(m.ar) + '</div>' +
+            '<div class="mot-card__tr">' + esc(m.tr) + '</div>' +
+            '<div class="mot-card__sens">' + esc(m.sens) + '</div>' +
+            '<div class="mot-card__note">' + esc(m.note) + '</div>' +
+            (HAS_TTS ? '<button type="button" class="mot-card__say" aria-label="' + esc(T.listen) + '" data-say="' + esc(m.ar) + '">🔊</button>' : '');
+          var b = el.querySelector('.mot-card__say');
+          if (b) b.addEventListener('click', function () { speak(b.getAttribute('data-say')); });
+          var ar = el.querySelector('.mot-card__ar');
+          if (ar && HAS_TTS) { ar.style.cursor = 'pointer'; ar.addEventListener('click', function () { speak(m.ar); }); }
+          g.appendChild(el);
+        });
+        motsEl.appendChild(g);
+      });
+    }
   });
 
   function showDetail(L) {

@@ -175,7 +175,18 @@
 .dechif-letter__tr { font-family: var(--font-sans); font-size: 0.7rem; color: var(--ink-mute); }
 
 /* jardin de beaux mots */
-.mots-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-md); max-width: 60rem; margin: 0 auto; }
+.mots-grid { max-width: 60rem; margin: 0 auto; }
+.mots-famille {
+  font-family: var(--font-display); font-weight: 500;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--gold); text-align: center;
+  margin: var(--space-xl) 0 var(--space-md);
+  letter-spacing: 0.04em;
+}
+.mots-famille::before, .mots-famille::after {
+  content: '·'; color: var(--gold-soft); margin: 0 0.8rem; font-size: 0.8em;
+}
+.mots-grid__inner { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-md); }
 .mot-card {
   position: relative;
   padding: var(--space-lg) var(--space-md) var(--space-md);

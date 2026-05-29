@@ -1,94 +1,1019 @@
 {
   "lettres": [
-    { "ordre": 1,  "nom": "alif",  "ar": "ا", "tr": "ā / ʾ", "son": "un long â, ou un simple appui de la voix", "solaire": false, "connecte": false, "exemple": { "mot": "الله", "tr": "Allāh", "sens": "Dieu" } },
-    { "ordre": 2,  "nom": "bāʾ",   "ar": "ب", "tr": "b", "son": "le b de « bonté »", "solaire": false, "connecte": true, "exemple": { "mot": "بَرَكَة", "tr": "baraka", "sens": "la bénédiction" } },
-    { "ordre": 3,  "nom": "tāʾ",   "ar": "ت", "tr": "t", "son": "le t de « table »", "solaire": true, "connecte": true, "exemple": { "mot": "تَوْبَة", "tr": "tawba", "sens": "le retour, le repentir" } },
-    { "ordre": 4,  "nom": "thāʾ",  "ar": "ث", "tr": "th", "son": "le th doux de l'anglais « think »", "solaire": true, "connecte": true, "exemple": { "mot": "ثِقَة", "tr": "thiqa", "sens": "la confiance" } },
-    { "ordre": 5,  "nom": "jīm",   "ar": "ج", "tr": "j", "son": "le j de « jardin »", "solaire": false, "connecte": true, "exemple": { "mot": "جَمَال", "tr": "jamāl", "sens": "la beauté" } },
-    { "ordre": 6,  "nom": "ḥāʾ",   "ar": "ح", "tr": "ḥ", "son": "un h soufflé du fond de la gorge", "solaire": false, "connecte": true, "exemple": { "mot": "حُبّ", "tr": "ḥubb", "sens": "l'amour" } },
-    { "ordre": 7,  "nom": "khāʾ",  "ar": "خ", "tr": "kh", "son": "la jota espagnole, le ch raclé", "solaire": false, "connecte": true, "exemple": { "mot": "خَلْوَة", "tr": "khalwa", "sens": "la retraite, le seul à seul" } },
-    { "ordre": 8,  "nom": "dāl",   "ar": "د", "tr": "d", "son": "le d de « don »", "solaire": true, "connecte": false, "exemple": { "mot": "دُعَاء", "tr": "duʿāʾ", "sens": "l'invocation" } },
-    { "ordre": 9,  "nom": "dhāl",  "ar": "ذ", "tr": "dh", "son": "le th sonore de l'anglais « this »", "solaire": true, "connecte": false, "exemple": { "mot": "ذِكْر", "tr": "dhikr", "sens": "le rappel, le souvenir de Dieu" } },
-    { "ordre": 10, "nom": "rāʾ",   "ar": "ر", "tr": "r", "son": "un r roulé, comme en espagnol", "solaire": true, "connecte": false, "exemple": { "mot": "رَحْمَة", "tr": "raḥma", "sens": "la miséricorde" } },
-    { "ordre": 11, "nom": "zāy",   "ar": "ز", "tr": "z", "son": "le z de « zèle »", "solaire": true, "connecte": false, "exemple": { "mot": "زُهْد", "tr": "zuhd", "sens": "le détachement" } },
-    { "ordre": 12, "nom": "sīn",   "ar": "س", "tr": "s", "son": "le s de « sage »", "solaire": true, "connecte": true, "exemple": { "mot": "سَلَام", "tr": "salām", "sens": "la paix" } },
-    { "ordre": 13, "nom": "shīn",  "ar": "ش", "tr": "sh", "son": "le ch de « chant »", "solaire": true, "connecte": true, "exemple": { "mot": "شَوْق", "tr": "shawq", "sens": "le désir ardent" } },
-    { "ordre": 14, "nom": "ṣād",   "ar": "ص", "tr": "ṣ", "son": "un s emphatique, prononcé en arrière", "solaire": true, "connecte": true, "exemple": { "mot": "صَبْر", "tr": "ṣabr", "sens": "la patience" } },
-    { "ordre": 15, "nom": "ḍād",   "ar": "ض", "tr": "ḍ", "son": "un d emphatique, lourd — « la lettre de l'arabe »", "solaire": true, "connecte": true, "exemple": { "mot": "ضِيَاء", "tr": "ḍiyāʾ", "sens": "la clarté, l'éclat" } },
-    { "ordre": 16, "nom": "ṭāʾ",   "ar": "ط", "tr": "ṭ", "son": "un t emphatique, sonore", "solaire": true, "connecte": true, "exemple": { "mot": "طَرِيق", "tr": "ṭarīq", "sens": "la voie, le chemin" } },
-    { "ordre": 17, "nom": "ẓāʾ",   "ar": "ظ", "tr": "ẓ", "son": "un th emphatique et sonore", "solaire": true, "connecte": true, "exemple": { "mot": "ظِلّ", "tr": "ẓill", "sens": "l'ombre" } },
-    { "ordre": 18, "nom": "ʿayn",  "ar": "ع", "tr": "ʿ", "son": "un son profond du gosier, sans équivalent français", "solaire": false, "connecte": true, "exemple": { "mot": "عِشْق", "tr": "ʿishq", "sens": "l'amour passionné" } },
-    { "ordre": 19, "nom": "ghayn", "ar": "غ", "tr": "gh", "son": "un r grasseyé, comme le r parisien", "solaire": false, "connecte": true, "exemple": { "mot": "غَيْب", "tr": "ghayb", "sens": "l'invisible, le mystère" } },
-    { "ordre": 20, "nom": "fāʾ",   "ar": "ف", "tr": "f", "son": "le f de « feu »", "solaire": false, "connecte": true, "exemple": { "mot": "فَقْر", "tr": "faqr", "sens": "la pauvreté devant Dieu" } },
-    { "ordre": 21, "nom": "qāf",   "ar": "ق", "tr": "q", "son": "un k profond, prononcé tout au fond", "solaire": false, "connecte": true, "exemple": { "mot": "قَلْب", "tr": "qalb", "sens": "le cœur" } },
-    { "ordre": 22, "nom": "kāf",   "ar": "ك", "tr": "k", "son": "le k de « clé »", "solaire": false, "connecte": true, "exemple": { "mot": "كَرَم", "tr": "karam", "sens": "la générosité" } },
-    { "ordre": 23, "nom": "lām",   "ar": "ل", "tr": "l", "son": "le l de « lumière »", "solaire": true, "connecte": true, "exemple": { "mot": "لُطْف", "tr": "luṭf", "sens": "la douceur, la grâce subtile" } },
-    { "ordre": 24, "nom": "mīm",   "ar": "م", "tr": "m", "son": "le m de « mer »", "solaire": false, "connecte": true, "exemple": { "mot": "مَحَبَّة", "tr": "maḥabba", "sens": "l'amour" } },
-    { "ordre": 25, "nom": "nūn",   "ar": "ن", "tr": "n", "son": "le n de « nuit »", "solaire": true, "connecte": true, "exemple": { "mot": "نُور", "tr": "nūr", "sens": "la lumière" } },
-    { "ordre": 26, "nom": "hāʾ",   "ar": "ه", "tr": "h", "son": "un h soufflé, comme dans « hop »", "solaire": false, "connecte": true, "exemple": { "mot": "هُدًى", "tr": "hudā", "sens": "la guidance" } },
-    { "ordre": 27, "nom": "wāw",   "ar": "و", "tr": "w / ū", "son": "le w de « oui », ou un long ou", "solaire": false, "connecte": false, "exemple": { "mot": "وَصْل", "tr": "waṣl", "sens": "l'union, la jonction" } },
-    { "ordre": 28, "nom": "yāʾ",   "ar": "ي", "tr": "y / ī", "son": "le y de « yeux », ou un long i", "solaire": false, "connecte": true, "exemple": { "mot": "يَقِين", "tr": "yaqīn", "sens": "la certitude" } }
+    {
+      "ordre": 1,
+      "nom": "alif",
+      "ar": "ا",
+      "tr": "ā / ʾ",
+      "son": "un long â, ou un simple appui de la voix",
+      "solaire": false,
+      "connecte": false,
+      "exemple": {
+        "mot": "الله",
+        "tr": "Allāh",
+        "sens": "Dieu"
+      }
+    },
+    {
+      "ordre": 2,
+      "nom": "bāʾ",
+      "ar": "ب",
+      "tr": "b",
+      "son": "le b de « bonté »",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "بَرَكَة",
+        "tr": "baraka",
+        "sens": "la bénédiction"
+      }
+    },
+    {
+      "ordre": 3,
+      "nom": "tāʾ",
+      "ar": "ت",
+      "tr": "t",
+      "son": "le t de « table »",
+      "solaire": true,
+      "connecte": true,
+      "exemple": {
+        "mot": "تَوْبَة",
+        "tr": "tawba",
+        "sens": "le retour, le repentir"
+      }
+    },
+    {
+      "ordre": 4,
+      "nom": "thāʾ",
+      "ar": "ث",
+      "tr": "th",
+      "son": "le th doux de l'anglais « think »",
+      "solaire": true,
+      "connecte": true,
+      "exemple": {
+        "mot": "ثِقَة",
+        "tr": "thiqa",
+        "sens": "la confiance"
+      }
+    },
+    {
+      "ordre": 5,
+      "nom": "jīm",
+      "ar": "ج",
+      "tr": "j",
+      "son": "le j de « jardin »",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "جَمَال",
+        "tr": "jamāl",
+        "sens": "la beauté"
+      }
+    },
+    {
+      "ordre": 6,
+      "nom": "ḥāʾ",
+      "ar": "ح",
+      "tr": "ḥ",
+      "son": "un h soufflé du fond de la gorge",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "حُبّ",
+        "tr": "ḥubb",
+        "sens": "l'amour"
+      }
+    },
+    {
+      "ordre": 7,
+      "nom": "khāʾ",
+      "ar": "خ",
+      "tr": "kh",
+      "son": "la jota espagnole, le ch raclé",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "خَلْوَة",
+        "tr": "khalwa",
+        "sens": "la retraite, le seul à seul"
+      }
+    },
+    {
+      "ordre": 8,
+      "nom": "dāl",
+      "ar": "د",
+      "tr": "d",
+      "son": "le d de « don »",
+      "solaire": true,
+      "connecte": false,
+      "exemple": {
+        "mot": "دُعَاء",
+        "tr": "duʿāʾ",
+        "sens": "l'invocation"
+      }
+    },
+    {
+      "ordre": 9,
+      "nom": "dhāl",
+      "ar": "ذ",
+      "tr": "dh",
+      "son": "le th sonore de l'anglais « this »",
+      "solaire": true,
+      "connecte": false,
+      "exemple": {
+        "mot": "ذِكْر",
+        "tr": "dhikr",
+        "sens": "le rappel, le souvenir de Dieu"
+      }
+    },
+    {
+      "ordre": 10,
+      "nom": "rāʾ",
+      "ar": "ر",
+      "tr": "r",
+      "son": "un r roulé, comme en espagnol",
+      "solaire": true,
+      "connecte": false,
+      "exemple": {
+        "mot": "رَحْمَة",
+        "tr": "raḥma",
+        "sens": "la miséricorde"
+      }
+    },
+    {
+      "ordre": 11,
+      "nom": "zāy",
+      "ar": "ز",
+      "tr": "z",
+      "son": "le z de « zèle »",
+      "solaire": true,
+      "connecte": false,
+      "exemple": {
+        "mot": "زُهْد",
+        "tr": "zuhd",
+        "sens": "le détachement"
+      }
+    },
+    {
+      "ordre": 12,
+      "nom": "sīn",
+      "ar": "س",
+      "tr": "s",
+      "son": "le s de « sage »",
+      "solaire": true,
+      "connecte": true,
+      "exemple": {
+        "mot": "سَلَام",
+        "tr": "salām",
+        "sens": "la paix"
+      }
+    },
+    {
+      "ordre": 13,
+      "nom": "shīn",
+      "ar": "ش",
+      "tr": "sh",
+      "son": "le ch de « chant »",
+      "solaire": true,
+      "connecte": true,
+      "exemple": {
+        "mot": "شَوْق",
+        "tr": "shawq",
+        "sens": "le désir ardent"
+      }
+    },
+    {
+      "ordre": 14,
+      "nom": "ṣād",
+      "ar": "ص",
+      "tr": "ṣ",
+      "son": "un s emphatique, prononcé en arrière",
+      "solaire": true,
+      "connecte": true,
+      "exemple": {
+        "mot": "صَبْر",
+        "tr": "ṣabr",
+        "sens": "la patience"
+      }
+    },
+    {
+      "ordre": 15,
+      "nom": "ḍād",
+      "ar": "ض",
+      "tr": "ḍ",
+      "son": "un d emphatique, lourd — « la lettre de l'arabe »",
+      "solaire": true,
+      "connecte": true,
+      "exemple": {
+        "mot": "ضِيَاء",
+        "tr": "ḍiyāʾ",
+        "sens": "la clarté, l'éclat"
+      }
+    },
+    {
+      "ordre": 16,
+      "nom": "ṭāʾ",
+      "ar": "ط",
+      "tr": "ṭ",
+      "son": "un t emphatique, sonore",
+      "solaire": true,
+      "connecte": true,
+      "exemple": {
+        "mot": "طَرِيق",
+        "tr": "ṭarīq",
+        "sens": "la voie, le chemin"
+      }
+    },
+    {
+      "ordre": 17,
+      "nom": "ẓāʾ",
+      "ar": "ظ",
+      "tr": "ẓ",
+      "son": "un th emphatique et sonore",
+      "solaire": true,
+      "connecte": true,
+      "exemple": {
+        "mot": "ظِلّ",
+        "tr": "ẓill",
+        "sens": "l'ombre"
+      }
+    },
+    {
+      "ordre": 18,
+      "nom": "ʿayn",
+      "ar": "ع",
+      "tr": "ʿ",
+      "son": "un son profond du gosier, sans équivalent français",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "عِشْق",
+        "tr": "ʿishq",
+        "sens": "l'amour passionné"
+      }
+    },
+    {
+      "ordre": 19,
+      "nom": "ghayn",
+      "ar": "غ",
+      "tr": "gh",
+      "son": "un r grasseyé, comme le r parisien",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "غَيْب",
+        "tr": "ghayb",
+        "sens": "l'invisible, le mystère"
+      }
+    },
+    {
+      "ordre": 20,
+      "nom": "fāʾ",
+      "ar": "ف",
+      "tr": "f",
+      "son": "le f de « feu »",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "فَقْر",
+        "tr": "faqr",
+        "sens": "la pauvreté devant Dieu"
+      }
+    },
+    {
+      "ordre": 21,
+      "nom": "qāf",
+      "ar": "ق",
+      "tr": "q",
+      "son": "un k profond, prononcé tout au fond",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "قَلْب",
+        "tr": "qalb",
+        "sens": "le cœur"
+      }
+    },
+    {
+      "ordre": 22,
+      "nom": "kāf",
+      "ar": "ك",
+      "tr": "k",
+      "son": "le k de « clé »",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "كَرَم",
+        "tr": "karam",
+        "sens": "la générosité"
+      }
+    },
+    {
+      "ordre": 23,
+      "nom": "lām",
+      "ar": "ل",
+      "tr": "l",
+      "son": "le l de « lumière »",
+      "solaire": true,
+      "connecte": true,
+      "exemple": {
+        "mot": "لُطْف",
+        "tr": "luṭf",
+        "sens": "la douceur, la grâce subtile"
+      }
+    },
+    {
+      "ordre": 24,
+      "nom": "mīm",
+      "ar": "م",
+      "tr": "m",
+      "son": "le m de « mer »",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "مَحَبَّة",
+        "tr": "maḥabba",
+        "sens": "l'amour"
+      }
+    },
+    {
+      "ordre": 25,
+      "nom": "nūn",
+      "ar": "ن",
+      "tr": "n",
+      "son": "le n de « nuit »",
+      "solaire": true,
+      "connecte": true,
+      "exemple": {
+        "mot": "نُور",
+        "tr": "nūr",
+        "sens": "la lumière"
+      }
+    },
+    {
+      "ordre": 26,
+      "nom": "hāʾ",
+      "ar": "ه",
+      "tr": "h",
+      "son": "un h soufflé, comme dans « hop »",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "هُدًى",
+        "tr": "hudā",
+        "sens": "la guidance"
+      }
+    },
+    {
+      "ordre": 27,
+      "nom": "wāw",
+      "ar": "و",
+      "tr": "w / ū",
+      "son": "le w de « oui », ou un long ou",
+      "solaire": false,
+      "connecte": false,
+      "exemple": {
+        "mot": "وَصْل",
+        "tr": "waṣl",
+        "sens": "l'union, la jonction"
+      }
+    },
+    {
+      "ordre": 28,
+      "nom": "yāʾ",
+      "ar": "ي",
+      "tr": "y / ī",
+      "son": "le y de « yeux », ou un long i",
+      "solaire": false,
+      "connecte": true,
+      "exemple": {
+        "mot": "يَقِين",
+        "tr": "yaqīn",
+        "sens": "la certitude"
+      }
+    }
   ],
   "voyelles": [
-    { "ar": "ـَ", "nom": "fatḥa", "tr": "a", "son": "un a bref, posé au-dessus de la lettre" },
-    { "ar": "ـِ", "nom": "kasra", "tr": "i", "son": "un i bref, posé au-dessous" },
-    { "ar": "ـُ", "nom": "ḍamma", "tr": "u (ou)", "son": "un ou bref, une petite boucle au-dessus" },
-    { "ar": "ـْ", "nom": "sukūn", "tr": "—", "son": "l'absence de voyelle : la lettre est nue" },
-    { "ar": "ـّ", "nom": "shadda", "tr": "(double)", "son": "la lettre est redoublée, appuyée" }
+    {
+      "ar": "ـَ",
+      "nom": "fatḥa",
+      "tr": "a",
+      "son": "un a bref, posé au-dessus de la lettre"
+    },
+    {
+      "ar": "ـِ",
+      "nom": "kasra",
+      "tr": "i",
+      "son": "un i bref, posé au-dessous"
+    },
+    {
+      "ar": "ـُ",
+      "nom": "ḍamma",
+      "tr": "u (ou)",
+      "son": "un ou bref, une petite boucle au-dessus"
+    },
+    {
+      "ar": "ـْ",
+      "nom": "sukūn",
+      "tr": "—",
+      "son": "l'absence de voyelle : la lettre est nue"
+    },
+    {
+      "ar": "ـّ",
+      "nom": "shadda",
+      "tr": "(double)",
+      "son": "la lettre est redoublée, appuyée"
+    }
   ],
   "longues": [
-    { "ar": "ا", "tr": "ā", "son": "le a long, tenu — porté par le alif" },
-    { "ar": "و", "tr": "ū", "son": "le ou long — porté par le wāw" },
-    { "ar": "ي", "tr": "ī", "son": "le i long — porté par le yāʾ" }
+    {
+      "ar": "ا",
+      "tr": "ā",
+      "son": "le a long, tenu — porté par le alif"
+    },
+    {
+      "ar": "و",
+      "tr": "ū",
+      "son": "le ou long — porté par le wāw"
+    },
+    {
+      "ar": "ي",
+      "tr": "ī",
+      "son": "le i long — porté par le yāʾ"
+    }
   ],
   "dechiffrage": [
-    { "mot": "نُور", "tr": "nūr", "sens": "lumière", "lettres": [ {"ar":"ن","tr":"n"}, {"ar":"و","tr":"ū"}, {"ar":"ر","tr":"r"} ] },
-    { "mot": "قَلْب", "tr": "qalb", "sens": "cœur", "lettres": [ {"ar":"ق","tr":"q"}, {"ar":"ل","tr":"l"}, {"ar":"ب","tr":"b"} ] },
-    { "mot": "سَلَام", "tr": "salām", "sens": "paix", "lettres": [ {"ar":"س","tr":"s"}, {"ar":"ل","tr":"l"}, {"ar":"ا","tr":"ā"}, {"ar":"م","tr":"m"} ] },
-    { "mot": "حُبّ", "tr": "ḥubb", "sens": "amour", "lettres": [ {"ar":"ح","tr":"ḥ"}, {"ar":"ب","tr":"b"}, {"ar":"ّ","tr":"(b redoublé)"} ] }
+    {
+      "mot": "نُور",
+      "tr": "nūr",
+      "sens": "lumière",
+      "lettres": [
+        {
+          "ar": "ن",
+          "tr": "n"
+        },
+        {
+          "ar": "و",
+          "tr": "ū"
+        },
+        {
+          "ar": "ر",
+          "tr": "r"
+        }
+      ]
+    },
+    {
+      "mot": "قَلْب",
+      "tr": "qalb",
+      "sens": "cœur",
+      "lettres": [
+        {
+          "ar": "ق",
+          "tr": "q"
+        },
+        {
+          "ar": "ل",
+          "tr": "l"
+        },
+        {
+          "ar": "ب",
+          "tr": "b"
+        }
+      ]
+    },
+    {
+      "mot": "سَلَام",
+      "tr": "salām",
+      "sens": "paix",
+      "lettres": [
+        {
+          "ar": "س",
+          "tr": "s"
+        },
+        {
+          "ar": "ل",
+          "tr": "l"
+        },
+        {
+          "ar": "ا",
+          "tr": "ā"
+        },
+        {
+          "ar": "م",
+          "tr": "m"
+        }
+      ]
+    },
+    {
+      "mot": "حُبّ",
+      "tr": "ḥubb",
+      "sens": "amour",
+      "lettres": [
+        {
+          "ar": "ح",
+          "tr": "ḥ"
+        },
+        {
+          "ar": "ب",
+          "tr": "b"
+        },
+        {
+          "ar": "ّ",
+          "tr": "(b redoublé)"
+        }
+      ]
+    }
   ],
   "mots": [
-    { "ar": "نُور", "tr": "nūr", "sens": "lumière", "note": "la clarté du dedans, qui ne fait pas d'ombre" },
-    { "ar": "عِشْق", "tr": "ʿishq", "sens": "amour brûlant", "note": "l'amour devenu feu, qui consume tout sauf l'Aimé" },
-    { "ar": "سَكِينَة", "tr": "sakīna", "sens": "quiétude", "note": "la paix qui descend et se pose sur le cœur" },
-    { "ar": "شَوْق", "tr": "shawq", "sens": "désir ardent", "note": "l'élan vers ce qui manque et appelle" },
-    { "ar": "فَنَاء", "tr": "fanāʾ", "sens": "extinction", "note": "s'effacer pour que seul demeure Lui" },
-    { "ar": "بَقَاء", "tr": "baqāʾ", "sens": "subsistance", "note": "renaître en Dieu, après s'être perdu" },
-    { "ar": "حُضُور", "tr": "ḥuḍūr", "sens": "présence", "note": "être tout entier là où l'on est" },
-    { "ar": "ذِكْر", "tr": "dhikr", "sens": "rappel", "note": "le Nom répété jusqu'à devenir souffle" },
-    { "ar": "صَفَاء", "tr": "ṣafāʾ", "sens": "limpidité", "note": "le cœur clair comme une eau sans trouble" },
-    { "ar": "رَحْمَة", "tr": "raḥma", "sens": "miséricorde", "note": "la tendresse qui précède toute chose" },
-    { "ar": "حِكْمَة", "tr": "ḥikma", "sens": "sagesse", "note": "mettre chaque chose à sa juste place" },
-    { "ar": "يَقِين", "tr": "yaqīn", "sens": "certitude", "note": "la connaissance qui ne tremble plus" },
-    { "ar": "تَوَكُّل", "tr": "tawakkul", "sens": "remise confiante", "note": "déposer son poids entre Ses mains" },
-    { "ar": "رِضَا", "tr": "riḍā", "sens": "contentement", "note": "dire oui à ce qui est, en paix" },
-    { "ar": "شُكْر", "tr": "shukr", "sens": "gratitude", "note": "voir le don derrière chaque chose" },
-    { "ar": "صَبْر", "tr": "ṣabr", "sens": "patience", "note": "la beauté de tenir, sans se durcir" },
-    { "ar": "تَجَلِّي", "tr": "tajallī", "sens": "dévoilement", "note": "la lumière qui se montre à travers le voile" },
-    { "ar": "وَصْل", "tr": "waṣl", "sens": "union", "note": "la fin de la séparation" },
-    { "ar": "قُرْب", "tr": "qurb", "sens": "proximité", "note": "être tout près, sans distance" },
-    { "ar": "أُنْس", "tr": "uns", "sens": "intimité", "note": "la douceur d'être avec Lui, seul à seul" },
-    { "ar": "خُشُوع", "tr": "khushūʿ", "sens": "humilité recueillie", "note": "le cœur qui s'incline avant le corps" },
-    { "ar": "إِخْلَاص", "tr": "ikhlāṣ", "sens": "sincérité", "note": "agir pour Lui seul, sans regard de côté" },
-    { "ar": "مَحَبَّة", "tr": "maḥabba", "sens": "amour", "note": "l'amour calme, qui demeure" },
-    { "ar": "جَمَال", "tr": "jamāl", "sens": "beauté", "note": "le visage doux du Réel" },
-    { "ar": "جَلَال", "tr": "jalāl", "sens": "majesté", "note": "Sa grandeur qui fait baisser les yeux" },
-    { "ar": "سِرّ", "tr": "sirr", "sens": "secret", "note": "le point le plus intime du cœur, où Il parle" },
-    { "ar": "رُوح", "tr": "rūḥ", "sens": "esprit", "note": "le souffle insufflé, notre part de Lui" },
-    { "ar": "قَلْب", "tr": "qalb", "sens": "cœur", "note": "ce qui se retourne, sans cesse, vers Lui" },
-    { "ar": "طُمَأْنِينَة", "tr": "ṭumaʾnīna", "sens": "sérénité", "note": "le repos du cœur enfin apaisé" },
-    { "ar": "صِدْق", "tr": "ṣidq", "sens": "véracité", "note": "être un, du dedans au dehors" },
-    { "ar": "مَعْرِفَة", "tr": "maʿrifa", "sens": "connaissance", "note": "connaître par goût, non par ouï-dire" },
-    { "ar": "مُرَاقَبَة", "tr": "murāqaba", "sens": "vigilance", "note": "veiller, sachant qu'on est vu" },
-    { "ar": "خَلْوَة", "tr": "khalwa", "sens": "retraite", "note": "le silence où l'on retrouve l'Unique" },
-    { "ar": "سَمَاع", "tr": "samāʿ", "sens": "audition", "note": "écouter jusqu'à ce que l'âme danse" },
-    { "ar": "مَقَام", "tr": "maqām", "sens": "station", "note": "une demeure stable sur le chemin" },
-    { "ar": "نَفَس", "tr": "nafas", "sens": "souffle", "note": "chaque respiration, un retour" },
-    { "ar": "هُدًى", "tr": "hudā", "sens": "guidance", "note": "la main qui montre le chemin" },
-    { "ar": "نِيَّة", "tr": "niyya", "sens": "intention", "note": "le geste vaut par ce qui l'anime" },
-    { "ar": "تَوْبَة", "tr": "tawba", "sens": "retour", "note": "se retourner vers la Source" },
-    { "ar": "زُهْد", "tr": "zuhd", "sens": "détachement", "note": "tenir le monde sans qu'il nous tienne" },
-    { "ar": "فَقْر", "tr": "faqr", "sens": "pauvreté", "note": "n'avoir besoin que de Lui" },
-    { "ar": "وَجْد", "tr": "wajd", "sens": "extase", "note": "l'instant où le cœur déborde" }
+    {
+      "ar": "نُور",
+      "tr": "nūr",
+      "sens": "lumière",
+      "note": "la clarté du dedans, qui ne fait pas d'ombre",
+      "famille": "lumiere"
+    },
+    {
+      "ar": "عِشْق",
+      "tr": "ʿishq",
+      "sens": "amour brûlant",
+      "note": "l'amour devenu feu, qui consume tout sauf l'Aimé",
+      "famille": "amour"
+    },
+    {
+      "ar": "سَكِينَة",
+      "tr": "sakīna",
+      "sens": "quiétude",
+      "note": "la paix qui descend et se pose sur le cœur",
+      "famille": "coeur"
+    },
+    {
+      "ar": "شَوْق",
+      "tr": "shawq",
+      "sens": "désir ardent",
+      "note": "l'élan vers ce qui manque et appelle",
+      "famille": "amour"
+    },
+    {
+      "ar": "فَنَاء",
+      "tr": "fanāʾ",
+      "sens": "extinction",
+      "note": "s'effacer pour que seul demeure Lui",
+      "famille": "voie"
+    },
+    {
+      "ar": "بَقَاء",
+      "tr": "baqāʾ",
+      "sens": "subsistance",
+      "note": "renaître en Dieu, après s'être perdu",
+      "famille": "voie"
+    },
+    {
+      "ar": "حُضُور",
+      "tr": "ḥuḍūr",
+      "sens": "présence",
+      "note": "être tout entier là où l'on est",
+      "famille": "pratique"
+    },
+    {
+      "ar": "ذِكْر",
+      "tr": "dhikr",
+      "sens": "rappel",
+      "note": "le Nom répété jusqu'à devenir souffle",
+      "famille": "pratique"
+    },
+    {
+      "ar": "صَفَاء",
+      "tr": "ṣafāʾ",
+      "sens": "limpidité",
+      "note": "le cœur clair comme une eau sans trouble",
+      "famille": "coeur"
+    },
+    {
+      "ar": "رَحْمَة",
+      "tr": "raḥma",
+      "sens": "miséricorde",
+      "note": "la tendresse qui précède toute chose",
+      "famille": "reel"
+    },
+    {
+      "ar": "حِكْمَة",
+      "tr": "ḥikma",
+      "sens": "sagesse",
+      "note": "mettre chaque chose à sa juste place",
+      "famille": "vertus"
+    },
+    {
+      "ar": "يَقِين",
+      "tr": "yaqīn",
+      "sens": "certitude",
+      "note": "la connaissance qui ne tremble plus",
+      "famille": "connaissance"
+    },
+    {
+      "ar": "تَوَكُّل",
+      "tr": "tawakkul",
+      "sens": "remise confiante",
+      "note": "déposer son poids entre Ses mains",
+      "famille": "vertus"
+    },
+    {
+      "ar": "رِضَا",
+      "tr": "riḍā",
+      "sens": "contentement",
+      "note": "dire oui à ce qui est, en paix",
+      "famille": "vertus"
+    },
+    {
+      "ar": "شُكْر",
+      "tr": "shukr",
+      "sens": "gratitude",
+      "note": "voir le don derrière chaque chose",
+      "famille": "vertus"
+    },
+    {
+      "ar": "صَبْر",
+      "tr": "ṣabr",
+      "sens": "patience",
+      "note": "la beauté de tenir, sans se durcir",
+      "famille": "vertus"
+    },
+    {
+      "ar": "تَجَلِّي",
+      "tr": "tajallī",
+      "sens": "dévoilement",
+      "note": "la lumière qui se montre à travers le voile",
+      "famille": "lumiere"
+    },
+    {
+      "ar": "وَصْل",
+      "tr": "waṣl",
+      "sens": "union",
+      "note": "la fin de la séparation",
+      "famille": "amour"
+    },
+    {
+      "ar": "قُرْب",
+      "tr": "qurb",
+      "sens": "proximité",
+      "note": "être tout près, sans distance",
+      "famille": "amour"
+    },
+    {
+      "ar": "أُنْس",
+      "tr": "uns",
+      "sens": "intimité",
+      "note": "la douceur d'être avec Lui, seul à seul",
+      "famille": "amour"
+    },
+    {
+      "ar": "خُشُوع",
+      "tr": "khushūʿ",
+      "sens": "humilité recueillie",
+      "note": "le cœur qui s'incline avant le corps",
+      "famille": "vertus"
+    },
+    {
+      "ar": "إِخْلَاص",
+      "tr": "ikhlāṣ",
+      "sens": "sincérité",
+      "note": "agir pour Lui seul, sans regard de côté",
+      "famille": "vertus"
+    },
+    {
+      "ar": "مَحَبَّة",
+      "tr": "maḥabba",
+      "sens": "amour",
+      "note": "l'amour calme, qui demeure",
+      "famille": "amour"
+    },
+    {
+      "ar": "جَمَال",
+      "tr": "jamāl",
+      "sens": "beauté",
+      "note": "le visage doux du Réel",
+      "famille": "reel"
+    },
+    {
+      "ar": "جَلَال",
+      "tr": "jalāl",
+      "sens": "majesté",
+      "note": "Sa grandeur qui fait baisser les yeux",
+      "famille": "reel"
+    },
+    {
+      "ar": "سِرّ",
+      "tr": "sirr",
+      "sens": "secret",
+      "note": "le point le plus intime du cœur, où Il parle",
+      "famille": "coeur"
+    },
+    {
+      "ar": "رُوح",
+      "tr": "rūḥ",
+      "sens": "esprit",
+      "note": "le souffle insufflé, notre part de Lui",
+      "famille": "coeur"
+    },
+    {
+      "ar": "قَلْب",
+      "tr": "qalb",
+      "sens": "cœur",
+      "note": "ce qui se retourne, sans cesse, vers Lui",
+      "famille": "coeur"
+    },
+    {
+      "ar": "طُمَأْنِينَة",
+      "tr": "ṭumaʾnīna",
+      "sens": "sérénité",
+      "note": "le repos du cœur enfin apaisé",
+      "famille": "coeur"
+    },
+    {
+      "ar": "صِدْق",
+      "tr": "ṣidq",
+      "sens": "véracité",
+      "note": "être un, du dedans au dehors",
+      "famille": "vertus"
+    },
+    {
+      "ar": "مَعْرِفَة",
+      "tr": "maʿrifa",
+      "sens": "connaissance",
+      "note": "connaître par goût, non par ouï-dire",
+      "famille": "connaissance"
+    },
+    {
+      "ar": "مُرَاقَبَة",
+      "tr": "murāqaba",
+      "sens": "vigilance",
+      "note": "veiller, sachant qu'on est vu",
+      "famille": "pratique"
+    },
+    {
+      "ar": "خَلْوَة",
+      "tr": "khalwa",
+      "sens": "retraite",
+      "note": "le silence où l'on retrouve l'Unique",
+      "famille": "pratique"
+    },
+    {
+      "ar": "سَمَاع",
+      "tr": "samāʿ",
+      "sens": "audition",
+      "note": "écouter jusqu'à ce que l'âme danse",
+      "famille": "pratique"
+    },
+    {
+      "ar": "مَقَام",
+      "tr": "maqām",
+      "sens": "station",
+      "note": "une demeure stable sur le chemin",
+      "famille": "voie"
+    },
+    {
+      "ar": "نَفَس",
+      "tr": "nafas",
+      "sens": "souffle",
+      "note": "chaque respiration, un retour",
+      "famille": "coeur"
+    },
+    {
+      "ar": "هُدًى",
+      "tr": "hudā",
+      "sens": "guidance",
+      "note": "la main qui montre le chemin",
+      "famille": "voie"
+    },
+    {
+      "ar": "نِيَّة",
+      "tr": "niyya",
+      "sens": "intention",
+      "note": "le geste vaut par ce qui l'anime",
+      "famille": "pratique"
+    },
+    {
+      "ar": "تَوْبَة",
+      "tr": "tawba",
+      "sens": "retour",
+      "note": "se retourner vers la Source",
+      "famille": "voie"
+    },
+    {
+      "ar": "زُهْد",
+      "tr": "zuhd",
+      "sens": "détachement",
+      "note": "tenir le monde sans qu'il nous tienne",
+      "famille": "voie"
+    },
+    {
+      "ar": "فَقْر",
+      "tr": "faqr",
+      "sens": "pauvreté",
+      "note": "n'avoir besoin que de Lui",
+      "famille": "voie"
+    },
+    {
+      "ar": "وَجْد",
+      "tr": "wajd",
+      "sens": "extase",
+      "note": "l'instant où le cœur déborde",
+      "famille": "amour"
+    },
+    {
+      "ar": "ضِيَاء",
+      "tr": "ḍiyāʾ",
+      "sens": "éclat",
+      "note": "la lumière qui rayonne et se donne",
+      "famille": "lumiere"
+    },
+    {
+      "ar": "إِشْرَاق",
+      "tr": "ishrāq",
+      "sens": "aurore",
+      "note": "le lever du jour à l'intérieur du cœur",
+      "famille": "lumiere"
+    },
+    {
+      "ar": "مِشْكَاة",
+      "tr": "mishkāt",
+      "sens": "niche de la lampe",
+      "note": "l'écrin où la lumière est posée pour ne pas s'éteindre",
+      "famille": "lumiere"
+    },
+    {
+      "ar": "طَرِيق",
+      "tr": "ṭarīq",
+      "sens": "la voie",
+      "note": "le chemin qui mène à Lui — étroit, mais sûr",
+      "famille": "voie"
+    },
+    {
+      "ar": "حَال",
+      "tr": "ḥāl",
+      "sens": "état",
+      "note": "un souffle qui passe sur le cœur, sans qu'on le retienne",
+      "famille": "voie"
+    },
+    {
+      "ar": "سُلُوك",
+      "tr": "sulūk",
+      "sens": "cheminement",
+      "note": "marcher pas à pas, avec attention",
+      "famille": "voie"
+    },
+    {
+      "ar": "مِعْرَاج",
+      "tr": "miʿrāj",
+      "sens": "ascension",
+      "note": "l'élévation du cœur, degré par degré",
+      "famille": "voie"
+    },
+    {
+      "ar": "هِجْرَة",
+      "tr": "hijra",
+      "sens": "migration",
+      "note": "quitter ce qui retient pour aller vers la Source",
+      "famille": "voie"
+    },
+    {
+      "ar": "عِلْم",
+      "tr": "ʿilm",
+      "sens": "science",
+      "note": "le savoir reçu, gardé, transmis",
+      "famille": "connaissance"
+    },
+    {
+      "ar": "عَقْل",
+      "tr": "ʿaql",
+      "sens": "intelligence",
+      "note": "ce qui relie, ce qui discerne",
+      "famille": "connaissance"
+    },
+    {
+      "ar": "فَهْم",
+      "tr": "fahm",
+      "sens": "compréhension",
+      "note": "saisir du dedans, et non du dehors",
+      "famille": "connaissance"
+    },
+    {
+      "ar": "بَصِيرَة",
+      "tr": "baṣīra",
+      "sens": "clairvoyance",
+      "note": "l'œil intérieur qui voit derrière les apparences",
+      "famille": "connaissance"
+    },
+    {
+      "ar": "ذَوْق",
+      "tr": "dhawq",
+      "sens": "goût",
+      "note": "connaître en goûtant — ce qui se sait sans se dire",
+      "famille": "connaissance"
+    },
+    {
+      "ar": "حَقّ",
+      "tr": "ḥaqq",
+      "sens": "le Réel",
+      "note": "ce qui est vraiment, par-delà toute apparence",
+      "famille": "reel"
+    },
+    {
+      "ar": "رَحْمَن",
+      "tr": "raḥmān",
+      "sens": "Tout-Miséricordieux",
+      "note": "Sa miséricorde qui n'a ni début ni fin",
+      "famille": "reel"
+    },
+    {
+      "ar": "رَحِيم",
+      "tr": "raḥīm",
+      "sens": "Miséricordieux",
+      "note": "Sa miséricorde qui se penche, à chaque instant",
+      "famille": "reel"
+    },
+    {
+      "ar": "كَمَال",
+      "tr": "kamāl",
+      "sens": "plénitude",
+      "note": "là où rien ne manque, et rien n'est en trop",
+      "famille": "reel"
+    },
+    {
+      "ar": "لَطِيف",
+      "tr": "laṭīf",
+      "sens": "le Subtil",
+      "note": "Sa douceur infinie, qui touche sans peser",
+      "famille": "reel"
+    },
+    {
+      "ar": "وَحْدَة",
+      "tr": "waḥda",
+      "sens": "unité",
+      "note": "il n'y a pas deux",
+      "famille": "reel"
+    },
+    {
+      "ar": "بَرَكَة",
+      "tr": "baraka",
+      "sens": "bénédiction",
+      "note": "ce qui dilate et féconde ce qu'il touche",
+      "famille": "reel"
+    },
+    {
+      "ar": "تَوْحِيد",
+      "tr": "tawḥīd",
+      "sens": "affirmation de l'Unique",
+      "note": "reconnaître, du cœur, qu'Il est l'Unique",
+      "famille": "pratique"
+    },
+    {
+      "ar": "شَهَادَة",
+      "tr": "shahāda",
+      "sens": "témoignage",
+      "note": "dire ce qu'on a vu, sans rien ajouter",
+      "famille": "pratique"
+    },
+    {
+      "ar": "صَلَاة",
+      "tr": "ṣalāt",
+      "sens": "prière",
+      "note": "le lien qui relie, cinq fois le jour",
+      "famille": "pratique"
+    },
+    {
+      "ar": "مُنَاجَاة",
+      "tr": "munājāt",
+      "sens": "confidence",
+      "note": "parler à Dieu comme à un proche, dans le secret",
+      "famille": "pratique"
+    },
+    {
+      "ar": "سَلَام",
+      "tr": "salām",
+      "sens": "paix",
+      "note": "la paix qui n'a plus à se défendre",
+      "famille": "vertus"
+    },
+    {
+      "ar": "عَدْل",
+      "tr": "ʿadl",
+      "sens": "justice",
+      "note": "mettre chaque chose à sa juste mesure",
+      "famille": "vertus"
+    },
+    {
+      "ar": "حُرِّيَّة",
+      "tr": "ḥurriyya",
+      "sens": "liberté",
+      "note": "être libre de tout, sauf de Lui",
+      "famille": "voie"
+    },
+    {
+      "ar": "فِطْرَة",
+      "tr": "fiṭra",
+      "sens": "nature originelle",
+      "note": "la pureté avec laquelle on est venu au monde",
+      "famille": "coeur"
+    }
   ]
 }

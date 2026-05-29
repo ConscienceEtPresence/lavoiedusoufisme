@@ -662,7 +662,7 @@
     ov.querySelector('[data-act="share"]').addEventListener('click', function () {
       canvas.toBlob(async function (blob) {
         const file = new File([blob], 'lavoiedudedans.png', { type: 'image/png' });
-        const txt = (v.trad || '') + ' — ' + shareAttribution(v) + ' · lavoiedudedans.fr';
+        const txt = 'lavoiedudedans.fr';
         if (navigator.canShare && navigator.canShare({ files: [file] })) {
           try { await navigator.share({ files: [file], text: txt }); } catch (e) {}
         } else {

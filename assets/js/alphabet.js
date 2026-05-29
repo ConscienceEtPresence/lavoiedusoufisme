@@ -14,11 +14,16 @@
 
   var T = EN ? {
     sound: 'Sound', example: 'A word that holds it', sun: 'Sun letter', moon: 'Moon letter',
-    links: 'Links to the next', nolink: 'Never links forward'
+    links: 'Links to the next', nolink: 'Never links forward',
+    forms: 'Its four shapes', fIso: 'isolated', fIni: 'initial', fMed: 'medial', fFin: 'final',
+    quizTitle: 'Recognise the letter', quizSub: 'Which letter is it?', quizScore: 'Score', quizNext: 'Next letter →', quizGood: 'Yes —', quizBad: 'It was'
   } : {
     sound: 'Le son', example: 'Un mot qui la porte', sun: 'Lettre solaire', moon: 'Lettre lunaire',
-    links: 'Se lie à la suivante', nolink: 'Ne se lie jamais à gauche'
+    links: 'Se lie à la suivante', nolink: 'Ne se lie jamais à gauche',
+    forms: 'Ses quatre formes', fIso: 'isolée', fIni: 'initiale', fMed: 'médiane', fFin: 'finale',
+    quizTitle: 'Reconnais la lettre', quizSub: 'Quelle est cette lettre ?', quizScore: 'Score', quizNext: 'Lettre suivante →', quizGood: 'Oui —', quizBad: 'C’était'
   };
+  var ZWJ = '‍';
 
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
@@ -40,6 +45,7 @@
       if (i === 0) c.classList.add('is-active');
     });
     if (d.lettres[0]) showDetail(d.lettres[0]);
+    setupQuiz(d.lettres);
 
     // voyelles brèves
     if (voy) d.voyelles.forEach(function (v) {
@@ -88,11 +94,70 @@
       '<div class="alpha-detail__tr">' + esc(L.tr) + '</div>' +
       '<div class="alpha-badges">' + badges + '</div>' +
       '<div class="alpha-detail__son">' + esc(L.son) + '</div>' +
+      '<div class="alpha-forms">' +
+        '<div class="alpha-forms__label">' + T.forms + '</div>' +
+        '<div class="alpha-forms__row" lang="ar" dir="rtl">' +
+          formCell(T.fIso, L.ar) +
+          formCell(T.fIni, L.ar + ZWJ) +
+          formCell(T.fMed, ZWJ + L.ar + ZWJ) +
+          formCell(T.fFin, ZWJ + L.ar) +
+        '</div>' +
+      '</div>' +
       '<div class="alpha-ex">' +
         '<div class="alpha-ex__label">' + T.example + '</div>' +
         '<div class="alpha-ex__mot" lang="ar" dir="rtl">' + esc(L.exemple.mot) + '</div>' +
         '<div class="alpha-ex__tr">' + esc(L.exemple.tr) + '</div>' +
         '<div class="alpha-ex__sens">' + esc(L.exemple.sens) + '</div>' +
       '</div>';
+  }
+
+  function formCell(label, glyph) {
+    return '<span class="alpha-form"><span class="alpha-form__ar">' + esc(glyph) + '</span>' +
+      '<span class="alpha-form__lab">' + esc(label) + '</span></span>';
+  }
+
+  // ---- petit jeu : reconnais la lettre ----
+  function setupQuiz(lettres) {
+    var mount = document.getElementById('alpha-quiz');
+    if (!mount) return;
+    var score = 0, asked = 0, seed = 7;
+    function rnd(n) { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed % n; }
+    function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = rnd(i + 1); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+    function round() {
+      var target = lettres[rnd(lettres.length)];
+      var opts = [target];
+      while (opts.length < 4) { var c = lettres[rnd(lettres.length)]; if (opts.indexOf(c) === -1) opts.push(c); }
+      shuffle(opts);
+      mount.innerHTML =
+        '<div class="quiz-score">' + T.quizScore + ' : ' + score + ' / ' + asked + '</div>' +
+        '<div class="quiz-prompt">' + T.quizSub + '</div>' +
+        '<div class="quiz-glyph" lang="ar" dir="rtl">' + esc(target.ar) + '</div>' +
+        '<div class="quiz-opts"></div>' +
+        '<div class="quiz-feedback" aria-live="polite"></div>';
+      var optsEl = mount.querySelector('.quiz-opts');
+      var fb = mount.querySelector('.quiz-feedback');
+      opts.forEach(function (o) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'quiz-opt'; b.textContent = o.nom;
+        b.addEventListener('click', function () {
+          if (mount.dataset.done) return;
+          mount.dataset.done = '1';
+          asked++;
+          optsEl.querySelectorAll('.quiz-opt').forEach(function (x) { x.disabled = true; });
+          if (o === target) { score++; b.classList.add('is-good'); fb.textContent = T.quizGood + ' ' + target.nom; }
+          else {
+            b.classList.add('is-bad'); fb.textContent = T.quizBad + ' ' + target.nom;
+            optsEl.querySelectorAll('.quiz-opt').forEach(function (x) { if (x.textContent === target.nom) x.classList.add('is-good'); });
+          }
+          var nx = document.createElement('button');
+          nx.type = 'button'; nx.className = 'quiz-next'; nx.textContent = T.quizNext;
+          nx.addEventListener('click', function () { delete mount.dataset.done; round(); });
+          fb.appendChild(document.createElement('br'));
+          fb.appendChild(nx);
+        });
+        optsEl.appendChild(b);
+      });
+    }
+    round();
   }
 })();

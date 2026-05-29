@@ -1,0 +1,50 @@
+{
+  "lettres": [
+    { "ordre": 1,  "nom": "alif",  "ar": "ا", "tr": "ā / ʾ", "son": "a long â, or a simple catch of the voice", "solaire": false, "connecte": false, "exemple": { "mot": "الله", "tr": "Allāh", "sens": "God" } },
+    { "ordre": 2,  "nom": "bāʾ",   "ar": "ب", "tr": "b", "son": "the b in « bounty »", "solaire": false, "connecte": true, "exemple": { "mot": "بَرَكَة", "tr": "baraka", "sens": "blessing" } },
+    { "ordre": 3,  "nom": "tāʾ",   "ar": "ت", "tr": "t", "son": "the t in « table »", "solaire": true, "connecte": true, "exemple": { "mot": "تَوْبَة", "tr": "tawba", "sens": "the turning back, repentance" } },
+    { "ordre": 4,  "nom": "thāʾ",  "ar": "ث", "tr": "th", "son": "the soft th of « think »", "solaire": true, "connecte": true, "exemple": { "mot": "ثِقَة", "tr": "thiqa", "sens": "trust" } },
+    { "ordre": 5,  "nom": "jīm",   "ar": "ج", "tr": "j", "son": "the j in « jewel »", "solaire": false, "connecte": true, "exemple": { "mot": "جَمَال", "tr": "jamāl", "sens": "beauty" } },
+    { "ordre": 6,  "nom": "ḥāʾ",   "ar": "ح", "tr": "ḥ", "son": "a soft h breathed from deep in the throat", "solaire": false, "connecte": true, "exemple": { "mot": "حُبّ", "tr": "ḥubb", "sens": "love" } },
+    { "ordre": 7,  "nom": "khāʾ",  "ar": "خ", "tr": "kh", "son": "the Scottish « loch », a raspy ch", "solaire": false, "connecte": true, "exemple": { "mot": "خَلْوَة", "tr": "khalwa", "sens": "retreat, being alone with the One" } },
+    { "ordre": 8,  "nom": "dāl",   "ar": "د", "tr": "d", "son": "the d in « dawn »", "solaire": true, "connecte": false, "exemple": { "mot": "دُعَاء", "tr": "duʿāʾ", "sens": "invocation" } },
+    { "ordre": 9,  "nom": "dhāl",  "ar": "ذ", "tr": "dh", "son": "the voiced th of « this »", "solaire": true, "connecte": false, "exemple": { "mot": "ذِكْر", "tr": "dhikr", "sens": "remembrance of God" } },
+    { "ordre": 10, "nom": "rāʾ",   "ar": "ر", "tr": "r", "son": "a rolled r, as in Spanish", "solaire": true, "connecte": false, "exemple": { "mot": "رَحْمَة", "tr": "raḥma", "sens": "mercy" } },
+    { "ordre": 11, "nom": "zāy",   "ar": "ز", "tr": "z", "son": "the z in « zeal »", "solaire": true, "connecte": false, "exemple": { "mot": "زُهْد", "tr": "zuhd", "sens": "detachment" } },
+    { "ordre": 12, "nom": "sīn",   "ar": "س", "tr": "s", "son": "the s in « sage »", "solaire": true, "connecte": true, "exemple": { "mot": "سَلَام", "tr": "salām", "sens": "peace" } },
+    { "ordre": 13, "nom": "shīn",  "ar": "ش", "tr": "sh", "son": "the sh in « shine »", "solaire": true, "connecte": true, "exemple": { "mot": "شَوْق", "tr": "shawq", "sens": "ardent longing" } },
+    { "ordre": 14, "nom": "ṣād",   "ar": "ص", "tr": "ṣ", "son": "an emphatic s, spoken further back", "solaire": true, "connecte": true, "exemple": { "mot": "صَبْر", "tr": "ṣabr", "sens": "patience" } },
+    { "ordre": 15, "nom": "ḍād",   "ar": "ض", "tr": "ḍ", "son": "a heavy, emphatic d — « the letter of Arabic »", "solaire": true, "connecte": true, "exemple": { "mot": "ضِيَاء", "tr": "ḍiyāʾ", "sens": "radiance, brightness" } },
+    { "ordre": 16, "nom": "ṭāʾ",   "ar": "ط", "tr": "ṭ", "son": "an emphatic, sounded t", "solaire": true, "connecte": true, "exemple": { "mot": "طَرِيق", "tr": "ṭarīq", "sens": "the way, the path" } },
+    { "ordre": 17, "nom": "ẓāʾ",   "ar": "ظ", "tr": "ẓ", "son": "an emphatic, voiced th", "solaire": true, "connecte": true, "exemple": { "mot": "ظِلّ", "tr": "ẓill", "sens": "shade, shadow" } },
+    { "ordre": 18, "nom": "ʿayn",  "ar": "ع", "tr": "ʿ", "son": "a deep sound from the throat, with no English match", "solaire": false, "connecte": true, "exemple": { "mot": "عِشْق", "tr": "ʿishq", "sens": "passionate love" } },
+    { "ordre": 19, "nom": "ghayn", "ar": "غ", "tr": "gh", "son": "a gargled r, like the French r", "solaire": false, "connecte": true, "exemple": { "mot": "غَيْب", "tr": "ghayb", "sens": "the unseen, the mystery" } },
+    { "ordre": 20, "nom": "fāʾ",   "ar": "ف", "tr": "f", "son": "the f in « fire »", "solaire": false, "connecte": true, "exemple": { "mot": "فَقْر", "tr": "faqr", "sens": "poverty before God" } },
+    { "ordre": 21, "nom": "qāf",   "ar": "ق", "tr": "q", "son": "a deep k, spoken right at the back", "solaire": false, "connecte": true, "exemple": { "mot": "قَلْب", "tr": "qalb", "sens": "the heart" } },
+    { "ordre": 22, "nom": "kāf",   "ar": "ك", "tr": "k", "son": "the k in « key »", "solaire": false, "connecte": true, "exemple": { "mot": "كَرَم", "tr": "karam", "sens": "generosity" } },
+    { "ordre": 23, "nom": "lām",   "ar": "ل", "tr": "l", "son": "the l in « light »", "solaire": true, "connecte": true, "exemple": { "mot": "لُطْف", "tr": "luṭf", "sens": "gentleness, subtle grace" } },
+    { "ordre": 24, "nom": "mīm",   "ar": "م", "tr": "m", "son": "the m in « sea »", "solaire": false, "connecte": true, "exemple": { "mot": "مَحَبَّة", "tr": "maḥabba", "sens": "love" } },
+    { "ordre": 25, "nom": "nūn",   "ar": "ن", "tr": "n", "son": "the n in « night »", "solaire": true, "connecte": true, "exemple": { "mot": "نُور", "tr": "nūr", "sens": "light" } },
+    { "ordre": 26, "nom": "hāʾ",   "ar": "ه", "tr": "h", "son": "a breathed h, as in « hope »", "solaire": false, "connecte": true, "exemple": { "mot": "هُدًى", "tr": "hudā", "sens": "guidance" } },
+    { "ordre": 27, "nom": "wāw",   "ar": "و", "tr": "w / ū", "son": "the w in « we », or a long oo", "solaire": false, "connecte": false, "exemple": { "mot": "وَصْل", "tr": "waṣl", "sens": "union, joining" } },
+    { "ordre": 28, "nom": "yāʾ",   "ar": "ي", "tr": "y / ī", "son": "the y in « yes », or a long ee", "solaire": false, "connecte": true, "exemple": { "mot": "يَقِين", "tr": "yaqīn", "sens": "certainty" } }
+  ],
+  "voyelles": [
+    { "ar": "ـَ", "nom": "fatḥa", "tr": "a", "son": "a short a, set above the letter" },
+    { "ar": "ـِ", "nom": "kasra", "tr": "i", "son": "a short i, set below" },
+    { "ar": "ـُ", "nom": "ḍamma", "tr": "u (oo)", "son": "a short oo, a small loop above" },
+    { "ar": "ـْ", "nom": "sukūn", "tr": "—", "son": "the absence of a vowel: the letter is bare" },
+    { "ar": "ـّ", "nom": "shadda", "tr": "(doubled)", "son": "the letter is doubled, pressed" }
+  ],
+  "longues": [
+    { "ar": "ا", "tr": "ā", "son": "the long, held a — carried by the alif" },
+    { "ar": "و", "tr": "ū", "son": "the long oo — carried by the wāw" },
+    { "ar": "ي", "tr": "ī", "son": "the long ee — carried by the yāʾ" }
+  ],
+  "dechiffrage": [
+    { "mot": "نُور", "tr": "nūr", "sens": "light", "lettres": [ {"ar":"ن","tr":"n"}, {"ar":"و","tr":"ū"}, {"ar":"ر","tr":"r"} ] },
+    { "mot": "قَلْب", "tr": "qalb", "sens": "heart", "lettres": [ {"ar":"ق","tr":"q"}, {"ar":"ل","tr":"l"}, {"ar":"ب","tr":"b"} ] },
+    { "mot": "سَلَام", "tr": "salām", "sens": "peace", "lettres": [ {"ar":"س","tr":"s"}, {"ar":"ل","tr":"l"}, {"ar":"ا","tr":"ā"}, {"ar":"م","tr":"m"} ] },
+    { "mot": "حُبّ", "tr": "ḥubb", "sens": "love", "lettres": [ {"ar":"ح","tr":"ḥ"}, {"ar":"ب","tr":"b"}, {"ar":"ّ","tr":"(b doubled)"} ] }
+  ]
+}

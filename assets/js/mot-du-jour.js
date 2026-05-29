@@ -57,12 +57,12 @@
         '<div class="mdj-rule"></div>' +
         '<p class="mdj-def">' + esc(it.def) + '</p>' + med;
     }
-    // sagesse / parabole / conte
+    // sagesse / parabole / conte (texte & commentaire peuvent contenir <em>)
     return (it.titre ? '<div class="mdj-sagesse-titre">' + esc(it.titre) + '</div>' : '') +
-      '<p class="mdj-sagesse-texte">' + esc(it.texte) + '</p>' +
+      '<p class="mdj-sagesse-texte">' + it.texte + '</p>' +
       '<div class="mdj-source">— ' + esc(it.source) + '</div>' +
       '<div class="mdj-rule"></div>' +
-      '<div class="mdj-section"><span class="mdj-label">' + T.meditate + '</span><p>' + esc(it.commentaire) + '</p></div>';
+      '<div class="mdj-section"><span class="mdj-label">' + T.meditate + '</span><p>' + it.commentaire + '</p></div>';
   }
 
   function footerHTML(it, mode) {

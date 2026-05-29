@@ -169,9 +169,32 @@
         <nav class="mot-nav">
           <a href="parcours.html" class="mot-nav__link">${AM_T.allWords}</a>
           <a href="hasard.html" class="mot-nav__link mot-nav__link--accent">${AM_T.drawRandom}</a>
+          <button type="button" class="mot-nav__link mot-share" data-share-mot>✦ ${document.documentElement.lang === 'en' ? 'Share' : 'Partager'}</button>
         </nav>
       </article>
     `;
+
+    const sb = el.querySelector('[data-share-mot]');
+    if (sb) sb.addEventListener('click', function () {
+      ensurePartage(function () {
+        window.LVDDPartage.open({
+          ar: mot.ar, tr: mot.translit, text: mot.definition,
+          attribution: (document.documentElement.lang === 'en' ? 'Words of Love' : "Les mots de l'amour")
+        });
+      });
+    });
+  }
+
+  function ensurePartage(cb) {
+    if (window.LVDDPartage) { cb(); return; }
+    let s = document.querySelector('script[data-partage-js]');
+    if (!s) {
+      s = document.createElement('script');
+      s.src = '../../assets/js/partage.js?v=1';
+      s.dataset.partageJs = '1';
+      document.head.appendChild(s);
+    }
+    s.addEventListener('load', function () { if (window.LVDDPartage) cb(); });
   }
 
   // ============ Vue : parcours filtré ============

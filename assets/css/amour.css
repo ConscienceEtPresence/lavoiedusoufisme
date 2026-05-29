@@ -833,3 +833,10 @@
   .mot-nav { flex-direction: column; }
   .mot-nav__link { text-align: center; }
 }
+
+/* bouton Partager (fiche mot) */
+.mot-share {
+  font: inherit;
+  cursor: pointer;
+  background: none;
+}

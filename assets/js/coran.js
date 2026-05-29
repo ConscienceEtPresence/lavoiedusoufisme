@@ -149,8 +149,25 @@
     /* pied */
     const foot = document.createElement('div');
     foot.className = 'coran-foot';
-    foot.innerHTML = '<a href="../../index.html">' +
-      (EN ? '← Back to home' : '← Retour à l\'accueil') + '</a>';
+    if (inlineMode) {
+      const n = d.n;
+      const sura = EN ? 'Sūra ' : 'Sourate ';
+      const prevN = n < 114 ? n + 1 : null; // ordre de lecture du site : descendant (114 → 1)
+      const nextN = n > 1 ? n - 1 : null;
+      const home = EN ? 'Home' : 'Accueil';
+      foot.classList.add('coran-nav');
+      foot.innerHTML =
+        '<div class="coran-nav__side coran-nav__side--prev">' +
+          (prevN ? '<a href="sourate-' + prevN + '.html">← ' + sura + prevN + '</a>' : '') +
+        '</div>' +
+        '<div class="coran-nav__home"><a href="../../index.html">' + home + '</a></div>' +
+        '<div class="coran-nav__side coran-nav__side--next">' +
+          (nextN ? '<a href="sourate-' + nextN + '.html">' + sura + nextN + ' →</a>' : '') +
+        '</div>';
+    } else {
+      foot.innerHTML = '<a href="../../index.html">' +
+        (EN ? '← Back to home' : '← Retour à l\'accueil') + '</a>';
+    }
     root.appendChild(foot);
 
     mount.appendChild(root);

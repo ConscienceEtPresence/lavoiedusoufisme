@@ -495,3 +495,32 @@ button.cv__num.is-open {
 .cv__comment-toggle:hover { color: var(--gold-soft); }
 .cv__comment-toggle.is-open { color: var(--gold-soft); }
 .cv--inline .cv__study { margin-top: var(--space-sm); }
+
+/* --- Navigation bas de sourate (mode inline) --- */
+.coran-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-lg);
+}
+.coran-nav__side { flex: 1 1 0; min-width: 0; }
+.coran-nav__side--prev { text-align: left; }
+.coran-nav__side--next { text-align: right; }
+.coran-nav__home { flex: 0 0 auto; }
+.coran-nav a {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--turquoise);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.coran-nav__home a {
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+}
+.coran-nav a:hover { color: var(--gold-soft); }

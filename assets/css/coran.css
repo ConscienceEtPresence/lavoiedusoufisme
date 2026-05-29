@@ -625,3 +625,16 @@ button.cv__num.is-open {
   background: rgba(255,255,255,0.1); border: none; border-radius: 999px; cursor: pointer;
 }
 .cv__share { display: inline-flex; align-items: center; }
+
+/* --- bouton audio (récitation) par verset --- */
+.cv__audio {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.7rem; height: 1.7rem; margin-left: 0.4rem; vertical-align: middle;
+  padding: 0; cursor: pointer;
+  color: var(--turquoise);
+  background: none; border: 1px solid var(--gold-soft); border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.cv__audio svg { width: 0.85rem; height: 0.85rem; }
+.cv__audio:hover { background: rgba(184,134,11,0.1); color: var(--gold); }
+.cv__audio.is-playing { background: var(--gold); color: #FFFDF8; border-color: var(--gold); }

@@ -108,7 +108,7 @@
             <p class="poesie-carte__extrait">${isEN ? `&ldquo;${p.extrait_fr}&rdquo;` : `« ${p.extrait_fr} »`}</p>
             <p class="poesie-carte__tagline"><em>${p.tagline}</em></p>
           </a>
-          ${p.status === 'ready' ? `<button type="button" class="poesie-share" data-share-poem="${p.id}" title="${isEN ? 'Offer' : 'Offrir'}" aria-label="${isEN ? 'Offer this poem' : 'Offrir ce poème'}"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3.4c-6.5.5-11.4 3.4-14.8 8.8 1.7-1.1 3.6-1.8 5.8-2-2.8 1.9-4.8 4.6-6.1 8-.5 1.2-.9 2.5-1.1 3.9 1.9-3.2 4.3-5.3 7.1-6.4-.7 1.3-1.2 2.8-1.4 4.3 3.1-3 5.3-6.5 6.6-10.8.5-1.6 1.2-3.6 3.9-5.8z"/></svg></button>` : ''}
+          ${p.status === 'ready' ? `<button type="button" class="poesie-share" data-share-poem="${p.id}" title="${isEN ? 'Offer' : 'Offrir'}" aria-label="${isEN ? 'Offer this poem' : 'Offrir ce poème'}"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 16.5c4.6 1.1 8.8-.3 12.4-4.1.9-1 1.8-2.3 3.2-2.3.8 0 1.4.6 1.4 1.4 0 .9-.7 1.5-1.6 1.7 1.7.4 3.4-.2 4.9-1.5-.4 2.1-1.8 3.8-3.8 4.6 1.1.3 2.2.2 3.3-.3-1.3 1.7-3.2 2.8-5.4 3 .2 1.2.6 2.3 1.4 3.2-2.2-.5-3.8-2-4.6-4.1-3 .7-6 .3-8.8-1.1.9-.2 1.8-.6 2.5-1.2-1.6-.4-2.9-1.5-3.4-3z"/></svg></button>` : ''}
         </div>
       `;
     }).join('');

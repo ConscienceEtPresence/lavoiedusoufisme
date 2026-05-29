@@ -129,8 +129,9 @@ document.querySelectorAll('.period').forEach(el => observer.observe(el));
     if (document.querySelector('.theme-toggle')) return;
     const btn = document.createElement('button');
     btn.className = 'theme-toggle';
-    btn.setAttribute('aria-label', 'Basculer mode jour / mode nuit');
-    btn.setAttribute('title', 'Mode jour / nuit');
+    var _isEN = document.documentElement.lang === 'en';
+    btn.setAttribute('aria-label', _isEN ? 'Toggle day / night mode' : 'Basculer mode jour / mode nuit');
+    btn.setAttribute('title', _isEN ? 'Day / night mode' : 'Mode jour / nuit');
     btn.innerHTML = '<span class="theme-toggle__icon"></span>';
     document.body.appendChild(btn);
 

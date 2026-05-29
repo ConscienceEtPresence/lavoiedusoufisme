@@ -600,3 +600,8 @@
   background:
     radial-gradient(120% 80% at 50% -10%, var(--paper-warm) 0%, var(--paper) 55%, #0C1019 100%) !important;
 }
+
+/* mot-du-jour : fond adapté à la nuit */
+[data-theme="dark"] .mdj {
+  background: radial-gradient(120% 80% at 50% -10%, var(--paper-warm) 0%, var(--paper) 55%, #0C0F18 100%) !important;
+}

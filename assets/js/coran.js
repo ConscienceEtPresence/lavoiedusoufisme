@@ -35,7 +35,24 @@
 
   const shareEnabled = mount.dataset.partage === 'on';
   let currentSura = null;
-  const SHARE_BIRD = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3.4c-6.5.5-11.4 3.4-14.8 8.8 1.7-1.1 3.6-1.8 5.8-2-2.8 1.9-4.8 4.6-6.1 8-.5 1.2-.9 2.5-1.1 3.9 1.9-3.2 4.3-5.3 7.1-6.4-.7 1.3-1.2 2.8-1.4 4.3 3.1-3 5.3-6.5 6.6-10.8.5-1.6 1.2-3.6 3.9-5.8z"/></svg>';
+  const SHARE_BIRD = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 16.5c4.6 1.1 8.8-.3 12.4-4.1.9-1 1.8-2.3 3.2-2.3.8 0 1.4.6 1.4 1.4 0 .9-.7 1.5-1.6 1.7 1.7.4 3.4-.2 4.9-1.5-.4 2.1-1.8 3.8-3.8 4.6 1.1.3 2.2.2 3.3-.3-1.3 1.7-3.2 2.8-5.4 3 .2 1.2.6 2.3 1.4 3.2-2.2-.5-3.8-2-4.6-4.1-3 .7-6 .3-8.8-1.1.9-.2 1.8-.6 2.5-1.2-1.6-.4-2.9-1.5-3.4-3z"/></svg>';
+
+  /* ---- audio : récitation verset par verset (everyayah, Mishary al-ʿAfāsy) ---- */
+  const ICON_PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+  const ICON_PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+  let sharedAudio = null, playingBtn = null;
+  function pad3(x) { x = String(x); return '000'.slice(x.length) + x; }
+  function playVerse(n, btn) {
+    if (sharedAudio && playingBtn === btn && !sharedAudio.paused) {
+      sharedAudio.pause(); btn.innerHTML = ICON_PLAY; btn.classList.remove('is-playing'); playingBtn = null; return;
+    }
+    if (sharedAudio) { sharedAudio.pause(); if (playingBtn) { playingBtn.innerHTML = ICON_PLAY; playingBtn.classList.remove('is-playing'); } }
+    const url = 'https://everyayah.com/data/Alafasy_128kbps/' + pad3(currentSura ? currentSura.n : 0) + pad3(n) + '.mp3';
+    sharedAudio = new Audio(url);
+    playingBtn = btn; btn.innerHTML = ICON_PAUSE; btn.classList.add('is-playing');
+    sharedAudio.play().catch(function () { btn.innerHTML = ICON_PLAY; btn.classList.remove('is-playing'); playingBtn = null; });
+    sharedAudio.onended = function () { btn.innerHTML = ICON_PLAY; btn.classList.remove('is-playing'); playingBtn = null; };
+  }
 
   const sn = mount.dataset.sourate;
   fetch(DATA_ROOT + 'data/coran/' + sn + '.json')
@@ -307,7 +324,15 @@
       num.classList.toggle('is-open', !tr.hidden);
     });
 
+    const audio = document.createElement('button');
+    audio.type = 'button';
+    audio.className = 'cv__audio';
+    audio.innerHTML = ICON_PLAY;
+    audio.setAttribute('aria-label', EN ? 'Listen to the recitation' : 'Écouter la récitation');
+    audio.addEventListener('click', function () { playVerse(v.n, audio); });
+
     cv.appendChild(num);
+    cv.appendChild(audio);
     cv.appendChild(buildArabic(v));
     cv.appendChild(tr);
 

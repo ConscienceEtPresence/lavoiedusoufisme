@@ -143,3 +143,41 @@
 /* icône d'envoi dans le bouton Offrir */
 .mdj-btn { display: inline-flex; align-items: center; gap: 0.5rem; }
 .mdj-send-icon { width: 17px; height: 17px; }
+
+/* ---- accueil : deux portes ---- */
+.mdj-landing { text-align: center; padding-top: clamp(2rem, 6vh, 4rem); }
+.mdj-landing__title {
+  font-family: var(--font-display); font-weight: 500;
+  font-size: clamp(2rem, 6vw, 2.8rem); color: var(--ink-title); margin-bottom: 0.3rem;
+}
+.mdj-landing__sub {
+  font-family: var(--font-display); font-style: italic;
+  font-size: 1.2rem; color: var(--ink-soft); margin-bottom: var(--space-2xl);
+}
+.mdj-doors { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); max-width: 34rem; margin: 0 auto; }
+@media (max-width: 540px) { .mdj-doors { grid-template-columns: 1fr; } }
+.mdj-door {
+  display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+  padding: var(--space-xl) var(--space-lg);
+  text-decoration: none;
+  background: linear-gradient(170deg, var(--paper-warm), var(--paper-deep));
+  border: 1px solid var(--gold-soft); border-radius: 16px;
+  box-shadow: 0 14px 34px -28px rgba(27,42,78,0.4);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.mdj-door:hover { transform: translateY(-3px); box-shadow: 0 22px 46px -26px rgba(27,42,78,0.5); }
+.mdj-door__icon { width: 54px; height: 54px; color: var(--gold); margin-bottom: var(--space-sm); }
+.mdj-door__icon svg { width: 100%; height: 100%; }
+.mdj-door__title { font-family: var(--font-display); font-size: 1.3rem; color: var(--ink-title); }
+.mdj-door__sub { font-family: var(--font-sans); font-size: 0.82rem; color: var(--ink-mute); }
+
+/* ---- offrir ---- */
+.mdj-offer { text-align: center; padding-top: clamp(2rem, 6vh, 4rem); }
+.mdj-offer-sub {
+  font-family: var(--font-display); font-style: italic; font-size: 1.2rem;
+  color: var(--ink-soft); max-width: 26rem; margin: 0.4rem auto var(--space-lg);
+}
+.mdj-dove-big { width: clamp(90px, 22vw, 130px); margin: 0 auto var(--space-lg); color: var(--gold); animation: mdjPulse 3.4s ease-in-out infinite; }
+.mdj-dove-big svg { width: 100%; height: 100%; }
+.mdj-card--offer { animation: mdjReveal 0.8s cubic-bezier(.2,.7,.2,1) both; margin-top: var(--space-xl); }
+.mdj-dove { width: 18px; height: 18px; }

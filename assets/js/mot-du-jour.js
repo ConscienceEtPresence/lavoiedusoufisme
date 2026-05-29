@@ -145,13 +145,8 @@
     box.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
-  function buildPool(amour, sg) {
+  function buildPool(sg) {
     var pool = [];
-    ((amour && amour.mots) || []).forEach(function (m) {
-      pool.push({ id: m.id, type: 'mot', ar: m.ar, tr: m.translit, def: m.definition,
-        prose: (m.description || m.ouverture || ''), question: (m.meditation || ''),
-        deeper: '../amour/mot.html?id=' + encodeURIComponent(m.id) });
-    });
     ((sg && sg.sagesses) || []).forEach(function (s) {
       pool.push({ id: 'sag-' + s.id, type: 'sagesse', titre: s.titre, texte: s.texte, source: s.source, commentaire: s.commentaire });
     });
@@ -159,10 +154,9 @@
   }
 
   Promise.all([
-    fetch('../../data/amour.json').then(function (r) { return r.json(); }).catch(function () { return null; }),
     fetch('../../data/sagesses.json').then(function (r) { return r.json(); }).catch(function () { return null; })
   ]).then(function (res) {
-    var pool = buildPool(res[0], res[1]);
+    var pool = buildPool(res[0]);
     if (!pool.length) { mount.innerHTML = '<p style="text-align:center;color:#888">—</p>'; return; }
     var params = new URLSearchParams(location.search);
     var id = params.get('id');

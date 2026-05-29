@@ -9,9 +9,9 @@
   var EN = document.documentElement.lang === 'en';
   var T = EN
     ? { eyebrow: 'Word of the day', invite: 'A word is offered to you today.', tap: 'Touch to reveal it',
-        meditate: 'To meditate', share: '✦ Share in turn', deeper: 'Go further →' }
+        meditate: 'To meditate', share: 'Offer', deeper: 'Go further →' }
     : { eyebrow: 'Le mot du jour', invite: 'Un mot vous est offert aujourd’hui.', tap: 'Touchez pour le découvrir',
-        meditate: 'À méditer', share: '✦ Partager à mon tour', deeper: 'Aller plus loin →' };
+        meditate: 'À méditer', share: 'Offrir', deeper: 'Aller plus loin →' };
 
   var STAR = '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">' +
     '<rect x="22" y="22" width="56" height="56" />' +
@@ -48,9 +48,22 @@
     .catch(function () { mount.innerHTML = '<p style="text-align:center;color:#888">—</p>'; });
 
   function render(mot) {
-    var accompagne = mot.meditation || mot.description || mot.ouverture || '';
-    // garder un seul paragraphe si description longue
-    if (accompagne) accompagne = String(accompagne).split(/\n\n/)[0];
+    // texte d'accompagnement nourri : la prose du mot (description/ouverture) ...
+    var prose = mot.description || mot.ouverture || '';
+    prose = String(prose).split(/\n\n/).slice(0, 2).join(' ');
+    // ... et la question à méditer, mise en valeur à part
+    var question = mot.meditation || '';
+
+    var section = '';
+    if (prose || question) {
+      section = '<div class="mdj-section"><span class="mdj-label">' + T.meditate + '</span>' +
+        (prose ? '<p>' + prose + '</p>' : '') +
+        (question ? '<p class="mdj-question">' + esc(question) + '</p>' : '') +
+        '</div>';
+    }
+
+    var sendIcon = '<svg class="mdj-send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">' +
+      '<path d="M21.5 2.5 L11 13" /><path d="M21.5 2.5 L15 21 L11 13 L3 9 z" /></svg>';
 
     mount.innerHTML =
       '<div class="mdj-veil" id="mdj-veil">' +
@@ -64,9 +77,9 @@
         '<div class="mdj-tr">' + esc(mot.translit) + '</div>' +
         '<div class="mdj-rule"></div>' +
         '<p class="mdj-def">' + esc(mot.definition) + '</p>' +
-        (accompagne ? '<div class="mdj-section"><span class="mdj-label">' + T.meditate + '</span><p>' + esc(accompagne) + '</p></div>' : '') +
+        section +
         '<div class="mdj-actions">' +
-          '<button type="button" class="mdj-btn mdj-btn--gold" data-mdj-share>' + T.share + '</button>' +
+          '<button type="button" class="mdj-btn mdj-btn--gold" data-mdj-share>' + sendIcon + ' ' + T.share + '</button>' +
           '<a class="mdj-btn" href="../amour/mot.html?id=' + encodeURIComponent(mot.id) + '">' + T.deeper + '</a>' +
         '</div>' +
       '</article>';

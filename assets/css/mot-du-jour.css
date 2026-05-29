@@ -131,3 +131,15 @@
 .mdj-btn--gold { background: var(--gold); color: #FFFDF8; border-color: var(--gold); }
 .mdj-btn:hover { background: var(--gold); color: #FFFDF8; }
 .mdj-btn--gold:hover { background: var(--gold-soft); border-color: var(--gold-soft); }
+
+/* prose + question à méditer */
+.mdj-question {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.25rem, 2.8vw, 1.5rem);
+  color: var(--gold);
+  margin-top: var(--space-md);
+}
+/* icône d'envoi dans le bouton Offrir */
+.mdj-btn { display: inline-flex; align-items: center; gap: 0.5rem; }
+.mdj-send-icon { width: 17px; height: 17px; }

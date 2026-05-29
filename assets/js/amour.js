@@ -117,7 +117,7 @@
         <div class="mot-fiche__translit">${mot.translit}</div>
         <div class="mot-fiche__rule"></div>
         <p class="mot-fiche__def">${escapeHtml(mot.definition)}</p>
-        <button type="button" class="mot-share" data-share-mot>✦ ${document.documentElement.lang === 'en' ? 'Share' : 'Partager'}</button>
+        <button type="button" class="mot-share" data-share-mot title="${document.documentElement.lang === 'en' ? 'Offer' : 'Offrir'}" aria-label="${document.documentElement.lang === 'en' ? 'Offer this word' : 'Offrir ce mot'}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 13 C6 9.5 9 9.5 12 12"/><path d="M12 12 C15 9.5 18 9.5 21.5 13"/></svg></button>
 
         <div class="mot-meta">
           <div class="mot-meta__tags">${themesHtml}</div>

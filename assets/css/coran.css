@@ -624,3 +624,4 @@ button.cv__num.is-open {
   font-size: 1.1rem; color: #F5EFE0;
   background: rgba(255,255,255,0.1); border: none; border-radius: 999px; cursor: pointer;
 }
+.cv__share { display: inline-flex; align-items: center; }

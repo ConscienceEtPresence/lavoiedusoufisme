@@ -108,7 +108,7 @@
             <p class="poesie-carte__extrait">${isEN ? `&ldquo;${p.extrait_fr}&rdquo;` : `« ${p.extrait_fr} »`}</p>
             <p class="poesie-carte__tagline"><em>${p.tagline}</em></p>
           </a>
-          ${p.status === 'ready' ? `<button type="button" class="poesie-share" data-share-poem="${p.id}" aria-label="${isEN ? 'Share' : 'Partager'}">✦</button>` : ''}
+          ${p.status === 'ready' ? `<button type="button" class="poesie-share" data-share-poem="${p.id}" title="${isEN ? 'Offer' : 'Offrir'}" aria-label="${isEN ? 'Offer this poem' : 'Offrir ce poème'}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 13 C6 9.5 9 9.5 12 12"/><path d="M12 12 C15 9.5 18 9.5 21.5 13"/></svg></button>` : ''}
         </div>
       `;
     }).join('');

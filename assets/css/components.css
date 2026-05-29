@@ -559,3 +559,4 @@
   margin-bottom: var(--space-md);
 }
 .hero__quote-actions .quote-share { margin: 0; }
+.quote-share { display: inline-flex; align-items: center; justify-content: center; }

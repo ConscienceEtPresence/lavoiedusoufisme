@@ -112,6 +112,53 @@
       reading.appendChild(intro);
     }
 
+    /* contrôles du mode inline : tout déplier + saut au verset (longues sourates) */
+    if (inlineMode) {
+      const controls = document.createElement('div');
+      controls.className = 'coran-controls';
+
+      const expandLbl = function (open) {
+        return (open ? '▴ ' : '▾ ') + (EN ? (open ? 'Collapse all' : 'Expand all') : (open ? 'Tout replier' : 'Tout déplier'));
+      };
+      let allOpen = false;
+      const exp = document.createElement('button');
+      exp.type = 'button';
+      exp.className = 'coran-controls__btn';
+      exp.textContent = expandLbl(false);
+      exp.addEventListener('click', function () {
+        allOpen = !allOpen;
+        const cLbl = EN ? 'Commentary' : 'Commentaire';
+        reading.querySelectorAll('.cv__study').forEach(function (p) { p.hidden = !allOpen; });
+        reading.querySelectorAll('.cv__comment-toggle').forEach(function (t) {
+          t.classList.toggle('is-open', allOpen);
+          t.textContent = (allOpen ? '▴ ' : '▾ ') + cLbl;
+        });
+        exp.textContent = expandLbl(allOpen);
+      });
+      controls.appendChild(exp);
+
+      if (d.versets_count > 40) {
+        const form = document.createElement('form');
+        form.className = 'coran-jumpverse';
+        const input = document.createElement('input');
+        input.type = 'number'; input.min = 1; input.max = d.versets_count;
+        input.placeholder = (EN ? 'verse' : 'verset');
+        input.setAttribute('aria-label', EN ? 'Go to verse' : 'Aller au verset');
+        const go = document.createElement('button');
+        go.type = 'submit';
+        go.textContent = EN ? 'Go' : 'Aller';
+        form.appendChild(input); form.appendChild(go);
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const num = parseInt(input.value, 10);
+          const el = document.getElementById('v-' + num);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        controls.appendChild(form);
+      }
+      reading.appendChild(controls);
+    }
+
     if (d.basmala) reading.appendChild(buildBasmala(d.basmala));
 
     d.versets.forEach(function (v) {
@@ -238,6 +285,7 @@
   function buildInlineVerse(v) {
     const cv = document.createElement('article');
     cv.className = 'cv cv--read cv--inline';
+    cv.id = 'v-' + v.n;
 
     const tr = document.createElement('p');
     tr.className = 'cv__trad';

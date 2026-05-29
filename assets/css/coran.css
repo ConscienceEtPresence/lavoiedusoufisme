@@ -524,3 +524,53 @@ button.cv__num.is-open {
   font-size: 0.74rem;
 }
 .coran-nav a:hover { color: var(--gold-soft); }
+
+/* --- Contrôles du mode inline (tout déplier + saut au verset) --- */
+.coran-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  margin: var(--space-lg) auto var(--space-sm);
+}
+.coran-controls__btn {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: none;
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  padding: 0.45rem 1.1rem;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.coran-controls__btn:hover { background: var(--gold); color: #FFFDF8; }
+.coran-jumpverse { display: inline-flex; align-items: center; gap: 0.4rem; }
+.coran-jumpverse input {
+  width: 4.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--ink-title);
+  background: var(--paper-warm);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.coran-jumpverse input:focus { outline: none; border-color: var(--gold); }
+.coran-jumpverse button {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  color: var(--turquoise);
+  background: none;
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+}
+.coran-jumpverse button:hover { color: var(--gold-soft); }

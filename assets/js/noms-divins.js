@@ -181,7 +181,7 @@
         <button class="nom-fiche__meditate-btn" data-action="meditate-nom">
           ${ND_T.meditate}
         </button>
-        <button class="nom-fiche__share-btn" data-action="share-nom" title="${ND_EN ? 'Offer' : 'Offrir'}" aria-label="${ND_EN ? 'Offer this Name' : 'Offrir ce Nom'}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 13 C6 9.5 9 9.5 12 12"/><path d="M12 12 C15 9.5 18 9.5 21.5 13"/></svg></button>
+        <button class="nom-fiche__share-btn" data-action="share-nom" title="${ND_EN ? 'Offer' : 'Offrir'}" aria-label="${ND_EN ? 'Offer this Name' : 'Offrir ce Nom'}"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3.4c-6.5.5-11.4 3.4-14.8 8.8 1.7-1.1 3.6-1.8 5.8-2-2.8 1.9-4.8 4.6-6.1 8-.5 1.2-.9 2.5-1.1 3.9 1.9-3.2 4.3-5.3 7.1-6.4-.7 1.3-1.2 2.8-1.4 4.3 3.1-3 5.3-6.5 6.6-10.8.5-1.6 1.2-3.6 3.9-5.8z"/></svg></button>
       </div>
       <div class="nom-fiche__nav">
         <button data-nav="prev">${ND_T.prev}</button>

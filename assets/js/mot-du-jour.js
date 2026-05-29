@@ -62,8 +62,8 @@
         '</div>';
     }
 
-    var sendIcon = '<svg class="mdj-send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
-      '<path d="M2.5 13 C6 9.5 9 9.5 12 12" /><path d="M12 12 C15 9.5 18 9.5 21.5 13" /></svg>';
+    var sendIcon = '<svg class="mdj-send-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">' +
+      '<path d="M23 3.4c-6.5.5-11.4 3.4-14.8 8.8 1.7-1.1 3.6-1.8 5.8-2-2.8 1.9-4.8 4.6-6.1 8-.5 1.2-.9 2.5-1.1 3.9 1.9-3.2 4.3-5.3 7.1-6.4-.7 1.3-1.2 2.8-1.4 4.3 3.1-3 5.3-6.5 6.6-10.8.5-1.6 1.2-3.6 3.9-5.8z"/></svg>';
 
     mount.innerHTML =
       '<div class="mdj-veil" id="mdj-veil">' +
@@ -92,12 +92,22 @@
     });
 
     mount.querySelector('[data-mdj-share]').addEventListener('click', function () {
-      ensurePartage(function () {
-        window.LVDDPartage.open({
-          ar: mot.ar, tr: mot.translit, text: mot.definition,
-          attribution: (EN ? 'Word of the day · lavoiedudedans.fr' : 'Le mot du jour · lavoiedudedans.fr')
+      // On envoie le LIEN (avec le mot choisi) pour garder la surprise de l'ouverture
+      var url = location.origin + location.pathname + '?id=' + encodeURIComponent(mot.id);
+      var teaser = EN ? 'A word awaits you — open it 🕊' : 'Un mot t’attend — ouvre-le 🕊';
+      var title = EN ? 'A word offered to you' : 'Un mot t’est offert';
+      if (navigator.share) {
+        navigator.share({ title: title, text: teaser, url: url }).catch(function () {});
+      } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(teaser + ' ' + url).then(function () {
+          var b = mount.querySelector('[data-mdj-share]');
+          var old = b.innerHTML;
+          b.innerHTML = (EN ? 'Link copied ✓' : 'Lien copié ✓');
+          setTimeout(function () { b.innerHTML = old; }, 1800);
         });
-      });
+      } else {
+        window.prompt(EN ? 'Copy this link:' : 'Copiez ce lien :', url);
+      }
     });
   }
 })();

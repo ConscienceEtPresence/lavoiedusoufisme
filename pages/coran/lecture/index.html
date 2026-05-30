@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/img/favicon-16.png" />
+  <link rel="shortcut icon" href="../../../assets/img/favicon.ico" />
+  <link rel="manifest" href="../../../manifest.webmanifest" />
+  <meta name="theme-color" content="#0F1830" />
+  <title>Lire le Coran — La voie du dedans</title>
+  <meta name="description" content="Lire le Coran verset par verset, comme on tourne les pages d'un livre. Sommaire, marque-page, audio." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../../assets/css/base.css" />
+  <link rel="stylesheet" href="../../../assets/css/coran-lecture.css?v=1" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-B7WRGPZMT3');</script>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="La voie du dedans" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Lire le Coran — La voie du dedans" />
+  <meta property="og:description" content="Une liseuse soufie : verset par verset, en glissant comme on tourne les pages d'un livre." />
+  <meta property="og:url" content="https://lavoiedudedans.fr/pages/coran/lecture/" />
+  <link rel="canonical" href="https://lavoiedudedans.fr/pages/coran/lecture/" />
+</head>
+<body class="lecture-body">
+
+  <header class="lecture-head" id="lecture-head">
+    <a href="../" class="lecture-head__back" aria-label="Retour au Coran">←</a>
+    <div class="lecture-head__progress">
+      <span class="lecture-head__sura" id="lec-sura">Sourate 1 · al-Fātiḥa</span>
+      <span class="lecture-head__verse" id="lec-verse">verset 1 / 7</span>
+    </div>
+    <button type="button" class="lecture-head__toc" id="lec-toc-open" aria-label="Sommaire">☰</button>
+  </header>
+
+  <main class="lecture-stage" id="lecture-stage">
+    <div class="lecture-pages" id="lecture-pages">
+      <!-- page-prev (sous, à gauche), page-current (au milieu), page-next (sous, à droite) -->
+    </div>
+    <div class="lecture-loading" id="lecture-loading"><div class="lecture-loading__dot"></div></div>
+  </main>
+
+  <footer class="lecture-foot">
+    <button type="button" class="lecture-foot__btn" id="lec-prev" aria-label="Précédent">←</button>
+    <span class="lecture-foot__hint">glissez pour tourner la page</span>
+    <button type="button" class="lecture-foot__btn" id="lec-next" aria-label="Suivant">→</button>
+  </footer>
+
+  <aside class="lecture-toc" id="lecture-toc" hidden aria-hidden="true">
+    <div class="lecture-toc__panel">
+      <header class="lecture-toc__head">
+        <h2>Sommaire</h2>
+        <button type="button" class="lecture-toc__close" id="lec-toc-close" aria-label="Fermer">✕</button>
+      </header>
+      <input type="search" class="lecture-toc__search" id="lec-toc-search" placeholder="Chercher une sourate…" />
+      <div class="lecture-toc__list" id="lec-toc-list"></div>
+    </div>
+  </aside>
+
+  <div class="lecture-resume" id="lecture-resume" hidden></div>
+
+  <script src="../../../assets/js/coran-lecture.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+/* ============================================================
+   Lire le Coran — liseuse en pages tournées
+   ============================================================ */
+
+html, body { height: 100%; }
+.lecture-body {
+  margin: 0;
+  font-family: var(--font-display, 'Source Serif 4', Georgia, serif);
+  background:
+    radial-gradient(140% 90% at 50% -10%, #FFFDF8 0%, #F8F1DE 60%, #EFE3C6 100%);
+  color: var(--ink-title, #1B2A4E);
+  overflow: hidden;
+  -webkit-user-select: none; user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 100%;
+}
+
+/* — bandeau supérieur — */
+.lecture-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: max(env(safe-area-inset-top), 0.8rem) 1rem 0.6rem;
+  background: linear-gradient(180deg, rgba(255,253,248,0.95), rgba(255,253,248,0.6));
+  position: relative; z-index: 5;
+}
+.lecture-head__back {
+  font-family: var(--font-sans, Inter, sans-serif);
+  color: var(--gold, #C0A050); text-decoration: none;
+  font-size: 1.3rem; padding: 0.4rem 0.6rem;
+  border-radius: 999px;
+}
+.lecture-head__back:hover { background: rgba(192,160,80,0.08); }
+.lecture-head__progress {
+  text-align: center; flex: 1; padding: 0 0.5rem;
+  display: flex; flex-direction: column; gap: 0.15rem;
+}
+.lecture-head__sura {
+  font-family: var(--font-display, Cormorant Garamond, serif);
+  font-size: 0.98rem; color: var(--ink-title, #1B2A4E); line-height: 1.2;
+}
+.lecture-head__verse {
+  font-family: var(--font-sans, Inter, sans-serif);
+  font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink-mute, #7A7560);
+}
+.lecture-head__toc {
+  background: transparent; border: none; font-size: 1.4rem;
+  color: var(--gold, #C0A050); cursor: pointer; padding: 0.4rem 0.6rem;
+  border-radius: 999px;
+}
+.lecture-head__toc:hover { background: rgba(192,160,80,0.08); }
+
+/* — la scène : conteneur 3D — */
+.lecture-stage {
+  position: relative;
+  height: calc(100vh - 130px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  perspective: 1800px;
+  perspective-origin: 50% 50%;
+  overflow: visible;
+}
+.lecture-pages {
+  position: absolute; inset: 1rem max(1rem, 5vw);
+  transform-style: preserve-3d;
+}
+
+/* — une page — */
+.lecture-page {
+  position: absolute; inset: 0;
+  background: linear-gradient(170deg, #FFFDF6 0%, #F4EAD0 100%);
+  border-radius: 14px;
+  box-shadow:
+    0 18px 40px -20px rgba(40,30,15,0.35),
+    0 3px 10px -3px rgba(192,160,80,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+  padding: clamp(1.4rem, 5vw, 2.2rem) clamp(1.3rem, 4vw, 2rem);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex; flex-direction: column; gap: clamp(1rem, 3vh, 1.6rem);
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  transform-origin: left center;
+  transform: rotateY(0deg);
+  will-change: transform, box-shadow;
+}
+/* fin grain de papier */
+.lecture-page::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  border-radius: inherit;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.7  0 0 0 0 0.55  0 0 0 0 0.3  0 0 0 0.15 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  mix-blend-mode: multiply; opacity: 0.5;
+}
+
+.lecture-page__head {
+  text-align: center; padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(192,160,80,0.25);
+}
+.lecture-page__sura {
+  font-family: var(--font-sans, Inter, sans-serif);
+  font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--gold, #C0A050);
+}
+.lecture-page__num {
+  font-family: var(--font-display, Cormorant Garamond, serif);
+  font-style: italic; font-size: 0.95rem; color: var(--ink-mute, #7A7560);
+  margin-top: 0.2rem;
+}
+
+.lecture-page__basmala {
+  text-align: center;
+  font-family: 'Amiri', serif;
+  font-size: clamp(1.4rem, 5vw, 1.8rem);
+  color: var(--gold, #C0A050);
+  margin: 0.5rem auto;
+  direction: rtl;
+}
+
+.lecture-page__ar {
+  font-family: 'Amiri', serif; direction: rtl; text-align: center;
+  font-size: clamp(1.7rem, 5.8vw, 2.4rem);
+  line-height: 2;
+  color: var(--ink-title, #1B2A4E);
+}
+.lecture-page__tr {
+  font-family: var(--font-display, Cormorant Garamond, serif);
+  font-style: italic; text-align: center;
+  font-size: clamp(0.95rem, 3.4vw, 1.1rem);
+  color: var(--gold, #C0A050);
+  line-height: 1.6;
+}
+.lecture-page__rule {
+  width: 40px; height: 1px; background: rgba(192,160,80,0.4);
+  margin: 0.4rem auto;
+}
+.lecture-page__trad {
+  font-family: var(--font-display, Cormorant Garamond, serif);
+  font-size: clamp(1.05rem, 3.6vw, 1.2rem);
+  line-height: 1.75;
+  color: var(--ink-soft, #4A586E);
+  text-align: center;
+}
+.lecture-page__trad em { color: var(--gold, #C0A050); font-style: italic; }
+
+.lecture-page__tools {
+  margin-top: auto; padding-top: 1rem;
+  display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap;
+}
+.lecture-page__tool {
+  background: rgba(255,253,248,0.6);
+  border: 1px solid rgba(192,160,80,0.3);
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  font-family: var(--font-sans, Inter, sans-serif);
+  font-size: 0.78rem; color: var(--ink-soft, #4A586E);
+  cursor: pointer; transition: all 0.2s;
+}
+.lecture-page__tool:hover { background: var(--gold, #C0A050); color: #FFFDF8; border-color: var(--gold, #C0A050); }
+
+.lecture-page__comment {
+  margin-top: 0.5rem; padding: 1rem 1.1rem;
+  background: rgba(192,160,80,0.05);
+  border-left: 3px solid rgba(192,160,80,0.4);
+  border-radius: 6px;
+  font-family: var(--font-display, Cormorant Garamond, serif);
+  font-size: 0.96rem; line-height: 1.65;
+  color: var(--ink-soft, #4A586E);
+}
+.lecture-page__comment[hidden] { display: none; }
+
+/* — empilement (z-index pour donner l'illusion d'un livre) — */
+.lecture-page--prev { z-index: 1; }
+.lecture-page--next { z-index: 2; }
+.lecture-page--current { z-index: 3; }
+.lecture-page--turning { z-index: 4; transition: transform 0.6s cubic-bezier(.4,.05,.2,1), box-shadow 0.6s ease; }
+.lecture-page--snapping { transition: transform 0.35s cubic-bezier(.4,.05,.2,1), box-shadow 0.35s ease; }
+
+/* — bandeau bas — */
+.lecture-foot {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.6rem 1rem max(env(safe-area-inset-bottom), 0.8rem);
+  background: linear-gradient(0deg, rgba(255,253,248,0.95), rgba(255,253,248,0.6));
+  z-index: 5;
+}
+.lecture-foot__btn {
+  background: transparent; border: 1px solid rgba(192,160,80,0.4);
+  border-radius: 999px;
+  width: 2.4rem; height: 2.4rem;
+  font-size: 1.1rem; color: var(--gold, #C0A050); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+}
+.lecture-foot__btn:hover { background: var(--gold, #C0A050); color: #FFFDF8; }
+.lecture-foot__btn:disabled { opacity: 0.3; cursor: default; }
+.lecture-foot__hint {
+  font-family: var(--font-sans, Inter, sans-serif);
+  font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(122,117,96,0.6);
+}
+
+/* — sommaire (overlay) — */
+.lecture-toc {
+  position: fixed; inset: 0;
+  background: rgba(15,24,48,0.5);
+  z-index: 10;
+  display: flex; align-items: stretch; justify-content: flex-end;
+}
+.lecture-toc[hidden] { display: none; }
+.lecture-toc__panel {
+  width: min(440px, 92vw); height: 100%;
+  background: linear-gradient(180deg, #FFFDF8, #F4EAD0);
+  display: flex; flex-direction: column;
+  box-shadow: -20px 0 60px -20px rgba(0,0,0,0.4);
+  animation: tocSlide 0.35s cubic-bezier(.2,.7,.2,1) both;
+}
+@keyframes tocSlide { from { transform: translateX(100%); } to { transform: translateX(0); } }
+.lecture-toc__head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: max(env(safe-area-inset-top), 1rem) 1.2rem 0.8rem;
+  border-bottom: 1px solid rgba(192,160,80,0.25);
+}
+.lecture-toc__head h2 { margin: 0; font-family: var(--font-display, Cormorant Garamond, serif); font-size: 1.4rem; color: var(--ink-title, #1B2A4E); font-weight: 500; }
+.lecture-toc__close {
+  background: transparent; border: none; font-size: 1.4rem;
+  color: var(--ink-mute, #7A7560); cursor: pointer; padding: 0.2rem 0.5rem;
+}
+.lecture-toc__search {
+  margin: 1rem 1.2rem 0.6rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid rgba(192,160,80,0.3);
+  border-radius: 999px;
+  font-family: var(--font-sans, Inter, sans-serif); font-size: 0.92rem;
+  background: rgba(255,253,248,0.6);
+  outline: none;
+}
+.lecture-toc__search:focus { border-color: var(--gold, #C0A050); background: #FFFDF8; }
+.lecture-toc__list {
+  flex: 1; overflow-y: auto;
+  padding: 0.5rem 1rem max(env(safe-area-inset-bottom), 1rem);
+}
+.lecture-toc-item {
+  display: flex; align-items: center; gap: 0.8rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none; color: inherit;
+  transition: background 0.2s;
+}
+.lecture-toc-item:hover { background: rgba(192,160,80,0.08); }
+.lecture-toc-item.is-current { background: rgba(192,160,80,0.18); }
+.lecture-toc-item__n {
+  font-family: var(--font-sans, Inter, sans-serif);
+  font-size: 0.72rem; letter-spacing: 0.06em;
+  width: 1.8rem; text-align: right; color: var(--ink-mute, #7A7560); flex-shrink: 0;
+}
+.lecture-toc-item__ar {
+  font-family: 'Amiri', serif; direction: rtl;
+  font-size: 1.1rem; color: var(--gold, #C0A050);
+  min-width: 5rem; text-align: right;
+}
+.lecture-toc-item__body { flex: 1; }
+.lecture-toc-item__tr { font-family: var(--font-display, Cormorant Garamond, serif); font-size: 1rem; color: var(--ink-title, #1B2A4E); }
+.lecture-toc-item__count { font-family: var(--font-sans, Inter, sans-serif); font-size: 0.7rem; color: var(--ink-mute, #7A7560); }
+
+/* — reprise de lecture — */
+.lecture-resume {
+  position: fixed; left: 50%; bottom: 5.5rem; transform: translateX(-50%);
+  background: rgba(255,253,248,0.96);
+  border: 1px solid rgba(192,160,80,0.35);
+  border-radius: 16px;
+  padding: 0.9rem 1.2rem;
+  box-shadow: 0 20px 40px -16px rgba(40,30,15,0.3);
+  z-index: 6;
+  display: flex; align-items: center; gap: 0.8rem;
+  animation: resumeIn 0.5s ease both;
+}
+@keyframes resumeIn { from { opacity: 0; transform: translate(-50%, 10px); } to { opacity: 1; transform: translate(-50%, 0); } }
+.lecture-resume[hidden] { display: none; }
+.lecture-resume__text {
+  font-family: var(--font-display, Cormorant Garamond, serif); font-style: italic;
+  font-size: 0.9rem; color: var(--ink-soft, #4A586E);
+}
+.lecture-resume__yes {
+  background: var(--gold, #C0A050); color: #FFFDF8; border: none;
+  border-radius: 999px; padding: 0.4rem 0.9rem;
+  font-family: var(--font-sans, Inter, sans-serif); font-size: 0.82rem;
+  cursor: pointer;
+}
+.lecture-resume__no {
+  background: transparent; color: var(--ink-mute, #7A7560);
+  border: none; cursor: pointer; font-size: 1.1rem;
+}
+
+/* — loader — */
+.lecture-loading {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  pointer-events: none;
+}
+.lecture-loading[hidden] { display: none; }
+.lecture-loading__dot {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--gold, #C0A050);
+  animation: lecLoad 1.2s ease-in-out infinite;
+}
+@keyframes lecLoad { 0%, 100% { transform: scale(0.6); opacity: 0.4; } 50% { transform: scale(1.2); opacity: 1; } }
+
+/* — réduction des animations — */
+@media (prefers-reduced-motion: reduce) {
+  .lecture-page--turning, .lecture-page--snapping { transition-duration: 0.2s; }
+  .lecture-loading__dot { animation: none; }
+}

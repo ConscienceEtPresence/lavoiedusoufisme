@@ -12,6 +12,24 @@
   if (!mount) return;
   var EN = document.documentElement.lang === 'en';
 
+  // ----- l'heure du jour colore le fond -----
+  (function setTimeOfDay() {
+    var h = new Date().getHours();
+    var cls = 'mdj-time-day';
+    if (h >= 5 && h < 8)       cls = 'mdj-time-dawn';
+    else if (h >= 8 && h < 17) cls = 'mdj-time-day';
+    else if (h >= 17 && h < 21) cls = 'mdj-time-dusk';
+    else                        cls = 'mdj-time-night';
+    document.body.classList.add(cls);
+    // ciel d'étoiles
+    if (!document.querySelector('.mdj-sky')) {
+      var sky = document.createElement('div');
+      sky.className = 'mdj-sky';
+      sky.setAttribute('aria-hidden', 'true');
+      document.body.insertBefore(sky, document.body.firstChild);
+    }
+  })();
+
   var T = EN ? {
     landingTitle: 'A word from the path', landingSub: 'For you, or to offer.',
     doorReceive: 'Receive my word of the day', doorReceiveSub: 'A word to meditate, today.',
@@ -29,7 +47,8 @@
     sent: 'The word has taken flight.',
     offerBack: 'Offer a word in return',
     goFurther: 'Continue along the way →',
-    teasers: ['A word awaits you — open it', 'A lamp for your evening', 'For you, in the hollow of this hour', 'A word that passes through me to you', 'A faint light from afar', 'To inhabit this moment', 'A gentle sign', 'A light door to push', 'Open it when the moment comes']
+    teasers: ['A word awaits you — open it', 'A lamp for your evening', 'For you, in the hollow of this hour', 'A word that passes through me to you', 'A faint light from afar', 'To inhabit this moment', 'A gentle sign', 'A light door to push', 'Open it when the moment comes'],
+    saveImage: 'Keep this word', inhabit: 'Inhabit this word ⤢', exit: 'Exit'
   } : {
     landingTitle: 'Un mot de la voie', landingSub: 'Pour vous, ou à offrir.',
     doorReceive: 'Recevoir mon mot du jour', doorReceiveSub: 'Un mot à méditer, aujourd’hui.',
@@ -47,7 +66,8 @@
     sent: 'Le mot a pris son envol.',
     offerBack: 'Offrir un mot en retour',
     goFurther: 'Continuer le chemin →',
-    teasers: ['Un mot t’attend — ouvre-le', 'Une lampe pour ton soir', 'Pour toi, dans le creux de cette heure', 'Une parole qui passe par moi pour toi', 'Un éclat venu de loin', 'Pour habiter l’instant', 'Un signe doux', 'Une porte légère, à pousser', 'À ouvrir quand le moment vient']
+    teasers: ['Un mot t’attend — ouvre-le', 'Une lampe pour ton soir', 'Pour toi, dans le creux de cette heure', 'Une parole qui passe par moi pour toi', 'Un éclat venu de loin', 'Pour habiter l’instant', 'Un signe doux', 'Une porte légère, à pousser', 'À ouvrir quand le moment vient'],
+    saveImage: 'Garder ce mot', inhabit: 'Habiter ce mot ⤢', exit: 'Sortir'
   };
 
   var STAR = '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">' +
@@ -157,16 +177,55 @@
   }
 
   function revealView(it, eyebrow, invite, mode) {
+    var toolsHTML = '<div class="mdj-tools">' +
+      '<button type="button" class="mdj-tool" id="mdj-keep">✦ ' + T.saveImage + '</button>' +
+      '<button type="button" class="mdj-tool" id="mdj-inhabit">' + T.inhabit + '</button>' +
+    '</div>';
     mount.innerHTML =
       '<div class="mdj-veil" id="mdj-veil"><div class="mdj-star">' + STAR + '</div>' +
         '<p class="mdj-invite">' + invite + '</p><p class="mdj-tap">' + T.tap + '</p></div>' +
       '<article class="mdj-card" id="mdj-card" hidden><div class="mdj-eyebrow">' + eyebrow + '</div>' +
-        bodyHTML(it) + '<div class="mdj-actions">' + footerHTML(it, mode) + '</div></article>';
+        bodyHTML(it) +
+        toolsHTML +
+        '<div class="mdj-actions">' + footerHTML(it, mode) + '</div></article>';
     var veil = document.getElementById('mdj-veil'), card = document.getElementById('mdj-card');
     veil.addEventListener('click', function () {
       veil.classList.add('is-gone');
-      setTimeout(function () { veil.style.display = 'none'; card.hidden = false; }, 900);
+      setTimeout(function () { veil.style.display = 'none'; card.hidden = false; bindTools(it); }, 900);
     });
+  }
+
+  function bindTools(it) {
+    var keep = document.getElementById('mdj-keep');
+    if (keep) keep.addEventListener('click', function () { saveAsImage(it); });
+    var inh = document.getElementById('mdj-inhabit');
+    if (inh) inh.addEventListener('click', function () { enterImmersion(); });
+  }
+
+  function saveAsImage(it) {
+    if (!window.LVDDPartage) return;
+    var ar = '', tr = '', text = '', attribution = '';
+    if (it.type === 'mot') {
+      ar = it.ar || ''; tr = it.tr || ''; text = it.def || ''; attribution = '';
+    } else {
+      ar = ''; tr = it.titre || ''; text = String(it.texte || '').replace(/<[^>]+>/g, ''); attribution = it.source || '';
+    }
+    var eyebrow = EN ? 'A word offered' : 'Un mot offert';
+    window.LVDDPartage.open({ ar: ar, tr: tr, text: text, attribution: attribution, eyebrow: eyebrow });
+  }
+
+  function enterImmersion() {
+    document.body.classList.add('mdj-immersion');
+    var exit = document.createElement('button');
+    exit.type = 'button';
+    exit.className = 'mdj-immersion-exit';
+    exit.setAttribute('aria-label', T.exit);
+    exit.textContent = '✕';
+    exit.addEventListener('click', function () {
+      document.body.classList.remove('mdj-immersion');
+      if (exit.parentNode) exit.parentNode.removeChild(exit);
+    });
+    document.body.appendChild(exit);
   }
 
   function shareLink(url, btn) {

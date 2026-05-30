@@ -23,7 +23,13 @@
     draw: 'Draw', redraw: 'Draw another', sendGift: 'Send this gift',
     deeper: 'Go further →', yourTurn: 'In turn, offer a word →',
     anotherWord: 'Another word ✦', anotherEyebrow: 'Another word for you', anotherInvite: 'Another word comes to you.',
-    teaser: 'A word awaits you — open it', giftTitle: 'A word for you', copied: 'Link copied ✓'
+    teaser: 'A word awaits you — open it', giftTitle: 'A word for you', copied: 'Link copied ✓',
+    intentionTitle: 'For whom — for what?', intentionAll: 'At random', intentionSouffre: 'Someone in pain', intentionPaix: 'Seeking peace', intentionDoute: 'In doubt', intentionEveil: 'Awakening', intentionJoie: 'In joy',
+    breathe: 'Breathe. Think of the person. Touch when ready.',
+    sent: 'The word has taken flight.',
+    offerBack: 'Offer a word in return',
+    goFurther: 'Continue along the way →',
+    teasers: ['A word awaits you — open it', 'A lamp for your evening', 'For you, in the hollow of this hour', 'A word that passes through me to you', 'A faint light from afar', 'To inhabit this moment', 'A gentle sign', 'A light door to push', 'Open it when the moment comes']
   } : {
     landingTitle: 'Un mot de la voie', landingSub: 'Pour vous, ou à offrir.',
     doorReceive: 'Recevoir mon mot du jour', doorReceiveSub: 'Un mot à méditer, aujourd’hui.',
@@ -35,7 +41,13 @@
     draw: 'Tirer', redraw: 'Tirer un autre', sendGift: 'Envoyer ce cadeau',
     deeper: 'Aller plus loin →', yourTurn: 'À votre tour, offrir un mot →',
     anotherWord: 'Un autre mot ✦', anotherEyebrow: 'Un autre mot pour vous', anotherInvite: 'Un autre mot vient à vous.',
-    teaser: 'Un mot t’attend — ouvre-le', giftTitle: 'Un mot t’est offert', copied: 'Lien copié ✓'
+    teaser: 'Un mot t’attend — ouvre-le', giftTitle: 'Un mot t’est offert', copied: 'Lien copié ✓',
+    intentionTitle: 'Pour qui — pour quoi ?', intentionAll: 'Au hasard', intentionSouffre: 'Quelqu’un qui souffre', intentionPaix: 'En quête de paix', intentionDoute: 'Dans le doute', intentionEveil: 'En éveil', intentionJoie: 'Dans la joie',
+    breathe: 'Respirez. Pensez à la personne. Touchez quand vous êtes prêt(e).',
+    sent: 'Le mot a pris son envol.',
+    offerBack: 'Offrir un mot en retour',
+    goFurther: 'Continuer le chemin →',
+    teasers: ['Un mot t’attend — ouvre-le', 'Une lampe pour ton soir', 'Pour toi, dans le creux de cette heure', 'Une parole qui passe par moi pour toi', 'Un éclat venu de loin', 'Pour habiter l’instant', 'Un signe doux', 'Une porte légère, à pousser', 'À ouvrir quand le moment vient']
   };
 
   var STAR = '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">' +
@@ -74,10 +86,74 @@
       f += '<a class="mdj-btn mdj-btn--gold" href="?mode=encore">' + T.anotherWord + '</a>';
       f += '<a class="mdj-btn" href="?mode=offrir">' + T.doorOffer + ' →</a>';
     } else if (mode === 'recv') {
+      f += '<a class="mdj-btn mdj-btn--gold" href="?mode=offrir">' + DOVE + ' ' + T.offerBack + '</a>';
       f += '<a class="mdj-btn" href="?mode=jour">' + T.doorReceive + '</a>';
-      f += '<a class="mdj-btn" href="?mode=offrir">' + T.yourTurn + '</a>';
+      f += '<a class="mdj-btn mdj-btn--ghost" href="../../index.html">' + T.goFurther + '</a>';
     }
     return f;
+  }
+
+  // ----- intentions : filtrage doux par mots-clés -----
+  var INTENTION_KEYWORDS = {
+    souffre: ['souffr','peine','douleur','épreuve','perd','perte','deuil','larme','consol','triste','suffer','grief','consol','sorrow','tear'],
+    paix:    ['paix','calme','silence','tranquill','quiétude','repos','sérénit','salam','sakīna','apais','peace','quiet','calm','still'],
+    doute:   ['doute','interrog','question','perplex','sens','sentier','chemin','cherch','doubt','wonder','ask','seek'],
+    eveil:   ['éveil','éclair','lumière','vrai','réalité','révèl','dévoil','nūr','tajall','présence','awak','light','real','presen','reveal'],
+    joie:    ['joie','gratitude','remerc','beauté','émerveill','danse','chant','jamāl','allègr','joy','grat','beauty','dance','wonder']
+  };
+  function filterByIntention(pool, intention) {
+    if (!intention || intention === 'all') return pool;
+    var kws = INTENTION_KEYWORDS[intention] || [];
+    var scored = [];
+    pool.forEach(function (it) {
+      var content = ((it.texte || '') + ' ' + (it.commentaire || '') + ' ' + (it.titre || '')).toLowerCase();
+      var s = 0;
+      for (var i = 0; i < kws.length; i++) { if (content.indexOf(kws[i]) !== -1) s++; }
+      if (s > 0) scored.push({ it: it, s: s });
+    });
+    if (!scored.length) return pool; // repli silencieux
+    // pondéré : on tire dans le pool des mieux notés (top 30%)
+    scored.sort(function (a, b) { return b.s - a.s; });
+    var top = scored.slice(0, Math.max(5, Math.ceil(scored.length * 0.3)));
+    return top.map(function (x) { return x.it; });
+  }
+
+  // ----- pause respiration -----
+  function breatheThen(callback) {
+    var box = document.createElement('div');
+    box.className = 'mdj-breath';
+    box.innerHTML = '<div class="mdj-breath__inner"><div class="mdj-breath__circle"></div><p class="mdj-breath__text">' + T.breathe + '</p></div>';
+    document.body.appendChild(box);
+    var done = false;
+    function finish() {
+      if (done) return; done = true;
+      box.classList.add('is-gone');
+      setTimeout(function () { if (box.parentNode) box.parentNode.removeChild(box); callback(); }, 500);
+    }
+    box.addEventListener('click', finish);
+    setTimeout(finish, 3500);
+  }
+
+  // ----- colombe qui s'envole -----
+  function doveFly() {
+    var d = document.createElement('div');
+    d.className = 'mdj-dove-fly';
+    d.innerHTML = DOVE;
+    document.body.appendChild(d);
+    setTimeout(function () { if (d.parentNode) d.parentNode.removeChild(d); }, 2400);
+    var msg = document.createElement('div');
+    msg.className = 'mdj-sent-msg';
+    msg.textContent = T.sent;
+    document.body.appendChild(msg);
+    setTimeout(function () {
+      msg.classList.add('is-fade');
+      setTimeout(function () { if (msg.parentNode) msg.parentNode.removeChild(msg); }, 700);
+    }, 2200);
+  }
+
+  function pickTeaser() {
+    var arr = T.teasers || [T.teaser];
+    return arr[Math.floor(Math.random() * arr.length)];
   }
 
   function revealView(it, eyebrow, invite, mode) {
@@ -94,11 +170,14 @@
   }
 
   function shareLink(url, btn) {
+    var teaser = pickTeaser();
+    function whenSent() { doveFly(); }
     if (navigator.share) {
-      navigator.share({ title: T.giftTitle, text: T.teaser + ' 🕊', url: url }).catch(function () {});
+      navigator.share({ title: T.giftTitle, text: teaser + ' 🕊', url: url }).then(whenSent).catch(function () {});
     } else if (navigator.clipboard) {
-      navigator.clipboard.writeText(T.teaser + ' ' + url).then(function () {
+      navigator.clipboard.writeText(teaser + ' ' + url).then(function () {
         if (btn) { var o = btn.innerHTML; btn.innerHTML = T.copied; setTimeout(function () { btn.innerHTML = o; }, 1800); }
+        whenSent();
       });
     } else { window.prompt(EN ? 'Copy this link:' : 'Copiez ce lien :', url); }
   }
@@ -127,17 +206,43 @@
   }
 
   function offerView(pool) {
+    var intents = [
+      ['all', T.intentionAll, '✦'],
+      ['paix', T.intentionPaix, '☮'],
+      ['souffre', T.intentionSouffre, '☾'],
+      ['doute', T.intentionDoute, '?'],
+      ['eveil', T.intentionEveil, '☀'],
+      ['joie', T.intentionJoie, '❀']
+    ];
+    var chips = intents.map(function (x) {
+      var cls = x[0] === 'all' ? 'mdj-chip is-active' : 'mdj-chip';
+      return '<button type="button" class="' + cls + '" data-intent="' + x[0] + '"><span class="mdj-chip__ico">' + x[2] + '</span> ' + esc(x[1]) + '</button>';
+    }).join('');
     mount.innerHTML =
       '<div class="mdj-offer"><div class="mdj-eyebrow">' + T.offerTitle + '</div>' +
         '<p class="mdj-offer-sub">' + T.offerSub + '</p>' +
+        '<div class="mdj-intention"><div class="mdj-intention__label">' + T.intentionTitle + '</div>' +
+          '<div class="mdj-chips">' + chips + '</div>' +
+        '</div>' +
         '<div class="mdj-dove-big">' + DOVE + '</div>' +
         '<button type="button" class="mdj-btn mdj-btn--gold" id="mdj-draw">' + T.draw + '</button>' +
         '<div id="mdj-drawn"></div></div>';
-    document.getElementById('mdj-draw').addEventListener('click', function () { drawAndShow(pool); });
+    var current = 'all';
+    document.querySelectorAll('.mdj-chip').forEach(function (b) {
+      b.addEventListener('click', function () {
+        document.querySelectorAll('.mdj-chip').forEach(function (x) { x.classList.remove('is-active'); });
+        b.classList.add('is-active');
+        current = b.getAttribute('data-intent');
+      });
+    });
+    document.getElementById('mdj-draw').addEventListener('click', function () {
+      breatheThen(function () { drawAndShow(pool, current); });
+    });
   }
 
-  function drawAndShow(pool) {
-    var it = pool[Math.floor(Math.random() * pool.length)];
+  function drawAndShow(pool, intention) {
+    var filtered = filterByIntention(pool, intention);
+    var it = filtered[Math.floor(Math.random() * filtered.length)];
     var url = location.origin + location.pathname + '?id=' + encodeURIComponent(it.id);
     var box = document.getElementById('mdj-drawn');
     box.innerHTML =
@@ -148,7 +253,7 @@
         '</div></article>';
     var sendBtn = document.getElementById('mdj-send');
     sendBtn.addEventListener('click', function () { shareLink(url, sendBtn); });
-    document.getElementById('mdj-redraw').addEventListener('click', function () { drawAndShow(pool); });
+    document.getElementById('mdj-redraw').addEventListener('click', function () { breatheThen(function () { drawAndShow(pool, intention); }); });
     box.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 

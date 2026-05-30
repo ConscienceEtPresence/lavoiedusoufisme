@@ -195,3 +195,95 @@
   font-family: var(--font-sans); font-size: 0.78rem; letter-spacing: 0.06em;
   color: var(--ink-mute); margin-top: var(--space-md);
 }
+
+/* ============================================================
+   Intentions, respiration, colombe qui s'envole
+   ============================================================ */
+
+/* — chips d'intention — */
+.mdj-intention { margin: var(--space-md) auto var(--space-lg); max-width: 28rem; }
+.mdj-intention__label {
+  font-family: var(--font-sans); font-size: 0.74rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--gold); text-align: center;
+  margin-bottom: 0.6rem;
+}
+.mdj-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: center; }
+.mdj-chip {
+  font-family: var(--font-display); font-size: 0.92rem; line-height: 1;
+  color: var(--ink-soft);
+  background: var(--paper); border: 1px solid var(--line); border-radius: 999px;
+  padding: 0.5rem 0.9rem; cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s, transform 0.15s;
+}
+.mdj-chip:hover { border-color: var(--gold); color: var(--ink-title); transform: translateY(-1px); }
+.mdj-chip.is-active { background: var(--gold); color: var(--paper); border-color: var(--gold); }
+.mdj-chip__ico { font-size: 0.9em; margin-right: 0.2rem; }
+
+/* — pause respiration — */
+.mdj-breath {
+  position: fixed; inset: 0;
+  background: radial-gradient(60% 60% at 50% 50%, rgba(255,253,248,0.96) 0%, rgba(247,243,234,0.96) 100%);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 2000; cursor: pointer;
+  animation: mdjFadeIn 0.5s ease both;
+}
+.mdj-breath.is-gone { animation: mdjFadeOut 0.5s ease both; }
+@keyframes mdjFadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes mdjFadeOut { from { opacity: 1; } to { opacity: 0; } }
+.mdj-breath__inner { text-align: center; max-width: 24rem; padding: var(--space-lg); }
+.mdj-breath__circle {
+  width: 100px; height: 100px; margin: 0 auto var(--space-lg);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(192,160,80,0.18) 0%, rgba(192,160,80,0) 70%);
+  border: 1px solid var(--gold-soft);
+  animation: mdjBreath 3s ease-in-out infinite;
+}
+@keyframes mdjBreath {
+  0%, 100% { transform: scale(0.85); opacity: 0.5; }
+  50%      { transform: scale(1.15); opacity: 1; }
+}
+.mdj-breath__text {
+  font-family: var(--font-display); font-style: italic;
+  font-size: 1.1rem; line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+/* — colombe qui s'envole — */
+.mdj-dove-fly {
+  position: fixed; left: 0; top: 0;
+  z-index: 1500; pointer-events: none;
+  color: var(--gold);
+  animation: mdjDoveFly 2.4s cubic-bezier(.32,.18,.6,1) forwards;
+}
+.mdj-dove-fly svg { width: 56px; height: 56px; display: block; filter: drop-shadow(0 4px 12px rgba(192,160,80,0.4)); }
+@keyframes mdjDoveFly {
+  0%   { left: -8vw; top: 65vh; transform: rotate(-6deg) scale(0.7); opacity: 0; }
+  10%  { opacity: 1; }
+  50%  { top: 28vh; transform: rotate(8deg) scale(1.1); }
+  100% { left: 108vw; top: 12vh; transform: rotate(-8deg) scale(0.85); opacity: 0; }
+}
+
+/* — message « le mot a pris son envol » — */
+.mdj-sent-msg {
+  position: fixed; left: 50%; bottom: 12vh; transform: translateX(-50%);
+  z-index: 1500;
+  font-family: var(--font-display); font-style: italic;
+  font-size: 1.15rem; color: var(--ink-title);
+  background: var(--paper);
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--gold-soft);
+  box-shadow: 0 12px 30px -16px rgba(27,42,78,0.3);
+  animation: mdjSentIn 0.6s cubic-bezier(.2,.7,.2,1) both;
+}
+.mdj-sent-msg.is-fade { animation: mdjFadeOut 0.7s ease both; }
+@keyframes mdjSentIn { from { opacity: 0; transform: translate(-50%, 10px); } to { opacity: 1; transform: translate(-50%, 0); } }
+
+/* — bouton fantôme (pour le lien doux "Continuer le chemin") — */
+.mdj-btn--ghost { background: transparent; color: var(--ink-mute); border: 1px solid transparent; }
+.mdj-btn--ghost:hover { color: var(--gold); border-color: var(--gold-soft); }
+
+@media (prefers-reduced-motion: reduce) {
+  .mdj-breath__circle { animation: none; }
+  .mdj-dove-fly { animation-duration: 0.6s; }
+}

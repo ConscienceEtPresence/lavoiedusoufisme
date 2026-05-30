@@ -154,6 +154,19 @@
     setTimeout(finish, 3500);
   }
 
+  // ----- colombe qui arrive (au destinataire) -----
+  function doveArriveAndThen(callback) {
+    var d = document.createElement('div');
+    d.className = 'mdj-dove-arrive';
+    d.innerHTML = DOVE;
+    document.body.appendChild(d);
+    // pendant la traversée, on prépare déjà le voile (caché)
+    mount.innerHTML = '<div style="text-align:center;color:transparent;">·</div>';
+    setTimeout(function () { if (d.parentNode) d.parentNode.removeChild(d); }, 2400);
+    // le callback (qui pose le voile) est joué légèrement avant la fin
+    setTimeout(function () { callback(); }, 1800);
+  }
+
   // ----- colombe qui s'envole -----
   function doveFly() {
     var d = document.createElement('div');
@@ -338,7 +351,9 @@
 
     if (id) {
       var gift = pool.filter(function (x) { return x.id === id; })[0] || pool[0];
-      revealView(gift, T.recvEyebrow, T.recvInvite, 'recv');
+      doveArriveAndThen(function () {
+        revealView(gift, T.recvEyebrow, T.recvInvite, 'recv');
+      });
     } else if (mode === 'offrir') {
       offerView(pool);
     } else if (mode === 'jour') {

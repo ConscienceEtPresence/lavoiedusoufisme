@@ -45,7 +45,8 @@
 
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
-  fetch('../../data/alphabet.json').then(function (r) { return r.json(); }).then(function (d) {
+  var DATA_URL = EN ? '/en/data/alphabet.json' : '/data/alphabet.json';
+  fetch(DATA_URL).then(function (r) { return r.json(); }).then(function (d) {
     // grille
     d.lettres.forEach(function (L, i) {
       var c = document.createElement('button');

@@ -22,6 +22,7 @@
     offerTitle: 'Offer a word', offerSub: 'Draw a word, then send it. The person will discover it on opening.',
     draw: 'Draw', redraw: 'Draw another', sendGift: 'Send this gift',
     deeper: 'Go further →', yourTurn: 'In turn, offer a word →',
+    anotherWord: 'Another word ✦', anotherEyebrow: 'Another word for you', anotherInvite: 'Another word comes to you.',
     teaser: 'A word awaits you — open it', giftTitle: 'A word for you', copied: 'Link copied ✓'
   } : {
     landingTitle: 'Un mot de la voie', landingSub: 'Pour vous, ou à offrir.',
@@ -33,6 +34,7 @@
     offerTitle: 'Offrir un mot', offerSub: 'Tirez, puis envoyez. La personne le découvrira en l’ouvrant.',
     draw: 'Tirer', redraw: 'Tirer un autre', sendGift: 'Envoyer ce cadeau',
     deeper: 'Aller plus loin →', yourTurn: 'À votre tour, offrir un mot →',
+    anotherWord: 'Un autre mot ✦', anotherEyebrow: 'Un autre mot pour vous', anotherInvite: 'Un autre mot vient à vous.',
     teaser: 'Un mot t’attend — ouvre-le', giftTitle: 'Un mot t’est offert', copied: 'Lien copié ✓'
   };
 
@@ -68,8 +70,13 @@
   function footerHTML(it, mode) {
     var f = '';
     if (it.type === 'mot' && it.deeper) f += '<a class="mdj-btn" href="' + it.deeper + '">' + T.deeper + '</a>';
-    if (mode === 'jour') f += '<a class="mdj-btn" href="?mode=offrir">' + T.doorOffer + ' →</a>';
-    else if (mode === 'recv') f += '<a class="mdj-btn" href="?mode=offrir">' + T.yourTurn + '</a>';
+    if (mode === 'jour' || mode === 'encore') {
+      f += '<a class="mdj-btn mdj-btn--gold" href="?mode=encore">' + T.anotherWord + '</a>';
+      f += '<a class="mdj-btn" href="?mode=offrir">' + T.doorOffer + ' →</a>';
+    } else if (mode === 'recv') {
+      f += '<a class="mdj-btn" href="?mode=jour">' + T.doorReceive + '</a>';
+      f += '<a class="mdj-btn" href="?mode=offrir">' + T.yourTurn + '</a>';
+    }
     return f;
   }
 
@@ -170,6 +177,8 @@
     } else if (mode === 'jour') {
       var day = Math.floor(Date.now() / 86400000);
       revealView(pool[day % pool.length], T.selfEyebrow, T.selfInvite, 'jour');
+    } else if (mode === 'encore') {
+      revealView(pool[Math.floor(Math.random() * pool.length)], T.anotherEyebrow, T.anotherInvite, 'encore');
     } else {
       landingView();
     }

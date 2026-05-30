@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/img/favicon-16.png" />
+  <link rel="shortcut icon" href="../../../../assets/img/favicon.ico" />
+  <link rel="manifest" href="../../../../manifest-en.webmanifest" />
+  <meta name="theme-color" content="#0F1830" />
+  <title>Reciting the 99 Names — The Inner Path</title>
+  <meta name="description" content="The 99 Names as flashcards: reading, auto, quiz. For recitation, one to one." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../../../assets/css/base.css" />
+  <link rel="stylesheet" href="../../../../assets/css/layout.css" />
+  <link rel="stylesheet" href="../../../../assets/css/components.css" />
+  <link rel="stylesheet" href="../../../../assets/css/bilingue.css" />
+  <link rel="stylesheet" href="../../../../assets/css/accueil.css?v=10" />
+  <link rel="stylesheet" href="../../../../assets/css/noms-multi.css?v=1" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-B7WRGPZMT3');</script>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Inner Path" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Reciting the 99 Names — The Inner Path" />
+  <meta property="og:description" content="The 99 Names as flashcards: reading, auto, quiz." />
+  <meta property="og:url" content="https://lavoiedudedans.fr/en/pages/noms-divins/reciter/" />
+  <meta property="og:image" content="https://lavoiedudedans.fr/assets/img/icon-512.png" />
+  <link rel="canonical" href="https://lavoiedudedans.fr/en/pages/noms-divins/reciter/" />
+</head>
+<body class="page-enter nd">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="../../../../index.html" class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="16" cy="16" r="13" /><circle cx="16" cy="16" r="7" /><circle cx="16" cy="16" r="1.5" fill="currentColor" />
+        </svg>
+        <span>The Inner Path</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="../../../../index.html">Home</a></li>
+          <li><a href="../../../../pages/decouvrir.html">Discover</a></li>
+          <li><a href="../../../../pages/cheminer.html">Journeying</a></li>
+          <li><a href="../../../../pages/rencontrer.html">Encounter</a></li>
+          <li><a href="../../../../pages/metaphysique/index.html">Metaphysics</a></li>
+          <li><a href="../../../../pages/poesie/index.html">Poetry</a></li>
+          <li><a href="../../../../pages/contes/index.html">Tales</a></li>
+          <li><a href="../../../../pages/coran/index.html">ق Quran</a></li>
+          <li><a href="../../../../pages/dictionnaire/index.html">م Dictionary</a></li>
+          <li><a href="../../../../pages/racines/index.html">جذر Roots</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="nd-hub-intro">
+      <div class="nd-hub-intro__ar" lang="ar" dir="rtl">الذِّكْر</div>
+      <h1>Recite</h1>
+      <p class="nd-hub-intro__sub"><em>the 99 Names, one by one — for yourself</em></p>
+    </section>
+
+    <section class="container container--narrow" style="padding: var(--space-md) var(--space-lg) var(--space-2xl);">
+      <div class="noms-flash" id="noms-flash" aria-label="The 99 Names — recitation">
+        <button type="button" class="noms-flash__close" id="nf-close" aria-label="Close fullscreen" hidden>✕</button>
+        <div class="noms-flash__head">
+          <div class="noms-flash__eyebrow" lang="ar" dir="rtl">الأَسْمَاءُ الحُسْنَى</div>
+          <h2 class="noms-flash__title">Recitation</h2>
+        </div>
+
+        <div class="noms-flash__modes" role="group" aria-label="Recitation mode">
+          <button type="button" class="noms-flash__mode is-active" data-mode="lecture">Reading</button>
+          <button type="button" class="noms-flash__mode" data-mode="defilement">Auto</button>
+          <button type="button" class="noms-flash__mode" data-mode="quiz">Quiz</button>
+        </div>
+
+        <div class="noms-flash__card" id="nf-card" role="button" tabindex="0"
+             aria-label="Card of the Divine Names">
+          <div class="noms-flash__num"><span id="nf-n">1</span> <span class="nf-total">/ 99</span></div>
+          <div class="noms-flash__body">
+            <div class="noms-flash__ar" id="nf-ar" lang="ar" dir="rtl">اَللَّٰه</div>
+            <div class="noms-flash__tr" id="nf-tr">Allāh</div>
+            <div class="noms-flash__rule" aria-hidden="true"></div>
+            <div class="noms-flash__fr" id="nf-fr">God</div>
+            <p class="noms-flash__sens" id="nf-sens">The supreme Name that gathers all the Names.</p>
+          </div>
+          <div class="noms-flash__cue" id="nf-cue" aria-hidden="true"></div>
+        </div>
+
+        <div class="noms-flash__controls">
+          <button type="button" class="noms-flash__btn" id="nf-prev">← Previous</button>
+          <button type="button" class="noms-flash__btn" id="nf-play" hidden>▷ Play</button>
+          <button type="button" class="noms-flash__btn" id="nf-shuffle">↻ Shuffle</button>
+          <button type="button" class="noms-flash__btn" id="nf-expand">⤢ Fullscreen</button>
+          <a class="noms-flash__link" href="../">See all →</a>
+        </div>
+
+        <button type="button" class="noms-flash__audio" id="nf-audio" aria-pressed="false"
+                title="Turn on the voice (low recitation)">
+          <span class="noms-flash__audio-icon" aria-hidden="true">♪</span>
+          <span class="noms-flash__audio-label">voice</span>
+        </button>
+      </div>
+    </section>
+
+    <nav class="nd-step-nav">
+      <span class="nd-step-nav__edge"></span>
+      <a class="nd-step-nav__hub" href="../">← All sections</a>
+      <span class="nd-step-nav__edge"></span>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p class="small" style="margin-top:1rem;"><a href="../../../../index.html">← Back to home</a></p>
+    </div>
+  </footer>
+
+  <script src="../../../../assets/js/main.js?v=14"></script>
+  <script src="../../../../assets/js/noms-flash.js?v=5"></script>
+</body>
+</html>

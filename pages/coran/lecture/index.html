@@ -10,14 +10,14 @@
   <link rel="manifest" href="../../../manifest.webmanifest" />
   <meta name="theme-color" content="#0F1830" />
   <title>Lire le Coran — La voie du dedans</title>
-  <meta name="description" content="Lire le Coran verset par verset, comme on tourne les pages d'un livre. Sommaire, marque-page, audio." />
+  <meta name="description" content="Lire le Coran verset par verset, comme on tourne les pages d'un livre. Arabe en grand, translittération et traduction à volonté, mots cliquables." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="../../../assets/css/base.css" />
-  <link rel="stylesheet" href="../../../assets/css/coran-lecture.css?v=1" />
+  <link rel="stylesheet" href="../../../assets/css/coran-lecture.css?v=2" />
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-B7WRGPZMT3');</script>
@@ -38,22 +38,22 @@
       <span class="lecture-head__sura" id="lec-sura">Sourate 1 · al-Fātiḥa</span>
       <span class="lecture-head__verse" id="lec-verse">verset 1 / 7</span>
     </div>
+    <button type="button" class="lecture-head__aa" id="lec-aa-open" aria-label="Réglages d'affichage">Aa</button>
     <button type="button" class="lecture-head__toc" id="lec-toc-open" aria-label="Sommaire">☰</button>
   </header>
 
   <main class="lecture-stage" id="lecture-stage">
-    <div class="lecture-pages" id="lecture-pages">
-      <!-- page-prev (sous, à gauche), page-current (au milieu), page-next (sous, à droite) -->
-    </div>
+    <div class="lecture-pages" id="lecture-pages"></div>
     <div class="lecture-loading" id="lecture-loading"><div class="lecture-loading__dot"></div></div>
   </main>
 
   <footer class="lecture-foot">
     <button type="button" class="lecture-foot__btn" id="lec-prev" aria-label="Précédent">←</button>
-    <span class="lecture-foot__hint">glissez pour tourner la page</span>
+    <span class="lecture-foot__hint" id="lec-hint">glissez pour tourner la page</span>
     <button type="button" class="lecture-foot__btn" id="lec-next" aria-label="Suivant">→</button>
   </footer>
 
+  <!-- Sommaire -->
   <aside class="lecture-toc" id="lecture-toc" hidden aria-hidden="true">
     <div class="lecture-toc__panel">
       <header class="lecture-toc__head">
@@ -65,8 +65,46 @@
     </div>
   </aside>
 
+  <!-- Réglages Aa -->
+  <aside class="lecture-aa" id="lecture-aa" hidden aria-hidden="true">
+    <div class="lecture-aa__panel">
+      <header class="lecture-aa__head">
+        <h2>Affichage</h2>
+        <button type="button" class="lecture-aa__close" id="lec-aa-close" aria-label="Fermer">✕</button>
+      </header>
+
+      <div class="lecture-aa__group">
+        <div class="lecture-aa__label">Taille du texte</div>
+        <div class="lecture-aa__row">
+          <span class="lecture-aa__sample lecture-aa__sample--small">Aa</span>
+          <input type="range" id="aa-size" min="0.8" max="1.5" step="0.05" value="1.0" />
+          <span class="lecture-aa__sample lecture-aa__sample--big">Aa</span>
+        </div>
+      </div>
+
+      <div class="lecture-aa__group">
+        <div class="lecture-aa__label">Afficher en plus de l'arabe</div>
+        <label class="lecture-aa__check"><input type="checkbox" id="aa-tr" /> <span>Translittération</span></label>
+        <label class="lecture-aa__check"><input type="checkbox" id="aa-trad" /> <span>Traduction française</span></label>
+        <label class="lecture-aa__check"><input type="checkbox" id="aa-com" /> <span>Commentaire</span></label>
+      </div>
+
+      <div class="lecture-aa__group">
+        <label class="lecture-aa__check"><input type="checkbox" id="aa-mots" /> <span>Mots cliquables<br><em class="lecture-aa__hint">touchez un mot arabe pour sa racine et son sens</em></span></label>
+      </div>
+
+      <div class="lecture-aa__foot">
+        <em>Vos réglages sont gardés sur cet appareil.</em>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Popover : mot tappé -->
+  <div class="lecture-pop" id="lec-pop" hidden role="dialog" aria-label="Définition du mot"></div>
+
+  <!-- Reprise -->
   <div class="lecture-resume" id="lecture-resume" hidden></div>
 
-  <script src="../../../assets/js/coran-lecture.js?v=1"></script>
+  <script src="../../../assets/js/coran-lecture.js?v=2"></script>
 </body>
 </html>

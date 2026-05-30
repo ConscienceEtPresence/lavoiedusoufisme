@@ -86,9 +86,9 @@
       f += '<a class="mdj-btn mdj-btn--gold" href="?mode=encore">' + T.anotherWord + '</a>';
       f += '<a class="mdj-btn" href="?mode=offrir">' + T.doorOffer + ' →</a>';
     } else if (mode === 'recv') {
+      // Côté destinataire : un seul geste possible, la réciprocité douce.
+      // Pas de lien vers le site, pas de « venez voir le reste ».
       f += '<a class="mdj-btn mdj-btn--gold" href="?mode=offrir">' + DOVE + ' ' + T.offerBack + '</a>';
-      f += '<a class="mdj-btn" href="?mode=jour">' + T.doorReceive + '</a>';
-      f += '<a class="mdj-btn mdj-btn--ghost" href="../../index.html">' + T.goFurther + '</a>';
     }
     return f;
   }

@@ -35,8 +35,8 @@
     doorReceive: 'Receive my word of the day', doorReceiveSub: 'A word to meditate, today.',
     doorOffer: 'Offer a word to someone', doorOfferSub: 'A little gift to send.',
     selfEyebrow: 'Your word of the day', selfInvite: 'A word is offered to you today.',
-    recvEyebrow: 'A word is offered to you', recvInvite: 'Someone offers you a word.',
-    tap: 'Touch to reveal it', meditate: 'To meditate',
+    recvEyebrow: 'A word offered', recvInvite: 'Someone offers you a few words.',
+    tap: 'Touch to open', meditate: 'To meditate',
     offerTitle: 'Offer a word', offerSub: 'Draw a word, then send it. The person will discover it on opening.',
     draw: 'Draw', redraw: 'Draw another', sendGift: 'Send this gift',
     deeper: 'Go further →', yourTurn: 'In turn, offer a word →',
@@ -48,14 +48,14 @@
     offerBack: 'Offer a word in return',
     goFurther: 'Continue along the way →',
     teasers: ['A word awaits you — open it', 'A lamp for your evening', 'For you, in the hollow of this hour', 'A word that passes through me to you', 'A faint light from afar', 'To inhabit this moment', 'A gentle sign', 'A light door to push', 'Open it when the moment comes'],
-    saveImage: 'Keep this word', inhabit: 'Inhabit this word ⤢', exit: 'Exit'
+    saveImage: 'Keep as an image ✦', exit: 'Exit'
   } : {
     landingTitle: 'Un mot de la voie', landingSub: 'Pour vous, ou à offrir.',
     doorReceive: 'Recevoir mon mot du jour', doorReceiveSub: 'Un mot à méditer, aujourd’hui.',
     doorOffer: 'Offrir un mot à quelqu’un', doorOfferSub: 'Un petit cadeau à envoyer.',
-    selfEyebrow: 'Votre mot du jour', selfInvite: 'Un mot vous est offert aujourd’hui.',
-    recvEyebrow: 'Un mot vous est offert', recvInvite: 'Quelqu’un vous offre un mot.',
-    tap: 'Touchez pour le découvrir', meditate: 'À méditer',
+    selfEyebrow: 'Votre mot du jour', selfInvite: 'Une parole vous est offerte aujourd’hui.',
+    recvEyebrow: 'Une parole offerte', recvInvite: 'Quelqu’un vous offre une parole.',
+    tap: 'Touchez pour ouvrir', meditate: 'À méditer',
     offerTitle: 'Offrir un mot', offerSub: 'Tirez, puis envoyez. La personne le découvrira en l’ouvrant.',
     draw: 'Tirer', redraw: 'Tirer un autre', sendGift: 'Envoyer ce cadeau',
     deeper: 'Aller plus loin →', yourTurn: 'À votre tour, offrir un mot →',
@@ -67,7 +67,7 @@
     offerBack: 'Offrir un mot en retour',
     goFurther: 'Continuer le chemin →',
     teasers: ['Un mot t’attend — ouvre-le', 'Une lampe pour ton soir', 'Pour toi, dans le creux de cette heure', 'Une parole qui passe par moi pour toi', 'Un éclat venu de loin', 'Pour habiter l’instant', 'Un signe doux', 'Une porte légère, à pousser', 'À ouvrir quand le moment vient'],
-    saveImage: 'Garder ce mot', inhabit: 'Habiter ce mot ⤢', exit: 'Sortir'
+    saveImage: 'Garder en image ✦', exit: 'Sortir'
   };
 
   var STAR = '<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">' +
@@ -178,12 +178,17 @@
 
   function revealView(it, eyebrow, invite, mode) {
     var toolsHTML = '<div class="mdj-tools">' +
-      '<button type="button" class="mdj-tool" id="mdj-keep">✦ ' + T.saveImage + '</button>' +
-      '<button type="button" class="mdj-tool" id="mdj-inhabit">' + T.inhabit + '</button>' +
+      '<button type="button" class="mdj-tool" id="mdj-keep">' + T.saveImage + '</button>' +
     '</div>';
     mount.innerHTML =
-      '<div class="mdj-veil" id="mdj-veil"><div class="mdj-star">' + STAR + '</div>' +
-        '<p class="mdj-invite">' + invite + '</p><p class="mdj-tap">' + T.tap + '</p></div>' +
+      '<div class="mdj-veil" id="mdj-veil">' +
+        '<div class="mdj-greet">' +
+          '<div class="mdj-halo"></div>' +
+          '<div class="mdj-greet__dove">' + DOVE + '</div>' +
+        '</div>' +
+        '<p class="mdj-invite">' + invite + '</p>' +
+        '<p class="mdj-tap">' + T.tap + '</p>' +
+      '</div>' +
       '<article class="mdj-card" id="mdj-card" hidden><div class="mdj-eyebrow">' + eyebrow + '</div>' +
         bodyHTML(it) +
         toolsHTML +
@@ -198,8 +203,6 @@
   function bindTools(it) {
     var keep = document.getElementById('mdj-keep');
     if (keep) keep.addEventListener('click', function () { saveAsImage(it); });
-    var inh = document.getElementById('mdj-inhabit');
-    if (inh) inh.addEventListener('click', function () { enterImmersion(); });
   }
 
   function saveAsImage(it) {
@@ -295,7 +298,7 @@
       });
     });
     document.getElementById('mdj-draw').addEventListener('click', function () {
-      breatheThen(function () { drawAndShow(pool, current); });
+      drawAndShow(pool, current);
     });
   }
 
@@ -312,7 +315,7 @@
         '</div></article>';
     var sendBtn = document.getElementById('mdj-send');
     sendBtn.addEventListener('click', function () { shareLink(url, sendBtn); });
-    document.getElementById('mdj-redraw').addEventListener('click', function () { breatheThen(function () { drawAndShow(pool, intention); }); });
+    document.getElementById('mdj-redraw').addEventListener('click', function () { drawAndShow(pool, intention); });
     box.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 

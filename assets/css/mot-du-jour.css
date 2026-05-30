@@ -491,3 +491,85 @@ body.mdj-immersion .mdj-def, body.mdj-immersion .mdj-sagesse-texte { font-size: 
   .mdj-star, .mdj-sky::after, .mdj-tap { animation: none; }
   .mdj-ar { animation: mdjFadeUp 0.5s ease both; }
 }
+
+/* ============================================================
+   VOILE — refonte : colombe d'or sur lumière d'aube
+   ============================================================ */
+
+.mdj-veil {
+  position: relative;
+  min-height: 80vh;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: radial-gradient(60% 60% at 50% 45%, #FFFDF4 0%, #F5E8CD 55%, #E8D2A8 100%);
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+  padding: 6vh 6vw;
+  border-radius: 22px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  animation: mdjFadeIn 0.6s ease both;
+  z-index: 1;
+}
+.mdj-veil.is-gone { animation: mdjFadeOut 0.9s ease both; pointer-events: none; }
+
+/* le bloc colombe + halo */
+.mdj-greet {
+  position: relative;
+  width: clamp(170px, 38vw, 240px);
+  height: clamp(170px, 38vw, 240px);
+  margin-bottom: clamp(1.5rem, 4vh, 2.5rem);
+}
+.mdj-halo {
+  position: absolute; inset: 0;
+  background: radial-gradient(circle, rgba(216,164,72,0.5) 0%, rgba(216,164,72,0.18) 35%, rgba(216,164,72,0) 70%);
+  filter: blur(8px);
+  animation: mdjHalo 4s ease-in-out infinite alternate;
+}
+@keyframes mdjHalo {
+  0%   { transform: scale(0.85); opacity: 0.7; }
+  100% { transform: scale(1.12); opacity: 1; }
+}
+.mdj-greet__dove {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  color: #C9962F;
+  filter: drop-shadow(0 6px 18px rgba(180,140,60,0.4));
+  animation: mdjDoveBreath 5s ease-in-out infinite;
+}
+.mdj-greet__dove svg { width: 72%; height: 72%; }
+@keyframes mdjDoveBreath {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%      { transform: translateY(-6px) scale(1.04); }
+}
+
+/* invitation + indication, en tons chauds */
+.mdj-veil .mdj-invite {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.2rem, 4vw, 1.55rem);
+  color: #6E4E2A;
+  margin: 0 0 1rem;
+  letter-spacing: 0.01em;
+  max-width: 24rem;
+}
+.mdj-veil .mdj-tap {
+  font-family: var(--font-sans);
+  font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: rgba(110,78,42,0.55);
+  animation: mdjBlink 2.4s ease-in-out infinite;
+}
+
+/* le voile garde sa lumière même en mode nuit */
+body.mdj-time-night .mdj-veil {
+  background: radial-gradient(60% 60% at 50% 45%, #FFFDF4 0%, #F0DFB5 55%, #C9A26A 100%);
+  box-shadow: 0 30px 90px -30px rgba(216,192,130,0.55);
+}
+body.mdj-time-night .mdj-veil .mdj-invite { color: #5A3E1F; }
+body.mdj-time-night .mdj-veil .mdj-tap   { color: rgba(90,62,31,0.6); }
+
+/* l'ancienne étoile khatam n'est plus utilisée */
+.mdj-veil .mdj-star { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mdj-halo, .mdj-greet__dove { animation: none; }
+}

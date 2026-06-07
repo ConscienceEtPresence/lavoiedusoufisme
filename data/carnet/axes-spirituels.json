@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "description": "Axes de travail spirituel pour la journée, classés en 6 familles (parole, coeur, action, lien, corps, pratique-spirituelle). Chaque famille porte un sens spirituel court. La prose détaillée par axe sera enrichie progressivement.",
+  "familles": {
+    "parole":   { "label": "La parole",   "sens": "La parole n'est pas seulement communication. Elle engage l'âme. Elle peut unir, blesser, couvrir, révéler, réparer." },
+    "coeur":    { "label": "Le cœur",     "sens": "Le cœur est le lieu de la présence, mais aussi le lieu des voiles. Le carnet aide à voir ce qui couvre la vérité." },
+    "action":   { "label": "L'action",    "sens": "L'action manifeste l'état intérieur. Un petit acte juste vaut plus qu'une grande intention floue." },
+    "lien":     { "label": "Le lien",     "sens": "Le lien révèle l'ego. Il montre là où le cœur s'ouvre, se défend, se ferme ou revient." },
+    "corps":    { "label": "Le corps et l'état", "sens": "Le corps signale souvent le mouvement de la nafs avant que la pensée ne le justifie." },
+    "pratique": { "label": "La pratique spirituelle", "sens": "La pratique ne doit pas rester séparée de la journée. Elle descend dans la parole, le geste, la patience et la réparation." }
+  },
+  "axes": [
+    { "id": "parler-doucement",   "label": "parler avec douceur",         "famille": "parole" },
+    { "id": "dire-vrai",          "label": "dire vrai sans blesser",      "famille": "parole" },
+    { "id": "ne-pas-parler-absent","label": "ne pas parler d'un absent",  "famille": "parole" },
+    { "id": "retenir-parole",     "label": "retenir une parole inutile",  "famille": "parole" },
+    { "id": "ne-pas-couper",      "label": "ne pas couper",               "famille": "parole" },
+    { "id": "baisser-voix-axe",   "label": "baisser la voix",             "famille": "parole" },
+    { "id": "pardon-parole",      "label": "demander pardon si une parole a blessé", "famille": "parole" },
+
+    { "id": "voir-jugement",      "label": "regarder le jugement",        "famille": "coeur" },
+    { "id": "voir-orgueil",       "label": "voir l'orgueil",              "famille": "coeur" },
+    { "id": "voir-envie",         "label": "reconnaître la jalousie ou l'envie", "famille": "coeur" },
+    { "id": "ne-pas-nourrir-rancune","label": "ne pas nourrir la rancune","famille": "coeur" },
+    { "id": "revenir-fermeture",  "label": "revenir de la fermeture",     "famille": "coeur" },
+    { "id": "reconnaitre-don",    "label": "reconnaître un don",          "famille": "coeur" },
+    { "id": "garder-gratitude",   "label": "garder une gratitude",        "famille": "coeur" },
+
+    { "id": "tenir-parole-a",     "label": "tenir une parole donnée",     "famille": "action" },
+    { "id": "petit-bien",         "label": "faire un petit bien",         "famille": "action" },
+    { "id": "finir-chose-a",      "label": "finir une chose",             "famille": "action" },
+    { "id": "poser-limite-a",     "label": "poser une limite",            "famille": "action" },
+    { "id": "dire-non-doux",      "label": "dire non sans dureté",        "famille": "action" },
+    { "id": "demander-aide-a",    "label": "demander de l'aide",          "famille": "action" },
+    { "id": "servir-sans-scene",  "label": "servir sans me mettre en scène","famille": "action" },
+
+    { "id": "reparer-lien",       "label": "réparer",                     "famille": "lien" },
+    { "id": "pardon-lien",        "label": "demander pardon",             "famille": "lien" },
+    { "id": "reconnaitre-qualite-l","label": "reconnaître une qualité chez l'autre", "famille": "lien" },
+    { "id": "laisser-exister",    "label": "laisser l'autre exister",     "famille": "lien" },
+    { "id": "ne-pas-imposer-rythme","label": "ne pas imposer mon rythme", "famille": "lien" },
+    { "id": "ne-pas-dernier-mot", "label": "ne pas chercher le dernier mot","famille": "lien" },
+    { "id": "proteger-absent",    "label": "protéger l'absent",           "famille": "lien" },
+
+    { "id": "sentir-fatigue",     "label": "sentir la fatigue",           "famille": "corps" },
+    { "id": "ne-pas-decider-epuisement","label": "ne pas décider depuis l'épuisement","famille": "corps" },
+    { "id": "respirer-avant-c",   "label": "respirer avant de répondre",  "famille": "corps" },
+    { "id": "ralentir",           "label": "ralentir",                    "famille": "corps" },
+    { "id": "sentir-tension",     "label": "sentir la tension",           "famille": "corps" },
+    { "id": "prendre-silence",    "label": "prendre un silence",          "famille": "corps" },
+    { "id": "revenir-souffle",    "label": "revenir au souffle",          "famille": "corps" },
+
+    { "id": "dhikr",              "label": "dhikr",                       "famille": "pratique" },
+    { "id": "silence-p",          "label": "silence",                     "famille": "pratique" },
+    { "id": "presence",           "label": "présence",                    "famille": "pratique" },
+    { "id": "patience-p",         "label": "patience",                    "famille": "pratique" },
+    { "id": "confiance",          "label": "confiance",                   "famille": "pratique" },
+    { "id": "gratitude-p",        "label": "gratitude",                   "famille": "pratique" },
+    { "id": "tawba-p",            "label": "tawba",                       "famille": "pratique" },
+    { "id": "adab-p",             "label": "adab",                        "famille": "pratique" },
+    { "id": "remise",             "label": "remise à Dieu",               "famille": "pratique" }
+  ]
+}

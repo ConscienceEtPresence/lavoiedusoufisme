@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "description": "Apprentissages profonds — chacun travaille une illusion de l'ego et propose un adab concret. Inspiré du rapport REFONTE STRUCTURELLE SPIRITUELLE. La prose pour 'dire-non' est l'exemple modèle ; les autres seront enrichies progressivement.",
+  "apprentissages": [
+    {
+      "id": "dire-non",
+      "label": "apprendre à dire non",
+      "geste": "dire non clairement, sans agresser et sans m'excuser à l'excès",
+      "illusion": "Si je dis non, je vais perdre l'amour, la paix ou ma valeur.",
+      "reaction": "dire oui trop vite, me tendre, me justifier, puis en vouloir intérieurement",
+      "sens": "Dire non sans dureté peut être une fidélité à la vérité. Ce n'est pas fermer le cœur — c'est reconnaître la mesure juste.",
+      "adab": "limite-sans-durete",
+      "nom": "haqq"
+    },
+    {
+      "id": "recevoir",
+      "label": "recevoir sans me justifier",
+      "geste": "accueillir un don, un compliment, une aide, sans détourner ni rendre tout de suite",
+      "illusion": "Si je reçois, je dois quelque chose en retour, ou je ne mérite pas vraiment.",
+      "reaction": "minimiser, dire 'ce n'était rien', détourner le regard",
+      "sens": "Recevoir est aussi un acte spirituel. Refuser systématiquement le don coupe le lien que ce don voulait ouvrir.",
+      "adab": "remercier",
+      "nom": "shakur"
+    },
+    {
+      "id": "ne-pas-avoir-raison",
+      "label": "ne pas vouloir avoir raison",
+      "geste": "lâcher le dernier mot une fois, même si je suis sûr·e de moi",
+      "illusion": "Si je perds le débat, je perds ma valeur ou ma vérité.",
+      "reaction": "argumenter encore, justifier, monter en intensité, ironie",
+      "sens": "La vérité ne se prouve pas par le volume. Elle se laisse reconnaître par celui qui est prêt à la voir.",
+      "adab": "ecouter",
+      "nom": "haqq"
+    },
+    {
+      "id": "demander-aide-ap",
+      "label": "demander de l'aide",
+      "geste": "nommer ce que je ne peux pas faire seul·e, à une personne précise",
+      "illusion": "Demander de l'aide me diminue ou prouve mon incapacité.",
+      "reaction": "tout porter, m'épuiser, en vouloir aux autres de ne pas avoir deviné",
+      "sens": "L'humilité de demander est un retour : reconnaître que je ne suis pas seul·e.",
+      "adab": "demander-aide",
+      "nom": "wakil"
+    },
+    {
+      "id": "ne-pas-tout-porter",
+      "label": "ne pas tout porter",
+      "geste": "déposer une chose qui ne dépend pas vraiment de moi",
+      "illusion": "Si je ne porte pas tout, ça va s'effondrer.",
+      "reaction": "anticiper sans cesse, surveiller, m'épuiser en silence",
+      "sens": "Confier à Dieu ce qui dépasse ma part — c'est cela, le tawakkul.",
+      "adab": "differer",
+      "nom": "wakil"
+    },
+    {
+      "id": "ne-pas-plaire",
+      "label": "ne pas plaire à tout prix",
+      "geste": "dire ce qui est vrai même si ça déplaît une fois",
+      "illusion": "Si je déplais, je suis rejeté·e.",
+      "reaction": "ajuster mes mots à ce que l'autre veut entendre, me trahir doucement",
+      "sens": "Être aimé pour ce qu'on n'est pas n'est pas être aimé. La vérité aimable précède l'image aimable.",
+      "adab": "differer",
+      "nom": "haqq"
+    },
+    {
+      "id": "parler-vrai-sans-durete",
+      "label": "parler vrai sans dureté",
+      "geste": "dire le vrai avec la voix basse, pas avec la voix haute",
+      "illusion": "Pour être entendu·e, il faut être tranchant·e.",
+      "reaction": "monter le ton, simplifier l'autre, durcir le mot",
+      "sens": "La vérité dite avec dureté blesse souvent celui qu'elle voulait éveiller.",
+      "adab": "baisser-voix",
+      "nom": "latif"
+    },
+    {
+      "id": "ecouter-sans-defendre",
+      "label": "écouter sans me défendre",
+      "geste": "laisser l'autre finir, sans préparer ma réponse",
+      "illusion": "Si je ne me défends pas, l'autre va croire qu'il a raison.",
+      "reaction": "interrompre, justifier, retourner l'accusation",
+      "sens": "L'écoute sans défense est un espace où l'autre peut être vu — et où je peux, peut-être, me voir.",
+      "adab": "ecouter",
+      "nom": "basir"
+    },
+    {
+      "id": "rester-present-inconfort",
+      "label": "rester présent·e dans l'inconfort",
+      "geste": "ne pas fuir dans le téléphone, dans la nourriture, dans la pensée — rester une minute",
+      "illusion": "L'inconfort doit disparaître tout de suite.",
+      "reaction": "remplir, divertir, anesthésier",
+      "sens": "Beaucoup de transformations ont lieu dans ce qu'on a refusé de fuir.",
+      "adab": "respirer-avant",
+      "nom": "sabur"
+    },
+    {
+      "id": "laisser-autre-different",
+      "label": "laisser l'autre être différent",
+      "geste": "ne pas chercher à convaincre cette fois",
+      "illusion": "Si l'autre pense autrement, c'est qu'il n'a pas compris.",
+      "reaction": "argumenter, expliquer encore, juger en silence",
+      "sens": "L'autre n'est pas une version inachevée de moi. Sa différence est son chemin.",
+      "adab": "ecouter",
+      "nom": "halim"
+    },
+    {
+      "id": "amour-sacrifice",
+      "label": "ne pas confondre amour et sacrifice",
+      "geste": "demander ce dont j'ai besoin, sans en faire un drame",
+      "illusion": "Aimer, c'est s'oublier complètement.",
+      "reaction": "m'effacer, en vouloir en silence, attendre que l'autre devine",
+      "sens": "L'amour qui s'éteint dans le sacrifice n'est plus de l'amour — c'est une fatigue.",
+      "adab": "tenir-parole",
+      "nom": "rauf"
+    },
+    {
+      "id": "responsabilite-controle",
+      "label": "ne pas confondre responsabilité et contrôle",
+      "geste": "faire ma part avec soin, puis déposer le reste",
+      "illusion": "Si je contrôle tout, je suis responsable. Si je lâche, je suis négligent·e.",
+      "reaction": "surveiller, anticiper, intervenir sur ce qui ne m'appartient pas",
+      "sens": "Être responsable, c'est faire ma part. Contrôler, c'est vouloir faire celle des autres aussi.",
+      "adab": "differer",
+      "nom": "wakil"
+    }
+  ]
+}

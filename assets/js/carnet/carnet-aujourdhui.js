@@ -396,16 +396,23 @@ function whisperForTime() {
 
 async function load() {
   await ensureValidSession(session);
-  const [pratiquesJson, motsJson, jourSnap, hierSnap] = await Promise.all([
+  const [pratiquesJson, motsJson, axesJson, ctxJson, appJson, encJson, jourSnap, hierSnap] = await Promise.all([
     fetch('/data/carnet/pratiques.json').then(r => r.json()),
     fetch('/data/carnet/mots-graines.json').then(r => r.json()),
+    fetch('/data/carnet/axes-spirituels.json').then(r => r.json()),
+    fetch('/data/carnet/contextes-spirituels.json').then(r => r.json()),
+    fetch('/data/carnet/apprentissages-profonds.json').then(r => r.json()),
+    fetch('/data/carnet/encouragements.json').then(r => r.json()),
     getDoc(doc(db, 'carnets', codeId, 'jours', date)).catch(() => null),
     getDoc(doc(db, 'carnets', codeId, 'jours', dateHier)).catch(() => null)
   ]);
   const motCompagnon = motsJson.mots.find(m => m.id === session.motGraine);
   const jourData = jourSnap?.exists() ? jourSnap.data() : {};
   const hierData = hierSnap?.exists() ? hierSnap.data() : null;
-  render({ pratiques: pratiquesJson, motCompagnon, jourData, hierData });
+  render({
+    pratiques: pratiquesJson, motCompagnon, jourData, hierData,
+    axesLib: axesJson, ctxLib: ctxJson, appLib: appJson, encLib: encJson
+  });
 }
 
 function dateLisible() {
@@ -421,51 +428,18 @@ function esc(s) {
 
 function ornament() { return '<div class="jour-ornament">✦</div>'; }
 
-function render({ pratiques, motCompagnon, jourData, hierData }) {
-  // mode déjà choisi pour ce jour ? sinon 'pose' par défaut
-  const mode = jourData.mode || 'pose';
+function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, appLib, encLib }) {
+  // Schéma v2 — la page Aujourd'hui n'a plus de "mode" comme structure principale
+  // (Refonte structurelle spirituelle — rapport du 7 juin 2026)
+  // Les deux blocs centraux : "Je pose ma journée" + "Ce soir, je relis ma journée"
 
-  const compagnonBlock = motCompagnon ? `
-    <section class="jour-compagnon-vivant">
-      <p class="jour-compagnon-vivant__label">${TXT.motGraineHeader}</p>
-      <div class="jour-compagnon-vivant__ar" lang="ar" dir="rtl">${esc(motCompagnon.ar)}</div>
-      <p class="jour-compagnon-vivant__tr"><em>${esc(motCompagnon.tr)}</em> — ${esc(motCompagnon[LANG].nom)}</p>
-      <p class="jour-compagnon-vivant__note">${esc(motCompagnon[LANG].note)}</p>
-      ${motCompagnon[LANG].question ? `
-        <div class="jour-graine-block">
-          <span class="jour-graine-block__label">${TXT.motGraineQuestion}</span>
-          <p class="jour-graine-block__text">${esc(motCompagnon[LANG].question)}</p>
-        </div>` : ''}
-      ${motCompagnon[LANG].pratique ? `
-        <div class="jour-graine-block jour-graine-block--alt">
-          <span class="jour-graine-block__label">${TXT.motGrainePratique}</span>
-          <p class="jour-graine-block__text">${esc(motCompagnon[LANG].pratique)}</p>
-        </div>` : ''}
-      ${motCompagnon[LANG].rappel ? `
-        <p class="jour-graine-rappel"><em>${esc(motCompagnon[LANG].rappel)}</em></p>` : ''}
-    </section>
-  ` : '';
-
-  const modeChooserBlock = `
-    <section class="jour-mode-chooser">
-      <h2 class="jour-section__titre jour-section__titre--soft">${TXT.modeTitle}</h2>
-      <p class="jour-section__sub"><em>${TXT.modeSub}</em></p>
-      <div class="jour-mode-grid">
-        <button type="button" class="jour-mode-card ${mode==='light'?'is-active':''}" data-mode="light">
-          <span class="jour-mode-card__nom">${TXT.modeLight}</span>
-          <span class="jour-mode-card__desc">${TXT.modeLightDesc}</span>
-        </button>
-        <button type="button" class="jour-mode-card ${mode==='pose'?'is-active':''}" data-mode="pose">
-          <span class="jour-mode-card__nom">${TXT.modePose}</span>
-          <span class="jour-mode-card__desc">${TXT.modePoseDesc}</span>
-        </button>
-        <button type="button" class="jour-mode-card ${mode==='heavy'?'is-active':''}" data-mode="heavy">
-          <span class="jour-mode-card__nom">${TXT.modeHeavy}</span>
-          <span class="jour-mode-card__desc">${TXT.modeHeavyDesc}</span>
-        </button>
-      </div>
-    </section>
-  `;
+  // Mention discrète du mot-graine (le gros bloc quotidien est supprimé)
+  const motGraineMention = motCompagnon ? `
+    <p class="jour-graine-discret">
+      <span lang="ar" dir="rtl">${esc(motCompagnon.ar)}</span>
+      <em>${esc(motCompagnon.tr)}</em> — ${esc(motCompagnon[LANG].nom)}
+      <a href="/pages/carnet/miroir/" class="jour-graine-discret__link">votre mot-graine →</a>
+    </p>` : '';
 
   const headerBlock = `
     <header class="jour-head">
@@ -475,10 +449,10 @@ function render({ pratiques, motCompagnon, jourData, hierData }) {
     </header>
   `;
 
-  const contentBlock = renderModeContent(mode, pratiques, jourData, hierData);
+  const contentBlock = renderJournee(jourData, hierData, { axesLib, ctxLib, appLib, encLib });
 
   // Reprise du vœu d'hier — seulement si un vow existe dans le jour précédent
-  const repriseBlock = renderRepriseVow(arguments[0].hierData, jourData);
+  const repriseBlock = renderRepriseVow(hierData, jourData);
 
   // Boussole : rendu initial (avec hier + axe), Nom du jour sera injecté en async
   const boussoleInitiale = renderBoussole(null, hierData);
@@ -488,17 +462,15 @@ function render({ pratiques, motCompagnon, jourData, hierData }) {
     ${repriseBlock}
     <div id="boussole-mount">${boussoleInitiale}</div>
     <div id="nom-du-jour"></div>
-    ${compagnonBlock}
+    ${motGraineMention}
     ${ornament()}
-    ${modeChooserBlock}
-    <div id="mode-content">${contentBlock}</div>
+    <div id="journee-content">${contentBlock}</div>
     <div id="bilan-hebdo-mount"></div>
     ${ornament()}
     ${renderSuggestion()}
   `;
 
-  bindModeChooser(pratiques, jourData, hierData);
-  bindContent(mode, pratiques);
+  bindJournee({ axesLib, ctxLib, appLib, encLib });
   bindReprise();
   bindSuggestion();
 
@@ -594,6 +566,363 @@ function bindReprise() {
   });
 }
 
+// ============================================================
+//  REFONTE STRUCTURELLE SPIRITUELLE — v2 du carnet
+//  Deux blocs : "Je pose ma journée" + "Ce soir, je relis ma journée"
+// ============================================================
+
+// Render un groupe de chips classées par famille — réutilisable
+function renderChipsParFamille(items, familles, inputName, type, currentValues) {
+  const cur = new Set(currentValues || []);
+  const blocks = Object.entries(familles).map(([fid, fam]) => {
+    const inFam = items.filter(i => i.famille === fid);
+    if (!inFam.length) return '';
+    const chips = inFam.map(it => {
+      const checked = cur.has(it.id);
+      return `
+        <label class="jour-chip ${checked?'is-active':''}">
+          <input type="${type}" name="${inputName}" value="${esc(it.id)}" ${checked?'checked':''}/>
+          <span>${esc(it.label)}</span>
+        </label>`;
+    }).join('');
+    return `
+      <div class="jour-famille">
+        <p class="jour-famille__label">${esc(fam.label)}</p>
+        <div class="jour-chips">${chips}</div>
+      </div>`;
+  }).join('');
+  return blocks;
+}
+
+function renderJournee(jourData, hierData, libs) {
+  return `
+    ${renderPoseJournee(jourData, hierData, libs)}
+    ${ornament()}
+    ${renderReluJournee(jourData, hierData, libs)}
+  `;
+}
+
+function renderPoseJournee(jourData, hierData, libs) {
+  const matin = jourData.matin || {};
+  const hintMatin = renderHintMatin(hierData);
+
+  const chipsContextes = renderChipsParFamille(
+    libs.ctxLib.contextes, libs.ctxLib.familles, 'pose-contexte', 'checkbox', matin.contextes || []);
+  const chipsAxes = renderChipsParFamille(
+    libs.axesLib.axes, libs.axesLib.familles, 'pose-axe', 'checkbox', matin.axes || []);
+
+  const curApp = new Set(matin.apprentissages || []);
+  const chipsApprentissages = libs.appLib.apprentissages.map(a => `
+    <label class="jour-chip ${curApp.has(a.id)?'is-active':''}" title="${esc(a.sens)}">
+      <input type="checkbox" name="pose-apprentissage" value="${esc(a.id)}" ${curApp.has(a.id)?'checked':''}/>
+      <span>${esc(a.label)}</span>
+    </label>`).join('');
+
+  const curAdab = matin.adab || '';
+  const chipsAdabs = ADABS_FR.map(a => `
+    <label class="jour-chip ${curAdab===a.id?'is-active':''}">
+      <input type="radio" name="pose-adab" value="${esc(a.id)}" ${curAdab===a.id?'checked':''}/>
+      <span>${esc(a.label)}</span>
+    </label>`).join('');
+
+  const geste = matin.geste || '';
+  const synthese = matin.poseLe ? renderSynthesePoseMatin(matin, libs) : '';
+
+  return `
+    <section class="jour-section" id="section-pose">
+      <h2 class="jour-section__titre">Je pose ma journée</h2>
+      <p class="jour-section__sub"><em>Une orientation pour marcher aujourd'hui avec plus de vérité.</em></p>
+
+      ${hintMatin}
+
+      <div class="jour-etape">
+        <p class="jour-etape__num">1.</p>
+        <p class="jour-etape__titre">Où ma vigilance sera sollicitée aujourd'hui ?</p>
+        ${chipsContextes}
+      </div>
+
+      <div class="jour-etape">
+        <p class="jour-etape__num">2.</p>
+        <p class="jour-etape__titre">Ce que je veux travailler aujourd'hui</p>
+        ${chipsAxes}
+      </div>
+
+      <details class="jour-etape jour-etape--option">
+        <summary class="jour-etape__summary"><span class="jour-etape__num">3.</span> Apprendre plus profondément <span class="jour-etape__optionel">(facultatif)</span></summary>
+        <div class="jour-chips jour-chips--apprentissages">${chipsApprentissages}</div>
+      </details>
+
+      <div class="jour-etape">
+        <p class="jour-etape__num">4.</p>
+        <p class="jour-etape__titre">Un adab pour la journée</p>
+        <div class="jour-chips">${chipsAdabs}</div>
+      </div>
+
+      <div class="jour-etape">
+        <p class="jour-etape__num">5.</p>
+        <p class="jour-etape__titre">Mon geste concret <span class="jour-etape__optionel">(petit, observable)</span></p>
+        <input type="text" id="pose-geste" class="jour-input" maxlength="200" placeholder="ex. : respirer une fois avant de répondre" value="${esc(geste)}"/>
+      </div>
+
+      <button type="button" class="carnet-btn carnet-btn--gold" id="save-pose">Poser ma journée</button>
+      <span class="jour-save-ok" id="save-pose-ok" hidden>✓ posée</span>
+      <div id="synthese-pose">${synthese}</div>
+    </section>
+  `;
+}
+
+function renderSynthesePoseMatin(matin, libs) {
+  if (!matin) return '';
+  const axesLabels = (matin.axes || []).map(id => {
+    const a = libs.axesLib.axes.find(x => x.id === id);
+    return a ? a.label : null;
+  }).filter(Boolean);
+  const adab = ADABS_FR.find(a => a.id === matin.adab);
+  const geste = matin.geste;
+  if (!axesLabels.length && !adab && !geste) return '';
+  return `
+    <div class="jour-synthese">
+      <p class="jour-synthese__label">Pour aujourd'hui</p>
+      ${axesLabels.length ? `<p>Je veille à : <strong>${axesLabels.slice(0,3).map(esc).join(', ')}</strong>.</p>` : ''}
+      ${adab ? `<p>Mon adab : <em>${esc(adab.label)}</em>.</p>` : ''}
+      ${geste ? `<p>Mon geste : « ${esc(geste)} ».</p>` : ''}
+    </div>
+  `;
+}
+
+function renderReluJournee(jourData, hierData, libs) {
+  const matin = jourData.matin || {};
+  const soir = jourData.soir || {};
+  const aPose = !!matin.poseLe;
+
+  // Étape 1 : Rappel de ce qui a été posé
+  const rappelBlock = aPose ? `
+    <div class="relu-rappel">
+      <p class="relu-rappel__label">Ce que vous aviez posé aujourd'hui</p>
+      ${renderSynthesePoseMatin(matin, libs)}
+    </div>` : `
+    <div class="relu-rappel relu-rappel--vide">
+      <p><em>Vous n'avez rien posé ce matin — c'est très bien aussi. Vous pouvez relire votre journée librement.</em></p>
+    </div>`;
+
+  // Étape 2 : Bilan des axes choisis (seulement si axes posés)
+  const axesBilan = soir.axesBilan || {};
+  const STATUTS = [
+    ['present', 'présent'],
+    ['parfois', 'parfois'],
+    ['oublie',  'oublié'],
+    ['pas-clair','pas clair']
+  ];
+  const bilanAxes = (matin.axes || []).map(axeId => {
+    const axe = libs.axesLib.axes.find(a => a.id === axeId);
+    if (!axe) return '';
+    const cur = axesBilan[axeId] || '';
+    const opts = STATUTS.map(([id, label]) => `
+      <label class="jour-statut ${cur===id?'is-active':''}">
+        <input type="radio" name="bilan-${esc(axeId)}" value="${id}" ${cur===id?'checked':''}/>
+        <span>${label}</span>
+      </label>`).join('');
+    return `
+      <div class="relu-axe">
+        <p class="relu-axe__label">${esc(axe.label)}</p>
+        <div class="jour-statuts">${opts}</div>
+      </div>`;
+  }).join('');
+
+  // Étape 3 : Ce qui a été difficile (10 mouvements)
+  const MOUVEMENTS_10 = [
+    ['colere','colère'],['jugement','jugement'],['ghiba','parole sur un absent'],
+    ['controle','contrôle'],['orgueil','besoin d\'avoir raison'],['honte','honte'],
+    ['fatigue','fatigue'],['desir','désir / impulsion'],['oubli','oubli / dispersion'],
+    ['fermeture','fermeture du cœur']
+  ];
+  const curMvt = new Set(soir.mouvements || []);
+  const chipsMvt = MOUVEMENTS_10.map(([id, label]) => `
+    <label class="jour-chip ${curMvt.has(id)?'is-active':''}">
+      <input type="checkbox" name="relu-mouvement" value="${esc(id)}" ${curMvt.has(id)?'checked':''}/>
+      <span>${esc(label)}</span>
+    </label>`).join('');
+
+  // Étape 4 : Ce qui a poussé aujourd'hui
+  const curPousse = new Set(soir.ceQuiAPousse || []);
+  const chipsPousse = libs.encLib.encouragements.map(e => `
+    <label class="jour-chip jour-chip--soft ${curPousse.has(e.id)?'is-active':''}" title="${esc(e.phrase)}">
+      <input type="checkbox" name="relu-pousse" value="${esc(e.id)}" ${curPousse.has(e.id)?'checked':''}/>
+      <span>${esc(e.label)}</span>
+    </label>`).join('');
+
+  // Étape 5 : Gratitude
+  const GRATITUDES = [
+    ['chose','une chose reçue'],['personne','une personne'],['protection','une protection'],
+    ['patience','une patience'],['lumiere','une lumière'],['repas','un repas'],
+    ['silence-g','un silence'],['rien-clair','rien de clair, mais je reste ouvert·e']
+  ];
+  const curGra = new Set(soir.gratitude || []);
+  const chipsGra = GRATITUDES.map(([id, label]) => `
+    <label class="jour-chip jour-chip--soft ${curGra.has(id)?'is-active':''}">
+      <input type="checkbox" name="relu-gratitude" value="${esc(id)}" ${curGra.has(id)?'checked':''}/>
+      <span>${esc(label)}</span>
+    </label>`).join('');
+  const gratitudeNote = soir.gratitudeNote || '';
+
+  // Étape 6 : Reprise pour demain
+  const REPRISES = [
+    ['meme-axe',       'le même axe'],
+    ['meme-geste-plus-petit','le même geste, plus petit'],
+    ['reparation',     'une réparation'],
+    ['vigilance-nouvelle','une vigilance nouvelle'],
+    ['reposer',        'je laisse reposer']
+  ];
+  const curRep = (soir.repriseDemain && soir.repriseDemain.type) || '';
+  const reprisesChips = REPRISES.map(([id, label]) => `
+    <label class="jour-chip ${curRep===id?'is-active':''}">
+      <input type="radio" name="relu-reprise" value="${esc(id)}" ${curRep===id?'checked':''}/>
+      <span>${esc(label)}</span>
+    </label>`).join('');
+  const repriseTexte = (soir.repriseDemain && soir.repriseDemain.texte) || '';
+
+  return `
+    <section class="jour-section" id="section-relu">
+      <h2 class="jour-section__titre">Ce soir, je relis ma journée</h2>
+      <p class="jour-section__sub"><em>Regarder sans se condamner, revenir sans se durcir, remercier ce qui a poussé.</em></p>
+
+      ${rappelBlock}
+
+      ${(matin.axes || []).length ? `
+        <div class="jour-etape">
+          <p class="jour-etape__num">·</p>
+          <p class="jour-etape__titre">Comment chaque axe a-t-il été vécu ?</p>
+          ${bilanAxes}
+        </div>` : ''}
+
+      <div class="jour-etape">
+        <p class="jour-etape__num">·</p>
+        <p class="jour-etape__titre">Ce qui a été difficile aujourd'hui</p>
+        <div class="jour-chips">${chipsMvt}</div>
+      </div>
+
+      <div class="jour-etape jour-etape--soft">
+        <p class="jour-etape__num">·</p>
+        <p class="jour-etape__titre">Ce qui a poussé aujourd'hui</p>
+        <p class="jour-etape__hint"><em>Même petit, cela compte. Dieu voit ce qui est caché.</em></p>
+        <div class="jour-chips">${chipsPousse}</div>
+      </div>
+
+      <div class="jour-etape jour-etape--soft">
+        <p class="jour-etape__num">·</p>
+        <p class="jour-etape__titre">Une gratitude</p>
+        <div class="jour-chips">${chipsGra}</div>
+        <label class="jour-field">
+          <span>Une gratitude en une phrase, si elle vient</span>
+          <textarea id="relu-gratitude-note" rows="2" maxlength="400">${esc(gratitudeNote)}</textarea>
+        </label>
+      </div>
+
+      <div class="jour-etape">
+        <p class="jour-etape__num">·</p>
+        <p class="jour-etape__titre">Qu'est-ce que je reprends demain, plus petit ?</p>
+        <div class="jour-chips">${reprisesChips}</div>
+        <label class="jour-field">
+          <span>En un mot, si cela vient</span>
+          <input type="text" id="relu-reprise-texte" class="jour-input" maxlength="200" placeholder="ex. : respirer une fois avant de répondre" value="${esc(repriseTexte)}"/>
+        </label>
+      </div>
+
+      <button type="button" class="carnet-btn carnet-btn--gold" id="save-relu">Déposer le jour</button>
+      <span class="jour-save-ok" id="save-relu-ok" hidden>✓ jour déposé</span>
+    </section>
+  `;
+}
+
+function bindJournee(libs) {
+  // Toggle visuel des chips (toutes)
+  document.querySelectorAll('#journee-content .jour-chip input').forEach(inp => {
+    inp.addEventListener('change', () => {
+      const label = inp.closest('.jour-chip');
+      if (inp.type === 'radio') {
+        const name = inp.name;
+        document.querySelectorAll(`input[name="${name}"]`).forEach(i =>
+          i.closest('.jour-chip')?.classList.toggle('is-active', i.checked));
+      } else {
+        label.classList.toggle('is-active', inp.checked);
+      }
+    });
+  });
+  // Toggle visuel des statuts (bilan des axes)
+  document.querySelectorAll('#journee-content .jour-statut input').forEach(inp => {
+    inp.addEventListener('change', () => {
+      const name = inp.name;
+      document.querySelectorAll(`input[name="${name}"]`).forEach(i =>
+        i.closest('.jour-statut')?.classList.toggle('is-active', i.checked));
+    });
+  });
+
+  // --- Sauvegarde du matin ---
+  const btnPose = document.getElementById('save-pose');
+  if (btnPose) {
+    btnPose.addEventListener('click', async () => {
+      btnPose.disabled = true; btnPose.textContent = 'Enregistrement…';
+      try {
+        const contextes      = Array.from(document.querySelectorAll('input[name="pose-contexte"]:checked')).map(i=>i.value);
+        const axes           = Array.from(document.querySelectorAll('input[name="pose-axe"]:checked')).map(i=>i.value);
+        const apprentissages = Array.from(document.querySelectorAll('input[name="pose-apprentissage"]:checked')).map(i=>i.value);
+        const adab           = document.querySelector('input[name="pose-adab"]:checked')?.value || null;
+        const geste          = document.getElementById('pose-geste')?.value.trim() || null;
+        await setDoc(doc(db, 'carnets', codeId, 'jours', date), {
+          langue: LANG, schemaVersion: 2,
+          matin: { contextes, axes, apprentissages, adab, geste, poseLe: serverTimestamp() }
+        }, { merge: true });
+        const ok = document.getElementById('save-pose-ok');
+        if (ok) { ok.hidden = false; setTimeout(() => ok.hidden = true, 2500); }
+        // Re-render la synthèse
+        const synthEl = document.getElementById('synthese-pose');
+        if (synthEl) synthEl.innerHTML = renderSynthesePoseMatin({ axes, adab, geste, poseLe: true }, libs);
+      } catch (e) { console.error(e); alert('Désolé, la sauvegarde n\'a pas pu se faire.'); }
+      finally { btnPose.disabled = false; btnPose.textContent = 'Poser ma journée'; }
+    });
+  }
+
+  // --- Sauvegarde du soir ---
+  const btnRelu = document.getElementById('save-relu');
+  if (btnRelu) {
+    btnRelu.addEventListener('click', async () => {
+      btnRelu.disabled = true; btnRelu.textContent = 'Enregistrement…';
+      try {
+        const axesBilan = {};
+        document.querySelectorAll('.relu-axe').forEach(el => {
+          const inp = el.querySelector('input[type="radio"]:checked');
+          if (inp) {
+            const axeId = inp.name.replace(/^bilan-/, '');
+            axesBilan[axeId] = inp.value;
+          }
+        });
+        const mouvements   = Array.from(document.querySelectorAll('input[name="relu-mouvement"]:checked')).map(i=>i.value);
+        const ceQuiAPousse = Array.from(document.querySelectorAll('input[name="relu-pousse"]:checked')).map(i=>i.value);
+        const gratitude    = Array.from(document.querySelectorAll('input[name="relu-gratitude"]:checked')).map(i=>i.value);
+        const gratitudeNote= document.getElementById('relu-gratitude-note')?.value.trim() || null;
+        const repriseType  = document.querySelector('input[name="relu-reprise"]:checked')?.value || null;
+        const repriseTexte = document.getElementById('relu-reprise-texte')?.value.trim() || null;
+        await setDoc(doc(db, 'carnets', codeId, 'jours', date), {
+          langue: LANG, schemaVersion: 2,
+          soir: {
+            axesBilan, mouvements, ceQuiAPousse,
+            gratitude, gratitudeNote,
+            repriseDemain: { type: repriseType, texte: repriseTexte },
+            fermeLe: serverTimestamp()
+          }
+        }, { merge: true });
+        const ok = document.getElementById('save-relu-ok');
+        if (ok) { ok.hidden = false; setTimeout(() => ok.hidden = true, 2500); }
+      } catch (e) { console.error(e); alert('Désolé, la sauvegarde n\'a pas pu se faire.'); }
+      finally { btnRelu.disabled = false; btnRelu.textContent = 'Déposer le jour'; }
+    });
+  }
+}
+
+// ============================================================
+//  Ancien moteur (modes Léger / Posé / Lourd) — conservé dormant
+//  pour ne pas casser les anciens jours déjà enregistrés en mode v1
+// ============================================================
 function renderModeContent(mode, pratiques, jourData, hierData) {
   if (mode === 'light')  return renderLight(jourData);
   if (mode === 'heavy')  return renderHeavy(jourData);

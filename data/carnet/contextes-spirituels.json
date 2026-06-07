@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "description": "Contextes humains larges où la vigilance peut être sollicitée. Familles : autres, lien-proche, pression, solitude, conflit, service. Voix soufie, sans catégorie administrative.",
+  "familles": {
+    "autres":       { "label": "Avec les autres" },
+    "lien-proche":  { "label": "Dans le lien proche" },
+    "pression":     { "label": "Dans la pression" },
+    "solitude":     { "label": "Dans la solitude" },
+    "conflit":      { "label": "Dans le conflit" },
+    "service":      { "label": "Dans le service" }
+  },
+  "contextes": [
+    { "id": "parler",       "label": "parler",                "famille": "autres" },
+    { "id": "ecouter",      "label": "écouter",               "famille": "autres" },
+    { "id": "repondre",     "label": "répondre",              "famille": "autres" },
+    { "id": "ne-pas-couper","label": "ne pas couper",         "famille": "autres" },
+    { "id": "rester-present","label": "rester présent",       "famille": "autres" },
+
+    { "id": "enfant",       "label": "enfant",                "famille": "lien-proche" },
+    { "id": "couple",       "label": "couple",                "famille": "lien-proche" },
+    { "id": "famille",      "label": "famille",               "famille": "lien-proche" },
+    { "id": "parent",       "label": "parent",                "famille": "lien-proche" },
+    { "id": "ami",          "label": "ami",                   "famille": "lien-proche" },
+    { "id": "collegue",     "label": "collègue",              "famille": "lien-proche" },
+    { "id": "personne-fragile","label": "personne fragile",   "famille": "lien-proche" },
+    { "id": "personne-difficile","label": "personne difficile","famille": "lien-proche" },
+
+    { "id": "urgence",      "label": "urgence",               "famille": "pression" },
+    { "id": "bruit",        "label": "bruit",                 "famille": "pression" },
+    { "id": "fatigue-pres", "label": "fatigue",               "famille": "pression" },
+    { "id": "attente",      "label": "attente",               "famille": "pression" },
+    { "id": "imprevu",      "label": "imprévu",               "famille": "pression" },
+    { "id": "frustration",  "label": "frustration",           "famille": "pression" },
+    { "id": "surcharge",    "label": "surcharge",             "famille": "pression" },
+
+    { "id": "pensees",      "label": "pensées",               "famille": "solitude" },
+    { "id": "ecrans",       "label": "écrans",                "famille": "solitude" },
+    { "id": "dispersion",   "label": "dispersion",            "famille": "solitude" },
+    { "id": "tristesse-sol","label": "tristesse",             "famille": "solitude" },
+    { "id": "desir-sol",    "label": "désir",                 "famille": "solitude" },
+    { "id": "comparaison",  "label": "comparaison",           "famille": "solitude" },
+    { "id": "decouragement","label": "découragement",         "famille": "solitude" },
+
+    { "id": "agacement",    "label": "agacement",             "famille": "conflit" },
+    { "id": "defense",      "label": "défense",               "famille": "conflit" },
+    { "id": "avoir-raison-c","label": "besoin d'avoir raison","famille": "conflit" },
+    { "id": "durete",       "label": "dureté",                "famille": "conflit" },
+    { "id": "fermeture-c",  "label": "fermeture",             "famille": "conflit" },
+    { "id": "ironie",       "label": "ironie",                "famille": "conflit" },
+    { "id": "controle-c",   "label": "contrôle",              "famille": "conflit" },
+
+    { "id": "aider-sans-perdre","label": "aider sans me perdre","famille": "service" },
+    { "id": "donner-sans-attendre","label": "donner sans attendre","famille": "service" },
+    { "id": "poser-limite", "label": "poser une limite",      "famille": "service" },
+    { "id": "demander-aide-s","label": "demander de l'aide",  "famille": "service" },
+    { "id": "tenir-parole", "label": "tenir une parole",      "famille": "service" },
+    { "id": "bien-discret", "label": "faire un bien discret", "famille": "service" }
+  ]
+}

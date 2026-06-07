@@ -619,20 +619,44 @@
    - Ornements de respiration entre sections
    ============================================================ */
 
-/* === Contrastes — texte plus lisible sur fond papier === */
+/* === Contrastes v4 — encre profonde sur papier === */
 .jour-pratique__amont {
-  color: #5b4a2a !important;          /* brun-encre lisible, italique conservé */
-  opacity: 0.92;
+  color: #2d2008 !important;          /* brun-encre profond — vraiment lisible */
+  opacity: 1;
+  font-weight: 400;
 }
 .jour-pratique__q {
-  color: var(--ink-title) !important; /* encre forte pour la question */
-  font-size: 1.06rem;
+  color: var(--ink-title) !important;
+  font-size: 1.08rem;
   font-weight: 500;
 }
 .jour-aval {
-  color: #4a3a1a !important;           /* commentaire post-réponse : lisible */
-  background: rgba(192,160,80,0.10);
+  color: #1f1505 !important;           /* commentaire : encre presque noire */
+  background: rgba(192,160,80,0.14);
   border-left-width: 4px;
+  font-weight: 400;
+}
+.jour-compagnon-vivant__note { color: #2d2008 !important; opacity: 1; }
+.jour-graine-block__text { color: #1B2A4E !important; }
+.jour-mode-card__desc { color: #5b4a2a !important; }
+.jour-mode-card.is-active .jour-mode-card__desc { color: #6a4a10 !important; }
+
+/* === Boutons réponse — 2x2 sur mobile pour respirer === */
+.jour-choix {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+}
+.jour-choix__opt {
+  flex: none !important;
+  padding: 0.7rem 0.5rem !important;
+  border-radius: 14px !important;
+  font-size: 0.94rem !important;
+  line-height: 1.25;
+}
+@media (max-width: 560px) {
+  .jour-choix { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+  .jour-choix__opt { padding: 0.85rem 0.6rem !important; font-size: 0.98rem !important; }
 }
 
 /* === Ornement de respiration === */

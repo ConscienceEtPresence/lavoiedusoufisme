@@ -64,6 +64,63 @@ export async function nomsForMouvement(mouvement) {
 // Conserve l'export pour compatibilité — vide, l'API a changé
 export const MOUVEMENTS_RESSOURCES = {};
 
+// ----- Réparations (Phase B ADAB) -----
+// Mapping entre les moteurs du carnet (fatigue/peur/controle/orgueil/attente/honte/tristesse/oubli)
+// et les mouvements de mouvements-nafs.json
+export const MOTEUR_TO_MOUVEMENT = {
+  fatigue:   'fatigue',
+  peur:      'controle',
+  controle:  'controle',
+  orgueil:   'orgueil',
+  attente:   'desir',
+  honte:     'honte',
+  tristesse: 'fermeture',
+  oubli:     'oubli',
+  // mouvements directs (si l'app évolue plus tard)
+  colere:    'colere',
+  jugement:  'jugement',
+  ghiba:     'ghiba',
+  desir:     'desir',
+  fermeture: 'fermeture'
+};
+
+let _reparationsCache = null;
+export async function loadReparations() {
+  if (_reparationsCache) return _reparationsCache;
+  try {
+    const res = await fetch('/data/carnet/reparations.json');
+    _reparationsCache = await res.json();
+  } catch { _reparationsCache = { reparations: [], par_mouvement: {} }; }
+  return _reparationsCache;
+}
+
+let _mouvementsCache = null;
+export async function loadMouvements() {
+  if (_mouvementsCache) return _mouvementsCache;
+  try {
+    const res = await fetch('/data/carnet/mouvements-nafs.json');
+    _mouvementsCache = await res.json();
+  } catch { _mouvementsCache = { mouvements: [], familles: {} }; }
+  return _mouvementsCache;
+}
+
+// Retourne 2-3 réparations adaptées au moteur (via le mapping)
+export async function reparationsForMoteur(moteurId) {
+  const mvtId = MOTEUR_TO_MOUVEMENT[moteurId] || moteurId;
+  const db = await loadReparations();
+  const slugs = db.par_mouvement?.[mvtId] || [];
+  const idx = {};
+  for (const r of (db.reparations || [])) idx[r.id] = r;
+  return slugs.map(s => idx[s]).filter(Boolean);
+}
+
+// Retourne le mouvement complet (signes, corps, question, adab, jour_lourd…)
+export async function mouvementForMoteur(moteurId) {
+  const mvtId = MOTEUR_TO_MOUVEMENT[moteurId] || moteurId;
+  const db = await loadMouvements();
+  return (db.mouvements || []).find(m => m.id === mvtId) || null;
+}
+
 // ----- Nom du jour : rotation déterministe sur les 99 Noms -----
 let _nomsCache = null;
 async function loadNoms() {

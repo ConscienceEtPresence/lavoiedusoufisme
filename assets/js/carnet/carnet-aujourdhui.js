@@ -973,9 +973,47 @@ async function renderMoteurRessource(moteurs) {
   if (!moteurs.length) { mount.innerHTML = ''; return; }
   try {
     const m = await import('./bilan-hebdo-soufi.js');
-    const noms = await m.nomsForMouvement(moteurs[0]);
-    if (!noms.length) { mount.innerHTML = ''; return; }
+    // Le moteur du carnet est mappé vers un mouvement de la nafs
+    const mvtId = m.MOTEUR_TO_MOUVEMENT?.[moteurs[0]] || moteurs[0];
+    const [noms, reparations, mouvement] = await Promise.all([
+      m.nomsForMouvement(mvtId),
+      m.reparationsForMoteur(moteurs[0]),
+      m.mouvementForMoteur(moteurs[0])
+    ]);
+    if (!noms.length && !reparations.length) { mount.innerHTML = ''; return; }
+
+    // Bloc « jour lourd » — le minimum si le cœur ne peut pas plus
+    const jourLourdHtml = mouvement?.jour_lourd ? `
+      <div class="moteur-jour-lourd">
+        <span class="moteur-jour-lourd__label">${EN ? 'If today is heavy' : 'Si aujourd\'hui est lourd'}</span>
+        <p class="moteur-jour-lourd__text">${esc(mouvement.jour_lourd)}</p>
+      </div>` : '';
+
+    // Bloc réparations dynamiques selon le mouvement
+    const reparationsHtml = reparations.length ? `
+      <div class="moteur-reparations">
+        <span class="moteur-reparations__label">${EN ? 'Repairs that match this movement' : 'Des réparations pour ce mouvement'}</span>
+        <p class="moteur-reparations__intro"><em>${EN
+          ? 'Tiny and concrete. None is required — just one is enough.'
+          : 'Toutes petites, concrètes. Aucune n\'est obligatoire — une seule suffit.'}</em></p>
+        <ul class="moteur-reparations__list">
+          ${reparations.map(r => `
+            <li class="moteur-reparation">
+              <div class="moteur-reparation__head">
+                <strong>${esc(r.label)}</strong>
+                ${r.discretion === 'rien-a-envoyer' ? `<span class="moteur-reparation__tag">${EN ? 'inside only' : 'rien à envoyer'}</span>` : ''}
+                ${r.discretion === 'silencieuse' ? `<span class="moteur-reparation__tag moteur-reparation__tag--silent">${EN ? 'silent' : 'silencieuse'}</span>` : ''}
+              </div>
+              <p class="moteur-reparation__intro">${esc(r.intro)}</p>
+              ${r.phrase ? `<p class="moteur-reparation__phrase">${esc(r.phrase)}</p>` : ''}
+            </li>
+          `).join('')}
+        </ul>
+      </div>` : '';
+
     mount.innerHTML = `
+      ${jourLourdHtml}
+      ${reparationsHtml}
       <div class="moteur-ressource">
         <span class="moteur-ressource__label">${EN ? 'Names that may accompany' : 'Des Noms qui peuvent accompagner'}</span>
         <p class="moteur-ressource__invite"><em>${EN

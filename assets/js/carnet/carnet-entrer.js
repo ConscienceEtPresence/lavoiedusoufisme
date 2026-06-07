@@ -1,11 +1,26 @@
 /* ============================================================
-   Page « Entrer dans son carnet » — vérification de la clé
-   Cherche un document dans codes/ avec prenom + motGraine.
-   Si trouvé et actif : ouvre la session locale + redirige.
+   « Entrer dans son carnet » — vérification de la clé, bilingue
    ============================================================ */
 import { db } from './firebase-init.js';
 import { collection, query, where, getDocs, doc, updateDoc, serverTimestamp }
   from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+const EN = document.documentElement.lang === 'en';
+const T = EN ? {
+  errorEmpty: 'Please enter both your first name and seed-word.',
+  checking: 'Checking…',
+  errorNoMatch: "This first-name + seed-word doesn't match any journal. Check the spelling, or ask for your key.",
+  errorInactive: "This key is no longer active. Write to lavoiedudedans@icloud.com.",
+  errorGeneric: 'A difficulty occurred. Try again shortly.',
+  buttonText: 'Enter →'
+} : {
+  errorEmpty: 'Renseignez votre prénom et votre mot-graine.',
+  checking: 'Vérification…',
+  errorNoMatch: 'Ce duo prénom + mot-graine ne correspond à aucun carnet. Vérifiez la saisie, ou demandez votre clé.',
+  errorInactive: "Cette clé n'est plus active. Écrivez à lavoiedudedans@icloud.com.",
+  errorGeneric: 'Une erreur est survenue. Réessayez dans un instant.',
+  buttonText: 'Entrer →'
+};
 
 const SESSION_KEY = 'lvdd_carnet_session';
 
@@ -13,29 +28,21 @@ const form = document.getElementById('entrer-form');
 const errorEl = document.getElementById('form-error');
 const btn = document.getElementById('submit-btn');
 
-function showError(msg) {
-  errorEl.textContent = msg;
-  errorEl.hidden = false;
-}
-function clearError() {
-  errorEl.hidden = true;
-  errorEl.textContent = '';
-}
+function showError(msg) { errorEl.textContent = msg; errorEl.hidden = false; }
+function clearError() { errorEl.hidden = true; errorEl.textContent = ''; }
 
-// si une session existe déjà, on redirige directement vers aujourd'hui
+// session déjà active → on file directement à aujourd'hui
 const existing = localStorage.getItem(SESSION_KEY);
 if (existing) {
   try {
     const s = JSON.parse(existing);
-    if (s.codeId && s.prenom) {
-      window.location.href = '../aujourdhui/';
-    }
+    if (s.codeId && s.prenom) window.location.href = '../aujourdhui/';
   } catch {}
 }
 
 function normalize(s) {
   return String(s || '').trim().toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, ''); // enlève les accents
+    .normalize('NFD').replace(/[̀-ͯ]/g, '');
 }
 
 form.addEventListener('submit', async (e) => {
@@ -45,13 +52,10 @@ form.addEventListener('submit', async (e) => {
   const prenomRaw = form.prenom.value.trim();
   const motRaw    = form.motGraine.value.trim();
 
-  if (!prenomRaw || !motRaw) {
-    showError('Renseignez votre prénom et votre mot-graine.');
-    return;
-  }
+  if (!prenomRaw || !motRaw) { showError(T.errorEmpty); return; }
 
   btn.disabled = true;
-  btn.textContent = 'Vérification…';
+  btn.textContent = T.checking;
 
   const prenom    = normalize(prenomRaw);
   const motGraine = normalize(motRaw);
@@ -65,46 +69,41 @@ form.addEventListener('submit', async (e) => {
     const snap = await getDocs(q);
 
     if (snap.empty) {
-      showError('Ce duo prénom + mot-graine ne correspond à aucun carnet. Vérifiez la saisie, ou demandez votre clé.');
+      showError(T.errorNoMatch);
       btn.disabled = false;
-      btn.textContent = 'Entrer →';
+      btn.textContent = T.buttonText;
       return;
     }
 
-    // on prend la première (en théorie unique)
     const docRef = snap.docs[0];
     const data   = docRef.data();
 
     if (data.actif === false) {
-      showError('Cette clé n\'est plus active. Écrivez à lavoiedudedans@icloud.com.');
+      showError(T.errorInactive);
       btn.disabled = false;
-      btn.textContent = 'Entrer →';
+      btn.textContent = T.buttonText;
       return;
     }
 
-    // ouverture de session locale
     const session = {
       codeId:    docRef.id,
       prenom:    data.prenom || prenomRaw,
       motGraine: data.motGraine,
-      langue:    data.langue || 'fr',
+      langue:    data.langue || (EN ? 'en' : 'fr'),
       ouvertLe:  Date.now()
     };
     localStorage.setItem(SESSION_KEY, JSON.stringify(session));
 
-    // mise à jour douce : dernier login
     try {
-      await updateDoc(doc(db, 'codes', docRef.id), {
-        dernierLogin: serverTimestamp()
-      });
+      await updateDoc(doc(db, 'codes', docRef.id), { dernierLogin: serverTimestamp() });
     } catch {}
 
     window.location.href = '../aujourdhui/';
 
   } catch (err) {
     console.error(err);
-    showError('Une erreur est survenue. Réessayez dans un instant.');
+    showError(T.errorGeneric);
     btn.disabled = false;
-    btn.textContent = 'Entrer →';
+    btn.textContent = T.buttonText;
   }
 });

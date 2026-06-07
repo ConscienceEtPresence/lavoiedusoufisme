@@ -1,10 +1,23 @@
 /* ============================================================
-   Page « Demander une clé » — logique du formulaire
-   - Génère un ticket lisible (3 mots)
-   - Écrit la demande dans Firestore : demandes/{ticketId}
+   « Demander une clé » — formulaire bilingue
    ============================================================ */
 import { db } from './firebase-init.js';
 import { doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+const EN = document.documentElement.lang === 'en';
+const T = EN ? {
+  errorPrenom: 'A first name is needed so we can respond to you.',
+  errorContact: 'Please provide a way for us to reach you.',
+  sending: 'Sending…',
+  errorSubmit: "Your request couldn't be sent. Try again, or write directly to lavoiedudedans@icloud.com.",
+  buttonText: 'Send the request →'
+} : {
+  errorPrenom: 'Pour vous répondre, votre prénom est nécessaire.',
+  errorContact: "Pour vous envoyer votre clé, indiquez une adresse de réponse.",
+  sending: 'Envoi…',
+  errorSubmit: "La demande n'a pas pu être envoyée. Réessayez dans un instant, ou écrivez directement à lavoiedudedans@icloud.com.",
+  buttonText: 'Envoyer la demande →'
+};
 
 const TICKET_WORDS = [
   'nur', 'qalb', 'sirr', 'sakina', 'mira', 'hilm', 'rifq', 'sabr',
@@ -12,10 +25,9 @@ const TICKET_WORDS = [
   'najm', 'lail', 'badr', 'shams', 'qamar', 'mawj', 'jana', 'rahma',
   'baraka', 'aman', 'shawq', 'fitra', 'fadl', 'noor'
 ];
-
 function generateTicket() {
   const pick = () => TICKET_WORDS[Math.floor(Math.random() * TICKET_WORDS.length)];
-  const num = Math.floor(100 + Math.random() * 900); // 3 chiffres
+  const num = Math.floor(100 + Math.random() * 900);
   return `${pick()}-${num}-${pick()}`;
 }
 
@@ -24,17 +36,9 @@ const errorEl = document.getElementById('form-error');
 const btn = document.getElementById('submit-btn');
 const stepForm = document.getElementById('step-form');
 const stepSuccess = document.getElementById('step-success');
-const ticketCode = document.getElementById('ticket-code');
-const copyBtn = document.getElementById('copy-ticket');
 
-function showError(msg) {
-  errorEl.textContent = msg;
-  errorEl.hidden = false;
-}
-function clearError() {
-  errorEl.hidden = true;
-  errorEl.textContent = '';
-}
+function showError(msg) { errorEl.textContent = msg; errorEl.hidden = false; }
+function clearError() { errorEl.hidden = true; errorEl.textContent = ''; }
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -44,13 +48,12 @@ form.addEventListener('submit', async (e) => {
   const message = form.message.value.trim();
   const contact = form.contact.value.trim();
 
-  if (!prenom)  { showError('Pour vous répondre, votre prénom est nécessaire.'); return; }
-  if (!contact) { showError('Pour vous envoyer votre clé, indiquez une adresse de réponse.'); return; }
+  if (!prenom)  { showError(T.errorPrenom); return; }
+  if (!contact) { showError(T.errorContact); return; }
 
   btn.disabled = true;
-  btn.textContent = 'Envoi…';
+  btn.textContent = T.sending;
 
-  // génère un ticket unique (suffisamment, vu le volume)
   const ticketId = generateTicket();
 
   try {
@@ -59,33 +62,17 @@ form.addEventListener('submit', async (e) => {
       prenom,
       message: message || null,
       contact,
-      langue: 'fr',
+      langue: EN ? 'en' : 'fr',
       statut: 'en-attente',
       creeLe: serverTimestamp()
     });
-
-    // succès
     stepForm.hidden = true;
     stepSuccess.hidden = false;
     stepSuccess.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
   } catch (err) {
     console.error(err);
-    showError('La demande n\'a pas pu être envoyée. Réessayez dans un instant, ou écrivez directement à lavoiedudedans@icloud.com.');
+    showError(T.errorSubmit);
     btn.disabled = false;
-    btn.textContent = 'Envoyer la demande →';
-  }
-});
-
-copyBtn?.addEventListener('click', async () => {
-  const code = ticketCode.textContent;
-  try {
-    await navigator.clipboard.writeText(code);
-    const original = copyBtn.textContent;
-    copyBtn.textContent = 'copié ✓';
-    setTimeout(() => copyBtn.textContent = original, 1800);
-  } catch {
-    // fallback
-    window.prompt('Copiez ce ticket :', code);
+    btn.textContent = T.buttonText;
   }
 });

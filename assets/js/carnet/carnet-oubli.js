@@ -1,10 +1,23 @@
 /* ============================================================
-   Page « Mot-graine oublié »
-   Écrit une demande de type 'rappel' dans Firestore.
-   Brahms verra cela dans son cockpit avec un badge distinct.
+   « Mot-graine oublié » — demande de rappel, bilingue
    ============================================================ */
 import { db } from './firebase-init.js';
 import { doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+const EN = document.documentElement.lang === 'en';
+const T = EN ? {
+  errorPrenom: 'Your first name is needed so we can find you.',
+  errorContact: 'Please provide a way to send your seed-word back to you.',
+  sending: 'Sending…',
+  errorSubmit: "The request couldn't be sent. Try again, or write directly to lavoiedudedans@icloud.com.",
+  buttonText: 'Ask for my seed-word →'
+} : {
+  errorPrenom: 'Votre prénom est nécessaire pour vous retrouver.',
+  errorContact: "Indiquez une adresse pour vous renvoyer votre mot-graine.",
+  sending: 'Envoi…',
+  errorSubmit: "La demande n'a pas pu être envoyée. Réessayez, ou écrivez directement à lavoiedudedans@icloud.com.",
+  buttonText: 'Demander mon mot-graine →'
+};
 
 const TICKET_WORDS = [
   'nur', 'qalb', 'sirr', 'sakina', 'mira', 'hilm', 'rifq', 'sabr',
@@ -34,11 +47,11 @@ form.addEventListener('submit', async (e) => {
   const contact = form.contact.value.trim();
   const message = form.message.value.trim();
 
-  if (!prenom)  { showError('Votre prénom est nécessaire pour vous retrouver.'); return; }
-  if (!contact) { showError('Indiquez une adresse pour vous renvoyer votre mot-graine.'); return; }
+  if (!prenom)  { showError(T.errorPrenom); return; }
+  if (!contact) { showError(T.errorContact); return; }
 
   btn.disabled = true;
-  btn.textContent = 'Envoi…';
+  btn.textContent = T.sending;
 
   const ticketId = generateTicket();
 
@@ -49,7 +62,7 @@ form.addEventListener('submit', async (e) => {
       prenom,
       message: message || null,
       contact,
-      langue: 'fr',
+      langue: EN ? 'en' : 'fr',
       statut: 'en-attente',
       creeLe: serverTimestamp()
     });
@@ -58,8 +71,8 @@ form.addEventListener('submit', async (e) => {
     stepSuccess.scrollIntoView({ behavior: 'smooth', block: 'start' });
   } catch (err) {
     console.error(err);
-    showError('La demande n\'a pas pu être envoyée. Réessayez, ou écrivez directement à lavoiedudedans@icloud.com.');
+    showError(T.errorSubmit);
     btn.disabled = false;
-    btn.textContent = 'Demander mon mot-graine →';
+    btn.textContent = T.buttonText;
   }
 });

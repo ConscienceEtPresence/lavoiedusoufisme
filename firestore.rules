@@ -110,6 +110,23 @@ service cloud.firestore {
       allow read, write: if true;
     }
 
+    // ============================================================
+    // === ANALYTICS — compteurs anonymes par site ===
+    // Structure : analytics/{site}/jours/{YYYY-MM-DD}
+    //   { pageviews, uniques } — incréments atomiques uniquement
+    // Sites supportés : lavoiedudedans, lemiroirinterieur
+    // ============================================================
+    match /analytics/{site}/jours/{date} {
+      // Création et update libres pour incrémenter les compteurs.
+      // Lecture admin seulement (pas de fuite publique des stats).
+      allow create, update: if site in ['lavoiedudedans', 'lemiroirinterieur'];
+      allow read: if isAdmin();
+      allow delete: if isAdmin();
+    }
+    match /analytics/{site} {
+      allow read: if isAdmin();
+    }
+
     // — tout le reste interdit —
     match /{document=**} {
       allow read, write: if false;

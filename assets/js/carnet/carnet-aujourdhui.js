@@ -68,6 +68,37 @@ const T_fr = {
   noteEvening: 'Une chose qui m\'a marqué·e aujourd\'hui (facultatif)',
   closeDay: 'Déposer le jour',
   closeDaySaved: '✓ jour déposé',
+  // Relecture d'un moment
+  momentTitle: 'Relire un moment du jour',
+  momentSub: 'un événement concret — une parole, une colère, une tenue, une réparation',
+  momentType: 'Ce moment était plutôt',
+  momentTypes: {
+    emporte: 'je me suis emporté·e',
+    parole: 'j\'ai blessé par une parole',
+    absence: 'j\'ai été absent·e',
+    tenu: 'j\'ai tenu bon',
+    repare: 'j\'ai réparé',
+    grace: 'j\'ai reçu une grâce',
+    obscur: 'je ne comprends pas encore'
+  },
+  momentScene: 'Ce qui s\'est passé, simplement',
+  momentScenePlaceholder: 'ex. : avec ma fille, je me suis agacé·e trop vite…',
+  momentMoteurs: 'Ce qui parlait peut-être en moi',
+  momentMoteursList: {
+    fatigue: 'fatigue',
+    peur: 'peur',
+    controle: 'besoin de contrôle',
+    orgueil: 'orgueil',
+    attente: 'attente non comblée',
+    honte: 'honte',
+    tristesse: 'tristesse',
+    oubli: 'oubli de soi'
+  },
+  momentRemede: 'Le mot-remède que je veux appeler',
+  momentRepair: 'Un petit retour possible',
+  momentRepairPlaceholder: 'ex. : lui reparler doucement, demander pardon, respirer avant de répondre demain…',
+  momentVow: 'Le vœu que je reprends demain',
+  momentVowPlaceholder: 'ex. : quand je sens la colère monter, je garde une respiration avant de parler.',
   // Jour difficile
   heavyTitle: 'Aujourd\'hui était lourd',
   heavyBreathe: 'Respirer une fois, lentement. Sentir le poids du corps.',
@@ -92,6 +123,16 @@ const T_fr = {
   saveError: 'Une difficulté est survenue. Réessayez.',
   loading: 'Un instant…',
   emptyMessage: 'Écrivez quelque chose avant d\'envoyer.',
+  // Reprise du vœu d'hier
+  repriseLabel: 'Hier vous vous étiez dit',
+  repriseQuestion: 'Comment ça s\'est passé aujourd\'hui ?',
+  repriseTenu: 'tenu',
+  reprisePartiel: 'en partie',
+  reprisePasPu: 'pas pu',
+  reprisePasSu: 'je n\'ai pas su',
+  repriseNoteThanks: 'Merci de revenir vers ce vœu. C\'est ainsi qu\'on apprend de soi.',
+  // Ressources
+  resourcesLabel: 'Pour aller plus loin, si vous le souhaitez',
   // Mémoire douce
   whisperReturn: 'Vous voilà. Le carnet vous attendait sans vous compter.',
   whisperEvening: 'Le jour décline. Vous pouvez juste venir sans rien dire.',
@@ -139,6 +180,36 @@ const T_en = {
   noteEvening: 'One thing that marked me today (optional)',
   closeDay: 'Lay down the day',
   closeDaySaved: '✓ day laid down',
+  momentTitle: 'Reread a moment of the day',
+  momentSub: 'one concrete event — a word, anger, restraint, a repair',
+  momentType: 'This moment was mostly',
+  momentTypes: {
+    emporte: 'I lost my temper',
+    parole: 'I wounded with a word',
+    absence: 'I was absent',
+    tenu: 'I held steady',
+    repare: 'I repaired',
+    grace: 'I received a grace',
+    obscur: 'I do not understand yet'
+  },
+  momentScene: 'What happened, simply',
+  momentScenePlaceholder: 'e.g.: with my daughter, I got irritated too quickly…',
+  momentMoteurs: 'What may have been speaking in me',
+  momentMoteursList: {
+    fatigue: 'tiredness',
+    peur: 'fear',
+    controle: 'need for control',
+    orgueil: 'pride',
+    attente: 'unmet expectation',
+    honte: 'shame',
+    tristesse: 'sadness',
+    oubli: 'forgetfulness'
+  },
+  momentRemede: 'The remedy-word I want to call',
+  momentRepair: 'A small possible return',
+  momentRepairPlaceholder: 'e.g.: speak gently again, ask forgiveness, breathe before answering tomorrow…',
+  momentVow: 'The vow I take up again tomorrow',
+  momentVowPlaceholder: 'e.g.: when I feel anger rising, I keep one breath before speaking.',
   heavyTitle: 'Today was heavy',
   heavyBreathe: 'Breathe once, slowly. Feel the weight of the body.',
   heavyPhrase: 'A sentence, if it wants to come — no more',
@@ -158,6 +229,14 @@ const T_en = {
   saveError: 'A difficulty occurred. Try again.',
   loading: 'A moment…',
   emptyMessage: 'Write something before sending.',
+  repriseLabel: 'Yesterday you told yourself',
+  repriseQuestion: 'How did it go today?',
+  repriseTenu: 'kept',
+  reprisePartiel: 'in part',
+  reprisePasPu: 'could not',
+  reprisePasSu: 'I did not know',
+  repriseNoteThanks: 'Thank you for coming back to this vow. This is how we learn from ourselves.',
+  resourcesLabel: 'To go further, if you wish',
   whisperReturn: 'Here you are. The journal was waiting without counting.',
   whisperEvening: 'The day is fading. You can simply come, without saying anything.',
   whisperMorning: 'Morning begins. One intention is enough.',
@@ -165,6 +244,20 @@ const T_en = {
   sortir: 'Sign out',
 };
 const TXT = EN ? T_en : T_fr;
+
+const REMEDES = [
+  { id: '', fr: '— choisir —', en: '— choose —' },
+  { id: 'sabr', fr: 'ṣabr — tenir sans se durcir', en: 'ṣabr — hold without hardening' },
+  { id: 'hilm', fr: 'ḥilm — ne pas répondre du tac au tac', en: 'ḥilm — not snapping back' },
+  { id: 'rifq', fr: 'rifq — toucher plus doucement', en: 'rifq — touch more gently' },
+  { id: 'samt', fr: 'ṣamt — garder une parole', en: 'ṣamt — keep a word back' },
+  { id: 'adab', fr: 'adab — ajuster le geste', en: 'adab — adjust the gesture' },
+  { id: 'tawba', fr: 'tawba — revenir sans drame', en: 'tawba — return without drama' },
+  { id: 'istighfar', fr: 'istighfār — demander pardon', en: 'istighfār — ask forgiveness' },
+  { id: 'shukr', fr: 'shukr — reconnaître le don', en: 'shukr — recognize the gift' },
+  { id: 'hudur', fr: 'ḥuḍūr — revenir à la présence', en: 'ḥuḍūr — return to presence' },
+  { id: 'muraqaba', fr: 'murāqaba — regarder ce qui passe', en: 'murāqaba — watch what passes' }
+];
 
 const SESSION_KEY = 'lvdd_carnet_session';
 const mount = document.getElementById('jour-mount');
@@ -183,11 +276,35 @@ if (!sessionRaw) { window.location.href = '../entrer/'; throw new Error('no sess
 const session = JSON.parse(sessionRaw);
 const { codeId, prenom } = session;
 
-function todayKey() {
-  const d = new Date();
+function dateKey(d) {
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
+function todayKey() { return dateKey(new Date()); }
+function yesterdayKey() {
+  const d = new Date(); d.setDate(d.getDate() - 1);
+  return dateKey(d);
+}
 const date = todayKey();
+const dateHier = yesterdayKey();
+
+// Ressources du site selon ce qui s'est joué dans le moment
+// Liens doux, jamais imposés. Reliés au type d'événement ou aux moteurs.
+const RESOURCES = {
+  emporte:  { fr: ['ḥilm (mansuétude)', 'al-Ḥalīm', 'un conte de Nasr Eddin'], en: ['ḥilm (forbearance)', 'al-Ḥalīm', 'a Nasr Eddin tale'],
+              links: ['/pages/dictionnaire/?q=hilm', '/pages/noms-divins/nom/?id=al-halim', '/pages/contes/nasr-eddin/'] },
+  parole:   { fr: ['ṣamt (silence)', 'la parole juste', 'al-Laṭīf'], en: ['ṣamt (silence)', 'right speech', 'al-Laṭīf'],
+              links: ['/pages/dictionnaire/?q=samt', '/pages/decouvrir.html', '/pages/noms-divins/nom/?id=al-latif'] },
+  absence:  { fr: ['ḥuḍūr (présence)', 'murāqaba'], en: ['ḥuḍūr (presence)', 'murāqaba'],
+              links: ['/pages/dictionnaire/?q=hudur', '/pages/dictionnaire/?q=muraqaba'] },
+  tenu:     { fr: ['ṣabr (patience)', 'aṣ-Ṣabūr'], en: ['ṣabr (patience)', 'aṣ-Ṣabūr'],
+              links: ['/pages/dictionnaire/?q=sabr', '/pages/noms-divins/nom/?id=as-sabur'] },
+  repare:   { fr: ['tawba (retour)', 'al-Tawwāb', 'istighfār'], en: ['tawba (turning back)', 'al-Tawwāb', 'istighfār'],
+              links: ['/pages/dictionnaire/?q=tawba', '/pages/noms-divins/nom/?id=at-tawwab', '/pages/dictionnaire/?q=istighfar'] },
+  grace:    { fr: ['shukr (gratitude)', 'al-Wahhāb', 'la poésie soufie'], en: ['shukr (gratitude)', 'al-Wahhāb', 'sufi poetry'],
+              links: ['/pages/dictionnaire/?q=shukr', '/pages/noms-divins/nom/?id=al-wahhab', '/pages/poesie/'] },
+  obscur:   { fr: ['l\'hadith de Gabriel', 'fitra', 'la voie du voyageur'], en: ['the hadith of Gabriel', 'fitra', 'the seeker\'s path'],
+              links: ['/pages/hadith-gabriel.html', '/pages/dictionnaire/?q=fitra', '/pages/voyage/'] }
+};
 
 function whisperForTime() {
   const h = new Date().getHours();
@@ -200,14 +317,16 @@ function whisperForTime() {
 
 async function load() {
   await ensureValidSession(session);
-  const [pratiquesJson, motsJson, jourSnap] = await Promise.all([
+  const [pratiquesJson, motsJson, jourSnap, hierSnap] = await Promise.all([
     fetch('/data/carnet/pratiques.json').then(r => r.json()),
     fetch('/data/carnet/mots-graines.json').then(r => r.json()),
-    getDoc(doc(db, 'carnets', codeId, 'jours', date)).catch(() => null)
+    getDoc(doc(db, 'carnets', codeId, 'jours', date)).catch(() => null),
+    getDoc(doc(db, 'carnets', codeId, 'jours', dateHier)).catch(() => null)
   ]);
   const motCompagnon = motsJson.mots.find(m => m.id === session.motGraine);
   const jourData = jourSnap?.exists() ? jourSnap.data() : {};
-  render({ pratiques: pratiquesJson, motCompagnon, jourData });
+  const hierData = hierSnap?.exists() ? hierSnap.data() : null;
+  render({ pratiques: pratiquesJson, motCompagnon, jourData, hierData });
 }
 
 function dateLisible() {
@@ -223,7 +342,7 @@ function esc(s) {
 
 function ornament() { return '<div class="jour-ornament">✦</div>'; }
 
-function render({ pratiques, motCompagnon, jourData }) {
+function render({ pratiques, motCompagnon, jourData, hierData }) {
   // mode déjà choisi pour ce jour ? sinon 'pose' par défaut
   const mode = jourData.mode || 'pose';
 
@@ -279,8 +398,12 @@ function render({ pratiques, motCompagnon, jourData }) {
 
   const contentBlock = renderModeContent(mode, pratiques, jourData);
 
+  // Reprise du vœu d'hier — seulement si un vow existe dans le jour précédent
+  const repriseBlock = renderRepriseVow(arguments[0].hierData, jourData);
+
   mount.innerHTML = `
     ${headerBlock}
+    ${repriseBlock}
     ${compagnonBlock}
     ${ornament()}
     ${modeChooserBlock}
@@ -291,7 +414,53 @@ function render({ pratiques, motCompagnon, jourData }) {
 
   bindModeChooser(pratiques, jourData);
   bindContent(mode, pratiques);
+  bindReprise();
   bindSuggestion();
+}
+
+function renderRepriseVow(hierData, jourData) {
+  const vow = hierData?.soir?.moment?.vow;
+  if (!vow || !vow.trim()) return '';
+  const alreadyAnswered = jourData?.reprise?.statut;
+  return `
+    <section class="jour-reprise">
+      <span class="jour-reprise__label">${TXT.repriseLabel}</span>
+      <blockquote class="jour-reprise__vow">« ${esc(vow)} »</blockquote>
+      <p class="jour-reprise__q">${TXT.repriseQuestion}</p>
+      <div class="jour-reprise__choices">
+        ${[['tenu',TXT.repriseTenu],['partiel',TXT.reprisePartiel],['paspu',TXT.reprisePasPu],['passu',TXT.reprisePasSu]].map(([id,label]) => `
+          <label class="jour-reprise__opt ${alreadyAnswered===id?'is-checked':''}">
+            <input type="radio" name="reprise-statut" value="${id}" ${alreadyAnswered===id?'checked':''}/>
+            <span>${label}</span>
+          </label>
+        `).join('')}
+      </div>
+      ${alreadyAnswered ? `<p class="jour-reprise__note">${TXT.repriseNoteThanks}</p>` : ''}
+    </section>
+  `;
+}
+
+function bindReprise() {
+  document.querySelectorAll('.jour-reprise__opt input').forEach(input => {
+    input.addEventListener('change', async () => {
+      document.querySelectorAll('.jour-reprise__opt').forEach(o => o.classList.remove('is-checked'));
+      input.closest('.jour-reprise__opt').classList.add('is-checked');
+      try {
+        await setDoc(doc(db, 'carnets', codeId, 'jours', date), {
+          langue: LANG,
+          reprise: { statut: input.value, repriseLe: serverTimestamp() }
+        }, { merge: true });
+        // afficher le message de remerciement
+        const sect = input.closest('.jour-reprise');
+        if (sect && !sect.querySelector('.jour-reprise__note')) {
+          const p = document.createElement('p');
+          p.className = 'jour-reprise__note';
+          p.textContent = TXT.repriseNoteThanks;
+          sect.appendChild(p);
+        }
+      } catch (e) { console.warn('reprise save failed', e); }
+    });
+  });
 }
 
 function renderModeContent(mode, pratiques, jourData) {
@@ -374,6 +543,7 @@ function renderPose(pratiques, jourData) {
   const noteMatin = jourData.matin?.note || '';
   const reponses = jourData.soir?.reponses || {};
   const noteSoir = jourData.soir?.note || '';
+  const moment = jourData.soir?.moment || {};
 
   const intentionsOptions = items.map(p => `
     <option value="${esc(p.id)}" ${p.id === intentionActuelle ? 'selected' : ''}>${esc(p[LANG].nom)}</option>
@@ -443,9 +613,90 @@ function renderPose(pratiques, jourData) {
         <textarea id="note-soir" rows="4">${esc(noteSoir)}</textarea>
       </label>
 
+      ${renderMoment(moment)}
+
       <button type="button" class="carnet-btn carnet-btn--gold" id="save-soir">${TXT.closeDay}</button>
       <span class="jour-save-ok" id="save-soir-ok" hidden>${TXT.closeDaySaved}</span>
     </section>
+  `;
+}
+
+function renderMoment(moment) {
+  const types = Object.entries(TXT.momentTypes).map(([id, label]) => `
+    <label class="jour-moment-chip ${moment.type === id ? 'is-active' : ''}">
+      <input type="radio" name="moment-type" value="${esc(id)}" ${moment.type === id ? 'checked' : ''}/>
+      <span>${esc(label)}</span>
+    </label>
+  `).join('');
+
+  const moteurs = Object.entries(TXT.momentMoteursList).map(([id, label]) => {
+    const checked = Array.isArray(moment.moteurs) && moment.moteurs.includes(id);
+    return `
+      <label class="jour-moment-chip jour-moment-chip--small ${checked ? 'is-active' : ''}">
+        <input type="checkbox" name="moment-moteur" value="${esc(id)}" ${checked ? 'checked' : ''}/>
+        <span>${esc(label)}</span>
+      </label>
+    `;
+  }).join('');
+
+  const remedes = REMEDES.map(r => `
+    <option value="${esc(r.id)}" ${moment.remede === r.id ? 'selected' : ''}>${esc(r[LANG])}</option>
+  `).join('');
+
+  return `
+    <div class="jour-moment">
+      <div class="jour-moment__head">
+        <h3 class="jour-moment__title">${TXT.momentTitle}</h3>
+        <p>${TXT.momentSub}</p>
+      </div>
+
+      <div class="jour-moment__block">
+        <p class="jour-field__label">${TXT.momentType}</p>
+        <div class="jour-moment-grid">${types}</div>
+      </div>
+
+      <label class="jour-field">
+        <span>${TXT.momentScene}</span>
+        <textarea id="moment-scene" rows="3" maxlength="700" placeholder="${esc(TXT.momentScenePlaceholder)}">${esc(moment.scene || '')}</textarea>
+      </label>
+
+      <div class="jour-moment__block">
+        <p class="jour-field__label">${TXT.momentMoteurs}</p>
+        <div class="jour-moment-grid jour-moment-grid--moteurs">${moteurs}</div>
+      </div>
+
+      <label class="jour-field">
+        <span>${TXT.momentRemede}</span>
+        <select id="moment-remede">${remedes}</select>
+      </label>
+
+      <label class="jour-field">
+        <span>${TXT.momentRepair}</span>
+        <textarea id="moment-repair" rows="2" maxlength="500" placeholder="${esc(TXT.momentRepairPlaceholder)}">${esc(moment.repair || '')}</textarea>
+      </label>
+
+      <label class="jour-field">
+        <span>${TXT.momentVow}</span>
+        <textarea id="moment-vow" rows="2" maxlength="500" placeholder="${esc(TXT.momentVowPlaceholder)}">${esc(moment.vow || '')}</textarea>
+      </label>
+
+      <div id="moment-resources">${renderResources(moment.type)}</div>
+    </div>
+  `;
+}
+
+function renderResources(type) {
+  const r = RESOURCES[type];
+  if (!r) return '';
+  const items = r[LANG].map((label, i) => {
+    const href = r.links[i] || '#';
+    return `<li><a href="${esc(href)}" target="_blank" rel="noopener">${esc(label)}</a></li>`;
+  }).join('');
+  return `
+    <div class="jour-resources">
+      <span class="jour-resources__label">${TXT.resourcesLabel}</span>
+      <ul class="jour-resources__list">${items}</ul>
+    </div>
   `;
 }
 
@@ -496,7 +747,7 @@ function bindModeChooser(pratiques, jourData) {
 function bindContent(mode, pratiques) {
   if (mode === 'light') bindLight();
   else if (mode === 'heavy') bindHeavy();
-  else { bindMatin(); bindSoir(pratiques.pratiques); bindAvalDynamique(pratiques.pratiques); bindChoixVisuel(); }
+  else { bindMatin(); bindSoir(pratiques.pratiques); bindAvalDynamique(pratiques.pratiques); bindChoixVisuel(); bindMomentVisuel(); }
 }
 
 function bindChoixVisuel() {
@@ -505,6 +756,22 @@ function bindChoixVisuel() {
       const group = document.getElementsByName(r.name);
       group.forEach(rr => rr.closest('.jour-choix__opt')?.classList.remove('is-checked'));
       if (r.checked) r.closest('.jour-choix__opt')?.classList.add('is-checked');
+    });
+  });
+}
+
+function bindMomentVisuel() {
+  document.querySelectorAll('.jour-moment-chip input').forEach(input => {
+    input.addEventListener('change', () => {
+      if (input.type === 'radio') {
+        document.getElementsByName(input.name).forEach(i => i.closest('.jour-moment-chip')?.classList.remove('is-active'));
+      }
+      input.closest('.jour-moment-chip')?.classList.toggle('is-active', input.checked);
+      // si on change le type d'événement → mettre à jour les ressources liées
+      if (input.name === 'moment-type' && input.checked) {
+        const res = document.getElementById('moment-resources');
+        if (res) res.innerHTML = renderResources(input.value);
+      }
     });
   });
 }
@@ -591,9 +858,19 @@ function bindSoir(items) {
         if (sel) reponses[p.id] = sel.value;
       });
       const note = document.getElementById('note-soir').value.trim();
+      const momentType = document.querySelector('input[name="moment-type"]:checked')?.value || null;
+      const momentMoteurs = Array.from(document.querySelectorAll('input[name="moment-moteur"]:checked')).map(i => i.value);
+      const moment = {
+        type: momentType,
+        scene: document.getElementById('moment-scene')?.value.trim() || null,
+        moteurs: momentMoteurs,
+        remede: document.getElementById('moment-remede')?.value || null,
+        repair: document.getElementById('moment-repair')?.value.trim() || null,
+        vow: document.getElementById('moment-vow')?.value.trim() || null
+      };
       await setDoc(doc(db, 'carnets', codeId, 'jours', date), {
         langue: LANG, mode: 'pose',
-        soir: { reponses, note: note || null, fermeLe: serverTimestamp() }
+        soir: { reponses, note: note || null, moment, fermeLe: serverTimestamp() }
       }, { merge: true });
       ok.hidden = false;
       setTimeout(() => ok.hidden = true, 3000);

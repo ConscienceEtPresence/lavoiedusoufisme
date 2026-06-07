@@ -32,7 +32,7 @@ const EN = document.documentElement.lang === 'en';
 const LANG = EN ? 'en' : 'fr';
 const LOCALE = EN ? 'en-US' : 'fr-FR';
 
-const T = EN ? {
+const T_en = {
   hello: 'Hello',
   noSession: 'Sign-out requested? (your data is kept)',
   morning: 'Morning',
@@ -62,7 +62,7 @@ const T = EN ? {
   emptyMessage: 'Write something before sending.',
 };
 
-const Tfr = {
+const T_fr = {
   hello: 'Bonjour',
   noSession: 'Sortir de votre carnet ? (vos données sont gardées)',
   morning: 'Le matin',
@@ -91,7 +91,7 @@ const Tfr = {
   loading: 'Chargement…',
   emptyMessage: 'Écrivez quelque chose avant d\'envoyer.',
 };
-const TXT = EN ? T : Tfr;
+const TXT = EN ? T_en : T_fr;
 
 const SESSION_KEY = 'lvdd_carnet_session';
 const mount = document.getElementById('jour-mount');

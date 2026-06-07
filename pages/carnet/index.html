@@ -85,7 +85,7 @@
       </p>
     </section>
 
-    <section class="carnet-portes">
+    <section class="carnet-portes" id="portes-mount">
       <a class="carnet-porte" href="entrer/">
         <span class="carnet-porte__ar" lang="ar" dir="rtl">مِفْتَاح</span>
         <span class="carnet-porte__titre">J'ai déjà une clé</span>
@@ -98,6 +98,26 @@
         <span class="carnet-porte__sub">recevoir la mienne, à votre rythme</span>
       </a>
     </section>
+
+    <p style="text-align:center; margin-top: var(--space-md); font-family: var(--font-display); font-style: italic; font-size: 0.95rem;">
+      <a href="oubli/" style="color: var(--ink-mute);">Mot-graine oublié ? Le retrouver →</a>
+    </p>
+
+    <script>
+      // Si une session est déjà active, propose le retour direct
+      try {
+        var s = JSON.parse(localStorage.getItem('lvdd_carnet_session') || 'null');
+        if (s && s.codeId && s.prenom) {
+          var mount = document.getElementById('portes-mount');
+          mount.innerHTML =
+            '<a class="carnet-porte" href="aujourdhui/" style="grid-column: 1/-1;">' +
+              '<span class="carnet-porte__ar" lang="ar" dir="rtl">الْيَوْم</span>' +
+              '<span class="carnet-porte__titre">Continuer votre carnet</span>' +
+              '<span class="carnet-porte__sub">' + s.prenom.replace(/[<>&]/g,'') + ' — votre journée vous attend</span>' +
+            '</a>';
+        }
+      } catch (e) {}
+    </script>
 
     <section class="carnet-note">
       <p>

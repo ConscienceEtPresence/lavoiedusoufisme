@@ -9,8 +9,7 @@
   <link rel="shortcut icon" href="../../../assets/img/favicon.ico" />
   <link rel="manifest" href="../../../manifest.webmanifest" />
   <meta name="theme-color" content="#0F1830" />
-  <title>Entrer dans le carnet — Le carnet du dedans</title>
-  <meta name="description" content="Entrer dans votre carnet — prénom et mot-graine." />
+  <title>Mon miroir — Le carnet du dedans</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,9 +19,9 @@
   <link rel="stylesheet" href="../../../assets/css/layout.css" />
   <link rel="stylesheet" href="../../../assets/css/components.css" />
   <link rel="stylesheet" href="../../../assets/css/bilingue.css" />
-  <link rel="stylesheet" href="../../../assets/css/carnet.css?v=1" />
+  <link rel="stylesheet" href="../../../assets/css/carnet.css?v=2" />
 
-  <link rel="canonical" href="https://lavoiedudedans.fr/pages/carnet/entrer/" />
+  <link rel="canonical" href="https://lavoiedudedans.fr/pages/carnet/miroir/" />
 </head>
 <body class="page-enter carnet">
 
@@ -40,7 +39,9 @@
       <nav>
         <ul class="site-nav">
           <li><a href="../../../index.html">Accueil</a></li>
-          <li><a href="../">Le carnet</a></li>
+          <li><a href="../aujourdhui/">Aujourd'hui</a></li>
+          <li><a href="../miroir/" class="active">Mon miroir</a></li>
+          <li><a href="#" id="sortir-link">Sortir</a></li>
         </ul>
       </nav>
     </div>
@@ -48,33 +49,8 @@
 
   <main>
 
-    <section class="carnet-form">
-      <div class="carnet-form__ar" lang="ar" dir="rtl">مِفْتَاح</div>
-      <h1>Entrer dans votre carnet</h1>
-      <p class="carnet-form__sub"><em>votre prénom, et votre mot-graine</em></p>
-
-      <form id="entrer-form" novalidate>
-        <div class="carnet-field">
-          <label for="prenom">Votre prénom</label>
-          <input type="text" id="prenom" name="prenom" required autocomplete="given-name" />
-        </div>
-
-        <div class="carnet-field">
-          <label for="motGraine">Votre mot-graine</label>
-          <input type="text" id="motGraine" name="motGraine" required placeholder="ex. sabr, hilm, sakina…" autocapitalize="none" autocorrect="off" spellcheck="false" />
-          <span class="carnet-field__hint">Tel qu'il vous a été confié. Sans accent ni majuscule.</span>
-        </div>
-
-        <button type="submit" class="carnet-btn carnet-btn--gold" id="submit-btn">
-          Entrer →
-        </button>
-        <p class="carnet-form__error" id="form-error" hidden></p>
-      </form>
-
-      <p class="carnet-form__note">
-        Pas encore de clé ? <a href="../demande/">Demander la vôtre →</a><br>
-        Mot-graine oublié ? <a href="../oubli/">Le retrouver →</a>
-      </p>
+    <section class="carnet-jour" id="miroir-mount">
+      <p style="text-align:center; color: var(--ink-mute);">…</p>
     </section>
 
   </main>
@@ -86,6 +62,6 @@
     </div>
   </footer>
 
-  <script type="module" src="../../../assets/js/carnet/carnet-entrer.js?v=1"></script>
+  <script type="module" src="../../../assets/js/carnet/carnet-miroir.js?v=1"></script>
 </body>
 </html>

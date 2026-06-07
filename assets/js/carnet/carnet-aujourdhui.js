@@ -5,7 +5,7 @@
    - Enregistre dans carnets/{codeId}/jours/{date}
    ============================================================ */
 import { db } from './firebase-init.js';
-import { doc, setDoc, getDoc, serverTimestamp }
+import { doc, setDoc, getDoc, addDoc, collection, serverTimestamp }
   from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
 const SESSION_KEY = 'lvdd_carnet_session';
@@ -153,11 +153,65 @@ function render({ pratiques, motCompagnon, jourData }) {
       <button type="button" class="carnet-btn carnet-btn--gold" id="save-soir">Fermer le jour</button>
       <span class="jour-save-ok" id="save-soir-ok" hidden>✓ jour fermé</span>
     </section>
+
+    <section class="jour-section jour-section--suggestion">
+      <h2 class="jour-section__titre" style="font-size:1.05rem; color:var(--gold);">Glisser un mot à Brahms</h2>
+      <p class="jour-section__sub"><em>une suggestion, une idée, un mot — pour faire évoluer le carnet</em></p>
+
+      <label class="jour-field">
+        <span>Votre message (anonyme par défaut)</span>
+        <textarea id="suggestion-msg" rows="3" placeholder="ex. : « pourrait-on ajouter une pratique sur l'écoute ? »"></textarea>
+      </label>
+
+      <label class="jour-field" style="display:flex; align-items:center; gap:0.5rem;">
+        <input type="checkbox" id="suggestion-signed" />
+        <span style="text-transform:none; letter-spacing:0; color:var(--ink-soft); font-family: var(--font-display); font-style: italic;">
+          Brahms saura que c'est moi
+        </span>
+      </label>
+
+      <button type="button" class="carnet-btn carnet-btn--ghost" id="save-suggestion">Envoyer la suggestion</button>
+      <span class="jour-save-ok" id="save-suggestion-ok" hidden>✓ merci, votre mot a été glissé</span>
+    </section>
   `;
 
   bindMatin();
   bindSoir(items);
   bindAvalDynamique(items);
+  bindSuggestion();
+}
+
+function bindSuggestion() {
+  const btn = document.getElementById('save-suggestion');
+  const ok  = document.getElementById('save-suggestion-ok');
+  if (!btn) return;
+  btn.addEventListener('click', async () => {
+    const msg = document.getElementById('suggestion-msg').value.trim();
+    if (!msg) { alert('Écrivez quelque chose avant d\'envoyer.'); return; }
+    const signed = document.getElementById('suggestion-signed').checked;
+    btn.disabled = true;
+    btn.textContent = 'Envoi…';
+    try {
+      await addDoc(collection(db, 'suggestions'), {
+        message: msg,
+        prenom: signed ? prenom : null,
+        codeId: signed ? codeId : null,
+        langue: 'fr',
+        statut: 'neuve',
+        creeLe: serverTimestamp()
+      });
+      document.getElementById('suggestion-msg').value = '';
+      document.getElementById('suggestion-signed').checked = false;
+      ok.hidden = false;
+      setTimeout(() => ok.hidden = true, 4000);
+    } catch (e) {
+      console.error(e);
+      alert('Une difficulté à envoyer. Réessayez.');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Envoyer la suggestion';
+    }
+  });
 }
 
 function esc(s) {

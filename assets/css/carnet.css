@@ -465,3 +465,131 @@
   line-height: 1.6;
   color: var(--ink-soft);
 }
+
+/* ============================================================
+   Mon miroir — page d'historique
+   ============================================================ */
+.miroir-calendar {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  gap: 4px;
+  max-width: 32rem;
+  margin: 0 auto var(--space-lg);
+}
+@media (max-width: 480px) {
+  .miroir-calendar { grid-template-columns: repeat(10, 1fr); }
+}
+.miroir-cell {
+  aspect-ratio: 1;
+  border-radius: 4px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  transition: transform 0.15s;
+}
+.miroir-cell:hover { transform: scale(1.15); }
+.miroir-cell--matin { background: rgba(192,160,80,0.25); border-color: var(--gold-soft); }
+.miroir-cell--soir  { background: rgba(192,160,80,0.5); border-color: var(--gold); }
+.miroir-cell--full  { background: var(--gold); border-color: var(--gold); }
+
+.miroir-stats {
+  display: flex; justify-content: center; gap: var(--space-xl);
+  margin-top: var(--space-md);
+}
+.miroir-stat { text-align: center; }
+.miroir-stat__n {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--gold);
+  font-weight: 500;
+}
+.miroir-stat__l {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.miroir-jours {
+  display: flex; flex-direction: column; gap: var(--space-md);
+}
+.miroir-jour {
+  padding: var(--space-md);
+  background: linear-gradient(170deg, #FFFDF8, var(--paper-deep));
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.miroir-jour__head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  flex-wrap: wrap; gap: 0.5rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+  margin-bottom: var(--space-sm);
+}
+.miroir-jour__date {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--ink-title);
+  margin: 0;
+  text-transform: capitalize;
+}
+.miroir-jour__sum {
+  display: flex; gap: 0.8rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+.miroir-jour__sum strong { color: var(--gold); font-weight: 500; }
+
+.miroir-detail-section { margin: var(--space-sm) 0; }
+.miroir-detail-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+.miroir-detail-line {
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+  margin: 0.2rem 0;
+  line-height: 1.55;
+}
+.miroir-detail-line em { color: var(--gold); font-style: italic; }
+
+.miroir-reps {
+  display: flex; flex-wrap: wrap; gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+.miroir-rep {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+}
+.miroir-rep strong { font-weight: 500; }
+.miroir-rep--oui    { background: rgba(46,125,122,0.08); border-color: rgba(46,125,122,0.3); color: #2E7D7A; }
+.miroir-rep--partie { background: rgba(192,160,80,0.08); border-color: rgba(192,160,80,0.4); color: var(--gold); }
+.miroir-rep--non    { background: rgba(180,82,63,0.06); border-color: rgba(180,82,63,0.3); color: #b4523f; }
+
+/* ============================================================
+   Section « Glisser un mot »
+   ============================================================ */
+.jour-section--suggestion {
+  background: linear-gradient(170deg, #FFFDF4, var(--paper-warm));
+  border: 1px dashed var(--gold-soft);
+  border-radius: 12px;
+  padding: var(--space-lg) var(--space-md) !important;
+  margin-top: var(--space-xl);
+}
+.jour-section--suggestion .jour-section__titre {
+  font-size: 1.05rem !important;
+  margin-bottom: 0.2rem !important;
+}

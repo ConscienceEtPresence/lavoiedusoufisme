@@ -9,8 +9,7 @@
   <link rel="shortcut icon" href="../../../assets/img/favicon.ico" />
   <link rel="manifest" href="../../../manifest.webmanifest" />
   <meta name="theme-color" content="#0F1830" />
-  <title>Entrer dans le carnet — Le carnet du dedans</title>
-  <meta name="description" content="Entrer dans votre carnet — prénom et mot-graine." />
+  <title>Mot-graine oublié — Le carnet du dedans</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,9 +19,9 @@
   <link rel="stylesheet" href="../../../assets/css/layout.css" />
   <link rel="stylesheet" href="../../../assets/css/components.css" />
   <link rel="stylesheet" href="../../../assets/css/bilingue.css" />
-  <link rel="stylesheet" href="../../../assets/css/carnet.css?v=1" />
+  <link rel="stylesheet" href="../../../assets/css/carnet.css?v=2" />
 
-  <link rel="canonical" href="https://lavoiedudedans.fr/pages/carnet/entrer/" />
+  <link rel="canonical" href="https://lavoiedudedans.fr/pages/carnet/oubli/" />
 </head>
 <body class="page-enter carnet">
 
@@ -48,32 +47,60 @@
 
   <main>
 
-    <section class="carnet-form">
-      <div class="carnet-form__ar" lang="ar" dir="rtl">مِفْتَاح</div>
-      <h1>Entrer dans votre carnet</h1>
-      <p class="carnet-form__sub"><em>votre prénom, et votre mot-graine</em></p>
+    <section class="carnet-form" id="step-form">
+      <div class="carnet-form__ar" lang="ar" dir="rtl">ذِكْرَى</div>
+      <h1>Mot-graine oublié</h1>
+      <p class="carnet-form__sub"><em>tout le monde oublie — pas d'inquiétude</em></p>
 
-      <form id="entrer-form" novalidate>
+      <p class="carnet-form__intro">
+        Donnez votre prénom et une adresse de réponse. Le carnet est tenu par
+        une personne — il vous renverra votre mot-graine sous quelques jours.
+        <br><br>
+        <strong>Aucune donnée n'est perdue</strong> : votre carnet et tout ce que
+        vous avez noté sont conservés intacts. Seule la clé d'entrée est à
+        retrouver.
+      </p>
+
+      <form id="oubli-form" novalidate>
         <div class="carnet-field">
           <label for="prenom">Votre prénom</label>
           <input type="text" id="prenom" name="prenom" required autocomplete="given-name" />
+          <span class="carnet-field__hint">Tel que vous l'aviez donné à la création de votre carnet.</span>
         </div>
 
         <div class="carnet-field">
-          <label for="motGraine">Votre mot-graine</label>
-          <input type="text" id="motGraine" name="motGraine" required placeholder="ex. sabr, hilm, sakina…" autocapitalize="none" autocorrect="off" spellcheck="false" />
-          <span class="carnet-field__hint">Tel qu'il vous a été confié. Sans accent ni majuscule.</span>
+          <label for="contact">Adresse de réponse</label>
+          <input type="text" id="contact" name="contact" required placeholder="email, ou autre canal" />
+        </div>
+
+        <div class="carnet-field">
+          <label for="message">Une précision (facultatif)</label>
+          <textarea id="message" name="message" rows="3" placeholder="par ex. : « j'ai créé mon carnet il y a deux mois, je crois que mon mot commençait par s… »"></textarea>
         </div>
 
         <button type="submit" class="carnet-btn carnet-btn--gold" id="submit-btn">
-          Entrer →
+          Demander mon mot-graine →
         </button>
         <p class="carnet-form__error" id="form-error" hidden></p>
       </form>
+    </section>
 
-      <p class="carnet-form__note">
-        Pas encore de clé ? <a href="../demande/">Demander la vôtre →</a><br>
-        Mot-graine oublié ? <a href="../oubli/">Le retrouver →</a>
+    <section class="carnet-form" id="step-success" hidden>
+      <div class="carnet-form__ar" lang="ar" dir="rtl">✦</div>
+      <h1>Votre demande est arrivée</h1>
+      <p class="carnet-form__sub"><em>votre mot-graine vous sera renvoyé sous peu</em></p>
+
+      <p class="carnet-form__intro" style="margin-top:1.5rem;">
+        Vous recevrez votre mot-graine par le canal que vous avez indiqué,
+        en général <strong>sous quelques jours</strong>.
+      </p>
+
+      <p class="carnet-form__intro">
+        Votre historique est <strong>intact</strong> et vous attend.
+      </p>
+
+      <p class="carnet-form__note" style="margin-top: 2rem;">
+        <a href="../../../index.html">Le site reste entièrement ouvert</a> en attendant.
       </p>
     </section>
 
@@ -86,6 +113,6 @@
     </div>
   </footer>
 
-  <script type="module" src="../../../assets/js/carnet/carnet-entrer.js?v=1"></script>
+  <script type="module" src="../../../assets/js/carnet/carnet-oubli.js?v=1"></script>
 </body>
 </html>

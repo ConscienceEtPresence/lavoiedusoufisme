@@ -64,11 +64,9 @@ form.addEventListener('submit', async (e) => {
       creeLe: serverTimestamp()
     });
 
-    // succès : affiche le ticket
-    ticketCode.textContent = ticketId;
+    // succès
     stepForm.hidden = true;
     stepSuccess.hidden = false;
-    // scroll en haut de la nouvelle vue
     stepSuccess.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   } catch (err) {

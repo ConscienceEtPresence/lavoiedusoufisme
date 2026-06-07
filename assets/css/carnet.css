@@ -2091,3 +2091,55 @@ body.carnet { font-size: 17px; }
   color: #8a7a55;
   font-size: .88rem;
 }
+
+/* ============================================================
+   v11 — Boussole du jour (Priorité 1 du rapport ANALYSE-USAGE)
+   + Axe du jour tournant (7 jours / 7 axes — Priorité 3)
+   ============================================================ */
+.boussole {
+  background: linear-gradient(135deg, rgba(255,250,235,0.85), rgba(248,238,210,0.7));
+  border: 1px solid rgba(192,160,80,0.35);
+  border-radius: 12px;
+  padding: 1.15rem 1.4rem;
+  margin: 1rem 0 1.5rem;
+  text-align: center;
+}
+.boussole__head {
+  margin-bottom: .55rem;
+}
+.boussole__axe {
+  display: inline-block;
+  font-size: .78rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #8a7028;
+  font-weight: 700;
+  background: rgba(192,160,80,0.18);
+  padding: .25rem .85rem;
+  border-radius: 999px;
+}
+.boussole__phrase {
+  margin: .35rem 0 .6rem;
+  color: #3a2e15;
+  font-size: 1.12rem;
+  line-height: 1.5;
+  font-family: var(--font-display, Georgia, serif);
+}
+.boussole__phrase strong { color: #6a5520; }
+.boussole__nom {
+  margin: .25rem 0 .35rem;
+  color: #5a4a20;
+  font-size: 1rem;
+}
+.boussole__nom-label {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: #8a7a55;
+  margin-right: .35rem;
+}
+.boussole__note {
+  margin: .25rem 0 0;
+  color: #8a7a55;
+  font-size: .88rem;
+}

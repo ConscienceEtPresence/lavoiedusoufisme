@@ -70,6 +70,22 @@ const MOUVEMENT_TO_ADAB_HINT = {
   oubli:     'respirer-avant',
   fermeture: 'tenir-parole'
 };
+// Axes du jour — chaque jour de semaine colore l'expérience d'un accent
+// (suit la priorité 3 du rapport : variation quotidienne sans changer le cadre)
+const AXES_DU_JOUR = [
+  { id: 'silence',    jour: 0, label: 'Jour du silence',     phrase: 'aujourd\'hui, garder le silence sur une chose suffit.' },        // dimanche
+  { id: 'parole',     jour: 1, label: 'Jour de la parole',   phrase: 'aujourd\'hui, veiller à une seule parole.' },                    // lundi
+  { id: 'corps',      jour: 2, label: 'Jour du corps',       phrase: 'aujourd\'hui, écouter le corps une fois dans la journée.' },     // mardi
+  { id: 'lien',       jour: 3, label: 'Jour du lien',        phrase: 'aujourd\'hui, un geste vers quelqu\'un — sans annoncer.' },      // mercredi
+  { id: 'coeur',      jour: 4, label: 'Jour du cœur',        phrase: 'aujourd\'hui, recevoir un don sans détourner le regard.' },      // jeudi
+  { id: 'reparation', jour: 5, label: 'Jour de la réparation', phrase: 'aujourd\'hui, reprendre une chose en plus petit.' },           // vendredi
+  { id: 'acte',       jour: 6, label: 'Jour de l\'acte juste', phrase: 'aujourd\'hui, finir une chose avec soin, jusqu\'au bout.' }    // samedi
+];
+function axeDuJour() {
+  const d = new Date();
+  return AXES_DU_JOUR.find(a => a.jour === d.getDay()) || AXES_DU_JOUR[0];
+}
+
 // Libellé lisible pour la phrase d'hier
 const MOUVEMENT_LABEL_FR = {
   colere: 'la colère', jugement: 'le jugement', ghiba: 'la parole d\'un absent',
@@ -464,9 +480,13 @@ function render({ pratiques, motCompagnon, jourData, hierData }) {
   // Reprise du vœu d'hier — seulement si un vow existe dans le jour précédent
   const repriseBlock = renderRepriseVow(arguments[0].hierData, jourData);
 
+  // Boussole : rendu initial (avec hier + axe), Nom du jour sera injecté en async
+  const boussoleInitiale = renderBoussole(null, hierData);
+
   mount.innerHTML = `
     ${headerBlock}
     ${repriseBlock}
+    <div id="boussole-mount">${boussoleInitiale}</div>
     <div id="nom-du-jour"></div>
     ${compagnonBlock}
     ${ornament()}
@@ -485,6 +505,10 @@ function render({ pratiques, motCompagnon, jourData, hierData }) {
   // === Nom du jour + Bilan hebdo soufi (async, ne bloque pas l'affichage) ===
   import('./bilan-hebdo-soufi.js').then(async (m) => {
     const { bilan, nom, names } = await m.loadAndBuild(codeId);
+    // Une fois le Nom du jour résolu, on re-render la boussole pour l'inclure
+    const bEl = document.getElementById('boussole-mount');
+    if (bEl) bEl.innerHTML = renderBoussole(nom, hierData);
+
     const nomEl = document.getElementById('nom-du-jour');
     if (nomEl && nom) {
       nomEl.innerHTML = `
@@ -574,6 +598,42 @@ function renderModeContent(mode, pratiques, jourData, hierData) {
   if (mode === 'light')  return renderLight(jourData);
   if (mode === 'heavy')  return renderHeavy(jourData);
   return renderPose(pratiques, jourData, hierData);
+}
+
+// Boussole du jour — synthèse en haut de page (Priorité 1 du rapport)
+// Assemble : axe du jour + Nom du jour (si dispo) + mouvement d'hier (si dispo)
+function renderBoussole(nom, hierData) {
+  const axe = axeDuJour();
+
+  // continuité douce avec hier
+  let suite = '';
+  if (hierData?.soir?.moment?.moteurs?.length) {
+    const m = hierData.soir.moment.moteurs[0];
+    const MAP = { peur:'controle', attente:'desir', tristesse:'fermeture' };
+    const mvtId = MAP[m] || m;
+    const adabId = MOUVEMENT_TO_ADAB_HINT[mvtId];
+    const adab = ADABS_FR.find(a => a.id === adabId);
+    const label = MOUVEMENT_LABEL_FR[m];
+    if (label && adab) {
+      suite = ` Et puisqu'hier ${label} est venue, peut-être : <strong>${esc(adab.label)}</strong>.`;
+    }
+  }
+
+  // Nom du jour en compagnon (optionnel)
+  const nomLigne = nom
+    ? `<p class="boussole__nom"><span class="boussole__nom-label">avec</span> <em>${esc(nom.tr)}</em> — ${esc(nom.fr)}</p>`
+    : '';
+
+  return `
+    <section class="boussole">
+      <div class="boussole__head">
+        <span class="boussole__axe">${esc(axe.label)}</span>
+      </div>
+      <p class="boussole__phrase">${esc(axe.phrase)}${suite}</p>
+      ${nomLigne}
+      <p class="boussole__note"><em>Une seule chose suffit. Ouvrir la suite si l'élan vient.</em></p>
+    </section>
+  `;
 }
 
 // Phase C — hint matin tiré du mouvement dominant d'hier

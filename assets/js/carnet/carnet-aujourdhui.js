@@ -1072,3 +1072,22 @@ load().catch(err => {
   console.error(err);
   mount.innerHTML = '<p style="text-align:center;color:#888">—</p>';
 });
+
+/* === Auto-resize des textareas (hauteur ajustée au contenu) === */
+function autoResizeTextareas() {
+  const grow = (ta) => {
+    ta.style.height = 'auto';
+    ta.style.height = (ta.scrollHeight + 4) + 'px';
+  };
+  document.querySelectorAll('.jour-field textarea, .jour-moment textarea').forEach(ta => {
+    if (ta.dataset.autoResize) return;
+    ta.dataset.autoResize = '1';
+    ta.style.overflow = 'hidden';
+    // Hauteur initiale = contenu actuel (placeholder non compté, mais min-height CSS s'applique)
+    grow(ta);
+    ta.addEventListener('input', () => grow(ta));
+  });
+}
+// Observe le DOM pour binder les nouveaux textareas créés dynamiquement
+new MutationObserver(() => autoResizeTextareas()).observe(document.body, { childList: true, subtree: true });
+autoResizeTextareas();

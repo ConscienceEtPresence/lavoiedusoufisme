@@ -1797,3 +1797,67 @@ body.carnet { font-size: 17px; }
   .jour-section__sub   { font-size: 1.02rem !important; }
   .jour-hello          { font-size: 1.4rem !important; }
 }
+
+/* ============================================================
+   v7 — Lisibilité des champs : placeholder contrasté + auto-resize
+   ============================================================ */
+
+/* === Placeholder LISIBLE — contraste suffisant sur fond crème === */
+.jour-field input::placeholder,
+.jour-field textarea::placeholder,
+.jour-field select::placeholder {
+  color: #8a7a5a !important;       /* brun médian au lieu du gris pâle navigateur */
+  opacity: 1 !important;            /* iOS/Firefox baissent l'opacité par défaut */
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* Webkit-specific pour Safari iOS */
+.jour-field input::-webkit-input-placeholder,
+.jour-field textarea::-webkit-input-placeholder {
+  color: #8a7a5a !important;
+  opacity: 1 !important;
+}
+
+/* === Textarea : min-height suffisante pour voir le placeholder en entier === */
+.jour-field textarea {
+  min-height: 6rem !important;
+  resize: vertical;
+  overflow: hidden;        /* sera réactivé par le JS auto-resize si dépassement */
+  font-size: 1.05rem !important;
+  line-height: 1.6 !important;
+  padding: 1rem 1.1rem !important;
+}
+/* Champs spécifiques plus généreux */
+#moment-scene,
+#moment-repair,
+#moment-vow,
+#note-soir,
+#note-matin {
+  min-height: 7rem !important;
+}
+
+/* === Selects : placeholder visible aussi === */
+.jour-field select {
+  color: var(--ink-title);
+  font-size: 1.05rem !important;
+}
+.jour-field select option[value=""] {
+  color: #8a7a5a;
+  font-style: italic;
+}
+
+/* === Champs : bordure + fond plus contrastés pour qu'on les voie bien === */
+.jour-field input,
+.jour-field textarea {
+  background: #FFFDF8 !important;
+  border: 1.5px solid #d4c89a !important;
+  color: #1f1505 !important;
+}
+.jour-field input:focus,
+.jour-field textarea:focus {
+  border-color: var(--gold) !important;
+  background: #FFFFFF !important;
+  box-shadow: 0 0 0 3px rgba(192,160,80,0.15);
+  outline: none;
+}

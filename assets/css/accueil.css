@@ -1022,11 +1022,11 @@ body.nf-locked { overflow: hidden; }
    ============================================================ */
 .quick-carnet {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 950;
-  width: 48px;
-  height: 48px;
+  bottom: 1.5rem;
+  right: 8.5rem;   /* à gauche de .search-toggle (5rem) et .theme-toggle (1.5rem) */
+  z-index: 9999;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1052,5 +1052,5 @@ body.nf-locked { overflow: hidden; }
 }
 .quick-carnet svg { display: block; }
 @media (max-width: 480px) {
-  .quick-carnet { bottom: 18px; right: 18px; width: 44px; height: 44px; }
+  .quick-carnet { bottom: 1rem; right: 7rem; width: 40px; height: 40px; }
 }

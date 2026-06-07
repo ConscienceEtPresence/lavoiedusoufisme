@@ -404,10 +404,12 @@ function render({ pratiques, motCompagnon, jourData, hierData }) {
   mount.innerHTML = `
     ${headerBlock}
     ${repriseBlock}
+    <div id="nom-du-jour"></div>
     ${compagnonBlock}
     ${ornament()}
     ${modeChooserBlock}
     <div id="mode-content">${contentBlock}</div>
+    <div id="bilan-hebdo-mount"></div>
     ${ornament()}
     ${renderSuggestion()}
   `;
@@ -416,6 +418,33 @@ function render({ pratiques, motCompagnon, jourData, hierData }) {
   bindContent(mode, pratiques);
   bindReprise();
   bindSuggestion();
+
+  // === Nom du jour + Bilan hebdo soufi (async, ne bloque pas l'affichage) ===
+  import('./bilan-hebdo-soufi.js').then(async (m) => {
+    const { bilan, nom } = await m.loadAndBuild(codeId);
+    const nomEl = document.getElementById('nom-du-jour');
+    if (nomEl && nom) {
+      nomEl.innerHTML = `
+        <section class="nom-du-jour fade-in-up">
+          <span class="nom-du-jour__label">Le Nom qui vous accompagne aujourd'hui</span>
+          <div class="nom-du-jour__ar" lang="ar" dir="rtl">${esc(nom.ar)}</div>
+          <p class="nom-du-jour__tr"><em>${esc(nom.tr)}</em> — ${esc(nom.fr)}</p>
+          ${nom.sens ? `<p class="nom-du-jour__sens">${esc(nom.sens)}</p>` : ''}
+          ${nom.href ? `<a class="nom-du-jour__link" href="${esc(nom.href)}">Découvrir ce Nom →</a>` : ''}
+        </section>
+      `;
+    }
+    const hebdoEl = document.getElementById('bilan-hebdo-mount');
+    if (hebdoEl && bilan?.lines?.length && bilan.days >= 3) {
+      hebdoEl.innerHTML = `
+        <section class="bilan-hebdo fade-in-up">
+          <h2 class="bilan-hebdo__title">📿 <em>Le bilan de la semaine</em></h2>
+          <p class="bilan-hebdo__sub">Un regard tranquille sur les sept jours — sans jugement, sans verdict.</p>
+          ${bilan.lines.map(l => `<p class="bilan-hebdo__line">${l}</p>`).join('')}
+        </section>
+      `;
+    }
+  }).catch(e => console.warn('hebdo failed', e));
 }
 
 function renderRepriseVow(hierData, jourData) {
@@ -665,6 +694,31 @@ function renderMoment(moment) {
         <div class="jour-moment-grid jour-moment-grid--moteurs">${moteurs}</div>
       </div>
 
+      <div class="jour-moment__block">
+        <p class="jour-field__label">${EN ? 'Where did you feel it in the body?' : 'Où l\'avez-vous senti dans le corps ?'}</p>
+        <div class="jour-moment-grid jour-moment-grid--small">
+          ${[
+            ['gorge', EN ? 'throat' : 'gorge'],
+            ['poitrine', EN ? 'chest' : 'poitrine'],
+            ['ventre', EN ? 'belly' : 'ventre'],
+            ['tete', EN ? 'head' : 'tête'],
+            ['mains', EN ? 'hands' : 'mains'],
+            ['souffle', EN ? 'the breath stopped' : 'le souffle s\'est arrêté']
+          ].map(([id, label]) => {
+            const checked = Array.isArray(moment.corps) && moment.corps.includes(id);
+            return `
+              <label class="jour-moment-chip jour-moment-chip--small ${checked ? 'is-active' : ''}">
+                <input type="checkbox" name="moment-corps" value="${id}" ${checked ? 'checked' : ''}/>
+                <span>${label}</span>
+              </label>
+            `;
+          }).join('')}
+        </div>
+      </div>
+
+      <!-- Bloc dynamique "Pour aller plus loin" selon le moteur dominant -->
+      <div id="moment-ressource-mount"></div>
+
       <label class="jour-field">
         <span>${TXT.momentRemede}</span>
         <select id="moment-remede">${remedes}</select>
@@ -674,6 +728,34 @@ function renderMoment(moment) {
         <span>${TXT.momentRepair}</span>
         <textarea id="moment-repair" rows="2" maxlength="500" placeholder="${esc(TXT.momentRepairPlaceholder)}">${esc(moment.repair || '')}</textarea>
       </label>
+
+      <!-- Mini-rituel de réparation -->
+      <details class="reparation-block">
+        <summary class="reparation-block__summary">↩ ${EN ? 'A tender repair' : 'Une réparation tendre'}</summary>
+        <div class="reparation-block__body">
+          <p class="reparation-block__intro">${EN
+            ? 'A small inner gesture — for you alone. Nothing is sent. Choose what feels right.'
+            : 'Un petit geste intérieur — pour vous seul·e. Rien n\'est envoyé. Choisissez ce qui vous parle.'}</p>
+          <div class="jour-moment-grid jour-moment-grid--small">
+            ${[
+              ['pardon', EN ? 'I ask forgiveness in silence' : 'Je demande pardon en silence'],
+              ['reparler', EN ? 'I will speak gently again' : 'Je reparlerai doucement'],
+              ['benir', EN ? 'I bless this person inwardly' : 'Je bénis cette personne intérieurement'],
+              ['taire', EN ? 'I commit to silence' : 'Je m\'engage au silence'],
+              ['ecrire', EN ? 'I will write a word' : 'J\'écrirai un mot'],
+              ['geste', EN ? 'A concrete act' : 'Un geste concret']
+            ].map(([id, label]) => {
+              const checked = Array.isArray(moment.reparation) && moment.reparation.includes(id);
+              return `
+                <label class="jour-moment-chip jour-moment-chip--small ${checked ? 'is-active' : ''}">
+                  <input type="checkbox" name="moment-reparation" value="${id}" ${checked ? 'checked' : ''}/>
+                  <span>${label}</span>
+                </label>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      </details>
 
       <label class="jour-field">
         <span>${TXT.momentVow}</span>
@@ -772,8 +854,50 @@ function bindMomentVisuel() {
         const res = document.getElementById('moment-resources');
         if (res) res.innerHTML = renderResources(input.value);
       }
+      // si on coche un moteur → afficher la ressource correspondante
+      if (input.name === 'moment-moteur') {
+        const checked = Array.from(document.querySelectorAll('input[name="moment-moteur"]:checked')).map(i => i.value);
+        renderMoteurRessource(checked);
+      }
     });
   });
+  // initialise les ressources si déjà cochés
+  const initialMoteurs = Array.from(document.querySelectorAll('input[name="moment-moteur"]:checked')).map(i => i.value);
+  if (initialMoteurs.length) renderMoteurRessource(initialMoteurs);
+}
+
+// Affiche le bloc "Pour aller plus loin" selon le 1er moteur coché
+async function renderMoteurRessource(moteurs) {
+  const mount = document.getElementById('moment-ressource-mount');
+  if (!mount) return;
+  if (!moteurs.length) { mount.innerHTML = ''; return; }
+  try {
+    const m = await import('./bilan-hebdo-soufi.js');
+    const r = m.MOUVEMENTS_RESSOURCES[moteurs[0]];
+    if (!r) { mount.innerHTML = ''; return; }
+    mount.innerHTML = `
+      <div class="moteur-ressource">
+        <span class="moteur-ressource__label">${EN ? 'To go further, if you wish' : 'Pour aller plus loin, si vous le souhaitez'}</span>
+        <p class="moteur-ressource__invite"><em>${esc(r.invite)}</em></p>
+        <div class="moteur-ressource__links">
+          <a class="moteur-ressource__chip" href="${esc(r.nomDivin.href || '/pages/noms-divins/nom/' + r.nomDivin.slug + '/')}" target="_blank" rel="noopener">
+            <span class="moteur-ressource__chip-label">${EN ? 'Divine Name' : 'Nom divin'}</span>
+            <strong>${esc(r.nomDivin.tr)}</strong>
+            <em>${esc(r.nomDivin.fr)}</em>
+          </a>
+          <span class="moteur-ressource__chip moteur-ressource__chip--static">
+            <span class="moteur-ressource__chip-label">${EN ? 'Root' : 'Racine'}</span>
+            <strong lang="ar" dir="rtl">${esc(r.racine.ar)}</strong>
+            <em>${esc(r.racine.tr)} — ${esc(r.racine.sens)}</em>
+          </span>
+          <span class="moteur-ressource__chip moteur-ressource__chip--static">
+            <span class="moteur-ressource__chip-label">${EN ? 'Remedy' : 'Remède'}</span>
+            <strong>${esc(r.remede)}</strong>
+          </span>
+        </div>
+      </div>
+    `;
+  } catch (e) { console.warn('ressource failed', e); }
 }
 
 function bindLight() {
@@ -860,10 +984,14 @@ function bindSoir(items) {
       const note = document.getElementById('note-soir').value.trim();
       const momentType = document.querySelector('input[name="moment-type"]:checked')?.value || null;
       const momentMoteurs = Array.from(document.querySelectorAll('input[name="moment-moteur"]:checked')).map(i => i.value);
+      const momentCorps = Array.from(document.querySelectorAll('input[name="moment-corps"]:checked')).map(i => i.value);
+      const momentReparation = Array.from(document.querySelectorAll('input[name="moment-reparation"]:checked')).map(i => i.value);
       const moment = {
         type: momentType,
         scene: document.getElementById('moment-scene')?.value.trim() || null,
         moteurs: momentMoteurs,
+        corps: momentCorps,
+        reparation: momentReparation,
         remede: document.getElementById('moment-remede')?.value || null,
         repair: document.getElementById('moment-repair')?.value.trim() || null,
         vow: document.getElementById('moment-vow')?.value.trim() || null

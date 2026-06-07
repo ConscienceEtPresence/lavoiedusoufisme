@@ -593,3 +593,19 @@
   font-size: 1.05rem !important;
   margin-bottom: 0.2rem !important;
 }
+
+/* — sélecteur de langue dans le menu — */
+.site-nav .lang-switch {
+  font-size: 0.78rem !important;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(192,160,80,0.08);
+  border: 1px solid rgba(192,160,80,0.2);
+  transition: all 0.2s;
+}
+.site-nav .lang-switch:hover {
+  background: var(--gold);
+  color: var(--paper) !important;
+  border-color: var(--gold);
+}

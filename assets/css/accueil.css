@@ -1022,31 +1022,35 @@ body.nf-locked { overflow: hidden; }
    ============================================================ */
 .quick-carnet {
   position: fixed;
-  bottom: 22px;
-  right: 22px;
-  z-index: 90;
-  width: 44px;
-  height: 44px;
+  bottom: 24px;
+  right: 24px;
+  z-index: 950;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  background: rgba(255, 253, 248, 0.92);
+  background: #FFFDF8;
   color: var(--gold);
-  border: 1px solid rgba(192, 160, 80, 0.42);
-  box-shadow: 0 4px 14px rgba(40, 30, 15, 0.12);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  border: 1.5px solid var(--gold);
+  box-shadow: 0 6px 20px rgba(192, 160, 80, 0.28), 0 2px 6px rgba(40, 30, 15, 0.10);
   transition: all 0.25s ease;
   text-decoration: none;
+  animation: quick-carnet-breath 3.4s ease-in-out 1.5s 3;
+}
+@keyframes quick-carnet-breath {
+  0%, 100% { box-shadow: 0 6px 20px rgba(192, 160, 80, 0.28), 0 2px 6px rgba(40, 30, 15, 0.10); }
+  50%      { box-shadow: 0 6px 28px rgba(192, 160, 80, 0.55), 0 2px 6px rgba(40, 30, 15, 0.10); }
 }
 .quick-carnet:hover {
   background: var(--gold);
   color: #FFFDF8;
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(192, 160, 80, 0.35);
+  box-shadow: 0 10px 26px rgba(192, 160, 80, 0.45);
+  animation: none;
 }
 .quick-carnet svg { display: block; }
 @media (max-width: 480px) {
-  .quick-carnet { bottom: 16px; right: 16px; width: 40px; height: 40px; }
+  .quick-carnet { bottom: 18px; right: 18px; width: 44px; height: 44px; }
 }

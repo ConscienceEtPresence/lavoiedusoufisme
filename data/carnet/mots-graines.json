@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "description": "Les 24 mots-graines du carnet du dedans. Chacun peut être confié à un nouvel utilisateur comme compagnon de chemin. Pas de citation d'auteur — la sagesse parle d'elle-même.",
+  "mots": [
+    {
+      "id": "sabr",
+      "ar": "صَبْر",
+      "tr": "ṣabr",
+      "fr": { "nom": "patience", "note": "Tenir, sans se durcir." },
+      "en": { "nom": "patience", "note": "To hold on, without hardening." }
+    },
+    {
+      "id": "shukr",
+      "ar": "شُكْر",
+      "tr": "shukr",
+      "fr": { "nom": "gratitude", "note": "Voir le don derrière chaque chose." },
+      "en": { "nom": "gratitude", "note": "To see the gift behind each thing." }
+    },
+    {
+      "id": "rida",
+      "ar": "رِضَا",
+      "tr": "riḍā",
+      "fr": { "nom": "acquiescement", "note": "Dire oui à ce qui est, en paix." },
+      "en": { "nom": "acceptance", "note": "To say yes to what is, in peace." }
+    },
+    {
+      "id": "tawakkul",
+      "ar": "تَوَكُّل",
+      "tr": "tawakkul",
+      "fr": { "nom": "remise confiante", "note": "Déposer son poids quelque part de plus grand que soi." },
+      "en": { "nom": "trust", "note": "To lay your weight in something larger than yourself." }
+    },
+    {
+      "id": "khushuu",
+      "ar": "خُشُوع",
+      "tr": "khushūʿ",
+      "fr": { "nom": "humilité du cœur", "note": "Le cœur qui s'incline avant le corps." },
+      "en": { "nom": "humility", "note": "The heart bowing before the body does." }
+    },
+    {
+      "id": "ikhlas",
+      "ar": "إِخْلَاص",
+      "tr": "ikhlāṣ",
+      "fr": { "nom": "sincérité", "note": "Agir sans calcul, sans rien attendre en retour." },
+      "en": { "nom": "sincerity", "note": "To act without calculation, expecting nothing in return." }
+    },
+    {
+      "id": "sidq",
+      "ar": "صِدْق",
+      "tr": "ṣidq",
+      "fr": { "nom": "véracité", "note": "Être un, du dedans au dehors." },
+      "en": { "nom": "truthfulness", "note": "To be one, from within to without." }
+    },
+    {
+      "id": "hilm",
+      "ar": "حِلْم",
+      "tr": "ḥilm",
+      "fr": { "nom": "mansuétude", "note": "Le calme de celui qui pourrait s'emporter et choisit de ne pas le faire." },
+      "en": { "nom": "forbearance", "note": "The calm of one who could lash out and chooses not to." }
+    },
+    {
+      "id": "rifq",
+      "ar": "رِفْق",
+      "tr": "rifq",
+      "fr": { "nom": "délicatesse", "note": "Toucher les choses sans peser sur elles." },
+      "en": { "nom": "gentleness", "note": "To touch things without weighing on them." }
+    },
+    {
+      "id": "huduur",
+      "ar": "حُضُور",
+      "tr": "ḥuḍūr",
+      "fr": { "nom": "présence", "note": "Être tout entier là où on est." },
+      "en": { "nom": "presence", "note": "To be wholly there, where you are." }
+    },
+    {
+      "id": "muraqaba",
+      "ar": "مُرَاقَبَة",
+      "tr": "murāqaba",
+      "fr": { "nom": "observation", "note": "Regarder ce qui passe en soi, sans intervenir." },
+      "en": { "nom": "watchfulness", "note": "To watch what passes in you, without intervening." }
+    },
+    {
+      "id": "dhikr",
+      "ar": "ذِكْر",
+      "tr": "dhikr",
+      "fr": { "nom": "rappel", "note": "Garder en mémoire ce qui est essentiel." },
+      "en": { "nom": "remembrance", "note": "To keep in mind what is essential." }
+    },
+    {
+      "id": "niyya",
+      "ar": "نِيَّة",
+      "tr": "niyya",
+      "fr": { "nom": "intention", "note": "Le geste vaut par ce qui l'anime au départ." },
+      "en": { "nom": "intention", "note": "The deed is worth what moves it at the start." }
+    },
+    {
+      "id": "tawba",
+      "ar": "تَوْبَة",
+      "tr": "tawba",
+      "fr": { "nom": "retour", "note": "Revenir vers ce qui est cher, quand on s'en était éloigné." },
+      "en": { "nom": "turning back", "note": "To return to what is dear, after having strayed." }
+    },
+    {
+      "id": "zuhd",
+      "ar": "زُهْد",
+      "tr": "zuhd",
+      "fr": { "nom": "détachement", "note": "Tenir le monde sans qu'il nous tienne." },
+      "en": { "nom": "detachment", "note": "To hold the world without its holding you." }
+    },
+    {
+      "id": "faqr",
+      "ar": "فَقْر",
+      "tr": "faqr",
+      "fr": { "nom": "simplicité", "note": "Avoir le strict nécessaire au dedans — et trouver que c'est beaucoup." },
+      "en": { "nom": "simplicity", "note": "To have only what is needed within — and find that it is much." }
+    },
+    {
+      "id": "samt",
+      "ar": "صَمْت",
+      "tr": "ṣamt",
+      "fr": { "nom": "silence", "note": "Garder une parole pour mieux l'entendre." },
+      "en": { "nom": "silence", "note": "To keep a word back, to better hear it." }
+    },
+    {
+      "id": "adab",
+      "ar": "أَدَب",
+      "tr": "adab",
+      "fr": { "nom": "belle manière", "note": "Faire chaque chose avec attention, comme un soin." },
+      "en": { "nom": "fine conduct", "note": "To do each thing with attention, as a care." }
+    },
+    {
+      "id": "fitra",
+      "ar": "فِطْرَة",
+      "tr": "fiṭra",
+      "fr": { "nom": "nature originelle", "note": "La pureté avec laquelle on est venu au monde, et qui veille encore." },
+      "en": { "nom": "original nature", "note": "The purity we came into the world with — that still keeps watch." }
+    },
+    {
+      "id": "wajd",
+      "ar": "وَجْد",
+      "tr": "wajd",
+      "fr": { "nom": "élan", "note": "Quand quelque chose en soi déborde, sans qu'on l'ait cherché." },
+      "en": { "nom": "rapture", "note": "When something within overflows, without your having sought it." }
+    },
+    {
+      "id": "uns",
+      "ar": "أُنْس",
+      "tr": "uns",
+      "fr": { "nom": "intimité", "note": "Le confort d'être avec soi, sans rien à fuir." },
+      "en": { "nom": "intimacy", "note": "The comfort of being with yourself, with nothing to flee." }
+    },
+    {
+      "id": "shawq",
+      "ar": "شَوْق",
+      "tr": "shawq",
+      "fr": { "nom": "désir ardent", "note": "Ce qui en nous tire vers ce qui manque." },
+      "en": { "nom": "longing", "note": "What in us pulls toward what is missing." }
+    },
+    {
+      "id": "huda",
+      "ar": "هُدًى",
+      "tr": "hudā",
+      "fr": { "nom": "guidance", "note": "Se laisser conduire par ce qui est plus juste que soi." },
+      "en": { "nom": "guidance", "note": "To let yourself be led by what is truer than yourself." }
+    },
+    {
+      "id": "sakina",
+      "ar": "سَكِينَة",
+      "tr": "sakīna",
+      "fr": { "nom": "quiétude", "note": "La paix qui descend et se pose, sans bruit." },
+      "en": { "nom": "stillness", "note": "The peace that descends and settles, without sound." }
+    }
+  ]
+}

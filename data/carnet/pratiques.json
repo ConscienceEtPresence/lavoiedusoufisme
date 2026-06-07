@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "description": "Les 12 premières pratiques du carnet. 4 cercles × 3. Chaque pratique comporte un amont (le sens, en mots simples), une question douce, et un aval (l'invitation à observer si la réponse n'est pas 'oui'). Pas de citation d'auteur.",
+  "cercles": {
+    "parole": { "fr": "La parole", "en": "Speech" },
+    "acte": { "fr": "Les actes", "en": "Action" },
+    "coeur": { "fr": "Le cœur", "en": "The heart" },
+    "lien": { "fr": "Le lien", "en": "The bond" }
+  },
+  "pratiques": [
+    {
+      "id": "parole.douceur",
+      "cercle": "parole",
+      "fr": {
+        "nom": "Parler avec douceur",
+        "amont": "Parler doucement, ce n'est pas parler bas. C'est choisir des mots qui ne blessent pas, même quand on a raison.",
+        "question": "Ai-je parlé avec douceur aujourd'hui ?",
+        "aval": "Sans vous juger — qu'est-ce qui voulait sortir avec plus de tranchant ? Une fatigue, une peur, un besoin d'être entendu(e) ? Restez un instant. Juste pour voir."
+      },
+      "en": {
+        "nom": "To speak gently",
+        "amont": "Speaking gently is not speaking low. It is choosing words that do not wound, even when you are right.",
+        "question": "Did I speak gently today?",
+        "aval": "Without judging yourself — what wanted to come out with more edge? A tiredness, a fear, a need to be heard? Stay a moment. Just to see."
+      }
+    },
+    {
+      "id": "parole.retenue",
+      "cercle": "parole",
+      "fr": {
+        "nom": "Retenir une parole qui aurait blessé",
+        "amont": "Une parole retenue est parfois plus parlante qu'une parole dite. Surtout quand elle aurait fait mal.",
+        "question": "Y a-t-il une parole que j'aurais pu dire et que j'ai gardée ?",
+        "aval": "Si oui — voyez ce qui s'est passé en vous au moment où vous l'avez gardée. Une pause ? Une force ? Une fatigue ? Tout cela est précieux."
+      },
+      "en": {
+        "nom": "To hold back a word that would have wounded",
+        "amont": "A word held back sometimes speaks more than a word said. Especially when it would have hurt.",
+        "question": "Was there a word I could have said and chose to keep?",
+        "aval": "If yes — see what happened in you at the moment you held it. A pause? A strength? A weariness? All of this is precious."
+      }
+    },
+    {
+      "id": "parole.absent",
+      "cercle": "parole",
+      "fr": {
+        "nom": "Ne pas parler de quelqu'un en son absence",
+        "amont": "Parler de quelqu'un quand il n'est pas là, c'est comme entrer dans sa maison sans lui. Cela laisse une trace, même quand on ne la voit pas.",
+        "question": "Ai-je évité de parler de quelqu'un qui n'était pas là pour s'entendre ?",
+        "aval": "Sans vous juger — qu'est-ce qui parlait en vous quand cela vous a échappé ? Un besoin de vous placer, de partager une lassitude, de vous comparer ? Regardez doucement."
+      },
+      "en": {
+        "nom": "Not to speak of someone in their absence",
+        "amont": "To speak of someone when they are not there is like entering their house without them. It leaves a trace, even when unseen.",
+        "question": "Did I avoid speaking of someone who was not there to hear?",
+        "aval": "Without judging — what was speaking in you when it slipped out? A need to position yourself, to share a tiredness, to compare? Look gently."
+      }
+    },
+    {
+      "id": "acte.bien",
+      "cercle": "acte",
+      "fr": {
+        "nom": "Faire un bien, même petit",
+        "amont": "Un petit bien fait sans bruit vaut plus qu'un grand qu'on raconte.",
+        "question": "Ai-je fait un bien — même petit — sans qu'on me le demande ?",
+        "aval": "Si non — pas d'urgence. La journée de demain est encore libre. Et ce qu'on fait en silence pèse souvent plus qu'on ne croit."
+      },
+      "en": {
+        "nom": "To do a good — even small",
+        "amont": "A small good done quietly is worth more than a great one retold.",
+        "question": "Did I do a good — even small — without being asked?",
+        "aval": "If not — no rush. Tomorrow is still open. And what is done in silence often weighs more than one thinks."
+      }
+    },
+    {
+      "id": "acte.parole",
+      "cercle": "acte",
+      "fr": {
+        "nom": "Tenir une parole donnée",
+        "amont": "Une parole tenue, c'est une dette qu'on rembourse — même petite.",
+        "question": "Ai-je tenu une promesse, même légère, faite à quelqu'un — ou à moi-même ?",
+        "aval": "Si quelque chose n'a pas été tenu — regardez sans honte. Qu'est-ce qui s'est passé entre la promesse et le moment du faire ? Ce n'est pas un défaut, c'est une question."
+      },
+      "en": {
+        "nom": "To keep a word given",
+        "amont": "A word kept is a small debt repaid.",
+        "question": "Did I keep a promise, even light, made to someone — or to myself?",
+        "aval": "If something was not kept — look without shame. What happened between the promise and the doing? It is not a fault, it is a question."
+      }
+    },
+    {
+      "id": "acte.patience",
+      "cercle": "acte",
+      "fr": {
+        "nom": "Être patient avec quelqu'un",
+        "amont": "Être patient avec quelqu'un, ce n'est pas serrer les dents. C'est laisser à l'autre le temps qu'il lui faut, sans s'en aller à l'intérieur.",
+        "question": "Ai-je su attendre quelqu'un — un enfant, un parent, un proche — sans m'agacer en dedans ?",
+        "aval": "Si l'agacement est venu — voyez d'où. Une fatigue ? Une attente non comblée ? L'autre, parfois, n'y est pour rien."
+      },
+      "en": {
+        "nom": "To be patient with someone",
+        "amont": "Being patient with someone is not clenching your teeth. It is to give the other the time they need, without leaving inwardly.",
+        "question": "Did I know how to wait for someone — a child, a parent, a friend — without grinding inside?",
+        "aval": "If irritation came — see from where. A tiredness? An unmet expectation? Sometimes the other has nothing to do with it."
+      }
+    },
+    {
+      "id": "coeur.observation",
+      "cercle": "coeur",
+      "fr": {
+        "nom": "Observer ce qui parle en moi",
+        "amont": "Beaucoup de choses parlent en nous — la peur, le besoin de reconnaissance, l'envie, la fatigue. Les regarder, c'est déjà ne pas leur obéir.",
+        "question": "Ai-je remarqué, au moins une fois aujourd'hui, ce qui me poussait à parler ou à agir ?",
+        "aval": "Restez avec ce qui vous a habité aujourd'hui. Sans l'analyser. Juste reconnaître : voilà ce qui était là."
+      },
+      "en": {
+        "nom": "To observe what speaks in me",
+        "amont": "Many things speak in us — fear, the need for recognition, envy, tiredness. To watch them is already to stop obeying them.",
+        "question": "Did I notice, at least once today, what was pushing me to speak or act?",
+        "aval": "Stay with what inhabited you today. Without analyzing it. Just acknowledge: this is what was there."
+      }
+    },
+    {
+      "id": "coeur.silence",
+      "cercle": "coeur",
+      "fr": {
+        "nom": "Prendre un instant de silence",
+        "amont": "Un instant de silence dans la journée, ce n'est pas perdre du temps. C'est revenir à soi avant que la journée nous emporte.",
+        "question": "Ai-je pris au moins un instant de silence, conscient, dans la journée ?",
+        "aval": "Si non — pas de reproche. Demain, peut-être, un instant entre deux choses. Trois respirations suffisent."
+      },
+      "en": {
+        "nom": "To take a moment of silence",
+        "amont": "A moment of silence in the day is not lost time. It is returning to oneself before the day carries us away.",
+        "question": "Did I take at least one moment of conscious silence in the day?",
+        "aval": "If not — no reproach. Tomorrow, perhaps, a moment between two things. Three breaths is enough."
+      }
+    },
+    {
+      "id": "coeur.gratitude",
+      "cercle": "coeur",
+      "fr": {
+        "nom": "Reconnaître ce qui m'a été donné",
+        "amont": "La gratitude n'est pas une politesse. C'est voir ce qui aurait pu manquer — et ne manque pas.",
+        "question": "Ai-je remarqué, dans la journée, au moins une chose qui m'a été donnée — petite ou grande ?",
+        "aval": "Avant de fermer la journée, nommez trois choses, en silence. Pas besoin d'écrire. Juste les laisser passer."
+      },
+      "en": {
+        "nom": "To recognize what was given to me",
+        "amont": "Gratitude is not a politeness. It is seeing what could have been missing — and is not.",
+        "question": "Did I notice, in the day, at least one thing that was given to me — small or great?",
+        "aval": "Before closing the day, name three things, in silence. No need to write. Just let them pass."
+      }
+    },
+    {
+      "id": "lien.rappel",
+      "cercle": "lien",
+      "fr": {
+        "nom": "Me souvenir, au moins une fois",
+        "amont": "Au milieu de la journée, il arrive qu'on s'oublie. Se rappeler — un instant — qu'il y a quelque chose au-dessus de l'urgence, c'est revenir.",
+        "question": "Ai-je eu, au moins une fois, un moment de souvenir de ce qui est plus grand ?",
+        "aval": "Si non, c'est doux : demain, vous pourrez le poser comme une intention au matin. Un seul moment suffit."
+      },
+      "en": {
+        "nom": "To remember, at least once",
+        "amont": "In the middle of the day, we forget ourselves. To remember — for an instant — that there is something above the urgency, is to return.",
+        "question": "Did I have, at least once, a moment of remembering what is greater?",
+        "aval": "If not, it is gentle: tomorrow you can set it as an intention in the morning. A single moment is enough."
+      }
+    },
+    {
+      "id": "lien.pardon",
+      "cercle": "lien",
+      "fr": {
+        "nom": "Demander pardon, en silence",
+        "amont": "Demander pardon, ce n'est pas s'humilier. C'est reconnaître qu'on a manqué quelque part, et vouloir réparer — d'abord en soi.",
+        "question": "Ai-je, en mon for intérieur, demandé pardon pour quelque chose ?",
+        "aval": "Pas besoin de mots. Une intention silencieuse suffit. Et personne ne l'entend, sauf vous."
+      },
+      "en": {
+        "nom": "To ask forgiveness, in silence",
+        "amont": "To ask forgiveness is not to humble oneself. It is to recognize one has failed somewhere, and want to repair — first within.",
+        "question": "Did I, in my heart, ask forgiveness for something?",
+        "aval": "No need for words. A silent intention is enough. And no one hears it, except you."
+      }
+    },
+    {
+      "id": "lien.elevation",
+      "cercle": "lien",
+      "fr": {
+        "nom": "Lever les yeux vers ce qui dépasse",
+        "amont": "Lever les yeux, parfois. Sortir du quotidien — par un ciel, une étoile, une pensée. Pour se rappeler qu'on est petit, et que c'est bon.",
+        "question": "Ai-je eu, dans la journée, un instant de regard porté plus haut ?",
+        "aval": "Demain, dès le matin — si vous le voulez — une seule fois, regardez le ciel. C'est déjà beaucoup."
+      },
+      "en": {
+        "nom": "To lift the eyes toward what surpasses",
+        "amont": "To lift the eyes, sometimes. To leave the daily — through a sky, a star, a thought. To remember that we are small, and that it is good.",
+        "question": "Did I have, in the day, a moment of gaze lifted higher?",
+        "aval": "Tomorrow morning — if you like — just once, look at the sky. It is already much."
+      }
+    }
+  ]
+}

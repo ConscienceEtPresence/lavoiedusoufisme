@@ -144,10 +144,11 @@ function countReponses(days) {
   for (const d of days) {
     const reps = d.data?.soir?.reponses || {};
     for (const v of Object.values(reps)) {
-      if (v === 'oui') oui++;
-      else if (v === 'partial') partiel++;
-      else if (v === 'non') non++;
-      else if (v === 'sais_pas') sais_pas++;
+      // Le carnet écrit en EN ('yes', 'no', 'unknown') — supporter aussi les anciennes valeurs FR
+      if (v === 'yes' || v === 'oui') oui++;
+      else if (v === 'partial' || v === 'partiel') partiel++;
+      else if (v === 'no' || v === 'non') non++;
+      else if (v === 'unknown' || v === 'sais_pas') sais_pas++;
     }
   }
   return { oui, partiel, non, sais_pas };

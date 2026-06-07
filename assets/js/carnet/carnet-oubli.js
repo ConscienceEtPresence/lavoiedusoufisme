@@ -2,7 +2,7 @@
    « Mot-graine oublié » — demande de rappel, bilingue
    ============================================================ */
 import { db } from './firebase-init.js';
-import { doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+import { addDoc, collection, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
 const EN = document.documentElement.lang === 'en';
 const T = EN ? {
@@ -43,21 +43,24 @@ form.addEventListener('submit', async (e) => {
   e.preventDefault();
   clearError();
 
+  if (form.website && form.website.value) { return; }
+
   const prenom  = form.prenom.value.trim();
   const contact = form.contact.value.trim();
   const message = form.message.value.trim();
 
   if (!prenom)  { showError(T.errorPrenom); return; }
   if (!contact) { showError(T.errorContact); return; }
+  if (prenom.length > 100 || contact.length > 200 || message.length > 2000) {
+    showError(T.errorSubmit); return;
+  }
 
   btn.disabled = true;
   btn.textContent = T.sending;
 
-  const ticketId = generateTicket();
-
   try {
-    await setDoc(doc(db, 'demandes', ticketId), {
-      ticketId,
+    await addDoc(collection(db, 'demandes'), {
+      ticketId: generateTicket(),
       type: 'rappel',
       prenom,
       message: message || null,

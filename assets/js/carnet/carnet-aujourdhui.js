@@ -2,8 +2,31 @@
    « Aujourd'hui » — matin + soir + suggestion, bilingue
    ============================================================ */
 import { db } from './firebase-init.js';
-import { doc, setDoc, getDoc, addDoc, collection, serverTimestamp }
+import { doc, setDoc, getDoc, addDoc, collection, serverTimestamp, updateDoc }
   from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+// ---- Revérification de session (clé toujours active ? mot-graine inchangé ?)
+async function ensureValidSession(session) {
+  try {
+    const snap = await getDoc(doc(db, 'codes', session.codeId));
+    if (!snap.exists()) {
+      localStorage.removeItem('lvdd_carnet_session');
+      window.location.href = '../entrer/';
+      throw new Error('session-invalid');
+    }
+    const d = snap.data();
+    if (d.actif === false) {
+      localStorage.removeItem('lvdd_carnet_session');
+      window.location.href = '../entrer/';
+      throw new Error('inactive');
+    }
+    // si le mot-graine a changé, on resync la session
+    if (d.motGraine && d.motGraine !== session.motGraine) {
+      session.motGraine = d.motGraine;
+      localStorage.setItem('lvdd_carnet_session', JSON.stringify(session));
+    }
+  } catch (e) { throw e; }
+}
 
 const EN = document.documentElement.lang === 'en';
 const LANG = EN ? 'en' : 'fr';
@@ -94,6 +117,7 @@ function todayKey() {
 const date = todayKey();
 
 async function load() {
+  await ensureValidSession(session);
   const [pratiquesJson, motsJson, jourSnap] = await Promise.all([
     fetch('/data/carnet/pratiques.json').then(r => r.json()),
     fetch('/data/carnet/mots-graines.json').then(r => r.json()),

@@ -2,8 +2,22 @@
    « Mon miroir » — historique de l'utilisateur, bilingue
    ============================================================ */
 import { db } from './firebase-init.js';
-import { collection, getDocs }
+import { collection, getDocs, doc, getDoc }
   from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+async function ensureValidSession(session) {
+  const snap = await getDoc(doc(db, 'codes', session.codeId));
+  if (!snap.exists() || snap.data().actif === false) {
+    localStorage.removeItem('lvdd_carnet_session');
+    window.location.href = '../entrer/';
+    throw new Error('session-invalid');
+  }
+  const d = snap.data();
+  if (d.motGraine && d.motGraine !== session.motGraine) {
+    session.motGraine = d.motGraine;
+    localStorage.setItem('lvdd_carnet_session', JSON.stringify(session));
+  }
+}
 
 const EN = document.documentElement.lang === 'en';
 const LANG = EN ? 'en' : 'fr';
@@ -95,6 +109,7 @@ function joursEntre(a, b) {
 }
 
 async function load() {
+  await ensureValidSession(session);
   const [pratiquesJson, motsJson, joursSnap] = await Promise.all([
     fetch('/data/carnet/pratiques.json').then(r => r.json()),
     fetch('/data/carnet/mots-graines.json').then(r => r.json()),

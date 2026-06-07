@@ -18,50 +18,51 @@ const REMEDES_FR = {
   hudur: 'ḥuḍūr', muraqaba: 'murāqaba'
 };
 
-// ----- Carte des correspondances "mouvement → ressource" -----
-// Pour le bloc "Pour aller plus loin" dans la relecture du moment
-export const MOUVEMENTS_RESSOURCES = {
-  fatigue: {
-    remede: 'rifq', nomDivin: { n: 84, slug: 'ar-rauf',  tr: 'ar-Raʾūf',  fr: 'la tendresse extrême' },
-    racine: { ar: 'ر-ف-ق', tr: 'r-f-q', sens: 'douceur, ménagement' },
-    invite: 'Soyez doux avec vous-même comme avec un enfant fatigué.'
-  },
-  peur: {
-    remede: 'tawakkul', nomDivin: { n: 53, slug: 'al-wakil', tr: 'al-Wakīl', fr: 'celui à qui l\'on remet sa charge' },
-    racine: { ar: 'و-ك-ل', tr: 'w-k-l', sens: 'remettre, confier' },
-    invite: 'Confier ce qui pèse à plus grand que soi, ne serait-ce qu\'une minute.'
-  },
-  controle: {
-    remede: 'tawakkul', nomDivin: { n: 64, slug: 'al-qayyum', tr: 'al-Qayyūm', fr: 'celui qui se tient par lui-même et tient tout' },
-    racine: { ar: 'ق-و-م', tr: 'q-w-m', sens: 'tenir, se tenir' },
-    invite: 'Si Lui tient tout, vous pouvez relâcher une chose.'
-  },
-  orgueil: {
-    remede: 'faqr', nomDivin: { n: 89, slug: 'al-ghani', tr: 'al-Ghanī', fr: 'celui qui se suffit à lui-même' },
-    racine: { ar: 'ف-ق-ر', tr: 'f-q-r', sens: 'pauvreté, dépendance' },
-    invite: 'Reconnaître que tout ce qu\'on a vient d\'ailleurs — c\'est le faqr.'
-  },
-  attente: {
-    remede: 'sabr', nomDivin: { n: 100, slug: 'as-sabur', tr: 'aṣ-Ṣabūr', fr: 'celui qui patiente sans fin' },
-    racine: { ar: 'ص-ب-ر', tr: 'ṣ-b-r', sens: 'tenir, contenir' },
-    invite: 'Tenir sans durcir. La patience n\'est pas la résignation.'
-  },
-  honte: {
-    remede: 'tawba', nomDivin: { n: 81, slug: 'at-tawwab', tr: 'at-Tawwāb', fr: 'celui qui ne cesse de recevoir le retour' },
-    racine: { ar: 'ت-و-ب', tr: 't-w-b', sens: 'revenir' },
-    invite: 'La porte du retour n\'est jamais fermée. Toujours.'
-  },
-  tristesse: {
-    remede: 'rifq', nomDivin: { n: 31, slug: 'al-latif', tr: 'al-Laṭīf', fr: 'le subtil, le délicat' },
-    racine: { ar: 'ل-ط-ف', tr: 'l-ṭ-f', sens: 'délicatesse, finesse' },
-    invite: 'Accueillir la tristesse comme une visiteuse, sans la chasser.'
-  },
-  oubli: {
-    remede: 'muraqaba', nomDivin: { n: 44, slug: 'ar-raqib', tr: 'ar-Raqīb', fr: 'celui qui veille, l\'attentif' },
-    racine: { ar: 'ر-ق-ب', tr: 'r-q-b', sens: 'veiller, observer' },
-    invite: 'Revenir à la conscience d\'être vu — sans peur, comme un enfant aimé.'
+// ----- Charge la base noms-remedes.json (cache) -----
+let _nomsRemedesCache = null;
+export async function loadNomsRemedes() {
+  if (_nomsRemedesCache) return _nomsRemedesCache;
+  try {
+    const res = await fetch('/data/noms-remedes.json');
+    _nomsRemedesCache = await res.json();
+  } catch { _nomsRemedesCache = { noms: [], familles: {}, mouvements_familles: {} }; }
+  return _nomsRemedesCache;
+}
+
+// Index par tr lowercase pour lookup
+function makeNomIndex(noms) {
+  const idx = {};
+  for (const n of noms) {
+    const key = (n.tr || '').toLowerCase().replace(/^al-|^ar-|^as-|^at-|^ash-|^aṣ-/, '');
+    idx[key] = n;
   }
-};
+  return idx;
+}
+
+// Retourne les 2 ou 3 Noms qui couvrent le mouvement donné
+export async function nomsForMouvement(mouvement) {
+  const db = await loadNomsRemedes();
+  const family = db.mouvements_familles?.[mouvement];
+  const noms = db.noms || [];
+  // 1) Filtrer ceux qui mentionnent ce mouvement explicitement
+  const direct = noms.filter(n => Array.isArray(n.mouvements) && n.mouvements.includes(mouvement));
+  if (direct.length >= 3) return direct.slice(0, 3);
+  if (direct.length >= 2) return direct;
+  // 2) Compléter par la famille si pas assez de Noms directs
+  if (family && db.familles?.[family]) {
+    const familyNomsKeys = db.familles[family].noms || [];
+    const idx = makeNomIndex(noms);
+    const fromFamily = familyNomsKeys
+      .map(k => idx[k])
+      .filter(Boolean)
+      .filter(n => !direct.some(d => d.tr === n.tr));
+    return [...direct, ...fromFamily].slice(0, 3);
+  }
+  return direct.slice(0, 3);
+}
+
+// Conserve l'export pour compatibilité — vide, l'API a changé
+export const MOUVEMENTS_RESSOURCES = {};
 
 // ----- Nom du jour : rotation déterministe sur les 99 Noms -----
 let _nomsCache = null;
@@ -166,6 +167,26 @@ function topEntry(counts) {
   return e || null;
 }
 
+// Calcule les 3 Noms qui auront accompagné la semaine selon les moteurs cochés
+export async function namesOfTheWeek(days) {
+  const motCounts = countMoteurs(days);
+  const top = Object.entries(motCounts).sort((a,b) => b[1] - a[1]).slice(0, 3);
+  if (!top.length) return [];
+  const db = await loadNomsRemedes();
+  const result = [];
+  const seen = new Set();
+  for (const [mvt] of top) {
+    const noms = await nomsForMouvement(mvt);
+    for (const n of noms) {
+      if (seen.has(n.tr)) continue;
+      seen.add(n.tr);
+      result.push(n);
+      if (result.length >= 3) return result;
+    }
+  }
+  return result;
+}
+
 export function buildBilanHebdo(days) {
   const filled = days.filter(d => Object.keys(d.data).filter(x => !x.startsWith('_')).length);
   if (!filled.length) return null;
@@ -237,5 +258,7 @@ export async function loadAndBuild(codeId) {
     loadLastDays(codeId, 7),
     getNomDuJour()
   ]);
-  return { bilan: buildBilanHebdo(days), nom };
+  const filled = days.filter(d => Object.keys(d.data).filter(x => !x.startsWith('_')).length);
+  const names = filled.length >= 3 ? await namesOfTheWeek(filled) : [];
+  return { bilan: buildBilanHebdo(days), nom, names };
 }

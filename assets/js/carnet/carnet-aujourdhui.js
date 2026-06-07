@@ -421,7 +421,7 @@ function render({ pratiques, motCompagnon, jourData, hierData }) {
 
   // === Nom du jour + Bilan hebdo soufi (async, ne bloque pas l'affichage) ===
   import('./bilan-hebdo-soufi.js').then(async (m) => {
-    const { bilan, nom } = await m.loadAndBuild(codeId);
+    const { bilan, nom, names } = await m.loadAndBuild(codeId);
     const nomEl = document.getElementById('nom-du-jour');
     if (nomEl && nom) {
       nomEl.innerHTML = `
@@ -436,11 +436,26 @@ function render({ pratiques, motCompagnon, jourData, hierData }) {
     }
     const hebdoEl = document.getElementById('bilan-hebdo-mount');
     if (hebdoEl && bilan?.lines?.length && bilan.days >= 3) {
+      const namesBlock = (names && names.length) ? `
+        <div class="bilan-hebdo__names">
+          <p class="bilan-hebdo__names-label">Les Noms qui vous ont accompagné cette semaine :</p>
+          <div class="bilan-hebdo__names-list">
+            ${names.map(n => `
+              <a class="bilan-hebdo__name" href="/pages/noms-divins/nom/${esc(n.slug)}/" target="_blank" rel="noopener">
+                <span lang="ar" dir="rtl">${esc(n.ar)}</span>
+                <strong>${esc(n.tr)}</strong>
+                <em>${esc(n.fr)}</em>
+              </a>
+            `).join('')}
+          </div>
+        </div>
+      ` : '';
       hebdoEl.innerHTML = `
         <section class="bilan-hebdo fade-in-up">
           <h2 class="bilan-hebdo__title">📿 <em>Le bilan de la semaine</em></h2>
           <p class="bilan-hebdo__sub">Un regard tranquille sur les sept jours — sans jugement, sans verdict.</p>
           ${bilan.lines.map(l => `<p class="bilan-hebdo__line">${l}</p>`).join('')}
+          ${namesBlock}
         </section>
       `;
     }
@@ -867,33 +882,36 @@ function bindMomentVisuel() {
 }
 
 // Affiche le bloc "Pour aller plus loin" selon le 1er moteur coché
+// Propose 2-3 Noms-remèdes au lieu d'un seul (logique "Physicians of the Heart")
 async function renderMoteurRessource(moteurs) {
   const mount = document.getElementById('moment-ressource-mount');
   if (!mount) return;
   if (!moteurs.length) { mount.innerHTML = ''; return; }
   try {
     const m = await import('./bilan-hebdo-soufi.js');
-    const r = m.MOUVEMENTS_RESSOURCES[moteurs[0]];
-    if (!r) { mount.innerHTML = ''; return; }
+    const noms = await m.nomsForMouvement(moteurs[0]);
+    if (!noms.length) { mount.innerHTML = ''; return; }
     mount.innerHTML = `
       <div class="moteur-ressource">
-        <span class="moteur-ressource__label">${EN ? 'To go further, if you wish' : 'Pour aller plus loin, si vous le souhaitez'}</span>
-        <p class="moteur-ressource__invite"><em>${esc(r.invite)}</em></p>
-        <div class="moteur-ressource__links">
-          <a class="moteur-ressource__chip" href="${esc(r.nomDivin.href || '/pages/noms-divins/nom/' + r.nomDivin.slug + '/')}" target="_blank" rel="noopener">
-            <span class="moteur-ressource__chip-label">${EN ? 'Divine Name' : 'Nom divin'}</span>
-            <strong>${esc(r.nomDivin.tr)}</strong>
-            <em>${esc(r.nomDivin.fr)}</em>
-          </a>
-          <span class="moteur-ressource__chip moteur-ressource__chip--static">
-            <span class="moteur-ressource__chip-label">${EN ? 'Root' : 'Racine'}</span>
-            <strong lang="ar" dir="rtl">${esc(r.racine.ar)}</strong>
-            <em>${esc(r.racine.tr)} — ${esc(r.racine.sens)}</em>
-          </span>
-          <span class="moteur-ressource__chip moteur-ressource__chip--static">
-            <span class="moteur-ressource__chip-label">${EN ? 'Remedy' : 'Remède'}</span>
-            <strong>${esc(r.remede)}</strong>
-          </span>
+        <span class="moteur-ressource__label">${EN ? 'Names that may accompany' : 'Des Noms qui peuvent accompagner'}</span>
+        <p class="moteur-ressource__invite"><em>${EN
+          ? 'Choose the one that speaks to you. None of them is "the answer" — they are companions for the inner movement.'
+          : 'Choisissez celui qui vous parle. Aucun n\'est « la solution » — ce sont des compagnons pour le mouvement intérieur.'}</em></p>
+        <div class="moteur-ressource__noms">
+          ${noms.map(n => `
+            <a class="moteur-nom" href="/pages/noms-divins/nom/${esc(n.slug)}/" target="_blank" rel="noopener">
+              <div class="moteur-nom__head">
+                <span class="moteur-nom__ar" lang="ar" dir="rtl">${esc(n.ar)}</span>
+                <span class="moteur-nom__appel">${esc(n.appel)}</span>
+              </div>
+              <div class="moteur-nom__name"><strong>${esc(n.tr)}</strong> — <em>${esc(n.fr)}</em></div>
+              <p class="moteur-nom__sens">${esc(n.sens_psy)}</p>
+              <p class="moteur-nom__question"><strong>${EN ? 'Question' : 'Question'} :</strong> ${esc(n.question)}</p>
+              <p class="moteur-nom__pratique"><strong>${EN ? 'Practice' : 'Pratique'} :</strong> ${esc(n.pratique)}</p>
+              ${n.paire ? `<p class="moteur-nom__paire">${EN ? 'Balancing pair' : 'Paire équilibrante'} : <em>${esc(n.paire)}</em></p>` : ''}
+              <span class="moteur-nom__more">${EN ? 'Open this Name →' : 'Découvrir ce Nom →'}</span>
+            </a>
+          `).join('')}
         </div>
       </div>
     `;

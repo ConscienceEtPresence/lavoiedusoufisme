@@ -1,0 +1,319 @@
+{
+  "version": 1,
+  "source": "Physicians of the Heart — A Sufi View of the Ninety-Nine Names of Allah",
+  "note": "25 Noms cartographiés pour le carnet du dedans. Chacun avec son appel, sa prononciation, son sens psychologique, sa question, sa micro-pratique, sa paire équilibrante. Reliés aux pages /pages/noms-divins/nom/{slug}/ du site.",
+  "noms": [
+    {
+      "n": 5, "slug": "6-as-salam", "ar": "اَلسَّلَام", "tr": "as-Salām", "fr": "la Paix",
+      "appel": "Yā Salām", "prononciation": "ya sa-LAM",
+      "sens_psy": "Paix qui ne dépend pas des circonstances. Cesser d'ajouter de la tension à ce qui est déjà difficile.",
+      "familles": ["colere", "conflit"],
+      "mouvements": ["controle", "attente"],
+      "question": "Où puis-je cesser d'ajouter de la tension à ce qui est déjà difficile ?",
+      "pratique": "Trois respirations avant toute réponse.",
+      "paire": null
+    },
+    {
+      "n": 14, "slug": "15-al-ghaffar", "ar": "اَلْغَفَّار", "tr": "al-Ghaffār", "fr": "le Pardonneur infini",
+      "appel": "Yā Ghaffār", "prononciation": "ya gha-FAR",
+      "sens_psy": "Couverture de la faute, protection contre l'écrasement par la honte. Pardon récurrent.",
+      "familles": ["honte"],
+      "mouvements": ["honte", "orgueil"],
+      "question": "Quelle faute puis-je regarder sans m'y réduire ?",
+      "pratique": "Demander pardon intérieurement, puis choisir une réparation simple.",
+      "paire": "tawwab"
+    },
+    {
+      "n": 17, "slug": "18-ar-razzaq", "ar": "اَلرَّزَّاق", "tr": "ar-Razzāq", "fr": "le Pourvoyeur",
+      "appel": "Yā Razzāq", "prononciation": "ya raz-ZAQ",
+      "sens_psy": "Confiance dans la subsistance, apaisement de la peur du manque.",
+      "familles": ["peur", "gratitude"],
+      "mouvements": ["peur", "attente", "controle"],
+      "question": "De quoi ai-je été nourri aujourd'hui, concrètement ou intérieurement ?",
+      "pratique": "Reconnaître une nourriture reçue.",
+      "paire": null
+    },
+    {
+      "n": 18, "slug": "19-al-fattah", "ar": "اَلْفَتَّاح", "tr": "al-Fattāḥ", "fr": "l'Ouvreur",
+      "appel": "Yā Fattāḥ", "prononciation": "ya fat-TAH",
+      "sens_psy": "Ouverture après fermeture, seuil, issue. Première porte minuscule.",
+      "familles": ["guidance"],
+      "mouvements": ["controle", "oubli"],
+      "question": "Quelle porte minuscule reste ouverte ?",
+      "pratique": "Faire un premier geste, même petit.",
+      "paire": null
+    },
+    {
+      "n": 19, "slug": "20-al-alim", "ar": "اَلْعَلِيم", "tr": "al-ʿAlīm", "fr": "le Très-Savant",
+      "appel": "Yā ʿAlīm", "prononciation": "ya a-LIM",
+      "sens_psy": "Connaissance profonde de ce qui se passe réellement. Sortie de l'auto-illusion.",
+      "familles": ["confusion"],
+      "mouvements": ["oubli", "controle"],
+      "question": "Qu'est-ce que je sais au fond, mais que je n'ai pas encore voulu voir ?",
+      "pratique": "Noter une vérité simple.",
+      "paire": null
+    },
+    {
+      "n": 27, "slug": "28-al-basir", "ar": "اَلْبَصِير", "tr": "al-Baṣīr", "fr": "le Voyant",
+      "appel": "Yā Baṣīr", "prononciation": "ya ba-SIR",
+      "sens_psy": "Vision lucide, regard sans déni. Voir sans embellir.",
+      "familles": ["confusion"],
+      "mouvements": ["controle", "orgueil"],
+      "question": "Qu'est-ce que je vois mieux ce soir qu'au matin ?",
+      "pratique": "Décrire un fait sans commentaire.",
+      "paire": null
+    },
+    {
+      "n": 30, "slug": "31-al-latif", "ar": "اَللَّطِيف", "tr": "al-Laṭīf", "fr": "le Subtil bienveillant",
+      "appel": "Yā Laṭīf", "prononciation": "ya la-TIF",
+      "sens_psy": "Finesse, délicatesse, transformation d'une nafs grossière en perception plus subtile.",
+      "familles": ["colere", "tristesse"],
+      "mouvements": ["tristesse", "controle", "honte"],
+      "question": "Où ai-je pesé trop lourd aujourd'hui ?",
+      "pratique": "Refaire un geste ou une parole avec plus de finesse.",
+      "paire": null
+    },
+    {
+      "n": 32, "slug": "33-al-halim", "ar": "اَلْحَلِيم", "tr": "al-Ḥalīm", "fr": "le Longanime",
+      "appel": "Yā Ḥalīm", "prononciation": "ya ha-LIM",
+      "sens_psy": "Patience douce, puissance de ne pas réagir immédiatement.",
+      "familles": ["colere"],
+      "mouvements": ["controle", "attente", "orgueil"],
+      "question": "Où aurais-je pu attendre une respiration avant de parler ?",
+      "pratique": "Demain, une pause avant la première réponse.",
+      "paire": "sabur"
+    },
+    {
+      "n": 34, "slug": "35-al-ghafur", "ar": "اَلْغَفُور", "tr": "al-Ghafūr", "fr": "le Tout-Pardonneur",
+      "appel": "Yā Ghafūr", "prononciation": "ya gha-FOUR",
+      "sens_psy": "Pardon qui pénètre en profondeur, pas seulement couverture extérieure.",
+      "familles": ["honte"],
+      "mouvements": ["honte"],
+      "question": "Quelle blessure demande plus qu'une excuse ?",
+      "pratique": "Accueillir le pardon comme un soin, puis réparer.",
+      "paire": "ghaffar"
+    },
+    {
+      "n": 35, "slug": "36-ash-shakur", "ar": "اَلشَّكُور", "tr": "ash-Shakūr", "fr": "le Très-Reconnaissant",
+      "appel": "Yā Shakūr", "prononciation": "ya sha-KOUR",
+      "sens_psy": "Reconnaissance du moindre bien, amplification du petit geste.",
+      "familles": ["gratitude"],
+      "mouvements": ["tristesse", "oubli"],
+      "question": "Quel petit bien ne dois-je pas mépriser aujourd'hui ?",
+      "pratique": "Nommer un effort, même imparfait.",
+      "paire": null
+    },
+    {
+      "n": 38, "slug": "39-al-hafiz", "ar": "اَلْحَفِيظ", "tr": "al-Ḥafīẓ", "fr": "le Préservateur",
+      "appel": "Yā Ḥafīẓ", "prononciation": "ya ha-FIZ",
+      "sens_psy": "Protection, mémoire gardée, soin des limites.",
+      "familles": ["peur"],
+      "mouvements": ["peur", "controle"],
+      "question": "Qu'est-ce que je dois préserver aujourd'hui ?",
+      "pratique": "Poser une limite saine.",
+      "paire": null
+    },
+    {
+      "n": 39, "slug": "40-al-muqit", "ar": "اَلْمُقِيت", "tr": "al-Muqīt", "fr": "le Pourvoyeur de subsistance",
+      "appel": "Yā Muqīt", "prononciation": "ya mou-QIT",
+      "sens_psy": "Nourriture précise, soutien adapté au besoin.",
+      "familles": ["peur", "gratitude"],
+      "mouvements": ["fatigue", "tristesse"],
+      "question": "De quelle nourriture mon cœur avait-il besoin ?",
+      "pratique": "Choisir une nourriture simple : repos, silence, parole, lecture.",
+      "paire": null
+    },
+    {
+      "n": 42, "slug": "43-al-karim", "ar": "اَلْكَرِيم", "tr": "al-Karīm", "fr": "le Généreux noble",
+      "appel": "Yā Karīm", "prononciation": "ya ka-RIM",
+      "sens_psy": "Noblesse du don, générosité sans humiliation.",
+      "familles": ["gratitude", "colere"],
+      "mouvements": ["orgueil", "controle"],
+      "question": "Où puis-je être plus noble que mon premier réflexe ?",
+      "pratique": "Offrir une parole ou une attention.",
+      "paire": null
+    },
+    {
+      "n": 44, "slug": "44-ar-raqib", "ar": "اَلرَّقِيب", "tr": "ar-Raqīb", "fr": "le Vigilant",
+      "appel": "Yā Raqīb", "prononciation": "ya ra-QIB",
+      "sens_psy": "Vigilance aimante, observation de soi sans surveillance punitive.",
+      "familles": ["confusion", "guidance"],
+      "mouvements": ["oubli"],
+      "question": "Qu'ai-je observé en moi avant d'obéir à l'impulsion ?",
+      "pratique": "Un arrêt de trois secondes dans la journée.",
+      "paire": null
+    },
+    {
+      "n": 46, "slug": "47-al-hakim", "ar": "اَلْحَكِيم", "tr": "al-Ḥakīm", "fr": "le Sage",
+      "appel": "Yā Ḥakīm", "prononciation": "ya ha-KIM",
+      "sens_psy": "Sagesse qui discerne le moment, la mesure et le remède.",
+      "familles": ["confusion", "guidance"],
+      "mouvements": ["controle", "oubli"],
+      "question": "Quelle serait la réponse la plus sage, pas la plus rapide ?",
+      "pratique": "Attendre avant d'agir.",
+      "paire": null
+    },
+    {
+      "n": 51, "slug": "52-al-haqq", "ar": "اَلْحَقّ", "tr": "al-Ḥaqq", "fr": "le Réel, le Vrai",
+      "appel": "Yā Ḥaqq", "prononciation": "ya HAQQ",
+      "sens_psy": "Réalité nue, sortie du mensonge intérieur. Le simple vrai.",
+      "familles": ["confusion"],
+      "mouvements": ["controle", "orgueil"],
+      "question": "Quelle est la vérité simple de cette scène ?",
+      "pratique": "Écrire une phrase vraie, sans embellir.",
+      "paire": null
+    },
+    {
+      "n": 52, "slug": "53-al-wakil", "ar": "اَلْوَكِيل", "tr": "al-Wakīl", "fr": "le Garant",
+      "appel": "Yā Wakīl", "prononciation": "ya wa-KIL",
+      "sens_psy": "Confiance confiée, lâcher le contrôle après avoir fait sa part.",
+      "familles": ["peur", "guidance"],
+      "mouvements": ["peur", "controle"],
+      "question": "Qu'est-ce qui ne dépend pas de moi ?",
+      "pratique": "Faire sa part, puis déposer le reste.",
+      "paire": null
+    },
+    {
+      "n": 61, "slug": "61-al-muhyi", "ar": "اَلْمُحْيِي", "tr": "al-Muḥyī", "fr": "celui qui donne la vie",
+      "appel": "Yā Muḥyī", "prononciation": "ya MOUH-yi",
+      "sens_psy": "Vivification, retour de l'énergie juste. Réveil après engourdissement.",
+      "familles": ["deuil", "guidance"],
+      "mouvements": ["fatigue", "tristesse"],
+      "question": "Qu'est-ce qui m'a rendu vivant aujourd'hui ?",
+      "pratique": "Choisir une activité qui remet de la vie.",
+      "paire": "mumit"
+    },
+    {
+      "n": 64, "slug": "64-al-qayyum", "ar": "اَلْقَيُّوم", "tr": "al-Qayyūm", "fr": "le Subsistant par soi",
+      "appel": "Yā Qayyūm", "prononciation": "ya qay-YOUM",
+      "sens_psy": "Soutien permanent, axe qui tient quand tout bouge.",
+      "familles": ["peur"],
+      "mouvements": ["peur", "controle", "fatigue"],
+      "question": "Qu'est-ce qui me soutient quand je ne me soutiens plus ?",
+      "pratique": "Rester debout, immobile, une minute.",
+      "paire": null
+    },
+    {
+      "n": 68, "slug": "69-as-samad", "ar": "اَلصَّمَد", "tr": "aṣ-Ṣamad", "fr": "l'Absolu",
+      "appel": "Yā Ṣamad", "prononciation": "ya SA-mad",
+      "sens_psy": "Appui ultime, recours quand les appuis humains manquent.",
+      "familles": ["peur"],
+      "mouvements": ["peur", "tristesse"],
+      "question": "Vers quoi je me tourne quand tout manque ?",
+      "pratique": "Déposer une demande sans multiplier les recours.",
+      "paire": null
+    },
+    {
+      "n": 80, "slug": "81-at-tawwab", "ar": "اَلتَّوَّاب", "tr": "at-Tawwāb", "fr": "celui qui accueille le retour",
+      "appel": "Yā Tawwāb", "prononciation": "ya taw-WAB",
+      "sens_psy": "Retour possible après faute, reprise sans condamnation.",
+      "familles": ["honte", "guidance"],
+      "mouvements": ["honte", "oubli"],
+      "question": "Vers quoi puis-je revenir aujourd'hui ?",
+      "pratique": "Reprendre le vœu en plus petit.",
+      "paire": "ghaffar"
+    },
+    {
+      "n": 82, "slug": "83-al-afu", "ar": "اَلْعَفُوّ", "tr": "al-ʿAfū", "fr": "celui qui efface",
+      "appel": "Yā ʿAfū", "prononciation": "ya A-fou",
+      "sens_psy": "Effacement profond, abandon du dossier intérieur contre soi ou autrui.",
+      "familles": ["honte", "colere"],
+      "mouvements": ["honte", "controle"],
+      "question": "Quel dossier puis-je cesser de relire ?",
+      "pratique": "Effacer symboliquement une phrase accusatrice.",
+      "paire": null
+    },
+    {
+      "n": 83, "slug": "84-ar-rauf", "ar": "اَلرَّؤُوف", "tr": "ar-Raʾūf", "fr": "le Très-Tendre",
+      "appel": "Yā Raʾūf", "prononciation": "ya ra-OUF",
+      "sens_psy": "Tendresse extrême qui touche la vulnérabilité sans l'envahir.",
+      "familles": ["tristesse"],
+      "mouvements": ["fatigue", "tristesse", "honte"],
+      "question": "Quelle vulnérabilité demande tendresse plutôt qu'analyse ?",
+      "pratique": "Parler à une partie blessée avec douceur.",
+      "paire": null
+    },
+    {
+      "n": 89, "slug": "89-al-ghani", "ar": "اَلْغَنِيّ", "tr": "al-Ghanī", "fr": "le Suffisant à soi",
+      "appel": "Yā Ghanī", "prononciation": "ya gha-NI",
+      "sens_psy": "Richesse intérieure, non-dépendance.",
+      "familles": ["orgueil", "gratitude"],
+      "mouvements": ["orgueil", "attente"],
+      "question": "Où puis-je sentir une richesse qui ne dépend pas d'obtenir ?",
+      "pratique": "S'abstenir d'une demande compulsive.",
+      "paire": null
+    },
+    {
+      "n": 94, "slug": "95-al-hadi", "ar": "اَلْهَادِي", "tr": "al-Hādī", "fr": "le Guide",
+      "appel": "Yā Hādī", "prononciation": "ya ha-DI",
+      "sens_psy": "Orientation, retour du chemin, sortie de l'errance.",
+      "familles": ["guidance", "confusion"],
+      "mouvements": ["oubli", "controle"],
+      "question": "Quel pas me remet sur le chemin ?",
+      "pratique": "Demander une guidance, puis poser un acte simple.",
+      "paire": null
+    },
+    {
+      "n": 100, "slug": "100-as-sabur", "ar": "اَلصَّبُور", "tr": "aṣ-Ṣabūr", "fr": "le Très-Patient",
+      "appel": "Yā Ṣabūr", "prononciation": "ya sa-BOUR",
+      "sens_psy": "Patience endurante, capacité à aller jusqu'au bout sans se durcir.",
+      "familles": ["colere"],
+      "mouvements": ["attente", "controle", "fatigue"],
+      "question": "Où puis-je tenir sans serrer ?",
+      "pratique": "Rester avec une difficulté une respiration de plus.",
+      "paire": "halim"
+    }
+  ],
+  "familles": {
+    "colere": {
+      "label": "Colère, réaction, parole dure",
+      "intro": "Ces Noms accompagnent quand le feu monte. La voie n'est pas de l'éteindre, mais de ne pas se durcir.",
+      "noms": ["halim", "sabur", "latif", "salam", "afu", "tawwab"]
+    },
+    "honte": {
+      "label": "Honte, faute, culpabilité",
+      "intro": "Voir sa faute sans s'y identifier. Le pardon ouvre l'acte de réparation.",
+      "noms": ["ghaffar", "ghafur", "tawwab", "afu", "rahim"]
+    },
+    "peur": {
+      "label": "Peur, manque, insécurité",
+      "intro": "Identifier ce qui dépend de soi, ce qui ne dépend pas, ce qui peut être déposé.",
+      "noms": ["muʾmin", "wakil", "razzaq", "hafiz", "muqit", "samad", "qayyum"]
+    },
+    "orgueil": {
+      "label": "Orgueil, besoin d'avoir raison, image de soi",
+      "intro": "Revenir à la juste place, sans humiliation. L'humilité, pas l'écrasement.",
+      "noms": ["khafid", "ghani", "afu"]
+    },
+    "confusion": {
+      "label": "Confusion, auto-illusion, manque de discernement",
+      "intro": "Transformer le carnet en miroir. Quel fait ? quelle émotion ? quel besoin ? quel acte juste ?",
+      "noms": ["alim", "basir", "hakim", "haqq", "raqib"]
+    },
+    "deuil": {
+      "label": "Deuil, fin, transformation",
+      "intro": "Accompagner la fin d'une habitude, d'une période. Respecter la perte sans promettre trop vite la résurrection.",
+      "noms": ["muhyi", "rauf"]
+    },
+    "gratitude": {
+      "label": "Gratitude, abondance, don",
+      "intro": "Voir ce qui est donné, sans nier ce qui manque.",
+      "noms": ["shakur", "karim", "ghani", "razzaq"]
+    },
+    "guidance": {
+      "label": "Guidance, chemin, reprise",
+      "intro": "Matin et bilan hebdomadaire. Relier le vœu du jour à un pas concret.",
+      "noms": ["hadi", "fattah", "tawwab", "muhyi"]
+    }
+  },
+  "mouvements_familles": {
+    "fatigue": "tristesse",
+    "peur": "peur",
+    "controle": "peur",
+    "orgueil": "orgueil",
+    "attente": "colere",
+    "honte": "honte",
+    "tristesse": "tristesse",
+    "oubli": "guidance"
+  }
+}

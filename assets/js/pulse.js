@@ -27,12 +27,24 @@ function todayKey() {
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
 
+function normalizePath(p) {
+  let s = (p || '/').split('?')[0].split('#')[0];
+  if (s === '/') return 'home';
+  s = s.replace(/^\/+|\/+$/g, '').replace(/\.html?$/, '').replace(/[\/\.]/g, '_');
+  return s.substring(0, 80) || 'home';
+}
+
 async function pulse() {
   if (/bot|spider|crawler|preview|headless/i.test(navigator.userAgent || '')) return;
 
   const date = todayKey();
   const ref = doc(db, 'analytics', SITE, 'jours', date);
-  const updates = { pageviews: increment(1), lastSeen: serverTimestamp() };
+  const pathKey = normalizePath(location.pathname);
+  const updates = {
+    pageviews: increment(1),
+    lastSeen: serverTimestamp()
+  };
+  updates[`pages.${pathKey}`] = increment(1);
 
   try {
     const lastDay = localStorage.getItem('pulse_last_day');

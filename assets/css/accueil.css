@@ -1016,3 +1016,37 @@ body.nf-locked { overflow: hidden; }
   max-width: 30rem;
 }
 .noms-flash.is-fullscreen .noms-flash__modes { margin-top: 0; }
+
+/* ============================================================
+   Quick carnet — petit raccourci doré, en bas à droite
+   ============================================================ */
+.quick-carnet {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 90;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.92);
+  color: var(--gold);
+  border: 1px solid rgba(192, 160, 80, 0.42);
+  box-shadow: 0 4px 14px rgba(40, 30, 15, 0.12);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+.quick-carnet:hover {
+  background: var(--gold);
+  color: #FFFDF8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(192, 160, 80, 0.35);
+}
+.quick-carnet svg { display: block; }
+@media (max-width: 480px) {
+  .quick-carnet { bottom: 16px; right: 16px; width: 40px; height: 40px; }
+}

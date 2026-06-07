@@ -1,6 +1,7 @@
 // ============================================================
 // Firestore Rules — La voie du dedans / Le carnet du dedans
-// Version 1 — à coller dans Firebase Console → Firestore → Rules
+//                  + Le miroir intérieur (ennéagramme)
+// Version 2 — à coller dans Firebase Console → Firestore → Rules
 // ============================================================
 rules_version = '2';
 service cloud.firestore {
@@ -20,14 +21,18 @@ service cloud.firestore {
     function isValidMessage(s) {
       return s == null || (s is string && s.size() < 2000);
     }
+    function isValidType(n) {
+      return n is int && n >= 1 && n <= 9;
+    }
+
+    // ============================================================
+    // === LA VOIE DU DEDANS (carnet soufi par mot-graine) ===
+    // ============================================================
 
     // — codes : les clés des utilisateurs —
-    // Lecture : permise pour la connexion (filtrage par prenomNorm + motGraine
-    // côté client). L'admin liste tout. Les autres ne peuvent obtenir un
-    // document que via get() avec son ID exact.
     match /codes/{codeId} {
-      allow get:    if true;       // get(codeId) : pour login + revérification
-      allow list:   if true;       // query nécessaire pour le login
+      allow get:    if true;
+      allow list:   if true;
       allow create, update, delete: if isAdmin();
     }
 
@@ -54,11 +59,54 @@ service cloud.firestore {
     }
 
     // — carnets : chacun son sous-arbre par codeId —
-    // Les codeId sont des IDs Firestore auto-générés (20+ chars aléatoires)
-    // Sans Firebase Anonymous Auth, on ne peut pas lier l'accès au mot-graine
-    // côté serveur ; on accepte donc l'accès si on connaît le codeId.
-    // V2 : ajouter Firebase Anonymous Auth + custom claims via Cloud Function.
     match /carnets/{codeId}/{document=**} {
+      allow read, write: if true;
+    }
+
+    // ============================================================
+    // === LE MIROIR INTÉRIEUR (carnet ennéagramme par type) ===
+    // ============================================================
+
+    // — codes-type : les clés des utilisateurs du miroir intérieur —
+    // Document : { prenom, prenomNorm, type (1-9), aile?, sousType?,
+    //              langue, actif, creeLe, derniereVisite? }
+    // Le 'code' qu'on donne aux gens = codeId Firestore auto-généré.
+    match /codes-type/{codeId} {
+      allow get:    if true;       // pour login + revérification de session
+      allow list:   if true;       // pour login (query par prenomNorm)
+      allow create, update, delete: if isAdmin();
+    }
+
+    // — demandes-type : demandes de clé pour le miroir intérieur —
+    // Document : { prenom, contact, typeDeclare (1-9), commentIdentifie,
+    //              message?, statut, langue, creeLe }
+    match /demandes-type/{ticketId} {
+      allow create: if
+        isValidPrenom(request.resource.data.prenom) &&
+        isValidContact(request.resource.data.contact) &&
+        isValidType(request.resource.data.typeDeclare) &&
+        isValidMessage(request.resource.data.message) &&
+        request.resource.data.statut == 'en-attente' &&
+        request.resource.data.langue in ['fr','en'];
+      allow read, update, delete: if isAdmin();
+    }
+
+    // — suggestions-type : retours sur le miroir intérieur —
+    match /suggestions-type/{id} {
+      allow create: if
+        request.resource.data.message is string &&
+        request.resource.data.message.size() > 0 &&
+        request.resource.data.message.size() < 2000 &&
+        request.resource.data.statut == 'neuve' &&
+        request.resource.data.langue in ['fr','en'];
+      allow read, update, delete: if isAdmin();
+    }
+
+    // — carnets-type : sous-arbre journalier par codeId du miroir —
+    // Structure : carnets-type/{codeId}/jours/{YYYY-MM-DD}
+    // Le document du jour contient : niveau, ego, essence, moment,
+    //   poser, reprise — selon ce que l'utilisateur a rempli.
+    match /carnets-type/{codeId}/{document=**} {
       allow read, write: if true;
     }
 

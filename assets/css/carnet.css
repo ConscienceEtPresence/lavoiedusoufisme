@@ -2055,3 +2055,39 @@ body.carnet { font-size: 17px; }
   font-size: .98rem;
   line-height: 1.5;
 }
+
+/* ============================================================
+   v10 — Phase C ADAB : hint matin tiré du mouvement d'hier
+   ============================================================ */
+.jour-hint-matin {
+  background: linear-gradient(135deg, rgba(255,250,235,0.7), rgba(248,238,210,0.5));
+  border: 1px solid rgba(192,160,80,0.3);
+  border-left: 3px solid #c0a050;
+  border-radius: 8px;
+  padding: .75rem 1rem;
+  margin: .8rem 0 1.2rem;
+}
+.jour-hint-matin__label {
+  display: inline-block;
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #8a7028;
+  font-weight: 700;
+  background: rgba(192,160,80,0.18);
+  padding: .15rem .55rem;
+  border-radius: 999px;
+  margin-bottom: .35rem;
+}
+.jour-hint-matin__text {
+  margin: .25rem 0;
+  color: #3a2e15;
+  font-size: 1.03rem;
+  line-height: 1.5;
+}
+.jour-hint-matin__text strong { color: #6a5520; }
+.jour-hint-matin__note {
+  margin: .15rem 0 0;
+  color: #8a7a55;
+  font-size: .88rem;
+}

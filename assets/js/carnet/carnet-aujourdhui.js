@@ -57,6 +57,28 @@ const ADABS_FR = [
   { id: 'tenir-parole',    label: 'tenir une petite parole donnée' }
 ];
 
+// Phase C — quel adab d'aujourd'hui suit naturellement le mouvement d'hier
+const MOUVEMENT_TO_ADAB_HINT = {
+  colere:    'baisser-voix',
+  jugement:  'respirer-avant',
+  ghiba:     'pas-absent',
+  controle:  'ecouter',
+  orgueil:   'ecouter',
+  honte:     'tenir-parole',
+  fatigue:   'differer',
+  desir:     'differer',
+  oubli:     'respirer-avant',
+  fermeture: 'tenir-parole'
+};
+// Libellé lisible pour la phrase d'hier
+const MOUVEMENT_LABEL_FR = {
+  colere: 'la colère', jugement: 'le jugement', ghiba: 'la parole d\'un absent',
+  controle: 'le besoin de contrôle', orgueil: 'l\'orgueil', honte: 'la honte',
+  fatigue: 'la fatigue', desir: 'le désir', oubli: 'l\'oubli', fermeture: 'la fermeture du cœur',
+  // moteurs anciens vocabulaires
+  peur: 'la peur', attente: 'une attente non comblée', tristesse: 'la tristesse'
+};
+
 const T_fr = {
   hello: 'Bonjour',
   // Phase A — orientation du matin
@@ -437,7 +459,7 @@ function render({ pratiques, motCompagnon, jourData, hierData }) {
     </header>
   `;
 
-  const contentBlock = renderModeContent(mode, pratiques, jourData);
+  const contentBlock = renderModeContent(mode, pratiques, jourData, hierData);
 
   // Reprise du vœu d'hier — seulement si un vow existe dans le jour précédent
   const repriseBlock = renderRepriseVow(arguments[0].hierData, jourData);
@@ -455,7 +477,7 @@ function render({ pratiques, motCompagnon, jourData, hierData }) {
     ${renderSuggestion()}
   `;
 
-  bindModeChooser(pratiques, jourData);
+  bindModeChooser(pratiques, jourData, hierData);
   bindContent(mode, pratiques);
   bindReprise();
   bindSuggestion();
@@ -548,10 +570,32 @@ function bindReprise() {
   });
 }
 
-function renderModeContent(mode, pratiques, jourData) {
+function renderModeContent(mode, pratiques, jourData, hierData) {
   if (mode === 'light')  return renderLight(jourData);
   if (mode === 'heavy')  return renderHeavy(jourData);
-  return renderPose(pratiques, jourData);
+  return renderPose(pratiques, jourData, hierData);
+}
+
+// Phase C — hint matin tiré du mouvement dominant d'hier
+function renderHintMatin(hierData) {
+  if (!hierData?.soir?.moment?.moteurs?.length) return '';
+  const m = hierData.soir.moment.moteurs[0];
+  const label = MOUVEMENT_LABEL_FR[m];
+  // Le moteur du carnet est mappé vers un mouvement de la nafs
+  const MAP = { peur:'controle', attente:'desir', tristesse:'fermeture' };
+  const mvtId = MAP[m] || m;
+  const adabId = MOUVEMENT_TO_ADAB_HINT[mvtId];
+  const adab = ADABS_FR.find(a => a.id === adabId);
+  if (!label || !adab) return '';
+  return `
+    <div class="jour-hint-matin">
+      <span class="jour-hint-matin__label">Hier</span>
+      <p class="jour-hint-matin__text">
+        ${esc(label)} est venue. Un adab possible pour aujourd'hui : <strong>${esc(adab.label)}</strong>.
+      </p>
+      <p class="jour-hint-matin__note"><em>Suggestion — libre à vous de choisir autrement.</em></p>
+    </div>
+  `;
 }
 
 function renderLight(jourData) {
@@ -620,7 +664,8 @@ function renderHeavy(jourData) {
   `;
 }
 
-function renderPose(pratiques, jourData) {
+function renderPose(pratiques, jourData, hierData) {
+  const hintMatin = renderHintMatin(hierData);
   const cercles = pratiques.cercles;
   const items = pratiques.pratiques;
   const groupes = ['parole', 'acte', 'coeur', 'lien'];
@@ -686,6 +731,8 @@ function renderPose(pratiques, jourData) {
     <section class="jour-section" id="section-matin">
       <h2 class="jour-section__titre">${TXT.morning}</h2>
       <p class="jour-section__sub"><em>${TXT.morningSub}</em></p>
+
+      ${hintMatin}
 
       <label class="jour-field">
         <span>${TXT.intentionLabel}</span>
@@ -905,7 +952,7 @@ function renderSuggestion() {
   `;
 }
 
-function bindModeChooser(pratiques, jourData) {
+function bindModeChooser(pratiques, jourData, hierData) {
   document.querySelectorAll('.jour-mode-card').forEach(btn => {
     btn.addEventListener('click', async () => {
       const newMode = btn.dataset.mode;
@@ -913,7 +960,7 @@ function bindModeChooser(pratiques, jourData) {
       document.querySelectorAll('.jour-mode-card').forEach(b => b.classList.remove('is-active'));
       btn.classList.add('is-active');
       // re-render contenu
-      document.getElementById('mode-content').innerHTML = renderModeContent(newMode, pratiques, jourData);
+      document.getElementById('mode-content').innerHTML = renderModeContent(newMode, pratiques, jourData, hierData);
       bindContent(newMode, pratiques);
       // persister discrètement le mode
       try {

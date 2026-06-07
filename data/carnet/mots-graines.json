@@ -1,174 +1,270 @@
 {
-  "version": 1,
-  "description": "Les 24 mots-graines du carnet du dedans. Chacun peut être confié à un nouvel utilisateur comme compagnon de chemin. Pas de citation d'auteur — la sagesse parle d'elle-même.",
+  "version": 2,
+  "description": "Les 24 mots-graines du carnet du dedans. Chacun peut être confié à un nouvel utilisateur comme compagnon de chemin. Chaque mot porte aussi une question, une micro-pratique, et un rappel. Pas de citation d'auteur — la sagesse parle d'elle-même.",
   "mots": [
     {
-      "id": "sabr",
-      "ar": "صَبْر",
-      "tr": "ṣabr",
-      "fr": { "nom": "patience", "note": "Tenir, sans se durcir." },
-      "en": { "nom": "patience", "note": "To hold on, without hardening." }
+      "id": "sabr", "ar": "صَبْر", "tr": "ṣabr",
+      "fr": { "nom": "patience", "note": "Tenir, sans se durcir.",
+        "question": "Où ai-je besoin de tenir aujourd'hui — sans me durcir ?",
+        "pratique": "Quand une attente s'agite en vous, respirer une fois, lentement, avant d'agir.",
+        "rappel": "Tenir n'est pas serrer." },
+      "en": { "nom": "patience", "note": "To hold on, without hardening.",
+        "question": "Where do I need to hold on today — without hardening?",
+        "pratique": "When an expectation stirs in you, breathe once, slowly, before acting.",
+        "rappel": "To hold is not to clench." }
     },
     {
-      "id": "shukr",
-      "ar": "شُكْر",
-      "tr": "shukr",
-      "fr": { "nom": "gratitude", "note": "Voir le don derrière chaque chose." },
-      "en": { "nom": "gratitude", "note": "To see the gift behind each thing." }
+      "id": "shukr", "ar": "شُكْر", "tr": "shukr",
+      "fr": { "nom": "gratitude", "note": "Voir le don derrière chaque chose.",
+        "question": "Qu'est-ce qui m'est donné aujourd'hui, que je n'ai pas vu encore ?",
+        "pratique": "Nommer une chose simple — une lumière, un visage, un repas — et s'y arrêter.",
+        "rappel": "Le don précède la demande." },
+      "en": { "nom": "gratitude", "note": "To see the gift behind each thing.",
+        "question": "What is given to me today that I have not yet seen?",
+        "pratique": "Name one simple thing — a light, a face, a meal — and pause there.",
+        "rappel": "The gift precedes the asking." }
     },
     {
-      "id": "rida",
-      "ar": "رِضَا",
-      "tr": "riḍā",
-      "fr": { "nom": "acquiescement", "note": "Dire oui à ce qui est, en paix." },
-      "en": { "nom": "acceptance", "note": "To say yes to what is, in peace." }
+      "id": "rida", "ar": "رِضَا", "tr": "riḍā",
+      "fr": { "nom": "acquiescement", "note": "Dire oui à ce qui est, en paix.",
+        "question": "À quoi puis-je dire oui aujourd'hui — sans le subir ?",
+        "pratique": "Quand quelque chose ne vient pas comme prévu : « ainsi soit-il, pour l'instant ».",
+        "rappel": "Dire oui n'est pas se résigner." },
+      "en": { "nom": "acceptance", "note": "To say yes to what is, in peace.",
+        "question": "What can I say yes to today — without enduring it?",
+        "pratique": "When something does not come as planned: \"so be it, for now\".",
+        "rappel": "To say yes is not to give up." }
     },
     {
-      "id": "tawakkul",
-      "ar": "تَوَكُّل",
-      "tr": "tawakkul",
-      "fr": { "nom": "remise confiante", "note": "Déposer son poids quelque part de plus grand que soi." },
-      "en": { "nom": "trust", "note": "To lay your weight in something larger than yourself." }
+      "id": "tawakkul", "ar": "تَوَكُّل", "tr": "tawakkul",
+      "fr": { "nom": "remise confiante", "note": "Déposer son poids quelque part de plus grand que soi.",
+        "question": "Quel poids puis-je déposer aujourd'hui — au moins une heure ?",
+        "pratique": "Avant une chose qui inquiète : faire ce qui dépend de vous, puis lâcher la suite.",
+        "rappel": "Vous n'êtes pas chargé(e) de tout." },
+      "en": { "nom": "trust", "note": "To lay your weight in something larger than yourself.",
+        "question": "What weight can I set down today — for at least an hour?",
+        "pratique": "Before something that worries you: do what depends on you, then release the rest.",
+        "rappel": "You are not in charge of everything." }
     },
     {
-      "id": "khushu",
-      "ar": "خُشُوع",
-      "tr": "khushūʿ",
-      "fr": { "nom": "humilité du cœur", "note": "Le cœur qui s'incline avant le corps." },
-      "en": { "nom": "humility", "note": "The heart bowing before the body does." }
+      "id": "khushu", "ar": "خُشُوع", "tr": "khushūʿ",
+      "fr": { "nom": "humilité du cœur", "note": "Le cœur qui s'incline avant le corps.",
+        "question": "Où mon cœur pourrait-il s'incliner aujourd'hui, doucement ?",
+        "pratique": "Avant d'entrer dans une pièce ou une rencontre : une respiration lente.",
+        "rappel": "Le cœur s'incline d'abord — le reste suit." },
+      "en": { "nom": "humility", "note": "The heart bowing before the body does.",
+        "question": "Where could my heart bow today, gently?",
+        "pratique": "Before entering a room or a meeting: one slow breath.",
+        "rappel": "The heart bows first — the rest follows." }
     },
     {
-      "id": "ikhlas",
-      "ar": "إِخْلَاص",
-      "tr": "ikhlāṣ",
-      "fr": { "nom": "sincérité", "note": "Agir sans calcul, sans rien attendre en retour." },
-      "en": { "nom": "sincerity", "note": "To act without calculation, expecting nothing in return." }
+      "id": "ikhlas", "ar": "إِخْلَاص", "tr": "ikhlāṣ",
+      "fr": { "nom": "sincérité", "note": "Agir sans calcul, sans rien attendre en retour.",
+        "question": "Qu'est-ce que je peux faire aujourd'hui sans attendre qu'on le voie ?",
+        "pratique": "Un petit geste — un don, un mot, un service — que personne ne saura.",
+        "rappel": "Ce que personne ne voit a sa propre lumière." },
+      "en": { "nom": "sincerity", "note": "To act without calculation, expecting nothing in return.",
+        "question": "What can I do today without expecting it to be seen?",
+        "pratique": "One small act — a gift, a word, a service — that no one will know.",
+        "rappel": "What no one sees has its own light." }
     },
     {
-      "id": "sidq",
-      "ar": "صِدْق",
-      "tr": "ṣidq",
-      "fr": { "nom": "véracité", "note": "Être un, du dedans au dehors." },
-      "en": { "nom": "truthfulness", "note": "To be one, from within to without." }
+      "id": "sidq", "ar": "صِدْق", "tr": "ṣidq",
+      "fr": { "nom": "véracité", "note": "Être un, du dedans au dehors.",
+        "question": "Où mon dedans et mon dehors ne sont-ils pas tout à fait alignés ?",
+        "pratique": "Une fois aujourd'hui, dire ce que vous pensez vraiment — doucement, mais clairement.",
+        "rappel": "L'unité intérieure se gagne mot par mot." },
+      "en": { "nom": "truthfulness", "note": "To be one, from within to without.",
+        "question": "Where are my inside and outside not fully aligned?",
+        "pratique": "Once today, say what you really think — gently, but clearly.",
+        "rappel": "Inner unity is won word by word." }
     },
     {
-      "id": "hilm",
-      "ar": "حِلْم",
-      "tr": "ḥilm",
-      "fr": { "nom": "mansuétude", "note": "Le calme de celui qui pourrait s'emporter et choisit de ne pas le faire." },
-      "en": { "nom": "forbearance", "note": "The calm of one who could lash out and chooses not to." }
+      "id": "hilm", "ar": "حِلْم", "tr": "ḥilm",
+      "fr": { "nom": "mansuétude", "note": "Le calme de celui qui pourrait s'emporter et choisit de ne pas le faire.",
+        "question": "Où puis-je ne pas répondre du tac au tac aujourd'hui ?",
+        "pratique": "Quand on vous heurte : compter jusqu'à trois avant la réponse. Voir ce qui se passe.",
+        "rappel": "Le silence d'une seconde est parfois la plus forte parole." },
+      "en": { "nom": "forbearance", "note": "The calm of one who could lash out and chooses not to.",
+        "question": "Where can I not snap back today?",
+        "pratique": "When you are hurt: count to three before answering. See what happens.",
+        "rappel": "A second of silence is sometimes the strongest word." }
     },
     {
-      "id": "rifq",
-      "ar": "رِفْق",
-      "tr": "rifq",
-      "fr": { "nom": "délicatesse", "note": "Toucher les choses sans peser sur elles." },
-      "en": { "nom": "gentleness", "note": "To touch things without weighing on them." }
+      "id": "rifq", "ar": "رِفْق", "tr": "rifq",
+      "fr": { "nom": "délicatesse", "note": "Toucher les choses sans peser sur elles.",
+        "question": "Qu'est-ce que je peux toucher plus doucement aujourd'hui — une chose, une personne, moi-même ?",
+        "pratique": "Faire un geste habituel (poser un verre, ouvrir une porte) avec soin.",
+        "rappel": "La douceur n'est pas faiblesse — c'est précision." },
+      "en": { "nom": "gentleness", "note": "To touch things without weighing on them.",
+        "question": "What can I touch more softly today — a thing, a person, myself?",
+        "pratique": "Do one habitual gesture (placing a glass, opening a door) with care.",
+        "rappel": "Gentleness is not weakness — it is precision." }
     },
     {
-      "id": "hudur",
-      "ar": "حُضُور",
-      "tr": "ḥuḍūr",
-      "fr": { "nom": "présence", "note": "Être tout entier là où on est." },
-      "en": { "nom": "presence", "note": "To be wholly there, where you are." }
+      "id": "hudur", "ar": "حُضُور", "tr": "ḥuḍūr",
+      "fr": { "nom": "présence", "note": "Être tout entier là où on est.",
+        "question": "Où suis-je à moitié aujourd'hui — et pourrais-je m'y poser pleinement ?",
+        "pratique": "Une activité simple (manger, marcher, écouter) — sans rien d'autre en même temps.",
+        "rappel": "Être ici suffit." },
+      "en": { "nom": "presence", "note": "To be wholly there, where you are.",
+        "question": "Where am I only half-present today — and could I land there fully?",
+        "pratique": "One simple activity (eating, walking, listening) — with nothing else at the same time.",
+        "rappel": "Being here is enough." }
     },
     {
-      "id": "muraqaba",
-      "ar": "مُرَاقَبَة",
-      "tr": "murāqaba",
-      "fr": { "nom": "observation", "note": "Regarder ce qui passe en soi, sans intervenir." },
-      "en": { "nom": "watchfulness", "note": "To watch what passes in you, without intervening." }
+      "id": "muraqaba", "ar": "مُرَاقَبَة", "tr": "murāqaba",
+      "fr": { "nom": "observation", "note": "Regarder ce qui passe en soi, sans intervenir.",
+        "question": "Qu'est-ce qui s'agite en moi aujourd'hui — que je pourrais simplement regarder ?",
+        "pratique": "Trois fois aujourd'hui : s'arrêter et nommer ce qui est là, sans juger.",
+        "rappel": "Regarder, sans intervenir, est déjà un acte." },
+      "en": { "nom": "watchfulness", "note": "To watch what passes in you, without intervening.",
+        "question": "What stirs in me today — that I could simply watch?",
+        "pratique": "Three times today: pause and name what is there, without judging.",
+        "rappel": "To watch, without intervening, is already an act." }
     },
     {
-      "id": "dhikr",
-      "ar": "ذِكْر",
-      "tr": "dhikr",
-      "fr": { "nom": "rappel", "note": "Garder en mémoire ce qui est essentiel." },
-      "en": { "nom": "remembrance", "note": "To keep in mind what is essential." }
+      "id": "dhikr", "ar": "ذِكْر", "tr": "dhikr",
+      "fr": { "nom": "rappel", "note": "Garder en mémoire ce qui est essentiel.",
+        "question": "Qu'est-ce qui veut être rappelé en moi aujourd'hui ?",
+        "pratique": "Une parole, un nom, un verset — qu'on revient dire à voix basse trois fois.",
+        "rappel": "Ce qu'on se rappelle façonne ce qu'on devient." },
+      "en": { "nom": "remembrance", "note": "To keep in mind what is essential.",
+        "question": "What wants to be remembered in me today?",
+        "pratique": "A word, a name, a verse — return to it three times under your breath.",
+        "rappel": "What we remember shapes what we become." }
     },
     {
-      "id": "niyya",
-      "ar": "نِيَّة",
-      "tr": "niyya",
-      "fr": { "nom": "intention", "note": "Le geste vaut par ce qui l'anime au départ." },
-      "en": { "nom": "intention", "note": "The deed is worth what moves it at the start." }
+      "id": "niyya", "ar": "نِيَّة", "tr": "niyya",
+      "fr": { "nom": "intention", "note": "Le geste vaut par ce qui l'anime au départ.",
+        "question": "Avec quelle intention je commence cette journée ?",
+        "pratique": "Avant une tâche ordinaire — un repas, une réunion, un trajet — préciser pourquoi.",
+        "rappel": "Un acte juste mal intentionné s'épuise vite." },
+      "en": { "nom": "intention", "note": "The deed is worth what moves it at the start.",
+        "question": "With what intention do I begin this day?",
+        "pratique": "Before an ordinary task — a meal, a meeting, a trip — name why.",
+        "rappel": "A right deed wrongly intended runs out quickly." }
     },
     {
-      "id": "tawba",
-      "ar": "تَوْبَة",
-      "tr": "tawba",
-      "fr": { "nom": "retour", "note": "Revenir vers ce qui est cher, quand on s'en était éloigné." },
-      "en": { "nom": "turning back", "note": "To return to what is dear, after having strayed." }
+      "id": "tawba", "ar": "تَوْبَة", "tr": "tawba",
+      "fr": { "nom": "retour", "note": "Revenir vers ce qui est cher, quand on s'en était éloigné.",
+        "question": "Vers quoi puis-je revenir aujourd'hui — sans drame ?",
+        "pratique": "Une petite chose abandonnée : la reprendre, juste une fois.",
+        "rappel": "Revenir n'est pas recommencer à zéro." },
+      "en": { "nom": "turning back", "note": "To return to what is dear, after having strayed.",
+        "question": "What can I return to today — without making a scene of it?",
+        "pratique": "One small thing you let go: pick it up, just once.",
+        "rappel": "To return is not to start over from zero." }
     },
     {
-      "id": "zuhd",
-      "ar": "زُهْد",
-      "tr": "zuhd",
-      "fr": { "nom": "détachement", "note": "Tenir le monde sans qu'il nous tienne." },
-      "en": { "nom": "detachment", "note": "To hold the world without its holding you." }
+      "id": "zuhd", "ar": "زُهْد", "tr": "zuhd",
+      "fr": { "nom": "détachement", "note": "Tenir le monde sans qu'il nous tienne.",
+        "question": "Qu'est-ce qui me tient un peu trop aujourd'hui ?",
+        "pratique": "Une chose désirée : pouvoir attendre une journée avant de la prendre.",
+        "rappel": "Le détachement n'est pas le refus — c'est la liberté." },
+      "en": { "nom": "detachment", "note": "To hold the world without its holding you.",
+        "question": "What holds me a little too tightly today?",
+        "pratique": "Something you want: wait a day before taking it.",
+        "rappel": "Detachment is not refusal — it is freedom." }
     },
     {
-      "id": "faqr",
-      "ar": "فَقْر",
-      "tr": "faqr",
-      "fr": { "nom": "simplicité", "note": "Avoir le strict nécessaire au dedans — et trouver que c'est beaucoup." },
-      "en": { "nom": "simplicity", "note": "To have only what is needed within — and find that it is much." }
+      "id": "faqr", "ar": "فَقْر", "tr": "faqr",
+      "fr": { "nom": "simplicité", "note": "Avoir le strict nécessaire au dedans — et trouver que c'est beaucoup.",
+        "question": "De quoi puis-je me passer aujourd'hui, sans manquer ?",
+        "pratique": "Une habitude superflue : la laisser dormir aujourd'hui.",
+        "rappel": "Le peu suffit, quand il est juste." },
+      "en": { "nom": "simplicity", "note": "To have only what is needed within — and find that it is much.",
+        "question": "What can I do without today, without lacking?",
+        "pratique": "One superfluous habit: let it sleep today.",
+        "rappel": "Little is enough, when it is true." }
     },
     {
-      "id": "samt",
-      "ar": "صَمْت",
-      "tr": "ṣamt",
-      "fr": { "nom": "silence", "note": "Garder une parole pour mieux l'entendre." },
-      "en": { "nom": "silence", "note": "To keep a word back, to better hear it." }
+      "id": "samt", "ar": "صَمْت", "tr": "ṣamt",
+      "fr": { "nom": "silence", "note": "Garder une parole pour mieux l'entendre.",
+        "question": "Quelle parole puis-je garder aujourd'hui — pour mieux l'écouter ?",
+        "pratique": "Un moment de silence, même bref, avant de dormir.",
+        "rappel": "Le silence n'est pas l'absence — c'est l'écoute." },
+      "en": { "nom": "silence", "note": "To keep a word back, to better hear it.",
+        "question": "What word can I keep today — to hear it better?",
+        "pratique": "One moment of silence, even brief, before sleeping.",
+        "rappel": "Silence is not absence — it is listening." }
     },
     {
-      "id": "adab",
-      "ar": "أَدَب",
-      "tr": "adab",
-      "fr": { "nom": "belle manière", "note": "Faire chaque chose avec attention, comme un soin." },
-      "en": { "nom": "fine conduct", "note": "To do each thing with attention, as a care." }
+      "id": "adab", "ar": "أَدَب", "tr": "adab",
+      "fr": { "nom": "belle manière", "note": "Faire chaque chose avec attention, comme un soin.",
+        "question": "Quelle chose ordinaire puis-je faire avec soin aujourd'hui ?",
+        "pratique": "Ranger un objet, plier un tissu, écrire un mot — comme s'il comptait vraiment.",
+        "rappel": "La belle manière transforme le geste en présence." },
+      "en": { "nom": "fine conduct", "note": "To do each thing with attention, as a care.",
+        "question": "What ordinary thing can I do with care today?",
+        "pratique": "Tidy an object, fold a cloth, write a word — as if it truly mattered.",
+        "rappel": "Fine conduct turns the gesture into presence." }
     },
     {
-      "id": "fitra",
-      "ar": "فِطْرَة",
-      "tr": "fiṭra",
-      "fr": { "nom": "nature originelle", "note": "La pureté avec laquelle on est venu au monde, et qui veille encore." },
-      "en": { "nom": "original nature", "note": "The purity we came into the world with — that still keeps watch." }
+      "id": "fitra", "ar": "فِطْرَة", "tr": "fiṭra",
+      "fr": { "nom": "nature originelle", "note": "La pureté avec laquelle on est venu au monde, et qui veille encore.",
+        "question": "Qu'est-ce qui en moi est encore neuf, malgré tout ?",
+        "pratique": "Regarder une chose comme si c'était la première fois — un visage, le ciel, votre main.",
+        "rappel": "Vous êtes plus ancien que vos blessures." },
+      "en": { "nom": "original nature", "note": "The purity we came into the world with — that still keeps watch.",
+        "question": "What in me is still new, despite everything?",
+        "pratique": "Look at one thing as if for the first time — a face, the sky, your hand.",
+        "rappel": "You are older than your wounds." }
     },
     {
-      "id": "wajd",
-      "ar": "وَجْد",
-      "tr": "wajd",
-      "fr": { "nom": "élan", "note": "Quand quelque chose en soi déborde, sans qu'on l'ait cherché." },
-      "en": { "nom": "rapture", "note": "When something within overflows, without your having sought it." }
+      "id": "wajd", "ar": "وَجْد", "tr": "wajd",
+      "fr": { "nom": "élan", "note": "Quand quelque chose en soi déborde, sans qu'on l'ait cherché.",
+        "question": "Qu'est-ce qui m'a touché aujourd'hui — sans que je m'y attende ?",
+        "pratique": "Quand l'élan vient : ne pas l'expliquer trop vite. Le laisser être.",
+        "rappel": "Ce qui déborde en vous a sa propre intelligence." },
+      "en": { "nom": "rapture", "note": "When something within overflows, without your having sought it.",
+        "question": "What touched me today — without my expecting it?",
+        "pratique": "When the surge comes: do not explain it too quickly. Let it be.",
+        "rappel": "What overflows in you has its own intelligence." }
     },
     {
-      "id": "uns",
-      "ar": "أُنْس",
-      "tr": "uns",
-      "fr": { "nom": "intimité", "note": "Le confort d'être avec soi, sans rien à fuir." },
-      "en": { "nom": "intimacy", "note": "The comfort of being with yourself, with nothing to flee." }
+      "id": "uns", "ar": "أُنْس", "tr": "uns",
+      "fr": { "nom": "intimité", "note": "Le confort d'être avec soi, sans rien à fuir.",
+        "question": "Puis-je être seul(e) avec moi aujourd'hui, dix minutes, sans écran ?",
+        "pratique": "Un thé, une fenêtre, rien d'autre. Voir comment on s'y sent.",
+        "rappel": "Être avec soi est une compagnie." },
+      "en": { "nom": "intimacy", "note": "The comfort of being with yourself, with nothing to flee.",
+        "question": "Can I be alone with myself today, ten minutes, no screen?",
+        "pratique": "A tea, a window, nothing else. See how it feels.",
+        "rappel": "Being with yourself is a company." }
     },
     {
-      "id": "shawq",
-      "ar": "شَوْق",
-      "tr": "shawq",
-      "fr": { "nom": "désir ardent", "note": "Ce qui en nous tire vers ce qui manque." },
-      "en": { "nom": "longing", "note": "What in us pulls toward what is missing." }
+      "id": "shawq", "ar": "شَوْق", "tr": "shawq",
+      "fr": { "nom": "désir ardent", "note": "Ce qui en nous tire vers ce qui manque.",
+        "question": "Qu'est-ce qui me manque aujourd'hui, vraiment ?",
+        "pratique": "Au lieu de combler le manque tout de suite, le regarder dix secondes.",
+        "rappel": "Le manque est une boussole, pas une plaie." },
+      "en": { "nom": "longing", "note": "What in us pulls toward what is missing.",
+        "question": "What am I truly missing today?",
+        "pratique": "Instead of filling the lack at once, look at it for ten seconds.",
+        "rappel": "Lack is a compass, not a wound." }
     },
     {
-      "id": "huda",
-      "ar": "هُدًى",
-      "tr": "hudā",
-      "fr": { "nom": "guidance", "note": "Se laisser conduire par ce qui est plus juste que soi." },
-      "en": { "nom": "guidance", "note": "To let yourself be led by what is truer than yourself." }
+      "id": "huda", "ar": "هُدًى", "tr": "hudā",
+      "fr": { "nom": "guidance", "note": "Se laisser conduire par ce qui est plus juste que soi.",
+        "question": "Où ai-je voulu décider seul(e), alors qu'il fallait écouter ?",
+        "pratique": "Avant un choix : se taire trente secondes, et voir ce qui monte.",
+        "rappel": "On est guidé bien avant de demander." },
+      "en": { "nom": "guidance", "note": "To let yourself be led by what is truer than yourself.",
+        "question": "Where did I want to decide alone, when I should have listened?",
+        "pratique": "Before a choice: stay silent thirty seconds, and see what arises.",
+        "rappel": "You are guided long before you ask." }
     },
     {
-      "id": "sakina",
-      "ar": "سَكِينَة",
-      "tr": "sakīna",
-      "fr": { "nom": "quiétude", "note": "La paix qui descend et se pose, sans bruit." },
-      "en": { "nom": "stillness", "note": "The peace that descends and settles, without sound." }
+      "id": "sakina", "ar": "سَكِينَة", "tr": "sakīna",
+      "fr": { "nom": "quiétude", "note": "La paix qui descend et se pose, sans bruit.",
+        "question": "Où la paix peut-elle se poser en moi aujourd'hui, même une minute ?",
+        "pratique": "Une minute, assis(e), sans rien faire. Sentir le poids du corps sur le sol.",
+        "rappel": "La quiétude ne se cherche pas — elle s'accueille." },
+      "en": { "nom": "stillness", "note": "The peace that descends and settles, without sound.",
+        "question": "Where can peace settle in me today, even for a minute?",
+        "pratique": "One minute, seated, doing nothing. Feel the weight of the body on the ground.",
+        "rappel": "Stillness is not sought — it is welcomed." }
     }
   ]
 }

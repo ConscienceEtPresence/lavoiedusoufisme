@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="../../../../assets/css/layout.css" />
   <link rel="stylesheet" href="../../../../assets/css/components.css" />
   <link rel="stylesheet" href="../../../../assets/css/bilingue.css" />
-  <link rel="stylesheet" href="../../../../assets/css/carnet.css?v=2" />
+  <link rel="stylesheet" href="../../../../assets/css/carnet.css?v=3" />
   <link rel="canonical" href="https://lavoiedudedans.fr/en/pages/carnet/miroir/" />
 </head>
 <body class="page-enter carnet">
@@ -59,6 +59,31 @@
       <p class="small" style="margin-top:1rem;"><a href="../">← The journal</a> · <a href="../../../index.html">Home</a></p>
     </div>
   </footer>
+
+  <nav class="carnet-bottom-nav" aria-label="Carnet navigation">
+    <a href="../" class="carnet-bottom-nav__item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="../aujourdhui/" class="carnet-bottom-nav__item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 4 L8 15.5"/><path d="M8 15.5 L6 19 L9.5 17 Z" fill="currentColor" stroke="none"/><path d="M19.5 4 L17.5 6"/></svg>
+      <span>Today</span>
+    </a>
+    <a href="../miroir/" class="carnet-bottom-nav__item is-active">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="7" ry="9"/><path d="M5 12c5 0 8 2 14 0"/></svg>
+      <span>Mirror</span>
+    </a>
+    <a href="#" class="carnet-bottom-nav__item" id="sortir-link-bottom">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h4v16h-4"/><path d="M11 8l-4 4 4 4"/><path d="M7 12h10"/></svg>
+      <span>Sign out</span>
+    </a>
+  </nav>
+  <script>
+    document.getElementById('sortir-link-bottom')?.addEventListener('click', e => {
+      e.preventDefault();
+      document.getElementById('sortir-link')?.click();
+    });
+  </script>
 
   <script type="module" src="../../../../assets/js/carnet/carnet-miroir.js?v=1"></script>
 </body>

@@ -396,13 +396,14 @@ function whisperForTime() {
 
 async function load() {
   await ensureValidSession(session);
-  const [pratiquesJson, motsJson, axesJson, ctxJson, appJson, encJson, jourSnap, hierSnap] = await Promise.all([
+  const [pratiquesJson, motsJson, axesJson, ctxJson, appJson, encJson, mvtJson, jourSnap, hierSnap] = await Promise.all([
     fetch('/data/carnet/pratiques.json').then(r => r.json()),
     fetch('/data/carnet/mots-graines.json').then(r => r.json()),
     fetch('/data/carnet/axes-spirituels.json').then(r => r.json()),
     fetch('/data/carnet/contextes-spirituels.json').then(r => r.json()),
     fetch('/data/carnet/apprentissages-profonds.json').then(r => r.json()),
     fetch('/data/carnet/encouragements.json').then(r => r.json()),
+    fetch('/data/carnet/mouvements-nafs.json').then(r => r.json()),
     getDoc(doc(db, 'carnets', codeId, 'jours', date)).catch(() => null),
     getDoc(doc(db, 'carnets', codeId, 'jours', dateHier)).catch(() => null)
   ]);
@@ -411,7 +412,7 @@ async function load() {
   const hierData = hierSnap?.exists() ? hierSnap.data() : null;
   render({
     pratiques: pratiquesJson, motCompagnon, jourData, hierData,
-    axesLib: axesJson, ctxLib: ctxJson, appLib: appJson, encLib: encJson
+    axesLib: axesJson, ctxLib: ctxJson, appLib: appJson, encLib: encJson, mvtLib: mvtJson
   });
 }
 
@@ -428,7 +429,7 @@ function esc(s) {
 
 function ornament() { return '<div class="jour-ornament">✦</div>'; }
 
-function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, appLib, encLib }) {
+function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, appLib, encLib, mvtLib }) {
   // Schéma v2 — la page Aujourd'hui n'a plus de "mode" comme structure principale
   // (Refonte structurelle spirituelle — rapport du 7 juin 2026)
   // Les deux blocs centraux : "Je pose ma journée" + "Ce soir, je relis ma journée"
@@ -449,7 +450,7 @@ function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, 
     </header>
   `;
 
-  const contentBlock = renderJournee(jourData, hierData, { axesLib, ctxLib, appLib, encLib });
+  const contentBlock = renderJournee(jourData, hierData, { axesLib, ctxLib, appLib, encLib, mvtLib });
 
   // Reprise du vœu d'hier — seulement si un vow existe dans le jour précédent
   const repriseBlock = renderRepriseVow(hierData, jourData);
@@ -470,7 +471,7 @@ function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, 
     ${renderSuggestion()}
   `;
 
-  bindJournee({ axesLib, ctxLib, appLib, encLib });
+  bindJournee({ axesLib, ctxLib, appLib, encLib, mvtLib });
   bindReprise();
   bindSuggestion();
 
@@ -612,11 +613,24 @@ function renderPoseJournee(jourData, hierData, libs) {
     libs.axesLib.axes, libs.axesLib.familles, 'pose-axe', 'checkbox', matin.axes || []);
 
   const curApp = new Set(matin.apprentissages || []);
+  // Cartes dépliables (rapport REFONTE étape 3 : pour chaque choix, afficher
+  // illusion + réaction + sens + adab — pas en tooltip, en vrai contenu déployable)
   const chipsApprentissages = libs.appLib.apprentissages.map(a => `
-    <label class="jour-chip ${curApp.has(a.id)?'is-active':''}" title="${esc(a.sens)}">
-      <input type="checkbox" name="pose-apprentissage" value="${esc(a.id)}" ${curApp.has(a.id)?'checked':''}/>
-      <span>${esc(a.label)}</span>
-    </label>`).join('');
+    <details class="app-carte ${curApp.has(a.id)?'is-active':''}">
+      <summary class="app-carte__head">
+        <label class="app-carte__check">
+          <input type="checkbox" name="pose-apprentissage" value="${esc(a.id)}" ${curApp.has(a.id)?'checked':''}/>
+          <span>${esc(a.label)}</span>
+        </label>
+        <span class="app-carte__expand">en savoir plus</span>
+      </summary>
+      <div class="app-carte__body">
+        <p class="app-carte__sens">${esc(a.sens)}</p>
+        ${a.illusion ? `<p class="app-carte__field"><span class="app-carte__field-label">Illusion possible</span>${esc(a.illusion)}</p>` : ''}
+        ${a.reaction ? `<p class="app-carte__field"><span class="app-carte__field-label">Réaction automatique</span>${esc(a.reaction)}</p>` : ''}
+        ${a.geste ? `<p class="app-carte__field"><span class="app-carte__field-label">Geste</span>${esc(a.geste)}</p>` : ''}
+      </div>
+    </details>`).join('');
 
   const curAdab = matin.adab || '';
   const chipsAdabs = ADABS_FR.map(a => `
@@ -632,6 +646,11 @@ function renderPoseJournee(jourData, hierData, libs) {
     <section class="jour-section" id="section-pose">
       <h2 class="jour-section__titre">Je pose ma journée</h2>
       <p class="jour-section__sub"><em>Une orientation pour marcher aujourd'hui avec plus de vérité.</em></p>
+
+      <details class="jour-peu-force">
+        <summary class="jour-peu-force__summary">Aujourd'hui, je viens avec peu de force.</summary>
+        <p class="jour-peu-force__body"><em>Très bien. Cochez seulement ce qui vous parle, ou rien du tout. Le carnet vous accueille comme vous êtes. Vous pouvez même fermer cette page maintenant — c'est aussi une forme de présence.</em></p>
+      </details>
 
       ${hintMatin}
 
@@ -743,6 +762,15 @@ function renderReluJournee(jourData, hierData, libs) {
       <span>${esc(label)}</span>
     </label>`).join('');
 
+  // Sens spirituel par mouvement coché (rapport REFONTE étape 6)
+  const sensMvt = (mvts) => mvts
+    .map(id => (libs.mvtLib?.mouvements || []).find(m => m.id === id))
+    .filter(Boolean)
+    .filter(m => m.sens_soir)
+    .map(m => `<p class="relu-sens__phrase"><span class="relu-sens__mvt">${esc(m.label)} —</span> ${esc(m.sens_soir)}</p>`)
+    .join('');
+  const sensInitial = curMvt.size ? sensMvt([...curMvt]) : '';
+
   // Étape 4 : Ce qui a poussé aujourd'hui
   const curPousse = new Set(soir.ceQuiAPousse || []);
   const chipsPousse = libs.encLib.encouragements.map(e => `
@@ -799,6 +827,7 @@ function renderReluJournee(jourData, hierData, libs) {
         <p class="jour-etape__num">·</p>
         <p class="jour-etape__titre">Ce qui a été difficile aujourd'hui</p>
         <div class="jour-chips">${chipsMvt}</div>
+        <div id="relu-sens" class="relu-sens">${sensInitial}</div>
       </div>
 
       <div class="jour-etape jour-etape--soft">
@@ -846,7 +875,28 @@ function bindJournee(libs) {
       } else {
         label.classList.toggle('is-active', inp.checked);
       }
+      // Mouvements : afficher les sens spirituels au fil des cases cochées
+      if (inp.name === 'relu-mouvement') {
+        const checked = Array.from(document.querySelectorAll('input[name="relu-mouvement"]:checked')).map(i => i.value);
+        const sensEl = document.getElementById('relu-sens');
+        if (sensEl) {
+          sensEl.innerHTML = checked
+            .map(id => (libs.mvtLib?.mouvements || []).find(m => m.id === id))
+            .filter(m => m && m.sens_soir)
+            .map(m => `<p class="relu-sens__phrase"><span class="relu-sens__mvt">${esc(m.label)} —</span> ${esc(m.sens_soir)}</p>`)
+            .join('');
+        }
+      }
     });
+  });
+  // Cartes apprentissages : activer la coche depuis le summary clic
+  document.querySelectorAll('#journee-content .app-carte__check input').forEach(inp => {
+    inp.addEventListener('change', () => {
+      inp.closest('.app-carte')?.classList.toggle('is-active', inp.checked);
+    });
+    // Empêcher l'ouverture du details au clic direct sur la case ou le label
+    const label = inp.closest('.app-carte__check');
+    label?.addEventListener('click', (e) => { e.stopPropagation(); });
   });
   // Toggle visuel des statuts (bilan des axes)
   document.querySelectorAll('#journee-content .jour-statut input').forEach(inp => {

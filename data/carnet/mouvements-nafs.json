@@ -14,7 +14,8 @@
       "adab": "Baisser la voix avant de chercher à avoir raison.",
       "noms": ["halim", "sabur", "salam", "tawwab"],
       "reparations": ["reparler-doucement", "demander-pardon", "reprendre-une-phrase"],
-      "jour_lourd": "Aujourd'hui, ne pas justifier la colère suffit déjà."
+      "jour_lourd": "Aujourd'hui, ne pas justifier la colère suffit déjà.",
+      "sens_soir": "La colère montre souvent quelque chose qui se sent menacé, pas seulement quelque chose qui a raison."
     },
     {
       "id": "jugement",
@@ -28,7 +29,8 @@
       "adab": "Revenir au fait concret avant l'interprétation.",
       "noms": ["basir", "alim", "latif", "afu"],
       "reparations": ["benir-interieurement", "reconnaitre-qualite", "cesser-scenario"],
-      "jour_lourd": "Aujourd'hui, ne pas nourrir la phrase intérieure suffit."
+      "jour_lourd": "Aujourd'hui, ne pas nourrir la phrase intérieure suffit.",
+      "sens_soir": "Le jugement réduit l'autre à une image. Le retour commence quand je distingue le fait de l'interprétation."
     },
     {
       "id": "ghiba",
@@ -42,7 +44,8 @@
       "adab": "Protéger l'absent comme on voudrait être protégé.",
       "noms": ["raqib", "hafiz", "afu", "salam"],
       "reparations": ["choisir-silence", "corriger-parole-injuste", "benir-interieurement"],
-      "jour_lourd": "Aujourd'hui, garder le silence sur un seul absent suffit."
+      "jour_lourd": "Aujourd'hui, garder le silence sur un seul absent suffit.",
+      "sens_soir": "Protéger l'absent, c'est garder une amāna de la parole — un dépôt confié à mon silence."
     },
     {
       "id": "controle",
@@ -56,7 +59,8 @@
       "adab": "Faire sa part, puis déposer ce qui dépasse.",
       "noms": ["wakil", "muʾmin", "hafiz", "qayyum", "fattah"],
       "reparations": ["demander-aide", "differer-reponse", "limite-sans-durete"],
-      "jour_lourd": "Aujourd'hui, déposer une seule chose suffit."
+      "jour_lourd": "Aujourd'hui, déposer une seule chose suffit.",
+      "sens_soir": "Vouloir tout porter, c'est confondre responsabilité et emprise. Le tawakkul commence où ma part s'arrête."
     },
     {
       "id": "orgueil",
@@ -70,7 +74,8 @@
       "adab": "Recevoir une remarque sans répondre immédiatement.",
       "noms": ["haqq", "kabir", "khafid", "karim", "ghani"],
       "reparations": ["reconnaitre-erreur", "remercier", "laisser-l-autre-exister"],
-      "jour_lourd": "Aujourd'hui, ne pas avoir le dernier mot une fois suffit."
+      "jour_lourd": "Aujourd'hui, ne pas avoir le dernier mot une fois suffit.",
+      "sens_soir": "L'orgueil défend l'image, pas la vérité. Recevoir une correction sans se défendre est déjà une humilité."
     },
     {
       "id": "honte",
@@ -84,7 +89,8 @@
       "adab": "Nommer un retour minuscule, même invisible aux autres.",
       "noms": ["tawwab", "ghaffar", "ghafur", "afu", "rahim"],
       "reparations": ["demander-pardon", "ecrire-sans-envoyer", "reprendre-plus-petit"],
-      "jour_lourd": "Aujourd'hui, revenir une seule fois suffit. C'est déjà le chemin."
+      "jour_lourd": "Aujourd'hui, revenir une seule fois suffit. C'est déjà le chemin.",
+      "sens_soir": "La honte enferme dans l'image d'une faute. La tawba ouvre une porte que la condamnation refuse."
     },
     {
       "id": "fatigue",
@@ -98,7 +104,8 @@
       "adab": "Ne pas prendre de décision importante depuis l'épuisement.",
       "noms": ["latif", "rauf", "muqit", "qayyum", "hafiz"],
       "reparations": ["reposer", "demander-aide", "differer-reponse"],
-      "jour_lourd": "Aujourd'hui, reconnaître la fatigue comme une vérité suffit."
+      "jour_lourd": "Aujourd'hui, reconnaître la fatigue comme une vérité suffit.",
+      "sens_soir": "Respecter la fatigue est une humilité : je ne suis pas le maître de toutes mes forces."
     },
     {
       "id": "desir",
@@ -112,7 +119,8 @@
       "adab": "Attendre quelques minutes avant de satisfaire le réflexe.",
       "noms": ["ghani", "samad", "razzaq"],
       "reparations": ["choisir-silence", "differer-reponse", "remercier"],
-      "jour_lourd": "Aujourd'hui, attendre cinq minutes une fois suffit."
+      "jour_lourd": "Aujourd'hui, attendre cinq minutes une fois suffit.",
+      "sens_soir": "Sous l'impulsion, un vide cherche une nourriture rapide. La vraie faim, elle, demande autre chose."
     },
     {
       "id": "oubli",
@@ -126,7 +134,8 @@
       "adab": "Trois respirations dans la journée — un retour minuscule.",
       "noms": ["raqib", "hadi", "salam"],
       "reparations": ["geste-de-service", "tenir-promesse-minuscule"],
-      "jour_lourd": "Aujourd'hui, une seule respiration consciente suffit."
+      "jour_lourd": "Aujourd'hui, une seule respiration consciente suffit.",
+      "sens_soir": "L'oubli n'est pas une faute — c'est le voile habituel. Une seule présence retrouvée le déchire."
     },
     {
       "id": "fermeture",
@@ -140,7 +149,8 @@
       "adab": "Un geste affectueux, sans demande de retour.",
       "noms": ["wadud", "rahim", "rauf", "latif", "karim"],
       "reparations": ["reparler-doucement", "reconnaitre-qualite", "benir-interieurement"],
-      "jour_lourd": "Aujourd'hui, un seul mot doux à quelqu'un suffit."
+      "jour_lourd": "Aujourd'hui, un seul mot doux à quelqu'un suffit.",
+      "sens_soir": "Le cœur se ferme pour se protéger. Un seul geste tendre reçu suffit parfois à le rouvrir."
     }
   ],
   "familles": {

@@ -25,8 +25,49 @@ const EN = document.documentElement.lang === 'en';
 const LANG = EN ? 'en' : 'fr';
 const LOCALE = EN ? 'en-US' : 'fr-FR';
 
+// === Phase A : contextes, vigilances, adabs (carte d'orientation du jour) ===
+const CONTEXTES_FR = [
+  { id: 'travail',   label: 'travail' },
+  { id: 'famille',   label: 'famille' },
+  { id: 'enfant',    label: 'enfant' },
+  { id: 'couple',    label: 'couple' },
+  { id: 'solitude',  label: 'solitude' },
+  { id: 'fatigue',   label: 'fatigue' },
+  { id: 'decision',  label: 'décision' },
+  { id: 'conflit',   label: 'conflit' },
+  { id: 'soin',      label: 'soin de soi' },
+  { id: 'service',   label: 'service' }
+];
+const VIGILANCES_FR = [
+  { id: 'parole-vite',   label: 'parole trop vite' },
+  { id: 'jugement',      label: 'jugement intérieur' },
+  { id: 'controle',      label: 'besoin de contrôle' },
+  { id: 'fatigue',       label: 'fatigue qui parle' },
+  { id: 'etre-vu',       label: 'besoin d\'être vu' },
+  { id: 'dispersion',    label: 'dispersion' },
+  { id: 'avoir-raison',  label: 'besoin d\'avoir raison' }
+];
+const ADABS_FR = [
+  { id: 'respirer-avant',  label: 'une respiration avant la réponse' },
+  { id: 'pas-absent',      label: 'ne pas parler d\'un absent' },
+  { id: 'baisser-voix',    label: 'baisser la voix avant d\'expliquer' },
+  { id: 'finir-chose',     label: 'faire une chose avec soin, jusqu\'au bout' },
+  { id: 'ecouter',         label: 'écouter sans préparer ma réponse' },
+  { id: 'differer',        label: 'différer une réponse difficile' },
+  { id: 'tenir-parole',    label: 'tenir une petite parole donnée' }
+];
+
 const T_fr = {
   hello: 'Bonjour',
+  // Phase A — orientation du matin
+  matinContexte:   'Ma journée ressemble surtout à',
+  matinVigilance:  'Ce que je surveille doucement',
+  matinAdab:       'Un adab concret pour la journée',
+  matinPhraseTpl:  'Aujourd\'hui, dans ma journée de {contexte}, je cultive {intention}. Je surveille {vigilance}. Mon adab : {adab}.',
+  soirBilanComplet:'Bilan complet (12 pratiques)',
+  soirBilanReplier:'Replier le bilan',
+  soirCoeur:       'Le cœur du soir',
+  soirCoeurSub:    'Une seule scène à relire — le reste est en option',
   noSession: 'Sortir de votre carnet ? (vos données sont gardées)',
   // Comment je viens
   modeTitle: 'Comment je viens aujourd\'hui',
@@ -585,6 +626,25 @@ function renderPose(pratiques, jourData) {
   const groupes = ['parole', 'acte', 'coeur', 'lien'];
   const intentionActuelle = jourData.matin?.intentionId || '';
   const noteMatin = jourData.matin?.note || '';
+  const ctxActuel  = jourData.matin?.contexte  || '';
+  const vigActuel  = jourData.matin?.vigilance || '';
+  const adabActuel = jourData.matin?.adab      || '';
+
+  const chipsContexte  = CONTEXTES_FR.map(c => `
+    <label class="jour-chip ${ctxActuel===c.id?'is-active':''}">
+      <input type="radio" name="matin-contexte" value="${esc(c.id)}" ${ctxActuel===c.id?'checked':''}/>
+      <span>${esc(c.label)}</span>
+    </label>`).join('');
+  const chipsVigilance = VIGILANCES_FR.map(v => `
+    <label class="jour-chip ${vigActuel===v.id?'is-active':''}">
+      <input type="radio" name="matin-vigilance" value="${esc(v.id)}" ${vigActuel===v.id?'checked':''}/>
+      <span>${esc(v.label)}</span>
+    </label>`).join('');
+  const chipsAdab      = ADABS_FR.map(a => `
+    <label class="jour-chip ${adabActuel===a.id?'is-active':''}">
+      <input type="radio" name="matin-adab" value="${esc(a.id)}" ${adabActuel===a.id?'checked':''}/>
+      <span>${esc(a.label)}</span>
+    </label>`).join('');
   const reponses = jourData.soir?.reponses || {};
   const noteSoir = jourData.soir?.note || '';
   const moment = jourData.soir?.moment || {};
@@ -635,6 +695,21 @@ function renderPose(pratiques, jourData) {
         </select>
       </label>
 
+      <div class="jour-field">
+        <span class="jour-field__label">${TXT.matinContexte}</span>
+        <div class="jour-chips">${chipsContexte}</div>
+      </div>
+
+      <div class="jour-field">
+        <span class="jour-field__label">${TXT.matinVigilance}</span>
+        <div class="jour-chips">${chipsVigilance}</div>
+      </div>
+
+      <div class="jour-field">
+        <span class="jour-field__label">${TXT.matinAdab}</span>
+        <div class="jour-chips">${chipsAdab}</div>
+      </div>
+
       <label class="jour-field">
         <span>${TXT.noteMorning}</span>
         <textarea id="note-matin" rows="3">${esc(noteMatin)}</textarea>
@@ -650,14 +725,23 @@ function renderPose(pratiques, jourData) {
       <h2 class="jour-section__titre">${TXT.evening}</h2>
       <p class="jour-section__sub"><em>${TXT.eveningSub}</em></p>
 
-      ${blocCercles}
+      <div class="jour-soir-coeur">
+        <h3 class="jour-soir-coeur__titre">${TXT.soirCoeur}</h3>
+        <p class="jour-section__sub"><em>${TXT.soirCoeurSub}</em></p>
+        ${renderMoment(moment)}
+      </div>
 
       <label class="jour-field">
         <span>${TXT.noteEvening}</span>
         <textarea id="note-soir" rows="4">${esc(noteSoir)}</textarea>
       </label>
 
-      ${renderMoment(moment)}
+      <details class="jour-bilan-complet">
+        <summary class="jour-bilan-complet__summary">${TXT.soirBilanComplet}</summary>
+        <div class="jour-bilan-complet__body">
+          ${blocCercles}
+        </div>
+      </details>
 
       <button type="button" class="carnet-btn carnet-btn--gold" id="save-soir">${TXT.closeDay}</button>
       <span class="jour-save-ok" id="save-soir-ok" hidden>${TXT.closeDaySaved}</span>
@@ -976,9 +1060,17 @@ function bindMatin() {
     try {
       const intentionId = document.getElementById('intention-select').value;
       const note        = document.getElementById('note-matin').value.trim();
+      const contexte    = document.querySelector('input[name="matin-contexte"]:checked')?.value || null;
+      const vigilance   = document.querySelector('input[name="matin-vigilance"]:checked')?.value || null;
+      const adab        = document.querySelector('input[name="matin-adab"]:checked')?.value || null;
       await setDoc(doc(db, 'carnets', codeId, 'jours', date), {
         langue: LANG, mode: 'pose',
-        matin: { intentionId: intentionId || null, note: note || null, noteLe: serverTimestamp() }
+        matin: {
+          intentionId: intentionId || null,
+          note: note || null,
+          contexte, vigilance, adab,
+          noteLe: serverTimestamp()
+        }
       }, { merge: true });
       ok.hidden = false;
       setTimeout(() => ok.hidden = true, 2500);

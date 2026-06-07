@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "description": "Bibliothèque de réparations concrètes pour le carnet du dedans. Chaque réparation est un geste précis, discret, accessible. Mention 'rien à envoyer' = la réparation se fait intérieurement, ne demande aucun acte extérieur. Voix soufie, non religieuse imposée.",
+  "reparations": [
+    {
+      "id": "reparler-doucement",
+      "label": "Reparler doucement",
+      "intro": "Reprendre la conversation, à voix plus basse, plus lente.",
+      "phrase": "« Je t'ai parlé trop fort tout à l'heure. Je reprends doucement. »",
+      "interieur": false,
+      "discretion": "visible"
+    },
+    {
+      "id": "demander-pardon",
+      "label": "Demander pardon",
+      "intro": "Un mot court, sans drame, qui reconnaît sans s'effondrer.",
+      "phrase": "« Je n'ai pas eu la bonne mesure tout à l'heure. Pardon. »",
+      "interieur": false,
+      "discretion": "visible"
+    },
+    {
+      "id": "ecrire-sans-envoyer",
+      "label": "Écrire sans envoyer",
+      "intro": "Un mot, une lettre, une phrase déposée — pour soi seul.",
+      "phrase": null,
+      "interieur": true,
+      "discretion": "rien-a-envoyer"
+    },
+    {
+      "id": "corriger-parole-injuste",
+      "label": "Corriger une parole injuste",
+      "intro": "Revenir vers la personne ou le groupe pour rétablir le vrai.",
+      "phrase": "« J'ai dit quelque chose tout à l'heure qui n'était pas juste. Je voulais te le dire. »",
+      "interieur": false,
+      "discretion": "visible"
+    },
+    {
+      "id": "cesser-scenario",
+      "label": "Cesser de nourrir le scénario",
+      "intro": "Ne pas rejouer la scène dans sa tête. Laisser le silence reprendre sa place.",
+      "phrase": null,
+      "interieur": true,
+      "discretion": "rien-a-envoyer"
+    },
+    {
+      "id": "geste-de-service",
+      "label": "Un geste de service",
+      "intro": "Une petite chose concrète faite pour quelqu'un — sans annoncer.",
+      "phrase": null,
+      "interieur": false,
+      "discretion": "silencieuse"
+    },
+    {
+      "id": "remercier",
+      "label": "Remercier",
+      "intro": "Reconnaître ce qui a été donné — un acte, une présence, un service.",
+      "phrase": "« Merci pour ce que tu fais — je ne le dis pas assez. »",
+      "interieur": false,
+      "discretion": "visible"
+    },
+    {
+      "id": "reconnaitre-qualite",
+      "label": "Reconnaître une qualité chez l'autre",
+      "intro": "Voir une qualité qu'on avait oubliée — pour soi, ou la nommer.",
+      "phrase": "« Tu fais ça avec beaucoup de justesse. »",
+      "interieur": false,
+      "discretion": "visible"
+    },
+    {
+      "id": "tenir-promesse-minuscule",
+      "label": "Tenir une promesse minuscule",
+      "intro": "Une chose simple qu'on avait dit, qu'on a oublié. La faire.",
+      "phrase": null,
+      "interieur": false,
+      "discretion": "silencieuse"
+    },
+    {
+      "id": "choisir-silence",
+      "label": "Choisir le silence",
+      "intro": "Ne pas répondre à la provocation. Ne pas justifier. Ne pas commenter.",
+      "phrase": null,
+      "interieur": true,
+      "discretion": "rien-a-envoyer"
+    },
+    {
+      "id": "differer-reponse",
+      "label": "Différer une réponse",
+      "intro": "« Je te réponds demain » — plutôt que parler depuis la chaleur.",
+      "phrase": "« Je préfère y réfléchir et te répondre demain. »",
+      "interieur": false,
+      "discretion": "visible"
+    },
+    {
+      "id": "limite-sans-durete",
+      "label": "Poser une limite sans dureté",
+      "intro": "Dire non clairement, sans agresser, sans s'excuser à l'excès.",
+      "phrase": "« Non, je ne peux pas. Pas pour aujourd'hui. »",
+      "interieur": false,
+      "discretion": "visible"
+    },
+    {
+      "id": "benir-interieurement",
+      "label": "Bénir intérieurement",
+      "intro": "Souhaiter le bien à quelqu'un — silencieusement, sans condition.",
+      "phrase": null,
+      "interieur": true,
+      "discretion": "rien-a-envoyer"
+    },
+    {
+      "id": "reconnaitre-erreur",
+      "label": "Reconnaître une erreur",
+      "intro": "Devant la personne ou devant soi — sans s'effondrer.",
+      "phrase": "« Tu avais raison. Je n'avais pas vu. »",
+      "interieur": false,
+      "discretion": "visible"
+    },
+    {
+      "id": "laisser-l-autre-exister",
+      "label": "Laisser l'autre exister",
+      "intro": "Cesser de vouloir convaincre. L'autre a le droit d'être différent.",
+      "phrase": null,
+      "interieur": true,
+      "discretion": "rien-a-envoyer"
+    },
+    {
+      "id": "demander-aide",
+      "label": "Demander de l'aide",
+      "intro": "Reconnaître qu'on ne peut pas tout. Demander à quelqu'un.",
+      "phrase": "« J'ai besoin de toi pour ça. Je n'y arrive pas seul·e. »",
+      "interieur": false,
+      "discretion": "visible"
+    },
+    {
+      "id": "reposer",
+      "label": "Se reposer vraiment",
+      "intro": "Dormir, marcher, ne rien faire. Pas téléphone, pas écran.",
+      "phrase": null,
+      "interieur": false,
+      "discretion": "silencieuse"
+    },
+    {
+      "id": "reprendre-une-phrase",
+      "label": "Reprendre une phrase",
+      "intro": "Refaire la même phrase, mais avec une autre intonation.",
+      "phrase": "« Je te redis ce que je t'ai dit tout à l'heure, mais autrement. »",
+      "interieur": false,
+      "discretion": "visible"
+    },
+    {
+      "id": "reprendre-plus-petit",
+      "label": "Reprendre plus petit",
+      "intro": "Le vœu était trop grand. On le réduit à un geste observable demain.",
+      "phrase": null,
+      "interieur": true,
+      "discretion": "rien-a-envoyer"
+    }
+  ],
+  "par_mouvement": {
+    "colere": ["reparler-doucement", "demander-pardon", "reprendre-une-phrase"],
+    "jugement": ["benir-interieurement", "reconnaitre-qualite", "cesser-scenario"],
+    "ghiba": ["choisir-silence", "corriger-parole-injuste", "benir-interieurement"],
+    "controle": ["demander-aide", "differer-reponse", "limite-sans-durete"],
+    "orgueil": ["reconnaitre-erreur", "remercier", "laisser-l-autre-exister"],
+    "honte": ["demander-pardon", "ecrire-sans-envoyer", "reprendre-plus-petit"],
+    "fatigue": ["reposer", "demander-aide", "differer-reponse"],
+    "desir": ["choisir-silence", "differer-reponse", "remercier"],
+    "oubli": ["geste-de-service", "tenir-promesse-minuscule"],
+    "fermeture": ["reparler-doucement", "reconnaitre-qualite", "benir-interieurement"]
+  }
+}

@@ -1861,3 +1861,91 @@ body.carnet { font-size: 17px; }
   box-shadow: 0 0 0 3px rgba(192,160,80,0.15);
   outline: none;
 }
+
+/* ============================================================
+   v8 — Phase A ADAB : matin (chips contexte/vigilance/adab),
+   soir allégé (Cœur du soir + Bilan complet repliable)
+   ============================================================ */
+.jour-chips {
+  display: flex; flex-wrap: wrap; gap: .5rem;
+  margin-top: .35rem;
+}
+.jour-chip {
+  display: inline-flex; align-items: center;
+  padding: .45rem .85rem;
+  border: 1px solid rgba(192,160,80,0.35);
+  border-radius: 999px;
+  background: rgba(255,250,230,0.55);
+  color: #3a2e15;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .15s, border-color .15s, transform .1s;
+}
+.jour-chip:hover { background: rgba(255,245,210,0.85); }
+.jour-chip input { position: absolute; opacity: 0; pointer-events: none; }
+.jour-chip.is-active {
+  background: linear-gradient(135deg, #d9b86a, #c0a050);
+  color: #2a1f08;
+  border-color: #b8954a;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(180,140,40,0.2);
+}
+.jour-chip:active { transform: scale(0.97); }
+
+.jour-field__label {
+  display: block;
+  font-weight: 600;
+  color: #5a4a20;
+  margin-bottom: .15rem;
+  font-size: 1rem;
+}
+
+/* Cœur du soir — bloc principal mis en avant */
+.jour-soir-coeur {
+  background: rgba(255,248,225,0.6);
+  border: 1px solid rgba(192,160,80,0.35);
+  border-left: 4px solid #c0a050;
+  border-radius: 10px;
+  padding: 1.2rem 1.3rem;
+  margin: 1rem 0 1.5rem;
+}
+.jour-soir-coeur__titre {
+  margin: 0 0 .25rem;
+  font-size: 1.2rem;
+  color: #5a4a20;
+  letter-spacing: .02em;
+}
+
+/* Bilan complet — replié par défaut */
+.jour-bilan-complet {
+  margin: 1.5rem 0 1rem;
+  border-top: 1px dashed rgba(192,160,80,0.4);
+  padding-top: 1rem;
+}
+.jour-bilan-complet__summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #6a5520;
+  font-size: 1rem;
+  padding: .6rem .9rem;
+  background: rgba(255,250,230,0.4);
+  border-radius: 8px;
+  list-style: none;
+  display: inline-block;
+}
+.jour-bilan-complet__summary::-webkit-details-marker { display: none; }
+.jour-bilan-complet__summary::before {
+  content: "▸ ";
+  color: #c0a050;
+  font-size: 0.9em;
+  transition: transform .15s;
+}
+.jour-bilan-complet[open] .jour-bilan-complet__summary::before {
+  content: "▾ ";
+}
+.jour-bilan-complet__summary:hover {
+  background: rgba(255,245,210,0.7);
+}
+.jour-bilan-complet__body {
+  margin-top: 1rem;
+}

@@ -64,6 +64,8 @@
   <script src="/assets/js/main.js?v=14"></script>
   <script type="module">
     import { loadHikam, injectSubnav, esc } from '/assets/js/iskandari/corpus.js';
+
+    (async () => {
     injectSubnav('munajat');
 
     const mount = document.getElementById('munajat-mount');
@@ -114,6 +116,8 @@
       mount.innerHTML = '<p style="text-align:center; color:#c44; padding:3rem;">Désolé, les prières n\'ont pas pu être chargées.</p>';
       console.error(e);
     }
+    })();
+  
   </script>
   <script type="module" src="/assets/js/pulse.js?v=2"></script>
 </body>

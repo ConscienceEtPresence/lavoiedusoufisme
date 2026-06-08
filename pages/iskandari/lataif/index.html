@@ -111,6 +111,7 @@
   <script src="/assets/js/main.js?v=14"></script>
   <script type="module">
     import { loadCorpus, indexModules, modCardHTML } from '/assets/js/iskandari/corpus.js';
+    (async () => {
     try {
       const corpus = await loadCorpus();
       const mods = indexModules(corpus);
@@ -118,6 +119,7 @@
       document.getElementById('lataif-mods').innerHTML =
         focus.map(id => mods[id]).filter(Boolean).map(modCardHTML).join('');
     } catch (e) { console.error(e); }
+    })();
   </script>
   <script type="module" src="/assets/js/pulse.js?v=2"></script>
 

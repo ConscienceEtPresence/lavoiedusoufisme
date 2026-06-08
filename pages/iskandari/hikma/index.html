@@ -56,6 +56,8 @@
   <script src="/assets/js/main.js?v=14"></script>
   <script type="module">
     import { loadHikam, loadCorpus, injectSubnav, esc, CHAPTER_TITRES_COURTS } from '/assets/js/iskandari/corpus.js';
+
+    (async () => {
     injectSubnav('hikam');
 
     const mount = document.getElementById('hikma-mount');
@@ -141,6 +143,8 @@
       mount.innerHTML = '<p style="text-align:center; color:#c44; padding:3rem;">Désolé, la sagesse n\'a pas pu être chargée.</p>';
       console.error(err);
     }
+    })();
+  
   </script>
   <script type="module" src="/assets/js/pulse.js?v=2"></script>
 </body>

@@ -75,7 +75,7 @@
 
   <script src="/assets/js/main.js?v=14"></script>
   <script type="module">
-    import { loadCorpus, esc, FAMILLES_FR, FAMILLES_ORDER, modCardHTML } from '/assets/js/iskandari/corpus.js';
+    import { loadCorpus, esc, FAMILLES_FR, FAMILLES_ORDER, modCardHTML } from '/assets/js/iskandari/corpus.js?v=2';
     const mount = document.getElementById('familles-mount');
     try {
       const corpus = await loadCorpus();
@@ -108,7 +108,7 @@
   <script type="module" src="/assets/js/pulse.js?v=2"></script>
 
   <script type="module">
-    import { injectSubnav } from '/assets/js/iskandari/corpus.js';
+    import { injectSubnav } from '/assets/js/iskandari/corpus.js?v=2';
     injectSubnav('mediter');
   </script>
 </body>

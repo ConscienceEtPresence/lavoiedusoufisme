@@ -179,6 +179,68 @@
         controls.appendChild(form);
       }
       reading.appendChild(controls);
+
+      /* Navigateur de passages (1-20, 21-40, …) pour les longues sourates */
+      if (d.versets_count > 30) {
+        const PASSAGE = 20;
+        const passages = document.createElement('nav');
+        passages.className = 'coran-passages';
+        passages.setAttribute('aria-label', EN ? 'Passages of this sura' : 'Passages de cette sourate');
+        const lbl = document.createElement('span');
+        lbl.className = 'coran-passages__label';
+        lbl.textContent = EN ? 'Passages :' : 'Passages :';
+        passages.appendChild(lbl);
+        for (let start = 1; start <= d.versets_count; start += PASSAGE) {
+          const end = Math.min(start + PASSAGE - 1, d.versets_count);
+          const a = document.createElement('a');
+          a.className = 'coran-passages__chip';
+          a.href = '#v-' + start;
+          a.textContent = start + '–' + end;
+          passages.appendChild(a);
+        }
+        reading.appendChild(passages);
+      }
+
+      /* Reprise au dernier verset visité (mémoire sur cet appareil) */
+      const SAVE_KEY = 'lvdd_coran_last_v_' + (d.n || (mount.getAttribute('data-sourate') || ''));
+      let lastSaved = null;
+      try { lastSaved = parseInt(localStorage.getItem(SAVE_KEY) || '0', 10) || null; } catch (e) {}
+      if (lastSaved && lastSaved > 1 && lastSaved <= d.versets_count) {
+        const banner = document.createElement('div');
+        banner.className = 'coran-resume';
+        banner.innerHTML = '<span class="coran-resume__text">' +
+          (EN ? 'Resume at verse ' : 'Reprendre au verset ') +
+          '<strong>' + lastSaved + '</strong> ?</span>' +
+          '<button type="button" class="coran-resume__yes">' + (EN ? 'Yes' : 'Oui') + '</button>' +
+          '<button type="button" class="coran-resume__no" aria-label="' + (EN ? 'Dismiss' : 'Fermer') + '">✕</button>';
+        banner.querySelector('.coran-resume__yes').addEventListener('click', function () {
+          banner.remove();
+          const el = document.getElementById('v-' + lastSaved);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        banner.querySelector('.coran-resume__no').addEventListener('click', function () { banner.remove(); });
+        reading.appendChild(banner);
+      }
+      /* Mémoriser le verset le plus visible en bas (scroll throttled) */
+      let scrollTO = null;
+      window.addEventListener('scroll', function () {
+        if (scrollTO) return;
+        scrollTO = setTimeout(function () {
+          scrollTO = null;
+          const versets = reading.querySelectorAll('[id^="v-"]');
+          let topVerse = null;
+          for (let i = 0; i < versets.length; i++) {
+            const rect = versets[i].getBoundingClientRect();
+            if (rect.top >= 0 && rect.top < window.innerHeight * 0.5) {
+              topVerse = parseInt(versets[i].id.slice(2), 10);
+              break;
+            }
+          }
+          if (topVerse && topVerse > 0) {
+            try { localStorage.setItem(SAVE_KEY, String(topVerse)); } catch (e) {}
+          }
+        }, 600);
+      }, { passive: true });
     }
 
     if (d.basmala) reading.appendChild(buildBasmala(d.basmala));

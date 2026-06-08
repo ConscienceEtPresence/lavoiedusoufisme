@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/img/favicon-16.png" />
+  <link rel="shortcut icon" href="../../../../assets/img/favicon.ico" />
+  <link rel="manifest" href="../../../../manifest.webmanifest" />
+  <meta name="theme-color" content="#0F1830" />
+  <title>Read the Qur'an — The Inner Path</title>
+  <meta name="description" content="Read the Qur'an verse by verse, like turning the pages of a book. Arabic in large type, transliteration and translation optional, tappable words." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../../../assets/css/base.css" />
+  <link rel="stylesheet" href="../../../../assets/css/coran-lecture.css?v=3" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-B7WRGPZMT3');</script>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="La voie du dedans" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:title" content="Read the Qur'an — The Inner Path" />
+  <meta property="og:description" content="A sufi reader: verse by verse, swiping as you turn the pages of a book." />
+  <meta property="og:url" content="https://lavoiedudedans.fr/en/pages/coran/lecture/" />
+  <link rel="canonical" href="https://lavoiedudedans.fr/en/pages/coran/lecture/" />
+</head>
+<body class="lecture-body">
+
+  <header class="lecture-head" id="lecture-head">
+    <a href="../" class="lecture-head__back" aria-label="Back to the Qur'an">←</a>
+    <div class="lecture-head__progress">
+      <span class="lecture-head__sura" id="lec-sura">Sura 1 · al-Fātiḥa</span>
+      <span class="lecture-head__verse" id="lec-verse">verse 1 / 7</span>
+    </div>
+    <button type="button" class="lecture-head__aa" id="lec-aa-open" aria-label="Display settings">Aa</button>
+    <button type="button" class="lecture-head__toc" id="lec-toc-open" aria-label="Table of contents">☰</button>
+  </header>
+
+  <main class="lecture-stage" id="lecture-stage">
+    <h1 class="visually-hidden">Immersive Qur'an reading</h1>
+    <div class="lecture-pages" id="lecture-pages"></div>
+    <div class="lecture-loading" id="lecture-loading"><div class="lecture-loading__dot"></div></div>
+  </main>
+
+  <footer class="lecture-foot">
+    <button type="button" class="lecture-foot__btn" id="lec-prev" aria-label="Previous">←</button>
+    <span class="lecture-foot__hint" id="lec-hint">swipe to turn the page</span>
+    <button type="button" class="lecture-foot__btn" id="lec-next" aria-label="Next">→</button>
+  </footer>
+
+  <!-- Sommaire -->
+  <aside class="lecture-toc" id="lecture-toc" hidden aria-hidden="true">
+    <div class="lecture-toc__panel">
+      <header class="lecture-toc__head">
+        <h2>Table of contents</h2>
+        <button type="button" class="lecture-toc__close" id="lec-toc-close" aria-label="Close">✕</button>
+      </header>
+      <input type="search" class="lecture-toc__search" id="lec-toc-search" placeholder="Search a sura…" />
+      <div class="lecture-toc__list" id="lec-toc-list"></div>
+    </div>
+  </aside>
+
+  <!-- Réglages Aa -->
+  <aside class="lecture-aa" id="lecture-aa" hidden aria-hidden="true">
+    <div class="lecture-aa__panel">
+      <header class="lecture-aa__head">
+        <h2>Display</h2>
+        <button type="button" class="lecture-aa__close" id="lec-aa-close" aria-label="Close">✕</button>
+      </header>
+
+      <div class="lecture-aa__group">
+        <div class="lecture-aa__label">Text size</div>
+        <div class="lecture-aa__row">
+          <span class="lecture-aa__sample lecture-aa__sample--small">Aa</span>
+          <input type="range" id="aa-size" min="0.8" max="1.5" step="0.05" value="1.0" />
+          <span class="lecture-aa__sample lecture-aa__sample--big">Aa</span>
+        </div>
+      </div>
+
+      <div class="lecture-aa__group">
+        <div class="lecture-aa__label">Show besides Arabic</div>
+        <label class="lecture-aa__check"><input type="checkbox" id="aa-tr" /> <span>Transliteration</span></label>
+        <label class="lecture-aa__check"><input type="checkbox" id="aa-trad" /> <span>English translation</span></label>
+        <label class="lecture-aa__check"><input type="checkbox" id="aa-com" /> <span>Commentary</span></label>
+      </div>
+
+      <div class="lecture-aa__group">
+        <label class="lecture-aa__check"><input type="checkbox" id="aa-mots" /> <span>Tappable words<br><em class="lecture-aa__hint">tap an Arabic word for its root and meaning</em></span></label>
+      </div>
+
+      <div class="lecture-aa__foot">
+        <em>Your settings are kept on this device.</em>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Popover : mot tappé -->
+  <div class="lecture-pop" id="lec-pop" hidden role="dialog" aria-label="Word definition"></div>
+
+  <!-- Reprise -->
+  <div class="lecture-resume" id="lecture-resume" hidden></div>
+
+  <script src="../../../../assets/js/coran-lecture.js?v=3"></script>
+<script type="module" src="/assets/js/pulse.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "description": "Versets courts compagnons du jour, par axe (parole, coeur, action, lien, corps, pratique). Rotation déterministe par jour de l'année. Liens vers la sourate dans le module Coran.",
+  "versets": [
+    {
+      "axe": "parole",
+      "s": 50, "v": 18,
+      "ar": "مَّا يَلْفِظُ مِن قَوْلٍ إِلَّا لَدَيْهِ رَقِيبٌ عَتِيدٌ",
+      "tr": "mā yalfiẓu min qawlin illā ladayhi raqībun ʿatīd",
+      "fr": "Pas une parole ne sort sans qu'un témoin vigilant ne soit auprès de lui.",
+      "echo": "Toute parole compte. Le soufi apprend à laisser passer ce qui n'a pas besoin d'être dit."
+    },
+    {
+      "axe": "parole",
+      "s": 49, "v": 12,
+      "ar": "وَلَا يَغْتَب بَّعْضُكُم بَعْضًا",
+      "tr": "wa-lā yaghtab baʿḍukum baʿḍan",
+      "fr": "Et que les uns ne médisent pas des autres.",
+      "echo": "Protéger l'absent est une amāna confiée au silence."
+    },
+    {
+      "axe": "coeur",
+      "s": 26, "v": 89,
+      "ar": "إِلَّا مَنْ أَتَى اللَّهَ بِقَلْبٍ سَلِيمٍ",
+      "tr": "illā man atā Llāha bi-qalbin salīm",
+      "fr": "… sauf celui qui vient vers Dieu avec un cœur pur.",
+      "echo": "Le qalb salīm — un cœur sain, intact, libéré du voile."
+    },
+    {
+      "axe": "coeur",
+      "s": 13, "v": 28,
+      "ar": "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
+      "tr": "alā bi-dhikri Llāhi taṭmaʾinnu l-qulūb",
+      "fr": "N'est-ce pas par le souvenir de Dieu que les cœurs s'apaisent ?",
+      "echo": "Le ṭumaʾnīna — la quiétude qui descend dans le cœur quand il se souvient."
+    },
+    {
+      "axe": "action",
+      "s": 16, "v": 90,
+      "ar": "إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ",
+      "tr": "inna Llāha yaʾmuru bi-l-ʿadli wa-l-iḥsān",
+      "fr": "Dieu ordonne la justice et l'iḥsān — faire le bien comme si on Le voyait.",
+      "echo": "Iḥsān : agir avec la beauté de Celui qui voit."
+    },
+    {
+      "axe": "action",
+      "s": 99, "v": 7,
+      "ar": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ",
+      "tr": "fa-man yaʿmal mithqāla dharratin khayran yarah",
+      "fr": "Celui qui a fait le poids d'un atome de bien le verra.",
+      "echo": "Même un atome compte. Rien de ce qui a poussé n'est perdu."
+    },
+    {
+      "axe": "lien",
+      "s": 49, "v": 13,
+      "ar": "إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ",
+      "tr": "inna akramakum ʿinda Llāhi atqākum",
+      "fr": "Le plus noble parmi vous, devant Dieu, est le plus pieux.",
+      "echo": "La noblesse n'est ni de lignée ni d'image — elle est de taqwā."
+    },
+    {
+      "axe": "lien",
+      "s": 41, "v": 34,
+      "ar": "ادْفَعْ بِالَّتِي هِيَ أَحْسَنُ",
+      "tr": "idfaʿ bi-llatī hiya aḥsan",
+      "fr": "Repousse [le mal] par ce qui est meilleur.",
+      "echo": "Répondre à la dureté par la douceur — un geste d'iḥsān dans le lien."
+    },
+    {
+      "axe": "corps",
+      "s": 7, "v": 31,
+      "ar": "وَكُلُوا وَاشْرَبُوا وَلَا تُسْرِفُوا",
+      "tr": "wa-kulū wa-shrabū wa-lā tusrifū",
+      "fr": "Mangez et buvez, mais ne soyez pas dans l'excès.",
+      "echo": "Respecter le corps, ne pas l'épuiser ni le gaver — une mesure soufie."
+    },
+    {
+      "axe": "corps",
+      "s": 25, "v": 47,
+      "ar": "وَهُوَ الَّذِي جَعَلَ لَكُمُ اللَّيْلَ لِبَاسًا وَالنَّوْمَ سُبَاتًا",
+      "tr": "wa-huwa lladhī jaʿala lakumu l-layla libāsan wa-n-nawma subātan",
+      "fr": "C'est Lui qui a fait pour vous de la nuit un vêtement et du sommeil un repos.",
+      "echo": "Le sommeil est un don. La fatigue reconnue est une humilité."
+    },
+    {
+      "axe": "pratique",
+      "s": 73, "v": 8,
+      "ar": "وَاذْكُرِ اسْمَ رَبِّكَ وَتَبَتَّلْ إِلَيْهِ تَبْتِيلًا",
+      "tr": "wa-dhkur isma rabbika wa-tabattal ilayhi tabtīlan",
+      "fr": "Invoque le nom de ton Seigneur et consacre-toi entièrement à Lui.",
+      "echo": "Le dhikr et la consécration — deux faces d'une même présence."
+    },
+    {
+      "axe": "pratique",
+      "s": 39, "v": 53,
+      "ar": "لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ",
+      "tr": "lā taqnaṭū min raḥmati Llāh",
+      "fr": "Ne désespérez pas de la miséricorde de Dieu.",
+      "echo": "La rahma déborde toujours ce qu'on a cru perdre."
+    },
+    {
+      "axe": "silence",
+      "s": 25, "v": 63,
+      "ar": "وَإِذَا خَاطَبَهُمُ الْجَاهِلُونَ قَالُوا سَلَامًا",
+      "tr": "wa-idhā khāṭabahumu l-jāhilūna qālū salāman",
+      "fr": "Et quand les ignorants leur adressent la parole, ils répondent : paix.",
+      "echo": "Salām — répondre à l'agitation par la paix, pas par le combat."
+    },
+    {
+      "axe": "reparation",
+      "s": 11, "v": 114,
+      "ar": "إِنَّ الْحَسَنَاتِ يُذْهِبْنَ السَّيِّئَاتِ",
+      "tr": "inna l-ḥasanāti yudhhibna s-sayyiʾāt",
+      "fr": "Les bonnes actions effacent les mauvaises.",
+      "echo": "Réparer, même petit, transforme ce qui a été."
+    }
+  ]
+}

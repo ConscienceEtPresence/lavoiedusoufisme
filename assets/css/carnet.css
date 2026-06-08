@@ -2497,3 +2497,67 @@ body.carnet { font-size: 17px; }
   white-space: nowrap;
   border: 0;
 }
+
+/* ============================================================
+   v14 — Verset compagnon du jour (Coran ↔ carnet, audit 8 juin)
+   ============================================================ */
+.verset-compagnon {
+  margin: 1rem 0 1.5rem;
+  padding: 1.1rem 1.3rem;
+  background: linear-gradient(135deg, rgba(255,250,235,0.85), rgba(248,238,210,0.65));
+  border: 1px solid rgba(192,160,80,0.3);
+  border-radius: 12px;
+  text-align: center;
+}
+.verset-compagnon__label {
+  display: inline-block;
+  font-size: .76rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #8a7028;
+  font-weight: 700;
+  background: rgba(192,160,80,0.18);
+  padding: .2rem .7rem;
+  border-radius: 999px;
+  margin-bottom: .65rem;
+}
+.verset-compagnon__ar {
+  margin: .35rem 0;
+  font-size: clamp(1.45rem, 5vw, 2.05rem);
+  color: #2a1f08;
+  line-height: 1.75;
+  font-family: 'Amiri', serif;
+}
+.verset-compagnon__tr {
+  margin: .15rem 0;
+  font-size: .96rem;
+  color: #6a5520;
+}
+.verset-compagnon__fr {
+  margin: .45rem 0 .25rem;
+  font-size: 1.05rem;
+  color: #3a2e15;
+  line-height: 1.55;
+  font-style: italic;
+}
+.verset-compagnon__echo {
+  margin: .35rem auto .5rem;
+  max-width: 28rem;
+  padding: .5rem .8rem;
+  background: rgba(255,255,255,0.5);
+  border-left: 3px solid #c0a050;
+  border-radius: 4px;
+  color: #5a4a20;
+  font-size: .95rem;
+  line-height: 1.5;
+  text-align: left;
+}
+.verset-compagnon__link {
+  display: inline-block;
+  margin-top: .4rem;
+  font-size: .88rem;
+  color: #8a7028;
+  text-decoration: none;
+  border-bottom: 1px dotted #8a7028;
+}
+.verset-compagnon__link:hover { color: #6a5520; }

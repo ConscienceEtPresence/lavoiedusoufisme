@@ -462,6 +462,7 @@ function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, 
     ${headerBlock}
     ${repriseBlock}
     <div id="boussole-mount">${boussoleInitiale}</div>
+    <div id="verset-compagnon-mount"></div>
     <div id="nom-du-jour"></div>
     ${motGraineMention}
     ${ornament()}
@@ -474,6 +475,7 @@ function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, 
   bindJournee({ axesLib, ctxLib, appLib, encLib, mvtLib });
   bindReprise();
   bindSuggestion();
+  loadVersetCompagnon();
 
   // === Nom du jour + Bilan hebdo soufi (async, ne bloque pas l'affichage) ===
   import('./bilan-hebdo-soufi.js').then(async (m) => {
@@ -981,6 +983,37 @@ function renderModeContent(mode, pratiques, jourData, hierData) {
 
 // Boussole du jour — synthèse en haut de page (Priorité 1 du rapport)
 // Assemble : axe du jour + Nom du jour (si dispo) + mouvement d'hier (si dispo)
+// Verset compagnon du jour — tiré selon l'axe du jour (rotation déterministe)
+async function loadVersetCompagnon() {
+  const mountEl = document.getElementById('verset-compagnon-mount');
+  if (!mountEl) return;
+  try {
+    const res = await fetch('/data/carnet/versets-compagnons.json');
+    const data = await res.json();
+    const all = data.versets || [];
+    const axe = axeDuJour();
+    const pourAxe = all.filter(v => v.axe === axe.id);
+    const pool = pourAxe.length ? pourAxe : all;
+    // Rotation déterministe : jour de l'année comme index
+    const d = new Date();
+    const start = new Date(d.getFullYear(), 0, 0);
+    const dayOfYear = Math.floor((d - start) / 86400000);
+    const v = pool[dayOfYear % pool.length];
+    if (!v) return;
+    mountEl.innerHTML = `
+      <section class="verset-compagnon fade-in-up">
+        <span class="verset-compagnon__label">Un verset pour aujourd'hui</span>
+        <p class="verset-compagnon__ar" lang="ar" dir="rtl">${esc(v.ar)}</p>
+        <p class="verset-compagnon__tr"><em>${esc(v.tr)}</em></p>
+        <p class="verset-compagnon__fr">« ${esc(v.fr)} »</p>
+        ${v.echo ? `<p class="verset-compagnon__echo">${esc(v.echo)}</p>` : ''}
+        <a class="verset-compagnon__link" href="/pages/coran/sourate-${v.s}.html#v-${v.v}" target="_blank" rel="noopener">
+          Sourate ${v.s} · verset ${v.v} →
+        </a>
+      </section>`;
+  } catch (e) { console.warn('verset compagnon failed', e); }
+}
+
 function renderBoussole(nom, hierData) {
   const axe = axeDuJour();
 

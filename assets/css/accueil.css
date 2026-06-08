@@ -1054,3 +1054,12 @@ body.nf-locked { overflow: hidden; }
 @media (max-width: 480px) {
   .quick-carnet { bottom: 1rem; right: 7rem; width: 40px; height: 40px; }
 }
+
+/* ============================================================
+   Audit 8 juin — désencombrer les boutons flottants sur mobile
+   Le carnet reste dans la nav principale ; on garde recherche + thème
+   seulement en bas à droite, plus de bouton carnet flottant.
+   ============================================================ */
+@media (max-width: 600px) {
+  .quick-carnet { display: none !important; }
+}

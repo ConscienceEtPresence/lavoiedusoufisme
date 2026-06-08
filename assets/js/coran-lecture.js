@@ -5,6 +5,24 @@
 (function () {
   'use strict';
 
+  // === Bilingue : détection langue + dictionnaire ===
+  var LANG = (document.documentElement.getAttribute('lang') || 'fr').toLowerCase().slice(0, 2);
+  var EN = (LANG === 'en');
+  var DATA_BASE = EN ? '/en/data/coran/' : '/data/coran/';
+  var T = EN ? {
+    sura: 'Sura', verse: 'verse', verses: 'verses',
+    resume: 'Resume', yes: 'Yes', no: 'No', close: 'Close',
+    listen: '▷ Listen',
+    showCom: '✦ Commentary', hideCom: '✦ Hide commentary',
+    swipeHint: 'swipe to turn the page'
+  } : {
+    sura: 'Sourate', verse: 'verset', verses: 'versets',
+    resume: 'Reprendre', yes: 'Oui', no: 'Non', close: 'Fermer',
+    listen: '▷ Écouter',
+    showCom: '✦ Commentaire', hideCom: '✦ Masquer le commentaire',
+    swipeHint: 'glissez pour tourner la page'
+  };
+
   var stage = document.getElementById('lecture-stage');
   var pages = document.getElementById('lecture-pages');
   if (!stage || !pages) return;
@@ -60,7 +78,7 @@
   // -------- chargement --------
   function loadSura(n) {
     if (suraCache[n]) return Promise.resolve(suraCache[n]);
-    return fetch('/data/coran/' + n + '.json').then(function (r) { return r.json(); }).then(function (d) {
+    return fetch(DATA_BASE + n + '.json').then(function (r) { return r.json(); }).then(function (d) {
       suraCache[n] = d; return d;
     });
   }
@@ -70,7 +88,7 @@
     for (var i = 1; i <= 114; i++) {
       (function (n) {
         if (suraCache[n]) { promises.push(Promise.resolve({ n: n, d: suraCache[n] })); return; }
-        promises.push(fetch('/data/coran/' + n + '.json').then(function (r) { return r.json(); }).then(function (d) { suraCache[n] = d; return { n: n, d: d }; }).catch(function () { return null; }));
+        promises.push(fetch(DATA_BASE + n + '.json').then(function (r) { return r.json(); }).then(function (d) { suraCache[n] = d; return { n: n, d: d }; }).catch(function () { return null; }));
       })(i);
     }
     return Promise.all(promises).then(function (arr) {
@@ -112,8 +130,8 @@
       var commentBlock = (hasComment && settings.showCommentaire) ? '<div class="lecture-page__comment">' + v.commentaire + '</div>' : '';
       var tools =
         '<div class="lecture-page__tools">' +
-          '<button type="button" class="lecture-page__tool" data-act="audio">▷ Écouter</button>' +
-          (hasComment ? '<button type="button" class="lecture-page__tool" data-act="comment">' + (settings.showCommentaire ? '✦ Masquer le commentaire' : '✦ Commentaire') + '</button>' : '') +
+          '<button type="button" class="lecture-page__tool" data-act="audio">' + T.listen + '</button>' +
+          (hasComment ? '<button type="button" class="lecture-page__tool" data-act="comment">' + (settings.showCommentaire ? T.hideCom : T.showCom) + '</button>' : '') +
         '</div>';
       var page = $(
         '<article class="lecture-page" data-sura="' + suraN + '" data-verset="' + versetN + '">' +
@@ -198,8 +216,8 @@
   function refreshHead() {
     var d = suraCache[state.sura];
     if (d) {
-      headSura.textContent = 'Sourate ' + state.sura + ' · ' + (d.nom_tr || '');
-      headVerse.textContent = 'verset ' + state.verset + ' / ' + (d.versets || []).length;
+      headSura.textContent = T.sura + ' ' + state.sura + ' · ' + (d.nom_tr || '');
+      headVerse.textContent = T.verse + ' ' + state.verset + ' / ' + (d.versets || []).length;
     }
   }
   function refreshButtons(nextOK, prevOK) {
@@ -372,7 +390,7 @@
               '<span class="lecture-toc-item__ar" lang="ar" dir="rtl">' + esc(s.nom_ar || '') + '</span>' +
               '<span class="lecture-toc-item__body">' +
                 '<span class="lecture-toc-item__tr">' + esc(s.nom_tr || '') + '</span>' +
-                '<span class="lecture-toc-item__count">' + s.count + ' versets · ' + esc(s.nom_fr || '') + '</span>' +
+                '<span class="lecture-toc-item__count">' + s.count + ' ' + T.verses + ' · ' + esc(s.nom_fr || '') + '</span>' +
               '</span>' +
             '</a>'
           );
@@ -455,11 +473,11 @@
     var saved = loadPos();
     if (saved && saved.sura && saved.verset && (saved.sura !== 1 || saved.verset !== 1)) {
       resumeBox.hidden = false;
-      var label = 'Sourate ' + saved.sura;
+      var label = T.sura + ' ' + saved.sura;
       resumeBox.innerHTML =
-        '<span class="lecture-resume__text">Reprendre <em>' + esc(label) + ' · verset ' + saved.verset + '</em> ?</span>' +
-        '<button type="button" class="lecture-resume__yes">Oui</button>' +
-        '<button type="button" class="lecture-resume__no" aria-label="Non">✕</button>';
+        '<span class="lecture-resume__text">Reprendre <em>' + esc(label) + ' · ' + T.verse + ' ' + saved.verset + '</em> ?</span>' +
+        '<button type="button" class="lecture-resume__yes">'+ T.yes +'</button>' +
+        '<button type="button" class="lecture-resume__no" aria-label="'+ T.no +'">✕</button>';
       resumeBox.querySelector('.lecture-resume__yes').addEventListener('click', function () {
         resumeBox.hidden = true;
         state = { sura: saved.sura, verset: saved.verset };
@@ -470,7 +488,7 @@
       });
       loadSura(saved.sura).then(function (d2) {
         var t = resumeBox.querySelector('em');
-        if (t) t.textContent = (d2.nom_tr || ('Sourate ' + saved.sura)) + ' · verset ' + saved.verset;
+        if (t) t.textContent = (d2.nom_tr || (T.sura + ' ' + saved.sura)) + ' · ' + T.verse + ' ' + saved.verset;
       });
     } else {
       buildAround();

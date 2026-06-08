@@ -638,3 +638,85 @@ button.cv__num.is-open {
 .cv__audio svg { width: 0.85rem; height: 0.85rem; }
 .cv__audio:hover { background: rgba(184,134,11,0.1); color: var(--gold); }
 .cv__audio.is-playing { background: var(--gold); color: #FFFDF8; border-color: var(--gold); }
+
+/* ============================================================
+   Passages navigator + Resume banner (audit 8 juin)
+   ============================================================ */
+.coran-passages {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: .35rem .45rem;
+  padding: .65rem .9rem;
+  margin: .6rem 0 1rem;
+  background: rgba(255,250,235,0.4);
+  border: 1px solid rgba(192,160,80,0.2);
+  border-radius: 10px;
+}
+.coran-passages__label {
+  font-size: .82rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #8a7028;
+  font-weight: 600;
+  margin-right: .35rem;
+}
+.coran-passages__chip {
+  display: inline-block;
+  padding: .25rem .65rem;
+  background: #fff;
+  border: 1px solid rgba(192,160,80,0.4);
+  border-radius: 999px;
+  color: #5a4a20;
+  font-size: .9rem;
+  text-decoration: none;
+  transition: background .15s, border-color .15s;
+}
+.coran-passages__chip:hover {
+  background: linear-gradient(135deg, #d9b86a, #c0a050);
+  color: #2a1f08;
+  border-color: #b8954a;
+}
+
+.coran-resume {
+  position: sticky;
+  bottom: 1rem;
+  z-index: 50;
+  margin: 1.2rem auto 0;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .7rem 1rem;
+  background: linear-gradient(135deg, #fff6dc, #f5e9c0);
+  border: 1px solid #c0a050;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px -10px rgba(120, 90, 30, 0.35);
+}
+.coran-resume__text {
+  flex: 1;
+  color: #3a2e15;
+  font-size: .98rem;
+}
+.coran-resume__text strong { color: #6a5520; }
+.coran-resume__yes {
+  padding: .35rem .9rem;
+  background: linear-gradient(135deg, #c0a050, #a8884a);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.coran-resume__yes:hover { filter: brightness(1.08); }
+.coran-resume__no {
+  background: transparent;
+  border: none;
+  color: #8a7028;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: .25rem .45rem;
+}
+.coran-resume__no:hover { color: #3a2e15; }
+
+@media (max-width: 480px) {
+  .coran-resume { max-width: calc(100% - 2rem); margin-left: 1rem; margin-right: 1rem; font-size: .92rem; }
+}

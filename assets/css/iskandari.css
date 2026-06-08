@@ -1,0 +1,541 @@
+/* ============================================================
+   Iskandarī — Méditer par thème, Sagesses du Ḥikam, al-Tanwīr,
+   Laṭāʾif al-Minan. Voix sobre, beige doré, arabe en signal.
+   ============================================================ */
+
+:root {
+  --isk-ink: #2a1f08;
+  --isk-ink-soft: #4a3a18;
+  --isk-gold: #c0a050;
+  --isk-gold-deep: #8a7028;
+  --isk-paper: #fbf6e8;
+  --isk-paper-warm: #f5ead0;
+  --isk-rule: rgba(192, 160, 80, 0.35);
+}
+
+.isk-hero {
+  text-align: center;
+  padding: 2.5rem 1.2rem 1rem;
+  border-bottom: 1px solid var(--isk-rule);
+  margin-bottom: 1.5rem;
+}
+.isk-hero__ar {
+  font-family: 'Amiri', serif;
+  font-size: clamp(2.4rem, 7vw, 3.6rem);
+  color: var(--isk-ink);
+  margin: 0;
+  line-height: 1.4;
+  direction: rtl;
+}
+.isk-hero__name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  font-weight: 500;
+  color: var(--isk-ink);
+  margin: .35rem 0 .15rem;
+  letter-spacing: .01em;
+}
+.isk-hero__dates {
+  color: var(--isk-gold-deep);
+  font-size: .92rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.isk-hero__rule {
+  width: 80px;
+  height: 1px;
+  background: var(--isk-gold);
+  margin: 1rem auto;
+}
+.isk-hero__tag {
+  max-width: 36rem;
+  margin: .5rem auto 0;
+  color: var(--isk-ink-soft);
+  font-style: italic;
+  line-height: 1.55;
+}
+
+/* Cartes "portes" sur l'accueil Iskandari */
+.isk-portes {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  max-width: 56rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.isk-porte {
+  display: block;
+  padding: 1.3rem 1.4rem;
+  background: linear-gradient(135deg, rgba(255, 250, 235, 0.85), rgba(248, 238, 210, 0.6));
+  border: 1px solid var(--isk-rule);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--isk-ink);
+  transition: transform .18s ease, border-color .18s, box-shadow .18s;
+}
+.isk-porte:hover {
+  transform: translateY(-2px);
+  border-color: var(--isk-gold);
+  box-shadow: 0 12px 28px -14px rgba(192, 160, 80, 0.45);
+}
+.isk-porte__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.5rem;
+  color: var(--isk-gold-deep);
+  margin: 0 0 .35rem;
+  direction: rtl;
+  text-align: right;
+}
+.isk-porte__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  margin: 0 0 .35rem;
+  color: var(--isk-ink);
+}
+.isk-porte__desc {
+  margin: 0;
+  color: var(--isk-ink-soft);
+  font-size: .96rem;
+  line-height: 1.5;
+}
+
+/* Section auteur + œuvres */
+.isk-oeuvres {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1rem;
+}
+.isk-oeuvre {
+  padding: 1rem 1.2rem;
+  background: rgba(255, 250, 235, 0.5);
+  border-left: 3px solid var(--isk-gold);
+  border-radius: 6px;
+}
+.isk-oeuvre__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.3rem;
+  color: var(--isk-ink);
+  margin: 0;
+  direction: rtl;
+  text-align: right;
+}
+.isk-oeuvre__fr {
+  margin: .25rem 0 .35rem;
+  color: var(--isk-gold-deep);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.isk-oeuvre__sub {
+  margin: 0;
+  color: var(--isk-ink-soft);
+  font-size: .92rem;
+  line-height: 1.5;
+}
+
+/* Liste de modules par famille */
+.isk-familles {
+  max-width: 56rem;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+.isk-famille {
+  margin: 2rem 0;
+}
+.isk-famille__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px dashed var(--isk-rule);
+  padding-bottom: .35rem;
+  margin-bottom: .8rem;
+}
+.isk-famille__name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: var(--isk-gold-deep);
+  margin: 0;
+  letter-spacing: .02em;
+}
+.isk-famille__count {
+  font-size: .82rem;
+  color: var(--isk-ink-soft);
+  font-style: italic;
+}
+.isk-modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: .8rem;
+}
+.isk-module-card {
+  display: block;
+  padding: .85rem 1rem;
+  background: #fff;
+  border: 1px solid var(--isk-rule);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--isk-ink);
+  transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+.isk-module-card:hover {
+  border-color: var(--isk-gold);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px -10px rgba(192, 160, 80, 0.4);
+}
+.isk-module-card__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.05rem;
+  color: var(--isk-gold-deep);
+  margin: 0;
+  direction: rtl;
+  text-align: right;
+}
+.isk-module-card__tr {
+  font-size: .82rem;
+  color: var(--isk-gold-deep);
+  font-style: italic;
+  letter-spacing: .04em;
+  margin: .1rem 0 .25rem;
+}
+.isk-module-card__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.08rem;
+  margin: 0;
+  color: var(--isk-ink);
+}
+
+/* Fiche d'un module */
+.isk-module {
+  max-width: 44rem;
+  margin: 1.5rem auto;
+  padding: 0 1.2rem 2rem;
+}
+.isk-module__back {
+  display: inline-block;
+  color: var(--isk-gold-deep);
+  text-decoration: none;
+  font-size: .92rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px dotted var(--isk-gold-deep);
+}
+.isk-module__head {
+  text-align: center;
+  border-bottom: 1px solid var(--isk-rule);
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.isk-module__ar {
+  font-family: 'Amiri', serif;
+  font-size: clamp(2.2rem, 6vw, 3rem);
+  color: var(--isk-ink);
+  margin: 0;
+  direction: rtl;
+  line-height: 1.5;
+}
+.isk-module__tr {
+  margin: .35rem 0 .25rem;
+  color: var(--isk-gold-deep);
+  font-style: italic;
+  letter-spacing: .06em;
+}
+.isk-module__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin: .35rem 0;
+  color: var(--isk-ink);
+}
+.isk-module__famille {
+  font-size: .78rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--isk-gold-deep);
+}
+.isk-section {
+  margin: 1.5rem 0;
+}
+.isk-section__label {
+  display: block;
+  font-size: .78rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--isk-gold-deep);
+  font-weight: 700;
+  margin-bottom: .35rem;
+}
+.isk-section__body {
+  color: var(--isk-ink);
+  font-size: 1.04rem;
+  line-height: 1.65;
+  margin: 0;
+}
+.isk-section--soft {
+  padding: .9rem 1.1rem;
+  background: rgba(255, 250, 235, 0.55);
+  border-radius: 8px;
+  border-left: 3px solid var(--isk-gold);
+}
+.isk-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.isk-list li {
+  margin: .35rem 0;
+  color: var(--isk-ink);
+  line-height: 1.55;
+}
+.isk-quick-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-top: .5rem;
+}
+.isk-chip {
+  display: inline-block;
+  padding: .35rem .8rem;
+  background: rgba(192, 160, 80, 0.15);
+  border: 1px solid var(--isk-rule);
+  border-radius: 999px;
+  font-size: .9rem;
+  color: var(--isk-ink-soft);
+}
+.isk-pitfall {
+  background: rgba(180, 90, 60, 0.06);
+  border-left: 3px solid #c08850;
+  padding: .75rem 1rem;
+  border-radius: 6px;
+  margin: .5rem 0;
+  color: var(--isk-ink);
+  font-size: .96rem;
+  line-height: 1.55;
+}
+.isk-journal {
+  background: linear-gradient(135deg, rgba(255, 250, 235, 0.85), rgba(248, 238, 210, 0.6));
+  border: 1px solid var(--isk-rule);
+  padding: 1.1rem 1.3rem;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+}
+.isk-journal__label {
+  display: block;
+  font-size: .78rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--isk-gold-deep);
+  font-weight: 700;
+  margin-bottom: .3rem;
+}
+.isk-journal__text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.18rem;
+  font-style: italic;
+  color: var(--isk-ink);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Hikam — index */
+.isk-hikam-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  align-items: center;
+  max-width: 50rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+.isk-hikam-toolbar select,
+.isk-hikam-toolbar input[type="search"] {
+  padding: .55rem .9rem;
+  border: 1px solid var(--isk-rule);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--isk-ink);
+  font-size: .96rem;
+  font-family: inherit;
+}
+.isk-hikam-toolbar input[type="search"] { flex: 1; min-width: 12rem; }
+.isk-hikam-chapter {
+  max-width: 50rem;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+.isk-hikam-chapter__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: var(--isk-gold-deep);
+  border-bottom: 1px dashed var(--isk-rule);
+  padding-bottom: .35rem;
+  margin: 1.5rem 0 .9rem;
+}
+.isk-hikam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: .5rem;
+}
+.isk-hikma-tile {
+  display: block;
+  padding: .6rem .5rem;
+  background: #fff;
+  border: 1px solid var(--isk-rule);
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--isk-ink);
+  transition: background .15s, border-color .15s;
+}
+.isk-hikma-tile:hover {
+  background: var(--isk-paper-warm);
+  border-color: var(--isk-gold);
+}
+.isk-hikma-tile__num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  color: var(--isk-gold-deep);
+  font-weight: 600;
+  display: block;
+}
+.isk-hikma-tile__tags {
+  font-size: .72rem;
+  color: var(--isk-ink-soft);
+  margin-top: .15rem;
+  letter-spacing: .04em;
+  font-style: italic;
+}
+
+/* Hikma — fiche */
+.isk-hikma {
+  max-width: 42rem;
+  margin: 1.5rem auto;
+  padding: 0 1.2rem 2rem;
+}
+.isk-hikma__head {
+  text-align: center;
+  padding: 1.2rem 0 1rem;
+  border-bottom: 1px solid var(--isk-rule);
+  margin-bottom: 1.5rem;
+}
+.isk-hikma__num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  color: var(--isk-gold-deep);
+  margin: 0;
+  letter-spacing: .04em;
+  font-weight: 500;
+}
+.isk-hikma__chapter {
+  font-size: .82rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--isk-ink-soft);
+  margin-top: .2rem;
+}
+.isk-hikma__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--isk-rule);
+  gap: .6rem;
+}
+.isk-hikma__nav a {
+  color: var(--isk-gold-deep);
+  text-decoration: none;
+  font-size: .92rem;
+  padding: .35rem .65rem;
+  border: 1px solid var(--isk-rule);
+  border-radius: 6px;
+  transition: background .15s;
+}
+.isk-hikma__nav a:hover { background: var(--isk-paper-warm); }
+.isk-text-status {
+  margin: 1rem 0;
+  padding: .65rem .9rem;
+  background: rgba(255, 248, 220, 0.4);
+  border-left: 2px dashed var(--isk-gold);
+  border-radius: 4px;
+  font-size: .9rem;
+  color: var(--isk-ink-soft);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Modules associés (pills) */
+.isk-mod-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: .55rem 0 0;
+}
+.isk-mod-pill {
+  display: inline-block;
+  padding: .25rem .7rem;
+  background: linear-gradient(135deg, #d9b86a, #c0a050);
+  color: #2a1f08;
+  border-radius: 999px;
+  font-size: .82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: filter .15s;
+}
+.isk-mod-pill:hover { filter: brightness(1.08); }
+
+/* Sagesse Iskandarī du jour — bloc à intégrer dans le carnet */
+.isk-jour-card {
+  background: linear-gradient(135deg, rgba(255, 250, 235, 0.85), rgba(248, 238, 210, 0.65));
+  border: 1px solid var(--isk-rule);
+  border-radius: 12px;
+  padding: 1.1rem 1.3rem;
+  margin: 1rem 0 1.5rem;
+}
+.isk-jour-card__label {
+  display: inline-block;
+  font-size: .76rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--isk-gold-deep);
+  font-weight: 700;
+  background: rgba(192, 160, 80, 0.18);
+  padding: .2rem .7rem;
+  border-radius: 999px;
+  margin-bottom: .55rem;
+}
+.isk-jour-card__ar {
+  font-family: 'Amiri', serif;
+  font-size: clamp(1.3rem, 4.5vw, 1.7rem);
+  color: var(--isk-ink);
+  margin: .25rem 0;
+  direction: rtl;
+  text-align: right;
+}
+.isk-jour-card__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: var(--isk-ink);
+  margin: .35rem 0 .15rem;
+}
+.isk-jour-card__teaching {
+  margin: .4rem 0;
+  color: var(--isk-ink);
+  font-size: 1rem;
+  line-height: 1.55;
+  font-style: italic;
+}
+.isk-jour-card__link {
+  display: inline-block;
+  margin-top: .4rem;
+  font-size: .88rem;
+  color: var(--isk-gold-deep);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--isk-gold-deep);
+}
+
+@media (max-width: 540px) {
+  .isk-hero { padding: 1.5rem 1rem .5rem; }
+  .isk-module, .isk-hikma { padding-left: 1rem; padding-right: 1rem; }
+  .isk-modules-grid, .isk-hikam-grid { gap: .55rem; }
+}

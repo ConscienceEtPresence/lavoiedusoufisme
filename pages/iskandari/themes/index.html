@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#0F1830" />
+  <title>Méditer par thème — Iskandarī</title>
+  <meta name="description" content="44 modules de méditation tirés du Kitāb al-Ḥikam, d'al-Tanwīr et de Laṭāʾif al-Minan. Chacun avec son enseignement, ses pratiques matin/journée/soir et ses pièges à éviter." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/layout.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=1" />
+</head>
+<body class="page-enter">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="/index.html" class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="16" cy="16" r="13" /><circle cx="16" cy="16" r="7" /><circle cx="16" cy="16" r="1.5" fill="currentColor" />
+        </svg>
+        <span>La voie du dedans</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/pages/iskandari/" class="active">Iskandarī</a></li>
+          <li><a href="/pages/iskandari/hikam/">Ḥikam</a></li>
+          <li><a href="/pages/iskandari/tanwir/">al-Tanwīr</a></li>
+          <li><a href="/pages/iskandari/lataif/">Laṭāʾif</a></li>
+          <li><a href="/pages/carnet/">Carnet</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="isk-hero">
+      <p class="isk-hero__ar" lang="ar" dir="rtl">التأمل بالموضوع</p>
+      <h1 class="isk-hero__name">Méditer par thème</h1>
+      <p class="isk-hero__dates">44 portes intérieures</p>
+      <div class="isk-hero__rule"></div>
+      <p class="isk-hero__tag">Chaque thème porte un enseignement, une lecture psychospirituelle, des pratiques pour le matin, la journée et le soir. Aucun n'est obligatoire — chacun s'ouvre selon ce qui vous habite aujourd'hui.</p>
+    </header>
+
+    <section class="container container--wide">
+      <p style="text-align:center;"><a href="/pages/iskandari/" class="isk-module__back">← Retour Iskandarī</a></p>
+      <div id="familles-mount" class="isk-familles">
+        <p style="text-align:center; color: var(--ink-soft); font-style: italic;">Chargement…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p class="small"><a href="/index.html">← Accueil</a></p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js?v=14"></script>
+  <script type="module">
+    import { loadCorpus, esc, FAMILLES_FR, FAMILLES_ORDER, modCardHTML } from '/assets/js/iskandari/corpus.js';
+    const mount = document.getElementById('familles-mount');
+    try {
+      const corpus = await loadCorpus();
+      // Group modules by famille
+      const byFam = {};
+      for (const m of corpus.thematic_modules) {
+        const f = m.famille || 'module_complementaire';
+        (byFam[f] = byFam[f] || []).push(m);
+      }
+      const orderedKeys = [...FAMILLES_ORDER.filter(k => byFam[k]),
+                          ...Object.keys(byFam).filter(k => !FAMILLES_ORDER.includes(k))];
+      mount.innerHTML = orderedKeys.map(famKey => {
+        const mods = byFam[famKey];
+        return `
+          <section class="isk-famille">
+            <header class="isk-famille__head">
+              <h2 class="isk-famille__name">${esc(FAMILLES_FR[famKey] || famKey)}</h2>
+              <span class="isk-famille__count">${mods.length} module${mods.length>1?'s':''}</span>
+            </header>
+            <div class="isk-modules-grid">
+              ${mods.map(modCardHTML).join('')}
+            </div>
+          </section>`;
+      }).join('');
+    } catch (e) {
+      mount.innerHTML = '<p style="text-align:center; color:#c44;">Désolé, le corpus n\'a pas pu être chargé.</p>';
+      console.error(e);
+    }
+  </script>
+  <script type="module" src="/assets/js/pulse.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#0F1830" />
+  <title>Thème — Iskandarī</title>
+  <meta name="description" content="Méditation par thème — enseignement, lecture psychospirituelle, pratiques matin/journée/soir, pièges à éviter." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/layout.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=1" />
+</head>
+<body class="page-enter">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="/index.html" class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="16" cy="16" r="13" /><circle cx="16" cy="16" r="7" /><circle cx="16" cy="16" r="1.5" fill="currentColor" />
+        </svg>
+        <span>La voie du dedans</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/pages/iskandari/">Iskandarī</a></li>
+          <li><a href="/pages/iskandari/themes/" class="active">Thèmes</a></li>
+          <li><a href="/pages/iskandari/hikam/">Ḥikam</a></li>
+          <li><a href="/pages/carnet/">Carnet</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="theme-mount" class="isk-module">
+      <p style="text-align:center; color: var(--ink-soft); font-style: italic;">Chargement…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p class="small"><a href="/pages/iskandari/themes/">← Tous les thèmes</a> · <a href="/index.html">Accueil</a></p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js?v=14"></script>
+  <script type="module">
+    import { loadCorpus, esc, FAMILLES_FR, indexModules, indexHikam } from '/assets/js/iskandari/corpus.js';
+
+    const mount = document.getElementById('theme-mount');
+    const id = new URLSearchParams(location.search).get('id') || '';
+
+    try {
+      const corpus = await loadCorpus();
+      const mods = indexModules(corpus);
+      const mod = mods[id];
+      if (!mod) {
+        mount.innerHTML = `
+          <p style="text-align:center;">Thème introuvable.</p>
+          <p style="text-align:center;"><a href="/pages/iskandari/themes/" class="isk-module__back">← Tous les thèmes</a></p>`;
+        document.title = 'Thème introuvable — Iskandarī';
+      } else {
+        document.title = `${mod.title_fr} — Iskandarī`;
+        const dailyMatin   = (mod.daily_practice?.matin   || []).map(p => `<li>${esc(p)}</li>`).join('');
+        const dailyJournee = (mod.daily_practice?.journee || []).map(p => `<li>${esc(p)}</li>`).join('');
+        const dailySoir    = (mod.daily_practice?.soir    || []).map(p => `<li>${esc(p)}</li>`).join('');
+        const quickChoices = (mod.quick_choices || []).map(c => `<span class="isk-chip">${esc(c)}</span>`).join('');
+        const pitfalls = (mod.pitfalls || []).map(p => `<div class="isk-pitfall">${esc(p)}</div>`).join('');
+
+        // Hikam liées
+        const hidx = indexHikam(corpus);
+        const linked = (mod.linked_hikam_ids_detected || []).slice(0, 24);
+        const linkedHTML = linked.length ? `
+          <div class="isk-section">
+            <span class="isk-section__label">Sagesses liées du Ḥikam</span>
+            <div class="isk-hikam-grid" style="margin-top:.6rem;">
+              ${linked.map(n => `<a class="isk-hikma-tile" href="/pages/iskandari/hikma/?id=${n}"><span class="isk-hikma-tile__num">${n}</span></a>`).join('')}
+            </div>
+          </div>` : '';
+
+        mount.innerHTML = `
+          <a href="/pages/iskandari/themes/" class="isk-module__back">← Tous les thèmes</a>
+          <header class="isk-module__head">
+            <p class="isk-module__ar" lang="ar" dir="rtl">${esc(mod.title_ar || '')}</p>
+            <p class="isk-module__tr">${esc(mod.transliteration || '')}</p>
+            <h1 class="isk-module__title">${esc(mod.title_fr || '')}</h1>
+            <p class="isk-module__famille">${esc(FAMILLES_FR[mod.famille] || mod.famille || '')}</p>
+          </header>
+
+          <section class="isk-section">
+            <span class="isk-section__label">Enseignement</span>
+            <p class="isk-section__body">${esc(mod.teaching || '')}</p>
+          </section>
+
+          ${mod.psychological_reading ? `
+          <section class="isk-section isk-section--soft">
+            <span class="isk-section__label">Lecture psychospirituelle</span>
+            <p class="isk-section__body">${esc(mod.psychological_reading)}</p>
+          </section>` : ''}
+
+          ${mod.spiritual_direction ? `
+          <section class="isk-section">
+            <span class="isk-section__label">Direction intérieure</span>
+            <p class="isk-section__body">${esc(mod.spiritual_direction)}</p>
+          </section>` : ''}
+
+          ${dailyMatin || dailyJournee || dailySoir ? `
+          <section class="isk-section">
+            <span class="isk-section__label">Pratique quotidienne</span>
+            ${dailyMatin ? `<p style="margin:.6rem 0 .2rem; font-weight:600; color:var(--isk-gold-deep,#8a7028);">Le matin</p><ul class="isk-list">${dailyMatin}</ul>` : ''}
+            ${dailyJournee ? `<p style="margin:.6rem 0 .2rem; font-weight:600; color:var(--isk-gold-deep,#8a7028);">Pendant la journée</p><ul class="isk-list">${dailyJournee}</ul>` : ''}
+            ${dailySoir ? `<p style="margin:.6rem 0 .2rem; font-weight:600; color:var(--isk-gold-deep,#8a7028);">Le soir</p><ul class="isk-list">${dailySoir}</ul>` : ''}
+          </section>` : ''}
+
+          ${quickChoices ? `
+          <section class="isk-section">
+            <span class="isk-section__label">Choix rapides pour le carnet</span>
+            <div class="isk-quick-choices">${quickChoices}</div>
+          </section>` : ''}
+
+          ${pitfalls ? `
+          <section class="isk-section">
+            <span class="isk-section__label">Pièges à éviter</span>
+            ${pitfalls}
+          </section>` : ''}
+
+          ${mod.journal_prompt ? `
+          <div class="isk-journal">
+            <span class="isk-journal__label">Question de bilan</span>
+            <p class="isk-journal__text">${esc(mod.journal_prompt)}</p>
+          </div>` : ''}
+
+          ${linkedHTML}
+        `;
+      }
+    } catch (e) {
+      mount.innerHTML = '<p style="text-align:center; color:#c44;">Désolé, le corpus n\'a pas pu être chargé.</p>';
+      console.error(e);
+    }
+  </script>
+  <script type="module" src="/assets/js/pulse.js?v=2"></script>
+</body>
+</html>

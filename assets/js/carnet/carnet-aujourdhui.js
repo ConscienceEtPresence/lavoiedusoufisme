@@ -463,6 +463,7 @@ function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, 
     ${repriseBlock}
     <div id="boussole-mount">${boussoleInitiale}</div>
     <div id="verset-compagnon-mount"></div>
+    <div id="iskandari-jour-mount"></div>
     <div id="nom-du-jour"></div>
     ${motGraineMention}
     ${ornament()}
@@ -476,6 +477,7 @@ function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, 
   bindReprise();
   bindSuggestion();
   loadVersetCompagnon();
+  loadIskandariDuJour();
 
   // === Nom du jour + Bilan hebdo soufi (async, ne bloque pas l'affichage) ===
   import('./bilan-hebdo-soufi.js').then(async (m) => {
@@ -983,6 +985,56 @@ function renderModeContent(mode, pratiques, jourData, hierData) {
 
 // Boussole du jour — synthèse en haut de page (Priorité 1 du rapport)
 // Assemble : axe du jour + Nom du jour (si dispo) + mouvement d'hier (si dispo)
+// Sagesse Iskandarī du jour — tirée du corpus, rotation déterministe.
+// Si possible, croisée avec l'axe du jour pour proposer un module en accord.
+async function loadIskandariDuJour() {
+  const mountEl = document.getElementById('iskandari-jour-mount');
+  if (!mountEl) return;
+  try {
+    const res = await fetch('/data/iskandari/corpus.json');
+    const corpus = await res.json();
+    const modules = corpus.thematic_modules || [];
+    if (!modules.length) return;
+
+    // Petit mapping axe du jour → modules pertinents (en cohérence avec ETAT_TO_MODULES côté Iskandari)
+    const AXE_TO_MODS = {
+      parole: ['adab_al_kalam', 'madih_dhamm', 'ghadab', 'ikhlas'],
+      coeur:  ['mahabba', 'humilite', 'nafs', 'muraqaba_mushahada'],
+      acte:   ['amal_et_appui', 'ikhlas', 'service_reparation'],
+      lien:   ['suhba_silsila', 'relations_epreuves', 'famille_travail'],
+      corps:  ['fatigue', 'sabr', 'qabd_bast'],
+      silence:['uzla_jalwa', 'dhikr_wird', 'munajat'],
+      reparation:['tawba', 'service_reparation', 'humilite']
+    };
+    const axe = axeDuJour();
+    const candidats = AXE_TO_MODS[axe.id] || [];
+    let mod = null;
+    // Rotation sur les candidats selon le jour de l'année
+    const d = new Date();
+    const start = new Date(d.getFullYear(), 0, 0);
+    const dayOfYear = Math.floor((d - start) / 86400000);
+    if (candidats.length) {
+      const validCands = candidats
+        .map(id => modules.find(m => m.id === id))
+        .filter(Boolean);
+      if (validCands.length) mod = validCands[dayOfYear % validCands.length];
+    }
+    if (!mod) mod = modules[dayOfYear % modules.length];
+
+    // Teaching court : on prend la 1re phrase
+    const teaching = (mod.teaching || '').split('.')[0] + '.';
+
+    mountEl.innerHTML = `
+      <section class="isk-jour-card fade-in-up">
+        <span class="isk-jour-card__label">Sagesse Iskandarī</span>
+        <p class="isk-jour-card__ar" lang="ar" dir="rtl">${esc(mod.title_ar || '')}</p>
+        <h3 class="isk-jour-card__title">${esc(mod.title_fr || '')} ${mod.transliteration ? `<em style="color:#8a7028; font-size:.9em;"> — ${esc(mod.transliteration)}</em>` : ''}</h3>
+        <p class="isk-jour-card__teaching">${esc(teaching)}</p>
+        <a class="isk-jour-card__link" href="/pages/iskandari/theme/?id=${esc(mod.id)}" target="_blank" rel="noopener">Méditer ce thème →</a>
+      </section>`;
+  } catch (e) { console.warn('iskandari du jour failed', e); }
+}
+
 // Verset compagnon du jour — tiré selon l'axe du jour (rotation déterministe)
 async function loadVersetCompagnon() {
   const mountEl = document.getElementById('verset-compagnon-mount');

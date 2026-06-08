@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=3" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=4" />
 </head>
 <body class="page-enter">
   <header class="site-header">
@@ -114,7 +114,7 @@
         </header>
 
         <article class="isk-sagesse" style="border-top:0; padding-top:0; margin-top:0;">
-          ${r.english_text_draft ? `<p class="isk-sagesse__texte">${esc(r.english_text_draft)}</p>` : ''}
+          ${(r.french_translation || r.english_text_draft) ? `<p class="isk-sagesse__texte">${esc(r.french_translation || r.english_text_draft)}</p>` : ''}
           ${cd.explanation_fr ? `
             <div class="isk-sagesse__bloc">
               <span class="isk-sagesse__label">L'enseignement</span>
@@ -130,12 +130,12 @@
               <span class="isk-sagesse__label">Une lecture pour aujourd'hui</span>
               <p class="isk-sagesse__corps">${esc(cd.modern_insight_fr)}</p>
             </div>` : ''}
-          ${themes ? `<p class="isk-sagesse__themes">Thèmes : ${themes}</p>` : ''}
+          ${themes ? `<p class="isk-sagesse__themes"><em style="font-style:normal; letter-spacing:.04em; color:var(--isk-gold-deep); font-weight:600;">Lire d'autres sagesses sur :</em> ${themes}</p>` : ''}
         </article>
 
         ${navHTML}
 
-        <p class="isk-livre__note">Le texte présenté est la version anglaise de référence. Une traduction française originale viendra dans un second temps.</p>
+        <p class="isk-livre__note">Traduction française originale, faite à partir de l'anglais de référence. Le texte arabe vocalisé sera ajouté plus tard, après vérification de source.</p>
       `;
     } catch (err) {
       mount.innerHTML = '<p style="text-align:center; color:#c44; padding:3rem;">Désolé, la sagesse n\'a pas pu être chargée.</p>';

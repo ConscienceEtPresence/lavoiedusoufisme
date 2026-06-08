@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=3" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=4" />
 </head>
 <body class="page-enter">
   <header class="site-header">
@@ -78,7 +78,7 @@
         return `
           <article class="isk-sagesse" id="m-${r.id}">
             <p class="isk-sagesse__num">Prière n° ${n} <span style="font-weight:400; text-transform:none; letter-spacing:.04em; color:var(--isk-ink-soft); font-size:.85em;">· (entrée n° ${r.id})</span></p>
-            ${r.english_text_draft ? `<p class="isk-sagesse__texte">${esc(r.english_text_draft)}</p>` : ''}
+            ${(r.french_translation || r.english_text_draft) ? `<p class="isk-sagesse__texte">${esc(r.french_translation || r.english_text_draft)}</p>` : ''}
             ${cd.explanation_fr ? `
               <div class="isk-sagesse__bloc">
                 <span class="isk-sagesse__label">L'enseignement</span>
@@ -108,7 +108,7 @@
           <em>« Mon Dieu, si je suis pauvre dans ma richesse, comment ne le serais-je pas dans ma pauvreté ? »</em>
         </p>
         ${muns.map((r, i) => renderOne(r, i + 1)).join('')}
-        <p class="isk-livre__note">Texte source en anglais (traduction de référence). Une traduction française originale viendra dans un second temps.</p>
+        <p class="isk-livre__note">Traduction française originale. Le texte arabe vocalisé sera ajouté plus tard, après vérification de source.</p>
       `;
     } catch (e) {
       mount.innerHTML = '<p style="text-align:center; color:#c44; padding:3rem;">Désolé, les prières n\'ont pas pu être chargées.</p>';

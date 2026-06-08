@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=3" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=4" />
 </head>
 <body class="page-enter">
   <header class="site-header">
@@ -143,7 +143,7 @@
               <p class="isk-sagesse__num">
                 <a href="/pages/iskandari/hikma/?id=${r.id}">Sagesse n° ${r.id}</a>
               </p>
-              ${r.english_text_draft ? `<p class="isk-sagesse__texte">${esc(r.english_text_draft)}</p>` : ''}
+              ${(r.french_translation || r.english_text_draft) ? `<p class="isk-sagesse__texte">${esc(r.french_translation || r.english_text_draft)}</p>` : ''}
               ${cd.explanation_fr ? `
                 <div class="isk-sagesse__bloc">
                   <span class="isk-sagesse__label">L'enseignement</span>
@@ -159,7 +159,7 @@
                   <span class="isk-sagesse__label">Une lecture pour aujourd'hui</span>
                   <p class="isk-sagesse__corps">${esc(cd.modern_insight_fr)}</p>
                 </div>` : ''}
-              ${themes ? `<p class="isk-sagesse__themes">Autres thèmes : ${themes}</p>` : ''}
+              ${themes ? `<p class="isk-sagesse__themes"><em style="font-style:normal; letter-spacing:.04em; color:var(--isk-gold-deep); font-weight:600;">D'autres thèmes :</em> ${themes}</p>` : ''}
             </article>`;
         };
 

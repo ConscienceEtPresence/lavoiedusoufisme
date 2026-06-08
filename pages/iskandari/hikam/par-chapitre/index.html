@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=3" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=4" />
 </head>
 <body class="page-enter">
   <header class="site-header">
@@ -86,7 +86,7 @@
 
       const renderSagesseTexte = (r) => {
         // Le texte source : on a english_text_draft. On le présente en italique discret.
-        const en = r.english_text_draft || '';
+        const en = r.french_translation || r.english_text_draft || '';
         return `<p class="isk-sagesse__texte">${esc(en)}</p>`;
       };
 
@@ -119,7 +119,7 @@
                 <span class="isk-sagesse__label">Une lecture pour aujourd'hui</span>
                 <p class="isk-sagesse__corps">${esc(cd.modern_insight_fr)}</p>
               </div>` : ''}
-            ${themes ? `<p class="isk-sagesse__themes">Thèmes : ${themes}</p>` : ''}
+            ${themes ? `<p class="isk-sagesse__themes"><em style="font-style:normal; letter-spacing:.04em; color:var(--isk-gold-deep); font-weight:600;">Lire d'autres sagesses sur :</em> ${themes}</p>` : ''}
           </article>`;
       };
 

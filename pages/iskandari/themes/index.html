@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=1" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=2" />
 </head>
 <body class="page-enter">
 
@@ -36,7 +36,7 @@
       <nav>
         <ul class="site-nav">
           <li><a href="/index.html">Accueil</a></li>
-          <li><a href="/pages/iskandari/" class="active">Iskandarī</a></li>
+          <li><a href="/pages/iskandari/" class="active">La voie des sagesses</a></li>
           <li><a href="/pages/iskandari/hikam/">Ḥikam</a></li>
           <li><a href="/pages/iskandari/tanwir/">al-Tanwīr</a></li>
           <li><a href="/pages/iskandari/lataif/">Laṭāʾif</a></li>
@@ -47,13 +47,16 @@
   </header>
 
   <main>
-    <header class="isk-hero">
-      <p class="isk-hero__ar" lang="ar" dir="rtl">التأمل بالموضوع</p>
-      <h1 class="isk-hero__name">Méditer par thème</h1>
-      <p class="isk-hero__dates">44 portes intérieures</p>
-      <div class="isk-hero__rule"></div>
-      <p class="isk-hero__tag">Chaque thème porte un enseignement, une lecture psychospirituelle, des pratiques pour le matin, la journée et le soir. Aucun n'est obligatoire — chacun s'ouvre selon ce qui vous habite aujourd'hui.</p>
+    <header class="isk-bandeau sec-mediter">
+      <div class="isk-bandeau__inner">
+        <span class="isk-bandeau__suite"><a href="/pages/iskandari/">La voie des sagesses</a> · Section 3</span>
+        <p class="isk-bandeau__ar" lang="ar" dir="rtl">التأمل بالموضوع</p>
+        <h1 class="isk-bandeau__title">Méditer par thème</h1>
+        <p class="isk-bandeau__sub">44 portes intérieures, groupées par grandes voies. Chaque thème porte un enseignement, des pratiques, des pièges.</p>
+      </div>
     </header>
+
+    <div id="isk-subnav-slot"></div>
 
     <section class="container container--wide">
       <p style="text-align:center;"><a href="/pages/iskandari/" class="isk-module__back">← Retour Iskandarī</a></p>
@@ -103,5 +106,10 @@
     }
   </script>
   <script type="module" src="/assets/js/pulse.js?v=2"></script>
+
+  <script type="module">
+    import { injectSubnav } from '/assets/js/iskandari/corpus.js';
+    injectSubnav('mediter');
+  </script>
 </body>
 </html>

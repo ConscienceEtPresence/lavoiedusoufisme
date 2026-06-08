@@ -111,6 +111,30 @@ export function suggestModules(corpus, { etats = [], contexts = [] } = {}, limit
   return all.slice(0, limit);
 }
 
+// Sous-navigation entre les 5 sections — injectée dans chaque page
+export function renderSubnav(active) {
+  const items = [
+    { id: 'auteur',   href: '/pages/iskandari/auteur/',   label: 'L\'auteur' },
+    { id: 'hikam',    href: '/pages/iskandari/hikam/',    label: 'Sagesses' },
+    { id: 'mediter',  href: '/pages/iskandari/themes/',   label: 'Méditer par thème' },
+    { id: 'traites',  href: '/pages/iskandari/traites/',  label: 'Les deux traités' },
+    { id: 'munajat',  href: '/pages/iskandari/munajat/',  label: 'Munājāt' }
+  ];
+  return `
+    <nav class="isk-subnav" aria-label="Sections d'Iskandarī">
+      <ul class="isk-subnav__list">
+        ${items.map(i => `
+          <li><a href="${i.href}" ${active===i.id?'class="is-active"':''}>${i.label}</a></li>
+        `).join('')}
+      </ul>
+    </nav>`;
+}
+
+export function injectSubnav(active) {
+  const slot = document.getElementById('isk-subnav-slot');
+  if (slot) slot.outerHTML = renderSubnav(active);
+}
+
 // Petit helper de rendu : nom transcription affichable
 export function modCardHTML(mod) {
   return `

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=1" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=2" />
 </head>
 <body class="page-enter">
 
@@ -36,7 +36,7 @@
       <nav>
         <ul class="site-nav">
           <li><a href="/index.html">Accueil</a></li>
-          <li><a href="/pages/iskandari/">Iskandarī</a></li>
+          <li><a href="/pages/iskandari/">La voie des sagesses</a></li>
           <li><a href="/pages/iskandari/hikam/" class="active">Ḥikam</a></li>
           <li><a href="/pages/iskandari/themes/">Thèmes</a></li>
           <li><a href="/pages/carnet/">Carnet</a></li>
@@ -46,6 +46,7 @@
   </header>
 
   <main>
+    <div id="isk-subnav-slot"></div>
     <div id="hikma-mount" class="isk-hikma">
       <p style="text-align:center; color: var(--ink-soft); font-style: italic;">Chargement…</p>
     </div>
@@ -119,18 +120,18 @@
 
           ${usage.question_suggeree ? `
           <div class="isk-journal">
-            <span class="isk-journal__label">Question pour la muḥāsaba</span>
+            <span class="isk-journal__label">Une question à porter</span>
             <p class="isk-journal__text">${esc(usage.question_suggeree)}</p>
           </div>` : ''}
 
           ${quick ? `
           <section class="isk-section">
-            <span class="isk-section__label">Choix rapides pour le carnet</span>
+            <span class="isk-section__label">Outils à ramener dans le carnet</span>
             <div class="isk-quick-choices">${quick}</div>
           </section>` : ''}
 
           <section class="isk-section">
-            <span class="isk-section__label">Comment l'utiliser</span>
+            <span class="isk-section__label">Comment méditer cette sagesse</span>
             <ul class="isk-list">
               <li><strong>Le matin :</strong> servir d'intention ou de méditation courte.</li>
               <li><strong>Pendant la journée :</strong> rappel court en situation.</li>
@@ -147,5 +148,10 @@
     }
   </script>
   <script type="module" src="/assets/js/pulse.js?v=2"></script>
+
+  <script type="module">
+    import { injectSubnav } from '/assets/js/iskandari/corpus.js';
+    injectSubnav('hikam');
+  </script>
 </body>
 </html>

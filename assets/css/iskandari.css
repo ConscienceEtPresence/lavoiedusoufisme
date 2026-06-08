@@ -539,3 +539,192 @@
   .isk-module, .isk-hikma { padding-left: 1rem; padding-right: 1rem; }
   .isk-modules-grid, .isk-hikam-grid { gap: .55rem; }
 }
+
+/* ============================================================
+   v2 — Refonte d'organisation : 5 sections distinctes
+   ============================================================ */
+
+/* Bandeau de section (titre principal en haut de chaque page) */
+.isk-bandeau {
+  background: linear-gradient(180deg, var(--isk-paper-warm) 0%, var(--isk-paper) 100%);
+  border-bottom: 1px solid var(--isk-rule);
+  padding: 0;
+}
+.isk-bandeau__inner {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.4rem 1.2rem .9rem;
+  text-align: center;
+}
+.isk-bandeau__suite {
+  display: inline-block;
+  font-size: .72rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--isk-gold-deep);
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.isk-bandeau__suite a {
+  color: var(--isk-gold-deep);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--isk-gold-deep);
+}
+.isk-bandeau__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.7rem, 4.5vw, 2.4rem);
+  color: var(--isk-ink);
+  margin: 0;
+  font-weight: 500;
+}
+.isk-bandeau__ar {
+  font-family: 'Amiri', serif;
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  color: var(--isk-gold-deep);
+  margin: .3rem 0 .15rem;
+  direction: rtl;
+}
+.isk-bandeau__sub {
+  margin: .3rem auto 0;
+  max-width: 36rem;
+  color: var(--isk-ink-soft);
+  font-style: italic;
+  font-size: .98rem;
+  line-height: 1.55;
+}
+
+/* Sous-navigation horizontale entre les 5 sections */
+.isk-subnav {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(251, 246, 232, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--isk-rule);
+}
+.isk-subnav__list {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: .5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem .4rem;
+  list-style: none;
+  justify-content: center;
+}
+.isk-subnav__list a {
+  display: inline-block;
+  padding: .35rem .8rem;
+  border-radius: 999px;
+  color: var(--isk-ink-soft);
+  text-decoration: none;
+  font-size: .86rem;
+  letter-spacing: .02em;
+  transition: background .15s, color .15s;
+}
+.isk-subnav__list a:hover {
+  background: rgba(192, 160, 80, 0.12);
+  color: var(--isk-ink);
+}
+.isk-subnav__list a.is-active {
+  background: linear-gradient(135deg, #d9b86a, #c0a050);
+  color: #2a1f08;
+  font-weight: 600;
+}
+
+/* Identité visuelle par section : badge couleur en haut */
+.sec-auteur     { --sec-accent: #b8954a; --sec-tag: "L'auteur"; }
+.sec-hikam      { --sec-accent: #c0a050; --sec-tag: "Sagesses"; }
+.sec-mediter    { --sec-accent: #8aa55c; --sec-tag: "Méditer"; }
+.sec-traites    { --sec-accent: #7d6dc4; --sec-tag: "Traités"; }
+.sec-munajat    { --sec-accent: #c47f7d; --sec-tag: "Munājāt"; }
+.isk-bandeau.sec-auteur,
+.isk-bandeau.sec-hikam,
+.isk-bandeau.sec-mediter,
+.isk-bandeau.sec-traites,
+.isk-bandeau.sec-munajat {
+  border-bottom-color: var(--sec-accent);
+  border-bottom-width: 2px;
+}
+.isk-bandeau .isk-bandeau__suite {
+  color: var(--sec-accent, var(--isk-gold-deep));
+}
+.isk-bandeau .isk-bandeau__ar {
+  color: var(--sec-accent, var(--isk-gold-deep));
+}
+
+/* 5 portes claires sur l'accueil — taille distincte, hiérarchie */
+.isk-portes-v2 {
+  display: grid;
+  gap: 1rem;
+  max-width: 52rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.isk-porte-v2 {
+  display: grid;
+  grid-template-columns: 4.2rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1.1rem 1.3rem;
+  background: #fff;
+  border: 1px solid var(--isk-rule);
+  border-left: 4px solid var(--sec-accent, var(--isk-gold));
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--isk-ink);
+  transition: transform .18s, box-shadow .18s, border-color .18s;
+}
+.isk-porte-v2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -14px rgba(120, 90, 30, 0.35);
+}
+.isk-porte-v2__num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--sec-accent, var(--isk-gold-deep));
+  text-align: center;
+  padding-top: .15rem;
+}
+.isk-porte-v2__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.1rem;
+  color: var(--sec-accent, var(--isk-gold-deep));
+  margin: 0;
+  direction: rtl;
+  text-align: right;
+}
+.isk-porte-v2__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  margin: .1rem 0 .3rem;
+  color: var(--isk-ink);
+}
+.isk-porte-v2__desc {
+  margin: 0;
+  color: var(--isk-ink-soft);
+  font-size: .96rem;
+  line-height: 1.5;
+}
+.isk-porte-v2__count {
+  display: inline-block;
+  margin-top: .35rem;
+  font-size: .78rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--sec-accent, var(--isk-gold-deep));
+  font-weight: 700;
+}
+
+/* Renommer en douceur les blocs de la fiche thème */
+.isk-section__label--soft {
+  text-transform: none;
+  letter-spacing: .04em;
+  font-weight: 500;
+  font-style: italic;
+  font-size: .95rem;
+  color: var(--isk-gold-deep);
+}

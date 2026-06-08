@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=1" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=2" />
 </head>
 <body class="page-enter">
 
@@ -36,7 +36,7 @@
       <nav>
         <ul class="site-nav">
           <li><a href="/index.html">Accueil</a></li>
-          <li><a href="/pages/iskandari/">Iskandarī</a></li>
+          <li><a href="/pages/iskandari/">La voie des sagesses</a></li>
           <li><a href="/pages/iskandari/tanwir/">al-Tanwīr</a></li>
           <li><a href="/pages/iskandari/lataif/" class="active">Laṭāʾif</a></li>
           <li><a href="/pages/carnet/">Carnet</a></li>
@@ -46,13 +46,16 @@
   </header>
 
   <main>
-    <header class="isk-hero">
-      <p class="isk-hero__ar" lang="ar" dir="rtl">لطائف المنن</p>
-      <h1 class="isk-hero__name">Laṭāʾif al-Minan</h1>
-      <p class="isk-hero__dates">Les subtilités des dons</p>
-      <div class="isk-hero__rule"></div>
-      <p class="isk-hero__tag">Ibn ʿAṭāʾ Allāh y raconte ce qu'il a vu et reçu auprès d'<em>Abū al-ʿAbbās al-Mursī</em> (son maître direct) et d'<em>Abū al-Ḥasan al-Shādhilī</em> (le fondateur de la voie). C'est un livre de transmission vivante, où la doctrine se lit dans les gestes, les paroles, les présences.</p>
+    <header class="isk-bandeau sec-traites">
+      <div class="isk-bandeau__inner">
+        <span class="isk-bandeau__suite"><a href="/pages/iskandari/">La voie des sagesses</a> · Section 4</span>
+        <p class="isk-bandeau__ar" lang="ar" dir="rtl">لطائف المنن</p>
+        <h1 class="isk-bandeau__title">Laṭāʾif al-Minan</h1>
+        <p class="isk-bandeau__sub">« Les subtilités des dons. » Le récit vivant de la voie shādhilie en transmission.</p>
+      </div>
     </header>
+
+    <div id="isk-subnav-slot"></div>
 
     <section class="container container--wide">
       <p style="text-align:center;"><a href="/pages/iskandari/" class="isk-module__back">← Retour Iskandarī</a></p>
@@ -117,5 +120,10 @@
     } catch (e) { console.error(e); }
   </script>
   <script type="module" src="/assets/js/pulse.js?v=2"></script>
+
+  <script type="module">
+    import { injectSubnav } from '/assets/js/iskandari/corpus.js';
+    injectSubnav('traites');
+  </script>
 </body>
 </html>

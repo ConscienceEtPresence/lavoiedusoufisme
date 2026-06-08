@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=1" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=2" />
 </head>
 <body class="page-enter">
 
@@ -36,7 +36,7 @@
       <nav>
         <ul class="site-nav">
           <li><a href="/index.html">Accueil</a></li>
-          <li><a href="/pages/iskandari/">Iskandarī</a></li>
+          <li><a href="/pages/iskandari/">La voie des sagesses</a></li>
           <li><a href="/pages/iskandari/themes/" class="active">Thèmes</a></li>
           <li><a href="/pages/iskandari/hikam/">Ḥikam</a></li>
           <li><a href="/pages/carnet/">Carnet</a></li>
@@ -46,6 +46,7 @@
   </header>
 
   <main>
+    <div id="isk-subnav-slot"></div>
     <div id="theme-mount" class="isk-module">
       <p style="text-align:center; color: var(--ink-soft); font-style: italic;">Chargement…</p>
     </div>
@@ -121,7 +122,7 @@
 
           ${dailyMatin || dailyJournee || dailySoir ? `
           <section class="isk-section">
-            <span class="isk-section__label">Pratique quotidienne</span>
+            <span class="isk-section__label">Vivre ce thème dans la journée</span>
             ${dailyMatin ? `<p style="margin:.6rem 0 .2rem; font-weight:600; color:var(--isk-gold-deep,#8a7028);">Le matin</p><ul class="isk-list">${dailyMatin}</ul>` : ''}
             ${dailyJournee ? `<p style="margin:.6rem 0 .2rem; font-weight:600; color:var(--isk-gold-deep,#8a7028);">Pendant la journée</p><ul class="isk-list">${dailyJournee}</ul>` : ''}
             ${dailySoir ? `<p style="margin:.6rem 0 .2rem; font-weight:600; color:var(--isk-gold-deep,#8a7028);">Le soir</p><ul class="isk-list">${dailySoir}</ul>` : ''}
@@ -129,7 +130,7 @@
 
           ${quickChoices ? `
           <section class="isk-section">
-            <span class="isk-section__label">Choix rapides pour le carnet</span>
+            <span class="isk-section__label">Outils à ramener dans le carnet</span>
             <div class="isk-quick-choices">${quickChoices}</div>
           </section>` : ''}
 
@@ -141,7 +142,7 @@
 
           ${mod.journal_prompt ? `
           <div class="isk-journal">
-            <span class="isk-journal__label">Question de bilan</span>
+            <span class="isk-journal__label">Une question à porter</span>
             <p class="isk-journal__text">${esc(mod.journal_prompt)}</p>
           </div>` : ''}
 
@@ -154,5 +155,10 @@
     }
   </script>
   <script type="module" src="/assets/js/pulse.js?v=2"></script>
+
+  <script type="module">
+    import { injectSubnav } from '/assets/js/iskandari/corpus.js';
+    injectSubnav('mediter');
+  </script>
 </body>
 </html>

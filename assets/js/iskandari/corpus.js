@@ -111,23 +111,99 @@ export function suggestModules(corpus, { etats = [], contexts = [] } = {}, limit
   return all.slice(0, limit);
 }
 
-// Sous-navigation entre les 5 sections — injectée dans chaque page
+// Sous-navigation entre les 4 sections — injectée dans chaque page
 export function renderSubnav(active) {
   const items = [
     { id: 'auteur',   href: '/pages/iskandari/auteur/',   label: 'L\'auteur' },
-    { id: 'hikam',    href: '/pages/iskandari/hikam/',    label: 'Sagesses' },
-    { id: 'mediter',  href: '/pages/iskandari/themes/',   label: 'Méditer par thème' },
-    { id: 'traites',  href: '/pages/iskandari/traites/',  label: 'Les deux traités' },
-    { id: 'munajat',  href: '/pages/iskandari/munajat/',  label: 'Munājāt' }
+    { id: 'hikam',    href: '/pages/iskandari/hikam/',    label: 'Les Sagesses' },
+    { id: 'munajat',  href: '/pages/iskandari/munajat/',  label: 'Munājāt' },
+    { id: 'traites',  href: '/pages/iskandari/traites/',  label: 'Les deux traités' }
   ];
   return `
-    <nav class="isk-subnav" aria-label="Sections d'Iskandarī">
+    <nav class="isk-subnav" aria-label="Sections de La voie des sagesses">
       <ul class="isk-subnav__list">
         ${items.map(i => `
           <li><a href="${i.href}" ${active===i.id?'class="is-active"':''}>${i.label}</a></li>
         `).join('')}
       </ul>
     </nav>`;
+}
+
+// === Chargement du Kitāb al-Ḥikam complet (texte + commentaire) ===
+let _hikam = null;
+export async function loadHikam() {
+  if (_hikam) return _hikam;
+  const res = await fetch('/data/iskandari/hikam-complet.json');
+  _hikam = await res.json();
+  return _hikam;
+}
+
+// Index par chapitre (section_id → liste de records)
+export function indexByChapter(hikam) {
+  const idx = {};
+  for (const r of hikam.records || []) {
+    const sec = r.section_id || 'autre';
+    (idx[sec] = idx[sec] || []).push(r);
+  }
+  // sort each by sequence_in_section
+  for (const k of Object.keys(idx)) {
+    idx[k].sort((a, b) => (a.sequence_in_section || a.id) - (b.sequence_in_section || b.id));
+  }
+  return idx;
+}
+
+// Liste ordonnée des sections (chapitres) telles qu'elles apparaissent
+export const CHAPTERS_ORDER = [
+  'chapter_01','chapter_02','chapter_03','chapter_04','chapter_05','chapter_06',
+  'chapter_07','chapter_08','chapter_09','chapter_10','chapter_11','chapter_12',
+  'chapter_13','chapter_14','chapter_15','chapter_16','chapter_17','chapter_18',
+  'chapter_19','chapter_20','chapter_21','chapter_22','chapter_22_suite',
+  'chapter_23','chapter_24','chapter_24_fin','letters','intimate_prayers_complete'
+];
+export const CHAPTER_TITRES_COURTS = {
+  'chapter_01': 'Ch. 1 — Confiance en Dieu et nature de l\'action',
+  'chapter_02': 'Ch. 2 — Le temps, la prédestination, la voie',
+  'chapter_03': 'Ch. 3 — Connaissance de soi et attributs divins',
+  'chapter_04': 'Ch. 4 — Se centrer sur Dieu',
+  'chapter_05': 'Ch. 5 — L\'amitié, l\'esprit et le dhikr',
+  'chapter_06': 'Ch. 6 — La mort du cœur et l\'espérance',
+  'chapter_07': 'Ch. 7 — Ambitions, déceptions et épreuves',
+  'chapter_08': 'Ch. 8 — L\'inspiration, la sagesse, la récompense',
+  'chapter_09': 'Ch. 9 — Repentir, espérance, contraction/expansion',
+  'chapter_10': 'Ch. 10 — La récompense, la privation comme bénédiction',
+  'chapter_11': 'Ch. 11 — Tout vient de Dieu, passions et dualité',
+  'chapter_12': 'Ch. 12 — Les litanies et les prières obligatoires',
+  'chapter_13': 'Ch. 13 — Attributs humains et divins',
+  'chapter_14': 'Ch. 14 — Le voile de la protection divine',
+  'chapter_15': 'Ch. 15 — Se méfier des éloges des gens',
+  'chapter_16': 'Ch. 16 — Être optimiste envers Dieu',
+  'chapter_17': 'Ch. 17 — Les secrets des saints',
+  'chapter_18': 'Ch. 18 — La prière humaine et les bienfaits divins',
+  'chapter_19': 'Ch. 19 — L\'importance d\'être dans le besoin',
+  'chapter_20': 'Ch. 20 — Les miracles ne sont pas un critère',
+  'chapter_21': 'Ch. 21 — Choisir le difficile, et les actes obligatoires',
+  'chapter_22': 'Ch. 22 — Deux types de lumière divine',
+  'chapter_22_suite': 'Ch. 22 (suite) — Deux types de lumière divine',
+  'chapter_23': 'Ch. 23 — Atteindre Dieu par la contemplation',
+  'chapter_24': 'Ch. 24 — La présence divine est primordiale',
+  'chapter_24_fin': 'Ch. 24 (fin) — La présence divine est primordiale',
+  'letters': 'Les quatre lettres (appendices)',
+  'intimate_prayers_complete': 'Munājāt — Prières intimes'
+};
+
+// Index par thème (utilise les recommended_modules du corpus pour mapper)
+export async function indexByTheme(hikam, corpus) {
+  const out = {};
+  // Map id sagesse → modules recommandés (depuis corpus.hikam_entry_index)
+  const idToMods = {};
+  for (const e of (corpus.hikam_entry_index || [])) {
+    idToMods[e.id] = e.recommended_modules || [];
+  }
+  for (const r of hikam.records || []) {
+    const mods = idToMods[r.id] || [];
+    for (const m of mods) (out[m] = out[m] || []).push(r);
+  }
+  return out;
 }
 
 export function injectSubnav(active) {

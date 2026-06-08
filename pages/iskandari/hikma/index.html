@@ -7,19 +7,16 @@
   <link rel="manifest" href="/manifest.webmanifest" />
   <meta name="theme-color" content="#0F1830" />
   <title>Sagesse — Kitāb al-Ḥikam</title>
-  <meta name="description" content="Une sagesse du Kitāb al-Ḥikam, ses thèmes associés et son usage pour la muḥāsaba quotidienne." />
-
+  <meta name="description" content="Une sagesse du Kitāb al-Ḥikam d'Ibn ʿAṭāʾ Allāh al-Iskandarī — texte, enseignement, sources classiques, lecture pour aujourd'hui." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=2" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=3" />
 </head>
 <body class="page-enter">
-
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="/index.html" class="brand">
@@ -29,16 +26,13 @@
         <span>La voie du dedans</span>
       </a>
       <button class="nav-toggle" aria-label="Menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 6h18M3 12h18M3 18h18" />
-        </svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
       </button>
       <nav>
         <ul class="site-nav">
           <li><a href="/index.html">Accueil</a></li>
           <li><a href="/pages/iskandari/">La voie des sagesses</a></li>
-          <li><a href="/pages/iskandari/hikam/" class="active">Ḥikam</a></li>
-          <li><a href="/pages/iskandari/themes/">Thèmes</a></li>
+          <li><a href="/pages/iskandari/hikam/">Les Sagesses</a></li>
           <li><a href="/pages/carnet/">Carnet</a></li>
         </ul>
       </nav>
@@ -47,111 +41,107 @@
 
   <main>
     <div id="isk-subnav-slot"></div>
-    <div id="hikma-mount" class="isk-hikma">
-      <p style="text-align:center; color: var(--ink-soft); font-style: italic;">Chargement…</p>
+    <div id="hikma-mount" class="isk-livre">
+      <p style="text-align:center; color: var(--ink-soft); font-style: italic; padding:3rem 1rem;">Chargement…</p>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
       <div class="ornament">✦</div>
-      <p class="small"><a href="/pages/iskandari/hikam/">← Toutes les sagesses</a> · <a href="/index.html">Accueil</a></p>
+      <p class="small"><a href="/pages/iskandari/hikam/">← Les Sagesses</a> · <a href="/pages/iskandari/">La voie des sagesses</a></p>
     </div>
   </footer>
 
   <script src="/assets/js/main.js?v=14"></script>
   <script type="module">
-    import { loadCorpus, esc, indexModules, indexHikam } from '/assets/js/iskandari/corpus.js';
+    import { loadHikam, loadCorpus, injectSubnav, esc, CHAPTER_TITRES_COURTS } from '/assets/js/iskandari/corpus.js';
+    injectSubnav('hikam');
 
     const mount = document.getElementById('hikma-mount');
     const id = parseInt(new URLSearchParams(location.search).get('id') || '0', 10);
 
-    const CHAPITRE_TITRES = {
-      'chapter_01':'Ch. 1 — La confiance en Dieu',
-      'chapter_02':'Ch. 2 — Le temps et la prédestination',
-      'chapter_03':'Ch. 3 — La connaissance de soi',
-      'chapter_04':'Ch. 4 — Se centrer sur Dieu',
-      'chapter_05':'Ch. 5 — L\'amitié et le dhikr',
-      'chapter_06':'Ch. 6 — La mort du cœur',
-      'letters':'Les quatre lettres',
-      'intimate_prayers':'Munājāt',
-      'intimate_prayers_complete':'Munājāt (version complète)'
-    };
-
     try {
-      const corpus = await loadCorpus();
-      const hidx = indexHikam(corpus);
-      const mods = indexModules(corpus);
-      const e = hidx[id];
-      if (!e) {
+      const [hikam, corpus] = await Promise.all([loadHikam(), loadCorpus()]);
+      const recs = hikam.records || [];
+      const byId = {};
+      for (const r of recs) byId[r.id] = r;
+
+      const r = byId[id];
+      if (!r) {
         mount.innerHTML = `
-          <p style="text-align:center;">Sagesse n°${id} introuvable.</p>
-          <p style="text-align:center;"><a href="/pages/iskandari/hikam/" class="isk-module__back">← Toutes les sagesses</a></p>`;
-        document.title = 'Sagesse introuvable — Iskandarī';
-      } else {
-        document.title = `Sagesse n°${e.id} — Kitāb al-Ḥikam`;
-        const prev = hidx[e.id - 1] ? `<a href="/pages/iskandari/hikma/?id=${e.id - 1}">← n°${e.id - 1}</a>` : '<span></span>';
-        const next = hidx[e.id + 1] ? `<a href="/pages/iskandari/hikma/?id=${e.id + 1}">n°${e.id + 1} →</a>` : '<span></span>';
-        const recMods = (e.recommended_modules || [])
-          .map(mid => mods[mid])
-          .filter(Boolean)
-          .map(m => `<a class="isk-mod-pill" href="/pages/iskandari/theme/?id=${esc(m.id)}">${esc(m.title_fr)}</a>`)
-          .join('');
-        const usage = e.usage_pedagogique || {};
-        const quick = (usage.choix_rapides_suggeres || []).map(c => `<span class="isk-chip">${esc(c)}</span>`).join('');
-
-        mount.innerHTML = `
-          <a href="/pages/iskandari/hikam/" class="isk-module__back">← Toutes les sagesses</a>
-
-          <header class="isk-hikma__head">
-            <h1 class="isk-hikma__num">n° ${e.id}</h1>
-            <p class="isk-hikma__chapter">${esc(CHAPITRE_TITRES[e.section_id] || e.section_id)}${e.numero_dans_chapitre ? ` · sagesse ${e.numero_dans_chapitre}` : ''}</p>
-          </header>
-
-          <div class="isk-text-status">
-            Le texte arabe vocalisé, la translittération et la traduction française originale seront ajoutés progressivement, après vérification de source.
-          </div>
-
-          ${recMods ? `
-          <section class="isk-section">
-            <span class="isk-section__label">Thèmes associés</span>
-            <div class="isk-mod-pills">${recMods}</div>
-          </section>` : ''}
-
-          ${usage.question_suggeree ? `
-          <div class="isk-journal">
-            <span class="isk-journal__label">Une question à porter</span>
-            <p class="isk-journal__text">${esc(usage.question_suggeree)}</p>
-          </div>` : ''}
-
-          ${quick ? `
-          <section class="isk-section">
-            <span class="isk-section__label">Outils à ramener dans le carnet</span>
-            <div class="isk-quick-choices">${quick}</div>
-          </section>` : ''}
-
-          <section class="isk-section">
-            <span class="isk-section__label">Comment méditer cette sagesse</span>
-            <ul class="isk-list">
-              <li><strong>Le matin :</strong> servir d'intention ou de méditation courte.</li>
-              <li><strong>Pendant la journée :</strong> rappel court en situation.</li>
-              <li><strong>Le soir :</strong> question de bilan, sans se juger.</li>
-            </ul>
-          </section>
-
-          <nav class="isk-hikma__nav">${prev}${next}</nav>
-        `;
+          <p style="text-align:center; padding:3rem;">Sagesse n° ${id} introuvable.</p>
+          <p style="text-align:center;"><a href="/pages/iskandari/hikam/par-chapitre/?n=1">← Commencer par le chapitre 1</a></p>`;
+        return;
       }
+
+      document.title = `Sagesse n° ${r.id} — Kitāb al-Ḥikam`;
+
+      const modById = {};
+      for (const m of corpus.thematic_modules || []) modById[m.id] = m;
+      const sagesseToMods = {};
+      for (const e of corpus.hikam_entry_index || []) sagesseToMods[e.id] = e.recommended_modules || [];
+
+      const themes = (sagesseToMods[r.id] || [])
+        .map(mid => modById[mid])
+        .filter(Boolean)
+        .slice(0, 5)
+        .map(m => `<a href="/pages/iskandari/hikam/par-theme/?id=${esc(m.id)}">${esc(m.title_fr)}</a>`)
+        .join(' · ');
+
+      const cd = r.commentary_draft || {};
+      const chapTitle = r.section_title || CHAPTER_TITRES_COURTS[r.section_id] || r.section_id;
+
+      const ids = recs.map(x => x.id).sort((a, b) => a - b);
+      const pos = ids.indexOf(r.id);
+      const prevId = pos > 0 ? ids[pos - 1] : null;
+      const nextId = pos < ids.length - 1 ? ids[pos + 1] : null;
+
+      const navHTML = `
+        <nav class="isk-livre__nav">
+          ${prevId ? `<a href="?id=${prevId}">← Sagesse n° ${prevId}</a>` : '<span></span>'}
+          <span class="isk-livre__nav-center">${esc(chapTitle)}</span>
+          ${nextId ? `<a href="?id=${nextId}">Sagesse n° ${nextId} →</a>` : '<span></span>'}
+        </nav>`;
+
+      mount.innerHTML = `
+        ${navHTML}
+        <header class="isk-chapitre__head">
+          <span class="isk-chapitre__rubrique">Sagesse</span>
+          <h1 class="isk-chapitre__titre">n° ${r.id}</h1>
+          <p class="isk-chapitre__count">${esc(chapTitle)}</p>
+          <div class="isk-chapitre__rule"></div>
+        </header>
+
+        <article class="isk-sagesse" style="border-top:0; padding-top:0; margin-top:0;">
+          ${r.english_text_draft ? `<p class="isk-sagesse__texte">${esc(r.english_text_draft)}</p>` : ''}
+          ${cd.explanation_fr ? `
+            <div class="isk-sagesse__bloc">
+              <span class="isk-sagesse__label">L'enseignement</span>
+              <p class="isk-sagesse__corps">${esc(cd.explanation_fr)}</p>
+            </div>` : ''}
+          ${cd.classical_sources_note ? `
+            <div class="isk-sagesse__bloc isk-sagesse__bloc--sources">
+              <span class="isk-sagesse__label">Sources classiques</span>
+              <p class="isk-sagesse__corps">${esc(cd.classical_sources_note)}</p>
+            </div>` : ''}
+          ${cd.modern_insight_fr ? `
+            <div class="isk-sagesse__bloc">
+              <span class="isk-sagesse__label">Une lecture pour aujourd'hui</span>
+              <p class="isk-sagesse__corps">${esc(cd.modern_insight_fr)}</p>
+            </div>` : ''}
+          ${themes ? `<p class="isk-sagesse__themes">Thèmes : ${themes}</p>` : ''}
+        </article>
+
+        ${navHTML}
+
+        <p class="isk-livre__note">Le texte présenté est la version anglaise de référence. Une traduction française originale viendra dans un second temps.</p>
+      `;
     } catch (err) {
-      mount.innerHTML = '<p style="text-align:center; color:#c44;">Désolé, le corpus n\'a pas pu être chargé.</p>';
+      mount.innerHTML = '<p style="text-align:center; color:#c44; padding:3rem;">Désolé, la sagesse n\'a pas pu être chargée.</p>';
       console.error(err);
     }
   </script>
   <script type="module" src="/assets/js/pulse.js?v=2"></script>
-
-  <script type="module">
-    import { injectSubnav } from '/assets/js/iskandari/corpus.js';
-    injectSubnav('hikam');
-  </script>
 </body>
 </html>

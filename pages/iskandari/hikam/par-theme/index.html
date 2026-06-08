@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#0F1830" />
+  <title>Lire par thème — Kitāb al-Ḥikam</title>
+  <meta name="description" content="Les sagesses du Kitāb al-Ḥikam regroupées par thème. Lire celles qui parlent au mouvement qui t'habite aujourd'hui." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/layout.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=3" />
+</head>
+<body class="page-enter">
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="/index.html" class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+          <circle cx="16" cy="16" r="13" /><circle cx="16" cy="16" r="7" /><circle cx="16" cy="16" r="1.5" fill="currentColor" />
+        </svg>
+        <span>La voie du dedans</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/pages/iskandari/">La voie des sagesses</a></li>
+          <li><a href="/pages/iskandari/hikam/">Les Sagesses</a></li>
+          <li><a href="/pages/carnet/">Carnet</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="isk-subnav-slot"></div>
+    <div id="theme-mount" class="isk-livre">
+      <p style="text-align:center; color: var(--ink-soft); font-style: italic; padding: 3rem 1rem;">Chargement…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p class="small"><a href="/pages/iskandari/hikam/">← Choisir un autre chemin</a> · <a href="/pages/iskandari/">La voie des sagesses</a></p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js?v=14"></script>
+  <script type="module">
+    import { loadHikam, loadCorpus, indexByTheme, injectSubnav, esc, FAMILLES_FR, FAMILLES_ORDER } from '/assets/js/iskandari/corpus.js';
+    injectSubnav('hikam');
+
+    const mount = document.getElementById('theme-mount');
+    const params = new URLSearchParams(location.search);
+    const themeId = params.get('id');
+
+    try {
+      const [hikam, corpus] = await Promise.all([loadHikam(), loadCorpus()]);
+      const byTheme = await indexByTheme(hikam, corpus);
+      const modById = {};
+      for (const m of corpus.thematic_modules || []) modById[m.id] = m;
+      const sagesseToMods = {};
+      for (const e of corpus.hikam_entry_index || []) sagesseToMods[e.id] = e.recommended_modules || [];
+
+      if (!themeId) {
+        // SOMMAIRE des thèmes
+        document.title = 'Lire par thème — Kitāb al-Ḥikam';
+        // Tri : modules avec sagesses d'abord, dans l'ordre des familles
+        const modsAvecSagesses = (corpus.thematic_modules || []).filter(m => (byTheme[m.id] || []).length > 0);
+        // Group par famille
+        const byFam = {};
+        for (const m of modsAvecSagesses) {
+          const f = m.famille || 'autres';
+          (byFam[f] = byFam[f] || []).push(m);
+        }
+        const orderedKeys = [...FAMILLES_ORDER.filter(k => byFam[k]),
+                             ...Object.keys(byFam).filter(k => !FAMILLES_ORDER.includes(k))];
+        const html = orderedKeys.map(famKey => {
+          const mods = byFam[famKey];
+          return `
+            <section class="isk-famille">
+              <header class="isk-famille__head">
+                <h2 class="isk-famille__name">${esc(FAMILLES_FR[famKey] || famKey)}</h2>
+                <span class="isk-famille__count">${mods.length}</span>
+              </header>
+              <div class="isk-themes-grid" style="margin:.5rem 0;">
+                ${mods.map(m => {
+                  const count = (byTheme[m.id] || []).length;
+                  return `
+                    <a class="isk-theme-card" href="?id=${esc(m.id)}">
+                      <h3 class="isk-theme-card__title">${esc(m.title_fr)}</h3>
+                      <span class="isk-theme-card__count">${count} sagesse${count > 1 ? 's' : ''}</span>
+                    </a>`;
+                }).join('')}
+              </div>
+            </section>`;
+        }).join('');
+
+        mount.innerHTML = `
+          <header class="isk-chapitre__head">
+            <span class="isk-chapitre__rubrique">Lire par thème</span>
+            <h1 class="isk-chapitre__titre">Entrer par ce qui t'habite</h1>
+            <p class="isk-chapitre__count">${modsAvecSagesses.length} thèmes · regroupés par grande voie</p>
+            <div class="isk-chapitre__rule"></div>
+          </header>
+          <div class="isk-familles" style="max-width:none; padding:0;">${html}</div>
+        `;
+      } else {
+        // LECTURE d'un thème
+        const mod = modById[themeId];
+        if (!mod) {
+          mount.innerHTML = '<p style="text-align:center; color:#c44; padding:3rem;">Thème introuvable.</p>';
+          return;
+        }
+        const items = (byTheme[themeId] || []).sort((a, b) => a.id - b.id);
+        document.title = `${mod.title_fr} — Kitāb al-Ḥikam`;
+
+        // Liste ordonnée des thèmes pour la pagination
+        const modsAvecSagesses = (corpus.thematic_modules || []).filter(m => (byTheme[m.id] || []).length > 0);
+        const idx = modsAvecSagesses.findIndex(m => m.id === themeId);
+        const prevMod = idx > 0 ? modsAvecSagesses[idx - 1] : null;
+        const nextMod = idx < modsAvecSagesses.length - 1 ? modsAvecSagesses[idx + 1] : null;
+
+        const renderSagesse = (r) => {
+          const cd = r.commentary_draft || {};
+          const themes = (sagesseToMods[r.id] || [])
+            .filter(id => id !== themeId)
+            .map(id => modById[id])
+            .filter(Boolean)
+            .slice(0, 3)
+            .map(m => `<a href="?id=${esc(m.id)}">${esc(m.title_fr)}</a>`)
+            .join(' · ');
+          return `
+            <article class="isk-sagesse" id="s-${r.id}">
+              <p class="isk-sagesse__num">
+                <a href="/pages/iskandari/hikma/?id=${r.id}">Sagesse n° ${r.id}</a>
+              </p>
+              ${r.english_text_draft ? `<p class="isk-sagesse__texte">${esc(r.english_text_draft)}</p>` : ''}
+              ${cd.explanation_fr ? `
+                <div class="isk-sagesse__bloc">
+                  <span class="isk-sagesse__label">L'enseignement</span>
+                  <p class="isk-sagesse__corps">${esc(cd.explanation_fr)}</p>
+                </div>` : ''}
+              ${cd.classical_sources_note ? `
+                <div class="isk-sagesse__bloc isk-sagesse__bloc--sources">
+                  <span class="isk-sagesse__label">Sources classiques</span>
+                  <p class="isk-sagesse__corps">${esc(cd.classical_sources_note)}</p>
+                </div>` : ''}
+              ${cd.modern_insight_fr ? `
+                <div class="isk-sagesse__bloc">
+                  <span class="isk-sagesse__label">Une lecture pour aujourd'hui</span>
+                  <p class="isk-sagesse__corps">${esc(cd.modern_insight_fr)}</p>
+                </div>` : ''}
+              ${themes ? `<p class="isk-sagesse__themes">Autres thèmes : ${themes}</p>` : ''}
+            </article>`;
+        };
+
+        const navHTML = `
+          <nav class="isk-livre__nav" aria-label="Navigation thèmes">
+            ${prevMod ? `<a href="?id=${esc(prevMod.id)}">← ${esc(prevMod.title_fr)}</a>` : '<span></span>'}
+            <span class="isk-livre__nav-center">Thème ${idx + 1} / ${modsAvecSagesses.length}</span>
+            ${nextMod ? `<a href="?id=${esc(nextMod.id)}">${esc(nextMod.title_fr)} →</a>` : '<span></span>'}
+          </nav>`;
+
+        mount.innerHTML = `
+          ${navHTML}
+          <header class="isk-chapitre__head">
+            <span class="isk-chapitre__rubrique">Lire par thème</span>
+            <p class="isk-bandeau__ar" lang="ar" dir="rtl" style="font-family:'Amiri',serif; font-size:1.4rem; color:var(--isk-gold-deep); margin:.2rem 0; direction:rtl;">${esc(mod.title_ar || '')}</p>
+            <h1 class="isk-chapitre__titre">${esc(mod.title_fr)}</h1>
+            <p class="isk-chapitre__count">${items.length} sagesse${items.length > 1 ? 's' : ''} sur ce thème</p>
+            <div class="isk-chapitre__rule"></div>
+          </header>
+          <p style="text-align:center;"><a href="/pages/iskandari/hikam/par-theme/" style="color:var(--isk-gold-deep); text-decoration:none; border-bottom:1px dotted var(--isk-gold-deep); font-size:.92rem;">← Tous les thèmes</a></p>
+          ${items.map(renderSagesse).join('')}
+          ${navHTML}
+        `;
+      }
+    } catch (e) {
+      mount.innerHTML = '<p style="text-align:center; color:#c44; padding:3rem;">Désolé, les sagesses n\'ont pas pu être chargées.</p>';
+      console.error(e);
+    }
+  </script>
+  <script type="module" src="/assets/js/pulse.js?v=2"></script>
+</body>
+</html>

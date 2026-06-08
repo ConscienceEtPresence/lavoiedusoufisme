@@ -6,20 +6,17 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
   <meta name="theme-color" content="#0F1830" />
-  <title>Sagesses du Kitāb al-Ḥikam — Iskandarī</title>
-  <meta name="description" content="Les 300 sagesses du Kitāb al-Ḥikam d'Ibn ʿAṭāʾ Allāh al-Iskandarī, indexées par chapitre et reliées aux thèmes de la voie." />
-
+  <title>Les Sagesses — Kitāb al-Ḥikam</title>
+  <meta name="description" content="Les 300 sagesses du Kitāb al-Ḥikam d'Ibn ʿAṭāʾ Allāh al-Iskandarī. Lisibles par chapitre comme un livre, ou par thème selon ce qu'on cherche." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=2" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=3" />
 </head>
 <body class="page-enter">
-
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="/index.html" class="brand">
@@ -29,16 +26,12 @@
         <span>La voie du dedans</span>
       </a>
       <button class="nav-toggle" aria-label="Menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 6h18M3 12h18M3 18h18" />
-        </svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
       </button>
       <nav>
         <ul class="site-nav">
           <li><a href="/index.html">Accueil</a></li>
           <li><a href="/pages/iskandari/">La voie des sagesses</a></li>
-          <li><a href="/pages/iskandari/themes/">Thèmes</a></li>
-          <li><a href="/pages/iskandari/hikam/" class="active">Ḥikam</a></li>
           <li><a href="/pages/carnet/">Carnet</a></li>
         </ul>
       </nav>
@@ -50,126 +43,44 @@
       <div class="isk-bandeau__inner">
         <span class="isk-bandeau__suite"><a href="/pages/iskandari/">La voie des sagesses</a> · Section 2</span>
         <p class="isk-bandeau__ar" lang="ar" dir="rtl">كتاب الحكم</p>
-        <h1 class="isk-bandeau__title">Les Sagesses du Ḥikam</h1>
-        <p class="isk-bandeau__sub">300 sagesses, indexées par chapitre et reliées aux thèmes de méditation. Une parole brève qui se relit toute une vie.</p>
+        <h1 class="isk-bandeau__title">Les Sagesses</h1>
+        <p class="isk-bandeau__sub">300 sagesses brèves, à relire toute une vie. Choisis ton chemin de lecture : parcourir le livre comme il a été écrit, ou entrer par un thème qui t'appelle aujourd'hui.</p>
       </div>
     </header>
 
     <div id="isk-subnav-slot"></div>
 
     <section class="container container--wide">
-      <p style="text-align:center;"><a href="/pages/iskandari/" class="isk-module__back">← Retour Iskandarī</a></p>
+      <div class="isk-deux-portes">
+        <a href="/pages/iskandari/hikam/par-chapitre/?n=1" class="isk-deux-portes__carte">
+          <div class="isk-deux-portes__icon">I</div>
+          <h2 class="isk-deux-portes__title">Lire par chapitre</h2>
+          <p class="isk-deux-portes__desc">Suivre le livre dans son ordre : 24 chapitres, les 4 lettres et les <em>Munājāt</em>. À ton rythme, comme on tourne les pages.</p>
+        </a>
 
-      <div class="isk-hikam-toolbar">
-        <input type="search" id="hikam-search" placeholder="Filtrer par numéro ou thème…" aria-label="Filtrer les sagesses" />
-        <select id="hikam-filter-mod" aria-label="Filtrer par thème">
-          <option value="">Tous les thèmes</option>
-        </select>
+        <a href="/pages/iskandari/hikam/par-theme/" class="isk-deux-portes__carte">
+          <div class="isk-deux-portes__icon">II</div>
+          <h2 class="isk-deux-portes__title">Lire par thème</h2>
+          <p class="isk-deux-portes__desc">Entrer par ce qui t'habite — confiance, parole, fatigue, retour, gratitude. Les sagesses du Ḥikam regroupées autour d'une vigilance.</p>
+        </a>
       </div>
 
-      <p style="text-align:center; max-width: 38rem; margin: .5rem auto 0; color: var(--ink-soft); font-style: italic; font-size: .92rem;">
-        Les textes arabes vocalisés, la translittération et la traduction française finale seront ajoutés progressivement, après vérification de source.
-      </p>
-
-      <div id="hikam-mount" style="margin-top: 1.5rem;">
-        <p style="text-align:center; color: var(--ink-soft); font-style: italic;">Chargement…</p>
-      </div>
+      <p class="isk-livre__note">Le texte des sagesses est ici dans sa version anglaise (traduction de référence). La traduction française originale est en cours de préparation. Le commentaire pédagogique est en français.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
       <div class="ornament">✦</div>
-      <p class="small"><a href="/pages/iskandari/">← Iskandarī</a> · <a href="/index.html">Accueil</a></p>
+      <p class="small"><a href="/pages/iskandari/">← La voie des sagesses</a></p>
     </div>
   </footer>
 
   <script src="/assets/js/main.js?v=14"></script>
   <script type="module">
-    import { loadCorpus, esc, indexModules } from '/assets/js/iskandari/corpus.js';
-
-    const mount = document.getElementById('hikam-mount');
-    const search = document.getElementById('hikam-search');
-    const filterMod = document.getElementById('hikam-filter-mod');
-
-    // Titres de chapitre (lus du fichier consolidé v2 — fallback générique)
-    const CHAPITRE_TITRES = {
-      'chapter_01':'Ch. 1 — La confiance en Dieu et la nature de l\'action',
-      'chapter_02':'Ch. 2 — Le temps, la prédestination et la voie intérieure',
-      'chapter_03':'Ch. 3 — La connaissance de soi et les attributs divins',
-      'chapter_04':'Ch. 4 — Se centrer sur Dieu',
-      'chapter_05':'Ch. 5 — L\'amitié, l\'esprit et le dhikr',
-      'chapter_06':'Ch. 6 — La mort du cœur et l\'espérance en Dieu',
-      'letters':'Les quatre lettres (appendices)',
-      'intimate_prayers':'Munājāt — Prières intimes',
-      'intimate_prayers_complete':'Munājāt — Prières intimes (version complète)'
-    };
-
-    try {
-      const corpus = await loadCorpus();
-      const mods = indexModules(corpus);
-      const entries = corpus.hikam_entry_index || [];
-
-      // Remplir le filtre par thème
-      const allMods = [...corpus.thematic_modules].sort((a,b) => a.title_fr.localeCompare(b.title_fr));
-      for (const m of allMods) {
-        const opt = document.createElement('option');
-        opt.value = m.id; opt.textContent = m.title_fr;
-        filterMod.appendChild(opt);
-      }
-
-      function render() {
-        const q = (search.value || '').toLowerCase().trim();
-        const mid = filterMod.value;
-
-        // Group by section_id (chapitre)
-        const bySec = {};
-        for (const e of entries) {
-          // Filtre par thème
-          if (mid && !(e.recommended_modules || []).includes(mid)) continue;
-          // Recherche
-          if (q) {
-            const hay = `${e.id} ${(e.recommended_modules || []).join(' ')}`.toLowerCase();
-            if (!hay.includes(q)) continue;
-          }
-          (bySec[e.section_id] = bySec[e.section_id] || []).push(e);
-        }
-        const keys = Object.keys(bySec).sort();
-        if (!keys.length) {
-          mount.innerHTML = '<p style="text-align:center; color: var(--ink-soft); font-style:italic;">Aucune sagesse ne correspond à ce filtre.</p>';
-          return;
-        }
-        mount.innerHTML = keys.map(sec => {
-          const items = bySec[sec];
-          return `
-            <section class="isk-hikam-chapter">
-              <h2 class="isk-hikam-chapter__title">${esc(CHAPITRE_TITRES[sec] || sec)} <span style="font-size:.82rem; color:var(--ink-soft);">(${items.length})</span></h2>
-              <div class="isk-hikam-grid">
-                ${items.map(e => {
-                  const tagMods = (e.recommended_modules || []).slice(0, 2).map(id => mods[id]?.transliteration || id).join(' · ');
-                  return `<a class="isk-hikma-tile" href="/pages/iskandari/hikma/?id=${e.id}">
-                    <span class="isk-hikma-tile__num">${e.id}</span>
-                    ${tagMods ? `<span class="isk-hikma-tile__tags">${esc(tagMods)}</span>` : ''}
-                  </a>`;
-                }).join('')}
-              </div>
-            </section>`;
-        }).join('');
-      }
-
-      search.addEventListener('input', render);
-      filterMod.addEventListener('change', render);
-      render();
-    } catch (e) {
-      mount.innerHTML = '<p style="text-align:center; color:#c44;">Désolé, le corpus n\'a pas pu être chargé.</p>';
-      console.error(e);
-    }
-  </script>
-  <script type="module" src="/assets/js/pulse.js?v=2"></script>
-
-  <script type="module">
     import { injectSubnav } from '/assets/js/iskandari/corpus.js';
     injectSubnav('hikam');
   </script>
+  <script type="module" src="/assets/js/pulse.js?v=2"></script>
 </body>
 </html>

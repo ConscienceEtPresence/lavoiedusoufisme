@@ -7,18 +7,32 @@ import { db } from './firebase-init.js';
 import { doc, setDoc, getDoc, addDoc, collection, serverTimestamp }
   from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
+// === Carnet ouvert — pas de mot de passe, pas de code, pas de connexion ===
+// Un identifiant anonyme local + un prénom optionnel suffisent.
+// Le tout vit dans localStorage du navigateur de l'utilisateur.
+function getOrCreateAnonId() {
+  let id = localStorage.getItem('lvdd_carnet_id');
+  if (!id) {
+    // Génère un identifiant court mais peu collisionnable (anon-xxxxxxxx)
+    id = 'anon-' + Math.random().toString(36).slice(2, 10);
+    localStorage.setItem('lvdd_carnet_id', id);
+  }
+  return id;
+}
+function getStoredPrenom() {
+  return localStorage.getItem('lvdd_carnet_prenom') || '';
+}
 async function ensureValidSession(session) {
-  const snap = await getDoc(doc(db, 'codes', session.codeId));
-  if (!snap.exists() || snap.data().actif === false) {
-    localStorage.removeItem('lvdd_carnet_session');
-    window.location.href = '../entrer/';
-    throw new Error('session-invalid');
-  }
-  const d = snap.data();
-  if (d.motGraine && d.motGraine !== session.motGraine) {
-    session.motGraine = d.motGraine;
-    localStorage.setItem('lvdd_carnet_session', JSON.stringify(session));
-  }
+  // Plus de validation côté base — le carnet est ouvert.
+  // On en profite pour mettre à jour le meta (prénom + dernière visite)
+  // afin que tu puisses suivre depuis le cockpit.
+  try {
+    await setDoc(doc(db, 'carnets', session.codeId, '_meta', 'profil'), {
+      prenom: session.prenom || null,
+      lastSeen: serverTimestamp(),
+      firstSeen: serverTimestamp()
+    }, { merge: true });
+  } catch (e) { console.warn('meta failed', e); }
 }
 
 const EN = document.documentElement.lang === 'en';
@@ -338,22 +352,37 @@ const REMEDES = [
   { id: 'muraqaba', fr: 'murāqaba — regarder ce qui passe', en: 'murāqaba — watch what passes' }
 ];
 
-const SESSION_KEY = 'lvdd_carnet_session';
+const SESSION_KEY = 'lvdd_carnet_session'; // legacy
 const mount = document.getElementById('jour-mount');
 const sortirLink = document.getElementById('sortir-link');
 
 sortirLink?.addEventListener('click', (e) => {
   e.preventDefault();
   if (confirm(TXT.noSession)) {
-    localStorage.removeItem(SESSION_KEY);
+    // On ne supprime pas l'anonId — il reste invisible au navigateur.
+    // L'utilisateur revient sur l'accueil carnet.
     window.location.href = '../';
   }
 });
 
-const sessionRaw = localStorage.getItem(SESSION_KEY);
-if (!sessionRaw) { window.location.href = '../entrer/'; throw new Error('no session'); }
-const session = JSON.parse(sessionRaw);
-const { codeId, prenom } = session;
+// === Session ouverte ===
+// Migration douce depuis l'ancien système (lvdd_carnet_session) → nouveau modèle
+const oldSessionRaw = localStorage.getItem(SESSION_KEY);
+if (oldSessionRaw) {
+  try {
+    const old = JSON.parse(oldSessionRaw);
+    if (old.codeId && !localStorage.getItem('lvdd_carnet_id')) {
+      localStorage.setItem('lvdd_carnet_id', old.codeId);
+    }
+    if (old.prenom && !localStorage.getItem('lvdd_carnet_prenom')) {
+      localStorage.setItem('lvdd_carnet_prenom', old.prenom);
+    }
+  } catch {}
+}
+const anonId = getOrCreateAnonId();
+const prenom = getStoredPrenom();
+const session = { codeId: anonId, prenom };
+const codeId = anonId;
 
 function dateKey(d) {
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;

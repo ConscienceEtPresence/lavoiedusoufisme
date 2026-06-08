@@ -2561,3 +2561,103 @@ body.carnet { font-size: 17px; }
   border-bottom: 1px dotted #8a7028;
 }
 .verset-compagnon__link:hover { color: #6a5520; }
+
+/* ============================================================
+   v16 — Carnet ouvert : page d'entrée sobre, sans mot de passe
+   ============================================================ */
+.carnet-entree {
+  max-width: 32rem;
+  margin: 1rem auto 3rem;
+  padding: 0 1.5rem;
+}
+.carnet-formule {
+  display: grid;
+  gap: .9rem;
+  padding: 1.6rem;
+  background: linear-gradient(160deg, #fff 0%, #fdf6e4 100%);
+  border: 1px solid rgba(192, 160, 80, 0.3);
+  border-radius: 12px;
+  text-align: center;
+}
+.carnet-formule__label {
+  display: block;
+  text-align: left;
+}
+.carnet-formule__label span {
+  display: block;
+  font-size: .85rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #6a5520;
+  font-weight: 600;
+  margin-bottom: .35rem;
+}
+.carnet-formule__label input {
+  width: 100%;
+  padding: .75rem 1rem;
+  font-size: 1.05rem;
+  background: #fff;
+  border: 1px solid rgba(192, 160, 80, 0.4);
+  border-radius: 8px;
+  font-family: inherit;
+  color: #2a1f08;
+  box-sizing: border-box;
+}
+.carnet-formule__label input:focus {
+  outline: none;
+  border-color: #c0a050;
+  box-shadow: 0 0 0 3px rgba(192,160,80,0.15);
+}
+.carnet-formule__hint {
+  margin: 0;
+  font-size: .88rem;
+  color: #8a7a55;
+  text-align: center;
+}
+.carnet-cta {
+  display: inline-block;
+  padding: .9rem 1.6rem;
+  background: linear-gradient(135deg, #c0a050, #a8884a);
+  color: #fff !important;
+  border: none;
+  border-radius: 999px;
+  font-family: var(--font-sans, Inter, sans-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: filter .15s, transform .15s, box-shadow .15s;
+  box-shadow: 0 12px 28px -14px rgba(192,160,80,0.6);
+}
+.carnet-cta:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+.carnet-cta:disabled {
+  filter: grayscale(0.3) brightness(0.95);
+  cursor: wait;
+}
+.carnet-retour {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 250, 235, 0.5);
+  border: 1px solid rgba(192, 160, 80, 0.25);
+  border-radius: 12px;
+}
+.carnet-retour__hello {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  color: #4a3a18;
+  margin: 0 0 1rem;
+  line-height: 1.4;
+}
+.carnet-retour__hello em {
+  font-style: italic;
+  color: #6a5520;
+}
+.carnet-retour__note {
+  margin: 1rem 0 0;
+  font-size: .88rem;
+  color: #8a7a55;
+}

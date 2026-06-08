@@ -425,7 +425,7 @@ function whisperForTime() {
 
 async function load() {
   await ensureValidSession(session);
-  const [pratiquesJson, motsJson, axesJson, ctxJson, appJson, encJson, mvtJson, jourSnap, hierSnap] = await Promise.all([
+  const [pratiquesJson, motsJson, axesJson, ctxJson, appJson, encJson, mvtJson, iskJson, jourSnap, hierSnap] = await Promise.all([
     fetch('/data/carnet/pratiques.json').then(r => r.json()),
     fetch('/data/carnet/mots-graines.json').then(r => r.json()),
     fetch('/data/carnet/axes-spirituels.json').then(r => r.json()),
@@ -433,6 +433,7 @@ async function load() {
     fetch('/data/carnet/apprentissages-profonds.json').then(r => r.json()),
     fetch('/data/carnet/encouragements.json').then(r => r.json()),
     fetch('/data/carnet/mouvements-nafs.json').then(r => r.json()),
+    fetch('/data/iskandari/corpus.json').then(r => r.json()),
     getDoc(doc(db, 'carnets', codeId, 'jours', date)).catch(() => null),
     getDoc(doc(db, 'carnets', codeId, 'jours', dateHier)).catch(() => null)
   ]);
@@ -441,7 +442,8 @@ async function load() {
   const hierData = hierSnap?.exists() ? hierSnap.data() : null;
   render({
     pratiques: pratiquesJson, motCompagnon, jourData, hierData,
-    axesLib: axesJson, ctxLib: ctxJson, appLib: appJson, encLib: encJson, mvtLib: mvtJson
+    axesLib: axesJson, ctxLib: ctxJson, appLib: appJson, encLib: encJson, mvtLib: mvtJson,
+    iskLib: iskJson
   });
 }
 
@@ -458,7 +460,7 @@ function esc(s) {
 
 function ornament() { return '<div class="jour-ornament">✦</div>'; }
 
-function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, appLib, encLib, mvtLib }) {
+function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, appLib, encLib, mvtLib, iskLib }) {
   // Schéma v2 — la page Aujourd'hui n'a plus de "mode" comme structure principale
   // (Refonte structurelle spirituelle — rapport du 7 juin 2026)
   // Les deux blocs centraux : "Je pose ma journée" + "Ce soir, je relis ma journée"
@@ -479,7 +481,7 @@ function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, 
     </header>
   `;
 
-  const contentBlock = renderJournee(jourData, hierData, { axesLib, ctxLib, appLib, encLib, mvtLib });
+  const contentBlock = renderJournee(jourData, hierData, { axesLib, ctxLib, appLib, encLib, mvtLib, iskLib });
 
   // Reprise du vœu d'hier — seulement si un vow existe dans le jour précédent
   const repriseBlock = renderRepriseVow(hierData, jourData);
@@ -493,7 +495,6 @@ function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, 
     <div id="boussole-mount">${boussoleInitiale}</div>
     <div id="verset-compagnon-mount"></div>
     <div id="iskandari-jour-mount"></div>
-    <div id="nom-du-jour"></div>
     ${motGraineMention}
     ${ornament()}
     <div id="journee-content">${contentBlock}</div>
@@ -502,7 +503,7 @@ function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, 
     ${renderSuggestion()}
   `;
 
-  bindJournee({ axesLib, ctxLib, appLib, encLib, mvtLib });
+  bindJournee({ axesLib, ctxLib, appLib, encLib, mvtLib, iskLib });
   bindReprise();
   bindSuggestion();
   loadVersetCompagnon();
@@ -515,18 +516,7 @@ function render({ pratiques, motCompagnon, jourData, hierData, axesLib, ctxLib, 
     const bEl = document.getElementById('boussole-mount');
     if (bEl) bEl.innerHTML = renderBoussole(nom, hierData);
 
-    const nomEl = document.getElementById('nom-du-jour');
-    if (nomEl && nom) {
-      nomEl.innerHTML = `
-        <section class="nom-du-jour fade-in-up">
-          <span class="nom-du-jour__label">Le Nom qui vous accompagne aujourd'hui</span>
-          <div class="nom-du-jour__ar" lang="ar" dir="rtl">${esc(nom.ar)}</div>
-          <p class="nom-du-jour__tr"><em>${esc(nom.tr)}</em> — ${esc(nom.fr)}</p>
-          ${nom.sens ? `<p class="nom-du-jour__sens">${esc(nom.sens)}</p>` : ''}
-          ${nom.href ? `<a class="nom-du-jour__link" href="${esc(nom.href)}">Découvrir ce Nom →</a>` : ''}
-        </section>
-      `;
-    }
+    // Le Nom du jour n'est plus affiché en bloc dédié — il vit dans la boussole.
     const hebdoEl = document.getElementById('bilan-hebdo-mount');
     if (hebdoEl && bilan?.lines?.length && bilan.days >= 3) {
       const namesBlock = (names && names.length) ? `
@@ -636,95 +626,172 @@ function renderJournee(jourData, hierData, libs) {
   `;
 }
 
+// === Familles spirituelles pour le catalogue d'Iskandari (ordre de lecture) ===
+const ISK_FAMILLES_ORDER = [
+  'abandon_confiance', 'temps_presence', 'vie_concrete', 'coeur_action',
+  'epreuves', 'coeur_relation', 'retour', 'etats_interieurs', 'servitude',
+  'detachement', 'transformation_interieure', 'relation',
+  'science_contemplation', 'pratique', 'voie_transmission',
+  'amour_attachement', 'priere_intime', 'module_complementaire'
+];
+const ISK_FAMILLES_FR = {
+  abandon_confiance:        'Abandon et confiance',
+  temps_presence:           'Le temps, la présence',
+  vie_concrete:             'Vie concrète',
+  coeur_action:             'Cœur et action',
+  epreuves:                 'Épreuves et patience',
+  coeur_relation:           'Cœur et relation',
+  retour:                   'Retour, réparation',
+  etats_interieurs:         'États intérieurs',
+  servitude:                'Servitude et besoin',
+  detachement:              'Détachement, sobriété',
+  transformation_interieure:'Transformation intérieure',
+  relation:                 'Relations humaines',
+  science_contemplation:    'Connaissance et contemplation',
+  pratique:                 'Pratique vivante',
+  voie_transmission:        'Voie et transmission',
+  amour_attachement:        'Amour et attachement',
+  priere_intime:            'Prière intime',
+  module_complementaire:    'Pour aller plus loin'
+};
+
 function renderPoseJournee(jourData, hierData, libs) {
   const matin = jourData.matin || {};
   const hintMatin = renderHintMatin(hierData);
+  const themesChoisisIds = new Set(matin.themes || []);
 
-  const chipsContextes = renderChipsParFamille(
-    libs.ctxLib.contextes, libs.ctxLib.familles, 'pose-contexte', 'checkbox', matin.contextes || []);
-  const chipsAxes = renderChipsParFamille(
-    libs.axesLib.axes, libs.axesLib.familles, 'pose-axe', 'checkbox', matin.axes || []);
+  // === Catalogue des 44 thèmes spirituels (Iskandari) groupés par grande voie ===
+  const modules = libs.iskLib?.thematic_modules || [];
+  const byFam = {};
+  for (const m of modules) {
+    const f = m.famille || 'module_complementaire';
+    (byFam[f] = byFam[f] || []).push(m);
+  }
+  const orderedKeys = [...ISK_FAMILLES_ORDER.filter(k => byFam[k]),
+                       ...Object.keys(byFam).filter(k => !ISK_FAMILLES_ORDER.includes(k))];
 
-  const curApp = new Set(matin.apprentissages || []);
-  // Cartes dépliables (rapport REFONTE étape 3 : pour chaque choix, afficher
-  // illusion + réaction + sens + adab — pas en tooltip, en vrai contenu déployable)
-  const chipsApprentissages = libs.appLib.apprentissages.map(a => `
-    <details class="app-carte ${curApp.has(a.id)?'is-active':''}">
-      <summary class="app-carte__head">
-        <label class="app-carte__check">
-          <input type="checkbox" name="pose-apprentissage" value="${esc(a.id)}" ${curApp.has(a.id)?'checked':''}/>
-          <span>${esc(a.label)}</span>
-        </label>
-        <span class="app-carte__expand">en savoir plus</span>
-      </summary>
-      <div class="app-carte__body">
-        <p class="app-carte__sens">${esc(a.sens)}</p>
-        ${a.illusion ? `<p class="app-carte__field"><span class="app-carte__field-label">Illusion possible</span>${esc(a.illusion)}</p>` : ''}
-        ${a.reaction ? `<p class="app-carte__field"><span class="app-carte__field-label">Réaction automatique</span>${esc(a.reaction)}</p>` : ''}
-        ${a.geste ? `<p class="app-carte__field"><span class="app-carte__field-label">Geste</span>${esc(a.geste)}</p>` : ''}
-      </div>
-    </details>`).join('');
+  const familles = orderedKeys.map(famKey => {
+    const mods = byFam[famKey];
+    const cards = mods.map(m => {
+      const isSel = themesChoisisIds.has(m.id);
+      // Extrait court du teaching (première phrase)
+      const teasingShort = (m.teaching || '').split('.')[0] + '.';
+      return `
+        <label class="jour-theme ${isSel ? 'is-selected' : ''}" data-theme="${esc(m.id)}">
+          <input type="checkbox" name="pose-theme" value="${esc(m.id)}" ${isSel ? 'checked' : ''}/>
+          <div class="jour-theme__head">
+            <span class="jour-theme__ar" lang="ar" dir="rtl">${esc(m.title_ar || '')}</span>
+            <span class="jour-theme__tr">${esc(m.transliteration || '')}</span>
+          </div>
+          <h4 class="jour-theme__titre">${esc(m.title_fr || '')}</h4>
+          <p class="jour-theme__tease">${esc(teasingShort)}</p>
+        </label>`;
+    }).join('');
+    return `
+      <section class="jour-famille-spi">
+        <h3 class="jour-famille-spi__name">${esc(ISK_FAMILLES_FR[famKey] || famKey)}</h3>
+        <div class="jour-themes-grid">${cards}</div>
+      </section>`;
+  }).join('');
 
-  const curAdab = matin.adab || '';
-  const chipsAdabs = ADABS_FR.map(a => `
-    <label class="jour-chip ${curAdab===a.id?'is-active':''}">
-      <input type="radio" name="pose-adab" value="${esc(a.id)}" ${curAdab===a.id?'checked':''}/>
-      <span>${esc(a.label)}</span>
-    </label>`).join('');
-
-  const geste = matin.geste || '';
-  const synthese = matin.poseLe ? renderSynthesePoseMatin(matin, libs) : '';
+  // === Fiches détaillées des thèmes choisis (s'affichent en bas) ===
+  const fichesChoisis = renderFichesThemesChoisis(matin.themes || [], modules);
 
   return `
     <section class="jour-section" id="section-pose">
       <h2 class="jour-section__titre">Je pose ma journée</h2>
-      <p class="jour-section__sub"><em>Une orientation pour marcher aujourd'hui avec plus de vérité.</em></p>
-
-      <details class="jour-peu-force">
-        <summary class="jour-peu-force__summary">Aujourd'hui, je viens avec peu de force.</summary>
-        <p class="jour-peu-force__body"><em>Très bien. Cochez seulement ce qui vous parle, ou rien du tout. Le carnet vous accueille comme vous êtes. Vous pouvez même fermer cette page maintenant — c'est aussi une forme de présence.</em></p>
-      </details>
+      <p class="jour-section__sub"><em>Sur quoi voulez-vous veiller aujourd'hui ?</em></p>
 
       ${hintMatin}
 
-      <div class="jour-etape">
-        <p class="jour-etape__num">1.</p>
-        <p class="jour-etape__titre">Où ma vigilance sera sollicitée aujourd'hui ?</p>
-        ${chipsContextes}
+      <p class="jour-pose__intro">
+        Choisissez un ou plusieurs <strong>thèmes spirituels</strong> qui vous appellent aujourd'hui. Chacun est une vigilance, un adab à porter — pas une performance.
+      </p>
+
+      <div id="catalogue-themes">${familles}</div>
+
+      <div id="fiches-choisis-mount">${fichesChoisis}</div>
+
+      <div class="jour-pose__commit">
+        <button type="button" class="carnet-btn carnet-btn--gold" id="save-pose">Poser ma journée</button>
+        <span class="jour-save-ok" id="save-pose-ok" hidden>✓ posée</span>
       </div>
-
-      <div class="jour-etape">
-        <p class="jour-etape__num">2.</p>
-        <p class="jour-etape__titre">Ce que je veux travailler aujourd'hui</p>
-        ${chipsAxes}
-      </div>
-
-      <details class="jour-etape jour-etape--option">
-        <summary class="jour-etape__summary"><span class="jour-etape__num">3.</span> Apprendre plus profondément <span class="jour-etape__optionel">(facultatif)</span></summary>
-        <div class="jour-chips jour-chips--apprentissages">${chipsApprentissages}</div>
-      </details>
-
-      <div class="jour-etape">
-        <p class="jour-etape__num">4.</p>
-        <p class="jour-etape__titre">Un adab pour la journée</p>
-        <div class="jour-chips">${chipsAdabs}</div>
-      </div>
-
-      <div class="jour-etape">
-        <p class="jour-etape__num">5.</p>
-        <p class="jour-etape__titre">Mon geste concret <span class="jour-etape__optionel">(petit, observable)</span></p>
-        <input type="text" id="pose-geste" class="jour-input" maxlength="200" placeholder="ex. : respirer une fois avant de répondre" value="${esc(geste)}"/>
-      </div>
-
-      <button type="button" class="carnet-btn carnet-btn--gold" id="save-pose">Poser ma journée</button>
-      <span class="jour-save-ok" id="save-pose-ok" hidden>✓ posée</span>
-      <div id="synthese-pose">${synthese}</div>
     </section>
   `;
 }
 
+function renderFichesThemesChoisis(themesIds, modules) {
+  if (!themesIds.length) return '';
+  const cards = themesIds.map(id => {
+    const m = modules.find(x => x.id === id);
+    if (!m) return '';
+    const dailyMatin = (m.daily_practice?.matin || []).map(p => `<li>${esc(p)}</li>`).join('');
+    const dailyJournee = (m.daily_practice?.journee || []).map(p => `<li>${esc(p)}</li>`).join('');
+    const pitfalls = (m.pitfalls || []).slice(0, 2).map(p => `<p class="fiche__pitfall">${esc(p)}</p>`).join('');
+    return `
+      <article class="fiche-theme">
+        <header class="fiche-theme__head">
+          <span class="fiche-theme__ar" lang="ar" dir="rtl">${esc(m.title_ar || '')}</span>
+          <h3 class="fiche-theme__titre">${esc(m.title_fr)}</h3>
+          <p class="fiche-theme__tr">${esc(m.transliteration || '')}</p>
+        </header>
+        ${m.teaching ? `
+          <div class="fiche-theme__bloc">
+            <span class="fiche-theme__label">L'enseignement</span>
+            <p class="fiche-theme__corps">${esc(m.teaching)}</p>
+          </div>` : ''}
+        ${m.spiritual_direction ? `
+          <div class="fiche-theme__bloc fiche-theme__bloc--soft">
+            <span class="fiche-theme__label">Direction intérieure</span>
+            <p class="fiche-theme__corps">${esc(m.spiritual_direction)}</p>
+          </div>` : ''}
+        ${dailyMatin || dailyJournee ? `
+          <div class="fiche-theme__bloc">
+            <span class="fiche-theme__label">À porter dans la journée</span>
+            <ul class="fiche-theme__liste">${dailyMatin}${dailyJournee}</ul>
+          </div>` : ''}
+        ${pitfalls ? `
+          <div class="fiche-theme__bloc">
+            <span class="fiche-theme__label">Pièges à éviter</span>
+            ${pitfalls}
+          </div>` : ''}
+        ${m.journal_prompt ? `
+          <div class="fiche-theme__question">
+            <span class="fiche-theme__label">Une question à porter</span>
+            <p class="fiche-theme__question-texte">${esc(m.journal_prompt)}</p>
+          </div>` : ''}
+      </article>`;
+  }).filter(Boolean).join('');
+  if (!cards) return '';
+  return `
+    <div class="fiches-choisis">
+      <p class="fiches-choisis__label">Ce que vous prenez pour aujourd'hui</p>
+      ${cards}
+    </div>`;
+}
+
 function renderSynthesePoseMatin(matin, libs) {
   if (!matin) return '';
+  // Synthèse nouvelle façon : thèmes choisis
+  const modules = libs.iskLib?.thematic_modules || [];
+  const themesChoisis = (matin.themes || [])
+    .map(id => modules.find(m => m.id === id))
+    .filter(Boolean);
+  if (themesChoisis.length) {
+    return `
+      <div class="jour-synthese">
+        <p class="jour-synthese__label">Pour aujourd'hui</p>
+        <p>Je veille sur :</p>
+        <ul class="jour-synthese__themes">
+          ${themesChoisis.map(m => `
+            <li>
+              <strong>${esc(m.title_fr)}</strong>
+              <em style="color:#8a7028; font-size:.85em;">${esc(m.transliteration || '')}</em>
+            </li>`).join('')}
+        </ul>
+      </div>`;
+  }
+  // Compat ancien format (axes + adab + geste)
   const axesLabels = (matin.axes || []).map(id => {
     const a = libs.axesLib.axes.find(x => x.id === id);
     return a ? a.label : null;
@@ -757,14 +824,42 @@ function renderReluJournee(jourData, hierData, libs) {
       <p><em>Vous n'avez rien posé ce matin — c'est très bien aussi. Vous pouvez relire votre journée librement.</em></p>
     </div>`;
 
-  // Étape 2 : Bilan des axes choisis (seulement si axes posés)
-  const axesBilan = soir.axesBilan || {};
+  // Étape 2 : Bilan des thèmes choisis (le cœur du soir)
+  const themesBilan = soir.themesBilan || {};
+  const themesNotes = soir.themesNotes || {};
   const STATUTS = [
-    ['present', 'présent'],
+    ['tenu',    'tenu'],
     ['parfois', 'parfois'],
     ['oublie',  'oublié'],
-    ['pas-clair','pas clair']
+    ['repris',  'à reprendre']
   ];
+  const modules = libs.iskLib?.thematic_modules || [];
+  const bilanThemes = (matin.themes || []).map(themeId => {
+    const theme = modules.find(m => m.id === themeId);
+    if (!theme) return '';
+    const curStatut = themesBilan[themeId] || '';
+    const curNote = themesNotes[themeId] || '';
+    const opts = STATUTS.map(([id, label]) => `
+      <label class="jour-statut ${curStatut===id?'is-active':''}">
+        <input type="radio" name="bilan-theme-${esc(themeId)}" value="${id}" ${curStatut===id?'checked':''}/>
+        <span>${label}</span>
+      </label>`).join('');
+    return `
+      <div class="relu-theme">
+        <div class="relu-theme__head">
+          <span class="relu-theme__ar" lang="ar" dir="rtl">${esc(theme.title_ar || '')}</span>
+          <h4 class="relu-theme__titre">${esc(theme.title_fr)}</h4>
+        </div>
+        ${theme.journal_prompt ? `<p class="relu-theme__question"><em>${esc(theme.journal_prompt)}</em></p>` : ''}
+        <div class="jour-statuts">${opts}</div>
+        <label class="relu-theme__note">
+          <span>Une note, si elle vient</span>
+          <textarea name="bilan-note-${esc(themeId)}" rows="2" maxlength="400" placeholder="Ce que j'ai remarqué, ressenti, raté…">${esc(curNote)}</textarea>
+        </label>
+      </div>`;
+  }).join('');
+  // Compat ancien format : bilan des axes
+  const axesBilan = soir.axesBilan || {};
   const bilanAxes = (matin.axes || []).map(axeId => {
     const axe = libs.axesLib.axes.find(a => a.id === axeId);
     if (!axe) return '';
@@ -849,6 +944,12 @@ function renderReluJournee(jourData, hierData, libs) {
 
       ${rappelBlock}
 
+      ${(matin.themes || []).length ? `
+        <div class="jour-etape">
+          <p class="jour-etape__num">·</p>
+          <p class="jour-etape__titre">Comment chaque thème a-t-il été vécu ?</p>
+          ${bilanThemes}
+        </div>` : ''}
       ${(matin.axes || []).length ? `
         <div class="jour-etape">
           <p class="jour-etape__num">·</p>
@@ -941,25 +1042,42 @@ function bindJournee(libs) {
   });
 
   // --- Sauvegarde du matin ---
+  // Live update des fiches choisies + style de carte quand on coche un thème
+  const catalogue = document.getElementById('catalogue-themes');
+  if (catalogue) {
+    catalogue.addEventListener('change', (e) => {
+      const target = e.target;
+      if (target?.name === 'pose-theme') {
+        const card = target.closest('.jour-theme');
+        if (card) card.classList.toggle('is-selected', target.checked);
+        // Re-render les fiches choisies
+        const themesChoisis = Array.from(document.querySelectorAll('input[name="pose-theme"]:checked')).map(i => i.value);
+        const fichesMount = document.getElementById('fiches-choisis-mount');
+        if (fichesMount) {
+          const modules = libs.iskLib?.thematic_modules || [];
+          fichesMount.innerHTML = renderFichesThemesChoisis(themesChoisis, modules);
+        }
+      }
+    });
+  }
+
   const btnPose = document.getElementById('save-pose');
   if (btnPose) {
     btnPose.addEventListener('click', async () => {
       btnPose.disabled = true; btnPose.textContent = 'Enregistrement…';
       try {
-        const contextes      = Array.from(document.querySelectorAll('input[name="pose-contexte"]:checked')).map(i=>i.value);
-        const axes           = Array.from(document.querySelectorAll('input[name="pose-axe"]:checked')).map(i=>i.value);
-        const apprentissages = Array.from(document.querySelectorAll('input[name="pose-apprentissage"]:checked')).map(i=>i.value);
-        const adab           = document.querySelector('input[name="pose-adab"]:checked')?.value || null;
-        const geste          = document.getElementById('pose-geste')?.value.trim() || null;
+        const themes = Array.from(document.querySelectorAll('input[name="pose-theme"]:checked')).map(i => i.value);
         await setDoc(doc(db, 'carnets', codeId, 'jours', date), {
-          langue: LANG, schemaVersion: 2,
-          matin: { contextes, axes, apprentissages, adab, geste, poseLe: serverTimestamp() }
+          langue: LANG, schemaVersion: 3,
+          matin: { themes, poseLe: serverTimestamp() }
         }, { merge: true });
         const ok = document.getElementById('save-pose-ok');
         if (ok) { ok.hidden = false; setTimeout(() => ok.hidden = true, 2500); }
         // Re-render la synthèse
         const synthEl = document.getElementById('synthese-pose');
-        if (synthEl) synthEl.innerHTML = renderSynthesePoseMatin({ axes, adab, geste, poseLe: true }, libs);
+        if (synthEl) synthEl.innerHTML = renderSynthesePoseMatin({ themes, poseLe: true }, libs);
+        // Scroll au bas pour montrer le résultat
+        window.scrollBy({ top: 200, behavior: 'smooth' });
       } catch (e) { console.error(e); alert('Désolé, la sauvegarde n\'a pas pu se faire.'); }
       finally { btnPose.disabled = false; btnPose.textContent = 'Poser ma journée'; }
     });
@@ -971,6 +1089,23 @@ function bindJournee(libs) {
     btnRelu.addEventListener('click', async () => {
       btnRelu.disabled = true; btnRelu.textContent = 'Enregistrement…';
       try {
+        // Bilan thèmes (nouveau)
+        const themesBilan = {};
+        const themesNotes = {};
+        document.querySelectorAll('.relu-theme').forEach(el => {
+          const inp = el.querySelector('input[type="radio"]:checked');
+          if (inp) {
+            const themeId = inp.name.replace(/^bilan-theme-/, '');
+            themesBilan[themeId] = inp.value;
+          }
+          const noteEl = el.querySelector('textarea');
+          if (noteEl) {
+            const themeId = (noteEl.name || '').replace(/^bilan-note-/, '');
+            const v = noteEl.value.trim();
+            if (themeId && v) themesNotes[themeId] = v;
+          }
+        });
+        // Compat ancien axes
         const axesBilan = {};
         document.querySelectorAll('.relu-axe').forEach(el => {
           const inp = el.querySelector('input[type="radio"]:checked');
@@ -986,8 +1121,9 @@ function bindJournee(libs) {
         const repriseType  = document.querySelector('input[name="relu-reprise"]:checked')?.value || null;
         const repriseTexte = document.getElementById('relu-reprise-texte')?.value.trim() || null;
         await setDoc(doc(db, 'carnets', codeId, 'jours', date), {
-          langue: LANG, schemaVersion: 2,
+          langue: LANG, schemaVersion: 3,
           soir: {
+            themesBilan, themesNotes,
             axesBilan, mouvements, ceQuiAPousse,
             gratitude, gratitudeNote,
             repriseDemain: { type: repriseType, texte: repriseTexte },

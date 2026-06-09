@@ -2,15 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
   <meta name="theme-color" content="#0F1830" />
-  <title>Aujourd'hui — Le carnet du dedans</title>
-  <meta name="description" content="Le carnet du dedans — poser sa journée, la relire le soir, sans se juger." />
-
-  <h1 class="visually-hidden">Mon carnet — aujourd'hui</h1>
+  <title>Poser ma journée — Le carnet du dedans</title>
+  <meta name="description" content="Le matin, choisir une vigilance pour la journée et un ou deux objectifs concrets que l'on porte avec présence." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,19 +23,19 @@
 <body class="page-enter carnet-body">
 
   <header class="adab-head">
-    <a href="/index.html" class="adab-head__back" aria-label="Accueil">⌂</a>
+    <a href="/pages/carnet/aujourdhui/" class="adab-head__back" aria-label="Retour">←</a>
     <div class="adab-head__progress">
-      <span class="adab-head__phase">Mon carnet</span>
+      <span class="adab-head__phase">Le matin · poser</span>
       <span class="adab-head__date" id="adab-date">·</span>
     </div>
     <a href="/pages/carnet/historique/" class="adab-head__hist" aria-label="Historique">⟲</a>
   </header>
 
-  <main id="aiguilleur-mount" class="adab-main">
+  <main id="poser-mount" class="adab-main">
     <p style="text-align:center; color: #8a7a55; font-style: italic; padding: 4rem 1rem;">Chargement…</p>
   </main>
 
   <script src="/assets/js/main.js?v=14"></script>
-  <script type="module" src="/assets/js/carnet/aiguilleur.js?v=1"></script>
+  <script type="module" src="/assets/js/carnet/poser.js?v=1"></script>
 </body>
 </html>

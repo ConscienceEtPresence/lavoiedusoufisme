@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "description": "Les dix vigilances universelles de l'adab soufi. Chacune avec sa racine arabe, ses termes traditionnels, une définition courte, un enseignement vivant, une parole de maître, un verset coranique, et un Nom divin qui l'accompagne.",
+  "vigilances": [
+    {
+      "id": "parole",
+      "label": "La parole",
+      "ar": "الكلام",
+      "tr": "al-kalām",
+      "termes_soufis": ["ṣamt (silence)", "ḥifẓ al-lisān (garde de la langue)", "adab al-kalām"],
+      "definition_courte": "La parole, dans la voie soufie, n'est pas un acte ordinaire. Elle engage l'âme. Une parole vraie élève ; une parole vide alourdit ; une parole blessante peut tuer ce qu'aucun geste n'aurait pu détruire.",
+      "enseignement": "Le soufi apprend à ne dire que ce qui est nécessaire, vrai et bienveillant. Il préfère le silence à la parole inutile, et la voix basse à la voix tranchante. La langue est le plus petit organe — et le plus lourd à porter au Jour du compte.",
+      "parole_maitre": "« Les actions ne sont que des formes immobiles ; leur esprit, c'est la présence d'un cœur engagé au-dedans. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°9. Appliqué à la parole : sans cœur engagé, le mot reste vide.",
+      "verset": "« Que celui qui croit en Dieu et au Jour dernier dise du bien, ou se taise. » — Hadith rapporté par al-Bukhārī",
+      "nom_divin": "as-Salām (Celui qui est la Paix)"
+    },
+    {
+      "id": "ecoute",
+      "label": "L'écoute",
+      "ar": "السمع",
+      "tr": "as-samʿ",
+      "termes_soufis": ["samʿ (audition)", "iṣghāʾ (tendre l'oreille)", "adab al-istimāʿ"],
+      "definition_courte": "L'écoute, chez les soufis, est plus qu'un acte des oreilles. C'est une présence du cœur à ce qui se dit. Elle commence par accueillir l'autre sans préparer sa réponse, sans corriger, sans interrompre.",
+      "enseignement": "Le maître soufi écoute longuement avant de parler. Il sait que la parole de l'autre porte parfois la prescription dont il a besoin pour répondre. Ne pas écouter, c'est déjà juger. L'écoute véritable laisse l'autre déposer ce qu'il porte, sans le réduire à une image préfabriquée.",
+      "parole_maitre": "« Rien ne profite autant au cœur qu'une retraite où il entre dans le domaine de la méditation. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°11. L'écoute est cette retraite dans laquelle on accueille l'autre.",
+      "verset": "« Ceux qui écoutent la parole et suivent ce qu'il y a de meilleur — ce sont ceux qu'Allāh a guidés. » — Coran 39:18",
+      "nom_divin": "as-Samīʿ (l'Audient)"
+    },
+    {
+      "id": "presence",
+      "label": "La présence",
+      "ar": "الحضور",
+      "tr": "al-ḥuḍūr",
+      "termes_soufis": ["ḥuḍūr (présence)", "murāqaba (vigilance)", "mushāhada (contemplation)"],
+      "definition_courte": "La présence est le cœur de la voie soufie. Être présent, c'est habiter l'instant comme un rendez-vous avec Dieu. C'est cesser d'être ailleurs — dans le regret du passé, dans l'anticipation du futur, dans la dispersion du mental.",
+      "enseignement": "La murāqaba — « se savoir regardé » — est la première discipline. Elle nous rappelle que rien de ce que nous vivons n'échappe à l'attention divine. Et donc rien n'est insignifiant. La présence est l'art d'habiter ce souffle.",
+      "parole_maitre": "« Pas un seul de tes souffles n'est sans être prédestiné par Lui. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°20.",
+      "verset": "« Nous sommes plus proche de lui que sa veine jugulaire. » — Coran 50:16",
+      "nom_divin": "ar-Raqīb (le Vigilant)"
+    },
+    {
+      "id": "patience",
+      "label": "La patience",
+      "ar": "الصبر",
+      "tr": "aṣ-ṣabr",
+      "termes_soufis": ["ṣabr (patience)", "thabāt (constance)", "iḥtisāb (compter sur la récompense d'Allāh)"],
+      "definition_courte": "La patience est plus que l'endurance. Chez les soufis, c'est une station spirituelle (maqām) : tenir devant ce qui vient sans forcer, sans fuir, sans s'effondrer. Trois patiences : devant l'épreuve, dans l'obéissance, hors de la transgression.",
+      "enseignement": "La patience n'est pas passivité. C'est un acte intérieur : maintenir le cœur dans la confiance pendant que les choses prennent leur temps. L'impatient veut prouver quelque chose ; le patient laisse Dieu manifester ce qui doit l'être, à Son rythme.",
+      "parole_maitre": "« Ne laisse pas le retard du don, malgré ta supplique insistante, te conduire au désespoir. Il s'est engagé à répondre — d'une manière qu'Il choisit pour toi, non d'une manière que tu choisirais ; au moment qu'Il désire, non au moment que tu désires. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°5.",
+      "verset": "« Et donne la bonne nouvelle aux patients. » — Coran 2:155",
+      "nom_divin": "aṣ-Ṣabūr (le Patient)"
+    },
+    {
+      "id": "reparation",
+      "label": "La réparation",
+      "ar": "الجبر",
+      "tr": "al-jabr",
+      "termes_soufis": ["tawba (retour)", "jabr al-khāṭir (réparer le cœur de l'autre)", "iṣlāḥ (réformer le lien)"],
+      "definition_courte": "La réparation est l'art de revenir. Revenir vers Dieu, vers l'autre qu'on a blessé, vers la mesure quand on l'a perdue. La réparation ne consiste pas à effacer la chute mais à transformer la chute en chemin.",
+      "enseignement": "Le soufi ne se condamne pas. Il se relève. La tawba véritable ne se contente pas du regret intérieur — elle agit : un mot doux à celui qu'on a brusqué, un silence où il y avait eu rumeur, une promesse minuscule tenue après une grande oubliée. Réparer, c'est faire pousser un fruit là où il y avait eu blessure.",
+      "parole_maitre": "« Ne désespère pas, même si la faute revient mille fois ; le retour mille fois est encore une grâce. » — synthèse de la doctrine d'Ibn ʿAṭāʾ Allāh (cf. Ḥikam n°47 et n°150).",
+      "verset": "« Annonce à Mes serviteurs que Je suis le Très Pardonneur, le Très Miséricordieux. » — Coran 15:49",
+      "nom_divin": "at-Tawwāb (Celui qui accueille le retour)"
+    },
+    {
+      "id": "gratitude",
+      "label": "La gratitude",
+      "ar": "الشكر",
+      "tr": "ash-shukr",
+      "termes_soufis": ["shukr (gratitude)", "qināʿa (contentement)", "ḥamd (louange)"],
+      "definition_courte": "La gratitude n'est pas seulement « merci ». Chez les soufis, c'est un état du cœur : reconnaître que tout vient de Dieu, et que rien ne nous est dû. La gratitude ouvre ; l'ingratitude ferme.",
+      "enseignement": "Reconnaître ce qu'on a reçu n'est qu'un premier pas. Le vrai shukr se vit dans l'usage : utiliser le souffle pour le bien, la parole pour ce qui élève, le pouvoir pour soulager. La gratitude est plus dans les actes que dans les formules.",
+      "parole_maitre": "« Que ton obéissance te réjouisse — non parce qu'elle est sortie de toi, mais parce qu'elle est venue d'Allāh jusqu'à toi. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°56.",
+      "verset": "« Si vous êtes reconnaissants, Je vous donnerai davantage ; mais si vous niez Mes bienfaits, Mon châtiment est sévère. » — Coran 14:7",
+      "nom_divin": "ash-Shakūr (le Reconnaissant)"
+    },
+    {
+      "id": "coeur",
+      "label": "Le cœur",
+      "ar": "القلب",
+      "tr": "al-qalb",
+      "termes_soufis": ["qalb (cœur)", "ḥilm (mansuétude)", "murāqabat al-qalb (vigilance du cœur)"],
+      "definition_courte": "Le cœur, chez les soufis, est le lieu central de la vie spirituelle — non le siège des émotions, mais l'organe de la perception du divin. Le cœur peut être lumineux ou voilé. Le travail de la voie est de polir le cœur pour qu'il reflète à nouveau ce qui est.",
+      "enseignement": "La vigilance du cœur consiste à observer ce qui passe en lui sans s'identifier à tout ce qui passe. Jugement, rancune, fermeture, dureté — ce sont des nuages qui passent. Le travail n'est pas de les nier mais de ne pas les nourrir. Le cœur sain (qalb salīm) est celui qui ne tient pas longtemps ce qui le voile.",
+      "parole_maitre": "« Comment un cœur serait-il illuminé, quand son miroir ne reflète que les figures du monde ? » — Ibn ʿAṭāʾ Allāh, Ḥikam n°12.",
+      "verset": "« Sauf celui qui vient vers Allāh avec un cœur sain. » — Coran 26:89",
+      "nom_divin": "al-Laṭīf (le Subtil, le Tendre)"
+    },
+    {
+      "id": "service",
+      "label": "Le service",
+      "ar": "الخدمة",
+      "tr": "al-khidma",
+      "termes_soufis": ["khidma (service)", "iḥsān (faire le bien)", "ʿibāda discrète"],
+      "definition_courte": "Le service, dans la voie shādhilie, est central. Servir n'est pas s'abaisser — c'est rejoindre celui qui s'est abaissé. C'est faire la part de l'autre quand sa part est trop lourde. C'est aimer en gestes, pas seulement en paroles.",
+      "enseignement": "Le soufi sert sans se mettre en scène. Il fait le geste qui doit être fait, sans annoncer, sans attendre retour. Quand il sert, ce n'est pas pour devenir vertueux ; c'est parce que son cœur a vu un besoin et y a répondu. La khidma véritable est silencieuse.",
+      "parole_maitre": "« La compagnie est une forme, et l'adab en est l'esprit. Si tu joins la forme et l'esprit, tu gagneras le bénéfice de leur compagnie. » — esprit shādhilī (Laṭāʾif al-Minan).",
+      "verset": "« Et faites le bien : Allāh aime ceux qui font le bien. » — Coran 2:195",
+      "nom_divin": "an-Nāfiʿ (le Bénéfique)"
+    },
+    {
+      "id": "pratique",
+      "label": "La pratique",
+      "ar": "الذكر والخلوة",
+      "tr": "adh-dhikr wa-l-khalwa",
+      "termes_soufis": ["dhikr (souvenir)", "khalwa (retraite)", "ʿuzla (solitude)", "wird (litanie quotidienne)"],
+      "definition_courte": "La pratique, dans la voie, n'est pas une performance — c'est l'irrigation du jardin intérieur. Sans dhikr régulier, sans temps de silence, le sol se dessèche. Un cœur dispersé ne peut pas voir.",
+      "enseignement": "Le soufi sait qu'on ne peut pas se transformer sans temps de silence. La khalwa n'est pas un retrait du monde — c'est un retrait vers Dieu, même cinq minutes posées dans une journée bruyante. Le dhikr peuple cette solitude : un Nom répété, une parole portée, une présence cultivée.",
+      "parole_maitre": "« Rien ne profite autant au cœur qu'une retraite où il entre dans le domaine de la méditation. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°11.",
+      "verset": "« Invoque le Nom de ton Seigneur, et consacre-toi entièrement à Lui. » — Coran 73:8",
+      "nom_divin": "al-Quddūs (le Saint)"
+    },
+    {
+      "id": "corps",
+      "label": "Le corps",
+      "ar": "حق الجسد",
+      "tr": "ḥaqq al-jasad",
+      "termes_soufis": ["ḥaqq al-jasad (le droit du corps)", "ḥifẓ an-nafs (préservation de l'âme)"],
+      "definition_courte": "Le corps, chez les soufis, n'est pas un ennemi à mater. C'est une monture confiée. Il a un droit (ḥaqq). Le négliger, l'épuiser, le mépriser — c'est trahir une amāna, un dépôt. Le respecter, c'est aussi respecter Celui qui l'a façonné.",
+      "enseignement": "La vigilance du corps consiste à reconnaître sa fatigue avant qu'elle ne dicte les décisions, à honorer le souffle, à ne pas décider depuis l'épuisement. Le corps porte la voix du cœur quand le mental ne sait plus. Une respiration consciente avant de répondre est déjà un acte spirituel.",
+      "parole_maitre": "« Ton corps a un droit sur toi. » — Hadith rapporté par al-Bukhārī (le Prophète à ʿAbd Allāh ibn ʿAmr).",
+      "verset": "« Mangez, buvez, mais ne soyez pas dans l'excès. » — Coran 7:31",
+      "nom_divin": "ar-Razzāq (le Pourvoyeur)"
+    }
+  ]
+}

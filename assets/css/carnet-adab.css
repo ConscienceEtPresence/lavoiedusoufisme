@@ -1,0 +1,1092 @@
+/* ============================================================
+   Carnet d'adab — feuille de style dédiée
+   Multi-pages : poser · relire · aiguilleur · historique
+   Esthétique : beige doré, calme, contemplative, immersive.
+   ============================================================ */
+
+:root {
+  --adab-ink: #2a1f08;
+  --adab-ink-soft: #4a3a18;
+  --adab-ink-mute: #8a7a55;
+  --adab-gold: #c0a050;
+  --adab-gold-deep: #8a7028;
+  --adab-paper: #fdf6e4;
+  --adab-paper-warm: #f5ead0;
+  --adab-rule: rgba(192, 160, 80, 0.3);
+}
+
+body.carnet-body {
+  background: linear-gradient(180deg, var(--adab-paper) 0%, #f9efd5 100%);
+  min-height: 100vh;
+  font-family: 'Source Serif 4', Georgia, serif;
+  color: var(--adab-ink);
+}
+
+/* ============================================================
+   En-tête fine, sans nav lourde
+   ============================================================ */
+.adab-head {
+  display: grid;
+  grid-template-columns: 3rem 1fr 3rem;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--adab-rule);
+  background: rgba(253, 246, 228, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.adab-head__back,
+.adab-head__hist {
+  font-size: 1.3rem;
+  color: var(--adab-gold-deep);
+  text-decoration: none;
+  text-align: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  border-radius: 50%;
+  transition: background .15s;
+}
+.adab-head__back:hover,
+.adab-head__hist:hover {
+  background: rgba(192, 160, 80, 0.12);
+}
+.adab-head__progress {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+}
+.adab-head__phase {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--adab-gold-deep);
+  font-size: 1rem;
+}
+.adab-head__date {
+  font-size: .76rem;
+  color: var(--adab-ink-mute);
+  letter-spacing: .06em;
+  text-transform: lowercase;
+}
+.adab-head--soir { background: rgba(248, 235, 200, 0.85); }
+
+/* ============================================================
+   Layout principal
+   ============================================================ */
+.adab-main {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.2rem 4rem;
+  min-height: calc(100vh - 5rem);
+}
+
+.adab-step {
+  animation: adabFade 0.45s ease;
+}
+@keyframes adabFade {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.adab-h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.7rem, 5vw, 2.3rem);
+  color: var(--adab-ink);
+  text-align: center;
+  margin: 1.5rem 0 .5rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.adab-h1 em { font-style: italic; color: var(--adab-gold-deep); }
+
+.adab-intro {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: var(--adab-ink-soft);
+  margin: 0 0 2rem;
+}
+
+.adab-section-titre {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  color: var(--adab-gold-deep);
+  margin: 2.5rem 0 1rem;
+  letter-spacing: .02em;
+  font-style: italic;
+}
+.adab-section-titre--soft {
+  font-size: 1rem;
+  color: var(--adab-ink-mute);
+  margin-top: 2.2rem;
+}
+
+.adab-footnote {
+  text-align: center;
+  color: var(--adab-ink-mute);
+  font-style: italic;
+  font-size: .92rem;
+  margin: 1.5rem 0 0;
+}
+
+.adab-back-link {
+  background: none;
+  border: none;
+  color: var(--adab-gold-deep);
+  font-style: italic;
+  font-family: inherit;
+  font-size: .92rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0;
+  border-bottom: 1px dotted var(--adab-gold-deep);
+}
+.adab-back-link:hover { color: var(--adab-ink); }
+
+/* ============================================================
+   Champ d'ancrage libre
+   ============================================================ */
+.adab-ancrage {
+  display: block;
+  max-width: 32rem;
+  margin: 2rem auto;
+  padding: 1.2rem 1.4rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--adab-rule);
+  border-radius: 12px;
+}
+.adab-ancrage__label {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--adab-gold-deep);
+  font-style: italic;
+  margin-bottom: .55rem;
+  text-align: center;
+}
+.adab-ancrage__input {
+  width: 100%;
+  padding: .65rem .9rem;
+  background: #fff;
+  border: 1px solid var(--adab-rule);
+  border-radius: 8px;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.02rem;
+  color: var(--adab-ink);
+  box-sizing: border-box;
+  text-align: center;
+}
+.adab-ancrage__input:focus {
+  outline: none;
+  border-color: var(--adab-gold);
+  box-shadow: 0 0 0 3px rgba(192,160,80,0.15);
+}
+.adab-ancrage__hint {
+  display: block;
+  text-align: center;
+  font-size: .82rem;
+  color: var(--adab-ink-mute);
+  margin-top: .4rem;
+}
+
+/* ============================================================
+   Grille des 10 vigilances
+   ============================================================ */
+.vigilances-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: .75rem;
+  margin: 1rem auto 2rem;
+  max-width: 36rem;
+}
+.vigilance-carte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .25rem;
+  padding: 1.1rem .9rem;
+  background: #fff;
+  border: 1px solid var(--adab-rule);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform .2s, border-color .2s, box-shadow .2s, background .2s;
+  font-family: inherit;
+  color: var(--adab-ink);
+}
+.vigilance-carte:hover {
+  transform: translateY(-2px);
+  border-color: var(--adab-gold);
+  background: linear-gradient(160deg, #fff, var(--adab-paper-warm));
+  box-shadow: 0 10px 24px -12px rgba(192,160,80,0.4);
+}
+.vigilance-carte__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.7rem;
+  color: var(--adab-gold-deep);
+  line-height: 1;
+  direction: rtl;
+}
+.vigilance-carte__tr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--adab-gold-deep);
+  font-size: .82rem;
+  letter-spacing: .04em;
+}
+.vigilance-carte__label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--adab-ink);
+  margin-top: .2rem;
+  font-weight: 500;
+}
+
+/* ============================================================
+   Fiche d'une vigilance (formation soufie)
+   ============================================================ */
+.vigilance-fiche {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--adab-rule);
+}
+.vigilance-fiche__ar {
+  font-family: 'Amiri', serif;
+  font-size: clamp(2.4rem, 7vw, 3.2rem);
+  color: var(--adab-ink);
+  margin: 0;
+  line-height: 1.4;
+}
+.vigilance-fiche__titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.7rem, 4.5vw, 2.2rem);
+  color: var(--adab-ink);
+  margin: .35rem 0 .25rem;
+  font-weight: 500;
+}
+.vigilance-fiche__tr {
+  color: var(--adab-gold-deep);
+  font-style: italic;
+  font-size: .92rem;
+  margin: 0;
+}
+
+.vigilance-formation {
+  background: linear-gradient(160deg, rgba(255,255,255,0.6), rgba(248,238,210,0.4));
+  border: 1px solid var(--adab-rule);
+  border-radius: 12px;
+  padding: .5rem 1.3rem;
+  margin: 1rem 0;
+}
+.vigilance-formation > summary {
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--adab-gold-deep);
+  padding: .7rem 0;
+  list-style: none;
+  text-align: center;
+}
+.vigilance-formation > summary::-webkit-details-marker { display: none; }
+.vigilance-formation > summary::after {
+  content: " ▾";
+  color: var(--adab-gold);
+}
+.vigilance-formation[open] > summary::after { content: " ▴"; }
+.vigilance-formation__body {
+  padding: .5rem 0 1rem;
+}
+.vigilance-formation__def {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.08rem;
+  color: var(--adab-ink);
+  font-style: italic;
+  margin: .25rem 0 1rem;
+  line-height: 1.6;
+}
+.vigilance-formation__ens {
+  color: var(--adab-ink);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0 0 1.2rem;
+}
+.vigilance-formation__parole,
+.vigilance-formation__verset {
+  margin: 1.1rem 0;
+  padding: .7rem 1rem;
+  background: rgba(255,255,255,0.55);
+  border-left: 3px solid var(--adab-gold);
+  border-radius: 6px;
+}
+.vigilance-formation__parole p,
+.vigilance-formation__verset p {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--adab-ink);
+  font-size: .98rem;
+  line-height: 1.55;
+  font-style: italic;
+}
+.vigilance-formation__petit-label {
+  display: block;
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+  font-weight: 700;
+  margin-bottom: .25rem;
+  font-style: normal;
+}
+.vigilance-formation__nom {
+  text-align: center;
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--adab-rule);
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--adab-ink);
+}
+.vigilance-formation__nom strong {
+  font-size: 1.15rem;
+  color: var(--adab-gold-deep);
+}
+
+/* ============================================================
+   Liste des objectifs concrets
+   ============================================================ */
+.objectifs-liste {
+  display: grid;
+  gap: .6rem;
+  margin: 1rem 0 1.5rem;
+}
+.objectif-carte {
+  display: block;
+  padding: .9rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--adab-rule);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color .15s, background .15s, box-shadow .15s;
+  position: relative;
+}
+.objectif-carte input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.objectif-carte:hover {
+  border-color: var(--adab-gold);
+  background: linear-gradient(160deg, #fff, #fdf6e4);
+}
+.objectif-carte.is-selected {
+  background: linear-gradient(160deg, #fff8dc, #fdf6e4);
+  border-color: var(--adab-gold-deep);
+  box-shadow: 0 0 0 1px var(--adab-gold-deep);
+}
+.objectif-carte.is-selected::after {
+  content: '✦';
+  position: absolute;
+  top: .6rem;
+  right: .8rem;
+  color: var(--adab-gold);
+  font-size: 1.1rem;
+}
+.objectif-carte__libelle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--adab-ink);
+  line-height: 1.4;
+}
+.objectif-carte--libre {
+  background: rgba(255,255,255,0.6);
+  border-style: dashed;
+}
+.objectif-carte--libre .objectif-carte__libelle {
+  font-style: italic;
+  color: var(--adab-gold-deep);
+  display: block;
+  margin-bottom: .5rem;
+}
+.objectif-carte__input {
+  width: 100%;
+  padding: .6rem .85rem;
+  background: #fff;
+  border: 1px solid var(--adab-rule);
+  border-radius: 8px;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1rem;
+  color: var(--adab-ink);
+  box-sizing: border-box;
+}
+.objectif-carte__input:focus {
+  outline: none;
+  border-color: var(--adab-gold);
+  box-shadow: 0 0 0 3px rgba(192,160,80,0.15);
+}
+
+/* ============================================================
+   Visage matin (apparaît quand on coche un objectif)
+   ============================================================ */
+.visage-matin-mount {
+  margin: 1.5rem 0;
+}
+.visage-vide {
+  text-align: center;
+  color: var(--adab-ink-mute);
+  font-style: italic;
+  padding: 1rem;
+}
+.visage-matin {
+  background: linear-gradient(160deg, #fff8dc, #fdf6e4);
+  border: 1px solid var(--adab-gold-deep);
+  border-left: 4px solid var(--adab-gold);
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem;
+  margin: 1rem 0;
+  animation: adabFade .4s ease;
+}
+.visage-matin__titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  color: var(--adab-ink);
+  margin: 0 0 .55rem;
+  font-weight: 500;
+}
+.visage-matin__ens {
+  color: var(--adab-ink);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: .35rem 0 .9rem;
+}
+.visage-matin__sagesse {
+  margin: 1rem 0;
+  padding: .9rem 1.1rem;
+  background: rgba(255,255,255,0.7);
+  border-left: 3px solid var(--adab-gold);
+  border-radius: 6px;
+  font-style: italic;
+}
+.visage-matin__sagesse p {
+  margin: 0 0 .35rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.08rem;
+  color: var(--adab-ink);
+  line-height: 1.55;
+}
+.visage-matin__sagesse footer {
+  font-size: .82rem;
+  color: var(--adab-gold-deep);
+  font-style: italic;
+  text-align: right;
+}
+.visage-matin__nom {
+  margin: .8rem 0;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--adab-ink-soft);
+}
+.visage-matin__nom strong {
+  color: var(--adab-gold-deep);
+  font-size: 1.08rem;
+}
+.visage-matin__chemin {
+  text-align: center;
+  margin: 1rem 0 0;
+  padding-top: .8rem;
+  border-top: 1px dashed var(--adab-rule);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--adab-gold-deep);
+}
+
+/* ============================================================
+   Bouton d'engagement (commit)
+   ============================================================ */
+.adab-commit {
+  text-align: center;
+  margin: 2rem 0;
+}
+.adab-bouton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--adab-gold), #a8884a);
+  color: #fff !important;
+  border: none;
+  border-radius: 999px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: .03em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: filter .15s, transform .15s, box-shadow .15s;
+  box-shadow: 0 12px 28px -14px rgba(120, 90, 30, 0.5);
+}
+.adab-bouton:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+.adab-bouton:disabled {
+  background: linear-gradient(135deg, #ccc, #b0b0b0);
+  cursor: not-allowed;
+  filter: grayscale(0.5);
+}
+.adab-bouton--grand {
+  font-size: 1.3rem;
+  padding: 1.1rem 2.4rem;
+}
+.adab-bouton--ghost {
+  background: transparent;
+  color: var(--adab-gold-deep) !important;
+  border: 1.5px solid var(--adab-gold);
+  box-shadow: none;
+}
+.adab-bouton--ghost:hover {
+  background: rgba(192, 160, 80, 0.1);
+}
+.adab-bouton-secondaire {
+  background: none;
+  border: none;
+  color: var(--adab-gold-deep);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-style: italic;
+  cursor: pointer;
+  padding: .55rem 1rem;
+  border-bottom: 1px dotted var(--adab-gold-deep);
+  text-decoration: none;
+  display: inline-block;
+}
+.adab-bouton-secondaire:hover { color: var(--adab-ink); }
+.adab-ok {
+  display: inline-block;
+  margin-left: .5rem;
+  color: var(--adab-gold-deep);
+  font-style: italic;
+}
+
+/* ============================================================
+   Page POSE — message de chemin
+   ============================================================ */
+.adab-step--pose {
+  text-align: center;
+  padding: 2rem 0;
+}
+.adab-pose-message {
+  margin: 2rem 0;
+}
+.adab-pose-message__ar {
+  font-family: 'Amiri', serif;
+  font-size: clamp(2.6rem, 8vw, 3.6rem);
+  color: var(--adab-gold);
+  margin: 0;
+}
+.adab-pose-message__titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 4.5vw, 2.1rem);
+  color: var(--adab-ink);
+  margin: .8rem 0 .4rem;
+  font-weight: 500;
+}
+.adab-pose-message__sub {
+  color: var(--adab-ink-soft);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  margin: 0;
+}
+.adab-pose-ancrage {
+  margin: 1.5rem auto;
+  max-width: 28rem;
+  padding: 1rem 1.3rem;
+  background: rgba(255,255,255,0.5);
+  border-left: 3px solid var(--adab-gold);
+  border-radius: 6px;
+  text-align: left;
+}
+.adab-pose-ancrage__label {
+  display: block;
+  font-size: .74rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+  font-weight: 600;
+  margin-bottom: .25rem;
+}
+.adab-pose-ancrage p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--adab-ink);
+  margin: 0;
+}
+.adab-pose-objectifs {
+  margin: 2rem 0;
+}
+.adab-pose-objectif {
+  margin: 1rem 0;
+  padding: .85rem 1.2rem;
+  background: linear-gradient(160deg, #fff8dc, #fdf6e4);
+  border-radius: 10px;
+  border: 1px solid var(--adab-gold);
+}
+.adab-pose-objectif__libelle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  color: var(--adab-ink);
+  margin: 0 0 .25rem;
+}
+.adab-pose-objectif__chemin {
+  margin: 0;
+  font-style: italic;
+  color: var(--adab-gold-deep);
+}
+.adab-pose-footer {
+  margin: 2.5rem 0 1rem;
+  color: var(--adab-ink-soft);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+}
+.adab-pose-actions {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+/* ============================================================
+   Page RELIRE (soir)
+   ============================================================ */
+.adab-soir-head {
+  text-align: center;
+  margin: 1.5rem 0 2rem;
+}
+.adab-soir-intro {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--adab-ink-soft);
+  font-size: 1.15rem;
+  margin: 0;
+}
+.adab-soir-rappel {
+  margin: 1.5rem 0 2.5rem;
+  padding: 1.2rem 1.4rem;
+  background: linear-gradient(160deg, #fff8dc, #fdf6e4);
+  border-left: 4px solid var(--adab-gold);
+  border-radius: 10px;
+  text-align: center;
+}
+.adab-soir-rappel__ancrage {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--adab-ink-soft);
+  font-size: 1.05rem;
+  margin: 0 0 .55rem;
+}
+.adab-soir-rappel__vigilance {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.18rem;
+  color: var(--adab-ink);
+  margin: 0;
+}
+
+.bilan-objectifs {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1rem 0 2rem;
+}
+.bilan-objectif {
+  padding: 1.3rem 1.4rem;
+  background: #fff;
+  border: 1px solid var(--adab-rule);
+  border-left: 3px solid var(--adab-gold);
+  border-radius: 12px;
+}
+.bilan-objectif__libelle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: var(--adab-ink);
+  margin: 0 0 .35rem;
+  font-weight: 500;
+}
+.bilan-objectif__question {
+  margin: 0 0 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--adab-ink-soft);
+  line-height: 1.55;
+  padding: .6rem .9rem;
+  background: rgba(255,250,235,0.55);
+  border-radius: 6px;
+}
+.bilan-objectif__statuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: .9rem 0;
+}
+.statut-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: .55rem 1.1rem;
+  background: #fff;
+  border: 1.5px solid var(--adab-rule);
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  color: var(--adab-ink-soft);
+  transition: background .15s, border-color .15s, color .15s;
+}
+.statut-btn:hover {
+  background: rgba(192,160,80,0.08);
+  border-color: var(--adab-gold);
+}
+.statut-btn.is-active {
+  background: linear-gradient(135deg, var(--adab-gold), #a8884a);
+  border-color: var(--adab-gold-deep);
+  color: #fff;
+  font-weight: 600;
+}
+.statut-btn input { position: absolute; opacity: 0; pointer-events: none; }
+
+.bilan-objectif__note {
+  display: block;
+  margin: 1rem 0 0;
+}
+.bilan-objectif__note span {
+  display: block;
+  font-size: .76rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+  font-weight: 600;
+  margin-bottom: .35rem;
+}
+.bilan-objectif__note textarea {
+  width: 100%;
+  padding: .65rem .9rem;
+  background: rgba(253, 246, 228, 0.4);
+  border: 1px solid var(--adab-rule);
+  border-radius: 8px;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1rem;
+  color: var(--adab-ink);
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 3rem;
+}
+.bilan-objectif__note textarea:focus {
+  outline: none;
+  border-color: var(--adab-gold);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(192,160,80,0.15);
+}
+
+.bilan-objectif__parole:empty { display: none; }
+.parole-soufie {
+  margin: 1.2rem 0 .5rem;
+  padding: 1rem 1.3rem;
+  background: linear-gradient(160deg, rgba(255,248,220,0.85), rgba(248,238,210,0.6));
+  border-left: 3px solid var(--adab-gold-deep);
+  border-radius: 6px;
+  animation: adabFade .35s ease;
+}
+.parole-soufie p {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--adab-ink);
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.adab-soir-hint {
+  text-align: center;
+  max-width: 28rem;
+  margin: 0 auto 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--adab-ink-mute);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.adab-presente textarea,
+.adab-gratitude textarea,
+.adab-reprise textarea {
+  width: 100%;
+  padding: .85rem 1rem;
+  background: rgba(255,255,255,0.6);
+  border: 1px solid var(--adab-rule);
+  border-radius: 10px;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1rem;
+  color: var(--adab-ink);
+  box-sizing: border-box;
+  resize: vertical;
+}
+.adab-presente textarea:focus,
+.adab-gratitude textarea:focus,
+.adab-reprise textarea:focus {
+  outline: none;
+  border-color: var(--adab-gold);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(192,160,80,0.15);
+}
+.adab-soir-cloture {
+  margin: 3rem 0 0;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px dashed var(--adab-rule);
+}
+.adab-soir-cloture p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.18rem;
+  color: var(--adab-ink-soft);
+  margin: .35rem 0;
+}
+
+/* ============================================================
+   AIGUILLEUR (page Aujourd'hui)
+   ============================================================ */
+.aiguilleur {
+  text-align: center;
+  padding: 2.5rem 0 1rem;
+}
+.aiguilleur__hello {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 5.5vw, 2.5rem);
+  color: var(--adab-ink);
+  margin: 0 0 .5rem;
+  font-weight: 500;
+}
+.aiguilleur__hello em {
+  font-style: italic;
+  color: var(--adab-gold-deep);
+}
+.aiguilleur__sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.18rem;
+  color: var(--adab-ink-soft);
+  margin: 0 0 2.5rem;
+}
+.aiguilleur__cta {
+  margin: 1.5rem 0;
+}
+.aiguilleur__cta-secondaire {
+  margin: 1rem 0;
+}
+.aiguilleur__ornement {
+  font-size: 1.5rem;
+  color: var(--adab-gold);
+  margin: 2rem 0 1rem;
+}
+.aiguilleur__hist a {
+  color: var(--adab-gold-deep);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 1px dotted var(--adab-gold-deep);
+}
+
+.aiguilleur-resume {
+  max-width: 28rem;
+  margin: 1.5rem auto 2rem;
+  padding: 1.3rem 1.5rem;
+  background: linear-gradient(160deg, #fff8dc, #fdf6e4);
+  border: 1px solid var(--adab-gold);
+  border-radius: 12px;
+}
+.aiguilleur-resume__label {
+  font-size: .76rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+  font-weight: 700;
+  margin: 0 0 .55rem;
+}
+.aiguilleur-resume__vigilance {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: var(--adab-ink);
+  margin: 0 0 .35rem;
+  font-weight: 500;
+}
+.aiguilleur-resume__ancrage {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--adab-ink-soft);
+  margin: 0;
+}
+.aiguilleur-resume--fait {
+  background: linear-gradient(160deg, rgba(255,248,220,0.7), rgba(248,238,210,0.5));
+}
+
+/* ============================================================
+   HISTORIQUE
+   ============================================================ */
+.hist-stats {
+  margin: 1rem 0 2rem;
+  text-align: center;
+}
+.hist-top-vig {
+  max-width: 26rem;
+  margin: 1.5rem auto 0;
+  padding: 1rem 1.3rem;
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  border: 1px solid var(--adab-rule);
+}
+.hist-top-vig__label {
+  font-size: .76rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+  font-weight: 700;
+  margin: 0 0 .5rem;
+  text-align: center;
+}
+.hist-top-vig ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.hist-top-vig li {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--adab-ink);
+  margin: .25rem 0;
+}
+
+.hist-liste {
+  display: grid;
+  gap: .6rem;
+  margin: 1rem 0 2rem;
+}
+.hist-jour {
+  display: grid;
+  grid-template-columns: 5rem 1fr 2rem;
+  align-items: center;
+  gap: 1rem;
+  padding: .9rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--adab-rule);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--adab-ink);
+  transition: background .15s, border-color .15s;
+}
+.hist-jour:hover {
+  background: linear-gradient(160deg, #fff, #fdf6e4);
+  border-color: var(--adab-gold);
+}
+.hist-jour__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+.hist-jour__jour {
+  font-size: 1.1rem;
+  color: var(--adab-gold-deep);
+  font-weight: 500;
+}
+.hist-jour__semaine {
+  font-size: .76rem;
+  color: var(--adab-ink-mute);
+  text-transform: lowercase;
+  font-style: italic;
+}
+.hist-jour__vigilance {
+  margin: 0 0 .25rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.08rem;
+  color: var(--adab-ink);
+}
+.hist-jour__ancrage {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--adab-ink-mute);
+  font-size: .92rem;
+}
+.hist-jour__vigilance--vide { color: var(--adab-ink-mute); }
+.hist-jour__statut { text-align: center; font-size: 1.3rem; }
+.hist-jour__check { color: var(--adab-gold-deep); }
+.hist-jour__pose { color: var(--adab-gold); }
+.hist-jour__rien { color: var(--adab-ink-mute); }
+
+.hist-detail {
+  margin: 1.5rem 0;
+}
+.hist-detail__head {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--adab-rule);
+}
+.hist-detail__date {
+  font-size: .82rem;
+  letter-spacing: .12em;
+  color: var(--adab-ink-mute);
+  text-transform: lowercase;
+  margin: 0 0 .55rem;
+}
+.hist-detail__vigilance {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.5rem, 4vw, 1.9rem);
+  color: var(--adab-ink);
+  margin: 0;
+  font-weight: 500;
+}
+.hist-detail__bloc {
+  margin: 1.3rem 0;
+  padding: 1rem 1.2rem;
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  border-left: 3px solid var(--adab-gold);
+}
+.hist-detail__label {
+  display: block;
+  font-size: .74rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.hist-detail__bloc p {
+  margin: .35rem 0;
+  color: var(--adab-ink);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+.hist-detail__obj {
+  margin: .9rem 0;
+  padding: .6rem 0;
+  border-top: 1px dashed var(--adab-rule);
+}
+.hist-detail__obj:first-child { border-top: 0; padding-top: 0; }
+.hist-detail__obj-lib {
+  font-weight: 500;
+  margin: 0 0 .2rem !important;
+}
+.hist-detail__obj-statut {
+  color: var(--adab-gold-deep) !important;
+  font-style: italic;
+  font-size: .98rem !important;
+  margin: .15rem 0 !important;
+}
+.hist-detail__obj-statut--vide { color: var(--adab-ink-mute) !important; }
+.hist-detail__obj-note {
+  margin-top: .4rem !important;
+  color: var(--adab-ink-soft) !important;
+  font-size: 1rem !important;
+}
+
+.hist-vide {
+  text-align: center;
+  padding: 2rem 0;
+}

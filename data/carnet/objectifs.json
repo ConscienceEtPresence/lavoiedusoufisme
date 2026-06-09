@@ -1,0 +1,738 @@
+{
+  "version": 1,
+  "description": "Bibliothèque d'objectifs concrets pour le carnet d'adab. Chaque objectif a deux visages : matin (ce qui s'affiche quand on le choisit) et soir (ce qui apparaît au bilan). Les sagesses du Ḥikam référencées sont celles du fichier hikam-complet.json.",
+  "statuts": [
+    { "id": "tenu",    "label": "tenu" },
+    { "id": "parfois", "label": "parfois" },
+    { "id": "oublie",  "label": "oublié" },
+    { "id": "repris",  "label": "à reprendre" }
+  ],
+  "paroles_generiques": {
+    "tenu":    "Ce qui est tenu en silence est gardé par Celui qui voit le caché. Garde la joie sans la peser.",
+    "parfois": "Tenir parfois, c'est déjà tenir. La constance vient de l'intermittence honorée.",
+    "oublie":  "Une faute reconnue ouvre une porte que l'innocence ne connaît pas. Le retour est déjà le chemin.",
+    "repris":  "Reprendre plus petit demain n'est pas une défaite — c'est un acte de sagesse."
+  },
+  "objectifs": [
+    {
+      "id": "ecouter-sans-preparer",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Écouter sans préparer ma réponse",
+        "enseignement_court": "Écouter, c'est laisser l'autre exister sans le réduire à ma réponse. C'est un don avant d'être une technique.",
+        "sagesse_hikam_id": 9,
+        "nom_remede": "as-Samīʿ",
+        "phrase_chemin": "Tu portes cette présence à l'autre. Va."
+      },
+      "soir": {
+        "question": "Quand ai-je été tenté de couper la parole aujourd'hui ? Qu'est-ce qui m'a manqué ?",
+        "paroles": {
+          "tenu":    "L'écoute pleine est un acte d'adab souvent invisible aux autres — mais pas au cœur.",
+          "parfois": "L'attention complète est un chemin. Tu as fait ta part.",
+          "oublie":  "Reprends demain plus petit : écouter une seule personne, pleinement, une seule fois.",
+          "repris":  "Le retour est déjà le chemin. Demain, recommence."
+        }
+      }
+    },
+    {
+      "id": "ne-pas-couper-parole",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Ne pas couper la parole",
+        "enseignement_court": "Laisser l'autre finir, c'est lui reconnaître une dignité. Couper la parole, c'est déjà juger ce qu'on n'a pas encore entendu.",
+        "sagesse_hikam_id": 19,
+        "nom_remede": "al-Ḥalīm",
+        "phrase_chemin": "Garde le silence comme un don."
+      },
+      "soir": {
+        "question": "Combien de fois ai-je interrompu aujourd'hui ? Qu'est-ce qui me poussait à parler ?",
+        "paroles": {
+          "tenu":    "Garder le silence pour laisser parler — c'est déjà un acte d'adab.",
+          "parfois": "Chaque silence gardé est un fruit. Garde-le sans l'annoncer.",
+          "oublie":  "Le ḥilm s'apprend par l'usage. Demain, attends une demi-seconde de plus.",
+          "repris":  "Reprends en plus petit : une seule conversation, demain, sans interrompre."
+        }
+      }
+    },
+    {
+      "id": "baisser-voix",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Baisser la voix avant d'expliquer",
+        "enseignement_court": "La vérité dite avec dureté blesse souvent celui qu'elle voulait éveiller. La voix basse est un adab.",
+        "sagesse_hikam_id": 56,
+        "nom_remede": "al-Laṭīf",
+        "phrase_chemin": "Une voix douce ouvre où la voix forte ferme."
+      },
+      "soir": {
+        "question": "Ai-je monté le ton aujourd'hui pour avoir raison ? Qu'est-ce qui voulait être entendu ?",
+        "paroles": {
+          "tenu":    "Une voix basse traversée par la vérité — c'est le timbre des amants.",
+          "parfois": "La maîtrise du timbre est une discipline. Tu as commencé.",
+          "oublie":  "La voix forte cache souvent une peur. Repère-la demain avant qu'elle ne sorte.",
+          "repris":  "Reprends en silence demain : une seule fois, baisse la voix avant de parler."
+        }
+      }
+    },
+    {
+      "id": "ne-pas-parler-absent",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Ne pas parler d'un absent",
+        "enseignement_court": "Protéger l'absent, c'est garder une amāna de la parole — un dépôt confié à mon silence.",
+        "sagesse_hikam_id": 144,
+        "nom_remede": "as-Sittīr",
+        "phrase_chemin": "Le silence sur un absent est une protection invisible."
+      },
+      "soir": {
+        "question": "Ai-je commenté quelqu'un aujourd'hui en son absence ? Qu'est-ce que cela disait de moi ?",
+        "paroles": {
+          "tenu":    "Garder l'absent du regard, c'est l'aimer au-delà de la rencontre.",
+          "parfois": "Une parole retenue est plus précieuse que mille paroles ajoutées.",
+          "oublie":  "Reconnaître la ghība, c'est déjà commencer à la défaire. Une bénédiction silencieuse demain efface une mauvaise parole d'hier.",
+          "repris":  "Demain : choisis une personne, et garde le silence sur elle, même si elle revient dans la conversation."
+        }
+      }
+    },
+    {
+      "id": "dire-non-doux",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Dire non sans dureté",
+        "enseignement_court": "Dire non sans dureté est une fidélité à la vérité. Ce n'est pas fermer le cœur — c'est reconnaître la mesure juste.",
+        "sagesse_hikam_id": 17,
+        "nom_remede": "al-Ḥaqq",
+        "phrase_chemin": "Un non juste protège la vérité du lien."
+      },
+      "soir": {
+        "question": "Ai-je dit oui aujourd'hui là où mon cœur disait non ? Qu'est-ce qui m'a fait céder ?",
+        "paroles": {
+          "tenu":    "Un non posé dans la douceur est plus précieux qu'un oui forcé.",
+          "parfois": "Apprendre à dire non est l'œuvre d'une vie. Tu as commencé.",
+          "oublie":  "Le oui complaisant est un mensonge à soi. Repère demain l'instant où tu vas céder.",
+          "repris":  "Demain : prépare un non, simple, sans excuses, et tiens-le une fois."
+        }
+      }
+    },
+    {
+      "id": "retenir-parole-inutile",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Retenir une parole inutile",
+        "enseignement_court": "Toute parole compte. Ce qui n'a pas besoin d'être dit alourdit le silence intérieur.",
+        "sagesse_hikam_id": 12,
+        "nom_remede": "aṣ-Ṣamad",
+        "phrase_chemin": "Le silence est plus rare que la parole. Garde-le."
+      },
+      "soir": {
+        "question": "Ai-je parlé pour combler un vide aujourd'hui ? Qu'aurait-il fallu garder ?",
+        "paroles": {
+          "tenu":    "Le silence choisi est une louange muette.",
+          "parfois": "La discipline de la parole se construit par éclats. Tu as eu tes éclats.",
+          "oublie":  "Parler trop, c'est souvent fuir un silence inconfortable. Habite-le demain.",
+          "repris":  "Demain : choisis une conversation où tu parleras moins que tu n'écouteras."
+        }
+      }
+    },
+    {
+      "id": "ecouter-enfant",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Écouter mon enfant sans corriger tout de suite",
+        "enseignement_court": "L'enfant qui se sent écouté apprend à se faire confiance. Corriger trop vite, c'est l'enseigner à se cacher.",
+        "sagesse_hikam_id": 41,
+        "nom_remede": "ar-Raʾūf",
+        "phrase_chemin": "Écoute-le comme tu voudrais être écouté."
+      },
+      "soir": {
+        "question": "Ai-je laissé mon enfant aller au bout de ce qu'il avait à dire ? Qu'ai-je entendu de nouveau ?",
+        "paroles": {
+          "tenu":    "Un enfant écouté garde la trace de cette écoute longtemps après que tu auras oublié.",
+          "parfois": "Chaque écoute tenue compte. Le cœur de l'enfant les compte aussi.",
+          "oublie":  "La correction trop rapide est un réflexe ancien. Demain, attends une phrase de plus avant de répondre.",
+          "repris":  "Demain : un seul moment, écoute sans intervenir. C'est suffisant."
+        }
+      }
+    },
+    {
+      "id": "ecouter-sans-corriger",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Écouter sans corriger l'autre",
+        "enseignement_court": "Corriger, c'est déjà sortir de l'écoute. Parfois l'autre n'attend pas une correction — il attend d'être entendu.",
+        "sagesse_hikam_id": 152,
+        "nom_remede": "as-Samīʿ",
+        "phrase_chemin": "Laisse l'autre exister dans sa propre vérité."
+      },
+      "soir": {
+        "question": "Ai-je sauté sur une erreur pour la corriger ? Qu'aurait apporté le silence à la place ?",
+        "paroles": {
+          "tenu":    "Laisser l'autre dans sa vérité, même imparfaite, c'est l'aimer.",
+          "parfois": "L'envie de corriger vient souvent de la peur. Tu l'as nommée parfois.",
+          "oublie":  "Le besoin d'avoir raison est un voile. Demain, observe-le sans agir.",
+          "repris":  "Demain : une seule conversation, sans aucune correction."
+        }
+      }
+    },
+    {
+      "id": "ecouter-regard",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Écouter en regardant la personne",
+        "enseignement_court": "L'écoute traverse le regard. Détourner les yeux pendant qu'on écoute, c'est déjà partir ailleurs.",
+        "sagesse_hikam_id": 80,
+        "nom_remede": "al-Baṣīr",
+        "phrase_chemin": "Pose ton regard. Reste."
+      },
+      "soir": {
+        "question": "Ai-je écouté en regardant aujourd'hui, ou avec mon téléphone dans les mains ? Qui aurait mérité tout mon regard ?",
+        "paroles": {
+          "tenu":    "Un regard posé sur l'autre est un cadeau silencieux.",
+          "parfois": "Le regard se discipline comme la parole. Tu as commencé.",
+          "oublie":  "Le téléphone est un voile facile. Demain, pose-le quand quelqu'un te parle.",
+          "repris":  "Demain : une seule conversation, sans écran, en regardant."
+        }
+      }
+    },
+    {
+      "id": "poser-telephone",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Poser le téléphone cinq minutes",
+        "enseignement_court": "Cinq minutes sans écran, c'est cinq minutes redonnées à ce qui est. La présence est plus rare que la connexion.",
+        "sagesse_hikam_id": 11,
+        "nom_remede": "al-Quddūs",
+        "phrase_chemin": "Va, et laisse l'écran sur la table."
+      },
+      "soir": {
+        "question": "Combien de fois ai-je tendu la main vers l'écran sans le décider ? Qu'ai-je trouvé quand je l'ai laissé ?",
+        "paroles": {
+          "tenu":    "Cinq minutes habitées valent une heure de défilement vide.",
+          "parfois": "Chaque pause prise est une victoire silencieuse.",
+          "oublie":  "Le réflexe est plus fort que la décision — au début. Demain, choisis un seul moment de pause.",
+          "repris":  "Demain : un repas sans téléphone. Une seule fois."
+        }
+      }
+    },
+    {
+      "id": "habiter-souffle",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Habiter trois respirations dans la journée",
+        "enseignement_court": "Trois respirations conscientes suffisent à rappeler le cœur où il est. La présence n'a besoin que d'une seconde pour revenir.",
+        "sagesse_hikam_id": 20,
+        "nom_remede": "al-Ḥayy",
+        "phrase_chemin": "Reviens au souffle. C'est tout."
+      },
+      "soir": {
+        "question": "Me suis-je rappelé moi-même à moi-même aujourd'hui ? Quand ?",
+        "paroles": {
+          "tenu":    "Trois respirations habitées, et le jour devient un témoin.",
+          "parfois": "Une seule respiration consciente est déjà un retour.",
+          "oublie":  "Le souffle attend, sans bouger. Demain, il sera là.",
+          "repris":  "Demain : une seule respiration, avant le café du matin."
+        }
+      }
+    },
+    {
+      "id": "manger-lentement",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Manger lentement, un repas en présence",
+        "enseignement_court": "Manger est une rencontre avec ce qui est donné. Manger lentement, c'est honorer le Donateur.",
+        "sagesse_hikam_id": 152,
+        "nom_remede": "ar-Razzāq",
+        "phrase_chemin": "Mange ce que tu manges."
+      },
+      "soir": {
+        "question": "Ai-je goûté ce que j'ai mangé aujourd'hui ? Quel repas est passé sans que je le voie ?",
+        "paroles": {
+          "tenu":    "Un repas habité est une louange en silence.",
+          "parfois": "Un seul repas mangé en présence rappelle au corps qu'il est aimé.",
+          "oublie":  "Le repas pressé est devenu une habitude. Demain, choisis-en un, et ralentis.",
+          "repris":  "Demain : un seul morceau, mangé en présence, sans écran."
+        }
+      }
+    },
+    {
+      "id": "marcher-conscient",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Marcher en présence cinq minutes",
+        "enseignement_court": "Marcher en sachant qu'on marche est déjà une prière. Le pas devient dhikr quand le cœur est là.",
+        "sagesse_hikam_id": 256,
+        "nom_remede": "al-Hādī",
+        "phrase_chemin": "Marche, et reviens à toi en marchant."
+      },
+      "soir": {
+        "question": "Ai-je marché aujourd'hui sans courir mentalement ? Où étais-je quand mes pieds étaient ici ?",
+        "paroles": {
+          "tenu":    "Cinq minutes de marche habitée valent une retraite courte.",
+          "parfois": "Un pas conscient est un pas vers Dieu.",
+          "oublie":  "Le mental court devant les pieds. Demain, ralentis une fois.",
+          "repris":  "Demain : un trajet court, à pied, en présence."
+        }
+      }
+    },
+    {
+      "id": "differer-reponse",
+      "vigilance": "patience",
+      "matin": {
+        "libelle": "Différer une réponse difficile à demain",
+        "enseignement_court": "Une réponse mûrie vaut mieux qu'une réponse vraie dite trop vite. La patience prépare la justesse.",
+        "sagesse_hikam_id": 5,
+        "nom_remede": "aṣ-Ṣabūr",
+        "phrase_chemin": "Attends, sans fuir."
+      },
+      "soir": {
+        "question": "Ai-je voulu répondre vite aujourd'hui, là où attendre aurait mieux servi ?",
+        "paroles": {
+          "tenu":    "Différer n'est pas reculer — c'est mûrir.",
+          "parfois": "La patience se découvre dans la traversée du délai.",
+          "oublie":  "Répondre vite calme un instant, mais coûte longtemps. Demain, retarde une réponse d'une heure.",
+          "repris":  "Demain : une seule fois, dis « je te réponds plus tard »."
+        }
+      }
+    },
+    {
+      "id": "accepter-delai",
+      "vigilance": "patience",
+      "matin": {
+        "libelle": "Accepter un délai sans le forcer",
+        "enseignement_court": "Forcer le temps, c'est forcer Dieu. La patience reconnaît que ce qui doit venir viendra à son heure.",
+        "sagesse_hikam_id": 6,
+        "nom_remede": "al-Muqaddim",
+        "phrase_chemin": "Confie le temps à Celui qui le tient."
+      },
+      "soir": {
+        "question": "Quel délai m'a agacé aujourd'hui ? Qu'est-ce qu'il voulait m'enseigner ?",
+        "paroles": {
+          "tenu":    "Le délai accepté devient une école.",
+          "parfois": "La patience devant le temps est l'œuvre d'une vie.",
+          "oublie":  "L'impatience est une jeunesse de l'âme. Elle se calme par l'usage.",
+          "repris":  "Demain : un seul délai, accepte-le sans le commenter."
+        }
+      }
+    },
+    {
+      "id": "attendre-cinq-minutes",
+      "vigilance": "patience",
+      "matin": {
+        "libelle": "Attendre cinq minutes avant de réagir",
+        "enseignement_court": "Cinq minutes entre l'impulsion et l'acte changent souvent le cours d'une journée.",
+        "sagesse_hikam_id": 113,
+        "nom_remede": "al-Ḥalīm",
+        "phrase_chemin": "Cinq minutes — et tu verras autrement."
+      },
+      "soir": {
+        "question": "Quand l'impulsion est venue, ai-je attendu ? Qu'aurait-il fallu attendre ?",
+        "paroles": {
+          "tenu":    "Cinq minutes attendues sont un cœur sauvé.",
+          "parfois": "L'attente devient une force quand on l'a éprouvée.",
+          "oublie":  "L'impulsion est un visiteur — elle repart si on ne la nourrit pas.",
+          "repris":  "Demain : une seule impulsion, attends cinq minutes avant d'y répondre."
+        }
+      }
+    },
+    {
+      "id": "demander-pardon",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Demander pardon à quelqu'un que j'ai blessé",
+        "enseignement_court": "Demander pardon n'est pas s'effondrer. C'est reconnaître. La tawba véritable agit avant de se justifier.",
+        "sagesse_hikam_id": 47,
+        "nom_remede": "at-Tawwāb",
+        "phrase_chemin": "Reviens, simplement. C'est tout."
+      },
+      "soir": {
+        "question": "Ai-je trouvé les mots aujourd'hui ? Sinon, qu'est-ce qui m'a retenu ?",
+        "paroles": {
+          "tenu":    "Demander pardon, c'est ouvrir une porte qu'aucun regret silencieux n'ouvre.",
+          "parfois": "Même une amorce de pardon ouvre quelque chose.",
+          "oublie":  "Le pardon retardé reste possible. Demain est encore là.",
+          "repris":  "Demain : un mot, court, sincère. Ça suffit."
+        }
+      }
+    },
+    {
+      "id": "reparler-doucement",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Reparler doucement à celui que j'ai brusqué",
+        "enseignement_court": "Reprendre la même conversation, à voix plus basse, c'est plus puissant qu'un long discours.",
+        "sagesse_hikam_id": 150,
+        "nom_remede": "ar-Raʾūf",
+        "phrase_chemin": "Reparle, comme si la première fois n'avait pas eu lieu."
+      },
+      "soir": {
+        "question": "Ai-je repris la parole avec douceur aujourd'hui ? Qu'a permis cette douceur ?",
+        "paroles": {
+          "tenu":    "Une parole reprise dans la douceur efface trois paroles dures.",
+          "parfois": "Reprendre, c'est déjà aimer.",
+          "oublie":  "Le réflexe de défense est ancien. Demain, observe-le, sans agir.",
+          "repris":  "Demain : une seule phrase reprise, plus douce."
+        }
+      }
+    },
+    {
+      "id": "ecrire-sans-envoyer",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Écrire sans envoyer",
+        "enseignement_court": "Écrire ce qu'on ne dira pas, c'est déjà se le dire à soi. Tout n'a pas besoin de partir pour faire son œuvre.",
+        "sagesse_hikam_id": 73,
+        "nom_remede": "al-Bāṭin",
+        "phrase_chemin": "Écris pour toi. Garde le silence pour l'autre."
+      },
+      "soir": {
+        "question": "Ai-je écrit aujourd'hui ce que je n'avais pas besoin d'envoyer ?",
+        "paroles": {
+          "tenu":    "Une lettre gardée est une parole transformée.",
+          "parfois": "Même quelques lignes écrites pour soi font leur œuvre.",
+          "oublie":  "Le besoin d'envoyer est souvent un besoin d'être entendu. Le journal entend déjà.",
+          "repris":  "Demain : trois lignes, pour toi seul."
+        }
+      }
+    },
+    {
+      "id": "tenir-promesse",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Tenir une promesse minuscule oubliée",
+        "enseignement_court": "Une promesse minuscule tenue répare plus qu'une grande promesse refaite.",
+        "sagesse_hikam_id": 8,
+        "nom_remede": "al-Wakīl",
+        "phrase_chemin": "Fais la petite chose. C'est elle, la vérité."
+      },
+      "soir": {
+        "question": "Ai-je honoré aujourd'hui une parole donnée hier ? Laquelle reste en attente ?",
+        "paroles": {
+          "tenu":    "Le respect d'une promesse minuscule est le sceau du caractère.",
+          "parfois": "Même une partie tenue construit le cœur.",
+          "oublie":  "Une promesse oubliée n'est pas perdue tant qu'elle peut être honorée demain.",
+          "repris":  "Demain : une seule promesse, choisie, tenue."
+        }
+      }
+    },
+    {
+      "id": "remercier-personne",
+      "vigilance": "gratitude",
+      "matin": {
+        "libelle": "Remercier sincèrement une personne",
+        "enseignement_court": "Reconnaître ce qu'un autre a fait pour nous, c'est rendre la grâce visible. La gratitude se vit en gestes avant les mots.",
+        "sagesse_hikam_id": 96,
+        "nom_remede": "ash-Shakūr",
+        "phrase_chemin": "Dis-le. Simplement. Aujourd'hui."
+      },
+      "soir": {
+        "question": "Qui ai-je remercié aujourd'hui ? Qui aurait dû l'être ?",
+        "paroles": {
+          "tenu":    "Un merci sincère est une lumière qui circule.",
+          "parfois": "Même un merci timide compte.",
+          "oublie":  "La gratitude muette devient invisible. Demain, dis-la.",
+          "repris":  "Demain : une seule personne, un seul merci."
+        }
+      }
+    },
+    {
+      "id": "nommer-protection",
+      "vigilance": "gratitude",
+      "matin": {
+        "libelle": "Nommer une protection reçue",
+        "enseignement_court": "Reconnaître une protection — un accident évité, une parole épargnée — c'est rendre visible la main qui nous tient.",
+        "sagesse_hikam_id": 134,
+        "nom_remede": "al-Ḥafīẓ",
+        "phrase_chemin": "Cherche le don dans ce qui n'a pas eu lieu."
+      },
+      "soir": {
+        "question": "Qu'est-ce qui ne m'est pas arrivé aujourd'hui dont je devrais remercier ?",
+        "paroles": {
+          "tenu":    "Voir les protections silencieuses est le regard du gnostique.",
+          "parfois": "La gratitude pour ce qui n'a pas eu lieu est rare. Tu l'as entamée.",
+          "oublie":  "Les protections invisibles attendent ton regard.",
+          "repris":  "Demain : avant de dormir, nomme une chose qui ne t'est pas arrivée."
+        }
+      }
+    },
+    {
+      "id": "reconnaitre-don",
+      "vigilance": "gratitude",
+      "matin": {
+        "libelle": "Reconnaître un don dans la journée",
+        "enseignement_court": "Un don reçu et reconnu est un don deux fois. Un don reçu et oublié est un don à demi.",
+        "sagesse_hikam_id": 248,
+        "nom_remede": "al-Wahhāb",
+        "phrase_chemin": "Repère ce qui t'est donné. Sans le demander."
+      },
+      "soir": {
+        "question": "Qu'ai-je reçu aujourd'hui que je n'avais pas demandé ?",
+        "paroles": {
+          "tenu":    "Reconnaître un don est déjà rendre grâce.",
+          "parfois": "Un don aperçu vaut mieux que dix dons traversés.",
+          "oublie":  "L'œil qui ne voit pas le don dépérit. Demain, cherche-en un seul.",
+          "repris":  "Demain : avant de dormir, nomme un don du jour."
+        }
+      }
+    },
+    {
+      "id": "benir-interieurement",
+      "vigilance": "coeur",
+      "matin": {
+        "libelle": "Bénir intérieurement une personne difficile",
+        "enseignement_court": "Bénir l'autre en silence est une discipline du cœur. Elle dénoue d'abord celui qui bénit.",
+        "sagesse_hikam_id": 234,
+        "nom_remede": "al-Wadūd",
+        "phrase_chemin": "Dis-lui dans ton cœur ce que tu ne lui dirais pas tout haut."
+      },
+      "soir": {
+        "question": "Ai-je béni intérieurement quelqu'un que je trouvais difficile aujourd'hui ?",
+        "paroles": {
+          "tenu":    "Le cœur qui bénit est libéré avant celui qui est béni.",
+          "parfois": "Une bénédiction esquissée est déjà un changement.",
+          "oublie":  "La rancune est un poison familier. Demain, choisis une personne à bénir.",
+          "repris":  "Demain : nomme une personne, et dis dans ton cœur : « que le bien lui soit donné »."
+        }
+      }
+    },
+    {
+      "id": "voir-qualite-autre",
+      "vigilance": "coeur",
+      "matin": {
+        "libelle": "Voir une qualité chez quelqu'un que je juge",
+        "enseignement_court": "Le jugement réduit l'autre à une image. Voir une qualité la défait.",
+        "sagesse_hikam_id": 235,
+        "nom_remede": "al-Baṣīr",
+        "phrase_chemin": "Cherche dans l'autre ce que ton œil n'avait pas vu."
+      },
+      "soir": {
+        "question": "Quelle qualité ai-je vu aujourd'hui chez quelqu'un que je n'aimais pas voir ?",
+        "paroles": {
+          "tenu":    "Voir une qualité dans l'autre, c'est se laver les yeux.",
+          "parfois": "Une qualité aperçue chez l'autre travaille en silence.",
+          "oublie":  "Le jugement nourrit la fermeture. Demain, repère une qualité chez une seule personne.",
+          "repris":  "Demain : choisis quelqu'un, et trouve une qualité. Une seule suffit."
+        }
+      }
+    },
+    {
+      "id": "ne-pas-nourrir-rancune",
+      "vigilance": "coeur",
+      "matin": {
+        "libelle": "Ne pas nourrir une rancune",
+        "enseignement_court": "La rancune se nourrit du scénario qu'on rejoue. Cesser de rejouer, c'est déjà la dénouer.",
+        "sagesse_hikam_id": 11,
+        "nom_remede": "al-ʿAfū",
+        "phrase_chemin": "Laisse le scénario s'éteindre. Ne le rallume pas."
+      },
+      "soir": {
+        "question": "Combien de fois ai-je rejoué la même scène en moi aujourd'hui ?",
+        "paroles": {
+          "tenu":    "Un scénario non rejoué meurt seul.",
+          "parfois": "Même un effort de ne pas rejouer est un fruit.",
+          "oublie":  "La rumination est une vieille amie. Repère-la avec tendresse.",
+          "repris":  "Demain : quand le scénario revient, change d'activité une fois."
+        }
+      }
+    },
+    {
+      "id": "geste-discret",
+      "vigilance": "service",
+      "matin": {
+        "libelle": "Un geste de service sans l'annoncer",
+        "enseignement_court": "Un geste annoncé perd la moitié de son fruit. Un geste discret pousse en silence.",
+        "sagesse_hikam_id": 49,
+        "nom_remede": "al-Karīm",
+        "phrase_chemin": "Fais, et n'en dis rien."
+      },
+      "soir": {
+        "question": "Ai-je fait quelque chose pour quelqu'un sans le dire ?",
+        "paroles": {
+          "tenu":    "Un bien discret est gardé par Celui qui voit le caché.",
+          "parfois": "Un geste fait, même petit, est un fruit.",
+          "oublie":  "L'envie d'être vu est ancienne. Demain, fais et garde le silence.",
+          "repris":  "Demain : un seul geste, sans le dire à personne."
+        }
+      }
+    },
+    {
+      "id": "demander-aide",
+      "vigilance": "service",
+      "matin": {
+        "libelle": "Demander de l'aide à quelqu'un",
+        "enseignement_court": "Demander, c'est reconnaître que je ne suis pas seul. L'humilité de demander est une porte.",
+        "sagesse_hikam_id": 169,
+        "nom_remede": "al-Wakīl",
+        "phrase_chemin": "Dis-le. Tu n'es pas obligé de tout porter."
+      },
+      "soir": {
+        "question": "Qu'ai-je porté seul aujourd'hui qui aurait pu être partagé ?",
+        "paroles": {
+          "tenu":    "Demander est une humilité douce.",
+          "parfois": "Même une amorce de demande change le poids.",
+          "oublie":  "L'autonomie peut être une fermeture. Demain, demande une fois.",
+          "repris":  "Demain : une demande, courte, claire, à une seule personne."
+        }
+      }
+    },
+    {
+      "id": "tenir-petite-promesse",
+      "vigilance": "service",
+      "matin": {
+        "libelle": "Tenir une petite parole donnée",
+        "enseignement_court": "Les petites paroles tenues construisent un caractère. Les grandes paroles sans suivi le défont.",
+        "sagesse_hikam_id": 8,
+        "nom_remede": "al-Ḥaqq",
+        "phrase_chemin": "Fais la petite chose. Aujourd'hui."
+      },
+      "soir": {
+        "question": "Quelle petite parole ai-je honorée aujourd'hui ?",
+        "paroles": {
+          "tenu":    "Une promesse minuscule tenue vaut une grande promesse non tenue.",
+          "parfois": "Tenir parfois construit la confiance avec soi.",
+          "oublie":  "Une promesse oubliée peut être honorée demain.",
+          "repris":  "Demain : une seule petite chose promise, faite."
+        }
+      }
+    },
+    {
+      "id": "dhikr-court",
+      "vigilance": "pratique",
+      "matin": {
+        "libelle": "Répéter un Nom divin pendant cinq minutes",
+        "enseignement_court": "Cinq minutes de dhikr ouvrent un sillage que la journée traverse. Un seul Nom suffit, répété en présence.",
+        "sagesse_hikam_id": 45,
+        "nom_remede": "al-Quddūs",
+        "phrase_chemin": "Choisis un Nom. Habite-le."
+      },
+      "soir": {
+        "question": "Ai-je donné du temps au dhikr aujourd'hui ? Quel Nom m'a accompagné ?",
+        "paroles": {
+          "tenu":    "Un Nom répété en présence travaille longtemps après que les lèvres se sont tues.",
+          "parfois": "Même une minute de dhikr est une semence.",
+          "oublie":  "Le dhikr attend, fidèle. Demain, il sera là.",
+          "repris":  "Demain : un seul Nom, une seule minute, en présence."
+        }
+      }
+    },
+    {
+      "id": "silence-matin",
+      "vigilance": "pratique",
+      "matin": {
+        "libelle": "Cinq minutes de silence avant d'ouvrir le téléphone",
+        "enseignement_court": "Le premier acte du matin oriente le jour. Le silence avant l'écran rend la journée à son commencement.",
+        "sagesse_hikam_id": 50,
+        "nom_remede": "al-Awwal",
+        "phrase_chemin": "Ne te connecte pas à eux avant de te connecter à Lui."
+      },
+      "soir": {
+        "question": "Comment ai-je commencé la journée aujourd'hui ? Qu'est-ce qui a colonisé mes premières minutes ?",
+        "paroles": {
+          "tenu":    "Un commencement habité donne une journée habitée.",
+          "parfois": "Un seul matin silencieux change la semaine.",
+          "oublie":  "L'écran avant le silence est un réflexe. Demain, retarde-le de cinq minutes.",
+          "repris":  "Demain : à ton réveil, attends cinq minutes avant d'allumer l'écran."
+        }
+      }
+    },
+    {
+      "id": "lecture-courte",
+      "vigilance": "pratique",
+      "matin": {
+        "libelle": "Lire une page d'un texte soufi aujourd'hui",
+        "enseignement_court": "Une page lue lentement vaut dix pages dévorées. Le texte soufi se laisse infuser, pas avaler.",
+        "sagesse_hikam_id": 228,
+        "nom_remede": "al-ʿAlīm",
+        "phrase_chemin": "Lis une page. Ferme. Laisse-la travailler."
+      },
+      "soir": {
+        "question": "Quelle parole d'un maître m'a accompagné aujourd'hui ?",
+        "paroles": {
+          "tenu":    "Une page lue en présence est une compagne pour des jours.",
+          "parfois": "Même quelques lignes infusent.",
+          "oublie":  "Le texte attend, patient. Demain.",
+          "repris":  "Demain : une page seulement. Lue lentement."
+        }
+      }
+    },
+    {
+      "id": "respirer-avant-repondre",
+      "vigilance": "corps",
+      "matin": {
+        "libelle": "Respirer avant chaque réponse",
+        "enseignement_court": "Une respiration avant la réponse change la qualité de la réponse. Le souffle ralentit le mental.",
+        "sagesse_hikam_id": 20,
+        "nom_remede": "al-Ḥalīm",
+        "phrase_chemin": "Inspire. Puis parle. Pas avant."
+      },
+      "soir": {
+        "question": "Combien de réponses ai-je données aujourd'hui sans respirer d'abord ?",
+        "paroles": {
+          "tenu":    "Une respiration entre la question et la réponse est un adab caché.",
+          "parfois": "Le souffle est plus rapide à oublier que la parole. Tu y reviens.",
+          "oublie":  "Le mental court. Le souffle attend, patient.",
+          "repris":  "Demain : une seule réponse, précédée d'une respiration."
+        }
+      }
+    },
+    {
+      "id": "reconnaitre-fatigue",
+      "vigilance": "corps",
+      "matin": {
+        "libelle": "Reconnaître ma fatigue avant qu'elle ne parle pour moi",
+        "enseignement_court": "La fatigue non reconnue dicte des décisions qu'on regrettera. La nommer, c'est déjà la défaire à moitié.",
+        "sagesse_hikam_id": 232,
+        "nom_remede": "ar-Raʾūf",
+        "phrase_chemin": "Si tu es fatigué, ralentis. Avant que ça parle."
+      },
+      "soir": {
+        "question": "Ma fatigue a-t-elle parlé pour moi aujourd'hui ?",
+        "paroles": {
+          "tenu":    "Reconnaître sa fatigue est une humilité du corps.",
+          "parfois": "Même un moment de reconnaissance change la suite.",
+          "oublie":  "La fatigue niée mord. Demain, écoute-la plus tôt.",
+          "repris":  "Demain : à la première sensation de fatigue, pose-toi cinq minutes."
+        }
+      }
+    },
+    {
+      "id": "ne-pas-decider-epuisement",
+      "vigilance": "corps",
+      "matin": {
+        "libelle": "Ne pas prendre de décision importante en fin de journée",
+        "enseignement_court": "Le soir est un mauvais conseiller. Reporter une décision à demain matin est souvent une sagesse.",
+        "sagesse_hikam_id": 232,
+        "nom_remede": "al-Ḥakīm",
+        "phrase_chemin": "Reporte. Demain matin, tu verras autrement."
+      },
+      "soir": {
+        "question": "Une décision est-elle venue ce soir qui aurait mieux servi demain matin ?",
+        "paroles": {
+          "tenu":    "Reporter sagement est aussi un acte.",
+          "parfois": "Même un délai accepté change l'issue.",
+          "oublie":  "Le soir presse, mais a tort. Demain matin sera là.",
+          "repris":  "Demain : si une décision arrive ce soir, dis-toi : « demain matin ». Une fois."
+        }
+      }
+    },
+    {
+      "id": "repos-vrai",
+      "vigilance": "corps",
+      "matin": {
+        "libelle": "Me reposer vraiment, sans écran",
+        "enseignement_court": "Le repos avec un écran n'est pas un repos. Le corps demande un silence vrai.",
+        "sagesse_hikam_id": 247,
+        "nom_remede": "as-Salām",
+        "phrase_chemin": "Repose-toi. Sans rien."
+      },
+      "soir": {
+        "question": "Me suis-je vraiment reposé aujourd'hui, ou ai-je rempli mes pauses ?",
+        "paroles": {
+          "tenu":    "Un vrai repos est un acte de foi.",
+          "parfois": "Une pause silencieuse vaut dix pauses bruyantes.",
+          "oublie":  "Le réflexe de remplir est une fuite. Demain, laisse vide.",
+          "repris":  "Demain : une seule pause, sans rien, cinq minutes."
+        }
+      }
+    }
+  ]
+}

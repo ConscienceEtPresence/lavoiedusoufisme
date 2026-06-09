@@ -1,6 +1,6 @@
 /* ============================================================
-   Le carnet d'adab — Aiguilleur (page Aujourd'hui)
-   Lit l'heure et l'état du jour pour proposer poser ou relire.
+   Le carnet d'adab — Tableau de bord principal
+   Toujours visible : ce que j'ai posé + les 10 vigilances accessibles
    ============================================================ */
 import { db } from './firebase-init.js';
 import { doc, getDoc, serverTimestamp, setDoc }
@@ -29,7 +29,6 @@ function esc(s) {
 }
 function greetingByHour(heure) {
   if (heure < 5)  return 'Bonsoir';
-  if (heure < 12) return 'Bonjour';
   if (heure < 18) return 'Bonjour';
   return 'Bonsoir';
 }
@@ -53,7 +52,6 @@ dateEl.textContent = dateLisible();
     const aPose = !!matin.poseLe;
     const aDepose = !!soir.fermeLe;
 
-    // Met à jour le lastSeen
     try {
       await setDoc(doc(db, 'carnets', anonId, '_meta', 'profil'), {
         prenom: prenom || null,
@@ -64,112 +62,122 @@ dateEl.textContent = dateLisible();
     const g = greetingByHour(heure);
     const greeting = prenom ? `${g} <em>${esc(prenom)}</em>,` : `${g},`;
 
-    // Rendre le résumé du matin (toujours utile)
-    function renderResume() {
-      const v = vigilances.find(x => x.id === matin.vigilanceId);
-      const objsChoisis = (matin.objectifsIds || []).map(id => objectifs.find(o => o.id === id)).filter(Boolean);
-      const aDuContenu = v || objsChoisis.length || matin.personnel;
-      if (!aDuContenu) return '';
-
-      const objsHTML = objsChoisis.map(o => `
-        <li class="resume-obj">${esc(o.matin.libelle)}</li>
-      `).join('');
-      const persoHTML = matin.personnel ? `
-        <li class="resume-obj resume-obj--perso">${esc(matin.personnel)}</li>` : '';
-
+    // === SECTION 1 : « Aujourd'hui » ===
+    function renderSection1() {
+      // Cas 1 : journée déposée
+      if (aDepose) {
+        const v = vigilances.find(x => x.id === matin.vigilanceId);
+        return `
+          <section class="dash-aujourd-hui dash-aujourd-hui--depose">
+            <p class="dash-aujourd-hui__label">Aujourd'hui · journée déposée</p>
+            <p class="dash-aujourd-hui__msg"><em>Le jour est gardé. Que la nuit soit douce.</em></p>
+            ${v ? `<p class="dash-aujourd-hui__resume"><span lang="ar" dir="rtl" style="font-family:'Amiri',serif; color:var(--adab-gold-deep);">${esc(v.ar)}</span> · ${esc(v.label)}</p>` : ''}
+            <div class="dash-actions">
+              <a href="/pages/carnet/historique/?j=${date}" class="adab-bouton adab-bouton--ghost">Voir ma journée</a>
+            </div>
+          </section>`;
+      }
+      // Cas 2 : matin posé, soir non
+      if (aPose) {
+        const v = vigilances.find(x => x.id === matin.vigilanceId);
+        const objsChoisis = (matin.objectifsIds || []).map(id => objectifs.find(o => o.id === id)).filter(Boolean);
+        const objsHTML = objsChoisis.map(o => `<li class="resume-obj">${esc(o.matin.libelle)}</li>`).join('');
+        const persoHTML = matin.personnel ? `<li class="resume-obj resume-obj--perso">${esc(matin.personnel)}</li>` : '';
+        const ctaSoir = heure >= 17
+          ? `<a href="/pages/carnet/relire/" class="adab-bouton adab-bouton--grand">Relire ma journée</a>`
+          : `<a href="/pages/carnet/relire/" class="adab-bouton adab-bouton--ghost">Relire en avance</a>`;
+        return `
+          <section class="dash-aujourd-hui dash-aujourd-hui--pose">
+            <p class="dash-aujourd-hui__label">Ce que j'ai posé ce matin</p>
+            ${v ? `
+              <div class="dash-vigilance">
+                <span class="dash-vigilance__ar" lang="ar" dir="rtl">${esc(v.ar)}</span>
+                <h3 class="dash-vigilance__titre">${esc(v.label)}</h3>
+              </div>` : ''}
+            ${(objsHTML || persoHTML) ? `<ul class="dash-objs">${objsHTML}${persoHTML}</ul>` : ''}
+            ${matin.ancrage ? `<p class="dash-ancrage"><em>« ${esc(matin.ancrage)} »</em></p>` : ''}
+            <div class="dash-actions">
+              ${ctaSoir}
+              <a href="/pages/carnet/poser/" class="adab-bouton-secondaire">Modifier mon choix</a>
+            </div>
+          </section>`;
+      }
+      // Cas 3 : rien posé, matin → invitation
+      if (heure < 17) {
+        return `
+          <section class="dash-aujourd-hui dash-aujourd-hui--vide">
+            <p class="dash-aujourd-hui__label">Aujourd'hui</p>
+            <p class="dash-aujourd-hui__msg dash-aujourd-hui__msg--invite">
+              <em>Un seul thème, un objectif. Petit, c'est suffisant.</em>
+            </p>
+            <div class="dash-actions">
+              <a href="/pages/carnet/poser/" class="adab-bouton adab-bouton--grand">Poser ma journée</a>
+            </div>
+            <p class="dash-aujourd-hui__hint">
+              <em>Ou explorez les vigilances ci-dessous et prenez-en une quand quelque chose vous appelle.</em>
+            </p>
+          </section>`;
+      }
+      // Cas 4 : rien posé, soir → relire libre
       return `
-        <div class="aiguilleur-resume">
-          <p class="aiguilleur-resume__label">Ce matin, vous avez posé</p>
-          ${v ? `
-            <div class="aiguilleur-resume__vigilance-bloc">
-              <span class="aiguilleur-resume__vig-ar" lang="ar" dir="rtl">${esc(v.ar)}</span>
-              <p class="aiguilleur-resume__vig-titre">${esc(v.label)}</p>
-            </div>` : ''}
-          ${objsHTML || persoHTML ? `
-            <ul class="aiguilleur-resume__objs">
-              ${objsHTML}${persoHTML}
-            </ul>` : ''}
-          ${matin.ancrage ? `<p class="aiguilleur-resume__ancrage"><em>« ${esc(matin.ancrage)} »</em></p>` : ''}
-        </div>`;
+        <section class="dash-aujourd-hui dash-aujourd-hui--vide">
+          <p class="dash-aujourd-hui__label">Aujourd'hui</p>
+          <p class="dash-aujourd-hui__msg"><em>Vous n'avez rien posé ce matin. Vous pouvez quand même relire la journée.</em></p>
+          <div class="dash-actions">
+            <a href="/pages/carnet/relire/" class="adab-bouton adab-bouton--grand">Relire ma journée</a>
+            <a href="/pages/carnet/poser/" class="adab-bouton-secondaire">Poser quand même</a>
+          </div>
+        </section>`;
     }
 
-    let contenuHTML;
+    // === SECTION 2 : Les 10 vigilances toujours visibles ===
+    function renderSection2() {
+      const cards = vigilances.map(v => {
+        const isCurrente = aPose && matin.vigilanceId === v.id;
+        return `
+          <a href="/pages/carnet/poser/?vigilance=${esc(v.id)}" class="dash-vig-carte ${isCurrente ? 'is-current' : ''}">
+            ${isCurrente ? '<span class="dash-vig-carte__current-tag">aujourd\'hui</span>' : ''}
+            <span class="dash-vig-carte__ar" lang="ar" dir="rtl">${esc(v.ar)}</span>
+            <span class="dash-vig-carte__tr">${esc(v.tr)}</span>
+            <span class="dash-vig-carte__label">${esc(v.label)}</span>
+          </a>`;
+      }).join('');
+      const titre = aPose
+        ? 'Explorer les vigilances et leurs enseignements'
+        : 'Choisissez une vigilance pour aujourd\'hui';
+      const sub = aPose
+        ? 'Vous pouvez en lire une autre — ou changer pour celle-là.'
+        : 'Cliquez pour découvrir l\'enseignement, le verset, le Nom divin qui l\'accompagne.';
+      return `
+        <section class="dash-vigilances">
+          <header class="dash-vigilances__head">
+            <h2 class="dash-vigilances__titre">${esc(titre)}</h2>
+            <p class="dash-vigilances__sub"><em>${esc(sub)}</em></p>
+          </header>
+          <div class="dash-vig-grille">${cards}</div>
+        </section>`;
+    }
 
-    if (aDepose) {
-      // Tout fait
-      contenuHTML = `
-        <h1 class="aiguilleur__hello">${greeting}</h1>
-        <p class="aiguilleur__sub"><em>Votre journée est déposée. Que la nuit soit douce.</em></p>
-        ${renderResume()}
-        <div class="aiguilleur__cta">
-          <a href="/pages/carnet/historique/" class="adab-bouton adab-bouton--ghost">Voir mes journées</a>
-        </div>
-        <div class="aiguilleur__sortir">
-          <a href="/index.html" class="adab-bouton-secondaire">Sortir du carnet</a>
-        </div>
-      `;
-    } else if (aPose && heure >= 17) {
-      // Posé + soir : c'est l'heure de relire
-      contenuHTML = `
-        <h1 class="aiguilleur__hello">${greeting}</h1>
-        <p class="aiguilleur__sub"><em>Le soir est venu. Sans se juger, avec tendresse.</em></p>
-        ${renderResume()}
-        <div class="aiguilleur__cta">
-          <a href="/pages/carnet/relire/" class="adab-bouton adab-bouton--grand">Relire ma journée</a>
-        </div>
-        <div class="aiguilleur__sortir">
-          <a href="/pages/carnet/poser/" class="adab-bouton-secondaire">Modifier mon choix du matin</a>
-          <a href="/index.html" class="adab-bouton-secondaire">Sortir du carnet</a>
-        </div>
-      `;
-    } else if (aPose && heure < 17) {
-      // Posé + journée en cours : on rappelle ce qui a été posé, on encourage à vivre la journée
-      contenuHTML = `
-        <h1 class="aiguilleur__hello">${greeting}</h1>
-        <p class="aiguilleur__sub"><em>Vous avez déjà posé votre matin. La journée vous attend.</em></p>
-        ${renderResume()}
-        <div class="aiguilleur__cta">
-          <a href="/index.html" class="adab-bouton adab-bouton--grand">Continuer ma journée</a>
-        </div>
-        <div class="aiguilleur__sortir">
-          <a href="/pages/carnet/poser/" class="adab-bouton-secondaire">Modifier mon choix</a>
-          <a href="/pages/carnet/relire/" class="adab-bouton-secondaire">Relire maintenant</a>
-        </div>
-      `;
-    } else if (!aPose && heure < 17) {
-      // Rien posé + matin/journée : poser
-      contenuHTML = `
-        <h1 class="aiguilleur__hello">${greeting}</h1>
-        <p class="aiguilleur__sub"><em>Un seul thème, un objectif. Petit, c'est suffisant.</em></p>
-        <div class="aiguilleur__cta">
-          <a href="/pages/carnet/poser/" class="adab-bouton adab-bouton--grand">Poser ma journée</a>
-        </div>
-        <div class="aiguilleur__sortir">
-          <a href="/index.html" class="adab-bouton-secondaire">Sortir du carnet</a>
-        </div>
-      `;
-    } else {
-      // Rien posé + soir : relire librement
-      contenuHTML = `
-        <h1 class="aiguilleur__hello">${greeting}</h1>
-        <p class="aiguilleur__sub"><em>Vous n'avez rien posé ce matin. Vous pouvez quand même relire la journée.</em></p>
-        <div class="aiguilleur__cta">
-          <a href="/pages/carnet/relire/" class="adab-bouton adab-bouton--grand">Relire ma journée</a>
-        </div>
-        <div class="aiguilleur__sortir">
-          <a href="/pages/carnet/poser/" class="adab-bouton-secondaire">Poser quand même</a>
-          <a href="/index.html" class="adab-bouton-secondaire">Sortir du carnet</a>
-        </div>
-      `;
+    // === SECTION 3 : Liens du bas ===
+    function renderSection3() {
+      return `
+        <section class="dash-bas">
+          <div class="dash-ornement">✦</div>
+          <p class="dash-liens">
+            <a href="/pages/carnet/historique/">Mes journées passées →</a>
+          </p>
+          <p class="dash-liens dash-liens--soft">
+            <a href="/index.html">Sortir du carnet</a>
+          </p>
+        </section>`;
     }
 
     mount.innerHTML = `
-      <section class="aiguilleur">
-        ${contenuHTML}
-        <div class="aiguilleur__ornement">✦</div>
-        <p class="aiguilleur__hist">
-          <a href="/pages/carnet/historique/">Mes journées passées →</a>
-        </p>
+      <section class="dash">
+        <h1 class="dash__hello">${greeting}</h1>
+        ${renderSection1()}
+        ${renderSection2()}
+        ${renderSection3()}
       </section>
     `;
   } catch (e) {

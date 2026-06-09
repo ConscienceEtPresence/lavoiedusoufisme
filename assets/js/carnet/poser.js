@@ -51,12 +51,25 @@ const date = todayKey();
     const dejaPose = !!matin.poseLe;
 
     // Etat de la page : 'accueil' / 'vigilance' / 'engage' / 'pose'
+    // Si ?vigilance=ID dans l'URL, on saute direct à l'étape vigilance.
+    const params = new URLSearchParams(location.search);
+    const askedVigilance = params.get('vigilance');
+    let initialEtape = dejaPose ? 'pose' : 'accueil';
+    let initialVigId = matin.vigilanceId || '';
+    if (askedVigilance && vigilances.find(v => v.id === askedVigilance)) {
+      initialEtape = 'vigilance';
+      initialVigId = askedVigilance;
+      // Si l'utilisateur veut découvrir une AUTRE vigilance, on ne précoche pas
+      // les objectifs de l'ancienne pour ne pas le perturber.
+      const changeVigilance = matin.vigilanceId && matin.vigilanceId !== askedVigilance;
+      // (note: state.objectifsIds reste vide dans ce cas, voir ci-dessous)
+    }
     let state = {
-      etape: dejaPose ? 'pose' : 'accueil',
+      etape: initialEtape,
       ancrage: matin.ancrage || '',
-      vigilanceId: matin.vigilanceId || '',
-      objectifsIds: matin.objectifsIds || [],
-      personnel: matin.personnel || '',
+      vigilanceId: initialVigId,
+      objectifsIds: (askedVigilance && matin.vigilanceId !== askedVigilance) ? [] : (matin.objectifsIds || []),
+      personnel: (askedVigilance && matin.vigilanceId !== askedVigilance) ? '' : (matin.personnel || ''),
     };
 
     function render() {

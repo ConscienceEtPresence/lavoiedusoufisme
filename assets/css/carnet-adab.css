@@ -1537,3 +1537,266 @@ body.carnet-body {
 .adab-head__phase {
   font-size: 1.05rem;
 }
+
+/* ============================================================
+   v4 — Tableau de bord principal (/aujourdhui/)
+   Toujours visible : ce que j'ai posé + grille des 10 vigilances
+   ============================================================ */
+.dash {
+  padding: 1.5rem 0 0;
+}
+.dash__hello {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  color: var(--adab-ink);
+  text-align: center;
+  margin: 0 0 1.5rem;
+  font-weight: 500;
+}
+.dash__hello em {
+  font-style: italic;
+  color: var(--adab-gold-deep);
+}
+
+/* SECTION 1 — Aujourd'hui */
+.dash-aujourd-hui {
+  max-width: 32rem;
+  margin: 0 auto 2.5rem;
+  padding: 1.5rem 1.5rem 1.7rem;
+  background: linear-gradient(160deg, rgba(255,248,220,0.7), rgba(248,238,210,0.5));
+  border: 1px solid var(--adab-rule);
+  border-radius: 14px;
+  text-align: center;
+  position: relative;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+}
+.dash-aujourd-hui::before,
+.dash-aujourd-hui::after {
+  content: '✦';
+  position: absolute;
+  color: var(--adab-gold);
+  font-size: .85rem;
+  opacity: .6;
+}
+.dash-aujourd-hui::before { top: .6rem; left: .85rem; }
+.dash-aujourd-hui::after  { bottom: .6rem; right: .85rem; }
+
+.dash-aujourd-hui__label {
+  font-size: .7rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+  font-weight: 700;
+  margin: 0 0 .85rem;
+}
+.dash-aujourd-hui__msg {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  color: var(--adab-ink-soft);
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+.dash-aujourd-hui__msg--invite {
+  font-size: 1.25rem;
+  color: var(--adab-ink);
+}
+.dash-aujourd-hui__hint {
+  margin: 1rem 0 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: .95rem;
+  color: var(--adab-ink-mute);
+  font-style: italic;
+}
+.dash-aujourd-hui__resume {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--adab-ink);
+  margin: 0 0 1rem;
+}
+
+.dash-vigilance {
+  margin: 1rem 0;
+}
+.dash-vigilance__ar {
+  font-family: 'Amiri', serif;
+  font-size: 2rem;
+  color: var(--adab-ink);
+  display: block;
+  line-height: 1.2;
+  margin-bottom: .2rem;
+}
+.dash-vigilance__titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  color: var(--adab-ink);
+  margin: 0;
+  font-weight: 500;
+}
+
+.dash-objs {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+  max-width: 24rem;
+  text-align: left;
+}
+.dash-objs .resume-obj {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.08rem;
+  color: var(--adab-ink);
+  padding: .4rem 0;
+  border-top: 1px dashed rgba(192,160,80,0.3);
+  font-style: italic;
+}
+.dash-objs .resume-obj:first-child { border-top: 0; }
+.dash-objs .resume-obj::before {
+  content: '◇  ';
+  color: var(--adab-gold);
+  opacity: .7;
+  font-size: .8em;
+  font-style: normal;
+}
+
+.dash-ancrage {
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(192,160,80,0.3);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--adab-ink-soft);
+  font-size: .98rem;
+}
+
+.dash-actions {
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+  align-items: center;
+  margin: 1.2rem 0 0;
+}
+.dash-actions .adab-bouton-secondaire {
+  font-size: .92rem;
+}
+
+/* SECTION 2 — Grille des 10 vigilances */
+.dash-vigilances {
+  margin: 2.5rem 0;
+}
+.dash-vigilances__head {
+  text-align: center;
+  margin: 0 auto 1.2rem;
+  max-width: 30rem;
+  padding: 0 1rem;
+}
+.dash-vigilances__titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.32rem;
+  color: var(--adab-gold-deep);
+  margin: 0 0 .4rem;
+  font-weight: 500;
+  letter-spacing: .02em;
+  font-style: italic;
+}
+.dash-vigilances__sub {
+  margin: 0;
+  font-size: .96rem;
+  color: var(--adab-ink-mute);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.dash-vig-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: .65rem;
+  max-width: 36rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+.dash-vig-carte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .2rem;
+  padding: 1rem .8rem;
+  background: #fff;
+  border: 1px solid var(--adab-rule);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--adab-ink);
+  transition: transform .2s, border-color .2s, box-shadow .2s, background .2s;
+  position: relative;
+}
+.dash-vig-carte:hover {
+  transform: translateY(-2px);
+  border-color: var(--adab-gold);
+  background: linear-gradient(160deg, #fff, var(--adab-paper-warm));
+  box-shadow: 0 8px 22px -12px rgba(192,160,80,0.4);
+}
+.dash-vig-carte.is-current {
+  background: linear-gradient(160deg, #fff8dc, #fdf6e4);
+  border-color: var(--adab-gold-deep);
+  box-shadow: 0 0 0 1px var(--adab-gold-deep);
+}
+.dash-vig-carte__current-tag {
+  position: absolute;
+  top: -.55rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--adab-gold), #a8884a);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: .65rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: .15rem .7rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.dash-vig-carte__ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.65rem;
+  color: var(--adab-gold-deep);
+  line-height: 1;
+  direction: rtl;
+}
+.dash-vig-carte__tr {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--adab-gold-deep);
+  font-size: .78rem;
+  letter-spacing: .04em;
+}
+.dash-vig-carte__label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.02rem;
+  color: var(--adab-ink);
+  margin-top: .15rem;
+  font-weight: 500;
+}
+
+/* SECTION 3 — Bas */
+.dash-bas {
+  text-align: center;
+  margin: 3rem 0 1rem;
+}
+.dash-ornement {
+  font-size: 1.3rem;
+  color: var(--adab-gold);
+  margin: 1rem 0;
+}
+.dash-liens {
+  margin: .5rem 0;
+}
+.dash-liens a {
+  color: var(--adab-gold-deep);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 1px dotted var(--adab-gold-deep);
+}
+.dash-liens--soft a {
+  color: var(--adab-ink-mute);
+  font-size: .92rem;
+  border-bottom-color: var(--adab-ink-mute);
+}

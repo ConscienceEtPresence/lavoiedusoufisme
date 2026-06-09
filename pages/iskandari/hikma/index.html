@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=4" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=5" />
 </head>
 <body class="page-enter">
   <header class="site-header">
@@ -54,6 +54,7 @@
   </footer>
 
   <script src="/assets/js/main.js?v=14"></script>
+  <script src="/assets/js/partage.js?v=1"></script>
   <script type="module">
     import { loadHikam, loadCorpus, injectSubnav, esc, CHAPTER_TITRES_COURTS } from '/assets/js/iskandari/corpus.js?v=2';
 
@@ -133,12 +134,41 @@
               <p class="isk-sagesse__corps">${esc(cd.modern_insight_fr)}</p>
             </div>` : ''}
           ${themes ? `<p class="isk-sagesse__themes"><em style="font-style:normal; letter-spacing:.04em; color:var(--isk-gold-deep); font-weight:600;">Lire d'autres sagesses sur :</em> ${themes}</p>` : ''}
+
+          <div class="isk-partager-bloc">
+            <button type="button" class="isk-partager-btn" id="btn-partager">
+              <span class="isk-partager-btn__ico">✦</span>
+              Offrir cette sagesse
+            </button>
+            <p class="isk-partager-hint"><em>Une carte pour la méditer, ou la partager à quelqu'un</em></p>
+          </div>
         </article>
 
         ${navHTML}
 
         <p class="isk-livre__note">Traduction française originale, faite à partir de l'anglais de référence. Le texte arabe vocalisé sera ajouté plus tard, après vérification de source.</p>
       `;
+
+      // Bouton partage — utilise LVDDPartage (canvas)
+      const btnPart = document.getElementById('btn-partager');
+      if (btnPart) {
+        btnPart.addEventListener('click', () => {
+          // Trouve le Nom divin du premier module recommandé
+          const firstMod = (sagesseToMods[r.id] || []).map(id => modById[id]).filter(Boolean)[0];
+          // Le nom divin peut être extrait du module si la corpus le contient
+          const nomDivin = firstMod?.nom_divin || '';
+          const eyebrow = nomDivin
+            ? `✦  Le Nom qui accompagne · ${nomDivin}  ✦`
+            : `✦  Sagesse à méditer  ✦`;
+          const text = r.french_translation || r.english_text_draft || '';
+          const attribution = `Ḥikam n° ${r.id}  ·  Ibn ʿAṭāʾ Allāh al-Iskandarī  ·  lavoiedudedans.fr`;
+          if (window.LVDDPartage && text) {
+            window.LVDDPartage.open({ text, attribution, eyebrow });
+          } else {
+            alert('Le module de partage n\'est pas chargé.');
+          }
+        });
+      }
     } catch (err) {
       mount.innerHTML = '<p style="text-align:center; color:#c44; padding:3rem;">Désolé, la sagesse n\'a pas pu être chargée.</p>';
       console.error(err);

@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=4" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=5" />
 </head>
 <body class="page-enter">
   <header class="site-header">
@@ -54,6 +54,7 @@
   </footer>
 
   <script src="/assets/js/main.js?v=14"></script>
+  <script src="/assets/js/partage.js?v=1"></script>
   <script type="module">
     import { loadHikam, loadCorpus, indexByTheme, injectSubnav, esc, FAMILLES_FR, FAMILLES_ORDER } from '/assets/js/iskandari/corpus.js?v=2';
 
@@ -162,6 +163,12 @@
                   <p class="isk-sagesse__corps">${esc(cd.modern_insight_fr)}</p>
                 </div>` : ''}
               ${themes ? `<p class="isk-sagesse__themes"><em style="font-style:normal; letter-spacing:.04em; color:var(--isk-gold-deep); font-weight:600;">D'autres thèmes :</em> ${themes}</p>` : ''}
+              <div class="isk-partager-inline">
+                <button type="button" class="isk-partager-btn isk-partager-btn--small" data-partager="${r.id}">
+                  <span class="isk-partager-btn__ico">✦</span>
+                  Offrir
+                </button>
+              </div>
             </article>`;
         };
 
@@ -185,6 +192,21 @@
           ${items.map(renderSagesse).join('')}
           ${navHTML}
         `;
+
+        // Bind boutons Offrir
+        mount.querySelectorAll('[data-partager]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const id = parseInt(btn.dataset.partager, 10);
+            const r = items.find(x => x.id === id);
+            if (!r) return;
+            const text = r.french_translation || r.english_text_draft || '';
+            const eyebrow = `✦  Sagesse à méditer  ✦`;
+            const attribution = `Ḥikam n° ${r.id}  ·  Ibn ʿAṭāʾ Allāh al-Iskandarī  ·  lavoiedudedans.fr`;
+            if (window.LVDDPartage && text) {
+              window.LVDDPartage.open({ text, attribution, eyebrow });
+            }
+          });
+        });
       }
     } catch (e) {
       mount.innerHTML = '<p style="text-align:center; color:#c44; padding:3rem;">Désolé, les sagesses n\'ont pas pu être chargées.</p>';

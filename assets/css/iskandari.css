@@ -1007,3 +1007,56 @@
   line-height: 1.5;
   text-align: center;
 }
+
+/* ============================================================
+   Offrir une sagesse — bouton de partage élégant
+   ============================================================ */
+.isk-partager-bloc {
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed rgba(192, 160, 80, 0.35);
+}
+.isk-partager-inline {
+  text-align: right;
+  margin: 1rem 0 0;
+  padding-top: .55rem;
+  border-top: 1px dashed rgba(192, 160, 80, 0.2);
+}
+.isk-partager-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .75rem 1.5rem;
+  background: linear-gradient(135deg, #d4ad5e 0%, #c0a050 45%, #a8884a 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.02rem;
+  font-style: italic;
+  letter-spacing: .04em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: filter .15s, transform .15s, box-shadow .15s;
+  box-shadow: 0 8px 20px -12px rgba(120, 90, 30, 0.45);
+}
+.isk-partager-btn:hover {
+  filter: brightness(1.07);
+  transform: translateY(-1px);
+}
+.isk-partager-btn__ico {
+  font-size: .9em;
+}
+.isk-partager-btn--small {
+  padding: .45rem 1.1rem;
+  font-size: .92rem;
+  background: linear-gradient(135deg, rgba(212,173,94,0.85) 0%, rgba(192,160,80,0.9) 100%);
+  box-shadow: 0 4px 12px -6px rgba(120, 90, 30, 0.3);
+}
+.isk-partager-hint {
+  margin: .55rem 0 0;
+  color: #8a7a55;
+  font-size: .88rem;
+  font-style: italic;
+}

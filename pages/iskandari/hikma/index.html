@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/iskandari.css?v=5" />
+  <link rel="stylesheet" href="/assets/css/iskandari.css?v=6" />
 </head>
 <body class="page-enter">
   <header class="site-header">
@@ -65,7 +65,16 @@
     const id = parseInt(new URLSearchParams(location.search).get('id') || '0', 10);
 
     try {
-      const [hikam, corpus] = await Promise.all([loadHikam(), loadCorpus()]);
+      const [hikam, corpus, nomsLookup] = await Promise.all([
+        loadHikam(),
+        loadCorpus(),
+        fetch('/data/carnet/noms-lookup.json').then(r => r.json()).catch(() => ({}))
+      ]);
+      function nomGloss(label) {
+        if (!label) return null;
+        const key = String(label).split('(')[0].trim();
+        return nomsLookup[key] || null;
+      }
       const recs = hikam.records || [];
       const byId = {};
       for (const r of recs) byId[r.id] = r;
@@ -134,6 +143,23 @@
               <p class="isk-sagesse__corps">${esc(cd.modern_insight_fr)}</p>
             </div>` : ''}
           ${themes ? `<p class="isk-sagesse__themes"><em style="font-style:normal; letter-spacing:.04em; color:var(--isk-gold-deep); font-weight:600;">Lire d'autres sagesses sur :</em> ${themes}</p>` : ''}
+
+          ${(() => {
+            const firstMod = (sagesseToMods[r.id] || []).map(id => modById[id]).filter(Boolean)[0];
+            const nd = firstMod?.nom_divin || '';
+            if (!nd) return '';
+            const g = nomGloss(nd);
+            const ar = g?.ar || '';
+            return `
+              <div class="isk-nom-divin">
+                <span class="isk-nom-divin__label">Le Nom qui accompagne cette sagesse</span>
+                ${ar ? `<span class="isk-nom-divin__ar" lang="ar" dir="rtl">${esc(ar)}</span>` : ''}
+                <strong class="isk-nom-divin__tr">${esc(nd)}</strong>
+                ${g?.sens ? `<p class="isk-nom-divin__sens"><em>${esc(g.sens)}</em></p>` : ''}
+                <p class="isk-nom-divin__incarn">Porter ce Nom, c'est laisser cette qualité passer à travers soi — dans le mot, le geste, le regard d'aujourd'hui. On ne « voit » pas Dieu : on incarne Ses Noms.</p>
+              </div>
+            `;
+          })()}
 
           <div class="isk-partager-bloc">
             <button type="button" class="isk-partager-btn" id="btn-partager">

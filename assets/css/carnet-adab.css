@@ -1800,3 +1800,30 @@ body.carnet-body {
   font-size: .92rem;
   border-bottom-color: var(--adab-ink-mute);
 }
+
+/* === Glose du Nom divin (sens + incarnation) ============================ */
+.nom-glose {
+  font-family: 'Source Serif 4', 'Georgia', serif;
+  margin: .55rem 0 0;
+  line-height: 1.55;
+  text-align: center;
+  max-width: 36ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nom-glose--sens {
+  font-size: .98rem;
+  color: var(--adab-gold-deep);
+  letter-spacing: .005em;
+}
+.nom-glose--sens em {
+  font-style: italic;
+}
+.nom-glose--incarn {
+  font-size: .93rem;
+  color: var(--adab-ink-mute);
+  font-style: normal;
+  margin-top: .4rem;
+  padding-top: .55rem;
+  border-top: 1px dotted var(--adab-gold-soft, rgba(184, 145, 81, 0.28));
+}

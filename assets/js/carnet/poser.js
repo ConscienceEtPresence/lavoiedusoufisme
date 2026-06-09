@@ -34,12 +34,20 @@ const date = todayKey();
 
 (async () => {
   try {
-    const [vigilancesRes, objectifsRes, hikamRes, jourSnap] = await Promise.all([
+    const [vigilancesRes, objectifsRes, hikamRes, nomsLookup, jourSnap] = await Promise.all([
       fetch('/data/carnet/vigilances.json').then(r => r.json()),
       fetch('/data/carnet/objectifs.json').then(r => r.json()),
       fetch('/data/iskandari/hikam-complet.json').then(r => r.json()),
+      fetch('/data/carnet/noms-lookup.json').then(r => r.json()).catch(() => ({})),
       getDoc(doc(db, 'carnets', anonId, 'jours', date)).catch(() => null)
     ]);
+
+    // Helper : trouve la glose d'un Nom divin à partir de son libellé "as-Salām (Celui...)"
+    function nomGloss(label) {
+      if (!label) return null;
+      const key = String(label).split('(')[0].trim();
+      return nomsLookup[key] || null;
+    }
 
     const vigilances = vigilancesRes.vigilances || [];
     const objectifs = objectifsRes.objectifs || [];
@@ -150,11 +158,13 @@ const date = todayKey();
                 <span class="vigilance-formation__petit-label">Coran · hadith</span>
                 <p>${esc(v.verset)}</p>
               </div>
-              <p class="vigilance-formation__nom">
+              <div class="vigilance-formation__nom">
                 <span class="vigilance-formation__petit-label">Nom qui accompagne</span>
                 ${v.nom_divin_ar ? `<span class="vigilance-formation__nom-ar" lang="ar" dir="rtl">${esc(v.nom_divin_ar)}</span>` : ''}
                 <strong>${esc(v.nom_divin)}</strong>
-              </p>
+                ${v.nom_divin_sens ? `<p class="nom-glose nom-glose--sens"><em>${esc(v.nom_divin_sens)}</em></p>` : ''}
+                ${v.nom_divin_incarnation ? `<p class="nom-glose nom-glose--incarn">${esc(v.nom_divin_incarnation)}</p>` : ''}
+              </div>
             </div>
           </details>
 
@@ -213,11 +223,16 @@ const date = todayKey();
                   <p>« ${esc(sagesse.french_translation)} »</p>
                   <footer>— Ibn ʿAṭāʾ Allāh al-Iskandarī, <em>Ḥikam</em> n°${sagesse.id}</footer>
                 </blockquote>` : ''}
-              <p class="visage-matin__nom">
+              <div class="visage-matin__nom">
                 <span class="visage-matin__nom-label">Le Nom qui accompagne</span>
                 ${o.matin.nom_remede_ar ? `<span class="visage-matin__nom-ar" lang="ar" dir="rtl">${esc(o.matin.nom_remede_ar)}</span>` : ''}
                 <strong>${esc(o.matin.nom_remede)}</strong>
-              </p>
+                ${(() => {
+                  const g = nomGloss(o.matin.nom_remede);
+                  return g?.sens ? `<p class="nom-glose nom-glose--sens"><em>${esc(g.sens)}</em></p>` : '';
+                })()}
+                <p class="nom-glose nom-glose--incarn">Porter ce Nom aujourd'hui, c'est laisser cette qualité passer à travers le mot, le geste, le regard — sans la nommer, en l'incarnant.</p>
+              </div>
               <p class="visage-matin__chemin"><em>« ${esc(o.matin.phrase_chemin)} »</em></p>
             </article>`;
         }).filter(Boolean).join('');
@@ -225,11 +240,13 @@ const date = todayKey();
           <article class="visage-matin visage-matin--perso">
             <h3 class="visage-matin__titre">${esc(personnel)}</h3>
             <p class="visage-matin__ens"><em>Votre objectif personnel sur <strong>${esc(v.label)}</strong>.</em></p>
-            <p class="visage-matin__nom">
+            <div class="visage-matin__nom">
               <span class="visage-matin__nom-label">Le Nom qui accompagne cette vigilance</span>
               ${v.nom_divin_ar ? `<span class="visage-matin__nom-ar" lang="ar" dir="rtl">${esc(v.nom_divin_ar)}</span>` : ''}
               <strong>${esc(v.nom_divin)}</strong>
-            </p>
+              ${v.nom_divin_sens ? `<p class="nom-glose nom-glose--sens"><em>${esc(v.nom_divin_sens)}</em></p>` : ''}
+              ${v.nom_divin_incarnation ? `<p class="nom-glose nom-glose--incarn">${esc(v.nom_divin_incarnation)}</p>` : ''}
+            </div>
             <p class="visage-matin__chemin"><em>« Portez-le aujourd'hui. »</em></p>
           </article>` : '';
         mountV.innerHTML = visages + visagePerso;

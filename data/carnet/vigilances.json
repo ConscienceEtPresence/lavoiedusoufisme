@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "description": "Les dix vigilances universelles de l'adab soufi. Chacune avec sa racine arabe, ses termes traditionnels, une définition courte, un enseignement vivant, une parole de maître, un verset coranique, et un Nom divin qui l'accompagne.",
+  "description": "Les dix vigilances universelles de l'adab soufi. Chacune avec sa racine arabe, ses termes traditionnels, une définition courte, un enseignement vivant, une parole de maître, un verset coranique, et un Nom divin qui l'accompagne. Chaque Nom divin est accompagné d'une glose en deux temps : ce qu'il signifie (sens), et comment on le porte en soi au quotidien (incarnation). On ne « voit » pas Dieu : on incarne Ses Noms.",
   "vigilances": [
     {
       "id": "parole",
@@ -17,7 +17,9 @@
       "parole_maitre": "« Les actions ne sont que des formes immobiles ; leur esprit, c'est la présence d'un cœur engagé au-dedans. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°9. Appliqué à la parole : sans cœur engagé, le mot reste vide.",
       "verset": "« Que celui qui croit en Dieu et au Jour dernier dise du bien, ou se taise. » — Hadith rapporté par al-Bukhārī",
       "nom_divin": "as-Salām (Celui qui est la Paix)",
-      "nom_divin_ar": "السَّلَام"
+      "nom_divin_ar": "السَّلَام",
+      "nom_divin_sens": "Il est la Paix elle-même — non l'absence de bruit, mais la plénitude qui ne manque de rien.",
+      "nom_divin_incarnation": "Porter ce Nom, c'est laisser sa parole déposer la paix plutôt que la trouble : ne dire que ce qui apaise, ce qui est vrai, ce qui est juste."
     },
     {
       "id": "ecoute",
@@ -34,7 +36,9 @@
       "parole_maitre": "« Rien ne profite autant au cœur qu'une retraite où il entre dans le domaine de la méditation. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°11. L'écoute est cette retraite dans laquelle on accueille l'autre.",
       "verset": "« Ceux qui écoutent la parole et suivent ce qu'il y a de meilleur — ce sont ceux qu'Allāh a guidés. » — Coran 39:18",
       "nom_divin": "as-Samīʿ (l'Audient)",
-      "nom_divin_ar": "السَّمِيع"
+      "nom_divin_ar": "السَّمِيع",
+      "nom_divin_sens": "Il entend toute voix — le murmure du cœur autant que le cri. Aucune parole ne se perd devant Lui.",
+      "nom_divin_incarnation": "Porter ce Nom, c'est apprendre à écouter comme Il écoute : sans interrompre, sans préparer sa réponse, en laissant l'autre déposer ce qu'il porte."
     },
     {
       "id": "presence",
@@ -51,7 +55,9 @@
       "parole_maitre": "« Pas un seul de tes souffles n'est sans être prédestiné par Lui. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°20.",
       "verset": "« Nous sommes plus proche de lui que sa veine jugulaire. » — Coran 50:16",
       "nom_divin": "ar-Raqīb (le Vigilant)",
-      "nom_divin_ar": "الرَّقِيب"
+      "nom_divin_ar": "الرَّقِيب",
+      "nom_divin_sens": "Il est présent à tout, témoin attentif de chaque souffle, sans jamais détourner Son regard.",
+      "nom_divin_incarnation": "Porter ce Nom, c'est habiter l'instant en se sachant regardé — et cesser d'être ailleurs, dans le passé ou le futur."
     },
     {
       "id": "patience",
@@ -68,7 +74,9 @@
       "parole_maitre": "« Ne laisse pas le retard du don, malgré ta supplique insistante, te conduire au désespoir. Il s'est engagé à répondre — d'une manière qu'Il choisit pour toi, non d'une manière que tu choisirais ; au moment qu'Il désire, non au moment que tu désires. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°5.",
       "verset": "« Et donne la bonne nouvelle aux patients. » — Coran 2:155",
       "nom_divin": "aṣ-Ṣabūr (le Patient)",
-      "nom_divin_ar": "الصَّبُور"
+      "nom_divin_ar": "الصَّبُور",
+      "nom_divin_sens": "Sa patience couvre les siècles. Il n'est pas pressé. Il laisse mûrir ce qui doit mûrir.",
+      "nom_divin_incarnation": "Porter ce Nom, c'est endurer sans se durcir : accepter que les choses prennent leur temps, en nous, autour de nous, sans forcer."
     },
     {
       "id": "reparation",
@@ -85,7 +93,9 @@
       "parole_maitre": "« Ne désespère pas, même si la faute revient mille fois ; le retour mille fois est encore une grâce. » — synthèse de la doctrine d'Ibn ʿAṭāʾ Allāh (cf. Ḥikam n°47 et n°150).",
       "verset": "« Annonce à Mes serviteurs que Je suis le Très Pardonneur, le Très Miséricordieux. » — Coran 15:49",
       "nom_divin": "at-Tawwāb (Celui qui accueille le retour)",
-      "nom_divin_ar": "التَّوَّاب"
+      "nom_divin_ar": "التَّوَّاب",
+      "nom_divin_sens": "Il revient sans cesse vers qui revient vers Lui. Le retour est inscrit dans Sa nature même.",
+      "nom_divin_incarnation": "Porter ce Nom, c'est ne pas se figer dans la faute commise — reprendre le chemin, demander, réparer ce qui peut l'être."
     },
     {
       "id": "gratitude",
@@ -102,7 +112,9 @@
       "parole_maitre": "« Que ton obéissance te réjouisse — non parce qu'elle est sortie de toi, mais parce qu'elle est venue d'Allāh jusqu'à toi. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°56.",
       "verset": "« Si vous êtes reconnaissants, Je vous donnerai davantage ; mais si vous niez Mes bienfaits, Mon châtiment est sévère. » — Coran 14:7",
       "nom_divin": "ash-Shakūr (le Reconnaissant)",
-      "nom_divin_ar": "الشَّكُور"
+      "nom_divin_ar": "الشَّكُور",
+      "nom_divin_sens": "Il multiplie en retour le peu qu'on Lui offre — un soupir, un mot de remerciement, un regard reconnaissant.",
+      "nom_divin_incarnation": "Porter ce Nom, c'est apprendre à voir le don dans ce qu'on tenait pour dû, et à le rendre par un mot, un geste."
     },
     {
       "id": "coeur",
@@ -119,7 +131,9 @@
       "parole_maitre": "« Comment un cœur serait-il illuminé, quand son miroir ne reflète que les figures du monde ? » — Ibn ʿAṭāʾ Allāh, Ḥikam n°12.",
       "verset": "« Sauf celui qui vient vers Allāh avec un cœur sain. » — Coran 26:89",
       "nom_divin": "al-Laṭīf (le Subtil, le Tendre)",
-      "nom_divin_ar": "اللَّطِيف"
+      "nom_divin_ar": "اللَّطِيف",
+      "nom_divin_sens": "Sa douceur agit là où nul ne soupçonne — au plus fin, au plus discret, au plus délicat.",
+      "nom_divin_incarnation": "Porter ce Nom, c'est traiter le cœur de l'autre comme un objet fragile : dans le regard, dans le ton, dans le geste."
     },
     {
       "id": "service",
@@ -136,7 +150,9 @@
       "parole_maitre": "« La compagnie est une forme, et l'adab en est l'esprit. Si tu joins la forme et l'esprit, tu gagneras le bénéfice de leur compagnie. » — esprit shādhilī (Laṭāʾif al-Minan).",
       "verset": "« Et faites le bien : Allāh aime ceux qui font le bien. » — Coran 2:195",
       "nom_divin": "an-Nāfiʿ (le Bénéfique)",
-      "nom_divin_ar": "النَّافِع"
+      "nom_divin_ar": "النَّافِع",
+      "nom_divin_sens": "Il est la source ultime de tout bien qui parvient à toute créature.",
+      "nom_divin_incarnation": "Porter ce Nom, c'est faire passer le bien à travers soi : un service rendu, une présence donnée, sans bruit, sans attendre retour."
     },
     {
       "id": "pratique",
@@ -154,7 +170,9 @@
       "parole_maitre": "« Rien ne profite autant au cœur qu'une retraite où il entre dans le domaine de la méditation. » — Ibn ʿAṭāʾ Allāh, Ḥikam n°11.",
       "verset": "« Invoque le Nom de ton Seigneur, et consacre-toi entièrement à Lui. » — Coran 73:8",
       "nom_divin": "al-Quddūs (le Saint)",
-      "nom_divin_ar": "الْقُدُّوس"
+      "nom_divin_ar": "الْقُدُّوس",
+      "nom_divin_sens": "Il est pur de toute imperfection, au-delà de tout ce que l'esprit peut concevoir ou imaginer.",
+      "nom_divin_incarnation": "Porter ce Nom, c'est garder un coin du jour soustrait à l'usage — un temps réservé, un acte pur, où Il est seul visé."
     },
     {
       "id": "corps",
@@ -170,7 +188,9 @@
       "parole_maitre": "« Ton corps a un droit sur toi. » — Hadith rapporté par al-Bukhārī (le Prophète à ʿAbd Allāh ibn ʿAmr).",
       "verset": "« Mangez, buvez, mais ne soyez pas dans l'excès. » — Coran 7:31",
       "nom_divin": "ar-Razzāq (le Pourvoyeur)",
-      "nom_divin_ar": "الرَّزَّاق"
+      "nom_divin_ar": "الرَّزَّاق",
+      "nom_divin_sens": "Il nourrit toute créature — du souffle au pain, du sommeil à la santé, sans manquer un instant.",
+      "nom_divin_incarnation": "Porter ce Nom, c'est honorer le corps comme un dépôt qu'Il nourrit : manger, dormir, respirer comme on reçoit."
     }
   ]
 }

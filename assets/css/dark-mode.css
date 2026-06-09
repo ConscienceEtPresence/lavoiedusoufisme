@@ -605,3 +605,69 @@
 [data-theme="dark"] .mdj {
   background: radial-gradient(120% 80% at 50% -10%, var(--paper-warm) 0%, var(--paper) 55%, #0C0F18 100%) !important;
 }
+
+/* ============================================================
+   Accueil — Encarts en mode nuit
+   Le fond crème clair des encarts (accueil-seuil-line + accueil-carnet)
+   est codé en rgba à valeur fixe — il ne suit pas le switch de palette.
+   On rejoue les fonds en bleu nuit profond, et on remonte le contraste
+   du texte.
+   ============================================================ */
+
+/* « Première visite » — pill */
+[data-theme="dark"] .accueil-seuil-line a {
+  background: linear-gradient(180deg, rgba(35, 42, 61, 0.85) 0%, rgba(26, 32, 48, 0.7) 100%);
+  border-color: var(--gold-soft, rgba(204, 168, 102, 0.35));
+  color: var(--ink-soft);
+  box-shadow: 0 10px 24px -16px rgba(0, 0, 0, 0.6);
+}
+[data-theme="dark"] .accueil-seuil-line__q {
+  color: var(--gold);
+}
+[data-theme="dark"] .accueil-seuil-line__cta,
+[data-theme="dark"] .accueil-seuil-line__arrow {
+  color: var(--turquoise, #6FB8B0);
+}
+[data-theme="dark"] .accueil-seuil-line a:hover {
+  background: linear-gradient(180deg, rgba(46, 54, 78, 0.95) 0%, rgba(35, 42, 61, 0.82) 100%);
+  border-color: var(--turquoise, #6FB8B0);
+  box-shadow: 0 14px 30px -18px rgba(0, 0, 0, 0.7);
+}
+
+/* « Mon carnet » — encart papier (devient encart nuit) */
+[data-theme="dark"] .accueil-carnet {
+  background: linear-gradient(180deg, rgba(35, 42, 61, 0.85) 0%, rgba(26, 32, 48, 0.7) 100%);
+  border-color: var(--gold-soft, rgba(204, 168, 102, 0.35));
+  box-shadow:
+    0 18px 40px -28px rgba(0, 0, 0, 0.65),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+/* Les ✦ posés sur la bordure haute : leur fond doit matcher la page nuit */
+[data-theme="dark"] .accueil-carnet::before,
+[data-theme="dark"] .accueil-carnet::after {
+  background: var(--paper, #11161F);
+  color: var(--gold);
+}
+[data-theme="dark"] .accueil-carnet__eyebrow {
+  color: var(--gold);
+}
+[data-theme="dark"] .accueil-carnet__date {
+  color: var(--ink-soft);
+}
+[data-theme="dark"] .accueil-carnet__item {
+  color: var(--ink-title, var(--ink));
+}
+[data-theme="dark"] .accueil-carnet__item::before {
+  color: var(--gold);
+  opacity: .85;
+}
+[data-theme="dark"] .accueil-carnet__sig {
+  color: var(--gold);
+}
+[data-theme="dark"] .accueil-carnet__sig-tr {
+  color: var(--ink-soft);
+}
+[data-theme="dark"] .accueil-carnet__depose {
+  color: var(--ink-soft);
+  border-color: var(--gold-soft, rgba(204, 168, 102, 0.35));
+}

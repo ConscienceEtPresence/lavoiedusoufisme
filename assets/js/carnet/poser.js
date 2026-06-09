@@ -139,6 +139,7 @@ const date = todayKey();
               </div>
               <p class="vigilance-formation__nom">
                 <span class="vigilance-formation__petit-label">Nom qui accompagne</span>
+                ${v.nom_divin_ar ? `<span class="vigilance-formation__nom-ar" lang="ar" dir="rtl">${esc(v.nom_divin_ar)}</span>` : ''}
                 <strong>${esc(v.nom_divin)}</strong>
               </p>
             </div>
@@ -199,7 +200,11 @@ const date = todayKey();
                   <p>« ${esc(sagesse.french_translation)} »</p>
                   <footer>— Ibn ʿAṭāʾ Allāh al-Iskandarī, <em>Ḥikam</em> n°${sagesse.id}</footer>
                 </blockquote>` : ''}
-              <p class="visage-matin__nom">Le Nom qui accompagne : <strong>${esc(o.matin.nom_remede)}</strong></p>
+              <p class="visage-matin__nom">
+                <span class="visage-matin__nom-label">Le Nom qui accompagne</span>
+                ${o.matin.nom_remede_ar ? `<span class="visage-matin__nom-ar" lang="ar" dir="rtl">${esc(o.matin.nom_remede_ar)}</span>` : ''}
+                <strong>${esc(o.matin.nom_remede)}</strong>
+              </p>
               <p class="visage-matin__chemin"><em>« ${esc(o.matin.phrase_chemin)} »</em></p>
             </article>`;
         }).filter(Boolean).join('');
@@ -207,7 +212,11 @@ const date = todayKey();
           <article class="visage-matin visage-matin--perso">
             <h3 class="visage-matin__titre">${esc(personnel)}</h3>
             <p class="visage-matin__ens"><em>Votre objectif personnel sur <strong>${esc(v.label)}</strong>.</em></p>
-            <p class="visage-matin__nom">Le Nom qui accompagne cette vigilance : <strong>${esc(v.nom_divin)}</strong></p>
+            <p class="visage-matin__nom">
+              <span class="visage-matin__nom-label">Le Nom qui accompagne cette vigilance</span>
+              ${v.nom_divin_ar ? `<span class="visage-matin__nom-ar" lang="ar" dir="rtl">${esc(v.nom_divin_ar)}</span>` : ''}
+              <strong>${esc(v.nom_divin)}</strong>
+            </p>
             <p class="visage-matin__chemin"><em>« Portez-le aujourd'hui. »</em></p>
           </article>` : '';
         mountV.innerHTML = visages + visagePerso;

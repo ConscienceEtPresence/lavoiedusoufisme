@@ -1090,3 +1090,325 @@ body.carnet-body {
   text-align: center;
   padding: 2rem 0;
 }
+
+/* ============================================================
+   v2 — Polish oriental : ornements géométriques, motifs subtils,
+   typographie Amiri pour l'arabe vocalisé
+   ============================================================ */
+
+/* Fond papier-papyrus très subtil + halo doré */
+body.carnet-body {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 248, 220, 0.6), transparent 60%),
+    radial-gradient(circle at 50% 100%, rgba(248, 235, 200, 0.4), transparent 50%),
+    linear-gradient(180deg, var(--adab-paper) 0%, #f9efd5 100%);
+  background-attachment: fixed;
+}
+
+/* Petits ornements géométriques entre sections (Islamic star) */
+.adab-step::before,
+.adab-step::after {
+  content: '';
+  display: none;
+}
+
+.adab-section-titre {
+  position: relative;
+  padding: 0 2rem;
+}
+.adab-section-titre::before,
+.adab-section-titre::after {
+  content: '✦';
+  color: var(--adab-gold);
+  font-size: .75em;
+  opacity: .55;
+  margin: 0 .5rem;
+  display: inline-block;
+}
+
+/* Boutons d'en-tête plus raffinés */
+.adab-head__back,
+.adab-head__hist {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Vigilance carte — magnifier l'arabe */
+.vigilance-carte__ar {
+  font-family: 'Amiri', serif;
+  font-weight: 400;
+  font-size: 1.9rem;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+  letter-spacing: .02em;
+}
+.vigilance-carte:hover .vigilance-carte__ar {
+  color: var(--adab-ink);
+}
+
+/* Fiche d'une vigilance — bordure dorée + ornements */
+.vigilance-fiche {
+  position: relative;
+}
+.vigilance-fiche::after {
+  content: '';
+  display: block;
+  width: 40%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--adab-gold), transparent);
+  margin: 1.2rem auto 0;
+}
+.vigilance-fiche__ar {
+  font-weight: 400;
+  letter-spacing: .03em;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+
+/* Formation soufie — encadrement plus précieux */
+.vigilance-formation {
+  background:
+    linear-gradient(160deg, rgba(255,255,255,0.85), rgba(255,248,220,0.55));
+  border: 1px solid rgba(192, 160, 80, 0.4);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5),
+              0 2px 8px -4px rgba(192,160,80,0.15);
+}
+.vigilance-formation > summary::before {
+  content: '✦';
+  color: var(--adab-gold);
+  margin-right: .55rem;
+  font-size: .85em;
+}
+
+.vigilance-formation__nom-ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.6rem;
+  color: var(--adab-gold-deep);
+  display: block;
+  margin: .35rem 0 .2rem;
+  letter-spacing: .02em;
+}
+
+/* Visage matin — plus solennel */
+.visage-matin {
+  background:
+    linear-gradient(160deg, #fff8dc 0%, #fdf6e4 60%, #f7e9c5 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.5),
+    0 8px 24px -12px rgba(120, 90, 30, 0.25);
+  position: relative;
+}
+.visage-matin::before {
+  content: '✦';
+  position: absolute;
+  top: -.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--adab-gold);
+  background: var(--adab-paper);
+  padding: 0 .55rem;
+  font-size: 1rem;
+}
+
+.visage-matin__nom {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  border: 1px solid rgba(192, 160, 80, 0.2);
+}
+.visage-matin__nom-label {
+  display: block;
+  font-size: .7rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--adab-ink-mute);
+  margin-bottom: .35rem;
+  font-style: normal;
+}
+.visage-matin__nom-ar {
+  font-family: 'Amiri', serif;
+  font-size: 2.1rem;
+  color: var(--adab-ink);
+  display: block;
+  margin: .25rem 0;
+  line-height: 1.2;
+  letter-spacing: .02em;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+.visage-matin__nom strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  color: var(--adab-gold-deep);
+  font-size: 1.1rem;
+  letter-spacing: .03em;
+  font-style: italic;
+}
+
+.visage-matin__chemin {
+  font-style: italic;
+  text-align: center;
+  position: relative;
+}
+.visage-matin__chemin::before {
+  content: '◇';
+  color: var(--adab-gold);
+  margin-right: .4rem;
+  font-size: .65em;
+  opacity: .6;
+}
+.visage-matin__chemin::after {
+  content: '◇';
+  color: var(--adab-gold);
+  margin-left: .4rem;
+  font-size: .65em;
+  opacity: .6;
+}
+
+/* Pose-message en page d'engagement — solennité */
+.adab-pose-message {
+  position: relative;
+  padding: 2rem 0;
+}
+.adab-pose-message::before {
+  content: '';
+  display: block;
+  width: 32%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--adab-gold), transparent);
+  margin: 0 auto 1.5rem;
+}
+.adab-pose-message::after {
+  content: '';
+  display: block;
+  width: 32%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--adab-gold), transparent);
+  margin: 1.5rem auto 0;
+}
+
+.adab-pose-objectif {
+  position: relative;
+  background:
+    linear-gradient(160deg, #fff8dc 0%, #fdf6e4 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.5),
+    0 4px 14px -8px rgba(120, 90, 30, 0.2);
+}
+.adab-pose-objectif::before {
+  content: '✦';
+  position: absolute;
+  top: .55rem;
+  right: .9rem;
+  color: var(--adab-gold);
+  font-size: .9rem;
+  opacity: .7;
+}
+
+/* Boutons — gradient un peu plus précieux */
+.adab-bouton {
+  background:
+    linear-gradient(135deg, #d4ad5e 0%, var(--adab-gold) 45%, #a8884a 100%);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-size: .92rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+.adab-bouton--grand {
+  font-size: 1.05rem;
+  letter-spacing: .06em;
+  padding: 1.2rem 2.4rem;
+}
+
+/* Parole soufie — encadrement délicat */
+.parole-soufie {
+  position: relative;
+  padding-left: 2.2rem;
+}
+.parole-soufie::before {
+  content: '«';
+  position: absolute;
+  top: .2rem;
+  left: .5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  color: var(--adab-gold);
+  line-height: 1;
+  opacity: .55;
+}
+
+/* Bilan d'un objectif — coin doré ornemental */
+.bilan-objectif {
+  background:
+    linear-gradient(160deg, #ffffff 0%, #fdf6e4 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.5),
+    0 3px 10px -6px rgba(120, 90, 30, 0.15);
+}
+
+/* Aiguilleur — plus contemplatif */
+.aiguilleur__ornement {
+  background: linear-gradient(90deg, transparent 0%, var(--adab-paper) 30%, var(--adab-paper) 70%, transparent 100%);
+  position: relative;
+  padding: 0 1rem;
+}
+.aiguilleur__ornement::before,
+.aiguilleur__ornement::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--adab-gold), transparent);
+}
+.aiguilleur__ornement::before { left: 0; }
+.aiguilleur__ornement::after  { right: 0; }
+
+.aiguilleur-resume {
+  position: relative;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.5),
+    0 6px 18px -10px rgba(120, 90, 30, 0.2);
+}
+.aiguilleur-resume::before,
+.aiguilleur-resume::after {
+  content: '✦';
+  position: absolute;
+  color: var(--adab-gold);
+  font-size: .85rem;
+  opacity: .6;
+}
+.aiguilleur-resume::before { top: .55rem; left: .8rem; }
+.aiguilleur-resume::after  { bottom: .55rem; right: .8rem; }
+
+.aiguilleur-resume__vigilance span[lang="ar"] {
+  display: block;
+  font-size: 1.7rem;
+  margin-bottom: .25rem;
+  color: var(--adab-ink);
+}
+
+/* Historique — coin doré */
+.hist-jour {
+  background:
+    linear-gradient(160deg, #ffffff 0%, #fdf6e4 100%);
+}
+.hist-detail__head::after {
+  content: '';
+  display: block;
+  width: 38%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--adab-gold), transparent);
+  margin: 1rem auto 0;
+}
+
+/* Typographie Amiri pour tout le lang=ar */
+[lang="ar"] {
+  font-family: 'Amiri', serif;
+}
+
+/* Boutons header → utilise des caractères plus calligraphiques */
+.adab-head__back { font-size: 1.6rem; line-height: 2.2rem; }
+.adab-head__hist { font-size: 1.5rem; line-height: 2.2rem; }

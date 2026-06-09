@@ -80,7 +80,8 @@ else {
         mount.hidden = false;
         mount.innerHTML = `
           <a class="accueil-carnet__lien" href="/pages/carnet/aujourdhui/" aria-label="Reprendre mon carnet d'aujourd'hui">
-            <span class="accueil-carnet__eyebrow">Aujourd'hui</span>
+            <span class="accueil-carnet__eyebrow">Mon carnet</span>
+            <span class="accueil-carnet__date">Aujourd'hui</span>
             <ul class="accueil-carnet__liste">${itemsHTML}</ul>
             ${sig}
           </a>

@@ -567,41 +567,52 @@
 .accueil-seuil-line {
   text-align: center;
   margin: var(--space-md) auto var(--space-md);
-  font-family: var(--font-display);
-  font-size: 1rem;
-  letter-spacing: .01em;
-  line-height: 1.4;
+  line-height: 1;
 }
 .accueil-seuil-line a {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .6rem 1.3rem;
+  border: 1px solid var(--gold-soft);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 252, 244, 0.65) 0%, rgba(247, 240, 226, 0.5) 100%);
+  font-family: var(--font-display);
+  font-size: .98rem;
   text-decoration: none;
   color: var(--ink-soft);
-  border-bottom: 1px solid transparent;
-  padding-bottom: .15rem;
-  transition: color .35s ease, border-color .35s ease, letter-spacing .35s ease;
+  box-shadow: 0 6px 18px -14px rgba(27, 42, 78, 0.35);
+  transition: border-color .35s ease, background .35s ease,
+              transform .35s ease, box-shadow .35s ease;
 }
 .accueil-seuil-line__q {
   font-style: italic;
-  color: var(--gold);
+  color: var(--gold-deep, var(--gold));
 }
 .accueil-seuil-line__sep {
   color: var(--gold-soft);
-  margin: 0 .55rem;
 }
 .accueil-seuil-line__cta {
   font-style: italic;
-  color: var(--gold);
-  letter-spacing: .02em;
+  color: var(--turquoise, var(--gold-deep));
+  letter-spacing: .015em;
 }
 .accueil-seuil-line__arrow {
   display: inline-block;
   transition: transform .35s ease;
+  color: var(--turquoise, var(--gold-deep));
 }
 .accueil-seuil-line a:hover {
-  color: var(--gold);
-  border-bottom-color: var(--gold-soft);
+  border-color: var(--turquoise, var(--gold-deep));
+  background: linear-gradient(180deg, rgba(255, 252, 244, 0.92) 0%, rgba(247, 240, 226, 0.75) 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px -16px rgba(27, 42, 78, 0.45);
 }
 .accueil-seuil-line a:hover .accueil-seuil-line__arrow {
   transform: translateX(.25rem);
+}
+@media (max-width: 520px) {
+  .accueil-seuil-line a { font-size: .88rem; padding: .5rem 1rem; gap: .4rem; }
 }
 
 /* ============================================================
@@ -610,14 +621,34 @@
    Texte centré, items en italique, signature en arabe.
    ============================================================ */
 .accueil-carnet {
-  max-width: 32rem;
-  margin: var(--space-lg) auto var(--space-lg);
-  padding: 1.4rem 1rem 1.2rem;
+  max-width: 30rem;
+  margin: var(--space-xl) auto var(--space-lg);
+  padding: 2rem 1.6rem 1.7rem;
   text-align: center;
+  background: linear-gradient(180deg, rgba(255, 252, 244, 0.85) 0%, rgba(247, 240, 226, 0.7) 100%);
+  border: 1px solid var(--gold-soft);
+  border-radius: 14px;
+  box-shadow:
+    0 16px 38px -28px rgba(27, 42, 78, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  position: relative;
   opacity: 0;
   transform: translateY(.4rem);
-  transition: opacity .9s ease, transform .9s ease;
+  transition: opacity .9s ease, transform .9s ease, box-shadow .4s ease;
 }
+.accueil-carnet::before,
+.accueil-carnet::after {
+  content: "✦";
+  position: absolute;
+  top: -.7rem;
+  font-size: .85rem;
+  color: var(--gold);
+  background: var(--paper-warm, #fdf8ec);
+  padding: 0 .35rem;
+  line-height: 1;
+}
+.accueil-carnet::before { left: 1.6rem; }
+.accueil-carnet::after  { right: 1.6rem; }
 .accueil-carnet.is-visible {
   opacity: 1;
   transform: translateY(0);
@@ -628,25 +659,35 @@
   color: inherit;
 }
 
-/* « Aujourd'hui » — eyebrow encadré de deux fines lignes dorées */
+/* Eyebrow « MON CARNET » — small caps doré */
 .accueil-carnet__eyebrow {
   display: inline-flex;
   align-items: center;
   gap: .9rem;
   font-family: var(--font-sans);
-  font-size: .68rem;
-  letter-spacing: .22em;
+  font-size: .7rem;
+  letter-spacing: .24em;
   text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1.6rem;
+  color: var(--gold-deep, var(--gold));
+  margin-bottom: .35rem;
 }
 .accueil-carnet__eyebrow::before,
 .accueil-carnet__eyebrow::after {
   content: "";
   display: inline-block;
-  width: 1.8rem;
+  width: 1.6rem;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--gold-soft), transparent);
+}
+/* « Aujourd'hui » — sous-titre Cormorant italique */
+.accueil-carnet__date {
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  letter-spacing: .015em;
+  margin-bottom: 1.5rem;
 }
 
 /* Liste des objectifs — Cormorant italique, • doré devant */
@@ -658,8 +699,8 @@
 .accueil-carnet__item {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.18rem;
-  line-height: 1.85;
+  font-size: 1.12rem;
+  line-height: 1.75;
   color: var(--ink);
   padding: .05rem 0;
   position: relative;

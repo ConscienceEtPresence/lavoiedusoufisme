@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
-  <link rel="stylesheet" href="assets/css/components.css?v=6" />
+  <link rel="stylesheet" href="assets/css/components.css?v=7" />
   <link rel="stylesheet" href="assets/css/accueil.css?v=14" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7WRGPZMT3"></script>
@@ -109,11 +109,19 @@
           <a href="pages/mot-du-jour/" class="quote-share"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 16.5c4.6 1.1 8.8-.3 12.4-4.1.9-1 1.8-2.3 3.2-2.3.8 0 1.4.6 1.4 1.4 0 .9-.7 1.5-1.6 1.7 1.7.4 3.4-.2 4.9-1.5-.4 2.1-1.8 3.8-3.8 4.6 1.1.3 2.2.2 3.3-.3-1.3 1.7-3.2 2.8-5.4 3 .2 1.2.6 2.3 1.4 3.2-2.2-.5-3.8-2-4.6-4.1-3 .7-6 .3-8.8-1.1.9-.2 1.8-.6 2.5-1.2-1.6-.4-2.9-1.5-3.4-3z"/></svg> Offrir →</a>
         </div>
 
-        <a class="accueil-seuil" href="pages/voyage/index.html">
-          <span class="accueil-seuil__label">Première visite ?</span>
-          <span class="accueil-seuil__text">Faites le voyage du <em>Seuil</em> — une traversée guidée, pas à pas, pour qui découvre la spiritualité.</span>
-          <span class="accueil-seuil__cta">Commencer la traversée →</span>
-        </a>
+        <p class="accueil-seuil-line">
+          <a href="pages/voyage/index.html">
+            <span class="accueil-seuil-line__q">Première visite ?</span>
+            <span class="accueil-seuil-line__sep">·</span>
+            <span class="accueil-seuil-line__cta">Commencer la traversée<span class="accueil-seuil-line__arrow"> →</span></span>
+          </a>
+        </p>
+
+        <!-- ============================================
+             CARNET — ce que je porte aujourd'hui
+             (s'affiche uniquement si une journée est posée)
+             ============================================ -->
+        <div id="accueil-carnet" class="accueil-carnet" hidden></div>
 
         <!-- ============================================
              LE SEUIL — invitation à entrer
@@ -331,5 +339,7 @@
   <script src="assets/js/tirage-global.js?v=3"></script>
   <!-- 🫧 Pulse — compteur anonyme léger -->
   <script type="module" src="/assets/js/pulse.js?v=1"></script>
+  <!-- Bandeau « Aujourd'hui » du carnet — discret, en haut -->
+  <script type="module" src="/assets/js/accueil-carnet.js?v=1"></script>
 </body>
 </html>

@@ -560,3 +560,190 @@
 }
 .hero__quote-actions .quote-share { margin: 0; }
 .quote-share { display: inline-flex; align-items: center; justify-content: center; }
+
+/* ============================================================
+   Accueil — « Première visite » version compacte (une ligne)
+   ============================================================ */
+.accueil-seuil-line {
+  text-align: center;
+  margin: var(--space-md) auto var(--space-md);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: .01em;
+  line-height: 1.4;
+}
+.accueil-seuil-line a {
+  text-decoration: none;
+  color: var(--ink-soft);
+  border-bottom: 1px solid transparent;
+  padding-bottom: .15rem;
+  transition: color .35s ease, border-color .35s ease, letter-spacing .35s ease;
+}
+.accueil-seuil-line__q {
+  font-style: italic;
+  color: var(--gold);
+}
+.accueil-seuil-line__sep {
+  color: var(--gold-soft);
+  margin: 0 .55rem;
+}
+.accueil-seuil-line__cta {
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: .02em;
+}
+.accueil-seuil-line__arrow {
+  display: inline-block;
+  transition: transform .35s ease;
+}
+.accueil-seuil-line a:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold-soft);
+}
+.accueil-seuil-line a:hover .accueil-seuil-line__arrow {
+  transform: translateX(.25rem);
+}
+
+/* ============================================================
+   Accueil — Bandeau « Aujourd'hui »
+   Échantillon 4 : page de carnet ouverte, sans cadre.
+   Texte centré, items en italique, signature en arabe.
+   ============================================================ */
+.accueil-carnet {
+  max-width: 32rem;
+  margin: var(--space-lg) auto var(--space-lg);
+  padding: 1.4rem 1rem 1.2rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(.4rem);
+  transition: opacity .9s ease, transform .9s ease;
+}
+.accueil-carnet.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.accueil-carnet__lien {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* « Aujourd'hui » — eyebrow encadré de deux fines lignes dorées */
+.accueil-carnet__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .9rem;
+  font-family: var(--font-sans);
+  font-size: .68rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.6rem;
+}
+.accueil-carnet__eyebrow::before,
+.accueil-carnet__eyebrow::after {
+  content: "";
+  display: inline-block;
+  width: 1.8rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-soft), transparent);
+}
+
+/* Liste des objectifs — Cormorant italique, • doré devant */
+.accueil-carnet__liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.accueil-carnet__item {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.18rem;
+  line-height: 1.85;
+  color: var(--ink);
+  padding: .05rem 0;
+  position: relative;
+  opacity: 0;
+  transform: translateY(.3rem);
+  animation: carnet-item-in .7s ease forwards;
+  animation-delay: calc(.18s + var(--i, 0) * .08s);
+}
+.accueil-carnet__item::before {
+  content: "·";
+  display: inline-block;
+  color: var(--gold);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4em;
+  vertical-align: -.05em;
+  margin-right: .55rem;
+  opacity: .75;
+}
+@keyframes carnet-item-in {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Signature — Nom de la vigilance en arabe + tr, très discret */
+.accueil-carnet__sig {
+  display: block;
+  margin-top: 1.6rem;
+  padding-top: 1rem;
+  font-family: 'Source Serif 4', serif;
+  font-size: .82rem;
+  color: var(--gold);
+  letter-spacing: .04em;
+  position: relative;
+  opacity: 0;
+  animation: carnet-item-in .7s ease forwards;
+  animation-delay: .9s;
+}
+.accueil-carnet__sig::before {
+  content: "";
+  display: block;
+  width: 3.2rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-soft), transparent);
+  margin: 0 auto .9rem;
+}
+.accueil-carnet__sig-ar {
+  font-family: 'Amiri', serif;
+  font-size: 1.15rem;
+  color: var(--gold);
+  margin-right: .55rem;
+  vertical-align: -.1em;
+}
+.accueil-carnet__sig-tr {
+  font-style: italic;
+  color: var(--ink-soft);
+  letter-spacing: .03em;
+}
+
+/* État « journée déposée » — une seule ligne très douce */
+.accueil-carnet__depose {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  letter-spacing: .02em;
+  padding: .4rem 1.2rem;
+  border-top: 1px solid var(--gold-soft);
+  border-bottom: 1px solid var(--gold-soft);
+}
+
+/* Hover — légère emphase, pas de bruit */
+.accueil-carnet__lien:hover .accueil-carnet__item {
+  color: var(--ink);
+}
+.accueil-carnet__lien:hover .accueil-carnet__eyebrow {
+  color: var(--gold-deep, var(--gold));
+}
+
+/* Mobile — un cran plus serré */
+@media (max-width: 520px) {
+  .accueil-carnet { padding: 1rem .6rem .9rem; max-width: 100%; }
+  .accueil-carnet__item { font-size: 1.08rem; line-height: 1.75; }
+  .accueil-carnet__eyebrow { gap: .6rem; font-size: .64rem; margin-bottom: 1.2rem; }
+  .accueil-carnet__eyebrow::before,
+  .accueil-carnet__eyebrow::after { width: 1.2rem; }
+}

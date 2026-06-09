@@ -1412,3 +1412,128 @@ body.carnet-body {
 /* Boutons header → utilise des caractères plus calligraphiques */
 .adab-head__back { font-size: 1.6rem; line-height: 2.2rem; }
 .adab-head__hist { font-size: 1.5rem; line-height: 2.2rem; }
+
+/* ============================================================
+   v3 — Patch UX : résumé clair, blocs repliés, sortie évidente
+   ============================================================ */
+
+/* Résumé du matin sur l'aiguilleur — clair et lisible */
+.aiguilleur-resume {
+  text-align: center;
+  padding: 1.5rem 1.5rem;
+}
+.aiguilleur-resume__label {
+  font-size: .7rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+  font-weight: 700;
+  margin: 0 0 1rem;
+  font-style: normal;
+}
+.aiguilleur-resume__vigilance-bloc {
+  margin: 0 0 1rem;
+}
+.aiguilleur-resume__vig-ar {
+  font-family: 'Amiri', serif;
+  font-size: 2.2rem;
+  color: var(--adab-ink);
+  display: block;
+  line-height: 1.2;
+  margin-bottom: .15rem;
+}
+.aiguilleur-resume__vig-titre {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: var(--adab-ink);
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: .01em;
+}
+.aiguilleur-resume__objs {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0;
+  max-width: 24rem;
+}
+.resume-obj {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.08rem;
+  color: var(--adab-ink-soft);
+  padding: .35rem 0;
+  border-top: 1px dashed rgba(192,160,80,0.3);
+  font-style: italic;
+}
+.resume-obj:first-child { border-top: 0; }
+.resume-obj::before {
+  content: '◇  ';
+  color: var(--adab-gold);
+  opacity: .7;
+  font-size: .8em;
+}
+.resume-obj--perso::before { content: '✦  '; }
+.aiguilleur-resume__ancrage {
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(192,160,80,0.3);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--adab-ink-soft);
+  font-size: 1rem;
+}
+
+/* Boutons "Sortir" / "Modifier" en bas — clairs */
+.aiguilleur__sortir {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+  margin: 1.5rem 0 0;
+}
+.aiguilleur__sortir .adab-bouton-secondaire {
+  font-size: .95rem;
+  color: var(--adab-ink-mute);
+  border-bottom: 1px dotted var(--adab-ink-mute);
+}
+.aiguilleur__sortir .adab-bouton-secondaire:hover {
+  color: var(--adab-gold-deep);
+  border-bottom-color: var(--adab-gold-deep);
+}
+
+/* Blocs <details> dans la page Relire — repliés par défaut, élégants */
+.adab-detail-bloc {
+  margin: 1.2rem 0;
+  border-top: 1px dashed rgba(192,160,80,0.25);
+  padding-top: .5rem;
+}
+.adab-detail-bloc > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: .5rem 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  position: relative;
+}
+.adab-detail-bloc > summary::-webkit-details-marker { display: none; }
+.adab-detail-bloc > summary::before {
+  content: '＋';
+  color: var(--adab-gold);
+  margin-right: .5rem;
+  font-size: 1.1em;
+  transition: transform .2s;
+}
+.adab-detail-bloc[open] > summary::before {
+  content: '−';
+}
+.adab-detail-bloc > summary em {
+  color: var(--adab-ink-mute);
+  font-style: italic;
+  font-size: .85em;
+  margin-left: .35rem;
+}
+
+/* Header — typo plus lisible */
+.adab-head__phase {
+  font-size: 1.05rem;
+}

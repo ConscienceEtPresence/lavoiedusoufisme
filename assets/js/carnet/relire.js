@@ -53,10 +53,14 @@ const date = todayKey();
     const soir = jourData.soir || {};
     const aPose = !!matin.poseLe;
 
+    const heure = new Date().getHours();
+    const g = heure < 12 ? 'Bonjour' : (heure < 18 ? 'Bonjour' : 'Bonsoir');
+    const greetingPersonnel = prenom ? `${g} <em>${esc(prenom)}</em>,` : `${g},`;
+
     if (!aPose && !matin.vigilanceId) {
       mount.innerHTML = `
         <section class="adab-step adab-step--accueil">
-          <h1 class="adab-h1">${prenom ? `Bonsoir <em>${esc(prenom)}</em>,` : 'Bonsoir,'}</h1>
+          <h1 class="adab-h1">${greetingPersonnel}</h1>
           <p class="adab-intro"><em>Vous n'avez pas posé votre matin aujourd'hui.</em></p>
           <p style="text-align:center; max-width: 30rem; margin: 1rem auto; color:#5a4a20;">
             Vous pouvez quand même déposer ce jour, librement, sans rappel du matin.
@@ -112,8 +116,11 @@ const date = todayKey();
       mount.innerHTML = `
         <section class="adab-step adab-step--bilan">
           <header class="adab-soir-head">
-            <h1 class="adab-h1">${prenom ? `Bonsoir <em>${esc(prenom)}</em>.` : 'Bonsoir.'}</h1>
-            <p class="adab-soir-intro"><em>Regardons doucement ce qui a été cette journée.</em></p>
+            <h1 class="adab-h1">${greetingPersonnel}</h1>
+            <p class="adab-soir-intro"><em>Regardons doucement comment a été cette journée.</em></p>
+            <p class="adab-soir-intro" style="font-size:.95rem; color:var(--adab-ink-mute);">
+              <em>Aucun champ n'est obligatoire. Vous pouvez tout laisser vide et juste déposer le jour.</em>
+            </p>
           </header>
 
           ${libre ? '' : `
@@ -133,27 +140,39 @@ const date = todayKey();
             </div>
           `}
 
-          <p class="adab-section-titre adab-section-titre--soft">Ce qui s'est présenté à moi</p>
-          <p class="adab-soir-hint">
-            <em>Les choses que la journée a apportées sans que vous les choisissiez —
-            une rencontre, une parole, une grâce, une épreuve, un don.</em>
-          </p>
-          <label class="adab-presente">
-            <textarea id="presente-input" rows="3" maxlength="700"
-                      placeholder="ce qui s'est présenté à vous aujourd'hui — si quelque chose vient">${esc(presente)}</textarea>
-          </label>
+          <details class="adab-detail-bloc">
+            <summary>
+              <span class="adab-section-titre adab-section-titre--soft" style="margin:0; cursor:pointer;">Ce qui s'est présenté à moi <em>(facultatif)</em></span>
+            </summary>
+            <p class="adab-soir-hint">
+              <em>Les choses que la journée a apportées sans que vous les choisissiez —
+              une rencontre, une parole, une grâce, une épreuve, un don.</em>
+            </p>
+            <label class="adab-presente">
+              <textarea id="presente-input" rows="3" maxlength="700"
+                        placeholder="rien d'obligé — laissez vide si rien ne vient">${esc(presente)}</textarea>
+            </label>
+          </details>
 
-          <p class="adab-section-titre adab-section-titre--soft">Une gratitude</p>
-          <label class="adab-gratitude">
-            <textarea id="gratitude-input" rows="2" maxlength="400"
-                      placeholder="une chose, une personne, une protection…">${esc(gratitudeNote)}</textarea>
-          </label>
+          <details class="adab-detail-bloc">
+            <summary>
+              <span class="adab-section-titre adab-section-titre--soft" style="margin:0; cursor:pointer;">Une gratitude <em>(facultatif)</em></span>
+            </summary>
+            <label class="adab-gratitude">
+              <textarea id="gratitude-input" rows="2" maxlength="400"
+                        placeholder="une chose, une personne, une protection — ou rien">${esc(gratitudeNote)}</textarea>
+            </label>
+          </details>
 
-          <p class="adab-section-titre adab-section-titre--soft">Pour demain</p>
-          <label class="adab-reprise">
-            <textarea id="reprise-input" rows="2" maxlength="300"
-                      placeholder="ce que je reprends, plus petit — ou rien">${esc(repriseTexte)}</textarea>
-          </label>
+          <details class="adab-detail-bloc">
+            <summary>
+              <span class="adab-section-titre adab-section-titre--soft" style="margin:0; cursor:pointer;">Pour demain <em>(facultatif)</em></span>
+            </summary>
+            <label class="adab-reprise">
+              <textarea id="reprise-input" rows="2" maxlength="300"
+                        placeholder="ce que je reprends, plus petit — ou rien">${esc(repriseTexte)}</textarea>
+            </label>
+          </details>
 
           <div class="adab-commit">
             <button type="button" class="adab-bouton" id="commit-relire">Déposer ce jour</button>

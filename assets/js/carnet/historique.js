@@ -36,7 +36,7 @@ function dateCourte(s) {
   return dt.toLocaleDateString(LOCALE, { day: 'numeric', month: 'short' });
 }
 
-dateEl.textContent = 'historique';
+dateEl.textContent = t('historique','history');
 
 const params = new URLSearchParams(location.search);
 const dateOuvert = params.get('j');
@@ -62,7 +62,7 @@ const dateOuvert = params.get('j');
       // Vue détail d'un jour
       const j = jours.find(x => x.date === dateOuvert);
       if (!j) {
-        mount.innerHTML = `<p style="text-align:center; padding:3rem;">Jour introuvable.</p>`;
+        mount.innerHTML = `<p style="text-align:center; padding:3rem;">${t("Jour introuvable.","Day not found.")}</p>`;
         return;
       }
       renderJour(j);
@@ -72,12 +72,12 @@ const dateOuvert = params.get('j');
     if (!jours.length) {
       mount.innerHTML = `
         <section class="hist-vide">
-          <h1 class="adab-h1">${prenom ? `Bonjour <em>${esc(prenom)}</em>,` : 'Bonjour,'}</h1>
-          <p class="adab-intro"><em>Aucune journée n'est encore déposée.</em></p>
+          <h1 class="adab-h1">${prenom ? `${t('Hello','Hello')} <em>${esc(prenom)}</em>,` : t('Bonjour,','Hello,')}</h1>
+          <p class="adab-intro"><em>${t("Aucune journée n'est encore déposée.","No day has been laid down yet.")}</em></p>
           <p style="text-align:center; max-width:30rem; margin: 1rem auto;">
-            Posez votre première journée — l'historique se construira au fil des jours.
+            ${t("Posez votre première journée — l'historique se construira au fil des jours.","Set your first day — the history will build over the days.")}
           </p>
-          <div class="adab-commit"><a href="${BASE}poser/" class="adab-bouton">Poser ma première journée</a></div>
+          <div class="adab-commit"><a href="${BASE}poser/" class="adab-bouton">${t("Poser ma première journée","Set my first day")}</a></div>
         </section>`;
       return;
     }
@@ -123,15 +123,15 @@ const dateOuvert = params.get('j');
 
     mount.innerHTML = `
       <section class="hist-stats">
-        <h1 class="adab-h1">${prenom ? `Vos journées, ${esc(prenom)}` : 'Vos journées'}</h1>
-        <p class="adab-intro"><em>${totalDeposes} journée${totalDeposes > 1 ? 's' : ''} déposée${totalDeposes > 1 ? 's' : ''}.</em></p>
+        <h1 class="adab-h1">${prenom ? `${t('Your days','Your days')}, ${esc(prenom)}` : t('Vos journées','My days')}</h1>
+        <p class="adab-intro"><em>${totalDeposes} ${EN ? (totalDeposes>1?'days laid down':'day laid down') : ('journée'+(totalDeposes>1?'s':'')+' déposée'+(totalDeposes>1?'s':''))}.</em></p>
         ${topVig.length ? `
           <div class="hist-top-vig">
-            <p class="hist-top-vig__label">Ce qui revient le plus</p>
+            <p class="hist-top-vig__label">${t("Ce qui revient le plus","What returns most")}</p>
             <ul>
               ${topVig.map(([id, n]) => {
                 const v = vigilances.find(x => x.id === id);
-                return v ? `<li><strong>${esc(v.label)}</strong> · ${n} fois</li>` : '';
+                return v ? `<li><strong>${esc(v.label)}</strong> · ${n} ${t('fois','times')}</li>` : '';
               }).join('')}
             </ul>
           </div>` : ''}
@@ -148,7 +148,7 @@ const dateOuvert = params.get('j');
       const bilansObjs = s.bilansObjectifs || {};
 
       mount.innerHTML = `
-        <a href="${BASE}historique/" class="adab-back-link">← Toutes mes journées</a>
+        <a href="${BASE}historique/" class="adab-back-link">← ${t("Toutes mes journées","All my days")}</a>
 
         <article class="hist-detail">
           <header class="hist-detail__head">
@@ -162,7 +162,7 @@ const dateOuvert = params.get('j');
 
           ${m.ancrage ? `
             <div class="hist-detail__bloc">
-              <span class="hist-detail__label">Ce matin, ce qui se jouait</span>
+              <span class="hist-detail__label">${t("Ce matin, ce qui se jouait","This morning, what was at play")}</span>
               <p><em>« ${esc(m.ancrage)} »</em></p>
             </div>` : ''}
 
@@ -210,6 +210,6 @@ const dateOuvert = params.get('j');
     }
   } catch (e) {
     console.error(e);
-    mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">Désolé, l'historique n'a pas pu être chargé.</p>`;
+    mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">${t("Désolé, l'historique n'a pas pu être chargé.","Sorry, the history could not be loaded.")}</p>`;
   }
 })();

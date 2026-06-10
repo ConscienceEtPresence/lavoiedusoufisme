@@ -97,18 +97,18 @@ const date = todayKey();
         <section class="adab-step adab-step--accueil">
           <h1 class="adab-h1">${greeting}</h1>
           <p class="adab-intro">
-            <em>Sur quoi voulez-vous veiller aujourd'hui ?</em>
+            <em>${t("Sur quoi voulez-vous veiller aujourd'hui ?","What would you like to watch over today?")}</em>
           </p>
 
           <label class="adab-ancrage">
-            <span class="adab-ancrage__label">Aujourd'hui se joue surtout…</span>
+            <span class="adab-ancrage__label">${t("Aujourd'hui se joue surtout…","Today, what is mostly at play…")}</span>
             <input type="text" id="ancrage-input" class="adab-ancrage__input"
-                   maxlength="120" placeholder="un mot, une phrase, ce qui vous parle"
+                   maxlength="120" placeholder="${t("un mot, une phrase, ce qui vous parle","a word, a phrase, whatever speaks to you")}"
                    value="${esc(state.ancrage)}"/>
             <span class="adab-ancrage__hint"><em>facultatif — pour vous, comme une note</em></span>
           </label>
 
-          <p class="adab-section-titre">Choisissez une vigilance pour la journée</p>
+          <p class="adab-section-titre">${t("Choisissez une vigilance pour la journée","Choose a vigilance for the day")}</p>
 
           <div class="vigilances-grille">
             ${vigilances.map(v => `
@@ -120,7 +120,7 @@ const date = todayKey();
             `).join('')}
           </div>
 
-          <p class="adab-footnote"><em>Une seule vigilance par jour. Petit, c'est suffisant.</em></p>
+          <p class="adab-footnote"><em>${t("Une seule vigilance par jour. Petit, c'est suffisant.","One vigilance per day. Small is enough.")}</em></p>
         </section>
       `;
       // Listeners
@@ -142,7 +142,7 @@ const date = todayKey();
 
       mount.innerHTML = `
         <section class="adab-step adab-step--vigilance">
-          <button type="button" class="adab-back-link" id="back-accueil">← Changer de vigilance</button>
+          <button type="button" class="adab-back-link" id="back-accueil">${t("← Changer de vigilance","← Change vigilance")}</button>
 
           <header class="vigilance-fiche">
             <p class="vigilance-fiche__ar" lang="ar" dir="rtl">${esc(v.ar)}</p>
@@ -151,20 +151,20 @@ const date = todayKey();
           </header>
 
           <details class="vigilance-formation" open>
-            <summary><em>Ce que c'est, chez les soufis</em></summary>
+            <summary><em>${t("Ce que c'est, chez les soufis","What it is, for the sufis")}</em></summary>
             <div class="vigilance-formation__body">
               <p class="vigilance-formation__def">${esc(v.definition_courte)}</p>
               <p class="vigilance-formation__ens">${esc(v.enseignement)}</p>
               <div class="vigilance-formation__parole">
-                <span class="vigilance-formation__petit-label">Une parole d'un maître</span>
+                <span class="vigilance-formation__petit-label">${t("Une parole d'un maître","A word from a master")}</span>
                 <p>${esc(v.parole_maitre)}</p>
               </div>
               <div class="vigilance-formation__verset">
-                <span class="vigilance-formation__petit-label">Coran · hadith</span>
+                <span class="vigilance-formation__petit-label">${t("Coran · hadith","Qurʾān · hadith")}</span>
                 <p>${esc(v.verset)}</p>
               </div>
               <div class="vigilance-formation__nom">
-                <span class="vigilance-formation__petit-label">Nom qui accompagne</span>
+                <span class="vigilance-formation__petit-label">${t("Nom qui accompagne","Accompanying Name")}</span>
                 ${v.nom_divin_ar ? `<span class="vigilance-formation__nom-ar" lang="ar" dir="rtl">${esc(v.nom_divin_ar)}</span>` : ''}
                 <strong>${esc(v.nom_divin)}</strong>
                 ${v.nom_divin_sens ? `<p class="nom-glose nom-glose--sens"><em>${esc(v.nom_divin_sens)}</em></p>` : ''}
@@ -173,7 +173,7 @@ const date = todayKey();
             </div>
           </details>
 
-          <p class="adab-section-titre">Un objectif concret pour aujourd'hui</p>
+          <p class="adab-section-titre">${t("Un objectif concret pour aujourd'hui","A concrete objective for today")}</p>
 
           <div class="objectifs-liste">
             ${objs.map(o => {
@@ -186,14 +186,14 @@ const date = todayKey();
             }).join('')}
 
             <label class="objectif-carte objectif-carte--libre">
-              <span class="objectif-carte__libelle">Ou écrire le mien :</span>
+              <span class="objectif-carte__libelle">${t("Ou écrire le mien :","Or write my own:")}</span>
               <input type="text" id="objectif-perso" class="objectif-carte__input"
-                     maxlength="180" placeholder="un objectif personnel sur ${esc(v.label.toLowerCase())}"
+                     maxlength="180" placeholder="${t('a personal objective on','a personal objective on')} ${esc(v.label.toLowerCase())}"
                      value="${esc(state.personnel)}"/>
             </label>
           </div>
 
-          <p class="adab-section-titre adab-section-titre--soft">Ce que vous prenez aujourd'hui</p>
+          <p class="adab-section-titre adab-section-titre--soft">${t("Ce que vous prenez aujourd'hui","What you take on today")}</p>
           <div id="visage-matin-mount" class="visage-matin-mount"></div>
 
           <div class="adab-commit">
@@ -212,7 +212,7 @@ const date = todayKey();
         const hasContent = ids.length || personnel;
         document.getElementById('commit-pose').disabled = !hasContent;
         if (!hasContent) {
-          mountV.innerHTML = `<p class="visage-vide"><em>Cochez au moins un objectif ou écrivez le vôtre.</em></p>`;
+          mountV.innerHTML = `<p class="visage-vide"><em>${t("Cochez au moins un objectif ou écrivez le vôtre.","Tick at least one objective or write your own.")}</em></p>`;
           return;
         }
         const visages = ids.map(id => {
@@ -229,14 +229,14 @@ const date = todayKey();
                   <footer>— Ibn ʿAṭāʾ Allāh al-Iskandarī, <em>Ḥikam</em> n°${sagesse.id}</footer>
                 </blockquote>` : ''}
               <div class="visage-matin__nom">
-                <span class="visage-matin__nom-label">Le Nom qui accompagne</span>
+                <span class="visage-matin__nom-label">${t("Le Nom qui accompagne","The accompanying Name")}</span>
                 ${o.matin.nom_remede_ar ? `<span class="visage-matin__nom-ar" lang="ar" dir="rtl">${esc(o.matin.nom_remede_ar)}</span>` : ''}
                 <strong>${esc(o.matin.nom_remede)}</strong>
                 ${(() => {
                   const g = nomGloss(o.matin.nom_remede);
                   return g?.sens ? `<p class="nom-glose nom-glose--sens"><em>${esc(g.sens)}</em></p>` : '';
                 })()}
-                <p class="nom-glose nom-glose--incarn">Porter ce Nom aujourd'hui, c'est laisser cette qualité passer à travers le mot, le geste, le regard — sans la nommer, en l'incarnant.</p>
+                <p class="nom-glose nom-glose--incarn">${t("Porter ce Nom aujourd'hui, c'est laisser cette qualité passer à travers le mot, le geste, le regard — sans la nommer, en l'incarnant.","To carry this Name today is to let this quality pass through the word, the gesture, the gaze — without naming it, by embodying it.")}</p>
               </div>
               <p class="visage-matin__chemin"><em>« ${esc(o.matin.phrase_chemin)} »</em></p>
             </article>`;
@@ -244,15 +244,15 @@ const date = todayKey();
         const visagePerso = personnel ? `
           <article class="visage-matin visage-matin--perso">
             <h3 class="visage-matin__titre">${esc(personnel)}</h3>
-            <p class="visage-matin__ens"><em>Votre objectif personnel sur <strong>${esc(v.label)}</strong>.</em></p>
+            <p class="visage-matin__ens"><em>${t("Votre objectif personnel sur ","Your personal objective on ")}<strong>${esc(v.label)}</strong>.</em></p>
             <div class="visage-matin__nom">
-              <span class="visage-matin__nom-label">Le Nom qui accompagne cette vigilance</span>
+              <span class="visage-matin__nom-label">${t("Le Nom qui accompagne cette vigilance","The Name that accompanies this vigilance")}</span>
               ${v.nom_divin_ar ? `<span class="visage-matin__nom-ar" lang="ar" dir="rtl">${esc(v.nom_divin_ar)}</span>` : ''}
               <strong>${esc(v.nom_divin)}</strong>
               ${v.nom_divin_sens ? `<p class="nom-glose nom-glose--sens"><em>${esc(v.nom_divin_sens)}</em></p>` : ''}
               ${v.nom_divin_incarnation ? `<p class="nom-glose nom-glose--incarn">${esc(v.nom_divin_incarnation)}</p>` : ''}
             </div>
-            <p class="visage-matin__chemin"><em>« Portez-le aujourd'hui. »</em></p>
+            <p class="visage-matin__chemin"><em>« ${t("Portez-le aujourd'hui.","Carry it today.")} »</em></p>
           </article>` : '';
         mountV.innerHTML = visages + visagePerso;
       }
@@ -305,8 +305,8 @@ const date = todayKey();
           window.scrollTo({ top: 0, behavior: 'instant' });
         } catch (e) {
           console.error(e);
-          alert('Désolé, la sauvegarde n\'a pas pu se faire.');
-          btn.disabled = false; btn.textContent = 'Je prends cela pour aujourd\'hui';
+          alert(t("Désolé, la sauvegarde n'a pas pu se faire.","Sorry, saving failed."));
+          btn.disabled = false; btn.textContent = t("Je prends cela pour aujourd'hui","I take this for today");
         }
       });
     }
@@ -319,13 +319,13 @@ const date = todayKey();
         <section class="adab-step adab-step--pose">
           <div class="adab-pose-message">
             <p class="adab-pose-message__ar" lang="ar" dir="rtl">${esc(v?.ar || '')}</p>
-            <h1 class="adab-pose-message__titre">${prenom ? `${esc(prenom)},` : ''} votre journée est posée.</h1>
-            <p class="adab-pose-message__sub">Vous portez aujourd'hui la vigilance de <strong>${esc(v?.label || '')}</strong>.</p>
+            <h1 class="adab-pose-message__titre">${prenom ? `${esc(prenom)},` : ''} ${t("votre journée est posée.","your day is set.")}</h1>
+            <p class="adab-pose-message__sub">${t("Vous portez aujourd'hui la vigilance de ","Today you carry the vigilance of ")}<strong>${esc(v?.label || '')}</strong>.</p>
           </div>
 
           ${state.ancrage ? `
             <div class="adab-pose-ancrage">
-              <span class="adab-pose-ancrage__label">Ce qui se joue surtout</span>
+              <span class="adab-pose-ancrage__label">${t("Ce qui se joue surtout","What is mostly at play")}</span>
               <p>${esc(state.ancrage)}</p>
             </div>` : ''}
 
@@ -343,12 +343,12 @@ const date = todayKey();
           </div>
 
           <p class="adab-pose-footer">
-            <em>Marchez maintenant. Le carnet vous attend ce soir.</em>
+            <em>${t("Marchez maintenant. Le carnet vous attend ce soir.","Walk now. The notebook awaits you this evening.")}</em>
           </p>
 
           <div class="adab-pose-actions">
-            <a href="${BASE}aujourdhui/" class="adab-bouton adab-bouton--ghost">Sortir du carnet</a>
-            <button type="button" class="adab-bouton-secondaire" id="modifier-pose">Modifier mon choix</button>
+            <a href="${BASE}aujourdhui/" class="adab-bouton adab-bouton--ghost">${t("Sortir du carnet","Leave the notebook")}</a>
+            <button type="button" class="adab-bouton-secondaire" id="modifier-pose">${t("Modifier mon choix","Change my choice")}</button>
           </div>
         </section>
       `;
@@ -362,6 +362,6 @@ const date = todayKey();
     render();
   } catch (e) {
     console.error(e);
-    mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">Désolé, le carnet n'a pas pu être chargé.</p>`;
+    mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">${t("Désolé, le carnet n'a pas pu être chargé.","Sorry, the notebook could not be loaded.")}</p>`;
   }
 })();

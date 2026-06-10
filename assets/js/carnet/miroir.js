@@ -1,5 +1,5 @@
 /* ============================================================
-   Le carnet d'adab — Le miroir du chemin (muḥāsaba)
+   Le carnet d'adab — ${t("Le miroir du chemin","The mirror of the path")} (muḥāsaba)
    Un reflet contemplatif, jamais un tableau de scores.
    On regarde vers quelles vigilances le cœur est revenu —
    pas combien de fois on a « réussi ». Pas de série, pas de
@@ -38,10 +38,10 @@ function dateCourte(key) {
 function joindreFr(arr) {
   if (arr.length === 0) return '';
   if (arr.length === 1) return arr[0];
-  return arr.slice(0, -1).join(', ') + ' et ' + arr[arr.length - 1];
+  return arr.slice(0, -1).join(', ') + (EN ? ' and ' : ' et ') + arr[arr.length - 1];
 }
 
-dateEl.textContent = 'le miroir';
+dateEl.textContent = t('le miroir','the mirror');
 
 (async () => {
   try {
@@ -70,12 +70,12 @@ dateEl.textContent = 'le miroir';
         <section class="miroir">
           <header class="miroir__head">
             <p class="miroir__rubrique">Le miroir du chemin</p>
-            <h1 class="miroir__titre">Encore vierge</h1>
+            <h1 class="miroir__titre">${t("Encore vierge","Still blank")}</h1>
             <div class="miroir__rule"></div>
           </header>
-          <p class="miroir__vide"><em>Le miroir est encore vide. Il se remplira tout seul, un jour posé après l'autre — sans que vous ayez à compter quoi que ce soit.</em></p>
+          <p class="miroir__vide"><em>${t("Le miroir est encore vide. Il se remplira tout seul, un jour posé après l'autre — sans que vous ayez à compter quoi que ce soit.","The mirror is still empty. It will fill on its own, one set day after another — without you having to count anything.")}</em></p>
           <div class="miroir__actions">
-            <a href="${BASE}poser/" class="adab-bouton adab-bouton--grand">Poser ma première journée</a>
+            <a href="${BASE}poser/" class="adab-bouton adab-bouton--grand">${t("Poser ma première journée","Set my first day")}</a>
           </div>
         </section>`;
       return;
@@ -104,17 +104,17 @@ dateEl.textContent = 'le miroir';
     const topNoms = visitees.slice(0, 2).map(x => `<strong>${esc(x.v.label.toLowerCase())}</strong>`);
     let recit = '';
     if (visitees.length === 1) {
-      recit = `Pour l'instant, votre cœur s'est posé une seule fois — sur ${topNoms[0]}.`;
+      recit = EN ? `For now, your heart has settled only once — on ${topNoms[0]}.` : `Pour l'instant, votre cœur s'est posé une seule fois — sur ${topNoms[0]}.`;
     } else {
-      recit = `Sur ces jours, votre cœur est surtout revenu à ${joindreFr(topNoms)}.`;
+      recit = EN ? `Over these days, your heart mostly returned to ${joindreFr(topNoms)}.` : `Sur ces jours, votre cœur est surtout revenu à ${joindreFr(topNoms)}.`;
       const peu = visitees.slice(-1)[0];
       if (peu && peu.n === 1 && visitees.length >= 3) {
-        recit += ` Vous n'avez visité ${esc(peu.v.label.toLowerCase())} qu'une fois.`;
+        recit += EN ? ` You visited ${esc(peu.v.label.toLowerCase())} only once.` : ` Vous n'avez visité ${esc(peu.v.label.toLowerCase())} qu'une fois.`;
       }
     }
     let recitManque = '';
     if (jamais.length && jamais.length <= 6) {
-      recitManque = `Certaines vigilances vous attendent encore : ${joindreFr(jamais.map(esc))}. Rien ne presse — elles viendront quand leur heure sera là.`;
+      recitManque = EN ? `Some vigilances still await you: ${joindreFr(jamais.map(esc))}. No hurry — they will come when their hour is here.` : `Certaines vigilances vous attendent encore : ${joindreFr(jamais.map(esc))}. Rien ne presse — elles viendront quand leur heure sera là.`;
     }
 
     // === Objectifs personnels récurrents (texte libre qui revient) ===
@@ -136,7 +136,7 @@ dateEl.textContent = 'le miroir';
           <div class="miroir-barre__tete">
             <span class="miroir-barre__ar" lang="ar" dir="rtl">${esc(v.ar)}</span>
             <span class="miroir-barre__label">${esc(v.label)}</span>
-            <span class="miroir-barre__n">${n} fois</span>
+            <span class="miroir-barre__n">${n} ${t('fois','times')}</span>
           </div>
           <div class="miroir-barre__piste">
             <div class="miroir-barre__remplie" style="width:${pct}%"></div>
@@ -147,30 +147,30 @@ dateEl.textContent = 'le miroir';
     // === Objectifs personnels récurrents (bloc optionnel) ===
     const persoHTML = persoRecurrents.length ? `
       <section class="miroir-bloc">
-        <h2 class="miroir-bloc__titre">Ce que vous vous êtes redit</h2>
-        <p class="miroir-bloc__sous"><em>Les mots que vous avez écrits plusieurs fois de vous-même.</em></p>
+        <h2 class="miroir-bloc__titre">${t("Ce que vous vous êtes redit","What you told yourself again")}</h2>
+        <p class="miroir-bloc__sous"><em>${t("Les mots que vous avez écrits plusieurs fois de vous-même.","The words you wrote of your own accord more than once.")}</em></p>
         <ul class="miroir-perso">
           ${persoRecurrents.map(([txt, n]) => `
             <li class="miroir-perso__item">
               <span class="miroir-perso__txt">« ${esc(txt)} »</span>
-              <span class="miroir-perso__n">${n} fois</span>
+              <span class="miroir-perso__n">${n} ${t('fois','times')}</span>
             </li>`).join('')}
         </ul>
       </section>` : '';
 
     // === Rendu ===
     const intro = nbJours === 1
-      ? `1 journée posée`
-      : `${nbJours} journées posées`;
+      ? t('1 journée posée','1 day set')
+      : `${nbJours} ` + t('journées posées','days set');
     const span = premier === dernier
-      ? `le ${dateCourte(premier)}`
-      : `du ${dateCourte(premier)} au ${dateCourte(dernier)}`;
+      ? t('le ','on ') + dateCourte(premier)
+      : EN ? `from ${dateCourte(premier)} to ${dateCourte(dernier)}` : `du ${dateCourte(premier)} au ${dateCourte(dernier)}`;
 
     mount.innerHTML = `
       <section class="miroir">
         <header class="miroir__head">
           <p class="miroir__rubrique">Le miroir du chemin</p>
-          <h1 class="miroir__titre">${prenom ? esc(prenom) + ', ' : ''}ce qui vous travaille</h1>
+          <h1 class="miroir__titre">${prenom ? esc(prenom) + ', ' : ''}${t('ce qui vous travaille','what is working you')}</h1>
           <p class="miroir__compte">${intro} · ${span}</p>
           <div class="miroir__rule"></div>
         </header>
@@ -179,8 +179,8 @@ dateEl.textContent = 'le miroir';
         ${recitManque ? `<p class="miroir__recit miroir__recit--soft"><em>${recitManque}</em></p>` : ''}
 
         <section class="miroir-bloc">
-          <h2 class="miroir-bloc__titre">Vers quoi votre cœur est revenu</h2>
-          <p class="miroir-bloc__sous"><em>Non pas ce que vous avez « réussi » — simplement là où vous vous êtes posé.</em></p>
+          <h2 class="miroir-bloc__titre">${t("Vers quoi votre cœur est revenu","Where your heart has returned")}</h2>
+          <p class="miroir-bloc__sous"><em>${t("Non pas ce que vous avez « réussi » — simplement là où vous vous êtes posé.","Not what you “succeeded” at — simply where you settled.")}</em></p>
           <div class="miroir-barres">${barres}</div>
         </section>
 
@@ -193,12 +193,12 @@ dateEl.textContent = 'le miroir';
         </p>
 
         <div class="miroir__actions">
-          <a href="${BASE}historique/" class="adab-bouton adab-bouton--ghost">Voir les journées une à une</a>
-          <a href="${BASE}aujourdhui/" class="adab-bouton-secondaire">Revenir au carnet</a>
+          <a href="${BASE}historique/" class="adab-bouton adab-bouton--ghost">${t("Voir les journées une à une","See the days one by one")}</a>
+          <a href="${BASE}aujourdhui/" class="adab-bouton-secondaire">${t("Revenir au carnet","Back to the notebook")}</a>
         </div>
       </section>`;
   } catch (e) {
     console.error(e);
-    mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">Désolé, le miroir n'a pas pu être chargé.</p>`;
+    mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">${t("Désolé, le miroir n'a pas pu être chargé.","Sorry, the mirror could not be loaded.")}</p>`;
   }
 })();

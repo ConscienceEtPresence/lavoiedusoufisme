@@ -45,9 +45,9 @@ function esc(s) {
     .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 function greetingByHour(heure) {
-  if (heure < 5)  return 'Bonsoir';
-  if (heure < 18) return 'Bonjour';
-  return 'Bonsoir';
+  if (heure < 5)  return t('Bonsoir','Good evening');
+  if (heure < 18) return t('Bonjour','Hello');
+  return t('Bonsoir','Good evening');
 }
 
 dateEl.textContent = dateLisible();
@@ -94,11 +94,11 @@ dateEl.textContent = dateLisible();
         const v = vigilances.find(x => x.id === matin.vigilanceId);
         return `
           <section class="dash-aujourd-hui dash-aujourd-hui--depose">
-            <p class="dash-aujourd-hui__label">Aujourd'hui · journée déposée</p>
-            <p class="dash-aujourd-hui__msg"><em>Le jour est gardé. Que la nuit soit douce.</em></p>
+            <p class="dash-aujourd-hui__label">${t("Aujourd'hui · journée déposée","Today · day kept")}</p>
+            <p class="dash-aujourd-hui__msg"><em>${t("Le jour est gardé. Que la nuit soit douce.","The day is kept. May the night be gentle.")}</em></p>
             ${v ? `<p class="dash-aujourd-hui__resume"><span lang="ar" dir="rtl" style="font-family:'Amiri',serif; color:var(--adab-gold-deep);">${esc(v.ar)}</span> · ${esc(v.label)}</p>` : ''}
             <div class="dash-actions">
-              <a href="${BASE}historique/?j=${date}" class="adab-bouton adab-bouton--ghost">Voir ma journée</a>
+              <a href="${BASE}historique/?j=${date}" class="adab-bouton adab-bouton--ghost">${t("Voir ma journée","See my day")}</a>
             </div>
           </section>`;
       }
@@ -109,11 +109,11 @@ dateEl.textContent = dateLisible();
         const objsHTML = objsChoisis.map(o => `<li class="resume-obj">${esc(o.matin.libelle)}</li>`).join('');
         const persoHTML = matin.personnel ? `<li class="resume-obj resume-obj--perso">${esc(matin.personnel)}</li>` : '';
         const ctaSoir = heure >= 17
-          ? `<a href="${BASE}relire/" class="adab-bouton adab-bouton--grand">Relire ma journée</a>`
-          : `<a href="${BASE}relire/" class="adab-bouton adab-bouton--ghost">Relire en avance</a>`;
+          ? `<a href="${BASE}relire/" class="adab-bouton adab-bouton--grand">${t("Relire ma journée","Look back on my day")}</a>`
+          : `<a href="${BASE}relire/" class="adab-bouton adab-bouton--ghost">${t("Relire en avance","Look back early")}</a>`;
         return `
           <section class="dash-aujourd-hui dash-aujourd-hui--pose">
-            <p class="dash-aujourd-hui__label">Ce que j'ai posé ce matin</p>
+            <p class="dash-aujourd-hui__label">${t("Ce que j'ai posé ce matin","What I set this morning")}</p>
             ${v ? `
               <div class="dash-vigilance">
                 <span class="dash-vigilance__ar" lang="ar" dir="rtl">${esc(v.ar)}</span>
@@ -123,7 +123,7 @@ dateEl.textContent = dateLisible();
             ${matin.ancrage ? `<p class="dash-ancrage"><em>« ${esc(matin.ancrage)} »</em></p>` : ''}
             <div class="dash-actions">
               ${ctaSoir}
-              <a href="${BASE}poser/" class="adab-bouton-secondaire">Modifier mon choix</a>
+              <a href="${BASE}poser/" class="adab-bouton-secondaire">${t("Modifier mon choix","Change my choice")}</a>
             </div>
           </section>`;
       }
@@ -134,20 +134,20 @@ dateEl.textContent = dateLisible();
       const porteSoirClass  = soirVenu ? 'dash-porte--grand' : 'dash-porte--soft';
       return `
         <section class="dash-aujourd-hui dash-aujourd-hui--vide">
-          <p class="dash-aujourd-hui__label">Aujourd'hui</p>
+          <p class="dash-aujourd-hui__label">${t("Aujourd'hui","Today")}</p>
           <p class="dash-aujourd-hui__msg dash-aujourd-hui__msg--invite">
-            <em>Que voulez-vous faire ? À vous de choisir le moment.</em>
+            <em>${t("Que voulez-vous faire ? À vous de choisir le moment.","What would you like to do? The moment is yours to choose.")}</em>
           </p>
           <div class="dash-portes">
             <a href="${BASE}poser/" class="dash-porte ${porteMatinClass}">
-              <span class="dash-porte__moment">Le matin</span>
-              <span class="dash-porte__titre">Poser ma journée</span>
-              <span class="dash-porte__sous"><em>Un thème, un objectif. Petit, c'est suffisant.</em></span>
+              <span class="dash-porte__moment">${t("Le matin","Morning")}</span>
+              <span class="dash-porte__titre">${t("Poser ma journée","Set my day")}</span>
+              <span class="dash-porte__sous"><em>${t("Un thème, un objectif. Petit, c'est suffisant.","One theme, one objective. Small is enough.")}</em></span>
             </a>
             <a href="${BASE}relire/" class="dash-porte ${porteSoirClass}">
-              <span class="dash-porte__moment">Le soir</span>
-              <span class="dash-porte__titre">Relire ma journée</span>
-              <span class="dash-porte__sous"><em>Regarder doucement comment a été le jour.</em></span>
+              <span class="dash-porte__moment">${t("Le soir","Evening")}</span>
+              <span class="dash-porte__titre">${t("Relire ma journée","Look back on my day")}</span>
+              <span class="dash-porte__sous"><em>${t("Regarder doucement comment a été le jour.","Look gently at how the day has been.")}</em></span>
             </a>
           </div>
         </section>`;
@@ -160,13 +160,13 @@ dateEl.textContent = dateLisible();
       return `
         <section class="dash-veille" id="dash-veille">
           <button type="button" class="dash-veille__fermer" id="dash-veille-fermer" aria-label="Plus tard">×</button>
-          <p class="dash-veille__label">Hier · ${esc(veilleLisible())}</p>
+          <p class="dash-veille__label">${t('Yesterday','Yesterday')} · ${esc(veilleLisible())}</p>
           <p class="dash-veille__msg">
-            <em>Vous aviez posé ${v ? `la vigilance de <strong>${esc(v.label)}</strong>` : 'votre journée'}, mais vous ne l'avez pas déposée.</em>
+            <em>${t('You had set','You had set')} ${v ? `${t('the vigilance of','the vigilance of')} <strong>${esc(v.label)}</strong>` : t('your day','your day')}, ${t("but did not lay it down.","but did not lay it down.")}</em>
           </p>
           <div class="dash-veille__actions">
-            <a href="${BASE}relire/?j=${esc(veille)}" class="adab-bouton adab-bouton--ghost">Relire hier</a>
-            <button type="button" class="dash-veille__plus-tard" id="dash-veille-plus-tard">Plus tard</button>
+            <a href="${BASE}relire/?j=${esc(veille)}" class="adab-bouton adab-bouton--ghost">${t("Relire hier","Look back on yesterday")}</a>
+            <button type="button" class="dash-veille__plus-tard" id="dash-veille-plus-tard">${t('Later','Later')}</button>
           </div>
         </section>`;
     }
@@ -177,18 +177,18 @@ dateEl.textContent = dateLisible();
         const isCurrente = aPose && matin.vigilanceId === v.id;
         return `
           <a href="${BASE}poser/?vigilance=${esc(v.id)}" class="dash-vig-carte ${isCurrente ? 'is-current' : ''}">
-            ${isCurrente ? '<span class="dash-vig-carte__current-tag">aujourd\'hui</span>' : ''}
+            ${isCurrente ? `<span class="dash-vig-carte__current-tag">${t("aujourd'hui","today")}</span>` : ''}
             <span class="dash-vig-carte__ar" lang="ar" dir="rtl">${esc(v.ar)}</span>
             <span class="dash-vig-carte__tr">${esc(v.tr)}</span>
             <span class="dash-vig-carte__label">${esc(v.label)}</span>
           </a>`;
       }).join('');
       const titre = aPose
-        ? 'Explorer les vigilances et leurs enseignements'
-        : 'Choisissez une vigilance pour aujourd\'hui';
+        ? t("Explorer les vigilances et leurs enseignements","Explore the vigilances and their teachings")
+        : t("Choisissez une vigilance pour aujourd'hui","Choose a vigilance for today");
       const sub = aPose
-        ? 'Vous pouvez en lire une autre — ou changer pour celle-là.'
-        : 'Cliquez pour découvrir l\'enseignement, le verset, le Nom divin qui l\'accompagne.';
+        ? t("Vous pouvez en lire une autre — ou changer pour celle-là.","You may read another — or switch to it.")
+        : t("Cliquez pour découvrir l'enseignement, le verset, le Nom divin qui l'accompagne.","Tap to discover the teaching, the verse, and the divine Name that accompanies it.");
       return `
         <section class="dash-vigilances">
           <header class="dash-vigilances__head">
@@ -205,13 +205,13 @@ dateEl.textContent = dateLisible();
         <section class="dash-bas">
           <div class="dash-ornement">✦</div>
           <p class="dash-liens">
-            <a href="${BASE}miroir/">Le miroir du chemin →</a>
+            <a href="${BASE}miroir/">${t("Le miroir du chemin →","The mirror of the path →")}</a>
           </p>
           <p class="dash-liens">
-            <a href="${BASE}historique/">Mes journées passées →</a>
+            <a href="${BASE}historique/">${t("Mes journées passées →","My past days →")}</a>
           </p>
           <p class="dash-liens dash-liens--soft">
-            <a href="/index.html">Sortir du carnet</a>
+            <a href="/index.html">${t("Sortir du carnet","Leave the notebook")}</a>
           </p>
         </section>`;
     }
@@ -233,6 +233,6 @@ dateEl.textContent = dateLisible();
     document.getElementById('dash-veille-plus-tard')?.addEventListener('click', fermerVeille);
   } catch (e) {
     console.error(e);
-    mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">Désolé, le carnet n'a pas pu être chargé.</p>`;
+    mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">${t("Désolé, le carnet n'a pas pu être chargé.","Sorry, the notebook could not be loaded.")}</p>`;
   }
 })();

@@ -68,7 +68,7 @@ dateEl.textContent = dateLisibleFromKey(date);
     const aPose = !!matin.poseLe;
 
     const heure = new Date().getHours();
-    const g = heure < 12 ? 'Bonjour' : (heure < 18 ? 'Bonjour' : 'Bonsoir');
+    const g = heure < 18 ? t('Bonjour','Hello') : t('Bonsoir','Good evening');
     // Pour un jour passé, on n'accueille pas — on nomme le jour qu'on revient déposer.
     const greetingPersonnel = estPasse
       ? `<span style="text-transform:capitalize;">${esc(dateLisibleFromKey(date))}</span>`
@@ -78,13 +78,13 @@ dateEl.textContent = dateLisibleFromKey(date);
       mount.innerHTML = `
         <section class="adab-step adab-step--accueil">
           <h1 class="adab-h1">${greetingPersonnel}</h1>
-          <p class="adab-intro"><em>Vous n'avez pas posé votre matin aujourd'hui.</em></p>
+          <p class="adab-intro"><em>${t("Vous n'avez pas posé votre matin aujourd'hui.","You did not set your morning today.")}</em></p>
           <p style="text-align:center; max-width: 30rem; margin: 1rem auto; color:#5a4a20;">
-            Vous pouvez quand même déposer ce jour, librement, sans rappel du matin.
+            ${t("Vous pouvez quand même déposer ce jour, librement, sans rappel du matin.","You may still lay down this day, freely, without the morning's prompt.")}
           </p>
           <div class="adab-commit" style="margin-top: 1.5rem;">
-            <a href="${BASE}poser/" class="adab-bouton">Poser ma journée d'abord</a>
-            <button type="button" id="relire-libre" class="adab-bouton-secondaire" style="margin-top:.6rem;">Relire librement</button>
+            <a href="${BASE}poser/" class="adab-bouton">${t("Poser ma journée d'abord","Set my day first")}</a>
+            <button type="button" id="relire-libre" class="adab-bouton-secondaire" style="margin-top:.6rem;">${t("Relire librement","Look back freely")}</button>
           </div>
         </section>
       `;
@@ -107,7 +107,7 @@ dateEl.textContent = dateLisibleFromKey(date);
         const id = isPerso ? '__perso' : obj.id;
         const cur = isPerso ? bilanPersonnel : (bilansObjs[obj.id] || { statut: '', note: '' });
         const libelle = isPerso ? matin.personnel : obj.matin.libelle;
-        const question = isPerso ? `Comment cela s'est-il passé aujourd'hui ?` : obj.soir.question;
+        const question = isPerso ? `${t("Comment cela s'est-il passé aujourd'hui ?","How did it go today?")}` : obj.soir.question;
 
         const statusBtns = STATUTS.map(s => `
           <label class="statut-btn ${cur.statut === s.id ? 'is-active' : ''}">
@@ -122,8 +122,8 @@ dateEl.textContent = dateLisibleFromKey(date);
             <p class="bilan-objectif__question"><em>${esc(question)}</em></p>
             <div class="bilan-objectif__statuts">${statusBtns}</div>
             <label class="bilan-objectif__note">
-              <span>Une note, si elle vient</span>
-              <textarea rows="2" maxlength="500" placeholder="ce que vous avez remarqué, traversé, ressenti…">${esc(cur.note)}</textarea>
+              <span>${t("Une note, si elle vient","A note, if it comes")}</span>
+              <textarea rows="2" maxlength="500" placeholder="${t("ce que vous avez remarqué, traversé, ressenti…","what you noticed, went through, felt…")}">${esc(cur.note)}</textarea>
             </label>
             <div class="bilan-objectif__parole" id="parole-${esc(id)}"></div>
           </article>
@@ -134,22 +134,22 @@ dateEl.textContent = dateLisibleFromKey(date);
         <section class="adab-step adab-step--bilan">
           <header class="adab-soir-head">
             <h1 class="adab-h1">${greetingPersonnel}</h1>
-            <p class="adab-soir-intro"><em>${estPasse ? 'Vous revenez déposer cette journée. Regardons-la doucement, sans rattrapage ni reproche.' : 'Regardons doucement comment a été cette journée.'}</em></p>
+            <p class="adab-soir-intro"><em>${estPasse ? t("Vous revenez déposer cette journée. Regardons-la doucement, sans rattrapage ni reproche.","You return to lay down this day. Let us look at it gently, without catching up or reproach.") : t("Regardons doucement comment a été cette journée.","Let us look gently at how this day has been.")}</em></p>
             <p class="adab-soir-intro" style="font-size:.95rem; color:var(--adab-ink-mute);">
-              <em>Aucun champ n'est obligatoire. Vous pouvez tout laisser vide et juste déposer le jour.</em>
+              <em>${t("Aucun champ n'est obligatoire. Vous pouvez tout laisser vide et juste déposer le jour.","No field is required. You may leave it all empty and simply lay down the day.")}</em>
             </p>
           </header>
 
           ${libre ? '' : `
             <div class="adab-soir-rappel">
-              ${matin.ancrage ? `<p class="adab-soir-rappel__ancrage">Ce matin vous avez écrit : <em>« ${esc(matin.ancrage)} »</em></p>` : ''}
+              ${matin.ancrage ? `<p class="adab-soir-rappel__ancrage">${t("Ce matin vous avez écrit : ","This morning you wrote: ")}<em>« ${esc(matin.ancrage)} »</em></p>` : ''}
               <p class="adab-soir-rappel__vigilance">
-                Vous portiez la vigilance de <strong>${esc(v?.label || '')}</strong>
+                ${t("Vous portiez la vigilance de ","You were carrying the vigilance of ")}<strong>${esc(v?.label || '')}</strong>
                 <span lang="ar" dir="rtl" style="font-family:'Amiri',serif; color:#8a7028;">· ${esc(v?.ar || '')}</span>
               </p>
             </div>
 
-            <p class="adab-section-titre">Comment vos objectifs ont-ils été vécus ?</p>
+            <p class="adab-section-titre">${t("Comment vos objectifs ont-ils été vécus ?","How were your objectives lived?")}</p>
 
             <div class="bilan-objectifs">
               ${objsChoisis.map(o => renderObjBilan(o, false)).join('')}
@@ -159,41 +159,41 @@ dateEl.textContent = dateLisibleFromKey(date);
 
           <details class="adab-detail-bloc">
             <summary>
-              <span class="adab-section-titre adab-section-titre--soft" style="margin:0; cursor:pointer;">Ce qui s'est présenté à moi <em>(facultatif)</em></span>
+              <span class="adab-section-titre adab-section-titre--soft" style="margin:0; cursor:pointer;">${t("Ce qui s'est présenté à moi","What came to me")} <em>${t("(facultatif)","(optional)")}</em></span>
             </summary>
             <p class="adab-soir-hint">
-              <em>Les choses que la journée a apportées sans que vous les choisissiez —
-              une rencontre, une parole, une grâce, une épreuve, un don.</em>
+              <em>${t("Les choses que la journée a apportées sans que vous les choisissiez —","Things the day brought without your choosing them —")}
+              ${t("une rencontre, une parole, une grâce, une épreuve, un don.","an encounter, a word, a grace, a trial, a gift.")}</em>
             </p>
             <label class="adab-presente">
               <textarea id="presente-input" rows="3" maxlength="700"
-                        placeholder="rien d'obligé — laissez vide si rien ne vient">${esc(presente)}</textarea>
+                        placeholder="${t("rien d'obligé — laissez vide si rien ne vient","nothing required — leave empty if nothing comes")}">${esc(presente)}</textarea>
             </label>
           </details>
 
           <details class="adab-detail-bloc">
             <summary>
-              <span class="adab-section-titre adab-section-titre--soft" style="margin:0; cursor:pointer;">Une gratitude <em>(facultatif)</em></span>
+              <span class="adab-section-titre adab-section-titre--soft" style="margin:0; cursor:pointer;">${t("Une gratitude","A gratitude")} <em>(facultatif)</em></span>
             </summary>
             <label class="adab-gratitude">
               <textarea id="gratitude-input" rows="2" maxlength="400"
-                        placeholder="une chose, une personne, une protection — ou rien">${esc(gratitudeNote)}</textarea>
+                        placeholder="${t("une chose, une personne, une protection — ou rien","a thing, a person, a protection — or nothing")}">${esc(gratitudeNote)}</textarea>
             </label>
           </details>
 
           <details class="adab-detail-bloc">
             <summary>
-              <span class="adab-section-titre adab-section-titre--soft" style="margin:0; cursor:pointer;">Pour demain <em>(facultatif)</em></span>
+              <span class="adab-section-titre adab-section-titre--soft" style="margin:0; cursor:pointer;">${t("Pour demain","For tomorrow")} <em>(facultatif)</em></span>
             </summary>
             <label class="adab-reprise">
               <textarea id="reprise-input" rows="2" maxlength="300"
-                        placeholder="ce que je reprends, plus petit — ou rien">${esc(repriseTexte)}</textarea>
+                        placeholder="${t("ce que je reprends, plus petit — ou rien","what I take up again, smaller — or nothing")}">${esc(repriseTexte)}</textarea>
             </label>
           </details>
 
           <div class="adab-commit">
             <button type="button" class="adab-bouton" id="commit-relire">Déposer ce jour</button>
-            <span class="adab-ok" id="relire-ok" hidden>✓ déposé</span>
+            <span class="adab-ok" id="relire-ok" hidden>${t("✓ déposé","✓ laid down")}</span>
           </div>
         </section>
       `;
@@ -229,7 +229,7 @@ dateEl.textContent = dateLisibleFromKey(date);
       // === Commit bilan ===
       document.getElementById('commit-relire').addEventListener('click', async () => {
         const btn = document.getElementById('commit-relire');
-        btn.disabled = true; btn.textContent = 'Un instant…';
+        btn.disabled = true; btn.textContent = t("Un instant…","One moment…");
         try {
           const bilansObjectifs = {};
           let bilanPersonnel = { statut: '', note: '' };
@@ -270,20 +270,20 @@ dateEl.textContent = dateLisibleFromKey(date);
           // Petit message de clôture
           mount.innerHTML += `
             <div class="adab-soir-cloture">
-              <p>Le jour est déposé.</p>
-              <p><em>« Que la nuit soit douce et le souffle paisible. »</em></p>
-              <a href="${BASE}aujourdhui/" class="adab-bouton adab-bouton--ghost" style="margin-top:1rem;">Sortir du carnet</a>
+              <p>${t("Le jour est déposé.","The day is laid down.")}</p>
+              <p><em>« ${t("Que la nuit soit douce et le souffle paisible.","May the night be gentle and the breath at peace.")} »</em></p>
+              <a href="${BASE}aujourdhui/" class="adab-bouton adab-bouton--ghost" style="margin-top:1rem;">${t("Sortir du carnet","Leave the notebook")}</a>
             </div>`;
           document.querySelector('.adab-soir-cloture').scrollIntoView({ behavior: 'smooth', block: 'center' });
         } catch (e) {
           console.error(e);
-          alert('Désolé, la sauvegarde n\'a pas pu se faire.');
-          btn.disabled = false; btn.textContent = 'Déposer ce jour';
+          alert(t("Désolé, la sauvegarde n'a pas pu se faire.","Sorry, saving failed."));
+          btn.disabled = false; btn.textContent = t("Déposer ce jour","Lay down this day");
         }
       });
     }
   } catch (e) {
     console.error(e);
-    mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">Désolé, le carnet n'a pas pu être chargé.</p>`;
+    mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">${t("Désolé, le carnet n'a pas pu être chargé.","Sorry, the notebook could not be loaded.")}</p>`;
   }
 })();

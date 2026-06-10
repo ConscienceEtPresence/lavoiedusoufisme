@@ -19,16 +19,25 @@ function todayKey() {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
-function dateLisible() {
-  return new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+function dateLisibleFromKey(key) {
+  const [y, m, d] = key.split('-');
+  return new Date(parseInt(y), parseInt(m) - 1, parseInt(d))
+    .toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
 }
 function esc(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
     .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-dateEl.textContent = dateLisible();
-const date = todayKey();
+// Un jour précis peut être demandé via ?j=YYYY-MM-DD (relire la veille oubliée).
+// Sinon, c'est aujourd'hui.
+const params = new URLSearchParams(location.search);
+const askedDate = params.get('j');
+const isValidKey = k => /^\d{4}-\d{2}-\d{2}$/.test(k || '');
+const date = isValidKey(askedDate) ? askedDate : todayKey();
+const estPasse = date !== todayKey();
+
+dateEl.textContent = dateLisibleFromKey(date);
 
 (async () => {
   try {
@@ -55,7 +64,10 @@ const date = todayKey();
 
     const heure = new Date().getHours();
     const g = heure < 12 ? 'Bonjour' : (heure < 18 ? 'Bonjour' : 'Bonsoir');
-    const greetingPersonnel = prenom ? `${g} <em>${esc(prenom)}</em>,` : `${g},`;
+    // Pour un jour passé, on n'accueille pas — on nomme le jour qu'on revient déposer.
+    const greetingPersonnel = estPasse
+      ? `<span style="text-transform:capitalize;">${esc(dateLisibleFromKey(date))}</span>`
+      : (prenom ? `${g} <em>${esc(prenom)}</em>,` : `${g},`);
 
     if (!aPose && !matin.vigilanceId) {
       mount.innerHTML = `
@@ -117,7 +129,7 @@ const date = todayKey();
         <section class="adab-step adab-step--bilan">
           <header class="adab-soir-head">
             <h1 class="adab-h1">${greetingPersonnel}</h1>
-            <p class="adab-soir-intro"><em>Regardons doucement comment a été cette journée.</em></p>
+            <p class="adab-soir-intro"><em>${estPasse ? 'Vous revenez déposer cette journée. Regardons-la doucement, sans rattrapage ni reproche.' : 'Regardons doucement comment a été cette journée.'}</em></p>
             <p class="adab-soir-intro" style="font-size:.95rem; color:var(--adab-ink-mute);">
               <em>Aucun champ n'est obligatoire. Vous pouvez tout laisser vide et juste déposer le jour.</em>
             </p>

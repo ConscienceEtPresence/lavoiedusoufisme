@@ -16,9 +16,21 @@ if (!anonId) {
 const mount = document.getElementById('aiguilleur-mount');
 const dateEl = document.getElementById('adab-date');
 
-function todayKey() {
-  const d = new Date();
+function keyOf(d) {
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function todayKey() {
+  return keyOf(new Date());
+}
+function yesterdayKey() {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return keyOf(d);
+}
+function veilleLisible() {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
 }
 function dateLisible() {
   return new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
@@ -38,11 +50,13 @@ dateEl.textContent = dateLisible();
 (async () => {
   try {
     const date = todayKey();
+    const veille = yesterdayKey();
     const heure = new Date().getHours();
-    const [vigilancesRes, objectifsRes, jourSnap] = await Promise.all([
+    const [vigilancesRes, objectifsRes, jourSnap, veilleSnap] = await Promise.all([
       fetch('/data/carnet/vigilances.json').then(r => r.json()),
       fetch('/data/carnet/objectifs.json').then(r => r.json()),
-      getDoc(doc(db, 'carnets', anonId, 'jours', date)).catch(() => null)
+      getDoc(doc(db, 'carnets', anonId, 'jours', date)).catch(() => null),
+      getDoc(doc(db, 'carnets', anonId, 'jours', veille)).catch(() => null)
     ]);
     const vigilances = vigilancesRes.vigilances || [];
     const objectifs = objectifsRes.objectifs || [];
@@ -51,6 +65,12 @@ dateEl.textContent = dateLisible();
     const soir = jourData.soir || {};
     const aPose = !!matin.poseLe;
     const aDepose = !!soir.fermeLe;
+
+    // Veille posée mais jamais déposée → on proposera de la relire
+    const veilleData = veilleSnap?.exists() ? veilleSnap.data() : {};
+    const veilleAPose = !!(veilleData.matin && veilleData.matin.poseLe);
+    const veilleADepose = !!(veilleData.soir && veilleData.soir.fermeLe);
+    const veilleAcompleter = veilleAPose && !veilleADepose;
 
     try {
       await setDoc(doc(db, 'carnets', anonId, '_meta', 'profil'), {
@@ -102,30 +122,46 @@ dateEl.textContent = dateLisible();
             </div>
           </section>`;
       }
-      // Cas 3 : rien posé, matin → invitation
-      if (heure < 17) {
-        return `
-          <section class="dash-aujourd-hui dash-aujourd-hui--vide">
-            <p class="dash-aujourd-hui__label">Aujourd'hui</p>
-            <p class="dash-aujourd-hui__msg dash-aujourd-hui__msg--invite">
-              <em>Un seul thème, un objectif. Petit, c'est suffisant.</em>
-            </p>
-            <div class="dash-actions">
-              <a href="/pages/carnet/poser/" class="adab-bouton adab-bouton--grand">Poser ma journée</a>
-            </div>
-            <p class="dash-aujourd-hui__hint">
-              <em>Ou explorez les vigilances ci-dessous et prenez-en une quand quelque chose vous appelle.</em>
-            </p>
-          </section>`;
-      }
-      // Cas 4 : rien posé, soir → relire libre
+      // Cas 3 : rien posé → les deux portes toujours offertes.
+      // L'heure ne fait que suggérer laquelle est mise en avant.
+      const soirVenu = heure >= 17;
+      const porteMatinClass = soirVenu ? 'dash-porte--soft' : 'dash-porte--grand';
+      const porteSoirClass  = soirVenu ? 'dash-porte--grand' : 'dash-porte--soft';
       return `
         <section class="dash-aujourd-hui dash-aujourd-hui--vide">
           <p class="dash-aujourd-hui__label">Aujourd'hui</p>
-          <p class="dash-aujourd-hui__msg"><em>Vous n'avez rien posé ce matin. Vous pouvez quand même relire la journée.</em></p>
-          <div class="dash-actions">
-            <a href="/pages/carnet/relire/" class="adab-bouton adab-bouton--grand">Relire ma journée</a>
-            <a href="/pages/carnet/poser/" class="adab-bouton-secondaire">Poser quand même</a>
+          <p class="dash-aujourd-hui__msg dash-aujourd-hui__msg--invite">
+            <em>Que voulez-vous faire ? À vous de choisir le moment.</em>
+          </p>
+          <div class="dash-portes">
+            <a href="/pages/carnet/poser/" class="dash-porte ${porteMatinClass}">
+              <span class="dash-porte__moment">Le matin</span>
+              <span class="dash-porte__titre">Poser ma journée</span>
+              <span class="dash-porte__sous"><em>Un thème, un objectif. Petit, c'est suffisant.</em></span>
+            </a>
+            <a href="/pages/carnet/relire/" class="dash-porte ${porteSoirClass}">
+              <span class="dash-porte__moment">Le soir</span>
+              <span class="dash-porte__titre">Relire ma journée</span>
+              <span class="dash-porte__sous"><em>Regarder doucement comment a été le jour.</em></span>
+            </a>
+          </div>
+        </section>`;
+    }
+
+    // === Rappel de la veille à compléter (doux, déclinable) ===
+    function renderRappelVeille() {
+      if (!veilleAcompleter) return '';
+      const v = vigilances.find(x => x.id === veilleData.matin.vigilanceId);
+      return `
+        <section class="dash-veille" id="dash-veille">
+          <button type="button" class="dash-veille__fermer" id="dash-veille-fermer" aria-label="Plus tard">×</button>
+          <p class="dash-veille__label">Hier · ${esc(veilleLisible())}</p>
+          <p class="dash-veille__msg">
+            <em>Vous aviez posé ${v ? `la vigilance de <strong>${esc(v.label)}</strong>` : 'votre journée'}, mais vous ne l'avez pas déposée.</em>
+          </p>
+          <div class="dash-veille__actions">
+            <a href="/pages/carnet/relire/?j=${esc(veille)}" class="adab-bouton adab-bouton--ghost">Relire hier</a>
+            <button type="button" class="dash-veille__plus-tard" id="dash-veille-plus-tard">Plus tard</button>
           </div>
         </section>`;
     }
@@ -164,6 +200,9 @@ dateEl.textContent = dateLisible();
         <section class="dash-bas">
           <div class="dash-ornement">✦</div>
           <p class="dash-liens">
+            <a href="/pages/carnet/miroir/">Le miroir du chemin →</a>
+          </p>
+          <p class="dash-liens">
             <a href="/pages/carnet/historique/">Mes journées passées →</a>
           </p>
           <p class="dash-liens dash-liens--soft">
@@ -175,11 +214,18 @@ dateEl.textContent = dateLisible();
     mount.innerHTML = `
       <section class="dash">
         <h1 class="dash__hello">${greeting}</h1>
+        ${renderRappelVeille()}
         ${renderSection1()}
         ${renderSection2()}
         ${renderSection3()}
       </section>
     `;
+
+    // Listeners du rappel veille (déclinable)
+    const veilleEl = document.getElementById('dash-veille');
+    const fermerVeille = () => { if (veilleEl) veilleEl.style.display = 'none'; };
+    document.getElementById('dash-veille-fermer')?.addEventListener('click', fermerVeille);
+    document.getElementById('dash-veille-plus-tard')?.addEventListener('click', fermerVeille);
   } catch (e) {
     console.error(e);
     mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">Désolé, le carnet n'a pas pu être chargé.</p>`;

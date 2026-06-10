@@ -3,7 +3,7 @@
    Cache stratégique : network-first pour HTML/JSON, cache-first pour assets
    ============================================================ */
 
-const VERSION = 'lvdd-v69';
+const VERSION = 'lvdd-v70';
 const STATIC_CACHE = `${VERSION}-static`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 
@@ -16,7 +16,7 @@ const PRECACHE_URLS = [
   '/assets/css/components.css',
   '/assets/css/accueil.css?v=9',
   '/assets/css/dark-mode.css?v=3',
-  '/assets/js/main.js?v=14',
+  '/assets/js/main.js?v=16',
   '/assets/js/search.js?v=5',
   '/assets/js/tirage-global.js?v=3',
   '/manifest.webmanifest',

@@ -270,9 +270,16 @@ dateEl.textContent = dateLisibleFromKey(date);
           // Petit message de clôture
           mount.innerHTML += `
             <div class="adab-soir-cloture">
-              <p>${t("Le jour est déposé.","The day is laid down.")}</p>
-              <p><em>« ${t("Que la nuit soit douce et le souffle paisible.","May the night be gentle and the breath at peace.")} »</em></p>
-              <a href="${BASE}aujourdhui/" class="adab-bouton adab-bouton--ghost" style="margin-top:1rem;">${t("Sortir du carnet","Leave the notebook")}</a>
+              <p>${estPasse
+                  ? t("Cette journée est gardée.","This day is now kept.")
+                  : t("Le jour est déposé.","The day is laid down.")}</p>
+              <p><em>« ${estPasse
+                  ? t("Ce qui a été vécu est recueilli. Reviens au présent.","What was lived is gathered in. Return to the present.")
+                  : t("Que la nuit soit douce et le souffle paisible.","May the night be gentle and the breath at peace.")} »</em></p>
+              <div class="adab-pose-actions" style="margin-top:1.3rem;">
+                <a href="${BASE}aujourdhui/" class="adab-bouton">${t("Revenir au carnet","Back to the notebook")}</a>
+                <a href="${BASE}historique/" class="adab-bouton-secondaire">${t("Mes journées passées","My past days")}</a>
+              </div>
             </div>`;
           document.querySelector('.adab-soir-cloture').scrollIntoView({ behavior: 'smooth', block: 'center' });
         } catch (e) {

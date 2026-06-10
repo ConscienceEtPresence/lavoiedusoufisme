@@ -26,6 +26,11 @@ function todayKey() {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
+function yesterdayKey() {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
 function dateLisible() {
   return new Date().toLocaleDateString(LOCALE, { weekday: 'long', day: 'numeric', month: 'long' });
 }
@@ -39,12 +44,14 @@ const date = todayKey();
 
 (async () => {
   try {
-    const [vigilancesRes, objectifsRes, hikamRes, nomsLookup, jourSnap] = await Promise.all([
+    const veille = yesterdayKey();
+    const [vigilancesRes, objectifsRes, hikamRes, nomsLookup, jourSnap, veilleSnap] = await Promise.all([
       fetch('/data/carnet/vigilances' + (EN ? '.en' : '') + '.json').then(r => r.json()),
       fetch('/data/carnet/objectifs' + (EN ? '.en' : '') + '.json').then(r => r.json()),
       fetch('/data/iskandari/hikam-complet.json').then(r => r.json()),
       fetch('/data/carnet/noms-lookup.json').then(r => r.json()).catch(() => ({})),
-      getDoc(doc(db, 'carnets', anonId, 'jours', date)).catch(() => null)
+      getDoc(doc(db, 'carnets', anonId, 'jours', date)).catch(() => null),
+      getDoc(doc(db, 'carnets', anonId, 'jours', veille)).catch(() => null)
     ]);
 
     // Helper : trouve la glose d'un Nom divin à partir de son libellé "as-Salām (Celui...)"
@@ -62,6 +69,20 @@ const date = todayKey();
     const jourData = jourSnap?.exists() ? jourSnap.data() : {};
     const matin = jourData.matin || {};
     const dejaPose = !!matin.poseLe;
+
+    // === Le pont soir → matin : ce qu'on voulait reprendre hier ===
+    // (le « pour demain » écrit le soir + les objectifs marqués oublié / à reprendre)
+    const veilleData = veilleSnap?.exists() ? veilleSnap.data() : {};
+    const veilleMatin = veilleData.matin || {};
+    const veilleSoir = veilleData.soir || {};
+    const repriseTexte = (veilleSoir.repriseTexte || '').trim();
+    const bilansHier = veilleSoir.bilansObjectifs || {};
+    const objAreprendreIds = Object.keys(bilansHier)
+      .filter(id => ['oublie', 'repris'].includes((bilansHier[id] || {}).statut));
+    const objAreprendre = objAreprendreIds.map(id => objectifs.find(o => o.id === id)).filter(Boolean);
+    // On ne propose la reprise que si la veille a été déposée, qu'on n'a pas
+    // encore posé aujourd'hui, et qu'il y a vraiment quelque chose à reprendre.
+    const aReprise = !!veilleSoir.fermeLe && !dejaPose && (repriseTexte || objAreprendre.length);
 
     // Etat de la page : 'accueil' / 'vigilance' / 'engage' / 'pose'
     // Si ?vigilance=ID dans l'URL, on saute direct à l'étape vigilance.
@@ -92,7 +113,7 @@ const date = todayKey();
     }
 
     function renderAccueil() {
-      const greeting = prenom ? `Bonjour <em>${esc(prenom)}</em>,` : `Bonjour,`;
+      const greeting = prenom ? `${t("Bonjour","Hello")} <em>${esc(prenom)}</em>,` : `${t("Bonjour,","Hello,")}`;
       mount.innerHTML = `
         <section class="adab-step adab-step--accueil">
           <h1 class="adab-h1">${greeting}</h1>
@@ -100,12 +121,21 @@ const date = todayKey();
             <em>${t("Sur quoi voulez-vous veiller aujourd'hui ?","What would you like to watch over today?")}</em>
           </p>
 
+          ${aReprise ? `
+            <div class="adab-reprise-hier">
+              <span class="adab-reprise-hier__label">${t("Hier soir, vous vouliez reprendre","Yesterday evening, you wanted to take up again")}</span>
+              ${repriseTexte ? `<p class="adab-reprise-hier__texte"><em>« ${esc(repriseTexte)} »</em></p>` : ''}
+              ${objAreprendre.length ? `<ul class="adab-reprise-hier__objs">${objAreprendre.map(o => `<li>${esc(o.matin.libelle)}</li>`).join('')}</ul>` : ''}
+              <button type="button" class="adab-bouton-secondaire adab-reprise-hier__cta" id="reprendre-hier">${t("Reprendre ce chemin aujourd'hui","Take up this path again today")}</button>
+              <p class="adab-reprise-hier__hint"><em>${t("ou commencez librement ci-dessous","or begin freely below")}</em></p>
+            </div>` : ''}
+
           <label class="adab-ancrage">
             <span class="adab-ancrage__label">${t("Aujourd'hui se joue surtout…","Today, what is mostly at play…")}</span>
             <input type="text" id="ancrage-input" class="adab-ancrage__input"
                    maxlength="120" placeholder="${t("un mot, une phrase, ce qui vous parle","a word, a phrase, whatever speaks to you")}"
                    value="${esc(state.ancrage)}"/>
-            <span class="adab-ancrage__hint"><em>facultatif — pour vous, comme une note</em></span>
+            <span class="adab-ancrage__hint"><em>${t("facultatif — pour vous, comme une note","optional — for you, like a note")}</em></span>
           </label>
 
           <p class="adab-section-titre">${t("Choisissez une vigilance pour la journée","Choose a vigilance for the day")}</p>
@@ -123,6 +153,22 @@ const date = todayKey();
           <p class="adab-footnote"><em>${t("Une seule vigilance par jour. Petit, c'est suffisant.","One vigilance per day. Small is enough.")}</em></p>
         </section>
       `;
+      // Reprise d'hier : pré-remplit la vigilance + les objectifs à reprendre
+      document.getElementById('reprendre-hier')?.addEventListener('click', () => {
+        state.ancrage = (document.getElementById('ancrage-input')?.value || '').trim();
+        const vid = veilleMatin.vigilanceId
+          || (objAreprendre[0] && objAreprendre[0].vigilance)
+          || '';
+        if (vid) {
+          state.vigilanceId = vid;
+          // ne garde que les objectifs à reprendre qui appartiennent à cette vigilance
+          state.objectifsIds = objAreprendre.filter(o => o.vigilance === vid).map(o => o.id);
+          state.etape = 'vigilance';
+          render();
+          window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+      });
+
       // Listeners
       document.querySelectorAll('.vigilance-carte').forEach(btn => {
         btn.addEventListener('click', () => {

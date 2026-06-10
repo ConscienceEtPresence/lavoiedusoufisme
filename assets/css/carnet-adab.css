@@ -2120,3 +2120,58 @@ body.carnet-body {
   gap: .7rem;
   margin-top: 2.2rem;
 }
+
+/* ============================================================
+   Le pont soir → matin : « Hier soir, vous vouliez reprendre »
+   ============================================================ */
+.adab-reprise-hier {
+  max-width: 32rem;
+  margin: 0 auto 1.8rem;
+  padding: 1.2rem 1.4rem 1.3rem;
+  border-radius: 14px;
+  border: 1px solid var(--adab-gold);
+  background: linear-gradient(180deg, rgba(255,250,238,.7), rgba(245,234,208,.5));
+  text-align: center;
+  box-shadow: 0 12px 28px -24px rgba(138,112,40,.5);
+}
+.adab-reprise-hier__label {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: .66rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+  margin-bottom: .7rem;
+}
+.adab-reprise-hier__texte {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: var(--adab-ink);
+  line-height: 1.5;
+  margin: 0 0 .6rem;
+}
+.adab-reprise-hier__objs {
+  list-style: none;
+  padding: 0;
+  margin: .2rem 0 1rem;
+}
+.adab-reprise-hier__objs li {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.08rem;
+  color: var(--adab-ink-soft);
+  padding: .1rem 0;
+}
+.adab-reprise-hier__objs li::before {
+  content: "·";
+  color: var(--adab-gold);
+  font-weight: 700;
+  margin-right: .45rem;
+}
+.adab-reprise-hier__cta { margin-top: .3rem; }
+.adab-reprise-hier__hint {
+  margin: .7rem 0 0;
+  font-family: 'Source Serif 4', serif;
+  font-size: .85rem;
+  color: var(--adab-ink-mute);
+}

@@ -57,9 +57,10 @@ dateEl.textContent = dateLisible();
     const date = todayKey();
     const veille = yesterdayKey();
     const heure = new Date().getHours();
-    const [vigilancesRes, objectifsRes, jourSnap, veilleSnap] = await Promise.all([
+    const [vigilancesRes, objectifsRes, hikamRes, jourSnap, veilleSnap] = await Promise.all([
       fetch('/data/carnet/vigilances' + (EN ? '.en' : '') + '.json').then(r => r.json()),
       fetch('/data/carnet/objectifs' + (EN ? '.en' : '') + '.json').then(r => r.json()),
+      fetch('/data/iskandari/hikam-complet.json').then(r => r.json()).catch(() => ({ records: [] })),
       getDoc(doc(db, 'carnets', anonId, 'jours', date)).catch(() => null),
       getDoc(doc(db, 'carnets', anonId, 'jours', veille)).catch(() => null)
     ]);
@@ -86,6 +87,31 @@ dateEl.textContent = dateLisible();
 
     const g = greetingByHour(heure);
     const greeting = prenom ? `${g} <em>${esc(prenom)}</em>,` : `${g},`;
+
+    // === LE SEUIL DU JOUR : une sagesse à méditer, avant toute demande ===
+    // L'accueil donne avant de demander. Une Ḥikma d'Iskandari, stable sur
+    // la journée (elle change chaque jour), comme une lumière à porter.
+    function renderSeuilDuJour() {
+      const recs = (hikamRes && hikamRes.records) || [];
+      if (!recs.length) return '';
+      // Index déterministe par jour (même sagesse toute la journée)
+      const dayNum = Math.floor(new Date(date + 'T00:00:00').getTime() / 86400000);
+      const r = recs[((dayNum % recs.length) + recs.length) % recs.length];
+      if (!r) return '';
+      const texte = EN
+        ? (r.english_text_draft || r.french_translation || '')
+        : (r.french_translation || r.english_text_draft || '');
+      if (!texte) return '';
+      const lien = EN ? '/pages/iskandari/hikma/' : '/pages/iskandari/hikma/';
+      return `
+        <section class="dash-seuil">
+          <span class="dash-seuil__label">${t("Le seuil du jour","The day's threshold")}</span>
+          <div class="dash-seuil__orn">✦</div>
+          <p class="dash-seuil__texte">« ${esc(texte)} »</p>
+          <p class="dash-seuil__source">${t("Ḥikma n°","Ḥikma no.")} ${esc(r.id)} · Ibn ʿAṭāʾ Allāh al-Iskandarī</p>
+          <a href="${lien}?id=${esc(r.id)}" class="dash-seuil__lien">${t("Méditer cette sagesse","Meditate this wisdom")} →</a>
+        </section>`;
+    }
 
     // === SECTION 1 : « Aujourd'hui » ===
     function renderSection1() {
@@ -219,6 +245,7 @@ dateEl.textContent = dateLisible();
     mount.innerHTML = `
       <section class="dash">
         <h1 class="dash__hello">${greeting}</h1>
+        ${renderSeuilDuJour()}
         ${renderRappelVeille()}
         ${renderSection1()}
         ${renderSection2()}

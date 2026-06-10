@@ -229,6 +229,11 @@ dateEl.textContent = dateLisible();
     function renderSection3() {
       return `
         <section class="dash-bas">
+          <button type="button" class="dash-souffle-cta" id="ouvrir-souffle">
+            <span class="dash-souffle-cta__cercle"></span>
+            <span class="dash-souffle-cta__txt">${t("Trois respirations","Three breaths")}</span>
+            <span class="dash-souffle-cta__sous"><em>${t("un instant de présence","a moment of presence")}</em></span>
+          </button>
           <div class="dash-ornement">✦</div>
           <p class="dash-liens">
             <a href="${BASE}miroir/">${t("Le miroir du chemin →","The mirror of the path →")}</a>
@@ -258,6 +263,55 @@ dateEl.textContent = dateLisible();
     const fermerVeille = () => { if (veilleEl) veilleEl.style.display = 'none'; };
     document.getElementById('dash-veille-fermer')?.addEventListener('click', fermerVeille);
     document.getElementById('dash-veille-plus-tard')?.addEventListener('click', fermerVeille);
+
+    // L'ancre du souffle — trois respirations guidées
+    document.getElementById('ouvrir-souffle')?.addEventListener('click', ouvrirSouffle);
+
+    function ouvrirSouffle() {
+      const ov = document.createElement('div');
+      ov.className = 'souffle-overlay';
+      ov.innerHTML = `
+        <button type="button" class="souffle-close" aria-label="${t('Fermer','Close')}">×</button>
+        <div class="souffle-scene">
+          <div class="souffle-cercle"><span class="souffle-compte"></span></div>
+          <p class="souffle-phase"></p>
+        </div>`;
+      document.body.appendChild(ov);
+      requestAnimationFrame(() => ov.classList.add('is-on'));
+
+      const cercle = ov.querySelector('.souffle-cercle');
+      const phaseEl = ov.querySelector('.souffle-phase');
+      const compteEl = ov.querySelector('.souffle-compte');
+      let timer;
+      const close = () => { clearTimeout(timer); ov.classList.remove('is-on'); setTimeout(() => ov.remove(), 600); };
+      ov.querySelector('.souffle-close').addEventListener('click', close);
+      ov.addEventListener('click', e => { if (e.target === ov) close(); });
+
+      const IN = 4000, OUT = 6000, BREATHS = 3;
+      let i = 0;
+      function inhale() {
+        if (i >= BREATHS) return finish();
+        i++;
+        compteEl.textContent = `${i} / ${BREATHS}`;
+        phaseEl.textContent = t('Inspirez…', 'Breathe in…');
+        cercle.style.transitionDuration = IN + 'ms';
+        cercle.classList.add('is-big');
+        timer = setTimeout(exhale, IN);
+      }
+      function exhale() {
+        phaseEl.textContent = t('Expirez…', 'Breathe out…');
+        cercle.style.transitionDuration = OUT + 'ms';
+        cercle.classList.remove('is-big');
+        timer = setTimeout(inhale, OUT);
+      }
+      function finish() {
+        cercle.classList.add('is-done');
+        compteEl.textContent = '✦';
+        phaseEl.textContent = t('Revenez doucement.', 'Return gently.');
+        timer = setTimeout(close, 3500);
+      }
+      timer = setTimeout(inhale, 700);
+    }
   } catch (e) {
     console.error(e);
     mount.innerHTML = `<p style="text-align:center; color:#c44; padding:3rem;">${t("Désolé, le carnet n'a pas pu être chargé.","Sorry, the notebook could not be loaded.")}</p>`;

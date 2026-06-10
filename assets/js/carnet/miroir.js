@@ -100,6 +100,26 @@ dateEl.textContent = t('le miroir','the mirror');
     const visitees = vigOrdonnees.filter(x => x.n > 0);
     const jamais = vigOrdonnees.filter(x => x.n === 0).map(x => x.v.label.toLowerCase());
 
+    // === La direction qui se dessine — nommer le mouvement intérieur ===
+    // Non un verdict : un reflet doux de ce que l'âme travaille à travers
+    // la vigilance vers laquelle on revient le plus.
+    const DIRECTIONS = {
+      parole:     { fr: "quelque chose en vous apprend à faire de la parole un acte juste — parler moins, et plus vrai.", en: "something in you is learning to make speech a just act — to speak less, and truer." },
+      ecoute:     { fr: "quelque chose en vous s'ouvre à l'autre — vous apprenez à accueillir avant de répondre.", en: "something in you is opening to the other — you are learning to welcome before answering." },
+      presence:   { fr: "quelque chose en vous revient au présent — vous apprenez à habiter l'instant plutôt qu'à le fuir.", en: "something in you is returning to the present — you are learning to inhabit the moment rather than flee it." },
+      patience:   { fr: "quelque chose en vous travaille la maîtrise du temps — vous apprenez à endurer sans vous durcir.", en: "something in you is working on the mastery of time — you are learning to endure without hardening." },
+      reparation: { fr: "quelque chose en vous apprend à revenir — à réparer plutôt qu'à se figer dans la chute.", en: "something in you is learning to return — to repair rather than freeze in the fall." },
+      gratitude:  { fr: "quelque chose en vous apprend à voir le don — à recevoir avant de manquer.", en: "something in you is learning to see the gift — to receive before lacking." },
+      coeur:      { fr: "quelque chose en vous polit le cœur — vous apprenez à ne pas nourrir ce qui le voile.", en: "something in you is polishing the heart — you are learning not to feed what veils it." },
+      service:    { fr: "quelque chose en vous se penche vers l'autre — vous apprenez à donner sans bruit.", en: "something in you is bending toward the other — you are learning to give without noise." },
+      pratique:   { fr: "quelque chose en vous cherche le silence — vous apprenez à irriguer le dedans.", en: "something in you is seeking silence — you are learning to water the within." },
+      corps:      { fr: "quelque chose en vous écoute le corps — vous apprenez à l'honorer comme un dépôt.", en: "something in you is listening to the body — you are learning to honour it as a trust." },
+    };
+    const dom = visitees[0];
+    const directionTexte = (dom && dom.n >= 2 && nbJours >= 3 && DIRECTIONS[dom.v.id])
+      ? (EN ? DIRECTIONS[dom.v.id].en : DIRECTIONS[dom.v.id].fr)
+      : '';
+
     // === Narration douce ===
     const topNoms = visitees.slice(0, 2).map(x => `<strong>${esc(x.v.label.toLowerCase())}</strong>`);
     let recit = '';
@@ -177,6 +197,12 @@ dateEl.textContent = t('le miroir','the mirror');
 
         <p class="miroir__recit">${recit}</p>
         ${recitManque ? `<p class="miroir__recit miroir__recit--soft"><em>${recitManque}</em></p>` : ''}
+
+        ${directionTexte ? `
+          <section class="miroir-direction">
+            <span class="miroir-direction__label">${t("La direction qui se dessine","The direction taking shape")}</span>
+            <p class="miroir-direction__texte">${t("Au fil de ces jours,","Over these days,")} ${esc(directionTexte)}</p>
+          </section>` : ''}
 
         <section class="miroir-bloc">
           <h2 class="miroir-bloc__titre">${t("Vers quoi votre cœur est revenu","Where your heart has returned")}</h2>

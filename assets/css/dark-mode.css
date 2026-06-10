@@ -671,3 +671,15 @@
   color: var(--ink-soft);
   border-color: var(--gold-soft, rgba(204, 168, 102, 0.35));
 }
+/* Invitation « rien posé » en mode nuit */
+[data-theme="dark"] .accueil-carnet__invite {
+  color: var(--ink-title, var(--ink));
+}
+[data-theme="dark"] .accueil-carnet__cta {
+  color: var(--turquoise, #6FB8B0);
+  border-color: var(--gold-soft, rgba(204, 168, 102, 0.35));
+}
+[data-theme="dark"] .accueil-carnet__souffle-dot { background: var(--gold); }
+[data-theme="dark"] .accueil-carnet__souffle-dot::before {
+  border-color: var(--gold-soft, rgba(204, 168, 102, 0.4));
+}

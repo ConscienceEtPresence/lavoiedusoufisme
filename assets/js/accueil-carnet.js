@@ -26,14 +26,38 @@ else {
           fetch('/data/carnet/vigilances.json').then(r => r.json()).catch(() => ({}))
         ]);
 
-        if (!jourSnap?.exists()) return;
-        const jour = jourSnap.data();
+        const esc = s => String(s == null ? '' : s)
+          .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        const heure = d.getHours();
+
+        const jour = jourSnap?.exists() ? jourSnap.data() : {};
         const matin = jour.matin || {};
         const soir = jour.soir || {};
         const aPose = !!matin.poseLe;
         const aDepose = !!soir.fermeLe;
 
-        if (!aPose) return; // Pas posé → rien à rappeler
+        // === Cas 0 : rien posé aujourd'hui → invitation animée à poser
+        if (!aPose) {
+          const tard = heure >= 17;
+          const phrase = tard
+            ? `La journée s'avance, et rien n'a encore été posé.`
+            : `Vous n'avez rien posé pour aujourd'hui.`;
+          const ctaLabel = tard ? 'Poser, même tard' : 'Poser ma journée';
+          mount.hidden = false;
+          mount.innerHTML = `
+            <a class="accueil-carnet__lien" href="/pages/carnet/poser/" aria-label="Poser ma journée dans le carnet">
+              <span class="accueil-carnet__eyebrow">Mon carnet</span>
+              <span class="accueil-carnet__souffle" aria-hidden="true">
+                <span class="accueil-carnet__souffle-dot"></span>
+              </span>
+              <p class="accueil-carnet__invite">${esc(phrase)}</p>
+              <span class="accueil-carnet__cta">${esc(ctaLabel)}<span class="accueil-carnet__cta-arrow"> →</span></span>
+            </a>
+          `;
+          mount.classList.add('accueil-carnet--invite');
+          requestAnimationFrame(() => mount.classList.add('is-visible'));
+          return;
+        }
 
         const objectifs = objectifsRes.objectifs || [];
         const vigilances = vigilancesRes.vigilances || [];
@@ -62,9 +86,6 @@ else {
         if (matin.personnel) items.push(matin.personnel);
 
         if (!items.length) return; // garde-fou
-
-        const esc = s => String(s == null ? '' : s)
-          .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
         const itemsHTML = items.map((t, i) =>
           `<li class="accueil-carnet__item" style="--i:${i}">${esc(t)}</li>`

@@ -759,6 +759,77 @@
   letter-spacing: .03em;
 }
 
+/* ── Invitation : rien posé aujourd'hui ─────────────────────── */
+.accueil-carnet--invite {
+  max-width: 26rem;
+}
+/* Le « souffle » — un point doré qui se dilate doucement,
+   cerclé d'un halo qui s'élargit et s'efface (comme une respiration) */
+.accueil-carnet__souffle {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin: .9rem auto 1.1rem;
+  position: relative;
+}
+.accueil-carnet__souffle-dot {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: souffle-pulse 3.4s ease-in-out infinite;
+}
+.accueil-carnet__souffle-dot::before {
+  content: "";
+  position: absolute;
+  inset: -.35rem;
+  border-radius: 50%;
+  border: 1px solid var(--gold-soft);
+  animation: souffle-halo 3.4s ease-in-out infinite;
+}
+@keyframes souffle-pulse {
+  0%, 100% { transform: scale(.8); opacity: .55; }
+  50%      { transform: scale(1.15); opacity: 1; }
+}
+@keyframes souffle-halo {
+  0%, 100% { transform: scale(.6); opacity: 0; }
+  50%      { transform: scale(1.5); opacity: .7; }
+}
+.accueil-carnet__invite {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.18rem;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0 auto 1.3rem;
+  max-width: 22rem;
+}
+.accueil-carnet__cta {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: .74rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--turquoise, var(--gold-deep));
+  border-bottom: 1px solid var(--gold-soft);
+  padding-bottom: .2rem;
+  transition: letter-spacing .35s ease, color .35s ease;
+}
+.accueil-carnet__cta-arrow {
+  display: inline-block;
+  transition: transform .35s ease;
+}
+.accueil-carnet--invite .accueil-carnet__lien:hover .accueil-carnet__cta {
+  letter-spacing: .17em;
+  color: var(--turquoise, var(--gold-deep));
+}
+.accueil-carnet--invite .accueil-carnet__lien:hover .accueil-carnet__cta-arrow {
+  transform: translateX(.25rem);
+}
+
 /* État « journée déposée » — une seule ligne très douce */
 .accueil-carnet__depose {
   display: inline-block;

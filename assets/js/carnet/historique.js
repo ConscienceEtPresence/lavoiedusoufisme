@@ -50,9 +50,9 @@ const dateOuvert = params.get('j');
     ]);
     const vigilances = vigilancesRes.vigilances || [];
     const objectifs = objectifsRes.objectifs || [];
-    const STATUTS_LABEL = {
-      tenu: 'tenu', parfois: 'parfois', oublie: 'oublié', repris: 'à reprendre'
-    };
+    const STATUTS_LABEL = EN
+      ? { tenu: 'kept', parfois: 'sometimes', oublie: 'forgotten', repris: 'to take up again' }
+      : { tenu: 'tenu', parfois: 'parfois', oublie: 'oublié', repris: 'à reprendre' };
 
     const jours = [];
     joursSnap.forEach(d => jours.push({ date: d.id, data: d.data() }));
@@ -168,13 +168,13 @@ const dateOuvert = params.get('j');
 
           ${objsChoisis.length ? `
             <div class="hist-detail__bloc">
-              <span class="hist-detail__label">Mes objectifs</span>
+              <span class="hist-detail__label">${t("Mes objectifs","My objectives")}</span>
               ${objsChoisis.map(o => {
                 const b = bilansObjs[o.id] || {};
                 return `
                   <div class="hist-detail__obj">
                     <p class="hist-detail__obj-lib">${esc(o.matin.libelle)}</p>
-                    ${b.statut ? `<p class="hist-detail__obj-statut">→ ${esc(STATUTS_LABEL[b.statut] || b.statut)}</p>` : '<p class="hist-detail__obj-statut hist-detail__obj-statut--vide">— pas de bilan —</p>'}
+                    ${b.statut ? `<p class="hist-detail__obj-statut">→ ${esc(STATUTS_LABEL[b.statut] || b.statut)}</p>` : '<p class="hist-detail__obj-statut hist-detail__obj-statut--vide">${t("— pas de bilan —","— no review —")}</p>'}
                     ${b.note ? `<p class="hist-detail__obj-note">${esc(b.note)}</p>` : ''}
                   </div>`;
               }).join('')}
@@ -182,7 +182,7 @@ const dateOuvert = params.get('j');
 
           ${m.personnel ? `
             <div class="hist-detail__bloc">
-              <span class="hist-detail__label">Mon objectif personnel</span>
+              <span class="hist-detail__label">${t("Mon objectif personnel","My personal objective")}</span>
               <p>${esc(m.personnel)}</p>
               ${s.bilanPersonnel?.statut ? `<p class="hist-detail__obj-statut">→ ${esc(STATUTS_LABEL[s.bilanPersonnel.statut] || s.bilanPersonnel.statut)}</p>` : ''}
               ${s.bilanPersonnel?.note ? `<p class="hist-detail__obj-note">${esc(s.bilanPersonnel.note)}</p>` : ''}
@@ -190,19 +190,19 @@ const dateOuvert = params.get('j');
 
           ${s.presente ? `
             <div class="hist-detail__bloc">
-              <span class="hist-detail__label">Ce qui s'est présenté à moi</span>
+              <span class="hist-detail__label">${t("Ce qui s'est présenté à moi","What came to me")}</span>
               <p>${esc(s.presente)}</p>
             </div>` : ''}
 
           ${s.gratitudeNote ? `
             <div class="hist-detail__bloc">
-              <span class="hist-detail__label">Une gratitude</span>
+              <span class="hist-detail__label">${t("Une gratitude","A gratitude")}</span>
               <p>${esc(s.gratitudeNote)}</p>
             </div>` : ''}
 
           ${s.repriseTexte ? `
             <div class="hist-detail__bloc">
-              <span class="hist-detail__label">Pour demain</span>
+              <span class="hist-detail__label">${t("Pour demain","For tomorrow")}</span>
               <p>${esc(s.repriseTexte)}</p>
             </div>` : ''}
         </article>

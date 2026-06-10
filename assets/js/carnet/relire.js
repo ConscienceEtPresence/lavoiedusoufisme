@@ -192,7 +192,7 @@ dateEl.textContent = dateLisibleFromKey(date);
           </details>
 
           <div class="adab-commit">
-            <button type="button" class="adab-bouton" id="commit-relire">Déposer ce jour</button>
+            <button type="button" class="adab-bouton" id="commit-relire">${t("Déposer ce jour","Lay down this day")}</button>
             <span class="adab-ok" id="relire-ok" hidden>${t("✓ déposé","✓ laid down")}</span>
           </div>
         </section>

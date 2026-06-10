@@ -88,6 +88,16 @@ dateEl.textContent = dateLisible();
     const g = greetingByHour(heure);
     const greeting = prenom ? `${g} <em>${esc(prenom)}</em>,` : `${g},`;
 
+    // === Rythme hebdomadaire : inviter au miroir tous les 7 jours ===
+    // Commence après une semaine de présence, se réinitialise à chaque visite.
+    const MS_DAY = 86400000;
+    let carnetStart = +(localStorage.getItem('lvdd_carnet_start') || 0);
+    if (!carnetStart) { carnetStart = Date.now(); try { localStorage.setItem('lvdd_carnet_start', String(carnetStart)); } catch (e) {} }
+    const miroirVu = +(localStorage.getItem('lvdd_miroir_vu') || 0);
+    const joursDepuisDebut = (Date.now() - carnetStart) / MS_DAY;
+    const joursDepuisMiroir = miroirVu ? (Date.now() - miroirVu) / MS_DAY : Infinity;
+    const inviteMiroir = joursDepuisDebut >= 7 && joursDepuisMiroir >= 7;
+
     // === LE SEUIL DU JOUR : une sagesse à méditer, avant toute demande ===
     // L'accueil donne avant de demander. Une Ḥikma d'Iskandari, stable sur
     // la journée (elle change chaque jour), comme une lumière à porter.
@@ -235,9 +245,14 @@ dateEl.textContent = dateLisible();
             <span class="dash-souffle-cta__sous"><em>${t("un instant de présence","a moment of presence")}</em></span>
           </button>
           <div class="dash-ornement">✦</div>
-          <p class="dash-liens">
-            <a href="${BASE}miroir/">${t("Le miroir du chemin →","The mirror of the path →")}</a>
-          </p>
+          ${inviteMiroir ? `
+            <a href="${BASE}miroir/" class="dash-invite-miroir">
+              <span class="dash-invite-miroir__txt">${t("Sept jours ont passé.","Seven days have passed.")}</span>
+              <span class="dash-invite-miroir__cta">${t("Veux-tu regarder le miroir ?","Would you like to look at the mirror?")} →</span>
+            </a>` : `
+            <p class="dash-liens">
+              <a href="${BASE}miroir/">${t("Le miroir du chemin →","The mirror of the path →")}</a>
+            </p>`}
           <p class="dash-liens">
             <a href="${BASE}historique/">${t("Mes journées passées →","My past days →")}</a>
           </p>

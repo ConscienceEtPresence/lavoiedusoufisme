@@ -42,6 +42,8 @@ function joindreFr(arr) {
 }
 
 dateEl.textContent = t('le miroir','the mirror');
+// Marqueur : on a regardé le miroir aujourd'hui (réinitialise l'invitation hebdo)
+try { localStorage.setItem('lvdd_miroir_vu', String(Date.now())); } catch (e) {}
 
 (async () => {
   try {

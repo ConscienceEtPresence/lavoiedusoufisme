@@ -1,12 +1,17 @@
 /* ============================================================
-   Accueil — Bandeau « Aujourd'hui »
+   Accueil — Bandeau « Aujourd'hui » / "Today"
    Liste discrète des objectifs posés ce matin, façon page de carnet
    ouverte. S'efface si rien n'est posé ou si l'utilisateur n'a pas
    encore de carnet. Aucune salutation, aucun titre — juste les choses.
+   Bilingue (FR/EN selon document.documentElement.lang).
    ============================================================ */
 import { db } from './carnet/firebase-init.js';
 import { doc, getDoc }
   from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+const EN = document.documentElement.lang === 'en';
+const t = (fr, en) => (EN ? en : fr);
+const BASE = EN ? '/en/pages/carnet/' : '/pages/carnet/';
 
 const mount = document.getElementById('accueil-carnet');
 if (!mount) { /* page sans bandeau */ }
@@ -22,8 +27,8 @@ else {
 
         const [jourSnap, objectifsRes, vigilancesRes] = await Promise.all([
           getDoc(doc(db, 'carnets', anonId, 'jours', date)).catch(() => null),
-          fetch('/data/carnet/objectifs.json').then(r => r.json()).catch(() => ({})),
-          fetch('/data/carnet/vigilances.json').then(r => r.json()).catch(() => ({}))
+          fetch('/data/carnet/objectifs' + (EN ? '.en' : '') + '.json').then(r => r.json()).catch(() => ({})),
+          fetch('/data/carnet/vigilances' + (EN ? '.en' : '') + '.json').then(r => r.json()).catch(() => ({}))
         ]);
 
         const esc = s => String(s == null ? '' : s)
@@ -40,13 +45,13 @@ else {
         if (!aPose) {
           const tard = heure >= 17;
           const phrase = tard
-            ? `La journée s'avance, et rien n'a encore été posé.`
-            : `Vous n'avez rien posé pour aujourd'hui.`;
-          const ctaLabel = tard ? 'Poser, même tard' : 'Poser ma journée';
+            ? t("La journée s'avance, et rien n'a encore été posé.", "The day is drawing on, and nothing has been set yet.")
+            : t("Vous n'avez rien posé pour aujourd'hui.", "You have not set anything for today.");
+          const ctaLabel = tard ? t('Poser, même tard', 'Set it, even late') : t('Poser ma journée', 'Set my day');
           mount.hidden = false;
           mount.innerHTML = `
-            <a class="accueil-carnet__lien" href="/pages/carnet/poser/" aria-label="Poser ma journée dans le carnet">
-              <span class="accueil-carnet__eyebrow">Mon carnet</span>
+            <a class="accueil-carnet__lien" href="${BASE}poser/" aria-label="${t('Poser ma journée dans le carnet','Set my day in the notebook')}">
+              <span class="accueil-carnet__eyebrow">${t('Mon carnet','My notebook')}</span>
               <span class="accueil-carnet__souffle" aria-hidden="true">
                 <span class="accueil-carnet__souffle-dot"></span>
               </span>
@@ -69,8 +74,8 @@ else {
         if (aDepose) {
           mount.hidden = false;
           mount.innerHTML = `
-            <a class="accueil-carnet__lien" href="/pages/carnet/aujourdhui/">
-              <span class="accueil-carnet__depose"><em>Journée gardée.</em></span>
+            <a class="accueil-carnet__lien" href="${BASE}aujourdhui/">
+              <span class="accueil-carnet__depose"><em>${t('Journée gardée.','Day kept.')}</em></span>
             </a>
           `;
           requestAnimationFrame(() => mount.classList.add('is-visible'));
@@ -87,8 +92,8 @@ else {
 
         if (!items.length) return; // garde-fou
 
-        const itemsHTML = items.map((t, i) =>
-          `<li class="accueil-carnet__item" style="--i:${i}">${esc(t)}</li>`
+        const itemsHTML = items.map((txt, i) =>
+          `<li class="accueil-carnet__item" style="--i:${i}">${esc(txt)}</li>`
         ).join('');
 
         const sig = vig
@@ -100,9 +105,9 @@ else {
 
         mount.hidden = false;
         mount.innerHTML = `
-          <a class="accueil-carnet__lien" href="/pages/carnet/aujourdhui/" aria-label="Reprendre mon carnet d'aujourd'hui">
-            <span class="accueil-carnet__eyebrow">Mon carnet</span>
-            <span class="accueil-carnet__date">Aujourd'hui</span>
+          <a class="accueil-carnet__lien" href="${BASE}aujourdhui/" aria-label="${t("Reprendre mon carnet d'aujourd'hui","Resume my notebook for today")}">
+            <span class="accueil-carnet__eyebrow">${t('Mon carnet','My notebook')}</span>
+            <span class="accueil-carnet__date">${t("Aujourd'hui",'Today')}</span>
             <ul class="accueil-carnet__liste">${itemsHTML}</ul>
             ${sig}
           </a>

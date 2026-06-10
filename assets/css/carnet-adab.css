@@ -2367,3 +2367,34 @@ body.carnet-body {
   margin: 0;
   min-height: 2rem;
 }
+
+/* Invitation hebdomadaire au miroir (tous les 7 jours) */
+.dash-invite-miroir {
+  display: block;
+  max-width: 26rem;
+  margin: 0 auto 1rem;
+  padding: 1rem 1.4rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid var(--adab-gold);
+  background: linear-gradient(180deg, rgba(255,250,238,.7), rgba(245,234,208,.4));
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.dash-invite-miroir:hover { transform: translateY(-1px); box-shadow: 0 12px 26px -20px rgba(138,112,40,.5); }
+.dash-invite-miroir__txt {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--adab-ink);
+}
+.dash-invite-miroir__cta {
+  display: block;
+  margin-top: .3rem;
+  font-family: 'Inter', sans-serif;
+  font-size: .72rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+}

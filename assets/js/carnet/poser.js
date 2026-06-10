@@ -13,6 +13,11 @@ const anonId = localStorage.getItem('lvdd_carnet_id') || (() => {
   return id;
 })();
 const prenom = localStorage.getItem('lvdd_carnet_prenom') || '';
+const EN = document.documentElement.lang === 'en';
+const BASE = EN ? '/en/pages/carnet/' : '/pages/carnet/';
+const t = (fr, en) => (EN ? en : fr);
+const LOCALE = EN ? 'en-US' : 'fr-FR';
+
 
 const mount = document.getElementById('poser-mount');
 const dateEl = document.getElementById('adab-date');
@@ -22,7 +27,7 @@ function todayKey() {
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
 function dateLisible() {
-  return new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+  return new Date().toLocaleDateString(LOCALE, { weekday: 'long', day: 'numeric', month: 'long' });
 }
 function esc(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -35,8 +40,8 @@ const date = todayKey();
 (async () => {
   try {
     const [vigilancesRes, objectifsRes, hikamRes, nomsLookup, jourSnap] = await Promise.all([
-      fetch('/data/carnet/vigilances.json').then(r => r.json()),
-      fetch('/data/carnet/objectifs.json').then(r => r.json()),
+      fetch('/data/carnet/vigilances' + (EN ? '.en' : '') + '.json').then(r => r.json()),
+      fetch('/data/carnet/objectifs' + (EN ? '.en' : '') + '.json').then(r => r.json()),
       fetch('/data/iskandari/hikam-complet.json').then(r => r.json()),
       fetch('/data/carnet/noms-lookup.json').then(r => r.json()).catch(() => ({})),
       getDoc(doc(db, 'carnets', anonId, 'jours', date)).catch(() => null)
@@ -342,7 +347,7 @@ const date = todayKey();
           </p>
 
           <div class="adab-pose-actions">
-            <a href="/pages/carnet/aujourdhui/" class="adab-bouton adab-bouton--ghost">Sortir du carnet</a>
+            <a href="${BASE}aujourdhui/" class="adab-bouton adab-bouton--ghost">Sortir du carnet</a>
             <button type="button" class="adab-bouton-secondaire" id="modifier-pose">Modifier mon choix</button>
           </div>
         </section>

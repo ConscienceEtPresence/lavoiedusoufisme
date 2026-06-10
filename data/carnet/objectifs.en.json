@@ -1,0 +1,1606 @@
+{
+  "version": 2,
+  "lang": "en",
+  "description": "Library of concrete objectives for the adab notebook, in English.",
+  "statuts": [
+    {
+      "id": "tenu",
+      "label": "kept"
+    },
+    {
+      "id": "parfois",
+      "label": "sometimes"
+    },
+    {
+      "id": "oublie",
+      "label": "forgotten"
+    },
+    {
+      "id": "repris",
+      "label": "to take up again"
+    }
+  ],
+  "paroles_generiques": {
+    "tenu": "What is held in silence is kept by the One who sees the hidden. Keep the joy without weighing it.",
+    "parfois": "To hold sometimes is already to hold. Constancy is born of honoured intermittence.",
+    "oublie": "A fault acknowledged opens a door that innocence never knew. The return is already the path.",
+    "repris": "To take it up smaller tomorrow is not a defeat — it is an act of wisdom."
+  },
+  "objectifs": [
+    {
+      "id": "ecouter-sans-preparer",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Listen without preparing my reply",
+        "enseignement_court": "To listen is to let the other exist without reducing him to my reply. It is a gift before it is a technique.",
+        "sagesse_hikam_id": 9,
+        "nom_remede": "as-Samīʿ",
+        "nom_remede_ar": "السَّمِيع",
+        "phrase_chemin": "You carry this presence to the other. Go."
+      },
+      "soir": {
+        "question": "When was I tempted to cut in today? What was I missing?",
+        "paroles": {
+          "tenu": "Full listening is an act of adab often invisible to others — but not to the heart.",
+          "parfois": "Complete attention is a path. You did your part.",
+          "oublie": "Take it up smaller tomorrow: listen to one single person, fully, once.",
+          "repris": "The return is already the path. Tomorrow, begin again."
+        }
+      }
+    },
+    {
+      "id": "ne-pas-couper-parole",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Not cut others off",
+        "enseignement_court": "To let the other finish is to grant him a dignity. To cut in is already to judge what one has not yet heard.",
+        "sagesse_hikam_id": 19,
+        "nom_remede": "al-Ḥalīm",
+        "nom_remede_ar": "الْحَلِيم",
+        "phrase_chemin": "Keep silence as a gift."
+      },
+      "soir": {
+        "question": "How many times did I interrupt today? What pushed me to speak?",
+        "paroles": {
+          "tenu": "Keeping silence so the other may speak — that is already an act of adab.",
+          "parfois": "Every silence kept is a fruit. Keep it without announcing it.",
+          "oublie": "Ḥilm is learned through use. Tomorrow, wait half a second longer.",
+          "repris": "Take it up smaller: one single conversation, tomorrow, without interrupting."
+        }
+      }
+    },
+    {
+      "id": "baisser-voix",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Lower my voice before explaining",
+        "enseignement_court": "Truth spoken harshly often wounds the very one it meant to awaken. The low voice is an adab.",
+        "sagesse_hikam_id": 56,
+        "nom_remede": "al-Laṭīf",
+        "nom_remede_ar": "اللَّطِيف",
+        "phrase_chemin": "A gentle voice opens where the loud voice closes."
+      },
+      "soir": {
+        "question": "Did I raise my voice today to be right? What wanted to be heard?",
+        "paroles": {
+          "tenu": "A low voice carried by truth — that is the timbre of lovers.",
+          "parfois": "Mastery of one's tone is a discipline. You have begun.",
+          "oublie": "The loud voice often hides a fear. Spot it tomorrow before it comes out.",
+          "repris": "Take it up in silence tomorrow: once, lower your voice before speaking."
+        }
+      }
+    },
+    {
+      "id": "ne-pas-parler-absent",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Not speak of one who is absent",
+        "enseignement_court": "To protect the absent is to keep an amāna of speech — a deposit entrusted to my silence.",
+        "sagesse_hikam_id": 144,
+        "nom_remede": "as-Sittīr",
+        "nom_remede_ar": "السِّتِّير",
+        "phrase_chemin": "Silence about an absent one is an invisible protection."
+      },
+      "soir": {
+        "question": "Did I comment on someone in their absence today? What did it say about me?",
+        "paroles": {
+          "tenu": "To keep the absent from gossip is to love him beyond the encounter.",
+          "parfois": "A word withheld is more precious than a thousand words added.",
+          "oublie": "To recognise ghība is already to begin undoing it. A silent blessing tomorrow erases a bad word from yesterday.",
+          "repris": "Tomorrow: choose one person, and keep silent about them, even if they come up in conversation."
+        }
+      }
+    },
+    {
+      "id": "dire-non-doux",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Say no without harshness",
+        "enseignement_court": "To say no without harshness is a faithfulness to truth. It is not closing the heart — it is recognising right measure.",
+        "sagesse_hikam_id": 17,
+        "nom_remede": "al-Ḥaqq",
+        "nom_remede_ar": "الْحَقّ",
+        "phrase_chemin": "A just no protects the truth of the bond."
+      },
+      "soir": {
+        "question": "Did I say yes today where my heart said no? What made me give in?",
+        "paroles": {
+          "tenu": "A no set down in gentleness is more precious than a forced yes.",
+          "parfois": "Learning to say no is the work of a lifetime. You have begun.",
+          "oublie": "The complacent yes is a lie to oneself. Spot tomorrow the moment you will give in.",
+          "repris": "Tomorrow: prepare a no, simple, without excuses, and hold it once."
+        }
+      }
+    },
+    {
+      "id": "retenir-parole-inutile",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Hold back a useless word",
+        "enseignement_court": "Every word counts. What has no need to be said weighs down the inner silence.",
+        "sagesse_hikam_id": 12,
+        "nom_remede": "aṣ-Ṣamad",
+        "nom_remede_ar": "الصَّمَد",
+        "phrase_chemin": "Silence is rarer than speech. Keep it."
+      },
+      "soir": {
+        "question": "Did I speak to fill a void today? What should have been kept?",
+        "paroles": {
+          "tenu": "Chosen silence is a wordless praise.",
+          "parfois": "The discipline of speech is built in flashes. You had your flashes.",
+          "oublie": "To speak too much is often to flee an uncomfortable silence. Inhabit it tomorrow.",
+          "repris": "Tomorrow: choose one conversation where you will speak less than you listen."
+        }
+      }
+    },
+    {
+      "id": "eviter-ironie",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Avoid wounding irony",
+        "enseignement_court": "Irony protects the one who throws it and cuts the one who receives it. It is rarely the path of truth.",
+        "sagesse_hikam_id": 60,
+        "nom_remede": "al-Ḥalīm",
+        "nom_remede_ar": "الْحَلِيم",
+        "phrase_chemin": "Speak plainly, without arrows."
+      },
+      "soir": {
+        "question": "Did I throw an irony today? What was it hiding?",
+        "paroles": {
+          "tenu": "Straight speech, without sting, is a rest for the other as for you.",
+          "parfois": "Giving up irony is a gentle weaning. You are working at it.",
+          "oublie": "Irony is an old armour. Spot it without judging yourself.",
+          "repris": "Tomorrow: spot one irony rising, and do not say it."
+        }
+      }
+    },
+    {
+      "id": "parler-bien-absent",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Speak well of one who is absent",
+        "enseignement_court": "Where ghība tears, praise of an absent one repairs. What you say of him in his absence builds him.",
+        "sagesse_hikam_id": 235,
+        "nom_remede": "al-Wadūd",
+        "nom_remede_ar": "الْوَدُود",
+        "phrase_chemin": "Bless him through speech."
+      },
+      "soir": {
+        "question": "Did I speak well of someone today who was not there?",
+        "paroles": {
+          "tenu": "The silent praise of an absent one is a blessing that circulates.",
+          "parfois": "Even a gentle word about someone counts.",
+          "oublie": "We forget to bless those we love. Tomorrow, name one in good.",
+          "repris": "Tomorrow: one single person, one good word said in their absence."
+        }
+      }
+    },
+    {
+      "id": "demander-pardon-explicite",
+      "vigilance": "parole",
+      "matin": {
+        "libelle": "Say sorry explicitly",
+        "enseignement_court": "A pardon said clearly is worth a thousand implied ones. The word has its own power.",
+        "sagesse_hikam_id": 130,
+        "nom_remede": "at-Tawwāb",
+        "nom_remede_ar": "التَّوَّاب",
+        "phrase_chemin": "Say the word. Not around it."
+      },
+      "soir": {
+        "question": "Is there a pardon I dodged today by merely implying it?",
+        "paroles": {
+          "tenu": "To say sorry, simply, opens a door nothing else can open.",
+          "parfois": "Even a stammered pardon works.",
+          "oublie": "Pride holds back the word. Spot it without fighting it.",
+          "repris": "Tomorrow: one pardon, one word, to one single person."
+        }
+      }
+    },
+    {
+      "id": "ecouter-enfant",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Listen to my child without correcting at once",
+        "enseignement_court": "A child who feels heard learns to trust himself. To correct too quickly is to teach him to hide.",
+        "sagesse_hikam_id": 41,
+        "nom_remede": "ar-Raʾūf",
+        "nom_remede_ar": "الرَّؤُوف",
+        "phrase_chemin": "Listen to him as you would wish to be listened to."
+      },
+      "soir": {
+        "question": "Did I let my child reach the end of what he had to say? What did I hear that was new?",
+        "paroles": {
+          "tenu": "A child listened to keeps the trace of that listening long after you have forgotten.",
+          "parfois": "Every listening held counts. The child's heart counts them too.",
+          "oublie": "Quick correction is an old reflex. Tomorrow, wait one more sentence before answering.",
+          "repris": "Tomorrow: one single moment, listen without stepping in. That is enough."
+        }
+      }
+    },
+    {
+      "id": "ecouter-sans-corriger",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Listen without correcting the other",
+        "enseignement_court": "To correct is already to step out of listening. Sometimes the other is not waiting for a correction — he is waiting to be heard.",
+        "sagesse_hikam_id": 152,
+        "nom_remede": "as-Samīʿ",
+        "nom_remede_ar": "السَّمِيع",
+        "phrase_chemin": "Let the other exist in his own truth."
+      },
+      "soir": {
+        "question": "Did I pounce on a mistake to correct it? What would silence have brought instead?",
+        "paroles": {
+          "tenu": "To leave the other in his truth, even imperfect, is to love him.",
+          "parfois": "The urge to correct often comes from fear. You named it sometimes.",
+          "oublie": "The need to be right is a veil. Tomorrow, observe it without acting.",
+          "repris": "Tomorrow: one single conversation, with no correction at all."
+        }
+      }
+    },
+    {
+      "id": "ecouter-regard",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Listen while looking at the person",
+        "enseignement_court": "Listening passes through the gaze. To look away while listening is already to leave for elsewhere.",
+        "sagesse_hikam_id": 80,
+        "nom_remede": "al-Baṣīr",
+        "nom_remede_ar": "الْبَصِير",
+        "phrase_chemin": "Set down your gaze. Stay."
+      },
+      "soir": {
+        "question": "Did I listen while looking today, or with my phone in my hands? Who deserved my whole gaze?",
+        "paroles": {
+          "tenu": "A gaze set upon the other is a silent gift.",
+          "parfois": "The gaze is disciplined like speech. You have begun.",
+          "oublie": "The phone is an easy veil. Tomorrow, set it down when someone speaks to you.",
+          "repris": "Tomorrow: one single conversation, without a screen, looking."
+        }
+      }
+    },
+    {
+      "id": "ecouter-personne-colere",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Listen to someone angry without defending myself",
+        "enseignement_court": "Beneath anger there is often a wound. To listen to the wound rather than defend the form is to defuse.",
+        "sagesse_hikam_id": 231,
+        "nom_remede": "al-Ḥalīm",
+        "nom_remede_ar": "الْحَلِيم",
+        "phrase_chemin": "Listen, without defending yourself."
+      },
+      "soir": {
+        "question": "Did someone speak to me harshly today? Did I listen, or return blow for blow?",
+        "paroles": {
+          "tenu": "To listen to anger without returning it is to disarm without wounding.",
+          "parfois": "To hold partly before a storm is already a fruit.",
+          "oublie": "The reflex of defence is old and deep. Honour it without following it.",
+          "repris": "Tomorrow: if anger comes, wait three breaths before answering."
+        }
+      }
+    },
+    {
+      "id": "ecouter-sans-solution",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Listen without offering a solution",
+        "enseignement_court": "We seek to solve in order to flee listening. Sometimes the awaited solution is presence.",
+        "sagesse_hikam_id": 78,
+        "nom_remede": "as-Samīʿ",
+        "nom_remede_ar": "السَّمِيع",
+        "phrase_chemin": "Stay. Without offering anything."
+      },
+      "soir": {
+        "question": "Did I offer a solution where the other only wanted to be heard?",
+        "paroles": {
+          "tenu": "Listening without a solution is rarer and more precious than we think.",
+          "parfois": "The reflex to solve calms through use.",
+          "oublie": "The need to be useful can be a veil. Tomorrow, be useless once.",
+          "repris": "Tomorrow: one conversation where you are not allowed to offer a solution."
+        }
+      }
+    },
+    {
+      "id": "ecouter-conjoint",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Listen to my spouse without answering at once",
+        "enseignement_court": "Those we love most often receive our least listening. One whole conversation changes the bond.",
+        "sagesse_hikam_id": 39,
+        "nom_remede": "ar-Raʾūf",
+        "nom_remede_ar": "الرَّؤُوف",
+        "phrase_chemin": "Listen to him, or to her, like a precious stranger."
+      },
+      "soir": {
+        "question": "Did I truly listen to my spouse today? Or did I only wait for my turn?",
+        "paroles": {
+          "tenu": "One full listening, to the one we love, is a seal.",
+          "parfois": "The couple is built in repeated listenings.",
+          "oublie": "Loved ones often receive our tiredness. Forgive yourself, and take it up again.",
+          "repris": "Tomorrow: a short moment, present, just to listen."
+        }
+      }
+    },
+    {
+      "id": "ecouter-silence",
+      "vigilance": "ecoute",
+      "matin": {
+        "libelle": "Listen to the silence after the words",
+        "enseignement_court": "After a sentence, wait. The silence sometimes carries what the words did not say. Listening to silence is an art.",
+        "sagesse_hikam_id": 11,
+        "nom_remede": "al-Bāṭin",
+        "nom_remede_ar": "الْبَاطِن",
+        "phrase_chemin": "Let the silence speak after the words."
+      },
+      "soir": {
+        "question": "Did I listen to a silence today, or quickly fill every gap?",
+        "paroles": {
+          "tenu": "Silence listened to is a deeper listening than speech heard.",
+          "parfois": "You are learning to inhabit the pauses.",
+          "oublie": "Filling silences is a reflex of discomfort. Tomorrow, accept a pause.",
+          "repris": "Tomorrow: one pause, three seconds, after someone has spoken."
+        }
+      }
+    },
+    {
+      "id": "poser-telephone",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Set the phone down for five minutes",
+        "enseignement_court": "Five minutes without a screen is five minutes given back to what is. Presence is rarer than connection.",
+        "sagesse_hikam_id": 11,
+        "nom_remede": "al-Quddūs",
+        "nom_remede_ar": "الْقُدُّوس",
+        "phrase_chemin": "Go, and leave the screen on the table."
+      },
+      "soir": {
+        "question": "How many times did I reach for the screen without deciding to? What did I find when I left it?",
+        "paroles": {
+          "tenu": "Five inhabited minutes are worth an hour of empty scrolling.",
+          "parfois": "Each pause taken is a silent victory.",
+          "oublie": "The reflex is stronger than the decision — at first. Tomorrow, choose one moment of pause.",
+          "repris": "Tomorrow: a meal without a phone. Just once."
+        }
+      }
+    },
+    {
+      "id": "habiter-souffle",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Inhabit three breaths in the day",
+        "enseignement_court": "Three conscious breaths are enough to recall the heart to where it is. Presence needs only a second to return.",
+        "sagesse_hikam_id": 20,
+        "nom_remede": "al-Ḥayy",
+        "nom_remede_ar": "الْحَيّ",
+        "phrase_chemin": "Return to the breath. That is all."
+      },
+      "soir": {
+        "question": "Did I recall myself to myself today? When?",
+        "paroles": {
+          "tenu": "Three inhabited breaths, and the day becomes a witness.",
+          "parfois": "One single conscious breath is already a return.",
+          "oublie": "The breath waits, without moving. Tomorrow, it will be there.",
+          "repris": "Tomorrow: one single breath, before the morning coffee."
+        }
+      }
+    },
+    {
+      "id": "manger-lentement",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Eat slowly, one meal in presence",
+        "enseignement_court": "To eat is an encounter with what is given. To eat slowly is to honour the Giver.",
+        "sagesse_hikam_id": 152,
+        "nom_remede": "ar-Razzāq",
+        "nom_remede_ar": "الرَّزَّاق",
+        "phrase_chemin": "Eat what you eat."
+      },
+      "soir": {
+        "question": "Did I taste what I ate today? Which meal passed without my seeing it?",
+        "paroles": {
+          "tenu": "An inhabited meal is a praise in silence.",
+          "parfois": "One single meal eaten in presence reminds the body it is loved.",
+          "oublie": "The hurried meal has become a habit. Tomorrow, choose one, and slow down.",
+          "repris": "Tomorrow: one single bite, eaten in presence, without a screen."
+        }
+      }
+    },
+    {
+      "id": "marcher-conscient",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Walk in presence for five minutes",
+        "enseignement_court": "To walk knowing one walks is already a prayer. The step becomes dhikr when the heart is there.",
+        "sagesse_hikam_id": 256,
+        "nom_remede": "al-Hādī",
+        "nom_remede_ar": "الْهَادِي",
+        "phrase_chemin": "Walk, and return to yourself as you walk."
+      },
+      "soir": {
+        "question": "Did I walk today without running mentally? Where was I when my feet were here?",
+        "paroles": {
+          "tenu": "Five minutes of inhabited walking are worth a short retreat.",
+          "parfois": "A conscious step is a step toward God.",
+          "oublie": "The mind runs ahead of the feet. Tomorrow, slow down once.",
+          "repris": "Tomorrow: one short journey, on foot, in presence."
+        }
+      }
+    },
+    {
+      "id": "cuisiner-presence",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Prepare a meal in presence",
+        "enseignement_court": "To chop, to stir, to wait for the cooking — each gesture can be a dhikr if the heart stays there.",
+        "sagesse_hikam_id": 9,
+        "nom_remede": "ar-Razzāq",
+        "nom_remede_ar": "الرَّزَّاق",
+        "phrase_chemin": "Cook as one prays: without haste."
+      },
+      "soir": {
+        "question": "Did I inhabit what I prepared today?",
+        "paroles": {
+          "tenu": "A meal prepared in presence nourishes twice.",
+          "parfois": "A few inhabited minutes in the kitchen are already a fruit.",
+          "oublie": "We often rush when preparing. Tomorrow, slow down one single time.",
+          "repris": "Tomorrow: one single dish, prepared without rushing."
+        }
+      }
+    },
+    {
+      "id": "priere-attentive",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Pray one prayer in full presence",
+        "enseignement_court": "A distracted prayer passes; an inhabited prayer remains. Quantity does not save quality.",
+        "sagesse_hikam_id": 116,
+        "nom_remede": "al-Quddūs",
+        "nom_remede_ar": "الْقُدُّوس",
+        "phrase_chemin": "One prayer, truly inhabited."
+      },
+      "soir": {
+        "question": "Did I hold my presence in at least one prayer today?",
+        "paroles": {
+          "tenu": "One inhabited prayer is worth a thousand prayers full of distraction.",
+          "parfois": "Presence in prayer is built prayer after prayer.",
+          "oublie": "The mind is clever at fleeing. Return, gently, without judging yourself.",
+          "repris": "Tomorrow: one single rakʿa, in full presence. That is enough."
+        }
+      }
+    },
+    {
+      "id": "contempler-ciel",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Look at the sky for five minutes",
+        "enseignement_court": "To raise the eyes to the sky recalls the soul to its proportion. The sky asks nothing — it invites.",
+        "sagesse_hikam_id": 13,
+        "nom_remede": "al-Khāliq",
+        "nom_remede_ar": "الْخَالِق",
+        "phrase_chemin": "Raise your eyes. Stay there."
+      },
+      "soir": {
+        "question": "Did I raise my eyes to the sky today — really?",
+        "paroles": {
+          "tenu": "Five minutes of sky give the soul back its height.",
+          "parfois": "A glance toward the sky is never lost.",
+          "oublie": "The sky waits, patient. Tomorrow, it will be there.",
+          "repris": "Tomorrow: one single moment, eyes to the sky, without a phone."
+        }
+      }
+    },
+    {
+      "id": "attendre-sans-ecran",
+      "vigilance": "presence",
+      "matin": {
+        "libelle": "Wait somewhere without taking out the phone",
+        "enseignement_court": "Minutes of waiting are islands. To fill them with screen is to drown them. To inhabit them is to transform them.",
+        "sagesse_hikam_id": 15,
+        "nom_remede": "aṣ-Ṣabūr",
+        "nom_remede_ar": "الصَّبُور",
+        "phrase_chemin": "Wait by inhabiting the waiting."
+      },
+      "soir": {
+        "question": "How many times did I take out the phone by reflex of waiting?",
+        "paroles": {
+          "tenu": "An inhabited wait becomes an encounter with oneself.",
+          "parfois": "You are learning to bear the empty spaces.",
+          "oublie": "The reflex to fill is strong. Spot it without fighting it.",
+          "repris": "Tomorrow: one single queue, without a phone."
+        }
+      }
+    },
+    {
+      "id": "differer-reponse",
+      "vigilance": "patience",
+      "matin": {
+        "libelle": "Defer a difficult answer to tomorrow",
+        "enseignement_court": "A ripened answer is better than a true answer said too soon. Patience prepares rightness.",
+        "sagesse_hikam_id": 5,
+        "nom_remede": "aṣ-Ṣabūr",
+        "nom_remede_ar": "الصَّبُور",
+        "phrase_chemin": "Wait, without fleeing."
+      },
+      "soir": {
+        "question": "Did I want to answer quickly today, where waiting would have served better?",
+        "paroles": {
+          "tenu": "To defer is not to retreat — it is to ripen.",
+          "parfois": "Patience is discovered in crossing the delay.",
+          "oublie": "Answering quickly soothes for an instant but costs for long. Tomorrow, delay an answer by an hour.",
+          "repris": "Tomorrow: one single time, say “I will answer you later.”"
+        }
+      }
+    },
+    {
+      "id": "accepter-delai",
+      "vigilance": "patience",
+      "matin": {
+        "libelle": "Accept a delay without forcing it",
+        "enseignement_court": "To force time is to force God. Patience recognises that what must come will come in its hour.",
+        "sagesse_hikam_id": 6,
+        "nom_remede": "al-Muqaddim",
+        "nom_remede_ar": "الْمُقَدِّم",
+        "phrase_chemin": "Entrust time to the One who holds it."
+      },
+      "soir": {
+        "question": "Which delay annoyed me today? What was it trying to teach me?",
+        "paroles": {
+          "tenu": "The accepted delay becomes a school.",
+          "parfois": "Patience before time is the work of a lifetime.",
+          "oublie": "Impatience is a youth of the soul. It calms through use.",
+          "repris": "Tomorrow: one single delay, accept it without commenting on it."
+        }
+      }
+    },
+    {
+      "id": "attendre-cinq-minutes",
+      "vigilance": "patience",
+      "matin": {
+        "libelle": "Wait five minutes before reacting",
+        "enseignement_court": "Five minutes between impulse and act often change the course of a day.",
+        "sagesse_hikam_id": 113,
+        "nom_remede": "al-Ḥalīm",
+        "nom_remede_ar": "الْحَلِيم",
+        "phrase_chemin": "Five minutes — and you will see differently."
+      },
+      "soir": {
+        "question": "When the impulse came, did I wait? What should I have waited for?",
+        "paroles": {
+          "tenu": "Five minutes waited are a heart saved.",
+          "parfois": "Waiting becomes a strength once you have tested it.",
+          "oublie": "The impulse is a visitor — it leaves if you do not feed it.",
+          "repris": "Tomorrow: one single impulse, wait five minutes before answering it."
+        }
+      }
+    },
+    {
+      "id": "ne-pas-verifier-telephone",
+      "vigilance": "patience",
+      "matin": {
+        "libelle": "Not check the phone every five minutes",
+        "enseignement_court": "Compulsive checking comes from a fear of missing out. To miss out is also a grace.",
+        "sagesse_hikam_id": 4,
+        "nom_remede": "al-Muqīt",
+        "nom_remede_ar": "الْمُقِيت",
+        "phrase_chemin": "Set it down. Really."
+      },
+      "soir": {
+        "question": "How many times did I check the phone needlessly today?",
+        "paroles": {
+          "tenu": "The hand that no longer reaches for the screen is a free hand.",
+          "parfois": "To space out the checks is a weaning. You are working at it.",
+          "oublie": "Compulsion can be tamed, not fought. Observe.",
+          "repris": "Tomorrow: set the phone in another room, for an hour."
+        }
+      }
+    },
+    {
+      "id": "attendre-reponse",
+      "vigilance": "patience",
+      "matin": {
+        "libelle": "Wait for a reply without chasing it",
+        "enseignement_court": "To chase too quickly is to force the other. To wait is to trust him — and to trust time.",
+        "sagesse_hikam_id": 5,
+        "nom_remede": "aṣ-Ṣabūr",
+        "nom_remede_ar": "الصَّبُور",
+        "phrase_chemin": "Wait. The reply will come or will not come."
+      },
+      "soir": {
+        "question": "Did I chase someone today who had not replied to me?",
+        "paroles": {
+          "tenu": "Not chasing is an act of gentle humility.",
+          "parfois": "You are beginning to respect others' time.",
+          "oublie": "The need for a reply often reveals an insecurity. Honour it.",
+          "repris": "Tomorrow: one single wait, without any chasing."
+        }
+      }
+    },
+    {
+      "id": "accepter-imprevu",
+      "vigilance": "patience",
+      "matin": {
+        "libelle": "Welcome the unforeseen without cursing it",
+        "enseignement_court": "The unforeseen is often the appointment God set without warning us. To curse it is to miss the appointment.",
+        "sagesse_hikam_id": 17,
+        "nom_remede": "al-Ḥakīm",
+        "nom_remede_ar": "الْحَكِيم",
+        "phrase_chemin": "The unforeseen may be your best teacher of the day."
+      },
+      "soir": {
+        "question": "What unforeseen thing came today? How did I receive it?",
+        "paroles": {
+          "tenu": "An unforeseen thing welcomed is a door opened to grace.",
+          "parfois": "You are beginning to see beyond “this wasn't planned.”",
+          "oublie": "Control is stubborn. Tomorrow, say “ahlan” to the unforeseen.",
+          "repris": "Tomorrow: one unforeseen thing — welcome it without commenting."
+        }
+      }
+    },
+    {
+      "id": "supporter-lenteur",
+      "vigilance": "patience",
+      "matin": {
+        "libelle": "Bear the slowness of a loved one",
+        "enseignement_court": "Our pace is not the measure of the world. The other's slowness is not his flaw — it is his tempo.",
+        "sagesse_hikam_id": 22,
+        "nom_remede": "al-Ḥalīm",
+        "nom_remede_ar": "الْحَلِيم",
+        "phrase_chemin": "Slow down to join his step."
+      },
+      "soir": {
+        "question": "Did I grumble inwardly at someone's slowness today?",
+        "paroles": {
+          "tenu": "To walk at a loved one's pace is to offer him your time.",
+          "parfois": "You are learning to adjust your rhythm.",
+          "oublie": "Visible impatience wounds. Invisible impatience too.",
+          "repris": "Tomorrow: follow a loved one at their pace, without shifting a gear."
+        }
+      }
+    },
+    {
+      "id": "demander-pardon",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Ask forgiveness from someone I wounded",
+        "enseignement_court": "To ask forgiveness is not to collapse. It is to acknowledge. True tawba acts before it justifies.",
+        "sagesse_hikam_id": 47,
+        "nom_remede": "at-Tawwāb",
+        "nom_remede_ar": "التَّوَّاب",
+        "phrase_chemin": "Return, simply. That is all."
+      },
+      "soir": {
+        "question": "Did I find the words today? If not, what held me back?",
+        "paroles": {
+          "tenu": "To ask forgiveness opens a door no silent regret can open.",
+          "parfois": "Even a start of a pardon opens something.",
+          "oublie": "The delayed pardon remains possible. Tomorrow is still here.",
+          "repris": "Tomorrow: one word, short, sincere. That is enough."
+        }
+      }
+    },
+    {
+      "id": "reparler-doucement",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Speak gently again to the one I was harsh with",
+        "enseignement_court": "To take up the same conversation, in a lower voice, is more powerful than a long speech.",
+        "sagesse_hikam_id": 150,
+        "nom_remede": "ar-Raʾūf",
+        "nom_remede_ar": "الرَّؤُوف",
+        "phrase_chemin": "Speak again, as if the first time had not happened."
+      },
+      "soir": {
+        "question": "Did I take up speech again with gentleness today? What did that gentleness allow?",
+        "paroles": {
+          "tenu": "A word taken up again in gentleness erases three harsh words.",
+          "parfois": "To take it up again is already to love.",
+          "oublie": "The reflex of defence is old. Tomorrow, observe it, without acting.",
+          "repris": "Tomorrow: one single sentence taken up again, gentler."
+        }
+      }
+    },
+    {
+      "id": "ecrire-sans-envoyer",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Write without sending",
+        "enseignement_court": "To write what one will not say is already to say it to oneself. Not everything needs to leave to do its work.",
+        "sagesse_hikam_id": 73,
+        "nom_remede": "al-Bāṭin",
+        "nom_remede_ar": "الْبَاطِن",
+        "phrase_chemin": "Write for yourself. Keep silence for the other."
+      },
+      "soir": {
+        "question": "Did I write today what I had no need to send?",
+        "paroles": {
+          "tenu": "A letter kept is a word transformed.",
+          "parfois": "Even a few lines written for oneself do their work.",
+          "oublie": "The need to send is often a need to be heard. The journal already hears.",
+          "repris": "Tomorrow: three lines, for yourself alone."
+        }
+      }
+    },
+    {
+      "id": "tenir-promesse",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Keep a tiny forgotten promise",
+        "enseignement_court": "A tiny promise kept repairs more than a great promise remade.",
+        "sagesse_hikam_id": 8,
+        "nom_remede": "al-Wakīl",
+        "nom_remede_ar": "الْوَكِيل",
+        "phrase_chemin": "Do the small thing. It is the truth."
+      },
+      "soir": {
+        "question": "Did I honour today a word given yesterday? Which one remains pending?",
+        "paroles": {
+          "tenu": "Keeping a tiny promise is the seal of character.",
+          "parfois": "Even a part kept builds the heart.",
+          "oublie": "A forgotten promise is not lost as long as it can be honoured tomorrow.",
+          "repris": "Tomorrow: one single promise, chosen, kept."
+        }
+      }
+    },
+    {
+      "id": "corriger-parole-injuste",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Correct an unjust word said yesterday",
+        "enseignement_court": "An unjust word stands as long as one leaves it hanging. To restore it is to do justice to the one who was not there to defend himself.",
+        "sagesse_hikam_id": 138,
+        "nom_remede": "al-Ḥaqq",
+        "nom_remede_ar": "الْحَقّ",
+        "phrase_chemin": "Set it right. Without drama."
+      },
+      "soir": {
+        "question": "Is there an unjust word I left hanging today?",
+        "paroles": {
+          "tenu": "To restore the true is an act of quiet courage.",
+          "parfois": "Even a stammered correction has its power.",
+          "oublie": "We often prefer forgetting to setting right. Tomorrow, restore once.",
+          "repris": "Tomorrow: one sentence, before the right people, to give back the truth."
+        }
+      }
+    },
+    {
+      "id": "benir-quelqu-un",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Bless someone I judged yesterday",
+        "enseignement_court": "To bless the one we judged is to undo the judgement from below. The blessing is stronger than resentment.",
+        "sagesse_hikam_id": 234,
+        "nom_remede": "al-Wadūd",
+        "nom_remede_ar": "الْوَدُود",
+        "phrase_chemin": "May good be given to him."
+      },
+      "soir": {
+        "question": "Did I bless in my heart someone I was judging?",
+        "paroles": {
+          "tenu": "The silent blessing undoes judgement at the root.",
+          "parfois": "The heart learns to bless before judging.",
+          "oublie": "Judgement will return. Bless it too.",
+          "repris": "Tomorrow: one person, in your heart, in silence: “may good be given to him.”"
+        }
+      }
+    },
+    {
+      "id": "contacter-eloigne",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Reach someone I have drifted from",
+        "enseignement_court": "A short message to a loved one lost from sight mends more than a long accusing silence.",
+        "sagesse_hikam_id": 232,
+        "nom_remede": "al-Karīm",
+        "nom_remede_ar": "الْكَرِيم",
+        "phrase_chemin": "One message, short, without excuses."
+      },
+      "soir": {
+        "question": "Is there someone I could have reached today?",
+        "paroles": {
+          "tenu": "A thread retied is worth ten years of distance.",
+          "parfois": "You are beginning to break the silence.",
+          "oublie": "Pride holds back. Tomorrow, spot whom you could reach.",
+          "repris": "Tomorrow: one single person, one single message, without expectation."
+        }
+      }
+    },
+    {
+      "id": "finir-chose-oubliee",
+      "vigilance": "reparation",
+      "matin": {
+        "libelle": "Finish a small forgotten thing",
+        "enseignement_court": "Unfinished things weigh beyond their size. To finish one is to free a corner of the soul.",
+        "sagesse_hikam_id": 70,
+        "nom_remede": "al-Ḥafīẓ",
+        "nom_remede_ar": "الْحَفِيظ",
+        "phrase_chemin": "Go finish that thing. That is all."
+      },
+      "soir": {
+        "question": "Which small thing did I finally finish today?",
+        "paroles": {
+          "tenu": "A thing finished is a knot undone.",
+          "parfois": "Even a step toward the end is a fruit.",
+          "oublie": "Pending things are still waiting. Spot one.",
+          "repris": "Tomorrow: one small thing, finished. One is enough."
+        }
+      }
+    },
+    {
+      "id": "remercier-personne",
+      "vigilance": "gratitude",
+      "matin": {
+        "libelle": "Thank a person sincerely",
+        "enseignement_court": "To recognise what another did for us is to make grace visible. Gratitude is lived in gestures before words.",
+        "sagesse_hikam_id": 96,
+        "nom_remede": "ash-Shakūr",
+        "nom_remede_ar": "الشَّكُور",
+        "phrase_chemin": "Say it. Simply. Today."
+      },
+      "soir": {
+        "question": "Whom did I thank today? Who should have been thanked?",
+        "paroles": {
+          "tenu": "A sincere thank-you is a light that circulates.",
+          "parfois": "Even a shy thank-you counts.",
+          "oublie": "Silent gratitude becomes invisible. Tomorrow, say it.",
+          "repris": "Tomorrow: one single person, one single thank-you."
+        }
+      }
+    },
+    {
+      "id": "nommer-protection",
+      "vigilance": "gratitude",
+      "matin": {
+        "libelle": "Name a protection received",
+        "enseignement_court": "To recognise a protection — an accident avoided, a word spared — is to make visible the hand that holds us.",
+        "sagesse_hikam_id": 134,
+        "nom_remede": "al-Ḥafīẓ",
+        "nom_remede_ar": "الْحَفِيظ",
+        "phrase_chemin": "Look for the gift in what did not happen."
+      },
+      "soir": {
+        "question": "What did not happen to me today that I should give thanks for?",
+        "paroles": {
+          "tenu": "To see the silent protections is the gaze of the knower.",
+          "parfois": "Gratitude for what did not happen is rare. You have begun it.",
+          "oublie": "Invisible protections await your gaze.",
+          "repris": "Tomorrow: before sleeping, name one thing that did not happen to you."
+        }
+      }
+    },
+    {
+      "id": "reconnaitre-don",
+      "vigilance": "gratitude",
+      "matin": {
+        "libelle": "Recognise a gift in the day",
+        "enseignement_court": "A gift received and recognised is a gift twice. A gift received and forgotten is a gift by half.",
+        "sagesse_hikam_id": 248,
+        "nom_remede": "al-Wahhāb",
+        "nom_remede_ar": "الْوَهَّاب",
+        "phrase_chemin": "Spot what is given to you. Without asking for it."
+      },
+      "soir": {
+        "question": "What did I receive today that I had not asked for?",
+        "paroles": {
+          "tenu": "To recognise a gift is already to give thanks.",
+          "parfois": "A gift glimpsed is worth more than ten gifts passed through.",
+          "oublie": "The eye that does not see the gift withers. Tomorrow, look for one alone.",
+          "repris": "Tomorrow: before sleeping, name one gift of the day."
+        }
+      }
+    },
+    {
+      "id": "benir-repas",
+      "vigilance": "gratitude",
+      "matin": {
+        "libelle": "Bless a meal before eating",
+        "enseignement_court": "A blessed meal is a meal that is seen. Bismillāh is enough — no need for a long formula, just a presence.",
+        "sagesse_hikam_id": 247,
+        "nom_remede": "al-Wahhāb",
+        "nom_remede_ar": "الْوَهَّاب",
+        "phrase_chemin": "Bless. Then eat."
+      },
+      "soir": {
+        "question": "Did I pause an instant before a meal today?",
+        "paroles": {
+          "tenu": "Bismillāh said in presence turns bread into a gift.",
+          "parfois": "A pause before a meal, and the heart recognises.",
+          "oublie": "We often eat forgetting. Tomorrow, spot one meal to bless.",
+          "repris": "Tomorrow: one single meal, preceded by one single word."
+        }
+      }
+    },
+    {
+      "id": "remercier-parents",
+      "vigilance": "gratitude",
+      "matin": {
+        "libelle": "Thank my parents (living or not) in thought",
+        "enseignement_court": "The debt to one's parents does not die out. A thought turned toward them is a word heard, here or elsewhere.",
+        "sagesse_hikam_id": 260,
+        "nom_remede": "al-Barr",
+        "nom_remede_ar": "الْبَرّ",
+        "phrase_chemin": "Turn toward them, in thought."
+      },
+      "soir": {
+        "question": "Did I carry my parents in my heart today?",
+        "paroles": {
+          "tenu": "A thought for one's parents is heard, here or elsewhere.",
+          "parfois": "The heart turns, in fits, toward those who made it.",
+          "oublie": "We forget them. Tomorrow, one thought. Just one.",
+          "repris": "Tomorrow: one prayer, short, for them."
+        }
+      }
+    },
+    {
+      "id": "ne-pas-plaindre",
+      "vigilance": "gratitude",
+      "matin": {
+        "libelle": "Not complain once today",
+        "enseignement_court": "Complaint is a veil over grace. Not to complain is not to repress — it is to shift one's gaze.",
+        "sagesse_hikam_id": 84,
+        "nom_remede": "ash-Shakūr",
+        "nom_remede_ar": "الشَّكُور",
+        "phrase_chemin": "When the complaint rises, wait. Find something else."
+      },
+      "soir": {
+        "question": "Did I hold back a complaint today? What did that silence allow?",
+        "paroles": {
+          "tenu": "A heart that does not complain becomes a heart that sees.",
+          "parfois": "You are beginning to hear your own complaints before they come out.",
+          "oublie": "Complaint is habitual. Do not fight it — observe.",
+          "repris": "Tomorrow: a complaint rising, wait three breaths before saying it."
+        }
+      }
+    },
+    {
+      "id": "nommer-trois-graces",
+      "vigilance": "gratitude",
+      "matin": {
+        "libelle": "Name three graces of the day tonight",
+        "enseignement_court": "Before sleeping, three graces named by name. No more, no less. Three is a measure.",
+        "sagesse_hikam_id": 297,
+        "nom_remede": "al-Mannān",
+        "nom_remede_ar": "الْمَنَّان",
+        "phrase_chemin": "Three graces. Before sleeping."
+      },
+      "soir": {
+        "question": "Which three graces can I name for this day?",
+        "paroles": {
+          "tenu": "Three graces named open the eyes for tomorrow.",
+          "parfois": "Even one grace named lights a lamp.",
+          "oublie": "Sleep presses. Tomorrow, take a minute.",
+          "repris": "Tomorrow: three graces, written or thought, before bed."
+        }
+      }
+    },
+    {
+      "id": "benir-interieurement",
+      "vigilance": "coeur",
+      "matin": {
+        "libelle": "Bless inwardly a difficult person",
+        "enseignement_court": "To bless the other in silence is a discipline of the heart. It first unties the one who blesses.",
+        "sagesse_hikam_id": 234,
+        "nom_remede": "al-Wadūd",
+        "nom_remede_ar": "الْوَدُود",
+        "phrase_chemin": "Say to him in your heart what you would not say aloud."
+      },
+      "soir": {
+        "question": "Did I inwardly bless someone I found difficult today?",
+        "paroles": {
+          "tenu": "The heart that blesses is freed before the one who is blessed.",
+          "parfois": "A blessing sketched is already a change.",
+          "oublie": "Resentment is a familiar poison. Tomorrow, choose a person to bless.",
+          "repris": "Tomorrow: name a person, and say in your heart: “may good be given to him.”"
+        }
+      }
+    },
+    {
+      "id": "voir-qualite-autre",
+      "vigilance": "coeur",
+      "matin": {
+        "libelle": "See a quality in someone I judge",
+        "enseignement_court": "Judgement reduces the other to an image. To see a quality undoes it.",
+        "sagesse_hikam_id": 235,
+        "nom_remede": "al-Baṣīr",
+        "nom_remede_ar": "الْبَصِير",
+        "phrase_chemin": "Look in the other for what your eye had not seen."
+      },
+      "soir": {
+        "question": "What quality did I see today in someone I did not like to look at?",
+        "paroles": {
+          "tenu": "To see a quality in the other is to wash one's eyes.",
+          "parfois": "A quality glimpsed in the other works in silence.",
+          "oublie": "Judgement feeds closure. Tomorrow, spot a quality in one single person.",
+          "repris": "Tomorrow: choose someone, and find a quality. One is enough."
+        }
+      }
+    },
+    {
+      "id": "ne-pas-nourrir-rancune",
+      "vigilance": "coeur",
+      "matin": {
+        "libelle": "Not feed a resentment",
+        "enseignement_court": "Resentment feeds on the scene one replays. To stop replaying is already to untie it.",
+        "sagesse_hikam_id": 11,
+        "nom_remede": "al-ʿAfū",
+        "nom_remede_ar": "الْعَفُوّ",
+        "phrase_chemin": "Let the scene fade. Do not relight it."
+      },
+      "soir": {
+        "question": "How many times did I replay the same scene within me today?",
+        "paroles": {
+          "tenu": "A scene not replayed dies on its own.",
+          "parfois": "Even an effort not to replay is a fruit.",
+          "oublie": "Rumination is an old friend. Spot it with tenderness.",
+          "repris": "Tomorrow: when the scene returns, change activity once."
+        }
+      }
+    },
+    {
+      "id": "pardonner-interieurement",
+      "vigilance": "coeur",
+      "matin": {
+        "libelle": "Forgive someone inwardly",
+        "enseignement_court": "To forgive does not absolve the other. It frees you. Forgiveness is first for the one who gives it.",
+        "sagesse_hikam_id": 145,
+        "nom_remede": "al-ʿAfū",
+        "nom_remede_ar": "الْعَفُوّ",
+        "phrase_chemin": "Let go, for yourself."
+      },
+      "soir": {
+        "question": "Is there someone I was able to forgive today — at least a little?",
+        "paroles": {
+          "tenu": "Inner forgiveness changes the heart of the one who forgives.",
+          "parfois": "Forgiveness comes in layers. You have begun.",
+          "oublie": "Forgiveness is slow. That is normal.",
+          "repris": "Tomorrow: spot what you still hold. Let go a little."
+        }
+      }
+    },
+    {
+      "id": "ne-pas-comparer",
+      "vigilance": "coeur",
+      "matin": {
+        "libelle": "Not compare myself today",
+        "enseignement_court": "To compare oneself is to want a destiny that is not one's own. Your path is traced for you, and no one else.",
+        "sagesse_hikam_id": 2,
+        "nom_remede": "al-Ghanī",
+        "nom_remede_ar": "الْغَنِيّ",
+        "phrase_chemin": "Stay on your path. Without looking at others."
+      },
+      "soir": {
+        "question": "How many times did I compare myself today?",
+        "paroles": {
+          "tenu": "A day without comparing is a day to oneself.",
+          "parfois": "You are beginning to notice comparison before it bites.",
+          "oublie": "Comparison is clever. Return, gently.",
+          "repris": "Tomorrow: when comparison rises, tell yourself: “not my path.”"
+        }
+      }
+    },
+    {
+      "id": "laisser-autre-exister",
+      "vigilance": "coeur",
+      "matin": {
+        "libelle": "Let someone be different from me",
+        "enseignement_court": "The other is not an unfinished version of me. His difference is his path, which need not pass through mine.",
+        "sagesse_hikam_id": 245,
+        "nom_remede": "al-Ḥakam",
+        "nom_remede_ar": "الْحَكَم",
+        "phrase_chemin": "Let him exist, in his own way."
+      },
+      "soir": {
+        "question": "Did I try to change someone today rather than welcome them?",
+        "paroles": {
+          "tenu": "To let the other exist is a deep humility.",
+          "parfois": "You are beginning to see difference as a grace.",
+          "oublie": "To want to change the other is a quiet pride. Spot it.",
+          "repris": "Tomorrow: choose a person, and accept one thing about them, without saying anything."
+        }
+      }
+    },
+    {
+      "id": "voir-beaute",
+      "vigilance": "coeur",
+      "matin": {
+        "libelle": "See a beauty in the day",
+        "enseignement_court": "Beauty does not wait to be sought — it waits to be seen. One single beauty recognised clothes the heart for the day.",
+        "sagesse_hikam_id": 215,
+        "nom_remede": "al-Jamīl",
+        "nom_remede_ar": "الْجَمِيل",
+        "phrase_chemin": "Look for a beauty. Recognise it."
+      },
+      "soir": {
+        "question": "What beauty touched me today?",
+        "paroles": {
+          "tenu": "To see a beauty is an act of presence.",
+          "parfois": "A beauty glimpsed leaves a trace.",
+          "oublie": "We walk with lowered eyes. Tomorrow, raise them.",
+          "repris": "Tomorrow: one beauty. Just one. Recognised."
+        }
+      }
+    },
+    {
+      "id": "accepter-limite",
+      "vigilance": "coeur",
+      "matin": {
+        "libelle": "Accept one of my limits without fleeing it",
+        "enseignement_court": "Our limits are also our path. To deny them is to condemn oneself; to accept them is to begin to grow.",
+        "sagesse_hikam_id": 169,
+        "nom_remede": "al-Ḥakīm",
+        "nom_remede_ar": "الْحَكِيم",
+        "phrase_chemin": "Look at your limit. Without fleeing it."
+      },
+      "soir": {
+        "question": "What limit did I meet today? Did I deny it or welcome it?",
+        "paroles": {
+          "tenu": "A limit accepted becomes a ground to lean on.",
+          "parfois": "You are beginning to honour what you cannot.",
+          "oublie": "We flee our limits before seeing them. Return.",
+          "repris": "Tomorrow: one limit — accept it, just once."
+        }
+      }
+    },
+    {
+      "id": "geste-discret",
+      "vigilance": "service",
+      "matin": {
+        "libelle": "A gesture of service without announcing it",
+        "enseignement_court": "An announced gesture loses half its fruit. A discreet gesture grows in silence.",
+        "sagesse_hikam_id": 49,
+        "nom_remede": "al-Karīm",
+        "nom_remede_ar": "الْكَرِيم",
+        "phrase_chemin": "Do it, and say nothing of it."
+      },
+      "soir": {
+        "question": "Did I do something for someone without saying it?",
+        "paroles": {
+          "tenu": "A discreet good is kept by the One who sees the hidden.",
+          "parfois": "A gesture done, even small, is a fruit.",
+          "oublie": "The urge to be seen is old. Tomorrow, do it and keep silent.",
+          "repris": "Tomorrow: one single gesture, without telling anyone."
+        }
+      }
+    },
+    {
+      "id": "demander-aide",
+      "vigilance": "service",
+      "matin": {
+        "libelle": "Ask someone for help",
+        "enseignement_court": "To ask is to recognise that I am not alone. The humility of asking is a door.",
+        "sagesse_hikam_id": 169,
+        "nom_remede": "al-Wakīl",
+        "nom_remede_ar": "الْوَكِيل",
+        "phrase_chemin": "Say it. You are not bound to carry everything."
+      },
+      "soir": {
+        "question": "What did I carry alone today that could have been shared?",
+        "paroles": {
+          "tenu": "To ask is a gentle humility.",
+          "parfois": "Even a start of a request changes the weight.",
+          "oublie": "Self-reliance can be a closure. Tomorrow, ask once.",
+          "repris": "Tomorrow: one request, short, clear, to one single person."
+        }
+      }
+    },
+    {
+      "id": "tenir-petite-promesse",
+      "vigilance": "service",
+      "matin": {
+        "libelle": "Keep a small word given",
+        "enseignement_court": "Small words kept build a character. Great words without follow-through unmake it.",
+        "sagesse_hikam_id": 8,
+        "nom_remede": "al-Ḥaqq",
+        "nom_remede_ar": "الْحَقّ",
+        "phrase_chemin": "Do the small thing. Today."
+      },
+      "soir": {
+        "question": "Which small word did I honour today?",
+        "paroles": {
+          "tenu": "A tiny promise kept is worth a great promise unkept.",
+          "parfois": "To hold sometimes builds trust with oneself.",
+          "oublie": "A forgotten promise can be honoured tomorrow.",
+          "repris": "Tomorrow: one single small thing promised, done."
+        }
+      }
+    },
+    {
+      "id": "visiter-personne",
+      "vigilance": "service",
+      "matin": {
+        "libelle": "Visit someone I neglect",
+        "enseignement_court": "A short visit to a forgotten one is worth a long prayer. The present in person is rare.",
+        "sagesse_hikam_id": 219,
+        "nom_remede": "ar-Raḥmān",
+        "nom_remede_ar": "الرَّحْمَن",
+        "phrase_chemin": "Go. A short visit."
+      },
+      "soir": {
+        "question": "Is there someone a visit would do good to — and whom I have forgotten?",
+        "paroles": {
+          "tenu": "A visit is a gift that memory does not replace.",
+          "parfois": "You are beginning to carry those who are far.",
+          "oublie": "Time slips by. Tomorrow, spot a person to see.",
+          "repris": "Tomorrow: a call. A message. A meeting."
+        }
+      }
+    },
+    {
+      "id": "aider-sans-annoncer",
+      "vigilance": "service",
+      "matin": {
+        "libelle": "Help someone without telling them",
+        "enseignement_court": "Announced help is also a gift, but hidden help is purer. It seeks no coin.",
+        "sagesse_hikam_id": 287,
+        "nom_remede": "al-Karīm",
+        "nom_remede_ar": "الْكَرِيم",
+        "phrase_chemin": "Help. Without saying it."
+      },
+      "soir": {
+        "question": "What help did I bring today without speaking of it?",
+        "paroles": {
+          "tenu": "Hidden help blesses first the one who helps.",
+          "parfois": "Even a silent start counts.",
+          "oublie": "The wish to be recognised is a veil. Spot it.",
+          "repris": "Tomorrow: one single act of help, without mentioning it."
+        }
+      }
+    },
+    {
+      "id": "donner-discretement",
+      "vigilance": "service",
+      "matin": {
+        "libelle": "Give something without anyone knowing",
+        "enseignement_court": "A hidden gift is a seal on the heart of the one who gives. The right hand does not know what the left hand does.",
+        "sagesse_hikam_id": 49,
+        "nom_remede": "al-Karīm",
+        "nom_remede_ar": "الْكَرِيم",
+        "phrase_chemin": "Give. In secret."
+      },
+      "soir": {
+        "question": "Did I give today — discreetly?",
+        "paroles": {
+          "tenu": "A hidden gift is more precious than ten exposed gifts.",
+          "parfois": "The gesture counts, even small.",
+          "oublie": "To give without appearing is rare. Return to it.",
+          "repris": "Tomorrow: one single gift, without anyone knowing."
+        }
+      }
+    },
+    {
+      "id": "ecouter-proche-difficile",
+      "vigilance": "service",
+      "matin": {
+        "libelle": "Listen to a loved one I avoid",
+        "enseignement_court": "The difficult loved one receives less presence — precisely because he is difficult. To give it to him is to undo an old knot.",
+        "sagesse_hikam_id": 232,
+        "nom_remede": "ar-Raʾūf",
+        "nom_remede_ar": "الرَّؤُوف",
+        "phrase_chemin": "Give him a presence."
+      },
+      "soir": {
+        "question": "Did I extend a little presence to a difficult loved one today?",
+        "paroles": {
+          "tenu": "A presence given to the one we avoid is a silent victory.",
+          "parfois": "You are beginning to see beyond “difficult.”",
+          "oublie": "Avoidance protects, but isolates. Return.",
+          "repris": "Tomorrow: a short moment, a presence, to the one we avoid."
+        }
+      }
+    },
+    {
+      "id": "dhikr-court",
+      "vigilance": "pratique",
+      "matin": {
+        "libelle": "Repeat a divine Name for five minutes",
+        "enseignement_court": "Five minutes of dhikr open a wake the day passes through. One single Name is enough, repeated in presence.",
+        "sagesse_hikam_id": 45,
+        "nom_remede": "al-Quddūs",
+        "nom_remede_ar": "الْقُدُّوس",
+        "phrase_chemin": "Choose a Name. Inhabit it."
+      },
+      "soir": {
+        "question": "Did I give time to dhikr today? Which Name accompanied me?",
+        "paroles": {
+          "tenu": "A Name repeated in presence works long after the lips have fallen silent.",
+          "parfois": "Even a minute of dhikr is a seed.",
+          "oublie": "Dhikr waits, faithful. Tomorrow, it will be there.",
+          "repris": "Tomorrow: one single Name, one single minute, in presence."
+        }
+      }
+    },
+    {
+      "id": "silence-matin",
+      "vigilance": "pratique",
+      "matin": {
+        "libelle": "Five minutes of silence before opening the phone",
+        "enseignement_court": "The first act of the morning orients the day. Silence before the screen returns the day to its beginning.",
+        "sagesse_hikam_id": 50,
+        "nom_remede": "al-Awwal",
+        "nom_remede_ar": "الْأَوَّل",
+        "phrase_chemin": "Do not connect to them before connecting to Him."
+      },
+      "soir": {
+        "question": "How did I begin the day today? What colonised my first minutes?",
+        "paroles": {
+          "tenu": "An inhabited beginning gives an inhabited day.",
+          "parfois": "One single silent morning changes the week.",
+          "oublie": "The screen before silence is a reflex. Tomorrow, delay it by five minutes.",
+          "repris": "Tomorrow: on waking, wait five minutes before turning on the screen."
+        }
+      }
+    },
+    {
+      "id": "lecture-courte",
+      "vigilance": "pratique",
+      "matin": {
+        "libelle": "Read one page of a sufi text today",
+        "enseignement_court": "One page read slowly is worth ten pages devoured. The sufi text lets itself be infused, not swallowed.",
+        "sagesse_hikam_id": 228,
+        "nom_remede": "al-ʿAlīm",
+        "nom_remede_ar": "الْعَلِيم",
+        "phrase_chemin": "Read one page. Close it. Let it work."
+      },
+      "soir": {
+        "question": "Which word of a master accompanied me today?",
+        "paroles": {
+          "tenu": "A page read in presence is a companion for days.",
+          "parfois": "Even a few lines infuse.",
+          "oublie": "The text waits, patient. Tomorrow.",
+          "repris": "Tomorrow: one page only. Read slowly."
+        }
+      }
+    },
+    {
+      "id": "dhikr-99",
+      "vigilance": "pratique",
+      "matin": {
+        "libelle": "Repeat a Name 99 times (subḥa)",
+        "enseignement_court": "99 repetitions of a Name, on the subḥa or on the fingers, carve a furrow in the heart. Repetition is not empty — it is polishing.",
+        "sagesse_hikam_id": 45,
+        "nom_remede": "al-Quddūs",
+        "nom_remede_ar": "الْقُدُّوس",
+        "phrase_chemin": "99 times. Slowly."
+      },
+      "soir": {
+        "question": "Did I hold my 99? How did I inhabit this repetition?",
+        "paroles": {
+          "tenu": "99 Names carried in presence transform the day behind them.",
+          "parfois": "Even 30 inhabited repetitions are a fruit.",
+          "oublie": "The subḥa waits in the pocket. Tomorrow.",
+          "repris": "Tomorrow: 33 times is enough. But in presence."
+        }
+      }
+    },
+    {
+      "id": "sourate-courte",
+      "vigilance": "pratique",
+      "matin": {
+        "libelle": "Read a short sura in presence",
+        "enseignement_court": "A short sura — al-Fātiḥa, al-Ikhlāṣ, al-Falaq — read with the heart, opens a space in the day.",
+        "sagesse_hikam_id": 251,
+        "nom_remede": "al-Hādī",
+        "nom_remede_ar": "الْهَادِي",
+        "phrase_chemin": "One sura. Inhabited."
+      },
+      "soir": {
+        "question": "Which sura did I read today — truly read?",
+        "paroles": {
+          "tenu": "A short sura read in presence is worth a long distracted recitation.",
+          "parfois": "Even a few inhabited verses infuse.",
+          "oublie": "The text waits, open. Tomorrow.",
+          "repris": "Tomorrow: al-Fātiḥa, once, in presence."
+        }
+      }
+    },
+    {
+      "id": "mediter-verset",
+      "vigilance": "pratique",
+      "matin": {
+        "libelle": "Meditate one single verse",
+        "enseignement_court": "One verse carried all day long works more than a sura recited ten times. Choose one. Inhabit it.",
+        "sagesse_hikam_id": 228,
+        "nom_remede": "al-ʿAlīm",
+        "nom_remede_ar": "الْعَلِيم",
+        "phrase_chemin": "One verse. All day long."
+      },
+      "soir": {
+        "question": "Which verse accompanied me today?",
+        "paroles": {
+          "tenu": "A verse inhabited becomes a companion.",
+          "parfois": "Even a few returns to the verse count.",
+          "oublie": "The verse waits, without moving. Tomorrow.",
+          "repris": "Tomorrow: one short verse. Keep it close to the heart."
+        }
+      }
+    },
+    {
+      "id": "istighfar-100",
+      "vigilance": "pratique",
+      "matin": {
+        "libelle": "Say astaghfirullāh 100 times",
+        "enseignement_court": "To ask forgiveness is not to weep over a fault — it is to turn the heart toward the source. 100 astaghfirullāh undo 100 veils.",
+        "sagesse_hikam_id": 148,
+        "nom_remede": "al-Ghaffār",
+        "nom_remede_ar": "الْغَفَّار",
+        "phrase_chemin": "Turn the heart. 100 times."
+      },
+      "soir": {
+        "question": "Did I set down my astaghfirullāh today?",
+        "paroles": {
+          "tenu": "100 returns are 100 doors opened.",
+          "parfois": "Even 30 astaghfirullāh work.",
+          "oublie": "The asking for forgiveness waits. Tomorrow, without drama.",
+          "repris": "Tomorrow: 33 times. With presence."
+        }
+      }
+    },
+    {
+      "id": "respirer-avant-repondre",
+      "vigilance": "corps",
+      "matin": {
+        "libelle": "Breathe before each answer",
+        "enseignement_court": "A breath before the answer changes the quality of the answer. The breath slows the mind.",
+        "sagesse_hikam_id": 20,
+        "nom_remede": "al-Ḥalīm",
+        "nom_remede_ar": "الْحَلِيم",
+        "phrase_chemin": "Breathe in. Then speak. Not before."
+      },
+      "soir": {
+        "question": "How many answers did I give today without breathing first?",
+        "paroles": {
+          "tenu": "A breath between question and answer is a hidden adab.",
+          "parfois": "The breath is quicker to forget than speech. You return to it.",
+          "oublie": "The mind runs. The breath waits, patient.",
+          "repris": "Tomorrow: one single answer, preceded by a breath."
+        }
+      }
+    },
+    {
+      "id": "reconnaitre-fatigue",
+      "vigilance": "corps",
+      "matin": {
+        "libelle": "Recognise my fatigue before it speaks for me",
+        "enseignement_court": "Unrecognised fatigue dictates decisions one will regret. To name it is already to undo it by half.",
+        "sagesse_hikam_id": 232,
+        "nom_remede": "ar-Raʾūf",
+        "nom_remede_ar": "الرَّؤُوف",
+        "phrase_chemin": "If you are tired, slow down. Before it speaks."
+      },
+      "soir": {
+        "question": "Did my fatigue speak for me today?",
+        "paroles": {
+          "tenu": "To recognise one's fatigue is a humility of the body.",
+          "parfois": "Even a moment of recognition changes what follows.",
+          "oublie": "Denied fatigue bites. Tomorrow, listen to it sooner.",
+          "repris": "Tomorrow: at the first feeling of fatigue, pause for five minutes."
+        }
+      }
+    },
+    {
+      "id": "ne-pas-decider-epuisement",
+      "vigilance": "corps",
+      "matin": {
+        "libelle": "Not make an important decision at day's end",
+        "enseignement_court": "The evening is a poor counsellor. To postpone a decision to tomorrow morning is often a wisdom.",
+        "sagesse_hikam_id": 232,
+        "nom_remede": "al-Ḥakīm",
+        "nom_remede_ar": "الْحَكِيم",
+        "phrase_chemin": "Postpone. Tomorrow morning, you will see differently."
+      },
+      "soir": {
+        "question": "Did a decision come this evening that would have served better tomorrow morning?",
+        "paroles": {
+          "tenu": "To postpone wisely is also an act.",
+          "parfois": "Even an accepted delay changes the outcome.",
+          "oublie": "The evening presses, but is wrong. Tomorrow morning will be here.",
+          "repris": "Tomorrow: if a decision arrives this evening, tell yourself: “tomorrow morning.” Once."
+        }
+      }
+    },
+    {
+      "id": "repos-vrai",
+      "vigilance": "corps",
+      "matin": {
+        "libelle": "Rest truly, without a screen",
+        "enseignement_court": "Rest with a screen is not rest. The body asks for a true silence.",
+        "sagesse_hikam_id": 247,
+        "nom_remede": "as-Salām",
+        "nom_remede_ar": "السَّلَام",
+        "phrase_chemin": "Rest. With nothing."
+      },
+      "soir": {
+        "question": "Did I truly rest today, or did I fill my pauses?",
+        "paroles": {
+          "tenu": "A true rest is an act of faith.",
+          "parfois": "One silent pause is worth ten noisy pauses.",
+          "oublie": "The reflex to fill is a flight. Tomorrow, leave it empty.",
+          "repris": "Tomorrow: one single pause, with nothing, five minutes."
+        }
+      }
+    },
+    {
+      "id": "dormir-tot",
+      "vigilance": "corps",
+      "matin": {
+        "libelle": "Go to bed early tonight",
+        "enseignement_court": "To sleep early is not a premature old age — it is to honour the body. Sleep is a gift; to push it away is to despise it.",
+        "sagesse_hikam_id": 247,
+        "nom_remede": "as-Salām",
+        "nom_remede_ar": "السَّلَام",
+        "phrase_chemin": "Set things down. Go to sleep."
+      },
+      "soir": {
+        "question": "Will I sleep early tonight, or push it back again?",
+        "paroles": {
+          "tenu": "An early bedtime is a practical wisdom.",
+          "parfois": "You are beginning to respect your sleep.",
+          "oublie": "The screen keeps you awake. Tomorrow, set it down earlier.",
+          "repris": "Tomorrow: thirty minutes earlier than yesterday. That is enough."
+        }
+      }
+    },
+    {
+      "id": "boire-eau",
+      "vigilance": "corps",
+      "matin": {
+        "libelle": "Drink water regularly today",
+        "enseignement_court": "The body asks for water more often than we think. To give it is an act of presence to oneself.",
+        "sagesse_hikam_id": 4,
+        "nom_remede": "ar-Razzāq",
+        "nom_remede_ar": "الرَّزَّاق",
+        "phrase_chemin": "Drink. Before being thirsty."
+      },
+      "soir": {
+        "question": "How many times did I listen to thirst today?",
+        "paroles": {
+          "tenu": "A hydrated body is a body listened to.",
+          "parfois": "The body receives what you give it.",
+          "oublie": "We forget the simple. Tomorrow, a glass on waking.",
+          "repris": "Tomorrow: a glass of water on waking. Just once."
+        }
+      }
+    },
+    {
+      "id": "marcher-apres-repas",
+      "vigilance": "corps",
+      "matin": {
+        "libelle": "Walk a few minutes after a meal",
+        "enseignement_court": "To walk after the meal wakes the body. Five minutes are enough. The body receives the walk like a caress.",
+        "sagesse_hikam_id": 247,
+        "nom_remede": "al-Muḥyī",
+        "nom_remede_ar": "الْمُحْيِي",
+        "phrase_chemin": "Get up. Walk a little."
+      },
+      "soir": {
+        "question": "Did I walk after a meal today?",
+        "paroles": {
+          "tenu": "A short walk after a meal honours the body.",
+          "parfois": "Even a few steps count.",
+          "oublie": "We collapse. Tomorrow, get up.",
+          "repris": "Tomorrow: after a meal, five steps. At the least."
+        }
+      }
+    }
+  ]
+}

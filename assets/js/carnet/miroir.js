@@ -12,9 +12,14 @@ import { collection, getDocs }
 
 const anonId = localStorage.getItem('lvdd_carnet_id');
 const prenom = localStorage.getItem('lvdd_carnet_prenom') || '';
+const EN = document.documentElement.lang === 'en';
+const BASE = EN ? '/en/pages/carnet/' : '/pages/carnet/';
+const t = (fr, en) => (EN ? en : fr);
+const LOCALE = EN ? 'en-US' : 'fr-FR';
+
 
 if (!anonId) {
-  window.location.href = '/pages/carnet/';
+  window.location.href = BASE;
 }
 
 const mount = document.getElementById('miroir-mount');
@@ -27,7 +32,7 @@ function esc(s) {
 function dateCourte(key) {
   const [y, m, d] = key.split('-');
   return new Date(parseInt(y), parseInt(m) - 1, parseInt(d))
-    .toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' });
+    .toLocaleDateString(LOCALE, { day: 'numeric', month: 'long' });
 }
 // Joint une liste en français : a, b et c
 function joindreFr(arr) {
@@ -41,7 +46,7 @@ dateEl.textContent = 'le miroir';
 (async () => {
   try {
     const [vigilancesRes, joursSnap] = await Promise.all([
-      fetch('/data/carnet/vigilances.json').then(r => r.json()),
+      fetch('/data/carnet/vigilances' + (EN ? '.en' : '') + '.json').then(r => r.json()),
       getDocs(collection(db, 'carnets', anonId, 'jours'))
     ]);
     const vigilances = vigilancesRes.vigilances || [];
@@ -70,7 +75,7 @@ dateEl.textContent = 'le miroir';
           </header>
           <p class="miroir__vide"><em>Le miroir est encore vide. Il se remplira tout seul, un jour posé après l'autre — sans que vous ayez à compter quoi que ce soit.</em></p>
           <div class="miroir__actions">
-            <a href="/pages/carnet/poser/" class="adab-bouton adab-bouton--grand">Poser ma première journée</a>
+            <a href="${BASE}poser/" class="adab-bouton adab-bouton--grand">Poser ma première journée</a>
           </div>
         </section>`;
       return;
@@ -188,8 +193,8 @@ dateEl.textContent = 'le miroir';
         </p>
 
         <div class="miroir__actions">
-          <a href="/pages/carnet/historique/" class="adab-bouton adab-bouton--ghost">Voir les journées une à une</a>
-          <a href="/pages/carnet/aujourdhui/" class="adab-bouton-secondaire">Revenir au carnet</a>
+          <a href="${BASE}historique/" class="adab-bouton adab-bouton--ghost">Voir les journées une à une</a>
+          <a href="${BASE}aujourdhui/" class="adab-bouton-secondaire">Revenir au carnet</a>
         </div>
       </section>`;
   } catch (e) {

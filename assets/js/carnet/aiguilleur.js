@@ -8,9 +8,14 @@ import { doc, getDoc, serverTimestamp, setDoc }
 
 const anonId = localStorage.getItem('lvdd_carnet_id');
 const prenom = localStorage.getItem('lvdd_carnet_prenom') || '';
+const EN = document.documentElement.lang === 'en';
+const BASE = EN ? '/en/pages/carnet/' : '/pages/carnet/';
+const t = (fr, en) => (EN ? en : fr);
+const LOCALE = EN ? 'en-US' : 'fr-FR';
+
 
 if (!anonId) {
-  window.location.href = '/pages/carnet/';
+  window.location.href = BASE;
 }
 
 const mount = document.getElementById('aiguilleur-mount');
@@ -30,10 +35,10 @@ function yesterdayKey() {
 function veilleLisible() {
   const d = new Date();
   d.setDate(d.getDate() - 1);
-  return d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+  return d.toLocaleDateString(LOCALE, { weekday: 'long', day: 'numeric', month: 'long' });
 }
 function dateLisible() {
-  return new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+  return new Date().toLocaleDateString(LOCALE, { weekday: 'long', day: 'numeric', month: 'long' });
 }
 function esc(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -53,8 +58,8 @@ dateEl.textContent = dateLisible();
     const veille = yesterdayKey();
     const heure = new Date().getHours();
     const [vigilancesRes, objectifsRes, jourSnap, veilleSnap] = await Promise.all([
-      fetch('/data/carnet/vigilances.json').then(r => r.json()),
-      fetch('/data/carnet/objectifs.json').then(r => r.json()),
+      fetch('/data/carnet/vigilances' + (EN ? '.en' : '') + '.json').then(r => r.json()),
+      fetch('/data/carnet/objectifs' + (EN ? '.en' : '') + '.json').then(r => r.json()),
       getDoc(doc(db, 'carnets', anonId, 'jours', date)).catch(() => null),
       getDoc(doc(db, 'carnets', anonId, 'jours', veille)).catch(() => null)
     ]);
@@ -93,7 +98,7 @@ dateEl.textContent = dateLisible();
             <p class="dash-aujourd-hui__msg"><em>Le jour est gardé. Que la nuit soit douce.</em></p>
             ${v ? `<p class="dash-aujourd-hui__resume"><span lang="ar" dir="rtl" style="font-family:'Amiri',serif; color:var(--adab-gold-deep);">${esc(v.ar)}</span> · ${esc(v.label)}</p>` : ''}
             <div class="dash-actions">
-              <a href="/pages/carnet/historique/?j=${date}" class="adab-bouton adab-bouton--ghost">Voir ma journée</a>
+              <a href="${BASE}historique/?j=${date}" class="adab-bouton adab-bouton--ghost">Voir ma journée</a>
             </div>
           </section>`;
       }
@@ -104,8 +109,8 @@ dateEl.textContent = dateLisible();
         const objsHTML = objsChoisis.map(o => `<li class="resume-obj">${esc(o.matin.libelle)}</li>`).join('');
         const persoHTML = matin.personnel ? `<li class="resume-obj resume-obj--perso">${esc(matin.personnel)}</li>` : '';
         const ctaSoir = heure >= 17
-          ? `<a href="/pages/carnet/relire/" class="adab-bouton adab-bouton--grand">Relire ma journée</a>`
-          : `<a href="/pages/carnet/relire/" class="adab-bouton adab-bouton--ghost">Relire en avance</a>`;
+          ? `<a href="${BASE}relire/" class="adab-bouton adab-bouton--grand">Relire ma journée</a>`
+          : `<a href="${BASE}relire/" class="adab-bouton adab-bouton--ghost">Relire en avance</a>`;
         return `
           <section class="dash-aujourd-hui dash-aujourd-hui--pose">
             <p class="dash-aujourd-hui__label">Ce que j'ai posé ce matin</p>
@@ -118,7 +123,7 @@ dateEl.textContent = dateLisible();
             ${matin.ancrage ? `<p class="dash-ancrage"><em>« ${esc(matin.ancrage)} »</em></p>` : ''}
             <div class="dash-actions">
               ${ctaSoir}
-              <a href="/pages/carnet/poser/" class="adab-bouton-secondaire">Modifier mon choix</a>
+              <a href="${BASE}poser/" class="adab-bouton-secondaire">Modifier mon choix</a>
             </div>
           </section>`;
       }
@@ -134,12 +139,12 @@ dateEl.textContent = dateLisible();
             <em>Que voulez-vous faire ? À vous de choisir le moment.</em>
           </p>
           <div class="dash-portes">
-            <a href="/pages/carnet/poser/" class="dash-porte ${porteMatinClass}">
+            <a href="${BASE}poser/" class="dash-porte ${porteMatinClass}">
               <span class="dash-porte__moment">Le matin</span>
               <span class="dash-porte__titre">Poser ma journée</span>
               <span class="dash-porte__sous"><em>Un thème, un objectif. Petit, c'est suffisant.</em></span>
             </a>
-            <a href="/pages/carnet/relire/" class="dash-porte ${porteSoirClass}">
+            <a href="${BASE}relire/" class="dash-porte ${porteSoirClass}">
               <span class="dash-porte__moment">Le soir</span>
               <span class="dash-porte__titre">Relire ma journée</span>
               <span class="dash-porte__sous"><em>Regarder doucement comment a été le jour.</em></span>
@@ -160,7 +165,7 @@ dateEl.textContent = dateLisible();
             <em>Vous aviez posé ${v ? `la vigilance de <strong>${esc(v.label)}</strong>` : 'votre journée'}, mais vous ne l'avez pas déposée.</em>
           </p>
           <div class="dash-veille__actions">
-            <a href="/pages/carnet/relire/?j=${esc(veille)}" class="adab-bouton adab-bouton--ghost">Relire hier</a>
+            <a href="${BASE}relire/?j=${esc(veille)}" class="adab-bouton adab-bouton--ghost">Relire hier</a>
             <button type="button" class="dash-veille__plus-tard" id="dash-veille-plus-tard">Plus tard</button>
           </div>
         </section>`;
@@ -171,7 +176,7 @@ dateEl.textContent = dateLisible();
       const cards = vigilances.map(v => {
         const isCurrente = aPose && matin.vigilanceId === v.id;
         return `
-          <a href="/pages/carnet/poser/?vigilance=${esc(v.id)}" class="dash-vig-carte ${isCurrente ? 'is-current' : ''}">
+          <a href="${BASE}poser/?vigilance=${esc(v.id)}" class="dash-vig-carte ${isCurrente ? 'is-current' : ''}">
             ${isCurrente ? '<span class="dash-vig-carte__current-tag">aujourd\'hui</span>' : ''}
             <span class="dash-vig-carte__ar" lang="ar" dir="rtl">${esc(v.ar)}</span>
             <span class="dash-vig-carte__tr">${esc(v.tr)}</span>
@@ -200,10 +205,10 @@ dateEl.textContent = dateLisible();
         <section class="dash-bas">
           <div class="dash-ornement">✦</div>
           <p class="dash-liens">
-            <a href="/pages/carnet/miroir/">Le miroir du chemin →</a>
+            <a href="${BASE}miroir/">Le miroir du chemin →</a>
           </p>
           <p class="dash-liens">
-            <a href="/pages/carnet/historique/">Mes journées passées →</a>
+            <a href="${BASE}historique/">Mes journées passées →</a>
           </p>
           <p class="dash-liens dash-liens--soft">
             <a href="/index.html">Sortir du carnet</a>

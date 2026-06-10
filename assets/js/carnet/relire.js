@@ -7,9 +7,14 @@ import { doc, setDoc, getDoc, serverTimestamp }
 
 const anonId = localStorage.getItem('lvdd_carnet_id');
 const prenom = localStorage.getItem('lvdd_carnet_prenom') || '';
+const EN = document.documentElement.lang === 'en';
+const BASE = EN ? '/en/pages/carnet/' : '/pages/carnet/';
+const t = (fr, en) => (EN ? en : fr);
+const LOCALE = EN ? 'en-US' : 'fr-FR';
+
 
 if (!anonId) {
-  window.location.href = '/pages/carnet/';
+  window.location.href = BASE;
 }
 
 const mount = document.getElementById('relire-mount');
@@ -22,7 +27,7 @@ function todayKey() {
 function dateLisibleFromKey(key) {
   const [y, m, d] = key.split('-');
   return new Date(parseInt(y), parseInt(m) - 1, parseInt(d))
-    .toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+    .toLocaleDateString(LOCALE, { weekday: 'long', day: 'numeric', month: 'long' });
 }
 function esc(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -42,8 +47,8 @@ dateEl.textContent = dateLisibleFromKey(date);
 (async () => {
   try {
     const [vigilancesRes, objectifsRes, jourSnap] = await Promise.all([
-      fetch('/data/carnet/vigilances.json').then(r => r.json()),
-      fetch('/data/carnet/objectifs.json').then(r => r.json()),
+      fetch('/data/carnet/vigilances' + (EN ? '.en' : '') + '.json').then(r => r.json()),
+      fetch('/data/carnet/objectifs' + (EN ? '.en' : '') + '.json').then(r => r.json()),
       getDoc(doc(db, 'carnets', anonId, 'jours', date)).catch(() => null)
     ]);
 
@@ -78,7 +83,7 @@ dateEl.textContent = dateLisibleFromKey(date);
             Vous pouvez quand même déposer ce jour, librement, sans rappel du matin.
           </p>
           <div class="adab-commit" style="margin-top: 1.5rem;">
-            <a href="/pages/carnet/poser/" class="adab-bouton">Poser ma journée d'abord</a>
+            <a href="${BASE}poser/" class="adab-bouton">Poser ma journée d'abord</a>
             <button type="button" id="relire-libre" class="adab-bouton-secondaire" style="margin-top:.6rem;">Relire librement</button>
           </div>
         </section>
@@ -267,7 +272,7 @@ dateEl.textContent = dateLisibleFromKey(date);
             <div class="adab-soir-cloture">
               <p>Le jour est déposé.</p>
               <p><em>« Que la nuit soit douce et le souffle paisible. »</em></p>
-              <a href="/pages/carnet/aujourdhui/" class="adab-bouton adab-bouton--ghost" style="margin-top:1rem;">Sortir du carnet</a>
+              <a href="${BASE}aujourdhui/" class="adab-bouton adab-bouton--ghost" style="margin-top:1rem;">Sortir du carnet</a>
             </div>`;
           document.querySelector('.adab-soir-cloture').scrollIntoView({ behavior: 'smooth', block: 'center' });
         } catch (e) {

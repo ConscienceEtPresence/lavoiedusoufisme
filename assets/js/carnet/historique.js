@@ -7,9 +7,14 @@ import { collection, getDocs, doc, getDoc }
 
 const anonId = localStorage.getItem('lvdd_carnet_id');
 const prenom = localStorage.getItem('lvdd_carnet_prenom') || '';
+const EN = document.documentElement.lang === 'en';
+const BASE = EN ? '/en/pages/carnet/' : '/pages/carnet/';
+const t = (fr, en) => (EN ? en : fr);
+const LOCALE = EN ? 'en-US' : 'fr-FR';
+
 
 if (!anonId) {
-  window.location.href = '/pages/carnet/';
+  window.location.href = BASE;
 }
 
 const mount = document.getElementById('hist-mount');
@@ -23,12 +28,12 @@ function esc(s) {
 function dateLisible(s) {
   const [y, m, d] = s.split('-');
   const dt = new Date(parseInt(y), parseInt(m)-1, parseInt(d));
-  return dt.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' });
+  return dt.toLocaleDateString(LOCALE, { weekday: 'long', day: 'numeric', month: 'long' });
 }
 function dateCourte(s) {
   const [y, m, d] = s.split('-');
   const dt = new Date(parseInt(y), parseInt(m)-1, parseInt(d));
-  return dt.toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' });
+  return dt.toLocaleDateString(LOCALE, { day: 'numeric', month: 'short' });
 }
 
 dateEl.textContent = 'historique';
@@ -39,8 +44,8 @@ const dateOuvert = params.get('j');
 (async () => {
   try {
     const [vigilancesRes, objectifsRes, joursSnap] = await Promise.all([
-      fetch('/data/carnet/vigilances.json').then(r => r.json()),
-      fetch('/data/carnet/objectifs.json').then(r => r.json()),
+      fetch('/data/carnet/vigilances' + (EN ? '.en' : '') + '.json').then(r => r.json()),
+      fetch('/data/carnet/objectifs' + (EN ? '.en' : '') + '.json').then(r => r.json()),
       getDocs(collection(db, 'carnets', anonId, 'jours'))
     ]);
     const vigilances = vigilancesRes.vigilances || [];
@@ -72,7 +77,7 @@ const dateOuvert = params.get('j');
           <p style="text-align:center; max-width:30rem; margin: 1rem auto;">
             Posez votre première journée — l'historique se construira au fil des jours.
           </p>
-          <div class="adab-commit"><a href="/pages/carnet/poser/" class="adab-bouton">Poser ma première journée</a></div>
+          <div class="adab-commit"><a href="${BASE}poser/" class="adab-bouton">Poser ma première journée</a></div>
         </section>`;
       return;
     }
@@ -143,7 +148,7 @@ const dateOuvert = params.get('j');
       const bilansObjs = s.bilansObjectifs || {};
 
       mount.innerHTML = `
-        <a href="/pages/carnet/historique/" class="adab-back-link">← Toutes mes journées</a>
+        <a href="${BASE}historique/" class="adab-back-link">← Toutes mes journées</a>
 
         <article class="hist-detail">
           <header class="hist-detail__head">

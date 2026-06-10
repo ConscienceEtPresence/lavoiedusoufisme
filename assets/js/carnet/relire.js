@@ -140,6 +140,11 @@ dateEl.textContent = dateLisibleFromKey(date);
             </p>
           </header>
 
+          ${(!estPasse && heure < 17) ? `
+            <p class="adab-halte-note">
+              <em>${t("La journée n'est pas encore finie — vous pouvez jeter un œil, ou revenir ce soir pour la déposer vraiment.","The day is not over yet — you can take a look, or come back this evening to truly lay it down.")}</em>
+            </p>` : ''}
+
           ${libre ? '' : `
             <div class="adab-soir-rappel">
               ${matin.ancrage ? `<p class="adab-soir-rappel__ancrage">${t("Ce matin vous avez écrit : ","This morning you wrote: ")}<em>« ${esc(matin.ancrage)} »</em></p>` : ''}

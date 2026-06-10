@@ -146,7 +146,7 @@ dateEl.textContent = dateLisible();
         const persoHTML = matin.personnel ? `<li class="resume-obj resume-obj--perso">${esc(matin.personnel)}</li>` : '';
         const ctaSoir = heure >= 17
           ? `<a href="${BASE}relire/" class="adab-bouton adab-bouton--grand">${t("Relire ma journée","Look back on my day")}</a>`
-          : `<a href="${BASE}relire/" class="adab-bouton adab-bouton--ghost">${t("Relire en avance","Look back early")}</a>`;
+          : `<a href="${BASE}relire/" class="adab-bouton adab-bouton--ghost">${t("Faire une halte","Pause on the path")}</a>`;
         return `
           <section class="dash-aujourd-hui dash-aujourd-hui--pose">
             <p class="dash-aujourd-hui__label">${t("Ce que j'ai posé ce matin","What I set this morning")}</p>

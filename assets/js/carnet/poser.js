@@ -191,6 +191,8 @@ const date = todayKey();
       const v = vigilances.find(x => x.id === state.vigilanceId);
       if (!v) { state.etape = 'accueil'; render(); return; }
       const objs = objectifs.filter(o => o.vigilance === v.id);
+      const formationCollapsed = !!state.fromChip;
+      state.fromChip = false;
 
       mount.innerHTML = `
         <section class="adab-step adab-step--vigilance">
@@ -202,7 +204,7 @@ const date = todayKey();
             <p class="vigilance-fiche__tr">${esc(v.tr)} · ${v.termes_soufis.slice(0, 3).map(esc).join(' · ')}</p>
           </header>
 
-          <details class="vigilance-formation" open>
+          <details class="vigilance-formation" ${formationCollapsed ? '' : 'open'}>
             <summary><em>${t("Ce que c'est, chez les soufis","What it is, for the sufis")}</em></summary>
             <div class="vigilance-formation__body">
               <p class="vigilance-formation__def">${esc(v.definition_courte)}</p>
@@ -225,7 +227,7 @@ const date = todayKey();
             </div>
           </details>
 
-          <p class="adab-section-titre">${t("Un objectif concret pour aujourd'hui","A concrete objective for today")}</p>
+          <p class="adab-section-titre objectifs-section-titre">${t("Un objectif concret pour aujourd'hui","A concrete objective for today")}</p>
 
           <div class="objectifs-liste">
             ${objs.map(o => {
@@ -351,8 +353,14 @@ const date = todayKey();
         chip.addEventListener('click', () => {
           state.personnel = (document.getElementById('objectif-perso')?.value || '').trim();
           state.vigilanceId = chip.dataset.vig;
+          state.fromChip = true; // enseignement replié, on va droit aux objectifs
           render();
-          document.querySelector('.adab-autres-themes')?.scrollIntoView({ behavior: 'instant', block: 'center' });
+          // Amener directement les objectifs du nouveau thème sous les yeux
+          const cible = mount.querySelector('.objectifs-section-titre') || mount.querySelector('.objectifs-liste');
+          if (cible) {
+            const y = cible.getBoundingClientRect().top + window.scrollY - 16;
+            window.scrollTo({ top: y, behavior: 'instant' });
+          }
         });
       });
       document.querySelectorAll('input[name="objectif"]').forEach(inp => {

@@ -319,6 +319,26 @@ const date = todayKey();
             <p class="visage-matin__chemin"><em>« ${t("Portez-le aujourd'hui.","Carry it today.")} »</em></p>
           </article>` : '';
         mountV.innerHTML = visages + visagePerso;
+        majChips();
+      }
+      // Met à jour en direct le compteur de chaque pastille de thème
+      function majChips() {
+        document.querySelectorAll('.adab-theme-chip').forEach(chip => {
+          const n = countSelVig(chip.dataset.vig);
+          chip.classList.toggle('has-sel', n > 0);
+          let badge = chip.querySelector('.adab-theme-chip__n');
+          if (n > 0) {
+            if (!badge) {
+              badge = document.createElement('span');
+              badge.className = 'adab-theme-chip__n';
+              chip.appendChild(document.createTextNode(' '));
+              chip.appendChild(badge);
+            }
+            badge.textContent = n;
+          } else if (badge) {
+            badge.remove();
+          }
+        });
       }
       renderVisages();
 

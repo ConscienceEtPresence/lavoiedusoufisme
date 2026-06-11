@@ -118,13 +118,14 @@ service cloud.firestore {
     // ============================================================
     match /analytics/{site}/jours/{date} {
       // Création et update libres pour incrémenter les compteurs.
-      // Lecture admin seulement (pas de fuite publique des stats).
+      // Lecture publique : ce ne sont que des compteurs anonymes (pas de donnée perso),
+      // et le tableau de bord du cockpit est ouvert (sans connexion).
       allow create, update: if site in ['lavoiedudedans', 'lemiroirinterieur'];
-      allow read: if isAdmin();
+      allow read: if true;
       allow delete: if isAdmin();
     }
     match /analytics/{site} {
-      allow read: if isAdmin();
+      allow read: if true;
     }
 
     // — tout le reste interdit —

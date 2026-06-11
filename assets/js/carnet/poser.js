@@ -341,10 +341,8 @@ const date = todayKey();
           }, { merge: true });
           // Mettre à jour le meta lastSeen
           try {
-            await setDoc(doc(db, 'carnets', anonId, '_meta', 'profil'), {
-              prenom: prenom || null,
-              lastSeen: serverTimestamp()
-            }, { merge: true });
+            await setDoc(doc(db, 'carnets', anonId, '_meta', 'profil'), { prenom: prenom || null, lastSeen: serverTimestamp() }, { merge: true });
+            await setDoc(doc(db, 'carnets', anonId), { prenom: prenom || null, lastSeen: serverTimestamp() }, { merge: true });
           } catch (e) {}
           state.etape = 'pose';
           render();

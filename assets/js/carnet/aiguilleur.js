@@ -79,10 +79,8 @@ dateEl.textContent = dateLisible();
     const veilleAcompleter = veilleAPose && !veilleADepose;
 
     try {
-      await setDoc(doc(db, 'carnets', anonId, '_meta', 'profil'), {
-        prenom: prenom || null,
-        lastSeen: serverTimestamp()
-      }, { merge: true });
+      await setDoc(doc(db, 'carnets', anonId, '_meta', 'profil'), { prenom: prenom || null, lastSeen: serverTimestamp() }, { merge: true });
+      await setDoc(doc(db, 'carnets', anonId), { prenom: prenom || null, lastSeen: serverTimestamp() }, { merge: true });
     } catch (e) {}
 
     const g = greetingByHour(heure);

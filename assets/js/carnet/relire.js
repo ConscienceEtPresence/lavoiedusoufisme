@@ -265,10 +265,8 @@ dateEl.textContent = dateLisibleFromKey(date);
           }, { merge: true });
           // Update lastSeen
           try {
-            await setDoc(doc(db, 'carnets', anonId, '_meta', 'profil'), {
-              prenom: prenom || null,
-              lastSeen: serverTimestamp()
-            }, { merge: true });
+            await setDoc(doc(db, 'carnets', anonId, '_meta', 'profil'), { prenom: prenom || null, lastSeen: serverTimestamp() }, { merge: true });
+            await setDoc(doc(db, 'carnets', anonId), { prenom: prenom || null, lastSeen: serverTimestamp() }, { merge: true });
           } catch {}
           const ok = document.getElementById('relire-ok');
           if (ok) { ok.hidden = false; setTimeout(() => ok.hidden = true, 2500); }

@@ -97,6 +97,12 @@ dateEl.textContent = dateLisibleFromKey(date);
     function renderBilan(libre) {
       const v = vigilances.find(x => x.id === matin.vigilanceId);
       const objsChoisis = (matin.objectifsIds || []).map(id => objectifs.find(o => o.id === id)).filter(Boolean);
+      // Vigilances réellement portées (multi-thèmes + compat ancien modèle)
+      const vigsJ = ((matin.objectifs && matin.objectifs.length)
+        ? [...new Set(matin.objectifs.map(o => o.vigilance).filter(Boolean))]
+        : (matin.vigilanceId ? [matin.vigilanceId] : []))
+        .map(id => vigilances.find(x => x.id === id)).filter(Boolean);
+      const multiVig = vigsJ.length > 1;
       const bilansObjs = soir.bilansObjectifs || {};
       const bilanPersonnel = soir.bilanPersonnel || { statut: '', note: '' };
       const presente = soir.presente || '';
@@ -108,6 +114,8 @@ dateEl.textContent = dateLisibleFromKey(date);
         const cur = isPerso ? bilanPersonnel : (bilansObjs[obj.id] || { statut: '', note: '' });
         const libelle = isPerso ? matin.personnel : obj.matin.libelle;
         const question = isPerso ? `${t("Comment cela s'est-il passé aujourd'hui ?","How did it go today?")}` : obj.soir.question;
+        const vObj = (!isPerso && obj) ? vigilances.find(x => x.id === obj.vigilance) : null;
+        const themeTag = (multiVig && vObj) ? `<span class="bilan-objectif__theme">${esc(vObj.label)}</span>` : '';
 
         const statusBtns = STATUTS.map(s => `
           <label class="statut-btn ${cur.statut === s.id ? 'is-active' : ''}">
@@ -118,6 +126,7 @@ dateEl.textContent = dateLisibleFromKey(date);
 
         return `
           <article class="bilan-objectif" data-obj-id="${esc(id)}">
+            ${themeTag}
             <h3 class="bilan-objectif__libelle">${esc(libelle)}</h3>
             <p class="bilan-objectif__question"><em>${esc(question)}</em></p>
             <div class="bilan-objectif__statuts">${statusBtns}</div>
@@ -149,8 +158,10 @@ dateEl.textContent = dateLisibleFromKey(date);
             <div class="adab-soir-rappel">
               ${matin.ancrage ? `<p class="adab-soir-rappel__ancrage">${t("Ce matin vous avez écrit : ","This morning you wrote: ")}<em>« ${esc(matin.ancrage)} »</em></p>` : ''}
               <p class="adab-soir-rappel__vigilance">
-                ${t("Vous portiez la vigilance de ","You were carrying the vigilance of ")}<strong>${esc(v?.label || '')}</strong>
-                <span lang="ar" dir="rtl" style="font-family:'Amiri',serif; color:#8a7028;">· ${esc(v?.ar || '')}</span>
+                ${multiVig
+                  ? `${t("Vous portiez aujourd'hui : ","Today you were carrying: ")}<strong>${vigsJ.map(x => esc(x.label)).join(' · ')}</strong>`
+                  : `${t("Vous portiez la vigilance de ","You were carrying the vigilance of ")}<strong>${esc((vigsJ[0] || v)?.label || '')}</strong>
+                     <span lang="ar" dir="rtl" style="font-family:'Amiri',serif; color:#8a7028;">· ${esc((vigsJ[0] || v)?.ar || '')}</span>`}
               </p>
             </div>
 

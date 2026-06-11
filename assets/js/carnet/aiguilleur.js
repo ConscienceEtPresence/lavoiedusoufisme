@@ -138,9 +138,19 @@ dateEl.textContent = dateLisible();
       }
       // Cas 2 : matin posé, soir non
       if (aPose) {
-        const v = vigilances.find(x => x.id === matin.vigilanceId);
         const objsChoisis = (matin.objectifsIds || []).map(id => objectifs.find(o => o.id === id)).filter(Boolean);
-        const objsHTML = objsChoisis.map(o => `<li class="resume-obj">${esc(o.matin.libelle)}</li>`).join('');
+        const vigById = {}; for (const vv of vigilances) vigById[vv.id] = vv;
+        const vigsJ = ((matin.objectifs && matin.objectifs.length)
+          ? [...new Set(matin.objectifs.map(o => o.vigilance).filter(Boolean))]
+          : (matin.vigilanceId ? [matin.vigilanceId] : []))
+          .map(id => vigById[id]).filter(Boolean);
+        const multiVig = vigsJ.length > 1;
+        const v = vigsJ[0] || vigilances.find(x => x.id === matin.vigilanceId);
+        const objsHTML = objsChoisis.map(o => {
+          const vObj = vigById[o.vigilance];
+          const tag = (multiVig && vObj) ? `<span class="resume-obj__theme">${esc(vObj.label)}</span> ` : '';
+          return `<li class="resume-obj">${tag}${esc(o.matin.libelle)}</li>`;
+        }).join('');
         const persoHTML = matin.personnel ? `<li class="resume-obj resume-obj--perso">${esc(matin.personnel)}</li>` : '';
         const ctaSoir = heure >= 17
           ? `<a href="${BASE}relire/" class="adab-bouton adab-bouton--grand">${t("Relire ma journée","Look back on my day")}</a>`
@@ -148,11 +158,11 @@ dateEl.textContent = dateLisible();
         return `
           <section class="dash-aujourd-hui dash-aujourd-hui--pose">
             <p class="dash-aujourd-hui__label">${t("Ce que j'ai posé ce matin","What I set this morning")}</p>
-            ${v ? `
+            ${(!multiVig && v) ? `
               <div class="dash-vigilance">
                 <span class="dash-vigilance__ar" lang="ar" dir="rtl">${esc(v.ar)}</span>
                 <h3 class="dash-vigilance__titre">${esc(v.label)}</h3>
-              </div>` : ''}
+              </div>` : (multiVig ? `<p class="dash-vigilance__multi">${vigsJ.map(x => esc(x.label)).join(' · ')}</p>` : '')}
             ${(objsHTML || persoHTML) ? `<ul class="dash-objs">${objsHTML}${persoHTML}</ul>` : ''}
             ${matin.ancrage ? `<p class="dash-ancrage"><em>« ${esc(matin.ancrage)} »</em></p>` : ''}
             <div class="dash-actions">

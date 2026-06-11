@@ -82,12 +82,17 @@ const dateOuvert = params.get('j');
       return;
     }
 
+    // Les vigilances réellement portées dans une journée (multi-thèmes + compat)
+    const vigsDuJour = (m) => (m && m.objectifs && m.objectifs.length)
+      ? [...new Set(m.objectifs.map(o => o.vigilance).filter(Boolean))]
+      : (m && m.vigilanceId ? [m.vigilanceId] : []);
+
     // Vue liste
     const compterVigilances = {};
     let totalDeposes = 0;
     for (const j of jours) {
-      if (j.data.matin?.vigilanceId) {
-        compterVigilances[j.data.matin.vigilanceId] = (compterVigilances[j.data.matin.vigilanceId] || 0) + 1;
+      for (const vid of vigsDuJour(j.data.matin)) {
+        compterVigilances[vid] = (compterVigilances[vid] || 0) + 1;
       }
       if (j.data.soir?.fermeLe) totalDeposes++;
     }
@@ -98,9 +103,14 @@ const dateOuvert = params.get('j');
     const histHTML = jours.map(j => {
       const m = j.data.matin || {};
       const s = j.data.soir || {};
-      const v = vigilances.find(x => x.id === m.vigilanceId);
+      const vigsJ = vigsDuJour(m).map(id => vigilances.find(x => x.id === id)).filter(Boolean);
       const aDepose = !!s.fermeLe;
       const aPose = !!m.poseLe;
+      const vigHTML = vigsJ.length === 0
+        ? '<p class="hist-jour__vigilance hist-jour__vigilance--vide"><em>—</em></p>'
+        : vigsJ.length === 1
+          ? `<p class="hist-jour__vigilance"><span lang="ar" dir="rtl" style="font-family:'Amiri',serif; color:#8a7028;">${esc(vigsJ[0].ar)}</span> ${esc(vigsJ[0].label)}</p>`
+          : `<p class="hist-jour__vigilance">${vigsJ.map(v => esc(v.label)).join(' · ')}</p>`;
       return `
         <a class="hist-jour" href="?j=${esc(j.date)}">
           <div class="hist-jour__date">
@@ -108,11 +118,7 @@ const dateOuvert = params.get('j');
             <span class="hist-jour__semaine">${dateLisible(j.date).split(' ')[0]}</span>
           </div>
           <div class="hist-jour__contenu">
-            ${v ? `
-              <p class="hist-jour__vigilance">
-                <span lang="ar" dir="rtl" style="font-family:'Amiri',serif; color:#8a7028;">${esc(v.ar)}</span>
-                ${esc(v.label)}
-              </p>` : '<p class="hist-jour__vigilance hist-jour__vigilance--vide"><em>—</em></p>'}
+            ${vigHTML}
             ${m.ancrage ? `<p class="hist-jour__ancrage"><em>« ${esc(m.ancrage)} »</em></p>` : ''}
           </div>
           <div class="hist-jour__statut">

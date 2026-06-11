@@ -2413,3 +2413,85 @@ body.carnet-body {
   border-top: 1px solid var(--adab-rule);
   border-bottom: 1px solid var(--adab-rule);
 }
+
+/* ============================================================
+   Composer une journée multi-thèmes
+   ============================================================ */
+.adab-autres-themes {
+  margin: 1.4rem auto 0;
+  max-width: 34rem;
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--adab-rule);
+}
+.adab-autres-themes__label {
+  font-family: 'Inter', sans-serif;
+  font-size: .64rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+  margin: 0 0 .8rem;
+}
+.adab-themes-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .45rem;
+}
+.adab-theme-chip {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  color: var(--adab-ink-soft);
+  background: rgba(255,255,255,.4);
+  border: 1px solid var(--adab-rule);
+  border-radius: 999px;
+  padding: .35rem .9rem;
+  cursor: pointer;
+  transition: border-color .3s ease, background .3s ease, color .3s ease;
+}
+.adab-theme-chip:hover { border-color: var(--adab-gold); color: var(--adab-ink); }
+.adab-theme-chip.is-current {
+  background: var(--adab-gold);
+  border-color: var(--adab-gold);
+  color: #fff;
+}
+.adab-theme-chip.has-sel:not(.is-current) {
+  border-color: var(--adab-gold);
+  color: var(--adab-gold-deep);
+}
+.adab-theme-chip__n {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: .68rem;
+  font-weight: 600;
+  margin-left: .25rem;
+  opacity: .85;
+}
+/* Étiquette de thème sur les cartes (visage + pose) */
+.visage-matin__theme,
+.adab-pose-objectif__theme {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: .6rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+  margin-bottom: .45rem;
+}
+
+/* Étiquettes de thème (multi-thèmes) sur les listes/cartes */
+.resume-obj__theme,
+.bilan-objectif__theme,
+.dash-vigilance__multi {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--adab-gold-deep);
+}
+.resume-obj__theme { font-size: .58rem; margin-right: .15rem; }
+.bilan-objectif__theme { display: block; font-size: .6rem; margin-bottom: .35rem; }
+.dash-vigilance__multi {
+  text-align: center;
+  font-size: .72rem;
+  margin: .2rem 0 .6rem;
+}

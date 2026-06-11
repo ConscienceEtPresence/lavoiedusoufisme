@@ -63,6 +63,12 @@ const date = todayKey();
 
     const vigilances = vigilancesRes.vigilances || [];
     const objectifs = objectifsRes.objectifs || [];
+    const objById = {};
+    for (const o of objectifs) objById[o.id] = o;
+    const vigById = {};
+    for (const v of vigilances) vigById[v.id] = v;
+    // Nombre d'objectifs déjà sélectionnés appartenant à une vigilance donnée
+    const countSelVig = vid => state.objectifsIds.filter(id => objById[id]?.vigilance === vid).length;
     const hikamById = {};
     for (const r of (hikamRes.records || [])) hikamById[r.id] = r;
 
@@ -188,7 +194,7 @@ const date = todayKey();
 
       mount.innerHTML = `
         <section class="adab-step adab-step--vigilance">
-          <button type="button" class="adab-back-link" id="back-accueil">${t("← Changer de vigilance","← Change vigilance")}</button>
+          <button type="button" class="adab-back-link" id="back-accueil">${t("← Retour","← Back")}</button>
 
           <header class="vigilance-fiche">
             <p class="vigilance-fiche__ar" lang="ar" dir="rtl">${esc(v.ar)}</p>
@@ -239,12 +245,22 @@ const date = todayKey();
             </label>
           </div>
 
+          <div class="adab-autres-themes">
+            <p class="adab-autres-themes__label">${t("Porter aussi un autre thème","Also carry another theme")}</p>
+            <div class="adab-themes-chips">
+              ${vigilances.map(vv => {
+                const n = countSelVig(vv.id);
+                return `<button type="button" class="adab-theme-chip ${vv.id === v.id ? 'is-current' : ''} ${n ? 'has-sel' : ''}" data-vig="${esc(vv.id)}">${esc(vv.label)}${n ? ` <span class="adab-theme-chip__n">${n}</span>` : ''}</button>`;
+              }).join('')}
+            </div>
+          </div>
+
           <p class="adab-section-titre adab-section-titre--soft">${t("Ce que vous prenez aujourd'hui","What you take on today")}</p>
           <div id="visage-matin-mount" class="visage-matin-mount"></div>
 
           <div class="adab-commit">
             <button type="button" class="adab-bouton" id="commit-pose" disabled>
-              Je prends cela pour aujourd'hui
+              ${t("Je prends cela pour aujourd'hui","I take this for today")}
             </button>
           </div>
         </section>
@@ -262,11 +278,13 @@ const date = todayKey();
           return;
         }
         const visages = ids.map(id => {
-          const o = objs.find(x => x.id === id);
+          const o = objById[id];
           if (!o) return '';
           const sagesse = hikamById[o.matin.sagesse_hikam_id];
+          const vObj = vigById[o.vigilance];
           return `
             <article class="visage-matin">
+              ${vObj ? `<span class="visage-matin__theme">${esc(vObj.label)}</span>` : ''}
               <h3 class="visage-matin__titre">${esc(o.matin.libelle)}</h3>
               <p class="visage-matin__ens">${esc(o.matin.enseignement_court)}</p>
               ${sagesse?.french_translation ? `
@@ -308,6 +326,15 @@ const date = todayKey();
       document.getElementById('back-accueil').addEventListener('click', () => {
         state.etape = 'accueil'; render();
       });
+      // Changer de thème affiché sans perdre les objectifs déjà choisis
+      document.querySelectorAll('.adab-theme-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          state.personnel = (document.getElementById('objectif-perso')?.value || '').trim();
+          state.vigilanceId = chip.dataset.vig;
+          render();
+          document.querySelector('.adab-autres-themes')?.scrollIntoView({ behavior: 'instant', block: 'center' });
+        });
+      });
       document.querySelectorAll('input[name="objectif"]').forEach(inp => {
         inp.addEventListener('change', () => {
           const card = inp.closest('.objectif-carte');
@@ -325,16 +352,20 @@ const date = todayKey();
 
       document.getElementById('commit-pose').addEventListener('click', async () => {
         const btn = document.getElementById('commit-pose');
-        btn.disabled = true; btn.textContent = 'Un instant…';
+        btn.disabled = true; btn.textContent = t('Un instant…','One moment…');
         try {
           const personnel = (document.getElementById('objectif-perso')?.value || '').trim();
           state.personnel = personnel;
+          // Modèle multi-thèmes : chaque objectif avec sa vigilance.
+          const objetsMulti = state.objectifsIds.map(id => ({ id, vigilance: objById[id]?.vigilance || state.vigilanceId }));
+          const vigEntree = objetsMulti[0]?.vigilance || state.vigilanceId;
           await setDoc(doc(db, 'carnets', anonId, 'jours', date), {
-            langue: 'fr', schemaVersion: 4,
+            langue: 'fr', schemaVersion: 5,
             matin: {
               ancrage: state.ancrage || null,
-              vigilanceId: state.vigilanceId,
-              objectifsIds: state.objectifsIds,
+              vigilanceId: vigEntree,           // compat : vigilance d'entrée
+              objectifsIds: state.objectifsIds, // compat : liste plate
+              objectifs: objetsMulti,           // multi : { id, vigilance }
               personnel: personnel || null,
               poseLe: serverTimestamp()
             }
@@ -357,14 +388,19 @@ const date = todayKey();
 
     function renderPose() {
       const v = vigilances.find(x => x.id === state.vigilanceId);
-      const objsChoisis = state.objectifsIds.map(id => objectifs.find(o => o.id === id)).filter(Boolean);
+      const objsChoisis = state.objectifsIds.map(id => objById[id]).filter(Boolean);
+      const vigsJour = [...new Set(objsChoisis.map(o => o.vigilance))].map(id => vigById[id]).filter(Boolean);
+      const multi = vigsJour.length > 1;
+      const vPrincipale = vigsJour[0] || v;
 
       mount.innerHTML = `
         <section class="adab-step adab-step--pose">
           <div class="adab-pose-message">
-            <p class="adab-pose-message__ar" lang="ar" dir="rtl">${esc(v?.ar || '')}</p>
+            <p class="adab-pose-message__ar" lang="ar" dir="rtl">${esc(vPrincipale?.ar || '')}</p>
             <h1 class="adab-pose-message__titre">${prenom ? `${esc(prenom)},` : ''} ${t("votre journée est posée.","your day is set.")}</h1>
-            <p class="adab-pose-message__sub">${t("Vous portez aujourd'hui la vigilance de ","Today you carry the vigilance of ")}<strong>${esc(v?.label || '')}</strong>.</p>
+            <p class="adab-pose-message__sub">${multi
+              ? t("Vos engagements traversent plusieurs vigilances aujourd'hui.","Your commitments span several vigilances today.")
+              : `${t("Vous portez aujourd'hui la vigilance de ","Today you carry the vigilance of ")}<strong>${esc(vPrincipale?.label || '')}</strong>.`}</p>
           </div>
 
           ${state.ancrage ? `
@@ -376,13 +412,14 @@ const date = todayKey();
           <div class="adab-pose-objectifs">
             ${objsChoisis.map(o => `
               <article class="adab-pose-objectif">
+                ${multi && vigById[o.vigilance] ? `<span class="adab-pose-objectif__theme">${esc(vigById[o.vigilance].label)}</span>` : ''}
                 <p class="adab-pose-objectif__libelle">${esc(o.matin.libelle)}</p>
                 <p class="adab-pose-objectif__chemin"><em>${esc(o.matin.phrase_chemin)}</em></p>
               </article>`).join('')}
             ${state.personnel ? `
               <article class="adab-pose-objectif">
                 <p class="adab-pose-objectif__libelle">${esc(state.personnel)}</p>
-                <p class="adab-pose-objectif__chemin"><em>Portez-le aujourd'hui.</em></p>
+                <p class="adab-pose-objectif__chemin"><em>${t("Portez-le aujourd'hui.","Carry it today.")}</em></p>
               </article>` : ''}
           </div>
 

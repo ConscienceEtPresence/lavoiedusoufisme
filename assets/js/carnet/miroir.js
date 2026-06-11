@@ -89,10 +89,15 @@ try { localStorage.setItem('lvdd_miroir_vu', String(Date.now())); } catch (e) {}
     const dernier = jours[jours.length - 1].key;
 
     // === Fréquence des vigilances (vers quoi le cœur est revenu) ===
+    // Une journée multi-thèmes compte chaque vigilance réellement portée.
+    // Compat : anciennes journées = la seule vigilanceId.
     const compteVig = {};
     for (const j of jours) {
-      const vid = j.matin.vigilanceId;
-      if (vid) compteVig[vid] = (compteVig[vid] || 0) + 1;
+      const m = j.matin || {};
+      const vigsJ = (m.objectifs && m.objectifs.length)
+        ? [...new Set(m.objectifs.map(o => o.vigilance).filter(Boolean))]
+        : (m.vigilanceId ? [m.vigilanceId] : []);
+      for (const vid of vigsJ) compteVig[vid] = (compteVig[vid] || 0) + 1;
     }
     // Ordonne les 10 vigilances par présence décroissante
     const vigOrdonnees = vigilances

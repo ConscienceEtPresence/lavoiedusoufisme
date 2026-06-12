@@ -55,12 +55,16 @@ try { localStorage.setItem('lvdd_miroir_vu', String(Date.now())); } catch (e) {}
     const vigById = {};
     for (const v of vigilances) vigById[v.id] = v;
 
-    // Rassemble les jours posés
+    // Rassemble les jours posés + tous les instants recueillis (même hors jour posé)
     const jours = [];
+    const recueilsAll = [];
     joursSnap.forEach(docSnap => {
       const data = docSnap.data() || {};
       if (data.matin && data.matin.poseLe) {
         jours.push({ key: docSnap.id, matin: data.matin, soir: data.soir || {} });
+      }
+      if (Array.isArray(data.recueils)) {
+        for (const r of data.recueils) recueilsAll.push({ ...r, jour: docSnap.id });
       }
     });
     // Tri chronologique
@@ -185,6 +189,37 @@ try { localStorage.setItem('lvdd_miroir_vu', String(Date.now())); } catch (e) {}
         </ul>
       </section>` : '';
 
+    // === Ce que la vie a présenté : les instants recueillis hors programme ===
+    // Non pas ce que vous aviez prévu — ce que la journée vous a tendu, et que
+    // vous avez su recueillir. Souvent là que le travail réel a lieu.
+    let recueilsHTML = '';
+    if (recueilsAll.length) {
+      const compteR = {};
+      for (const r of recueilsAll) {
+        if (r.vigilanceId) compteR[r.vigilanceId] = (compteR[r.vigilanceId] || 0) + 1;
+      }
+      const rOrd = Object.entries(compteR)
+        .map(([id, n]) => ({ v: vigById[id], n }))
+        .filter(x => x.v)
+        .sort((a, b) => b.n - a.n);
+      const puces = rOrd.map(({ v, n }) =>
+        `<li class="miroir-recueil__vig"><span class="miroir-recueil__label">${esc(v.label)}</span> <span class="miroir-recueil__n">${n} ${t('fois','times')}</span></li>`).join('');
+      // Quelques instants récents, en écho
+      const echos = recueilsAll
+        .slice().sort((a, b) => (b.le || 0) - (a.le || 0)).slice(0, 3)
+        .map(r => `<li class="miroir-recueil__echo"><em>« ${esc(r.texte)} »</em></li>`).join('');
+      const nbR = recueilsAll.length;
+      recueilsHTML = `
+        <section class="miroir-bloc miroir-recueil">
+          <h2 class="miroir-bloc__titre">${t("Ce que la vie vous a présenté","What life presented to you")}</h2>
+          <p class="miroir-bloc__sous"><em>${nbR === 1
+            ? t("Un instant recueilli en chemin — non prévu, et pourtant juste.","One moment gathered along the way — unplanned, and yet fitting.")
+            : (EN ? `${nbR} moments gathered along the way — unplanned, and yet the real work.` : `${nbR} instants recueillis en chemin — non prévus, et pourtant le travail réel.`)}</em></p>
+          ${puces ? `<ul class="miroir-recueil__vigs">${puces}</ul>` : ''}
+          ${echos ? `<ul class="miroir-recueil__echos">${echos}</ul>` : ''}
+        </section>`;
+    }
+
     // === Rendu ===
     const intro = nbJours === 1
       ? t('1 journée posée','1 day set')
@@ -216,6 +251,8 @@ try { localStorage.setItem('lvdd_miroir_vu', String(Date.now())); } catch (e) {}
           <p class="miroir-bloc__sous"><em>${t("Non pas ce que vous avez « réussi » — simplement là où vous vous êtes posé.","Not what you “succeeded” at — simply where you settled.")}</em></p>
           <div class="miroir-barres">${barres}</div>
         </section>
+
+        ${recueilsHTML}
 
         ${persoHTML}
 

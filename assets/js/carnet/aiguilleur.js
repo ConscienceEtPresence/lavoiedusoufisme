@@ -69,6 +69,8 @@ dateEl.textContent = dateLisible();
     const jourData = jourSnap?.exists() ? jourSnap.data() : {};
     const matin = jourData.matin || {};
     const soir = jourData.soir || {};
+    const recueils = Array.isArray(jourData.recueils) ? jourData.recueils : [];
+    const vigById = {}; for (const vv of vigilances) vigById[vv.id] = vv;
     const aPose = !!matin.poseLe;
     const aDepose = !!soir.fermeLe;
 
@@ -215,6 +217,41 @@ dateEl.textContent = dateLisible();
         </section>`;
     }
 
+    // === Recueillir un instant : toujours accessible, en plein jour ===
+    // Quelque chose s'est présenté hors programme ? On le saisit tout de suite.
+    function renderRecueillir() {
+      const STATUTS_LBL = {
+        vecu: t('habité', 'inhabited'),
+        traverse: t('traversé', 'moved through'),
+        manque: t('manqué', 'missed'),
+      };
+      const liste = recueils.slice().sort((a, b) => (a.le || 0) - (b.le || 0)).map(r => {
+        const v = vigById[r.vigilanceId];
+        return `
+          <li class="dash-recueil__item">
+            ${v ? `<span class="dash-recueil__theme">${esc(v.label)}</span>` : ''}
+            <span class="dash-recueil__texte">${esc(r.texte)}</span>
+            ${r.statut && STATUTS_LBL[r.statut] ? `<span class="dash-recueil__statut">· ${esc(STATUTS_LBL[r.statut])}</span>` : ''}
+          </li>`;
+      }).join('');
+      return `
+        <section class="dash-recueil">
+          <a href="${BASE}recueillir/" class="dash-recueil__cta">
+            <span class="dash-recueil__cta-orn">✦</span>
+            <span class="dash-recueil__cta-txt">
+              <span class="dash-recueil__cta-titre">${t("Quelque chose s'est présenté","Something came up")}</span>
+              <span class="dash-recueil__cta-sous"><em>${t("un instant à recueillir, même hors programme","a moment to gather, even unplanned")}</em></span>
+            </span>
+            <span class="dash-recueil__cta-fleche">→</span>
+          </a>
+          ${recueils.length ? `
+            <div class="dash-recueil__jour">
+              <p class="dash-recueil__label">${t("Recueilli aujourd'hui","Gathered today")}</p>
+              <ul class="dash-recueil__liste">${liste}</ul>
+            </div>` : ''}
+        </section>`;
+    }
+
     // === SECTION 2 : Les 10 vigilances toujours visibles ===
     function renderSection2() {
       const cards = vigilances.map(v => {
@@ -279,6 +316,7 @@ dateEl.textContent = dateLisible();
         ${renderSeuilDuJour()}
         ${renderRappelVeille()}
         ${renderSection1()}
+        ${renderRecueillir()}
         ${renderSection2()}
         ${renderSection3()}
       </section>

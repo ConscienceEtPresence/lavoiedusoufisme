@@ -108,6 +108,32 @@ dateEl.textContent = dateLisibleFromKey(date);
       const presente = soir.presente || '';
       const gratitudeNote = soir.gratitudeNote || '';
       const repriseTexte = soir.repriseTexte || '';
+      const recueils = Array.isArray(jourData.recueils) ? jourData.recueils.slice() : [];
+
+      // Ce qui a été recueilli en plein jour (hors programme) — rappelé ici,
+      // pour que le bilan embrasse aussi ce que la journée a tendu.
+      const STATUTS_RECUEIL = {
+        vecu: t('habité', 'inhabited'),
+        traverse: t('traversé', 'moved through'),
+        manque: t('manqué', 'missed'),
+      };
+      const recueilsHTML = recueils.length ? `
+        <section class="bilan-recueils">
+          <p class="adab-section-titre adab-section-titre--soft">${t("Ce que vous avez recueilli aujourd'hui","What you gathered today")}</p>
+          <p class="bilan-recueils__hint"><em>${t("Les instants que la journée vous a tendus, en chemin.","The moments the day handed you, along the way.")}</em></p>
+          <ul class="bilan-recueils__liste">
+            ${recueils.sort((a, b) => (a.le || 0) - (b.le || 0)).map(r => {
+              const v = vigilances.find(x => x.id === r.vigilanceId);
+              return `
+                <li class="bilan-recueils__item">
+                  ${v ? `<span class="bilan-recueils__theme">${esc(v.label)}</span>` : ''}
+                  <p class="bilan-recueils__texte">${esc(r.texte)}</p>
+                  ${r.statut && STATUTS_RECUEIL[r.statut] ? `<span class="bilan-recueils__statut">${esc(STATUTS_RECUEIL[r.statut])}</span>` : ''}
+                  ${r.apprentissage ? `<p class="bilan-recueils__appr"><em>« ${esc(r.apprentissage)} »</em></p>` : ''}
+                </li>`;
+            }).join('')}
+          </ul>
+        </section>` : '';
 
       const renderObjBilan = (obj, isPerso) => {
         const id = isPerso ? '__perso' : obj.id;
@@ -172,6 +198,8 @@ dateEl.textContent = dateLisibleFromKey(date);
               ${matin.personnel ? renderObjBilan(null, true) : ''}
             </div>
           `}
+
+          ${recueilsHTML}
 
           <details class="adab-detail-bloc">
             <summary>

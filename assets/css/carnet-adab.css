@@ -2495,3 +2495,147 @@ body.carnet-body {
   font-size: .72rem;
   margin: .2rem 0 .6rem;
 }
+
+/* ============================================================
+   RECUEILLIR UN INSTANT — geste de plein jour
+   « Quelque chose s'est présenté » : capture courte, reliée à
+   une vigilance, qui rejoint le bilan du soir et le miroir.
+   ============================================================ */
+
+/* — Bandeau d'accès sur le tableau de bord — */
+.dash-recueil { margin: 1.6rem 0; }
+.dash-recueil__cta {
+  display: flex; align-items: center; gap: .85rem;
+  padding: 1rem 1.1rem; border-radius: 16px;
+  background: linear-gradient(180deg, #fffaf0 0%, var(--adab-paper-warm) 100%);
+  border: 1px solid var(--adab-rule);
+  box-shadow: 0 10px 26px -20px rgba(138,112,40,.5);
+  text-decoration: none; color: var(--adab-ink);
+  transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.dash-recueil__cta:hover { transform: translateY(-1px); border-color: var(--adab-gold); box-shadow: 0 14px 30px -18px rgba(138,112,40,.55); }
+.dash-recueil__cta-orn {
+  flex: 0 0 auto; width: 2.4rem; height: 2.4rem; border-radius: 50%;
+  display: grid; place-items: center; color: #fff; font-size: 1.05rem;
+  background: radial-gradient(circle at 50% 40%, #e9d29a, #c0a050 60%, #8a7028);
+  box-shadow: 0 0 24px -6px rgba(201,160,80,.6);
+}
+.dash-recueil__cta-txt { flex: 1 1 auto; display: flex; flex-direction: column; gap: .12rem; }
+.dash-recueil__cta-titre { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--adab-ink); line-height: 1.15; }
+.dash-recueil__cta-sous { font-family: 'Source Serif 4', serif; font-size: .92rem; color: var(--adab-ink-mute); }
+.dash-recueil__cta-fleche { flex: 0 0 auto; color: var(--adab-gold-deep); font-size: 1.2rem; }
+
+/* — Liste de ce qui a déjà été recueilli aujourd'hui (dashboard) — */
+.dash-recueil__jour { margin-top: .8rem; padding: .2rem .3rem 0; }
+.dash-recueil__label {
+  font-family: 'Inter', sans-serif; font-size: .72rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--adab-ink-mute); margin: 0 0 .5rem;
+}
+.dash-recueil__liste { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .5rem; }
+.dash-recueil__item {
+  font-family: 'Source Serif 4', serif; font-size: .96rem; line-height: 1.45;
+  color: var(--adab-ink-soft); padding-left: .8rem; border-left: 2px solid var(--adab-rule);
+}
+.dash-recueil__theme {
+  display: inline-block; font-family: 'Inter', sans-serif; font-size: .66rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--adab-gold-deep);
+  background: rgba(192,160,80,.12); border-radius: 6px; padding: .12rem .4rem; margin-right: .35rem;
+}
+.dash-recueil__statut { color: var(--adab-ink-mute); font-style: italic; }
+
+/* — La page Recueillir — */
+.recueil { max-width: 34rem; margin: 0 auto; }
+.recueil__head { text-align: center; margin-bottom: 1.6rem; }
+.recueil__orn { color: var(--adab-gold); font-size: 1.4rem; margin-bottom: .3rem; }
+.recueil__titre { font-family: 'Cormorant Garamond', serif; font-size: 2.05rem; font-weight: 600; color: var(--adab-ink); margin: 0 0 .5rem; line-height: 1.1; }
+.recueil__sous { font-family: 'Source Serif 4', serif; font-size: 1.05rem; line-height: 1.6; color: var(--adab-ink-mute); max-width: 28rem; margin: 0 auto; }
+
+.recueil-champ { display: block; margin: 1.2rem 0; }
+.recueil-champ__label { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--adab-ink); margin-bottom: .5rem; }
+.recueil-champ textarea, .recueil-appr textarea {
+  width: 100%; box-sizing: border-box; resize: vertical;
+  font-family: 'Source Serif 4', serif; font-size: 1.02rem; line-height: 1.5; color: var(--adab-ink);
+  background: #fffdf7; border: 1px solid var(--adab-rule); border-radius: 12px; padding: .8rem .9rem;
+}
+.recueil-champ textarea:focus, .recueil-appr textarea:focus { outline: none; border-color: var(--adab-gold); box-shadow: 0 0 0 3px rgba(192,160,80,.15); }
+
+.recueil-bloc { margin: 1.6rem 0; }
+.recueil-bloc__label { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--adab-ink); margin: 0 0 .25rem; }
+.recueil-bloc__hint { font-family: 'Source Serif 4', serif; font-size: .92rem; color: var(--adab-ink-mute); margin: 0 0 .8rem; }
+
+.recueil-vig-grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr)); gap: .55rem; }
+.recueil-vig {
+  position: relative; display: flex; flex-direction: column; align-items: center; gap: .15rem;
+  padding: .7rem .5rem; border-radius: 12px; cursor: pointer; text-align: center;
+  background: #fffdf7; border: 1px solid var(--adab-rule); color: var(--adab-ink);
+  transition: border-color .15s ease, background .15s ease, transform .12s ease;
+}
+.recueil-vig:hover { border-color: var(--adab-gold); transform: translateY(-1px); }
+.recueil-vig.is-posee { background: rgba(192,160,80,.08); }
+.recueil-vig.is-selected { border-color: var(--adab-gold-deep); background: rgba(192,160,80,.18); box-shadow: 0 0 0 2px rgba(192,160,80,.25); }
+.recueil-vig__ar { font-family: 'Amiri', serif; font-size: 1.15rem; color: var(--adab-gold-deep); line-height: 1; }
+.recueil-vig__label { font-family: 'Cormorant Garamond', serif; font-size: 1.02rem; font-weight: 600; color: var(--adab-ink); }
+.recueil-vig__tag {
+  font-family: 'Inter', sans-serif; font-size: .58rem; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--adab-gold-deep); background: rgba(192,160,80,.18);
+  border-radius: 5px; padding: .08rem .35rem; margin-top: .12rem;
+}
+
+.recueil-statuts { display: flex; flex-direction: column; gap: .55rem; }
+.recueil-statut {
+  display: flex; flex-direction: column; align-items: flex-start; gap: .1rem;
+  padding: .7rem .9rem; border-radius: 12px; cursor: pointer; text-align: left;
+  background: #fffdf7; border: 1px solid var(--adab-rule); color: var(--adab-ink);
+  transition: border-color .15s ease, background .15s ease;
+}
+.recueil-statut:hover { border-color: var(--adab-gold); }
+.recueil-statut.is-active { border-color: var(--adab-gold-deep); background: rgba(192,160,80,.16); box-shadow: 0 0 0 2px rgba(192,160,80,.22); }
+.recueil-statut__nom { font-family: 'Cormorant Garamond', serif; font-size: 1.18rem; font-weight: 600; color: var(--adab-ink); }
+.recueil-statut__hint { font-family: 'Source Serif 4', serif; font-size: .88rem; color: var(--adab-ink-mute); }
+
+.recueil-appr { margin-top: 1rem; }
+
+/* — Déjà recueilli aujourd'hui (en bas de la page) — */
+.recueil-jour { max-width: 34rem; margin: 2.2rem auto 0; padding-top: 1.4rem; border-top: 1px solid var(--adab-rule); }
+.recueil-jour__label { font-family: 'Inter', sans-serif; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--adab-ink-mute); margin: 0 0 .7rem; }
+.recueil-jour__liste { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .9rem; }
+.recueil-jour__item { padding-left: .9rem; border-left: 2px solid var(--adab-rule); }
+.recueil-jour__theme {
+  display: inline-block; font-family: 'Inter', sans-serif; font-size: .64rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--adab-gold-deep);
+  background: rgba(192,160,80,.12); border-radius: 6px; padding: .12rem .4rem; margin-bottom: .25rem;
+}
+.recueil-jour__texte { font-family: 'Source Serif 4', serif; font-size: 1rem; line-height: 1.45; color: var(--adab-ink-soft); margin: .1rem 0; }
+.recueil-jour__meta { display: flex; gap: .6rem; font-family: 'Inter', sans-serif; font-size: .76rem; color: var(--adab-ink-mute); margin: .15rem 0 0; }
+.recueil-jour__statut { font-style: italic; }
+.recueil-jour__appr { font-family: 'Source Serif 4', serif; font-size: .92rem; color: var(--adab-gold-deep); margin: .3rem 0 0; }
+
+/* — Page de remerciement après recueil — */
+.recueil-merci { max-width: 32rem; margin: 0 auto; text-align: center; padding-top: 1rem; }
+.recueil-merci__orn { color: var(--adab-gold); font-size: 1.6rem; margin-bottom: .4rem; }
+.recueil-merci__titre { font-family: 'Cormorant Garamond', serif; font-size: 2.1rem; font-weight: 600; color: var(--adab-ink); margin: 0 0 .7rem; }
+.recueil-merci__texte { font-family: 'Source Serif 4', serif; font-size: 1.08rem; line-height: 1.65; color: var(--adab-ink-soft); max-width: 27rem; margin: 0 auto 1.4rem; }
+.recueil-merci__texte strong { color: var(--adab-gold-deep); }
+.recueil-merci__sagesse { margin: 1.4rem auto; padding: 1.1rem 1.3rem; max-width: 28rem; border-left: 3px solid var(--adab-gold); background: rgba(192,160,80,.07); border-radius: 0 12px 12px 0; }
+.recueil-merci__sagesse p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.18rem; line-height: 1.5; color: var(--adab-ink); margin: 0; }
+
+/* — Rappel des recueils dans le bilan du soir — */
+.bilan-recueils { margin: 1.8rem 0; }
+.bilan-recueils__hint { font-family: 'Source Serif 4', serif; font-size: .92rem; color: var(--adab-ink-mute); margin: 0 0 .9rem; }
+.bilan-recueils__liste { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 1rem; }
+.bilan-recueils__item { padding: .8rem 1rem; border-radius: 12px; background: rgba(192,160,80,.07); border: 1px solid var(--adab-rule); }
+.bilan-recueils__theme {
+  display: inline-block; font-family: 'Inter', sans-serif; font-size: .64rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--adab-gold-deep);
+  background: rgba(192,160,80,.14); border-radius: 6px; padding: .12rem .4rem; margin-bottom: .3rem;
+}
+.bilan-recueils__texte { font-family: 'Source Serif 4', serif; font-size: 1rem; line-height: 1.5; color: var(--adab-ink); margin: .1rem 0; }
+.bilan-recueils__statut { font-family: 'Inter', sans-serif; font-size: .76rem; font-style: italic; color: var(--adab-ink-mute); }
+.bilan-recueils__appr { font-family: 'Source Serif 4', serif; font-style: italic; font-size: .94rem; color: var(--adab-gold-deep); margin: .35rem 0 0; }
+
+/* — Bloc des recueils dans le miroir du chemin — */
+.miroir-recueil__vigs { list-style: none; margin: .6rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.miroir-recueil__vig { font-family: 'Source Serif 4', serif; font-size: .95rem; color: var(--adab-ink-soft); background: rgba(192,160,80,.1); border: 1px solid var(--adab-rule); border-radius: 999px; padding: .25rem .8rem; }
+.miroir-recueil__n { color: var(--adab-gold-deep); font-weight: 600; }
+.miroir-recueil__echos { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .5rem; }
+.miroir-recueil__echo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; line-height: 1.45; color: var(--adab-ink-mute); padding-left: .9rem; border-left: 2px solid var(--adab-rule); }

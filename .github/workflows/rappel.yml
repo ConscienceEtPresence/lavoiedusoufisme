@@ -1,0 +1,26 @@
+name: Rappel du soir (push)
+on:
+  workflow_dispatch:
+    inputs:
+      token:
+        description: "Jeton d'un appareil pour un test (vide = tous)"
+        required: false
+        default: ""
+      title: { description: "Titre", required: false, default: "Le soir vient" }
+      body:  { description: "Texte", required: false, default: "Veux-tu déposer ta journée ?" }
+  schedule:
+    - cron: "0 18 * * *"
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: npm install firebase-admin@12
+      - run: node .github/scripts/send-rappel.js
+        env:
+          FIREBASE_SA: ${{ secrets.FIREBASE_SA }}
+          TOKEN: ${{ github.event.inputs.token }}
+          TITLE: ${{ github.event.inputs.title }}
+          BODY: ${{ github.event.inputs.body }}

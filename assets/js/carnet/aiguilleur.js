@@ -264,6 +264,9 @@ dateEl.textContent = dateLisible();
           <p class="dash-liens">
             <a href="${BASE}historique/">${t("Mes journées passées →","My past days →")}</a>
           </p>
+          <p class="dash-liens">
+            <a href="/pages/carnet/rappel-test/">${t("Tester un rappel ✦","Test a reminder ✦")}</a>
+          </p>
           <p class="dash-liens dash-liens--soft">
             <a href="/index.html">${t("Sortir du carnet","Leave the notebook")}</a>
           </p>

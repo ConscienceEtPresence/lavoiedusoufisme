@@ -41,6 +41,15 @@ else {
         const aPose = !!matin.poseLe;
         const aDepose = !!soir.fermeLe;
 
+        // Accès direct, depuis l'accueil, à « Quelque chose s'est présenté » —
+        // un instant vécu en chemin, recueilli dans le carnet.
+        const recueilCTA = `
+          <a class="accueil-carnet__recueil" href="${BASE}recueillir/">
+            <span class="accueil-carnet__recueil-orn" aria-hidden="true">✦</span>
+            <span class="accueil-carnet__recueil-txt">${t("Quelque chose s'est présenté","Something came up")}</span>
+            <span class="accueil-carnet__recueil-arrow" aria-hidden="true">→</span>
+          </a>`;
+
         // === Cas 0 : rien posé aujourd'hui → invitation animée à poser
         if (!aPose) {
           const tard = heure >= 17;
@@ -58,6 +67,7 @@ else {
               <p class="accueil-carnet__invite">${esc(phrase)}</p>
               <span class="accueil-carnet__cta">${esc(ctaLabel)}<span class="accueil-carnet__cta-arrow"> →</span></span>
             </a>
+            ${recueilCTA}
           `;
           mount.classList.add('accueil-carnet--invite');
           requestAnimationFrame(() => mount.classList.add('is-visible'));
@@ -77,6 +87,7 @@ else {
             <a class="accueil-carnet__lien" href="${BASE}aujourdhui/">
               <span class="accueil-carnet__depose"><em>${t('Journée gardée.','Day kept.')}</em></span>
             </a>
+            ${recueilCTA}
           `;
           requestAnimationFrame(() => mount.classList.add('is-visible'));
           return;
@@ -111,6 +122,7 @@ else {
             <ul class="accueil-carnet__liste">${itemsHTML}</ul>
             ${sig}
           </a>
+          ${recueilCTA}
         `;
         // Trigger entrance
         requestAnimationFrame(() => mount.classList.add('is-visible'));

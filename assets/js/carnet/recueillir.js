@@ -52,13 +52,23 @@ const STATUTS = [
 
 (async () => {
   try {
-    const [vigilancesRes, jourSnap] = await Promise.all([
+    const [vigilancesRes, objectifsRes, jourSnap] = await Promise.all([
       fetch('/data/carnet/vigilances' + (EN ? '.en' : '') + '.json').then(r => r.json()),
+      fetch('/data/carnet/objectifs' + (EN ? '.en' : '') + '.json').then(r => r.json()).catch(() => ({})),
       getDoc(doc(db, 'carnets', anonId, 'jours', date)).catch(() => null)
     ]);
     const vigilances = vigilancesRes.vigilances || [];
     const vigById = {};
     for (const v of vigilances) vigById[v.id] = v;
+    // Déclinaisons : les objectifs concrets de chaque vigilance
+    const objectifs = objectifsRes.objectifs || [];
+    const objById = {};
+    const objsByVig = {};
+    for (const o of objectifs) {
+      objById[o.id] = o;
+      (objsByVig[o.vigilance] = objsByVig[o.vigilance] || []).push(o);
+    }
+    const objLibelle = id => objById[id]?.matin?.libelle || '';
 
     const jourData = jourSnap?.exists() ? jourSnap.data() : {};
     const matin = jourData.matin || {};
@@ -69,7 +79,7 @@ const STATUTS = [
     const recueilsExistants = Array.isArray(jourData.recueils) ? jourData.recueils.slice() : [];
 
     // État de la saisie en cours (une à plusieurs vigilances par instant)
-    const state = { texte: '', vigilanceIds: [], statut: '', apprentissage: '' };
+    const state = { texte: '', vigilanceIds: [], objectifsIds: [], statut: '', apprentissage: '' };
 
     // Un instant peut avoir été enregistré avec une seule vigilance (ancien
     // modèle) ou plusieurs. On normalise toujours en tableau.
@@ -86,10 +96,12 @@ const STATUTS = [
         .map(r => {
           const vs = vigsDe(r).map(id => vigById[id]).filter(Boolean);
           const st = STATUTS.find(s => s.id === r.statut);
+          const precis = (r.objectifsIds || []).map(objLibelle).filter(Boolean);
           return `
             <li class="recueil-jour__item">
               ${vs.map(v => `<span class="recueil-jour__theme">${esc(v.label)}</span>`).join('')}
               <p class="recueil-jour__texte">${esc(r.texte)}</p>
+              ${precis.length ? `<p class="recueil-jour__precis">${precis.map(p => `<span>↳ ${esc(p)}</span>`).join('')}</p>` : ''}
               <p class="recueil-jour__meta">
                 ${st ? `<span class="recueil-jour__statut">${t(st.fr, st.en)}</span>` : ''}
                 ${r.le ? `<span class="recueil-jour__heure">${esc(heureLisible(r.le))}</span>` : ''}
@@ -144,6 +156,7 @@ const STATUTS = [
             <p class="recueil-bloc__label">${t("Cela touchait quelle vigilance ?","Which vigilance did it touch?")}</p>
             <p class="recueil-bloc__hint"><em>${t("celle que vous portiez aujourd'hui, ou une autre — vous pouvez en choisir plusieurs, ou aucune.","the one you carried today, or another — you may choose several, or none.")}</em></p>
             <div class="recueil-vig-grille">${cartes}</div>
+            <div class="recueil-precis" id="recueil-precis"></div>
           </div>
 
           <div class="recueil-bloc">
@@ -181,16 +194,54 @@ const STATUTS = [
       texteEl.addEventListener('input', () => { state.texte = texteEl.value; majCommit(); });
       apprEl.addEventListener('input', () => { state.apprentissage = apprEl.value; });
 
+      // Déplie les déclinaisons concrètes des vigilances choisies (facultatif).
+      // Quand on coche « patience », on peut préciser « accepter un délai… ».
+      function renderPrecis() {
+        const cont = document.getElementById('recueil-precis');
+        if (!cont) return;
+        if (!state.vigilanceIds.length) { cont.innerHTML = ''; return; }
+        const blocs = state.vigilanceIds.map(vid => {
+          const v = vigById[vid];
+          const objs = objsByVig[vid] || [];
+          if (!v || !objs.length) return '';
+          const chips = objs.map(o => {
+            const sel = state.objectifsIds.includes(o.id);
+            return `<button type="button" class="recueil-precis__chip ${sel ? 'is-selected' : ''}" data-obj="${esc(o.id)}">${esc(o.matin.libelle)}</button>`;
+          }).join('');
+          return `
+            <div class="recueil-precis__bloc">
+              <p class="recueil-precis__titre">${t("Dans","Within")} <strong>${esc(v.label.toLowerCase())}</strong>, ${t("plus précisément ?","more precisely?")} <em>${t("(facultatif)","(optional)")}</em></p>
+              <div class="recueil-precis__chips">${chips}</div>
+            </div>`;
+        }).join('');
+        cont.innerHTML = blocs;
+        cont.querySelectorAll('.recueil-precis__chip').forEach(chip => {
+          chip.addEventListener('click', () => {
+            const oid = chip.dataset.obj;
+            if (state.objectifsIds.includes(oid)) {
+              state.objectifsIds = state.objectifsIds.filter(x => x !== oid);
+            } else {
+              state.objectifsIds.push(oid);
+            }
+            chip.classList.toggle('is-selected', state.objectifsIds.includes(oid));
+          });
+        });
+      }
+
       mount.querySelectorAll('.recueil-vig').forEach(btn => {
         btn.addEventListener('click', () => {
           // Sélection multiple : on bascule chaque vigilance (toutes facultatives)
           const id = btn.dataset.id;
           if (state.vigilanceIds.includes(id)) {
             state.vigilanceIds = state.vigilanceIds.filter(x => x !== id);
+            // On retire les déclinaisons de cette vigilance déselectionnée
+            const ids = (objsByVig[id] || []).map(o => o.id);
+            state.objectifsIds = state.objectifsIds.filter(x => !ids.includes(x));
           } else {
             state.vigilanceIds.push(id);
           }
           btn.classList.toggle('is-selected', state.vigilanceIds.includes(id));
+          renderPrecis();
         });
       });
 
@@ -212,6 +263,7 @@ const STATUTS = [
             texte,
             vigilanceIds: state.vigilanceIds.slice(),
             vigilanceId: state.vigilanceIds[0] || null,   // compat lecteurs simples
+            objectifsIds: state.objectifsIds.slice(),     // déclinaisons précisées
             statut: state.statut || null,
             apprentissage: (state.apprentissage || '').trim() || null,
             le: Date.now()   // horodatage client (serverTimestamp interdit dans un tableau)
@@ -257,7 +309,7 @@ const STATUTS = [
           </div>
         </section>`;
       document.getElementById('recueil-encore')?.addEventListener('click', () => {
-        state.texte = ''; state.vigilanceIds = []; state.statut = ''; state.apprentissage = '';
+        state.texte = ''; state.vigilanceIds = []; state.objectifsIds = []; state.statut = ''; state.apprentissage = '';
         renderForm();
         window.scrollTo({ top: 0, behavior: 'instant' });
       });

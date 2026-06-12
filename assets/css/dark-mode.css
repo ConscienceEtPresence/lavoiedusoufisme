@@ -679,6 +679,12 @@
   color: var(--turquoise, #6FB8B0);
   border-color: var(--gold-soft, rgba(204, 168, 102, 0.35));
 }
+[data-theme="dark"] .accueil-carnet__recueil {
+  color: var(--turquoise, #6FB8B0);
+  border-color: var(--gold-soft, rgba(204, 168, 102, 0.35));
+}
+[data-theme="dark"] .accueil-carnet__recueil-orn { color: var(--gold); }
+[data-theme="dark"] .accueil-carnet__recueil:hover { color: var(--ink-title, var(--ink)); }
 [data-theme="dark"] .accueil-carnet__souffle-dot { background: var(--gold); }
 [data-theme="dark"] .accueil-carnet__souffle-dot::before {
   border-color: var(--gold-soft, rgba(204, 168, 102, 0.4));

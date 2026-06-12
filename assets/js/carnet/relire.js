@@ -125,10 +125,12 @@ dateEl.textContent = dateLisibleFromKey(date);
             ${recueils.sort((a, b) => (a.le || 0) - (b.le || 0)).map(r => {
               const ids = (Array.isArray(r.vigilanceIds) && r.vigilanceIds.length) ? r.vigilanceIds : (r.vigilanceId ? [r.vigilanceId] : []);
               const vs = ids.map(id => vigilances.find(x => x.id === id)).filter(Boolean);
+              const precis = (r.objectifsIds || []).map(id => objectifs.find(o => o.id === id)?.matin?.libelle).filter(Boolean);
               return `
                 <li class="bilan-recueils__item">
                   ${vs.map(v => `<span class="bilan-recueils__theme">${esc(v.label)}</span>`).join('')}
                   <p class="bilan-recueils__texte">${esc(r.texte)}</p>
+                  ${precis.length ? `<p class="bilan-recueils__precis">${precis.map(p => `<span>↳ ${esc(p)}</span>`).join('')}</p>` : ''}
                   ${r.statut && STATUTS_RECUEIL[r.statut] ? `<span class="bilan-recueils__statut">${esc(STATUTS_RECUEIL[r.statut])}</span>` : ''}
                   ${r.apprentissage ? `<p class="bilan-recueils__appr"><em>« ${esc(r.apprentissage)} »</em></p>` : ''}
                 </li>`;

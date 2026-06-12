@@ -220,38 +220,51 @@ dateEl.textContent = dateLisible();
     // === Recueillir un instant : toujours accessible, en plein jour ===
     // Quelque chose s'est présenté hors programme ? On le saisit tout de suite.
     function renderRecueillir() {
-      const STATUTS_LBL = {
-        vecu: t('habité', 'inhabited'),
-        traverse: t('traversé', 'moved through'),
-        manque: t('manqué', 'missed'),
-      };
       const vigsDe = r => (Array.isArray(r.vigilanceIds) && r.vigilanceIds.length)
         ? r.vigilanceIds : (r.vigilanceId ? [r.vigilanceId] : []);
-      const liste = recueils.slice().sort((a, b) => (a.le || 0) - (b.le || 0)).map(r => {
+      const objById2 = {}; for (const o of objectifs) objById2[o.id] = o;
+      const objLib = id => objById2[id]?.matin?.libelle || '';
+      const n = recueils.length;
+
+      // Ce que la journée a fait vivre — recueil, non tableau de scores.
+      // Le ✦ honore ce qui a été « habité » ; jamais une note, jamais une série.
+      const items = recueils.slice().sort((a, b) => (a.le || 0) - (b.le || 0)).map(r => {
         const vs = vigsDe(r).map(id => vigById[id]).filter(Boolean);
+        const habite = r.statut === 'vecu';
+        const precis = (r.objectifsIds || []).map(objLib).filter(Boolean);
         return `
-          <li class="dash-recueil__item">
-            ${vs.map(v => `<span class="dash-recueil__theme">${esc(v.label)}</span>`).join('')}
-            <span class="dash-recueil__texte">${esc(r.texte)}</span>
-            ${r.statut && STATUTS_LBL[r.statut] ? `<span class="dash-recueil__statut">· ${esc(STATUTS_LBL[r.statut])}</span>` : ''}
+          <li class="dash-vecu__item ${habite ? 'is-habite' : ''}">
+            <div class="dash-vecu__tete">
+              ${vs.map(v => `<span class="dash-vecu__theme">${esc(v.label)}</span>`).join('')}
+              ${habite ? `<span class="dash-vecu__sceau" aria-hidden="true">✦</span>` : ''}
+            </div>
+            <p class="dash-vecu__texte">${esc(r.texte)}</p>
+            ${precis.length ? `<p class="dash-vecu__precis">${precis.map(p => `<span>↳ ${esc(p)}</span>`).join('')}</p>` : ''}
           </li>`;
       }).join('');
-      return `
-        <section class="dash-recueil">
-          <a href="${BASE}recueillir/" class="dash-recueil__cta">
-            <span class="dash-recueil__cta-orn">✦</span>
-            <span class="dash-recueil__cta-txt">
-              <span class="dash-recueil__cta-titre">${t("Quelque chose s'est présenté","Something came up")}</span>
-              <span class="dash-recueil__cta-sous"><em>${t("un instant à recueillir, même hors programme","a moment to gather, even unplanned")}</em></span>
-            </span>
-            <span class="dash-recueil__cta-fleche">→</span>
-          </a>
-          ${recueils.length ? `
-            <div class="dash-recueil__jour">
-              <p class="dash-recueil__label">${t("Recueilli aujourd'hui","Gathered today")}</p>
-              <ul class="dash-recueil__liste">${liste}</ul>
-            </div>` : ''}
-        </section>`;
+
+      const compte = n === 1
+        ? t("La journée vous a fait vivre un instant.", "The day let you live one moment.")
+        : t(`La journée vous a fait vivre ${n} instants.`, `The day let you live ${n} moments.`);
+
+      const honored = n ? `
+        <section class="dash-vecu">
+          <p class="dash-vecu__titre">${t("Ce que la journée vous a fait vivre","What the day has let you live")}</p>
+          <ul class="dash-vecu__liste">${items}</ul>
+          <p class="dash-vecu__compte"><em>${compte}</em></p>
+        </section>` : '';
+
+      const cta = `
+        <a href="${BASE}recueillir/" class="dash-recueil__cta ${n ? 'dash-recueil__cta--soft' : ''}">
+          <span class="dash-recueil__cta-orn">✦</span>
+          <span class="dash-recueil__cta-txt">
+            <span class="dash-recueil__cta-titre">${n ? t("Recueillir un autre instant","Gather another moment") : t("Quelque chose s'est présenté","Something came up")}</span>
+            <span class="dash-recueil__cta-sous"><em>${t("un instant à recueillir, même hors programme","a moment to gather, even unplanned")}</em></span>
+          </span>
+          <span class="dash-recueil__cta-fleche">→</span>
+        </a>`;
+
+      return `<section class="dash-recueil">${honored}${cta}</section>`;
     }
 
     // === SECTION 2 : Les 10 vigilances toujours visibles ===

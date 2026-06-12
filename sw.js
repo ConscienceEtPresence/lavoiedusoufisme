@@ -3,7 +3,7 @@
    Cache stratégique : network-first pour HTML/JSON, cache-first pour assets
    ============================================================ */
 
-const VERSION = 'lvdd-v82';
+const VERSION = 'lvdd-v83';
 const STATIC_CACHE = `${VERSION}-static`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 
@@ -87,4 +87,32 @@ self.addEventListener('fetch', event => {
 // Message — permet de forcer la mise à jour
 self.addEventListener('message', event => {
   if (event.data === 'skipWaiting') self.skipWaiting();
+});
+
+// Clic sur une notification → ouvre (ou ramène au premier plan) le carnet
+self.addEventListener('notificationclick', event => {
+  event.notification.close();
+  const url = (event.notification.data && event.notification.data.url) || '/pages/carnet/aujourdhui/';
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then(list => {
+      for (const c of list) {
+        if ('focus' in c) { c.navigate && c.navigate(url); return c.focus(); }
+      }
+      return clients.openWindow(url);
+    })
+  );
+});
+
+// Réception d'un push serveur (pour plus tard) — affiche la notification
+self.addEventListener('push', event => {
+  let data = {};
+  try { data = event.data ? event.data.json() : {}; } catch (e) {}
+  const title = data.title || 'La voie du dedans';
+  event.waitUntil(self.registration.showNotification(title, {
+    body: data.body || '',
+    icon: data.icon || '/assets/img/icon-192.png',
+    badge: '/assets/img/favicon-32.png',
+    tag: data.tag || 'lvdd',
+    data: { url: data.url || '/pages/carnet/aujourdhui/' }
+  }));
 });

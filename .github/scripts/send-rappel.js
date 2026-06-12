@@ -16,11 +16,12 @@ const LINK  = process.env.LINK  && process.env.LINK.trim()  ? process.env.LINK  
 const TOKEN = (process.env.TOKEN || '').trim();
 
 function message(token) {
+  // Message « data » : c'est le service worker qui affiche (fiable sur iOS).
   return {
     token,
-    notification: { title: TITLE, body: BODY },
+    data: { title: TITLE, body: BODY, url: LINK },
     webpush: {
-      notification: { icon: 'https://lavoiedudedans.fr/assets/img/icon-192.png', badge: 'https://lavoiedudedans.fr/assets/img/favicon-32.png' },
+      headers: { Urgency: 'high', TTL: '86400' },
       fcmOptions: { link: LINK }
     }
   };

@@ -16,16 +16,28 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
-// Message reçu pendant que l'app est en arrière-plan
-messaging.onBackgroundMessage((payload) => {
-  const n = payload.notification || {};
-  self.registration.showNotification(n.title || 'La voie du dedans', {
-    body: n.body || '',
+// Affiche la notification à partir d'un message « data » (méthode fiable iOS).
+function afficher(d) {
+  d = d || {};
+  return self.registration.showNotification(d.title || 'La voie du dedans', {
+    body: d.body || '',
     icon: '/assets/img/icon-192.png',
     badge: '/assets/img/favicon-32.png',
     tag: 'lvdd-rappel',
-    data: { url: (payload.fcmOptions && payload.fcmOptions.link) || '/pages/carnet/aujourdhui/' }
+    data: { url: d.url || '/pages/carnet/aujourdhui/' }
   });
+}
+
+// Message reçu pendant que l'app est en arrière-plan (message « data »)
+messaging.onBackgroundMessage((payload) => {
+  afficher(payload.data);
+});
+
+// Filet de sécurité : si l'événement push brut arrive, on affiche aussi.
+self.addEventListener('push', (event) => {
+  let d = {};
+  try { const j = event.data ? event.data.json() : {}; d = j.data || j.notification || j; } catch (e) {}
+  if (d && (d.title || d.body)) event.waitUntil(afficher(d));
 });
 
 // Clic sur la notification → ouvre / ramène le carnet

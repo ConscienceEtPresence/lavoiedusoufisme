@@ -196,7 +196,8 @@ try { localStorage.setItem('lvdd_miroir_vu', String(Date.now())); } catch (e) {}
     if (recueilsAll.length) {
       const compteR = {};
       for (const r of recueilsAll) {
-        if (r.vigilanceId) compteR[r.vigilanceId] = (compteR[r.vigilanceId] || 0) + 1;
+        const ids = (Array.isArray(r.vigilanceIds) && r.vigilanceIds.length) ? r.vigilanceIds : (r.vigilanceId ? [r.vigilanceId] : []);
+        for (const id of ids) compteR[id] = (compteR[id] || 0) + 1;
       }
       const rOrd = Object.entries(compteR)
         .map(([id, n]) => ({ v: vigById[id], n }))

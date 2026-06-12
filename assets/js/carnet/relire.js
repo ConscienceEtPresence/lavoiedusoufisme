@@ -123,10 +123,11 @@ dateEl.textContent = dateLisibleFromKey(date);
           <p class="bilan-recueils__hint"><em>${t("Les instants que la journée vous a tendus, en chemin.","The moments the day handed you, along the way.")}</em></p>
           <ul class="bilan-recueils__liste">
             ${recueils.sort((a, b) => (a.le || 0) - (b.le || 0)).map(r => {
-              const v = vigilances.find(x => x.id === r.vigilanceId);
+              const ids = (Array.isArray(r.vigilanceIds) && r.vigilanceIds.length) ? r.vigilanceIds : (r.vigilanceId ? [r.vigilanceId] : []);
+              const vs = ids.map(id => vigilances.find(x => x.id === id)).filter(Boolean);
               return `
                 <li class="bilan-recueils__item">
-                  ${v ? `<span class="bilan-recueils__theme">${esc(v.label)}</span>` : ''}
+                  ${vs.map(v => `<span class="bilan-recueils__theme">${esc(v.label)}</span>`).join('')}
                   <p class="bilan-recueils__texte">${esc(r.texte)}</p>
                   ${r.statut && STATUTS_RECUEIL[r.statut] ? `<span class="bilan-recueils__statut">${esc(STATUTS_RECUEIL[r.statut])}</span>` : ''}
                   ${r.apprentissage ? `<p class="bilan-recueils__appr"><em>« ${esc(r.apprentissage)} »</em></p>` : ''}

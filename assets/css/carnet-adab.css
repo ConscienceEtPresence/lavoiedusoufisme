@@ -2603,7 +2603,7 @@ body.carnet-body {
 .recueil-jour__theme {
   display: inline-block; font-family: 'Inter', sans-serif; font-size: .64rem; font-weight: 600;
   letter-spacing: .08em; text-transform: uppercase; color: var(--adab-gold-deep);
-  background: rgba(192,160,80,.12); border-radius: 6px; padding: .12rem .4rem; margin-bottom: .25rem;
+  background: rgba(192,160,80,.12); border-radius: 6px; padding: .12rem .4rem; margin: 0 .3rem .25rem 0;
 }
 .recueil-jour__texte { font-family: 'Source Serif 4', serif; font-size: 1rem; line-height: 1.45; color: var(--adab-ink-soft); margin: .1rem 0; }
 .recueil-jour__meta { display: flex; gap: .6rem; font-family: 'Inter', sans-serif; font-size: .76rem; color: var(--adab-ink-mute); margin: .15rem 0 0; }
@@ -2627,7 +2627,7 @@ body.carnet-body {
 .bilan-recueils__theme {
   display: inline-block; font-family: 'Inter', sans-serif; font-size: .64rem; font-weight: 600;
   letter-spacing: .08em; text-transform: uppercase; color: var(--adab-gold-deep);
-  background: rgba(192,160,80,.14); border-radius: 6px; padding: .12rem .4rem; margin-bottom: .3rem;
+  background: rgba(192,160,80,.14); border-radius: 6px; padding: .12rem .4rem; margin: 0 .3rem .3rem 0;
 }
 .bilan-recueils__texte { font-family: 'Source Serif 4', serif; font-size: 1rem; line-height: 1.5; color: var(--adab-ink); margin: .1rem 0; }
 .bilan-recueils__statut { font-family: 'Inter', sans-serif; font-size: .76rem; font-style: italic; color: var(--adab-ink-mute); }

@@ -68,8 +68,15 @@ const STATUTS = [
       : (matin.vigilanceId ? [matin.vigilanceId] : []);
     const recueilsExistants = Array.isArray(jourData.recueils) ? jourData.recueils.slice() : [];
 
-    // État de la saisie en cours
-    const state = { texte: '', vigilanceId: '', statut: '', apprentissage: '' };
+    // État de la saisie en cours (une à plusieurs vigilances par instant)
+    const state = { texte: '', vigilanceIds: [], statut: '', apprentissage: '' };
+
+    // Un instant peut avoir été enregistré avec une seule vigilance (ancien
+    // modèle) ou plusieurs. On normalise toujours en tableau.
+    function vigsDe(r) {
+      if (Array.isArray(r.vigilanceIds) && r.vigilanceIds.length) return r.vigilanceIds;
+      return r.vigilanceId ? [r.vigilanceId] : [];
+    }
 
     function renderRecueilsDuJour() {
       if (!recueilsExistants.length) return '';
@@ -77,11 +84,11 @@ const STATUTS = [
         .slice()
         .sort((a, b) => (a.le || 0) - (b.le || 0))
         .map(r => {
-          const v = vigById[r.vigilanceId];
+          const vs = vigsDe(r).map(id => vigById[id]).filter(Boolean);
           const st = STATUTS.find(s => s.id === r.statut);
           return `
             <li class="recueil-jour__item">
-              ${v ? `<span class="recueil-jour__theme">${esc(v.label)}</span>` : ''}
+              ${vs.map(v => `<span class="recueil-jour__theme">${esc(v.label)}</span>`).join('')}
               <p class="recueil-jour__texte">${esc(r.texte)}</p>
               <p class="recueil-jour__meta">
                 ${st ? `<span class="recueil-jour__statut">${t(st.fr, st.en)}</span>` : ''}
@@ -104,7 +111,7 @@ const STATUTS = [
         .sort((a, b) => (vigsPosees.includes(b.id) ? 1 : 0) - (vigsPosees.includes(a.id) ? 1 : 0))
         .map(v => {
           const posee = vigsPosees.includes(v.id);
-          const sel = state.vigilanceId === v.id;
+          const sel = state.vigilanceIds.includes(v.id);
           return `
             <button type="button" class="recueil-vig ${sel ? 'is-selected' : ''} ${posee ? 'is-posee' : ''}" data-id="${esc(v.id)}">
               <span class="recueil-vig__ar" lang="ar" dir="rtl">${esc(v.ar)}</span>
@@ -135,7 +142,7 @@ const STATUTS = [
 
           <div class="recueil-bloc">
             <p class="recueil-bloc__label">${t("Cela touchait quelle vigilance ?","Which vigilance did it touch?")}</p>
-            <p class="recueil-bloc__hint"><em>${t("celle que vous portiez aujourd'hui, ou une autre — toutes sont là.","the one you carried today, or another — all are here.")}</em></p>
+            <p class="recueil-bloc__hint"><em>${t("celle que vous portiez aujourd'hui, ou une autre — vous pouvez en choisir plusieurs, ou aucune.","the one you carried today, or another — you may choose several, or none.")}</em></p>
             <div class="recueil-vig-grille">${cartes}</div>
           </div>
 
@@ -176,10 +183,14 @@ const STATUTS = [
 
       mount.querySelectorAll('.recueil-vig').forEach(btn => {
         btn.addEventListener('click', () => {
-          // Re-sélection = désélection (la vigilance reste facultative)
-          state.vigilanceId = (state.vigilanceId === btn.dataset.id) ? '' : btn.dataset.id;
-          mount.querySelectorAll('.recueil-vig').forEach(b =>
-            b.classList.toggle('is-selected', b.dataset.id === state.vigilanceId));
+          // Sélection multiple : on bascule chaque vigilance (toutes facultatives)
+          const id = btn.dataset.id;
+          if (state.vigilanceIds.includes(id)) {
+            state.vigilanceIds = state.vigilanceIds.filter(x => x !== id);
+          } else {
+            state.vigilanceIds.push(id);
+          }
+          btn.classList.toggle('is-selected', state.vigilanceIds.includes(id));
         });
       });
 
@@ -199,7 +210,8 @@ const STATUTS = [
         try {
           const recueil = {
             texte,
-            vigilanceId: state.vigilanceId || null,
+            vigilanceIds: state.vigilanceIds.slice(),
+            vigilanceId: state.vigilanceIds[0] || null,   // compat lecteurs simples
             statut: state.statut || null,
             apprentissage: (state.apprentissage || '').trim() || null,
             le: Date.now()   // horodatage client (serverTimestamp interdit dans un tableau)
@@ -223,14 +235,18 @@ const STATUTS = [
     }
 
     function renderMerci(recueil) {
-      const v = vigById[recueil.vigilanceId];
+      const vs = vigsDe(recueil).map(id => vigById[id]).filter(Boolean);
+      const noms = vs.map(v => v.label.toLowerCase());
+      const joint = noms.length === 0 ? '' :
+        noms.length === 1 ? noms[0] :
+        noms.slice(0, -1).join(', ') + (EN ? ' and ' : ' et ') + noms[noms.length - 1];
       recueilsExistants.push(recueil);
       mount.innerHTML = `
         <section class="adab-step recueil-merci">
           <div class="recueil-merci__orn">✦</div>
           <h1 class="recueil-merci__titre">${t("C'est recueilli.","It is gathered.")}</h1>
           <p class="recueil-merci__texte">${t("Cet instant ne se perdra pas.","This moment will not be lost.")}
-            ${v ? t("Il rejoint","It joins") + ` <strong>${esc(v.label.toLowerCase())}</strong> ` + t("dans votre miroir,","in your mirror,") : ''}
+            ${joint ? t("Il rejoint","It joins") + ` <strong>${esc(joint)}</strong> ` + t("dans votre miroir,","in your mirror,") : ''}
             ${t("et reviendra ce soir, quand vous déposerez le jour.","and will return this evening, when you lay the day down.")}</p>
           <blockquote class="recueil-merci__sagesse">
             <p>« ${t("Ce que la vie te présente sans que tu l'aies choisi est souvent l'exercice que ton âme attendait.","What life presents you, unchosen, is often the very exercise your soul awaited.")} »</p>
@@ -241,7 +257,7 @@ const STATUTS = [
           </div>
         </section>`;
       document.getElementById('recueil-encore')?.addEventListener('click', () => {
-        state.texte = ''; state.vigilanceId = ''; state.statut = ''; state.apprentissage = '';
+        state.texte = ''; state.vigilanceIds = []; state.statut = ''; state.apprentissage = '';
         renderForm();
         window.scrollTo({ top: 0, behavior: 'instant' });
       });

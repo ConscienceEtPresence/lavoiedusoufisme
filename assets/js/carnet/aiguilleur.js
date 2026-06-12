@@ -225,11 +225,13 @@ dateEl.textContent = dateLisible();
         traverse: t('traversé', 'moved through'),
         manque: t('manqué', 'missed'),
       };
+      const vigsDe = r => (Array.isArray(r.vigilanceIds) && r.vigilanceIds.length)
+        ? r.vigilanceIds : (r.vigilanceId ? [r.vigilanceId] : []);
       const liste = recueils.slice().sort((a, b) => (a.le || 0) - (b.le || 0)).map(r => {
-        const v = vigById[r.vigilanceId];
+        const vs = vigsDe(r).map(id => vigById[id]).filter(Boolean);
         return `
           <li class="dash-recueil__item">
-            ${v ? `<span class="dash-recueil__theme">${esc(v.label)}</span>` : ''}
+            ${vs.map(v => `<span class="dash-recueil__theme">${esc(v.label)}</span>`).join('')}
             <span class="dash-recueil__texte">${esc(r.texte)}</span>
             ${r.statut && STATUTS_LBL[r.statut] ? `<span class="dash-recueil__statut">· ${esc(STATUTS_LBL[r.statut])}</span>` : ''}
           </li>`;

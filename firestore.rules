@@ -128,6 +128,17 @@ service cloud.firestore {
       allow read: if true;
     }
 
+    // ============================================================
+    // === PUSH TOKENS — jetons d'appareils pour les rappels ===
+    // Structure : push_tokens/{token} = { site, ua, createdAt }
+    // Anonyme (juste un identifiant d'appareil, aucune donnée perso).
+    // Le serveur d'envoi (compte de service) ignore ces règles.
+    // ============================================================
+    match /push_tokens/{token} {
+      allow create, update: if request.resource.data.site in ['lavoiedudedans', 'lemiroirinterieur'];
+      allow read, delete: if isAdmin();
+    }
+
     // — tout le reste interdit —
     match /{document=**} {
       allow read, write: if false;

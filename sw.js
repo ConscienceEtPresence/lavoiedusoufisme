@@ -3,7 +3,7 @@
    Cache stratégique : network-first pour HTML/JSON, cache-first pour assets
    ============================================================ */
 
-const VERSION = 'lvdd-v84';
+const VERSION = 'lvdd-v85';
 const STATIC_CACHE = `${VERSION}-static`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 

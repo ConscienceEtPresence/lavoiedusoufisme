@@ -43,6 +43,15 @@
     <button type="button" class="rt__btn rt__btn--ghost" id="later" hidden>Tester dans 10 s (mets l'app en arrière-plan)</button>
 
     <div class="rt__status" id="status"></div>
+
+    <hr style="border:none; border-top:1px solid var(--adab-rule,rgba(192,160,80,.3)); margin:2.5rem auto; max-width:20rem;" />
+
+    <h2 class="rt__titre" style="font-size:1.5rem;">Le vrai rappel</h2>
+    <p class="rt__sous">Celui qui arrive <strong>écran verrouillé, app fermée</strong>. Active-le, puis on t'enverra un vrai rappel.</p>
+    <button type="button" class="rt__btn" id="push">Activer le rappel verrouillé</button>
+    <div class="rt__status" id="pushStatus"></div>
+    <textarea id="token" readonly hidden style="width:100%; max-width:22rem; height:6rem; margin:.6rem auto; display:block; font-size:.7rem; padding:.6rem; border-radius:10px; border:1px solid var(--adab-rule,rgba(192,160,80,.3)); color:#4a3a18;"></textarea>
+
     <a class="rt__back" href="/pages/carnet/aujourdhui/">← Revenir au carnet</a>
   </main>
 
@@ -102,6 +111,60 @@
       setTimeout(() => { showSouffle().catch(() => {}); }, 10000);
     });
   </script>
+
+  <!-- Vrai push (Firebase Cloud Messaging) -->
+  <script type="module">
+    import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging.js";
+    import { getFirestore, doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+    const CFG = {
+      apiKey: "AIzaSyBYlX1AcOP4Yg5rCy9T5tIcrV0WOTT3E24",
+      authDomain: "la-voie-du-dedans.firebaseapp.com",
+      projectId: "la-voie-du-dedans",
+      storageBucket: "la-voie-du-dedans.firebasestorage.app",
+      messagingSenderId: "531110328878",
+      appId: "1:531110328878:web:322ac57d9504e750b83dbf"
+    };
+    const VAPID = "BAj9EMoAoBx2tuAAL5RJa11Iii2L5t3mr6YuDXt_HVCSsRDOlbbxrBRka21lcWTsO4651oePVUSQnpjpjqHESRM";
+
+    const app = getApps().length ? getApps()[0] : initializeApp(CFG);
+    const db = getFirestore(app);
+    const psEl = document.getElementById('pushStatus');
+    const tokEl = document.getElementById('token');
+    const ps = (m, c) => { psEl.textContent = m; psEl.className = 'rt__status' + (c ? ' rt__status--' + c : ''); };
+
+    document.getElementById('push').addEventListener('click', async () => {
+      ps('Un instant…');
+      try {
+        if (!('serviceWorker' in navigator) || !('Notification' in window)) {
+          ps("Notifications non gérées ici. Ouvre bien l'app depuis l'icône de l'écran d'accueil (iPhone).", 'ko'); return;
+        }
+        let perm = Notification.permission;
+        if (perm === 'default') perm = await Notification.requestPermission();
+        if (perm !== 'granted') { ps("Notifications non autorisées. Active-les dans les réglages, puis réessaie.", 'ko'); return; }
+
+        const swReg = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
+        const messaging = getMessaging(app);
+        const token = await getToken(messaging, { vapidKey: VAPID, serviceWorkerRegistration: swReg });
+        if (!token) { ps("Impossible d'obtenir un jeton. Réessaie dans un instant.", 'ko'); return; }
+
+        // On garde le jeton (pour t'envoyer le rappel ensuite, et pour le vrai rappel du soir)
+        try {
+          await setDoc(doc(db, 'push_tokens', token), {
+            site: 'lavoiedudedans', ua: navigator.userAgent, createdAt: serverTimestamp()
+          }, { merge: true });
+        } catch (e) {}
+
+        tokEl.value = token;
+        tokEl.hidden = false;
+        ps("Activé ✦ Ton appareil est prêt. J'ai bien reçu ton jeton — dis-le-moi et je t'envoie un vrai rappel sur ton écran verrouillé.", 'ok');
+      } catch (e) {
+        ps("Souci : " + (e.message || e), 'ko');
+      }
+    });
+  </script>
+
   <script type="module" src="/assets/js/pulse.js?v=3"></script>
 </body>
 </html>

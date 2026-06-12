@@ -83,9 +83,12 @@ const dateOuvert = params.get('j');
     }
 
     // Les vigilances réellement portées dans une journée (multi-thèmes + compat)
-    const vigsDuJour = (m) => (m && m.objectifs && m.objectifs.length)
-      ? [...new Set(m.objectifs.map(o => o.vigilance).filter(Boolean))]
-      : (m && m.vigilanceId ? [m.vigilanceId] : []);
+    // Fonction (hoistée) car renderJour peut l'appeler dès la vue détail.
+    function vigsDuJour(m) {
+      return (m && m.objectifs && m.objectifs.length)
+        ? [...new Set(m.objectifs.map(o => o.vigilance).filter(Boolean))]
+        : (m && m.vigilanceId ? [m.vigilanceId] : []);
+    }
 
     // Vue liste
     const compterVigilances = {};
@@ -149,9 +152,28 @@ const dateOuvert = params.get('j');
     function renderJour(j) {
       const m = j.data.matin || {};
       const s = j.data.soir || {};
-      const v = vigilances.find(x => x.id === m.vigilanceId);
-      const objsChoisis = (m.objectifsIds || []).map(id => objectifs.find(o => o.id === id)).filter(Boolean);
+      const objById = {}; for (const o of objectifs) objById[o.id] = o;
+      const objLib = id => objById[id]?.matin?.libelle || '';
+      // Toutes les vigilances réellement portées ce jour (multi-thèmes)
+      const vigsJ = vigsDuJour(m).map(id => vigilances.find(x => x.id === id)).filter(Boolean);
+      const multiVig = vigsJ.length > 1;
+      const objsChoisis = (m.objectifsIds || []).map(id => objById[id]).filter(Boolean);
       const bilansObjs = s.bilansObjectifs || {};
+      // Instants recueillis en cours de journée
+      const recueils = Array.isArray(j.data.recueils)
+        ? j.data.recueils.slice().sort((a, b) => (a.le || 0) - (b.le || 0)) : [];
+      const RSTAT = EN
+        ? { vecu: 'inhabited', traverse: 'moved through', manque: 'missed' }
+        : { vecu: 'habité', traverse: 'traversé', manque: 'manqué' };
+      const vigsDeR = r => (Array.isArray(r.vigilanceIds) && r.vigilanceIds.length)
+        ? r.vigilanceIds : (r.vigilanceId ? [r.vigilanceId] : []);
+
+      const headVig = vigsJ.length === 0 ? '' : (vigsJ.length === 1
+        ? `<h1 class="hist-detail__vigilance">
+             <span lang="ar" dir="rtl" style="font-family:'Amiri',serif; display:block; font-size:1.5rem; color:#8a7028; margin-bottom:.3rem;">${esc(vigsJ[0].ar)}</span>
+             ${esc(vigsJ[0].label)}
+           </h1>`
+        : `<h1 class="hist-detail__vigilance hist-detail__vigilance--multi">${vigsJ.map(v => esc(v.label)).join(' · ')}</h1>`);
 
       mount.innerHTML = `
         <a href="${BASE}historique/" class="adab-back-link">← ${t("Toutes mes journées","All my days")}</a>
@@ -159,11 +181,7 @@ const dateOuvert = params.get('j');
         <article class="hist-detail">
           <header class="hist-detail__head">
             <p class="hist-detail__date">${dateLisible(j.date)}</p>
-            ${v ? `
-              <h1 class="hist-detail__vigilance">
-                <span lang="ar" dir="rtl" style="font-family:'Amiri',serif; display:block; font-size:1.5rem; color:#8a7028; margin-bottom:.3rem;">${esc(v.ar)}</span>
-                ${esc(v.label)}
-              </h1>` : ''}
+            ${headVig}
           </header>
 
           ${m.ancrage ? `
@@ -177,11 +195,30 @@ const dateOuvert = params.get('j');
               <span class="hist-detail__label">${t("Mes objectifs","My objectives")}</span>
               ${objsChoisis.map(o => {
                 const b = bilansObjs[o.id] || {};
+                const vObj = multiVig ? vigilances.find(x => x.id === o.vigilance) : null;
                 return `
                   <div class="hist-detail__obj">
+                    ${vObj ? `<span class="hist-detail__obj-theme">${esc(vObj.label)}</span>` : ''}
                     <p class="hist-detail__obj-lib">${esc(o.matin.libelle)}</p>
-                    ${b.statut ? `<p class="hist-detail__obj-statut">→ ${esc(STATUTS_LABEL[b.statut] || b.statut)}</p>` : '<p class="hist-detail__obj-statut hist-detail__obj-statut--vide">${t("— pas de bilan —","— no review —")}</p>'}
+                    ${b.statut ? `<p class="hist-detail__obj-statut">→ ${esc(STATUTS_LABEL[b.statut] || b.statut)}</p>` : `<p class="hist-detail__obj-statut hist-detail__obj-statut--vide">${t("— pas de bilan —","— no review —")}</p>`}
                     ${b.note ? `<p class="hist-detail__obj-note">${esc(b.note)}</p>` : ''}
+                  </div>`;
+              }).join('')}
+            </div>` : ''}
+
+          ${recueils.length ? `
+            <div class="hist-detail__bloc">
+              <span class="hist-detail__label">${t("Ce que la journée a fait vivre","What the day brought to life")}</span>
+              ${recueils.map(r => {
+                const vs = vigsDeR(r).map(id => vigilances.find(x => x.id === id)).filter(Boolean);
+                const precis = (r.objectifsIds || []).map(objLib).filter(Boolean);
+                return `
+                  <div class="hist-detail__obj hist-detail__recueil ${r.statut === 'vecu' ? 'is-habite' : ''}">
+                    ${vs.map(v => `<span class="hist-detail__obj-theme">${esc(v.label)}</span>`).join('')}
+                    ${r.texte ? `<p class="hist-detail__obj-lib">${esc(r.texte)}</p>` : ''}
+                    ${precis.length ? `<p class="hist-detail__obj-note">${precis.map(p => `↳ ${esc(p)}`).join('<br>')}</p>` : ''}
+                    ${r.statut && RSTAT[r.statut] ? `<p class="hist-detail__obj-statut">${esc(RSTAT[r.statut])}${r.statut === 'vecu' ? ' ✦' : ''}</p>` : ''}
+                    ${r.apprentissage ? `<p class="hist-detail__obj-note"><em>« ${esc(r.apprentissage)} »</em></p>` : ''}
                   </div>`;
               }).join('')}
             </div>` : ''}

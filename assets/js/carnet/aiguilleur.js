@@ -188,7 +188,7 @@ dateEl.textContent = dateLisible();
             <a href="${BASE}poser/" class="dash-porte ${porteMatinClass}">
               <span class="dash-porte__moment">${t("Le matin","Morning")}</span>
               <span class="dash-porte__titre">${t("Poser ma journée","Set my day")}</span>
-              <span class="dash-porte__sous"><em>${t("Un thème, un objectif. Petit, c'est suffisant.","One theme, one objective. Small is enough.")}</em></span>
+              <span class="dash-porte__sous"><em>${t("Un ou plusieurs appuis simples. Petit, c'est suffisant.","One or a few simple footholds. Small is enough.")}</em></span>
             </a>
             <a href="${BASE}relire/" class="dash-porte ${porteSoirClass}">
               <span class="dash-porte__moment">${t("Le soir","Evening")}</span>
@@ -238,7 +238,7 @@ dateEl.textContent = dateLisible();
               ${vs.map(v => `<span class="dash-vecu__theme">${esc(v.label)}</span>`).join('')}
               ${habite ? `<span class="dash-vecu__sceau" aria-hidden="true">✦</span>` : ''}
             </div>
-            <p class="dash-vecu__texte">${esc(r.texte)}</p>
+            ${r.texte ? `<p class="dash-vecu__texte">${esc(r.texte)}</p>` : ''}
             ${precis.length ? `<p class="dash-vecu__precis">${precis.map(p => `<span>↳ ${esc(p)}</span>`).join('')}</p>` : ''}
           </li>`;
       }).join('');
@@ -317,7 +317,7 @@ dateEl.textContent = dateLisible();
             <a href="${BASE}historique/">${t("Mes journées passées →","My past days →")}</a>
           </p>
           <p class="dash-liens">
-            <a href="/pages/carnet/rappel-test/">${t("Tester un rappel ✦","Test a reminder ✦")}</a>
+            <a href="/pages/carnet/rappel-test/">${t("Activer un rappel ✦","Turn on a reminder ✦")}</a>
           </p>
           <p class="dash-liens dash-liens--soft">
             <a href="/index.html">${t("Sortir du carnet","Leave the notebook")}</a>

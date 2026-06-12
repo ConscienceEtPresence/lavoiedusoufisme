@@ -129,7 +129,7 @@ dateEl.textContent = dateLisibleFromKey(date);
               return `
                 <li class="bilan-recueils__item">
                   ${vs.map(v => `<span class="bilan-recueils__theme">${esc(v.label)}</span>`).join('')}
-                  <p class="bilan-recueils__texte">${esc(r.texte)}</p>
+                  ${r.texte ? `<p class="bilan-recueils__texte">${esc(r.texte)}</p>` : ''}
                   ${precis.length ? `<p class="bilan-recueils__precis">${precis.map(p => `<span>↳ ${esc(p)}</span>`).join('')}</p>` : ''}
                   ${r.statut && STATUTS_RECUEIL[r.statut] ? `<span class="bilan-recueils__statut">${esc(STATUTS_RECUEIL[r.statut])}</span>` : ''}
                   ${r.apprentissage ? `<p class="bilan-recueils__appr"><em>« ${esc(r.apprentissage)} »</em></p>` : ''}
@@ -295,7 +295,7 @@ dateEl.textContent = dateLisibleFromKey(date);
           const repriseTexte = (document.getElementById('reprise-input')?.value || '').trim();
 
           await setDoc(doc(db, 'carnets', anonId, 'jours', date), {
-            langue: 'fr', schemaVersion: 4,
+            langue: EN ? 'en' : 'fr', schemaVersion: 5,
             soir: {
               bilansObjectifs,
               bilanPersonnel,

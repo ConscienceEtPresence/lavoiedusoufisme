@@ -100,7 +100,7 @@ const STATUTS = [
           return `
             <li class="recueil-jour__item">
               ${vs.map(v => `<span class="recueil-jour__theme">${esc(v.label)}</span>`).join('')}
-              <p class="recueil-jour__texte">${esc(r.texte)}</p>
+              ${r.texte ? `<p class="recueil-jour__texte">${esc(r.texte)}</p>` : ''}
               ${precis.length ? `<p class="recueil-jour__precis">${precis.map(p => `<span>↳ ${esc(p)}</span>`).join('')}</p>` : ''}
               <p class="recueil-jour__meta">
                 ${st ? `<span class="recueil-jour__statut">${t(st.fr, st.en)}</span>` : ''}
@@ -147,7 +147,7 @@ const STATUTS = [
           </header>
 
           <label class="recueil-champ">
-            <span class="recueil-champ__label">${t("Qu'est-ce qui vient de se passer ?","What just happened?")}</span>
+            <span class="recueil-champ__label">${t("Qu'est-ce qui vient de se passer ?","What just happened?")} <em class="recueil-champ__opt">${t("(facultatif — vous pouvez juste cocher ci-dessous)","(optional — you may just tick below)")}</em></span>
             <textarea id="recueil-texte" rows="3" maxlength="700"
                       placeholder="${t("une scène, une parole, ce que vous avez fait ou ressenti…","a scene, a word, what you did or felt…")}">${esc(state.texte)}</textarea>
           </label>
@@ -187,8 +187,10 @@ const STATUTS = [
       const apprEl = document.getElementById('recueil-appr');
       const commitBtn = document.getElementById('recueil-commit');
 
+      // « Recueillir sans note » : il suffit d'un mot écrit, OU d'avoir coché
+      // une vigilance / une déclinaison / une manière de traverser.
       function majCommit() {
-        commitBtn.disabled = !(state.texte.trim());
+        commitBtn.disabled = !(state.texte.trim() || state.vigilanceIds.length || state.objectifsIds.length || state.statut);
       }
 
       texteEl.addEventListener('input', () => { state.texte = texteEl.value; majCommit(); });
@@ -224,6 +226,7 @@ const STATUTS = [
               state.objectifsIds.push(oid);
             }
             chip.classList.toggle('is-selected', state.objectifsIds.includes(oid));
+            majCommit();
           });
         });
       }
@@ -242,6 +245,7 @@ const STATUTS = [
           }
           btn.classList.toggle('is-selected', state.vigilanceIds.includes(id));
           renderPrecis();
+          majCommit();
         });
       });
 
@@ -250,17 +254,19 @@ const STATUTS = [
           state.statut = (state.statut === btn.dataset.id) ? '' : btn.dataset.id;
           mount.querySelectorAll('.recueil-statut').forEach(b =>
             b.classList.toggle('is-active', b.dataset.id === state.statut));
+          majCommit();
         });
       });
 
       commitBtn.addEventListener('click', async () => {
         const texte = state.texte.trim();
-        if (!texte) return;
+        // On peut recueillir sans note : il suffit d'une vigilance ou d'un état.
+        if (!texte && !state.vigilanceIds.length && !state.objectifsIds.length && !state.statut) return;
         commitBtn.disabled = true;
         commitBtn.textContent = t('Un instant…', 'One moment…');
         try {
           const recueil = {
-            texte,
+            texte: texte || null,
             vigilanceIds: state.vigilanceIds.slice(),
             vigilanceId: state.vigilanceIds[0] || null,   // compat lecteurs simples
             objectifsIds: state.objectifsIds.slice(),     // déclinaisons précisées

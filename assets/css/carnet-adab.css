@@ -2701,3 +2701,13 @@ body.carnet-body {
   color: var(--adab-ink-mute); text-align: center; margin: .9rem 0 0;
 }
 .dash-recueil__cta--soft { box-shadow: none; background: #fdf8ec; }
+
+/* — Recueillir sans note + historique multi-thème/recueils — */
+.recueil-champ__opt { font-weight: 400; font-size: .82rem; color: var(--adab-ink-mute); }
+.hist-detail__vigilance--multi { font-size: 1.35rem; font-weight: 600; color: var(--adab-ink); }
+.hist-detail__obj-theme {
+  display: inline-block; font-family: 'Inter', sans-serif; font-size: .62rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--adab-gold-deep);
+  background: rgba(192,160,80,.14); border-radius: 6px; padding: .1rem .4rem; margin-bottom: .25rem;
+}
+.hist-detail__recueil.is-habite { border-left: 2px solid var(--adab-gold); padding-left: .7rem; }

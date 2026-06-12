@@ -156,19 +156,21 @@ const date = todayKey();
             `).join('')}
           </div>
 
-          <p class="adab-footnote"><em>${t("Une seule vigilance par jour. Petit, c'est suffisant.","One vigilance per day. Small is enough.")}</em></p>
+          <p class="adab-footnote"><em>${t("Choisissez un ou plusieurs appuis simples pour aujourd'hui.","Choose one or a few simple footholds for today.")}</em></p>
         </section>
       `;
       // Reprise d'hier : pré-remplit la vigilance + les objectifs à reprendre
       document.getElementById('reprendre-hier')?.addEventListener('click', () => {
         state.ancrage = (document.getElementById('ancrage-input')?.value || '').trim();
-        const vid = veilleMatin.vigilanceId
-          || (objAreprendre[0] && objAreprendre[0].vigilance)
+        // Vigilance d'entrée = celle du premier objectif à reprendre (ou la veille).
+        const vid = (objAreprendre[0] && objAreprendre[0].vigilance)
+          || veilleMatin.vigilanceId
           || '';
-        if (vid) {
+        if (objAreprendre.length || vid) {
           state.vigilanceId = vid;
-          // ne garde que les objectifs à reprendre qui appartiennent à cette vigilance
-          state.objectifsIds = objAreprendre.filter(o => o.vigilance === vid).map(o => o.id);
+          // On reprend TOUS les objectifs marqués oublié / à reprendre, même
+          // s'ils viennent de plusieurs thèmes (esprit multi-vigilance).
+          state.objectifsIds = objAreprendre.map(o => o.id);
           state.etape = 'vigilance';
           render();
           window.scrollTo({ top: 0, behavior: 'instant' });
@@ -388,7 +390,7 @@ const date = todayKey();
           const objetsMulti = state.objectifsIds.map(id => ({ id, vigilance: objById[id]?.vigilance || state.vigilanceId }));
           const vigEntree = objetsMulti[0]?.vigilance || state.vigilanceId;
           await setDoc(doc(db, 'carnets', anonId, 'jours', date), {
-            langue: 'fr', schemaVersion: 5,
+            langue: EN ? 'en' : 'fr', schemaVersion: 5,
             matin: {
               ancrage: state.ancrage || null,
               vigilanceId: vigEntree,           // compat : vigilance d'entrée

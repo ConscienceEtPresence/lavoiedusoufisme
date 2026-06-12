@@ -258,7 +258,7 @@ try { localStorage.setItem('lvdd_miroir_vu', String(Date.now())); } catch (e) {}
         ${persoHTML}
 
         <p class="miroir__sceau">
-          <span class="miroir__sceau-orn">✦</span>
+          <span class="miroir__sceau-orn"><img src="/assets/img/ornements/sceau.svg" alt="" class="orn-sceau" loading="lazy"/></span>
           <em>Pas de score, pas de note. Ce qui revient, c'est ce qui vous travaille.
           Ce qui manque, manque simplement.</em>
         </p>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" width="280" height="64" role="img" aria-label="ornement de seuil">
+  <g fill="none" stroke="#8a7028" stroke-width="1.1" stroke-linecap="round">
+    <line x1="24" y1="20" x2="256" y2="20" stroke="#b89a4e" stroke-width="0.9"/>
+    <line x1="24" y1="44" x2="256" y2="44" stroke="#b89a4e" stroke-width="0.9"/>
+    <circle cx="24" cy="32" r="2.4" fill="#8a7028" stroke="none"/>
+    <circle cx="256" cy="32" r="2.4" fill="#8a7028" stroke="none"/>
+    <path d="M96 32 q20 -16 34 0 q-20 16 -34 0 Z" stroke-width="0.9"/>
+    <path d="M184 32 q-20 -16 -34 0 q20 16 34 0 Z" stroke-width="0.9"/>
+    <circle cx="140" cy="32" r="16" fill="#fdf6e4" stroke-width="1.2"/>
+  </g>
+  <polygon points="140,18 142.5,29.5 152,32 142.5,34.5 140,46 137.5,34.5 128,32 137.5,29.5"
+           fill="#8a7028"/>
+</svg>

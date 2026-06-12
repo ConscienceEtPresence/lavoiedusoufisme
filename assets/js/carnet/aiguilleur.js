@@ -116,7 +116,7 @@ dateEl.textContent = dateLisible();
       return `
         <section class="dash-seuil">
           <span class="dash-seuil__label">${t("Le seuil du jour","The day's threshold")}</span>
-          <div class="dash-seuil__orn">✦</div>
+          <div class="dash-seuil__orn"><img src="/assets/img/ornements/seuil.svg" alt="" class="orn-seuil" loading="lazy"/></div>
           <p class="dash-seuil__texte">« ${esc(texte)} »</p>
           <p class="dash-seuil__source">${t("Ḥikma n°","Ḥikma no.")} ${esc(r.id)} · Ibn ʿAṭāʾ Allāh al-Iskandarī</p>
           <a href="${lien}?id=${esc(r.id)}" class="dash-seuil__lien">${t("Méditer cette sagesse","Meditate this wisdom")} →</a>
@@ -291,7 +291,7 @@ dateEl.textContent = dateLisible();
             <span class="dash-souffle-cta__txt">${t("Trois respirations","Three breaths")}</span>
             <span class="dash-souffle-cta__sous"><em>${t("un instant de présence","a moment of presence")}</em></span>
           </button>
-          <div class="dash-ornement">✦</div>
+          <div class="dash-ornement"><img src="/assets/img/ornements/sceau.svg" alt="" class="orn-sceau" loading="lazy"/></div>
           ${inviteMiroir ? `
             <a href="${BASE}miroir/" class="dash-invite-miroir">
               <span class="dash-invite-miroir__txt">${t("Sept jours ont passé.","Seven days have passed.")}</span>

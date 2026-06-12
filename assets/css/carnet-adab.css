@@ -2639,3 +2639,14 @@ body.carnet-body {
 .miroir-recueil__n { color: var(--adab-gold-deep); font-weight: 600; }
 .miroir-recueil__echos { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .5rem; }
 .miroir-recueil__echo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; line-height: 1.45; color: var(--adab-ink-mute); padding-left: .9rem; border-left: 2px solid var(--adab-rule); }
+
+/* ============================================================
+   ORNEMENTS — enluminure de seuil + sceau à huit branches
+   Non-figuratifs, or sur papier, rares et discrets.
+   ============================================================ */
+.orn-seuil { display: block; margin: .25rem auto 0; width: 190px; max-width: 62%; height: auto; opacity: .92; }
+.orn-sceau { display: block; margin: 0 auto; width: 52px; height: 52px; opacity: .85; }
+.dash-seuil__orn { line-height: 0; }
+.dash-ornement { line-height: 0; }
+.miroir__sceau-orn { display: block; line-height: 0; margin-bottom: .4rem; }
+.recueil__orn { line-height: 0; margin-bottom: .35rem; }

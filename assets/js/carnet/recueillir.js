@@ -129,7 +129,7 @@ const STATUTS = [
       mount.innerHTML = `
         <section class="adab-step recueil">
           <header class="recueil__head">
-            <div class="recueil__orn">✦</div>
+            <div class="recueil__orn"><img src="/assets/img/ornements/seuil.svg" alt="" class="orn-seuil" loading="lazy"/></div>
             <h1 class="recueil__titre">${t("Quelque chose s'est présenté","Something came up")}</h1>
             <p class="recueil__sous"><em>${t("Un instant que la journée vous a tendu — même sans l'avoir prévu. Recueillez-le tel quel.","A moment the day handed you — even unplanned. Gather it as it is.")}</em></p>
           </header>

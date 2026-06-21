@@ -229,3 +229,25 @@
 .ech-random:hover { border-color: var(--ech-gold); color: var(--ech-ink); }
 .ech-legende-note { text-align: center; font-family: 'Inter', sans-serif; font-size: .7rem; color: var(--ech-ink-mute); margin: .2rem auto 0; }
 [data-theme="dark"] .ech-random { background: #221d12; }
+
+/* ---------- Les demeures (manazil) ---------- */
+.ech-manazil { max-width: 52rem; margin: 0 auto; padding: 0 1.2rem 1rem; }
+.ech-famille { padding: 1.4rem 0; border-bottom: 1px solid var(--ech-rule); }
+.ech-famille__head { display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem; }
+.ech-famille__n { font-family: 'Inter', sans-serif; font-size: .7rem; font-weight: 600; color: #fff; background: var(--ech-gold); border-radius: 50%; width: 1.4rem; height: 1.4rem; display: inline-flex; align-items: center; justify-content: center; }
+.ech-famille__ar { font-family: 'Amiri', serif; font-size: 1.5rem; color: var(--ech-gold-deep); }
+.ech-famille__tr { font-family: 'Source Serif 4', serif; font-style: italic; color: var(--ech-ink-mute); font-size: .9rem; }
+.ech-famille__fr { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--ech-ink); margin: 0; flex-basis: 100%; }
+.ech-famille__sens { font-family: 'Source Serif 4', serif; font-size: .98rem; line-height: 1.55; color: var(--ech-ink-soft); margin: .4rem 0 .9rem; }
+.ech-manzil-grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: .5rem; }
+.ech-manzil { display: flex; flex-direction: column; gap: .05rem; padding: .5rem .7rem; border-radius: 10px; background: rgba(184,138,46,.06); border: 1px solid var(--ech-rule); }
+.ech-manzil__ar { font-family: 'Amiri', serif; font-size: 1.2rem; color: var(--ech-ink); }
+.ech-manzil__fr { font-family: 'Source Serif 4', serif; font-size: .85rem; color: var(--ech-ink-soft); }
+
+/* Quatre servitudes (concepts) */
+.ech-servitudes { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: .7rem; margin: 1rem 0; }
+.ech-servitude { padding: .9rem 1rem; border-radius: 12px; background: rgba(184,138,46,.06); border: 1px solid var(--ech-rule); }
+.ech-servitude__ar { font-family: 'Amiri', serif; font-size: 1.25rem; color: var(--ech-gold-deep); }
+.ech-servitude__fr { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 600; color: var(--ech-ink); margin: .1rem 0; }
+.ech-servitude__d { font-family: 'Source Serif 4', serif; font-size: .9rem; line-height: 1.45; color: var(--ech-ink-soft); margin: 0; }
+[data-theme="dark"] .ech-manzil, [data-theme="dark"] .ech-servitude { background: rgba(216,171,85,.06); }

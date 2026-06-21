@@ -47,7 +47,7 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
   const searchEl = document.getElementById('ech-search-input');
   const labelsToggle = document.getElementById('ech-labels-toggle');
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=3').then(r => r.json());
+    const data = await fetch('/data/echiquier/cases.json?v=4').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     const byNum = {}; for (const c of cases) byNum[c.numero] = c;
 
@@ -150,7 +150,9 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
         ${champ('Ce que c’est', c.explication_simple, 'Explication à venir — lecture en cours du commentaire arabe.')}
         ${c.explication_spirituelle ? champ('Sens spirituel', c.explication_spirituelle) : ''}
         ${c.mecanisme ? champ('Mécanisme', c.mecanisme) : ''}
+        ${(c.symptomes && c.symptomes.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Comment cela apparaît</p><ul class="ech-fiche__liste">${c.symptomes.map(s => `<li>${esc(s)}</li>`).join('')}</ul></div>` : ''}
         ${c.illusion_possible ? champ('Illusion possible', c.illusion_possible) : ''}
+        ${c.ouverture ? champ('Ce que cela peut apprendre', c.ouverture) : ''}
         ${(c.remede && c.remede.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Remède, retour</p><ul class="ech-fiche__liste">${c.remede.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
         ${c.pratique ? champ('Pratique intérieure', c.pratique) : ''}
         ${c.question_introspection ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Question pour soi</p><p class="ech-fiche__q">${esc(c.question_introspection)}</p></div>` : ''}

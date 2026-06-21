@@ -47,12 +47,12 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
   const searchEl = document.getElementById('ech-search-input');
   const labelsToggle = document.getElementById('ech-labels-toggle');
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=16').then(r => r.json());
+    const data = await fetch('/data/echiquier/cases.json?v=17').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     const byNum = {}; for (const c of cases) byNum[c.numero] = c;
     // Flèches confirmées progressivement sur le diagramme imprimé.
     let liens = [];
-    try { liens = ((await fetch('/data/echiquier/liens.json?v=7').then(r => r.json())).liens) || []; } catch (e) {}
+    try { liens = ((await fetch('/data/echiquier/liens.json?v=8').then(r => r.json())).liens) || []; } catch (e) {}
 
     const primaryCat = c => (c.categories && c.categories[0]) || 'concept';
     const colorOf = c => CAT_COLOR[primaryCat(c)] || 'var(--ech-gold)';

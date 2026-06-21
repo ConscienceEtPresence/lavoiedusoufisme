@@ -21,7 +21,7 @@ const _esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g
   const mount = document.getElementById('ech-liste');
   const vue = VUES[window.ECH_VUE] || VUES.glossaire;
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=16').then(r => r.json());
+    const data = await fetch('/data/echiquier/cases.json?v=17').then(r => r.json());
     let cases = (data.cases || []).slice();
     if (vue.cats) cases = cases.filter(c => (c.categories || []).some(cat => vue.cats.includes(cat)));
     // Tri alphabétique sur le mot signifiant : on retire l'article « al- »

@@ -50,6 +50,9 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
     const data = await fetch('/data/echiquier/cases.json?v=4').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     const byNum = {}; for (const c of cases) byNum[c.numero] = c;
+    // Liens de sens (pédagogiques, à valider) — calque optionnel
+    let liens = [];
+    try { liens = ((await fetch('/data/echiquier/liens.json?v=1').then(r => r.json())).liens) || []; } catch (e) {}
 
     const primaryCat = c => (c.categories && c.categories[0]) || 'concept';
     const colorOf = c => CAT_COLOR[primaryCat(c)] || 'var(--ech-gold)';
@@ -108,6 +111,39 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
     });
     searchEl.addEventListener('input', applyFilter);
     labelsToggle?.addEventListener('change', () => mount.classList.toggle('ech-plateau--labels', labelsToggle.checked));
+
+    // --- Calque des liens de sens (flèches pédagogiques, à valider) ---
+    if (liens.length) {
+      const LIEN_COLOR = { chute: 'var(--c-chute)', montee: 'var(--c-vertu)', retour: 'var(--ech-gold)', illusion: 'var(--c-illusion)' };
+      const cx = n => ((10 - ((n - 1) % 10)) - 0.5) * 10;   // colonne (gauche→droite)
+      const cy = n => ((10 - Math.floor((n - 1) / 10)) - 0.5) * 10; // ligne (haut→bas)
+      const svg = `
+        <svg class="ech-arrows" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <defs><marker id="ech-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+            <path d="M2 2 L8 5 L2 8" fill="none" stroke="context-stroke" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+          ${liens.map(l => `<line x1="${cx(l.from)}" y1="${cy(l.from)}" x2="${cx(l.to)}" y2="${cy(l.to)}" stroke="${LIEN_COLOR[l.type] || 'var(--ech-gold)'}" stroke-width="0.55" marker-end="url(#ech-ah)" opacity=".82"><title>${esc(l.lecture || '')}</title></line>`).join('')}
+        </svg>`;
+      mount.insertAdjacentHTML('beforeend', svg);
+      // bouton bascule, dans la barre d'outils
+      const tools = document.querySelector('.ech-tools');
+      if (tools) {
+        const btn = document.createElement('button');
+        btn.type = 'button'; btn.className = 'ech-random'; btn.id = 'ech-arrows-toggle';
+        btn.innerHTML = '✦ liens de sens';
+        tools.appendChild(btn);
+        // légende des liens (couleurs + avertissement), masquée tant que le calque est éteint
+        const cap = document.createElement('p');
+        cap.className = 'ech-arrows-legend';
+        cap.innerHTML = '<span class="al al--montee">montée</span><span class="al al--chute">chute</span><span class="al al--retour">retour</span><span class="al al--illusion">illusion</span><em>Liens de sens (pédagogiques), à valider sur le manuscrit — ce ne sont pas encore les flèches exactes du plateau.</em>';
+        const note = document.querySelector('.ech-legende-note');
+        (note || tools).insertAdjacentElement('afterend', cap);
+        btn.addEventListener('click', () => {
+          const on = mount.querySelector('.ech-arrows').classList.toggle('is-on');
+          btn.classList.toggle('is-on', on);
+          cap.classList.toggle('is-on', on);
+        });
+      }
+    }
 
     // « Une case au hasard » — pour entrer par la grâce, non par le choix.
     document.getElementById('ech-random')?.addEventListener('click', () => {

@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/echiquier.css?v=2" />
+  <link rel="stylesheet" href="/assets/css/echiquier.css?v=3" />
 </head>
 <body class="page-enter ech-body">
 
@@ -63,9 +63,11 @@
       <div class="ech-search"><input id="ech-search-input" type="search" placeholder="Chercher une case (arabe, français, n°)…" aria-label="Chercher une case" /></div>
       <div class="ech-filters" id="ech-filters"></div>
       <label class="ech-filter" style="cursor:pointer;"><input type="checkbox" id="ech-labels-toggle" style="margin-right:.35rem;vertical-align:-1px;" />français</label>
+      <button type="button" class="ech-random" id="ech-random">✦ une case au hasard</button>
     </div>
 
     <div class="ech-legende" id="ech-legende"></div>
+    <p class="ech-legende-note">Une bande de couleur à gauche de chaque case indique sa famille. Le signe <strong>?</strong> marque une lecture encore à confirmer sur le scan.</p>
 
     <div class="ech-plateau-wrap">
       <div class="ech-plateau" id="ech-plateau" role="grid" aria-label="Plateau de l'Échiquier des gnostiques">
@@ -74,7 +76,7 @@
     </div>
 
     <p class="ech-note" style="text-align:center;">
-      <em>La case 1 (le non-être) est en bas à droite ; la case 100 (l'illusion ultime) en haut à gauche.
+      <em>La case 1 (le non-être) est en bas à droite ; la case 100 (la tentation ultime, al-shayṭān) en haut à gauche.
       Le chemin n'est pas une montée mécanique : on s'élève, on tombe, on revient.</em>
     </p>
 
@@ -89,6 +91,6 @@
   </aside>
 
   <script src="/assets/js/main.js?v=16"></script>
-  <script type="module" src="/assets/js/echiquier/plateau.js?v=1"></script>
+  <script type="module" src="/assets/js/echiquier/plateau.js?v=2"></script>
 </body>
 </html>

@@ -24,7 +24,14 @@ const _esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g
     const data = await fetch('/data/echiquier/cases.json?v=3').then(r => r.json());
     let cases = (data.cases || []).slice();
     if (vue.cats) cases = cases.filter(c => (c.categories || []).some(cat => vue.cats.includes(cat)));
-    if (vue.tri === 'alpha') cases.sort((a, b) => (a.translitteration || '').localeCompare(b.translitteration || '', 'fr'));
+    // Tri alphabétique sur le mot signifiant : on retire l'article « al- »
+    // et les signes ʿ/ʾ, sinon tout se range sous « a ».
+    const sortKey = s => (s || '')
+      .replace(/^al-?\s*/i, '')
+      .replace(/^[ʿʾ'’]/, '')
+      .normalize('NFD').replace(/[̀-ͯʿʾ]/g, '')
+      .toLowerCase().trim();
+    if (vue.tri === 'alpha') cases.sort((a, b) => sortKey(a.translitteration).localeCompare(sortKey(b.translitteration), 'fr'));
     else cases.sort((a, b) => a.numero - b.numero);
 
     mount.innerHTML = cases.map(c => {

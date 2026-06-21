@@ -109,6 +109,11 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
     searchEl.addEventListener('input', applyFilter);
     labelsToggle?.addEventListener('change', () => mount.classList.toggle('ech-plateau--labels', labelsToggle.checked));
 
+    // « Une case au hasard » — pour entrer par la grâce, non par le choix.
+    document.getElementById('ech-random')?.addEventListener('click', () => {
+      openCase(1 + Math.floor(Math.random() * 100));
+    });
+
     // --- Panneau fiche ---
     const overlay = document.getElementById('ech-panel-overlay');
     const panel = document.getElementById('ech-panel');
@@ -151,6 +156,7 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
         ${c.question_introspection ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Question pour soi</p><p class="ech-fiche__q">${esc(c.question_introspection)}</p></div>` : ''}
         ${liens(c.liens_entrants, 'Ce qui mène ici')}
         ${liens(c.liens_sortants, 'Où cela conduit')}
+        <a class="ech-fiche__journal" href="/pages/echiquier/journal/?case=${c.numero}">✦ Noter cette case dans mon journal</a>
         <div class="ech-badge-valid">✦ ${esc(STATUT_TXT[c.statut] || c.statut)}</div>
         <div class="ech-fiche__nav">
           <button type="button" class="ech-fiche__navbtn" id="ech-prev" ${c.numero <= 1 ? 'disabled' : ''}>← case ${c.numero - 1}</button>

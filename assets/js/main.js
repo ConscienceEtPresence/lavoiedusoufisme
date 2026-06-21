@@ -106,7 +106,7 @@ document.querySelectorAll('.period').forEach(el => observer.observe(el));
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.dataset.darkmode = '1';
-    link.href = baseHref + 'assets/css/dark-mode.css?v=5';
+    link.href = baseHref + 'assets/css/dark-mode.css?v=8';
     document.head.appendChild(link);
   }
 

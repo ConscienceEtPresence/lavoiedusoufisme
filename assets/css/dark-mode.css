@@ -122,7 +122,8 @@
 [data-theme="dark"] .meditate-card--terre,
 [data-theme="dark"] .meditate-card--poesie,
 [data-theme="dark"] .meditate-card--contes,
-[data-theme="dark"] .meditate-card--amour {
+[data-theme="dark"] .meditate-card--amour,
+[data-theme="dark"] .meditate-card--echiquier {
   background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)) !important;
 }
 

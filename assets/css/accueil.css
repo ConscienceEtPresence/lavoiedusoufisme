@@ -1063,3 +1063,22 @@ body.nf-locked { overflow: hidden; }
 @media (max-width: 600px) {
   .quick-carnet { display: none !important; }
 }
+
+/* Variante Échiquier — or profond et nuit, la carte du cheminement */
+.meditate-card--echiquier {
+  background: linear-gradient(180deg, rgba(138, 102, 32, 0.12), rgba(90, 86, 148, 0.05));
+  border-color: rgba(138, 102, 32, 0.34);
+}
+.meditate-card--echiquier::after {
+  color: rgba(138, 102, 32, 0.55);
+}
+.meditate-card--echiquier .meditate-card__ar {
+  color: rgba(120, 90, 28, 0.95);
+}
+.meditate-card--echiquier .meditate-card__title {
+  color: #7A5E1C;
+}
+.meditate-card--echiquier:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 10px 26px rgba(138, 102, 32, 0.22);
+  border-color: rgba(138, 102, 32, 0.6);
+}

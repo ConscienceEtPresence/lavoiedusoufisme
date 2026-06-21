@@ -190,9 +190,13 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
       if (current && e.key === 'ArrowRight' && current < 100) openCase(current + 1);
     });
 
-    // Ouverture directe via #case-N
-    const m = location.hash.match(/^#case-(\d+)$/);
-    if (m) openCase(+m[1]);
+    // Ouverture directe via #case-N (au chargement et si le hash change ensuite)
+    const openFromHash = () => {
+      const m = location.hash.match(/^#case-(\d+)$/);
+      if (m) openCase(+m[1]);
+    };
+    openFromHash();
+    window.addEventListener('hashchange', openFromHash);
   } catch (e) {
     console.error(e);
     mount.innerHTML = `<p style="grid-column:1/-1;text-align:center;padding:2rem;color:#a85c43;">Le plateau n'a pas pu être chargé.</p>`;

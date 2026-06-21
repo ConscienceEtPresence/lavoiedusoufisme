@@ -166,7 +166,7 @@
 .ech-cardlink__tr { font-family: 'Source Serif 4', serif; font-style: italic; font-size: .82rem; color: var(--ech-ink-mute); }
 .ech-cardlink__fr { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; }
 .ech-cardlink__d { font-family: 'Source Serif 4', serif; font-size: .86rem; color: var(--ech-ink-soft); line-height: 1.45; margin-top: .2rem; }
-.ech-cardlink__warn { font-family: 'Inter', sans-serif; font-size: .6rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ech-illusion); margin-top: .3rem; }
+.ech-cardlink__warn { font-family: 'Inter', sans-serif; font-size: .6rem; letter-spacing: .06em; text-transform: uppercase; color: var(--c-illusion); margin-top: .3rem; }
 .ech-liste-count { text-align: center; font-family: 'Inter', sans-serif; font-size: .78rem; color: var(--ech-ink-mute); margin: 0 0 1rem; }
 
 /* ---------- Concepts ---------- */
@@ -191,8 +191,8 @@
 .ech-journal { max-width: 44rem; margin: 0 auto; padding: 0 1.2rem 3rem; }
 .ech-journal__form { background: #fffdf7; border: 1px solid var(--ech-rule); border-radius: 14px; padding: 1.1rem 1.2rem; }
 .ech-journal__row { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-bottom: .6rem; }
-.ech-journal select, .ech-journal textarea, .ech-journal input { font-family: 'Source Serif 4', serif; font-size: 1rem; border: 1px solid var(--ech-rule); border-radius: 10px; background: #fffdf7; color: var(--ech-ink); padding: .5rem .7rem; }
-.ech-journal select { flex: 1 1 14rem; }
+.ech-journal select, .ech-journal textarea, .ech-journal input { font-family: 'Source Serif 4', serif; font-size: 1rem; border: 1px solid var(--ech-rule); border-radius: 10px; background: #fffdf7; color: var(--ech-ink); padding: .5rem .7rem; box-sizing: border-box; max-width: 100%; min-width: 0; }
+.ech-journal select { flex: 1 1 14rem; width: 100%; }
 .ech-journal textarea { width: 100%; box-sizing: border-box; resize: vertical; min-height: 5rem; line-height: 1.5; }
 .ech-journal__q { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.1rem; color: var(--ech-gold-deep); margin: .3rem 0 .6rem; min-height: 1.2rem; }
 .ech-journal__btn { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 600; color: #fff; background: var(--ech-gold); border: none; border-radius: 11px; padding: .6rem 1.4rem; cursor: pointer; }
@@ -205,7 +205,7 @@
 .ech-entry__date { font-family: 'Inter', sans-serif; font-size: .7rem; color: var(--ech-ink-mute); }
 .ech-entry__txt { font-family: 'Source Serif 4', serif; font-size: .98rem; line-height: 1.55; color: var(--ech-ink-soft); margin: .4rem 0 0; white-space: pre-wrap; }
 .ech-entry__del { font-family: 'Inter', sans-serif; font-size: .68rem; color: var(--ech-ink-mute); background: none; border: none; cursor: pointer; margin-top: .3rem; }
-.ech-entry__del:hover { color: var(--ech-illusion); }
+.ech-entry__del:hover { color: var(--c-illusion); }
 .ech-journal__tools { display: flex; gap: .8rem; justify-content: center; margin-top: 1.2rem; }
 .ech-journal__tool { font-family: 'Inter', sans-serif; font-size: .78rem; color: var(--ech-gold-deep); background: none; border: 1px solid var(--ech-rule); border-radius: 8px; padding: .35rem .8rem; cursor: pointer; }
 .ech-journal__empty { text-align: center; font-family: 'Source Serif 4', serif; font-style: italic; color: var(--ech-ink-mute); padding: 1.5rem; }
@@ -251,3 +251,6 @@
 .ech-servitude__fr { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 600; color: var(--ech-ink); margin: .1rem 0; }
 .ech-servitude__d { font-family: 'Source Serif 4', serif; font-size: .9rem; line-height: 1.45; color: var(--ech-ink-soft); margin: 0; }
 [data-theme="dark"] .ech-manzil, [data-theme="dark"] .ech-servitude { background: rgba(216,171,85,.06); }
+
+/* La section Échiquier est en français seulement : pas de bascule EN (évite les 404). */
+.ech-body .lang-switch { display: none !important; }

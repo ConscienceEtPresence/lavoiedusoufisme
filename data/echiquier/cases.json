@@ -15,7 +15,7 @@
       "verifie_arabe",
       "pret_publication"
     ],
-    "validation_en_cours": "État actuel : 24 cases vérifiées sur le scan, 2 cases encore à confirmer (39, 46), et 2 flèches réelles tracées depuis le diagramme imprimé. Le tracé complet des flèches reste en cours."
+    "validation_en_cours": "Reconstruction sur le livre de Michon (ARChè 1998) en cours : cases 1-11 vérifiées en arabe (texte source). Corrections notables : 7=l'impulsivité aveugle, 10=l'épreuve (al-miḥna). Suite : cases 12+."
   },
   "cases": [
     {
@@ -23,14 +23,14 @@
       "numero": 1,
       "arabe": "العدم",
       "translitteration": "al-ʿadam",
-      "traduction": "le non-être, la potentialité",
+      "traduction": "le néant",
       "categories": [
         "concept",
         "metaphysique"
       ],
       "zone": "basse",
       "resume": "Le point de départ : ce qui n'est pas encore, la pure potentialité d'où l'être est appelé.",
-      "explication_simple": "Avant toute chose, le serviteur n'est qu'une possibilité dans la science de Dieu — un non-être qui ne tient que par Lui.",
+      "explication_simple": "Le néant possible, contrepartie de l'existence possible : il subsiste dans la Science divine tout en étant inexistant en soi, et peut se déplacer vers l'existence.",
       "explication_spirituelle": "Tout part de là : reconnaître qu'on ne possède pas son être, qu'il est à chaque instant reçu de Dieu.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -40,11 +40,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.113-116",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -53,14 +52,14 @@
       "numero": 2,
       "arabe": "ولادة الوجود",
       "translitteration": "wilādat al-wujūd",
-      "traduction": "la naissance à l'existence",
+      "traduction": "la naissance de l'existence",
       "categories": [
         "concept",
         "naissance"
       ],
       "zone": "basse",
       "resume": "",
-      "explication_simple": "L'instant où la possibilité devient créature : l'âme reçoit l'existence comme un prêt.",
+      "explication_simple": "L'entrée dans l'existence : par la Puissance pure (Adam, les Esprits, les Anges), ou par la Sagesse via les géniteurs.",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -70,11 +69,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.113-116",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -83,14 +81,13 @@
       "numero": 3,
       "arabe": "باب الرضى",
       "translitteration": "bāb al-riḍā",
-      "traduction": "la porte du contentement",
+      "traduction": "le contentement",
       "categories": [
-        "vertu",
-        "station"
+        "etat"
       ],
       "zone": "basse",
       "resume": "",
-      "explication_simple": "La première porte : accepter ce qui est, comme point d'entrée du chemin.",
+      "explication_simple": "La porte du contentement (ou « ce bas-monde ») : le penchant naturel à se satisfaire du monde et à l'aimer — ce qui pousse vers la passion.",
       "explication_spirituelle": "Le contentement n'est pas la résignation : c'est cesser de lutter contre le décret pour pouvoir enfin avancer.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -100,11 +97,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.113-116",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -113,14 +109,14 @@
       "numero": 4,
       "arabe": "الشهوة",
       "translitteration": "al-shahwa",
-      "traduction": "la passion, l'appétit",
+      "traduction": "la passion",
       "categories": [
         "chute",
         "maladie_de_l_ame"
       ],
       "zone": "basse",
       "resume": "",
-      "explication_simple": "L'appétit qui se saisit de l'âme avant qu'elle ne se voie : désirer, vouloir prendre, sans recul.",
+      "explication_simple": "La passion animale, qui entraîne le serviteur vers l'étape suivante.",
       "explication_spirituelle": "",
       "mecanisme": "La passion non vue produit l'humiliation ; l'humiliation mal vécue produit la rancune.",
       "illusion_possible": "Croire que satisfaire le désir l'apaisera, alors qu'il renaît toujours plus grand.",
@@ -133,11 +129,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.113-116",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [
         "je veux tout de suite",
         "je cède avant même d'y penser",
@@ -150,13 +145,13 @@
       "numero": 5,
       "arabe": "المذلة",
       "translitteration": "al-madhalla",
-      "traduction": "l'humiliation, l'abaissement",
+      "traduction": "l'avilissement",
       "categories": [
         "chute"
       ],
       "zone": "basse",
       "resume": "",
-      "explication_simple": "L'abaissement qui suit la passion non maîtrisée : l'âme se découvre petite.",
+      "explication_simple": "Il s'avilit à force de satisfaire sa passion, et sa dégradation s'accentue jusqu'au bas-fond.",
       "explication_spirituelle": "Bien reçue, l'humiliation brise l'orgueil et ouvre au retour ; mal reçue, elle nourrit la rancune.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -166,11 +161,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.113-116",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -179,14 +173,14 @@
       "numero": 6,
       "arabe": "تحت الثرى",
       "translitteration": "taḥt al-tharā",
-      "traduction": "sous la terre, le bas-fond",
+      "traduction": "sous la Terre",
       "categories": [
         "danger",
         "etat"
       ],
       "zone": "basse",
       "resume": "",
-      "explication_simple": "Le plus bas : l'âme ensevelie sous ce qui l'alourdit.",
+      "explication_simple": "Le bas-fond où l'a conduit l'avilissement ; si rien ne l'aide, il est mené à l'impulsivité aveugle.",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -196,11 +190,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.113-116",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -209,13 +202,14 @@
       "numero": 7,
       "arabe": "الجهالة",
       "translitteration": "al-jahāla",
-      "traduction": "l'ignorance manifestée",
+      "traduction": "l'impulsivité aveugle",
       "categories": [
-        "chute"
+        "chute",
+        "maladie_de_l_ame"
       ],
       "zone": "basse",
       "resume": "",
-      "explication_simple": "Non pas le simple manque de savoir, mais l'aveuglement qui agit sans se connaître.",
+      "explication_simple": "Il manifeste son impulsivité et son agressivité envers les hommes, qui le lui rendent : « chacun reçoit le pareil de ses actions ».",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -225,11 +219,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "diagramme imprimé (édition FR, planche complète)",
-        "page_pdf": 1,
-        "validation": "verifie_scan"
+        "fichier": "Michon, ARChè 1998, p.113-116",
+        "validation": "verifie_arabe"
       },
-      "statut": "verifie_scan",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -238,14 +231,14 @@
       "numero": 8,
       "arabe": "الحقد",
       "translitteration": "al-ḥiqd",
-      "traduction": "la rancune",
+      "traduction": "la haine",
       "categories": [
         "chute",
         "maladie_de_l_ame"
       ],
       "zone": "basse",
       "resume": "",
-      "explication_simple": "La blessure gardée fermée, qui se referme sur elle-même et empoisonne le cœur.",
+      "explication_simple": "Il hait ceux qui lui font du mal, en représailles de sa propre grossièreté.",
       "explication_spirituelle": "La rancune change une douleur en poison ; non vue, elle conduit aux mauvaises actions.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -258,11 +251,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.113-116",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [
         "je rejoue la scène dans ma tête",
         "je guette une occasion de rendre",
@@ -281,7 +273,7 @@
       ],
       "zone": "basse",
       "resume": "",
-      "explication_simple": "Les actes qui découlent d'un cœur troublé : la chute intérieure devient gestes.",
+      "explication_simple": "Les mauvaises actions extériorisées — injures, mauvais traitements : « qui cache le mal en son cœur, Dieu l'en couvre ».",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -291,26 +283,26 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.113-116",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
     {
       "id": 10,
       "numero": 10,
-      "arabe": "الحمية",
-      "translitteration": "al-ḥamiyya",
-      "traduction": "l'emportement, l'esprit partisan",
+      "arabe": "المحنة",
+      "translitteration": "al-miḥna",
+      "traduction": "l'épreuve",
       "categories": [
-        "chute"
+        "danger",
+        "etat"
       ],
       "zone": "basse",
       "resume": "",
-      "explication_simple": "L'ardeur basse, l'esprit partisan qui défend le moi plus que le vrai.",
+      "explication_simple": "Il tombe dans l'épreuve : prison, châtiments corporels, exil, pauvreté, mépris de ses semblables.",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -320,11 +312,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.113-116",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -333,13 +324,13 @@
       "numero": 11,
       "arabe": "قليل الأدب",
       "translitteration": "qalīl al-adab",
-      "traduction": "le manque d'adab",
+      "traduction": "le manque de adab",
       "categories": [
         "chute"
       ],
       "zone": "basse",
       "resume": "",
-      "explication_simple": "L'absence de tenue intérieure : agir, parler, prier sans l'égard juste.",
+      "explication_simple": "Son adab s'amenuise, ainsi que sa pudeur envers Dieu et les créatures : il en vient à trouver bon d'agir mal.",
       "explication_spirituelle": "L'adab corrige la prétention ; son manque ferme les portes les plus subtiles du chemin.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -349,11 +340,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.113-116",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },

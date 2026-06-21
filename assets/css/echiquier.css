@@ -89,13 +89,13 @@
 .ech-legende__pastille { width: .7rem; height: .7rem; border-radius: 3px; }
 
 /* ---------- Panneau latéral (fiche) ---------- */
-.ech-panel-overlay { position: fixed; inset: 0; background: rgba(40,30,10,.35); opacity: 0; pointer-events: none; transition: opacity .25s ease; z-index: 50; }
+.ech-panel-overlay { position: fixed; inset: 0; background: rgba(40,30,10,.35); opacity: 0; pointer-events: none; transition: opacity .25s ease; z-index: 10000; }
 .ech-panel-overlay.is-open { opacity: 1; pointer-events: auto; }
 .ech-panel {
   position: fixed; top: 0; right: 0; height: 100%; width: min(28rem, 92vw);
   background: var(--ech-paper); box-shadow: -16px 0 50px -24px rgba(60,40,10,.5);
   transform: translateX(100%); transition: transform .3s cubic-bezier(.22,.61,.36,1);
-  z-index: 51; display: flex; flex-direction: column;
+  z-index: 10001; display: flex; flex-direction: column;
   border-left: 1px solid var(--ech-rule);
 }
 .ech-panel.is-open { transform: translateX(0); }

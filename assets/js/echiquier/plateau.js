@@ -47,7 +47,7 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
   const searchEl = document.getElementById('ech-search-input');
   const labelsToggle = document.getElementById('ech-labels-toggle');
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=2').then(r => r.json());
+    const data = await fetch('/data/echiquier/cases.json?v=3').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     const byNum = {}; for (const c of cases) byNum[c.numero] = c;
 

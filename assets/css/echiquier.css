@@ -149,3 +149,63 @@
   .ech-case__ar { font-size: 2.4vw; }
   .ech-panel { width: 100vw; }
 }
+
+/* ---------- Sous-navigation de section ---------- */
+.ech-subnav { max-width: 60rem; margin: 0 auto 1rem; padding: .3rem 1rem; display: flex; flex-wrap: wrap; gap: .3rem .9rem; justify-content: center; }
+.ech-subnav a { font-family: 'Inter', sans-serif; font-size: .8rem; color: var(--ech-ink-soft); text-decoration: none; padding: .25rem .5rem; border-radius: 7px; }
+.ech-subnav a:hover { color: var(--ech-gold-deep); background: rgba(184,138,46,.08); }
+.ech-subnav a.is-on { color: var(--ech-gold-deep); font-weight: 600; }
+
+/* ---------- Cartes de liste (chutes / remèdes / glossaire) ---------- */
+.ech-liste-grille { max-width: 60rem; margin: 0 auto; padding: 0 1rem 2rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: .7rem; }
+.ech-cardlink { display: flex; flex-direction: column; gap: .15rem; padding: .9rem 1rem; border-radius: 13px; background: #fffdf7; border: 1px solid var(--ech-rule); border-left: 3px solid var(--case-color, var(--ech-gold)); text-decoration: none; color: var(--ech-ink); transition: transform .14s ease, box-shadow .2s ease; }
+.ech-cardlink:hover { transform: translateY(-2px); box-shadow: 0 14px 28px -20px rgba(80,55,15,.5); }
+.ech-cardlink__top { display: flex; align-items: baseline; justify-content: space-between; }
+.ech-cardlink__ar { font-family: 'Amiri', serif; font-size: 1.35rem; color: var(--ech-gold-deep); }
+.ech-cardlink__num { font-family: 'Inter', sans-serif; font-size: .68rem; color: var(--ech-ink-mute); }
+.ech-cardlink__tr { font-family: 'Source Serif 4', serif; font-style: italic; font-size: .82rem; color: var(--ech-ink-mute); }
+.ech-cardlink__fr { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; }
+.ech-cardlink__d { font-family: 'Source Serif 4', serif; font-size: .86rem; color: var(--ech-ink-soft); line-height: 1.45; margin-top: .2rem; }
+.ech-cardlink__warn { font-family: 'Inter', sans-serif; font-size: .6rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ech-illusion); margin-top: .3rem; }
+.ech-liste-count { text-align: center; font-family: 'Inter', sans-serif; font-size: .78rem; color: var(--ech-ink-mute); margin: 0 0 1rem; }
+
+/* ---------- Concepts ---------- */
+.ech-concepts { max-width: 50rem; margin: 0 auto; padding: 0 1.2rem 2rem; }
+.ech-concept { padding: 1.1rem 0; border-bottom: 1px solid var(--ech-rule); }
+.ech-concept__ar { font-family: 'Amiri', serif; font-size: 1.6rem; color: var(--ech-gold-deep); }
+.ech-concept__tr { font-family: 'Source Serif 4', serif; font-style: italic; color: var(--ech-ink-mute); margin-left: .5rem; }
+.ech-concept__fr { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; margin: .15rem 0; }
+.ech-concept__d { font-family: 'Source Serif 4', serif; font-size: 1rem; line-height: 1.6; color: var(--ech-ink-soft); margin: 0; }
+
+/* ---------- Parcours ---------- */
+.ech-parcours { max-width: 48rem; margin: 0 auto; padding: 0 1.2rem 2rem; }
+.ech-parcours__bloc { margin: 1.6rem 0; padding: 1.1rem 1.2rem; border-radius: 14px; background: #fffdf7; border: 1px solid var(--ech-rule); }
+.ech-parcours__t { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600; margin: 0 0 .2rem; color: var(--ech-ink); }
+.ech-parcours__d { font-family: 'Source Serif 4', serif; font-size: .92rem; color: var(--ech-ink-mute); margin: 0 0 .7rem; font-style: italic; }
+.ech-parcours__steps { display: flex; flex-wrap: wrap; gap: .4rem; }
+.ech-parcours__step { font-family: 'Source Serif 4', serif; font-size: .9rem; text-decoration: none; color: var(--ech-ink-soft); background: rgba(184,138,46,.08); border: 1px solid var(--ech-rule); border-radius: 999px; padding: .25rem .7rem; }
+.ech-parcours__step:hover { border-color: var(--ech-gold); color: var(--ech-ink); }
+.ech-parcours__step .ar { font-family: 'Amiri', serif; color: var(--ech-gold-deep); }
+
+/* ---------- Journal ---------- */
+.ech-journal { max-width: 44rem; margin: 0 auto; padding: 0 1.2rem 3rem; }
+.ech-journal__form { background: #fffdf7; border: 1px solid var(--ech-rule); border-radius: 14px; padding: 1.1rem 1.2rem; }
+.ech-journal__row { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-bottom: .6rem; }
+.ech-journal select, .ech-journal textarea, .ech-journal input { font-family: 'Source Serif 4', serif; font-size: 1rem; border: 1px solid var(--ech-rule); border-radius: 10px; background: #fffdf7; color: var(--ech-ink); padding: .5rem .7rem; }
+.ech-journal select { flex: 1 1 14rem; }
+.ech-journal textarea { width: 100%; box-sizing: border-box; resize: vertical; min-height: 5rem; line-height: 1.5; }
+.ech-journal__q { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.1rem; color: var(--ech-gold-deep); margin: .3rem 0 .6rem; min-height: 1.2rem; }
+.ech-journal__btn { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 600; color: #fff; background: var(--ech-gold); border: none; border-radius: 11px; padding: .6rem 1.4rem; cursor: pointer; }
+.ech-journal__btn:hover { background: var(--ech-gold-deep); }
+.ech-journal__entries { margin-top: 1.6rem; display: flex; flex-direction: column; gap: .8rem; }
+.ech-entry { background: #fffdf7; border: 1px solid var(--ech-rule); border-left: 3px solid var(--ech-gold); border-radius: 0 12px 12px 0; padding: .8rem 1rem; }
+.ech-entry__head { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; }
+.ech-entry__case { font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--ech-ink); }
+.ech-entry__case .ar { font-family: 'Amiri', serif; color: var(--ech-gold-deep); margin-left: .3rem; }
+.ech-entry__date { font-family: 'Inter', sans-serif; font-size: .7rem; color: var(--ech-ink-mute); }
+.ech-entry__txt { font-family: 'Source Serif 4', serif; font-size: .98rem; line-height: 1.55; color: var(--ech-ink-soft); margin: .4rem 0 0; white-space: pre-wrap; }
+.ech-entry__del { font-family: 'Inter', sans-serif; font-size: .68rem; color: var(--ech-ink-mute); background: none; border: none; cursor: pointer; margin-top: .3rem; }
+.ech-entry__del:hover { color: var(--ech-illusion); }
+.ech-journal__tools { display: flex; gap: .8rem; justify-content: center; margin-top: 1.2rem; }
+.ech-journal__tool { font-family: 'Inter', sans-serif; font-size: .78rem; color: var(--ech-gold-deep); background: none; border: 1px solid var(--ech-rule); border-radius: 8px; padding: .35rem .8rem; cursor: pointer; }
+.ech-journal__empty { text-align: center; font-family: 'Source Serif 4', serif; font-style: italic; color: var(--ech-ink-mute); padding: 1.5rem; }

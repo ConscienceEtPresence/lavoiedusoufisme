@@ -1228,14 +1228,13 @@
       "numero": 42,
       "arabe": "الصوت اللطيف",
       "translitteration": "al-ṣawt al-laṭīf",
-      "traduction": "la voix douce, subtile",
+      "traduction": "la voix subtile",
       "categories": [
-        "etat",
-        "illusion"
+        "etat"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "La beauté subtile — une voix, une grâce — qui élève, ou qui séduit.",
+      "explication_simple": "Une voix seigneuriale (hātif rabbānī) parlant par la langue de l'Esprit : l'âme la trouve suave et veut se conformer à son annonce, sans que sa force propre l'y aide.",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "Prendre le plaisir de la forme pour la présence.",
@@ -1245,69 +1244,55 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.135-140",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
     {
       "id": 43,
       "numero": 43,
-      "arabe": "التكبر",
-      "translitteration": "al-takabbur",
-      "traduction": "l'orgueil",
+      "arabe": "الكدر",
+      "translitteration": "al-kadar",
+      "traduction": "le trouble",
       "categories": [
-        "chute",
-        "maladie_de_l_ame"
+        "etat",
+        "chute"
       ],
       "zone": "mediane",
-      "resume": "Le moi s'attribue un don et refuse d'être corrigé.",
-      "explication_simple": "L'orgueil n'est pas seulement se croire supérieur : c'est refuser d'être enseigné, ne plus recevoir la vérité quand elle vient d'autrui.",
-      "explication_spirituelle": "Dans la voie, l'orgueil est une fermeture du cœur. Il peut naître d'une chose bonne — un don, une voix, une science, une station — dès que le moi la prend pour sienne.",
-      "mecanisme": "Je reçois quelque chose → je le prends pour moi → je cesse d'être pauvre devant Dieu → je juge ou refuse le conseil → je tombe.",
-      "illusion_possible": "Se croire spirituel, pur, avancé ou lucide, alors qu'on est encore dominé par le moi.",
-      "remede": [
-        "gratitude",
-        "silence",
-        "service discret",
-        "acceptation du conseil",
-        "compagnie des sincères",
-        "retour à Dieu"
-      ],
-      "question_introspection": "Où est-ce que je transforme un don reçu en propriété personnelle ?",
+      "resume": "",
+      "explication_simple": "L'âme troublée souffre de l'emprise des sens et des difficultés du monde — mort, maladie, pauvreté, épreuve, séparation : « une mine de troubles, afin de t'inciter au renoncement » (Ḥikam).",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "Quel trouble du monde m'incite, en creux, à me détourner vers Dieu ?",
       "pratique": "",
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.135-140",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
-      "symptomes": [
-        "je coupe la parole pour avoir raison",
-        "je n'écoute plus les remarques",
-        "je compare et je me trouve meilleur",
-        "je donne des leçons sans qu'on me le demande"
-      ],
-      "ouverture": "Vu à temps, l'orgueil rappelle à la pauvreté : tout ce que j'ai m'a été donné. Il peut devenir la porte de l'humilité."
+      "statut": "verifie_arabe",
+      "symptomes": [],
+      "ouverture": ""
     },
     {
       "id": 44,
       "numero": 44,
       "arabe": "العشق الحقيقي",
       "translitteration": "al-ʿishq al-ḥaqīqī",
-      "traduction": "l'amour véritable",
+      "traduction": "le désir réel",
       "categories": [
         "vertu",
         "etat"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "L'amour vrai : non plus pour la forme, mais pour Celui qui se donne à travers elle.",
+      "explication_simple": "Le désir ressenti par les âmes et les esprits pour leur Créateur : « Aimez Dieu pour les bienfaits dont Il vous nourrit ». Le cœur n'a qu'une direction : tournée vers Lui, elle éloigne de tout autre.",
       "explication_spirituelle": "L'amour véritable corrige l'amour passionnel ; il consume le moi au lieu de le nourrir.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1317,41 +1302,39 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.135-140",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
     {
       "id": 45,
       "numero": 45,
-      "arabe": "الزبانية",
-      "translitteration": "al-zabāniya",
-      "traduction": "les anges du châtiment",
+      "arabe": "الخرابات",
+      "translitteration": "al-kharābāt",
+      "traduction": "les ruines",
       "categories": [
         "danger",
-        "monde"
+        "etat"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "Les gardiens du feu : y tomber, c'est chuter — le grand serpent ramène à la passion.",
+      "explication_simple": "Il prend tout en aversion et rompt ses liens mondains ; mais s'il s'y arrête, il ruine son monde temporel — pourtant fondement de sa voie. (Variante : le malheur, al-wabāl.)",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
       "remede": [],
-      "question_introspection": "Qu'est-ce qui, en moi, appelle le châtiment plutôt que la miséricorde ?",
+      "question_introspection": "Est-ce que je « ruine » par excès ce qui devait soutenir mon chemin ?",
       "pratique": "",
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "diagramme imprimé (édition FR, planche complète)",
-        "page_pdf": 1,
-        "validation": "verifie_scan"
+        "fichier": "Michon, ARChè 1998, p.135-140",
+        "validation": "verifie_arabe"
       },
-      "statut": "verifie_scan",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1359,14 +1342,14 @@
       "id": 46,
       "numero": 46,
       "arabe": "المحو في المحو",
-      "translitteration": "al-maḥw fī al-maḥw",
+      "translitteration": "al-maḥwu fī-l-maḥwi",
       "traduction": "l'effacement dans l'effacement",
       "categories": [
         "realisation"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "Au-delà de l'effacement, l'effacement même de s'être effacé : plus aucune trace de moi.",
+      "explication_simple": "L'abandon (tawakkul) à Dieu : les univers s'effacent de son cœur — nulle existence, nulle utilité, nul mal — et la conscience même de cet effacement s'efface.",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1376,11 +1359,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "a_confirmer"
+        "fichier": "Michon, ARChè 1998, p.135-140",
+        "validation": "verifie_arabe"
       },
-      "statut": "a_confirmer",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1389,14 +1371,14 @@
       "numero": 47,
       "arabe": "العقل الكامل",
       "translitteration": "al-ʿaql al-kāmil",
-      "traduction": "l'intellect accompli",
+      "traduction": "l'intelligence parfaite",
       "categories": [
-        "vertu",
-        "station"
+        "station",
+        "connaissance"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "La raison parvenue à maturité, éclairée par la lumière du cœur.",
+      "explication_simple": "Celle qui saisit l'énonciation divine et met toute chose à sa place : les univers sont affirmés par l'Affirmation de Dieu et effacés par l'Unité de Son Essence. (Variante : l'adhésion, taḥqīq.)",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1406,11 +1388,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.135-140",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },

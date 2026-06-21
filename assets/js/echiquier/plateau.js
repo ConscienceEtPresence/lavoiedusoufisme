@@ -47,12 +47,12 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
   const searchEl = document.getElementById('ech-search-input');
   const labelsToggle = document.getElementById('ech-labels-toggle');
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=6').then(r => r.json());
+    const data = await fetch('/data/echiquier/cases.json?v=7').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     const byNum = {}; for (const c of cases) byNum[c.numero] = c;
-    // Liens de sens (pédagogiques, à valider) — calque optionnel
+    // Flèches confirmées progressivement sur le diagramme imprimé.
     let liens = [];
-    try { liens = ((await fetch('/data/echiquier/liens.json?v=2').then(r => r.json())).liens) || []; } catch (e) {}
+    try { liens = ((await fetch('/data/echiquier/liens.json?v=3').then(r => r.json())).liens) || []; } catch (e) {}
 
     const primaryCat = c => (c.categories && c.categories[0]) || 'concept';
     const colorOf = c => CAT_COLOR[primaryCat(c)] || 'var(--ech-gold)';
@@ -112,7 +112,7 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
     searchEl.addEventListener('input', applyFilter);
     labelsToggle?.addEventListener('change', () => mount.classList.toggle('ech-plateau--labels', labelsToggle.checked));
 
-    // --- Calque des liens de sens (flèches pédagogiques, à valider) ---
+    // --- Calque des flèches vérifiées sur le diagramme ---
     if (liens.length) {
       const LIEN_COLOR = { chute: 'var(--c-chute)', montee: 'var(--c-vertu)', retour: 'var(--ech-gold)', illusion: 'var(--c-illusion)' };
       const cx = n => ((10 - ((n - 1) % 10)) - 0.5) * 10;   // colonne (gauche→droite)
@@ -129,12 +129,12 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
       if (tools) {
         const btn = document.createElement('button');
         btn.type = 'button'; btn.className = 'ech-random'; btn.id = 'ech-arrows-toggle';
-        btn.innerHTML = '✦ liens de sens';
+        btn.innerHTML = '✦ flèches vérifiées';
         tools.appendChild(btn);
-        // légende des liens (couleurs + avertissement), masquée tant que le calque est éteint
+        // Légende des flèches confirmées, masquée tant que le calque est éteint.
         const cap = document.createElement('p');
         cap.className = 'ech-arrows-legend';
-        cap.innerHTML = '<span class="al al--montee">montée</span><span class="al al--chute">chute</span><span class="al al--retour">retour</span><span class="al al--illusion">illusion</span><em>Liens de sens (pédagogiques), à valider sur le manuscrit — ce ne sont pas encore les flèches exactes du plateau.</em>';
+        cap.innerHTML = '<span class="al al--montee">montée</span><span class="al al--chute">chute</span><span class="al al--retour">retour</span><span class="al al--illusion">illusion</span><em>Flèches lues sur le diagramme imprimé. Le tracé est en cours : seules les flèches confirmées sont affichées.</em>';
         const note = document.querySelector('.ech-legende-note');
         (note || tools).insertAdjacentElement('afterend', cap);
         btn.addEventListener('click', () => {

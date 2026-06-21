@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/echiquier.css?v=7" />
+  <link rel="stylesheet" href="/assets/css/echiquier.css?v=8" />
 </head>
 <body class="page-enter ech-body">
 
@@ -45,7 +45,7 @@
     <section class="ech-hero" style="padding-bottom:.4rem;">
       <p class="ech-hero__ar" lang="ar" dir="rtl">شطرنج العارفين</p>
       <h1 class="ech-hero__title">Le plateau</h1>
-      <p class="ech-hero__sub">Cent cases du cheminement intérieur. Touchez une case pour entrer : son sens, son mécanisme, son illusion, son remède.</p>
+      <p class="ech-hero__sub">Cent cases du cheminement intérieur. Touchez une case pour entrer ; commencez par un parcours si vous découvrez l'Échiquier.</p>
     </section>
   <nav class="ech-subnav">
     <a href="/pages/echiquier/">Présentation</a>
@@ -60,6 +60,21 @@
     <a href="/pages/echiquier/a-propos/">À propos</a>
   </nav>
 
+    <section class="ech-mode-emploi ech-mode-emploi--compact" aria-label="Mode d'emploi du plateau">
+      <div>
+        <p class="ech-mode-emploi__eyebrow">Avant de cliquer</p>
+        <h2 class="ech-mode-emploi__title">Lisez le plateau comme un chemin, pas comme un test.</h2>
+        <p class="ech-mode-emploi__intro">
+          Une case dit un état. Une flèche montre ce qui élève. Une chaîne ou un grappin montre ce qui fait tomber.
+          Ouvrez une case, lisez son mécanisme, puis regardez ce qu'elle peut faire naître ou défaire.
+        </p>
+      </div>
+      <div class="ech-mode-emploi__mini">
+        <a href="/pages/echiquier/parcours/">Première visite : parcours guidés</a>
+        <a href="/pages/echiquier/journal/">Écrire après une case</a>
+      </div>
+    </section>
+
     <div class="ech-tools">
       <div class="ech-search"><input id="ech-search-input" type="search" placeholder="Chercher une case (arabe, français, n°)…" aria-label="Chercher une case" /></div>
       <div class="ech-filters" id="ech-filters"></div>
@@ -68,7 +83,7 @@
     </div>
 
     <div class="ech-legende" id="ech-legende"></div>
-    <p class="ech-legende-note">Une bande de couleur à gauche de chaque case indique sa famille. Le signe <strong>?</strong> marque une lecture encore à confirmer sur le scan.</p>
+    <p class="ech-legende-note">La couleur indique la famille de la case. Activez les mouvements pour voir les montées, les chaînes et les grappins déjà confirmés dans le texte.</p>
 
     <div class="ech-plateau-wrap">
       <div class="ech-plateau" id="ech-plateau" role="grid" aria-label="Plateau de l'Échiquier des gnostiques">
@@ -78,7 +93,8 @@
 
     <p class="ech-note" style="text-align:center;">
       <em>La case 1 (le non-être) est en bas à droite ; la case 100 (la tentation ultime, al-shayṭān) en haut à gauche.
-      Le chemin n'est pas une montée mécanique : on s'élève, on tombe, on revient.</em>
+      Le chemin n'est pas une montée mécanique : on s'élève, on tombe, on revient. Les flèches signalent les progressions ;
+      les chaînes et grappins signalent les occasions de chute ou de régression.</em>
     </p>
 
     <p style="text-align:center;margin:1.5rem 0 3rem;"><a href="/pages/echiquier/" style="color:var(--ech-gold-deep);font-family:'Cormorant Garamond',serif;font-style:italic;">← Retour à la présentation</a></p>
@@ -92,6 +108,6 @@
   </aside>
 
   <script src="/assets/js/main.js?v=16"></script>
-  <script type="module" src="/assets/js/echiquier/plateau.js?v=17"></script>
+  <script type="module" src="/assets/js/echiquier/plateau.js?v=18"></script>
 </body>
 </html>

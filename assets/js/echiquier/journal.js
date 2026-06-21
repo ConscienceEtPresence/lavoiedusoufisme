@@ -6,6 +6,7 @@
    ============================================================ */
 const KEY = 'ech_journal_v1';
 const _esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const questionPour = c => c && (c.question_introspection || `Où cette réalité apparaît-elle en moi, même faiblement, et quel retour juste peut-elle m'apprendre ?`);
 
 function load() { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; } }
 function save(arr) { try { localStorage.setItem(KEY, JSON.stringify(arr)); } catch (e) {} }
@@ -25,7 +26,7 @@ function dateLisible(ms) {
 
   let byNum = {};
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=17').then(r => r.json());
+    const data = await fetch('/data/echiquier/cases.json?v=18').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     for (const c of cases) byNum[c.numero] = c;
     selEl.innerHTML = '<option value="">— choisir une case —</option>' +
@@ -40,7 +41,7 @@ function dateLisible(ms) {
 
   function majQuestion() {
     const c = byNum[+selEl.value];
-    qEl.textContent = c && c.question_introspection ? '« ' + c.question_introspection + ' »' : '';
+    qEl.textContent = c ? '« ' + questionPour(c) + ' »' : '';
   }
   selEl.addEventListener('change', majQuestion);
   majQuestion();

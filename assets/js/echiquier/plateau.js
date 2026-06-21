@@ -33,12 +33,25 @@ const STATUT_TXT = {
   a_confirmer: 'lecture incertaine — à confirmer sur le scan',
   lecture_visuelle: 'lu sur le plateau scanné — explication à approfondir',
   verifie_scan: 'vérifié sur le scan',
-  verifie_arabe: 'vérifié en arabe',
+  verifie_arabe: 'vérifié dans le texte arabe',
   pret_publication: 'prêt'
 };
 
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const catColor = c => c ? `<span class="ech-legende__pastille" style="background:${c.color}"></span>` : '';
+const TYPE_TXT = {
+  montee: 'montée',
+  chute: 'chaîne / grappin',
+  retour: 'retour',
+  illusion: 'illusion'
+};
+const TYPE_INTRO = {
+  montee: 'Ce mouvement indique une progression ou une élévation.',
+  chute: 'Ce mouvement indique une chute, une régression ou un grappin de l’âme.',
+  retour: 'Ce mouvement indique un retour possible.',
+  illusion: 'Ce mouvement indique une illusion à démasquer.'
+};
+const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même faiblement, et quel retour juste peut-elle m'apprendre ?`;
 
 (async () => {
   const mount = document.getElementById('ech-plateau');
@@ -47,12 +60,19 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
   const searchEl = document.getElementById('ech-search-input');
   const labelsToggle = document.getElementById('ech-labels-toggle');
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=17').then(r => r.json());
+    const data = await fetch('/data/echiquier/cases.json?v=18').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     const byNum = {}; for (const c of cases) byNum[c.numero] = c;
-    // Flèches confirmées progressivement sur le diagramme imprimé.
+    // Mouvements confirmés dans le texte : montées, chaînes et grappins.
     let liens = [];
-    try { liens = ((await fetch('/data/echiquier/liens.json?v=8').then(r => r.json())).liens) || []; } catch (e) {}
+    try { liens = ((await fetch('/data/echiquier/liens.json?v=9').then(r => r.json())).liens) || []; } catch (e) {}
+    const relations = {};
+    for (const c of cases) relations[c.numero] = { entrants: [], sortants: [] };
+    for (const l of liens) {
+      const from = +l.from, to = +l.to;
+      if (relations[from]) relations[from].sortants.push(l);
+      if (relations[to]) relations[to].entrants.push(l);
+    }
 
     const primaryCat = c => (c.categories && c.categories[0]) || 'concept';
     const colorOf = c => CAT_COLOR[primaryCat(c)] || 'var(--ech-gold)';
@@ -112,7 +132,7 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
     searchEl.addEventListener('input', applyFilter);
     labelsToggle?.addEventListener('change', () => mount.classList.toggle('ech-plateau--labels', labelsToggle.checked));
 
-    // --- Calque des flèches vérifiées sur le diagramme ---
+    // --- Calque des mouvements vérifiés sur le diagramme ---
     if (liens.length) {
       const LIEN_COLOR = { chute: 'var(--c-chute)', montee: 'var(--c-vertu)', retour: 'var(--ech-gold)', illusion: 'var(--c-illusion)' };
       const cx = n => ((10 - ((n - 1) % 10)) - 0.5) * 10;   // colonne (gauche→droite)
@@ -129,12 +149,12 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
       if (tools) {
         const btn = document.createElement('button');
         btn.type = 'button'; btn.className = 'ech-random'; btn.id = 'ech-arrows-toggle';
-        btn.innerHTML = '✦ flèches vérifiées';
+        btn.innerHTML = '✦ mouvements vérifiés';
         tools.appendChild(btn);
-        // Légende des flèches confirmées, masquée tant que le calque est éteint.
+        // Légende des mouvements confirmés, masquée tant que le calque est éteint.
         const cap = document.createElement('p');
         cap.className = 'ech-arrows-legend';
-        cap.innerHTML = '<span class="al al--montee">montée</span><span class="al al--chute">chute</span><span class="al al--retour">retour</span><span class="al al--illusion">illusion</span><em>Flèches lues sur le diagramme imprimé. Le tracé est en cours : seules les flèches confirmées sont affichées.</em>';
+        cap.innerHTML = '<span class="al al--montee">montée</span><span class="al al--chute">chaîne / grappin</span><span class="al al--retour">retour</span><span class="al al--illusion">illusion</span><em>Les montées indiquent une progression. Les chaînes et grappins indiquent une chute ou une régression. Seuls les mouvements confirmés dans le texte sont affichés.</em>';
         const note = document.querySelector('.ech-legende-note');
         (note || tools).insertAdjacentElement('afterend', cap);
         btn.addEventListener('click', () => {
@@ -166,14 +186,26 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
           <p class="ech-fiche__label">${label}</p>
           ${val ? `<p class="ech-fiche__txt">${esc(val)}</p>` : `<p class="ech-fiche__txt ech-fiche__txt--vide">${vide}</p>`}
         </div>`;
-      const liens = (arr, label) => (arr && arr.length) ? `
+      const relationBloc = (arr, label, sens) => (arr && arr.length) ? `
         <div class="ech-fiche__bloc">
           <p class="ech-fiche__label">${label}</p>
-          <ul class="ech-fiche__liste">${arr.map(l => {
-            const t = byNum[l.to || l.from];
-            return t ? `<li><button type="button" class="ech-lien" data-go="${t.numero}">${esc(t.arabe)} — ${esc(t.traduction)}${l.type ? ` <em>(${esc(l.type)})</em>` : ''}</button></li>` : '';
+          <ul class="ech-mouvements">${arr.map(l => {
+            const targetNum = sens === 'entrant' ? +l.from : +l.to;
+            const t = byNum[targetNum];
+            if (!t) return '';
+            const type = l.type || 'montee';
+            const sensTxt = sens === 'entrant' ? 'depuis' : 'vers';
+            return `<li class="ech-mouvement ech-mouvement--${esc(type)}">
+              <button type="button" class="ech-lien ech-lien-mvt" data-go="${t.numero}">
+                <span class="ech-lien-mvt__type">${esc(TYPE_TXT[type] || type)}</span>
+                <span class="ech-lien-mvt__target">${sensTxt} la case ${t.numero} — ${esc(t.traduction)}</span>
+              </button>
+              <p class="ech-lien-mvt__lecture">${esc(l.lecture || TYPE_INTRO[type] || '')}</p>
+            </li>`;
           }).join('')}</ul>
         </div>` : '';
+      const rel = relations[c.numero] || { entrants: [], sortants: [] };
+      const question = c.question_introspection || questionGenerique(c);
 
       scroll.innerHTML = `
         <span class="ech-fiche__cat" style="--case-color:${col}">${esc((c.categories || [])[0] ? (CAT_LABEL[c.categories[0]] || c.categories[0]) : 'case')}</span>
@@ -182,6 +214,10 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
         <p class="ech-fiche__tr">${esc(c.translitteration)}</p>
         <h2 class="ech-fiche__fr">${esc(c.traduction)}</h2>
         ${cats ? `<p class="ech-fiche__txt" style="font-size:.85rem;color:var(--ech-ink-mute);margin:-.4rem 0 .6rem;">${esc(cats)}</p>` : ''}
+        <div class="ech-fiche__mode">
+          <p class="ech-fiche__mode-t">Mode d'emploi</p>
+          <p>Lire la case, repérer ce qu'elle révèle, puis regarder si un mouvement la relie à une montée, une chute ou un retour. Le journal sert à noter ce qui résonne sans se juger.</p>
+        </div>
         ${c.resume ? `<p class="ech-fiche__txt" style="font-style:italic;">${esc(c.resume)}</p>` : ''}
         ${champ('Ce que c’est', c.explication_simple, 'Explication à venir — lecture en cours du commentaire arabe.')}
         ${c.explication_spirituelle ? champ('Sens spirituel', c.explication_spirituelle) : ''}
@@ -191,9 +227,9 @@ const catColor = c => c ? `<span class="ech-legende__pastille" style="background
         ${c.ouverture ? champ('Ce que cela peut apprendre', c.ouverture) : ''}
         ${(c.remede && c.remede.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Remède, retour</p><ul class="ech-fiche__liste">${c.remede.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
         ${c.pratique ? champ('Pratique intérieure', c.pratique) : ''}
-        ${c.question_introspection ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Question pour soi</p><p class="ech-fiche__q">${esc(c.question_introspection)}</p></div>` : ''}
-        ${liens(c.liens_entrants, 'Ce qui mène ici')}
-        ${liens(c.liens_sortants, 'Où cela conduit')}
+        <div class="ech-fiche__bloc"><p class="ech-fiche__label">Question pour soi</p><p class="ech-fiche__q">${esc(question)}</p></div>
+        ${relationBloc(rel.entrants, 'Ce qui mène ici', 'entrant')}
+        ${relationBloc(rel.sortants, 'Où cela conduit', 'sortant')}
         <a class="ech-fiche__journal" href="/pages/echiquier/journal/?case=${c.numero}">✦ Noter cette case dans mon journal</a>
         <div class="ech-badge-valid">✦ ${esc(STATUT_TXT[c.statut] || c.statut)}</div>
         <div class="ech-fiche__nav">

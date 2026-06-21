@@ -1861,14 +1861,14 @@
       "numero": 64,
       "arabe": "الأفعال الحسنة",
       "translitteration": "al-afʿāl al-ḥasana",
-      "traduction": "les bonnes actions",
+      "traduction": "les bonnes œuvres",
       "categories": [
         "vertu",
         "pratique"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "Les actes droits : la foi qui se fait gestes concrets.",
+      "explication_simple": "Les bonnes œuvres : jeûne, prière nocturne, protection de la veuve et de l'orphelin.",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1878,27 +1878,25 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "photo plateau (quart haut-gauche)",
-        "page_pdf": 1,
-        "validation": "verifie_scan"
+        "fichier": "Michon, ARChè 1998, p.153-158",
+        "validation": "verifie_arabe"
       },
-      "statut": "verifie_scan",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
     {
       "id": 65,
       "numero": 65,
-      "arabe": "اليقين",
-      "translitteration": "al-yaqīn",
-      "traduction": "la certitude",
+      "arabe": "اليقين العلمي",
+      "translitteration": "al-yaqīn al-ʿilmī",
+      "traduction": "la certitude didactique",
       "categories": [
-        "vertu",
-        "station"
+        "connaissance"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "La certitude du cœur : non l'opinion, mais l'évidence vécue.",
+      "explication_simple": "La science de la certitude (ʿilm al-yaqīn) : il constate la concordance entre les vérités révélées et leurs signes probants.",
       "explication_spirituelle": "Le yaqīn corrige l'hésitation ; il croît par l'épreuve et la fidélité.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1908,26 +1906,26 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "photo plateau (quart haut-gauche)",
-        "page_pdf": 1,
-        "validation": "verifie_scan"
+        "fichier": "Michon, ARChè 1998, p.153-158",
+        "validation": "verifie_arabe"
       },
-      "statut": "verifie_scan",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
     {
       "id": 66,
       "numero": 66,
-      "arabe": "العلم العلوي",
-      "translitteration": "al-ʿilm al-ʿulwī",
-      "traduction": "la science supérieure",
+      "arabe": "العالم العلوي",
+      "translitteration": "al-ʿālam al-ʿulwī",
+      "traduction": "le monde suprême",
       "categories": [
+        "monde",
         "connaissance"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "La connaissance d'en haut : non acquise par le seul effort, mais reçue.",
+      "explication_simple": "Le monde suprême, « l'œil de la certitude » (ʿayn al-yaqīn) : par sa clairvoyance il contemple les anges, le paradis, l'enfer et les réalités traditionnelles. (Variante : la science utile.)",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1937,11 +1935,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.153-158",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2005,15 +2002,15 @@
     {
       "id": 69,
       "numero": 69,
-      "arabe": "العلم النافع",
-      "translitteration": "al-ʿilm al-nāfiʿ",
+      "arabe": "العلم",
+      "translitteration": "al-ʿilm",
       "traduction": "la science utile",
       "categories": [
         "connaissance"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "Le savoir qui transforme et rapproche, par opposition au savoir qui gonfle.",
+      "explication_simple": "La science utile, celle du cœur (et non de la seule langue) : « celui qui agit selon ce qu'il sait, Dieu lui fait connaître ce qu'il ignorait ». De là, montée vers le royaume mohammédien (94).",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -2023,11 +2020,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.153-158",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2038,12 +2034,12 @@
       "translitteration": "al-īmān",
       "traduction": "la foi",
       "categories": [
-        "station",
-        "voie"
+        "vertu",
+        "etat"
       ],
       "zone": "haute",
       "resume": "",
-      "explication_simple": "La foi : confiance et adhésion du cœur, racine de tout le chemin.",
+      "explication_simple": "La foi parfaite et intime (ghaybī) en Dieu, Ses anges, Ses livres, Ses envoyés, le Jour dernier et la prédestination : il aime ce que Dieu aime et déteste ce qu'Il déteste.",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -2053,11 +2049,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.153-158",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2066,13 +2061,14 @@
       "numero": 71,
       "arabe": "الشريعة",
       "translitteration": "al-sharīʿa",
-      "traduction": "la loi sacrée",
+      "traduction": "la loi religieuse",
       "categories": [
-        "voie"
+        "voie",
+        "concept"
       ],
       "zone": "haute",
       "resume": "",
-      "explication_simple": "La Loi : la forme, la balance, le cadre qui protège la voie.",
+      "explication_simple": "La loi religieuse (sharīʿa), qui n'est autre que les paroles du Prophète : il l'apprend et la respecte avec un zèle nouveau, né de la foi entrée dans le cœur.",
       "explication_spirituelle": "Sans la sharīʿa, la voie dérive ; elle est le rivage qui rend la mer navigable.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -2082,11 +2078,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.153-158",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2152,14 +2147,14 @@
       "numero": 74,
       "arabe": "الجنة",
       "translitteration": "al-janna",
-      "traduction": "le jardin",
+      "traduction": "le paradis",
       "categories": [
         "monde",
         "realisation"
       ],
       "zone": "haute",
       "resume": "",
-      "explication_simple": "Le Jardin, lieu de la joie promise — qui peut faire oublier le Donateur si l'on s'y attache.",
+      "explication_simple": "Le paradis : il en voit la splendeur, les houris, les palais comme présents — mais il se souvient de l'avertissement du guide parfait.",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "Désirer le don plus que Celui qui donne.",
@@ -2169,11 +2164,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.153-158",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },

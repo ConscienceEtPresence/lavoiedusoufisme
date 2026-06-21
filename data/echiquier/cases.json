@@ -14,7 +14,8 @@
       "verifie_scan",
       "verifie_arabe",
       "pret_publication"
-    ]
+    ],
+    "validation_en_cours": "Quart haut-gauche (cases 61-100 côté gauche) confirmé sur photo HD : 20 cases en verifie_scan. Reste 3 quarts à recevoir."
   },
   "cases": [
     {
@@ -1858,11 +1859,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1888,11 +1889,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1918,11 +1919,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1948,11 +1949,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1978,11 +1979,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2301,11 +2302,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2331,19 +2332,19 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
     {
       "id": 78,
       "numero": 78,
-      "arabe": "السخاء",
-      "translitteration": "al-sakhāʾ",
+      "arabe": "السخاوة",
+      "translitteration": "al-sakhāwa",
       "traduction": "la générosité",
       "categories": [
         "vertu"
@@ -2360,11 +2361,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2390,11 +2391,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2420,11 +2421,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2449,11 +2450,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2479,11 +2480,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2508,11 +2509,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2537,11 +2538,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2566,11 +2567,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2889,11 +2890,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2918,11 +2919,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2947,11 +2948,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -2976,11 +2977,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     },
@@ -3007,11 +3008,11 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
+        "fichier": "photo plateau (quart haut-gauche)",
         "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "validation": "verifie_scan"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_scan",
       "symptomes": [],
       "ouverture": ""
     }

@@ -1,0 +1,2788 @@
+{
+  "_meta": {
+    "titre": "L'Échiquier des gnostiques",
+    "titre_arabe": "شرح شطرنج العارفين",
+    "translitteration": "Sharḥ Shaṭranj al-ʿārifīn",
+    "echiquier_attribue_a": "al-Shaykh al-Akbar (Ibn ʿArabī), qaddasa Llāhu sirrahu — attribution traditionnelle, à prendre avec prudence",
+    "commentaire_titre": "Uns al-khāʾifīn wa samīr al-ʿākifīn fī sharḥ shaṭranj al-ʿārifīn",
+    "commentateur": "Muḥammad b. al-Hāshimī b. ʿAbd al-Raḥmān al-Ḥasanī al-Tilimsānī puis al-Dimashqī",
+    "nombre_cases": 100,
+    "avertissement": "Transcription de travail issue de la lecture du plateau scanné. Termes, numéros et flèches à valider page à page avant publication. Aucune flèche n'est encore renseignée : elles seront tracées d'après le diagramme.",
+    "statuts_possibles": [
+      "a_confirmer",
+      "lecture_visuelle",
+      "verifie_scan",
+      "verifie_arabe",
+      "pret_publication"
+    ]
+  },
+  "cases": [
+    {
+      "id": 1,
+      "numero": 1,
+      "arabe": "العدم",
+      "translitteration": "al-ʿadam",
+      "traduction": "le non-être, la potentialité",
+      "categories": [
+        "concept",
+        "metaphysique"
+      ],
+      "zone": "basse",
+      "resume": "Le point de départ : ce qui n'est pas encore, la pure potentialité d'où l'être est appelé.",
+      "explication_simple": "Avant toute chose, le serviteur n'est qu'une possibilité dans la science de Dieu — un non-être qui ne tient que par Lui.",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "D'où me vient l'existence que je crois posséder ?",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 2,
+      "numero": 2,
+      "arabe": "ولادة الوجود",
+      "translitteration": "wilādat al-wujūd",
+      "traduction": "la naissance à l'existence",
+      "categories": [
+        "concept",
+        "naissance"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 3,
+      "numero": 3,
+      "arabe": "باب الرضى",
+      "translitteration": "bāb al-riḍā",
+      "traduction": "la porte du contentement",
+      "categories": [
+        "vertu",
+        "station"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 4,
+      "numero": 4,
+      "arabe": "الشهوة",
+      "translitteration": "al-shahwa",
+      "traduction": "la passion, l'appétit",
+      "categories": [
+        "chute",
+        "maladie_de_l_ame"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "L'appétit qui se saisit de l'âme avant qu'elle ne se voie : désirer, vouloir prendre, sans recul.",
+      "explication_spirituelle": "",
+      "mecanisme": "La passion non vue produit l'humiliation ; l'humiliation mal vécue produit la rancune.",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "Quel désir me conduit sans que je le regarde ?",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 5,
+      "numero": 5,
+      "arabe": "المذلة",
+      "translitteration": "al-madhalla",
+      "traduction": "l'humiliation, l'abaissement",
+      "categories": [
+        "chute"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 6,
+      "numero": 6,
+      "arabe": "تحت الثرى",
+      "translitteration": "taḥt al-tharā",
+      "traduction": "sous la terre, le bas-fond",
+      "categories": [
+        "danger",
+        "etat"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 7,
+      "numero": 7,
+      "arabe": "الجهالة",
+      "translitteration": "al-jahāla",
+      "traduction": "l'ignorance manifestée",
+      "categories": [
+        "chute"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "a_confirmer"
+      },
+      "statut": "a_confirmer"
+    },
+    {
+      "id": 8,
+      "numero": 8,
+      "arabe": "الحقد",
+      "translitteration": "al-ḥiqd",
+      "traduction": "la rancune",
+      "categories": [
+        "chute",
+        "maladie_de_l_ame"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 9,
+      "numero": 9,
+      "arabe": "الأفعال السيئة",
+      "translitteration": "al-afʿāl al-sayyiʾa",
+      "traduction": "les mauvaises actions",
+      "categories": [
+        "chute"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 10,
+      "numero": 10,
+      "arabe": "الحمية",
+      "translitteration": "al-ḥamiyya",
+      "traduction": "l'emportement, l'esprit partisan",
+      "categories": [
+        "chute"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 11,
+      "numero": 11,
+      "arabe": "قليل الأدب",
+      "translitteration": "qalīl al-adab",
+      "traduction": "le manque d'adab",
+      "categories": [
+        "chute"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 12,
+      "numero": 12,
+      "arabe": "الخيانة",
+      "translitteration": "al-khiyāna",
+      "traduction": "la trahison du dépôt",
+      "categories": [
+        "chute"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 13,
+      "numero": 13,
+      "arabe": "الأفعال الذميمة",
+      "translitteration": "al-afʿāl al-dhamīma",
+      "traduction": "les actes blâmables",
+      "categories": [
+        "chute"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 14,
+      "numero": 14,
+      "arabe": "جحيم",
+      "translitteration": "jaḥīm",
+      "traduction": "la fournaise, l'enfer intérieur",
+      "categories": [
+        "danger",
+        "monde"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 15,
+      "numero": 15,
+      "arabe": "المناهي",
+      "translitteration": "al-manāhī",
+      "traduction": "les interdits",
+      "categories": [
+        "chute",
+        "danger"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 16,
+      "numero": 16,
+      "arabe": "البحر العظيم",
+      "translitteration": "al-baḥr al-ʿaẓīm",
+      "traduction": "la grande mer",
+      "categories": [
+        "element",
+        "concept"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 17,
+      "numero": 17,
+      "arabe": "الحسرة",
+      "translitteration": "al-ḥasra",
+      "traduction": "le regret brûlant",
+      "categories": [
+        "etat"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 18,
+      "numero": 18,
+      "arabe": "باطن السوء",
+      "translitteration": "bāṭin al-sūʾ",
+      "traduction": "l'intériorité mauvaise",
+      "categories": [
+        "chute",
+        "maladie_de_l_ame"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 19,
+      "numero": 19,
+      "arabe": "النفاق",
+      "translitteration": "al-nifāq",
+      "traduction": "l'hypocrisie",
+      "categories": [
+        "chute",
+        "maladie_de_l_ame"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 20,
+      "numero": 20,
+      "arabe": "الوسواس",
+      "translitteration": "al-waswās",
+      "traduction": "la suggestion, l'obsession",
+      "categories": [
+        "chute",
+        "danger"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 21,
+      "numero": 21,
+      "arabe": "البسط",
+      "translitteration": "al-basṭ",
+      "traduction": "l'expansion",
+      "categories": [
+        "etat"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 22,
+      "numero": 22,
+      "arabe": "الطمع",
+      "translitteration": "al-ṭamaʿ",
+      "traduction": "la convoitise, l'avidité",
+      "categories": [
+        "chute",
+        "maladie_de_l_ame"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 23,
+      "numero": 23,
+      "arabe": "العشق المجازي",
+      "translitteration": "al-ʿishq al-majāzī",
+      "traduction": "l'amour imaginal, passionnel",
+      "categories": [
+        "etat",
+        "illusion"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 24,
+      "numero": 24,
+      "arabe": "البحر",
+      "translitteration": "al-baḥr",
+      "traduction": "la mer",
+      "categories": [
+        "element"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 25,
+      "numero": 25,
+      "arabe": "الأرض",
+      "translitteration": "al-arḍ",
+      "traduction": "la terre",
+      "categories": [
+        "element"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 26,
+      "numero": 26,
+      "arabe": "الخوف",
+      "translitteration": "al-khawf",
+      "traduction": "la crainte juste",
+      "categories": [
+        "vertu",
+        "station"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 27,
+      "numero": 27,
+      "arabe": "الرحمة",
+      "translitteration": "al-raḥma",
+      "traduction": "la miséricorde",
+      "categories": [
+        "vertu",
+        "remede"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "La miséricorde reçue, puis offerte : ce qui relève l'âme tombée et la ramène vers la vie.",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [
+        "ne pas désespérer du pardon",
+        "offrir ce que l'on a reçu"
+      ],
+      "question_introspection": "Est-ce que je me ferme la miséricorde par le jugement de moi-même ou d'autrui ?",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 28,
+      "numero": 28,
+      "arabe": "الأعراف",
+      "translitteration": "al-aʿrāf",
+      "traduction": "l'entre-deux",
+      "categories": [
+        "concept",
+        "monde"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 29,
+      "numero": 29,
+      "arabe": "دعاء الخلق",
+      "translitteration": "duʿāʾ al-khalq",
+      "traduction": "l'invocation des créatures",
+      "categories": [
+        "pratique"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "a_confirmer"
+      },
+      "statut": "a_confirmer"
+    },
+    {
+      "id": 30,
+      "numero": 30,
+      "arabe": "النصيحة الردية",
+      "translitteration": "al-naṣīḥa al-radiyya",
+      "traduction": "le mauvais conseil",
+      "categories": [
+        "chute",
+        "danger"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 31,
+      "numero": 31,
+      "arabe": "الصحراء",
+      "translitteration": "al-ṣaḥrāʾ",
+      "traduction": "le désert",
+      "categories": [
+        "element",
+        "etat"
+      ],
+      "zone": "basse",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 32,
+      "numero": 32,
+      "arabe": "العقل السليم",
+      "translitteration": "al-ʿaql al-salīm",
+      "traduction": "l'intellect sain",
+      "categories": [
+        "vertu",
+        "remede"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 33,
+      "numero": 33,
+      "arabe": "الجهل",
+      "translitteration": "al-jahl",
+      "traduction": "l'ignorance",
+      "categories": [
+        "chute"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 34,
+      "numero": 34,
+      "arabe": "الحسد",
+      "translitteration": "al-ḥasad",
+      "traduction": "la jalousie",
+      "categories": [
+        "chute",
+        "maladie_de_l_ame"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 35,
+      "numero": 35,
+      "arabe": "الجو",
+      "translitteration": "al-jaww",
+      "traduction": "l'air, l'espace aérien",
+      "categories": [
+        "element"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 36,
+      "numero": 36,
+      "arabe": "الكراهة",
+      "translitteration": "al-karāha",
+      "traduction": "l'aversion",
+      "categories": [
+        "chute"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 37,
+      "numero": 37,
+      "arabe": "العجز",
+      "translitteration": "al-ʿajz",
+      "traduction": "l'impuissance",
+      "categories": [
+        "etat",
+        "danger"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 38,
+      "numero": 38,
+      "arabe": "المراد المطلوب",
+      "translitteration": "al-murād al-maṭlūb",
+      "traduction": "le but recherché",
+      "categories": [
+        "station"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 39,
+      "numero": 39,
+      "arabe": "ترحم العريان",
+      "translitteration": "taraḥḥum al-ʿuryān",
+      "traduction": "la compassion envers le dénudé",
+      "categories": [
+        "vertu"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "a_confirmer"
+      },
+      "statut": "a_confirmer"
+    },
+    {
+      "id": 40,
+      "numero": 40,
+      "arabe": "الصحبة الطيبة",
+      "translitteration": "al-ṣuḥba al-ṭayyiba",
+      "traduction": "la bonne compagnie",
+      "categories": [
+        "vertu",
+        "remede"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "Être entouré non de gens agréables, mais de présences qui rendent plus vrai, plus humble, plus attentif à Dieu.",
+      "explication_spirituelle": "La bonne compagnie est une force de rectification : elle corrige l'aveuglement, l'autosuffisance, les mauvais conseils, l'isolement du moi et la prétention d'avancer seul.",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [
+        "fréquenter les sincères",
+        "accepter d'être repris",
+        "sortir de l'isolement du moi"
+      ],
+      "question_introspection": "Qui me rend plus vrai, plus humble et plus attentif à Dieu ?",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 41,
+      "numero": 41,
+      "arabe": "الأمانة المرضية",
+      "translitteration": "al-amāna al-marḍiyya",
+      "traduction": "le dépôt agréé",
+      "categories": [
+        "vertu",
+        "station"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 42,
+      "numero": 42,
+      "arabe": "الصوت اللطيف",
+      "translitteration": "al-ṣawt al-laṭīf",
+      "traduction": "la voix douce, subtile",
+      "categories": [
+        "etat",
+        "illusion"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 43,
+      "numero": 43,
+      "arabe": "التكبر",
+      "translitteration": "al-takabbur",
+      "traduction": "l'orgueil",
+      "categories": [
+        "chute",
+        "maladie_de_l_ame"
+      ],
+      "zone": "mediane",
+      "resume": "Le moi s'attribue un don et refuse d'être corrigé.",
+      "explication_simple": "L'orgueil n'est pas seulement se croire supérieur : c'est refuser d'être enseigné, ne plus recevoir la vérité quand elle vient d'autrui.",
+      "explication_spirituelle": "Dans la voie, l'orgueil est une fermeture du cœur. Il peut naître d'une chose bonne — un don, une voix, une science, une station — dès que le moi la prend pour sienne.",
+      "mecanisme": "Je reçois quelque chose → je le prends pour moi → je cesse d'être pauvre devant Dieu → je juge ou refuse le conseil → je tombe.",
+      "illusion_possible": "Se croire spirituel, pur, avancé ou lucide, alors qu'on est encore dominé par le moi.",
+      "remede": [
+        "gratitude",
+        "silence",
+        "service discret",
+        "acceptation du conseil",
+        "compagnie des sincères",
+        "retour à Dieu"
+      ],
+      "question_introspection": "Où est-ce que je transforme un don reçu en propriété personnelle ?",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 44,
+      "numero": 44,
+      "arabe": "العشق الحقيقي",
+      "translitteration": "al-ʿishq al-ḥaqīqī",
+      "traduction": "l'amour véritable",
+      "categories": [
+        "vertu",
+        "etat"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 45,
+      "numero": 45,
+      "arabe": "الخسران",
+      "translitteration": "al-khusrān",
+      "traduction": "la perte",
+      "categories": [
+        "danger"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "a_confirmer"
+      },
+      "statut": "a_confirmer"
+    },
+    {
+      "id": 46,
+      "numero": 46,
+      "arabe": "المحو في المحو",
+      "translitteration": "al-maḥw fī al-maḥw",
+      "traduction": "l'effacement dans l'effacement",
+      "categories": [
+        "realisation"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "a_confirmer"
+      },
+      "statut": "a_confirmer"
+    },
+    {
+      "id": 47,
+      "numero": 47,
+      "arabe": "العقل الكامل",
+      "translitteration": "al-ʿaql al-kāmil",
+      "traduction": "l'intellect accompli",
+      "categories": [
+        "vertu",
+        "station"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 48,
+      "numero": 48,
+      "arabe": "التحقيقات",
+      "translitteration": "al-taḥqīqāt",
+      "traduction": "les réalisations, vérifications",
+      "categories": [
+        "connaissance",
+        "realisation"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 49,
+      "numero": 49,
+      "arabe": "القلب الحزين",
+      "translitteration": "al-qalb al-ḥazīn",
+      "traduction": "le cœur attristé",
+      "categories": [
+        "etat"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 50,
+      "numero": 50,
+      "arabe": "في سبيل الله",
+      "translitteration": "fī sabīl Allāh",
+      "traduction": "dans la voie de Dieu",
+      "categories": [
+        "pratique",
+        "voie"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 51,
+      "numero": 51,
+      "arabe": "الرياء",
+      "translitteration": "al-riyāʾ",
+      "traduction": "l'ostentation spirituelle",
+      "categories": [
+        "chute",
+        "maladie_de_l_ame"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 52,
+      "numero": 52,
+      "arabe": "التراب",
+      "translitteration": "al-turāb",
+      "traduction": "la poussière, la terre",
+      "categories": [
+        "element"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 53,
+      "numero": 53,
+      "arabe": "الماء",
+      "translitteration": "al-māʾ",
+      "traduction": "l'eau",
+      "categories": [
+        "element",
+        "remede"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 54,
+      "numero": 54,
+      "arabe": "الراحة",
+      "translitteration": "al-rāḥa",
+      "traduction": "le repos",
+      "categories": [
+        "etat",
+        "remede"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 55,
+      "numero": 55,
+      "arabe": "الشجاعة",
+      "translitteration": "al-shajāʿa",
+      "traduction": "le courage",
+      "categories": [
+        "vertu"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 56,
+      "numero": 56,
+      "arabe": "الزينة",
+      "translitteration": "al-zīna",
+      "traduction": "la beauté, la parure",
+      "categories": [
+        "etat",
+        "illusion"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 57,
+      "numero": 57,
+      "arabe": "الخلق الحسن",
+      "translitteration": "al-khuluq al-ḥasan",
+      "traduction": "le bon caractère",
+      "categories": [
+        "vertu"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 58,
+      "numero": 58,
+      "arabe": "الدماغ",
+      "translitteration": "al-dimāgh",
+      "traduction": "le cerveau, la faculté intellective",
+      "categories": [
+        "concept"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 59,
+      "numero": 59,
+      "arabe": "الحب",
+      "translitteration": "al-ḥubb",
+      "traduction": "l'amour",
+      "categories": [
+        "vertu",
+        "etat"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 60,
+      "numero": 60,
+      "arabe": "النار",
+      "translitteration": "al-nār",
+      "traduction": "le feu",
+      "categories": [
+        "element"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 61,
+      "numero": 61,
+      "arabe": "العلم",
+      "translitteration": "al-ʿilm",
+      "traduction": "la science",
+      "categories": [
+        "connaissance"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "La science peut éclairer le chemin — mais elle peut aussi gonfler le moi.",
+      "explication_spirituelle": "Distinguer la science utile, la science du cœur, la science ramenée à Dieu — de la science devenue argument contre autrui ou miroir du moi.",
+      "mecanisme": "",
+      "illusion_possible": "Une science qui nourrit l'image de soi au lieu d'être ramenée à Dieu.",
+      "remede": [],
+      "question_introspection": "Ma science me rend-elle plus humble, ou plus sûr de moi ?",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 62,
+      "numero": 62,
+      "arabe": "المرشد الكامل",
+      "translitteration": "al-murshid al-kāmil",
+      "traduction": "le guide accompli",
+      "categories": [
+        "station",
+        "voie"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 63,
+      "numero": 63,
+      "arabe": "الاعتقاد الذاتي",
+      "translitteration": "al-iʿtiqād al-dhātī",
+      "traduction": "la croyance propre, l'opinion de soi",
+      "categories": [
+        "chute",
+        "illusion"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 64,
+      "numero": 64,
+      "arabe": "الأفعال الحسنة",
+      "translitteration": "al-afʿāl al-ḥasana",
+      "traduction": "les bonnes actions",
+      "categories": [
+        "vertu",
+        "pratique"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 65,
+      "numero": 65,
+      "arabe": "اليقين",
+      "translitteration": "al-yaqīn",
+      "traduction": "la certitude",
+      "categories": [
+        "vertu",
+        "station"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 66,
+      "numero": 66,
+      "arabe": "العلم العلوي",
+      "translitteration": "al-ʿilm al-ʿulwī",
+      "traduction": "la science supérieure",
+      "categories": [
+        "connaissance"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 67,
+      "numero": 67,
+      "arabe": "رضوان",
+      "translitteration": "riḍwān",
+      "traduction": "l'agrément divin",
+      "categories": [
+        "station",
+        "realisation"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 68,
+      "numero": 68,
+      "arabe": "الجهاد",
+      "translitteration": "al-jihād",
+      "traduction": "l'effort, la lutte",
+      "categories": [
+        "pratique"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 69,
+      "numero": 69,
+      "arabe": "العلم النافع",
+      "translitteration": "al-ʿilm al-nāfiʿ",
+      "traduction": "la science utile",
+      "categories": [
+        "connaissance"
+      ],
+      "zone": "mediane",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 70,
+      "numero": 70,
+      "arabe": "الإيمان",
+      "translitteration": "al-īmān",
+      "traduction": "la foi",
+      "categories": [
+        "station",
+        "voie"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 71,
+      "numero": 71,
+      "arabe": "الشريعة",
+      "translitteration": "al-sharīʿa",
+      "traduction": "la loi sacrée",
+      "categories": [
+        "voie"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 72,
+      "numero": 72,
+      "arabe": "الطريقة",
+      "translitteration": "al-ṭarīqa",
+      "traduction": "la voie",
+      "categories": [
+        "voie"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 73,
+      "numero": 73,
+      "arabe": "الثواب الأعظم",
+      "translitteration": "al-thawāb al-aʿẓam",
+      "traduction": "la récompense suprême",
+      "categories": [
+        "realisation"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 74,
+      "numero": 74,
+      "arabe": "الجنة",
+      "translitteration": "al-janna",
+      "traduction": "le jardin",
+      "categories": [
+        "monde",
+        "realisation"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 75,
+      "numero": 75,
+      "arabe": "الفناء في الوجود",
+      "translitteration": "al-fanāʾ fī al-wujūd",
+      "traduction": "l'extinction dans l'existence",
+      "categories": [
+        "realisation"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 76,
+      "numero": 76,
+      "arabe": "الفناء في الشيخ",
+      "translitteration": "al-fanāʾ fī al-shaykh",
+      "traduction": "l'extinction dans le maître",
+      "categories": [
+        "realisation",
+        "voie"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 77,
+      "numero": 77,
+      "arabe": "ملك العبادة",
+      "translitteration": "malak al-ʿibāda",
+      "traduction": "l'ange / le royaume de l'adoration",
+      "categories": [
+        "ange",
+        "monde"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 78,
+      "numero": 78,
+      "arabe": "السخاء",
+      "translitteration": "al-sakhāʾ",
+      "traduction": "la générosité",
+      "categories": [
+        "vertu"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 79,
+      "numero": 79,
+      "arabe": "الحقيقة",
+      "translitteration": "al-ḥaqīqa",
+      "traduction": "la réalité spirituelle",
+      "categories": [
+        "connaissance",
+        "realisation"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 80,
+      "numero": 80,
+      "arabe": "المعرفة",
+      "translitteration": "al-maʿrifa",
+      "traduction": "la connaissance intérieure",
+      "categories": [
+        "connaissance",
+        "realisation"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 81,
+      "numero": 81,
+      "arabe": "الكون",
+      "translitteration": "al-kawn",
+      "traduction": "le cosmos",
+      "categories": [
+        "monde"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 82,
+      "numero": 82,
+      "arabe": "الروح",
+      "translitteration": "al-rūḥ",
+      "traduction": "l'esprit",
+      "categories": [
+        "monde",
+        "concept"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 83,
+      "numero": 83,
+      "arabe": "اللاهوت",
+      "translitteration": "al-lāhūt",
+      "traduction": "le monde divin",
+      "categories": [
+        "monde"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 84,
+      "numero": 84,
+      "arabe": "الجبروت",
+      "translitteration": "al-jabarūt",
+      "traduction": "le monde de la puissance",
+      "categories": [
+        "monde"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 85,
+      "numero": 85,
+      "arabe": "الفناء في الله",
+      "translitteration": "al-fanāʾ fī Allāh",
+      "traduction": "l'extinction en Dieu",
+      "categories": [
+        "realisation"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 86,
+      "numero": 86,
+      "arabe": "النبوة",
+      "translitteration": "al-nubuwwa",
+      "traduction": "la prophétie",
+      "categories": [
+        "station",
+        "realisation"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 87,
+      "numero": 87,
+      "arabe": "الولاية",
+      "translitteration": "al-wilāya",
+      "traduction": "la sainteté, la proximité",
+      "categories": [
+        "station",
+        "realisation"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 88,
+      "numero": 88,
+      "arabe": "الملكوت",
+      "translitteration": "al-malakūt",
+      "traduction": "le monde invisible",
+      "categories": [
+        "monde"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 89,
+      "numero": 89,
+      "arabe": "الناسوت",
+      "translitteration": "al-nāsūt",
+      "traduction": "le monde humain",
+      "categories": [
+        "monde"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 90,
+      "numero": 90,
+      "arabe": "الشهادة",
+      "translitteration": "al-shahāda",
+      "traduction": "le témoignage",
+      "categories": [
+        "station",
+        "realisation"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 91,
+      "numero": 91,
+      "arabe": "الغرور",
+      "translitteration": "al-ghurūr",
+      "traduction": "l'illusion, la vanité",
+      "categories": [
+        "chute",
+        "illusion"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 92,
+      "numero": 92,
+      "arabe": "إسرافيل",
+      "translitteration": "Isrāfīl",
+      "traduction": "Isrāfīl",
+      "categories": [
+        "ange"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 93,
+      "numero": 93,
+      "arabe": "جبريل",
+      "translitteration": "Jibrīl",
+      "traduction": "Gabriel",
+      "categories": [
+        "ange"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 94,
+      "numero": 94,
+      "arabe": "الملك المهيمن",
+      "translitteration": "al-malak al-muhaymin",
+      "traduction": "l'ange dominant (muhammadien ?)",
+      "categories": [
+        "ange"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "a_confirmer"
+      },
+      "statut": "a_confirmer"
+    },
+    {
+      "id": 95,
+      "numero": 95,
+      "arabe": "العرش",
+      "translitteration": "al-ʿarsh",
+      "traduction": "le Trône",
+      "categories": [
+        "monde"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 96,
+      "numero": 96,
+      "arabe": "بقاء بالله",
+      "translitteration": "baqāʾ bi-Llāh",
+      "traduction": "la subsistance par Dieu",
+      "categories": [
+        "realisation"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 97,
+      "numero": 97,
+      "arabe": "ملك إبراهيم",
+      "translitteration": "malak Ibrāhīm",
+      "traduction": "l'ange / le royaume d'Ibrāhīm",
+      "categories": [
+        "ange"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 98,
+      "numero": 98,
+      "arabe": "ميكائيل",
+      "translitteration": "Mīkāʾīl",
+      "traduction": "Mīkāʾīl",
+      "categories": [
+        "ange"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 99,
+      "numero": 99,
+      "arabe": "عزرائيل",
+      "translitteration": "ʿAzrāʾīl",
+      "traduction": "ʿAzrāʾīl",
+      "categories": [
+        "ange"
+      ],
+      "zone": "haute",
+      "resume": "",
+      "explication_simple": "",
+      "explication_spirituelle": "",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    },
+    {
+      "id": 100,
+      "numero": 100,
+      "arabe": "الشيطان",
+      "translitteration": "al-shayṭān",
+      "traduction": "le détournement ultime",
+      "categories": [
+        "chute",
+        "illusion",
+        "danger"
+      ],
+      "zone": "haute",
+      "resume": "La dernière case. Non une conclusion triomphale, mais un avertissement.",
+      "explication_simple": "Le cheminant n'est jamais au-dessus de la vigilance. Le danger ultime est de croire qu'il n'y a plus de danger.",
+      "explication_spirituelle": "Même après les hauteurs, l'illusion change de forme : prétention spirituelle, appropriation du dévoilement, fascination pour les mondes, sentiment d'être arrivé, confusion entre la grâce reçue et le mérite personnel.",
+      "mecanisme": "",
+      "illusion_possible": "",
+      "remede": [],
+      "question_introspection": "Quelle réussite spirituelle pourrait devenir pour moi une illusion ?",
+      "pratique": "",
+      "liens_sortants": [],
+      "liens_entrants": [],
+      "source": {
+        "fichier": "scan PDF (page plateau)",
+        "page_pdf": 1,
+        "validation": "lecture_visuelle"
+      },
+      "statut": "lecture_visuelle"
+    }
+  ]
+}

@@ -1,10 +1,17 @@
 {
   "_meta": {
-    "nature": "Flèches lues sur le diagramme imprimé (édition FR, planche complète). Tracé en cours : régions denses (croisements du haut-droit, chaînes du bas) à compléter sur gros plans.",
+    "nature": "Flèches (montées) et chaînes/grappins (chutes) lues dans le texte de Michon (al-Hāshimī) — chaque mouvement est décrit case par case. Tracé en cours.",
     "types": ["chute", "montee", "retour", "illusion"]
   },
   "liens": [
-    { "from": 64, "to": 96, "type": "montee", "certitude": "verifie_scan", "lecture": "Grande montée : des bonnes actions vers la subsistance par Dieu." },
-    { "from": 45, "to": 4,  "type": "chute",  "certitude": "verifie_scan", "lecture": "Grand serpent : les anges du châtiment précipitent vers la passion." }
+    { "from": 23, "to": 44, "type": "montee", "certitude": "verifie_arabe", "lecture": "Le désir figuré peut élever au désir réel (en franchissant 21 stations)." },
+    { "from": 39, "to": 57, "type": "montee", "certitude": "verifie_arabe", "lecture": "La compassion pour l'homme nu élève au bon caractère (18 stations)." },
+    { "from": 40, "to": 64, "type": "montee", "certitude": "verifie_arabe", "lecture": "La bonne compagnie élève aux bonnes actions (24 stations)." },
+    { "from": 62, "to": 96, "type": "montee", "certitude": "verifie_arabe", "lecture": "Le guide parfait mène à la permanence en Dieu, en un seul pas." },
+    { "from": 30, "to": 7,  "type": "chute",  "certitude": "verifie_arabe", "lecture": "Le grappin de l'impulsivité aveugle fait redescendre la mauvaise compagnie (24 degrés, par 12, 13, 8)." },
+    { "from": 32, "to": 5,  "type": "chute",  "certitude": "verifie_arabe", "lecture": "Le grappin de l'avilissement précipite la raison malade (28 abîmes, par 15, 16)." },
+    { "from": 33, "to": 6,  "type": "chute",  "certitude": "verifie_arabe", "lecture": "Le grappin de « sous la terre » précipite l'ignorance vers le bas-fond (28 abîmes, par 14, 15)." },
+    { "from": 34, "to": 16, "type": "chute",  "certitude": "verifie_arabe", "lecture": "Le grappin du grand océan précipite l'envie (20 abîmes, par 35, 26, 25)." },
+    { "from": 45, "to": 4,  "type": "chute",  "certitude": "verifie_scan", "lecture": "Les anges du châtiment précipitent vers la passion (lu sur le diagramme)." }
   ]
 }

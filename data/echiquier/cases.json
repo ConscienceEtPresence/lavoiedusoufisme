@@ -914,7 +914,7 @@
       ],
       "zone": "basse",
       "resume": "",
-      "explication_simple": "L'aridité : le moment sans goût, sans eau, où la fidélité se prouve.",
+      "explication_simple": "Symbole de son isolement (ʿuzla) d'entre les siens : il devient morose et se prend pour un sot.",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -924,27 +924,26 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.129-134",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
     {
       "id": 32,
       "numero": 32,
-      "arabe": "العقل السليم",
-      "translitteration": "al-ʿaql al-salīm",
-      "traduction": "l'intellect sain",
+      "arabe": "العقل السقيم",
+      "translitteration": "al-ʿaql al-saqīm",
+      "traduction": "la raison malade",
       "categories": [
-        "vertu",
-        "remede"
+        "chute",
+        "maladie_de_l_ame"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "La raison droite, encore intacte : elle distingue et oriente.",
+      "explication_simple": "Ne voyant nul homme de bien à fréquenter, il se met à mal penser de Dieu — qui, prétend-il, lui a décrété la mauvaise compagnie — et de Ses serviteurs.",
       "explication_spirituelle": "L'intellect sain corrige la confusion ; il est l'instrument, non le but.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -954,11 +953,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.129-134",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -973,7 +971,7 @@
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "Ne pas savoir — et surtout ne pas savoir qu'on ne sait pas.",
+      "explication_simple": "Ignorance de Dieu, de Sa Promesse et de Sa Menace : il trahit la confiance, rompt ses engagements, transgresse les limites.",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -986,11 +984,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.129-134",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -999,14 +996,14 @@
       "numero": 34,
       "arabe": "الحسد",
       "translitteration": "al-ḥasad",
-      "traduction": "la jalousie",
+      "traduction": "l'envie",
       "categories": [
         "chute",
         "maladie_de_l_ame"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "Vouloir que l'autre perde le bien qu'il a reçu.",
+      "explication_simple": "Il envie aux autres ce que Dieu leur a donné de prospérité et de santé, et voudrait les en voir privés.",
       "explication_spirituelle": "La jalousie conteste le partage divin ; elle ronge d'abord celui qui la porte.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1016,11 +1013,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.129-134",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1028,14 +1024,14 @@
       "id": 35,
       "numero": 35,
       "arabe": "الجو",
-      "translitteration": "al-jaww",
-      "traduction": "l'air, l'espace aérien",
+      "translitteration": "al-jaw",
+      "traduction": "l'air",
       "categories": [
         "element"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "L'élément de l'air : le souffle, le subtil, ce qui circule sans se saisir.",
+      "explication_simple": "Il voudrait s'envoler pour échapper à l'étroitesse pénible de la terre — mais il ne sait voler. (Variante : le ciel.)",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1045,26 +1041,26 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.129-134",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
     {
       "id": 36,
       "numero": 36,
-      "arabe": "الكراهة",
-      "translitteration": "al-karāha",
-      "traduction": "l'aversion",
+      "arabe": "الكره",
+      "translitteration": "al-kurh",
+      "traduction": "le mépris",
       "categories": [
-        "chute"
+        "chute",
+        "etat"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "Le rejet, la répugnance : se détourner au lieu d'accueillir.",
+      "explication_simple": "Il méprise le monde, se méprise lui-même, méprise sa vie au point de souhaiter la mort — qui ne vient pas. (Variante : la montagne.)",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1074,11 +1070,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.129-134",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1089,12 +1084,11 @@
       "translitteration": "al-ʿajz",
       "traduction": "l'impuissance",
       "categories": [
-        "etat",
-        "danger"
+        "etat"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "Le sentiment de ne plus pouvoir : épreuve, ou aveu salutaire de sa pauvreté.",
+      "explication_simple": "Incapable de libérer son âme, il reconnaît son impuissance et qu'il ne possède aucune force propre — aveu salutaire.",
       "explication_spirituelle": "L'impuissance reconnue ouvre au secours ; niée, elle désespère.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1104,11 +1098,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.129-134",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1117,13 +1110,13 @@
       "numero": 38,
       "arabe": "المراد المطلوب",
       "translitteration": "al-murād al-maṭlūb",
-      "traduction": "le but recherché",
+      "traduction": "l'objet demandé",
       "categories": [
         "station"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "L'objet du désir profond : ce vers quoi, en vérité, on tend.",
+      "explication_simple": "Il prend conscience de ses propres attributs : l'impuissance et la pauvreté (faqr). « Prends conscience de ta valeur, Il te fera connaître la Sienne » (Ḥikam).",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1133,11 +1126,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.129-134",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1145,14 +1137,14 @@
       "id": 39,
       "numero": 39,
       "arabe": "ترحم العريان",
-      "translitteration": "taraḥḥum al-ʿuryān",
-      "traduction": "la compassion envers le dénudé",
+      "translitteration": "al-taraḥḥum al-ʿuryān",
+      "traduction": "la compassion pour l'homme nu",
       "categories": [
         "vertu"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "La tendresse pour celui qui est dépouillé, sans défense.",
+      "explication_simple": "Il ressent tendresse et pitié pour celui qu'il voit nu et affamé — l'« homme nu » désignant l'indigence essentielle de l'homme. De là monte vers le bon caractère (57).",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1162,11 +1154,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "a_confirmer"
+        "fichier": "Michon, ARChè 1998, p.129-134",
+        "validation": "verifie_arabe"
       },
-      "statut": "a_confirmer",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1182,7 +1173,7 @@
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "Être entouré non de gens agréables, mais de présences qui rendent plus vrai, plus humble, plus attentif à Dieu.",
+      "explication_simple": "Ses épreuves lui ont appris qu'il ne peut se passer d'une bonne compagnie : « l'homme sera ressuscité dans la religion de son ami ». Elle l'élève aux bonnes actions (64).",
       "explication_spirituelle": "La bonne compagnie est une force de rectification : elle corrige l'aveuglement, l'autosuffisance, les mauvais conseils, l'isolement du moi et la prétention d'avancer seul.",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1196,11 +1187,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.129-134",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },
@@ -1209,14 +1199,14 @@
       "numero": 41,
       "arabe": "الأمانة المرضية",
       "translitteration": "al-amāna al-marḍiyya",
-      "traduction": "le dépôt agréé",
+      "traduction": "la loyauté agréée",
       "categories": [
         "vertu",
         "station"
       ],
       "zone": "mediane",
       "resume": "",
-      "explication_simple": "La responsabilité reçue et bien portée : être digne de ce qui est confié.",
+      "explication_simple": "Préserver ses sens externes et internes de tomber dans ce que la Loi déclare défendu (muḥarram) ou détestable (makrūh).",
       "explication_spirituelle": "",
       "mecanisme": "",
       "illusion_possible": "",
@@ -1226,11 +1216,10 @@
       "liens_sortants": [],
       "liens_entrants": [],
       "source": {
-        "fichier": "scan PDF (page plateau)",
-        "page_pdf": 1,
-        "validation": "lecture_visuelle"
+        "fichier": "Michon, ARChè 1998, p.129-134",
+        "validation": "verifie_arabe"
       },
-      "statut": "lecture_visuelle",
+      "statut": "verifie_arabe",
       "symptomes": [],
       "ouverture": ""
     },

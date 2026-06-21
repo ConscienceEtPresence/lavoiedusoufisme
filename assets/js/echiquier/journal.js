@@ -25,7 +25,7 @@ function dateLisible(ms) {
 
   let byNum = {};
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=5').then(r => r.json());
+    const data = await fetch('/data/echiquier/cases.json?v=6').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     for (const c of cases) byNum[c.numero] = c;
     selEl.innerHTML = '<option value="">— choisir une case —</option>' +

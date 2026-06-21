@@ -1,29 +1,10 @@
 {
   "_meta": {
-    "nature": "Liens de sens (pédagogiques), tirés des mécanismes explicitement décrits dans le dossier d'analyse (lois de conséquence du commentaire).",
-    "avertissement": "Ce ne sont PAS encore les flèches exactes tracées sur le manuscrit. Le scan ne permet pas de les lire de façon fiable. Chaque lien est en certitude 'a_valider' : à confirmer sur un manuscrit en haute résolution, ou par la lecture du commentaire arabe.",
+    "nature": "Flèches lues sur le diagramme imprimé (édition FR, planche complète). Tracé en cours : régions denses (croisements du haut-droit, chaînes du bas) à compléter sur gros plans.",
     "types": ["chute", "montee", "retour", "illusion"]
   },
   "liens": [
-    { "from": 4,  "to": 5,  "type": "chute",    "certitude": "a_valider", "lecture": "La passion mène à l'humiliation." },
-    { "from": 5,  "to": 6,  "type": "chute",    "certitude": "a_valider", "lecture": "L'humiliation non vue mène au bas-fond." },
-    { "from": 5,  "to": 8,  "type": "chute",    "certitude": "a_valider", "lecture": "L'humiliation mal vécue nourrit la rancune." },
-    { "from": 8,  "to": 9,  "type": "chute",    "certitude": "a_valider", "lecture": "La rancune produit les mauvaises actions." },
-    { "from": 19, "to": 20, "type": "chute",    "certitude": "a_valider", "lecture": "L'hypocrisie ouvre à l'obsession." },
-    { "from": 30, "to": 33, "type": "chute",    "certitude": "a_valider", "lecture": "Le mauvais conseil mène à l'ignorance." },
-    { "from": 22, "to": 5,  "type": "chute",    "certitude": "a_valider", "lecture": "La convoitise expose à l'humiliation." },
-    { "from": 61, "to": 43, "type": "illusion", "certitude": "a_valider", "lecture": "La science sans adab peut devenir orgueil." },
-    { "from": 23, "to": 44, "type": "illusion", "certitude": "a_valider", "lecture": "L'amour imaginal peut se confondre avec l'amour véritable — ou y conduire." },
-    { "from": 74, "to": 43, "type": "illusion", "certitude": "a_valider", "lecture": "L'attachement au don (le Jardin) peut nourrir l'orgueil." },
-    { "from": 5,  "to": 3,  "type": "retour",   "certitude": "a_valider", "lecture": "De l'humiliation, le retour passe par la porte du contentement." },
-    { "from": 43, "to": 27, "type": "retour",   "certitude": "a_valider", "lecture": "L'orgueil reconnu se dénoue par la miséricorde." },
-    { "from": 26, "to": 27, "type": "montee",   "certitude": "a_valider", "lecture": "La crainte juste appelle la miséricorde." },
-    { "from": 40, "to": 64, "type": "montee",   "certitude": "a_valider", "lecture": "La bonne compagnie mène aux bonnes actions." },
-    { "from": 55, "to": 90, "type": "montee",   "certitude": "a_valider", "lecture": "Le courage mène au témoignage." },
-    { "from": 65, "to": 66, "type": "montee",   "certitude": "a_valider", "lecture": "La certitude mène à la science supérieure." },
-    { "from": 70, "to": 72, "type": "montee",   "certitude": "a_valider", "lecture": "La foi ouvre la voie." },
-    { "from": 72, "to": 73, "type": "montee",   "certitude": "a_valider", "lecture": "La voie mène à la récompense suprême." },
-    { "from": 78, "to": 79, "type": "montee",   "certitude": "a_valider", "lecture": "La générosité mène à la réalité." },
-    { "from": 80, "to": 81, "type": "montee",   "certitude": "a_valider", "lecture": "La connaissance ouvre à la vision du cosmos." }
+    { "from": 64, "to": 96, "type": "montee", "certitude": "verifie_scan", "lecture": "Grande montée : des bonnes actions vers la subsistance par Dieu." },
+    { "from": 45, "to": 4,  "type": "chute",  "certitude": "verifie_scan", "lecture": "Grand serpent : les anges du châtiment précipitent vers la passion." }
   ]
 }

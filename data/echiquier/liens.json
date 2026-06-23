@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "nature": "Flèches (montées) et chaînes/grappins (chutes) lues dans le texte de Michon (al-Hāshimī) — chaque mouvement est décrit case par case. Tracé en cours.",
+    "nature": "Réseau complet des montées (flèches) et des chaînes/grappins (chutes), tel que l'auteur (al-Hāshimī) le récapitule lui-même dans les Prolégomènes : 8 « causes de la progression » et 9 « causes du retour ». 17 mouvements, tous sourcés.",
     "types": [
       "chute",
       "montee",
@@ -31,11 +31,46 @@
       "lecture": "La bonne compagnie élève aux bonnes actions (24 stations)."
     },
     {
+      "from": 48,
+      "to": 66,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "Les réalisations élèvent au monde suprême (18 stations, par 47, 54, 55)."
+    },
+    {
+      "from": 50,
+      "to": 74,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "« Dans la voie de Dieu » élève au Paradis (24 stations, par 49, 52, 53, 68, 67)."
+    },
+    {
+      "from": 55,
+      "to": 90,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "Le courage élève à la vision testimoniale (36 degrés, par 54, 67, 68, 73, 72)."
+    },
+    {
       "from": 62,
       "to": 96,
       "type": "montee",
       "certitude": "verifie_arabe",
       "lecture": "Le guide parfait mène à la permanence en Dieu, en un seul pas."
+    },
+    {
+      "from": 69,
+      "to": 94,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "La science utile élève au royaume mohammédien (25 degrés, par 72, 73, 88, 87)."
+    },
+    {
+      "from": 11,
+      "to": 9,
+      "type": "chute",
+      "certitude": "verifie_arabe",
+      "lecture": "Le grappin des mauvaises actions traîne le manque de adab aux mauvaises actions (2 abîmes)."
     },
     {
       "from": 30,
@@ -73,27 +108,6 @@
       "lecture": "Le grappin du mauvais caractère précipite « les ruines » (33 gradins, par 36, 37, 24, 23)."
     },
     {
-      "from": 48,
-      "to": 66,
-      "type": "montee",
-      "certitude": "verifie_arabe",
-      "lecture": "Les réalisations élèvent au monde suprême (18 stations, par 47, 54, 55)."
-    },
-    {
-      "from": 50,
-      "to": 74,
-      "type": "montee",
-      "certitude": "verifie_arabe",
-      "lecture": "« Dans la voie de Dieu » élève au Paradis (24 stations, par 49, 52, 53, 68, 67)."
-    },
-    {
-      "from": 55,
-      "to": 90,
-      "type": "montee",
-      "certitude": "verifie_arabe",
-      "lecture": "Le courage élève à la vision testimoniale (36 degrés, par 54, 67, 68, 73, 72)."
-    },
-    {
       "from": 51,
       "to": 8,
       "type": "chute",
@@ -101,18 +115,18 @@
       "lecture": "Le grappin de la haine précipite l'affectation (44 abîmes, par 32, 33, 13, 14)."
     },
     {
-      "from": 69,
-      "to": 94,
-      "type": "montee",
-      "certitude": "verifie_arabe",
-      "lecture": "La science utile élève au royaume mohammédien (25 degrés, par 72, 73, 88, 87)."
-    },
-    {
       "from": 91,
       "to": 10,
       "type": "chute",
       "certitude": "verifie_arabe",
       "lecture": "Le grappin de l'épreuve précipite la suffisance (82 stations, par 90, 71, 70, 51, 50, 31, 30, 11)."
+    },
+    {
+      "from": 100,
+      "to": 4,
+      "type": "chute",
+      "certitude": "verifie_arabe",
+      "lecture": "Le Shayṭān ramène le voyageur à la passion."
     }
   ]
 }

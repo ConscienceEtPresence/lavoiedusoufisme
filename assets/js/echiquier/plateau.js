@@ -59,6 +59,15 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
   const filtersEl = document.getElementById('ech-filters');
   const searchEl = document.getElementById('ech-search-input');
   const labelsToggle = document.getElementById('ech-labels-toggle');
+  const searchStatus = document.getElementById('ech-search-status') || (() => {
+    const status = document.createElement('p');
+    status.id = 'ech-search-status';
+    status.className = 'ech-search-status';
+    status.setAttribute('role', 'status');
+    status.hidden = true;
+    document.querySelector('.ech-tools')?.insertAdjacentElement('afterend', status);
+    return status;
+  })();
   try {
     const data = await fetch('/data/echiquier/cases.json?v=18').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
@@ -111,6 +120,7 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
     function applyFilter() {
       const q = (searchEl.value || '').trim().toLowerCase();
       const fam = activeFilter ? FAMILLES.find(f => f.id === activeFilter) : null;
+      let visible = 0;
       document.querySelectorAll('.ech-case').forEach(btn => {
         const c = byNum[+btn.dataset.num];
         let show = true;
@@ -119,8 +129,22 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
           const hay = (c.arabe + ' ' + c.translitteration + ' ' + c.traduction + ' ' + c.numero).toLowerCase();
           show = hay.includes(q);
         }
+        if (show) visible++;
         btn.classList.toggle('is-dim', !show);
       });
+      if (searchStatus) {
+        const shouldSpeak = Boolean(q || fam);
+        searchStatus.hidden = !shouldSpeak;
+        if (!shouldSpeak) {
+          searchStatus.textContent = '';
+        } else if (!visible) {
+          searchStatus.textContent = 'Aucune case visible : effacez la recherche ou changez de famille.';
+        } else {
+          const label = visible > 1 ? 'cases visibles' : 'case visible';
+          const scope = fam ? ` dans ${fam.label.toLowerCase()}` : '';
+          searchStatus.textContent = `${visible} ${label}${scope}.`;
+        }
+      }
     }
     filtersEl.querySelectorAll('.ech-filter').forEach(b => {
       b.addEventListener('click', () => {
@@ -206,6 +230,12 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
         </div>` : '';
       const rel = relations[c.numero] || { entrants: [], sortants: [] };
       const question = c.question_introspection || questionGenerique(c);
+      const prevBtn = c.numero > 1
+        ? `<button type="button" class="ech-fiche__navbtn" id="ech-prev">← case ${c.numero - 1}</button>`
+        : '<span aria-hidden="true"></span>';
+      const nextBtn = c.numero < 100
+        ? `<button type="button" class="ech-fiche__navbtn" id="ech-next">case ${c.numero + 1} →</button>`
+        : '<span aria-hidden="true"></span>';
 
       scroll.innerHTML = `
         <span class="ech-fiche__cat" style="--case-color:${col}">${esc((c.categories || [])[0] ? (CAT_LABEL[c.categories[0]] || c.categories[0]) : 'case')}</span>
@@ -233,8 +263,8 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
         <a class="ech-fiche__journal" href="/pages/echiquier/journal/?case=${c.numero}">✦ Noter cette case dans mon journal</a>
         <div class="ech-badge-valid">✦ ${esc(STATUT_TXT[c.statut] || c.statut)}</div>
         <div class="ech-fiche__nav">
-          <button type="button" class="ech-fiche__navbtn" id="ech-prev" ${c.numero <= 1 ? 'disabled' : ''}>← case ${c.numero - 1}</button>
-          <button type="button" class="ech-fiche__navbtn" id="ech-next" ${c.numero >= 100 ? 'disabled' : ''}>case ${c.numero + 1} →</button>
+          ${prevBtn}
+          ${nextBtn}
         </div>`;
 
       scroll.querySelectorAll('.ech-lien').forEach(b => b.addEventListener('click', () => openCase(+b.dataset.go)));

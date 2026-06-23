@@ -45,6 +45,7 @@
 .ech-search { flex: 1 1 14rem; max-width: 22rem; }
 .ech-search input { width: 100%; box-sizing: border-box; font-family: 'Source Serif 4', serif; font-size: 1rem; padding: .55rem .9rem; border: 1px solid var(--ech-rule); border-radius: 10px; background: #fffdf7; color: var(--ech-ink); }
 .ech-search input:focus { outline: none; border-color: var(--ech-gold); box-shadow: 0 0 0 3px rgba(184,138,46,.15); }
+.ech-search-status { max-width: 58rem; margin: -.35rem auto .9rem; padding: 0 1rem; text-align: center; font-family: 'Inter', sans-serif; font-size: .74rem; color: var(--ech-ink-mute); }
 .ech-filters { display: flex; flex-wrap: wrap; gap: .35rem; justify-content: center; }
 .ech-filter { font-family: 'Inter', sans-serif; font-size: .72rem; font-weight: 500; letter-spacing: .02em; padding: .3rem .7rem; border-radius: 999px; border: 1px solid var(--ech-rule); background: #fffdf7; color: var(--ech-ink-soft); cursor: pointer; transition: all .15s ease; }
 .ech-filter.is-on { background: var(--ech-gold); color: #fff; border-color: var(--ech-gold-deep); }
@@ -157,7 +158,8 @@
 [data-theme="dark"] .ech-search input,
 [data-theme="dark"] .ech-filter { background: #221d12; }
 [data-theme="dark"] .ech-case { background: #221d12; }
-[data-theme="dark"] .ech-porte { background: #201b11; }
+[data-theme="dark"] .ech-porte,
+[data-theme="dark"] .ech-mvt-card { background: #201b11; }
 [data-theme="dark"] .ech-mode-emploi { background: #201b11; }
 [data-theme="dark"] .ech-panel__close { background: #221d12; }
 
@@ -187,6 +189,29 @@
 .ech-cardlink__d { font-family: 'Source Serif 4', serif; font-size: .86rem; color: var(--ech-ink-soft); line-height: 1.45; margin-top: .2rem; }
 .ech-cardlink__warn { font-family: 'Inter', sans-serif; font-size: .6rem; letter-spacing: .06em; text-transform: uppercase; color: var(--c-illusion); margin-top: .3rem; }
 .ech-liste-count { text-align: center; font-family: 'Inter', sans-serif; font-size: .78rem; color: var(--ech-ink-mute); margin: 0 0 1rem; }
+
+.ech-mvt-guide { max-width: 60rem; margin: 1.2rem auto 1.6rem; padding: 0 1rem; }
+.ech-mvt-guide__head { max-width: 44rem; margin: 0 auto 1rem; text-align: center; }
+.ech-mvt-guide__head h2 { margin: .15rem 0 .35rem; font-family: 'Cormorant Garamond', serif; font-size: clamp(1.45rem, 4vw, 1.9rem); font-weight: 600; color: var(--ech-ink); }
+.ech-mvt-guide__head p:last-child { margin: 0; font-family: 'Source Serif 4', serif; font-size: .96rem; line-height: 1.6; color: var(--ech-ink-soft); }
+.ech-mvt-guide__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: .7rem; }
+.ech-mvt-card { border-radius: 13px; border: 1px solid var(--ech-rule); background: #fffdf7; padding: .9rem 1rem; border-left: 3px solid var(--ech-gold); }
+.ech-mvt-card--chute { border-left-color: var(--c-chute); }
+.ech-mvt-card--montee { border-left-color: var(--c-vertu); }
+.ech-mvt-card__nums { margin: 0 0 .35rem; font-family: 'Inter', sans-serif; font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ech-gold-deep); }
+.ech-mvt-card__nums span { letter-spacing: .02em; text-transform: none; color: var(--ech-ink-mute); font-weight: 600; }
+.ech-mvt-card__cases { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem .45rem; font-family: 'Source Serif 4', serif; font-size: .92rem; color: var(--ech-ink-mute); }
+.ech-mvt-card__cases a { display: inline-flex; align-items: baseline; gap: .35rem; color: var(--ech-ink); text-decoration: none; }
+.ech-mvt-card__cases a:hover { color: var(--ech-gold-deep); }
+.ech-mvt-card__cases .ar { font-family: 'Amiri', serif; font-size: 1.12rem; color: var(--ech-gold-deep); }
+.ech-mvt-card__cases .fr { font-family: 'Source Serif 4', serif; font-size: .88rem; color: var(--ech-ink-soft); }
+.ech-mvt-card__lecture { margin: .45rem 0 0; font-family: 'Source Serif 4', serif; font-size: .9rem; line-height: 1.5; color: var(--ech-ink-soft); }
+
+@media (max-width: 520px) {
+  .ech-mvt-guide { margin-top: 1rem; }
+  .ech-mvt-guide__grid { grid-template-columns: 1fr; }
+  .ech-mvt-card { padding: .85rem; }
+}
 
 /* ---------- Concepts ---------- */
 .ech-concepts { max-width: 50rem; margin: 0 auto; padding: 0 1.2rem 2rem; }
@@ -270,16 +295,16 @@
 /* ---------- Les demeures (manazil) ---------- */
 .ech-manazil { max-width: 52rem; margin: 0 auto; padding: 0 1.2rem 1rem; }
 .ech-famille { padding: 1.4rem 0; border-bottom: 1px solid var(--ech-rule); }
-.ech-famille__head { display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem; }
+.ech-famille__head { display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem; min-width: 0; }
 .ech-famille__n { font-family: 'Inter', sans-serif; font-size: .7rem; font-weight: 600; color: #fff; background: var(--ech-gold); border-radius: 50%; width: 1.4rem; height: 1.4rem; display: inline-flex; align-items: center; justify-content: center; }
 .ech-famille__ar { font-family: 'Amiri', serif; font-size: 1.5rem; color: var(--ech-gold-deep); }
 .ech-famille__tr { font-family: 'Source Serif 4', serif; font-style: italic; color: var(--ech-ink-mute); font-size: .9rem; }
 .ech-famille__fr { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--ech-ink); margin: 0; flex-basis: 100%; }
 .ech-famille__sens { font-family: 'Source Serif 4', serif; font-size: .98rem; line-height: 1.55; color: var(--ech-ink-soft); margin: .4rem 0 .9rem; }
-.ech-manzil-grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: .5rem; }
+.ech-manzil-grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 8.5rem), 1fr)); gap: .5rem; }
 .ech-manzil { display: flex; flex-direction: column; gap: .05rem; padding: .5rem .7rem; border-radius: 10px; background: rgba(184,138,46,.06); border: 1px solid var(--ech-rule); }
 .ech-manzil__ar { font-family: 'Amiri', serif; font-size: 1.2rem; color: var(--ech-ink); }
-.ech-manzil__fr { font-family: 'Source Serif 4', serif; font-size: .85rem; color: var(--ech-ink-soft); }
+.ech-manzil__fr { font-family: 'Source Serif 4', serif; font-size: .85rem; color: var(--ech-ink-soft); overflow-wrap: anywhere; }
 
 /* Quatre servitudes (concepts) */
 .ech-servitudes { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: .7rem; margin: 1rem 0; }

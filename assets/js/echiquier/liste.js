@@ -16,13 +16,56 @@ const VUES = {
   glossaire: { cats: null, tri: 'alpha' },
 };
 const _esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const _caseLabel = c => c ? `<span class="ar" lang="ar" dir="rtl">${_esc(c.arabe)}</span><span class="fr">${_esc(c.traduction)}</span>` : 'case à vérifier';
+const _movementTitle = type => type === 'chute' ? 'Les 9 grappins confirmés' : 'Les 8 montées confirmées';
+const _movementIntro = type => type === 'chute'
+  ? 'Ces mouvements ne sont pas de simples reculs : ils montrent comment une déformation intérieure accroche le voyageur et le ramène vers une case plus basse.'
+  : 'Ces mouvements montrent les élévations confirmées dans le commentaire : une disposition juste ouvre une progression vers une case plus haute.';
+const _movementVerb = type => type === 'chute' ? 'tombe vers' : 's’élève vers';
+
+function movementGuide(vueId, liens, byNum) {
+  const type = vueId === 'chutes' ? 'chute' : (vueId === 'remedes' ? 'montee' : null);
+  if (!type) return '';
+  const rels = (liens || []).filter(l => l.type === type).sort((a, b) => (+a.from) - (+b.from));
+  if (!rels.length) return '';
+  return `
+    <section class="ech-mvt-guide ech-mvt-guide--${type}" id="ech-mouvements-guide" aria-label="${_movementTitle(type)}">
+      <div class="ech-mvt-guide__head">
+        <p class="ech-mode-emploi__eyebrow">Mouvements du plateau</p>
+        <h2>${_movementTitle(type)}</h2>
+        <p>${_movementIntro(type)}</p>
+      </div>
+      <div class="ech-mvt-guide__grid">
+        ${rels.map(l => {
+          const from = byNum[+l.from];
+          const to = byNum[+l.to];
+          return `<article class="ech-mvt-card ech-mvt-card--${type}">
+            <p class="ech-mvt-card__nums">case ${+l.from} <span>${_movementVerb(type)}</span> case ${+l.to}</p>
+            <p class="ech-mvt-card__cases">
+              <a href="/pages/echiquier/plateau/#case-${+l.from}">${_caseLabel(from)}</a>
+              <span aria-hidden="true">→</span>
+              <a href="/pages/echiquier/plateau/#case-${+l.to}">${_caseLabel(to)}</a>
+            </p>
+            <p class="ech-mvt-card__lecture">${_esc(l.lecture || '')}</p>
+          </article>`;
+        }).join('')}
+      </div>
+    </section>`;
+}
 
 (async () => {
   const mount = document.getElementById('ech-liste');
+  if (!mount) return;
+  const vueId = window.ECH_VUE || 'glossaire';
   const vue = VUES[window.ECH_VUE] || VUES.glossaire;
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=18').then(r => r.json());
+    const [data, liensData] = await Promise.all([
+      fetch('/data/echiquier/cases.json?v=18').then(r => r.json()),
+      fetch('/data/echiquier/liens.json?v=9').then(r => r.json()).catch(() => ({ liens: [] }))
+    ]);
     let cases = (data.cases || []).slice();
+    const byNum = {};
+    for (const c of cases) byNum[c.numero] = c;
     if (vue.cats) cases = cases.filter(c => (c.categories || []).some(cat => vue.cats.includes(cat)));
     // Tri alphabétique sur le mot signifiant : on retire l'article « al- »
     // et les signes ʿ/ʾ, sinon tout se range sous « a ».
@@ -33,6 +76,10 @@ const _esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g
       .toLowerCase().trim();
     if (vue.tri === 'alpha') cases.sort((a, b) => sortKey(a.translitteration).localeCompare(sortKey(b.translitteration), 'fr'));
     else cases.sort((a, b) => a.numero - b.numero);
+
+    document.getElementById('ech-mouvements-guide')?.remove();
+    const guideHtml = movementGuide(vueId, liensData.liens || [], byNum);
+    if (guideHtml) mount.insertAdjacentHTML('beforebegin', guideHtml);
 
     mount.innerHTML = cases.map(c => {
       const col = ECH_CAT_COLOR[(c.categories || [])[0]] || 'var(--ech-gold)';

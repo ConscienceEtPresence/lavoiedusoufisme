@@ -60,7 +60,7 @@ function movementGuide(vueId, liens, byNum) {
   const vue = VUES[window.ECH_VUE] || VUES.glossaire;
   try {
     const [data, liensData] = await Promise.all([
-      fetch('/data/echiquier/cases.json?v=18').then(r => r.json()),
+      fetch('/data/echiquier/cases.json?v=19').then(r => r.json()),
       fetch('/data/echiquier/liens.json?v=9').then(r => r.json()).catch(() => ({ liens: [] }))
     ]);
     let cases = (data.cases || []).slice();

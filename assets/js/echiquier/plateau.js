@@ -69,7 +69,7 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
     return status;
   })();
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=18').then(r => r.json());
+    const data = await fetch('/data/echiquier/cases.json?v=19').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     const byNum = {}; for (const c of cases) byNum[c.numero] = c;
     // Mouvements confirmés dans le texte : montées, chaînes et grappins.
@@ -246,7 +246,7 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
         ${cats ? `<p class="ech-fiche__txt" style="font-size:.85rem;color:var(--ech-ink-mute);margin:-.4rem 0 .6rem;">${esc(cats)}</p>` : ''}
         <div class="ech-fiche__mode">
           <p class="ech-fiche__mode-t">Mode d'emploi</p>
-          <p>Lire la case, repérer ce qu'elle révèle, puis regarder si un mouvement la relie à une montée, une chute ou un retour. Le journal sert à noter ce qui résonne sans se juger.</p>
+          <p>Lire la case comme une reformulation pédagogique du commentaire : elle éclaire un mécanisme intérieur, pas un diagnostic sur la personne. Repérez ce qu'elle révèle, puis regardez si un mouvement la relie à une montée, une chute ou un retour.</p>
         </div>
         ${c.resume ? `<p class="ech-fiche__txt" style="font-style:italic;">${esc(c.resume)}</p>` : ''}
         ${champ('Ce que c’est', c.explication_simple, 'Explication à venir — lecture en cours du commentaire arabe.')}

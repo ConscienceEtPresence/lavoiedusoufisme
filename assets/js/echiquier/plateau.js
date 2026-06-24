@@ -69,7 +69,7 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
     return status;
   })();
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=19').then(r => r.json());
+    const data = await fetch('/data/echiquier/cases.json?v=20').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     const byNum = {}; for (const c of cases) byNum[c.numero] = c;
     // Mouvements confirmés dans le texte : montées, chaînes et grappins.
@@ -258,9 +258,13 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
         ${(c.remede && c.remede.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Remède, retour</p><ul class="ech-fiche__liste">${c.remede.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
         ${c.pratique ? champ('Pratique intérieure', c.pratique) : ''}
         <div class="ech-fiche__bloc"><p class="ech-fiche__label">Question pour soi</p><p class="ech-fiche__q">${esc(question)}</p></div>
+        ${(c.appui_scripturaire && c.appui_scripturaire.length) ? `<div class="ech-fiche__bloc ech-fiche__script"><p class="ech-fiche__label">Appui scripturaire</p><ul class="ech-fiche__refs">${c.appui_scripturaire.map(r => `<li>${esc(r)}</li>`).join('')}</ul><p class="ech-fiche__refs-note">Versets et hadiths cités par le commentaire pour fonder cette case.</p></div>` : ''}
+        ${c.chemin_texte ? `<div class="ech-fiche__bloc ech-fiche__chemin"><p class="ech-fiche__label">Le chemin, pas à pas</p><p class="ech-fiche__txt">${esc(c.chemin_texte)}</p></div>` : ''}
         ${relationBloc(rel.entrants, 'Ce qui mène ici', 'entrant')}
         ${relationBloc(rel.sortants, 'Où cela conduit', 'sortant')}
         <a class="ech-fiche__journal" href="/pages/echiquier/journal/?case=${c.numero}">✦ Noter cette case dans mon journal</a>
+        <a class="ech-fiche__journal ech-fiche__recueil" href="/pages/carnet/?recueil=1&amp;source=echiquier-${c.numero}">❡ Recueillir un instant où cela m'a touché</a>
+        <div class="ech-fiche__bloc ech-fiche__source"><p class="ech-fiche__label">Source</p><p class="ech-fiche__txt">${esc((c.source && c.source.fichier) || 'Michon, ARChè 1998')}</p></div>
         <div class="ech-badge-valid">✦ ${esc(STATUT_TXT[c.statut] || c.statut)}</div>
         <div class="ech-fiche__nav">
           ${prevBtn}
@@ -270,6 +274,8 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
       scroll.querySelectorAll('.ech-lien').forEach(b => b.addEventListener('click', () => openCase(+b.dataset.go)));
       document.getElementById('ech-prev')?.addEventListener('click', () => openCase(c.numero - 1));
       document.getElementById('ech-next')?.addEventListener('click', () => openCase(c.numero + 1));
+      // Glossaire en surimpression : rend les termes arabes cliquables dans la fiche.
+      if (window.EchGloss) window.EchGloss.ready.then(() => window.EchGloss.annotate(scroll));
       scroll.scrollTop = 0;
 
       document.querySelectorAll('.ech-case').forEach(b => b.classList.toggle('is-active', +b.dataset.num === n));

@@ -565,3 +565,33 @@
 .ech-fiche__deep[hidden] { display: none; }
 .ech-fiche__deep { animation: ech-deep-in .3s ease; }
 @keyframes ech-deep-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* ===== Journal guidé ===== */
+.ech-journal__guide { display: flex; flex-direction: column; gap: .55rem; margin: .2rem 0 .6rem; }
+.ech-journal__field { font: inherit; font-size: .95rem; padding: .55rem .7rem; border: 1px solid var(--ech-rule); border-radius: .6rem; background: var(--ech-paper, #fbf7ee); color: var(--ech-ink); }
+.ech-journal__moment { display: flex; flex-wrap: wrap; gap: .5rem 1rem; font-size: .9rem; color: var(--ech-ink); }
+.ech-journal__moment label { display: inline-flex; align-items: center; gap: .3rem; cursor: pointer; }
+.ech-entry__meta { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: .2rem 0 .4rem; }
+.ech-entry__tag { font-size: .78rem; border: 1px solid var(--ech-rule); border-radius: 1rem; padding: .1rem .55rem; color: var(--ech-ink-mute); }
+.ech-entry__tag--grappin_evite, .ech-entry__tag--fleche_activee { color: var(--c-vertu); border-color: var(--c-vertu); }
+.ech-entry__tag--grappin_rencontre { color: var(--c-chute); border-color: var(--c-chute); }
+.ech-entry__action { font-size: .85rem; font-style: italic; color: var(--ech-ink); }
+
+/* ===== Page « Mes répétitions » ===== */
+.rep-grid { max-width: 46rem; margin: 1.2rem auto; padding: 0 1.2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; }
+.rep-card { border: 1px solid var(--ech-rule); border-radius: .9rem; padding: 1rem 1.1rem; background: rgba(176,141,60,.04); }
+.rep-card__t { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: var(--ech-ink); margin: 0 0 .5rem; }
+.rep-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .35rem; }
+.rep-list li { display: flex; justify-content: space-between; align-items: baseline; gap: .6rem; font-size: .92rem; }
+.rep-list a { color: var(--ech-gold-deep); text-decoration: none; }
+.rep-list a:hover { text-decoration: underline; }
+.rep-list__n { font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--ech-ink-mute); }
+.rep-bar { height: 6px; border-radius: 3px; background: var(--c-vertu); opacity: .5; margin-top: .15rem; }
+.rep-empty { max-width: 40rem; margin: 2rem auto; text-align: center; color: var(--ech-ink-mute); font-style: italic; line-height: 1.6; }
+.rep-period { display: flex; gap: .5rem; justify-content: center; margin: 1rem 0; }
+.rep-period button { font: inherit; font-size: .9rem; padding: .4rem 1rem; border: 1px solid var(--ech-rule); border-radius: 1.4rem; background: none; color: var(--ech-ink); cursor: pointer; }
+.rep-period button.is-on { background: var(--ech-gold-deep); color: #fff; border-color: var(--ech-gold-deep); }
+.rep-note { max-width: 40rem; margin: 1.5rem auto 0; text-align: center; font-style: italic; color: var(--ech-ink-mute); font-size: .9rem; }
+.rep-list__lab { display: flex; flex-direction: column; gap: .15rem; flex: 1; min-width: 0; }
+.rep-list__n--up { color: var(--c-vertu); }
+.rep-list__n--down { color: var(--c-chute); }

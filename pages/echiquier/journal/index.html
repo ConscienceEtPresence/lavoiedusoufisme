@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/echiquier.css?v=15" />
+  <link rel="stylesheet" href="/assets/css/echiquier.css?v=16" />
 </head>
 <body class="page-enter ech-body">
   <header class="site-header">
@@ -41,6 +41,7 @@
 
 
 
+
     <a href="/pages/echiquier/">Présentation</a>
     <a href="/pages/echiquier/meteo/">Comment je me sens</a>
     <a href="/pages/echiquier/utiliser/">Mode d'emploi</a>
@@ -54,7 +55,9 @@
     <a href="/pages/echiquier/parcours/">Parcours</a>
     <a href="/pages/echiquier/glossaire/">Glossaire</a>
     <a href="/pages/echiquier/journal/" class="is-on">Journal</a>
+    <a href="/pages/echiquier/repetitions/">Mes répétitions</a>
     <a href="/pages/echiquier/a-propos/">À propos</a>
+  
   
   
   
@@ -65,9 +68,20 @@
           <select id="ech-j-case" aria-label="Choisir une case"><option value="">— choisir une case —</option></select>
         </div>
         <p class="ech-journal__q" id="ech-j-question"></p>
+        <div class="ech-journal__guide">
+          <input id="ech-j-etat" type="text" class="ech-journal__field" placeholder="Mon état du moment, ex. « en colère » (optionnel)" />
+          <div class="ech-journal__moment" role="group" aria-label="Ce moment a été…">
+            <label><input type="radio" name="ech-j-moment" value="passage" checked /> simple passage</label>
+            <label><input type="radio" name="ech-j-moment" value="grappin_evite" /> grappin évité</label>
+            <label><input type="radio" name="ech-j-moment" value="grappin_rencontre" /> grappin rencontré</label>
+            <label><input type="radio" name="ech-j-moment" value="fleche_activee" /> flèche activée</label>
+          </div>
+          <input id="ech-j-action" type="text" class="ech-journal__field" placeholder="Action concrète ou remède utilisé (optionnel)" />
+        </div>
         <textarea id="ech-j-texte" placeholder="Où cette case apparaît-elle dans ma vie ? Quelle forme subtile prend-elle chez moi ? Qu'est-ce qui me fait descendre, ou me relève ?"></textarea>
         <div style="text-align:right;margin-top:.7rem;"><button type="button" class="ech-journal__btn" id="ech-j-save">Déposer cette note</button></div>
       </div>
+      <p style="text-align:center;margin:.4rem 0 1rem;"><a href="/pages/echiquier/repetitions/" style="color:var(--ech-gold-deep);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;">↻ Voir mes répétitions intérieures →</a></p>
       <div class="ech-journal__entries" id="ech-j-entries"></div>
       <div class="ech-journal__tools">
         <button type="button" class="ech-journal__tool" id="ech-j-export">Exporter mes notes (JSON)</button>
@@ -76,7 +90,7 @@
     </div>
   </main>
   <script src="/assets/js/main.js?v=16"></script>
-  <script type="module" src="/assets/js/echiquier/journal.js?v=16"></script>
+  <script type="module" src="/assets/js/echiquier/journal.js?v=17"></script>
   <script src="/assets/js/souffle.js?v=1" defer></script>
 </body>
 </html>

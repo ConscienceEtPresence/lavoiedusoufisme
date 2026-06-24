@@ -263,8 +263,8 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
         ${(c.appui_scripturaire && c.appui_scripturaire.length) ? `<div class="ech-fiche__bloc ech-fiche__script"><p class="ech-fiche__label">Appui scripturaire</p><ul class="ech-fiche__refs">${c.appui_scripturaire.map(r => `<li>${esc(r)}</li>`).join('')}</ul><p class="ech-fiche__refs-note">Versets et hadiths cités par le commentaire pour fonder cette case.</p></div>` : ''}
         ${c.chemin_texte ? `<div class="ech-fiche__bloc ech-fiche__chemin"><p class="ech-fiche__label">Le chemin, pas à pas</p><p class="ech-fiche__txt">${esc(c.chemin_texte)}</p></div>` : ''}
         ${c.numero < 100 ? `<div class="ech-fiche__bloc ech-fiche__ordinaire"><p class="ech-fiche__label">Mouvement ordinaire <span aria-hidden="true">→</span></p><p class="ech-fiche__txt">Sans saut particulier, le chemin se poursuit vers la case ${c.numero + 1}${byNum[c.numero + 1] ? ' — ' + esc(byNum[c.numero + 1].traduction) : ''}.</p></div>` : ''}
-        ${relationBloc(rel.entrants, 'Ce qui mène ici', 'entrant')}
-        ${relationBloc(rel.sortants, 'Où cela conduit', 'sortant')}
+        ${relationBloc(rel.entrants, 'Ce qui a pu m\'amener ici — origine possible', 'entrant')}
+        ${relationBloc(rel.sortants, 'Où cela peut conduire', 'sortant')}
         <a class="ech-fiche__journal" href="/pages/echiquier/journal/?case=${c.numero}">✦ Noter cette case dans mon journal</a>
         <a class="ech-fiche__journal ech-fiche__recueil" href="/pages/carnet/?recueil=1&amp;source=echiquier-${c.numero}">❡ Recueillir un instant où cela m'a touché</a>
         <div class="ech-fiche__bloc ech-fiche__source"><p class="ech-fiche__label">Source</p><p class="ech-fiche__txt">${esc((c.source && c.source.fichier) || 'Michon, ARChè 1998')}</p></div>

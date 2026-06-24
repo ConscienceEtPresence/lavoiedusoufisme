@@ -75,7 +75,11 @@
       "pente": "Réagir à vif appelle la riposte (l'impulsivité, 7) ; ruminer durcit en rancune (la haine, 8).",
       "geste": "Ne rien décider ni dire maintenant : un souffle, un verre d'eau, un pas dehors.",
       "question": "Cette colère veut-elle réparer une vérité, ou blesser ?",
-      "verif": "Est-ce une flambée du moment, ou une rancune qui dure ?"
+      "verif": "Est-ce une flambée du moment, ou une rancune qui dure ?",
+      "conditions": [
+        "si elle est immédiate, explosive",
+        "si elle dure, rumine, devient rancune"
+      ]
     },
     {
       "id": "repondre-sec",
@@ -115,7 +119,11 @@
       "vis": "La pression intérieure cherche une sortie.",
       "pente": "L'éclat provoque des conséquences (l'épreuve, 10) dont on hérite ensuite.",
       "geste": "Sortir physiquement de la situation quelques minutes.",
-      "question": "Qu'est-ce qui, sous cette pression, demande à être entendu ?"
+      "question": "Qu'est-ce qui, sous cette pression, demande à être entendu ?",
+      "conditions": [
+        "si la pression cherche une sortie maintenant",
+        "si tu en subis déjà les conséquences"
+      ]
     },
     {
       "id": "impatient",
@@ -142,7 +150,11 @@
       "vis": "On a touché un point sensible, l'envie de rendre monte.",
       "pente": "Vouloir « rendre » fait glisser de la blessure (7) vers la rancune (8).",
       "geste": "Nommer la blessure pour soi avant d'agir.",
-      "question": "Est-ce vraiment l'autre, ou une vieille plaie qu'il a effleurée ?"
+      "question": "Est-ce vraiment l'autre, ou une vieille plaie qu'il a effleurée ?",
+      "conditions": [
+        "si la blessure dure et veut « rendre »",
+        "si la réaction est immédiate"
+      ]
     },
     {
       "id": "dernier-mot",
@@ -156,7 +168,11 @@
       "vis": "Le besoin d'avoir raison prend le pas sur la vérité.",
       "pente": "Ce besoin masque l'orgueil et nourrit la rancune.",
       "geste": "Laisser, une fois, le dernier mot à l'autre.",
-      "question": "Qu'est-ce que je défends : la vérité, ou mon image ?"
+      "question": "Qu'est-ce que je défends : la vérité, ou mon image ?",
+      "conditions": [
+        "si c'est le besoin de paraître",
+        "si cela nourrit une rancune"
+      ]
     },
     {
       "id": "rumine",
@@ -196,7 +212,11 @@
       "vis": "Une pensée revient sans cesse et occupe tout.",
       "pente": "L'obsession noie le cœur dans un océan d'agitation (24).",
       "geste": "Détourner l'attention vers un acte simple et concret.",
-      "question": "Cette envie comble-t-elle un besoin réel, ou un vide ?"
+      "question": "Cette envie comble-t-elle un besoin réel, ou un vide ?",
+      "conditions": [
+        "si une envie précise revient",
+        "si tu te noies dans l'agitation"
+      ]
     },
     {
       "id": "mauvaise-habitude",
@@ -210,7 +230,11 @@
       "vis": "Le pli ancien rappelle à lui.",
       "pente": "Céder par habitude conduit vers ce qui est défendu (15).",
       "geste": "Mettre un obstacle entre soi et l'objet, même petit.",
-      "question": "Qu'est-ce que cette habitude me coûte vraiment ?"
+      "question": "Qu'est-ce que cette habitude me coûte vraiment ?",
+      "conditions": [
+        "si c'est le désir qui rappelle",
+        "si l'habitude touche à l'interdit"
+      ]
     },
     {
       "id": "desir-gouverne",
@@ -224,7 +248,11 @@
       "vis": "Le désir tient les rênes à ma place.",
       "pente": "Gouverné par lui, on s'abaisse à ce qu'il commande (5).",
       "geste": "Reprendre une décision libre, même minuscule, contre la pente.",
-      "question": "Qui décide en ce moment : moi, ou mon envie ?"
+      "question": "Qui décide en ce moment : moi, ou mon envie ?",
+      "conditions": [
+        "si le désir prend les rênes",
+        "si tu te sens déjà rabaissé"
+      ]
     },
     {
       "id": "compensation",
@@ -238,7 +266,11 @@
       "vis": "Un manque pousse à se remplir vite.",
       "pente": "La compensation convoite (22) sans combler — elle relance le manque.",
       "geste": "Nommer le vrai manque avant de le boucher.",
-      "question": "Qu'est-ce que je cherche vraiment à apaiser ?"
+      "question": "Qu'est-ce que je cherche vraiment à apaiser ?",
+      "conditions": [
+        "si un manque pousse à se remplir",
+        "si tu convoites pour combler"
+      ]
     },
     {
       "id": "exces",
@@ -252,7 +284,11 @@
       "vis": "Trop de tout : l'élan dépasse la mesure.",
       "pente": "L'excès dégrade (5) ce qu'une juste mesure aurait nourri.",
       "geste": "Poser une limite simple, tout de suite.",
-      "question": "Où serait, ici, la juste mesure ?"
+      "question": "Où serait, ici, la juste mesure ?",
+      "conditions": [
+        "si l'élan dépasse la mesure",
+        "si tu te sens diminué après"
+      ]
     },
     {
       "id": "posseder",
@@ -266,7 +302,11 @@
       "vis": "L'attachement veut saisir, retenir.",
       "pente": "Vouloir posséder enchaîne (22) ; mais un amour qui élève peut mener plus haut (23→44).",
       "geste": "Desserrer la prise : aimer sans capturer.",
-      "question": "Est-ce que j'aime, ou est-ce que je veux posséder ?"
+      "question": "Est-ce que j'aime, ou est-ce que je veux posséder ?",
+      "conditions": [
+        "si tu veux saisir et retenir",
+        "si c'est un amour qui pourrait élever"
+      ]
     },
     {
       "id": "convoite",
@@ -293,7 +333,11 @@
       "vis": "Une réussite vraie — mais le « je » s'en empare.",
       "pente": "C'est la chute la plus violente (91, 82 marches) : la vertu dont l'ego se saisit fait tomber.",
       "geste": "Rendre le mérite à sa Source : « par Sa grâce », non « par moi ».",
-      "question": "Et si tout cela m'avait été donné plutôt qu'acquis ?"
+      "question": "Et si tout cela m'avait été donné plutôt qu'acquis ?",
+      "conditions": [
+        "si le « je » s'attribue le mérite",
+        "si tu te crois arrivé"
+      ]
     },
     {
       "id": "reconnu",
@@ -320,7 +364,11 @@
       "vis": "L'envie de montrer, de prouver.",
       "pente": "Soigner l'image (51) glisse vers le double jeu (l'hypocrisie, 19).",
       "geste": "Laisser la valeur se dire d'elle-même, sans la mettre en scène.",
-      "question": "Ma valeur a-t-elle besoin d'être vue pour exister ?"
+      "question": "Ma valeur a-t-elle besoin d'être vue pour exister ?",
+      "conditions": [
+        "si tu cherches le regard, l'éloge",
+        "si l'écart image/vérité se creuse"
+      ]
     },
     {
       "id": "compare",
@@ -373,7 +421,11 @@
       "vis": "On masque le trouble derrière un visage lisse.",
       "pente": "Le masque (19) épuise ; le trouble (43) caché grandit.",
       "geste": "S'autoriser, avec une personne sûre, à ne pas aller bien.",
-      "question": "À qui pourrais-je dire la vérité de mon état ?"
+      "question": "À qui pourrais-je dire la vérité de mon état ?",
+      "conditions": [
+        "si tu masques derrière un visage lisse",
+        "si un trouble caché grandit"
+      ]
     },
     {
       "id": "crois-arrive",
@@ -400,7 +452,11 @@
       "vis": "Le regard rabaisse l'autre.",
       "pente": "Le mépris (36) durcit et nourrit la haine (8).",
       "geste": "Chercher, chez cette personne, une seule chose digne.",
-      "question": "Qu'est-ce que ce mépris protège, ou venge, en moi ?"
+      "question": "Qu'est-ce que ce mépris protège, ou venge, en moi ?",
+      "conditions": [
+        "si le regard rabaisse l'autre",
+        "si le mépris durcit en rancune"
+      ]
     },
     {
       "id": "regrette-dit",
@@ -414,7 +470,11 @@
       "vis": "Le poids d'une parole qui a blessé.",
       "pente": "Le regret (17) peut enfermer, ou ouvrir une réparation.",
       "geste": "Réparer simplement : reconnaître, présenter des excuses.",
-      "question": "Mon regret me cloue-t-il, ou me remet-il en marche ?"
+      "question": "Mon regret me cloue-t-il, ou me remet-il en marche ?",
+      "conditions": [
+        "si le regret pèse sans suite",
+        "si tu as perdu ta tenue intérieure"
+      ]
     },
     {
       "id": "regrette-fait",
@@ -428,7 +488,11 @@
       "vis": "Le remords d'un acte manqué.",
       "pente": "Le remords stérile pèse ; le repentir (vers l'imploration, 29) relève.",
       "geste": "Transformer le remords en demande sincère et en geste de réparation.",
-      "question": "Qu'est-ce que ce regret me demande de faire, concrètement ?"
+      "question": "Qu'est-ce que ce regret me demande de faire, concrètement ?",
+      "conditions": [
+        "si le remords tourne en rond",
+        "si tu veux te tourner vers Dieu et réparer"
+      ]
     },
     {
       "id": "tombe",
@@ -442,7 +506,11 @@
       "vis": "L'impression d'avoir glissé bas.",
       "pente": "La chute (le mauvais caractère, 18) n'est pas une fin : c'est un appel au retour.",
       "geste": "Ne pas désespérer : un seul pas vers le haut suffit pour commencer.",
-      "question": "Quel tout petit retour est possible, là, maintenant ?"
+      "question": "Quel tout petit retour est possible, là, maintenant ?",
+      "conditions": [
+        "si tu te sens glissé bas",
+        "si tu en subis les conséquences"
+      ]
     },
     {
       "id": "honteux",
@@ -469,7 +537,11 @@
       "vis": "Le poids du monde sur les épaules.",
       "pente": "L'épreuve (10) et le trouble (43) resserrent — bien reçus, ils tournent vers Dieu.",
       "geste": "Ne demander qu'un pas : se lever, boire, prier, sortir.",
-      "question": "Vers quoi cette lourdeur me pousse-t-elle, en creux ?"
+      "question": "Vers quoi cette lourdeur me pousse-t-elle, en creux ?",
+      "conditions": [
+        "si le poids vient du monde",
+        "si un trouble intérieur t'enlise"
+      ]
     },
     {
       "id": "triste-sterile",
@@ -522,7 +594,11 @@
       "vis": "La peur d'un mal, d'un manque, d'un lendemain.",
       "pente": "La peur peut se retourner : des choses vers Dieu seul (27).",
       "geste": "Déposer la peur là où elle a sa place ; nommer ce qu'elle protège.",
-      "question": "De quoi ai-je peur exactement, et qu'est-ce que cela abrite ?"
+      "question": "De quoi ai-je peur exactement, et qu'est-ce que cela abrite ?",
+      "conditions": [
+        "si c'est la peur d'un mal précis",
+        "si elle se tourne vers Dieu seul"
+      ]
     },
     {
       "id": "inquiet",
@@ -536,7 +612,11 @@
       "vis": "L'inquiétude voudrait s'envoler hors de l'étroit (35).",
       "pente": "À vouloir fuir, on s'épuise sans trouver d'air.",
       "geste": "Revenir à l'instant, à ce qui est réellement là.",
-      "question": "Mon inquiétude porte-t-elle sur ce qui dépend de moi ?"
+      "question": "Mon inquiétude porte-t-elle sur ce qui dépend de moi ?",
+      "conditions": [
+        "si l'inquiétude te resserre",
+        "si tu voudrais fuir l'étroitesse"
+      ]
     },
     {
       "id": "perdu",
@@ -563,7 +643,11 @@
       "vis": "Entre deux, sans pouvoir trancher (28).",
       "pente": "L'indécision prolongée use et fait douter de tout.",
       "geste": "Choisir le plus petit acte juste possible, et le poser.",
-      "question": "Quelle est la prochaine chose juste, même minuscule ?"
+      "question": "Quelle est la prochaine chose juste, même minuscule ?",
+      "conditions": [
+        "si tu te noies dans l'indécision",
+        "si tu es entre deux, sans trancher"
+      ]
     },
     {
       "id": "doute",
@@ -590,7 +674,11 @@
       "vis": "Les pensées s'entrechoquent, brouillées.",
       "pente": "La confusion ouvre à des chuchotements (20) qui amplifient.",
       "geste": "Écrire trois lignes pour poser le chaos hors de la tête.",
-      "question": "Qu'est-ce qui, derrière le bruit, demande à être vu clairement ?"
+      "question": "Qu'est-ce qui, derrière le bruit, demande à être vu clairement ?",
+      "conditions": [
+        "si les pensées s'entrechoquent",
+        "si des chuchotements s'en mêlent"
+      ]
     },
     {
       "id": "scrupules",
@@ -617,7 +705,11 @@
       "vis": "Le désert intérieur, le sentiment d'être à part.",
       "pente": "La solitude peut rendre morose (31), ou devenir une retraite habitée.",
       "geste": "Peupler la solitude d'une présence : prière, lecture, marche.",
-      "question": "Cette solitude m'éloigne-t-elle des hommes, ou de l'essentiel me rapproche-t-elle ?"
+      "question": "Cette solitude m'éloigne-t-elle des hommes, ou de l'essentiel me rapproche-t-elle ?",
+      "conditions": [
+        "si la solitude rend morose",
+        "si le cœur cherche au-dehors ce qu'il a perdu"
+      ]
     },
     {
       "id": "eloigner",
@@ -631,7 +723,11 @@
       "vis": "Le besoin de quitter ce qui tire vers le bas.",
       "pente": "Quitter une mauvaise compagnie (30) ouvre sur le désert (31), passage avant la bonne compagnie.",
       "geste": "Réduire le contact aujourd'hui, sans drame ni reproche.",
-      "question": "Après cette présence, suis-je plus haut ou plus bas ?"
+      "question": "Après cette présence, suis-je plus haut ou plus bas ?",
+      "conditions": [
+        "si tu quittes une mauvaise compagnie",
+        "si tu entres dans un désert intérieur"
+      ]
     },
     {
       "id": "quitter-compagnie",
@@ -645,7 +741,11 @@
       "vis": "Un sas de solitude après la séparation.",
       "pente": "Le désert (31) n'est pas une fin : il prépare la bonne compagnie (40).",
       "geste": "Tenir le vide sans le combler par n'importe quoi.",
-      "question": "Vers quelle présence plus juste ce retrait me prépare-t-il ?"
+      "question": "Vers quelle présence plus juste ce retrait me prépare-t-il ?",
+      "conditions": [
+        "si tu traverses le sas du désert",
+        "si tu te prépares à une bonne compagnie"
+      ]
     },
     {
       "id": "vide",
@@ -659,7 +759,11 @@
       "vis": "Un creux, une absence de saveur.",
       "pente": "Le cœur nostalgique (49) cherche, au-dehors, une preuve qu'il a perdue.",
       "geste": "Remettre âme et fardeau au Très-Haut, et patienter.",
-      "question": "Ce vide est-il une perte, ou une place qui se fait ?"
+      "question": "Ce vide est-il une perte, ou une place qui se fait ?",
+      "conditions": [
+        "si le cœur est nostalgique",
+        "si c'est une place qui se fait"
+      ]
     },
     {
       "id": "avec-qui",
@@ -673,7 +777,11 @@
       "vis": "Entre deux compagnies, en attente.",
       "pente": "Mieux vaut le désert (31) qu'une compagnie qui abaisse.",
       "geste": "Ne pas se précipiter : choisir consciemment, pas par peur du vide.",
-      "question": "Qui, autour de moi, me rend meilleur ?"
+      "question": "Qui, autour de moi, me rend meilleur ?",
+      "conditions": [
+        "si tu hésites (mieux vaut le désert)",
+        "si tu cherches une présence juste"
+      ]
     },
     {
       "id": "silence",
@@ -687,7 +795,11 @@
       "vis": "Le besoin de se déposer, de se taire.",
       "pente": "Le repos (54) rend disponible à tous, une fois apaisé de soi.",
       "geste": "S'accorder un vrai temps de silence, sans écran.",
-      "question": "De quoi mon cœur a-t-il besoin que le bruit recouvre ?"
+      "question": "De quoi mon cœur a-t-il besoin que le bruit recouvre ?",
+      "conditions": [
+        "si tu as besoin de repos",
+        "si tu te retires pour te retrouver"
+      ]
     },
     {
       "id": "solitude-amere",
@@ -701,7 +813,11 @@
       "vis": "L'isolement pèse, sans douceur.",
       "pente": "La nostalgie (49) peut aigrir, ou se tourner en prière.",
       "geste": "Transformer la plainte en demande : parler à Dieu de ce manque.",
-      "question": "À qui, ou à quoi, cette amertume voudrait-elle être reliée ?"
+      "question": "À qui, ou à quoi, cette amertume voudrait-elle être reliée ?",
+      "conditions": [
+        "si l'isolement aigrit",
+        "si la nostalgie cherche à se relier"
+      ]
     },
     {
       "id": "solitude-saine",
@@ -715,7 +831,11 @@
       "vis": "Un retrait choisi, paisible.",
       "pente": "Bien habitée, la retraite devient repos (54) et clarté.",
       "geste": "Goûter ce calme, et en faire un face-à-face fécond.",
-      "question": "Qu'est-ce que ce silence me rend de plus juste ?"
+      "question": "Qu'est-ce que ce silence me rend de plus juste ?",
+      "conditions": [
+        "si c'est un retrait choisi, paisible",
+        "si elle devient repos fécond"
+      ]
     },
     {
       "id": "bonne-compagnie",
@@ -742,7 +862,11 @@
       "vis": "Une aise tranquille, un cœur posé.",
       "pente": "Le contentement (3, 67) est une porte qui stabilise.",
       "geste": "Goûter sans saisir ; remercier pour l'instant tel quel.",
-      "question": "Cette paix vient-elle de ce que j'ai, ou de ce que je suis devant Dieu ?"
+      "question": "Cette paix vient-elle de ce que j'ai, ou de ce que je suis devant Dieu ?",
+      "conditions": [
+        "si l'aise est tranquille, posée",
+        "si tu agrées pleinement ce qui est"
+      ]
     },
     {
       "id": "satisfaction",
@@ -756,7 +880,11 @@
       "vis": "L'agrément de ce qui est donné (riḍwān).",
       "pente": "La satisfaction appelle ensuite la lutte intérieure juste (68).",
       "geste": "Observer ce qui, en moi, résiste encore à ce que j'accepte.",
-      "question": "Qu'est-ce qui, en moi, refuse encore ce que je dis accepter ?"
+      "question": "Qu'est-ce qui, en moi, refuse encore ce que je dis accepter ?",
+      "conditions": [
+        "si c'est l'agrément de ce qui est donné",
+        "si elle appelle la lutte intérieure"
+      ]
     },
     {
       "id": "accepte",
@@ -783,7 +911,11 @@
       "vis": "L'élan vers l'acte juste.",
       "pente": "Les bonnes œuvres (64) — jeûne, aide au faible — élèvent réellement.",
       "geste": "Choisir un seul acte concret, et le poser aujourd'hui.",
-      "question": "Quel bien, à ma portée, attend seulement d'être fait ?"
+      "question": "Quel bien, à ma portée, attend seulement d'être fait ?",
+      "conditions": [
+        "si l'élan va vers un acte juste",
+        "si la tendresse va vers un démuni"
+      ]
     },
     {
       "id": "courage",
@@ -810,7 +942,11 @@
       "vis": "Une lumière se fait, une réalisation.",
       "pente": "La science vécue (69) et les réalisations (48) élèvent vers le haut.",
       "geste": "Mettre en acte cette compréhension avant d'en chercher une autre.",
-      "question": "Ce que je comprends, est-ce que je le vis, ou seulement le sais ?"
+      "question": "Ce que je comprends, est-ce que je le vis, ou seulement le sais ?",
+      "conditions": [
+        "si c'est une réalisation intérieure",
+        "si c'est la science qui se vit"
+      ]
     },
     {
       "id": "apprendre",
@@ -824,7 +960,11 @@
       "vis": "La soif de la science du cœur.",
       "pente": "« Qui agit selon ce qu'il sait, Dieu lui apprend ce qu'il ignore » : elle élève (69→94).",
       "geste": "Mettre en pratique une seule chose sue.",
-      "question": "Ce que j'apprends, est-ce que je le vis ?"
+      "question": "Ce que j'apprends, est-ce que je le vis ?",
+      "conditions": [
+        "si tu veux mettre en pratique",
+        "si tu cherches la certitude"
+      ]
     },
     {
       "id": "appel",
@@ -838,7 +978,11 @@
       "vis": "Un élan intérieur, une nostalgie du haut.",
       "pente": "Cet appel se nourrit par la lutte juste (68) et l'imploration (29).",
       "geste": "Répondre par un acte d'adoration simple, tout de suite.",
-      "question": "Qu'est-ce qui, en moi, répond déjà à cet appel ?"
+      "question": "Qu'est-ce qui, en moi, répond déjà à cet appel ?",
+      "conditions": [
+        "si l'élan demande la lutte juste",
+        "si le cœur veut implorer"
+      ]
     }
   ]
 }

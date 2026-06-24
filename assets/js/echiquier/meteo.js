@@ -22,7 +22,7 @@ const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g,
   if (!mount) return;
   let etatsData, cases = {};
   try {
-    etatsData = await fetch('/data/echiquier/etats.json?v=2').then(r => r.json());
+    etatsData = await fetch('/data/echiquier/etats.json?v=3').then(r => r.json());
     const cj = await fetch('/data/echiquier/cases.json?v=20').then(r => r.json());
     for (const c of cj.cases) cases[c.numero] = c;
   } catch (e) { mount.innerHTML = '<p style="text-align:center;color:#a85c43;">La carte intérieure n\'a pas pu être chargée.</p>'; return; }
@@ -55,12 +55,16 @@ const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g,
     const e = etats.find(x => x.id === id); if (!e) return;
     const ciel = ciels.find(c => c.id === e.ciel) || {};
     const ton = e.ton || 'neutre';
-    const casesHtml = (e.cases || []).map(n => {
+    const conds = e.conditions || [];
+    const multi = (e.cases || []).length > 1;
+    const casesHtml = (e.cases || []).map((n, i) => {
       const c = cases[n]; if (!c) return '';
-      return `<a class="meteo-case" href="/pages/echiquier/plateau/#case-${n}">
+      const cond = conds[i];
+      return `<a class="meteo-case${cond ? ' meteo-case--cond' : ''}" href="/pages/echiquier/plateau/#case-${n}">
           <span class="meteo-case__ar" lang="ar" dir="rtl">${esc(c.arabe)}</span>
-          <span class="meteo-case__tr">${esc(c.translitteration)}</span>
           <span class="meteo-case__fr">case ${n} — ${esc(c.traduction)}</span>
+          <span class="meteo-case__tr">${esc(c.translitteration)}</span>
+          ${cond ? `<span class="meteo-case__cond">${esc(cond)}</span>` : ''}
           <span class="meteo-case__go">ouvrir la fiche complète →</span>
         </a>`;
     }).join('');
@@ -72,7 +76,7 @@ const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g,
       <div class="meteo-panel__bloc"><p class="meteo-panel__k">Un geste, maintenant</p><p>${esc(e.geste)}</p></div>
       <div class="meteo-panel__bloc meteo-panel__q"><p class="meteo-panel__k">Une question pour toi</p><p>${esc(e.question)}</p></div>
       ${e.verif ? `<div class="meteo-panel__bloc meteo-panel__verif"><p class="meteo-panel__k">Pour t'orienter</p><p>${esc(e.verif)}</p></div>` : ''}
-      <p class="meteo-panel__suggest">Tu sembles proche de…</p>
+      <p class="meteo-panel__suggest">Tu sembles proche de…${multi ? ' <span class="meteo-panel__suggest-hint">choisis selon ce que tu vis&nbsp;:</span>' : ''}</p>
       <div class="meteo-panel__cases">${casesHtml}</div>
       <p class="meteo-panel__warn">Une case n'est pas une étiquette ni un jugement : c'est un mouvement de l'âme, que tout le monde traverse. Le danger n'est pas de le ressentir, mais de s'y installer.</p>`;
     if (window.EchGloss) window.EchGloss.ready.then(() => window.EchGloss.annotate(scroll));

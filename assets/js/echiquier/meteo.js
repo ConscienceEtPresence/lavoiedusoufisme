@@ -12,6 +12,7 @@ const ORN = {
   nafs: '<circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="4"/>',
   huzn: '<path d="M7 14a9 9 0 1 0 13 8A11 11 0 0 1 7 14z"/>',
   khawf:'<path d="M3 16s5-8 13-8 13 8 13 8-5 8-13 8S3 16 3 16z"/><circle cx="16" cy="16" r="3.5"/>',
+  uzla: '<path d="M5 26h22M16 26V8M16 8l-9 12h18z" stroke-linecap="round"/>',
   nur:  '<circle cx="16" cy="16" r="6"/><g stroke-linecap="round"><path d="M16 2v4M16 26v4M2 16h4M26 16h4M6 6l3 3M23 23l3 3M26 6l-3 3M9 23l-3 3"/></g>'
 };
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -21,7 +22,7 @@ const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g,
   if (!mount) return;
   let etatsData, cases = {};
   try {
-    etatsData = await fetch('/data/echiquier/etats.json?v=1').then(r => r.json());
+    etatsData = await fetch('/data/echiquier/etats.json?v=2').then(r => r.json());
     const cj = await fetch('/data/echiquier/cases.json?v=20').then(r => r.json());
     for (const c of cj.cases) cases[c.numero] = c;
   } catch (e) { mount.innerHTML = '<p style="text-align:center;color:#a85c43;">La carte intérieure n\'a pas pu être chargée.</p>'; return; }
@@ -70,6 +71,7 @@ const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g,
       <div class="meteo-panel__bloc meteo-panel__bloc--${ton}"><p class="meteo-panel__k">${TON_TXT[ton]} <span aria-hidden="true">${TON_ICON[ton]}</span></p><p>${esc(e.pente)}</p></div>
       <div class="meteo-panel__bloc"><p class="meteo-panel__k">Un geste, maintenant</p><p>${esc(e.geste)}</p></div>
       <div class="meteo-panel__bloc meteo-panel__q"><p class="meteo-panel__k">Une question pour toi</p><p>${esc(e.question)}</p></div>
+      ${e.verif ? `<div class="meteo-panel__bloc meteo-panel__verif"><p class="meteo-panel__k">Pour t'orienter</p><p>${esc(e.verif)}</p></div>` : ''}
       <p class="meteo-panel__suggest">Tu sembles proche de…</p>
       <div class="meteo-panel__cases">${casesHtml}</div>
       <p class="meteo-panel__warn">Une case n'est pas une étiquette ni un jugement : c'est un mouvement de l'âme, que tout le monde traverse. Le danger n'est pas de le ressentir, mais de s'y installer.</p>`;

@@ -485,3 +485,25 @@
 .ech-meteo-cta__ar { font-family: 'Amiri', serif; font-size: 1.3rem; color: var(--ech-gold-deep); margin: 0; }
 .ech-meteo-cta__t { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--ech-ink); margin: .1rem 0 .15rem; }
 .ech-meteo-cta__d { font-size: .92rem; color: var(--ech-ink-mute); margin: 0; }
+.meteo-panel__verif { background: rgba(176,141,60,.08); border-radius: .6rem; padding: .55rem .7rem; }
+.meteo-panel__verif p:last-child { font-style: italic; }
+.ech-lien-mvt__trajet { font-size: .78rem; color: var(--ech-ink-mute); margin: .2rem 0 0; }
+.ech-lien-mvt__trajet b { color: var(--ech-gold-deep); font-weight: 600; }
+.ech-fiche__ordinaire .ech-fiche__txt { font-size: .88rem; color: var(--ech-ink-mute); }
+
+/* ===== Page « Comment utiliser au quotidien » ===== */
+.ech-usage-flow { max-width: 40rem; margin: 0 auto; counter-reset: u; list-style: none; padding: 0; }
+.ech-usage-flow li { position: relative; padding: .55rem 0 .55rem 2.4rem; border-bottom: 1px solid var(--ech-rule); line-height: 1.55; color: var(--ech-ink); }
+.ech-usage-flow li::before { counter-increment: u; content: counter(u); position: absolute; left: 0; top: .5rem; width: 1.7rem; height: 1.7rem; border-radius: 50%; border: 1px solid var(--ech-gold); color: var(--ech-gold-deep); display: grid; place-items: center; font-family: 'Cormorant Garamond', serif; font-weight: 600; }
+.ech-usage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr)); gap: .7rem; }
+.ech-usage-card { border: 1px solid var(--ech-rule); border-left: 3px solid var(--ech-gold); border-radius: .6rem; padding: .8rem .9rem; background: rgba(176,141,60,.04); }
+.ech-usage-card p { margin: 0; line-height: 1.5; font-size: .95rem; color: var(--ech-ink); }
+.ech-usage-sym { display: grid; gap: .8rem; max-width: 38rem; margin: 0 auto; }
+.ech-usage-sym__item { display: flex; gap: 1rem; align-items: flex-start; }
+.ech-usage-sym__s { font-size: 2rem; line-height: 1; flex: 0 0 2rem; text-align: center; }
+.ech-usage-sym__t { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: var(--ech-ink); margin: 0 0 .1rem; }
+.ech-usage-sym__item p:last-child { margin: 0; font-size: .92rem; color: var(--ech-ink); line-height: 1.5; }
+.ech-usage-lex { width: 100%; max-width: 42rem; margin: 0 auto; border-collapse: collapse; font-size: .95rem; }
+.ech-usage-lex th { text-align: left; font-family: 'Inter', sans-serif; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ech-ink-mute); padding: .4rem .6rem; border-bottom: 1px solid var(--ech-rule); }
+.ech-usage-lex td { padding: .5rem .6rem; border-bottom: 1px solid var(--ech-rule); color: var(--ech-ink); vertical-align: top; line-height: 1.4; }
+.ech-usage-lex td:first-child { color: var(--ech-gold-deep); }

@@ -1,126 +1,844 @@
 {
   "_meta": {
-    "role": "Orienteur « Comment je me sens aujourd'hui » : relie un état vécu, dit en langage simple, à une ou plusieurs cases de l'Échiquier. Ce n'est pas un diagnostic : la formule reste « tu sembles proche de… ». Chaque suggestion renvoie à la fiche complète de la case.",
+    "role": "Orienteur « Comment je me sens aujourd'hui » : relie un état vécu (langage simple) à une ou plusieurs cases. Jamais un verdict : « tu sembles proche de… ».",
     "principe": "Une case n'est pas une identité ni un jugement : c'est un mouvement de l'âme. Le danger n'est pas de ressentir, mais de s'installer."
   },
   "ciels": [
-    { "id": "feu",   "titre": "Le feu",      "ar": "النار",  "tr": "al-nār",   "sous": "Colère, tension, dureté",                  "couleur": "var(--c-chute)" },
-    { "id": "hawa",  "titre": "Le penchant", "ar": "الهوى",  "tr": "al-hawā",  "sous": "Désir, tentation, manque, envie",          "couleur": "var(--c-etat)" },
-    { "id": "nafs",  "titre": "Le moi",      "ar": "النفس",  "tr": "al-nafs",  "sous": "Orgueil, paraître, comparaison",           "couleur": "var(--c-illusion)" },
-    { "id": "huzn",  "titre": "L'ombre",     "ar": "الحزن",  "tr": "al-ḥuzn",  "sous": "Tristesse, épreuve, regret, solitude, doute", "couleur": "var(--c-danger)" },
-    { "id": "khawf", "titre": "La crainte",  "ar": "الخوف",  "tr": "al-khawf", "sous": "Peur, inquiétude",                         "couleur": "var(--c-station)" },
-    { "id": "nur",   "titre": "La lumière",  "ar": "النور",  "tr": "al-nūr",   "sous": "Paix, joie, amour, élan vers le haut",      "couleur": "var(--c-vertu)" }
+    {
+      "id": "feu",
+      "titre": "Le feu",
+      "ar": "النار",
+      "tr": "al-nār",
+      "sous": "Colère, réaction, dureté",
+      "couleur": "var(--c-chute)"
+    },
+    {
+      "id": "hawa",
+      "titre": "Le penchant",
+      "ar": "الهوى",
+      "tr": "al-hawā",
+      "sous": "Désir, tentation, manque",
+      "couleur": "var(--c-etat)"
+    },
+    {
+      "id": "nafs",
+      "titre": "Le moi",
+      "ar": "النفس",
+      "tr": "al-nafs",
+      "sous": "Orgueil, paraître, comparaison",
+      "couleur": "var(--c-illusion)"
+    },
+    {
+      "id": "huzn",
+      "titre": "L'ombre",
+      "ar": "الحزن",
+      "tr": "al-ḥuzn",
+      "sous": "Tristesse, regret, chute",
+      "couleur": "var(--c-danger)"
+    },
+    {
+      "id": "khawf",
+      "titre": "La crainte",
+      "ar": "الخوف",
+      "tr": "al-khawf",
+      "sous": "Peur, doute, confusion",
+      "couleur": "var(--c-station)"
+    },
+    {
+      "id": "uzla",
+      "titre": "Le retrait",
+      "ar": "العزلة",
+      "tr": "al-ʿuzla",
+      "sous": "Solitude, séparation, désert",
+      "couleur": "var(--c-concept)"
+    },
+    {
+      "id": "nur",
+      "titre": "La lumière",
+      "ar": "النور",
+      "tr": "al-nūr",
+      "sous": "Paix, joie, amour, élan vers le haut",
+      "couleur": "var(--c-vertu)"
+    }
   ],
   "etats": [
-    { "id": "rumine", "ciel": "feu", "ton": "chute", "label": "Je rumine une rancune, je n'arrive pas à lâcher", "cases": [8, 7],
+    {
+      "id": "colere",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "Je suis en colère",
+      "cases": [
+        7,
+        8
+      ],
+      "vis": "Une tension monte, le feu prend.",
+      "pente": "Réagir à vif appelle la riposte (l'impulsivité, 7) ; ruminer durcit en rancune (la haine, 8).",
+      "geste": "Ne rien décider ni dire maintenant : un souffle, un verre d'eau, un pas dehors.",
+      "question": "Cette colère veut-elle réparer une vérité, ou blesser ?",
+      "verif": "Est-ce une flambée du moment, ou une rancune qui dure ?"
+    },
+    {
+      "id": "repondre-sec",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "J'ai envie de répondre sèchement",
+      "cases": [
+        7
+      ],
+      "vis": "L'impulsion d'une réplique mordante.",
+      "pente": "Si je cède, la riposte s'enchaîne, puis le regret.",
+      "geste": "Différer la réponse : ne pas écrire, ne pas envoyer, attendre.",
+      "question": "Ma réplique cherche-t-elle à éclairer ou à piquer ?"
+    },
+    {
+      "id": "parle-vite",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "Je parle trop vite, sans réfléchir",
+      "cases": [
+        7
+      ],
+      "vis": "Les mots partent avant la pensée.",
+      "pente": "La précipitation (l'impulsivité, 7) blesse souvent sans le vouloir.",
+      "geste": "Compter trois respirations avant de parler.",
+      "question": "Qu'est-ce que je veux vraiment dire, en une phrase posée ?"
+    },
+    {
+      "id": "exploser",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "Je sens que je vais exploser",
+      "cases": [
+        7,
+        10
+      ],
+      "vis": "La pression intérieure cherche une sortie.",
+      "pente": "L'éclat provoque des conséquences (l'épreuve, 10) dont on hérite ensuite.",
+      "geste": "Sortir physiquement de la situation quelques minutes.",
+      "question": "Qu'est-ce qui, sous cette pression, demande à être entendu ?"
+    },
+    {
+      "id": "impatient",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "Je suis impatient, tout m'agace",
+      "cases": [
+        7
+      ],
+      "vis": "L'agacement rend dur à tout ce qui résiste.",
+      "pente": "L'impatience use le lien et précipite des gestes brusques.",
+      "geste": "Ralentir une seule action, volontairement.",
+      "question": "Qu'est-ce que cette hâte croit gagner ?"
+    },
+    {
+      "id": "provoque",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "Je me sens provoqué",
+      "cases": [
+        8,
+        7
+      ],
+      "vis": "On a touché un point sensible, l'envie de rendre monte.",
+      "pente": "Vouloir « rendre » fait glisser de la blessure (7) vers la rancune (8).",
+      "geste": "Nommer la blessure pour soi avant d'agir.",
+      "question": "Est-ce vraiment l'autre, ou une vieille plaie qu'il a effleurée ?"
+    },
+    {
+      "id": "dernier-mot",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "Je veux avoir le dernier mot",
+      "cases": [
+        19,
+        8
+      ],
+      "vis": "Le besoin d'avoir raison prend le pas sur la vérité.",
+      "pente": "Ce besoin masque l'orgueil et nourrit la rancune.",
+      "geste": "Laisser, une fois, le dernier mot à l'autre.",
+      "question": "Qu'est-ce que je défends : la vérité, ou mon image ?"
+    },
+    {
+      "id": "rumine",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "Je rumine une offense",
+      "cases": [
+        8
+      ],
       "vis": "Une blessure tourne en boucle et durcit le cœur.",
-      "pente": "Si elle s'installe, la rancune (la haine) appelle des paroles et des actes qu'on regrette.",
-      "geste": "Nommer la blessure, puis la confier à Dieu — ne plus la nourrir en pensée.",
-      "question": "Qu'est-ce que je gagne, vraiment, à garder cette rancune ?" },
-    { "id": "cran", "ciel": "feu", "ton": "chute", "label": "Je suis à cran, j'ai envie d'exploser", "cases": [7],
-      "vis": "L'impulsion monte plus vite que la réflexion.",
-      "pente": "Réagir à vif provoque la riposte des autres — et la spirale s'enclenche.",
-      "geste": "Différer : un souffle, un pas de côté, avant tout mot ou geste.",
-      "question": "Si j'attends une heure, est-ce que je dirai encore la même chose ?" },
-    { "id": "meprise-soi", "ciel": "feu", "ton": "chute", "label": "Je me déteste, je suis dur avec moi-même", "cases": [36],
-      "vis": "Le mépris se retourne contre soi au point de se lasser de tout.",
-      "pente": "Se mépriser n'est pas s'amender : c'est une autre forme d'orgueil blessé.",
-      "geste": "Se traiter comme on traiterait un ami fatigué : avec justice, sans flatterie ni cruauté.",
-      "question": "Cette dureté envers moi me corrige-t-elle, ou m'enfonce-t-elle ?" },
-
-    { "id": "desir-tire", "ciel": "hawa", "ton": "chute", "label": "Un désir me tire (écran, nourriture, plaisir)", "cases": [4],
+      "pente": "Installée, la rancune (8) appelle des actes qu'on regrette (9).",
+      "geste": "Confier la blessure à Dieu plutôt que la rejouer en pensée.",
+      "question": "Que gagne mon cœur, vraiment, à garder cette offense ?"
+    },
+    {
+      "id": "plaisir",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "Je suis attiré par un plaisir immédiat",
+      "cases": [
+        4
+      ],
       "vis": "Le désir surgit — c'est la vie. Le traverser ne fait rien.",
-      "pente": "S'y installer fait glisser vers l'avilissement : on se sent diminué après.",
-      "geste": "Laisser le désir passer comme une vague, sans s'asseoir dedans.",
-      "question": "Est-ce moi qui tiens ce désir, ou lui qui me tient ?" },
-    { "id": "convoite", "ciel": "hawa", "ton": "chute", "label": "Je veux une chose que je n'ai pas les moyens d'obtenir", "cases": [22],
-      "vis": "Convoiter sans les moyens justes : on se met en dépendance.",
+      "pente": "S'y asseoir fait glisser vers l'avilissement (5) : on se sent diminué après.",
+      "geste": "Laisser la vague passer : différer dix minutes, revenir au corps.",
+      "question": "Est-ce moi qui tiens ce désir, ou lui qui me tient ?"
+    },
+    {
+      "id": "obsede",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "Je suis obsédé par une envie",
+      "cases": [
+        4,
+        24
+      ],
+      "vis": "Une pensée revient sans cesse et occupe tout.",
+      "pente": "L'obsession noie le cœur dans un océan d'agitation (24).",
+      "geste": "Détourner l'attention vers un acte simple et concret.",
+      "question": "Cette envie comble-t-elle un besoin réel, ou un vide ?"
+    },
+    {
+      "id": "mauvaise-habitude",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "Je veux céder à une mauvaise habitude",
+      "cases": [
+        4,
+        15
+      ],
+      "vis": "Le pli ancien rappelle à lui.",
+      "pente": "Céder par habitude conduit vers ce qui est défendu (15).",
+      "geste": "Mettre un obstacle entre soi et l'objet, même petit.",
+      "question": "Qu'est-ce que cette habitude me coûte vraiment ?"
+    },
+    {
+      "id": "desir-gouverne",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "Je sens que mon désir me gouverne",
+      "cases": [
+        4,
+        5
+      ],
+      "vis": "Le désir tient les rênes à ma place.",
+      "pente": "Gouverné par lui, on s'abaisse à ce qu'il commande (5).",
+      "geste": "Reprendre une décision libre, même minuscule, contre la pente.",
+      "question": "Qui décide en ce moment : moi, ou mon envie ?"
+    },
+    {
+      "id": "compensation",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "Je cherche une compensation",
+      "cases": [
+        4,
+        22
+      ],
+      "vis": "Un manque pousse à se remplir vite.",
+      "pente": "La compensation convoite (22) sans combler — elle relance le manque.",
+      "geste": "Nommer le vrai manque avant de le boucher.",
+      "question": "Qu'est-ce que je cherche vraiment à apaiser ?"
+    },
+    {
+      "id": "exces",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "Je suis dans l'excès",
+      "cases": [
+        4,
+        5
+      ],
+      "vis": "Trop de tout : l'élan dépasse la mesure.",
+      "pente": "L'excès dégrade (5) ce qu'une juste mesure aurait nourri.",
+      "geste": "Poser une limite simple, tout de suite.",
+      "question": "Où serait, ici, la juste mesure ?"
+    },
+    {
+      "id": "posseder",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "Je veux posséder quelqu'un ou quelque chose",
+      "cases": [
+        22,
+        23
+      ],
+      "vis": "L'attachement veut saisir, retenir.",
+      "pente": "Vouloir posséder enchaîne (22) ; mais un amour qui élève peut mener plus haut (23→44).",
+      "geste": "Desserrer la prise : aimer sans capturer.",
+      "question": "Est-ce que j'aime, ou est-ce que je veux posséder ?"
+    },
+    {
+      "id": "convoite",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "Je convoite ce que je n'ai pas les moyens d'avoir",
+      "cases": [
+        22
+      ],
+      "vis": "Désirer sans les moyens justes met en dépendance.",
       "pente": "« Tu es esclave de ce que tu convoites » — la convoitise tient en laisse.",
-      "geste": "Distinguer ce qui dépend de moi (l'effort juste) de ce qui ne dépend pas de moi.",
-      "question": "Est-ce un besoin réel, ou un manque que je projette sur cet objet ?" },
-    { "id": "envie", "ciel": "hawa", "ton": "chute", "label": "J'envie ce qu'a quelqu'un d'autre", "cases": [34],
-      "vis": "On voudrait le bien d'autrui — ou qu'il en soit privé.",
-      "pente": "L'envie ronge et précipite vers le « grand océan » de l'inquiétude.",
-      "geste": "Souhaiter pour l'autre ce qu'on voudrait pour soi — c'est l'exact remède.",
-      "question": "Est-ce que je veux ce bien, ou seulement qu'il ne l'ait pas ?" },
-    { "id": "attache", "ciel": "hawa", "ton": "montee", "label": "Je suis attaché à quelqu'un, à une beauté", "cases": [23],
-      "vis": "L'amour d'une beauté créée (un être, un paysage, une musique).",
-      "pente": "S'il élève le cœur au lieu de l'asservir, il peut porter vers l'amour réel (case 44).",
-      "geste": "Remonter de la beauté reçue à sa Source, au lieu de s'arrêter à l'objet.",
-      "question": "Cet amour ouvre-t-il mon cœur, ou le referme-t-il sur une seule chose ?" },
-
-    { "id": "superieur", "ciel": "nafs", "ton": "chute", "label": "J'ai réussi quelque chose, je me sens au-dessus", "cases": [91, 63],
-      "vis": "Une vraie progression — mais le « je » s'en attribue le mérite.",
-      "pente": "C'est la chute la plus violente du plateau (82 marches) : la vertu dont l'ego se saisit fait tomber.",
-      "geste": "Rendre le mérite à sa Source : « par Sa grâce », et non « par moi ».",
-      "question": "Et si tout cela m'avait été donné plutôt qu'acquis ?" },
-    { "id": "raison", "ciel": "nafs", "ton": "chute", "label": "Je suis sûr d'avoir raison, mieux que les autres", "cases": [63],
-      "vis": "La conviction d'être parvenu, d'être au-dessus du guide même.",
-      "pente": "Cette certitude de soi forme un voile qui sépare de la vraie guidance.",
-      "geste": "Faire de la place au doute juste : « et si l'autre voyait quelque chose que je ne vois pas ? »",
-      "question": "Ma certitude vient-elle de la vérité, ou du besoin d'avoir raison ?" },
-    { "id": "paraitre", "ciel": "nafs", "ton": "chute", "label": "Je fais le bien, mais j'aimerais qu'on le voie", "cases": [51],
-      "vis": "L'acte est bon, mais le regard cherche l'applaudissement.",
-      "pente": "Quand l'éloge ne vient pas, la rancune monte — le grappin de la haine guette.",
-      "geste": "Cacher un bien aujourd'hui : le faire pour Dieu seul, sans le dire.",
-      "question": "Ferais-je encore ce geste si personne ne devait jamais le savoir ?" },
-
-    { "id": "epreuve", "ciel": "huzn", "ton": "neutre", "label": "Je traverse une épreuve, une perte", "cases": [10, 43],
-      "vis": "La difficulté du monde resserre le cœur : maladie, manque, séparation.",
-      "pente": "Bien reçue, l'épreuve devient une « mine » qui incite à se tourner vers Dieu.",
-      "geste": "Ne pas confondre le trouble et l'abandon de Dieu : Il est là dans l'épreuve même.",
-      "question": "Vers quoi cette épreuve me pousse-t-elle, en creux ?" },
-    { "id": "regret", "ciel": "huzn", "ton": "neutre", "label": "Je regrette, je m'en veux", "cases": [17],
-      "vis": "Le regret d'un manquement, le poids de ce qui a été fait.",
-      "pente": "Le regret peut enfermer dans le passé — ou ouvrir un retour sincère.",
-      "geste": "Transformer le remords en repentir : reconnaître, puis reprendre la route.",
-      "question": "Mon regret me cloue-t-il, ou me remet-il en marche ?" },
-    { "id": "seul", "ciel": "huzn", "ton": "neutre", "label": "Je me sens seul, à part des autres", "cases": [31],
-      "vis": "Le désert intérieur : se sentir étranger parmi les siens.",
-      "pente": "L'isolement peut rendre morose — ou devenir une retraite habitée.",
-      "geste": "Faire de la solitude un face-à-face, non un repli : la peupler de présence.",
-      "question": "Cette solitude m'éloigne-t-elle des hommes, ou me rapproche-t-elle de l'essentiel ?" },
-    { "id": "perdu", "ciel": "huzn", "ton": "neutre", "label": "Je doute, je suis perplexe, perdu", "cases": [24],
-      "vis": "L'océan de la perplexité : on ne sait plus où aller.",
-      "pente": "La perplexité noie celui qui s'agite — elle mûrit celui qui patiente.",
-      "geste": "Tenir bon sans forcer : la clarté revient à qui ne se débat pas.",
-      "question": "Suis-je vraiment perdu, ou seulement en train de mûrir ?" },
-    { "id": "mauvaise-compagnie", "ciel": "huzn", "ton": "chute", "label": "Je suis avec des gens qui me tirent vers le bas", "cases": [30],
-      "vis": "Une compagnie qui abaisse le regard, le langage, le cœur.",
-      "pente": "S'y installer refait le caractère, par paliers, jusqu'à l'impulsivité.",
-      "geste": "Espacer, sans juger : choisir consciemment qui l'on fréquente.",
-      "question": "Après ces moments, suis-je plus haut ou plus bas ?" },
-
-    { "id": "peur", "ciel": "khawf", "ton": "neutre", "label": "J'ai peur, je suis inquiet", "cases": [26, 27],
+      "geste": "Séparer ce qui dépend de mon effort de ce qui n'en dépend pas.",
+      "question": "Est-ce un besoin, ou un manque projeté sur cet objet ?"
+    },
+    {
+      "id": "superieur",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "Je me sens supérieur aux autres",
+      "cases": [
+        91,
+        63
+      ],
+      "vis": "Une réussite vraie — mais le « je » s'en empare.",
+      "pente": "C'est la chute la plus violente (91, 82 marches) : la vertu dont l'ego se saisit fait tomber.",
+      "geste": "Rendre le mérite à sa Source : « par Sa grâce », non « par moi ».",
+      "question": "Et si tout cela m'avait été donné plutôt qu'acquis ?"
+    },
+    {
+      "id": "reconnu",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "Je veux être reconnu",
+      "cases": [
+        51
+      ],
+      "vis": "Le besoin du regard des autres pousse à agir.",
+      "pente": "Agir pour être vu (51) tourne à la rancune quand l'éloge manque.",
+      "geste": "Faire un bien aujourd'hui sans que personne ne le sache.",
+      "question": "Ferais-je ce geste si personne ne devait le voir ?"
+    },
+    {
+      "id": "voir-valeur",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "Je veux qu'on voie ma valeur",
+      "cases": [
+        51,
+        19
+      ],
+      "vis": "L'envie de montrer, de prouver.",
+      "pente": "Soigner l'image (51) glisse vers le double jeu (l'hypocrisie, 19).",
+      "geste": "Laisser la valeur se dire d'elle-même, sans la mettre en scène.",
+      "question": "Ma valeur a-t-elle besoin d'être vue pour exister ?"
+    },
+    {
+      "id": "compare",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "Je me compare aux autres",
+      "cases": [
+        34
+      ],
+      "vis": "Le regard mesure sans cesse l'écart.",
+      "pente": "La comparaison ouvre la porte à l'envie (34) qui ronge.",
+      "geste": "Revenir à son propre pas, sans le mètre des autres.",
+      "question": "À qui suis-je en train de me comparer, et pourquoi lui ?"
+    },
+    {
+      "id": "jaloux",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "Je suis jaloux de la réussite d'un autre",
+      "cases": [
+        34
+      ],
+      "vis": "On voudrait son bien — ou qu'il en soit privé.",
+      "pente": "L'envie (34) précipite vers l'inquiétude du « grand océan ».",
+      "geste": "Souhaiter pour l'autre ce qu'on voudrait pour soi.",
+      "question": "Est-ce que je veux ce bien, ou qu'il ne l'ait pas ?"
+    },
+    {
+      "id": "paraitre-mieux",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "Je veux paraître meilleur que je ne suis",
+      "cases": [
+        19
+      ],
+      "vis": "L'écart entre l'image et la vérité se creuse.",
+      "pente": "Paraître (19) finit par séparer de soi-même et des autres.",
+      "geste": "Dire une chose vraie et simple sur soi, sans fard.",
+      "question": "Qu'est-ce que je crains qu'on voie si je suis vrai ?"
+    },
+    {
+      "id": "semblant",
+      "ciel": "nafs",
+      "ton": "neutre",
+      "label": "Je fais semblant d'aller bien",
+      "cases": [
+        19,
+        43
+      ],
+      "vis": "On masque le trouble derrière un visage lisse.",
+      "pente": "Le masque (19) épuise ; le trouble (43) caché grandit.",
+      "geste": "S'autoriser, avec une personne sûre, à ne pas aller bien.",
+      "question": "À qui pourrais-je dire la vérité de mon état ?"
+    },
+    {
+      "id": "crois-arrive",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "Je me crois arrivé",
+      "cases": [
+        63
+      ],
+      "vis": "La conviction d'avoir atteint, d'être au-dessus.",
+      "pente": "Cette certitude (63) forme un voile qui sépare de la vraie guidance.",
+      "geste": "Faire place au doute juste : « et si je ne voyais pas tout ? »",
+      "question": "Ma certitude vient-elle du vrai, ou du besoin d'avoir raison ?"
+    },
+    {
+      "id": "meprise",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "Je méprise quelqu'un",
+      "cases": [
+        36,
+        8
+      ],
+      "vis": "Le regard rabaisse l'autre.",
+      "pente": "Le mépris (36) durcit et nourrit la haine (8).",
+      "geste": "Chercher, chez cette personne, une seule chose digne.",
+      "question": "Qu'est-ce que ce mépris protège, ou venge, en moi ?"
+    },
+    {
+      "id": "regrette-dit",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "Je regrette ce que j'ai dit",
+      "cases": [
+        17,
+        11
+      ],
+      "vis": "Le poids d'une parole qui a blessé.",
+      "pente": "Le regret (17) peut enfermer, ou ouvrir une réparation.",
+      "geste": "Réparer simplement : reconnaître, présenter des excuses.",
+      "question": "Mon regret me cloue-t-il, ou me remet-il en marche ?"
+    },
+    {
+      "id": "regrette-fait",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "Je regrette ce que j'ai fait",
+      "cases": [
+        17,
+        29
+      ],
+      "vis": "Le remords d'un acte manqué.",
+      "pente": "Le remords stérile pèse ; le repentir (vers l'imploration, 29) relève.",
+      "geste": "Transformer le remords en demande sincère et en geste de réparation.",
+      "question": "Qu'est-ce que ce regret me demande de faire, concrètement ?"
+    },
+    {
+      "id": "tombe",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "Je me sens tombé intérieurement",
+      "cases": [
+        18,
+        10
+      ],
+      "vis": "L'impression d'avoir glissé bas.",
+      "pente": "La chute (le mauvais caractère, 18) n'est pas une fin : c'est un appel au retour.",
+      "geste": "Ne pas désespérer : un seul pas vers le haut suffit pour commencer.",
+      "question": "Quel tout petit retour est possible, là, maintenant ?"
+    },
+    {
+      "id": "honteux",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "Je me sens honteux",
+      "cases": [
+        17
+      ],
+      "vis": "La honte courbe le regard.",
+      "pente": "La honte peut écraser, ou réveiller la pudeur juste (le regret, 17).",
+      "geste": "Distinguer la faute (réparable) de soi (qui n'est pas la faute).",
+      "question": "Cette honte me corrige-t-elle, ou m'enfonce-t-elle ?"
+    },
+    {
+      "id": "abattu",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "Je me sens abattu, lourd",
+      "cases": [
+        10,
+        43
+      ],
+      "vis": "Le poids du monde sur les épaules.",
+      "pente": "L'épreuve (10) et le trouble (43) resserrent — bien reçus, ils tournent vers Dieu.",
+      "geste": "Ne demander qu'un pas : se lever, boire, prier, sortir.",
+      "question": "Vers quoi cette lourdeur me pousse-t-elle, en creux ?"
+    },
+    {
+      "id": "triste-sterile",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "Je suis dans une tristesse qui ne mène à rien",
+      "cases": [
+        43
+      ],
+      "vis": "Un trouble qui tourne sur lui-même.",
+      "pente": "La tristesse stérile s'enlise ; reçue, elle incite au renoncement.",
+      "geste": "Donner une forme au trouble : l'écrire, le nommer, le confier.",
+      "question": "Cette tristesse m'ouvre-t-elle, ou m'enferme-t-elle ?"
+    },
+    {
+      "id": "consequences",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "Je vois les conséquences de mes actes",
+      "cases": [
+        10
+      ],
+      "vis": "L'épreuve révèle ce qui a été semé.",
+      "pente": "L'épreuve (10) peut accabler, ou devenir une « mine » d'éveil.",
+      "geste": "Accueillir la leçon sans se condamner, puis agir.",
+      "question": "Qu'est-ce que cette conséquence m'apprend pour la suite ?"
+    },
+    {
+      "id": "reprendre",
+      "ciel": "huzn",
+      "ton": "montee",
+      "label": "Je veux reprendre le chemin",
+      "cases": [
+        29
+      ],
+      "vis": "Après la chute, l'élan du retour.",
+      "pente": "Le retour passe par l'imploration (29) : la langue se délie vers Dieu.",
+      "geste": "Faire un premier geste concret de reprise, même minime.",
+      "question": "Quel premier pas marque mon retour, aujourd'hui ?"
+    },
+    {
+      "id": "peur",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "J'ai peur",
+      "cases": [
+        26,
+        27
+      ],
       "vis": "La peur d'un mal, d'un manque, d'un lendemain.",
-      "pente": "La peur peut se retourner : de la crainte des choses vers la crainte de Dieu seul.",
-      "geste": "Déposer la peur là où elle a sa place : « ne les craignez pas, mais craignez-Moi ».",
-      "question": "De quoi ai-je peur exactement — et qu'est-ce que cela protège en moi ?" },
-
-    { "id": "paix", "ciel": "nur", "ton": "montee", "label": "Je suis en paix, content de ce qui est", "cases": [3, 67],
-      "vis": "Une aise tranquille, l'agrément de ce que Dieu a donné.",
-      "pente": "Le contentement (riḍā) est une porte : il ouvre et stabilise le cœur.",
-      "geste": "Goûter sans saisir : remercier pour l'instant tel qu'il est.",
-      "question": "Cette paix vient-elle de ce que j'ai, ou de ce que je suis devant Dieu ?" },
-    { "id": "joie", "ciel": "nur", "ton": "montee", "label": "Je ressens une joie, une ouverture du cœur", "cases": [21],
-      "vis": "L'expansion (basṭ) : le cœur se dilate, la vie s'allège.",
-      "pente": "La joie a son adab : reçue avec mesure, elle élève ; saisie, elle grise.",
-      "geste": "Laisser la joie traverser sans la posséder ni la réclamer demain.",
-      "question": "Cette joie me rapproche-t-elle des autres et de Dieu ?" },
-    { "id": "compassion", "ciel": "nur", "ton": "montee", "label": "Je ressens de la tendresse pour quelqu'un de démuni", "cases": [39],
-      "vis": "Un élan vrai vers celui qu'on voit nu, démuni.",
-      "pente": "Cette compassion, si l'on y demeure, élève vers le bon caractère.",
-      "geste": "Laisser le geste suivre l'élan : une présence, une aide discrète.",
-      "question": "Qu'est-ce que la fragilité de l'autre me révèle de la mienne ?" },
-    { "id": "bonne-compagnie", "ciel": "nur", "ton": "montee", "label": "Je suis bien entouré, une présence qui élève", "cases": [40],
-      "vis": "Une compagnie qui ramène à l'essentiel sans faire la leçon.",
-      "pente": "Y demeurer hisse, d'un seul pas, vers les bonnes actions (24 marches).",
-      "geste": "Soigner ce lien : la bonne compagnie vaut dix résolutions solitaires.",
-      "question": "Qui, autour de moi, me rend meilleur — et est-ce que je le cultive ?" },
-    { "id": "soif-connaitre", "ciel": "nur", "ton": "montee", "label": "J'ai soif d'apprendre, de connaître Dieu", "cases": [69, 65],
-      "vis": "La soif de la science utile, celle du cœur et non de la seule langue.",
-      "pente": "« Celui qui agit selon ce qu'il sait, Dieu lui fait connaître ce qu'il ignore » : la science vécue élève.",
-      "geste": "Mettre en acte une seule chose sue, avant d'en apprendre une autre.",
-      "question": "Ce que j'apprends, est-ce que je le vis, ou seulement je le sais ?" }
+      "pente": "La peur peut se retourner : des choses vers Dieu seul (27).",
+      "geste": "Déposer la peur là où elle a sa place ; nommer ce qu'elle protège.",
+      "question": "De quoi ai-je peur exactement, et qu'est-ce que cela abrite ?"
+    },
+    {
+      "id": "inquiet",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "Je suis inquiet",
+      "cases": [
+        26,
+        35
+      ],
+      "vis": "L'inquiétude voudrait s'envoler hors de l'étroit (35).",
+      "pente": "À vouloir fuir, on s'épuise sans trouver d'air.",
+      "geste": "Revenir à l'instant, à ce qui est réellement là.",
+      "question": "Mon inquiétude porte-t-elle sur ce qui dépend de moi ?"
+    },
+    {
+      "id": "perdu",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "Je suis perdu, je ne sais plus où aller",
+      "cases": [
+        24
+      ],
+      "vis": "L'océan de la perplexité : plus de repère.",
+      "pente": "La perplexité noie qui s'agite, mûrit qui patiente.",
+      "geste": "Tenir bon sans forcer : la clarté revient à qui ne se débat pas.",
+      "question": "Suis-je vraiment perdu, ou en train de mûrir ?"
+    },
+    {
+      "id": "ne-sais-faire",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "Je ne sais plus quoi faire",
+      "cases": [
+        24,
+        28
+      ],
+      "vis": "Entre deux, sans pouvoir trancher (28).",
+      "pente": "L'indécision prolongée use et fait douter de tout.",
+      "geste": "Choisir le plus petit acte juste possible, et le poser.",
+      "question": "Quelle est la prochaine chose juste, même minuscule ?"
+    },
+    {
+      "id": "doute",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "Je suis dans le doute",
+      "cases": [
+        24
+      ],
+      "vis": "Le sol semble se dérober sous la pensée.",
+      "pente": "Le doute agité noie ; tenu avec calme, il affine.",
+      "geste": "Suspendre le jugement, revenir au souffle et au réel.",
+      "question": "Ce doute cherche-t-il la vérité, ou seulement à me troubler ?"
+    },
+    {
+      "id": "confusion",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "Je suis dans la confusion",
+      "cases": [
+        24,
+        20
+      ],
+      "vis": "Les pensées s'entrechoquent, brouillées.",
+      "pente": "La confusion ouvre à des chuchotements (20) qui amplifient.",
+      "geste": "Écrire trois lignes pour poser le chaos hors de la tête.",
+      "question": "Qu'est-ce qui, derrière le bruit, demande à être vu clairement ?"
+    },
+    {
+      "id": "scrupules",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "Je suis envahi de scrupules",
+      "cases": [
+        20
+      ],
+      "vis": "Des chuchotements insistants, des « et si… ».",
+      "pente": "Le chuchotement (20) grossit dès qu'on le discute.",
+      "geste": "Ne pas argumenter avec la voix : la laisser passer sans répondre.",
+      "question": "Ce scrupule vient-il de la conscience, ou du tourment ?"
+    },
+    {
+      "id": "seul",
+      "ciel": "uzla",
+      "ton": "neutre",
+      "label": "Je me sens seul",
+      "cases": [
+        31,
+        49
+      ],
+      "vis": "Le désert intérieur, le sentiment d'être à part.",
+      "pente": "La solitude peut rendre morose (31), ou devenir une retraite habitée.",
+      "geste": "Peupler la solitude d'une présence : prière, lecture, marche.",
+      "question": "Cette solitude m'éloigne-t-elle des hommes, ou de l'essentiel me rapproche-t-elle ?"
+    },
+    {
+      "id": "eloigner",
+      "ciel": "uzla",
+      "ton": "montee",
+      "label": "Je dois m'éloigner d'une influence",
+      "cases": [
+        30,
+        31
+      ],
+      "vis": "Le besoin de quitter ce qui tire vers le bas.",
+      "pente": "Quitter une mauvaise compagnie (30) ouvre sur le désert (31), passage avant la bonne compagnie.",
+      "geste": "Réduire le contact aujourd'hui, sans drame ni reproche.",
+      "question": "Après cette présence, suis-je plus haut ou plus bas ?"
+    },
+    {
+      "id": "quitter-compagnie",
+      "ciel": "uzla",
+      "ton": "montee",
+      "label": "Je quitte une mauvaise compagnie",
+      "cases": [
+        31,
+        40
+      ],
+      "vis": "Un sas de solitude après la séparation.",
+      "pente": "Le désert (31) n'est pas une fin : il prépare la bonne compagnie (40).",
+      "geste": "Tenir le vide sans le combler par n'importe quoi.",
+      "question": "Vers quelle présence plus juste ce retrait me prépare-t-il ?"
+    },
+    {
+      "id": "vide",
+      "ciel": "uzla",
+      "ton": "neutre",
+      "label": "Je traverse un vide",
+      "cases": [
+        49,
+        31
+      ],
+      "vis": "Un creux, une absence de saveur.",
+      "pente": "Le cœur nostalgique (49) cherche, au-dehors, une preuve qu'il a perdue.",
+      "geste": "Remettre âme et fardeau au Très-Haut, et patienter.",
+      "question": "Ce vide est-il une perte, ou une place qui se fait ?"
+    },
+    {
+      "id": "avec-qui",
+      "ciel": "uzla",
+      "ton": "neutre",
+      "label": "Je ne sais pas encore avec qui avancer",
+      "cases": [
+        31,
+        40
+      ],
+      "vis": "Entre deux compagnies, en attente.",
+      "pente": "Mieux vaut le désert (31) qu'une compagnie qui abaisse.",
+      "geste": "Ne pas se précipiter : choisir consciemment, pas par peur du vide.",
+      "question": "Qui, autour de moi, me rend meilleur ?"
+    },
+    {
+      "id": "silence",
+      "ciel": "uzla",
+      "ton": "montee",
+      "label": "Je ressens le besoin de silence",
+      "cases": [
+        54,
+        31
+      ],
+      "vis": "Le besoin de se déposer, de se taire.",
+      "pente": "Le repos (54) rend disponible à tous, une fois apaisé de soi.",
+      "geste": "S'accorder un vrai temps de silence, sans écran.",
+      "question": "De quoi mon cœur a-t-il besoin que le bruit recouvre ?"
+    },
+    {
+      "id": "solitude-amere",
+      "ciel": "uzla",
+      "ton": "neutre",
+      "label": "Je suis dans une solitude amère",
+      "cases": [
+        49,
+        31
+      ],
+      "vis": "L'isolement pèse, sans douceur.",
+      "pente": "La nostalgie (49) peut aigrir, ou se tourner en prière.",
+      "geste": "Transformer la plainte en demande : parler à Dieu de ce manque.",
+      "question": "À qui, ou à quoi, cette amertume voudrait-elle être reliée ?"
+    },
+    {
+      "id": "solitude-saine",
+      "ciel": "uzla",
+      "ton": "montee",
+      "label": "Je suis dans une solitude saine",
+      "cases": [
+        31,
+        54
+      ],
+      "vis": "Un retrait choisi, paisible.",
+      "pente": "Bien habitée, la retraite devient repos (54) et clarté.",
+      "geste": "Goûter ce calme, et en faire un face-à-face fécond.",
+      "question": "Qu'est-ce que ce silence me rend de plus juste ?"
+    },
+    {
+      "id": "bonne-compagnie",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "Je suis dans une bonne compagnie",
+      "cases": [
+        40
+      ],
+      "vis": "Une présence qui ramène à l'essentiel.",
+      "pente": "Y demeurer hisse, d'un pas, vers les bonnes œuvres (64).",
+      "geste": "Soigner ce lien ; imiter une qualité, la transformer en acte.",
+      "question": "Quelle bonne action cette présence m'inspire-t-elle ?"
+    },
+    {
+      "id": "apaise",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "Je me sens apaisé",
+      "cases": [
+        3,
+        67
+      ],
+      "vis": "Une aise tranquille, un cœur posé.",
+      "pente": "Le contentement (3, 67) est une porte qui stabilise.",
+      "geste": "Goûter sans saisir ; remercier pour l'instant tel quel.",
+      "question": "Cette paix vient-elle de ce que j'ai, ou de ce que je suis devant Dieu ?"
+    },
+    {
+      "id": "satisfaction",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "Je ressens de la satisfaction",
+      "cases": [
+        67,
+        68
+      ],
+      "vis": "L'agrément de ce qui est donné (riḍwān).",
+      "pente": "La satisfaction appelle ensuite la lutte intérieure juste (68).",
+      "geste": "Observer ce qui, en moi, résiste encore à ce que j'accepte.",
+      "question": "Qu'est-ce qui, en moi, refuse encore ce que je dis accepter ?"
+    },
+    {
+      "id": "accepte",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "J'accepte ce qui arrive",
+      "cases": [
+        67
+      ],
+      "vis": "Le consentement au décret, en bien comme en épreuve.",
+      "pente": "Le contentement (riḍā, 67) ouvre et apaise le cœur.",
+      "geste": "Agir sur ce qui dépend de moi, lâcher le reste.",
+      "question": "Mon « oui » est-il du cœur, ou seulement des lèvres ?"
+    },
+    {
+      "id": "faire-bien",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "Je veux faire le bien",
+      "cases": [
+        64,
+        39
+      ],
+      "vis": "L'élan vers l'acte juste.",
+      "pente": "Les bonnes œuvres (64) — jeûne, aide au faible — élèvent réellement.",
+      "geste": "Choisir un seul acte concret, et le poser aujourd'hui.",
+      "question": "Quel bien, à ma portée, attend seulement d'être fait ?"
+    },
+    {
+      "id": "courage",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "Je ressens du courage",
+      "cases": [
+        55
+      ],
+      "vis": "L'élan d'affronter, de se donner.",
+      "pente": "Le courage (55) élève, d'un pas, vers la vision testimoniale (90).",
+      "geste": "Mettre le courage au service du juste, pas de l'orgueil.",
+      "question": "Mon courage sert-il la vérité, ou ma fierté ?"
+    },
+    {
+      "id": "comprends",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "Je comprends quelque chose d'important",
+      "cases": [
+        48,
+        69
+      ],
+      "vis": "Une lumière se fait, une réalisation.",
+      "pente": "La science vécue (69) et les réalisations (48) élèvent vers le haut.",
+      "geste": "Mettre en acte cette compréhension avant d'en chercher une autre.",
+      "question": "Ce que je comprends, est-ce que je le vis, ou seulement le sais ?"
+    },
+    {
+      "id": "apprendre",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "J'ai soif d'apprendre, de connaître Dieu",
+      "cases": [
+        69,
+        65
+      ],
+      "vis": "La soif de la science du cœur.",
+      "pente": "« Qui agit selon ce qu'il sait, Dieu lui apprend ce qu'il ignore » : elle élève (69→94).",
+      "geste": "Mettre en pratique une seule chose sue.",
+      "question": "Ce que j'apprends, est-ce que je le vis ?"
+    },
+    {
+      "id": "appel",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "Je ressens un appel vers Dieu, vers le haut",
+      "cases": [
+        68,
+        29
+      ],
+      "vis": "Un élan intérieur, une nostalgie du haut.",
+      "pente": "Cet appel se nourrit par la lutte juste (68) et l'imploration (29).",
+      "geste": "Répondre par un acte d'adoration simple, tout de suite.",
+      "question": "Qu'est-ce qui, en moi, répond déjà à cet appel ?"
+    }
   ]
 }

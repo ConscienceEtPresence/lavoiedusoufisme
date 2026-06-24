@@ -21,105 +21,222 @@
       "to": 57,
       "type": "montee",
       "certitude": "verifie_arabe",
-      "lecture": "La compassion pour l'homme nu élève au bon caractère (18 stations)."
+      "lecture": "La compassion pour l'homme nu élève au bon caractère (18 stations).",
+      "trajet_detaille": [
+        39,
+        38,
+        43,
+        44,
+        57
+      ]
     },
     {
       "from": 40,
       "to": 64,
       "type": "montee",
       "certitude": "verifie_arabe",
-      "lecture": "La bonne compagnie élève aux bonnes actions (24 stations)."
+      "lecture": "La bonne compagnie élève aux bonnes actions (24 stations).",
+      "trajet_detaille": [
+        40,
+        39,
+        42,
+        43,
+        58,
+        57,
+        64
+      ]
     },
     {
       "from": 48,
       "to": 66,
       "type": "montee",
       "certitude": "verifie_arabe",
-      "lecture": "Les réalisations élèvent au monde suprême (18 stations, par 47, 54, 55)."
+      "lecture": "Les réalisations élèvent au monde suprême (18 stations, par 47, 54, 55).",
+      "trajet_detaille": [
+        48,
+        47,
+        54,
+        55,
+        66
+      ]
     },
     {
       "from": 50,
       "to": 74,
       "type": "montee",
       "certitude": "verifie_arabe",
-      "lecture": "« Dans la voie de Dieu » élève au Paradis (24 stations, par 49, 52, 53, 68, 67)."
+      "lecture": "« Dans la voie de Dieu » élève au Paradis (24 stations, par 49, 52, 53, 68, 67).",
+      "trajet_detaille": [
+        50,
+        49,
+        52,
+        53,
+        68,
+        67,
+        74
+      ]
     },
     {
       "from": 55,
       "to": 90,
       "type": "montee",
       "certitude": "verifie_arabe",
-      "lecture": "Le courage élève à la vision testimoniale (36 degrés, par 54, 67, 68, 73, 72)."
+      "lecture": "Le courage élève à la vision testimoniale (36 degrés, par 54, 67, 68, 73, 72).",
+      "trajet_detaille": [
+        55,
+        54,
+        67,
+        68,
+        73,
+        72,
+        90
+      ]
     },
     {
       "from": 62,
       "to": 96,
       "type": "montee",
       "certitude": "verifie_arabe",
-      "lecture": "Le guide parfait mène à la permanence en Dieu, en un seul pas."
+      "lecture": "Le guide parfait mène à la permanence en Dieu, en un seul pas.",
+      "trajet_detaille": [
+        62,
+        63,
+        78,
+        77,
+        84,
+        85,
+        96
+      ]
     },
     {
       "from": 69,
       "to": 94,
       "type": "montee",
       "certitude": "verifie_arabe",
-      "lecture": "La science utile élève au royaume mohammédien (25 degrés, par 72, 73, 88, 87)."
+      "lecture": "La science utile élève au royaume mohammédien (25 degrés, par 72, 73, 88, 87).",
+      "trajet_detaille": [
+        69,
+        72,
+        73,
+        88,
+        87,
+        94
+      ]
     },
     {
       "from": 11,
       "to": 9,
       "type": "chute",
       "certitude": "verifie_arabe",
-      "lecture": "Le grappin des mauvaises actions traîne le manque de adab aux mauvaises actions (2 abîmes)."
+      "lecture": "Le grappin des mauvaises actions traîne le manque de adab aux mauvaises actions (2 abîmes).",
+      "trajet_detaille": [
+        11,
+        10,
+        9
+      ]
     },
     {
       "from": 30,
       "to": 7,
       "type": "chute",
       "certitude": "verifie_arabe",
-      "lecture": "Le grappin de l'impulsivité aveugle fait redescendre la mauvaise compagnie (24 degrés, par 12, 13, 8)."
+      "lecture": "Le grappin de l'impulsivité aveugle fait redescendre la mauvaise compagnie (24 degrés, par 12, 13, 8).",
+      "trajet_detaille": [
+        30,
+        12,
+        13,
+        8,
+        7
+      ]
     },
     {
       "from": 32,
       "to": 5,
       "type": "chute",
       "certitude": "verifie_arabe",
-      "lecture": "Le grappin de l'avilissement précipite la raison malade (28 abîmes, par 15, 16)."
+      "lecture": "Le grappin de l'avilissement précipite la raison malade (28 abîmes, par 15, 16).",
+      "trajet_detaille": [
+        32,
+        15,
+        16,
+        5
+      ]
     },
     {
       "from": 33,
       "to": 6,
       "type": "chute",
       "certitude": "verifie_arabe",
-      "lecture": "Le grappin de « sous la terre » précipite l'ignorance vers le bas-fond (28 abîmes, par 14, 15)."
+      "lecture": "Le grappin de « sous la terre » précipite l'ignorance vers le bas-fond (28 abîmes, par 14, 15).",
+      "trajet_detaille": [
+        33,
+        14,
+        15,
+        6
+      ]
     },
     {
       "from": 34,
       "to": 16,
       "type": "chute",
       "certitude": "verifie_arabe",
-      "lecture": "Le grappin du grand océan précipite l'envie (20 abîmes, par 35, 26, 25)."
+      "lecture": "Le grappin du grand océan précipite l'envie (20 abîmes, par 35, 26, 25).",
+      "trajet_detaille": [
+        34,
+        35,
+        26,
+        25,
+        16
+      ]
     },
     {
       "from": 45,
       "to": 18,
       "type": "chute",
       "certitude": "verifie_arabe",
-      "lecture": "Le grappin du mauvais caractère précipite « les ruines » (33 gradins, par 36, 37, 24, 23)."
+      "lecture": "Le grappin du mauvais caractère précipite « les ruines » (33 gradins, par 36, 37, 24, 23).",
+      "trajet_detaille": [
+        45,
+        36,
+        37,
+        24,
+        23,
+        18
+      ]
     },
     {
       "from": 51,
       "to": 8,
       "type": "chute",
       "certitude": "verifie_arabe",
-      "lecture": "Le grappin de la haine précipite l'affectation (44 abîmes, par 32, 33, 13, 14)."
+      "lecture": "Le grappin de la haine précipite l'affectation (44 abîmes, par 32, 33, 13, 14).",
+      "trajet_detaille": [
+        51,
+        32,
+        33,
+        13,
+        14,
+        8
+      ]
     },
     {
       "from": 91,
       "to": 10,
       "type": "chute",
       "certitude": "verifie_arabe",
-      "lecture": "Le grappin de l'épreuve précipite la suffisance (82 stations, par 90, 71, 70, 51, 50, 31, 30, 11)."
+      "lecture": "Le grappin de l'épreuve précipite la suffisance (82 stations, par 90, 71, 70, 51, 50, 31, 30, 11).",
+      "trajet_detaille": [
+        91,
+        90,
+        71,
+        70,
+        51,
+        50,
+        31,
+        30,
+        11,
+        10
+      ]
     },
     {
       "from": 100,

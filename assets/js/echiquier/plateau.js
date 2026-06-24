@@ -45,6 +45,7 @@ const TYPE_TXT = {
   retour: 'retour',
   illusion: 'illusion'
 };
+const TYPE_SYM = { montee: '↑', chute: '⛓', retour: '↺', illusion: '✦' };
 const TYPE_INTRO = {
   montee: 'Ce mouvement indique une progression ou une élévation.',
   chute: 'Ce mouvement indique une chute, une régression ou un grappin de l’âme.',
@@ -74,7 +75,7 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
     const byNum = {}; for (const c of cases) byNum[c.numero] = c;
     // Mouvements confirmés dans le texte : montées, chaînes et grappins.
     let liens = [];
-    try { liens = ((await fetch('/data/echiquier/liens.json?v=9').then(r => r.json())).liens) || []; } catch (e) {}
+    try { liens = ((await fetch('/data/echiquier/liens.json?v=10').then(r => r.json())).liens) || []; } catch (e) {}
     const relations = {};
     for (const c of cases) relations[c.numero] = { entrants: [], sortants: [] };
     for (const l of liens) {
@@ -221,10 +222,11 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
             const sensTxt = sens === 'entrant' ? 'depuis' : 'vers';
             return `<li class="ech-mouvement ech-mouvement--${esc(type)}">
               <button type="button" class="ech-lien ech-lien-mvt" data-go="${t.numero}">
-                <span class="ech-lien-mvt__type">${esc(TYPE_TXT[type] || type)}</span>
+                <span class="ech-lien-mvt__type">${esc(TYPE_SYM[type] || '→')} ${esc(TYPE_TXT[type] || type)}</span>
                 <span class="ech-lien-mvt__target">${sensTxt} la case ${t.numero} — ${esc(t.traduction)}</span>
               </button>
               <p class="ech-lien-mvt__lecture">${esc(l.lecture || TYPE_INTRO[type] || '')}</p>
+              ${l.trajet_detaille ? `<p class="ech-lien-mvt__trajet">Trajet symbolique : <b>${l.trajet_detaille.join(' → ')}</b></p>` : ''}
             </li>`;
           }).join('')}</ul>
         </div>` : '';
@@ -260,6 +262,7 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
         <div class="ech-fiche__bloc"><p class="ech-fiche__label">Question pour soi</p><p class="ech-fiche__q">${esc(question)}</p></div>
         ${(c.appui_scripturaire && c.appui_scripturaire.length) ? `<div class="ech-fiche__bloc ech-fiche__script"><p class="ech-fiche__label">Appui scripturaire</p><ul class="ech-fiche__refs">${c.appui_scripturaire.map(r => `<li>${esc(r)}</li>`).join('')}</ul><p class="ech-fiche__refs-note">Versets et hadiths cités par le commentaire pour fonder cette case.</p></div>` : ''}
         ${c.chemin_texte ? `<div class="ech-fiche__bloc ech-fiche__chemin"><p class="ech-fiche__label">Le chemin, pas à pas</p><p class="ech-fiche__txt">${esc(c.chemin_texte)}</p></div>` : ''}
+        ${c.numero < 100 ? `<div class="ech-fiche__bloc ech-fiche__ordinaire"><p class="ech-fiche__label">Mouvement ordinaire <span aria-hidden="true">→</span></p><p class="ech-fiche__txt">Sans saut particulier, le chemin se poursuit vers la case ${c.numero + 1}${byNum[c.numero + 1] ? ' — ' + esc(byNum[c.numero + 1].traduction) : ''}.</p></div>` : ''}
         ${relationBloc(rel.entrants, 'Ce qui mène ici', 'entrant')}
         ${relationBloc(rel.sortants, 'Où cela conduit', 'sortant')}
         <a class="ech-fiche__journal" href="/pages/echiquier/journal/?case=${c.numero}">✦ Noter cette case dans mon journal</a>

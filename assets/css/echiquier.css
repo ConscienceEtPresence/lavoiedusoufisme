@@ -399,3 +399,89 @@
 .ech-pas__txt { line-height: 1.65; color: var(--ech-ink); margin: 0 0 .5rem; }
 .ech-pas__go { font-size: .85rem; font-style: italic; color: var(--ech-gold-deep); text-decoration: none; }
 .ech-pas__go:hover { text-decoration: underline; }
+
+/* ====================================================================
+   « Comment je me sens aujourd'hui » — carte intérieure (météo)
+   ==================================================================== */
+.meteo-hero { position: relative; text-align: center; padding: 2.6rem 1.3rem 1.4rem; overflow: hidden; }
+.meteo-hero__halo {
+  position: absolute; inset: -40% 0 auto 0; height: 130%; pointer-events: none; z-index: 0;
+  background: radial-gradient(60% 60% at 50% 0%, rgba(176,141,60,.18), rgba(176,141,60,0) 70%);
+}
+.meteo-hero > * { position: relative; z-index: 1; }
+.meteo-hero__ar { font-family: 'Amiri', serif; font-size: 1.7rem; color: var(--ech-gold-deep); margin: 0 0 .35rem; }
+.meteo-hero__title { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(1.9rem, 6vw, 2.8rem); color: var(--ech-ink); margin: 0 0 .6rem; }
+.meteo-hero__sub { max-width: 40rem; margin: 0 auto .7rem; line-height: 1.65; color: var(--ech-ink); font-size: 1.05rem; }
+.meteo-hero__note { max-width: 36rem; margin: 0 auto; font-style: italic; font-size: .9rem; color: var(--ech-ink-mute); }
+
+.meteo-ciels { max-width: 60rem; margin: 1.4rem auto 2rem; padding: 0 1.1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr)); gap: 1.1rem; }
+.meteo-ciel {
+  border: 1px solid var(--ech-rule); border-radius: 1rem; padding: 1.1rem 1.1rem 1.2rem;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--ciel) 8%, transparent), transparent 60%);
+  position: relative;
+}
+.meteo-ciel::before { content: ""; position: absolute; left: 0; top: 1.1rem; bottom: 1.1rem; width: 3px; border-radius: 3px; background: var(--ciel); opacity: .6; }
+.meteo-ciel__head { display: flex; gap: .8rem; align-items: flex-start; margin-bottom: .9rem; padding-left: .5rem; }
+.meteo-ciel__orn { flex: 0 0 auto; color: var(--ciel); width: 2.4rem; height: 2.4rem; }
+.meteo-ciel__orn svg { width: 100%; height: 100%; }
+.meteo-ciel__ar { font-family: 'Amiri', serif; font-size: 1.35rem; color: var(--ciel); margin: 0; line-height: 1.1; }
+.meteo-ciel__t { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 600; color: var(--ech-ink); margin: .05rem 0 .1rem; }
+.meteo-ciel__tr { font-family: 'Source Serif 4', serif; font-style: italic; font-size: .95rem; color: var(--ech-ink-mute); font-weight: 400; }
+.meteo-ciel__sous { font-size: .85rem; color: var(--ech-ink-mute); margin: 0; }
+.meteo-ciel__etats { display: flex; flex-direction: column; gap: .5rem; }
+.meteo-etat {
+  text-align: left; font: inherit; font-size: .95rem; line-height: 1.4; color: var(--ech-ink);
+  background: var(--ech-paper, #fbf7ee); border: 1px solid var(--ech-rule); border-radius: .65rem;
+  padding: .6rem .75rem; cursor: pointer; transition: border-color .15s, transform .1s, box-shadow .15s;
+}
+.meteo-etat:hover, .meteo-etat:focus-visible {
+  border-color: var(--ciel); box-shadow: 0 4px 14px rgba(20,16,8,.08); transform: translateY(-1px); outline: none;
+}
+
+/* Panneau d'orientation (modal centré) */
+.meteo-overlay { position: fixed; inset: 0; background: rgba(15,12,6,.5); opacity: 0; pointer-events: none; transition: opacity .25s; z-index: 10000; }
+.meteo-overlay.is-open { opacity: 1; pointer-events: auto; }
+.meteo-panel {
+  position: fixed; z-index: 10001; left: 50%; top: 50%; transform: translate(-50%, -46%) scale(.98);
+  width: min(34rem, 92vw); max-height: 88vh; opacity: 0; pointer-events: none;
+  background: var(--ech-paper, #fbf7ee); border: 1px solid var(--ech-rule); border-radius: 1rem;
+  box-shadow: 0 24px 70px rgba(20,16,8,.3); transition: opacity .25s, transform .25s; overflow: hidden;
+}
+.meteo-panel.is-open { opacity: 1; pointer-events: auto; transform: translate(-50%, -50%) scale(1); }
+.meteo-panel__close { position: absolute; top: .5rem; right: .65rem; z-index: 2; border: none; background: none; font-size: 1.6rem; line-height: 1; color: var(--ech-ink-mute); cursor: pointer; }
+.meteo-panel__scroll { overflow-y: auto; max-height: 88vh; padding: 1.4rem 1.5rem 1.6rem; }
+.meteo-panel__ciel { display: inline-block; font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--ciel, var(--ech-gold-deep)); margin-bottom: .5rem; }
+.meteo-panel__label { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; line-height: 1.25; color: var(--ech-ink); margin: 0 0 1rem; }
+.meteo-panel__bloc { margin-bottom: .9rem; }
+.meteo-panel__bloc p:last-child { margin: .15rem 0 0; line-height: 1.6; color: var(--ech-ink); }
+.meteo-panel__k { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ech-ink-mute); margin: 0; font-weight: 600; }
+.meteo-panel__bloc--chute { border-left: 2px solid var(--c-chute); padding-left: .7rem; }
+.meteo-panel__bloc--montee { border-left: 2px solid var(--c-vertu); padding-left: .7rem; }
+.meteo-panel__bloc--neutre { border-left: 2px solid var(--ech-gold); padding-left: .7rem; }
+.meteo-panel__q p:last-child { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.2rem; color: var(--ech-gold-deep); }
+.meteo-panel__suggest { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.1rem; color: var(--ech-ink); margin: 1.1rem 0 .5rem; }
+.meteo-panel__cases { display: flex; flex-direction: column; gap: .55rem; }
+.meteo-case {
+  display: grid; grid-template-columns: auto 1fr; grid-template-areas: "ar fr" "ar tr" "ar go";
+  gap: 0 .8rem; align-items: center; text-decoration: none;
+  border: 1px solid var(--ech-rule); border-radius: .7rem; padding: .6rem .8rem;
+  background: rgba(176,141,60,.06); transition: border-color .15s, background .15s;
+}
+.meteo-case:hover { border-color: var(--ech-gold); background: rgba(176,141,60,.12); }
+.meteo-case__ar { grid-area: ar; font-family: 'Amiri', serif; font-size: 1.7rem; color: var(--ech-gold-deep); }
+.meteo-case__fr { grid-area: fr; font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 600; color: var(--ech-ink); }
+.meteo-case__tr { grid-area: tr; font-style: italic; font-size: .88rem; color: var(--ech-ink-mute); }
+.meteo-case__go { grid-area: go; font-size: .8rem; color: var(--ech-gold-deep); }
+.meteo-panel__warn { font-size: .8rem; font-style: italic; color: var(--ech-ink-mute); line-height: 1.5; margin: 1.1rem 0 0; padding-top: .8rem; border-top: 1px solid var(--ech-rule); }
+
+/* Bouton-porte « Comment je me sens » (accueil + présentation) */
+.ech-meteo-cta {
+  display: block; max-width: 44rem; margin: 1.5rem auto; padding: 1.2rem 1.4rem; text-decoration: none;
+  border: 1px solid var(--ech-gold); border-radius: 1rem; text-align: center;
+  background: linear-gradient(180deg, rgba(176,141,60,.12), rgba(176,141,60,.03));
+  transition: box-shadow .18s, transform .1s;
+}
+.ech-meteo-cta:hover { box-shadow: 0 8px 26px rgba(176,141,60,.18); transform: translateY(-1px); }
+.ech-meteo-cta__ar { font-family: 'Amiri', serif; font-size: 1.3rem; color: var(--ech-gold-deep); margin: 0; }
+.ech-meteo-cta__t { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--ech-ink); margin: .1rem 0 .15rem; }
+.ech-meteo-cta__d { font-size: .92rem; color: var(--ech-ink-mute); margin: 0; }

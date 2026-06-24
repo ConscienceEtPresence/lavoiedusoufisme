@@ -239,6 +239,17 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
         ? `<button type="button" class="ech-fiche__navbtn" id="ech-next">case ${c.numero + 1} →</button>`
         : '<span aria-hidden="true"></span>';
 
+      const remedeHint = (c.remede && c.remede[0]) || 'Tiens bon : ne nourris pas l\'état, reviens au souffle, et patiente un instant.';
+      const deepHtml = [
+        c.explication_spirituelle ? champ('Sens spirituel', c.explication_spirituelle) : '',
+        c.mecanisme ? champ('Mécanisme', c.mecanisme) : '',
+        c.illusion_possible ? champ('Illusion possible', c.illusion_possible) : '',
+        c.ouverture ? champ('Ce que cela peut apprendre', c.ouverture) : '',
+        c.pratique ? champ('Pratique intérieure', c.pratique) : '',
+        (c.appui_scripturaire && c.appui_scripturaire.length) ? `<div class="ech-fiche__bloc ech-fiche__script"><p class="ech-fiche__label">Appui scripturaire</p><ul class="ech-fiche__refs">${c.appui_scripturaire.map(r => `<li>${esc(r)}</li>`).join('')}</ul><p class="ech-fiche__refs-note">Versets et hadiths cités par le commentaire pour fonder cette case.</p></div>` : '',
+        c.chemin_texte ? `<div class="ech-fiche__bloc ech-fiche__chemin"><p class="ech-fiche__label">Le chemin, pas à pas</p><p class="ech-fiche__txt">${esc(c.chemin_texte)}</p></div>` : '',
+        `<div class="ech-fiche__bloc ech-fiche__source"><p class="ech-fiche__label">Source</p><p class="ech-fiche__txt">${esc((c.source && c.source.fichier) || 'Michon, ARChè 1998')}</p></div>`
+      ].join('');
       scroll.innerHTML = `
         <span class="ech-fiche__cat" style="--case-color:${col}">${esc((c.categories || [])[0] ? (CAT_LABEL[c.categories[0]] || c.categories[0]) : 'case')}</span>
         <span class="ech-fiche__num">case ${c.numero} / 100</span>
@@ -246,28 +257,28 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
         <p class="ech-fiche__tr">${esc(c.translitteration)}</p>
         <h2 class="ech-fiche__fr">${esc(c.traduction)}</h2>
         ${cats ? `<p class="ech-fiche__txt" style="font-size:.85rem;color:var(--ech-ink-mute);margin:-.4rem 0 .6rem;">${esc(cats)}</p>` : ''}
-        <div class="ech-fiche__mode">
-          <p class="ech-fiche__mode-t">Mode d'emploi</p>
-          <p>Lire la case comme une reformulation pédagogique du commentaire : elle éclaire un mécanisme intérieur, pas un diagnostic sur la personne. Repérez ce qu'elle révèle, puis regardez si un mouvement la relie à une montée, une chute ou un retour.</p>
-        </div>
-        ${c.resume ? `<p class="ech-fiche__txt" style="font-style:italic;">${esc(c.resume)}</p>` : ''}
-        ${champ('Ce que c’est', c.explication_simple, 'Explication à venir — lecture en cours du commentaire arabe.')}
-        ${c.explication_spirituelle ? champ('Sens spirituel', c.explication_spirituelle) : ''}
-        ${c.mecanisme ? champ('Mécanisme', c.mecanisme) : ''}
-        ${(c.symptomes && c.symptomes.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Comment cela apparaît</p><ul class="ech-fiche__liste">${c.symptomes.map(s => `<li>${esc(s)}</li>`).join('')}</ul></div>` : ''}
-        ${c.illusion_possible ? champ('Illusion possible', c.illusion_possible) : ''}
-        ${c.ouverture ? champ('Ce que cela peut apprendre', c.ouverture) : ''}
-        ${(c.remede && c.remede.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Remède, retour</p><ul class="ech-fiche__liste">${c.remede.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
-        ${c.pratique ? champ('Pratique intérieure', c.pratique) : ''}
-        <div class="ech-fiche__bloc"><p class="ech-fiche__label">Question pour soi</p><p class="ech-fiche__q">${esc(question)}</p></div>
-        ${(c.appui_scripturaire && c.appui_scripturaire.length) ? `<div class="ech-fiche__bloc ech-fiche__script"><p class="ech-fiche__label">Appui scripturaire</p><ul class="ech-fiche__refs">${c.appui_scripturaire.map(r => `<li>${esc(r)}</li>`).join('')}</ul><p class="ech-fiche__refs-note">Versets et hadiths cités par le commentaire pour fonder cette case.</p></div>` : ''}
-        ${c.chemin_texte ? `<div class="ech-fiche__bloc ech-fiche__chemin"><p class="ech-fiche__label">Le chemin, pas à pas</p><p class="ech-fiche__txt">${esc(c.chemin_texte)}</p></div>` : ''}
-        ${c.numero < 100 ? `<div class="ech-fiche__bloc ech-fiche__ordinaire"><p class="ech-fiche__label">Mouvement ordinaire <span aria-hidden="true">→</span></p><p class="ech-fiche__txt">Sans saut particulier, le chemin se poursuit vers la case ${c.numero + 1}${byNum[c.numero + 1] ? ' — ' + esc(byNum[c.numero + 1].traduction) : ''}.</p></div>` : ''}
+        <div class="ech-fiche__mode"><p class="ech-fiche__mode-t">Tu es peut-être ici</p><p>Une case n'est pas une étiquette : c'est un mouvement de l'âme que tout le monde traverse. Regarde si cela résonne, vois la pente, puis pose un geste.</p></div>
+        ${champ('Ce que c’est', c.explication_simple, 'Explication à venir.')}
+        ${(c.symptomes && c.symptomes.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Comment je reconnais cet état</p><ul class="ech-fiche__liste">${c.symptomes.map(sy => `<li>${esc(sy)}</li>`).join('')}</ul></div>` : ''}
+        ${c.numero < 100 ? `<div class="ech-fiche__bloc ech-fiche__ordinaire"><p class="ech-fiche__label">Pente naturelle <span aria-hidden="true">→</span></p><p class="ech-fiche__txt">Sans saut particulier, le chemin se poursuit vers la case ${c.numero + 1}${byNum[c.numero + 1] ? ' — ' + esc(byNum[c.numero + 1].traduction) : ''}.</p></div>` : ''}
         ${relationBloc(rel.entrants, 'Ce qui a pu m\'amener ici — origine possible', 'entrant')}
         ${relationBloc(rel.sortants, 'Où cela peut conduire', 'sortant')}
-        <a class="ech-fiche__journal" href="/pages/echiquier/journal/?case=${c.numero}">✦ Noter cette case dans mon journal</a>
+        ${(c.remede && c.remede.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Action, remède</p><ul class="ech-fiche__liste">${c.remede.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
+        <div class="ech-fiche__bloc"><p class="ech-fiche__label">Question pour soi</p><p class="ech-fiche__q">${esc(question)}</p></div>
+        <div class="ech-suite">
+          <button type="button" class="ech-suite__btn" id="ech-continuer">Continuer le chemin <span aria-hidden="true">→</span></button>
+          <div class="ech-suite__menu" id="ech-suite-menu" hidden>
+            <p class="ech-suite__q">Où en es-tu, là ?</p>
+            <button type="button" class="ech-suite__opt" data-suite="encore">Je suis encore dans cet état</button>
+            ${c.numero < 100 ? `<button type="button" class="ech-suite__opt" data-suite="bascule">J'ai basculé vers la suite → case ${c.numero + 1}</button>` : ''}
+            ${rel.entrants.length ? `<button type="button" class="ech-suite__opt" data-suite="origine">Je veux comprendre d'où ça vient</button>` : ''}
+            <a class="ech-suite__opt ech-suite__opt--link" href="/pages/echiquier/journal/?case=${c.numero}">Noter ce moment dans mon journal</a>
+            <p class="ech-suite__note" id="ech-suite-note" hidden>${esc(remedeHint)}</p>
+          </div>
+        </div>
         <a class="ech-fiche__journal ech-fiche__recueil" href="/pages/carnet/?recueil=1&amp;source=echiquier-${c.numero}">❡ Recueillir un instant où cela m'a touché</a>
-        <div class="ech-fiche__bloc ech-fiche__source"><p class="ech-fiche__label">Source</p><p class="ech-fiche__txt">${esc((c.source && c.source.fichier) || 'Michon, ARChè 1998')}</p></div>
+        <button type="button" class="ech-fiche__deeptoggle" id="ech-deeptoggle" aria-expanded="false">Aller plus loin <span aria-hidden="true">▾</span></button>
+        <div class="ech-fiche__deep" id="ech-deep" hidden>${deepHtml}</div>
         <div class="ech-badge-valid">✦ ${esc(STATUT_TXT[c.statut] || c.statut)}</div>
         <div class="ech-fiche__nav">
           ${prevBtn}
@@ -279,6 +290,22 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
       document.getElementById('ech-next')?.addEventListener('click', () => openCase(c.numero + 1));
       // Glossaire en surimpression : rend les termes arabes cliquables dans la fiche.
       if (window.EchGloss) window.EchGloss.ready.then(() => window.EchGloss.annotate(scroll));
+      const contMenu = document.getElementById('ech-suite-menu');
+      document.getElementById('ech-continuer')?.addEventListener('click', () => { if (contMenu) contMenu.hidden = !contMenu.hidden; });
+      scroll.querySelectorAll('.ech-suite__opt[data-suite]').forEach(b => b.addEventListener('click', () => {
+        const act = b.dataset.suite;
+        if (act === 'bascule') openCase(c.numero + 1);
+        else if (act === 'origine') { const o = rel.entrants[0]; if (o) openCase(+o.from); }
+        else if (act === 'encore') { const nt = document.getElementById('ech-suite-note'); if (nt) nt.hidden = false; }
+      }));
+      const deepBtn = document.getElementById('ech-deeptoggle');
+      const deepEl = document.getElementById('ech-deep');
+      deepBtn?.addEventListener('click', () => {
+        const willOpen = deepEl.hidden;
+        deepEl.hidden = !willOpen;
+        deepBtn.setAttribute('aria-expanded', String(willOpen));
+        deepBtn.innerHTML = willOpen ? 'Replier <span aria-hidden="true">▴</span>' : 'Aller plus loin <span aria-hidden="true">▾</span>';
+      });
       scroll.scrollTop = 0;
 
       document.querySelectorAll('.ech-case').forEach(b => b.classList.toggle('is-active', +b.dataset.num === n));

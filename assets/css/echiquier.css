@@ -535,3 +535,33 @@
 .meteo-case__cond { grid-area: cond; font-size: .85rem; color: var(--ech-ink); font-style: italic; margin-top: .15rem; }
 .meteo-case--cond .meteo-case__ar { align-self: center; }
 .meteo-panel__suggest-hint { font-family: 'Inter', sans-serif; font-style: normal; font-size: .8rem; color: var(--ech-ink-mute); display: block; margin-top: .1rem; }
+
+/* ===== Fiche : Continuer le chemin + mode court/approfondi ===== */
+.ech-suite { margin: 1.1rem 0 .6rem; }
+.ech-suite__btn {
+  width: 100%; font: inherit; font-weight: 600; color: #fff; background: var(--ech-gold-deep);
+  border: none; border-radius: 2rem; padding: .7rem 1.2rem; cursor: pointer;
+  box-shadow: 0 4px 14px rgba(176,141,60,.3); transition: background .15s;
+}
+.ech-suite__btn:hover { background: var(--ech-ink); }
+.ech-suite__menu { margin-top: .6rem; display: flex; flex-direction: column; gap: .4rem;
+  border: 1px solid var(--ech-rule); border-radius: .8rem; padding: .8rem; background: rgba(176,141,60,.05); }
+.ech-suite__q { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.1rem; color: var(--ech-ink); margin: 0 0 .2rem; }
+.ech-suite__opt {
+  text-align: left; font: inherit; font-size: .92rem; color: var(--ech-ink); text-decoration: none;
+  background: var(--ech-paper, #fbf7ee); border: 1px solid var(--ech-rule); border-radius: .6rem;
+  padding: .55rem .75rem; cursor: pointer; transition: border-color .15s;
+}
+.ech-suite__opt:hover { border-color: var(--ech-gold); }
+.ech-suite__opt--link { color: var(--c-vertu); }
+.ech-suite__note { margin: .2rem 0 0; padding: .6rem .75rem; border-left: 2px solid var(--c-vertu);
+  font-style: italic; color: var(--ech-ink); background: rgba(120,160,90,.07); border-radius: .4rem; }
+.ech-fiche__deeptoggle {
+  display: block; width: 100%; margin: 1rem 0 .4rem; font: inherit; font-size: .9rem; font-weight: 600;
+  color: var(--ech-gold-deep); background: none; border: 1px dashed var(--ech-rule); border-radius: .7rem;
+  padding: .55rem; cursor: pointer; transition: background .15s;
+}
+.ech-fiche__deeptoggle:hover { background: rgba(176,141,60,.07); }
+.ech-fiche__deep[hidden] { display: none; }
+.ech-fiche__deep { animation: ech-deep-in .3s ease; }
+@keyframes ech-deep-in { from { opacity: 0; } to { opacity: 1; } }

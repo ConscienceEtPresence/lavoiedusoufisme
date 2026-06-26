@@ -544,6 +544,7 @@
   box-shadow: 0 4px 14px rgba(176,141,60,.3); transition: background .15s;
 }
 .ech-suite__btn:hover { background: var(--ech-ink); }
+.ech-suite__menu[hidden] { display: none; }
 .ech-suite__menu { margin-top: .6rem; display: flex; flex-direction: column; gap: .4rem;
   border: 1px solid var(--ech-rule); border-radius: .8rem; padding: .8rem; background: rgba(176,141,60,.05); }
 .ech-suite__q { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.1rem; color: var(--ech-ink); margin: 0 0 .2rem; }

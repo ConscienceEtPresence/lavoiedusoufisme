@@ -133,6 +133,36 @@
       });
     }
 
+    // ---- Sections du site (navigation) : trouvables par leur nom ----
+    // noEN: la page n'existe qu'en français → on garde le chemin FR dans les deux langues.
+    const SECTION = SR_EN ? 'Section' : 'Rubrique';
+    const PAGES = [
+      { fr: "L'Échiquier des gnostiques", en: 'The Chessboard of the Gnostics', path: 'pages/echiquier/', kw: 'echiquier gnostiques plateau ame soul chessboard gnostics', noEN: true },
+      { fr: 'Comment je me sens aujourd’hui', en: 'How I feel today', path: 'pages/echiquier/meteo/', kw: 'meteo emotion colere peur tristesse paix etat mood feel today state how i feel anger fear sadness peace', noEN: true },
+      { fr: 'Le plateau — 100 cases', en: 'The board — 100 squares', path: 'pages/echiquier/plateau/', kw: 'plateau cases board squares', noEN: true },
+      { fr: 'Journal intérieur', en: 'Inner journal', path: 'pages/echiquier/journal/', kw: 'journal note inner', noEN: true },
+      { fr: 'Mes répétitions', en: 'My recurrences', path: 'pages/echiquier/repetitions/', kw: 'repetitions boucles patterns recurrences', noEN: true },
+      { fr: 'Comment utiliser l’Échiquier', en: 'How to use the Chessboard', path: 'pages/echiquier/utiliser/', kw: 'mode emploi utiliser how to use guide', noEN: true },
+      { fr: 'Cheminer', en: 'Journeying', path: 'pages/cheminer.html', kw: 'cheminer chemin voie path journey way' },
+      { fr: 'Le carnet', en: 'The notebook', path: 'pages/carnet/', kw: 'carnet notebook vigilance instant' },
+      { fr: 'Le Coran', en: 'The Qur’an', path: 'pages/coran/', kw: 'coran quran sourate surah' },
+      { fr: 'Les 99 Noms divins', en: 'The 99 Divine Names', path: 'pages/noms-divins/', kw: 'noms divins divine names asma allah mediter meditate' },
+      { fr: 'Mots à méditer', en: 'Words to meditate', path: 'pages/dictionnaire/', kw: 'dictionnaire mots soufisme mediter meditate words terms' },
+      { fr: 'À la racine (arabe)', en: 'At the root (Arabic)', path: 'pages/racines/', kw: 'racines root arabe arabic mediter' },
+      { fr: 'La voie des sagesses — al-Iskandarī', en: 'The way of wisdom — al-Iskandarī', path: 'pages/iskandari/', kw: 'iskandari hikam sagesse wisdom ibn ata allah aphorisme', noEN: true },
+      { fr: 'Poésie', en: 'Poetry', path: 'pages/poesie/', kw: 'poesie poetry rumi hafiz poeme mediter' },
+      { fr: 'Les noms de l’amour', en: 'The names of love', path: 'pages/amour/', kw: 'amour love hubb mediter' },
+      { fr: 'Contes', en: 'Tales', path: 'pages/contes/', kw: 'contes tales nasreddin histoire' },
+    ];
+    PAGES.forEach(p => {
+      const base = p.noEN ? ROOT : DATA_ROOT;     // page FR-only → chemin FR dans les deux langues
+      idx.push({
+        type: SECTION, label: SR_EN ? p.en : p.fr, sub: SR_EN ? p.fr : p.en, ar: '',
+        url: base + p.path,
+        search: [p.fr, p.en, p.kw].join(' ').toLowerCase()
+      });
+    });
+
     // Repli des accents : index cherché sans diacritiques (rumi == Rūmī)
     idx.forEach(it => {
       it.search = fold(it.search);

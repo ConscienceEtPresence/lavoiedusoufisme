@@ -40,7 +40,7 @@
       '<p class="ech-gloss-pop__ar" lang="ar" dir="rtl"></p>' +
       '<p class="ech-gloss-pop__tr"></p>' +
       '<p class="ech-gloss-pop__def"></p>' +
-      '<a class="ech-gloss-pop__more" href="/pages/echiquier/glossaire/">Voir le glossaire complet →</a>';
+      '<a class="ech-gloss-pop__more" href="/pages/echiquier/glossaire/">' + (document.documentElement.lang==="en" ? 'See the full glossary →' : 'Voir le glossaire complet →') + '</a>';
     document.body.appendChild(pop);
     pop.querySelector('.ech-gloss-pop__close').addEventListener('click', hide);
     document.addEventListener('click', e => {

@@ -3,8 +3,24 @@
    Relie un état vécu (langage simple) à une ou plusieurs cases
    de l'Échiquier. Jamais un verdict : « tu sembles proche de… ».
    ============================================================ */
-const TON_TXT = { chute: 'Pente possible', montee: 'Ce que cela peut ouvrir', neutre: 'Direction' };
 const TON_ICON = { chute: '↓', montee: '↑', neutre: '→' };
+const _EN = document.documentElement.lang === 'en';
+const _P = _EN ? '/en' : '';
+const T = _EN ? {
+  ton: { chute: 'Possible slope', montee: 'What it may open', neutre: 'Direction' },
+  vis: 'What you are living', geste: 'One gesture, now', question: 'A question for you',
+  verif: 'To orient yourself', suggest: 'You seem close to…', hint: 'choose by what you live\u00a0:',
+  sq: 'square', openCard: 'open the full card →',
+  warn: 'A square is not a label or a judgement: it is a movement of the soul, which everyone passes through. The danger is not to feel it, but to settle in it.',
+  err: 'The inner map could not be loaded.'
+} : {
+  ton: { chute: 'Pente possible', montee: 'Ce que cela peut ouvrir', neutre: 'Direction' },
+  vis: 'Ce que tu vis', geste: 'Un geste, maintenant', question: 'Une question pour toi',
+  verif: "Pour t'orienter", suggest: 'Tu sembles proche de…', hint: 'choisis selon ce que tu vis\u00a0:',
+  sq: 'case', openCard: 'ouvrir la fiche complète →',
+  warn: "Une case n'est pas une étiquette ni un jugement : c'est un mouvement de l'âme, que tout le monde traverse. Le danger n'est pas de le ressentir, mais de s'y installer.",
+  err: "La carte intérieure n'a pas pu être chargée."
+};
 // Petites enluminures par ciel
 const ORN = {
   feu:  '<path d="M16 3c3 5-2 6 0 10 2-3 4-2 4 1 0 4-3 7-8 7s-8-3-8-8c0-4 3-6 5-9 1 2 2 3 4 3 1-2 2-4 3-5z"/>',
@@ -26,7 +42,7 @@ const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g,
     etatsData = await fetch(ECHROOT + 'etats.json?v=3').then(r => r.json());
     const cj = await fetch(ECHROOT + 'cases.json?v=20').then(r => r.json());
     for (const c of cj.cases) cases[c.numero] = c;
-  } catch (e) { mount.innerHTML = '<p style="text-align:center;color:#a85c43;">La carte intérieure n\'a pas pu être chargée.</p>'; return; }
+  } catch (e) { mount.innerHTML = '<p style="text-align:center;color:#a85c43;">'+T.err+'</p>'; return; }
 
   const ciels = etatsData.ciels, etats = etatsData.etats;
   const byCiel = {};
@@ -63,23 +79,23 @@ const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g,
       const cond = conds[i];
       return `<a class="meteo-case${cond ? ' meteo-case--cond' : ''}" href="/pages/echiquier/plateau/#case-${n}">
           <span class="meteo-case__ar" lang="ar" dir="rtl">${esc(c.arabe)}</span>
-          <span class="meteo-case__fr">case ${n} — ${esc(c.traduction)}</span>
+          <span class="meteo-case__fr">${T.sq} ${n} — ${esc(c.traduction)}</span>
           <span class="meteo-case__tr">${esc(c.translitteration)}</span>
           ${cond ? `<span class="meteo-case__cond">${esc(cond)}</span>` : ''}
-          <span class="meteo-case__go">ouvrir la fiche complète →</span>
+          <span class="meteo-case__go">${T.openCard}</span>
         </a>`;
     }).join('');
     scroll.innerHTML = `
       <span class="meteo-panel__ciel" style="--ciel:${ciel.couleur}">${esc(ciel.titre)} · <span lang="ar" dir="rtl">${esc(ciel.ar)}</span></span>
       <p class="meteo-panel__label">${esc(e.label)}</p>
-      <div class="meteo-panel__bloc"><p class="meteo-panel__k">Ce que tu vis</p><p>${esc(e.vis)}</p></div>
-      <div class="meteo-panel__bloc meteo-panel__bloc--${ton}"><p class="meteo-panel__k">${TON_TXT[ton]} <span aria-hidden="true">${TON_ICON[ton]}</span></p><p>${esc(e.pente)}</p></div>
-      <div class="meteo-panel__bloc"><p class="meteo-panel__k">Un geste, maintenant</p><p>${esc(e.geste)}</p></div>
-      <div class="meteo-panel__bloc meteo-panel__q"><p class="meteo-panel__k">Une question pour toi</p><p>${esc(e.question)}</p></div>
-      ${e.verif ? `<div class="meteo-panel__bloc meteo-panel__verif"><p class="meteo-panel__k">Pour t'orienter</p><p>${esc(e.verif)}</p></div>` : ''}
-      <p class="meteo-panel__suggest">Tu sembles proche de…${multi ? ' <span class="meteo-panel__suggest-hint">choisis selon ce que tu vis&nbsp;:</span>' : ''}</p>
+      <div class="meteo-panel__bloc"><p class="meteo-panel__k">${T.vis}</p><p>${esc(e.vis)}</p></div>
+      <div class="meteo-panel__bloc meteo-panel__bloc--${ton}"><p class="meteo-panel__k">${T.ton[ton]} <span aria-hidden="true">${TON_ICON[ton]}</span></p><p>${esc(e.pente)}</p></div>
+      <div class="meteo-panel__bloc"><p class="meteo-panel__k">${T.geste}</p><p>${esc(e.geste)}</p></div>
+      <div class="meteo-panel__bloc meteo-panel__q"><p class="meteo-panel__k">${T.question}</p><p>${esc(e.question)}</p></div>
+      ${e.verif ? `<div class="meteo-panel__bloc meteo-panel__verif"><p class="meteo-panel__k">${T.verif}</p><p>${esc(e.verif)}</p></div>` : ''}
+      <p class="meteo-panel__suggest">${T.suggest}${multi ? ` <span class="meteo-panel__suggest-hint">${T.hint}</span>` : ''}</p>
       <div class="meteo-panel__cases">${casesHtml}</div>
-      <p class="meteo-panel__warn">Une case n'est pas une étiquette ni un jugement : c'est un mouvement de l'âme, que tout le monde traverse. Le danger n'est pas de le ressentir, mais de s'y installer.</p>`;
+      <p class="meteo-panel__warn">${T.warn}</p>`;
     if (window.EchGloss) window.EchGloss.ready.then(() => window.EchGloss.annotate(scroll));
     scroll.scrollTop = 0;
     overlay.classList.add('is-open'); panel.classList.add('is-open');

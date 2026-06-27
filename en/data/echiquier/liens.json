@@ -1,0 +1,249 @@
+{
+  "_meta": {
+    "nature": "Complete network of ascents (arrows) and chains/grapnels (falls), as the author (al-Hāshimī) himself summarises them in the Prolegomena: 8 “causes of progress” and 9 “causes of return”. 17 movements, all sourced.",
+    "types": [
+      "chute",
+      "montee",
+      "retour",
+      "illusion"
+    ]
+  },
+  "liens": [
+    {
+      "from": 23,
+      "to": 44,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "Figurative desire can raise one to real desire (crossing 21 stations)."
+    },
+    {
+      "from": 39,
+      "to": 57,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "Compassion for the naked man raises one to good character (18 stations).",
+      "trajet_detaille": [
+        39,
+        38,
+        43,
+        44,
+        57
+      ]
+    },
+    {
+      "from": 40,
+      "to": 64,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "Good company raises one to good works (24 stations).",
+      "trajet_detaille": [
+        40,
+        39,
+        42,
+        43,
+        58,
+        57,
+        64
+      ]
+    },
+    {
+      "from": 48,
+      "to": 66,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "The realisations raise one to the supreme world (18 stations, via 47, 54, 55).",
+      "trajet_detaille": [
+        48,
+        47,
+        54,
+        55,
+        66
+      ]
+    },
+    {
+      "from": 50,
+      "to": 74,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "“In the way of God” raises one to Paradise (24 stations, via 49, 52, 53, 68, 67).",
+      "trajet_detaille": [
+        50,
+        49,
+        52,
+        53,
+        68,
+        67,
+        74
+      ]
+    },
+    {
+      "from": 55,
+      "to": 90,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "Courage raises one to testimonial vision (36 degrees, via 54, 67, 68, 73, 72).",
+      "trajet_detaille": [
+        55,
+        54,
+        67,
+        68,
+        73,
+        72,
+        90
+      ]
+    },
+    {
+      "from": 62,
+      "to": 96,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "The perfect guide leads to permanence in God, in a single step.",
+      "trajet_detaille": [
+        62,
+        63,
+        78,
+        77,
+        84,
+        85,
+        96
+      ]
+    },
+    {
+      "from": 69,
+      "to": 94,
+      "type": "montee",
+      "certitude": "verifie_arabe",
+      "lecture": "Useful knowledge raises one to the Muhammadan kingdom (25 degrees, via 72, 73, 88, 87).",
+      "trajet_detaille": [
+        69,
+        72,
+        73,
+        88,
+        87,
+        94
+      ]
+    },
+    {
+      "from": 11,
+      "to": 9,
+      "type": "chute",
+      "certitude": "verifie_arabe",
+      "lecture": "The grapnel of evil deeds drags lack of adab down to evil deeds (2 abysses).",
+      "trajet_detaille": [
+        11,
+        10,
+        9
+      ]
+    },
+    {
+      "from": 30,
+      "to": 7,
+      "type": "chute",
+      "certitude": "verifie_arabe",
+      "lecture": "The grapnel of blind impulsiveness drags down bad company (24 degrees, via 12, 13, 8).",
+      "trajet_detaille": [
+        30,
+        12,
+        13,
+        8,
+        7
+      ]
+    },
+    {
+      "from": 32,
+      "to": 5,
+      "type": "chute",
+      "certitude": "verifie_arabe",
+      "lecture": "The grapnel of abasement casts down sick reason (28 abysses, via 15, 16).",
+      "trajet_detaille": [
+        32,
+        15,
+        16,
+        5
+      ]
+    },
+    {
+      "from": 33,
+      "to": 6,
+      "type": "chute",
+      "certitude": "verifie_arabe",
+      "lecture": "The grapnel of “beneath the earth” casts down ignorance (28 abysses, via 14, 15).",
+      "trajet_detaille": [
+        33,
+        14,
+        15,
+        6
+      ]
+    },
+    {
+      "from": 34,
+      "to": 16,
+      "type": "chute",
+      "certitude": "verifie_arabe",
+      "lecture": "The grapnel of the great ocean casts down envy (20 abysses, via 35, 26, 25).",
+      "trajet_detaille": [
+        34,
+        35,
+        26,
+        25,
+        16
+      ]
+    },
+    {
+      "from": 45,
+      "to": 18,
+      "type": "chute",
+      "certitude": "verifie_arabe",
+      "lecture": "The grapnel of bad character casts down “the ruins” (33 steps, via 36, 37, 24, 23).",
+      "trajet_detaille": [
+        45,
+        36,
+        37,
+        24,
+        23,
+        18
+      ]
+    },
+    {
+      "from": 51,
+      "to": 8,
+      "type": "chute",
+      "certitude": "verifie_arabe",
+      "lecture": "The grapnel of hatred casts down affectation (44 abysses, via 32, 33, 13, 14).",
+      "trajet_detaille": [
+        51,
+        32,
+        33,
+        13,
+        14,
+        8
+      ]
+    },
+    {
+      "from": 91,
+      "to": 10,
+      "type": "chute",
+      "certitude": "verifie_arabe",
+      "lecture": "The grapnel of trial casts down conceit (82 stations, via 90, 71, 70, 51, 50, 31, 30, 11).",
+      "trajet_detaille": [
+        91,
+        90,
+        71,
+        70,
+        51,
+        50,
+        31,
+        30,
+        11,
+        10
+      ]
+    },
+    {
+      "from": 100,
+      "to": 4,
+      "type": "chute",
+      "certitude": "verifie_arabe",
+      "lecture": "Satan brings the traveller back to passion."
+    }
+  ]
+}

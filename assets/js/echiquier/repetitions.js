@@ -10,11 +10,12 @@ const MOMENT_LABEL = { grappin_evite: 'grappin évité', grappin_rencontre: 'gra
 function load() { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; } }
 
 (async () => {
+  const ECHROOT = (document.documentElement.lang === "en" ? "/en" : "") + "/data/echiquier/";
   const content = document.getElementById('rep-content');
   if (!content) return;
   let byNum = {};
   try {
-    const d = await fetch('/data/echiquier/cases.json?v=20').then(r => r.json());
+    const d = await fetch(ECHROOT + 'cases.json?v=20').then(r => r.json());
     for (const c of d.cases) byNum[c.numero] = c;
   } catch (e) {}
 

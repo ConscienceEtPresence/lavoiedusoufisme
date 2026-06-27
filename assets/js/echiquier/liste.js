@@ -54,14 +54,15 @@ function movementGuide(vueId, liens, byNum) {
 }
 
 (async () => {
+  const ECHROOT = (document.documentElement.lang === "en" ? "/en" : "") + "/data/echiquier/";
   const mount = document.getElementById('ech-liste');
   if (!mount) return;
   const vueId = window.ECH_VUE || 'glossaire';
   const vue = VUES[window.ECH_VUE] || VUES.glossaire;
   try {
     const [data, liensData] = await Promise.all([
-      fetch('/data/echiquier/cases.json?v=20').then(r => r.json()),
-      fetch('/data/echiquier/liens.json?v=9').then(r => r.json()).catch(() => ({ liens: [] }))
+      fetch(ECHROOT + 'cases.json?v=20').then(r => r.json()),
+      fetch(ECHROOT + 'liens.json?v=9').then(r => r.json()).catch(() => ({ liens: [] }))
     ]);
     let cases = (data.cases || []).slice();
     const byNum = {};

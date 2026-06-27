@@ -1,0 +1,988 @@
+{
+  "_meta": {
+    "role": "“How do I feel today” compass: links a lived state (in plain language) to one or more squares. Never a verdict: “you seem close to…”.",
+    "principe": "A square is neither an identity nor a judgement: it is a movement of the soul. The danger is not to feel, but to settle in."
+  },
+  "ciels": [
+    {
+      "id": "feu",
+      "titre": "Fire",
+      "ar": "النار",
+      "tr": "al-nār",
+      "sous": "Anger, reaction, harshness",
+      "couleur": "var(--c-chute)"
+    },
+    {
+      "id": "hawa",
+      "titre": "Inclination",
+      "ar": "الهوى",
+      "tr": "al-hawā",
+      "sous": "Desire, temptation, lack",
+      "couleur": "var(--c-etat)"
+    },
+    {
+      "id": "nafs",
+      "titre": "The self",
+      "ar": "النفس",
+      "tr": "al-nafs",
+      "sous": "Pride, appearance, comparison",
+      "couleur": "var(--c-illusion)"
+    },
+    {
+      "id": "huzn",
+      "titre": "The shadow",
+      "ar": "الحزن",
+      "tr": "al-ḥuzn",
+      "sous": "Sadness, regret, fall",
+      "couleur": "var(--c-danger)"
+    },
+    {
+      "id": "khawf",
+      "titre": "Fear",
+      "ar": "الخوف",
+      "tr": "al-khawf",
+      "sous": "Fear, doubt, confusion",
+      "couleur": "var(--c-station)"
+    },
+    {
+      "id": "uzla",
+      "titre": "Withdrawal",
+      "ar": "العزلة",
+      "tr": "al-ʿuzla",
+      "sous": "Solitude, separation, desert",
+      "couleur": "var(--c-concept)"
+    },
+    {
+      "id": "nur",
+      "titre": "Light",
+      "ar": "النور",
+      "tr": "al-nūr",
+      "sous": "Peace, joy, love, upward longing",
+      "couleur": "var(--c-vertu)"
+    }
+  ],
+  "etats": [
+    {
+      "id": "colere",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "I am angry",
+      "cases": [
+        7,
+        8
+      ],
+      "vis": "A tension rises, the fire catches.",
+      "pente": "Reacting on the spot calls for retaliation (impulsiveness, 7); brooding hardens into rancour (hatred, 8).",
+      "geste": "Decide and say nothing now: a breath, a glass of water, a step outside.",
+      "question": "Does this anger want to mend a truth, or to wound?",
+      "verif": "Is it a flare of the moment, or a rancour that lasts?",
+      "conditions": [
+        "if it is immediate, explosive",
+        "if it lasts, broods, becomes rancour"
+      ]
+    },
+    {
+      "id": "repondre-sec",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "I want to answer curtly",
+      "cases": [
+        7
+      ],
+      "vis": "The urge of a biting reply.",
+      "pente": "If I give in, retaliation follows, then regret.",
+      "geste": "Defer the answer: do not write, do not send, wait.",
+      "question": "Does my reply seek to enlighten, or to sting?"
+    },
+    {
+      "id": "parle-vite",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "I speak too fast, without thinking",
+      "cases": [
+        7
+      ],
+      "vis": "Words leave before thought.",
+      "pente": "Haste (impulsiveness, 7) often wounds without meaning to.",
+      "geste": "Count three breaths before speaking.",
+      "question": "What do I really want to say, in one calm sentence?"
+    },
+    {
+      "id": "exploser",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "I feel I am about to explode",
+      "cases": [
+        7,
+        10
+      ],
+      "vis": "Inner pressure seeks an outlet.",
+      "pente": "The outburst brings consequences (trial, 10) that one then inherits.",
+      "geste": "Step physically out of the situation for a few minutes.",
+      "question": "What, beneath this pressure, is asking to be heard?",
+      "conditions": [
+        "if the pressure seeks an outlet now",
+        "if you already suffer its consequences"
+      ]
+    },
+    {
+      "id": "impatient",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "I am impatient, everything irritates me",
+      "cases": [
+        7
+      ],
+      "vis": "Irritation makes one hard toward all that resists.",
+      "pente": "Impatience wears down the bond and rushes into abrupt gestures.",
+      "geste": "Slow down a single action, deliberately.",
+      "question": "What does this haste think it will gain?"
+    },
+    {
+      "id": "provoque",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "I feel provoked",
+      "cases": [
+        8,
+        7
+      ],
+      "vis": "A sore point has been touched, the urge to repay rises.",
+      "pente": "Wanting to “repay” slides from the wound (7) to rancour (8).",
+      "geste": "Name the wound to yourself before acting.",
+      "question": "Is it really the other, or an old scar he has grazed?",
+      "conditions": [
+        "if the wound lasts and wants to “repay”",
+        "if the reaction is immediate"
+      ]
+    },
+    {
+      "id": "dernier-mot",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "I want the last word",
+      "cases": [
+        19,
+        8
+      ],
+      "vis": "The need to be right takes precedence over truth.",
+      "pente": "This need masks pride and feeds rancour.",
+      "geste": "Leave the last word to the other, just once.",
+      "question": "What am I defending: the truth, or my image?",
+      "conditions": [
+        "if it is the need to appear",
+        "if it feeds a rancour"
+      ]
+    },
+    {
+      "id": "rumine",
+      "ciel": "feu",
+      "ton": "chute",
+      "label": "I am brooding over an offence",
+      "cases": [
+        8
+      ],
+      "vis": "A wound turns in a loop and hardens the heart.",
+      "pente": "Settled, rancour (8) calls for deeds one regrets (9).",
+      "geste": "Entrust the wound to God rather than replay it in thought.",
+      "question": "What does my heart truly gain by keeping this offence?"
+    },
+    {
+      "id": "plaisir",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "I am drawn to an immediate pleasure",
+      "cases": [
+        4
+      ],
+      "vis": "Desire arises — that is life. Passing through it does nothing.",
+      "pente": "Sitting in it slides toward abasement (5): one feels diminished afterward.",
+      "geste": "Let the wave pass: defer ten minutes, return to the body.",
+      "question": "Is it I who hold this desire, or it that holds me?"
+    },
+    {
+      "id": "obsede",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "I am obsessed by a craving",
+      "cases": [
+        4,
+        24
+      ],
+      "vis": "A thought returns ceaselessly and fills everything.",
+      "pente": "Obsession drowns the heart in an ocean of agitation (24).",
+      "geste": "Turn attention toward a simple, concrete act.",
+      "question": "Does this craving fill a real need, or a void?",
+      "conditions": [
+        "if a precise craving returns",
+        "if you are drowning in agitation"
+      ]
+    },
+    {
+      "id": "mauvaise-habitude",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "I want to give in to a bad habit",
+      "cases": [
+        4,
+        15
+      ],
+      "vis": "The old fold calls to itself.",
+      "pente": "Giving in by habit leads toward the forbidden (15).",
+      "geste": "Place an obstacle between yourself and the object, however small.",
+      "question": "What does this habit truly cost me?",
+      "conditions": [
+        "if it is desire calling",
+        "if the habit touches the forbidden"
+      ]
+    },
+    {
+      "id": "desir-gouverne",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "I feel my desire is governing me",
+      "cases": [
+        4,
+        5
+      ],
+      "vis": "Desire holds the reins in my place.",
+      "pente": "Governed by it, one stoops to what it commands (5).",
+      "geste": "Take back one free decision, however tiny, against the slope.",
+      "question": "Who decides right now: me, or my craving?",
+      "conditions": [
+        "if desire takes the reins",
+        "if you already feel lowered"
+      ]
+    },
+    {
+      "id": "compensation",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "I am seeking a compensation",
+      "cases": [
+        4,
+        22
+      ],
+      "vis": "A lack pushes one to fill up quickly.",
+      "pente": "Compensation covets (22) without filling — it revives the lack.",
+      "geste": "Name the true lack before plugging it.",
+      "question": "What am I really trying to soothe?",
+      "conditions": [
+        "if a lack pushes you to fill up",
+        "if you covet to fill a void"
+      ]
+    },
+    {
+      "id": "exces",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "I am in excess",
+      "cases": [
+        4,
+        5
+      ],
+      "vis": "Too much of everything: the impulse outruns measure.",
+      "pente": "Excess degrades (5) what a just measure would have nourished.",
+      "geste": "Set a simple limit, right now.",
+      "question": "Where would the just measure be, here?",
+      "conditions": [
+        "if the impulse outruns measure",
+        "if you feel diminished afterward"
+      ]
+    },
+    {
+      "id": "posseder",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "I want to possess someone or something",
+      "cases": [
+        22,
+        23
+      ],
+      "vis": "Attachment wants to seize, to hold.",
+      "pente": "Wanting to possess enchains (22); but a love that raises can lead higher (23→44).",
+      "geste": "Loosen the grip: love without capturing.",
+      "question": "Do I love, or do I want to possess?",
+      "conditions": [
+        "if you want to seize and hold",
+        "if it is a love that could raise"
+      ]
+    },
+    {
+      "id": "convoite",
+      "ciel": "hawa",
+      "ton": "chute",
+      "label": "I covet what I have not the means to obtain",
+      "cases": [
+        22
+      ],
+      "vis": "To desire without the right means is to put oneself in dependence.",
+      "pente": "“You are a slave to what you covet” — covetousness keeps one on a leash.",
+      "geste": "Separate what depends on my effort from what does not.",
+      "question": "Is it a need, or a lack projected onto this object?"
+    },
+    {
+      "id": "superieur",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "I feel superior to others",
+      "cases": [
+        91,
+        63
+      ],
+      "vis": "A real progress — but the “I” takes hold of it.",
+      "pente": "It is the most violent fall on the board (91, 82 steps): a virtue the ego seizes brings one down.",
+      "geste": "Return the merit to its Source: “by His grace”, not “by me”.",
+      "question": "And what if all this had been given to me rather than earned?",
+      "conditions": [
+        "if the “I” claims the merit",
+        "if you believe you have arrived"
+      ]
+    },
+    {
+      "id": "reconnu",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "I want to be recognised",
+      "cases": [
+        51
+      ],
+      "vis": "The need for others' gaze drives one to act.",
+      "pente": "Acting to be seen (51) turns to rancour when praise is lacking.",
+      "geste": "Do a good deed today that no one knows about.",
+      "question": "Would I do this gesture if no one were ever to see it?"
+    },
+    {
+      "id": "voir-valeur",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "I want my worth to be seen",
+      "cases": [
+        51,
+        19
+      ],
+      "vis": "The urge to show, to prove.",
+      "pente": "Polishing the image (51) slides toward double-dealing (hypocrisy, 19).",
+      "geste": "Let worth speak for itself, without staging it.",
+      "question": "Does my worth need to be seen in order to exist?",
+      "conditions": [
+        "if you seek the gaze, the praise",
+        "if the gap between image and truth widens"
+      ]
+    },
+    {
+      "id": "compare",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "I compare myself to others",
+      "cases": [
+        34
+      ],
+      "vis": "The gaze ceaselessly measures the gap.",
+      "pente": "Comparison opens the door to envy (34), which gnaws.",
+      "geste": "Return to your own pace, without the yardstick of others.",
+      "question": "To whom am I comparing myself, and why him?"
+    },
+    {
+      "id": "jaloux",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "I am jealous of another's success",
+      "cases": [
+        34
+      ],
+      "vis": "One would want his good — or that he be deprived of it.",
+      "pente": "Envy (34) casts one toward the anxiety of the “great ocean”.",
+      "geste": "Wish for the other what you would wish for yourself.",
+      "question": "Do I want this good, or that he not have it?"
+    },
+    {
+      "id": "paraitre-mieux",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "I want to appear better than I am",
+      "cases": [
+        19
+      ],
+      "vis": "The gap between the image and the truth widens.",
+      "pente": "Appearing (19) ends by cutting one off from oneself and from others.",
+      "geste": "Say one true, simple thing about yourself, without varnish.",
+      "question": "What do I fear will be seen if I am true?"
+    },
+    {
+      "id": "semblant",
+      "ciel": "nafs",
+      "ton": "neutre",
+      "label": "I pretend to be fine",
+      "cases": [
+        19,
+        43
+      ],
+      "vis": "One masks the trouble behind a smooth face.",
+      "pente": "The mask (19) exhausts; the hidden trouble (43) grows.",
+      "geste": "Allow yourself, with a trusted person, not to be fine.",
+      "question": "To whom could I tell the truth of my state?",
+      "conditions": [
+        "if you mask behind a smooth face",
+        "if a hidden trouble is growing"
+      ]
+    },
+    {
+      "id": "crois-arrive",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "I believe I have arrived",
+      "cases": [
+        63
+      ],
+      "vis": "The conviction of having attained, of being above.",
+      "pente": "This certainty (63) forms a veil that cuts one off from true guidance.",
+      "geste": "Make room for just doubt: “and what if I did not see everything?”",
+      "question": "Does my certainty come from the true, or from the need to be right?"
+    },
+    {
+      "id": "meprise",
+      "ciel": "nafs",
+      "ton": "chute",
+      "label": "I despise someone",
+      "cases": [
+        36,
+        8
+      ],
+      "vis": "The gaze lowers the other.",
+      "pente": "Contempt (36) hardens and feeds hatred (8).",
+      "geste": "Look, in this person, for one single worthy thing.",
+      "question": "What does this contempt protect, or avenge, in me?",
+      "conditions": [
+        "if the gaze lowers the other",
+        "if contempt hardens into hatred"
+      ]
+    },
+    {
+      "id": "regrette-dit",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "I regret what I said",
+      "cases": [
+        17,
+        11
+      ],
+      "vis": "The weight of a word that wounded.",
+      "pente": "Regret (17) can imprison, or open a repair.",
+      "geste": "Repair simply: acknowledge, offer apologies.",
+      "question": "Does my regret nail me down, or set me moving again?",
+      "conditions": [
+        "if regret weighs without follow-up",
+        "if you lost your inner bearing"
+      ]
+    },
+    {
+      "id": "regrette-fait",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "I regret what I did",
+      "cases": [
+        17,
+        29
+      ],
+      "vis": "The remorse of a failed deed.",
+      "pente": "Sterile remorse weighs; repentance (toward imploring, 29) lifts.",
+      "geste": "Turn remorse into a sincere request and a gesture of repair.",
+      "question": "What does this regret ask me to do, concretely?",
+      "conditions": [
+        "if remorse turns in circles",
+        "if you want to turn to God and repair"
+      ]
+    },
+    {
+      "id": "tombe",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "I feel I have fallen inwardly",
+      "cases": [
+        18,
+        10
+      ],
+      "vis": "The sense of having slipped low.",
+      "pente": "The fall (bad character, 18) is not an end: it is a call to return.",
+      "geste": "Do not despair: a single step upward is enough to begin.",
+      "question": "What very small return is possible, right now?",
+      "conditions": [
+        "if you feel slipped low",
+        "if you suffer its consequences"
+      ]
+    },
+    {
+      "id": "honteux",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "I feel ashamed",
+      "cases": [
+        17
+      ],
+      "vis": "Shame bows the gaze.",
+      "pente": "Shame can crush, or awaken just modesty (regret, 17).",
+      "geste": "Distinguish the fault (repairable) from yourself (which is not the fault).",
+      "question": "Does this shame correct me, or sink me?"
+    },
+    {
+      "id": "abattu",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "I feel downcast, heavy",
+      "cases": [
+        10,
+        43
+      ],
+      "vis": "The weight of the world on one's shoulders.",
+      "pente": "Trial (10) and trouble (43) tighten — well received, they turn one toward God.",
+      "geste": "Ask only one step: get up, drink, pray, go out.",
+      "question": "Toward what does this heaviness push me, in hollow?",
+      "conditions": [
+        "if the weight comes from the world",
+        "if an inner trouble bogs you down"
+      ]
+    },
+    {
+      "id": "triste-sterile",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "I am in a sadness that leads nowhere",
+      "cases": [
+        43
+      ],
+      "vis": "A trouble that turns on itself.",
+      "pente": "Sterile sadness bogs down; received, it prompts renunciation.",
+      "geste": "Give the trouble a form: write it, name it, entrust it.",
+      "question": "Does this sadness open me, or shut me in?"
+    },
+    {
+      "id": "consequences",
+      "ciel": "huzn",
+      "ton": "neutre",
+      "label": "I see the consequences of my acts",
+      "cases": [
+        10
+      ],
+      "vis": "The trial reveals what was sown.",
+      "pente": "Trial (10) can crush, or become a “mine” of awakening.",
+      "geste": "Welcome the lesson without condemning yourself, then act.",
+      "question": "What does this consequence teach me for what follows?"
+    },
+    {
+      "id": "reprendre",
+      "ciel": "huzn",
+      "ton": "montee",
+      "label": "I want to take up the path again",
+      "cases": [
+        29
+      ],
+      "vis": "After the fall, the impulse of return.",
+      "pente": "Return passes through imploring (29): the tongue is loosened toward God.",
+      "geste": "Make a first concrete gesture of resumption, however small.",
+      "question": "What first step marks my return, today?"
+    },
+    {
+      "id": "peur",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "I am afraid",
+      "cases": [
+        26,
+        27
+      ],
+      "vis": "Fear of an ill, of a lack, of a tomorrow.",
+      "pente": "Fear can turn around: from things toward God alone (27).",
+      "geste": "Lay the fear where it belongs; name what it shelters.",
+      "question": "What exactly am I afraid of, and what does it shelter?",
+      "conditions": [
+        "if it is fear of a precise ill",
+        "if it turns toward God alone"
+      ]
+    },
+    {
+      "id": "inquiet",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "I am anxious",
+      "cases": [
+        26,
+        35
+      ],
+      "vis": "Anxiety would fly out of the narrow (35).",
+      "pente": "In wanting to flee, one wears oneself out without finding air.",
+      "geste": "Return to the moment, to what is really here.",
+      "question": "Does my anxiety bear on what depends on me?",
+      "conditions": [
+        "if anxiety tightens you",
+        "if you would flee the narrowness"
+      ]
+    },
+    {
+      "id": "perdu",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "I am lost, I no longer know where to go",
+      "cases": [
+        24
+      ],
+      "vis": "The ocean of perplexity: no more landmark.",
+      "pente": "Perplexity drowns one who flails, ripens one who waits.",
+      "geste": "Hold on without forcing: clarity returns to one who does not struggle.",
+      "question": "Am I truly lost, or am I ripening?"
+    },
+    {
+      "id": "ne-sais-faire",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "I no longer know what to do",
+      "cases": [
+        24,
+        28
+      ],
+      "vis": "Between two, unable to decide (28).",
+      "pente": "Prolonged indecision wears down and makes one doubt everything.",
+      "geste": "Choose the smallest just act possible, and do it.",
+      "question": "What is the next right thing, however tiny?",
+      "conditions": [
+        "if you are drowning in indecision",
+        "if you are between two, unable to choose"
+      ]
+    },
+    {
+      "id": "doute",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "I am in doubt",
+      "cases": [
+        24
+      ],
+      "vis": "The ground seems to give way under thought.",
+      "pente": "Agitated doubt drowns; held calmly, it refines.",
+      "geste": "Suspend judgement, return to the breath and the real.",
+      "question": "Does this doubt seek the truth, or only to trouble me?"
+    },
+    {
+      "id": "confusion",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "I am in confusion",
+      "cases": [
+        24,
+        20
+      ],
+      "vis": "Thoughts collide, blurred.",
+      "pente": "Confusion opens to whisperings (20) that amplify it.",
+      "geste": "Write three lines to set the chaos outside the head.",
+      "question": "What, behind the noise, asks to be seen clearly?",
+      "conditions": [
+        "if thoughts collide",
+        "if whisperings join in"
+      ]
+    },
+    {
+      "id": "scrupules",
+      "ciel": "khawf",
+      "ton": "neutre",
+      "label": "I am overwhelmed by scruples",
+      "cases": [
+        20
+      ],
+      "vis": "Insistent whisperings, endless “what ifs”.",
+      "pente": "The whispering (20) swells as soon as one argues with it.",
+      "geste": "Do not argue with the voice: let it pass without answering.",
+      "question": "Does this scruple come from conscience, or from torment?"
+    },
+    {
+      "id": "seul",
+      "ciel": "uzla",
+      "ton": "neutre",
+      "label": "I feel alone",
+      "cases": [
+        31,
+        49
+      ],
+      "vis": "The inner desert, the sense of being apart.",
+      "pente": "Solitude can sour (31), or become an inhabited retreat.",
+      "geste": "People the solitude with a presence: prayer, reading, walking.",
+      "question": "Does this solitude move me away from people, or closer to the essential?",
+      "conditions": [
+        "if solitude makes you morose",
+        "if the heart seeks outside what it has lost"
+      ]
+    },
+    {
+      "id": "eloigner",
+      "ciel": "uzla",
+      "ton": "montee",
+      "label": "I must move away from an influence",
+      "cases": [
+        30,
+        31
+      ],
+      "vis": "The need to leave what pulls downward.",
+      "pente": "Leaving bad company (30) opens onto the desert (31), a passage before good company.",
+      "geste": "Reduce contact today, without drama or reproach.",
+      "question": "After this presence, am I higher or lower?",
+      "conditions": [
+        "if you are leaving bad company",
+        "if you are entering an inner desert"
+      ]
+    },
+    {
+      "id": "quitter-compagnie",
+      "ciel": "uzla",
+      "ton": "montee",
+      "label": "I am leaving a bad company",
+      "cases": [
+        31,
+        40
+      ],
+      "vis": "An airlock of solitude after the separation.",
+      "pente": "The desert (31) is not an end: it prepares good company (40).",
+      "geste": "Hold the void without filling it with just anything.",
+      "question": "Toward what truer presence does this withdrawal prepare me?",
+      "conditions": [
+        "if you cross the desert of the airlock",
+        "if you are preparing for good company"
+      ]
+    },
+    {
+      "id": "vide",
+      "ciel": "uzla",
+      "ton": "neutre",
+      "label": "I am going through an emptiness",
+      "cases": [
+        49,
+        31
+      ],
+      "vis": "A hollow, an absence of savour.",
+      "pente": "The nostalgic heart (49) seeks, outside, a proof it has lost.",
+      "geste": "Hand over soul and burden to the Most High, and wait.",
+      "question": "Is this void a loss, or a space being made?",
+      "conditions": [
+        "if the heart is nostalgic",
+        "if it is a space being made"
+      ]
+    },
+    {
+      "id": "avec-qui",
+      "ciel": "uzla",
+      "ton": "neutre",
+      "label": "I do not yet know whom to go forward with",
+      "cases": [
+        31,
+        40
+      ],
+      "vis": "Between two companies, waiting.",
+      "pente": "Better the desert (31) than a company that lowers.",
+      "geste": "Do not rush: choose consciously, not out of fear of the void.",
+      "question": "Who, around me, makes me better?",
+      "conditions": [
+        "if you hesitate (better the desert)",
+        "if you seek a just presence"
+      ]
+    },
+    {
+      "id": "silence",
+      "ciel": "uzla",
+      "ton": "montee",
+      "label": "I feel the need for silence",
+      "cases": [
+        54,
+        31
+      ],
+      "vis": "The need to set oneself down, to fall silent.",
+      "pente": "Rest (54) makes one available to all, once at peace with oneself.",
+      "geste": "Grant yourself a true time of silence, without a screen.",
+      "question": "What does my heart need that the noise covers over?",
+      "conditions": [
+        "if you need rest",
+        "if you withdraw to find yourself again"
+      ]
+    },
+    {
+      "id": "solitude-amere",
+      "ciel": "uzla",
+      "ton": "neutre",
+      "label": "I am in a bitter solitude",
+      "cases": [
+        49,
+        31
+      ],
+      "vis": "Isolation weighs, without sweetness.",
+      "pente": "Nostalgia (49) can embitter, or turn into prayer.",
+      "geste": "Turn the complaint into a request: speak to God of this lack.",
+      "question": "To whom, or to what, would this bitterness want to be joined?",
+      "conditions": [
+        "if isolation embitters",
+        "if nostalgia seeks to be joined"
+      ]
+    },
+    {
+      "id": "solitude-saine",
+      "ciel": "uzla",
+      "ton": "montee",
+      "label": "I am in a healthy solitude",
+      "cases": [
+        31,
+        54
+      ],
+      "vis": "A chosen, peaceful withdrawal.",
+      "pente": "Well inhabited, the retreat becomes rest (54) and clarity.",
+      "geste": "Savour this calm, and make of it a fertile face-to-face.",
+      "question": "What does this silence give back to me that is truer?",
+      "conditions": [
+        "if it is a chosen, peaceful withdrawal",
+        "if it becomes fertile rest"
+      ]
+    },
+    {
+      "id": "bonne-compagnie",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "I am in good company",
+      "cases": [
+        40
+      ],
+      "vis": "A presence that brings one back to the essential.",
+      "pente": "Dwelling in it raises one, in a single step, toward good works (64).",
+      "geste": "Tend this bond; imitate one quality, turn it into act.",
+      "question": "What good deed does this presence inspire in me?"
+    },
+    {
+      "id": "apaise",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "I feel at peace",
+      "cases": [
+        3,
+        67
+      ],
+      "vis": "A quiet ease, a settled heart.",
+      "pente": "Contentment (3, 67) is a door that stabilises.",
+      "geste": "Taste without seizing; give thanks for the moment as it is.",
+      "question": "Does this peace come from what I have, or from what I am before God?",
+      "conditions": [
+        "if the ease is quiet, settled",
+        "if you fully accept what is"
+      ]
+    },
+    {
+      "id": "satisfaction",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "I feel satisfaction",
+      "cases": [
+        67,
+        68
+      ],
+      "vis": "The good pleasure of what is given (riḍwān).",
+      "pente": "Satisfaction then calls for the just inner struggle (68).",
+      "geste": "Observe what, in me, still resists what I accept.",
+      "question": "What, in me, still refuses what I say I accept?",
+      "conditions": [
+        "if it is the good pleasure of what is given",
+        "if it calls for the inner struggle"
+      ]
+    },
+    {
+      "id": "accepte",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "I accept what comes",
+      "cases": [
+        67
+      ],
+      "vis": "Consent to the decree, in good as in trial.",
+      "pente": "Contentment (riḍā, 67) opens and soothes the heart.",
+      "geste": "Act on what depends on me, let go of the rest.",
+      "question": "Is my “yes” of the heart, or only of the lips?"
+    },
+    {
+      "id": "faire-bien",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "I want to do good",
+      "cases": [
+        64,
+        39
+      ],
+      "vis": "The impulse toward the just act.",
+      "pente": "Good works (64) — fasting, helping the weak — truly raise.",
+      "geste": "Choose a single concrete act, and do it today.",
+      "question": "What good, within my reach, only waits to be done?",
+      "conditions": [
+        "if the impulse goes toward a just act",
+        "if tenderness goes toward a destitute one"
+      ]
+    },
+    {
+      "id": "courage",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "I feel courage",
+      "cases": [
+        55
+      ],
+      "vis": "The impulse to face, to give oneself.",
+      "pente": "Courage (55) raises one, in a single step, toward testimonial vision (90).",
+      "geste": "Put courage at the service of the just, not of pride.",
+      "question": "Does my courage serve truth, or my pride?"
+    },
+    {
+      "id": "comprends",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "I understand something important",
+      "cases": [
+        48,
+        69
+      ],
+      "vis": "A light dawns, a realisation.",
+      "pente": "Lived knowledge (69) and the realisations (48) raise upward.",
+      "geste": "Put this understanding into act before seeking another.",
+      "question": "What I understand — do I live it, or only know it?",
+      "conditions": [
+        "if it is an inner realisation",
+        "if it is knowledge being lived"
+      ]
+    },
+    {
+      "id": "apprendre",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "I thirst to learn, to know God",
+      "cases": [
+        69,
+        65
+      ],
+      "vis": "The thirst for the knowledge of the heart.",
+      "pente": "“Whoever acts on what he knows, God teaches him what he does not” (69→94).",
+      "geste": "Put a single known thing into practice.",
+      "question": "What I learn — do I live it?",
+      "conditions": [
+        "if you want to put it into practice",
+        "if you seek certainty"
+      ]
+    },
+    {
+      "id": "appel",
+      "ciel": "nur",
+      "ton": "montee",
+      "label": "I feel a call toward God, toward the heights",
+      "cases": [
+        68,
+        29
+      ],
+      "vis": "An inner impulse, a longing for the heights.",
+      "pente": "This call is nourished by the just struggle (68) and imploring (29).",
+      "geste": "Answer with a simple act of worship, right now.",
+      "question": "What, in me, already answers this call?",
+      "conditions": [
+        "if the impulse asks for the just struggle",
+        "if the heart wants to implore"
+      ]
+    }
+  ]
+}

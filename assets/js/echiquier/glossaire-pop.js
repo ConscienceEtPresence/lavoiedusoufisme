@@ -6,6 +6,7 @@
    Réutilisable : window.EchGloss.ready puis EchGloss.annotate(el).
    ============================================================ */
 (function () {
+  const ECHROOT = (document.documentElement.lang === "en" ? "/en" : "") + "/data/echiquier/";
   // Normalise pour comparer : minuscules, sans signes diacritiques ni ʿ/ʾ.
   const norm = s => s.toLowerCase()
     .normalize('NFD').replace(/\p{M}/gu, '')
@@ -15,7 +16,7 @@
   let index = [];           // [{key(normalisé), term}], triés du plus long au plus court
   let pop = null;
 
-  const ready = fetch('/data/echiquier/glossaire.json?v=1')
+  const ready = fetch(ECHROOT + 'glossaire.json?v=1')
     .then(r => r.json())
     .then(d => {
       termes = d.termes || [];

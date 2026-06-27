@@ -18,12 +18,13 @@ const ORN = {
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 (async () => {
+  const ECHROOT = (document.documentElement.lang === "en" ? "/en" : "") + "/data/echiquier/";
   const mount = document.getElementById('meteo-ciels');
   if (!mount) return;
   let etatsData, cases = {};
   try {
-    etatsData = await fetch('/data/echiquier/etats.json?v=3').then(r => r.json());
-    const cj = await fetch('/data/echiquier/cases.json?v=20').then(r => r.json());
+    etatsData = await fetch(ECHROOT + 'etats.json?v=3').then(r => r.json());
+    const cj = await fetch(ECHROOT + 'cases.json?v=20').then(r => r.json());
     for (const c of cj.cases) cases[c.numero] = c;
   } catch (e) { mount.innerHTML = '<p style="text-align:center;color:#a85c43;">La carte intérieure n\'a pas pu être chargée.</p>'; return; }
 

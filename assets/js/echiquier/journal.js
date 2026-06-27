@@ -17,6 +17,7 @@ function dateLisible(ms) {
 }
 
 (async () => {
+  const ECHROOT = (document.documentElement.lang === "en" ? "/en" : "") + "/data/echiquier/";
   const selEl = document.getElementById('ech-j-case');
   const qEl = document.getElementById('ech-j-question');
   const txtEl = document.getElementById('ech-j-texte');
@@ -30,7 +31,7 @@ function dateLisible(ms) {
 
   let byNum = {};
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=20').then(r => r.json());
+    const data = await fetch(ECHROOT + 'cases.json?v=20').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     for (const c of cases) byNum[c.numero] = c;
     selEl.innerHTML = '<option value="">— choisir une case —</option>' +

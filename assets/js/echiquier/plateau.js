@@ -55,6 +55,7 @@ const TYPE_INTRO = {
 const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même faiblement, et quel retour juste peut-elle m'apprendre ?`;
 
 (async () => {
+  const ECHROOT = (document.documentElement.lang === "en" ? "/en" : "") + "/data/echiquier/";
   const mount = document.getElementById('ech-plateau');
   const legende = document.getElementById('ech-legende');
   const filtersEl = document.getElementById('ech-filters');
@@ -70,12 +71,12 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
     return status;
   })();
   try {
-    const data = await fetch('/data/echiquier/cases.json?v=20').then(r => r.json());
+    const data = await fetch(ECHROOT + 'cases.json?v=20').then(r => r.json());
     const cases = (data.cases || []).slice().sort((a, b) => a.numero - b.numero);
     const byNum = {}; for (const c of cases) byNum[c.numero] = c;
     // Mouvements confirmés dans le texte : montées, chaînes et grappins.
     let liens = [];
-    try { liens = ((await fetch('/data/echiquier/liens.json?v=10').then(r => r.json())).liens) || []; } catch (e) {}
+    try { liens = ((await fetch(ECHROOT + 'liens.json?v=10').then(r => r.json())).liens) || []; } catch (e) {}
     const relations = {};
     for (const c of cases) relations[c.numero] = { entrants: [], sortants: [] };
     for (const l of liens) {

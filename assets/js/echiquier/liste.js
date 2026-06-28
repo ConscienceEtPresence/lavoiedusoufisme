@@ -1,3 +1,5 @@
+const ECHEN = document.documentElement.lang === "en";
+const _P = ECHEN ? "/en" : "";
 /* ============================================================
    L'Échiquier — pages de liste (chutes, remèdes, glossaire)
    Lit data/echiquier/cases.json et dresse des cartes reliées au
@@ -16,12 +18,14 @@ const VUES = {
   glossaire: { cats: null, tri: 'alpha' },
 };
 const _esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-const _caseLabel = c => c ? `<span class="ar" lang="ar" dir="rtl">${_esc(c.arabe)}</span><span class="fr">${_esc(c.traduction)}</span>` : 'case à vérifier';
-const _movementTitle = type => type === 'chute' ? 'Les 9 grappins confirmés' : 'Les 8 montées confirmées';
-const _movementIntro = type => type === 'chute'
+const _caseLabel = c => c ? `<span class="ar" lang="ar" dir="rtl">${_esc(c.arabe)}</span><span class="fr">${_esc(c.traduction)}</span>` : (ECHEN?'square to verify':'case à vérifier');
+const _movementTitle = type => ECHEN ? (type==='chute'?'The 9 confirmed grapnels':'The 8 confirmed ascents') : (type === 'chute' ? 'Les 9 grappins confirmés' : 'Les 8 montées confirmées');
+const _movementIntro = type => ECHEN ? (type === 'chute'
+  ? 'These movements are not mere setbacks: they show how an inner deformation hooks the traveller and brings him back toward a lower square.'
+  : 'These movements show the elevations confirmed in the commentary: a right disposition opens a progress toward a higher square.') : (type === 'chute'
   ? 'Ces mouvements ne sont pas de simples reculs : ils montrent comment une déformation intérieure accroche le voyageur et le ramène vers une case plus basse.'
-  : 'Ces mouvements montrent les élévations confirmées dans le commentaire : une disposition juste ouvre une progression vers une case plus haute.';
-const _movementVerb = type => type === 'chute' ? 'tombe vers' : 's’élève vers';
+  : 'Ces mouvements montrent les élévations confirmées dans le commentaire : une disposition juste ouvre une progression vers une case plus haute.');
+const _movementVerb = type => ECHEN ? (type==='chute'?'falls toward':'rises toward') : (type === 'chute' ? 'tombe vers' : 's’élève vers');
 
 function movementGuide(vueId, liens, byNum) {
   const type = vueId === 'chutes' ? 'chute' : (vueId === 'remedes' ? 'montee' : null);
@@ -31,7 +35,7 @@ function movementGuide(vueId, liens, byNum) {
   return `
     <section class="ech-mvt-guide ech-mvt-guide--${type}" id="ech-mouvements-guide" aria-label="${_movementTitle(type)}">
       <div class="ech-mvt-guide__head">
-        <p class="ech-mode-emploi__eyebrow">Mouvements du plateau</p>
+        <p class="ech-mode-emploi__eyebrow">${ECHEN?'Movements of the board':'Mouvements du plateau'}</p>
         <h2>${_movementTitle(type)}</h2>
         <p>${_movementIntro(type)}</p>
       </div>
@@ -40,11 +44,11 @@ function movementGuide(vueId, liens, byNum) {
           const from = byNum[+l.from];
           const to = byNum[+l.to];
           return `<article class="ech-mvt-card ech-mvt-card--${type}">
-            <p class="ech-mvt-card__nums">case ${+l.from} <span>${_movementVerb(type)}</span> case ${+l.to}</p>
+            <p class="ech-mvt-card__nums">${ECHEN?'square':'case'} ${+l.from} <span>${_movementVerb(type)}</span> ${ECHEN?'square':'case'} ${+l.to}</p>
             <p class="ech-mvt-card__cases">
-              <a href="/pages/echiquier/plateau/#case-${+l.from}">${_caseLabel(from)}</a>
+              <a href="${_P}/pages/echiquier/plateau/#case-${+l.from}">${_caseLabel(from)}</a>
               <span aria-hidden="true">→</span>
-              <a href="/pages/echiquier/plateau/#case-${+l.to}">${_caseLabel(to)}</a>
+              <a href="${_P}/pages/echiquier/plateau/#case-${+l.to}">${_caseLabel(to)}</a>
             </p>
             <p class="ech-mvt-card__lecture">${_esc(l.lecture || '')}</p>
           </article>`;
@@ -85,7 +89,7 @@ function movementGuide(vueId, liens, byNum) {
     mount.innerHTML = cases.map(c => {
       const col = ECH_CAT_COLOR[(c.categories || [])[0]] || 'var(--ech-gold)';
       return `
-        <a class="ech-cardlink" href="/pages/echiquier/plateau/#case-${c.numero}" style="--case-color:${col}">
+        <a class="ech-cardlink" href="${_P}/pages/echiquier/plateau/#case-${c.numero}" style="--case-color:${col}">
           <div class="ech-cardlink__top">
             <span class="ech-cardlink__ar" lang="ar" dir="rtl">${_esc(c.arabe)}</span>
             <span class="ech-cardlink__num">${c.numero}</span>
@@ -93,14 +97,14 @@ function movementGuide(vueId, liens, byNum) {
           <span class="ech-cardlink__tr">${_esc(c.translitteration)}</span>
           <span class="ech-cardlink__fr">${_esc(c.traduction)}</span>
           ${c.explication_simple ? `<span class="ech-cardlink__d">${_esc(c.explication_simple)}</span>` : ''}
-          ${c.statut === 'a_confirmer' ? '<span class="ech-cardlink__warn">à confirmer</span>' : ''}
+          ${c.statut === 'a_confirmer' ? (ECHEN?'<span class="ech-cardlink__warn">to confirm</span>':'<span class="ech-cardlink__warn">à confirmer</span>') : ''}
         </a>`;
     }).join('');
 
     const countEl = document.getElementById('ech-liste-count');
-    if (countEl) countEl.textContent = cases.length + (vue.tri === 'alpha' ? ' termes' : ' cases');
+    if (countEl) countEl.textContent = cases.length + (ECHEN ? (vue.tri==='alpha'?' terms':' squares') : (vue.tri === 'alpha' ? ' termes' : ' cases'));
   } catch (e) {
     console.error(e);
-    mount.innerHTML = '<p style="text-align:center;color:#a85c43;padding:2rem;">La liste n\'a pas pu être chargée.</p>';
+    mount.innerHTML = '<p style="text-align:center;color:#a85c43;padding:2rem;">'+(ECHEN?'The list could not be loaded.':'La liste n\'a pas pu être chargée.')+'</p>';
   }
 })();

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="/manifest.webmanifest" /><meta name="theme-color" content="#0F1830" />
+  <title>Personal journal — The Chessboard of the Gnostics</title>
+  <meta name="description" content="A private space: choose a square, let its question work on you, and lay down a note. Everything stays on your device." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/base.css" /><link rel="stylesheet" href="/assets/css/layout.css" /><link rel="stylesheet" href="/assets/css/components.css" />
+  <link rel="stylesheet" href="/assets/css/echiquier.css?v=17" />
+  <link rel="canonical" href="https://lavoiedudedans.fr/en/pages/echiquier/journal/" />
+  <style>.ech-body .lang-switch{display:list-item !important}</style>
+</head>
+<body class="page-enter ech-body">
+  <header class="site-header"><div class="container site-header__inner">
+    <a href="/en/index.html" class="brand"><svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="7"/><circle cx="16" cy="16" r="1.5" fill="currentColor"/></svg><span>The Inner Path</span></a>
+    <button class="nav-toggle" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <nav><ul class="site-nav"><li><a href="/en/index.html">Home</a></li><li><a href="/en/pages/echiquier/" class="active">The Chessboard</a></li><li><a href="/en/pages/iskandari/">Wisdom</a></li><li><a href="/en/pages/carnet/">Notebook</a></li></ul></nav>
+  </div></header>
+  <main>
+    <section class="ech-hero" style="padding-bottom:.4rem;">
+      <p class="ech-hero__ar" lang="ar" dir="rtl">المُذكِّرة</p>
+      <h1 class="ech-hero__title">Personal journal</h1>
+      <p class="ech-hero__sub">A space for yourself. Choose a square, let its question work on you, and lay down a note. Everything stays on your device — nothing is sent anywhere.</p>
+    </section>
+  <nav class="ech-subnav">
+    <a href="/en/pages/echiquier/">Presentation</a>
+    <a href="/en/pages/echiquier/plateau/">The board</a>
+    <a href="/en/pages/echiquier/journal/" class="is-on">Journal</a>
+    <a href="/en/pages/echiquier/repetitions/">My recurrences</a>
+    <a href="/en/pages/echiquier/meteo/">How I feel</a>
+  </nav>
+    <div class="ech-journal">
+      <div class="ech-journal__form">
+        <div class="ech-journal__row"><select id="ech-j-case" aria-label="Choose a square"><option value="">— choose a square —</option></select></div>
+        <p class="ech-journal__q" id="ech-j-question"></p>
+        <div class="ech-journal__guide">
+          <input id="ech-j-etat" type="text" class="ech-journal__field" placeholder="My state of the moment, e.g. &ldquo;angry&rdquo; (optional)" />
+          <div class="ech-journal__moment" role="group" aria-label="This moment was…">
+            <label><input type="radio" name="ech-j-moment" value="passage" checked /> a simple passage</label>
+            <label><input type="radio" name="ech-j-moment" value="grappin_evite" /> grapnel avoided</label>
+            <label><input type="radio" name="ech-j-moment" value="grappin_rencontre" /> grapnel met</label>
+            <label><input type="radio" name="ech-j-moment" value="fleche_activee" /> arrow activated</label>
+          </div>
+          <input id="ech-j-action" type="text" class="ech-journal__field" placeholder="Concrete action or remedy used (optional)" />
+        </div>
+        <textarea id="ech-j-texte" placeholder="Where does this square appear in my life? What subtle form does it take in me? What makes me descend, or lifts me?"></textarea>
+        <div style="text-align:right;margin-top:.7rem;"><button type="button" class="ech-journal__btn" id="ech-j-save">Lay down this note</button></div>
+      </div>
+      <p style="text-align:center;margin:.4rem 0 1rem;"><a href="/en/pages/echiquier/repetitions/" style="color:var(--ech-gold-deep);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;">&#8635; See my inner recurrences &rarr;</a></p>
+      <div class="ech-journal__entries" id="ech-j-entries"></div>
+      <div class="ech-journal__tools">
+        <button type="button" class="ech-journal__tool" id="ech-j-export">Export my notes (JSON)</button>
+        <button type="button" class="ech-journal__tool" id="ech-j-clear">Erase everything</button>
+      </div>
+    </div>
+  </main>
+  <script src="/assets/js/main.js?v=17"></script>
+  <script type="module" src="/assets/js/echiquier/journal.js?v=18"></script>
+  <script src="/assets/js/souffle.js?v=2" defer></script>
+</body></html>

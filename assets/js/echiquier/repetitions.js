@@ -1,3 +1,5 @@
+const ECHEN = document.documentElement.lang === "en";
+const _P = ECHEN ? "/en" : "";
 /* ============================================================
    « Mes répétitions » — synthèse douce du journal local.
    Lit ech_journal_v1, agrège par case / moment / état, sur
@@ -19,7 +21,7 @@ function load() { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } 
     for (const c of d.cases) byNum[c.numero] = c;
   } catch (e) {}
 
-  const nom = n => byNum[n] ? `${n} — ${byNum[n].traduction}` : `case ${n}`;
+  const nom = n => byNum[n] ? `${n} — ${byNum[n].traduction}` : (ECHEN?`square ${n}`:`case ${n}`);
   const tally = (arr, keyFn) => {
     const m = new Map();
     for (const e of arr) { const k = keyFn(e); if (k == null || k === '') continue; m.set(k, (m.get(k) || 0) + 1); }
@@ -30,7 +32,7 @@ function load() { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } 
     if (!rows.length) return '';
     const max = rows[0][1];
     const items = rows.slice(0, 8).map(([k, n]) => {
-      const label = asCase ? `<a href="/pages/echiquier/plateau/#case-${k}">${esc(nom(+k))}</a>` : `<span>${esc(k)}</span>`;
+      const label = asCase ? `<a href="${_P}/pages/echiquier/plateau/#case-${k}">${esc(nom(+k))}</a>` : `<span>${esc(k)}</span>`;
       return `<li><span class="rep-list__lab">${label}<span class="rep-bar" style="width:${Math.round(n / max * 100)}%"></span></span><span class="rep-list__n">${n}</span></li>`;
     }).join('');
     return `<div class="rep-card"><p class="rep-card__t">${esc(title)}</p><ul class="rep-list">${items}</ul></div>`;
@@ -48,8 +50,8 @@ function load() { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } 
     const arr = all.filter(e => (e.le || 0) >= since);
     if (!arr.length) {
       content.innerHTML = `<p class="rep-empty">${all.length
-        ? 'Aucune note sur cette période. Essayez « tout », ou déposez une note dans le journal.'
-        : 'Votre journal est encore vierge. Dès que vous y déposerez des notes (depuis une case ou la carte intérieure), vos boucles intérieures apparaîtront ici.'}</p>`;
+        ? (ECHEN?'No note in this period. Try “all”, or lay down a note in the journal.':'Aucune note sur cette période. Essayez « tout », ou déposez une note dans le journal.')
+        : (ECHEN?'Your journal is still blank. As soon as you lay down notes (from a square or the inner map), your inner loops will appear here.':'Votre journal est encore vierge. Dès que vous y déposerez des notes (depuis une case ou la carte intérieure), vos boucles intérieures apparaîtront ici.')}</p>`;
       return;
     }
     const cases = tally(arr, e => e.case);
@@ -59,21 +61,21 @@ function load() { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } 
     const fleche = arr.filter(e => e.moment === 'fleche_activee').length;
 
     const phrase = cases.length
-      ? `<p class="rep-note" style="margin:0 auto 1rem;">Sur cette période, votre âme est revenue le plus souvent vers&nbsp;: <strong>${cases.slice(0, 3).map(([k]) => esc(nom(+k))).join(' · ')}</strong>.</p>`
+      ? `<p class="rep-note" style="margin:0 auto 1rem;">${ECHEN?'Over this period, your soul has returned most often toward':'Sur cette période, votre âme est revenue le plus souvent vers'}&nbsp;: <strong>${cases.slice(0, 3).map(([k]) => esc(nom(+k))).join(' · ')}</strong>.</p>`
       : '';
 
     const cards = [
-      listCard('Cases les plus fréquentes', cases, true),
-      countCard('Vos mouvements', [
-        ['✓ Grappins évités', evite, 'up'],
-        ['↑ Flèches activées', fleche, 'up'],
-        ['⛓ Grappins rencontrés', rencontre, 'down'],
+      listCard(ECHEN?'Most frequent squares':'Cases les plus fréquentes', cases, true),
+      countCard(ECHEN?'Your movements':'Vos mouvements', [
+        [ECHEN?'✓ Grapnels avoided':'✓ Grappins évités', evite, 'up'],
+        [ECHEN?'↑ Arrows activated':'↑ Flèches activées', fleche, 'up'],
+        [ECHEN?'⛓ Grapnels met':'⛓ Grappins rencontrés', rencontre, 'down'],
       ]),
-      listCard('États les plus fréquents', etats, false),
+      listCard(ECHEN?'Most frequent states':'États les plus fréquents', etats, false),
     ].filter(Boolean).join('');
 
     content.innerHTML = phrase + `<div class="rep-grid">${cards}</div>` +
-      `<p class="rep-note" style="margin-top:1rem;">${arr.length} note${arr.length > 1 ? 's' : ''} sur la période.</p>`;
+      `<p class="rep-note" style="margin-top:1rem;">${arr.length} ${ECHEN?('note'+(arr.length>1?'s':'')+' over the period'):('note'+(arr.length > 1 ? 's' : '')+' sur la période')}.</p>`;
   }
 
   let days = 7;

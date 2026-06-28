@@ -1,3 +1,5 @@
+const ECHEN = document.documentElement.lang === "en";
+const _P = ECHEN ? "/en" : "";
 /* ============================================================
    L'Échiquier des gnostiques — plateau interactif
    Charge data/echiquier/cases.json, dresse la grille 10x10
@@ -5,7 +7,13 @@
    une fiche au clic. Recherche + filtres par famille.
    ============================================================ */
 
-const CAT_LABEL = {
+const CAT_LABEL = ECHEN ? {
+  chute: 'fall', maladie_de_l_ame: 'sickness of the soul', danger: 'danger',
+  vertu: 'virtue', remede: 'remedy', station: 'station', voie: 'way', pratique: 'practice',
+  connaissance: 'knowledge', realisation: 'realisation', monde: 'world', ange: 'angel',
+  element: 'element', concept: 'concept', metaphysique: 'metaphysics', etat: 'state of the heart',
+  illusion: 'illusion', naissance: 'birth'
+} : {
   chute: 'chute', maladie_de_l_ame: 'maladie de l’âme', danger: 'danger',
   vertu: 'vertu', remede: 'remède', station: 'station', voie: 'voie', pratique: 'pratique',
   connaissance: 'connaissance', realisation: 'réalisation', monde: 'monde', ange: 'ange',
@@ -21,15 +29,21 @@ const CAT_COLOR = {
 };
 // Familles regroupées pour les filtres
 const FAMILLES = [
-  { id: 'chute', label: 'Chutes', cats: ['chute', 'maladie_de_l_ame', 'danger'], color: 'var(--c-chute)' },
-  { id: 'vertu', label: 'Vertus & remèdes', cats: ['vertu', 'remede'], color: 'var(--c-vertu)' },
-  { id: 'station', label: 'Stations & voie', cats: ['station', 'voie', 'pratique'], color: 'var(--c-station)' },
-  { id: 'connaissance', label: 'Connaissance', cats: ['connaissance', 'realisation'], color: 'var(--c-connaissance)' },
-  { id: 'monde', label: 'Mondes & anges', cats: ['monde', 'ange'], color: 'var(--c-monde)' },
-  { id: 'etat', label: 'États & illusions', cats: ['etat', 'illusion'], color: 'var(--c-etat)' },
-  { id: 'concept', label: 'Concepts & éléments', cats: ['concept', 'metaphysique', 'element', 'naissance'], color: 'var(--c-concept)' },
+  { id: 'chute', label: ECHEN?'Falls':'Chutes', cats: ['chute', 'maladie_de_l_ame', 'danger'], color: 'var(--c-chute)' },
+  { id: 'vertu', label: ECHEN?'Virtues & remedies':'Vertus & remèdes', cats: ['vertu', 'remede'], color: 'var(--c-vertu)' },
+  { id: 'station', label: ECHEN?'Stations & way':'Stations & voie', cats: ['station', 'voie', 'pratique'], color: 'var(--c-station)' },
+  { id: 'connaissance', label: ECHEN?'Knowledge':'Connaissance', cats: ['connaissance', 'realisation'], color: 'var(--c-connaissance)' },
+  { id: 'monde', label: ECHEN?'Worlds & angels':'Mondes & anges', cats: ['monde', 'ange'], color: 'var(--c-monde)' },
+  { id: 'etat', label: ECHEN?'States & illusions':'États & illusions', cats: ['etat', 'illusion'], color: 'var(--c-etat)' },
+  { id: 'concept', label: ECHEN?'Concepts & elements':'Concepts & éléments', cats: ['concept', 'metaphysique', 'element', 'naissance'], color: 'var(--c-concept)' },
 ];
-const STATUT_TXT = {
+const STATUT_TXT = ECHEN ? {
+  a_confirmer: 'uncertain reading — to confirm on the scan',
+  lecture_visuelle: 'read from the scanned board — commentary to deepen',
+  verifie_scan: 'verified on the scan',
+  verifie_arabe: 'verified in the Arabic text',
+  pret_publication: 'ready'
+} : {
   a_confirmer: 'lecture incertaine — à confirmer sur le scan',
   lecture_visuelle: 'lu sur le plateau scanné — explication à approfondir',
   verifie_scan: 'vérifié sur le scan',
@@ -39,20 +53,25 @@ const STATUT_TXT = {
 
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const catColor = c => c ? `<span class="ech-legende__pastille" style="background:${c.color}"></span>` : '';
-const TYPE_TXT = {
+const TYPE_TXT = ECHEN ? { montee:'ascent', chute:'chain / grapnel', retour:'return', illusion:'illusion' } : {
   montee: 'montée',
   chute: 'chaîne / grappin',
   retour: 'retour',
   illusion: 'illusion'
 };
 const TYPE_SYM = { montee: '↑', chute: '⛓', retour: '↺', illusion: '✦' };
-const TYPE_INTRO = {
+const TYPE_INTRO = ECHEN ? {
+  montee: 'This movement indicates a progress or an elevation.',
+  chute: 'This movement indicates a fall, a regression or a grapnel of the soul.',
+  retour: 'This movement indicates a possible return.',
+  illusion: 'This movement indicates an illusion to unmask.'
+} : {
   montee: 'Ce mouvement indique une progression ou une élévation.',
   chute: 'Ce mouvement indique une chute, une régression ou un grappin de l’âme.',
   retour: 'Ce mouvement indique un retour possible.',
   illusion: 'Ce mouvement indique une illusion à démasquer.'
 };
-const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même faiblement, et quel retour juste peut-elle m'apprendre ?`;
+const questionGenerique = c => ECHEN ? `Where does this reality appear in me, even faintly, and what right return can it teach me?` : `Où cette réalité apparaît-elle en moi, même faiblement, et quel retour juste peut-elle m'apprendre ?`;
 
 (async () => {
   const ECHROOT = (document.documentElement.lang === "en" ? "/en" : "") + "/data/echiquier/";
@@ -140,10 +159,10 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
         if (!shouldSpeak) {
           searchStatus.textContent = '';
         } else if (!visible) {
-          searchStatus.textContent = 'Aucune case visible : effacez la recherche ou changez de famille.';
+          searchStatus.textContent = ECHEN?'No square visible: clear the search or change family.':'Aucune case visible : effacez la recherche ou changez de famille.';
         } else {
-          const label = visible > 1 ? 'cases visibles' : 'case visible';
-          const scope = fam ? ` dans ${fam.label.toLowerCase()}` : '';
+          const label = ECHEN ? (visible>1?'squares visible':'square visible') : (visible > 1 ? 'cases visibles' : 'case visible');
+          const scope = fam ? `${ECHEN?' in ':' dans '}${fam.label.toLowerCase()}` : '';
           searchStatus.textContent = `${visible} ${label}${scope}.`;
         }
       }
@@ -175,12 +194,12 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
       if (tools) {
         const btn = document.createElement('button');
         btn.type = 'button'; btn.className = 'ech-random'; btn.id = 'ech-arrows-toggle';
-        btn.innerHTML = '✦ mouvements vérifiés';
+        btn.innerHTML = ECHEN ? '✦ verified movements' : '✦ mouvements vérifiés';
         tools.appendChild(btn);
         // Légende des mouvements confirmés, masquée tant que le calque est éteint.
         const cap = document.createElement('p');
         cap.className = 'ech-arrows-legend';
-        cap.innerHTML = '<span class="al al--montee">montée</span><span class="al al--chute">chaîne / grappin</span><span class="al al--retour">retour</span><span class="al al--illusion">illusion</span><em>Les montées indiquent une progression. Les chaînes et grappins indiquent une chute ou une régression. Seuls les mouvements confirmés dans le texte sont affichés.</em>';
+        cap.innerHTML = ECHEN ? '<span class="al al--montee">ascent</span><span class="al al--chute">chain / grapnel</span><span class="al al--retour">return</span><span class="al al--illusion">illusion</span><em>Ascents indicate a progress. Chains and grapnels indicate a fall or a regression. Only the movements confirmed in the text are shown.</em>' : '<span class="al al--montee">montée</span><span class="al al--chute">chaîne / grappin</span><span class="al al--retour">retour</span><span class="al al--illusion">illusion</span><em>Les montées indiquent une progression. Les chaînes et grappins indiquent une chute ou une régression. Seuls les mouvements confirmés dans le texte sont affichés.</em>';
         const note = document.querySelector('.ech-legende-note');
         (note || tools).insertAdjacentElement('afterend', cap);
         btn.addEventListener('click', () => {
@@ -220,65 +239,65 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
             const t = byNum[targetNum];
             if (!t) return '';
             const type = l.type || 'montee';
-            const sensTxt = sens === 'entrant' ? 'depuis' : 'vers';
+            const sensTxt = sens === 'entrant' ? (ECHEN?'from':'depuis') : (ECHEN?'to':'vers');
             return `<li class="ech-mouvement ech-mouvement--${esc(type)}">
               <button type="button" class="ech-lien ech-lien-mvt" data-go="${t.numero}">
                 <span class="ech-lien-mvt__type">${esc(TYPE_SYM[type] || '→')} ${esc(TYPE_TXT[type] || type)}</span>
-                <span class="ech-lien-mvt__target">${sensTxt} la case ${t.numero} — ${esc(t.traduction)}</span>
+                <span class="ech-lien-mvt__target">${sensTxt} ${ECHEN?'square':'la case'} ${t.numero} — ${esc(t.traduction)}</span>
               </button>
               <p class="ech-lien-mvt__lecture">${esc(l.lecture || TYPE_INTRO[type] || '')}</p>
-              ${l.trajet_detaille ? `<p class="ech-lien-mvt__trajet">Trajet symbolique : <b>${l.trajet_detaille.join(' → ')}</b></p>` : ''}
+              ${l.trajet_detaille ? `<p class="ech-lien-mvt__trajet">${ECHEN?'Symbolic path:':'Trajet symbolique :'} <b>${l.trajet_detaille.join(' → ')}</b></p>` : ''}
             </li>`;
           }).join('')}</ul>
         </div>` : '';
       const rel = relations[c.numero] || { entrants: [], sortants: [] };
       const question = c.question_introspection || questionGenerique(c);
       const prevBtn = c.numero > 1
-        ? `<button type="button" class="ech-fiche__navbtn" id="ech-prev">← case ${c.numero - 1}</button>`
+        ? `<button type="button" class="ech-fiche__navbtn" id="ech-prev">← ${ECHEN?'square':'case'} ${c.numero - 1}</button>`
         : '<span aria-hidden="true"></span>';
       const nextBtn = c.numero < 100
-        ? `<button type="button" class="ech-fiche__navbtn" id="ech-next">case ${c.numero + 1} →</button>`
+        ? `<button type="button" class="ech-fiche__navbtn" id="ech-next">${ECHEN?'square':'case'} ${c.numero + 1} →</button>`
         : '<span aria-hidden="true"></span>';
 
-      const remedeHint = (c.remede && c.remede[0]) || 'Tiens bon : ne nourris pas l\'état, reviens au souffle, et patiente un instant.';
+      const remedeHint = (c.remede && c.remede[0]) || (ECHEN ? 'Hold on: do not feed the state, return to the breath, and wait a moment.' : 'Tiens bon : ne nourris pas l\'état, reviens au souffle, et patiente un instant.');
       const deepHtml = [
-        c.explication_spirituelle ? champ('Sens spirituel', c.explication_spirituelle) : '',
-        c.mecanisme ? champ('Mécanisme', c.mecanisme) : '',
-        c.illusion_possible ? champ('Illusion possible', c.illusion_possible) : '',
-        c.ouverture ? champ('Ce que cela peut apprendre', c.ouverture) : '',
-        c.pratique ? champ('Pratique intérieure', c.pratique) : '',
-        (c.appui_scripturaire && c.appui_scripturaire.length) ? `<div class="ech-fiche__bloc ech-fiche__script"><p class="ech-fiche__label">Appui scripturaire</p><ul class="ech-fiche__refs">${c.appui_scripturaire.map(r => `<li>${esc(r)}</li>`).join('')}</ul><p class="ech-fiche__refs-note">Versets et hadiths cités par le commentaire pour fonder cette case.</p></div>` : '',
-        c.chemin_texte ? `<div class="ech-fiche__bloc ech-fiche__chemin"><p class="ech-fiche__label">Le chemin, pas à pas</p><p class="ech-fiche__txt">${esc(c.chemin_texte)}</p></div>` : '',
-        `<div class="ech-fiche__bloc ech-fiche__source"><p class="ech-fiche__label">Source</p><p class="ech-fiche__txt">${esc((c.source && c.source.fichier) || 'Michon, ARChè 1998')}</p></div>`
+        c.explication_spirituelle ? champ(ECHEN?'Spiritual sense':'Sens spirituel', c.explication_spirituelle) : '',
+        c.mecanisme ? champ(ECHEN?'Mechanism':'Mécanisme', c.mecanisme) : '',
+        c.illusion_possible ? champ(ECHEN?'Possible illusion':'Illusion possible', c.illusion_possible) : '',
+        c.ouverture ? champ(ECHEN?'What this can teach':'Ce que cela peut apprendre', c.ouverture) : '',
+        c.pratique ? champ(ECHEN?'Inner practice':'Pratique intérieure', c.pratique) : '',
+        (c.appui_scripturaire && c.appui_scripturaire.length) ? `<div class="ech-fiche__bloc ech-fiche__script"><p class="ech-fiche__label">${ECHEN?'Scriptural support':'Appui scripturaire'}</p><ul class="ech-fiche__refs">${c.appui_scripturaire.map(r => `<li>${esc(r)}</li>`).join('')}</ul><p class="ech-fiche__refs-note">${ECHEN?'Verses and hadiths cited by the commentary to ground this square.':'Versets et hadiths cités par le commentaire pour fonder cette case.'}</p></div>` : '',
+        c.chemin_texte ? `<div class="ech-fiche__bloc ech-fiche__chemin"><p class="ech-fiche__label">${ECHEN?'The path, step by step':'Le chemin, pas à pas'}</p><p class="ech-fiche__txt">${esc(c.chemin_texte)}</p></div>` : '',
+        `<div class="ech-fiche__bloc ech-fiche__source"><p class="ech-fiche__label">${ECHEN?'Source':'Source'}</p><p class="ech-fiche__txt">${esc((c.source && c.source.fichier) || 'Michon, ARChè 1998')}</p></div>`
       ].join('');
       scroll.innerHTML = `
-        <span class="ech-fiche__cat" style="--case-color:${col}">${esc((c.categories || [])[0] ? (CAT_LABEL[c.categories[0]] || c.categories[0]) : 'case')}</span>
-        <span class="ech-fiche__num">case ${c.numero} / 100</span>
+        <span class="ech-fiche__cat" style="--case-color:${col}">${esc((c.categories || [])[0] ? (CAT_LABEL[c.categories[0]] || c.categories[0]) : (ECHEN?'square':'case'))}</span>
+        <span class="ech-fiche__num">${ECHEN?'square':'case'} ${c.numero} / 100</span>
         <p class="ech-fiche__ar" lang="ar" dir="rtl">${esc(c.arabe)}</p>
         <p class="ech-fiche__tr">${esc(c.translitteration)}</p>
         <h2 class="ech-fiche__fr">${esc(c.traduction)}</h2>
         ${cats ? `<p class="ech-fiche__txt" style="font-size:.85rem;color:var(--ech-ink-mute);margin:-.4rem 0 .6rem;">${esc(cats)}</p>` : ''}
-        <div class="ech-fiche__mode"><p class="ech-fiche__mode-t">Tu es peut-être ici</p><p>Une case n'est pas une étiquette : c'est un mouvement de l'âme que tout le monde traverse. Regarde si cela résonne, vois la pente, puis pose un geste.</p></div>
-        ${champ('Ce que c’est', c.explication_simple, 'Explication à venir.')}
-        ${(c.symptomes && c.symptomes.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Comment je reconnais cet état</p><ul class="ech-fiche__liste">${c.symptomes.map(sy => `<li>${esc(sy)}</li>`).join('')}</ul></div>` : ''}
-        ${c.numero < 100 ? `<div class="ech-fiche__bloc ech-fiche__ordinaire"><p class="ech-fiche__label">Pente naturelle <span aria-hidden="true">→</span></p><p class="ech-fiche__txt">Sans saut particulier, le chemin se poursuit vers la case ${c.numero + 1}${byNum[c.numero + 1] ? ' — ' + esc(byNum[c.numero + 1].traduction) : ''}.</p></div>` : ''}
-        ${relationBloc(rel.entrants, 'Ce qui a pu m\'amener ici — origine possible', 'entrant')}
-        ${relationBloc(rel.sortants, 'Où cela peut conduire', 'sortant')}
-        ${(c.remede && c.remede.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">Action, remède</p><ul class="ech-fiche__liste">${c.remede.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
-        <div class="ech-fiche__bloc"><p class="ech-fiche__label">Question pour soi</p><p class="ech-fiche__q">${esc(question)}</p></div>
+        <div class="ech-fiche__mode"><p class="ech-fiche__mode-t">${ECHEN?'You may be here':'Tu es peut-être ici'}</p><p>${ECHEN?'A square is not a label: it is a movement of the soul that everyone passes through. See whether it resonates, see the slope, then take a gesture.':'Une case n\'est pas une étiquette : c\'est un mouvement de l\'âme que tout le monde traverse. Regarde si cela résonne, vois la pente, puis pose un geste.'}</p></div>
+        ${champ(ECHEN?'What it is':'Ce que c’est', c.explication_simple, ECHEN?'Commentary to come.':'Explication à venir.')}
+        ${(c.symptomes && c.symptomes.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">${ECHEN?'How I recognise this state':'Comment je reconnais cet état'}</p><ul class="ech-fiche__liste">${c.symptomes.map(sy => `<li>${esc(sy)}</li>`).join('')}</ul></div>` : ''}
+        ${c.numero < 100 ? `<div class="ech-fiche__bloc ech-fiche__ordinaire"><p class="ech-fiche__label">${ECHEN?'Natural slope':'Pente naturelle'} <span aria-hidden="true">→</span></p><p class="ech-fiche__txt">${ECHEN?'With no particular leap, the path continues to square ':'Sans saut particulier, le chemin se poursuit vers la case '}${c.numero + 1}${byNum[c.numero + 1] ? ' — ' + esc(byNum[c.numero + 1].traduction) : ''}.</p></div>` : ''}
+        ${relationBloc(rel.entrants, ECHEN?'What may have brought me here — a possible origin':'Ce qui a pu m\'amener ici — origine possible', 'entrant')}
+        ${relationBloc(rel.sortants, ECHEN?'Where this can lead':'Où cela peut conduire', 'sortant')}
+        ${(c.remede && c.remede.length) ? `<div class="ech-fiche__bloc"><p class="ech-fiche__label">${ECHEN?'Action, remedy':'Action, remède'}</p><ul class="ech-fiche__liste">${c.remede.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
+        <div class="ech-fiche__bloc"><p class="ech-fiche__label">${ECHEN?'Question for oneself':'Question pour soi'}</p><p class="ech-fiche__q">${esc(question)}</p></div>
         <div class="ech-suite">
-          <button type="button" class="ech-suite__btn" id="ech-continuer">Continuer le chemin <span aria-hidden="true">→</span></button>
+          <button type="button" class="ech-suite__btn" id="ech-continuer">${ECHEN?'Continue the path':'Continuer le chemin'} <span aria-hidden="true">→</span></button>
           <div class="ech-suite__menu" id="ech-suite-menu" hidden>
-            <p class="ech-suite__q">Où en es-tu, là ?</p>
-            <button type="button" class="ech-suite__opt" data-suite="encore">Je suis encore dans cet état</button>
-            ${c.numero < 100 ? `<button type="button" class="ech-suite__opt" data-suite="bascule">J'ai basculé vers la suite → case ${c.numero + 1}</button>` : ''}
-            ${rel.entrants.length ? `<button type="button" class="ech-suite__opt" data-suite="origine">Je veux comprendre d'où ça vient</button>` : ''}
-            <a class="ech-suite__opt ech-suite__opt--link" href="/pages/echiquier/journal/?case=${c.numero}">Noter ce moment dans mon journal</a>
+            <p class="ech-suite__q">${ECHEN?'Where are you, right now?':'Où en es-tu, là ?'}</p>
+            <button type="button" class="ech-suite__opt" data-suite="encore">${ECHEN?'I am still in this state':'Je suis encore dans cet état'}</button>
+            ${c.numero < 100 ? `<button type="button" class="ech-suite__opt" data-suite="bascule">${ECHEN?'I have moved on → square ':'J\'ai basculé vers la suite → case '}${c.numero + 1}</button>` : ''}
+            ${rel.entrants.length ? `<button type="button" class="ech-suite__opt" data-suite="origine">${ECHEN?'I want to understand where it comes from':'Je veux comprendre d\'où ça vient'}</button>` : ''}
+            <a class="ech-suite__opt ech-suite__opt--link" href="${_P}/pages/echiquier/journal/?case=${c.numero}">${ECHEN?'Note this moment in my journal':'Noter ce moment dans mon journal'}</a>
             <p class="ech-suite__note" id="ech-suite-note" hidden>${esc(remedeHint)}</p>
           </div>
         </div>
-        <a class="ech-fiche__journal ech-fiche__recueil" href="/pages/carnet/?recueil=1&amp;source=echiquier-${c.numero}">❡ Recueillir un instant où cela m'a touché</a>
-        <button type="button" class="ech-fiche__deeptoggle" id="ech-deeptoggle" aria-expanded="false">Aller plus loin <span aria-hidden="true">▾</span></button>
+        <a class="ech-fiche__journal ech-fiche__recueil" href="${_P}/pages/carnet/?recueil=1&amp;source=echiquier-${c.numero}">${ECHEN?'❡ Gather a moment when this touched me':'❡ Recueillir un instant où cela m\'a touché'}</a>
+        <button type="button" class="ech-fiche__deeptoggle" id="ech-deeptoggle" aria-expanded="false">${ECHEN?'Go further':'Aller plus loin'} <span aria-hidden="true">▾</span></button>
         <div class="ech-fiche__deep" id="ech-deep" hidden>${deepHtml}</div>
         <div class="ech-badge-valid">✦ ${esc(STATUT_TXT[c.statut] || c.statut)}</div>
         <div class="ech-fiche__nav">
@@ -305,7 +324,7 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
         const willOpen = deepEl.hidden;
         deepEl.hidden = !willOpen;
         deepBtn.setAttribute('aria-expanded', String(willOpen));
-        deepBtn.innerHTML = willOpen ? 'Replier <span aria-hidden="true">▴</span>' : 'Aller plus loin <span aria-hidden="true">▾</span>';
+        deepBtn.innerHTML = willOpen ? (ECHEN?'Collapse':'Replier')+' <span aria-hidden="true">▴</span>' : (ECHEN?'Go further':'Aller plus loin')+' <span aria-hidden="true">▾</span>';
       });
       scroll.scrollTop = 0;
 
@@ -338,6 +357,6 @@ const questionGenerique = c => `Où cette réalité apparaît-elle en moi, même
     window.addEventListener('hashchange', openFromHash);
   } catch (e) {
     console.error(e);
-    mount.innerHTML = `<p style="grid-column:1/-1;text-align:center;padding:2rem;color:#a85c43;">Le plateau n'a pas pu être chargé.</p>`;
+    mount.innerHTML = `<p style="grid-column:1/-1;text-align:center;padding:2rem;color:#a85c43;">${ECHEN?'The board could not be loaded.':'Le plateau n\'a pas pu être chargé.'}</p>`;
   }
 })();

@@ -5,7 +5,7 @@ const _IP = ISKEN ? "/en" : "";
    ============================================================ */
 
 let _corpus = null;
-const CORPUS_URL = _IP + '/data/iskandari/corpus.json';
+const CORPUS_URL = _IP + '/data/iskandari/corpus.json?v=2';
 
 export async function loadCorpus() {
   if (_corpus) return _corpus;
@@ -137,7 +137,7 @@ export function renderSubnav(active) {
 let _hikam = null;
 export async function loadHikam() {
   if (_hikam) return _hikam;
-  const res = await fetch(_IP + '/data/iskandari/hikam-complet.json');
+  const res = await fetch(_IP + '/data/iskandari/hikam-complet.json?v=2');
   _hikam = await res.json();
   return _hikam;
 }

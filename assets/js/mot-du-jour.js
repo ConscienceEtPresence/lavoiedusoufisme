@@ -341,7 +341,7 @@
   }
 
   Promise.all([
-    fetch('../../data/sagesses.json').then(function (r) { return r.json(); }).catch(function () { return null; })
+    fetch((EN ? '/en' : '') + '/data/sagesses.json').then(function (r) { return r.json(); }).catch(function () { return null; })
   ]).then(function (res) {
     var pool = buildPool(res[0]);
     if (!pool.length) { mount.innerHTML = '<p style="text-align:center;color:#888">—</p>'; return; }

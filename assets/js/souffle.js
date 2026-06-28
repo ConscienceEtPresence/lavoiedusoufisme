@@ -42,10 +42,11 @@
   style.textContent = css;
   document.head.appendChild(style);
 
+  var _sfEN = document.documentElement.lang === 'en';
   var a = document.createElement('a');
-  a.href = '/pages/echiquier/meteo/';
+  a.href = (_sfEN ? '/en' : '') + '/pages/echiquier/meteo/';
   a.className = 'souffle';
-  a.setAttribute('aria-label', "Comment je me sens aujourd'hui — carte intérieure");
+  a.setAttribute('aria-label', _sfEN ? 'How I feel today — inner map' : "Comment je me sens aujourd'hui — carte intérieure");
   a.innerHTML =
     '<span class="souffle__halo" aria-hidden="true"></span>' +
     '<span class="souffle__orb">' +
@@ -55,7 +56,7 @@
     '</span>' +
     '<span class="souffle__label">' +
       '<span class="souffle__ar" lang="ar" dir="rtl">كيف حالُ قلبي؟</span>' +
-      '<span class="souffle__fr">Comment je me sens ?</span>' +
+      '<span class="souffle__fr">' + (_sfEN ? 'How I feel?' : 'Comment je me sens ?') + '</span>' +
     '</span>';
 
   // sur mobile (sans survol), un premier toucher déploie le murmure, le second ouvre la carte

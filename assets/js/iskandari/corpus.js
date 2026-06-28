@@ -1,9 +1,11 @@
+const ISKEN = document.documentElement.lang === "en";
+const _IP = ISKEN ? "/en" : "";
 /* ============================================================
    Iskandarī — chargement partagé du corpus + helpers
    ============================================================ */
 
 let _corpus = null;
-const CORPUS_URL = '/data/iskandari/corpus.json';
+const CORPUS_URL = _IP + '/data/iskandari/corpus.json';
 
 export async function loadCorpus() {
   if (_corpus) return _corpus;
@@ -19,7 +21,9 @@ export function esc(s) {
 }
 
 // Familles + libellés humains (ordre de lecture spirituel)
-export const FAMILLES_FR = {
+export const FAMILLES_FR = ISKEN ? {
+  abandon_confiance:'Surrender and trust', temps_presence:'Time, presence', vie_concrete:'Concrete life', coeur_action:'Heart and action', epreuves:'Trials and patience', coeur_relation:'Heart and relationship', retour:'Return, repair', etats_interieurs:'Inner states', servitude:'Servanthood and need', detachement:'Detachment, sobriety', transformation_interieure:'Inner transformation', relation:'Human relations', science_contemplation:'Knowledge and contemplation', pratique:'Living practice', voie_transmission:'Way and transmission', amour_attachement:'Love and attachment', priere_intime:'Intimate prayer', module_complementaire:'To go further'
+} : {
   abandon_confiance:        'Abandon et confiance',
   temps_presence:           'Le temps, la présence',
   vie_concrete:             'Vie concrète',
@@ -114,13 +118,13 @@ export function suggestModules(corpus, { etats = [], contexts = [] } = {}, limit
 // Sous-navigation entre les 4 sections — injectée dans chaque page
 export function renderSubnav(active) {
   const items = [
-    { id: 'auteur',   href: '/pages/iskandari/auteur/',   label: 'L\'auteur' },
-    { id: 'hikam',    href: '/pages/iskandari/hikam/',    label: 'Les Sagesses' },
-    { id: 'munajat',  href: '/pages/iskandari/munajat/',  label: 'Munājāt' },
-    { id: 'traites',  href: '/pages/iskandari/traites/',  label: 'Les deux traités' }
+    { id: 'auteur',   href: _IP+'/pages/iskandari/auteur/',   label: ISKEN?'The author':'L\'auteur' },
+    { id: 'hikam',    href: _IP+'/pages/iskandari/hikam/',    label: ISKEN?'The Aphorisms':'Les Sagesses' },
+    { id: 'munajat',  href: _IP+'/pages/iskandari/munajat/',  label: 'Munājāt' },
+    { id: 'traites',  href: _IP+'/pages/iskandari/traites/',  label: ISKEN?'The two treatises':'Les deux traités' }
   ];
   return `
-    <nav class="isk-subnav" aria-label="Sections de La voie des sagesses">
+    <nav class="isk-subnav" aria-label="${ISKEN?'Sections of The way of wisdom':'Sections de La voie des sagesses'}">
       <ul class="isk-subnav__list">
         ${items.map(i => `
           <li><a href="${i.href}" ${active===i.id?'class="is-active"':''}>${i.label}</a></li>
@@ -133,7 +137,7 @@ export function renderSubnav(active) {
 let _hikam = null;
 export async function loadHikam() {
   if (_hikam) return _hikam;
-  const res = await fetch('/data/iskandari/hikam-complet.json');
+  const res = await fetch(_IP + '/data/iskandari/hikam-complet.json');
   _hikam = await res.json();
   return _hikam;
 }
@@ -214,9 +218,9 @@ export function injectSubnav(active) {
 // Petit helper de rendu : nom transcription affichable
 export function modCardHTML(mod) {
   return `
-    <a class="isk-module-card" href="/pages/iskandari/theme/?id=${esc(mod.id)}">
+    <a class="isk-module-card" href="${_IP}/pages/iskandari/theme/?id=${esc(mod.id)}">
       <p class="isk-module-card__ar" lang="ar" dir="rtl">${esc(mod.title_ar || '')}</p>
       <p class="isk-module-card__tr">${esc(mod.transliteration || '')}</p>
-      <h3 class="isk-module-card__title">${esc(mod.title_fr || '')}</h3>
+      <h3 class="isk-module-card__title">${esc((ISKEN && mod.title_en) || mod.title_fr || '')}</h3>
     </a>`;
 }
